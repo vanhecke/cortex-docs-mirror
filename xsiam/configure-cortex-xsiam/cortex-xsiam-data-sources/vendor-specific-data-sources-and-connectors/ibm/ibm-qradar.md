@@ -1,0 +1,16 @@
+# IBM QRadar
+
+{% hint style="warning" %}
+**Important**
+
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+{% endhint %}
+
+Integrate with IBM QRadar to detect, prioritize, and respond to threats across the enterprise. IBM Security QRadar SOAR provides case management for continual issue-response improvement, while IBM QRadar v3 (SIEM) aggregates and parses logs, fetches offenses with their enriched data as issues, and lets you run QRadar actions from the platform.
+
+This connector includes the following sub-capabilities (Marketplace integrations link to PAN DEV for more information):
+
+* [IBM Resilient Systems](https://xsoar.pan.dev/docs/reference/integrations/ibm-resilient-systems): Case management that enables visibility across your tools for continual IR improvement. This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+* [QRadar v3](https://xsoar.pan.dev/docs/reference/integrations/q-radar-v3): IBM QRadar SIEM helps security teams accurately detect and prioritize threats across the enterprise, supports API versions 10.1 and above. Provides intelligent insights that enable teams to respond quickly to reduce the impact of incidents. This sub-capability is available with any active Cortex XSIAM, Cortex Cloud Posture Security, Cortex Cloud, Cortex Cloud Runtime Security, Cortex XDR, or Cortex AgentiX license.
+
+To configure this connector, follow the steps outlined in the configuration wizard.

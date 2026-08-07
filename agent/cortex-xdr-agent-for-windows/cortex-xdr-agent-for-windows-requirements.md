@@ -1,0 +1,20 @@
+---
+description: >-
+  Windows endpoints must meet the following requirements to install the Cortex
+  XDR agent.
+---
+
+# Cortex XDR agent for Windows requirements
+
+The following requirements apply to standard and VDI Windows endpoints:
+
+| Requirement                | Specification                                                                                                                                                                                                                                                                                                                                                        |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Processor                  | <ul><li>Intel Pentium Dual Core or later with SSE2 instruction set support</li><li>AMD Opteron/Athlon 64 or later with SSE2 instruction set support</li><li>ARM (A64) with Windows 11 23H2 (release 10.0.22631) and later</li></ul>                                                                                                                                  |
+| RAM                        | 2GB minimum                                                                                                                                                                                                                                                                                                                                                          |
+| Hard disk space            | 5GB minimum; 20 GB recommended                                                                                                                                                                                                                                                                                                                                       |
+| Operating system versions  | Palo Alto Networks supports the Cortex XDR agent on many operating systems, virtual environments, and virtual applications. To determine the minimum Cortex XDR agent release for a specific operating system, environment, or application, refer to the Windows section of Where can I install the Cortex XDR Agent in the Palo Alto Networks Compatibility Matrix. |
+| Networking                 | <ul><li>Allow communication on the TCP port from the Cortex XDR agent to server (the default is port 443).</li><li>Allow the Cortex XDR management console and agent to communicate with external and internal resources required for enforcing endpoint protection.</li></ul>                                                                                       |
+| .NET                       | <ul><li>Windows 8—.NET 4.5</li><li>Windows 8.1—.NET 4.5.1</li><li>Windows 10 and later releases—.NET 4.6</li><li>Windows Server 2008 R2—.NET 3.5 SP1 or .NET 3.5.1</li><li>Windows Server 2012—.NET 4.5</li><li>Windows Server 2012 R2 and later supported Windows releases—.NET 4.5.1</li></ul>                                                                     |
+| Applications and utilities | <ul><li>Windows Accessories (Notepad) to view logs</li></ul>                                                                                                                                                                                                                                                                                                         |
+| Localization               | To set the language (English, German, Japanese, Spanish, French, Chinese Simplified, Chinese Traditional) of the Cortex XDR agent console, you must install the corresponding language pack.                                                                                                                                                                         |

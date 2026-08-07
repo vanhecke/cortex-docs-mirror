@@ -1,0 +1,7 @@
+# Third-party Linux security applications
+
+| Application Name | Limitations                                                                                                                                                                                                                                                                           |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SELinux          | Because SELinux collides with the agent injection mechanism, injection-based security modules (ROP Mitigation and Brute Force Protection) are disabled when SELinux is enabled. All other exploit and malware protection functionality works as expected. No user action is required. |
+| Symantec         | Running Symantec Kernel Module on Linux machines side by side with Cortex XDR is not supported.                                                                                                                                                                                       |
+| McAfee           | Running McAfee Kernel Module on Linux machines side by side with Cortex XDR will lead to the Cortex XDR agent running without the Kernel Module and be partially protected. It is recommended to have the McAfee KM disabled.                                                         |

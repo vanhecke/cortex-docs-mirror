@@ -1,0 +1,59 @@
+---
+description: >-
+  Learn about the creation process for an outposts, which facilitate security
+  scanning performed on infrastructure in a cloud account owned by you.
+---
+
+# Outpost creation workflow
+
+{% hint style="info" %}
+**License type**: This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM product that has the Cloud Runtime Security add-on.
+{% endhint %}
+
+This page describes the overall flow for creating outposts for different CSPs.
+
+{% hint style="info" %}
+**Important**: While outposts provide maximum control over the scanning environment, cloud scan mode is the recommended default for most organizations. For details, see [When to choose outpost scan](../outpost-fundamentals-and-planning#when-to-choose-outpost-scan).
+{% endhint %}
+
+Creating an outpost comprises the following phases:
+
+{% stepper %}
+{% step %}
+### Phase 1: Planning
+
+Determine if an outpost infrastructure meets your security needs.
+
+Review [Outpost fundamentals and planning](outpost-fundamentals-and-planning) to determine your outpost configuration.
+{% endstep %}
+
+{% step %}
+### Phase 2: Creating the outpost
+
+Create your outpost running the outpost creation wizard in Cortex XSIAM to create an outpost authentication Terraform template. This template establishes trust with the CSP and grant the necessary permissions to Cortex XSIAM.
+
+At this stage, the outpost is in **Pending** status.
+{% endstep %}
+
+{% step %}
+### Phase 3: Deploying the outpost
+
+Deploy your outpost by executing a Terraform template in the CSP.
+
+At this stage, the outpost is still in **Pending** status.
+{% endstep %}
+
+{% step %}
+### Phase 4: Onboarding the CSP
+
+Run (or resume) the CSP onboarding wizard in Cortex to generate an authentication template for the relevant CSP.
+
+* [Onboard Amazon Web Services (AWS)](../amazon-web-services-cloud-onboarding/onboard-amazon-web-services)
+* [Onboard Microsoft Azure](../microsoft-azure-cloud-onboarding/onboard-microsoft-azure)
+* [Onboard Google Cloud Platform (GCP)](../google-cloud-platform-cloud-onboarding/onboard-google-cloud-platform)
+
+Execute the authentication template in the CSP to onboard and ingest its data sources, using the outpost you created.
+
+At this stage, the outpost is in **Connected** status.
+{% endstep %}
+{% endstepper %}

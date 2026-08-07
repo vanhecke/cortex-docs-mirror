@@ -1,0 +1,25 @@
+---
+description: "Create playbooks in the UI with the Playbook Editor to automate complex workflows in\_Cortex XSIAM without requiring complicated coding. Add the playbook to a content pack."
+---
+
+# Playbooks
+
+Playbooks are a series of tasks, conditions, scripts, conditions, commands, and loops that run in a predefined flow to save time and improve efficiency and results of the investigation and response process.
+
+Playbooks enable you to automate complex workflows in Cortex XSIAM without requiring complicated coding, and they are created and edited directly in the UI via the Playbook Editor. For more information, see [Playbooks](https://app.gitbook.com/s/AEIjuYE3RXcIfmuQnBbm/).
+
+After the playbook is complete, it can be downloaded and added to a content pack for submission.
+
+Playbooks can be triggered by:
+
+*   Alerts
+
+    Playbooks can run on incoming alerts automatically per alert type. Consider whether you need to create a new alert type as part of your content pack.
+
+    You can add a playbook trigger to run a specific playbook for an alert with specific characteristics. For example, you can set a condition for a specific playbook to run based on the alert source, severity, or MITRE TTP. For more information, see Playbook triggers.
+*   Indicator queries
+
+    TIM playbooks can run based on indicator queries. Determine what indicator query (for example, all IP indicators retrieved from a particular feed) should be used.
+*   Sub-playbooks
+
+    A parent playbook can invoke a sub-playbook. If you use sub-playbooks, consider what inputs and outputs your playbook should support and determine the default values. See the Cortex XSIAM **Playbook Design Guide** for more details.

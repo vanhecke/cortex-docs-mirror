@@ -1,0 +1,37 @@
+# Step 2. Create a child tenant
+
+After setting up the main account, you can create child tenants in Cortex Gateway. You can create as many child tenants as you require, subject to your license.
+
+* The main account is labeled in Cortex Gateway, but child tenants are not labeled.
+* Cortex enables parent-child pairing between tenants located in different geographical regions. To enable this capability, contact your support team.
+* To create a child tenant, ensure that you have Account Admin permissions.
+
+In Cortex Gateway, you can view all the available tenants. If you want to create more child tenants than your license permits, contact Customer Support.
+
+1. In the Cortex Gateway, hover over the main account you activated previously until the three-dot menu appears and click Add Child Tenant.
+2.  Add the following details:
+
+    | Parameter              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+    | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+    | Child Tenant Name      | <p>Give the Cortex XSIAM tenant an easily recognizable name.</p><p>Choose a name that is 59 or fewer characters and is unique across your company account.</p>                                                                                                                                                                                                                                                                                                     |
+    | Region                 | View the region for the child tenant.                                                                                                                                                                                                                                                                                                                                                                                                                              |
+    | Child Tenant Subdomain | <p>Give your Cortex XSIAM instance an easy-to-recognize name that is used to access the tenant directly using the full URL.</p><p>https://&#x3C;subdomain>.crtx.&#x3C;region>.paloaltonetworks.com</p><p>This is a public FQDN, so be careful with sensitive information such as the company name.</p><p>After activating a child tenant, you can only change the child tenant subdomain once.</p>                                                                 |
+    | Child Units Allocation | <p>Assign the number of employees and Gigabytes you want to allocate to this child tenant. The amount used and the total amount available to this multi-tenant environment are displayed.</p><p>Ensure that you meet the <a href="https://docs-cortex.paloaltonetworks.com/r/5CAbsl8idaK8R43ZLhoTOw/bKQnG2ZF4IN0_h1SsvPwqg?section=UUID-f8450665-a710-7ec2-d40a-7f15349ac119_section-idm234529819989674">minimum requirements</a> for child tenant allocation.</p> |
+    | Add Ons                | If any license add-ons were purchased with your multi-tenant license, they are listed here. If you acquired compute units (CU) or forensics, you can allocate how many units to allocate to this child tenant.                                                                                                                                                                                                                                                     |
+3.  Confirm approval of the terms and conditions of the privacy policy and click Activate.
+
+    Activation can take up to an hour. You should receive notification by email that the child tenant has completed the activation process.
+4.  (Optional) Add another child tenant by repeating steps 1 and 2 or access your newly created tenant.
+
+    In the Cortex Gateway, under your main account, you can see the total number of tenants you are licensed for and how many you have created.
+
+    If you reach your limit for child tenants, depending on your license, you may be able to create more tenants. You may be charged for additional tenants. Contact Customer Support if you are approaching your authorized limit.
+
+**Child tenant minimum allocations**
+
+The following are the minimum number of endpoints , employees and Gigabytes needed in a child tenant. You will not be able to create a child tenant with less than these minimum allocations, nor will you be able to edit your child tenant allocations to have less than these minimum allocations.
+
+| Multi-tenant environment | Child tenant minimum allocation |
+| ------------------------ | ------------------------------- |
+| MSSP multi-tenant        | 100 employees AND 50 Gigabytes. |
+| Enterprise multi-tenant  | 100 employees AND 50 Gigabytes. |

@@ -1,0 +1,272 @@
+# Manage user scope
+
+{% hint style="warning" %}
+### Prerequisite
+
+* Configuring user scopes in Cortex XSIAM Access Management requires **View/Edit** RBAC permissions for **Access Management** (under **Configurations**). Account Admin and Instance Administrator roles are granted this permission by default. For more information, see _Predefined user roles_ in [Set up users and roles](../../deployment-steps/set-up-users-and-roles).
+* By default, **Enable Scope Based Access Control** is disabled in Settings → Configurations → General → **Server Settings**, and granular scoping is not enforced. Before enabling SBAC, we recommend that you first ensure that the users, user groups, and API Keys defined in Cortex XSIAM are granted the required access by assigning the relevant scopes.
+{% endhint %}
+
+Review the following topics:
+
+* Set up users and roles
+* User group management
+* Assign user roles and groups
+* Manage user roles and access management
+
+### What is SBAC?
+
+Cortex XSIAM enables you to use Scope-Based Access Control (SBAC) in combination with Role-Based Access Control (RBAC) to define precise access controls according to your organization's security policies. While RBAC defines what a role can access and the actions that can be performed, SBAC determines the specific data and content displayed when accessing these areas and performing those actions.
+
+Users with **Access Management** permission apply scopes to limit the data and content that users can be granted access to in Cortex XSIAM, which are divided into different scoping areas. The scoping areas include Assets, Cases and Issues, Endpoints, and Datasets Rows, which can be applied as relevant to the enforcement area, entity, or dataset. For example, an Investigator role might have access to asset information based on the RBAC permissions, but the SBAC granular scoping configuration could limit that investigator's view and control to only assets within a particular scoping area. This hybrid approach ensures scalability and granular control, significantly strengthening system security by ensuring only authorized users are granted access to the relevant data that the user requires for their designated role.
+
+Granular scoping for all scoping areas is configured in users, user groups, or API Keys according to the designated user role. Users are granted granular scoping access based on the user role assigned to them, either in a user group or directly.
+
+### Things to consider before configuring SBAC
+
+Before you begin setting up Scope-Based Access Control (SBAC) granular scoping, consider the following information:
+
+* SBAC is disabled by default, which means that users have access to all content and data in the areas they have access to according to the RBAC permissions defined in their role.
+* To best address Cases that span across all scopes, we recommend that there always be designated users with full access to all cases, issues, assets, and findings.
+* Some areas and features in Cortex XSIAM do not comply with SBAC. In these cases, use RBAC permissions to restrict access. For more information, see [Functional areas that respect and don't respect SBAC](#functional-areas-that-respect-and-dont-respect-sbac).
+* Respecting SBAC has some performance overhead in the following areas:
+  * When opening the Cases, Issues, Findings, and Assets tables, which can take more time.
+  * When defining a filter for access row-level scoping on raw datasets, the more complex the filter is, the greater the performance overhead. For optimal performance, we recommend using a single field in the scope definition and simple comparison operators.
+* In Reports, SBAC applies when a report is manually generated. Scheduled reports run in the scope of the user who created or last updated the report template. Be aware that once a report is generated, it can be shared with others; exercise caution when distributing reports, as recipients might not be authorized to view the data they contain.
+* Be aware that even with scoped access to dataset rows applied, users can still indirectly access unauthorized dataset rows through dataset views and correlation rules. You can prevent this by ensuring that users don't have access to these dataset views and are unable to write correlation rules based on these datasets by enabling dataset access management for the relevant user roles and limiting access to the applicable datasets. You may also want to consider not allowing these dataset-scoped users to write correlation rules, which we recommend as a best practice. For more information on how to set dataset access permissions, see [Manage user roles](manage-user-roles).
+
+### Understand scoping
+
+**Scoping areas**
+
+User Groups, Users, and API Keys can be scoped according to the following scoping areas:
+
+*   **Assets**: Provides access to the assets associated with asset groups, and enables you to access their related cases, issues, and findings. When using asset groups, you can limit access based only on this list of attributes: Asset Class, Category, Provider, Region, Organization, Account Name, Realm, Business Application Names, Kubernetes Cluster, Kubernetes Namespace, Code Repository, and Asset Tags.
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>Use the existing Realm attribute whenever you need to scope based on the Account ID.</p></div>
+
+    * When you create or edit an Asset Group, the changes are applied immediately to new assets and to existing assets that have been updated. Yet, it can take a few hours for the changes to appear on existing assets that have not been updated.
+* **Cases and Issues**: Provides access to domains to view their related cases and issues.
+*   **Endpoints**: Applies scoping on an endpoint as an entity and provides access to **Endpoint Groups** and **Endpoint Tags** to view their related agent management and enterprise policies.
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>This configuration can impact the visibility of the related <strong>Security</strong> domain in the <strong>Cases and Issues</strong> scope area, but will not affect asset visibility.</p></div>
+* **Datasets Rows**: Enables row-level scoping on raw datasets. This granular control directly affects product areas accessing these rows, such as Cortex Query Language (XQL) dataset queries and custom dashboard widgets. The datasets listed are a subset of datasets, determined by your assigned role, where you can configure row-level access for users. To grant access to specific dataset rows, you must configure a filter to explicitly define the allowable rows. When configuring this filter, you can encounter different scenarios. For more information, see [Scenarios related to Datasets Rows scoping](#scenarios-related-to-datasets-rows-scoping).
+
+{% hint style="info" %}
+**Note**
+
+Access to the `asset_groups` dataset is managed through **Dataset Access Management** permissions within the user role.
+{% endhint %}
+
+**Scoping Behaviors**
+
+* When applicable, all conditions must be met to apply the scope configuration. For example, an issue with an affected asset is accessible only if the asset is in scope and the issue's domain is in scope. Similarly, a Case with multiple issues, where some have affected assets and others have affected endpoints, will be inaccessible if the Endpoint condition is set to 'No Endpoints,' even if the affected assets satisfy the Assets condition.
+* If only a subset of affected assets, endpoints, or issue domains are within a user's scope, the user can still view the full list of all items within a Case they have access to. While items outside of their scope remain visible in the list, the user cannot access further details or open the specific cards for those out-of-scope assets, endpoints, or issues.
+* Cases and Issues of deleted assets do not have affected assets and so are not affected by asset-led SBAC or Endpoints.
+* The behavior of cases and issues with affected endpoints depends on the **Endpoint Scoping mode**.
+* XQL queries that use the `cases` and `issues` datasets respect both **Assets** and **Cases and Issues** scoping configurations.
+* Scoping of Datasets Rows is performed in addition to user permissions to access the dataset.
+* Row-level scoping is only supported on raw datasets. This granular scoping directly affects product areas accessing these rows, including XQL dataset queries and custom dashboard widgets.
+*   When a user's SBAC permissions change for a given dataset by updating the filter, queries executed before the change will retain and display their original results in the Query Center.
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>Whenever a user's SBAC permissions are changed, Cortex XSIAM logs this event in the audit logs (<strong>Settings</strong> → <strong>Management Audit Logs</strong>). These monitored activity events are found on the <strong>Management Audit Logs</strong> table by filtering the <strong>Type</strong> column by <strong>Permissions</strong> and <strong>Subtype</strong> column by <strong>Scope Edit</strong>.</p></div>
+* While users with row-level dataset scoping can view other users' queries in the Query Center, they are prevented from viewing the corresponding query results.
+
+### Functional areas that respect and don't respect SBAC
+
+It is important to review both the functional areas and features in Cortex XSIAM that are respected and not fully respected so you can decide what actions to take in your tenant.
+
+**Functional areas respected**
+
+Scope-Based Access Control (SBAC) applies to the following functional areas in Cortex XSIAM:
+
+{% hint style="info" %}
+### Important
+
+Some areas and features in Cortex XSIAM do not respect SBAC. In these cases, use RBAC permissions to restrict access.
+{% endhint %}
+
+| Functional Area                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Related scoping area                                                                                                   |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Cases, Issues, Findings, and Assets tables | View and manage cases, issues, findings, and assets, and take actions in these tables.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | <ul><li><strong>Assets</strong></li><li><strong>Cases and Issues</strong></li><li><strong>Endpoints</strong></li></ul> |
+| Dashboard and Reports                      | <p>Scoping takes place only on the following:</p><ul><li>XQL-related widgets based on XQL queries that use the <code>cases</code>, <code>issues</code>, <code>findings</code>, and <code>asset_inventory</code> datasets, and respect only the <strong>Assets</strong> scoping area configurations.</li><li>Agent-related widgets.</li></ul><div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>XQL-based dashboard widgets may require a few hours to initially reflect changes to the list or definitions of asset groups used for scoping. To view the most current data immediately, refresh the dashboard or its XQL widgets.</p></div> | <ul><li><strong>Assets</strong></li><li><strong>Cases and Issues</strong></li><li><strong>Endpoints</strong></li></ul> |
+| Public APIs                                | Public APIs that access Cases, Issues, Findings, and Assets information respect Scope-Based Access Control (SBAC).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | <ul><li><strong>Assets</strong></li><li><strong>Cases and Issues</strong></li></ul>                                    |
+| Cortex Query Language (XQL)                | <p>When using XQL with <code>cases</code>, <code>issues</code>, <code>findings</code>, and <code>asset_inventory</code> datasets, keep in the mind the following:</p><ul><li>XQL respects asset-led SBAC and the <strong>Cases and Issues</strong> scoping configuration.</li><li>These scoping controls are enforced across all XQL-based features, including XQL queries and dashboard widgets.</li><li><div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>XQL queries for cases and issues do not respect the <strong>Endpoints</strong> scoping area configurations.</p></div></li></ul>                                                | **Assets**                                                                                                             |
+| Endpoint Administration table              | View endpoints and take actions on endpoints.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | **Endpoints**                                                                                                          |
+| Policy Management                          | Create and edit Prevention policies and profiles, Extension policies and profiles, and global and device Exceptions that are within the scope of the user.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | **Endpoints**                                                                                                          |
+| Action Center                              | View and take actions only on endpoints that are within the scope of the user.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | **Endpoints**                                                                                                          |
+| Identity Security                          | View and manage identity assets, permissions, and issues that are within the scope of the user.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | <ul><li><strong>Assets</strong></li><li><strong>Cases and Issues</strong></li></ul>                                    |
+| Cloud Workload Policies                    | View Cloud Workload Policies when user access is scoped to any of the available options: **All assets**, **No assets**, or **Select asset groups**. When no SBAC restriction is applied, the user’s access is determined solely by their RBAC permissions. For more information, see Cloud Workload Policies and Rules.                                                                                                                                                                                                                                                                                                                                                                                    | **Assets**                                                                                                             |
+| Graph Search                               | Safely explore your environment in Graph Search with precise permission management. Assign users to User Groups and Asset Groups, ensuring they only see authorized graph nodes and relationships.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | **Assets**                                                                                                             |
+| Access to datasets                         | Row-level scoping is only supported on raw datasets. This granular scoping directly affects product areas accessing these rows, including XQL dataset queries and custom dashboard widgets.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | **Datasets Rows**                                                                                                      |
+
+**SBAC not fully respected functional areas**
+
+Ensure that you review the points below that explain the main functional areas with limitations with respecting SBAC, so you can decide how to handle this in your tenant. A suggested action is provided when applicable.
+
+* Access to datasets:
+  * Access to the `alerts` and `incidents` datasets does not support SBAC. As a result, consider limiting users from accessing these datasets by excluding access to the datasets mentioned above using Dataset Views, and only enable access to `cases` and `issues` datasets that respect SBAC.
+  * Access to the endpoints dataset via XQL does not respect endpoint-led SBAC. In this case, use RBAC permissions to restrict access to the endpoints dataset and permit access only to users who can see information for all agents.
+  * Row-level scoping is only supported on raw datasets and no other dataset types, including in XQL queries and custom dashboard widgets. For these datasets that are not in the scope, all rows are available.
+  * When defining the `filter` for row-level scoping on raw datasets, queries based on the Cortex Data Model (XDM) aren't supported. XDM queries return specific rows only when **All rows are accessible** is selected when no `filter` is defined in the Datasets Rows scoping area. Otherwise, no rows are returned.
+* Dataset Views: Be aware that even with scoped access to dataset rows applied, users can still indirectly access unauthorized dataset rows through dataset views. You can prevent this by ensuring that users don't have access to these dataset views by enabling dataset access management for the relevant user roles and limiting access to the applicable datasets. For more information on how to set dataset access permissions, see [Manage user roles](manage-user-roles).
+* Correlation Rules: Be aware that even with scoped access to dataset rows applied, users can still indirectly access unauthorized dataset rows through correlation rules. You can prevent this by ensuring that users are unable to write correlation rules based on these datasets by enabling dataset access management for the relevant user roles, and limiting access to the applicable datasets. You may also want to consider not allowing these dataset-scoped users to write correlation rules, which we recommend as a best practice. For more information on how to set dataset access permissions, see [Manage user roles](manage-user-roles).
+* Automation Rules: Automation rules are executed using the full system scope. Users authorized to edit or run automation rules can configure the system to run scripts or playbooks that can interact with data across the entire system. It is recommended to allow users with full access to all assets to create and edit automation rules.
+* Command Centers: Aggregate numbers in Command Centers can also sum up data that is not in the user scope. When pivoting from Command Centers to the Cases, Issues, Findings, and Assets tables, these tables do respect SBAC. We recommend limiting the users who access Command Centers, and these users should be granted a broader scope. For all other users, disable access in RBAC settings (**Dashboards & Reports** → **Command Center Dashboards**).
+*   Host Inventory
+
+    We recommend disabling access in RBAC settings (**Investigation & Response** → **Search** → **Host Insights**).
+*   Timeline widget
+
+    As a workaround, you can disable access through RBAC permissions by disabling Dashboards (**Dashboards & Reports** → **Dashboards**).
+* Notification Center
+* Agent Installation widget: This widget is not available for scoped users.
+* Drop-downs of cases and issues domains: Drop-downs of these domains display all domains.
+* Asset Group visibility in filters: Similar to domains, all Asset Groups are available for selection in filters across Cortex XSIAM, regardless of which specific Asset Groups are used for scoping a user. While SBAC limits the data (assets) a user can view, it does not restrict the visibility of the names of the Asset Groups themselves in filter drop-down menus.
+*   KSPM dashboard: Users can access all information on the dashboard when their user access is scoped to view **All assets** or assigned to the Instance Administrator role. Otherwise, users with granular scoping set to **No assets** or **Select asset groups** will have limited access to the dashboard.
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>This feature is included with a Cortex XSIAM Premium, Enterprise, and NG-SIEM licenses.</p></div>
+* Cloud Workload Policies: Users with SBAC granular scoping (in addition to the RBAC permissions required for Cloud Workload Policies) can only view Cloud Workload Policies when their access is scoped to any of the available options: **All assets**, **No assets**, or **Select asset groups**. When no SBAC restriction is applied, the user’s access is determined solely by their RBAC permissions. As a result, if you want users to be able to edit and modify Cloud Workload Policies, use the RBAC permissions. For more information on Cloud Workload Policies, see Cloud Workload Policies and Rules.
+
+### Scenarios related to Datasets Rows scoping
+
+When configuring row-level scoping on raw datasets, you can encounter different scenarios. It's important to understand how best to handle these scenarios and what are the recommended best practices.
+
+**Scenario 1: Data sources with multiple instances**
+
+When integrating data from multiple sources, as a best practice, name each data source instance using a descriptive and consistent convention. This naming should clearly reflect the teams/groups that require access to the data through that specific instance, and the same naming value should be maintained across different sources when applicable. For example, use names like `business_unit_x` or `subsidiary_y`. Adopting this convention across all data sources simplifies the process of writing filters for each `_raw` dataset using the `_collector_name` field.
+
+**Scenario 2: Dataset schemas without \_collector\_name**
+
+When data is ingested from a source like a Broker VM or agent, the dataset schema may not include the `_collector_name` field. In this scenario, use the other fields that are supported to define your filter. For more information on the fields supported, see _Supported syntax_ in Step 3 of [How to configure granular scoping](#how-to-configure-granular-scoping) of the table for Datasets Rows.
+
+**Scenario 3: Supported fields don't provide the necessary segmentation**
+
+Sometimes, when trying to configure a filter to define the specific subset of rows a user is allowed to access in each raw dataset, the supported fields don't provide the necessary segmentation that you are looking for. In this case, define a `_scope` field in an `[INGEST]` section of the Parsing Rules for the applicable dataset ingesting data. The `_scope` field is added to the dataset columns, so that each row is imprinted during ingestion or parsing time with the `_scope` value. You can then use this `_scope` field in the filter. For more information on the fields supported, see _Supported syntax_ in Step 3 of [How to configure granular scoping](#how-to-configure-granular-scoping) of the table for Datasets Rows.
+
+**Scenario 4: Only a few datasets need to be segmented**
+
+When only a few datasets need to be segmented, as you want users to have full access to the other datasets, configure the datasets to grant access to all rows by default when no filter is defined. This is set in the **Datasets Rows** scoping area by configuring the When no filter is defined option to **All rows are accessible**. You can then define filters only for the few datasets that need scoping.
+
+**Scenario 5: Scoped users with Access Management permission**
+
+Consider this scenario for scoped users with Access Management permission:
+
+When a user (non-administrator) with Access Management permission (User A) attempts to define row-level scoping for another user (User B), an issue can arise. User A can only see and configure SBAC filters for datasets that both User A and User B currently have access permissions (RBAC) to. Any datasets that User B can access, but User A cannot, will not appear for User A when defining access for User B.
+
+To avoid these possible scenarios, we recommend that users with access management permissions be granted full RBAC permissions to the complete superset of datasets for the other users to whom they're meant to apply row-level scoping. This ensures that users setting row-level scoping see the complete list of datasets they are authorized to scope.
+
+### How to configure granular scoping
+
+Granular scoping is configured in users, user groups, or API keys, and applied to the user roles assigned. Users are then granted granular scoping access according to the user roles assigned to them in a user group or directly. The instructions below explain how to configure granular scoping according to Palo Alto Networks best practices.
+
+Granular scoping is disabled and not enforced in Cortex XSIAM by default. Before enabling SBAC, we recommend that an administrator or a user with **Access Management** permissions first ensure that the users, user groups, and API Keys defined in Cortex XSIAM are granted the required access by assigning the relevant scopes. This user can then assign a scoping area to a Cortex XSIAM user (non-administrator), so the non-administrator user can manage only the specific scoping areas that are predefined within that scope.
+
+Any changes made to the granular scoping of a user, user group, or API key are recorded on the **Management Audit Logs** page (**Settings** → **Management Audit Logs**). These events are categorized with the **Type** set to **Permissions** and the **Subtype** set to **Scope Edit**.
+
+{% hint style="info" %}
+### Note
+
+Make sure to assign the required default granular scoping for users. This depends on the structure and divisions within your organization and the particular purpose of each organizational unit to which scoped users belong.
+{% endhint %}
+
+1. Ensure that you have the necessary administrator-level permissions.
+2. Verify that the users, user groups, and API keys defined in Cortex XSIAM are assigned the relevant scopes.
+   * To verify the granular scoping of a user, select **Settings** → **Configurations** → **Access Management** → **Users**, right-click the user name, and select **Edit User Permissions**.
+   * To verify the granular scoping of a user group, select **Settings** → **Configurations** → **Access Management** → **User Groups**, right-click the user group, and select **Edit Group**.
+   * To verify the granular scoping of an API key, select **Settings** → **Configurations** → **Integrations** → **API Keys**, right-click the API key, and select **Edit**.
+3.  In the **Scope** tab, expand the scoping areas to review the current granular scoping definitions by clicking the chevron icon (**>**) beside the scoping area title, and make any changes required. The following table explains the options available to configure:
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Important</h3><p>Before configuring, ensure that you review the <a href="#UUID-071cdbb6-6c6a-6afe-3a67-1fa79991a0a8_section-idm235041053079477">Understand scoping</a> section.</p></div>
+
+    **Assets**
+
+    Set the **Scope** by selecting one of the following:
+
+    * **No assets**: No asset is accessible.
+    * **All assets**: Defines access to all assets.
+    * **Select asset groups**: Defines access to the specific assets associated with the Asset Groups selected, and to view all their related cases, issues, and findings for these specific assets and Asset Groups. Under **Select asset groups**, define the specific asset groups that you want to grant access. Only Asset Groups relevant for scoping are listed, which are asset groups that are using only the asset attributes listed in Manage user scope (under **Understand scoping** → **Scoping Areas** → **Assets**).
+
+    The scoping of assets also affects the scoping of cases, issues, and findings.
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>Visibility of Security domain Issues that refer to assets with agents is controlled by the <strong>Endpoints</strong> scoping configuration.</p></div>
+
+    **Cases and Issues**
+
+    Set the **Scope** by selecting one of the following:
+
+    * **No cases and issues**: Defines access to no cases and issues.
+    * **All cases and issues**: Defines access to all cases and issues. Users can view cases or issues referencing assets within their scope. Use the **Assets** section to define which assets are in scope.
+    *   **Select domains**: Defines access to the domains selected to view their related cases and issues. Under **Select domains**, define the specific domains that you want to grant access.
+
+        Users can only view cases or issues referencing assets and endpoints within their scope. Use the **Assets** section to define which assets are in scope.
+
+    When selecting **All cases and issues** or **Select domains**, you can separately configure access to issues and cases that lack an asset reference or where the referenced asset is not in **All Assets** and **All Endpoints** inventories. To provide access, select the **Allow access to cases and issues that are not referencing known assets or endpoints** checkbox. Once selected, you can specifically control which users have access to issues and cases that lack **Affected Assets** (as seen in the issue’s panel) and **Assets** (as seen in the case's panel), or where the listed assets are not part of the Asset or Endpoint inventories. When the assets listed are not part of the inventories, the asset string is typically non-clickable. In some cases, such as for identity-related issues, assets may open a dedicated **User Risk View**, which differs from the standard inventories panels. In the **Issues** and **Cases** tables, such items can be identified by empty values in the following columns: Asset IDs, Target Agent Identifier, and Source Agent Identifier.
+
+    **Endpoints**
+
+    Set the **Scope** by selecting one of the following:
+
+    * **No endpoints**: Defines access to no endpoints with no ability to view their related agent management and enterprise policies.
+    * **All endpoints**: Defines access to all endpoints with the ability to view their related agent management and enterprise policies. This configuration can impact the visibility of related **Security** domain **Cases and Issues**, but will not affect asset visibility.
+    * **Select specific (at least one required)**: Defines specific access to all endpoint groups by selecting **Endpoint Groups** or all endpoint tags by selecting **Endpoint Tags** to view their related agent management and enterprise policies. This configuration can impact the visibility of related **Security** domain **Cases and Issues**, but will not affect asset visibility.
+
+    **Dataset rows**
+
+    Follow these steps to configure a `filter`:
+
+    Configure a `filter` to define the specific subset of rows a user is allowed to access in each raw dataset. A raw dataset is every dataset where Palo Alto Networks data is ingested out-of-the-box or third-party data is ingested using a configured dedicated collector, also called a data source. This filter configuration does not impact the visibility of cases and issues.<br>
+
+    1.  For datasets where no `filter` is defined, determine how to set the When no filter is defined option as either:
+
+        * No rows are accessible (default): Without a configured `filter`, no rows are accessible. Users can query the datasets in Cortex Query Language (XQL) as they have access, but the results will be empty.
+        * All rows are accessible: Without a configured `filter`, all rows are accessible. Users can query the datasets in Cortex Query Language (XQL) as they have access, and view all results.
+
+        Note: When defining a filter for row-level scoping on raw datasets, queries based on the Cortex Data Model (XDM) are not supported. XDM queries return specific rows only when All rows are accessible is selected and no filter is defined in the Datasets Rows scoping area. Otherwise, no rows are returned.
+    2. Define any filters for the applicable datasets listed in the table:
+       1. Scroll down the list of datasets to the dataset you want to apply a `filter` on, and click the Edit Scope icon.
+       2.  In the Define what rows are accessible window, continue to write the query for the `filter` in the query box (where the syntax is a limited subset of XQL) to limit the data rows for the selected dataset according to the access permissions you want the user to have. The beginning of the query is already defined before the query box, and there is no need to include this in your query.
+
+           For optimal performance, we recommend using a single field in the `filter` definition and simple comparison operators.
+
+           **Supported syntax**
+
+           **Fields**
+
+           You can define the rest of the `filter` in the query box, where only the following system fields are supported: `_broker_device_id`, `_broker_device_ip`, `_broker_device_name`, `_collector_id`, `_collector_ip`, `_collector_name`, `_collector_type`, `_device_id`, `_final_reporting_device_ip`, `_final_reporting_device_name`, `_log_type`, `_product`, `_scope`, `_reporting_device_ip`, `_reporting_device_name`, and `_vendor`.
+
+           For more information on these fields, see the table that describes all the fields in the `metrics_source` dataset and `metrics_view` preset in [Overview of data ingestion metrics](../../../configure-cortex-xsiam/cortex-xsiam-data-sources/administration-and-troubleshooting/overview-of-data-ingestion-metrics). For more information on the `_scope` field (relevant when `_scope` is defined in the Parsing Rule), see [Scenario 3: Supported fields don't provide the necessary segmentation](#scenarios-related-to-datasets-rows-scoping).
+
+           **Comparison operators**
+
+           The following comparison operators are supported:
+
+           * Exact matches (`=`, `!=`)
+           * Comparing numerical values (`>`, `<`, `>=`, `<=`)
+           * Checking membership in lists (`in`)
+           * Querying arrays (`array_contains`)
+           * Partial matches (`contains`, `starts_with`): Using this operator has additional performance overhead, and we recommend avoiding its use.
+
+           If you only want a user to be able to access rows in the `pan_dds_raw` dataset, when the `_collector_name` is `bu2_collector` , you'd have to define the `filter` in the query box as:
+
+           ```
+           _collector_name = “bu2_collector”
+           ```
+       3. Optional) Set the Time frame for the query. The default is Last 1 day.
+       4. (Optional) You can preview the query results displayed based on your defined query by clicking Preview. You can edit your query until you're satisfied with the output. By default, the query results are limited to 1000 records.
+       5.  When you are finished, click Done.
+
+           The Scope field for the dataset that you added the filter on is updated with the query.
+
+           In the above example, the Scope field displays `_collector_name = “bu2_collector”`.
+4. Click Save.&#x20;
+5. Repeat steps 2 to 4 until you have configured all users, user groups, and API keys with the correct granular scoping access.&#x20;
+6.  Enable granular scoping in Cortex XSIAM.
+
+    1. Select Settings → Configurations → General → Server Settings, and select the Enable Scope-Based Access Control toggle.
+    2. (Optional) You can select the Endpoint Scoping Mode, which is defined per tenant:
+       * Permissive: Enables users with at least one scope tag to access the relevant entity with that same tag.
+       * Restrictive: Users must have all the scoped tags that are tagged within the relevant entity of the system.
+    3. Click Save.
+
+    When you are finished, all the users in Cortex XSIAM are now able to use Cortex XSIAM only within the granular scoping granted according to their assigned user roles.

@@ -1,0 +1,137 @@
+---
+description: Learn more about the Cortex Data Lake tier.
+---
+
+# Configure Cortex Data Lake tier
+
+{% hint style="info" %}
+The Cortex Data Lake tier is an optional add-on available only with an active Cortex XSIAM NG SIEM, Cortex XSIAM Enterprise, or Cortex XSIAM Premium license.
+{% endhint %}
+
+{% hint style="warning" %}
+### Prerequisite
+
+* **Permissions**: Requires **View/Edit** RBAC permissions for **Data Management** (under **Configurations** → **Data Management**), the same permissions used for Dataset Management, parsing rules, data model rules, and event forwarding.
+* **Minimum Ingestion**: Requires a minimum of 50 GB/day for the Data Lake tier, provided the mandatory 100 GB/day Analytics tier minimum is met.
+{% endhint %}
+
+The Cortex Data Lake tier provides a cost-effective alternative for ingesting high-volume data that isn't required for real time security detection. While the Analytics tier is intended for real-time security and detection, the Cortex Data Lake tier allows you to maintain full visibility and searchability using Cortex Query Language (XQL) at a significantly lower cost.
+
+<details>
+
+<summary>Unified monitoring</summary>
+
+Once data is collected into the Cortex Data Lake tier, it is automatically available on the Data Ingestion dashboard. To provide a unified view of your ingestion health, the dashboard displays a **Data Lake Daily Consumption** section positioned directly beside the **Analytics Daily Consumption** section. This allows you to monitor and compare ingestion rates across both ingestion tiers in real time.
+
+</details>
+
+<details>
+
+<summary>Key capabilities and billing</summary>
+
+The following capabilities are in-scope for the Cortex Data Lake tier. Pay attention to the ones that are billed using Compute Units (CU). Several capabilities that were previously free-of-charge now consume CU.
+
+{% hint style="info" %}
+### Note
+
+Any "mixed tier" query (a query involving at least one Data Lake dataset) results in a full CU charge.
+{% endhint %}
+
+| Capability                                      | Consumption Model                                                                                                                                                                                                       | Charging Status        |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| Dashboards & Reports                            | CU                                                                                                                                                                                                                      | Charged now            |
+| Playbooks and Automations                       | CU                                                                                                                                                                                                                      | Charged now            |
+| Public API (PAPI)                               | CU                                                                                                                                                                                                                      | Charged now            |
+| Queries & scheduled queries                     | CU                                                                                                                                                                                                                      | Charged now            |
+| Correlation rules & scheduled correlation rules | CU                                                                                                                                                                                                                      | Charging in the future |
+| BIOCs                                           | CU                                                                                                                                                                                                                      | Charging in the future |
+| Retention (hot & cold)                          | <p>Calculated based on the standard Analytics tier retention rates.</p><p>Retention costs for Cortex Data Lake datasets follow the same pricing and licensing model as your existing Analytics tier data ingestion.</p> | Standard license       |
+| Egress (Event forwarding)                       | <p>Calculated based on the standard Analytics tier retention rates.</p><p>Event forwarding costs for Cortex Data Lake datasets follow the same pricing and licensing model as Analytics tier datasets.</p>              | Standard license       |
+
+</details>
+
+<details>
+
+<summary>Tier comparison table</summary>
+
+The following table highlights the differences in functionality between the Analytics Tier and the Cortex Data Lake Tier:
+
+| Feature                                               | Analytics Tier                                                                   | Cortex Data Lake Tier                                                                   |
+| ----------------------------------------------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| **Pricing model**                                     | Standard                                                                         | Significantly cheaper                                                                   |
+| **Licensing requirement**                             | Mandatory. A minimum Analytics license is required for all Cortex XSIAM tenants. | Optional add-on. Can be added to any tenant that meets the mandatory Analytics minimum. |
+| **Minimum ingestion**                                 | 100 GB / day                                                                     | 50 GB / day                                                                             |
+| **XDM normalization**                                 | Out-of-the-box and user-defined                                                  | X                                                                                       |
+| **XQL queries and scheduled queries**                 | ✓                                                                                | ✓                                                                                       |
+| **Correlation rules and scheduled correlation rules** | ✓                                                                                | ✓                                                                                       |
+| **Dashboards and reports**                            | ✓                                                                                | ✓                                                                                       |
+| **Retention (Hot/Cold)**                              | ✓                                                                                | ✓                                                                                       |
+| **Detections (Analytics)**                            | ✓                                                                                | X\*                                                                                     |
+| **Stitching and enrichments**                         | ✓                                                                                | X\*                                                                                     |
+
+\***Note**: Currently, specific data sources ingested into the Cortex Data Lake tier are normalized into "stories" and receive analytics-like capabilities, including detections, stitching, and enrichments. Be aware that this is a temporary configuration and these capabilities are planned for removal from the Cortex Data Lake tier in a future update.
+
+</details>
+
+<details>
+
+<summary>Important considerations</summary>
+
+Keep the following in mind regarding data visibility, exclusions, and limitations:
+
+* **Excluded datasets**: Fundamental datasets, such as Cortex Agent and Palo Alto Networks NGFW, are currently optimized for the Analytics tier and are excluded from the Cortex Data Lake tier.
+* **Dataset identification**: For customers who have purchased the Data Lake SKU, a **Tier** column is added to the Dataset Management table to identify datasets as **Analytics** or **Data lake**.
+*   **Detection and stitching**: Real-time Analytics (detections), stitching, and certain enrichments are currently out of scope for data in the Cortex Data Lake tier.
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>Currently, specific data sources receive these capabilities temporarily; yet, be aware that these will be completely removed from the Cortex Data Lake tier in a future update.</p></div>
+* **Reversibility**: You can switch between tiers at any time. However, the configuration applies only to data ingested after the parsing rule is saved. Moving existing data from the Analytics tier to the Data Lake tier (or vice versa) is not supported.
+* **Configuration path**: Currently, the Cortex Data Lake tier is configured exclusively using parsing rules.
+
+</details>
+
+<details>
+
+<summary>License visibility</summary>
+
+You can view details about your Cortex XSIAM licenses and retention add-ons in the user interface by selecting **Settings** → **Cortex XSIAM License**.
+
+The **Data Collection** section is where you can view the specific daily GB ingestion limits allocated for both the Analytics and Data Lake tiers.
+
+* **Consolidated view**: Displayed directly above the **Data Collection** text, the top-level GB count shows the sum of all GB types (Analytics and Data Lake).
+* **Data Collection breakdown**: Located under the **Data Collection** text, you can select **License Details** to expand the view. This displays a row for each specific GB type, such as "100 GB Analytics" and "50 GB Data Lake".
+
+</details>
+
+<details>
+
+<summary>How to configure a dataset for the Cortex Data Lake tier</summary>
+
+You configure the Cortex Data Lake tier for ingestion by modifying the parsing rule for your target dataset. You achieve this by disabling the `[INGEST]` section that defines the dataset currently using the Analytics tier and enabling a new `[INGEST]` section to route that same data into a different dataset for the Cortex Data Lake tier. This process is managed through a pivot (right-click) option within the Parsing Rules editor that automatically generates the necessary rule logic.
+
+1.  Navigate to the parsing rules editor.
+
+    Select **Settings** → **Configurations** → **Data Management** → **Parsing Rules**, and open the **Both** tab.
+2.  Change tier to data lake.
+
+    Under **Default rules**, right-click the `[INGEST]` rule for your target dataset, and select **Change Tier to Data Lake**.
+
+    * Cortex XSIAM automatically generates the necessary rule logic by disabling the default rule and creating a new Data Lake rule in the **User defined rules** section.
+    * The parameter `tier=lake` is added.
+    * An `_lake_raw` suffix is added to the target dataset name, such as `msft_azure_lake_raw`.
+
+    The rule before selecting **Change Tier to Data Lake**:
+
+    ```programlisting
+    [INGEST:vendor="Amazon", product="AWS", target_dataset="amazon_aws_raw", no_hit=drop]
+    ```
+
+    The rule after selecting **Change Tier to Data Lake**:
+
+    ```programlisting
+    [INGEST:vendor="Amazon", product="AWS", target_dataset="amazon_aws_lake_raw", no_hit=drop, tier=lake]
+    ```
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>You can always revert the rule back to use the Analytics tier by right-clicking the rule under <strong>Default rules</strong> and selecting <strong>Change Tier to Analytics</strong>. When you do this, the Data Lake rule is deleted from the <strong>User defined rules</strong> section and the default rule is enabled in the <strong>Default rules</strong> section.</p></div>
+3. Save your changes. Configurations are applied immediately to new data (processing may take several minutes). Existing data is not retroactively moved between tiers.
+
+</details>

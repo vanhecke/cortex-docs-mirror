@@ -1,0 +1,25 @@
+---
+description: Detect unrestricted east-west network access across cloud resources.
+---
+
+# East-west exposure detection
+
+CNA supports east-west exposure detection. The east-west exposure detection capability allows CNA to detect VMs that have unrestricted access across their VPC in the same cloud account. This strengthens the visibility and security of your cloud environments by providing insights on which assets can access resources on different VPCs, namespaces, and cloud accounts. You can also find out details about an asset that is exposed to the internet, such as whether that asset can establish network sessions in violation of a compliance regulation.
+
+This helps you determine which assets have potentially unrestricted access to the other internal resources, taking into account the effect of cloud native security controls, network firewalls, VPC peerings, and Kubernetes network security policies and transit gateways. This allows you to:
+
+* Visualize the complete network path of an asset from source to destination.
+* Periodically re-validate the status of an exposed asset.
+* Find the security group, Kubernetes network security policy, or firewall rule causing the exposure.
+
+**East-west exposure rules**
+
+East-west exposure rules do not have out of the box rules, but you can create custom ones. See [Create a Network Exposure Rule](../cloud-security-rules-and-policies/create-and-manage-cloud-security-rules/create-a-network-exposure-rule).
+
+**Supported asset types**
+
+CNA can detect east-west exposure in the following cloud services and asset types:
+
+| **Provider/ Service**        | **AWS**    | **Azure** | **Azure** |
+| ---------------------------- | ---------- | --------- | --------- |
+| **Managed virtual machines** | Amazon EC2 | –         | –         |

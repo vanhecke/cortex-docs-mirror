@@ -1,0 +1,98 @@
+# Forward Requests to Long-Running Integrations
+
+Some long-running integrations provide internal data via API calls to your third-party software, such as a firewall. You can set up Cortex XSIAM to allow third-party software to access long-running integrations installed either on the Cortex XSIAM tenant or on an engine.
+
+Long-running integrations provide internal data via API calls such as:
+
+| Integration                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | See More                                                                                                                                                       |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| O365 Teams (Using Graph API)      | Get authorized access to a user's Teams app in a personal or organizational account.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | [O365 Teams (Using Graph API)](https://xsoar.pan.dev/docs/reference/integrations/microsoft-graph-teams)                                                        |
+| Generic Webhook                   | Creates cases on event triggers. The trigger can be any query posted to the integration.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | [Generic Webhook](https://xsoar.pan.dev/docs/reference/integrations/generic-webhook)                                                                           |
+| Generic Export Indicators Service | <p>Use the Generic Export Indicators Service integration to provide an endpoint with a list of indicators as a service for the system indicators.</p><p>You can set up the tenant to export internal data to an endpoint.</p><div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>This integration replaces the External Dynamic list integration, which is deprecated. For more information about how to set up the integration, see <a href="../../../../detect-investigate-and-respond-to-threats/investigation-and-response/response-actions/manage-external-dynamic-lists">Manage external dynamic lists</a>.</p></div> | [Export indicators](../../../../detect-investigate-and-respond-to-threats/threat-management/threat-intel-management/indicator-configuration/export-indicators) |
+| Microsoft Teams                   | Send messages and notifications to team members.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | [Microsoft Teams](https://xsoar.pan.dev/docs/reference/integrations/microsoft-teams)                                                                           |
+| TAXII Server                      | Provides TAXII Services for system indicators (Outbound feed).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | [TAXII Server](https://xsoar.pan.dev/docs/reference/integrations/taxii-server)                                                                                 |
+| TAXII2 Server                     | Provides TAXII2 Services for system indicators (outbound feed). You can choose to use TAXII v2.0 or TAXII v2.1.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | [TAXII2 Server](https://xsoar.pan.dev/docs/reference/integrations/taxii2-server)                                                                               |
+| PingCastle                        | Listens for PingCastle XML reports.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | [PingCastle](https://xsoar.pan.dev/docs/reference/integrations/pingcastle)                                                                                     |
+| Publish List                      | Publishes Cortex XSIAM lists for external consumption.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | [Publish List](https://cortex.marketplace.pan.dev/marketplace/details/PublishList/)                                                                            |
+| Simple API Proxy                  | Provides a simple API proxy to restrict privileges or minimize the number of credentials issued at the API.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | [Simple API Proxy](https://cortex.marketplace.pan.dev/marketplace/details/SimpleAPIProxy/)                                                                     |
+| Syslog v2                         | Opens cases automatically from Syslog clients.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | [Syslog v2](https://xsoar.pan.dev/docs/reference/integrations/syslog-v2)                                                                                       |
+| Web File Repository               | Make your environment ready for testing purposes for your playbooks or automations to download files from a web server.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | [Web File Repository](https://xsoar.pan.dev/docs/reference/integrations/web-file-repository#context-output)                                                    |
+
+{% hint style="info" %}
+### Note
+
+* When running on the tenant, you can only use long-running integrations provided by Cortex XSIAM, you cannot create custom ones. Custom long-running integrations are supported only on engines at this time.
+* Configuring custom certificates or private API Keys in the long-running integration instance is supported only on engines, not on the Cortex XSIAM tenant.
+* If you have configured a range of **Approved IP Ranges** under **Allowed Sessions** on the **Security Settings** page, any incoming communication must be from approved IP addresses.
+{% endhint %}
+
+<details>
+
+<summary>Credentials</summary>
+
+For long-running integrations running on a tenant, you must set a username and password. For long-running integrations running on an engine, we strongly recommend setting a username and password, but it is not required.
+
+Users with sufficient permissions can set the username and password for specific integration instances on the **Data Sources & Integrations** page.
+
+</details>
+
+<details>
+
+<summary>Define a listening port for long-running integrations</summary>
+
+When configuring a long-running integration instance, you may need to define a listening port.
+
+*   **Integration instance running directly on a tenant**
+
+    If the long-running integration runs on the Cortex XSIAM tenant, you do not need to enter a **Listen Port** in the instance settings. The system auto-selects an unused port for the long-running integration when the instance is saved.
+*   **Integration instance running on a custom engine**
+
+    You must set the **Listen Port** for access when configuring a long-running integration instance on an engine. Use a unique port for each long-running integration instance. Do not use the same port for multiple instances.
+
+</details>
+
+<details>
+
+<summary>Test the long-running integration connection</summary>
+
+*   **Integration instance running directly on a tenant**
+
+    You can use CURL commands from any terminal to access and test the long-running integration. The string `xdr` in the URL must be replaced by `crtx` and the data URL must always be prefixed by `ext-`.
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>For the TAXII Server and TAXII2 Server integrations, the <code>xdr</code> string is automatically replaced by <code>crtx</code>. For the Microsoft Teams integration, you can use the <code>microsoft-teams-create-messaging-endpoint</code> command to get the correct messaging endpoint based on the server URL, the server version, and the instance configurations. For more information, see <a href="https://xsoar.pan.dev/docs/reference/integrations/microsoft-teams">Microsoft Teams</a>.</p></div>
+
+    Example:
+
+    **Tenant URL**: https://crtx-cnt-onr-xsiam-dran-9c0.xdr-qa2-uat.us.com
+
+    **Request URL**: https://ext-crtx-cnt-onr-xsiam-dran-9c0.crtx-qa2-uat.us.com/xsoar/instance/execute/edl\_instance\_01\q\type:ip
+
+    **CURL**: curl -v -u user:pass https://ext-crtx-cnt-onr-xsiam-dran-9c0.crtx-qa2-uat.us.com/xsoar/instance/execute/edl\_instance\_01\q\type:ip
+*   **Integration instance running on a custom engine**
+
+    You can use CURL commands from any terminal to access and test the long-running integration at the engine URL:
+
+    `http://<engine-address>:<integration listen port>/`
+
+    For example, `curl -v -u user:pass http://<engine_address>:<listen_port>/?n=50`
+
+Curl request parameters for external dynamic lists
+
+The following list of curl request parameters applies when using the **Generic Export Indicators Service** integration for external dynamic lists.
+
+| Argument | Description                                                                                                                                                             | Example                                                                                                                         |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| **`n`**  | The maximum number of entries in the output. If no value is provided, will use the value specified in the **List Size** parameter in the integration instance settings. | **`https://ext-<tenant-address>/instance/execute/<ExportIndicators_instance_name>?n=50`**                                       |
+| **`s`**  | The starting entry index from which to export the indicators.                                                                                                           | **`https://ext-<tenant-address>/instance/execute/<ExportIndicators_instance_name>?s=10&n=50`**                                  |
+| **`v`**  | The output format. Supports PAN-OS (text), CSV, JSON, mwg, and proxysg (alias: bluecoat).                                                                               | **`https://ext-<tenant-address>/instance/execute/<ExportIndicators_instance_name>?v=json`**                                     |
+| **`q`**  | The query is used to retrieve indicators from the system.                                                                                                               | **`https://ext-<tenant-address>/instance/execute/<ExportIndicators_instance_name>?q="type:ip and sourceBrand:my_source"`**      |
+| **`t`**  | Only with mwg format. The type is indicated at the top of the exported list. Supports: string, applcontrol, dimension, category, ip, mediatype, number, and regex.      | **`https://ext-<tenant-address>/instance/execute/<ExportIndicators_instance_name>?v=mwg&t=ip`**                                 |
+| **`sp`** | If set, will strip ports off URLs; otherwise, will ignore URLs with ports.                                                                                              | **`https://ext-<tenant-address>/instance/execute/<ExportIndicators_instance_name>?v=text&sp`**                                  |
+| **`di`** | Only with PAN-OS (text) format. If set, will ignore URLs that are not compliant with PAN-OS URL format instead of being rewritten.                                      | **`https://ext-<tenant-address>/instance/execute/<ExportIndicators_instance_name>?v=text&di`**                                  |
+| **`cr`** | If set, will strip protocols off URLs.                                                                                                                                  | **`https://ext-<tenant-address>/instance/execute/<ExportIndicators_instance_name>?v=text&pr`**                                  |
+| **`cd`** | Only with proxysg format. The default category for the exported indicators.                                                                                             | **`https://ext-<tenant-address>/instance/execute/<ExportIndicators_instance_name>?v=proxysg&cd=default_category`**              |
+| **`ca`** | Only with proxysg format. The categories that will be exported. Indicators not in these categories will be classified as the default category.                          | **`https://ext-<tenant-address>/instance/execute/<ExportIndicators_instance_name>?v=proxysg&ca=category1,category2`**           |
+| **`tr`** | <p>Only with PAN-OS (text) format. Whether to collapse IPs.</p><ul><li>0 - Do not collapse.</li><li>1 - Collapse to ranges.</li><li>2 - Collapse to CIDRs</li></ul>     | **`https://ext-<tenant-address>/instance/execute/<ExportIndicators_instance_name>?q="type:ip and sourceBrand:my_source"&tr=1`** |
+| **`tx`** | Whether to output CSV formats as textual web pages.                                                                                                                     | **`https://ext-<tenant-address>/instance/execute/<ExportIndicators_instance_name>?v=csv&tx`**                                   |
+
+</details>

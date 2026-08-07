@@ -1,0 +1,84 @@
+# Ingest raw EDR events from Microsoft Defender for Endpoint
+
+Cortex XSIAM enables ingestion of raw EDR event data from Microsoft Defender for Endpoint Events, streamed to Azure Event Hubs. In addition to all standard SIEM capabilities, this integration unlocks some advanced Cortex XSIAM features, enabling comprehensive analysis of data from all sources, enhanced detection and response, and deeper visibility into Microsoft Defender for Endpoint data.
+
+Key benefits include:
+
+* Querying all raw event data received from Microsoft Defender for Endpoint using XQL.
+* Querying critical modeled and unified EDR data via the `xdr_data` dataset.
+* Enriching case and issue investigations with relevant context.
+* Grouping issues with issues from other sources to accelerate the scoping process of cases, and to cut investigation time.
+* Leveraging the data for analytics-based detection.
+* Utilizing the data for rule-based detection, including correlation rules, BIOC, and IOC.
+* Leveraging the data within playbooks for case response.
+
+When Cortex XSIAM begins receiving EDR events from Microsoft Defender for Endpoint Events, it automatically creates a new dataset labeled `msft_defender_raw`, allowing you to query all Microsoft Defender for Endpoint Events using XQL. For example XQL queries, refer to the in-app XQL Library.
+
+In addition, Cortex XSIAM parses and maps critical data into the `xdr_data` dataset and XDM data model, enabling unified querying and investigation across all supported EDR vendors' data, and unlocking key benefits like stitching and advanced analytics. While mapped data from all supported EDR vendors, including Microsoft Defender for Endpoint Events, will be available in the `xdr_data` dataset, it's important to note that third-party EDR data present some limitations.
+
+Third-party agents, including Microsoft Defender for Endpoint Events, typically provide less data compared to our native agents, and do not include the same level of optimization for causality analysis and cloud-based analytics. Furthermore, external EDR rate limits and filters might restrict the availability of critical data required for comprehensive analytics. As a result, only a subset of our analytics-based detectors will function with third-party EDR data.
+
+We are continuously enhancing our support and using advanced techniques to enrich missing third-party data, while somehow replicating some proprietary functionalities available with our agents. This approach maximizes value for our customers using third-party EDRs within existing constraints. However, it’s important to recognize that the level of comprehensiveness achieved with our native agents cannot be matched, as much of the logic happens on the agent itself. These capabilities are unique, and are not found in typical SIEMs. Many of them, along with their underlying logic, are patented by Palo Alto Networks. Therefore, they should be regarded as added value beyond standard SIEM functionalities for customers who are not using our agents.
+
+The generic Cortex XSIAM Azure Event Hub collector does not offer full functionality for EDR data (such as stitching), and is therefore not suitable for EDR data ingestion.
+
+### **Task 1: Configure Microsoft Defender for Endpoint Events to stream raw data to Microsoft Azure Eve**nt Hub
+
+Ensure that you do the following tasks before you begin configuring data collection.
+
+* Create an Azure Event Hub. For more information, see [Quickstart: Create an event hub using Azure portal](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create).
+  1. Create a resource group (optional if you already have a resource group configured).
+  2. Create an Event Hubs namespace.
+  3. Create an event hub within the namespace. On the Settings → Networking page → Public Access tab, ensure that you add Palo Alto Networks IP addresses to the Firewall allow list. Set Exception to Yes.
+  4. Ensure that you keep a copy of the Event Hub resource ID and the Event Hub name for use in the following procedures. To get your Event Hubs resource ID, go to your Azure Event Hub namespace page on Azure's Properties tab, and copy the text under Resource ID.
+  5. Create a storage account.
+* Ensure that you have Microsoft Defender user credentials to sign in as a Security Administrator.
+*   Refer to this topic for additional information: [Enable access to required PANW resources](https://docs-cortex.paloaltonetworks.com/r/5CAbsl8idaK8R43ZLhoTOw/IWU8BPTfKWhw35rIRJGKbQ)
+
+    The IP addresses that should be used are the ones under: **To Collect 3rd Party Data from Customer's SaaS and Cloud resources**.
+* It might be necessary to set the firewall on the Event Hub, but it could also be necessary to configure it on the storage account firewall.
+
+1.  Enable raw data streaming:
+
+    1. Sign in to the Microsoft Defender portal as a Security Administrator.
+    2. Go to the data export settings page in the Microsoft Defender portal: System → Settings → Windows Defender XDR → Streaming API.
+    3. Click +Add.
+    4. In the Name box, enter a name for your new data streaming settings.
+    5. Select Forward events to Event Hub.
+    6. In the Event-Hub Resource ID box, enter the Event Hub resource ID that you prepared in advance.
+    7. In the Event-Hub box, enter the Event Hub name that you prepared in advance.
+    8. For Event Types, select the event types that you want to stream.
+
+    <div data-gb-custom-block data-tag="hint" data-style="warning" class="hint hint-warning"><p>If you select all event types and leave Event-Hub name empty, an event hub will be created for each category in the selected namespace. If you are not using a Dedicated Event Hubs ClusterEvent Hub, namespaces have a limit of 10 Event Hubs.</p></div>
+
+    9. Click Submit.
+    10. Verify that the events that you selected are streaming by going to your Event Hubs namespace, Settings → Networking. Select the Event Hub name and the Consumer group, and then under Advanced properties, click View events. Check the Event body.
+2. In the Microsoft Azure console, open the Event Hubs page, and select the Azure Event Hub that you created for collection of Microsoft Defender logs.
+3. Save a copy of the following parameters from your configured event hub, because you will need them when configuring data collection in Cortex XSIAM:
+   * Your **event hub’s consumer** group:
+     1. Select Entities → Event Hubs, and select your event hub.
+     2. Select Entities → Consumer groups, and select your event hub.
+     3. In the Consumer group table, copy the applicable value listed in the Name column for your Cortex XSIAM data collection configuration.
+   * Your **event hub’s connection string** for the designated policy:
+     1. Select Settings → Shared access policies.
+     2. In the Shared access policies table, select the applicable policy.
+     3. Copy the Connection string-primary key.
+   * Your **storage account connection string** required for partitions lease management and checkpointing in Cortex XSIAM:
+     1. Open the Storage accounts page, and either create a new storage account or select an existing one, which will contain the storage account connection string.
+     2. Select Security + networking → Access keys, and click Show keys.
+     3. Copy the applicable Connection string.
+
+### **Task 2: Configure the Microsoft Defender for Endpoint Events collector in Cortex XSIAM**
+
+1. Navigate to Settings → Data Sources & Integrations.
+2. On the Data Sources & Integrations page, click + Add New, search for Microsoft Defender for Endpoint Events, then hover over it and click Add.
+3. Set these parameters:
+   * Name: Specify a unique descriptive name for your log collection configuration. You cannot change this name later.
+   * Event Hub Connection String: Specify your event hub’s connection string for the designated policy.
+   * Storage Account Connection String: Specify your storage account’s connection string for the designated policy.
+   * Consumer Group: Specify your event hub’s consumer group.
+4.  Click Test to validate access, and then click Save.
+
+    When events start to come in, a green check mark appears beneath the Microsoft Defender for Endpoint configuration, with the amount of data received.
+
+<br>

@@ -1,0 +1,225 @@
+{
+  "book": "agent",
+  "title": "Cortex XDR Agent Administrator Guide",
+  "section": "cortex-xdr-agent/9.3",
+  "page_count": 35,
+  "tree": [
+    {
+      "title": "Introduction",
+      "path": "introduction",
+      "type": "document",
+      "children": []
+    },
+    {
+      "title": "Cortex XDR agent for Windows",
+      "path": "cortex-xdr-agent-for-windows",
+      "type": "document",
+      "children": [
+        {
+          "title": "Cortex XDR agent for Windows requirements",
+          "path": "cortex-xdr-agent-for-windows/cortex-xdr-agent-for-windows-requirements",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Install the Cortex XDR agent for Windows",
+          "path": "cortex-xdr-agent-for-windows/install-the-cortex-xdr-agent-for-windows",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Install the Cortex XDR Agent with Installer and Content Update Package",
+          "path": "cortex-xdr-agent-for-windows/install-the-cortex-xdr-agent-with-installer-and-content-update-package",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Cortex XDR agent for virtual environments and desktops",
+          "path": "cortex-xdr-agent-for-windows/cortex-xdr-agent-for-virtual-environments-and-desktops",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Use Cortex XDR Agent for Windows",
+          "path": "cortex-xdr-agent-for-windows/use-cortex-xdr-agent-for-windows",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Upgrade the Cortex XDR Agent",
+          "path": "cortex-xdr-agent-for-windows/upgrade-the-cortex-xdr-agent",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Uninstall the Cortex XDR agent for Windows",
+          "path": "cortex-xdr-agent-for-windows/uninstall-the-cortex-xdr-agent-for-windows",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Troubleshooting resources for Windows",
+          "path": "cortex-xdr-agent-for-windows/troubleshooting-resources-for-windows",
+          "type": "document",
+          "children": [
+            {
+              "title": "Cytool for Windows",
+              "path": "cortex-xdr-agent-for-windows/troubleshooting-resources-for-windows/cytool-for-windows",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Cortex XDR Agents Deployed in Advertise Mode",
+              "path": "cortex-xdr-agent-for-windows/troubleshooting-resources-for-windows/cortex-xdr-agents-deployed-in-advertise-mode",
+              "type": "document",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cortex XDR Agent for MacOS",
+      "path": "cortex-xdr-agent-for-macos",
+      "type": "document",
+      "children": [
+        {
+          "title": "Cortex XDR Agent for Mac Requirements",
+          "path": "cortex-xdr-agent-for-macos/cortex-xdr-agent-for-mac-requirements",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Install the Cortex XDR Agent for Mac",
+          "path": "cortex-xdr-agent-for-macos/install-the-cortex-xdr-agent-for-mac",
+          "type": "document",
+          "children": [
+            {
+              "title": "Install with a unified configuration profile for MDMs",
+              "path": "cortex-xdr-agent-for-macos/install-the-cortex-xdr-agent-for-mac/install-with-a-unified-configuration-profile-for-mdms",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "macOS 15 Sequoia system extensions configuration file",
+              "path": "cortex-xdr-agent-for-macos/install-the-cortex-xdr-agent-for-mac/macos-15-sequoia-system-extensions-configuration-file",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "MacOS Bluetooth MDM profile",
+              "path": "cortex-xdr-agent-for-macos/install-the-cortex-xdr-agent-for-mac/macos-bluetooth-mdm-profile",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Install the Cortex XDR Agent Using JAMF",
+              "path": "cortex-xdr-agent-for-macos/install-the-cortex-xdr-agent-for-mac/install-the-cortex-xdr-agent-using-jamf",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Install the Cortex XDR Agent Manually",
+              "path": "cortex-xdr-agent-for-macos/install-the-cortex-xdr-agent-for-mac/install-the-cortex-xdr-agent-manually",
+              "type": "document",
+              "children": []
+            }
+          ]
+        },
+        {
+          "title": "Configure Cortex XDR Agent for Mac",
+          "path": "cortex-xdr-agent-for-macos/configure-cortex-xdr-agent-for-mac",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Use the Cortex XDR Agent for Mac",
+          "path": "cortex-xdr-agent-for-macos/use-the-cortex-xdr-agent-for-mac",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Uninstall the Cortex XDR Agent for Mac",
+          "path": "cortex-xdr-agent-for-macos/uninstall-the-cortex-xdr-agent-for-mac",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Manage the Agent Deployment Notifications for Mac",
+          "path": "cortex-xdr-agent-for-macos/manage-the-agent-deployment-notifications-for-mac",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Troubleshooting Resources for Mac",
+          "path": "cortex-xdr-agent-for-macos/troubleshooting-resources-for-mac",
+          "type": "document",
+          "children": [
+            {
+              "title": "Cytool for Mac",
+              "path": "cortex-xdr-agent-for-macos/troubleshooting-resources-for-mac/cytool-for-mac",
+              "type": "document",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cortex XDR Agent for Linux",
+      "path": "cortex-xdr-agent-for-linux",
+      "type": "document",
+      "children": [
+        {
+          "title": "Cortex XDR supported Kernel Module versions by distribution",
+          "path": "cortex-xdr-agent-for-linux/cortex-xdr-supported-kernel-module-versions-by-distribution",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Cortex XDR Agent for Linux Requirements",
+          "path": "cortex-xdr-agent-for-linux/cortex-xdr-agent-for-linux-requirements",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Install the Cortex XDR agent for Linux",
+          "path": "cortex-xdr-agent-for-linux/install-the-cortex-xdr-agent-for-linux",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Install the Cortex XDR Agent for Kubernetes Hosts",
+          "path": "cortex-xdr-agent-for-linux/install-the-cortex-xdr-agent-for-kubernetes-hosts",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Use the Cortex XDR agent for Linux",
+          "path": "cortex-xdr-agent-for-linux/use-the-cortex-xdr-agent-for-linux",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Uninstall the Cortex XDR Agent for Linux",
+          "path": "cortex-xdr-agent-for-linux/uninstall-the-cortex-xdr-agent-for-linux",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Troubleshooting Resources for Linux",
+          "path": "cortex-xdr-agent-for-linux/troubleshooting-resources-for-linux",
+          "type": "document",
+          "children": [
+            {
+              "title": "Cytool for Linux",
+              "path": "cortex-xdr-agent-for-linux/troubleshooting-resources-for-linux/cytool-for-linux",
+              "type": "document",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

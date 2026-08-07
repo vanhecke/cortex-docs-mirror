@@ -1,0 +1,25 @@
+# Long-running HTTP Integrations configuration
+
+Governs the backend service that hosts and serves dynamic content to external security devices, such as Palo Alto Networks firewalls. It allows administrators to enable or disable the EDL service and manage its global settings. Access this through Settings → Configurations → Integrations → External Dynamic List Integration.
+
+This permission is used by administrators to set up and maintain the EDL service infrastructure.
+
+EDL (under Investigation & Response permissions): Used by analysts to add or remove specific IP addresses and domains to lists during active investigations.&#x20;
+
+| Permission | Description                                                                                                | Role Example                                                                                                            |
+| ---------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| None       | The External Dynamic List Integration page is hidden.                                                      | <ul><li>SOC Tier-1 and 2 Analysts: No configuration needed.</li></ul>                                                   |
+| View       | Users can view existing EDL configurations and service status, but cannot make changes.                    | <ul><li>SOC Tier-3 Analyst: Understand EDL configurations.</li></ul>                                                    |
+| View/Edit  | Full control over the EDL service, including enabling/disabling the service and modifying global settings. | <ul><li>Threat Hunter: Understand data flows.</li><li>Security Engineer: Develop and manage API integrations.</li></ul> |
+
+Required and recommended permissions
+
+As the EDL service is used for response actions, consider these dependencies:
+
+| Permission                                    | Permission Level                                        | Reason                                                                                                                                                  |
+| --------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| EDL                                           | View or View/Edit                                       | Strongly recommended to use EDL as a response action. Add IPs/domains to EDL from Action Center, Causality View, Issue View, XQL queries, and playbook. |
+| Threat Intelligence (under Threat Management) | View                                                    | Strongly recommended to view threat indicators that populate EDL content.                                                                               |
+| Playbooks                                     | Enabled plus Edit Public Playbooks and Create Playbooks | Recommended to view/manage playbooks that trigger EDL actions.                                                                                          |
+| Integrations                                  | View                                                    | Recommended to view integration instances that consume EDL data.                                                                                        |
+| Broker Service                                | View                                                    | Recommended if EDL is served through a Broker VM.                                                                                                       |

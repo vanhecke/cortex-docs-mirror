@@ -1,0 +1,64 @@
+# Ingest external alerts
+
+To ingest alerts from an external source, you configure your alert source to forward alerts (in **CEF** or **LEEF** format) to the Syslog collector. You can also ingest alerts from external sources using the Cortex XSIAM APIs.
+
+After Cortex XSIAM begins receiving external alerts, you must map the following required fields to the Cortex XSIAM format.
+
+* TIMESTAMP
+* SEVERITY
+* ALERT NAME
+
+In addition, these optional fields are available if you want to map them to the Cortex XSIAM format.
+
+* SOURCE IP
+* SOURCE PORT
+* DESTINATION IP
+* DESTINATION PORT
+* DESCRIPTION
+* DIRECTION
+* EXTERNAL ID
+* CATEGORY
+* ACTION
+* PROCESS COMMAND LINE
+* PROCESS SHA256
+* DOMAIN
+* PROCESS FILE PATH
+* HOSTNAME
+* USERNAME
+
+{% hint style="info" %}
+### Note
+
+If you send pre-parsed alerts using the Cortex XSIAM API, additional mapping is not required.
+{% endhint %}
+
+Storage of external alerts is determined by your Cortex XSIAM tenant retention policy. For more information, see [Dataset Management](https://app.gitbook.com/s/FOhYBYLdbwpnbJgr6uaX/cortex-xdr-3.x-documentation/data-management/dataset-management).
+
+1.  Send alerts from an external source to Cortex XSIAM.
+
+    There are two ways to send alerts:
+
+    * API: Use the **Insert CEF Alerts API** to send the raw Syslog alerts or use the **Insert Parsed Alerts API** to convert the Syslog alerts to the Cortex XSIAM format before sending them to Cortex XSIAM. If you use the API to send logs, you do not need to perform the additional mapping step in Cortex XSIAM.
+    * Activate the Syslog collector (see [Activate the Syslog collector](../generic-on-premise-data-collectors/broker-vm-data-collector-applets/syslog-collector-applet/activate-syslog-collector)) and then configure the alert source to forward alerts to the Syslog collector. Then configure an alert/issue mapping rule as follows.
+2. In Cortex XSIAM, select **Settings** → **Configurations** → **Data Collection** → **External Issue Mapping**.
+3. Right-click the **Vendor Product** for your issues and select **Filter and Map**.
+4.  Use the filters at the top of the table to narrow the results to only the alerts you want to map.
+
+    Cortex XSIAM displays a limited sample of results during the mapping rule creation. As you define your filters, Cortex XSIAM applies the filter to the limited sample but does not apply the filters across all alerts. As a result, you might not see any results from the alert sample during the rule creation.
+5.  Click **Next** to begin a new mapping rule.
+
+    On the left, configure the following:
+
+    1. **Rule Information**: Define the **NAME** and optional **DESCRIPTION** to identify your mapping rule.
+    2.  **Issues Field**: Map each required and any optional Cortex XSIAM field to a field in your alert source.
+
+        If needed, use the field converter (![field-converter.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-4d301cb2bc137081ffc748d0410b00bce85668ca%2F6b7a78415b920fc6477918a8553fa00625fa8a8c1740d74bb8fcbd27462d0fae.png?alt=media)) to translate the source field to the Cortex XSIAM syntax.
+
+        For example, if you use a different severity system, you need to use the converter to map your severity fields to the Cortex XSIAM risks of Critical, High, Medium, and Low.
+
+        You can also use regex to convert the fields to extract the data to facilitate matching with the Cortex XSIAM format. For example, if you need to map the port, but your source field contains both the IP address and port (`192.168.1.200:8080`), to extract everything after the `:`, use the following regex:
+
+        `^[^:]*_`
+
+        For additional context when you are investigating a case, you can also map additional optional fields to fields in your alert source.
+6. To submit your alert filter and mapping rule when finished, click **Submit**.

@@ -1,0 +1,17 @@
+# Building XQL archived data queries
+
+{% hint style="warning" %}
+### Prerequisite
+
+Archived cold storage, in addition to a Period-Based Retention - Cold Storage add-on license, requires compute units (CU) to run archived cold storage queries. Cortex XSIAM provides a free daily quota of compute units (CU) allocated according to your license size. Queries run without enough quota will fail. To expand your investigation capabilities, you can purchase additional CU by enabling the Compute Unit add-on. Ensure that you have enough CU to run your archived cold storage data. For more information on CU and running cold storage queries, see [Manage compute units](../manage-compute-units).
+
+For information on the CU add-on license, see [Cortex XSIAM product licenses](../../../learn-about-cortex-xsiam/cortex-xsiam-product-licenses).
+{% endhint %}
+
+Each data source that is imported to Cortex XSIAM is available as a cold storage dataset and can be accessed using Cortex Query Language (XQL). These datasets are a new type of archived dataset. After being imported to cold storage, the datasets are renamed using the format `archive_<dataset name>`, and can be queried as any other cold storage dataset, with one exception that makes them unique. You can query these datasets during the hot retention period. Typically, this isn't enabled for cold storage datasets, as during the hot storage period, the cold storage data isn't relevant. Yet, for this type of data, you can query the archived data in cold storage during the hot storage period using CU.
+
+You can perform queries on archived cold storage data using the dataset format:
+
+```programlisting
+cold_dataset = archive_<dataset name>
+```

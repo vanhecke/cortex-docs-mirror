@@ -1,0 +1,10 @@
+# Access and visibility for dashboards and reports
+
+Access to all dashboard and report data is strictly controlled through Role-Based Access Control (RBAC) and Scope-Based Access Control (SBAC). These permissions determine the objects and data a user can see, and dictate how data behaves when elements are copied or shared across different users:
+
+* **RBAC:** Controls access to dashboards and reports as separate objects.\
+  Your role must grant you access to view or edit these objects, as defined by your administrator.\
+  In addition, your administrator must define specific permissions to enable sharing of custom dashboards and report templates, for more information, see [Manage access to objects](../../onboard-cortex-xsiam/post-deployment/manage-user-roles-and-access-management/manage-access-to-objects).
+* **SBAC:** Controls the display of data according to your authorized data scope.\
+  Dashboard and report data is automatically filtered based on your authorized data scope. For example, you will only see information for the asset groups you are permitted to view.\
+  If you have access to a shared dashboard or report but lack the required data scope for the underlying datasets, the dashboard will load, but the widgets may appear empty or display an error. For more information on defining SBAC, see [Manage user scope](../../onboard-cortex-xsiam/post-deployment/manage-user-roles-and-access-management/manage-user-scope).

@@ -1,0 +1,22 @@
+# Code and Supply Chain Security assets
+
+The Code asset class provides visibility into your Software Development Lifecycle (SDLC), helping you identify and mitigate risks introduced during the build and deployment processes.
+
+## Code and Supply Chain Security categories
+
+The inventory tracks several distinct asset categories to help secure your software supply chain. You can view an aggregated summary of All Code Assets, or filter by the following specific categories:
+
+* [IaC Resources](https://app.gitbook.com/s/8Z0RLJ1BFF5TQL8VtUeK/code-security/code-security-assets/infrastructure-as-code-iac-resources-as-assets)**:** Tracks Infrastructure-as-Code resources to manage misconfigurations and ensure compliance with security standards.
+* [Repositories](https://app.gitbook.com/s/8Z0RLJ1BFF5TQL8VtUeK/application-security-posture-management-aspm/repository-as-an-asset)**:** Tracks version control repositories (e.g., GitHub, GitLab) where source code is hosted.
+* [VCS Organizations](https://app.gitbook.com/s/8Z0RLJ1BFF5TQL8VtUeK/software-supply-chain-security/visibililty-and-inventory/supply-chain-assets/vcs-organization-assets)**:** The top-level structures within VCS platforms that contain your repositories, code, and configurations.
+* [CI/CD Pipelines](https://app.gitbook.com/s/8Z0RLJ1BFF5TQL8VtUeK/software-supply-chain-security/visibililty-and-inventory/supply-chain-assets/cicd-pipeline-as-an-asset)**:** Tracks the automated workflows that build, test, and deploy your software.
+* [CI/CD Instances](https://app.gitbook.com/s/8Z0RLJ1BFF5TQL8VtUeK/software-supply-chain-security/visibililty-and-inventory/supply-chain-assets/cicd-instance-as-an-asset)**:** Tracks the pipeline tool instances (like Jenkins or GitHub Actions) that execute your automated workflows.
+* [Software Packages](https://app.gitbook.com/s/8Z0RLJ1BFF5TQL8VtUeK/software-supply-chain-security/visibililty-and-inventory/supply-chain-assets/software-packages-as-assets)**:** Tracks open-source software packages to manage vulnerabilities (CVEs), package operational risks, and license misconfigurations.
+
+## Code to cloud traceability
+
+A key feature of code security assets is the code to cloud tab available on asset side cards. Code to cloud context is a correlation engine that maps the full lineage of assets across the SDLC. By deterministically connecting repositories, pipelines, images, and runtime resources (including VMs and IaC-defined infrastructure) back to their originating code, it provides end-to-end bidirectional traceability. This allows analysts to trace runtime issues back to the specific line of code, developer, or pipeline that introduced them/
+
+## Code security issue visibility
+
+Code Security issues are organized into dedicated issue tables based on the scanner type (such as Secrets, SCA, CI/CD Risks, and IaC misconfigurations). However, these dedicated tables are filtered to only display issues generated from findings detected during periodic scans. If you need to view issues detected during pull request (PR) or continuous integration (CI) scans, you must navigate to the Issues page, which unifies all issues regardless of their detection source.

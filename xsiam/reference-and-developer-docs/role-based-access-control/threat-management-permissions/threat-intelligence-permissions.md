@@ -1,0 +1,40 @@
+---
+description: Configure Threat Intelligence permissions.
+---
+
+# Threat Intelligence permissions
+
+**Threat Intelligence permissions**
+
+Located under **Threat Management** → **Threat Intelligence**, these permissions govern how your organization interacts with indicators (IPs, URLs, Domains, Hashes) and intelligence feeds. It allows you to transform raw data from sources like Unit 42 or AlienVault into actionable security logic.
+
+{% hint style="info" %}
+### Notice
+
+The Extended Threat Intelligence feature requires the Cortex XSIAM Premium license or another XSIAM license with the Extended Threat Intelligence (XTI) add-on.
+
+The Threat Intelligence Management (TIM) requires the Threat Intelligence Management (TIM) license.
+{% endhint %}
+
+For more information, see [Extended Threat Intelligence](../../../detect-investigate-and-respond-to-threats/threat-management/extended-threat-intelligence) if you are using XTI, or [Threat Intel Management](../../../detect-investigate-and-respond-to-threats/threat-management/threat-intel-management) if you are using TIM.
+
+| Component | Description                                                                                                                                                                                     | Roles Example                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| None      | <p>In TIM, no access to the Indicators page.</p><p>In XTI, no access to the Indicators, Threat Intel Library, or Threat Intel Dashboard pages.</p>                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| View      | <p>In TIM, users can search the indicator database and view reputation scores.</p><p>In XTI, users can search the Threat Intel Library, the Indicator database, and Threat Intel Dashboard.</p> | SOC Tier-1 analysts: View threat intelligence context for investigations.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| View/Edit | <p>In TIM, full control to manage indicator rules, manually override reputation scores, and configure intelligence feeds.<br>In XTI, full control to manage indicators and indicator rules.</p> | <ul><li>SOC Tier-2 and 3 Analysts: Enables creating and editing indicators discovered during investigations, adding context to IOCs, and enriching case artifacts with threat intelligence data.</li><li>Threat Hunter: Enables researching threat actors and campaigns, creating indicators from hunting discoveries, enriching IOCs with contextual data, and documenting threat intelligence findings.</li><li>Security Engineer: Enables integrating threat intel into detection rules, testing indicator-based detections, managing IOC feeds for rule development, and validating threat intel data quality.</li></ul> |
+
+**Required and recommended permissions**
+
+Consider adding the following permissions:
+
+| Permission                                   | Permission level | Reason                                                                                                                                                                       |
+| -------------------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cases & Issues                               | View             | Strongly recommended. Indicator enrichment data appears in case artifacts, and editing indicators from case context requires case access.                                    |
+| Detection Rules                              | View/Edit        | Strongly Recommended. Enables creating indicator or IOC rules directly from indicators.                                                                                      |
+| Allow/Block List                             | Checked          | Strongly recommended. Add to Block List is a primary action on indicators.                                                                                                   |
+| EDL                                          | View             | Strongly recommended. Add to EDL is a primary action on IP/domain indicators.                                                                                                |
+| Query Center                                 | View/Edit        | Enables investigating indicator matches via XQL queries. Essential for validating indicator impact before creating rules or blocking.                                        |
+| Threat Intel (under Integration Permissions) | View/Edit        | Recommended for configuring VirusTotal API keys for indicator enrichment.                                                                                                    |
+| Exclusion List                               | View/Edit        | Recommended to manage indicator exclusions. Useful for managing false positive indicators.                                                                                   |
+| Integrations                                 | View             | Recommended. TIM feed integrations are configured under Integrations. Viewing integrations helps understand which threat intel feeds are active and contributing indicators. |

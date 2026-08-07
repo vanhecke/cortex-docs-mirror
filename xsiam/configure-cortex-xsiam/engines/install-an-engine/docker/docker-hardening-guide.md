@@ -1,0 +1,19 @@
+# Docker hardening guide
+
+The following describes the engine settings we recommend for securely running Docker containers.
+
+When editing the configuration file, you can limit container resources, open file descriptors, limit available CPU, and more. For example, add the following keys to the configuration file:
+
+`{"docker.run.internal.asuser": true,"limit.docker.cpu": true,"limit.docker.memory": true,"python.pass.extra.keys": "--pids-limit=256##--ulimit=nofile=1024:8192"}`
+
+{% hint style="info" %}
+We recommend reviewing _Docker network hardening_ below before changing any parameters in the configuration file.
+{% endhint %}
+
+To securely run Docker containers, we recommend using the latest Docker version.
+
+You can _Check Docker Hardening Configurations_ to verify that the Docker container has been hardened according to the settings we recommend.
+
+{% hint style="info" %}
+The settings below can also be applied to Podman, with the exception of limiting available memory, limiting available CPU, and limiting PIDS.
+{% endhint %}

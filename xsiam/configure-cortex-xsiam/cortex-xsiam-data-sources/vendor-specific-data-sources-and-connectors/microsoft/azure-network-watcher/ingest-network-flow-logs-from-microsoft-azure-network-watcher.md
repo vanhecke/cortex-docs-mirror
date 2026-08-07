@@ -1,0 +1,74 @@
+# Ingest network flow logs from Microsoft Azure Network Watcher
+
+To receive network security group (NSG) or Virtual network (VNet) flow logs from Azure Network Watcher, you must configure data collection from Microsoft Azure Network Watcher using an Azure Function provided by Cortex XSIAM. This Azure Function requires a token that is generated when you configure your Azure Network Watcher Collector in Cortex XSIAM. After you have configured the Cortex XSIAM collector and successfully deployed the Azure Function to your Azure account, Cortex XSIAM will start receiving and ingesting network flow logs from Azure Network Watcher.
+
+The Azure Network Watcher Collector is deployed using an ARM template. During deployment, the template retrieves keys using the `listKeys` function, and your app can bind to the blob storage using the connection string generated from those keys. After deployment, this binding works without the need to provide any connection string manually, because the keys were already retrieved and injected during deployment.
+
+In addition to the user-specified storage account that captures the log blobs, the template also creates a secondary, internal storage account for internal operations related to the function app. This internal storage account is used by the function app for operations such as storing function state, and intermediate processing. To enhance security, public network access is disabled, and the account is restricted to private endpoints only. This additional internal storage account allows the function app to securely store data without relying on the user-specified storage account for internal processes. This separation enhances data security and isolation between user-facing storage and internal application operations. VNet integration is required only for the internal storage account's internal operations. The user-specified storage account used for NSG or VNet flow logs does not require VNet integration.
+
+When Cortex XSIAM begins receiving logs, the app creates a new dataset (`MSFT_Azure_raw`) that you can use to initiate XQL Search queries. For example queries, refer to the in-app XQL Library. For enhanced cloud protection, you can also configure Cortex XSIAM to ingest network flow logs as Cortex XSIAM network connection stories, which you can query with XQL Search using the `xdr_data` dataset with the preset called `network_story`. Cortex XSIAM can also generate Cortex XSIAM issues (Analytics, Correlation Rules, IOC, and BIOC) when relevant from Azure Network Watcher flow logs. While Correlation Rules issues are raised on non-normalized and normalized logs, Analytics, IOC, and BIOC issues are only generated on normalized logs.
+
+Enhanced cloud protection provides:
+
+* Normalization of cloud logs
+* Cloud logs stitching
+* Enrichment with cloud data
+* Detection based on cloud analytics
+* Cloud-tailored investigations
+
+{% hint style="info" %}
+**Prerequisite**
+
+* For NSG:
+  * Ensure that your NSG flow logs in Azure Network Watcher conform to the requirements as outlined in Microsoft documentation. For more information, see [Introduction to flow logging for network security groups](https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-overview#enabling-nsg-flow%20logs).
+  * [Enable NSG flow logs in the Microsoft Azure Portal](https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-portal).
+* For VNet:
+  * Ensure that your VNet flow logs in Azure Network Watcher conform to the requirements as outlined in Microsoft documentation. For more information, see [Introduction to flow logging for virtual networks](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview).
+  * [Enable VNet flow logs in the Microsoft Azure Portal](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-manage).
+* Ensure that you have an Azure subscription with user role permissions to deploy ARM templates and create the required resources.\
+  The `listKeys` function in an Azure Resource Manager (ARM) template retrieves the storage account keys, and it requires special permissions to execute. Specifically, the user or identity running the ARM template needs the following permission: `Microsoft.Storage/storageAccounts/listKeys/action`. If the user or service principal running the ARM template has the necessary user role (such as Owner or Storage Account Contributor), permission is implicitly granted for the template to retrieve the storage account keys.
+* Perform this procedure in the order shown below, because you need to save a token and a URL from Cortex XSIAM in earlier steps, and use them in Azure in later steps.
+{% endhint %}
+
+1. Configure the Azure Network Watcher collection in Cortex XSIAM.
+   1. Navigate to **Settings → Data Sources & Integrations**.
+   2. On the **Data Sources & Integrations** page, click **+ Add New**, search for **Azure Network Watcher**, then hover over it and click **Add**.
+   3. Set these parameters:
+      * **Name**: Specify a meaningful name for your log collection configuration.
+      * **Enhanced Cloud Protection**: (Optional) For enhanced cloud protection, you can normalize and enrich flow logs by selecting the **Use flow logs in analytics** checkbox. If selected, Cortex XSIAM ingests network flow logs as Cortex XSIAM network connection stories, which you can query with XQL Search using the `xdr_data` dataset with the preset called `network_story`.
+   4.  Click **Save & Generate Token**. The token is displayed in a popup.
+
+       Click the copy icon next to the key and save the copy of this token somewhere safe. You will need to provide this token when you configure the Azure Function and set the **Cortex Access Token** value. If you forget to record the token and close the window, you will need to generate a new one and repeat this process. When you are finished, click **Done** to close the window.
+   5. On the **Integrations** page for the Azure Network Watch Collector that you created, click the **Copy API URL** icon and save a copy of the URL somewhere safe. You will need to provide this URL when you configure the Azure Function and set the **Cortex Http Endpoint** value.
+2. Configure the Azure Function provided by Cortex XSIAM.
+   1. Do one of the following, depending on the flow log type:
+      * For NSG, open this [Azure Function](https://github.com/PaloAltoNetworks/cortex-azure-functions/tree/master/nsg-flow-logs) provided by Cortex XSIAM.
+      * For VNet, open this [Azure Function](https://github.com/PaloAltoNetworks/cortex-azure-functions/tree/master/vnet-flow-logs) provided by Cortex XSIAM.
+   2. Click **Deploy to Azure**.
+   3. Log in to **Azure**, and if necessary, complete authentication procedures.
+   4. Set these parameters, where some fields are mandatory to set and others may already be populated for you.
+      * **Subscription**: Specify the Azure subscription that you want to use for the App Configuration. If your account has only one subscription, it is automatically selected.
+      * **Resource group**: Specify or create a resource group for your App Configuration store resource.
+      * **Region**: Specify the Azure region that you want to use.
+      * **Unique Name**: Enter a unique name for the function app. The name that you provide will be concatenated to some of the resource names, to make it easier to locate the related resources later on. The name must only contain alphanumeric characters (letters and numbers, no special symbols) and must contain no more than 10 characters.
+      * **Cortex Access Token**: Cortex HTTP authorization key that you recorded when you configured the Azure Network Watcher collection in Cortex XSIAM in an earlier step.
+      * **Target Storage Account Resource Group**: Specify the name of the Azure Resource Group where the target Azure Storage Account (specified in the **Target Storage Account Name** field) is located.
+      * **Target Storage Account Name**: Enter the name of the Azure Storage Account that was created during the NSG or VNet flow logs setup in Azure Network Watcher, where the log blobs are being stored.
+      *   **Target Container Name**: This field should be left empty for most use cases.
+
+          For NSG, the default value `insights-logs-networksecuritygroupflowevent` is the name that is automatically created for the container during configuration of the network watcher.
+
+          For VNet, the default value `insights-logs-flowlogflowevent` is the name that is automatically created for the container during configuration of the network watcher.
+      * **Location**: The region where all the resources will be deployed (leave blank to use the same region as the resource group).
+      * **Cortex Http Endpoint**: Specify the API URL that you recorded when you configured the Azure Network Watcher collection in Cortex XSIAM.
+      * **Remote Package**: The URL of the remote package ZIP file containing the Azure Function code. Keep the default value, unless instructed otherwise.
+   5. Click **Review + Create** to confirm your settings for the Azure Function.
+   6. Click **Create**. It can take a few minutes until the deployment is complete.
+
+{% hint style="info" %}
+**Note**
+
+In addition to your storage account, the template automatically creates another storage account that is required by the function app for internal use only. The internal storage account name is prefixed with `cortex` and is followed by a unique suffix based on the resource group, storage account, and container names.
+{% endhint %}
+
+After events start to come in, a green check mark appears underneath the Azure Network Watcher configuration that you created in Cortex XSIAM, and the amount of data received is displayed.

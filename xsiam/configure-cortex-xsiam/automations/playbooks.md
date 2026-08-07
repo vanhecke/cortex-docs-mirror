@@ -1,0 +1,26 @@
+# Playbooks
+
+Playbooks are a series of tasks that run in a predefined flow to save time and improve the efficiency and results of the investigation and response process. They enable you to automate many security processes, including handling investigations and managing tickets. For example, a playbook task can parse the information in an issue, whether it is an email or a PDF attachment. Playbooks also standardize workflows, ensuring consistent and efficient incident response and management.
+
+{% hint style="warning" %}
+### Prerequisite
+
+To work with playbooks, an administrator must configure their user role with specific RBAC permissions.
+
+* Permissions must be enabled in the following order:
+
+1. **Scripts**: This component (under **Investigation & Response** → **Automations**) must be set to **Enabled** first. It is the foundational permission for all automation; if **Scripts** are not enabled, you cannot configure **Playbooks** or **Cases and Issues**. Role-level permissions determine your ability to create new scripts or edit those marked as **Public**.
+2. **Playbooks**: This component (under **Investigation & Response** → **Automations**) must be set to **Enabled**. Role-level permissions determine your ability to create new playbooks or edit those marked as **Public**. Specific access to individual custom playbooks and scripts is managed at the object level. For detailed information on the access model, see [Access to playbooks](playbooks/access-to-playbooks).
+3. **Cases and Issues**: Once **Scripts** and **Playbooks** are enabled, you can set **Cases and Issues** (under **Cases & Issues**) to **View** or **View/Edit**. This is required to view the results of playbooks executed within a case.
+
+* **Credentials**: While not required to open the Playbook Editor, a minimum of **View** permissions for **Credentials** is required to select or reference stored secrets within playbook tasks. If your role has the **Credentials** permission set to **None**, you will be unable to select credentials from dropdown menus. Furthermore, any task that attempts to retrieve a credential to authenticate an integration command will fail during execution because the system cannot fetch the secret under your role's restricted context. For more information, see [Credentials permissions](../../reference-and-developer-docs/role-based-access-control/configuration-permissions/credentials-permissions).
+* **Restricting playbook access**: To completely restrict playbook access, first set the **Cases and Issues** RBAC permission to **None** and then set the **Playbooks** permission to **Disabled**.
+
+For more information on setting RBAC permissions, see [Role permissions by component](../../reference-and-developer-docs/role-based-access-control/role-permissions-by-component).
+{% endhint %}
+
+### Automation Engineer agent for playbook development (preview)
+
+Use the AI-powered Automation Engineer agent to simplify playbook creation and management through an intuitive, interactive experience. It enables you to generate, modify, and query playbooks with the Cortex Agentic Assistant natural language chat prompt. For example, within the chat, you can ask the agent to "Add a step to block the domain in Okta" or ask it to explain how a specific conditional branch operates.
+
+For more details about using the Automation Engineer agent, see [Accelerate playbook development using the Automation Engineer agent (preview)](playbooks/accelerate-playbook-development-using-the-automation-engineer-agent-preview).

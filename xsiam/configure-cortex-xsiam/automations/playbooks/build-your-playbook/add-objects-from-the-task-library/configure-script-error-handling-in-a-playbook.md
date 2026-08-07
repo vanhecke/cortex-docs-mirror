@@ -1,0 +1,46 @@
+# Configure script error handling in a playbook
+
+You can determine how the playbook behaves if there are script errors during execution.
+
+When defining a standard task that uses a script or a conditional task that uses an script, you can define how a playbook task continues by selecting one of the following options:
+
+* Stop: The playbook stops, if the task errors during execution. For example, if the task requires a manual review, you may want the playbook to stop until completion.
+* Continue: The playbook continues to execute if the task errors. For example, the playbook task requires EWS, but EWS is not required for the playbook to proceed.
+*   Continue on error path: If a task errors, the playbook continues on an error path.
+
+    The error path may be useful if you want to take action on an error, like clean-up, retry, etc. You may also want to handle errors in different ways. For example, in case of a quota expired error you may want to retry in 1 minute, but if you receive an internal error 500, you may want to stop the playbook.
+
+    You may want to create a separate path when an analyst manually reviews the issue and research is needed outside Cortex XSIAM. Once an analysis is complete, you can add a task to consider escalating to a customer and, if so, generate a report which can be attached to a ticket system such as Jira or ServiceNow.
+
+    Instead of a playbook waiting on manual input, which displays an error state, such as missing an argument in a script, you can add a separate path for these kinds of issues.
+
+{% hint style="info" %}
+Use the **`GetErrorsFromEntry`** script (part of the Common Scripts Pack) to check whether the given entry returns an error and returns an error message. For example, when using the script in a playbook, you can fetch the error message from a given task, such as a runtime error. You can then add a step in the playbook flow to send those error messages to the relevant stakeholder through Slack, email, opening a Jira ticket, etc.
+{% endhint %}
+
+When errors are created, they are added to co**ntext under `task.id.error`.**
+
+**How to set up error handling in your playbook**
+
+1. In a playbook, edit a task or create a task from the Task Library.
+2.  In the Task Details pane, set the Task Type to either Standard or Conditional.
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>You can set up script error handling only when running a script in a Standard task or a Conditional task. For more information about error handling settings for these tasks, see <a href="add-manual-tasks-and-blank-tasks/create-a-standard-task">Create a standard task</a> or <a href="add-manual-tasks-and-blank-tasks/create-a-conditional-task">Create a conditional task</a>.</p><p>Built-in, Manual, and Ask Conditional tasks have On Error settings for number of retries and retry interval, but not Error Handling.</p></div>
+3. Select a script.
+4. Click the **On Error** tab.
+5. In the Number of retries field, type the number of times the tasks attempts to run before generating an error.
+6. In the Retry Interval (seconds) field, type the wait time between retrying the task.
+7. In the Error Handling field, select one of the following:
+   * Stop
+   * Continue
+   * Continue on error path(s)
+8. Click Save.
+9. When adding a connector from this task to the next task, a dialog box appears which enables you to select one of the following paths:
+   *   Standard Path: When adding a task to this path, it executes without any exceptions.
+
+       If you select the Standard Path, the task continues on this path and executes without exceptions.
+   *   Error Path: When adding a task to this path, it executes where the source task errors during execution.
+
+       If you select Error path, if the task errors, the playbook continues with this path.
+
+<br>

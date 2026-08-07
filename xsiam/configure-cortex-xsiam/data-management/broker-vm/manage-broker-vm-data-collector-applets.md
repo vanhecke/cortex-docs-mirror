@@ -1,0 +1,28 @@
+# Manage Broker VM data collector applets
+
+Learn more about managing your Broker VM data collector applets from the Broker VMs page.
+
+After you activate a Broker VM data collector applet, you can make additional changes as needed to the specific applet configured on the Broker VM or cluster. Select Settings → Configurations → Data Broker → Broker VMs to view detailed information regarding your registered Broker VMs in either the Brokers or Clusters tab. To modify a configuration, left-click the Broker VM applet in the APPS column to display the data collector applet settings and view detailed information regarding your applet.
+
+{% hint style="info" %}
+#### Note
+
+For more information on the Broker VM applet connectivity status, see [Manage Broker VM](manage-broker-vm).
+{% endhint %}
+
+### Configuration options available for all Broker VM data collector applets
+
+The following options are available to select for all data collector applets:
+
+* **Configure**: Enables you to redefine the Broker VM data collector configurations.
+* **Deactivate**: Disables the Broker VM data collector. Cortex XSIAM provides the ability to maintain the Broker VM applet configurations whenever an applet is deactivated. This ensures that whenever the applet is reactivated the saved configuration is restored. When the dialog box is displayed to confirm deactivating the Broker VM data collector applet, leave the Save applet configuration checkbox selected (default) to maintain the applet configuration; otherwise, if this checkbox is unmarked, the applet configuration is deleted.
+* **Update**: Initiates a manual upgrade for the specific applet. This option is only visible in the applet hovering menu when a new version is available.
+
+### Configuration options available to specific Broker VM data collector applets
+
+The following additional options are only available to specific Broker VM data collector applets:
+
+* Network Mapper:
+  * Scan Now: Initiates a scan.
+* Windows Event Collector:
+  * Collection Configuration: Enables you to view or edit existing events or add new events to the collect.

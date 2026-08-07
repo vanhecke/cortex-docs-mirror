@@ -1,0 +1,205 @@
+# Issue field-triggered scripts
+
+ssue fields can be assigned scripts that run when the field changes. This enables you to automate workflows during an issue lifecycle. These scripts can perform any action, such as dynamically changing the field value or notifying the responder when an issue severity has been changed. Field-triggered scripts can include conditions that must be met for the script to run, such as the field having a certain value.
+
+Scripts can be created in Python, PowerShell, or JavaScript on the Scripts page. To use a script with a field trigger, you need to add the field-change-triggered tag to the script. You can then add the script in the Attributes tab when you edit or create an issue field. If you did not add the tag when creating the script, it cannot be selected until you add the tag.
+
+When a script is associated with an issue field, changes to that field are saved only after the triggered script finishes running. This allows you, for example, to perform verifications such as checking that a specific field has been filled out before allowing a user to resolve an issue.
+
+If you perform a bulk update and change the same field across multiple issues at the same time, and that field has a field-triggered script assigned, the script runs in each issue.
+
+An issue field-triggered script can modify multiple issue fields. Note that if field A changes and a script is triggered and changes field B, and field B is also assigned a field-triggered script, the script for field B is not triggered.
+
+Cortex XSIAM comes out-of-the-box with the emailFieldTriggered script, which sends an email to the issue owner when the selected field is triggered. You can also create your own custom scripts.
+
+{% hint style="warning" %}
+This feature assumes fair and intended usage of field-triggered scripts. In cases of excessive or abusive usage, execution may be restricted or disabled. If script execution is restricted or disabled, fields are still updated, but without the results of the assigned script.
+{% endhint %}
+
+<details>
+
+<summary>Issue field-triggered script arguments</summary>
+
+ssue field-triggered scripts have the following triggered field information available as arguments (args):
+
+| Argument          | Description                                                                                                           |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `associatedToAll` | <p>Whether the field is associated with all or some issues.</p><p>Value: <code>true</code> or <code>false</code>.</p> |
+| `associatedTypes` | An array of the issue types with which the field is associated.                                                       |
+| `cliName`         | The name of the field when called from the command line.                                                              |
+| `description`     | The description of the field.                                                                                         |
+| `isReadOnly`      | <p>Specifies whether the field is non-editable.</p><p>Value: <code>true</code> or <code>false</code>.</p>             |
+| `name`            | The name of the field.                                                                                                |
+| `new`             | The new value of the field.                                                                                           |
+| `old`             | The old value of the field.                                                                                           |
+| `ownerOnly`       | <p>Specifies that only the creator of the field can edit.</p><p>Value: <code>true</code> or <code>false</code>.</p>   |
+| `placeholder`     | The placeholder text.                                                                                                 |
+| `required`        | <p>Specifies whether this is a mandatory field.</p><p>Value: <code>true</code> or <code>false</code>.</p>             |
+| `selectValues`    | If this is a multi-select type field, these are the values the field can take.                                        |
+| `system`          | Whether it is a Cortex XSIAM defined field.                                                                           |
+| `type`            | The field type.                                                                                                       |
+| `unmapped`        | Whether it is not mapped to any issue.                                                                                |
+| `useAsKpi`        | Whether it is being used for tracking KPI on an issue page.                                                           |
+| `validationRegex` | Whether there is a regex associated validation for the values the field can hold.                                     |
+
+{% hint style="info" %}
+Fields that can hold a list, such as multi-select custom fields, return the delta in an array as a new argument. For example, if a multi-select field value has changed from \["a"] to \["a", "b"], the new argument of the script gets a value of \["b"].
+{% endhint %}
+
+</details>
+
+<details>
+
+<summary>Add an issue field triggered script to an issue field</summary>
+
+After creating an issue field-triggered script in the Scripts page in Python, PowerShell, or JavaScript, you can then associate it with an issue field.
+
+1. Go to Settings → Configurations → Object Setup → Issues → Fields.
+2. Right-click the issue field and select Edit.
+3.  In the Attributes tab, under Script to run when field changes, select the desired issue field-triggered script.
+
+    Issue field-triggered scripts must have the `field-change-triggered` tag to appear in the list.
+
+    <div data-gb-custom-block data-tag="hint" data-style="warning" class="hint hint-warning"><p>Issue field trigger scripts are not supported for all system fields. The following fields are not supported for issue field trigger scripts and may result in failing to populate the issue layout:</p><ul><li><strong>Cases</strong>: Case ID, Cases IDs</li><li><strong>Asset Fields</strong>: Asset IDs, Asset Names, Asset Classes, Asset Categories, Asset Groups, Asset Regions, Asset Providers, Asset Accounts, Asset Types</li><li><strong>Other</strong>: Business Application Names, Findings</li></ul></div>
+
+</details>
+
+<details>
+
+<summary>Field-change-triggered with single select or multi-select types</summary>
+
+1.  Create and save a single select or multi-select script in the Scripts page.
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>When creating the script, add the field-change-triggered tag in the script settings.</p></div>
+
+    This is an example of a single select script.
+
+    ```
+    # Mapping of user selection to email addresses
+    owner_mapping = {
+        'option1': 'alice@example.com',
+        'option2': 'eled@example.com',
+        'option3': 'carol@example.com',
+        'option4': 'dave@example.com',
+        'option5': 'eve@example.com',
+    }
+
+    # The value selected by the user when the script is triggered
+    val = demisto.args().get('new')
+
+    # Get the mapped email address
+    owner_email = owner_mapping.get(val, val)
+
+    # Set the owner of the incident
+    demisto.executeCommand('setIssue', {
+        'owner': owner_email
+    })
+    ```
+
+    <br>
+2. Go to Settings → Configurations → Object Setup → Issues → Fields.
+3. Click New Field and create a new issue field of one of the following types:
+   * Single select
+   * Multi-select
+4.  Click Basic Settings and in the Values section set the values you want to see in the issue layout dropdown list for this field.
+
+    For example, `option1,option2,option3,option4,option5`.
+5. Click Attributes and in Script to run when field changes, select the script you created in Step 1.
+6. Go to Settings → Configurations → Object Setup → Issues → Layouts and add the new issue field to an existing layout or create a new layout.
+7. In the issue layout edit page, click Fields and Buttons and drag the new issue field you created to the layout.
+8. Save the version.
+9. Select one of the values. The layout will update with the mapped value as set on the script related to the issue field.
+
+</details>
+
+<details>
+
+<summary>Use scripts with a grid field</summary>
+
+You can use scripts to manipulate and populate data in a grid field. In this example, analysts add comments to issues they work on during their shifts. The script automatically populates a column of the grid, logging the timestamp of each comment.
+
+1. Create a script called `ShiftSummariesChange`. The script operates in the following phases:
+   * The script gets all new rows and sets the Date Logged field to now (current day).
+   * For each existing row, if the name matches, and the findings column is not updated, the Date Logged column is also updated.
+   *   After creating a grid field, it is saved with the new values using the `setIssue` command.
+
+       ```
+       var newField = args.new ? JSON.parse(args.new)  : [];
+       //if line(s) added, set "datelogged" to now.
+       if (oldField.length < newField.length) {
+           // for each new line change date.    
+           for(var i=oldField.length; i < newField.length; i++) {
+               newField[i].datelogged = new Date ().toISOString();
+           }
+       }
+       var columnName = "findings";
+       // for each old line if the "columnName" has changed, change date to now.
+       for(var i=0; i < oldField.length; i++) {
+           if (newField[i] && oldField[i].fullname === newField[i].fullname &&
+           oldField[i][columnName] !== newField[i][columnName]) {
+               newField[i].datelogged = new Date().toISOString();
+           }
+       }
+       var newVal = {};
+       newVal[args.cliName] = newField;
+       executeCommand("setIssue", newVal);
+       ```
+2. Add the `field-change-triggered` tag and save the script.
+3.  Create a `Shift Summaries` grid field with the following columns:
+
+    * Full name
+    * Findings
+    * Status
+    *   Date Logged
+
+        Select Date picker with the Lock checkbox, so the script can populate the values for that column. If a column is unlocked (default), the column values can be entered manually (by users), or by a script.
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>Verify that User can add rows is selected.</p></div>
+
+**Add a row to a grid**
+
+During playbook execution, if a malicious finding is discovered, you can add that finding to a grid, using a script in a playbook task.
+
+This Python script requires two arguments:
+
+* `fieldCliName`: The machine name for the field for which you want to add a new row.
+* `Row`: The new row to add to the grid. This is a JSON object in lowercase characters, with no white space.
+
+```
+fieldCliName = demisto.args().get('field')
+currentValue = demisto.incidents()[0]["CustomFields"][fieldCliName];
+
+if currentValue is None:
+    currentValue = [json.loads(demisto.args().get('row'))]
+else:
+    currentValue.append(json.loads(demisto.args().get('row')))
+
+val = json.dumps({ fieldCliName: currentValue })
+demisto.results(demisto.executeCommand("setIssue", { 'customFields': val }))
+```
+
+<br>
+
+During playbook execution, if a malicious finding is discovered, you can add that finding to a grid, using a script in a playbook task.
+
+This Python script requires two arguments:
+
+* `fieldCliName`: The machine name for the field for which you want to add a new row.
+* `Row`: The new row to add to the grid. This is a JSON object in lowercase characters, with no white space.
+
+```
+fieldCliName = demisto.args().get('field')
+currentValue = demisto.incidents()[0]["CustomFields"][fieldCliName];
+
+if currentValue is None:
+    currentValue = [json.loads(demisto.args().get('row'))]
+else:
+    currentValue.append(json.loads(demisto.args().get('row')))
+
+val = json.dumps({ fieldCliName: currentValue })
+demisto.results(demisto.executeCommand("setIssue", { 'customFields': val }))
+```
+
+<br>
+
+</details>

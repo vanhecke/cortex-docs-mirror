@@ -1,0 +1,25 @@
+---
+description: Learn about the All Cloud Assets page to view and assess your cloud footprint.
+---
+
+# All cloud assets
+
+The **All Cloud Assets** page provides a centralized, normalized view of your infrastructure across multi-cloud environments. It helps you assess your cloud footprint and serves as the foundation for Cloud Security Posture Management (CSPM).
+
+Navigate to **Inventory > Assets > All Cloud Assets** to view an aggregated summary of your cloud footprint.
+
+The dashboard features interactive widgets summarizing the total number of cloud assets, a breakdown by service such as Amazon EC2, AWS IAM, and AWS Backup, and a breakdown by provider such as AWS, Azure, and GCP.
+
+The primary inventory table groups your cloud data by provider. For each provider, it displays high-level aggregates:
+
+* Total assets and issues
+* Number of cloud accounts and services
+* Number of distinct asset categories, types, and classes
+
+**Cloud assets explorer**
+
+Clicking into a specific provider opens the Cloud Assets Explorer. This detailed table lists every individual cloud resource, including S3 Buckets, EC2 Instances, IAM Roles, API Gateways, and CloudFormation Stacks.
+
+**Cloud asset details**
+
+Clicking an individual cloud asset in the explorer opens a detailed side card with tabs for Overview, Configurations, and Compliance. The Configurations tab displays the raw Asset Configuration JSON as ingested from the cloud provider, along with any active Cloud Configuration Issues detected on the asset. The Compliance tab shows an Overall Compliance Score and a breakdown of Controls by Status.

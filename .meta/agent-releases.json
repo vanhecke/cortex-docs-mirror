@@ -1,0 +1,39 @@
+{
+  "book": "agent-releases",
+  "title": "Cortex XDR Agent Releases",
+  "section": "agent-release-notes",
+  "page_count": 4,
+  "tree": [
+    {
+      "title": "Cortex XDR agent releases",
+      "path": "cortex-xdr-agent-releases",
+      "type": "group",
+      "children": [
+        {
+          "title": "Cortex XDR Agent Releases",
+          "path": "cortex-xdr-agent-releases/readme",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Cortex XDR Hotfix Releases",
+          "path": "cortex-xdr-agent-releases/cortex-xdr-hotfix-releases",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Cortex XDR Mobile Patch Releases",
+          "path": "cortex-xdr-agent-releases/cortex-xdr-mobile-patch-releases",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Cortex XDR Agent Past Releases Archive",
+          "path": "cortex-xdr-agent-releases/cortex-xdr-agent-past-releases-archive",
+          "type": "document",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

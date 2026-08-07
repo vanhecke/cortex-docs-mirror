@@ -1,0 +1,38 @@
+# About content updates
+
+To increase security coverage and quickly resolve any issues in policy, Palo Alto Networks can seamlessly deliver software packages for Cortex XSIAM called content updates. Content updates can contain changes or updates to any of the following:
+
+{% hint style="info" %}
+### Note
+
+Cortex XSIAM delivers the content update to the agent in parts and not as a single file, allowing the agent to retrieve only the updates and additions it needs.
+{% endhint %}
+
+* Default security policy including exploit, malware, restriction, and agent settings profiles
+* Default compatibility rules per module
+* Protected processes
+* Local analysis logic
+* Trusted signers
+* Processes included in your block list by signers
+* Behavioral threat protection rules
+* Ransomware module logic including Windows network folders susceptible to ransomware attacks
+* Event Log for Windows event logs and Linux system authentication logs
+* Python scripts provided by Palo Alto Networks
+* Python modules supported in script execution
+* Maximum file size for hash calculations in File search and destroy
+* List of common file types included in File search and destroy
+* Network Packet Inspection Engine rules
+
+**When a new update is available, Cortex XSIAM notifies the Cortex XDR agent.** The Cortex XDR agent then randomly chooses a time within a six-hour window during which it will retrieve the content update from Cortex XSIAM. By staggering the distribution of content updates, Cortex XSIAM reduces the bandwidth load and prevents bandwidth saturation due to the high volume and size of the content updates across many endpoints. You can view the distribution of endpoints by content update version from the dashboard.
+
+The Cortex XSIAM research team releases more frequent content updates in-between major content versions to ensure your network is constantly protected against the latest and newest threats in the wild. When you enable minor content updates, the Cortex XSIAM agent receives minor content updates, starting with the next content release. Otherwise, if you do not wish to deploy minor content updates, your Cortex XDR agents will keep receiving content updates for major releases which usually occur on a weekly basis. The content version numbering format remains `XXX-YYYY`, where `XXX` indicates the version and `YYYY` indicates the build number. To distinguish between major and minor releases, XXX is rounded up to the nearest ten for every major release, and incremented by one for a minor release. For example, `1280-<build_num>` and `1290-<build_num>` are major releases, and `1281-<build_num>` , `1282-<build_num>`, and `1291-<build_num>` are minor releases.
+
+**To adjust content update distribution for your environment, you can configure the following optional settings:**
+
+* Content management settings as part of the Cortex XSIAM [global agent configurations](../../../onboard-cortex-xsiam/deployment-steps/install-cortex-xdr-agents/configure-global-agent-settings).
+* Content download source, as part of the Cortex XSIAM [agent setting profile](https://app.gitbook.com/s/FOhYBYLdbwpnbJgr6uaX/cortex-xdr-3.x-documentation/endpoint-security/install-and-manage-endpoints/set-up-endpoint-protection/set-up-endpoint-profiles-and-exception-rules/set-up-agent-settings-profiles).
+
+Otherwise, if you want the Cortex XDR agent to retrieve the latest content from the server immediately, you can force the Cortex XDR agent to connect to the server using one of the following methods.
+
+* (Windows and Mac only) Perform manual check-in from the Cortex XDR agent console.
+* Initiate a check-in using the `Cytool checkin` command.

@@ -1,0 +1,102 @@
+{
+  "book": "compatibility",
+  "title": "Cortex XDR Compatibility Matrix",
+  "section": "compatibility-matrix",
+  "page_count": 15,
+  "tree": [
+    {
+      "title": "Where can I install the Cortex XDR agent?",
+      "path": "where-can-i-install-the-cortex-xdr-agent",
+      "type": "document",
+      "children": [
+        {
+          "title": "Endpoint operating systems supported",
+          "path": "where-can-i-install-the-cortex-xdr-agent/endpoint-operating-systems-supported",
+          "type": "document",
+          "children": [
+            {
+              "title": "Mac",
+              "path": "where-can-i-install-the-cortex-xdr-agent/endpoint-operating-systems-supported/mac",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Windows",
+              "path": "where-can-i-install-the-cortex-xdr-agent/endpoint-operating-systems-supported/windows",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Linux",
+              "path": "where-can-i-install-the-cortex-xdr-agent/endpoint-operating-systems-supported/linux",
+              "type": "document",
+              "children": []
+            }
+          ]
+        },
+        {
+          "title": "Cloud platforms supported with Cortex XDR agent",
+          "path": "where-can-i-install-the-cortex-xdr-agent/cloud-platforms-supported-with-cortex-xdr-agent",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Kubernetes platforms supported",
+          "path": "where-can-i-install-the-cortex-xdr-agent/kubernetes-platforms-supported",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Virtual applications supported",
+          "path": "where-can-i-install-the-cortex-xdr-agent/virtual-applications-supported",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Mobile operating systems supported with Cortex XDR",
+          "path": "where-can-i-install-the-cortex-xdr-agent/mobile-operating-systems-supported-with-cortex-xdr",
+          "type": "document",
+          "children": [
+            {
+              "title": "Android",
+              "path": "where-can-i-install-the-cortex-xdr-agent/mobile-operating-systems-supported-with-cortex-xdr/android",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "iOS/iPadOS",
+              "path": "where-can-i-install-the-cortex-xdr-agent/mobile-operating-systems-supported-with-cortex-xdr/ios-ipados",
+              "type": "document",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cortex XDR agent compatibility with third-party security products",
+      "path": "cortex-xdr-agent-compatibility-with-third-party-security-products",
+      "type": "document",
+      "children": [
+        {
+          "title": "Third-party Windows security applications",
+          "path": "cortex-xdr-agent-compatibility-with-third-party-security-products/third-party-windows-security-applications",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Third-party Mac security applications",
+          "path": "cortex-xdr-agent-compatibility-with-third-party-security-products/third-party-mac-security-applications",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Third-party Linux security applications",
+          "path": "cortex-xdr-agent-compatibility-with-third-party-security-products/third-party-linux-security-applications",
+          "type": "document",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

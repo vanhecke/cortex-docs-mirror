@@ -1,0 +1,60 @@
+---
+description: Create, view, edit, and organize threat indicators throughout their lifecycle.
+---
+
+# Indicator management
+
+**Indicator management**
+
+Indicators are artifacts associated with security issues and are an essential part of the case management and remediation process. They help correlate issues, create hunting operations, and enable you to easily analyze cases and reduce Mean Time to Response (MTTR).
+
+**Indicators**
+
+Displays a list of indicators added to Cortex XSIAM, where you can perform several indicator actions.
+
+You can perform the following actions on the **XSIAM Indicators** page.
+
+| Action                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Investigate an indicator | Click on an indicator to view and take action on the indicator.                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Create an indicator      | <p>Indicators are added to the indicators table from feed integrations or you can manually create a new indicator in the system.</p><p>When creating an indicator, in the <strong>Verdict</strong> field, you can either select a Verdict or leave it blank to calculate it later by clicking <strong>Save &#x26; Enrich</strong>, which updates the indicator from enrichment sources. After you select an indicator type, you can add any custom field data.</p> |
+| Edit                     | Edit a single indicator or select multiple indicators to perform a bulk edit.                                                                                                                                                                                                                                                                                                                                                                                      |
+| Delete and Exclude       | <p>Delete and exclude one or more indicators from all indicator types or a subset of indicator types.</p><p>If you select the <strong>Do not add to exclusion list</strong> checkbox, the selected indicators are only deleted.</p>                                                                                                                                                                                                                                |
+| Export CSV               | Export the selected indicators to a CSV file.                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Export STIX              | Export the selected indicators to a STIX file.                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Upload a STIX file       | To upload a STIX file, click the upload button (top right of the page) and add the indicators from the file to the system.                                                                                                                                                                                                                                                                                                                                         |
+
+**Indicator Rules**
+
+The **Indicator Rules** page is located under the **Threat Management** → **Detection Rules** menu and displays the following fields for each rule. For more information, see [Generate issues from indicators using indicator rules for prevention and detection](indicator-configuration/generate-issues-from-indicators-using-indicator-rules-for-prevention-and-detection).
+
+| Field                 | Description                                                       |
+| --------------------- | ----------------------------------------------------------------- |
+| **Rule ID**           | Unique identifier for the rule.                                   |
+| **Creation Date**     | Timestamp of when the rule was created.                           |
+| **Modification Date** | Timestamp when the rule was edited.                               |
+| **Name**              | Name of the rule.                                                 |
+| **Type**              | Whether the rule is a **Prevention** or **Detection** type rule.  |
+| **Target**            | Hash, IP address, File, or domain value associated with the rule. |
+| **Severity**          | Level of severity associated with the rule.                       |
+| **# of issues**       | Number of issues generated by the rule.                           |
+| **Created by**        | The email address of the user who created the rule.               |
+| **Description**       | An optional description associated with the rule.                 |
+| **Status**            | Whether the rule is **Enabled** or **Disabled**.                  |
+| **Used in profiles**  | Cortex XDR agent Restriction Profile associated with the rule.    |
+
+{% hint style="info" %}
+### Note
+
+If an indicator matches multiple indicator rules, the highest severity rule is used. If all have the same severity, the rules are used by the first created.
+{% endhint %}
+
+In the **Indicator Rules** table, right-click a rule to perform actions, including the following:
+
+| Action                  | Description                                                          |
+| ----------------------- | -------------------------------------------------------------------- |
+| **View related issues** | View issues generated by the rule.                                   |
+| **Disable/Enable**      | Depending on the current status, **Disable** or **Enable** the rule. |
+| **Edit Rule**           | Modify the rule.                                                     |
+| **Save as new**         | Create a new rule using the current rule configurations.             |
+| **Delete**              | Delete the rule.                                                     |

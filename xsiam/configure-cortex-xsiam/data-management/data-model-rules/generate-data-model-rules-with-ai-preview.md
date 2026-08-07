@@ -1,0 +1,65 @@
+# Generate data model rules with AI (preview)
+
+{% hint style="info" %}
+**Prerequisite**
+
+* Data model rules require View/Edit RBAC permissions for Data Management (under Configurations > Data Management).
+* The AI generation option is available when adding a data model rule only when the Agents & LLM Experience is enabled in your Server Settings under Settings > Configurations > General > Server Settings > AI Configurations.
+* The selected dataset must have collected at least 10 logs within the last 90 days. If a dataset does not meet this minimum volume requirement, the AI generator will not have enough data samples to analyze, and you will not be able to generate the rule.
+{% endhint %}
+
+Cortex XSIAM leverages built-in AI, available in preview mode, to simplify the process of writing custom data model rules for data sources without out-of-the-box support. AI handles data normalization intelligently, removing the burden of manual Cortex Data Model (XDM) schema mapping. By optimizing the mapping of fields to the XDM, the AI-driven generator enhances downstream detections and ensures your custom data is immediately query-ready.
+
+### Key Benefits
+
+* **Precision normalization**: Automatically applies the correct mapping logic to ensure your custom data is immediately "query-ready" within the Cortex Data Model (XDM).
+* **Current XDM alignment**: The AI generator is built using the most recent XDM schema definitions. This ensures that every new rule you generate is structurally compliant with the latest version of the Cortex Data Model available at that time.
+* **Increased SOC velocity**: By streamlining the rule-writing process and eliminating repetitive retries, analysts can onboard a wider variety of data sources in a fraction of the time. This ensures critical data is ready much quicker for downstream threat detection.
+* **Built-in analytics for network data**: For network logs, the AI generator automatically maps the core network 5-tuple (source IP, source port, destination IP, destination port, and IP protocol). This precise mapping ensures that network stories are generated which automatically enable Cortex XSIAM’s network analytics.
+
+### AI disclaimer
+
+Always check AI-generated output for accuracy before saving the rule to ensure it meets your specific security and compliance requirements.
+
+### How to generate data model rules with AI
+
+You can use AI to generate a custom data model rule, which will be added directly to your environment as a user-defined rule. The AI generation option is available exclusively for datasets of type Raw. When generating these rules, the tool assists you in building the necessary mapping logic using the Cortex Query Language (XQL).
+
+1. Access data model rules:\
+   Select Settings > Configurations > Data Management > Data Model Rules.
+2. Choose your Data Model Editor view. The option to generate with AI is available in the following tabs:
+   * **User Defined Rules**: Shows custom data model rules.
+   * **Both**: Shows the default rules provided by Cortex XSIAM alongside the user-defined rules.
+3. Generate rule with AI:\
+   Click **Generate with AI** to open the **Generate with AI** window.
+4.  In the **Select Dataset** field, choose a dataset from the list of available ingested and parsed data sources. Only datasets of type **raw** are shown. The **Generate rule** button remains disabled until you make a selection.<br>
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong><br>The dataset you select must contain at least 10 logs ingested within the last 90 days. If the dataset does not meet this log volume threshold, the system cannot analyze the samples, and the rule generation process cannot proceed.</p></div>
+5. Click **Generate rule**. Wait until the rule is generated; this can take a few minutes. Do not close the window while generation is in progress, as doing so will interrupt the process. You can review the XQL before proceeding with the rule.
+6. Apply the generated rule:\
+   After the rule is displayed, click **Apply**. When prompted with a warning that this action will override any existing user-defined rule, click **Apply** to proceed. The rule is listed in the Data Model Editor, where only the relevant dataset section is either overwritten or added depending on the dataset selected. Before the rule a comment is added in the format:\
+   `//Generated with AI | UUID: <UUID> | Timestamp: <timestamp>`
+7. Review and, if needed, customize the data model rule according to your requirements.
+8. Click **Save**.
+
+### Data security and control
+
+The AI-powered data model rules are built on responsible AI principles to ensure its use is safe, fair, and trustworthy.
+
+The following describes how AI-powered data model rules protects sensitive data and gives you control and understanding over its automated actions for data security and control:
+
+#### How sensitive data is protected
+
+Data is hosted and encrypted by default on a dedicated Google Cloud Platform (GCP) project, and is isolated and protected by your specific IAM permissions. Google's multi-tenant architecture enforces strict data separation between customers.
+
+#### User approval for generated content
+
+A rule generated by AI is never implemented automatically. Before a rule is activated, you are presented with the proposed Cortex Query Language (XQL) syntax and Cortex Data Model (XDM) mapping for review. This "human-in-the-loop" approach ensures you can validate, edit, or reject any generated content before saving changes to your environment.
+
+#### Data user policy
+
+Inputs, such as the dataset on which to build the rule, and the resulting outputs are processed only to generate the immediate response. This data is not harvested for model training, nor is it ever shared with third-party entities.
+
+#### Data residency
+
+To align with modern data-governance standards, all prompts and responses stay within your specific region’s compute boundary. This ensures that your AI-assisted data onboarding workflows remain compliant with regional data-residency practices.

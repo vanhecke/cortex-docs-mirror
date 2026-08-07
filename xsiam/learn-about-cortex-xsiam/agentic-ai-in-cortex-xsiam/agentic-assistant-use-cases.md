@@ -1,0 +1,71 @@
+---
+description: Recommended prompts to automate your SOC using the Cortex Agentic Assistant
+---
+
+# Agentic Assistant use cases
+
+Discover how Cortex XSIAM can streamline your security operations by exploring some key use cases.
+
+### Chat prompt examples
+
+Using chat prompt conversation starters in the Agentic Assistant simplifies and speeds up your interactions by providing pre-defined, common queries that guide you to relevant actions and information.
+
+For example, a SOC analyst may see the following conversation starters under the chat prompt:
+
+* What are the top issues I should prioritize today?
+* Show me all issues with an overdue SLA
+* Which automations are waiting for my input?
+* Clean up all expired indicators.
+
+Additional examples of possible relevant prompts are:
+
+* Read this [Unit42 blog](https://unit42.paloaltonetworks.com/threat-brief-ivanti-cve-2025-0282-cve-2025-0283/) and get all the CVEs. For every critical CVE found, check if my assets are vulnerable and isolate them.
+* List recent security issues with high severity and an affected hostname that includes 'server'.
+* Summarize the latest security issues from the past 24 hours
+* How do I make a loop inside a playbook?
+* What is the riskiest unresolved issue affecting our critical infrastructure?
+* Show recent SSO-related issues
+* Investigate this phishing issue and determine the source of the email and block any malicious indicators.
+* Create a pie chart of the top 10 targeted assets over the last 7 days.
+* Show critical assets by region in a bar chart.
+* Create an line chart to show the trend of critical security issues over the past month.
+
+***
+
+### Slack interaction with the Agentic Assistant example
+
+Slack chats with the Agentic Assistant bridge the gap between where your team collaborates and where security operations happen by enabling you to interact with agents directly within your daily communication workflow without needing to log in to Cortex XSIAM. For more information on interacting with an agent from Slack, see [Chat with an Agentic Assistant agent](../../detect-investigate-and-respond-to-threats/agentic-assistant-chat/chat-with-an-agentic-assistant-agent).
+
+The following is an example scenario describing how you can monitor shift priorities, track SLAs, and review pending automations in Cortex XSIAM directly from Slack.
+
+{% stepper %}
+{% step %}
+### Initiation
+
+Check the daily queue by opening your team's Slack channel and tagging **`@Your bot name`** with the prompt, "What are the top issues I should prioritize today and show me all issues with an overdue SLA?".
+{% endstep %}
+
+{% step %}
+### Agent selection
+
+The bot responds with a dropdown menu of available public agents, and you select the appropriate agent to handle the request.
+{% endstep %}
+
+{% step %}
+### Status update
+
+The agent processes the request and replies in the thread, providing a summarized list of the highest-priority issues and any automations currently waiting for user input.
+
+{% hint style="info" %}
+If a team member in the channel sees the summary and attempts to ask the agent, "Give me more details on the first SLA issue," the team member receives an access denied message because the active session is only available to you, the initiator.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+### Handoff
+
+The session can remain open for up to two weeks, after which it automatically closes. To end a session, type **`@Your bot name`** so the rest of the team can engage.
+
+Another team member can then tag **`@Your bot name`** to initiate a new session. Because the system pulls the last five messages in the thread, the agent understands the history of the conversation. The team member can simply prompt, "Assign the first overdue issue from that summary to me," and the agent will know which issue is being referenced.
+{% endstep %}
+{% endstepper %}

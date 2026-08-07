@@ -1,0 +1,26 @@
+# Investigate Managed Threat Hunting reports
+
+The Managed Threat Hunting team proactively scans, identifies, and analyzes your Cortex XSIAM tenant for possible threats and creates detailed threat and impact reports to help you track and manage your Cortex XSIAM data.
+
+Cortex XSIAM displays the reports in a dedicated page that allows you to investigate and communicate with your Managed Threat Hunting team. When a new report is sent, MTH send a notification to your Notification Center. **MTH** type notifications will appear at the top of your notification list and offer the following options:
+
+* **Open**—Pivot to report in the **Managed Threat Hunting** table.
+* **Dismiss**—Delete the notification from your **Notifications** list.
+
+{% hint style="info" %}
+### Note
+
+The MTH page is available for users with the Managed Threat Hunting license and have the necessary permission to view and triage alerts and incidents in Cortex XSIAM.
+{% endhint %}
+
+To investigate your reports:
+
+1.  In the Cortex XSIAM console, select **MTH**.
+
+    The Managed Threat Hunting page displays a side-by-side view of all your reports and their corresponding report details and communication.
+2.  In the left-pane, select the report you want to investigate. You can sort the list according to the report **Type**, **Insert Time**, or **Severity**, and use the search bar to help you locate reports.
+
+    After selecting a report, the right-pane view displays a summary of the Managed Threat Hunting findings along with an attachment of the complete report.
+3.  In the right-pane, investigate the report findings and add your comments.
+
+    The comments are a way for you to communicate directly with the Managed Threat Hunting without the need to send separate emails. When you post a comment, the Managed Threat Hunters team is notified and can see and reply to your comments. Comments are listed chronologically and are visible to all the Cortex XSIAM tenant users with access to the MTH page and the Managed Threat Hunting team. You can attach up to ten PDF or image format files with a maximum of 10MB per file in each comment. Editing and deleting a comments is available only on comments you wrote.

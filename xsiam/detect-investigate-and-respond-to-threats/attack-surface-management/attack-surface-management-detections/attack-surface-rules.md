@@ -1,0 +1,40 @@
+# Attack surface rules
+
+An _attack surface rule_ is a definition managed by Cortex XSIAM that identifies risks on a customer's attack surface. Attack Surface Rules match on ASM global scan results to detect exposed or misconfigured customer-owned assets. When an attack surface rule is enabled, Cortex XSIAM will generate findings as well as issues for observations that match that rule.
+
+To view attack surface rules, navigate to **Modules** → **Attack Surface** → **Policies** → **Attack Surface Rules**.
+
+The following table describes each field in the Attack Surface Rules table.
+
+<table><thead><tr><th width="249.5">Field</th><th>Description</th></tr></thead><tbody><tr><td>ASM Alert Categories</td><td>A categorization done by the Cortex XSIAM security research team often with input from customers or in reference to published materials such the the BOD-22-01 or BOD-23-02 from CISA.</td></tr><tr><td>Description</td><td>Description of what the attack surface rule is looking for.</td></tr><tr><td>Estimated Alert Count</td><td>Estimated number of alerts that Xpanse will create if this attack surface rule is enabled.</td></tr><tr><td>Has Remediation Rule</td><td><p>Indicates whether a remediation path rule has been created for this attack surface rule.</p><p>Applies only to systems with the Active Response addon module.</p></td></tr><tr><td>Modified</td><td>Date of the most recent update to the attack surface rule.</td></tr><tr><td>Remediation Guidance</td><td>Guidance on how to remediate or mitigate the alerts created by this attack surface rule.</td></tr><tr><td>Rule ID</td><td>ID for this attack surface rule.</td></tr><tr><td>Rule Name</td><td>Name of the attack surface rule.</td></tr><tr><td>Severity</td><td>Severity of the risk identified by the attack surface rule. Issues are created with the same severity as the attack surface rule that triggered them. See <a href="#UUID-332e3adf-9c83-9714-a4e8-8d918fae3d1a_section-idm458322763273123375621426957">Default attack surface rule severity</a> for default severity settings.</td></tr><tr><td>Status</td><td>Enabled or Disabled. An enabled attack surface rule creates an issue when it detects an instance of that rule. See <a href="#UUID-332e3adf-9c83-9714-a4e8-8d918fae3d1a_section-idm4526656691486433756439374147">Default attack surface rule enablement status</a> for details about the default enablement status.</td></tr></tbody></table>
+
+## Manage attack surface rules
+
+On the **Attack Surface Rules** page you can enable or disable rules and change the severity to align with your organization’s specific needs and priorities.
+
+1. Navigate to **Modules** → **Attack Surface** → **Policies** → **Attack Surface Rules**.
+2. Select one or more rules and right-click to perform one of the following actions:
+   * **Enable or Disable** the rule—Some rules are enabled by default, but many are designed to be opt-in.
+   * Change the default **Severity** of the rule—All attack surface rules have a predefined default **Severity** setting of **Low**, **Medium**, or **High**. **Critical** is never a predefined default, but you can set it as the default.
+
+When you first enable an attack surface rule, you can expect to see new findings within 24 hours if any instances of that rule are detected on your attack surface. When you disable an attack surface rule, Cortex XSIAM will stop creating new issues for that rule, but any existing open issues will remain open until you change the status.
+
+### Default attack surface rule severity
+
+The Cortex security research team determines the default severity setting for an attack surface rule based on a number of details. We may adjust the default severity when new threat information becomes available. Changes to the default severity will never override any changes you make to a rule’s severity.
+
+<table><thead><tr><th width="165.5">Default Severity</th><th>Description</th></tr></thead><tbody><tr><td><strong>Critical</strong></td><td>None of the attack surface rules are rated as <strong>Critical</strong> by default. This severity is reserved for customers to elevate the attack surface rules or individual issues they deem critical for their organization.</td></tr><tr><td><strong>High</strong></td><td><p><strong>High</strong> severity rules identify risks that most organizations would consider important to remediate in a timely manner. This primarily includes known insecure versions of software with published high or critical severity CVEs and external services that are inherently risky to expose directly on the internet.</p><p>For example:</p><ul><li>A known-insecure version of software with a known high-score CVE. These may include CVEs with weaponized exploits.</li><li>Devices and services that are inherently risky to be exposed to the public internet (RDP, building control systems, databases, etc). These are often targets for opportunistic attackers who are scanning the internet and can use brute force or use other tactics to gain access to an organization’s systems.</li></ul></td></tr><tr><td><strong>Medium</strong></td><td><p><strong>Medium</strong> severity rules identify risks that we believe some organizations would consider important to remediate, but may not be important to everyone.</p><p>For example:</p><ul><li>A service type with known vulnerabilities that could reasonably be expected to be publicly visible on the internet but where we cannot infer insecure versions with high confidence.</li><li>A service that may or may not be expected to be publicly visible on the internet</li><li>Something that an organization may or may not be expected to remediate (e.g. a certificate expiring in 30 days).</li></ul></td></tr><tr><td><strong>Low</strong></td><td><p><strong>Low</strong> severity rules are unlikely to be consequential to most organizations. These include the following types of risks:</p><ul><li>Services that could be expected to be exposed to the internet, but where the attack surface rule will not exclusively surface vulnerable instances (in these cases, they may be paired with a higher priority "insecure" version of the rule for known vulnerable instances).</li><li>Services that could be of interest but pose minimal attack surface risk. Attack surface rules that capture these services exist primarily for visibility purposes.</li><li>Low-signal findings where reliably detecting the service is considered low confidence. Attack surface rules where the impact of exposure is high but the detection signal is low are also classified as <strong>Low</strong> severity.</li></ul></td></tr></tbody></table>
+
+### Default attack surface rule enablement status
+
+Attack surface rules are enabled or disabled by default. You can change the enablement status for a rule or set of rules at any time.
+
+If a rule is made available to only a select set of customers (typically due to customer request), we will set the rule to enabled by default, regardless of the severity.
+
+In general, most attack surface rules are disabled by default. This approach ensures that customers stay in control of their overall risk assessment. We encourage you to routinely review the attack surface rules and **Enable** them so they begin generating issues.
+
+The internal Cortex decision to enable a rule by default weighs the likelihood of generating numerous issues that may not be relevant to all customers versus the risk of a customer missing something important to them.
+
+### Attack surface rule deprecation
+
+Cortex XSIAM is committed to providing the most accurate attack surface rules. Our security research team continuously reviews and refines the attack surface rules to ensure that our rules effectively reflect the evolving threat landscape and new technologies. When a rule is marked as "deprecated" in Cortex XSIAM, it signifies that the rule is no longer recommended for active use by customers and is slated for eventual removal from the platform. A deprecated rule will continue to function for a transitional period, but deprecation indicates an important update in our recommended best practices and upcoming rule enhancements.

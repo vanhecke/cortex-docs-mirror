@@ -1,0 +1,7 @@
+# Work Plan for autonomous playbooks
+
+To keep incident investigations highly focused, the system abstracts underlying conditions and background scripts. When you view an autonomous playbook in an issue's resolution tab, it opens a unique, curated Work Plan. This view presents only the executed key tasks and their defined outputs, ordered sequentially, ensuring you immediately see conclusions without the distraction of background tasks.
+
+For tasks requiring manual intervention or approval, the Work Plan presents the step as pending user input in the resolution center in case view, providing a direct option for you to complete the task without switching pages. These manual steps also aggregate in the case's pending tab so you can manage all required user inputs centrally. When an autonomous playbook executes at the issue level and its results are incorporated into a case, the AI-generated case description and investigation plan summarize the exposed key actions and outputs. This ensures your AI-generated summaries remain concise and highly relevant.
+
+If an error occurs on a visible task, the Work Plan shows a specific textual description, such as **Failed retrieving user password**. If an error happens in a background task, the system shows a general error message at the playbook level. If a playbook fails, you have the option to rerun it directly from the Work Plan. You can also provide feedback to Palo Alto Networks regarding the playbook's performance and select a proposed issue verdict.

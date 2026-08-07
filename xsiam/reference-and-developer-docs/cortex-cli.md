@@ -1,0 +1,37 @@
+---
+description: >-
+  The Cortex CLI is a unified command-line tool integrating Cloud Workload
+  Protection, API Security, and Code Security scans into a single executable.
+---
+
+# Cortex CLI
+
+The Cortex CLI is a unified command-line tool that integrates scanning for [Cloud Workload Protection](cortex-cli/cortex-cli-for-cloud-workload-protection) (CWP), [API Security](cortex-cli/cortex-cli-for-api-security) (WAAS), and [Code Security (AppSec)](cortex-cli/cortex-cli-for-code-security). From a single binary, security teams can enforce organizational policies and proactively detect vulnerabilities, misconfigurations, and exposed secrets across source code, container images, and API specifications.**Scope**: The Cortex CLI evaluates findings against Unified Application Security Policies and returns structured results with policy correlation, severity breakdowns, and remediation guidance. The Cortex CLI does not create, edit, or delete policies; all policy management operations are performed through the Cortex Cloud tenant or the public API.
+
+## Primary use cases <a href="#primary-use-cases" id="primary-use-cases"></a>
+
+The CLI supports the following primary workflows:
+
+* **Local code development (AppSec)**: Enable developers to detect hardcoded secrets, IaC misconfigurations, and vulnerable dependencies directly from their terminal before committing code
+* **CI/CD automation**: Embed security checks into build scripts (such as Jenkins, GitHub Actions) to automatically detect issues and enforce security gates during the build process
+* **Container Workloads (CWP)**: Integrate container scanning directly into CI builds to detect vulnerabilities and malware before images are pushed to production registries
+* **API Testing**: Evaluate application endpoints for high-risk vulnerabilities and specification leaks as a standard step prior to deployment
+
+## Core capabilities <a href="#core-capabilities" id="core-capabilities"></a>
+
+The Cortex CLI consolidates multi-domain security scanning into a single executable tool:
+
+* **Unified scanning engine**: Integrates native scanning for Cloud Workload Protection (CWP), API Security, and Code Security. A single set of global flags controls authentication, output format, upload behavior, and error handling across all scan types
+* **Code security**: Detects hardcoded secrets, Infrastructure-as-Code (IaC) misconfigurations, and open-source dependency vulnerabilities (SCA) directly within developer environments. The SCA scanner generates Software Bills of Materials (SBOMs) for supply chain compliance
+* **Container security (CWP)**: Generates Software Bill of Materials (SBOMs) and detects vulnerabilities or malware in container images before registry push. Container scanning integrates directly into CI builds to prevent vulnerable images from reaching production registries
+* **API risk validation**: Identifies vulnerabilities, sensitive data leaks, and configuration errors by analyzing OpenAPI and Swagger specifications. API testing validates application endpoints for high-risk vulnerabilities and specification leaks as a standard step prior to deployment
+* **Automated security guardrails**: Enforces compliance directly within CI/CD pipelines by dynamically blocking deployments that violate organizational security policies
+
+## Prerequisites <a href="#prerequisites" id="prerequisites"></a>
+
+Before installing and running the Cortex CLI, verify that your environment and account meet the following system and access requirements:
+
+| Prerequisite | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| License      | An active Cortex Cloud license with the Application Security add-on for Code Security if required                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Permissions  | <p>The API key must be associated with a user or role that has <strong>CLI Tools</strong> permissions:</p><ul><li><strong>View</strong>: grants read-only access (sufficient for <code>--upload-mode no-upload</code>).This role is not supported for CWP, as the CWP system does not support offline mode.</li><li><strong>View/Edit</strong>: grants full access including scan result upload (required for <code>--upload-mode upload</code> and --<code>upload-mode no-code</code>)</li></ul><p>There are no preconfigured CLI-specific roles. Add the CLI Tools permission to an existing role or create a dedicated custom role.</p> |

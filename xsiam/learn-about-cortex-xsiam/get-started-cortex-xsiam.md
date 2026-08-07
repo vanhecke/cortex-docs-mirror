@@ -1,0 +1,74 @@
+---
+description: Learn about Cortex XSIAM and the key integrated capabilities.
+---
+
+# Get started with Cortex XSIAM
+
+#### What is Cortex XSIAM?
+
+Cortex XSIAM (Extended Security Intelligence and Automation Management) is an AI-driven platform designed to power the autonomous Security Operations Center (SOC). It transforms security operations by consolidating best-in-class SOC capabilities, including SIEM, XDR, SOAR, ASM, and Threat Intelligence, along with native Cloud Security (subject to license) into a single, unified platform.
+
+By harnessing the power of Agentic AI and a centralized data foundation, Cortex XSIAM simplifies operations, stops threats at scale across both enterprise and cloud environments, and accelerates incident remediation through autonomous decision-making.
+
+#### Key features
+
+Simplify security operations with a converged platform:
+
+*   Unified Cloud and Enterprise Security
+
+    Cortex XSIAM combines SOC capabilities, such as XDR, SOAR, ASM, and SIEM, with Cloud Posture (CSPM) and Cloud Runtime Security into a uniﬁed platform, eliminating the need to switch between cloud and security consoles.
+*   Broad integration
+
+    Enables easy onboarding of diverse data sources from endpoints and firewalls to cloud workloads without extensive engineering efforts.
+*   Deep data stitching
+
+    Ensures continuous collection, stitching, and normalization of raw data (including cloud telemetry), going beyond simple alerts to deliver enriched, cross-domain insights.
+
+Stop threats at scale with AI-driven outcomes:
+
+*   Unified visibility
+
+    Leverage out-of-the-box AI models to connect events across endpoints, identities, networks, and cloud infrastructure, delivering a holistic view of cases.
+*   Intelligent prioritization
+
+    Employs issue grouping and AI-driven scoring to prioritize cases based on overall risk, correlating cloud misconfigurations (posture) with active runtime threats.
+*   Focus on critical threats
+
+    Transforms low-confidence events into high-confidence cases, allowing security teams to focus efficiently on confirmed threats.
+
+Accelerate remediation with an Agentic AI workforce:
+
+*   Cortex Agentic Assistant
+
+    Moves beyond static playbooks by deploying autonomous AI agents that can plan, reason, and investigate complex threats, such as cloud identity theft or container breaches, without human intervention.
+*   Autonomous Resolution
+
+    Automates manual tasks and complex decision-making processes, reducing Mean Time to Resolution (MTTR) by independently verifying and fixing issues.
+*   Pre-built Content
+
+    Offers hundreds of pre-built content packs from Cortex Marketplace to streamline operations immediately.
+*   Continuous Learning
+
+    The platform learns from analyst actions and autonomous agent outcomes, continuously refining its detection and response logic.
+
+#### Security challenges addressed by Cortex XSIAM
+
+*   Data overload
+
+    Reduces noise from high volumes of security events by using AI to filter and prioritize actionable cases.
+*   Fragmented security visibility
+
+    Eliminates blind spots by unifying endpoint, network, identity, and cloud (Code-to-Cloud) data into one comprehensive detection engine.
+*   Slow case response
+
+    Accelerates investigations with agentic abilities, which autonomously performs root cause analysis and executes remediation plans.
+*   Manual alert management
+
+    Shifts the workload from human analysts to AI agents that handle the enrichment and resolution of routine and complex issues alike.
+*   Evolving threat landscape
+
+    Keeps defenses up-to-date with real-time threat intelligence and continuous ML model optimization.
+* Operational inefﬁciencies: Delivers an out-of-the-box solution with built-in optimizations, eliminating the need for extensive customer-led tuning.
+*   Analyst burnout
+
+    Alleviates alert fatigue by offloading repetitive investigation and response tasks to the AI workforce, allowing analysts to focus on strategic defense.

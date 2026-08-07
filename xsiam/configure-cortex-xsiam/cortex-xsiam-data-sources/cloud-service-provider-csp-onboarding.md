@@ -1,0 +1,255 @@
+---
+description: Learn about onboarding your cloud service provider to Cortex XSIAM.
+---
+
+# Cloud service provider (CSP) onboarding
+
+Onboard your cloud service provider (CSP) from the Data Source page. Cortex XSIAM provides a unified, normalized asset inventory for cloud assets. This capability provides deeper visibility into all your assets and superior context for incident investigation.
+
+Cortex XSIAM currently supports onboarding the following cloud service providers (CSPs):
+
+* Amazon Web Services (AWS)
+* Microsoft Azure
+* Google Cloud Platform (GCP)
+* Oracle Cloud Infrastructure (OCI)
+* Alibaba Cloud
+
+The onboarding process has two main phases: configuring your template in Cortex XSIAM and deploying it in your CSP environment. This topic describes the high-level process of these two phases and the considerations you should have in mind before you start onboarding.
+
+### Phase 1: Cortex CSP onboarding wizard
+
+In this phase, you use the Cortex XSIAM onboarding wizard to define the scope of your CSP environment and choose which security features you want to enable. Based on your selections, Cortex XSIAM generates a ready-to-deploy configuration template in a format compatible with your CSP.
+
+{% stepper %}
+{% step %}
+#### Step 1: Select the cloud partition
+
+Choose the cloud partition that matches your environment. This option is available only in supported environments. Support varies by provider:
+
+* **AWS:** Choose **Commercial** (standard regions) or **Government** (GovCloud).
+* **Azure:** Choose **Commercial** (standard regions) or **Government.**
+* **Alibaba Cloud, GCP, OCI:** Currently only standard regions are supported.
+{% endstep %}
+
+{% step %}
+#### Step 2: Define the scope
+
+Select the monitoring scope for your organization. Leverage your CSP hierarchy to onboard accounts individually or manage them collectively through a single administrative root (e.g., an OU, Folder, or Management Group). The available scope options vary by CSP:
+
+| **Scope level**     | **AWS**                  | **GCP**      | **Azure**                | **Alibaba Cloud** | **OCI** |
+| ------------------- | ------------------------ | ------------ | ------------------------ | ----------------- | ------- |
+| Entire organization | Organization             | Organization | Tenant and Entra ID-only | —                 | Tenancy |
+| Group of accounts   | Organizational unit (OU) | Folder       | Management Group         | —                 | —       |
+| Single account      | Account                  | Project      | Subscription             | Account           | —       |
+
+{% hint style="info" %}
+**Alibaba Cloud:** Currently only single account onboarding is supported. You must create a separate cloud instance for each Alibaba Cloud account.
+{% endhint %}
+
+{% hint style="info" %}
+**OCI:** Currently only tenancy-level (organization) onboarding is supported. Single compartment or compartment group onboarding is not supported.
+{% endhint %}
+
+{% hint style="warning" %}
+**Note:** You cannot expand the scope of a cloud instance after deployment. For example, if you deploy at the single account scope, you must create a new cloud instance to use the organization scope. We recommend that you start with the broadest anticipated scope and use account exclusions to narrow it.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+#### Step 3: Select the scan mode
+
+Cortex XSIAM supports two scan modes:
+
+* **Cloud scan** (recommended): The scanning takes place within the Cortex XSIAM environment. No additional setup is needed.
+* **Outpost scan**: The scanning is performed on infrastructure deployed to a CSP account owned by you. The CSP account should be a dedicated account for the outpost, free from other resources. Each CSP account can host only one outpost. This mode requires additional cloud provider permissions and may incur additional cloud costs.
+
+{% hint style="info" %}
+**Alibaba Cloud and OCI:** Outpost scanning is not supported. Use cloud scan mode for these CSPs.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+#### Step 4: Select the deployment method
+
+Before you begin onboarding your CSP environment, decide whether you want to use the automated or manual process to create the roles and authorize permissions for Cortex XSIAM.
+
+The automated onboarding workflow creates the Cortex XSIAM roles and adds the permissions required to secure your CSP environment. If you want to create these roles manually instead, refer to the manual onboarding documentation for your specific CSP.
+
+{% hint style="info" %}
+**Note:** Manual onboarding is only available for AWS and GCP.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+#### Step 5: Apply region or account filters (optional)
+
+If you do not want to cover your entire environment, you can limit the scope by including or excluding specific regions, accounts, or organization units/folders/management groups. Exclusions apply to asset discovery and to all Cortex XSIAM scanning capabilities that operate on discovered assets. Excluded accounts are not scanned and do not appear in the asset inventory, scan results, or alerts. Excluded accounts remain visible on the **Cloud Instances** page, marked as excluded, so you can review or re-include them at any time.
+
+Organizational unit, folder, and management group filters let you include or exclude entire branches of your cloud hierarchy in a single step. These filters are recursive, so selecting or excluding an organizational unit, folder, or management group applies to all accounts beneath it. For example, excluding one organizational unit that contains 170 accounts excludes all 170 accounts with a single selection.
+
+You can apply both an organizational unit/folder/management group filter and an account filter at the same time, but both must use the same mode. They must either both include or both exclude,. as mixing modes is not supported. When both filters are active:
+
+* **Both set to include**: Cortex XSIAM monitors all accounts under the included organizational units, folders, or management groups, plus any individually included accounts.
+* **Both set to exlude:** Cortex XSIAM excludes any account that is either under an excluded organizational unit, folder, or management group, or in the excluded accounts list.
+
+Excluding an account, organizational unit, folder, management group, or region does not remove any onboarding resources that were already deployed, and does not prevent data sources that operate at the parent scope (such as audit log collection) from continuing to collect data. The exact behavior of exclusions varies by cloud service provider. The behavior of exclusions during multi-account deployments varies by CSP:
+
+* **AWS:** The CloudFormation StackSet deploys IAM roles to all accounts within the selected organization or organizational unit scope, even if you exclude specific accounts or organizational units from scanning. Exclusions only prevent Cortex XSIAM from scanning or discovering the account; exclusions do not prevent role deployment. Additionally, audit log collection applies to all accounts in scope; exclusions do not apply to log collection.
+* **Azure:** When deploying at the tenant or management group scope, Azure Policy definitions are applied across all subscriptions in scope. Excluded subscriptions and management groups are not scanned or discovered by Cortex XSIAM, but the policy definition may still be present.
+* **GCP:** When deploying at the organization or folder scope, the Terraform template provisions resources across all projects in scope. Excluded projects and folders are not scanned or discovered by Cortex XSIAM.
+* **OCI:** Tenancy-level deployment applies to all compartments. Compartment-level exclusions prevent scanning but the identity policy is applied at the tenancy level. Organizational unit filtering is not supported for OCI.
+* **Alibaba Cloud:** Not applicable (single account scope only).
+{% endstep %}
+
+{% step %}
+#### Step 6: Enable security capabilities
+
+Select which security capabilities Cortex XSIAM should activate for your connected accounts. Your selections determine the contents of the authentication template generated at the end of this wizard.
+
+Every template includes the following:
+
+* **Base deployment:** The CSP-specific resources that enable Cortex XSIAM to connect to your environment, discover the accounts in scope, and register them, along with the deployment logic that reports status back to Cortex XSIAM.
+* **Asset discovery and cloud security posture management (CSPM):** The resources and permissions required to inventory your cloud resources and evaluate their configuration against security best practices and compliance benchmarks. Asset discovery and CSPM are always enabled.
+
+All other security capabilities are optional. For each additional capability you enable, the template adds only the resources and permissions that capability requires on top of the base deployment. Capabilities that aren't selected don't appear in the template, so the footprint stays minimal and aligned with least-privilege.
+
+The list of available security capabilities depends on the CSP and changes over time as new capabilities are added. See the onboarding topic for your CSP for the current list of supported capabilities for your provider. You can revisit your selection later by re-running the wizard and redeploying.
+{% endstep %}
+
+{% step %}
+#### Step 7: Add custom tags (optional)
+
+You can apply key-value tags to all resources that the template creates in your CSP environment. This is useful for cost tracking, organizational labeling, or compliance purposes. By default, the `managed_by: paloaltonetworks` tag is added to all resources and cannot be edited or removed.
+{% endstep %}
+
+{% step %}
+#### Step 8: Configure audit log collection (optional)
+
+Audit logs record activity in your CSP environment. When audit log collection is enabled, Cortex XSIAM uses the log data for:
+
+* **Real-time threat detection:** Alert on suspicious sign-ins, privilege changes, unusual API activity, and other identity- and activity-based threats.
+* **Faster asset discovery:** Reflect changes to your cloud resources (new, modified, or deleted) in your inventory in near-real-time, rather than waiting for the next periodic scan.
+* **Investigation context:** Maintain a continuous activity timeline that supports forensics, compliance reporting, and incident response.
+
+For CSPs that support custom log collection, you can choose how Cortex XSIAM collects audit logs:
+
+* **Custom (user defined)**: If you already have audit log infrastructure in place, you can configure Cortex XSIAM to use your existing setup.
+* **Automated**: Cortex XSIAM sets up everything needed to collect audit logs on your behalf, including the log trail, storage, and notifications.
+
+{% hint style="info" %}
+**Alibaba Cloud and OCI:** Audit log collection options may be limited compared to AWS, GCP, and Azure. Refer to the CSP-specific onboarding documentation for details.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+#### Step 9: Template generation
+
+Once you complete your selections, Cortex XSIAM generates a customized configuration template tailored to your choices. The template format depends on your CSP.
+
+A pending cloud instance is created when you complete the onboarding wizard and click **Save**, but before the generated authentication template is deployed in your CSP. A single pending instance can produce multiple cloud instances that share the same onboarding configuration. Pending instances are automatically removed after 30 days. You can view them under **Cloud Instances** by clearing any default status filters.
+{% endstep %}
+{% endstepper %}
+
+***
+
+### Phase 2: Deploy the template in your CSP
+
+After your authentication template is ready, deploy it in your CSP environment to provision the resources Cortex XSIAM needs to connect.:
+
+<details>
+
+<summary>What happens during deployment</summary>
+
+The authentication template automatically provisions everything Cortex XSIAM needs to connect to your environment:
+
+* **Secure access role:** Grants Cortex XSIAM read-only access to your cloud resources.
+* **Security permissions:** Scoped to the security capabilities you selected during onboarding.
+* **Audit log infrastructure:** The log collection pipeline, storage, and notification setup, which is provisioned only if you selected the **Automated** option.
+* **Secure notification channel:** Reports deployment details back to Cortex XSIAM over HTTPS.
+
+After deployment completes, Cortex XSIAM registers the account and the account appears as **Connected** in Cortex XSIAM.
+
+Deployment methods, resource names, and supported options vary by CSP. Refer to the CSP-specific onboarding documentation for step-by-step instructions.
+
+</details>
+
+<details>
+
+<summary>Connecting multiple accounts</summary>
+
+When deploying to an entire organization or a group of accounts, the process follows these general steps:
+
+1. The template creates the secure access role and a notification mechanism in the management or root account.
+2. The notification mechanism executes and sends organization details to Cortex XSIAM.
+3. The template creates a deployment set in the management account to propagate roles to member accounts.
+4. The deployment set deploys the secure access role to each member account.
+5. Cortex XSIAM discovers member accounts as the role for each account becomes available.
+6. All accounts appear as **Connected** in Cortex XSIAM.
+
+The multi-account deployment mechanism varies by CSP:
+
+</details>
+
+***
+
+### Phase 3: Post-deployment
+
+After deployment completes, all included accounts display a status of **Connected** in Cortex XSIAM. A **Connected** status means Cortex XSIAM has established trust with your CSP and is starting work. A **Connected** status does not mean that every resource has been discovered yet.
+
+<details>
+
+<summary>What happens after deployment</summary>
+
+After deployment completes, all included accounts display a status of **Connected** in Cortex XSIAM. Note that a **Connected** status means Cortex XSIAM has established trust with your CSP and is starting work. A **Connected** status does not mean that every resource has been discovered yet.
+
+The following table describes the post-deployment activities:
+
+| Activity                   | What it does                                                                                                                             | Typical timing                                                                  |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| Connection health checks   | Validates that the access role works and that Cortex XSIAM has the permissions it needs.                                                 | Starts after deployment. Timing depends on the number of accounts.              |
+| Account enumeration        | For organization-scope onboarding, discovers all member accounts, subscriptions, or projects within the connected scope.                 | Scales with organization size.                                                  |
+| Initial resource discovery | Inventories all cloud resources across the connected accounts. The first full discovery is the most time-consuming activity.             | Scales with organization size.                                                  |
+| Security scanning          | The capabilities you enabled (CSPM, vulnerability scanning, DSPM, and others) begin evaluating resources as Cortex XSIAM discovers them. | Begins as resources are inventoried. Full coverage follows the discovery curve. |
+| Audit log ingestion        | If you enabled audit logs in step 8, log streaming starts and powers near-real-time updates and threat detection.                        | Shortly after deployment.                                                       |
+
+</details>
+
+<details>
+
+<summary>Discovery and initial scanning</summary>
+
+Discovery starts immediately when your account reaches **Connected** status and continues in the background. Cortex XSIAM works through your environment and begins posture evaluation as resources are inventoried.
+
+Discovery time scales with the size of your environment. The more accounts, regions, and resources you have, the longer the initial pass takes.
+
+</details>
+
+<details>
+
+<summary>What you see as discovery progresses</summary>
+
+* **Account status:** Your account status remains **Connected** throughout, with health indicators showing that the connection is active.
+* **Resource count:** The discovered resources count grows steadily as Cortex XSIAM works across your environment.
+* **Security findings:** Findings begin appearing in real time as resources are inventoried. You don't need to wait for full discovery to complete before reviewing results.
+* **Threat detection:** If audit log collection is enabled, near-real-time threat detection is active from the start.
+
+</details>
+
+<details>
+
+<summary>If something needs your attention</summary>
+
+* **Connection health indicator:** The connection health indicator flags any permission, network, or quota issues so you can resolve them quickly.
+* **Unexpected behavior:** If your dashboard does not reflect expected progress, contact support for diagnostic assistance.
+
+</details>
+
+<details>
+
+<summary>Authentication template and pending instance expiration</summary>
+
+{% hint style="warning" %}
+Templates and pending cloud instances have expiration windows. If you don't deploy within the expected time frame, you may need to regenerate the template or restart the onboarding process. Refer to the CSP-specific onboarding documentation for details on expiration timing and recovery steps.
+{% endhint %}
+
+</details>

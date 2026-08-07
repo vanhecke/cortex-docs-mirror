@@ -1,0 +1,68 @@
+# Manage user roles
+
+{% hint style="warning" %}
+### Prerequisite
+
+Managing user roles in Cortex XSIAM Access Management requires **View/Edit** RBAC permissions for **Access Management** (under **Configurations**). Account Admin and Instance Administrator roles are granted this permission by default. For more information, see _Predefined user roles_ in [Set up users and roles](../../deployment-steps/set-up-users-and-roles).
+{% endhint %}
+
+Review the following topics:
+
+* Set up users and roles
+* User group management
+* Assign user roles and groups
+* Manage user roles and access management
+
+Manage user roles that are assigned to Cortex XSIAM users, user groups, or API keys. User roles enable you to define the type of access and actions a user can perform.
+
+You can only set dataset access permissions from a user role in Cortex XSIAM **Access Management** for the tenant. When creating user roles from the Cortex Gateway, these settings are disabled. By default, dataset access management is disabled, and users have access to all datasets. If you enable dataset access management, you must configure access permissions for each dataset type, and for each user role. When a dataset component is enabled for a particular role, the Issues and Cases pages include information about datasets.
+
+Be aware that even with scoped access to dataset rows applied, users can still indirectly access unauthorized dataset rows through dataset views and correlation rules. You can prevent this by ensuring that users don't have access to these dataset views and are unable to write correlation rules based on these datasets by enabling dataset access management for the relevant user roles, and limiting access to the applicable datasets. You may also want to consider not allowing these dataset-scoped users to write correlation rules, which we recommend as a best practice. For more information on row-level scoping, see Manage user scope.
+
+<details>
+
+<summary>Create a user role</summary>
+
+1. Select **Settings** → **Configurations** → **Access Management** → **Roles**.
+2. Click **New Role**.
+3. Under **Role Name**, enter a name for the user role.
+4. (Optional) Under **Description**, enter a description for the user role.
+5. Under **Components**, expand each list and select the permissions for each of the components.
+6. Under **Datasets (Disabled)**, you have two options for setting the Cortex Query Language (XQL) dataset access permissions for the user role:
+   * Set the user role with access to all XQL datasets by leaving the dataset access management as disabled (default).
+   * Set the user role with limited access to certain XQL datasets by selecting the **Enable dataset access management** toggle and selecting the datasets under the different dataset category headings.
+7. Click **Save**.
+
+</details>
+
+<details>
+
+<summary>Edit a user role</summary>
+
+1. Select **Settings** → **Configurations** → **Access Management** → **Roles**.
+2. Right-click the relevant user role, and select **Edit Role**.
+3. (Optional) Under **Role Name**, modify the name for the user role.
+4. (Optional) Under **Description**, enter a description for the user role or modify the current description.
+5. Under **Components**, expand each list and select the permissions for each of the components.
+6. Under **Datasets**, you have two options for setting the Cortex Query Language (XQL) dataset access permissions for the user role:
+   * Set the user role with access to all XQL datasets by disabling the **Enable dataset access management** toggle.
+   * Set the user role with limited access to certain XQL datasets by selecting the **Enable dataset access management** toggle and selecting the datasets under the different dataset category headings.
+7. Click **Save**.
+
+</details>
+
+<details>
+
+<summary>Create new role based on an existing role</summary>
+
+1. Select **Settings** → **Configurations** → **Access Management** → **Roles**.
+2. Right-click the relevant user role, and select **Save As New Role**.
+3. (Optional) Under **Role Name**, modify the name for the user role.
+4. (Optional) Under **Description**, enter a description for the user role or modify the current description.
+5. Under **Components**, expand each list and select the permissions for each of the components.
+6. Under **Datasets**, you have two options for setting the Cortex Query Language (XQL) dataset access permissions for the user role:
+   * Set the user role with access to all XQL datasets by disabling the **Enable dataset access management** toggle.
+   * Set the user role with limited access to certain XQL datasets by selecting the **Enable dataset access management** toggle and selecting the datasets under the different dataset category headings.
+7. Click **Save**.
+
+</details>

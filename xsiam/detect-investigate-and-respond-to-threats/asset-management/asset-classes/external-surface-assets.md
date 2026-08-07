@@ -1,0 +1,20 @@
+# External Surface assets
+
+The **External Surface** inventory provides a searchable, filterable view of the internet-facing assets that Cortex XSIAM has discovered and attributed to your organization, including certificates, domains, services, and websites. Navigate to **Inventory** → **All Assets** → **External Surface** to access the **All External Surface Assets** view, or specific categories including **Services**, **Websites**, **Domains**, and **Certificates**.
+
+{% hint style="info" %}
+### Notice
+
+Requires the Attack Surface Management (ASM) add-on.
+{% endhint %}
+
+The following sections provide information about each External Surface asset type. For information about external IP address ranges, see Network configuration.
+
+**External asset categories**
+
+There are four categories of external assets:
+
+* **Services:** Any internet-facing device or software communicating on an application-level protocol over the public internet. The services table includes detailed fields such as Active classifications, Business units, Discovery type, Externally inferred CVEs, and an Externally inferred vulnerability score.
+* **Websites:** Represents the content and the software stack that was used to generate a website.
+* **Domains:** All root domains and subdomains that Cortex XSIAM has attributed to your organization. Subdomains are automatically grouped under a wildcard domain asset if they resolve to the same IP address, and are collapsed under a parent domain if more than 1,000 subdomains are observed.
+* **Certificates:** Cortex XSIAM tracks "cryptographic health" checks, flagging issues such as self-signed or expired certificates, and weak signature algorithms.

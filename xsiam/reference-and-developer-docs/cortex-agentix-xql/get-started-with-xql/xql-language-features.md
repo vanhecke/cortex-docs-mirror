@@ -1,0 +1,41 @@
+---
+description: >-
+  Learn more about the Cortex Query Language features to query for raw network
+  and endpoint data.
+---
+
+# XQL language features
+
+The Cortex Query Language (XQL) enables you to query for information contained in a wide variety of data sources in Cortex XSIAM for rigorous endpoint and network event analysis. Queries require a dataset, or data source, to run against. In a dataset query, unless otherwise specified, the query runs against the `xdr_data` dataset, which contains all raw log information that Cortex XSIAM collects from all Cortex product agents, including EDR data, and PAN NGFW data. In XDM queries, you must specify the dataset mapped to the XDM that you want to run your query against. For both types of queries, you can also import data from third parties and then query against those datasets as well.
+
+You submit XQL queries to Cortex XSIAM using the **Investigation & Response** → **Search** → **Query Builder** user interface.
+
+XQL is similar to other query languages, and it uses some of the same functions as can be found in many SQL implementations, but it is not SQL. XQL forms queries in stages. Each stage performs a specific query operation and is separated by a pipe (`|`) character. To help you create an eﬀective XQL query with the proper syntax, the query ﬁeld in the user interface provides suggestions and deﬁnitions as you type. For example, the following dataset query uses three stages to identify the dataset to query, identify the field to be retrieved from the dataset, and then set a filter that identifies which records should be retrieved as part of the query:
+
+```programlisting
+dataset = xdr_data 
+| fields os_actor_process_file_size as osapfs 
+| filter to_string(osapfs) = "12345"
+```
+
+{% hint style="info" %}
+### Tip
+
+When creating XQL queries, you can:
+
+* Use the up and down arrow keys to navigate through the auto-suggestion commands and definitions.
+* Select an auto-suggestion command by pressing either the **Enter** or **Tab** key.
+* Press **Shift**+**Enter** to add a new line, and easily ignore the auto-suggestion output.
+* Close the auto-suggestion output by pressing the **Esc** key.
+{% endhint %}
+
+XQL supports:
+
+* Simple queries.
+* Filters that identify a subset of records to return in the result set.
+* Joins and Unions.
+* Aggregations.
+* Queries against standard datasets.
+* Queries against presets, which are collections of information that are specific to a given type of network or endpoint activity, such as authentication or file transfers.
+* Queries against custom imported datasets.
+* Queries against the XDM.

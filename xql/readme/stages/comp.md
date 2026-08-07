@@ -1,0 +1,122 @@
+# comp
+
+Use the `comp` stage (short for computation) to perform aggregation functions on your dataset. This stage groups records based on specified fields and calculates summary statistics�such as counts, averages, or sums�for each group. The stage is essential for transforming raw event data into meaningful metrics and trends.
+
+## Syntax
+
+```sql
+comp <function1>(<field1>) [as <alias1>], [<function2>(<field2>) [as <alias2>], ...] by <group_field1> [, <group_field2>, ...]
+
+```
+
+## Parameters
+
+| Name          | Type     | Required | Description                                                                                                              |
+| ------------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `function`    | function | Yes      | The aggregation function to apply (for example, `count`, `sum`, `avg`, `max`, `min`, `values`).                          |
+| `field`       | string   | Yes      | The name of the field to be aggregated.                                                                                  |
+| `alias`       | string   | No       | An optional name for the resulting aggregated field. If omitted, a default name is generated (usually `function_field`). |
+| `group_field` | string   | Yes      | The field(s) used to group the results. All records with the same value in the `group_field` are calculated together.    |
+
+## Returns
+
+The `comp` stage returns a summary dataset where each row represents a unique combination of the `by` (grouping) fields. The columns include the grouping fields and the results of the aggregation functions. All other original fields are discarded.
+
+## Usage notes
+
+* The `comp` stage is a "blocking" operation; it must process all input records before producing any output.
+* Common aggregation functions include `count`, `sum`, `avg`, `min`, `max`, `count_distinct`, and `values`.
+* You can group by multiple fields (for example, `by user, host`), which creates a separate row for every unique pair of user and host.
+* It is highly recommended to provide an alias (using `as`) for aggregated columns to make the output readable and easier to reference in later stages.
+* If you need to group by time, consider using the `bin` stage on a timestamp field before the `comp` stage.
+
+## Examples
+
+### Example 1: Basic Counting
+
+**Goal**: Count the number of events associated with each user. **XQL code**:
+
+```sql
+config timeframe = 1d
+| dataset = sample_xql_raw
+| comp count(event_id) as total_events by user_name
+| fields user_name, total_events
+
+```
+
+**Explanation**: This query groups all records by `user_name` and counts the number of `event_id`s for each user, storing the result in `total_events`. **Output:**
+
+| user\_name | total\_events |
+| ---------- | ------------- |
+| alice      | 150           |
+| bob        | 42            |
+| charlie    | 5             |
+
+### Example 2: Multiple Aggregations
+
+**Goal**: Find the first and last occurrence of an event for each IP address. **XQL code**:
+
+```sql
+config timeframe = 1d
+| dataset = sample_xql_raw
+| comp min(_time) as first_seen, max(_time) as last_seen by src_ip
+| fields src_ip, first_seen, last_seen
+
+```
+
+**Explanation**: Grouping by `src_ip`, the query calculates the minimum (earliest) timestamp and maximum (latest) timestamp for each IP address. **Output:**
+
+| src\_ip     | first\_seen         | last\_seen          |
+| ----------- | ------------------- | ------------------- |
+| 192.168.1.5 | 2023-10-26 08:00:00 | 2023-10-26 17:30:00 |
+| 10.0.0.42   | 2023-10-26 09:15:00 | 2023-10-26 09:20:00 |
+
+### Example 3: Grouping by Time (after Binning)
+
+**Goal**: Count the number of failed logins per hour. **XQL code**:
+
+```sql
+config timeframe = 1d
+| dataset = sample_xql_raw
+| filter event_type = "login_failed"
+| bin _time span = 1h
+| comp count(event_id) as failure_count by _time
+| fields _time, failure_count
+
+```
+
+**Explanation**: The `bin` stage buckets the timestamps into 1-hour intervals. The `comp` stage then groups by these 1-hour buckets to count the failed login events. **Output:**
+
+| \_time              | failure\_count |
+| ------------------- | -------------- |
+| 2023-10-26 10:00:00 | 12             |
+| 2023-10-26 11:00:00 | 8              |
+| 2023-10-26 12:00:00 | 25             |
+
+### Example 4: Collecting Unique Values
+
+**Goal**: List all unique applications used by each host. **XQL code**:
+
+```sql
+config timeframe = 1d
+| dataset = sample_xql_raw
+| comp values(app_name) as distinct_apps by host_name
+| fields host_name, distinct_apps
+
+```
+
+**Explanation**: The `values` function collects a list of all unique `app_name` entries for each `host_name`. **Output:**
+
+| host\_name | distinct\_apps              |
+| ---------- | --------------------------- |
+| server-01  | \["nginx", "ssh", "python"] |
+| laptop-99  | \["chrome", "slack"]        |
+
+## Related articles
+
+* **Stages**: [`bin`](bin), [`fields`](fields)
+* **Functions**: [`count`](../functions/count_with_windowcomp_stage), [`sum`](../functions/sum_with_comp_stage), [`min`](../functions/min_with_comp_stage), [`max`](../functions/max_with_comp_stage), [`values`](../functions/values)
+* **Datasets**: [`xdr_data`](https://docs-cortex.paloaltonetworks.com/r/Cortex-XQL-Schema-Reference-Guide/Introduction)
+
+```
+```

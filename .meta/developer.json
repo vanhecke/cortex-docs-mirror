@@ -1,0 +1,534 @@
+{
+  "book": "developer",
+  "title": "Cortex XSIAM Developer Guide",
+  "section": "cortex-xsiam-developer-guide",
+  "page_count": 84,
+  "tree": [
+    {
+      "title": "Cortex XSIAM Development Guide",
+      "path": "cortex-xsiam-development-guide",
+      "type": "group",
+      "children": [
+        {
+          "title": "Getting Started",
+          "path": "cortex-xsiam-development-guide/readme",
+          "type": "document",
+          "children": [
+            {
+              "title": "Design",
+              "path": "cortex-xsiam-development-guide/readme/design",
+              "type": "document",
+              "children": [
+                {
+                  "title": "Use Case Design for Cortex XSIAM",
+                  "path": "cortex-xsiam-development-guide/readme/design/use-case-design-for-cortex-xsiam",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Development scope",
+                  "path": "cortex-xsiam-development-guide/readme/design/development-scope",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Integration design",
+                  "path": "cortex-xsiam-development-guide/readme/design/integration-design",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Design best practices",
+                  "path": "cortex-xsiam-development-guide/readme/design/design-best-practices",
+                  "type": "document",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "title": "Content development environments",
+              "path": "cortex-xsiam-development-guide/readme/content-development-environments",
+              "type": "document",
+              "children": [
+                {
+                  "title": "IDE for script development",
+                  "path": "cortex-xsiam-development-guide/readme/content-development-environments/ide-for-script-development",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Set up a local development environment",
+                  "path": "cortex-xsiam-development-guide/readme/content-development-environments/set-up-a-local-development-environment",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Set up a GitHub Codespace environment",
+                  "path": "cortex-xsiam-development-guide/readme/content-development-environments/set-up-a-github-codespace-environment",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Set up a containerized development environment",
+                  "path": "cortex-xsiam-development-guide/readme/content-development-environments/set-up-a-containerized-development-environment",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Demisto SDK",
+                  "path": "cortex-xsiam-development-guide/readme/content-development-environments/demisto-sdk",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Visual Studio Code extension",
+                  "path": "cortex-xsiam-development-guide/readme/content-development-environments/visual-studio-code-extension",
+                  "type": "document",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "title": "Frequently asked questions",
+              "path": "cortex-xsiam-development-guide/readme/frequently-asked-questions",
+              "type": "document",
+              "children": []
+            }
+          ]
+        },
+        {
+          "title": "Integrations and scripts",
+          "path": "cortex-xsiam-development-guide/integrations-and-scripts",
+          "type": "document",
+          "children": [
+            {
+              "title": "Components",
+              "path": "cortex-xsiam-development-guide/integrations-and-scripts/components",
+              "type": "document",
+              "children": [
+                {
+                  "title": "Integration directory structure",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/components/integration-directory-structure",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Integration metadata YAML file",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/components/integration-metadata-yaml-file",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Integration and script parameter types",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/components/integration-and-script-parameter-types",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Integration description file",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/components/integration-description-file",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Integration Logo Requirements",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/components/integration-logo-requirements",
+                  "type": "document",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "title": "Developing",
+              "path": "cortex-xsiam-development-guide/integrations-and-scripts/developing",
+              "type": "document",
+              "children": [
+                {
+                  "title": "Python code conventions",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/developing/python-code-conventions",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "PowerShell",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/developing/powershell",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "General naming conventions",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/developing/general-naming-conventions",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Integration Parameters",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/developing/integration-parameters",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Context and outputs",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/developing/context-and-outputs",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Context standards",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/developing/context-standards",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Generic commands",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/developing/generic-commands",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Reputation and DBot score",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/developing/reputation-and-dbot-score",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Integration commands",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/developing/integration-commands",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Using Docker",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/developing/using-docker",
+                  "type": "document",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "title": "Advanced topics",
+              "path": "cortex-xsiam-development-guide/integrations-and-scripts/advanced-topics",
+              "type": "document",
+              "children": [
+                {
+                  "title": "Fetching credentials",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/advanced-topics/fetching-credentials",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Event collector integrations",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/advanced-topics/event-collector-integrations",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Feed Integrations",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/advanced-topics/feed-integrations",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Long Running Containers",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/advanced-topics/long-running-containers",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Transform Language (DT)",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/advanced-topics/transform-language-dt",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Integration cache",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/advanced-topics/integration-cache",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "OpenAPI (Swagger) Codegen",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/advanced-topics/openapi-swagger-codegen",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Postman code generator",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/advanced-topics/postman-code-generator",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Generate Integration Python Code from JSON",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/advanced-topics/generate-integration-python-code-from-json",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Generate YAML from Python",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/advanced-topics/generate-yaml-from-python",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Scheduled Commands",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/advanced-topics/scheduled-commands",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Fetch missing incidents with generic lookback methods",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/advanced-topics/fetch-missing-incidents-with-generic-lookback-methods",
+                  "type": "document",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "title": "Create a sample integration",
+              "path": "cortex-xsiam-development-guide/integrations-and-scripts/create-a-sample-integration",
+              "type": "document",
+              "children": [
+                {
+                  "title": "Define sample integration settings",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/create-a-sample-integration/define-sample-integration-settings",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Write integration code",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/create-a-sample-integration/write-integration-code",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Test the integration",
+                  "path": "cortex-xsiam-development-guide/integrations-and-scripts/create-a-sample-integration/test-the-integration",
+                  "type": "document",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Playbooks",
+          "path": "cortex-xsiam-development-guide/playbooks",
+          "type": "document",
+          "children": [
+            {
+              "title": "Add a Playbook to a Content Pack",
+              "path": "cortex-xsiam-development-guide/playbooks/add-a-playbook-to-a-content-pack",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Playbook conventions",
+              "path": "cortex-xsiam-development-guide/playbooks/playbook-conventions",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Generic playbooks",
+              "path": "cortex-xsiam-development-guide/playbooks/generic-playbooks",
+              "type": "document",
+              "children": []
+            }
+          ]
+        },
+        {
+          "title": "Lists",
+          "path": "cortex-xsiam-development-guide/lists",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Alerts",
+          "path": "cortex-xsiam-development-guide/alerts",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Data modeling rules",
+          "path": "cortex-xsiam-development-guide/data-modeling-rules",
+          "type": "document",
+          "children": [
+            {
+              "title": "Create data model rules",
+              "path": "cortex-xsiam-development-guide/data-modeling-rules/create-data-model-rules",
+              "type": "document",
+              "children": [
+                {
+                  "title": "Test Data Model Rules",
+                  "path": "cortex-xsiam-development-guide/data-modeling-rules/create-data-model-rules/test-data-model-rules",
+                  "type": "document",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Indicators",
+          "path": "cortex-xsiam-development-guide/indicators",
+          "type": "document",
+          "children": [
+            {
+              "title": "URL extraction",
+              "path": "cortex-xsiam-development-guide/indicators/url-extraction",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Domain extraction",
+              "path": "cortex-xsiam-development-guide/indicators/domain-extraction",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Relationships",
+              "path": "cortex-xsiam-development-guide/indicators/relationships",
+              "type": "document",
+              "children": []
+            }
+          ]
+        },
+        {
+          "title": "Documentation",
+          "path": "cortex-xsiam-development-guide/documentation",
+          "type": "document",
+          "children": [
+            {
+              "title": "Documentation best practices",
+              "path": "cortex-xsiam-development-guide/documentation/documentation-best-practices",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Content pack metadata file",
+              "path": "cortex-xsiam-development-guide/documentation/content-pack-metadata-file",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Content pack release notes",
+              "path": "cortex-xsiam-development-guide/documentation/content-pack-release-notes",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Content Pack README",
+              "path": "cortex-xsiam-development-guide/documentation/content-pack-readme",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "README files for content entities",
+              "path": "cortex-xsiam-development-guide/documentation/readme-files-for-content-entities",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Images in documentation",
+              "path": "cortex-xsiam-development-guide/documentation/images-in-documentation",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Videos in documentation",
+              "path": "cortex-xsiam-development-guide/documentation/videos-in-documentation",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Documentation Contributions",
+              "path": "cortex-xsiam-development-guide/documentation/documentation-contributions",
+              "type": "document",
+              "children": []
+            }
+          ]
+        },
+        {
+          "title": "Testing",
+          "path": "cortex-xsiam-development-guide/testing",
+          "type": "document",
+          "children": [
+            {
+              "title": "Linting",
+              "path": "cortex-xsiam-development-guide/testing/linting",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Unit testing",
+              "path": "cortex-xsiam-development-guide/testing/unit-testing",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Test playbooks",
+              "path": "cortex-xsiam-development-guide/testing/test-playbooks",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Debugging",
+              "path": "cortex-xsiam-development-guide/testing/debugging",
+              "type": "document",
+              "children": []
+            }
+          ]
+        },
+        {
+          "title": "Contributing content",
+          "path": "cortex-xsiam-development-guide/contributing-content",
+          "type": "document",
+          "children": [
+            {
+              "title": "Contribution requirements",
+              "path": "cortex-xsiam-development-guide/contributing-content/contribution-requirements",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "File checklist",
+              "path": "cortex-xsiam-development-guide/contributing-content/file-checklist",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Content pack structure",
+              "path": "cortex-xsiam-development-guide/contributing-content/content-pack-structure",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Content pack dependencies",
+              "path": "cortex-xsiam-development-guide/contributing-content/content-pack-dependencies",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Pull request conventions",
+              "path": "cortex-xsiam-development-guide/contributing-content/pull-request-conventions",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Contribution demo preparation",
+              "path": "cortex-xsiam-development-guide/contributing-content/contribution-demo-preparation",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Contribution SLA",
+              "path": "cortex-xsiam-development-guide/contributing-content/contribution-sla",
+              "type": "document",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

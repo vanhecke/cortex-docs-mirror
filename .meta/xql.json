@@ -1,0 +1,1115 @@
+{
+  "book": "xql",
+  "title": "Cortex XQL Command Reference",
+  "section": "xql-command-reference-guide",
+  "page_count": 184,
+  "tree": [
+    {
+      "title": "Cortex XQL Command Reference",
+      "path": "readme",
+      "type": "document",
+      "children": [
+        {
+          "title": "Reference overview",
+          "path": "readme/introduction",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Browse the reference",
+          "path": "readme/summary",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Functions",
+          "path": "readme/functions",
+          "type": "document",
+          "children": [
+            {
+              "title": "Functions overview",
+              "path": "readme/functions/index",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Functions list",
+              "path": "readme/functions/functions-list",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "acos",
+              "path": "readme/functions/acos",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "add",
+              "path": "readme/functions/add",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "approx_count",
+              "path": "readme/functions/approx_count",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "approx_quantiles",
+              "path": "readme/functions/approx_quantiles",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "approx_top",
+              "path": "readme/functions/approx_top",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "array_all",
+              "path": "readme/functions/array_all",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "array_any",
+              "path": "readme/functions/array_any",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "array_length",
+              "path": "readme/functions/array_length",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "arrayconcat",
+              "path": "readme/functions/arrayconcat",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "arraycreate",
+              "path": "readme/functions/arraycreate",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "arraydistinct",
+              "path": "readme/functions/arraydistinct",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "arrayfilter",
+              "path": "readme/functions/arrayfilter",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "arrayindex",
+              "path": "readme/functions/arrayindex",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "arrayindexof",
+              "path": "readme/functions/arrayindexof",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "arraymap",
+              "path": "readme/functions/arraymap",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "arraymerge",
+              "path": "readme/functions/arraymerge",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "arrayrange",
+              "path": "readme/functions/arrayrange",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "arraystring",
+              "path": "readme/functions/arraystring",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "asin",
+              "path": "readme/functions/asin",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "avg (comp)",
+              "path": "readme/functions/avg_with_comp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "avg (windowcomp)",
+              "path": "readme/functions/avg_with_windowcomp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "bitwise_and",
+              "path": "readme/functions/bitwise_and",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "bitwise_or",
+              "path": "readme/functions/bitwise_or",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "bitwise_sleft",
+              "path": "readme/functions/bitwise_sleft",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "bitwise_sright",
+              "path": "readme/functions/bitwise_sright",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "bitwise_xor",
+              "path": "readme/functions/bitwise_xor",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "cbrt",
+              "path": "readme/functions/cbrt",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "ceil",
+              "path": "readme/functions/ceil",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "coalesce",
+              "path": "readme/functions/coalesce",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "concat",
+              "path": "readme/functions/concat",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "convert_from_base_64",
+              "path": "readme/functions/convert_from_base_64",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "convert_to_base_64",
+              "path": "readme/functions/convert_to_base_64",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "cos",
+              "path": "readme/functions/cos",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "cosine_distance",
+              "path": "readme/functions/cosine_distance",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "cot",
+              "path": "readme/functions/cot",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "count_distinct",
+              "path": "readme/functions/count_distinct",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "count (comp)",
+              "path": "readme/functions/count_with_comp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "count (windowcomp)",
+              "path": "readme/functions/count_with_windowcomp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "csc",
+              "path": "readme/functions/csc",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "current_time",
+              "path": "readme/functions/current_time",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "date_floor",
+              "path": "readme/functions/date_floor",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "div",
+              "path": "readme/functions/div",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "divide",
+              "path": "readme/functions/divide",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "earliest",
+              "path": "readme/functions/earliest",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "euclidean_distance",
+              "path": "readme/functions/euclidean_distance",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "exp",
+              "path": "readme/functions/exp",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "extract_time",
+              "path": "readme/functions/extract_time",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "extract_url_host",
+              "path": "readme/functions/extract_url_host",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "extract_url_pub_suffix",
+              "path": "readme/functions/extract_url_pub_suffix",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "extract_url_registered_domain",
+              "path": "readme/functions/extract_url_registered_domain",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "first",
+              "path": "readme/functions/first",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "first_value",
+              "path": "readme/functions/first_value",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "floor",
+              "path": "readme/functions/floor",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "format_string",
+              "path": "readme/functions/format_string",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "format_timestamp",
+              "path": "readme/functions/format_timestamp",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "greatest",
+              "path": "readme/functions/greatest",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "hierarchy_match",
+              "path": "readme/functions/hierarchy_match",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "if",
+              "path": "readme/functions/if",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "incidr",
+              "path": "readme/functions/incidr",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "incidr6",
+              "path": "readme/functions/incidr6",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "incidrlist",
+              "path": "readme/functions/incidrlist",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "int_to_ip",
+              "path": "readme/functions/int_to_ip",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "ip_to_int",
+              "path": "readme/functions/ip_to_int",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "is_ipv4",
+              "path": "readme/functions/is_ipv4",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "is_ipv6",
+              "path": "readme/functions/is_ipv6",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "is_known_private_ipv4",
+              "path": "readme/functions/is_known_private_ipv4",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "is_known_private_ipv6",
+              "path": "readme/functions/is_known_private_ipv6",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "json_extract",
+              "path": "readme/functions/json_extract",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "json_extract_array",
+              "path": "readme/functions/json_extract_array",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "json_extract_scalar",
+              "path": "readme/functions/json_extract_scalar",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "json_extract_scalar_array",
+              "path": "readme/functions/json_extract_scalar_array",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "XQL JSON Functions Reference",
+              "path": "readme/functions/json_functions_reference",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "json_path_extract",
+              "path": "readme/functions/json_path_extract",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "lag",
+              "path": "readme/functions/lag",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "last",
+              "path": "readme/functions/last",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "last_value",
+              "path": "readme/functions/last_value",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "latest",
+              "path": "readme/functions/latest",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "least",
+              "path": "readme/functions/least",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "len",
+              "path": "readme/functions/len",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "list (comp)",
+              "path": "readme/functions/list_with_comp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "ln",
+              "path": "readme/functions/ln",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "log",
+              "path": "readme/functions/log",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "log10",
+              "path": "readme/functions/log10",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "lowercase",
+              "path": "readme/functions/lowercase",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "ltrim",
+              "path": "readme/functions/ltrim",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "max (comp)",
+              "path": "readme/functions/max_with_comp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "max (windowcomp)",
+              "path": "readme/functions/max_with_windowcomp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "md5",
+              "path": "readme/functions/md5",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "median (comp)",
+              "path": "readme/functions/median_with_comp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "median (windowcomp)",
+              "path": "readme/functions/median_with_windowcomp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "min (comp)",
+              "path": "readme/functions/min_with_comp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "min (windowcomp)",
+              "path": "readme/functions/min_with_windowcomp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "mod",
+              "path": "readme/functions/mod",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "multiply",
+              "path": "readme/functions/multiply",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "object_create",
+              "path": "readme/functions/object_create",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "object_merge",
+              "path": "readme/functions/object_merge",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "parse_epoch",
+              "path": "readme/functions/parse_epoch",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "parse_timestamp",
+              "path": "readme/functions/parse_timestamp",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "pow",
+              "path": "readme/functions/pow",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "power",
+              "path": "readme/functions/power",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "rand",
+              "path": "readme/functions/rand",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "range_bucket",
+              "path": "readme/functions/range_bucket",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "rank (windowcomp)",
+              "path": "readme/functions/rank_with_windowcomp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "regexcapture",
+              "path": "readme/functions/regexcapture",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "regextract",
+              "path": "readme/functions/regextract",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "replace",
+              "path": "readme/functions/replace",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "replex",
+              "path": "readme/functions/replex",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "round",
+              "path": "readme/functions/round",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "row_number (windowcomp)",
+              "path": "readme/functions/row_number_with_windowcomp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "rtrim",
+              "path": "readme/functions/rtrim",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "safe_add",
+              "path": "readme/functions/safe_add",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "safe_divide",
+              "path": "readme/functions/safe_divide",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "safe_multiply",
+              "path": "readme/functions/safe_multiply",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "safe_negate",
+              "path": "readme/functions/safe_negate",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "safe_subtract",
+              "path": "readme/functions/safe_subtract",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "sec",
+              "path": "readme/functions/sec",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "sha1",
+              "path": "readme/functions/sha1",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "sha256",
+              "path": "readme/functions/sha256",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "sha512",
+              "path": "readme/functions/sha512",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "sign",
+              "path": "readme/functions/sign",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "sin",
+              "path": "readme/functions/sin",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "split",
+              "path": "readme/functions/split",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "sqrt",
+              "path": "readme/functions/sqrt",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "stddev_population (comp)",
+              "path": "readme/functions/stddev_population_with_comp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "stddev_population (windowcomp)",
+              "path": "readme/functions/stddev_population_with_windowcomp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "stddev_sample (comp)",
+              "path": "readme/functions/stddev_sample_with_comp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "stddev_sample (windowcomp)",
+              "path": "readme/functions/stddev_sample_with_windowcomp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "string_count",
+              "path": "readme/functions/string_count",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "subtract",
+              "path": "readme/functions/subtract",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "sum (comp)",
+              "path": "readme/functions/sum_with_comp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "sum (windowcomp)",
+              "path": "readme/functions/sum_with_windowcomp_stage",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "tan",
+              "path": "readme/functions/tan",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "time_frame_end",
+              "path": "readme/functions/time_frame_end",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "timestamp_diff",
+              "path": "readme/functions/timestamp_diff",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "timestamp_seconds",
+              "path": "readme/functions/timestamp_seconds",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "to_boolean",
+              "path": "readme/functions/to_boolean",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "to_epoch",
+              "path": "readme/functions/to_epoch",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "to_float",
+              "path": "readme/functions/to_float",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "to_integer",
+              "path": "readme/functions/to_integer",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "to_json_string",
+              "path": "readme/functions/to_json_string",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "to_number",
+              "path": "readme/functions/to_number",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "to_string",
+              "path": "readme/functions/to_string",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "to_timestamp",
+              "path": "readme/functions/to_timestamp",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "trim",
+              "path": "readme/functions/trim",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "trunc",
+              "path": "readme/functions/trunc",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "uppercase",
+              "path": "readme/functions/uppercase",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "values",
+              "path": "readme/functions/values",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "var",
+              "path": "readme/functions/var",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "wildcard_match",
+              "path": "readme/functions/wildcard_match",
+              "type": "document",
+              "children": []
+            }
+          ]
+        },
+        {
+          "title": "Stages",
+          "path": "readme/stages",
+          "type": "document",
+          "children": [
+            {
+              "title": "Stages overview",
+              "path": "readme/stages/index",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Stages list",
+              "path": "readme/stages/stages-list",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "alter",
+              "path": "readme/stages/alter",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "arrayexpand",
+              "path": "readme/stages/arrayexpand",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "bin",
+              "path": "readme/stages/bin",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "call",
+              "path": "readme/stages/call",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "comp",
+              "path": "readme/stages/comp",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "config",
+              "path": "readme/stages/config",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "dataset",
+              "path": "readme/stages/dataset",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "dedup",
+              "path": "readme/stages/dedup",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "fields",
+              "path": "readme/stages/fields",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "filter",
+              "path": "readme/stages/filter",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "iploc",
+              "path": "readme/stages/iploc",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "join",
+              "path": "readme/stages/join",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "limit",
+              "path": "readme/stages/limit",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "pivot",
+              "path": "readme/stages/pivot",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "preset",
+              "path": "readme/stages/presets",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "replacenull",
+              "path": "readme/stages/replacenull",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "search",
+              "path": "readme/stages/search",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "sort",
+              "path": "readme/stages/sort",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "tag",
+              "path": "readme/stages/tag",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "target",
+              "path": "readme/stages/target",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "top",
+              "path": "readme/stages/top",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "transaction",
+              "path": "readme/stages/transaction",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "transpose",
+              "path": "readme/stages/transpose",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "union",
+              "path": "readme/stages/union",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "view",
+              "path": "readme/stages/view",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "windowcomp",
+              "path": "readme/stages/windowcomp",
+              "type": "document",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+# Log type filtering
+
+Cortex XSIAM enables you to control ingestion costs by selecting exactly which logs you want to ingest from Cloud Log Collection Service (CLCS) data sources, which include Prisma Access, Prisma Access Browser (PAB), Cloud Next-Generation Firewalls (CNGFW), and Next-Generation Firewalls (NGFW), including Panorama devices. By filtering for only high-value security logs at the source, you can optimize data consumption in your environment.
+
+Log type filtering replaces the legacy "all-or-nothing" filter for URL and File logs with more granular, source-level control.
+
+### Log type selection
+
+When you onboard a new instance or edit an existing one, you can choose the log types you want to ingest or select all.
+
+The list of available log types is dynamic and automatically updates when new types are added to the CLCS architecture.
+
+### Supported log types by product
+
+| Integration Type                                                    | Available Log Types                                                                                                          |
+| ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Firewall and Network Sources (NGFW, CNGFW, Prisma Access, Panorama) | Authentication, Configuration, File Data, Global Protect, HIP Match, System, Threat, Traffic, Tunnel, URL, and User ID logs. |
+| Prisma Access Browser (PAB)                                         | Audit Logs, Events Logs, and Devices Logs.                                                                                   |
+
+### Filter execution
+
+Filters execute at the CLCS collector layer. This ensures that unwanted telemetry is dropped before it reaches the Cortex XSIAM ingestion pipeline, directly reducing your "GB used" bill.
+
+After you modify your log type selection, the changes take effect at the collector within 5 minutes.
+
+### Edit log type filters
+
+You can modify log type filters for existing data source instances at any time.
+
+1. Navigate to **Settings** > **Data Sources & Integrations**.
+2. Search for the relevant data source, such as **NGFW** or **Prisma Access**.
+3. Select the instance you want to modify, and click **Edit**.
+4. In the **Select log types** dropdown menu, update your selection.
+5. Click **Save**.
+
+### Bulk actions
+
+You can update the log type filters for multiple instances of the same type simultaneously using the bulk edit action in the UI. Performing a bulk action overrides any existing per-instance settings (if any) and applies a shared configuration.
+
+For Panorama, you can bulk edit settings as a device; yet, you cannot edit or delete filters for specific Panorama-managed firewalls individually.

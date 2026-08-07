@@ -1,0 +1,31 @@
+# Cortex Assistant capabilities
+
+### **Entity investigation**
+
+The Cortex Assistant conducts investigations on entities entered in the search bar. It can investigate a range of entities, including hosts, users, hashes, domains, IP addresses, and cases. To initiate an investigation, enter the entity name in the search bar or ask specific questions about the entity, such as "What are the events related to \<entity>?". You can then select from the relevant options displayed in the **Investigate** column, which includes a comprehensive set of Cortex XQL library queries for conducting investigations. A summary of the entity's details is displayed. For more details, click **Show me more**.
+
+{% hint style="info" %}
+### Note
+
+In some cases, if the prompt does not include at least one recognizable entity such as an IP, hash, user, asset, domain, case, or XQL query, no response is returned.
+{% endhint %}
+
+### **Respond**
+
+After entering an entity in the Cortex Assistant search bar, you have the option to take action by selecting one of the suggestions listed in the **Respond** column. These suggestions encompass a variety of actions, such as running playbooks and scripts, performing scans, and collecting support files.
+
+{% hint style="info" %}
+### Note
+
+When you choose an option from the **Respond** column, Cortex Assistant will always prompt you to approve the action before executing.
+{% endhint %}
+
+### **RBAC**
+
+Cortex Assistant uses Cortex’s role-based access control (RBAC) to control the type of access and actions a user can perform in Cortex XSIAM. Suggestions and responses offered by Cortex Assistant will be customized according to that specific user’s RBAC access. A user with Admin rights can manage user roles that are assigned to Cortex XSIAM users or user groups in Cortex XSIAM by selecting **Settings** → **Configurations** → **Access Management**.
+
+### **Navigation mode**
+
+Use Cortex Assistant to navigate in Cortex XSIAM. You can search in navigation mode by entering a forward slash “/” in the search bar, followed by your search string. For example, typing `/issues` searches for all pages that include the term "issues" and allows you to navigate to them directly.
+
+Additionally, you can enter multiple search terms, and Cortex Assistant will search for pages that include either of the terms (as if there were a logical OR between the words).

@@ -1,0 +1,114 @@
+---
+description: About the functionalities of Cloud Identity Security.
+---
+
+# Cloud Identity Security functionality
+
+{% hint style="info" %}
+This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
+{% endhint %}
+
+The following explains the functionalities of Cloud Identity Security:
+
+#### Asset categories
+
+The Cloud Identity Security inventory is organized according to these asset categories:
+
+* **All Identity Assets**: All Identity-related assets. Refine the results using the tabs:
+  * **All Identities**: Identities originating from all platforms and sources.
+  * **Cloud Identities**: Identities originating from cloud platforms.
+  * **SaaS Identities**: Identities originating from SaaS data sources.
+  *   **On-premises Identities**: Identities managed within your on-premises or enterprise directories.
+
+      Use the **Weak Password** widget to filter the users in your organization who are likely to be targeted because they have a weak password.
+
+      <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>Access to the <strong>Weak Password</strong> widget and column requires the ITDR add-on.</p></div>
+
+      <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>Once a user updates their password to a strong password, they will no longer appear in the filtered weak password results.</p></div>
+* **Human Identities:** All cloud, identity provider (IdP), and platform users. Refine the results using the same sub-categories as **All Identity Assets**: **Cloud Identities**, **SaaS Identities**, and **On-premises Identities**.
+* **Non-Human Identities:** Machine identities that can assume permissions and perform cloud Identity and Access Management (IAM) actions such as VMs and functions.
+* **Groups:** Identity and Access Management groups.
+* **Policies:** Permission documents, such as AWS policies, Azure roles, and GCP roles.
+
+#### Asset relationships
+
+One of the main pillars behind managing identity security is understanding the relationships that identity assets have with one another. In order to understand how an identity is granted its permissions, you first need to fully understand which groups the asset is a member of, which cloud service accounts it can impersonate, and if it has any policy attachments or inline policies. On the **Identity** tab of an asset, on the **Relationships** subtab, Cloud Identity Security displays all the relationships associated with an identity asset. All the relationships a given asset has with other identity assets are displayed in a table.
+
+* **Example**: To view the groups associated with a user:
+  1. In the **Identity Security** module, under **Identity Asset Inventory**, select an asset type.
+  2. In the list on the right, click an asset whose associated groups you want to display.
+  3. In the pane that opens, on the **Identity** tab, on the **Relationships** subtab, under **Groups**, a list is displayed containing each group name and its access levels for the user.
+
+#### Effective permission calculation
+
+Cloud Identity Security simplifies cloud complexity through Effective Permission Calculation. This foundational pillar analyzes your environment after onboarding to determine exactly what actions identities can take and which resources they can access. This calculation provides the essential context used across the product to populate access tables, track service usage, and trigger security detection rules.
+
+{% hint style="info" %}
+### Note
+
+For more information about Effective Permission Calculation, see [How does Effective Permission Calculation work?](how-does-effective-permission-calculation-work).
+{% endhint %}
+
+#### Last access calculation
+
+Once you have onboarded to Cloud Identity Security, information about permission usage is collected. Cloud Identity Security keeps track of the last time each permission was used, creating a live picture of which permissions are used, and which are not. This information is presented in various features in Cloud Identity Security, helping you quickly identify permissions that are unused for 90 days or longer, and should therefore be considered for removal.
+
+#### Excessive permission analysis
+
+Defining AWS policies, Azure roles, GCP roles, or OCI policies to grant excessive permissions is considered a deviation from identity and permissions best practices. Excessive policies are defined as granting permissions on a very wide range of resources or allowing the performance of any action on resources.
+
+The following specific scenarios are examples of excessive permissions:
+
+* **AWS:** A policy is considered excessive when it includes any of the following:
+  * A full wildcard, where the resource and scope are: `*`
+  * A service-level action wildcard, such as `S3:*`
+  * A full wildcard in a resource, meaning that an action can be done on all resources of a service
+* **Azure:** A policy is considered excessive when a role contains a wildcard and is bound to an entity on a management group scope, or grants an action wildcard and is bound to an identity at the subscription level.
+* **GCP:** A policy is considered excessive when it binds a specific predefined role on the organization, folder, or project level.
+* **OCI:** A policy is considered excessive when it grants permissions at the tenancy or compartment level with broad subjects, such as `any-user` or `any-group`, or without restrictive conditions, such as statements lacking a `WHERE` clause.
+
+{% hint style="info" %}
+### Note
+
+When a policy is analyzed and categorized as excessive, a relevant finding and highlight is attached to that policy and the various identities being granted excessive permissions.
+{% endhint %}
+
+#### Access categorization
+
+Access categorization provides you with a high-level view of the type of access each identity has without your having to analyze each permission one by one.
+
+The basic cloud permission categories are as follows:
+
+* **List:** Permits users to view information about the metadata of cloud services and resources. For example, users can get a list of all resources under a specific service in an account.
+* **Read:** Permits users to read data found in various cloud resources. For example, users with Read permissions may open and read files in object storage and run queries on databases.
+* **Write:** Permits users to write data into cloud resources, including writing or deleting files and editing rows in databases.
+* **Config:** Permits users to edit and configure cloud resources, such as editing firewall rules and adding users to groups.
+*   **Administrative:** Permits users to perform highly privileged actions such as creating a new group or deleting an organization policy.
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>Each action must be defined as either being administrative or not.</p><p>The <strong>administrative</strong> tag is an additional tag for administrative actions, along with one of the other access level types. For example, the AWS action <code>iam:CreateGroup</code> is categorized as <strong>config</strong> and has the <strong>administrative</strong> tag as well.</p></div>
+
+#### Unused permissions and inactive identities
+
+We recommend reviewing and removing all dormant identities from your environment, as well as reducing unused permissions. Inactive identities and unused permissions in your environment pose an unnecessary risk and widen your security gaps against potential attacks.
+
+*   **Unused permissions:** Using the last access feature, you may find unused permissions, which are mentioned throughout the various features of Cloud Identity Security, such as the overview page and access tables. A permission is considered unused when at least 90 days have passed since it was last used.
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Important</h3><p>If you turn off the audit logs, even briefly, this temporarily impacts the accuracy of the Last Access data, potentially showing permissions as unused when actually they were active. Full accuracy is restored 90 days after you re-enable the audit logs.</p></div>
+* **Inactive identities:** Cloud Identity Security user login information and cloud service account usage to detect inactive users and inactive cloud service accounts. Per the industry standard, users and cloud service accounts that are considered inactive are those that have not been active for at least 90 days. When an asset is considered inactive, it is highlighted on the asset page and a relevant attribute appears on the asset, allowing you to query for it with the inventory.
+* **Inactive Azure human identities:** For inactive Azure human identities on Azure, you must follow the steps described in [Enable inactive human identity logs on Azure in Cloud Identity Security](enable-inactive-human-identity-logs-on-azure-in-cortex-cloud-identity-security).
+* **Inactive human identities in OCI:** Detects OCI users that have not logged in for at least 90 days.
+
+#### Account access
+
+Two capabilities of Cloud Identity Security are analyzing and identifying cross accounts and external access.
+
+Getting information about permissions to your environment and access to sensitive data, and being informed about cross accounts or external access helps you determine and remove unauthorized access.
+
+In Cloud Identity Security, access is labeled in one of the following ways:
+
+* **Same account access:** When the source and the destination are in the same cloud account.
+* **Internal known access:** When the source and the destination are in different accounts, while both these accounts have been onboarded to Cloud Identity Security. Additionally, permissions are categorized as internal known access when the source is from an onboarded SAML/OIDC provider; for example, an onboarded Okta account.
+* **Internal unknown access:** When the source and destination are in different accounts, while one of the accounts is not onboarded but is part of the onboarded organization (when not all accounts under the organization have been onboarded). Additionally, permissions are categorized as internal unknown access when the source is from a non-onboarded SAML/OIDC provider; for example, an onboarded Okta account.
+* **3^(rd)-party access:** When the source account is a 3^(rd)-party vendor whose account is familiar to Cloud Identity Security.
+* **External unknown access:** When the source and destination are in different accounts, and the source is in a non-onboarded account . Another example of this type of access is when the source is from an unknown web identity provider.
+* **Public access:** When permission is granted to the public; for example, when an AWS role can be assumed by all users, or when an Amazon S3 bucket has a widely permissive resource-based policy.

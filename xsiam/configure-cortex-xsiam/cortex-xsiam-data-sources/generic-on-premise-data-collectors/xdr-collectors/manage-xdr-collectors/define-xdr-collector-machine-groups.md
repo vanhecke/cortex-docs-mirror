@@ -1,0 +1,34 @@
+# Define XDR Collector machine groups
+
+To easily apply policy rules and manage specific collector machines, you can define a collector machine group.
+
+To easily apply policy rules and manage specific collector machines, you can define a collector machine group. If you set up Directory Sync, you can also leverage your Active Directory user, group, and computer information in collector machine groups.
+
+There are two methods you can use to define a collector machine group:
+
+* Create a dynamic group by allowing Cortex XSIAM to populate your collector machine group dynamically using collector machine characteristics, such as a partial hostname or alias; full or partial domain name; IP address, range or subnet; XDR Collector version; or operating system version.
+* Create a static group by selecting a list of specific collector machines.
+
+After you define a collector machine group, you can then use it to target policy and actions to specific recipients. The XDR Collectors Groups page displays all collector machine groups along with the number of collector machines and policy rules linked to the collector machine group.
+
+To define a collector machine static or dynamic group:
+
+1. In Cortex XSIAM , select Settings → Configurations → XDR Collectors → Groups.
+2. Select +Add Group to create a new collector machine group.
+3. Specify a group name and optional description in the corresponding fields, to identify the collector machine group. The name that you assign to the group will be visible when you assign endpoint security profiles to endpoints.
+4. Determine the collector machine properties for creating a collector machine group:
+   * Dynamic: Use the filters to define the criteria you want to use to dynamically populate a collector machine group. Dynamic groups support multiple criteria selections and can use AND or OR operators. For collector machine names and aliases, and domains, you can use **`*`** to match any string of characters. As you apply filters, Cortex XSIAM displays any registered collector machine matches to help you validate your filter criteria. ### Note XDR Collectors only support IPv4 addresses.
+   * Static: Select specific registered collector machines that you want to include in the collector machine group. Use the filters, as needed, to reduce the number of results. When you create a static collector machine group from a file, the IP address, hostname, or alias of the collector machine must match an existing Cortex XSIAM that has registered with Cortex XSIAM .\
+     Note: Disconnecting Directory Sync in your Cortex XSIAM deployment can affect existing collector machine groups and policy rules based on Active Directory properties.
+5. Create the collector machine group.\
+   After you save your collector machine group, it is ready for use to assign in policies for your collector machines and in other places where you can use collector machine groups.
+6. Manage a collector machine group, as needed.\
+   At any time, you can return to the XDR Collectors Endpoints page to view and manage your collector machine groups. To manage a group, right-click the group and select the desired action.
+   * Edit: View the collector machines that match the group definition, and optionally refine the membership criteria using filters.
+   * Delete the collector machine group.
+   * Save as new: Duplicate the collector machine group and save it as a new group.
+   * View collectors: Pivot from an collector machine group to a filtered list of collector machines on the Administration page where you can quickly view and initiate actions on the collector machines within the group.
+   * Copy text to clipboard to copy the text from a specific field in the row of a group.
+   * Copy entire row to copy the text from all the fields in a row of a group.
+   * Show rows with ‘’ to filter the group list to only display the groups with a specific group name.
+   * Hide rows with ‘’ to filter the group list to hide the groups for a specific group name.

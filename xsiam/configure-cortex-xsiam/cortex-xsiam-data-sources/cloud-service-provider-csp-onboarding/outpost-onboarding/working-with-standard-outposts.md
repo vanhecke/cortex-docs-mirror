@@ -1,0 +1,44 @@
+---
+description: >-
+  Standard outposts are the recommended way to create dedicated set of
+  infrastructure resources that extends the reach of Cortex XSIAM into your
+  environment.
+---
+
+# Working with standard outposts
+
+{% hint style="info" %}
+**License type**: This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM product that has the Cloud Runtime Security add-on.
+{% endhint %}
+
+Standard outposts are the recommended deployment path for most organizations. Cortex XSIAM generates a Terraform template tailored to the values you enter in the outpost creation wizard, and you run that template in your CSP account to provision every resource the outpost needs, such as VPC or VNet, subnets, storage, secret vault, IAM roles or service accounts, scanner managed identities, and the trust relationship back to Cortex XSIAM.
+
+This approach gives you the fastest, most consistent path to coverage while keeping the number of manual steps low. Cortex owns the resource definitions, naming conventions, and network topology, while you own the CSP account they run in.
+
+### What standard outposts include
+
+A standard outpost deployment covers the full outpost lifecycle end to end:
+
+* **Provisioning.** Cortex-generated Terraform creates all outpost infrastructure in your CSP account, including networking, storage, secret vault, IAM roles, scanner managed identities, and (for Azure) the Entra ID app registration and its federated identity credentials.
+* **Trust establishment.** The template configures the trust relationship between your CSP account and Cortex XSIAM automatically, using federated identity credentials rather than long-lived secrets.
+* **Registration.** Once the Terraform apply completes for both the outpost and then the CSP onboarding, your cloud environment sends a registration callback to Cortex XSIAM, and the outpost transitions from **Pending** to **Connected**.
+* **Ongoing scanning.** After the outpost reaches **Connected**, Cortex schedules scans against the resources you onboard.
+
+### Outpost deployment criteria
+
+A standard outpost is suitable for your organization if the following conditions apply to your environment:
+
+* Your organization is comfortable running Cortex-generated Terraform in your CSP account.
+* Default naming conventions, network topology, and resource configurations meet your governance requirements.
+* You do not need to use your own VPC or VNet, or route egress through your own proxy.
+
+{% hint style="info" %}
+**Notes**:
+
+* Azure Entra ID app registration is supported with standard outposts.
+* For alternative, custom outpost deployment options, contact your Palo Alto Networks representative.
+{% endhint %}
+
+### What's next?
+
+* [Create a standard outpost](working-with-standard-outposts/create-a-standard-outpost)

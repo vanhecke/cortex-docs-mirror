@@ -1,0 +1,66 @@
+---
+description: >-
+  Learn more about building Graph Search queries using the built-in query
+  interface.
+---
+
+# How to build Graph Search queries?
+
+{% hint style="info" %}
+### Notice
+
+This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
+{% endhint %}
+
+{% hint style="warning" %}
+### Prerequisite
+
+Graph Search requires **View** or **View/Edit** RBAC permissions for **Graph Search** under **Investigation & Response** → **Search**.
+{% endhint %}
+
+You can build Graph Search queries using the built-in query interface embedded in the Query Builder. Graph queries are composed of assets, findings, and relationship types that connect them. These data objects are represented by nodes and edges, and the paths are found based on the contextual data. Every query is structured to use a certain pattern and includes these default data objects that you define by selecting the available assets and findings that you want to query in the graph. The output is provided by default in a Graph format, but you can also view the results as a Table format. The resulting graph provides an illustration of the nodes, node attributes, and edges that can connect two nodes based on your selections in the query.
+
+To support multi-cloud and hybrid environments efficiently and intuitively, Graph Search queries use a normalized data model that attempts to optimize finding categories of assets and findings. A subset of assets and finding types, referred to as nodes and edges, is supported. For more information, see [Supported assets and findings](supported-assets-and-findings).
+
+You submit Graph Search queries using the **Investigation & Response** → **Search** → **Query Builder** → **Graph Search** built-in query interface.
+
+![How\_to\_build\_Graph\_Search\_queries\_July.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-8d424a68399f60a360541171d430b28246164744%2Faf0addda0b1c5acc962952d283888668726cd1985da19c9489a3859b3a9f43e6.png?alt=media)
+
+<details>
+
+<summary>Show me around the Graph Search built-in query interface</summary>
+
+![How\_to\_build\_Graph\_Search\_queries\_July.gif](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-2facc41d02cff3120da320e5e2a013bab7a6850b%2F04bdd76ee68f898a0c9e392c6fcea3853fb6b9a87542ea91fa97a4b9d090e87b.gif?alt=media)
+
+</details>
+
+<details>
+
+<summary>Keywords in the query interface</summary>
+
+There are different key words that are included in the Graph Search query interface, which, as you select them, guide you through the query-building process:
+
+* **FIND**: Defines the start of any Graph Search query, which is followed by the relevant node (entity) types.
+* **Select** (mandatory): Opens the node picker dialog box, where you can select the different node types. Multiple nodes are defined with an `OR` relationship between them. The top-level node selection acts as the root of the query. There are two different types of nodes, where each node has its own unique shape, icon, and color:
+  * **Asset nodes**: Each asset node is depicted as a circle in the resulting graph, where the color and icon displayed is dependent on the asset category and class types selected. There are multiple class types available for each asset node category selected. Once a class type is selected in the node picker dialog box, and you hover over it, all the available asset types are listed. For more information, see [All assets](../../detect-investigate-and-respond-to-threats/asset-management/all-assets).
+  * **Finding nodes**: Each finding node is depicted as a diamond in the resulting graph, where the color and icon displayed are dependent on the finding type selected. There is only one category type available for each finding selected.
+*   **WHERE**: List of conditions that apply to the node types that were selected following the `FIND`/`THAT` statements. The conditions are based on node attributes and their values. At each level of the query, the relationship between node attribute conditions is `AND`. No other logical operator is available.
+
+    For each attribute type, there is a defined behavior for filtering data:
+
+    * Array values with `OR` relationship.
+    * Multi-selection (`OR` relationship) from a predefined ENUM.
+    * Multi-selection (`OR` relationship) from a list of data objects that exist in the Graph Search database. For example, the scope of cloud accounts enables you to choose from the available cloud account object that exists in the database.
+
+    The attribute operators are used to define the standard operators, such as `Contains` and `Greater than`. Depending on the attribute selected, different attribute operators are available.
+* **THAT**: Defines the relationship between nodes as every `THAT` marks an edge to the next node type. The possible edges are selected based on the graph schema. You can add a **THAT** statement to a Graph Search query by clicking the **+** icon available on each line of the query interface.
+
+</details>
+
+<details>
+
+<summary>Providing feedback</summary>
+
+Use the **Have Feedback?** link in the Graph Search query interface to provide valuable feedback about the feature and any improvements you'd recommend.
+
+</details>

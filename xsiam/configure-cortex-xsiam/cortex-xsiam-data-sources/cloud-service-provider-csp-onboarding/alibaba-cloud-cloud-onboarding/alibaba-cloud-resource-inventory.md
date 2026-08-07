@@ -1,0 +1,5 @@
+# Alibaba Cloud resource inventory
+
+The onboarding process creates resources in the customer's Alibaba Cloud account using the Terraform authentication template. All resources are created at the account level.
+
+<table><thead><tr><th width="213.90234375">Resource type</th><th width="179.12109375">Resource name</th><th>Purpose</th></tr></thead><tbody><tr><td>alicloud_ram_role</td><td>CortexPlatformRole</td><td>RAM role that Cortex XSIAM assumes via OIDC federation. Configured with a trust policy that accepts GCP OIDC tokens with the configured audience.</td></tr><tr><td>alicloud_ram_policy</td><td>Custom Policy</td><td>RAM policy with 46 read-only permissions across ECS, OSS, RAM, RDS, VPC, SLB, ActionTrail, CEN, and NAS services.</td></tr><tr><td>alicloud_ram_role_policy_attachment</td><td>Policy Attachment</td><td>Attaches the custom read-only policy to the CortexPlatformRole.</td></tr><tr><td>(OIDC Provider)</td><td>OIDC Identity Provider</td><td>Alibaba Cloud OIDC identity provider that trusts GCP OIDC tokens issued by Cortex XSIAM with the audience alibaba-cortex-wif-<code>&#x3C;tenantID></code>.</td></tr></tbody></table>

@@ -1,0 +1,31 @@
+---
+description: >-
+  View asset roles and the number of assets that are associated with each role.
+  Learn how to manage asset roles for users and endpoints.
+---
+
+# Asset Roles
+
+{% hint style="info" %}
+### Note
+
+Asset Roles are available only if the Identity Threat Module add-on is enabled.
+{% endhint %}
+
+The system continuously analyzes your users and endpoints, and automatically classifies them based on their activities under asset roles, for example, Domain Controller, Administrator, and Executive User. You can edit, add, and fine-tune the assets associated with each asset role at any time.
+
+Fine-tuned asset roles aid Cortex XSIAM Analytics in the following areas.
+
+* Enhancement of the accuracy of the analytics that runs on assets, enabling better detection of uncommon activities by the asset based on the baseline for the asset role.
+* Asset role visualization in the Incident view, the User view, and the Host view as background information for risk assessment.
+* Analysis of User and Host peer groups for score trend comparison over selected timelines.
+
+You can add users and endpoints to any asset role manually or by importing a CSV file.
+
+You can remove users from asset roles manually and override the automatically detected asset roles.
+
+The tag family for asset roles provides the ability to slice and dice alerts and incidents. Automated and customizable asset role classification is based on constant analysis of the users and hosts in your network. You can edit and manage the User Asset Roles and Host Asset Roles to meet the needs of your organization.
+
+The asset roles configuration page displays the asset roles, their type, the number of assets that are associated with each asset role, and the last modification date. On this page, you can refresh the data, filter it, and change the layout.
+
+To edit an asset role, right-click and select **Edit Asset Role**. Depending on the type of asset, you can manage the user asset role list or the endpoint asset role list for the asset role.

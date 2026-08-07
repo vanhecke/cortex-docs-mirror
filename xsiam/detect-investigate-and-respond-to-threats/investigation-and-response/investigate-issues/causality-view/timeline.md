@@ -1,0 +1,49 @@
+# Timeline
+
+The Timeline provides a forensic timeline of the sequence of events, issues, and informational BIOCs, and correlation rules involved in an attack. While the causality view of an issue surfaces related events and processes that Cortex XSIAM identifies as important or interesting, the Timeline displays all related events, issues, and informational BIOCs and correlation rules over time.
+
+{% hint style="info" %}
+### Note
+
+The Timeline view is not available when investigating cloud Cortex XSIAM issues and cloud audit logs or SaaS-related issues for 501 audit events, such as Office 365 audit logs and normalized logs. Only the applicable cloud causality view and SaaS causality view is available for this data.
+{% endhint %}
+
+The Timeline comprises the following parts:
+
+<details>
+
+<summary>CGO and process instances that are part of the CGO</summary>
+
+Cortex XSIAM displays the Causality Group Owner (CGO) and the host on which the CGO ran in the top left of the timeline. The CGO is the parent process in the execution chain that Cortex XSIAM identified as being responsible for initiating the process tree. In the example above, `wscript.exe` is the CGO and the host it ran on was `HOST488497`. You can also click the blue corner of the CGO to view and filter related processes from the Timeline. This will add or remove the process and related events or issues associated with the process from the Timeline.
+
+</details>
+
+<details>
+
+<summary>Timespan</summary>
+
+By default, Cortex XSIAM displays a 24-hour period from the start of the investigation and displays the start and end time of the CGO at either end of the timescale. You can move the slide bar to the left or right to focus on any time-gap within the timescale. You can also use the time filters above the table to focus on set time periods.
+
+</details>
+
+<details>
+
+<summary>Activity</summary>
+
+Depending on the type of activities involved in the CI chain of events, the activity section can present any of the following three lanes across the page:
+
+* **Issues:** The issue icon indicates when the issue occurred.
+* **BIOCs and correlation rules:** The category of the issue is displayed on the left (for example tampering or lateral movement). Each BIOC event also indicates a color associated with the issue severity. An informational severity can indicate something interesting has happened but there were not any triggered issues. These events are likely benign but are byproducts of the actual issue.
+* **Event Information:** The event types include process execution, outgoing or incoming connections, failed connections, data upload, and data download. Process execution and connections are indicated by a dot. One dot indicates one connection while many dots indicates multiple connections. Uploads and Downloads are indicated by a bar graph that shows the size of the upload and download.
+
+The lanes depict when the activity occurred and provide additional statistics that can help you investigate. For BIOC, correlation rules, and issues, the lanes also depict activity nodes, highlighted with their severity color: high (red), medium (yellow), low (blue), or informational (gray), and provide additional information about the activity when you hover over the node.
+
+</details>
+
+<details>
+
+<summary>Related events, issues, and informational BIOCs</summary>
+
+Cortex XSIAM displays up to 100,000 issues, BIOCs and Correlation Rules (triggered and informational), and events. Click on a node in the activity area of the Timeline to filter the results. You also can create filters to search for specific events.
+
+</details>

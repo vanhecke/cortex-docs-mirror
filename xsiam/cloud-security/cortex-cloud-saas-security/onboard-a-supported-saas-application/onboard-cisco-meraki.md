@@ -1,0 +1,57 @@
+---
+description: >-
+  Connect a Cisco Meraki instance to detect posture risks and compliance
+  violations.
+---
+
+# Onboard Cisco Meraki
+
+For SaaS Security to detect posture risks in your Cisco Meraki instance, you must onboard your Cisco Meraki instance to SaaS Security. Through the onboarding process, SaaS Security connects to a Cisco Meraki API and, through the API, scans your Cisco Meraki instance for misconfigured settings. If there are misconfigured settings, SaaS Security suggests a remediation action based on best practices.
+
+SaaS Security gets access to your Cisco Meraki instance through an API access key. During the onboarding process, SaaS Security prompts you for the API access key.
+
+To onboard your Cisco Meraki instance, complete the following actions:
+
+* Generate an API access key for your organization
+* Connect SaaS Security to your Cisco Meraki instance
+
+***
+
+### Step 1: Generate an API Access Key for Your Organization
+
+To access a Cisco Meraki API, SaaS Security requires an API key that an organization administrator generates. This administrator must also enable access to the Cisco Meraki dashboard API. The API key inherits the permissions of the administrator who generates the key.
+
+1. Log in to Cisco Meraki.
+
+Required Permissions: You must log in as an organization administrator with Full permissions.
+
+2. If more than one Cisco Meraki account and organization are associated with your login email address, Cisco Meraki prompts you to select an organization. Navigate to the organization for which you'll be generating the API access key.
+3. From the Cisco Meraki dashboard, navigate to your profile. Locate your login email address in the upper-right corner of the dashboard and select \<login\_name> > My Profile.
+4. On your profile page, locate the API access section and click Generate new API key.
+
+**Note**: Each administrator can have only two keys associated with their account. If you already have two API keys, you will need to Revoke one before you can Generate new API key.
+
+Cisco Meraki generates and displays your new key.
+
+5. Copy your API key and paste it into a text file.
+
+**Note**: Do not continue to the next step unless you have copied the API key. You must provide this key to SaaS Security during the onboarding process.
+
+6. Enable access to the Cisco Meraki dashboard API.
+   1. Select Organization > Settings to open the Organization Settings page.
+   2. On the Organization Settings page, locate the Dashboard API access section. Select Enable access to the Cisco Meraki Dashboard API and click Save Changes.
+
+***
+
+### Step 2: Connect SaaS Security to Your Cisco Meraki Instance
+
+By adding a Cisco Meraki app in Cortex, you enable SaaS Security to connect to your Cisco Meraki instance.
+
+1. Log in to Cortex.
+2. Select **Settings > Data Sources and Integrations > Add New**. You can use the Search bar to find the app you want to connect to.
+3. Click the Cisco Meraki tile.
+4. Under **Capabilities**, Enter a Name for your application.
+5. Select Security Posture under Default Capabilities and click Next.
+6. Under **Connections**, provide your API key.
+7. Under **Configurations**, select a **Sync Interval**. Choose a meaningful **Tag** to distinguish between various applications in different environments.&#x20;
+8. Click **Next** to complete the onboarding validation process.

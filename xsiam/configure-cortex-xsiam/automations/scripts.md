@@ -1,0 +1,31 @@
+# Scripts
+
+Automation scripts are individual code entities used to perform specific actions within a playbook or as standalone commands in the CLI. On the **Scripts** page (Investigation & Response → **Automation** → **Scripts**), you can view, edit, and create scripts in JavaScript, Python, or PowerShell.
+
+When creating a script, you can access all APIs, including cases and investigations, and share data in the War Room. Scripts can receive and access arguments and can be password-protected.
+
+{% hint style="info" %}
+**Prerequisite**\
+To work with scripts, an administrator must configure your user role with specific RBAC permissions.
+
+* Permissions must be enabled in the following order:
+
+1. **Scripts**: This component (under **Investigation & Response** → **Automations**) must be set to **Enabled** first. It is the foundational permission for all automation; if **Scripts** are not enabled, you cannot configure **Playbooks** or **Cases and Issues**. Role-level permissions determine your ability to create new scripts or edit those marked as **Public**. For detailed information on the access model, see [Access to scripts](scripts/access-to-scripts).
+2. **Playbooks**: Once **Scripts** are enabled, you can set **Playbooks** (under **Investigation & Response** → **Automations**) to **Enabled**.
+3. **Cases and Issues**: Finally, you can set **Cases and Issues** (under **Cases & Issues**) to **View** or **View/Edit**. This is required to view the results of scripts executed within an investigation.
+
+* **Credentials**: To develop or execute scripts that interact with external services via stored secrets, your user role must have a minimum of **View** permissions for **Credentials**. If set to **None**, the system blocks scripts from fetching authentication data from the credential store.
+  * **Execution failure**: Any Python SDK command or JavaScript equivalent used to retrieve a secret will return an unauthorized error or an empty result during execution.
+  * **Development impact**: You will be unable to select or reference stored credentials when testing scripts in the Playground if your role is restricted.
+* **Restricting script access:** To completely restrict script access, first set the RBAC permissions for **Playbooks** to **Disabled** and **Playground** to **None**, and then set the **Scripts** permission to **Disabled**.
+{% endhint %}
+
+**Automation Engineer agent**
+
+Use the AI-powered Automation Engineer agent to simplify Python script creation and management through an intuitive, interactive experience. It enables you to generate, modify, and query automation scripts with the Cortex Agentic Assistant natural language chat prompt. For example, within the chat, you can ask the agent to explain the specific script currently open or pose general technical questions regarding script logic and the AgentiX SDK.
+
+For more details about using the Automation Engineer agent, see [Accelerate script development using the Automation Engineer agent](scripts/accelerate-script-development-using-the-automation-engineer-agent).
+
+{% hint style="warning" %}
+The Automation Engineer agent is available when the **Agentic Assistant** feature is enabled, for users with script editing permissions. For more information, see Cortex Agentic Assistant and [Cortex Agentic Assistant permissions](../../reference-and-developer-docs/role-based-access-control/cortex-agentic-assistant-permissions).
+{% endhint %}

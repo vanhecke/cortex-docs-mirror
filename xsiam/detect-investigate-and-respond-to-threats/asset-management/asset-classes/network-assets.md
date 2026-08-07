@@ -1,0 +1,18 @@
+# Network assets
+
+Navigate to **Inventory > All Assets > Network** to access dedicated views for your network infrastructure. You can view **All Network Assets**, or filter by specific categories including **Load Balancers**, **Network Interfaces**, **Security Groups**, and **Subnets**. This section provides comprehensive visibility into the network infrastructure and security boundaries configured within your cloud and on-premise environments.
+
+**Asset details and configurations**
+
+Clicking on a network asset opens a detailed asset card with the following tabs:
+
+When investigating virtual machine assets, analysts can use the dedicated Network tab to gain in-depth visibility over internal network reachability and security boundaries. This tab provides:
+
+* **Overview:** Summarizes the highlights and properties of the network asset
+* **Identity:** Displays the identities associated with the network asset
+* **Configurations:** Displays the raw Asset Configuration JSON to deeply inspect specific IP rules, port protocols, and inbound or outbound permissions as defined by the provider
+* **Compliance:** Displays the compliance status of the network asset
+
+**Network exposure detection**
+
+To secure your network assets, the Cloud Network Analyzer continuously evaluates your infrastructure to detect inbound, outbound, and east-west exposures. The Cloud Network Analyzer maps the internal network topology to determine if assets have unrestricted access or can move laterally across VPCs and cloud accounts. This analysis takes into account the effectiveness of all cloud-native network security policies in the routing path, including network firewalls, internet gateways, load balancers, and security groups. If the Cloud Network Analyzer detects a risky exposure, it publishes actionable findings and issues mapping the network path

@@ -1,0 +1,121 @@
+# Detailed View
+
+The **Detailed View** in the case card provides a table-based format and custom layouts, ensuring full backward compatibility. You can switch between the **Overview** and the **Detailed View** based on your workflow preferences.
+
+The **Detailed View** supports deep inspection and manual analysis while maintaining access to the same underlying case data. It includes the following tabs:
+
+<table><thead><tr><th width="163">Tab</th><th>Description</th></tr></thead><tbody><tr><td>Issues &#x26; Insights</td><td>Displays a list of issues and insights linked to the case. Click on an issue or insight to open the issue card.</td></tr><tr><td>Key Assets &#x26; Artifacts</td><td>Displays asset and artifact information of the key artifacts, hosts, and users associated with the case. Hover over an icon for more information, or click the more options icon to see the available views and actions. For more information about investigating key assets and artifacts, see <a href="../../investigate-artifacts-and-assets">Investigate artifacts and assets</a>.</td></tr><tr><td>Timeline</td><td><p>Displays a chronological representation of issues and actions relating to the case. Each timeline entry represents a type of action that was triggered in the issue.</p><p>Issues that include the same artifacts are grouped into one timeline entry and display the common artifact in an interactive link. Click on an entry to view additional details in the Details pane. You can also filter the timeline by action type. Depending on the type of action, you can select the entry to further investigate and take action on it.</p></td></tr><tr><td>Case War Room</td><td><p>The Case War Room is a collection of the Active Response investigation actions, artifacts, and collaboration pieces for an issue or case. It is a chronological journal of the case investigation. You can run commands and playbooks from the War Room and filter the entries for easier viewing.</p><p>The War Room facilitates real-time investigation. Powered by ChatOps, the War Room helps you perform different tasks related to their case investigation using CLI commands. For example, running real-time security actions through the CLI, without switching consoles, and running security playbooks, scripts, and commands. For more information, see <a href="../../investigate-issues/use-the-war-room-in-an-investigation">Use the War Room in an investigation</a>.</p></td></tr><tr><td>Executions</td><td>Displays the causality chains associated with the case. On this tab, you can investigate a causality chain and take actions on a host. For more information, see <a href="../../investigate-issues/causality-view">Causality view</a>.</td></tr></tbody></table>
+
+<details>
+
+<summary>Investigate issues and insights</summary>
+
+The **Issues & Insights** tab displays a table of the issues and insights associated with the case.
+
+1. Use the toggle to switch between issues and insights, and add filters to the table to refine the displayed entries.
+2. Click an issue to open the issue investigation panel. This panel provides detailed information about an issue, enables you to take actions on an issue, open the causality, and start remediation.
+3. If required, you can unlink the issue from the case or link it to other related cases. Click the more options icon and select **Manage issue** - **Link to case** or **Unlink from case**.
+
+{% hint style="info" %}
+### Note
+
+When an issue is resolved, it remains linked to a case. Once all of the issues in a case are resolved, the case is automatically closed.
+{% endhint %}
+
+</details>
+
+<details>
+
+<summary>Run an automation on an issue</summary>
+
+You can run or rerun an automation on one or more issues. If there is currently an automation running on one or more of the selected issues, the **Run Automation** option does not appear. If an automation is running on the issue, but has been paused (for example, waiting for a user action), you can select to rerun the automation or select a new automation.
+
+1. In the **Issues & Insights** tab, right-click one or more issues and click Run Automation.
+2. If the issues have an automation already assigned, choose Rerun current Automation or Choose another Automation. If the playbooks do not have an automation assigned, select a action to run and define the action parameters.
+3. Run the automation.
+
+</details>
+
+<details>
+
+<summary>Investigate key assets and artifacts</summary>
+
+The **Key Assets & Artifacts** tab displays all the case assets and artifact information of hosts, users, and key artifacts associated with the case.
+
+1.  Investigate artifacts.
+
+    In the **Artifacts** section, review the artifacts associated with the case. Each artifact displays, if available, the artifact information and available actions according to the type of artifact: File, IP Address, and Domain.
+2.  Investigate hosts.
+
+    In the **Hosts** section, review the hosts associated with the case. Each host displays, if available, host information and available actions.
+
+    To further investigate the host, select the host name to display the Details panel. The panel is only available for hosts with the agent installed and displays the host name, whether it’s connected, along with the **Endpoint Details**, **Agent Details**, **Network**, and **Policy information** details. If the Details panel is not available, click the more options icon next to a host name to see the available options.
+3.  Investigate users.
+
+    In the **Users** section, review the users associated with the case. Each user displays, if available, the user information and available actions
+
+</details>
+
+<details>
+
+<summary>Investigate the case timeline</summary>
+
+The **Timeline** tab is a chronological representation of issues and actions relating to the case.
+
+1. Navigate to the **Timeline** tab and filter the actions according to the action type.
+2.  Investigate a timeline entry.
+
+    Each timeline entry is a representation of a type of action that was triggered in the issue. Issues that include the same artifacts are grouped into one timeline entry and display the common artifact in an interactive link. Depending on the type of action, you can select the entry, host names, and artifacts to further investigate the action:
+
+    * Locate the action you want to investigate:
+      * For **Quick Actions** and **Case Management Actions**, you can add and view comments relating to the action.
+      * For **Issues**, **Automatic Case Updates** and **Automation** actions, click the action to open the Details panel. In the panel, go to the **Issues** tab to view the issues table filtered by issues ID, the **Key Assets** to view a list of **Hosts** and **Users** associated to the issue, and an option to add **Comments**.
+    * Select the Host name to display the endpoint data, if available.
+    * Select the Artifact to display the following type of information:
+      * **Hash artifact:** Displays the **Verdict**, **File name**, and **Signature status** of the hash value. Select the hash value to view the **Wildfire Analysis Report**, **Add to Block list**, **Add to Allow list** and **Search file**.
+      * **Domain artifact:** Displays the **IP address** and **VT score** of the domain. Select the domain name to **Add to EDL**.
+      * **IP address:** Display whether the IP address is **Internal** or **External**, the **Whois** findings, and the **VT score**. Expand **Whois** to view the findings and **Add to EDL**.
+    * In action entries that involved more artifacts, expand **Additional artifacts found** to further investigate.
+
+</details>
+
+<details>
+
+<summary>Investigate case executions</summary>
+
+The **Executions** tab displays all the causality chains associated with the case. The causality chains are aggregated according to the following types of groupings:
+
+* Host Name
+  * Host with an agent installed
+  * Host without an agent installed
+  * Multiple Hosts
+  * Undetected Host
+* User Name
+  * Username
+  * Multiple Users
+  * Undetected Users
+
+{% hint style="info" %}
+### Note
+
+* Cloud-related issues are displayed in the User Name grouping.
+* Prisma Cloud Compute issues are displayed in the Host Name grouping.
+{% endhint %}
+
+**How to investigate case executions**
+
+1.  Investigate the host causality chains.
+
+    In the **Executions** section, review the hosts associated with the case. Review the host information and click the more options icon to perform actions on the host, or open related views.
+2.  Investigate a causality chain.
+
+    The causality chains are listed according to the Causality Group Owner (CGO), expand the CGO card you want to investigate. Each CGO card displays the CGO name, the following CGO event details, and the causality chain:
+
+    * CGO Name
+    * Issue Sources associated with the entire causality chain
+    * Execution time of the causality chain
+    * Number of issues that include the CGO according to severity.
+
+    **Expand** the causality chain to further investigate and perform available Causality View actions. For more information, see [Causality view](../../investigate-issues/causality-view).
+
+</details>

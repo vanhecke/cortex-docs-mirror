@@ -1,0 +1,17 @@
+# Thales
+
+{% hint style="warning" %}
+**Important**
+
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+{% endhint %}
+
+This sub-capability is available with any active Cortex XSIAM license.
+
+SafeNet Trusted Access prevents data breaches, helps with compliance with regulations, and supports migration to the cloud in a simple and secure fashion. Retrieve access, authentication, and audit logs and store them for investigation and response.
+
+This connector includes the following sub-capabilities (Marketplace integrations link to PAN DEV for more information):
+
+* [SafeNetTrustedAccessEventCollector](https://xsoar.pan.dev/docs/reference/integrations/safe-net-trusted-access-event-collector): Retrieve access, authentication, and audit logs and store them on a Security Information and Event Management (SIEM) system, local repository, or syslog file server. You can retrieve the logs only for the tenant that is associated with the API key, or for a direct or delegated child of that tenant.
+
+To configure this connector, follow the steps outlined in the configuration wizard.

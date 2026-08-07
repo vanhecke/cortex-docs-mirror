@@ -1,0 +1,69 @@
+{
+  "book": "xql-schema",
+  "title": "Cortex XQL Schema Reference",
+  "section": "xql-schema-reference",
+  "page_count": 10,
+  "tree": [
+    {
+      "title": "Cortex XQL Schema Reference Guide",
+      "path": "readme",
+      "type": "document",
+      "children": []
+    },
+    {
+      "title": "XDR_DATA Fields by Actor",
+      "path": "xdr-data-fields-by-actor",
+      "type": "document",
+      "children": [
+        {
+          "title": "Action Actor",
+          "path": "xdr-data-fields-by-actor/action-actor",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Actor Actor",
+          "path": "xdr-data-fields-by-actor/actor-actor",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Causality Actor",
+          "path": "xdr-data-fields-by-actor/causality-actor",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "DST Action Actor",
+          "path": "xdr-data-fields-by-actor/dst-action-actor",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "DST Causality Actor",
+          "path": "xdr-data-fields-by-actor/dst-causality-actor",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "DST OS Actor",
+          "path": "xdr-data-fields-by-actor/dst-os-actor",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "OS Actor",
+          "path": "xdr-data-fields-by-actor/os-actor",
+          "type": "document",
+          "children": []
+        }
+      ]
+    },
+    {
+      "title": "XDR_DATA Fields",
+      "path": "xdr-data-fields",
+      "type": "document",
+      "children": []
+    }
+  ]
+}

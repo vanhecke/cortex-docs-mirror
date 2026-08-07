@@ -1,0 +1,34 @@
+---
+description: Learn more about Cortex Data Model (XDM) Rules.
+---
+
+# Data Model Rules
+
+{% hint style="info" %}
+### Notice
+
+Only a user with Cortex Account Administrator or Instance Administrator permissions can access Data Model Rules.
+{% endhint %}
+
+Learn more about Cortex Data Model (XDM) Rules.
+
+### What are Data Model Rules?
+
+{% hint style="warning" %}
+### Prerequisite
+
+Data Model Rules requires **View/Edit** RBAC permissions for **Data Management** (under **Configurations** → **Data Management**), which are the same permissions required for Dataset Management, Parsing Rules, and Event Forwarding.
+{% endhint %}
+
+Cortex XSIAM enables you to map your logs into a single, unified data model. This data model provides a consolidated schema, and a simpler way to interact with your data, regardless of its source or dataset. To familiarize yourself with the data model schema, see [XSIAM Data Model Schema](https://app.gitbook.com/s/HVBaxKOW1b6qcIQ6iMBh/).
+
+You can map your data to the data model using Data Model Rules, either by using the Default Rules that are automatically added when installing Content Packages from the Marketplace, or by creating user-defined rules. You create rules with the Data Model Rules editor, which enables you to do the following:
+
+* Map 3^(rd) party data to a consolidated schema with predefined data types.
+* Enjoy auto-complete and mapping suggestions.
+* Map multiple quarriable datasets to the data model.
+
+Data Model Rules contain the following built-in characteristics:
+
+* Each Data Model Rule is mapped between one dataset and the data model.
+* A Data Model Rule takes rows from a dataset to use as an input, performs an arbitrary number of transitions and modifications on each column in the dataset using Cortex Query Language (XQL), and then returns the normalized rows with the corresponding data model’s schema.

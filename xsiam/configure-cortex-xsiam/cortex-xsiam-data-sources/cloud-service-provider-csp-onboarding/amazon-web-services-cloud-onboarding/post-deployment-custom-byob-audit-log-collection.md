@@ -1,0 +1,90 @@
+# Post-deployment: Custom (BYOB) audit log collection
+
+If you selected **Custom (BYOB)** audit log collection, you must configure your S3 bucket to forward event notifications to the SQS queue created by the template. The steps differ depending on your deployment method.
+
+{% tabs %}
+{% tab title="CloudFormation Custom (BYOB)" %}
+The CloudFormation stack creates the SQS queue in your account. You must manually configure your S3 bucket to send event notifications to it.
+
+1. In the AWS CloudFormation console, open the stack and select the **Outputs** tab.
+2. Note the `sqs_url` output value.
+3. Derive the SQS queue ARN from the URL (format: `arn:aws:sqs:<region>:<account-id>:<queue-name>`), or retrieve it from the AWS SQS console.
+4. In the AWS Management Console, navigate to your S3 bucket.
+5. Under **Properties → Event notifications**, add a notification:
+   * **Event types:** `s3:ObjectCreated:*`
+   * **Destination:** SQS queue. Enter the ARN from step 3.
+6. Save the notification configuration.
+{% endtab %}
+
+{% tab title="CloudFormation Control Tower" %}
+The Control Tower BYOB CloudFormation stack deploys the SQS queue and SNS subscription automatically via CloudFormation StackSets into the account where your SNS topic resides. No manual S3 event notification configuration is required. The SNS-to-SQS subscription is created by the StackSet.
+
+After the stack completes, you can verify the following in the AWS Management Console:
+
+1. In the SNS topic account, confirm that the SQS queue named `<SqsQueueName>` (the value you entered in the wizard) exists and has an active subscription to your CloudTrail SNS topic.
+2. In the logging account, confirm that the IAM role named `<CloudTrailReadRoleName>` (the value you entered in the wizard) exists and has the correct trust policy and S3 read permissions.
+3. In Cortex XSIAM, verify that the cloud instance transitions from **Pending** to **Connected**.
+
+{% hint style="warning" %}
+#### Important
+
+If you are using Control Tower for audit log collection and you choose to encrypt your logs with a KMS key, you must [grant cross-account KMS key access](grant-cross-account-kms-key-access-for-control-tower-byob-log-collection).
+{% endhint %}
+{% endtab %}
+
+{% tab title="Terraform (account scope)" %}
+The Terraform template creates the SQS queue in your account. You must manually configure your S3 bucket to send event notifications to it.
+
+1. In the `terraform apply` output, note the `sqs_url` value.
+2. Derive the SQS queue ARN from the URL (format: `arn:aws:sqs:<region>:<account-id>:<queue-name>`), or retrieve it from the AWS SQS console.
+3. In the [AWS Management Console](#first-tab), navigate to your S3 bucket.
+4. Under **Properties → Event notifications**, add a notification:
+   * **Event types:** `s3:ObjectCreated:*`
+   * **Destination:** SQS queue. Enter the ARN from step 2.
+5. Save the notification configuration.
+{% endtab %}
+{% endtabs %}
+
+### Troubleshooting custom audit log collection
+
+Use this section to diagnose issues with custom (BYOB) audit log collection after deploying the authentication template. The most common causes of failure are:
+
+* **S3 event notifications not configured or misconfigured**: For Terraform and standard CloudFormation deployments, you must manually configure your S3 bucket to forward `s3:ObjectCreated:*` events to the SQS queue created by the template. If this step is skipped or the wrong SQS ARN is used, logs will not reach Cortex XSIAM.
+* **Cross-region resources**: The S3 bucket, SNS topic, SQS queue, and authentication template deployment must all be in the same AWS region. Cross-region configurations are not supported.
+* **KMS key policy not updated**: If your S3 bucket is encrypted with a customer-managed KMS key, you must manually update the KMS key policy to allow the Cortex log-collector IAM role to call `kms:Decrypt`. This cannot be done automatically by the template.
+* **Instance remains in Pending state**: This indicates the template deployed successfully but the notification to Cortex XSIAM did not complete. You can connect the instance manually from the Cortex XSIAM pending instances panel. See [Manually connect a cloud instance](../manually-connect-a-cloud-instance) for more details.
+
+Select the tab for your deployment method for specific troubleshooting steps.
+
+{% tabs %}
+{% tab title="CloudFormation Custom (BYOB)" %}
+<table><thead><tr><th width="204.37109375">Symptom</th><th width="215.3203125">Likely cause</th><th>Resolution</th></tr></thead><tbody><tr><td>Stack creation fails with IAM permission errors</td><td>AWS credentials lack required CloudFormation or IAM permissions</td><td>Ensure your AWS credentials have permissions to create CloudFormation stacks, IAM roles, SQS queues, and the resources required by your selected capabilities.</td></tr><tr><td><code>CloudTrailSnsArn</code> parameter rejected</td><td>SNS ARN format is incorrect</td><td>The ARN must match <code>arn:(aws|aws-us-gov):sns:&#x3C;region>:&#x3C;account-id>:&#x3C;topic-name></code>.</td></tr><tr><td><code>CloudTrailKmsArn</code> parameter rejected</td><td>KMS ARN format is incorrect</td><td>The ARN must match <code>arn:(aws|aws-us-gov):kms:&#x3C;region>:&#x3C;account-id>:key/&#x3C;uuid></code>. Leave the field empty if no KMS key is used.</td></tr><tr><td>Instance remains in Pending state after stack creation</td><td>Lambda notification to Cortex XSIAM failed</td><td>Check the Lambda function logs in CloudWatch for errors. If the notification failed, connect the instance manually: select the pending instance, click <strong>Connect manually</strong>, and provide the <code>CortexPlatformRole</code> ARN and External ID shown in the CloudFormation stack Outputs tab.</td></tr><tr><td>Logs not appearing in Cortex XSIAM after stack creation</td><td>S3 event notification not configured, or configured with wrong SQS ARN</td><td>Confirm you have configured the S3 bucket event notification to send <code>s3:ObjectCreated:*</code> events to the SQS queue. Retrieve the correct SQS ARN from the <code>sqs_url</code> value in the CloudFormation stack Outputs tab. Ensure the S3 bucket, SNS topic, and CloudFormation stack are all in the same AWS region.</td></tr><tr><td>KMS decryption errors in Cortex XSIAM</td><td>KMS key policy does not allow the <code>CortexLogsReadRole</code> to call <code>kms:Decrypt</code></td><td>Update the KMS key policy to allow <code>kms:Decrypt</code> for the <code>CortexLogsReadRole-*</code> IAM role created by the stack. This must be done manually after the stack is deployed.</td></tr></tbody></table>
+
+<br>
+{% endtab %}
+
+{% tab title="CloudFormation Control Tower" %}
+| Symptom                                                                  | Likely cause                                                                                                                               | Resolution                                                                                                                                                                                                                                                                                    |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| StackSet operation fails with `OPERATION_NOT_FOUND` or permission errors | AWS Organizations service-managed StackSets not enabled, or the management account does not have trusted access enabled for CloudFormation | In AWS Organizations, enable trusted access for AWS CloudFormation StackSets. See the [AWS documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-orgs-enable-trusted-access.html).                                                                          |
+| SQS queue not created in the SNS topic account                           | `SnsTopicOuId` does not contain the account where the SNS topic resides                                                                    | Verify that the OU ID entered for `SnsTopicOuId` is the OU that directly contains the SNS topic account. The StackSet uses `AccountFilterType: INTERSECTION` and will not deploy if the account is not in the specified OU.                                                                   |
+| IAM role not created in the logging account                              | `LoggingAccountOuId` does not contain the logging account                                                                                  | Verify that the OU ID entered for `LoggingAccountOuId` is the OU that directly contains the logging account where the S3 bucket resides.                                                                                                                                                      |
+| `LoggingAccountId` parameter rejected                                    | Account ID format is incorrect                                                                                                             | The value must be a 12-digit AWS account ID with no hyphens or spaces.                                                                                                                                                                                                                        |
+| `LoggingAccountOuId` or `SnsTopicOuId` parameter rejected                | OU ID format is incorrect                                                                                                                  | The value must match the format `ou-<root-id>-<ou-id>` (for example, `ou-ab12-cd34ef56`).                                                                                                                                                                                                     |
+| `SqsQueueName` parameter rejected                                        | Queue name contains invalid characters or exceeds 80 characters                                                                            | Queue names may only contain alphanumeric characters, hyphens, and underscores, and must be 80 characters or fewer.                                                                                                                                                                           |
+| Logs not appearing in Cortex XSIAM after stack creation                  | SNS-to-SQS subscription not active, or S3 event notification not forwarding to SNS                                                         | In the SNS topic account, verify the SQS queue exists and has an active subscription to the CloudTrail SNS topic. Confirm that the S3 bucket is configured to send `s3:ObjectCreated:*` event notifications to the SNS topic (not directly to SQS — the SNS topic fans out to the SQS queue). |
+| KMS decryption errors in Cortex XSIAM                                    | KMS key policy does not allow the `CloudTrailReadRoleName` role in the logging account to call `kms:Decrypt`                               | Update the KMS key policy in the logging account to allow `kms:Decrypt` for the IAM role named `<CloudTrailReadRoleName>`. This must be done manually after the StackSet deploys the role.                                                                                                    |
+{% endtab %}
+
+{% tab title="Terraform" %}
+| Symptom                                                                      | Likely cause                                               | Resolution                                                                                                                                                                                                                                                                                 |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `terraform init` fails with provider download errors                         | No outbound internet access to the Terraform registry      | Ensure outbound HTTPS access to `registry.terraform.io` and `releases.hashicorp.com` is allowed from your local machine.                                                                                                                                                                   |
+| `terraform apply` fails with IAM permission errors                           | AWS credentials lack required permissions                  | Ensure your AWS credentials have permissions to create IAM roles, policies, and the resources required by your selected capabilities.                                                                                                                                                      |
+| `cloud_trail_sns_arn` validation error                                       | SNS ARN format is incorrect                                | The ARN must match `arn:(aws\|aws-us-gov):sns:<region>:<account-id>:<topic-name>`.                                                                                                                                                                                                         |
+| `cloud_trail_kms_arn` validation error                                       | KMS ARN format is incorrect                                | The ARN must match `arn:(aws\|aws-us-gov):kms:<region>:<account-id>:key/<uuid>`. Leave the field empty if no KMS key is used.                                                                                                                                                              |
+| Tag validation errors during apply                                           | Custom tags contain invalid characters                     | AWS tag keys and values may only contain Unicode letters, digits, whitespace, and the following symbols: `_ . : / = + - @`. Remove any other characters from your custom tags in the onboarding wizard.                                                                                    |
+| Instance remains in Pending state after apply                                | Notification to Cortex XSIAM failed                        | The notification requires outbound HTTPS access to `*.storage.googleapis.com`. If the notification failed, connect the instance manually: select the pending instance, click **Connect manually**, and provide the `CortexPlatformRole` ARN and External ID shown in the Terraform output. |
+| Logs not appearing in Cortex XSIAM after S3 event notification is configured | SQS queue ARN entered incorrectly in S3 event notification | Verify the ARN in the S3 bucket event notification matches the `sqs_url` output from `terraform apply`. Ensure the S3 bucket, SNS topic, and SQS queue are all in the same AWS region.                                                                                                     |
+{% endtab %}
+{% endtabs %}

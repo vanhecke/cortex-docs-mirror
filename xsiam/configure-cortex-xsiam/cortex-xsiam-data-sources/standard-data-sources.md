@@ -1,0 +1,29 @@
+# Standard data sources
+
+Standard data sources are built-in ingestion mechanisms in Cortex XSIAM primarily focused on ingesting raw logs and security events. While Cortex XSIAM is introducing a unified **Connector** approach, many third-party services and file-based ingestions continue to use standard data sources for core security analysis and normalization.
+
+These data sources (also called data collectors) typically utilize direct API connections or file collection tools to bring telemetry into the platform.
+
+### Configuration experience
+
+Standard data sources are configured using the Data Source Onboarder. Unlike the multi-capability connector wizard, the onboarder is focused on a specific stream of data, such as Okta logs or Amazon S3 files.
+
+#### Key Features
+
+* **Direct ingestion**: Connect directly to vendor APIs to fetch logs.
+* **Parsing and normalization**: Automatically maps incoming raw data to the Cortex Data Model (XDM).
+* **Streamlined Setup**: Focused exclusively on data collection without additional components like automation or posture management.
+
+### When to use standard data sources
+
+In the current Vendor Catalog, you may see a choice between a connector and a standard data source for the same vendor.
+
+* **Existing tenants**: If a unified connector is not yet available for a specific integration in your account, use the standard data source.
+* **New tenants**: Always prioritize using the uniquely named connector for a vendor. Standard data sources should only be used if a connector does not yet exist for that specific vendor or if you only require a specific raw log stream not currently bundled in a connector.
+
+### Configuration
+
+Standard data sources are configured by navigating to **Settings → Data Sources & Integrations → + Add New**.
+
+Select your desired vendor and look for the entry labeled as a data source or collector. The UI will launch the Data Source Onboarder to guide you through the setup steps.
+

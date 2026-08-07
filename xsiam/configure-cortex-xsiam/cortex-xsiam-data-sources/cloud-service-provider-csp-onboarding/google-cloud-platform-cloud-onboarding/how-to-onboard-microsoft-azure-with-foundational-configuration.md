@@ -1,0 +1,49 @@
+# How to onboard GCP with foundational configuration
+
+Follow the foundational configuration GCP onboarding wizard to enable audit log collection and asset discovery, and Cortex XSIAM creates a custom authentication template to be deployed in GCP.
+
+{% hint style="info" %}
+**LICENSE TYPE:**
+
+Onboarding Google Cloud Platform (GCP) using the foundational configuration is included with Cortex XSIAM NG SIEM, Cortex XSIAM Enterprise, and Cortex XSIAM Enterprise+ licenses. For more details on the CSP onboarding tiers and licensing, see [Understand CSP onboarding tiers and licensing](../understand-csp-onboarding-tiers-and-licensing).
+{% endhint %}
+
+This procedure describes foundational onboarding, which includes support of asset discovery and audit log collection. For the procedure describing comprehensive onboarding, see [How to onboard Google Cloud Platform](how-to-onboard-google-cloud-platform).
+
+After completing the [prerequisites](prerequisites-for-onboarding-gcp), follow these instructions to onboard your Microsoft Azure environment to Cortex XSIAM.
+
+### Access the Azure onboarding wizard in Cortex XSIAM:
+
+1. In Cortex XSIAM, select **Settings → Data Sources & Integrations**.
+2. On the **Data Sources & Integrations** page, click **+ Add New**.
+3. On the **Add Data Sources or Integrations** page, search for **Google Cloud Platform (GCP)**, then hover over it and click **Add**.
+
+### Select the scope
+
+Select the scope for this cloud instance:
+
+* **Organization:** (Default) A collection of GCP projects that are managed centrally.
+* **Folder:** A GCP folder can contain projects, folders, or a combination of both projects and folders.
+* **Project:** A specific GCP project.
+
+### Configure advanced settings (optional)
+
+Click Show advanced settings to define the following advanced settings:
+
+* **Instance Name:** Enter a unique instance name or leave it empty to be automatically populated. The automatic naming convention is `GCP-<projectID>` or GCP`-<organizationID>`. Cortex XSIAM does not prevent you from reusing instance names, but it is best practice to use a unique name for every cloud instance.
+* **Scope Modifications:** Use these settings to fine-tune your GCP scope. You can modify the scope by including or excluding specific regions. Additionally, if you selected an organization or folder as the scope, you can modify the scope by including or excluding specific projects or folders. For more details, see [Apply region or account filters](../..#step-5-apply-region-or-account-filters-optional).
+  * **Additional Security Capabilities:** Choose which security capabilities you want to benefit from. Some security capabilities are enabled by default and can be modified. Adding security capability typically requires additional cloud provider permissions. For detailed information on the permissions required, see [Cloud service provider permissions](../../../../reference-and-developer-docs/reference/cloud-service-provider-permissions).
+    * **Automation:** Use automation to pre-configure a list of integrations and associated commands to automate security issue responses. Commands can be utilized individually or as part of custom playbooks for issue remediation.
+  * **Cloud Tags:** Define tags and tag values to be added to any new resource created by Cortex XSIAM in GCP. Note: The `managed_by = paloaltonetworks` tag is automatically added to all resources. This tag is mandatory. You cannot edit or remove this tag.
+  * **Log Collection Configuration:** To maximize security coverage, include the collection of audit logs using GCP Pub/Sub.
+
+### Save the configuration and download the template
+
+1. Click **Save**. Cortex XSIAM generates a Terraform authentication template based on the settings you configured in the GCP onboarding wizard. Cortex XSIAM creates an instance in the pending state. For details on pending instances, see Pending cloud instances.
+2.  Click **Download Terraform** to download the template file and then click Close.
+
+    The Terraform authentication template is reusable and can be applied as many times as you want to create new instances with the settings you defined in the GCP onboarding wizard. The Terraform authentication template is valid for seven days from when it was created.
+
+**Next step:** [Deploy the Terraform authentication template in GCP.](deploy-the-terraform-authentication-template-in-gcp)
+
+<br>

@@ -1,0 +1,43 @@
+---
+description: >-
+  To install, use, and uninstall the Cortex XDR agent on Linux endpoints, see
+  the references in this topic.
+---
+
+# Cortex XDR Agent for Linux
+
+The Cortex XDR agent protects Linux servers by preventing known and unknown malware from running by halting any attempts to leverage software exploits and vulnerabilities to compromise the server. The agent also extends exploit and malware protection to processes that run in Linux containers. When you install the agent on a Linux server that uses containers, it automatically protects any new and existing containerized processes regardless of the container solution (for example, docker). Because Cortex XDR issues the license per Linux server, each container does not consume any additional licenses.
+
+The protection capabilities and features that the Cortex XDR agent for Linux provide depend on the operation modes you choose to deploy the Cortex XDR agent on your Linux server:
+
+*   Kernel Mode
+
+    Cortex XDR agent installs a Kernel module which must be compatible with the endpoint's kernel. See the list of [supported Linux Kernel versions](https://app.gitbook.com/s/y29o8lwSBpbfPbvztsyt/).
+*   User Mode (eBPF based)
+
+    This mode allows you to leverage the protection provided by Cortex XDR agent on Linux distributions running Kernel 5.0 and above without loading a kernel module. The Palo Alto Networks [Compatibility Matrix](https://app.gitbook.com/s/fZ8QSMnkjnXpuOeuRcam/) provides more information about supported Linux distribution versions.
+
+    &#x20;
+
+    To operate in user mode, make sure of the following:
+
+    * In the Agent Profile, configure the **Agent Operation Mode** as **User Space**.
+    * Linux agents support fallback from Kernel mode to user mode via the Agent Settings, if Kernel is not supported or cannot be loaded for other reasons.
+    * If fallback from Kernel mode to user mode is not set up, then you must create and deploy the new YAML installer for Kubernetes based installations.
+
+The following table details protection capabilities provided according to each operation mode.
+
+| Protection Capabilities                                   | Kernel | User Mode (eBPF based) |
+| --------------------------------------------------------- | :----: | :--------------------: |
+| Exploit Protection                                        |    ✓   |            ✓           |
+| Malware Protection                                        |    ✓   |            ✓           |
+| Endpoint EDR Data Collection                              |    ✓   |            ✓           |
+| Event Monitoring                                          |    ✓   |            ✓           |
+| Kernel Integrity Monitoring and Kernel Module Examination |    ✓   |            —           |
+| Local Privilege Escalation Protection                     |    ✓   |            —           |
+
+The following topics describe how to install and use the Cortex XDR agent for Linux:
+
+* [Cortex XDR agent for Linux Requirements](cortex-xdr-agent-for-linux/cortex-xdr-agent-for-linux-requirements)
+* [Use the Cortex XDR agent for Linux](cortex-xdr-agent-for-linux/use-the-cortex-xdr-agent-for-linux)
+* [Uninstall the Cortex XDR agent](cortex-xdr-agent-for-linux/uninstall-the-cortex-xdr-agent-for-linux)

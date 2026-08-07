@@ -1,0 +1,50 @@
+---
+description: >-
+  Automate response to issues, using playbooks and Quick Actions, triggered
+  automatically by automation rules or manually from an issue.
+---
+
+# Automation in Cortex XSIAM
+
+Automation enables you to improve efficiency and response times by performing actions on one or more issues, either automatically in response to predetermined conditions or manually triggered during your investigation workflow. In Cortex XSIAM, you can use playbooks, agents, scripts, commands, and Quick Actions to streamline operations, accelerate triage, and boost productivity.
+
+The **Automation Insights** dashboard provides a high level overview of your automations.
+
+*   **Playbooks**
+
+    Playbooks enable you to organize and document security monitoring, orchestration, and response activities. Playbooks are self-contained, fully documented prescriptive procedures that query, analyze, and take action based on the gathered results.
+
+    Playbooks are built from regular tasks and sub-playbooks. Playbook tasks can run out-of-the-box or custom scripts and integrations to communicate with third-party systems. You can use out-of-the-box playbooks as is, or customize them according to your requirements. You can also reuse individual playbook tasks as building blocks for new playbooks, saving time and streamlining knowledge retention.
+
+    Playbooks can run automatically on issues based on automation rules, run automatically by jobs on a schedule or based on a delta, or can be run manually on one or more issues.
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>You can build end-to-end automation workflows from within the playbook editor, including creating automation rules, configuring integration instances, and creating and editing tasks. For more information, see <a href="playbooks">Playbooks</a>.</p></div>
+*   **Scripts and commands**
+
+    Cortex XSIAM includes built-in commands, as well as commands and scripts from the core content packs. In addition, when you adopt playbooks, any necessary scripts and integrations for the playbook are automatically downloaded. You can also write your own scripts or edit existing scripts.
+
+    Scripts and commands can be used in playbook tasks or run manually from the **War Room**.
+*   **Quick Actions**
+
+    Quick actions are single commands that enable you to respond rapidly without requiring complex playbooks.
+
+    Quick Actions can be run automatically on issues based on automation rules, or run manually on one or more issues.
+
+**Automation rules**
+
+Automation rules enable you to run playbooks, Quick Actions, or agents automatically on issues, based on preset criteria. Automation rules follow a WHEN / IF / THEN structure. For example, WHEN an issue is created, IF the severity is critical, THEN set the case assignee to a specific analyst. For more information, see [Create an automation rule](create-an-automation-rule).
+
+{% hint style="info" %}
+### Note
+
+In addition to the Automation Rules feature, the **XDR Automation** menu item is available if you migrated from Cortex XDR 3.x to Cortex XSIAM 5.x and had rules configured in your previous environment.
+
+* **Location:** These legacy rules are located under **Investigation & Response** → **Automation** → **XDR Automation**.
+* **Operational but read-only:** Existing rules from your Cortex XDR 3.x environment continue to function as originally configured, but they are now read-only. You cannot edit existing legacy rules or create new rules within this section.
+* **Migration:** We recommend transitioning your legacy automation logic to the new Automation Rules, found under **Investigation & Response** → **Automation** → **Automation Rules**.
+* **Functional difference:** Legacy XDR Automation rules allowed for multiple independent actions to be assigned to a single trigger. In contrast, the new Automation Rules trigger a single Playbook or Quick Action per issue.
+{% endhint %}
+
+**Manually trigger automation**
+
+Playbooks and Quick Actions can also be run on demand. For more information, see [Run an automation on an issue](../../detect-investigate-and-respond-to-threats/investigation-and-response/investigate-issues/run-an-automation-on-an-issue).

@@ -1,0 +1,21 @@
+---
+description: >-
+  Plan out the content items you want to create for your own use or content
+  packs that can be contributed to Marketplace.
+---
+
+# Design
+
+Cortex XSIAM provides out-of-the-box content that contain most of the functionality you need. However, it also supports creating custom content, enabling you to develop unique functions to meet any specific need. You can create individual content items (playbooks, integrations, etc.) for your own use or create content packs that can be contributed to Marketplace.
+
+Content packs include one or more content items, and facilitate integrating various data sources by packaging together predefined configurations such as parsers, rules, and dashboards, improving the accuracy and efficiency of security threat identification and analysis. All content contributed to Marketplace must be within a content pack.
+
+Before you begin to create content packs for contribution, you need to understand your goals, and review the design guidelines. Careful attention to the design process ensures that you achieve your desired use case and that the different components of your content pack function correctly together.&#x20;
+
+During the design process, we recommend the following stages:
+
+* Understand your use case.
+* Identify which components you need to achieve your use case, such as playbooks, integrations, incident fields, etc. Determine what content, if any, you can reuse from existing content packs.
+* Review [documentation best practices](../documentation/documentation-best-practices).
+
+While you do not need to complete your entire design before you begin coding, we recommend you return regularly to the design stage throughout the development process, to review whether you are achieving your use case, if your components have changed, and to verify you are implementing best practices.

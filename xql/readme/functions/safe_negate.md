@@ -1,0 +1,107 @@
+# safe\_negate
+
+Use the `safe_negate()` function to negate a numeric value with overflow protection. Unlike standard negation, `safe_negate()` returns `null` instead of raising an error when the result overflows.
+
+## Syntax
+
+```sql
+safe_negate(<number>)
+```
+
+## Parameters
+
+| Name     | Type           | Required | Description                  |
+| -------- | -------------- | -------- | ---------------------------- |
+| `number` | integer, float | Yes      | The numeric value to negate. |
+
+## Returns
+
+**Type**: integer or float (matches input type)
+
+**Description**: The `safe_negate()` function returns the negated value of the input (i.e., `-number`). If the result would overflow the numeric type, the function returns `null` instead of raising an error. If the input is `null`, the function returns `null`.
+
+## Usage notes
+
+* **Input type**: XQL doesn't support NaN or infinite values as input and these value types also can not be returned.
+* **Overflow Protection**: The primary advantage of `safe_negate()` is that it returns `null` instead of raising an error when negating the minimum integer value (for example, negating `-9223372036854775808` would overflow since the maximum positive 64-bit integer is `9223372036854775807`).
+* **Null Handling**: If the input expression is `null`, the function returns `null`.
+* **Double Negation**: `safe_negate(safe_negate(x))` returns `x` for all non-overflow cases.
+* **Common Use Cases**: This function is used when working with values that might be at the boundary of the integer range, such as system-generated counters or imported data with extreme values.
+
+## Examples
+
+### Example 1: Negate literal values safely
+
+**Goal**: Negate specific numeric literals, including edge cases.
+
+**XQL code**:
+
+```sql
+dataset = xdr_data
+| limit 1
+| alter result1 = safe_negate(42), result2 = safe_negate(-100), result3 = safe_negate(0)
+| fields result1, result2, result3
+```
+
+**Explanation**: `safe_negate(42)` returns `-42`, `safe_negate(-100)` returns `100`, and `safe_negate(0)` returns `0`. These are straightforward negations with no overflow risk.
+
+**Output**:
+
+| RESULT1 | RESULT2 | RESULT3 |
+| ------- | ------- | ------- |
+| -42     | 100     | 0       |
+
+### Example 2: Safely negate field values
+
+**Goal**: Negate values stored in a dataset field with overflow protection.
+
+**XQL code**:
+
+```sql
+config timeframe = 1d
+| dataset = sample_xql_raw
+| alter negated_value = safe_negate(numeric_value)
+| fields event_id, numeric_value, negated_value
+| limit 3
+```
+
+**Explanation**: This query negates each value in the `numeric_value` field. If any value is at the minimum integer boundary, the result is `null` rather than an error.
+
+**Output**:
+
+| EVENT\_ID | NUMERIC\_VALUE | NEGATED\_VALUE |
+| --------- | -------------- | -------------- |
+| 101       | 5.0            | -5.0           |
+| 102       | -200.0         | 200.0          |
+| 103       | 50.0           | -50.0          |
+
+### Example 3: Use safe\_negate to compute absolute difference
+
+**Goal**: Calculate the absolute difference between two fields using safe negation.
+
+**XQL code**:
+
+```sql
+config timeframe = 1d
+| dataset = sample_xql_raw
+| alter diff = subtract(numeric_value, duration_seconds)
+| alter abs_diff = if(diff < 0, safe_negate(diff), diff)
+| fields event_id, numeric_value, duration_seconds, diff, abs_diff
+| limit 3
+```
+
+**Explanation**: This query calculates the difference between two fields, then uses `safe_negate()` to compute the absolute value when the difference is negative. This approach safely handles potential overflow at integer boundaries.
+
+**Output**:
+
+| EVENT\_ID | NUMERIC\_VALUE | DURATION\_SECONDS | DIFF   | ABS\_DIFF |
+| --------- | -------------- | ----------------- | ------ | --------- |
+| 101       | 5.0            | 1.5               | 3.5    | 3.5       |
+| 102       | 0.8            | 200.0             | -199.2 | 199.2     |
+| 103       | 50.0           | 10.2              | 39.8   | 39.8      |
+
+## Related articles
+
+* **Stages**: [`alter`](../stages/alter), [`fields`](../stages/fields), [`limit`](../stages/limit)
+* **Functions**: [`safe_subtract()`](safe_subtract), [`safe_add()`](safe_add), [`subtract()`](subtract), [`if()`](if)
+* **Datasets**: [`xdr_data`](https://docs-cortex.paloaltonetworks.com/r/Cortex-XQL-Schema-Reference-Guide/Introduction)

@@ -1,0 +1,45 @@
+# DLP status in all endpoints
+
+The **All Endpoints** page provides a central location from which you can view and manage the endpoints on which the agent is installed. In addition to the extensive information that Cortex offers on all its endpoints, you can now view **DLP Status** and **DLP Extension Status**. This enables you to track information about the DLP browser extension and its status.
+
+By default, this option is hidden. If you are using DLP, you need to add the fields DLP Status and DLP Extension Status when analyzing the status of endpoints with DLP.
+
+<details>
+
+<summary>DLP status</summary>
+
+**DLP Status** provides the following statuses:
+
+{% hint style="info" %}
+### Note
+
+It is recommended to work with the latest security content.
+{% endhint %}
+
+* **Active (Compatible)**
+* **Update required**: Indicates that the system's engine version does not match the version defined in the policy, and an update is necessary.
+* **Failed to start**: Indicates that there was an initialization error. This could occur because of the DLP policy, or the DLP engine on the machine is not working.
+* **Degraded**: Indicates that there are specific issues, such as custom detector patterns that require pattern fixes, that is causing DLP not to function.
+
+</details>
+
+<details>
+
+<summary>DLP extension status</summary>
+
+The agent monitors the endpoints for information when the extension is installed and performs periodic refreshes to ensure accurate results.
+
+The DLP extension status shows the installation status of the extension on the endpoint:
+
+* **Installed (x)**: The x represents the number of extensions installed.
+* **Not installed**: This indicates that the extension was either uninstalled or was never installed.
+* **No value**: Where DLP is not activated on the endpoint.
+*   **Installed but unactivated**: This indicates that either a supported browser is not being used or the DLP extension has not been activated yet.
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>Close and reopen your browser to activate the DLP extension.</p></div>
+
+You can drill down from the endpoint to view details of the DLP Extension Status.
+
+From the selected endpoint, right-click and select **Endpoint Data** → **View DLP Extension Status**. This opens a dialog box that shows the extension status for both Chrome and Edge extensions.
+
+</details>

@@ -1,0 +1,67 @@
+# WildFire analysis concepts
+
+**WildFire analysis concepts**
+
+**File forwarding**
+
+Cortex XSIAM sends unknown samples for in-depth analysis to WildFire. WildFire accepts up to 1,000,000 sample uploads per day and up to 1,000,000 verdict queries per day from each Cortex XSIAM tenant. The daily limit resets at 23:59:00 UTC. Uploads that exceed the sample limit are queued for analysis after the limit resets. WildFire also limits sample sizes to 300 MB. For more information, see the [WildFire documentation](https://docs.paloaltonetworks.com/wildfire.html).
+
+For samples that the Cortex XDR agent reports, the agent first checks its local cache of hashes to determine if it has an existing verdict for that sample. If the Cortex XDR agent does not have a local verdict, the Cortex XDR agent queries Cortex XSIAM to determine if WildFire has previously analyzed the sample. If the sample is identified as malware, it is blocked. If the sample remains unknown after comparing it against existing WildFire signatures, Cortex XSIAM forwards the sample for WildFire analysis.
+
+**File type analysis**
+
+The Cortex XDR agent analyzes files based on the type of file, regardless of the file’s extension. For deep inspection and analysis, you can also configure your Cortex XSIAM to forward samples to WildFire. A sample can be:
+
+* Any Portable Executable (PE) file including (but not limited to):
+  * Executable files
+  * Object code
+  * FON (Fonts)
+  * Microsoft Windows screensaver (.scr) files
+* Microsoft Office files containing macros opened in Microsoft Word (winword.exe) and Microsoft Excel (excel.exe):
+  * Microsoft Office 2003 to Office 2016—.doc and .xls
+  * Microsoft Office 2010 and later releases—.docm, .docx, .xlsm, and .xlsx
+* Dynamic-link library files including (but not limited to):
+  * .dll files
+  * .ocx files
+* Android application package (APK) files
+* Mach-o files
+* DMG files
+* Linux (ELF) files
+
+For information on file-examination settings, see [Set up malware prevention profiles](https://app.gitbook.com/s/FOhYBYLdbwpnbJgr6uaX/cortex-xdr-3.x-documentation/endpoint-security/install-and-manage-endpoints/set-up-endpoint-protection/set-up-endpoint-profiles-and-exception-rules/set-up-malware-prevention-profiles).
+
+**Verdicts**
+
+WildFire delivers verdicts to identify samples it analyzes as safe, malicious, or unwanted (grayware is considered obtrusive but not malicious):
+
+* **Unknown**: Initial verdict for a sample for which WildFire has received but has not analyzed.
+* **Benign**: The sample is safe and does not exhibit malicious behavior. If Low Confidence is indicated for the Benign verdict, Cortex XSIAM can treat this hash as if the verdict is unknown and further run Local Analysis to get a verdict with higher confidence.
+* **Malware**: The sample is malware and poses a security threat. Malware can include viruses, worms, Trojans, Remote Access Tools (RATs), rootkits, botnets, and malicious macros. For files identified as malware, WildFire generates and distributes a signature to prevent future exposure to the threat.
+* **Grayware**: The sample does not pose a direct security threat but might display otherwise obtrusive behavior. Grayware typically includes adware, spyware, and Browser Helper Objects (BHOs).
+
+{% hint style="info" %}
+### Note
+
+In cases when the Cortex XSIAM agent gets a failed status from the WF service due to a general error or unsupported file type, and the Local Analysis is set to disabled or not applicable, Cortex XSIAM will not generate an alert on the file.
+{% endhint %}
+
+When WildFire is not available, or integration is disabled, the Cortex XDR agent can also assign a local verdict for the sample using additional methods of evaluation. When the Cortex XDR agent performs local analysis on a file, it uses pattern-matching rules and machine learning to determine the verdict. The Cortex XDR agent can also compare the signer of a file with a local list of trusted signers to determine whether a file is malicious:
+
+* Local analysis verdicts:
+  * **Benign**: Local analysis determined the sample is safe and does not exhibit malicious behavior.
+  * **Malware**: The sample is malware and poses a security threat. Malware can include viruses, worms, Trojans, Remote Access Tools (RATs), rootkits, botnets, and malicious macros.
+* Trusted signer verdicts:
+  * **Trusted**: The sample is signed by a trusted signer.
+  * **Not Trusted**: The sample is not signed by a trusted signer.
+
+**Local verdict cache**
+
+The Cortex XDR agent stores hashes and the corresponding verdicts for all files that attempt to run on the endpoint in its local cache. The local cache scales in size to accommodate the number of unique executable files opened on the endpoint. On Windows endpoints, the cache is stored in the `C:\ProgramData\Cyvera\LocalSystem` folder on the endpoint. When service protection is enabled (see [Set up agent settings profiles](https://app.gitbook.com/s/FOhYBYLdbwpnbJgr6uaX/cortex-xdr-3.x-documentation/endpoint-security/install-and-manage-endpoints/set-up-endpoint-protection/set-up-endpoint-profiles-and-exception-rules/set-up-agent-settings-profiles)), the local cache is accessible only by the Cortex XDR agent and cannot be changed.
+
+Each time a file attempts to run, the Cortex XDR agent performs a lookup in its local cache to determine if a verdict already exists. If known, the verdict is either the official WildFire verdict or manually set as a hash exception. Hash exceptions take precedence over any additional verdict analysis.
+
+If the file is unknown in the local cache, the Cortex XDR agent queries Cortex XSIAM for the verdict. If Cortex XSIAM receives a verdict request for a file that was already analyzed, Cortex XSIAM immediately responds to the Cortex XDR agent with the verdict.
+
+If Cortex XSIAM does not have a verdict for the file, it queries WildFire and optionally submits the file for analysis. While the Cortex XDR agent attempts to wait for an official WildFire verdict, it can use [File analysis and protection flow](file-analysis-and-protection-flow) to evaluate the file. After Cortex XSIAM receives the verdict, it responds to the Cortex XDR agent that requested the verdict.
+
+For information on file-examination settings, see [Set up malware prevention profiles](https://app.gitbook.com/s/FOhYBYLdbwpnbJgr6uaX/cortex-xdr-3.x-documentation/endpoint-security/install-and-manage-endpoints/set-up-endpoint-protection/set-up-endpoint-profiles-and-exception-rules/set-up-malware-prevention-profiles).

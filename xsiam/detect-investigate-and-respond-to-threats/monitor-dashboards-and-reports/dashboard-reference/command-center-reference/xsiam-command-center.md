@@ -1,0 +1,18 @@
+# XSIAM Command Center
+
+The **XSIAM Command Center** dashboard provides a dynamic overview of your security operations processes, and supports drilldowns to additional dashboards and dedicated pages. The dashboard gives a visualization of the current status of your tenant and its activity during the selected time frame. Click on any element to drill down to dashboards or pages displaying data that is filtered by your selection.
+
+In addition, click on **Cortex Agentic Assistant** to open a dashboard detailing how Cortex XSIAM uses AI Agentic technology in your environment. For more information, see [Cortex Agentic Assistant](cortex-agentic-assistant-dashboard).
+
+![XSIAM\_Command\_Center-Platform.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-293305089eb9c19020eff07fde0fb7321cc778cc%2F78016a273ab2b34f2db94c2ba8032c9d47c1a4522f558291513ca5ecb3ffe017.png?alt=media)
+
+The **XSIAM Command Center** includes incoming data, cases, and issues, and key performance indicators. The following table describes each of these sections:
+
+<table><thead><tr><th width="172">Section</th><th>Details</th></tr></thead><tbody><tr><td>Incoming data</td><td><ul><li>Number of connected Cortex XDR agent endpoints providing EDR data.</li><li>Data source instances grouped by integration and ordered by ingestion volume. Integrations shown in red indicate there is currently an error.</li></ul><p>Click on any of these items to explore your <strong>Data Inventory</strong>. Breakdowns of data ingestion by data source, including ingestion rates, trends, and prevented events, are displayed.</p></td></tr><tr><td>Cases and issues</td><td><ul><li>The number of issues opened during the time frame.</li><li><p>The number of cases that were created in response to the issues.</p><p>Cases are split into manual cases and automated cases, where automated cases contain at least one playbook. You can also see the number of resolved cases and open cases broken down by severity.</p></li></ul><p>Click on any of the case metrics to open the <strong>Cases Overview</strong> , showing a breakdown of your cases. You can also click on the concentric circle to see a live feed of Cortex XSIAM activity on the <strong>Dynamic View</strong>.</p></td></tr><tr><td>Key performance indicators</td><td><ul><li>The amount of data and events ingested during the time frame and the ingestion rate.</li><li>The number of currently open cases broken down by severity. This number represents all open cases on the system, and is not time frame specific.</li><li>The number of attacks prevented by Cortex XSIAM during the time frame.</li></ul><p>Click on the key performance indicators to drill down to dedicated pages for further investigation. You can also click <strong>Start Investigation</strong> to open the <strong>Cortex Agentic Assistant</strong> with useful prompts to aid you in the investigation process.</p><p>The trend percentages for the key performance indicators are calculated by comparing the totals from the current time frame with the totals of the previous time frame. An arrow indicates whether the rates are rising or falling in comparison to the previous time frame's total.</p></td></tr></tbody></table>
+
+From the **XSIAM Command Center**, you can drill down to the following dashboards:
+
+* [Cortex Agentic Assistant dashboard](cortex-agentic-assistant-dashboard)
+* [Data Inventory](xsiam-command-center/data-inventory)
+* [Dynamic View](xsiam-command-center/dynamic-view)
+* [Cases Overview](xsiam-command-center/cases-overview)

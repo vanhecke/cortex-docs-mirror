@@ -1,0 +1,51 @@
+---
+description: Learn more about how Cortex XSIAM regulates licenses.
+---
+
+# License allocation
+
+**Enforcement of licenses**
+
+Cortex XSIAM Enterprise and Premium licenses include Cortex XDR agents with Host Insights (HI) and Extended Threat Hunting (XTH) capabilities. When you buy additional agents, these capabilities are automatically extended to the new agents. For Cortex XSIAM NG SIEM, this license does not include agents or HI/XTH capabilities by default. If you buy agents for this tier, you must also buy the HI and XTH add-ons for them.
+
+In Cortex XSIAM, the Cortex XDR agent protects all your enterprise assets, from user devices to cloud servers. For licensing purposes, these assets are categorized as follows:
+
+*   Endpoints
+
+    An endpoint is any physical or virtual device, such as a PC, laptop, or server, protected by an installed Cortex XDR agent. Licensing is calculated on a 1:1 basis, meaning one active device consumes one license.
+*   Workloads
+
+    A workload represents a compute resource, such as a VM, container, or serverless function in a public cloud. These resources can be secured by agent-based protection (Cortex XDR agent) or agentless methods. Both Cloud Runtime Security and Cloud Posture Security are included in Cortex XSIAM Premium. License consumption is determined by the protection you deploy.
+
+When all XDR endpoint and workload licenses are consumed, Cortex XSIAM maintains basic endpoint protection on affected assets. Advanced pro-level detection and response capabilities are not applied. If you exceed workloads or endpoints, XSIAM does not “borrow” from unused endpoints or workloads.
+
+When you exceed the permitted number of Cortex XDR endpoints and workloads, Cortex XSIAM displays a notification in the notification area. Cortex XSIAM permits a small grace period over the permitted number, but begins enforcing the number of agents after 14 days. If additional Cortex XDR agents are required, increase your Cortex XDR endpoint/workload license capacity.
+
+{% hint style="info" %}
+### Note
+
+For Cortex XSIAM Enterprise Plus licenses, if an endpoint requires a Cortex XDR per Endpoint license, and you’ve exceeded the number of available Cortex XDR per Endpoint licenses, one of your surplus Cloud per Host licenses is automatically consumed as a Cortex XDR per Endpoint license for the endpoint. After utilizing all available XDR per Endpoint and Cloud per Host licenses, Cortex XSIAM maintains basic endpoint protection on affected assets. Advanced pro-level detection and response capabilities are not applied.
+{% endhint %}
+
+When the number of **Cloud Posture Workloads** exceeds the limit for **Cortex XSIAM Premium** or any **Cortex XSIAM license** with the Cloud Posture Security and Cloud Runtime Security add-ons, the excess posture workloads will use available credits from the **Cloud Runtime Workloads** quota until it is fully used. Spillover occurs only from posture to runtime workloads and does not occur in the reverse direction. Any excess workload usage is displayed as a notification in the notification area.
+
+**License revocation**
+
+Cortex XSIAM manages licensing for all assets, including user devices, servers, and cloud workloads, which are protected by the Cortex XDR Agent. Each time you install a new Cortex XDR Agent, it registers with Cortex XSIAM to obtain a license from the appropriate pool (either for user endpoints or workloads). For non-persistent VDI (virtual machines that are reset or destroyed after use), the agent registers as soon as a user logs in to the asset.
+
+Cortex XSIAM issues licenses until you exhaust the number of licenses available, and enforces a cleanup policy that automatically returns unused licenses to the available pool. The time at which a license returns to the license pool depends on the type of endpoint (or workload):
+
+| Asset Type                                                 | License Return                                                                   | Agent Removal from Cortex XSIAM Tenant | Agent Removal from Cortex XSIAM Database |
+| ---------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------- | ---------------------------------------- |
+| Standard endpoints, mobile devices, server/cloud workloads | After 30 days                                                                    | After 180 days                         | After 180 days                           |
+| (Non-Persistent) VDI and Temporary Session                 | <ul><li>VDI: Immediately after log-off</li><li>Other: After 90 minutes</li></ul> | After 6 hours                          | After 7 days                             |
+
+After a license is revoked, if the agent connects to Cortex XSIAM, reconnection will succeed as long as the agent has not been deleted from the database; otherwise, the agent is registered as a new asset.
+
+If an agent from a deleted asset tries to connect to Cortex XSIAM within the 180-day period (for standard endpoints and workloads), it can resume its connection and maintain its original agent ID. After 180 days, the agent ID and all associated data are permanently deleted from the database. To reconnect an agent after this period, you must use Cytool to reconnect or reinstall the agent on the asset, which will then be assigned a new agent ID and start fresh.
+
+{% hint style="info" %}
+### Note
+
+It can take up to an hour for Cortex XSIAM to display revived assets.
+{% endhint %}

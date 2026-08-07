@@ -1,0 +1,21 @@
+---
+description: Learn more about actions available to remediate Issues.
+---
+
+# Remediation Actions
+
+Review remediation actions to see a prioritized list of steps you can take to resolve posture issues originating from SaaS Applications. Follow the steps below to view all the Remediation options:
+
+<img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Flblec90lvsYy5z6pvakW%2Funknown.png?alt=media&#x26;token=997c7e80-031e-4115-9c09-33bd384f2d23" alt="" height="416" width="624">
+
+
+
+1. Navigate to **Modules > SaaS Security > Security Issues > Posture** to view a list of all issues with vulnerabilities originating from SaaS Application Posture.&#x20;
+2. Click on any Issue to be taken to the Issue view.&#x20;
+3. Select the Issue you wish to investigate. This opens the Remediation Actions side panel.
+4. The detailed side panel provides the following investigation and remediation options:
+   1. The **Overview** tab on the Vulnerability Issues panel captures all the relevant details to further investigate the vulnerability including Summary, Details, Affected Assets, and Evidence.
+   2. Select **Resolution** to view remediation options including Remediation Guidance. Detailed manual steps are listed to resolve the issue.
+   3. Click **War Room** for real-time investigation capabilities. In the War Room you can capture case context from different sources and collaborate and execute remote actions across integrated products.
+   4. **Work Plan** is available when you select an autonomous playbook in an issue's resolution tab. This view presents only the executed key tasks and their defined outputs, providing a focused view of resolution actions.
+   5. **Ticketing and Notifications**: Jira, Slack, and Service Now integrations are available to create a ticket to resolve any issue. Webhook notification routing is also available for your auditing requirements.&#x20;

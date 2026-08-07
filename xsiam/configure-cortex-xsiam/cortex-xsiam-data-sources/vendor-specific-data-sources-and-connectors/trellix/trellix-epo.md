@@ -1,0 +1,20 @@
+# Trellix ePO
+
+{% hint style="warning" %}
+**Important**
+
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+{% endhint %}
+
+This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+
+Integrate with Trellix (McAfee) ePolicy Orchestrator products. Enhance protection from network edge to endpoint with McAfee Advanced Threat Defense, run queries and receive alarms from McAfee ESM, get file reputations and the systems that reference files from McAfee Threat Intelligence Exchange (TIE), and manage McAfee ePO.
+
+This connector includes the following sub-capabilities (Marketplace integrations link to PAN DEV for more information):
+
+* [McAfee Advanced Threat Defense](https://xsoar.pan.dev/docs/reference/integrations/mc-afee-advanced-threat-defense): Integrated advanced threat detection: Enhancing protection from network edge to endpoint.
+* [McAfee ePO v2](https://xsoar.pan.dev/docs/reference/integrations/mc-afee-e-po-v2):
+* [McAfee ESM v2](https://xsoar.pan.dev/docs/reference/integrations/mc-afee-esm-v2): This integration runs queries and receives alarms from McAfee Enterprise Security Manager (ESM). Supports version 10 and above.
+* [McAfee Threat Intelligence Exchange V2](https://xsoar.pan.dev/docs/reference/integrations/mc-afee-threat-intelligence-exchange-v2):
+
+To configure this connector, follow the steps outlined in the configuration wizard.

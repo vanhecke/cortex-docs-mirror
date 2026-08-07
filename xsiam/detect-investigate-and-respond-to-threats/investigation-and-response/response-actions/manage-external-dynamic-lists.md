@@ -1,0 +1,93 @@
+# Manage external dynamic lists
+
+An External Dynamic List (EDL) is a hosted text file. In Cortex XSIAM, you can configure an EDL to share a list of Cortex XSIAM indicators with other products in your network, such as a firewall. For example, your Palo Alto Networks firewall can add IP addresses and domain data from the EDL to block or allow lists.
+
+Cortex XSIAM hosts the following external dynamic lists that you can configure and manage:
+
+* IP Addresses EDL
+* Domain Names EDL
+
+### Configure an EDL
+
+Before you start, you must have a role that includes View/Edit EDL permissions, such as Instance Admin.
+
+If creating a custom role, select **View/Edit** for **EDL** (**Roles** → **New Roles** → **INVESTIGATION & RESPONSE** → **Response** → **EDL**).
+
+You can set up an EDL on the Cortex XSIAM tenant or an engine.
+
+{% hint style="info" %}
+* Configuring custom certificates or private API Keys in the EDL integration instance is supported only on engines, not on the Cortex XSIAM tenant.
+* For EDL integrations on the tenant, you must set a username and password. For long-running integrations running on an engine, we strongly recommend setting a username and password, but it is not required. You can set credentials for all EDL integrations or for a specific integration instance.
+* The legacy external dynamic list PAN-OS integration is deprecated. Use the EDL integration on the **Data Sources & Integrations** page (by clicking the **Automation & Feed Integration** link.
+{% endhint %}
+
+### Configure the EDL in Cortex XSIAM
+
+1. Navigate to **Settings** → **Configurations** → **Integrations** → **External Dynamic List Integration**.
+2. Under **External Dynamic List Credentials**, enter a username and password.
+3. In the **External Dynamic List - Generic Integration** section, click the link to configure the External Dynamic List integration.
+4. Select the **Generic Export Indicators Service** integration and click **Add Instance**.
+5. If you are using an engine, add the following:
+   * **Listen Port:** The service to access the EDL runs on this port from within Cortex XSIAM. You need a unique port for each long running integration instance. Do not use the same port for multiple instances.
+   * **Run on single engine:** Select the engine from a drop-down.
+6.  Enter the indicator query.
+
+    The query updates the EDL list. To view expected results, run `!findIndicators query=<your query>` from the Cortex XSIAM CLI. Field names in your query must match the machine name for each field.
+7.  Enter the maximum list size.
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>If an indicator query returns more indicators than the EDL list size, the list is populated with the most recent indicators sorted by their last seen timestamp, where <code>n</code> is the maximum size of the EDL.</p></div>
+8.  The EDL URL must always be prefixed by `ext-`.
+
+    <div data-gb-custom-block data-tag="hint" data-style="warning" class="hint hint-warning"><p>If using EDL data on the Cortex XSIAM tenant, run the following <code>curl</code> command to access and test the External Dynamic List:</p><pre class="language-shell"><code class="lang-shell">https://ext-&#x3C;cortex-xsiam-address>/xsoar/instance/execute/&#x3C;instance-name>
+    </code></pre><p><strong>Example</strong></p><pre class="language-shell"><code class="lang-shell">curl -v -u user:pass https://ext-mytenant.paloaltonetworks.com/xsoar/instance/execute/edl_instance_01?q=type:ip
+    </code></pre><p>If using EDL data on an engine, run the following <code>curl</code> command to access and test the External Dynamic List with the engine URL:</p><pre class="language-shell"><code class="lang-shell">http://&#x3C;engine-address>:&#x3C;integration listen port>/
+    </code></pre><p><strong>Example</strong></p><pre class="language-shell"><code class="lang-shell">curl -v -u user:pass http://&#x3C;engine_address>:&#x3C;listen_port>/?n=50
+    </code></pre></div>
+
+### Configure the Firewall to authenticate the EDL
+
+1. Enable the firewall to authenticate the EDL.
+   * Download the following root certificate: [https://certs.godaddy.com/repository/gdroot-g2.crt](https://certs.godaddy.com/repository/gdroot-g2.crt).
+   * On the firewall, select **Device** → **Certificate Management** → **Certificates** and import the certificate. Make sure to give the device certificate a descriptive name, and select **OK** to save the certificate.
+   * Select **Device** → **Certificate Management** → **Certificate Profile** and **Add** a certificate profile.
+   * Give the profile a descriptive name and add the certificate to the profile.
+   * Select **OK** to save the profile.
+2.  Set the Cortex XSIAM EDL as the source for a firewall EDL.
+
+    For more detailed information about how Palo Alto Networks firewall EDLs work, how you can use EDLs, and how to configure them, review how to Use an External Dynamic List in Policy.
+
+    * On the firewall, select **Objects** → **External Dynamic Lists** and **Add** a new list.
+    * Define the list **Type** as either **IP List** or **Domain List**.
+    * Enter the IP Addresses Block List URL or the Domains Block List URL that you recorded in the last step as the list **Source**.
+    * Select the **Certificate Profile** that you created in the last step.
+    * Select **Client Authentication** and enter the username and password that the firewall must use to access the EDL.
+    * Use the **Repeat** field to define how frequently the firewall retrieves the latest list from the Cortex XSIAM EDL.
+    * Click **OK** to add the new EDL.
+3.  Select **Policies** → **Security** and **Add** or edit a security policy rule to add the Cortex XSIAM EDL as match criteria to a security policy rule.
+
+    Review the different ways you can Enforce Policy on an External Dynamic List; this topic describes the complete workflow to add an EDL as match criteria to a security policy rule.
+
+    * Select **Policies** → **Security** and **Add** or edit a security policy rule.
+    * In the **Destination** tab, select **Destination Zone** and select the external dynamic list as the **Destination Address**.
+    * Click **OK** to save the security policy rule and **Commit** your changes.
+
+    You do not need to perform an additional commit or make any subsequent configuration changes for the firewall to enforce the EDL as part of your security policy, even as you update the Cortex XSIAM EDL, the firewall will enforce the list most recently retrieved from Cortex XSIAM.
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>You can also use the IP list and URL lists as part of a URL Filtering policy, or the domain list as part of a custom Anti-Spyware profile.</p></div>
+
+### Add an IP address or domain to your EDL
+
+You can add IP addresses or Domains to your EDL to raise your triage issues from the Action Center or throughout Cortex XSIAM.
+
+{% hint style="info" %}
+Ensure EDL sizes don't exceed your firewall model limit.
+{% endhint %}
+
+To add an IP address or Domain from the Action Center, select **Add to EDL**. You can choose to enter the IP address or Domain you want to add **Manually** or choose to **Upload File**.
+
+During investigation, you can also **Add to EDL** from the Actions menu that is available from investigation pages such as the Issues View, Causality View, or IP View. At any time, you can view and make changes to the IP addresses and domain names in the EDL.
+
+1. Go to **Investigation & Response** → **Action Center** → **Currently Applied Actions** → **External Dynamic List**.
+2. Review your IP addresses and domain names lists.
+3. If desired, select **New Action** to add additional IP addresses and domain names.
+4. If desired, select one or more IP addresses or domain names, right-click and select **Delete** any entries that you no longer want included on the lists.

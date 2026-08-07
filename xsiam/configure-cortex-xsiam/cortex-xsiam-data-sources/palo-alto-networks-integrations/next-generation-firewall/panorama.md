@@ -1,0 +1,17 @@
+# Panorama
+
+{% hint style="warning" %}
+**Important**
+
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+{% endhint %}
+
+This sub-capability is available with any active Cortex XSIAM, Cortex Cloud Posture Security, Cortex Cloud, Cortex Cloud Runtime Security, Cortex XDR, or Cortex AgentiX license.
+
+PAN-OS is the software that runs all Palo Alto Networks next-generation firewalls. This connector lets you manage Palo Alto Networks Firewall and Panorama, including creating and managing security rules, address objects, URL categories, and URL filtering objects, committing and pushing configurations, and querying PAN-OS logs. You can create separate instances for Firewall and Panorama.
+
+This connector includes the following sub-capabilities (Marketplace integrations link to PAN DEV for more information):
+
+* [Panorama](https://xsoar.pan.dev/docs/reference/integrations/panorama): Manage Palo Alto Networks Firewall and Panorama. Use this pack to manage Prisma Access through Panorama. For more information, see the Panorama documentation.
+
+To configure this connector, follow the steps outlined in the configuration wizard.

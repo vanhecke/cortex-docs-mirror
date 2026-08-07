@@ -1,0 +1,55 @@
+# Ingest logs and data from OneLogin
+
+Cortex XSIAM can ingest different types of data from OneLogin accounts using the OneLogin data collector.
+
+To receive logs and data from OneLogin via the OneLogin REST APIs, you must configure the Data Sources & Integrations settings in Cortex XSIAM based on your OneLogin credentials. After you set up data collection, Cortex XSIAM begins receiving new logs and data from the source.
+
+When Cortex XSIAM begins receiving logs, the app creates a new dataset for the different types of data collected and normalizes the ingested data into authentication stories, where specific relevant events are collected in the `authentication_story` preset for the **`xdr_data`** dataset. You can search these datasets using XQL Search queries. For all logs, Cortex XSIAM can generate Cortex XSIAM issues (Analytics, Correlation Rules, IOC, and BIOC), when relevant from OneLogin logs. While Correlation Rules issues are generated on non-normalized and normalized logs, Analytics, IOC, and BIOC issues are only generated on normalized logs.
+
+The following table provides a description of the different types of data you can collect, the collection method and fetch interval for the data collected, and the name of the dataset to use in Cortex Query Language (XQL) queries.
+
+| Data type          | Description                                                                                  | Collection method | Fetch interval | Dataset name          |
+| ------------------ | -------------------------------------------------------------------------------------------- | ----------------- | -------------- | --------------------- |
+| **Log collection** |                                                                                              |                   |                |                       |
+| Events             | User logins, administrative operations, provisioning, and a list of all OneLogin event types | Appends data      | 30 seconds     | onelogin\_events\_raw |
+| **Directory**      |                                                                                              |                   |                |                       |
+| Users              | Lists of users                                                                               | Overwrites data   | 10 minutes     | onelogin\_users\_raw  |
+| Groups             | Lists of groups                                                                              | Overwrites data   | 10 minutes     | onelogin\_groups\_raw |
+| Apps               | Lists of apps                                                                                | Overwrites data   | 10 minutes     | onelogin\_apps\_raw   |
+
+Before you configure Cortex XSIAM data collection from OneLogin, make sure you have the following.
+
+* An Advanced OneLogin account.
+* Owner or administrator permissions in your OneLogin account which enable Cortex XSIAM to access the OneLogin account and generate the OAuth 2.0 access token.
+* A Cortex XSIAM user account with permissions to Read Log Collections, for example an Instance Administrator.
+
+Configure Cortex XSIAM to receive logs and data from OneLogin.
+
+1. Log in to OneLogin as an account owner or administrator.
+2. Under **Administration → Developers → API Credentials**, [Create a New Credential](https://developers.onelogin.com/api-docs/1/getting-started/working-with-api-credentials) with scope **Read All**.
+3. In the credential details page, copy the Client ID and the Client Secret, and save them somewhere safe. You will need to provide these keys when you configure the OneLogin data collector in Cortex XSIAM .
+4. Navigate to **Settings → Data Sources & Integrations**.
+5. On the **Data Sources & Integrations** page, click **+ Add New**, search for **OneLogin**, then hover over it and click **Add**.
+6. Configure the following parameters.
+   * **Domain**: Specify the domain of the OneLogin instance. The domain name must be in the format `https://<subdomain-name>.onelogin.com`.
+   * **Name**: Specify a descriptive and unique name for the configuration.
+   * **Client ID**: Specify the Client ID for the OneLogin API credential pair.
+   * **Secret**: Specify the Client Secret for the OneLogin API credential pair.
+   * **Collect**: Select the types of data to collect. By default, all the options are selected.
+     * **Log Collection**
+       *   **Events**: Retrieves user logins, administrative operations, provisioning, and OneLogin event types. After normalization, the event types are enriched with the event name and description.
+
+           > **Note**
+           >
+           > Event data is collected every 30 seconds.
+     * **Directory**
+       * **Users**: Retrieves lists of users.
+       * **Groups**: Retrieves lists of groups.
+       *   **Apps**: Retrieves lists of apps.
+
+           > **Note**
+           >
+           > Inventory data snapshots are collected every 10 minutes.
+7. Test the connection settings. If successful, **Enable** the OneLogin log collection.
+
+When events start to come in, a green check mark appears underneath the OneLogin configuration.

@@ -1,0 +1,68 @@
+# Pre-receive hook usage
+
+The hook executes a script on every git push.
+
+By default, Cortex CLI pre-receive hooks:
+
+* **Only scans code changes**: It analyzes the code difference included in the pushed commits, not the entire repository
+* **Scans for secrets only**: The analysis is focused on detecting sensitive information
+* **Does not upload results to Cortex XSIAM**: All scan results are kept local to your machine (on the server)
+
+## Understanding the script variables
+
+* `CORTEX_CLI`: Defines the executable path, pointing to the absolute location of the `cortexcli` binary
+* `BASE_COMMAND`: Assembles the core command string, including authentication flags (`--api-base-url`, `--api-key-id`, `--api-key`) and the primary command: `code pre-receive`. The use of `${...}` ensures authentication variables are injected as flag values
+* `OPTIONAL_FLAGS`: An empty variable placeholder for adding optional runtime arguments
+
+## Command flag reference
+
+Use the following flags with the pre-receive command to customize scanner behavior.
+
+**Example command structure:**
+
+```programlisting
+$ cortexcli code pre-receive [options]
+```
+
+| Command / Variable                                                                                      | Description                                                                                                                     |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| <p><code>--ignore-existing-secrets</code></p><p><code>[$CORTEX_CODE_IGNORE_EXISTING_SECRETS]</code></p> | Ignores secrets that already exist in the periodic scan (default: false)                                                        |
+| <p><code>--validate-secrets</code></p><p><code>[$CORTEX_CODE_VALIDATE_SECRETS]</code></p>               | Checks if the secrets are valid (default: false)                                                                                |
+| <p><code>--skip-path</code></p><p><code>[$CORTEX_CODE_SKIP_PATH]</code></p>                             | Specifies a file or directory path to skip during the scan                                                                      |
+| <p><code>--compact</code></p><p><code>[$CORTEX_CODE_COMPACT]</code></p>                                 | Prevents the display of code blocks in the output (default: false)                                                              |
+| <p><code>--summary-position</code></p><p><code>[$CORTEX_CODE_SUMMARY_POSITION]</code></p>               | Determines whether the summary appears on top (before the check results) or on bottom (after the check results). (default: top) |
+| <p><code>--no-fail-on-crash</code></p><p><code>[$CORTEX_CODE_NO_FAIL_ON_CRASH]</code></p>               | Returns exit code `0` instead of `2` in case of a failure in the integration with the platform (default: false)                 |
+| `--help, -h`                                                                                            | Displays a help message with available options                                                                                  |
+
+## Breakglass: Bypassing the hook
+
+The breakglass feature allows you to intentionally bypass the pre-receive hook security scan. This is useful in urgent situations where a push must go through immediately, but it should be used with caution as it overrides your security policies.
+
+1.  Configure your server to accept custom push options:
+
+    ````programlisting
+    ```bash
+    git config receive.advertisePushOptions true
+    ```
+    ````
+2.  Add the `-o breakglass` option to your `git push` command:
+
+    ````programlisting
+    ```bash
+    git push -o breakglass
+    ```
+    ````
+
+## Troubleshooting and recommendations
+
+* Refer to the [Cortex CLI](../..) for more information on the Cortex CLI.
+* Modify the script as required based on the server running the VCS
+* The Cortex CLI must be available on the server. This documentation does not describe the CLI installation process
+* Update the Cortex CLI periodically
+*   Instead of adding the API URL and credentials directly in the script, consider creating a `~/.cortexcli/.cortex.yaml` configuration file (owned by the git user and group) with the following contents:
+
+    ```programlisting
+    CORTEX_API_BASE_URL: <api base url>
+    CORTEX_API_KEY: <api key>
+    CORTEX_API_KEY_ID: <api key id>
+    ```

@@ -1,0 +1,131 @@
+---
+description: Find, duplicate, and edit prompts from the Prompts Library.
+---
+
+# Use existing prompts
+
+Using an existing prompt allows you to quickly achieve reliable results by leveraging proven, pre-built instructions instead of starting from scratch. You can access the existing prompts from the Prompts Library, a centralized repository that helps you create, search, and edit your AI prompts. It enables turning prompts into reusable assets that can be shared across your organization and bring repeatability and control to your AI operations. The Prompts Library provides a dedicated space for organizing prompts across all your playbooks or for registering them as Actions and assigning them to Agents, and is particularly useful for managing long and complex prompts.
+
+1. Navigate to **Investigation & Response** → **Automation** → **AI Prompts** and in the **Prompts Library** search for the prompt you want to use.
+   * Use free text in the search box to find an existing prompt. From the **Basic** dropdown, you can search for a prompt by **Basic** (name and tag), **Name**, or **Tag**.
+   * You can search for an exact match of the prompt name by putting quotation marks around the search text. For example, searching for **`"VulnerabilityReportSummary"`** returns the prompt with that name. You can search for more than one exact match by including the logical operator "or" in between your search texts in quotation marks. For example, searching for **`"IssueSummaryAndRemediation" or "VulnerabilityReportSummary"`** returns the two prompts with those names. Wildcards are not supported in free text search.
+   * You can sort the prompts in the library alphabetically, by modified date, by system, or custom, and you can filter for disabled or deprecated prompts.
+2.  Click **Edit**. If the prompt you want to use is locked, click ![three-dots.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FORBYsY4Y6C7i1fV0zajJ%2F860e6eb54bd3ae665125051cdb957ddbd3d9c026f75c4b54acce3f0d35f08d04.png?alt=media\&token=24ae450e-c7ee-4c30-95a9-72eb53db0516) and then select **Duplicate Prompt**.
+
+    System prompts, are by default locked, which means they are not editable. To edit a system prompt, you need to make a copy.
+3.  Edit the prompt and settings as needed.
+
+    For details about prompt settings, see [Create a prompt](create-a-prompt).
+
+    * For help writing effective prompts, see [Write effective prompts](write-effective-prompts).
+    * The **Prompt Helper** also provides a list of prompt writing tips, including:
+
+<details>
+
+<summary>Be clear and specific</summary>
+
+Tell the AI exactly what you need.
+
+Imagine you're asking a new team member for help – the more precise you are, the better they can assist. The same goes for our AI!
+
+* What to do: Instead of vague questions like "Tell me about malware," try to be very specific. Think about:
+  * The goal: What do you want to achieve? (for example, "Summarize," "Identify," "Explain," "Generate ideas")
+  * The topic: What is the subject? (for example, "Phishing emails," "Vulnerability reports," "Security policies")
+  * Any details: What specific information is important? (for example, "From last week's incidents," "For non-technical executives," "Highlighting critical threats")
+* Examples:
+  * Bad prompt: "Tell me about that virus ${VirusName}."
+  * Good prompt: "Analyze the attached malware report from ${Path} and summarize the key indicators of compromise (IOCs) for our incident response team."
+
+</details>
+
+<details>
+
+<summary>Provide context and background</summary>
+
+Give the AI the full picture.
+
+Our AI doesn't know everything about your specific situation. Giving it background information helps it understand the "why" behind your request.
+
+* What to do: Include relevant details that help the AI understand the situation or your specific needs.
+  * Role: Tell the AI to act as a specific persona (for example, "Act as a security analyst," "You are a CISO," "As a technical writer"). This helps it tailor its language and focus.
+  * Audience: Who is the information for? (for example, "For a technical audience," "For a board meeting," "For a general user"). This influences the complexity and depth of the response.
+  * Key Information: What specific data points or previous steps are relevant? (for example, "Based on the recent network scan results," "Considering the new compliance regulations").
+* Examples:
+  * Bad prompt: "Write a report."
+  * Good prompt:"You are a cybersecurity consultant. Write a brief executive summary report for our CEO detailing the top three critical vulnerabilities identified in our recent penetration test report from ${Path} and suggest immediate actions."
+
+</details>
+
+<details>
+
+<summary>Ask for the desired format</summary>
+
+Guide the AI's output structure.
+
+If you have a specific way you want the information presented, tell the AI upfront. This saves you time on reformatting.
+
+* What to do: Clearly state how you want the AI's response to be structured.
+  * Lists: "Provide a bulleted list of..." or "Give me 5 key points."
+  * Tables: "Create a table with columns for \[X], \[Y], and \[Z]."
+  * Summaries/reports: "Generate a concise summary," "Draft a formal report," or "Write a brief email."
+  * Length: "Keep it under 200 words," or "Provide a detailed analysis."
+* Examples:
+  * Bad Prompt: "What are the latest threats?
+  * "Good Prompt: "List the top 5 emerging cyber threats relevant to financial services, with a brief explanation for each, presented as a bulleted list."
+
+</details>
+
+<details>
+
+<summary>Few-shot prompting</summary>
+
+Use few-shot prompting when you need the AI prompt to learn a new pattern or format quickly without extensive fine-tuning, especially for tasks with limited data.
+
+* What to do: Provide several examples of the desired input and output to guide the AI's response.
+*   Examples of good prompts:
+
+    "You are a SOC analyst that needs to enrich CVE ${CVEId} , use the following structure:"
+
+    Sample structures:
+
+    * CVE Description: Apache Struts 2.5.x before 2.5.14, 2.3.x before 2.3.34, and 2.x.x before 2.3.x.x.x.x allows remote attackers to execute arbitrary code via a crafted Content-Type header.
+    * CVSS:9.8 (Critical)Impact: Remote Code Execution (RCE), potential for complete system compromise, data theft, and denial of service. Affects web applications built with Apache Struts, widely used in enterprise environments.
+    * Risk Score: 10/10 - Extremely High. Exploitability is high due to public exploits and widespread usage of the affected software.
+    * CVE Description: Microsoft Windows MSHTML Remote Code Execution Vulnerability. This vulnerability exists in the way MSHTML engine handles specially crafted files. An attacker could host a specially crafted website or send a specially crafted document that, when opened, could allow remote code execution.
+    * CVSS:8.8 (High)Impact: Remote Code Execution (RCE), arbitrary code execution in the context of the current user. Affects all Windows versions. Could lead to system compromise and data exfiltration. Often exploited via phishing campaigns.
+    * Risk Score: 9/10 - Very High. Widespread target, often exploited through user interaction, making it a common attack vector.
+
+</details>
+
+4.  (Recommended) Click **Optimize** to improve prompt edits using predefined system guidelines.
+
+    The suggested prompt replaces the existing one. You can undo the optimization if needed.
+5. Save the prompt version.
+6. (Recommended) Click **Test** to validate your prompt.
+   1.  In the Arguments section, provide values for any inputs your prompt requires. These inputs are used to simulate how the prompt will behave in a live playbook, or how the prompt as an Action for an Agent will run as part of an executed plan.
+
+       You can add input values manually.
+   2.  Click Run.
+
+       The tests are executed in a Playground environment. Review the output generated by the AI to validate the prompt's behavior and ensure it produces the expected results. The output is typically a text summary or another structured format that you have defined.
+
+       In each run result, you can take the following actions:
+
+       | Action                   | Description                                                                                                                                                                                                                                    |
+       | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+       | Mark as note             | <p>Marks the entry as a note, which can help you understand why certain action was taken and assist future decisions.</p><p>When marked as a note, it is highlighted, so you can easily find it in the War Room or the Issue Overview tab.</p> |
+       | View artifact in new tab | Opens a new tab for the artifact.                                                                                                                                                                                                              |
+       | Download artifact        | Downloads the run details to a text file, including the AI task name,, the prompt name, user name and password, and the result.                                                                                                                |
+       | Add tags                 | Add any relevant tags to use that help you find relevant information.                                                                                                                                                                          |
+7. (Optional) Click [![three-dots-dark.png](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAjCAYAAAD17ghaAAAACXBIWXMAABJ0AAASdAHeZh94AAAAB3RJTUUH6QsCDQAEL/NOOgAAApxJREFUWIXtVzFrpEAYfXPIoOIMBq1clmUk2N2vuCK/5ur7CYH8lTTpUh6Brba9zkIJi1spBkdUjOAVYWVvV129y7Ep8irRb973+ObNN59ktVq1uCC+XDL5p4APIUCZGmgYBq6ursAYg6ZpUJS3pU3ToCxLSCmRpinyPH9fAaZpwnEcUEqRJAmiKEJRFGia5o1AUaDrOjjnuL6+Rl3X2O12eHl5mSSAjB1DIQQ454iiCHEcTyK0bRuLxQJZliEMw78ToCgKPM9DVVUIwxBtO69VEEIghICqqvB9v6tWH3pN6HkepJQIgmB2cgBo2xZBEEBKCc/zRmNPBAghUFUVttvt7MTH2G63qKoKQohpAkzTBOf87N7d3D1is9lgs9ng8e5mNDYMQ3DOYZrmeQGO4yCKorNltxntnimzR2PbtkUURXAcZ1yAYRiglE5ye33oqaY+Gx/HMSilMAzj5Ft3CpbLJQC8y973YYi/qwBjDFmW/ZfkAJBlGRhjJ+87AZqmoSiKSWRzTLhHURTQNG1YgKIoow3jEHNMuEfTNN390StgDuaacAydpL3C19fXs4vuv3/D/dxEAxXuKlCWJXRdn0k7HbquoyzLYQFSSnDOJ5Hd3D5g/bTG+mmNh9tpJuScQ0o5LCBNU1iWNYnMNhmoRkE1CmZOM6FlWUjTdFhAnueo6xq2fZ5wrglt20Zd173T0h/nYrfbYbVaIUmS0fvg/u4H4q8WKGokv36OJieEYLFY4Pn5uf/78UAihAAhBEEQjBJPheu6aNt28IY96QNhGEJV1a53/wuWyyVUVR293nsbke/7YIzBdV0QQmYnJoTAdV0wxuD7/njshxxKD3E8lmdZNjiWW5b1vmP5IS72Y7JHnuezyafg4v+GnwJ+AxX2QhQiVAHvAAAAAElFTkSuQmCC)](https://docs-cortex.paloaltonetworks.com/viewer/attachment/5CAbsl8idaK8R43ZLhoTOw/thsZ_aCJgLfIxEAgkOeaiQ-5CAbsl8idaK8R43ZLhoTOw) and select Register new Action to register the prompt as an Action and make it available for Agents. For more information, see [Manage actions](../../configure-the-cortex-agentic-assistant-1/agents-hub/manage-actions).
+8. (Optional) Add the prompt to a playbook.
+   1. Edit or create a playbook.
+   2.  In the playbook editor, expand the Task Library and select AI Prompts.
+
+       The System tab contains system prompts, and the Custom tab contains custom prompts.
+   3.  Select the relevant prompt and drag it onto the playbook editor.
+
+       The Task Details pane opens for the prompt. You can view system prompt details, and you can view and edit custom prompt details.
+   4.  Click OK.
+
+       The prompt appears in the playbook editor.

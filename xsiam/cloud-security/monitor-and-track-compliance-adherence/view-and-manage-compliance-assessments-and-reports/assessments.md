@@ -1,0 +1,105 @@
+---
+description: >-
+  View assessment results and drill into controls, rules, asset status, and
+  issues.
+---
+
+# Review assessments
+
+The **Assessment** page shows the latest compliance assessment profile results. It provides an up to date high level compliance view.
+
+The display shows the following information:
+
+| Display element                                                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Assessment by Score widget                                       | <p>Shows how many assessment profiles were in each percentage of compliance range, color coded as follows:<br></p><ul><li>Red: 0-50%</li><li>Orange: 51-99%</li><li>Green: 100%</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Assessment by Label widget                                       | Shows how many of each label were assessed, for example, AWS or Azure.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Table showing assessment profiles grouped by compliance standard | <p>Displays assessment profiles grouped by standards, including:</p><ul><li>Standard name: The standard used in the assessment profile.</li><li>Asset Group: The asset group the assessment profile assessed.</li><li>Score: The score assigned to the asset group. It is calculated as the number of assets that passed divided by the sum of assets that passed plus failed (the total number of assets that were evaluated).</li><li>Control status: How many assets in an asset group passed the rule check (green), how many were not evaluated (grey), and how many failed (red).</li><li>Failed controls by severity: Of the assets that failed the rule check, what was the severity of the failure for each asset; critical (dark red), high (red), medium (orange), low (blue), and informational (grey).</li><li>Labels: The labels that were evaluated for the asset group in the assessment profile, for example, AWS or Azure.</li><li>Last evaluation time: The last time the rule was run.</li></ul> |
+
+## See specific assessment profile results
+
+You can right click a specific assessment profile and select **View Profile Report**, which opens the report generated by the assessment profile. The report contains two tabs, **Controls** and **Assets**. You can also access this page by hovering over the end of the row and selecting the view arrow.
+
+### Controls tab
+
+<figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2F9lTpRmz1oegx4YXi00Fj%2Fimage.png?alt=media&#x26;token=8b957361-1e23-47ea-933a-d3191a1ca3fd" alt=""><figcaption></figcaption></figure>
+
+The **Controls** tab shows:
+
+| Display element                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Compliance Score** widget                                | Displays the overall compliance score for the assessment profile and when it was last checked.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Controls by Status** widget                              | A pie chart indicating which controls passed, failed, or were not assessed for a specific asset group. If a control is not assessed, it will not cause the asset group to fail the rule check. The status is color-coded (green=passed, red=failed, grey=not assessed).                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Controls by Severity** widget                            | <p>A pie chart indicating severity level for controls for an asset group. Possible values:</p><ul><li>Critical</li><li>High</li><li>Medium</li><li>Low</li><li>Informational</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Table showing controls and their rules grouped by category | <p>Displays rules grouped by controls and categories, including:</p><ul><li>Name: The control name.</li><li>Score: The rule score. For control, shows the average of the rule scores. For category, shows the average of the control scores.</li><li>Status: Whether the control/rule passed or failed. The definition of pass varies by rule. See Cortex documentation for details.</li><li>Severity: The control/rule severity rating (Critical, High, Medium, Low, Informational).</li><li>Assets: The asset status. Each number links to the <strong>Asset</strong> tab, filtered by control/rule with the status.</li><li><strong>Issues</strong>: Links to the Issues table in a new tab, filtered for relevant issues.</li></ul> |
+
+#### View control details
+
+Clicking the row for a specific control in the **Controls** tab opens the **Control Details** side panel that shows information about the control in the **Overview** tab and the **Rules** tab.\
+![](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FcLQNlXhtmrVKe8jUv9GH%2Fimage.png?alt=media\&token=09887c47-4baf-481b-8249-a77762916dcb)
+
+<figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fn4JZbNDpJp2asaIFgdSM%2Fimage.png?alt=media&#x26;token=f680e84a-ae17-4567-8d18-5a4476268492" alt=""><figcaption></figcaption></figure>
+
+| Tab          | Details                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Overview** | <p>The <strong>Overview</strong> tab shows the following control metadata.</p><ul><li><strong>General Details:</strong> Includes the standards, category, sub category, created at, and automation status associated with the control.</li><li><strong>Description:</strong> The control description.</li><li><strong>Standard Mitigation Action:</strong> A predefined measure or step to address and reduce risk related to the control.</li><li><strong>Assessment Results:</strong> Includes the asset group, linked issues, and linked findings.</li></ul> |
+| **Rules**    | <p>The Rules tab shows the following information about the rules in the control.</p><div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>NOTE</strong></p><p>If there are no rules associated with the control, the control will be assigned a severity of low.</p></div><ul><li>Rule name</li><li>Rule ID</li><li>Type</li><li>Severity: The overall severity of the control is determined by the rule with highest severity.</li></ul>                                                                               |
+
+#### **View rule details**
+
+Clicking the row for a specific rule opens the **Rule Details** side panel.
+
+This panel shows information about the rule, including:
+
+* **General Details:** Rule name, rule ID, type, and severity, and scanned asset categories.
+* **Description:** The rule description.
+* **Remediation steps:** Actions from the standards provider or from custom controls to correct or resolve asset non-compliance identified during the assessment.
+* **Assessment Results:** Includes the asset group, linked issues, and linked findings.
+
+## Assets tab
+
+The **Assets** tab shows:
+
+| Display element                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Compliance Score** widget                     | Displays the overall compliance score for the asset group and when it was last checked. It represents the aggregated status per asset. Assets with one failure are considered failed.                                                                                                                                                                                                                                                                                                                                              |
+| **Distinct Assets by Status** widget            | A pie chart indicating which assets in an asset group passed for all rules, failed one or more rules, or were not assessed.                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Table listing all the assets in the asset group | <p>The distinct checks run for every asset covered by the assessment profile. Every row in the table represents a rule per asset for this standard.</p><ul><li>Asset name: The name of the asset.</li><li>Asset type: For example, storage bucket, endpoint, VM instance, human identity.</li><li>Status: Whether the asset passed or failed the rule.</li><li>Source: Whether the source is an issue and/or finding.</li><li>Rule: The rule that ran on the asset.</li><li>Control: The control that contains the rule.</li></ul> |
+
+Clicking the row for a specific asset opens a side panel showing asset details organized under the following tabs:
+
+* Overview
+* SBOM
+* Access
+* Vulnerabilities
+
+Right clicking on a row includes the following options:
+
+* **View in Asset Inventory**: Opens the **Inventory → Assets → All Assets** page showing asset details.
+* **View Control Side Panel**: Opens the **Control Details** side panel.
+* **View Rule Side Panel**: Opens the **Rule Details** side panel.
+
+## View the compliance assessment of an individual asset
+
+You can review the compliance performance of any asset to gain insight into how a specific asset aligns with assigned security standards and individual controls.
+
+You can review the compliance performance of any asset to gain insight into how a specific asset aligns with assigned security standards and individual controls. This view allows you to:
+
+* Focus on an individual asset’s compliance performance in the context of a specific standard, understand the standard and category placement of each individual control, and get immediate access to the findings or issues created in the case of violations.
+* Identify the severity of the individual controls violations through their association with underlying rules. Access the underlying findings and issues for remediation guidance and the context necessary to perform the prescribed action.
+* Identify the actions you need to take to improve the compliance score of an individual asset.
+
+To view compliance assessment for an asset:
+
+1. Navigate to **Inventory → Assets**.
+2. Click on an asset to open asset details.
+3. Click on the **Compliance** tab.
+
+The **Compliance** tab includes the following information:
+
+| Section                           | Description                                                                                                                                                    | Functional tip                                                                                                             |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Overall Compliance Score          | Displays asset’s compliance score and the number of standards and controls used for assessment.                                                                | Use this for a high-level quantification of asset compliance against assessed standards.                                   |
+| Controls by Status                | Shows the distribution of controls across **Passed**, **Failed**, and **Not Assessed**.                                                                        | Click a specific status to filter the **Standards** and **Controls data**.                                                 |
+| Standards, Score, Controls Passed | Lists the standards by which the asset is assessed, including the score and passed control count for each.                                                     | Click a specific standard to filter the items in the **Controls Overview** table by that specific standard.                |
+| Controls Table                    | An exhaustive list of controls for which an asset may be assessed including columns for **Standard**, **Category**, **Control**, **Severity**, and **Status**. | Click a control to view the control details, or click a **Failed** status to view details of the related finding or issue. |

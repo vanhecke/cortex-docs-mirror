@@ -1,0 +1,55 @@
+# Palo Alto Networks integrations
+
+Cortex XSIAM supports data ingestion and orchestration from other Palo Alto Networks products. These integrations are provided through a combination of traditional data sources and unified connectors, ensuring comprehensive visibility and seamless cross-platform security operations.
+
+{% hint style="info" %}
+### Notice
+
+Data collection may require an add-on.
+{% endhint %}
+
+### Ingestion methods
+
+Depending on the specific product and your tenant onboarding date, integrations are handled via the following methods:
+
+* **Connectors**: The strategic, unified approach for integrating Palo Alto Networks services. A connector consolidates multiple security capabilities, such as Automation, Data Security, and Identity Posture, into a single, guided configuration flow.
+  * **Availability**: These connectors are available for tenants onboarded after July 26, 2026.
+  * **Legacy support**: Existing tenants (onboarded prior to July 26, 2026) can achieve similar functionality by using the standalone Marketplace integrations linked within each product topic. For more information, see [Marketplace](../marketplace).
+* **Traditional data sources**: Cortex XSIAM supports streaming data directly from Prisma Access accounts, Prisma Access Browser, Cloud Next-Generation Firewalls (CNGFW), and Next-Generation Firewalls (NGFW), including Panorama devices, to your Cortex XSIAM tenants using the Strata Logging Service.
+  * **Direct integration**: New tenants (and tenants upgraded from Cortex XDR to XSIAM) utilize the direct integration of Next-Generation Firewall, including Panorama devices, into Cortex XSIAM. For these tenants, the option to use the Strata Logging Service integration is not available.
+  *   **Migration from Strata Logging Service**: For tenants with existing direct integrations to the Strata Logging Service, you can migrate your configurations, such as NGFW and Prisma Access, to Cortex XSIAM before your license expires. This can be done manually via the **Migrate Devices** buttons on the **Data Sources & Integrations** page (recommended more than two weeks before license expiration) or via automatic migration initiated by Cortex XSIAM two weeks prior to expiration.
+
+      <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>Roll-back of Strata Logging Service integration migration is not supported.</p></div>
+
+#### Technical reference requirements for connectors
+
+While the unified wizard handles the configuration for new connectors, you should refer to the [Cortex Developer Docs for Marketplace (PAN DEV)](https://cortex.marketplace.pan.dev/marketplace/) site for specific technical information related to the integration (now referred to as a **sub-capability** in the new connector world), such as:
+
+* Fetched Incidents Data
+* Available Commands
+* Required incident fields and data schemas not provided in the wizard.
+
+{% hint style="info" %}
+**Note**
+
+For many popular vendors, you can choose between distinct types of data sources to fit your needs. Check the available descriptions for each entry in the user interface and documentation to decide which option is most suitable.
+{% endhint %}
+
+### General requirements
+
+Ensure you meet the following requirements before configuring your integrations:
+
+* Deploy the relevant Palo Alto Networks products, such as NGFW or CNGFW.
+* Hold Super User permissions for your Customer Support Portal (CSP) account.
+* After your tenant has been activated, navigate to the **Data Sources & Integrations** page in Cortex XSIAM to configure your integrations.
+* All devices and accounts allocated to your CSP accounts are available to integrate.
+
+{% hint style="info" %}
+**Note**
+
+For certain traditional Palo Alto Networks integrations using data sources, you can select specific log types to ingest for each data source instance. This granular filtering allows you to optimize data consumption and reduce ingestion costs by ensuring only high-value security logs reach the ingestion pipeline. For more information, see [Log type filtering](palo-alto-networks-integrations/log-type-filtering). For customers who have not migrated to Cortex XSIAM 3.x, see [Collecting URL and File log types](palo-alto-networks-integrations/collecting-url-and-file-log-types).
+{% endhint %}
+
+### Supported integrations
+
+Cortex XSIAM provides specific documentation and configuration steps for each Palo Alto Networks integration. Select an integration from the topics provided below to view its supported ingestion methods and configuration requirements.

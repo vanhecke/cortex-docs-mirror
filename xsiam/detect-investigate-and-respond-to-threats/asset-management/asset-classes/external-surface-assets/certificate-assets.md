@@ -1,0 +1,10 @@
+# Certificate assets
+
+Certificates (also known as digital or public key certificates) are used when establishing encrypted communication channels to identify and authenticate a trusted party. Certificates are typically used for SSL/TLS, HTTPS, FTPS, SSH, and VPN connections. The most common use of certificates is for HTTPS-based websites, which enable a web browser to validate that an HTTPS web server is an authentic website.
+
+Cortex XSIAM tracks information for each certificate, such as Issuer, Public key, Public Key Algorithm, Subject, Subject Alternative Names, Subject Organization, Subject Country, and Subject State. Cortex XSIAM also tracks the following “cryptographic health” checks for each certificate:
+
+* **Overview:** Summarizes key information about the certificate, including Highlights like an expired certificate status. It lists Properties like Asset ID, Provider, Asset Category, Account ID, Tags, and Asset Groups, along with Attribution Evidence explaining why the asset belongs to your organization. This tab also displays detailed certificate information such as Issuer, Public key, and Subject Alternative Names, along with Certificate Classifications that track cryptographic health checks
+* **Compliance:** Displays the Overall Compliance Score and Controls by Status for the certificate
+* **Recently Observed:** Lists recently observed IPs, domains, and TLS versions associated with the certificate
+* **Services & Websites:** Lists the services and websites running with the certificate, including their Type, Status, Discovery Type, and Host
