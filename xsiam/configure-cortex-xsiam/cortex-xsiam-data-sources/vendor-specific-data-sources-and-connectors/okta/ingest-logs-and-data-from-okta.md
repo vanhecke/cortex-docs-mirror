@@ -15,7 +15,7 @@ The options available in the UI depend on your specific product license:
 **Administrator privileges**: Your Okta user must have a role capable of creating API tokens, such as Read-only Administrator, Super Administrator, or Organization Administrator. For more information, see the [Okta Administrators Documentation](https://help.okta.com/en-us/Content/Topics/Security/Administrators.htm?cshid=ext_Security_Administrators).
 {% endhint %}
 
-To receive logs and configuration data from Okta, configure the Data Sources & Integrations settings in Cortex XSIAM. Once enabled, the system immediately begins ingesting activity logs activity logs and identity configuration metadata, according to your configuration settings.
+To receive logs and configuration data from Okta, configure the **Data Sources & Integrations** settings in Cortex XSIAM. Once enabled, the system immediately begins ingesting activity logs activity logs and identity configuration metadata, according to your configuration settings.
 
 Activity logs are searchable in the `okta_sso_raw` dataset and normalized to `xdr_data` or `saas_audit_logs`.
 
@@ -24,7 +24,7 @@ Activity logs are searchable in the `okta_sso_raw` dataset and normalized to `xd
 The Okta API enforces concurrent rate limits. To prevent service disruption:
 
 * The Okta data collector includes a mechanism that automatically reduces the amount of requests whenever an error is received from the Okta API indicating that too many requests have already been sent.
-* To ensure you are notified when this occurs, an alert is displayed in the Notification Area and a record is added to the Management Audit Logs.
+* To ensure you are notified when this occurs, an alert is displayed in the **Notification Area** and a record is added to the **Management Audit Logs**.
 
 ### How to configure the Okta collection?
 
@@ -64,9 +64,7 @@ For more information, see the [Okta Documentation](https://developer.okta.com/do
 
 Data is routed differently depending on which collection option is enabled:
 
-**Activity Data (using Collect Logs)**
-
-* **XQL**: Searchable using the `okta_sso_raw` dataset.
-* **Normalization**: Depending on the event type, data is normalized to either `xdr_data` or `saas_audit_logs` datasets.
-
-**Configuration data (using Collect Configuration)**
+* Activity Data (using **Collect Logs**)
+  * **XQL**: Searchable using the `okta_sso_raw` dataset.
+  * **Normalization**: Depending on the event type, data is normalized to either `xdr_data` or `saas_audit_logs` datasets.
+* Configuration data (using **Collect Configuration**)

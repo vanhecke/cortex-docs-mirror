@@ -8,3 +8,4 @@ This connector includes the following capabilities and sub-capabilities (if appl
   * saas-posture-config-remediation: Help remediate the misconfigured security settings of your SAAS application.
 
 To configure this connector, follow the steps outlined in the configuration wizard.
+

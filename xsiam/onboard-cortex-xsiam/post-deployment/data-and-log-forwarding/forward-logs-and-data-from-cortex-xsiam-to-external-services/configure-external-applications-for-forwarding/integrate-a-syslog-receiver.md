@@ -21,6 +21,7 @@ Before you begin, enable access to the following Cortex XSIAM IP addresses for y
 {% tab title="EMEA (Europe, Middle East, Africa)" %}
 | Region                    | Log Forwarding IP Addresses    |
 | ------------------------- | ------------------------------ |
+| Finland (FI)              | 34.88.235.28, 34.88.248.229    |
 | France (FA)               | 34.163.100.253, 34.155.72.149  |
 | Germany (DE)              | 35.234.95.96, 35.246.192.146   |
 | Israel (IL)               | 34.165.194.4, 34.165.101.105   |

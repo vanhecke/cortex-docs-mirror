@@ -27,6 +27,7 @@ APP-ID: None
 | Spain (ES)                            | 34.175.255.99, 34.175.230.35  |
 | Switzerland (CH)                      | 34.65.222.25, 34.65.233.60    |
 | United Kingdom (UK)                   | 34.142.3.42, 34.142.44.136    |
+| Finland (FI)                          | 35.228.175.228, 35.228.44.44  |
 
 **JPAC (Asia-Pacific)**
 

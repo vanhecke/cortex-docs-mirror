@@ -33,7 +33,7 @@ Ensure that you do the following tasks before you begin configuring data collect
   4. Ensure that you keep a copy of the Event Hub resource ID and the Event Hub name for use in the following procedures. To get your Event Hubs resource ID, go to your Azure Event Hub namespace page on Azure's Properties tab, and copy the text under Resource ID.
   5. Create a storage account.
 * Ensure that you have Microsoft Defender user credentials to sign in as a Security Administrator.
-*   Refer to this topic for additional information: [Enable access to required PANW resources](https://docs-cortex.paloaltonetworks.com/r/5CAbsl8idaK8R43ZLhoTOw/IWU8BPTfKWhw35rIRJGKbQ)
+*   Refer to this topic for additional information: [Enable access to required PANW resources](../../../../../onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources)
 
     The IP addresses that should be used are the ones under: **To Collect 3rd Party Data from Customer's SaaS and Cloud resources**.
 * It might be necessary to set the firewall on the Event Hub, but it could also be necessary to configure it on the storage account firewall.

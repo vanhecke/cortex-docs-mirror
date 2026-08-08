@@ -8,7 +8,7 @@ This connector is only available for tenants that onboarded after July 26, 2026.
 
 This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
 
-Integrate with ActiveMQ to send and read messages on queues and topics, and to fetch messages from a queue or topic and create issues in Cortex XSOAR per message.
+Integrate with ActiveMQ to send and read messages on queues and topics, and to fetch messages from a queue or topic and create issues in Cortex XSIAM per message.
 
 This connector includes the following sub-capabilities (Marketplace integrations link to PAN DEV for more information):
 

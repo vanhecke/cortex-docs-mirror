@@ -69,7 +69,7 @@ We recommend deploying a dedicated Broker VM for the Cortex Network Scanner with
 
 The Cortex Network Scanner applet is not supported in High Availability (HA) cluster configurations.
 
-The Cortex Network Scanner applet is not supported for FedRAMP customers.
+The Cortex Network Scanner applet is supported for FedRAMP customers.
 {% endhint %}
 
 #### **Firewall and other security control recommendations**
@@ -133,7 +133,7 @@ This feature is included with a Cortex XSIAM Premium license. It is also include
 {% hint style="info" %}
 ### Important
 
-The Cortex Network Scanner applet is not supported for FedRAMP customers.
+The Cortex Network Scanner applet is supported for FedRAMP customers.
 
 Cortex Network Scanner does not support high availability (HA) Broker VM configuration.
 {% endhint %}
@@ -355,7 +355,7 @@ Cortex XSIAM uses the Network Scanner to identify active hosts, services, and vu
     * **Discovery Scan**: Identifies active hosts and gathers high-level OS information.
     * **Vulnerability Scan**: Performs deep inspection of services to identify known CVEs and security weaknesses.
     * **Focused Vulnerability Scan**: Targets specific vulnerabilities, including emerging threats and zero-day vulnerabilities (ideal for verifying patches or high-priority CVEs).
-    * **Policy Audit Scan**: Helps you check if a specified Asset Group is in compliance with selected policies and standards. CIS Microsoft Windows 11 Enterprise Benchmark and CIS Microsoft Windows Server 2022 Benchmark are currently supported
+    * **Policy Audit Scan**: Helps you check if a specified Asset Group is in compliance with selected policies and standards. CIS Microsoft Windows 11 Enterprise Benchmark, Microsoft Windows Server 2022 Benchmark, Debian, and Ubuntu are currently supported
 
     1.  **General Configuration**
 

@@ -39,17 +39,13 @@ Configure Cortex XSIAM to receive logs and data from OneLogin.
      * **Log Collection**
        *   **Events**: Retrieves user logins, administrative operations, provisioning, and OneLogin event types. After normalization, the event types are enriched with the event name and description.
 
-           > **Note**
-           >
-           > Event data is collected every 30 seconds.
+           <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>Event data is collected every 30 seconds.</p></div>
      * **Directory**
        * **Users**: Retrieves lists of users.
        * **Groups**: Retrieves lists of groups.
        *   **Apps**: Retrieves lists of apps.
 
-           > **Note**
-           >
-           > Inventory data snapshots are collected every 10 minutes.
+           <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>Inventory data snapshots are collected every 10 minutes.</p></div>
 7. Test the connection settings. If successful, **Enable** the OneLogin log collection.
 
 When events start to come in, a green check mark appears underneath the OneLogin configuration.

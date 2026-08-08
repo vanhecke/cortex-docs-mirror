@@ -2,7 +2,7 @@
   "book": "xsiam",
   "title": "Cortex XSIAM Documentation",
   "section": "cortex-xsiam",
-  "page_count": 2271,
+  "page_count": 2272,
   "tree": [
     {
       "title": "Learn about Cortex XSIAM",
@@ -6545,10 +6545,17 @@
                   ]
                 },
                 {
-                  "title": "Ingest logs from Prisma Access Browser",
-                  "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/ingest-logs-from-prisma-access-browser",
+                  "title": "Prisma Access Browser",
+                  "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/prisma-access-browser",
                   "type": "document",
-                  "children": []
+                  "children": [
+                    {
+                      "title": "Ingest logs from Prisma Access Browser",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/prisma-access-browser/ingest-logs-from-prisma-access-browser",
+                      "type": "document",
+                      "children": []
+                    }
+                  ]
                 },
                 {
                   "title": "Ingest detection data from Strata Logging Service",
