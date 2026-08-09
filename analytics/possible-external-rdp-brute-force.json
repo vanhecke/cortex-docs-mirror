@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Brute Force: Password Guessing (T1110.001)"
+  ],
+  "attackers_goals": "The attacker attempts to gain access to the accounts.",
+  "deduplication_period": "1 Day",
+  "description": "Multiple failed remote logins originated from an external IP with at least one successful login. This may indicate a successful brute-force attack.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "If the source IP is an internal IP, adjust network IP ranges. Identify the user performing RDP and check that it is authorized. Check whether this IP has a malicious reputation. Reset the user's password. Follow further actions done by the user.",
+  "name": "Possible external RDP Brute-Force",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Possible external RDP Brute-Force on a Honey User Account",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Brute Force: Password Guessing (T1110.001)"
+      ],
+      "description": "Multiple failed remote logins originated from an external IP with at least one successful login. This may indicate a successful brute-force attack.",
+      "attackers_goals": "The attacker attempts to gain access to the accounts.",
+      "investigative_actions": "If the source IP is an internal IP, adjust network IP ranges. Identify the user performing RDP and check that it is authorized. Check whether this IP has a malicious reputation. Reset the user's password. Follow further actions done by the user."
+    },
+    {
+      "name": "Potential External Brute-Force via RDP on Sensitive User",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Brute Force: Password Guessing (T1110.001)"
+      ],
+      "description": "Multiple failed remote logins from an external IP with a sensitive user and at least one successful login. This may indicate a successful brute-force attack.",
+      "attackers_goals": "The attacker attempts to gain access to the accounts.",
+      "investigative_actions": "If the source IP is an internal IP, adjust network IP ranges. Identify the user performing RDP and check that it is authorized. Check whether this IP has a malicious reputation. Reset the user's password. Follow further actions done by the user."
+    }
+  ]
+}

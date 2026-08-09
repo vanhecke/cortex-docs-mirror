@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Domain Accounts (T1078.002)"
+  ],
+  "attackers_goals": "An attacker may attempt to exploit the Active Directory Certificate Services to escalate privileges to a domain controller machine account.",
+  "deduplication_period": "1 Day",
+  "description": "A machine certificate was issued with a mismatch between the requester and the subject.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Active Directory Certificate Services Analytics",
+  "investigative_actions": "Check who owns the certificate requester account. Check if the requester DNS name attribute was changed recently. Investigate actions done by the requester and its owner. Check for possible DCSync alerts.",
+  "name": "A machine certificate was issued with a mismatch",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

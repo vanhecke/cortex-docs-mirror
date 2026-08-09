@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Data Destruction (T1485)"
+  ],
+  "attackers_goals": "Destruction of data.",
+  "deduplication_period": "1 Day",
+  "description": "An AWS RDS global cluster was deleted.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Disaster Recovery Risks, Data Detection & Response",
+  "investigative_actions": "Check for existing backups for the deleted cluster. Check if a secondary cluster exists, which was detached before the global deletion.",
+  "name": "An AWS RDS Global Cluster Deletion",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

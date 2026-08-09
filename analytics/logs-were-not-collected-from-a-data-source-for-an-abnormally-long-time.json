@@ -1,0 +1,80 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Network Denial of Service (T1498)",
+    "Service Stop (T1489)"
+  ],
+  "attackers_goals": "N/A.",
+  "deduplication_period": "6 Hours",
+  "description": "Logs were not collected from a data source for an abnormally long time.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "N/A.",
+  "name": "Logs were not collected from a data source for an abnormally long time",
+  "required_data": [
+    "Health Monitoring Data"
+  ],
+  "severity": "Low",
+  "test_period": "1 Day",
+  "variations": [
+    {
+      "name": "Logs were not collected from a Windows Event Collector (WEC) for an abnormally long time",
+      "severity": "Low",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Network Denial of Service (T1498)",
+        "Service Stop (T1489)"
+      ],
+      "description": "Logs were not collected from a data source for an abnormally long time.",
+      "attackers_goals": "N/A.",
+      "investigative_actions": "N/A."
+    },
+    {
+      "name": "Logs were not collected from a Microsoft Windows XDR Collector (XDRC) for an abnormally long time",
+      "severity": "Low",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Network Denial of Service (T1498)",
+        "Service Stop (T1489)"
+      ],
+      "description": "Logs were not collected from a data source for an abnormally long time.",
+      "attackers_goals": "N/A.",
+      "investigative_actions": "N/A."
+    },
+    {
+      "name": "Logs were not collected from a data source for an abnormally long time, which indicates a significant stop",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Network Denial of Service (T1498)",
+        "Service Stop (T1489)"
+      ],
+      "description": "Logs were not collected from a data source for an abnormally long time.",
+      "attackers_goals": "N/A.",
+      "investigative_actions": "N/A."
+    },
+    {
+      "name": "Logs were not collected from a data source for an abnormally long time, despite a stable and consistent data stream until recently",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Network Denial of Service (T1498)",
+        "Service Stop (T1489)"
+      ],
+      "description": "Logs were not collected from a data source for an abnormally long time.",
+      "attackers_goals": "N/A.",
+      "investigative_actions": "N/A."
+    }
+  ]
+}

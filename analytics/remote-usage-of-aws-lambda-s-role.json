@@ -1,0 +1,106 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Steal Application Access Token (T1528)",
+    "Unsecured Credentials (T1552)",
+    "Valid Accounts: Cloud Accounts (T1078.004)"
+  ],
+  "attackers_goals": "Exfiltrate token and abuse it remotely.",
+  "deduplication_period": "7 Days",
+  "description": "An AWS Lambda's role was used externally of the cloud environment.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check if the IAM role was assumed by an unknown identity. Check what API calls were executed using the access-key.",
+  "name": "Remote usage of AWS Lambda's role",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Remote command line usage of AWS Lambda's role",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Steal Application Access Token (T1528)",
+        "Unsecured Credentials (T1552)",
+        "Valid Accounts: Cloud Accounts (T1078.004)"
+      ],
+      "description": "An AWS Lambda's role was used externally of the cloud environment.",
+      "attackers_goals": "Exfiltrate token and abuse it remotely.",
+      "investigative_actions": "Check if the IAM role was assumed by an unknown identity. Check what API calls were executed using the access-key."
+    },
+    {
+      "name": "Suspicious usage of AWS Lambda's role",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Steal Application Access Token (T1528)",
+        "Unsecured Credentials (T1552)",
+        "Valid Accounts: Cloud Accounts (T1078.004)"
+      ],
+      "description": "An AWS Lambda's role was used externally of the cloud environment.",
+      "attackers_goals": "Exfiltrate token and abuse it remotely.",
+      "investigative_actions": "Check if the IAM role was assumed by an unknown identity. Check what API calls were executed using the access-key."
+    },
+    {
+      "name": "Suspicious usage of AWS Lambda's role",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Steal Application Access Token (T1528)",
+        "Unsecured Credentials (T1552)",
+        "Valid Accounts: Cloud Accounts (T1078.004)"
+      ],
+      "description": "An AWS Lambda's role was used externally of the cloud environment.",
+      "attackers_goals": "Exfiltrate token and abuse it remotely.",
+      "investigative_actions": "Check if the IAM role was assumed by an unknown identity. Check what API calls were executed using the access-key."
+    },
+    {
+      "name": "Suspicious usage of AWS Lambda's role",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Steal Application Access Token (T1528)",
+        "Unsecured Credentials (T1552)",
+        "Valid Accounts: Cloud Accounts (T1078.004)"
+      ],
+      "description": "An AWS Lambda's role was used externally of the cloud environment.",
+      "attackers_goals": "Exfiltrate token and abuse it remotely.",
+      "investigative_actions": "Check if the IAM role was assumed by an unknown identity. Check what API calls were executed using the access-key."
+    },
+    {
+      "name": "Usage of AWS Lambda's role from a known ASN",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Steal Application Access Token (T1528)",
+        "Unsecured Credentials (T1552)",
+        "Valid Accounts: Cloud Accounts (T1078.004)"
+      ],
+      "description": "An AWS Lambda's role was used externally of the cloud environment.",
+      "attackers_goals": "Exfiltrate token and abuse it remotely.",
+      "investigative_actions": "Check if the IAM role was assumed by an unknown identity. Check what API calls were executed using the access-key."
+    }
+  ]
+}

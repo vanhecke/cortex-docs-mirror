@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Account Discovery (T1087)"
+  ],
+  "attackers_goals": "Gain access to sensitive data stored in the new server.* Gain access to other servers in the Azure Active Directory Hybrid Health AD FS Environment.* Gain access to user accounts in the Azure Active Directory Hybrid Health AD FS Environment.",
+  "deduplication_period": "5 Days",
+  "description": "A new server has been added to an Azure Active Directory Hybrid Health AD FS Environment.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the Azure Active Directory Hybrid Health Monitor to identify the new server.* Verify that the new server is correctly configured for ADFS.* Check the logs for any errors related to the new server.",
+  "name": "A New Server was Added to an Azure Active Directory Hybrid Health ADFS Environment",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

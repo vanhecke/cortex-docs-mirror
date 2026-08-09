@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Domain or Tenant Policy Modification (T1484)"
+  ],
+  "attackers_goals": "An attacker might want to disable alerts associated with authentication requirements for privileged access. This may allow malicious activities to go unnoticed.",
+  "deduplication_period": "1 Day",
+  "description": "An identity disabled an Azure AD PIM alert.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check what alert was disabled. Check whether the user that disabled the alert is permitted to perform such actions.",
+  "name": "Azure AD PIM alert disabled",
+  "required_data": [
+    "AzureAD Audit Log"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

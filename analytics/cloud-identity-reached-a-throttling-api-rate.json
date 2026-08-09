@@ -1,0 +1,64 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Network Denial of Service (T1498)"
+  ],
+  "attackers_goals": "Abuse cloud resource, such behavior is usually seen during cryptocurrency attacks.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity has executed a high volume of API calls, causing a throttling error.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the identity created resources and their legitimacy. Look for any unusual behavior originated from the suspected identity.",
+  "name": "Cloud identity reached a throttling API rate",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Cloud identity reached a highly unusual throttling API rate",
+      "severity": "Low",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Network Denial of Service (T1498)"
+      ],
+      "description": "A cloud identity has executed a high volume of API calls, causing a throttling error. This indicates on a high volume of cloud instances allocation, such activity may be related to a cryptocurrency attack.",
+      "attackers_goals": "Abuse cloud resource, such behavior is usually seen during cryptocurrency attacks.",
+      "investigative_actions": "Check the identity created resources and their legitimacy. Look for any unusual behavior originated from the suspected identity."
+    },
+    {
+      "name": "Cloud identity reached an unusual throttling API rate in the cloud project",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Network Denial of Service (T1498)"
+      ],
+      "description": "A cloud identity has executed a high volume of API calls, causing a throttling error. This API rate is unusual on the project level.",
+      "attackers_goals": "Abuse cloud resource, such behavior is usually seen during cryptocurrency attacks.",
+      "investigative_actions": "Check the identity created resources and their legitimacy. Look for any unusual behavior originated from the suspected identity."
+    },
+    {
+      "name": "Cloud identity reached an unusual throttling API rate",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Network Denial of Service (T1498)"
+      ],
+      "description": "A cloud identity has executed a high volume of API calls, causing a throttling error. This activity is unusual for The cloud identity, and was not seen in the last 30 days.",
+      "attackers_goals": "Abuse cloud resource, such behavior is usually seen during cryptocurrency attacks.",
+      "investigative_actions": "Check the identity created resources and their legitimacy. Look for any unusual behavior originated from the suspected identity."
+    }
+  ]
+}

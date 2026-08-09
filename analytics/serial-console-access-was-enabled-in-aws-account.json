@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Services: Direct Cloud VM Connections (T1021.008)",
+    "Remote Services: Cloud Services (T1021.007)"
+  ],
+  "attackers_goals": "Utilize direct access to virtual infrastructure to pivot through a cloud environment.",
+  "deduplication_period": "5 Days",
+  "description": "Serial console access to EC2 instances was enabled in an AWS account.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Verify whether serial console access should be enabled.* Investigate which actions were performed via serial console access.",
+  "name": "Serial console access was enabled in AWS account",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Web Service: Bidirectional Communication (T1102.002)",
+    "Masquerading (T1036)"
+  ],
+  "attackers_goals": "Masquerade legitimate looking Google services for defense evasion and C&C.",
+  "deduplication_period": "1 Day",
+  "description": "A suspicious process accessed a site masquerading as Google.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "See whether this site has a malicious reputation. Follow process activities. Monitor traffic to the site.",
+  "name": "Suspicious process accessed a site masquerading as Google",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious process resolved the DNS name of a site masquerading as Google",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Web Service: Bidirectional Communication (T1102.002)",
+        "Masquerading (T1036)"
+      ],
+      "description": "A suspicious process resolved the DNS name of a site masquerading as Google.",
+      "attackers_goals": "Masquerade legitimate looking Google services for defense evasion and C&C.",
+      "investigative_actions": "See whether this site has a malicious reputation. Follow process activities. Monitor traffic to the site."
+    }
+  ]
+}

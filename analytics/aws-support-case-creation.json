@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Cloud Infrastructure Discovery (T1580)",
+    "Account Manipulation (T1098)"
+  ],
+  "attackers_goals": "Obtaining a list of resources that could be targeted for lateral movement or convincing AWS's support to perform actions on their behalf.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity has created a new case in AWS support.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Investigate any unusual activity originating from the suspected identity. View the contents of the newly created case {case_id} .",
+  "name": "AWS support case creation",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

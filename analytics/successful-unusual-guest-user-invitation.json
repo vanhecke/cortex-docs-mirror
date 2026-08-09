@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "An attacker can invite users to for evasion.",
+  "deduplication_period": "1 Day",
+  "description": "An identity successfully invited a guest user to the tenant with unusual characteristics.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check who is the invited guest user. Check whether the inviter is permitted to perform such actions. Check if the domain of the invited guest is allowed for invitations in the organization.",
+  "name": "Successful unusual guest user invitation",
+  "required_data": [
+    "AzureAD Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Rare successful guest invitation in the organization",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "An identity successfully invited a suspicious guest user to the tenant.",
+      "attackers_goals": "An attacker can invite users to for evasion.",
+      "investigative_actions": "Check who is the invited guest user. Check whether the inviter is permitted to perform such actions. Check if the domain of the invited guest is allowed for invitations in the organization."
+    }
+  ]
+}

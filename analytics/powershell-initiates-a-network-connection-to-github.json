@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: PowerShell (T1059.001)"
+  ],
+  "attackers_goals": "Download a second stage payload for execution.",
+  "deduplication_period": "1 Day",
+  "description": "PowerShell initiates a Network Connection to GitHub with an uncommon command line. This may have legitimate uses, but this technique is frequently used by attackers to serve malicious payloads.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the initiator process is malicious. Check for additional file/network operations by the same PowerShell instance.",
+  "name": "PowerShell Initiates a Network Connection to GitHub",
+  "required_data": [
+    "Palo Alto Networks Url Logs"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "PowerShell Initiates a Network Connection to GitHub from a sensitive server",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: PowerShell (T1059.001)"
+      ],
+      "description": "PowerShell initiates a Network Connection to GitHub with an uncommon command line. This may have legitimate uses, but this technique is frequently used by attackers to serve malicious payloads.",
+      "attackers_goals": "Download a second stage payload for execution.",
+      "investigative_actions": "Check if the initiator process is malicious. Check for additional file/network operations by the same PowerShell instance."
+    }
+  ]
+}

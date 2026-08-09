@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Reconnaissance (TA0043)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Phishing for Information (T1598)",
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "Aim to steal sensitive information Trick recipients into downloading harmful payloads Aim to gain unauthorized access to the organization's systems.",
+  "deduplication_period": "1 Hour 30 Minutes",
+  "description": "The email was received from an unknown address, that was seen for the first time in the organization in the past month, and registered under a public provider.",
+  "detection_modules": "Email",
+  "detector_tags": "",
+  "investigative_actions": "Check the email address for any unusual spellings, missing letters, or unknown domains. If the message contains attachments or links, scrutinize them for any suspicious indications. Monitor further actions taken, such as file downloads or access to potentially malicious links.",
+  "name": "Email was received from an unknown address using a public provider domain",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

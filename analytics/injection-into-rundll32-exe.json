@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Process Injection (T1055)"
+  ],
+  "attackers_goals": "Attackers may inject code into processes to evade process-based defenses, as well as possibly elevate privileges.",
+  "deduplication_period": "1 Day",
+  "description": "A process injected into an instance of rundll32.exe.",
+  "detection_modules": "",
+  "detector_tags": "Injection Analytics",
+  "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Injection into rundll32.exe",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Injection into rundll32.exe which was executed by a scheduled task",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Process Injection (T1055)"
+      ],
+      "description": "A process injected into an instance of rundll32.exe.",
+      "attackers_goals": "Attackers may inject code into processes to evade process-based defenses, as well as possibly elevate privileges.",
+      "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

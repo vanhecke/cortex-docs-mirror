@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "User Execution: Malicious Image (T1204.003)"
+  ],
+  "attackers_goals": "Adversaries may rely on a user running a malicious image to facilitate execution.",
+  "deduplication_period": "1 Day",
+  "description": "The agent has pulled a docker image from a repository for the first time.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Scan the docker image that was pulled. Check the repository designation. Check on which other agents the docker image is being used.",
+  "name": "Suspicious docker image download from an unusual repository",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious docker image download from an unrecognized registry",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "User Execution: Malicious Image (T1204.003)"
+      ],
+      "description": "The agent has pulled a docker image from a registry that has never been used in the organization.",
+      "attackers_goals": "Adversaries may rely on a user running a malicious image to facilitate execution.",
+      "investigative_actions": "Scan the docker image that was pulled. Check the repository designation. Check on which other agents the docker image is being used."
+    },
+    {
+      "name": "Suspicious docker image download from an unrecognized repository",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "User Execution: Malicious Image (T1204.003)"
+      ],
+      "description": "The agent has pulled a docker image from a repository that has never been used in the organization.",
+      "attackers_goals": "Adversaries may rely on a user running a malicious image to facilitate execution.",
+      "investigative_actions": "Scan the docker image that was pulled. Check the repository designation. Check on which other agents the docker image is being used."
+    }
+  ]
+}

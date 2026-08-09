@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Hardware Additions (T1200)"
+  ],
+  "attackers_goals": "The Windows Server Update Services enable machines to discover and download software updates from a dedicated update server while providing the necessary client characteristics to install the suitable client version and build. Characteristics may consist of computer model, BIOS version and architecture. A unique computer model in the network may indicate an unauthorized and unmanaged connection to the internal network.",
+  "deduplication_period": "7 Days",
+  "description": "A unique client computer model was detected via MS-Update protocol.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Inspect the legitimacy of the host and its hardware components. Verify that this host is not a newly deployed end-point or virtual machine as part of a legitimate IT activity.",
+  "name": "Unique client computer model was detected via MS-Update protocol",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

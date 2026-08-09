@@ -1,0 +1,50 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Steal or Forge Authentication Certificates (T1649)"
+  ],
+  "attackers_goals": "An attacker is attempting to exploit AD CS misconfigurations to obtain certificates that can be used for credential theft and privilege escalation.",
+  "deduplication_period": "1 Hour",
+  "description": "A certificate template was updated with a possible misconfiguration. This may indicate the exploitation of misconfigured certificate template access control (ESC4).",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Active Directory Certificate Services Analytics",
+  "investigative_actions": "Review the AD CS configuration for vulnerable templates and EKU settings.* Review AD CS logs to identify any unauthorized certificate issuances, modifications, or template changes.",
+  "name": "Suspicious certificate template modification",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Certificate template was updated to be vulnerable to AD CS ESC attack",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal or Forge Authentication Certificates (T1649)"
+      ],
+      "description": "A certificate template was updated, making it vulnerable to an AD CS ESC attack. This may indicate the potential abuse of AD CS ESC4.",
+      "attackers_goals": "An attacker is attempting to exploit AD CS misconfigurations to obtain certificates that can be used for credential theft and privilege escalation.",
+      "investigative_actions": "Review the AD CS configuration for vulnerable templates and EKU settings.* Review AD CS logs to identify any unauthorized certificate issuances, modifications, or template changes."
+    },
+    {
+      "name": "Certificate template was updated with a misconfiguration configuration",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal or Forge Authentication Certificates (T1649)"
+      ],
+      "description": "A certificate template was updated with new misconfiguration. This may indicate a potential AD CS ESC4 attack.",
+      "attackers_goals": "An attacker is attempting to exploit AD CS misconfigurations to obtain certificates that can be used for credential theft and privilege escalation.",
+      "investigative_actions": "Review the AD CS configuration for vulnerable templates and EKU settings.* Review AD CS logs to identify any unauthorized certificate issuances, modifications, or template changes."
+    }
+  ]
+}

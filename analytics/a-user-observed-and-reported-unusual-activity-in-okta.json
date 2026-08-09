@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "An attacker tries infiltrating an Okta account to gain unauthorized access to valuable resources.",
+  "deduplication_period": "1 Day",
+  "description": "A user observed and reported unusual activity in Okta.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Okta Audit Analytics",
+  "investigative_actions": "Investigate the original event that was reported as suspicious. Contact the user and understand why he reported the activity as suspicious. Look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Follow further actions done by the account.",
+  "name": "A user observed and reported unusual activity in Okta",
+  "required_data": [
+    "Okta Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Multiple users have reported the same suspicious activity",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "Unusual activity in Okta reported about an IP not linked to an EDR agent, the operation is rare and flagged by multiple users.",
+      "attackers_goals": "An attacker tries infiltrating an Okta account to gain unauthorized access to valuable resources.",
+      "investigative_actions": "Investigate the original event that was reported as suspicious. Contact the user and understand why he reported the activity as suspicious. Look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Follow further actions done by the account."
+    },
+    {
+      "name": "Unusual activity in Okta was reported by a user along with suspicious characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A user observed and reported unusual activity in Okta.",
+      "attackers_goals": "An attacker tries infiltrating an Okta account to gain unauthorized access to valuable resources.",
+      "investigative_actions": "Investigate the original event that was reported as suspicious. Contact the user and understand why he reported the activity as suspicious. Look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Follow further actions done by the account."
+    }
+  ]
+}

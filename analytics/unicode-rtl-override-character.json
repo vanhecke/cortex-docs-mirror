@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Obfuscated Files or Information (T1027)"
+  ],
+  "attackers_goals": "Trick users into executing malicious files by making their file types seem benign.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker may use a special right-to-left (RTL) override character to trick users into executing malicious files that look like benign file types.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the executed process. There is no reason for benign files to contain the Unicode right-to-left override character in their name.",
+  "name": "Unicode RTL Override Character",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "High",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

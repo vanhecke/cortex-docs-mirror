@@ -1,0 +1,130 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Hijack Execution Flow: DLL (T1574.001)"
+  ],
+  "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+  "deduplication_period": "1 Day",
+  "description": "An unsigned DLL was loaded into a Microsoft signed process. It is not common for the DLL to be loaded into Microsoft processes, which might indicate an attacker performing DLL Hijacking.",
+  "detection_modules": "",
+  "detector_tags": "DLL Hijacking Analytics",
+  "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations.",
+  "name": "Unsigned DLL Hijack into a Microsoft process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unsigned DLL Hijack into a recently created Microsoft process which commonly loads the module as signed",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow: DLL (T1574.001)"
+      ],
+      "description": "An unsigned DLL was loaded into a Microsoft signed process. It is not common for the DLL to be loaded into Microsoft processes, which might indicate an attacker performing DLL Hijacking. In addition, The Microsoft process which commonly loads the module as signed,had loaded the module as unsigned, which might indicate an attacker targeting a popular module name.",
+      "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+      "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations."
+    },
+    {
+      "name": "Rare and unsigned DLL into an injected Microsoft process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow: DLL (T1574.001)"
+      ],
+      "description": "An unsigned DLL was loaded into a Microsoft signed process. It is not common for the DLL to be loaded into Microsoft processes, which might indicate an attacker performing DLL Hijacking.",
+      "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+      "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations."
+    },
+    {
+      "name": "Unsigned DLL Hijack of a low entropy DLL into a Microsoft process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow: DLL (T1574.001)"
+      ],
+      "description": "An unsigned DLL was loaded into a Microsoft signed process. It is not common for the DLL to be loaded into Microsoft processes, which might indicate an attacker performing DLL Hijacking.",
+      "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+      "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations."
+    },
+    {
+      "name": "Unsigned DLL Hijack of a high entropy DLL into a Microsoft process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow: DLL (T1574.001)"
+      ],
+      "description": "An unsigned DLL was loaded into a Microsoft signed process. It is not common for the DLL to be loaded into Microsoft processes, which might indicate an attacker performing DLL Hijacking.",
+      "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+      "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations."
+    },
+    {
+      "name": "Unsigned DLL Hijack into a Microsoft process - the DLL downloaded from an uncommon source",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow: DLL (T1574.001)"
+      ],
+      "description": "An unsigned DLL was loaded into a Microsoft signed process. It is not common for the DLL to be loaded into Microsoft processes, which might indicate an attacker performing DLL Hijacking.",
+      "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+      "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations."
+    },
+    {
+      "name": "Unsigned DLL Hijack into a recently created Microsoft process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow: DLL (T1574.001)"
+      ],
+      "description": "An unsigned DLL was loaded into a Microsoft signed process. It is not common for the DLL to be loaded into Microsoft processes, which might indicate an attacker performing DLL Hijacking.",
+      "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+      "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations."
+    },
+    {
+      "name": "Unsigned DLL Hijack into a Microsoft process which was executed by a scheduled task",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow: DLL (T1574.001)"
+      ],
+      "description": "An unsigned DLL was loaded into a Microsoft signed process. It is not common for the DLL to be loaded into Microsoft processes, which might indicate an attacker performing DLL Hijacking.",
+      "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+      "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations."
+    }
+  ]
+}

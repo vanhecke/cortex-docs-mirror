@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Hide Artifacts: Email Hiding Rules (T1564.008)"
+  ],
+  "attackers_goals": "Prevent an organization from warning users that they've been compromised (e.g. an internal spear-phishing campaign).",
+  "deduplication_period": "1 Day",
+  "description": "A user configured an Exchange inbox rule that may be used to hide emails.",
+  "detection_modules": "Identity Threat Module, Email",
+  "detector_tags": "",
+  "investigative_actions": "Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the rule keywords look suspicious. Investigate the IP address associated with the rule. Follow further actions done by the account. Check for a possible phishing campaign on the organization. Look for multiple instances of email hiding, which may be an indication of a larger campaign. Check if the user regularly configures inbox rules.",
+  "name": "Exchange email-hiding inbox rule",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Possible BEC Exchange email-hiding inbox rule",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hide Artifacts: Email Hiding Rules (T1564.008)"
+      ],
+      "description": "A user configured an Exchange inbox rule that may be used to hide emails. The rule contains characteristics that resemble a business email compromise (BEC) attack.",
+      "attackers_goals": "Prevent an organization from warning users that they've been compromised (e.g. an internal spear-phishing campaign).",
+      "investigative_actions": "Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the rule keywords look suspicious. Investigate the IP address associated with the rule. Follow further actions done by the account. Check for a possible phishing campaign on the organization. Look for multiple instances of email hiding, which may be an indication of a larger campaign. Check if the user regularly configures inbox rules."
+    },
+    {
+      "name": "Suspicious Exchange email-hiding inbox rule",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hide Artifacts: Email Hiding Rules (T1564.008)"
+      ],
+      "description": "A user configured an Exchange inbox rule that may be used to hide emails. The rule hides emails that contain suspicious keywords, which may be a sign of a compromised account.",
+      "attackers_goals": "Prevent an organization from warning users that they've been compromised (e.g. an internal spear-phishing campaign).",
+      "investigative_actions": "Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the rule keywords look suspicious. Investigate the IP address associated with the rule. Follow further actions done by the account. Check for a possible phishing campaign on the organization. Look for multiple instances of email hiding, which may be an indication of a larger campaign. Check if the user regularly configures inbox rules."
+    },
+    {
+      "name": "Abnormal Exchange email-hiding inbox rule",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hide Artifacts: Email Hiding Rules (T1564.008)"
+      ],
+      "description": "A user configured an Exchange inbox rule that may be used to hide emails.",
+      "attackers_goals": "Prevent an organization from warning users that they've been compromised (e.g. an internal spear-phishing campaign).",
+      "investigative_actions": "Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the rule keywords look suspicious. Investigate the IP address associated with the rule. Follow further actions done by the account. Check for a possible phishing campaign on the organization. Look for multiple instances of email hiding, which may be an indication of a larger campaign. Check if the user regularly configures inbox rules."
+    }
+  ]
+}

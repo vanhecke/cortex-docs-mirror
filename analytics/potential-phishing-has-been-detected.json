@@ -1,0 +1,80 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "Trick recipients into revealing sensitive information, hijack the organization, or obtain money through deception.",
+  "deduplication_period": "1 Hour 30 Minutes",
+  "description": "This email contains multiple indicators consistent with a phishing attack. The message likely attempts to steal credentials, distribute malware, or trick recipients into performing actions that compromise security through deceptive content or suspicious technical characteristics.",
+  "detection_modules": "Email",
+  "detector_tags": "Phishing",
+  "investigative_actions": "Review the email headers and metadata of to identify potential spoofing techniques or unusual routing patterns. Analyze any URLs or attachments in a secure sandbox environment to detect possible malware or phishing attempts. Correlate findings with recent alerts in the SIEM to assess whether similar accumulation patterns are forming. Engage potentially affected users to understand if any actions were taken in response to this email, which could increase the overall risk. Document and escalate findings if the accumulation of warnings suggests a broader phishing campaign.",
+  "name": "Potential Phishing has been detected",
+  "required_data": [
+    "Box Audit Log",
+    "DropBox",
+    "Google Workspace Audit Logs",
+    "Microsoft 365 Emails",
+    "Office 365 Audit",
+    "Okta Audit Log"
+  ],
+  "severity": "Medium",
+  "test_period": "2 Hours",
+  "variations": [
+    {
+      "name": "Potential Brand Impersonation has been detected",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "This email appears to impersonate a legitimate brand or service provider to deceive recipients. Attackers often mimic trusted companies like banks, cloud services, or popular brands to steal credentials, distribute malware, or conduct fraudulent activities.",
+      "attackers_goals": "Trick recipients into revealing sensitive information, hijack the organization, or obtain money through deception.",
+      "investigative_actions": "Review the email headers and metadata of to identify potential spoofing techniques or unusual routing patterns. Analyze any URLs or attachments in a secure sandbox environment to detect possible malware or phishing attempts. Correlate findings with recent alerts in the SIEM to assess whether similar accumulation patterns are forming. Engage potentially affected users to understand if any actions were taken in response to this email, which could increase the overall risk. Document and escalate findings if the accumulation of warnings suggests a broader phishing campaign."
+    },
+    {
+      "name": "Potential Spear Phishing has been detected",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "This email represents a targeted spear phishing attack aimed at high-value personnel within your organization. These highly personalized attacks often target executives or privileged users to gain unauthorized access to sensitive systems or information.",
+      "attackers_goals": "Trick recipients into revealing sensitive information, hijack the organization, or obtain money through deception.",
+      "investigative_actions": "Review the email headers and metadata of to identify potential spoofing techniques or unusual routing patterns. Analyze any URLs or attachments in a secure sandbox environment to detect possible malware or phishing attempts. Correlate findings with recent alerts in the SIEM to assess whether similar accumulation patterns are forming. Engage potentially affected users to understand if any actions were taken in response to this email, which could increase the overall risk. Document and escalate findings if the accumulation of warnings suggests a broader phishing campaign."
+    },
+    {
+      "name": "Potential Business Email Compromise has been detected",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "This email exhibits characteristics of a Business Email Compromise attack, where threat actors impersonate executives or trusted business partners to manipulate recipients into authorizing fraudulent financial transactions or wire transfers.",
+      "attackers_goals": "Trick recipients into revealing sensitive information, hijack the organization, or obtain money through deception.",
+      "investigative_actions": "Review the email headers and metadata of to identify potential spoofing techniques or unusual routing patterns. Analyze any URLs or attachments in a secure sandbox environment to detect possible malware or phishing attempts. Correlate findings with recent alerts in the SIEM to assess whether similar accumulation patterns are forming. Engage potentially affected users to understand if any actions were taken in response to this email, which could increase the overall risk. Document and escalate findings if the accumulation of warnings suggests a broader phishing campaign."
+    },
+    {
+      "name": "Potential Exfiltration has been detected",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "This outbound email shows suspicious patterns consistent with data exfiltration attempts. The communication may involve unauthorized transmission of sensitive organizational data to external recipients through email channels.",
+      "attackers_goals": "Trick recipients into revealing sensitive information, hijack the organization, or obtain money through deception.",
+      "investigative_actions": "Review the email headers and metadata of to identify potential spoofing techniques or unusual routing patterns. Analyze any URLs or attachments in a secure sandbox environment to detect possible malware or phishing attempts. Correlate findings with recent alerts in the SIEM to assess whether similar accumulation patterns are forming. Engage potentially affected users to understand if any actions were taken in response to this email, which could increase the overall risk. Document and escalate findings if the accumulation of warnings suggests a broader phishing campaign."
+    }
+  ]
+}

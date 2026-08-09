@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Inhibit System Recovery (T1490)"
+  ],
+  "attackers_goals": "Impair the ability of the cloud environment to recover in disaster scenarios.",
+  "deduplication_period": "1 Day",
+  "description": "Object versioning of a cloud storage resource was disabled.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Disaster Recovery Risks, Cloud Data Asset Protection Tampering, Data Detection & Response",
+  "investigative_actions": "Confirm that the identity intended to disable the resource versioning. Follow further actions done by the identity. Monitor this resource for other suspicious activities.",
+  "name": "Object versioning was disabled",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Object versioning was disabled by an unusual identity",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Inhibit System Recovery (T1490)"
+      ],
+      "description": "Cloud storage versioning was disabled/suspended by an unusual identity.",
+      "attackers_goals": "Impair the ability of the cloud environment to recover in disaster scenarios.",
+      "investigative_actions": "Confirm that the identity intended to disable the resource versioning. Follow further actions done by the identity. Monitor this resource for other suspicious activities."
+    }
+  ]
+}

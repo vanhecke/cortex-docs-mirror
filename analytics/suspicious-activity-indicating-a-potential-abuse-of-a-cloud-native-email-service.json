@@ -1,0 +1,50 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)"
+  ],
+  "attackers_goals": "Adversaries may use cloud-based email services to send phishing or spread malware, abusing legitimate email domains.",
+  "deduplication_period": "1 Day",
+  "description": "A cloud identity performed a sequence of activities which might indicate an intent to abuse the email service to send phishing or spam.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check if the identity intended to preform these actions or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity).",
+  "name": "Suspicious activity indicating a potential abuse of a cloud-native email service",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "3 Hours",
+  "variations": [
+    {
+      "name": "Suspicious activity indicating a potential abuse of a cloud-native email service involving discovery, weaponization, and impact",
+      "severity": "High",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)"
+      ],
+      "description": "A cloud identity performed a sequence of activities which might indicate an intent to abuse the email service to send phishing or spam. The behavior that was observed included discovery operations, attack preparation and actual email sending. These activities might indicate an intent to abuse the email service to send phishing or spam.",
+      "attackers_goals": "Adversaries may use cloud-based email services to send phishing or spread malware, abusing legitimate email domains.",
+      "investigative_actions": "Check if the identity intended to preform these actions or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity)."
+    },
+    {
+      "name": "Suspicious activity indicating a potential abuse of a cloud-native email service involving discovery and weaponization",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)"
+      ],
+      "description": "A cloud identity performed a sequence of activities which might indicate an intent to abuse the email service to send phishing or spam. The behavior that was observed included discovery operations and attack weaponization. These activities might indicate an intent to abuse the email service to send phishing or spam.",
+      "attackers_goals": "Adversaries may use cloud-based email services to send phishing or spread malware, abusing legitimate email domains.",
+      "investigative_actions": "Check if the identity intended to preform these actions or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity)."
+    }
+  ]
+}

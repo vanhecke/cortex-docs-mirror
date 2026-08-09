@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Proxy: Multi-hop Proxy (T1090.003)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Gain initial access to the organization while anonymizing the source of the activity.",
+  "deduplication_period": "1 Hour",
+  "description": "A successful login from a TOR exit node.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Block all web traffic to and from public Tor entry and exit nodes. Search for additional logins from the same user around the alert timestamp.",
+  "name": "A Successful login from TOR",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "High",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

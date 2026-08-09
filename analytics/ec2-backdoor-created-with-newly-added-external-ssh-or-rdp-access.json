@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)"
+  ],
+  "attackers_goals": "Create a reliable backdoor as an EC2 instance reachable from the attacker's IP address. Persistence relies on logging into the instance to obtain its instance-profile credentials and pivot into the AWS account. This requires the instance to be externally reachable over SSH or RDP and to have a public IP address.",
+  "deduplication_period": "1 Day",
+  "description": "EC2 instance created with an administrator instance profile and a newly added external SSH or RDP access.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Identify the instance profile used and which security groups were modified to allow external access. Analyze the identity that created the EC2 instance and instance profile, and any other actions it performed. Correlate with other suspicious activity from the instance profile or originating from the instance IP.",
+  "name": "EC2 backdoor created with newly added external SSH or RDP access",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "High",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "EC2 backdoor created with a newly added external SSH or RDP access by a rarely used identity",
+      "severity": "High",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)"
+      ],
+      "description": "EC2 instance created with an administrator instance profile and a newly added external SSH or RDP access.",
+      "attackers_goals": "Create a reliable backdoor as an EC2 instance reachable from the attacker's IP address. Persistence relies on logging into the instance to obtain its instance-profile credentials and pivot into the AWS account. This requires the instance to be externally reachable over SSH or RDP and to have a public IP address.",
+      "investigative_actions": "Identify the instance profile used and which security groups were modified to allow external access. Analyze the identity that created the EC2 instance and instance profile, and any other actions it performed. Correlate with other suspicious activity from the instance profile or originating from the instance IP."
+    }
+  ]
+}

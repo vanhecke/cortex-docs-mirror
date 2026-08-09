@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Network Share Discovery (T1135)"
+  ],
+  "attackers_goals": "Exfiltrate or hide sensitive data.",
+  "deduplication_period": "1 Day",
+  "description": "An adversary might use known tools to discover SMB shares within the compromised network.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the action was done using an automation service. Check if there are any other suspicious activities originated from the same machine/executing user.",
+  "name": "Linux network share discovery",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

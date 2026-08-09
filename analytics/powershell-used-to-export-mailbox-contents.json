@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data Staged: Local Data Staging (T1074.001)"
+  ],
+  "attackers_goals": "Export the content of a mailbox, preparing for data exfiltration.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker may use PowerShell to export the contents of a mailbox as part of the data staging before exfiltration.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Examine the PowerShell command to identify which mailbox has been exported. Verify that this command was executed by a trusted source.",
+  "name": "PowerShell used to export mailbox contents",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

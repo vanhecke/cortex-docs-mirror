@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "OS Credential Dumping: Proc Filesystem (T1003.007)"
+  ],
+  "attackers_goals": "Read another process memory, mainly for credential access.",
+  "deduplication_period": "1 Day",
+  "description": "Copy a process memory file using the dd utility.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Copy a process memory file",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "High",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Copy a process memory file from a Kubernetes pod",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping: Proc Filesystem (T1003.007)"
+      ],
+      "description": "Copy a process memory file using the dd utility.",
+      "attackers_goals": "Read another process memory, mainly for credential access.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

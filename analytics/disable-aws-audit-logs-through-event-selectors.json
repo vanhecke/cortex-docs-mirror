@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+  ],
+  "attackers_goals": "Evade detection by filtering out audit logs.",
+  "deduplication_period": "1 Day",
+  "description": "An AWS Cloudtrail Event Selector was modified. An attacker might use this technique to disable audit logs.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Review the new event selector policy. Check The cloud identity activity prior/after to the event selectors policy modification.",
+  "name": "Disable AWS audit logs through Event Selectors",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

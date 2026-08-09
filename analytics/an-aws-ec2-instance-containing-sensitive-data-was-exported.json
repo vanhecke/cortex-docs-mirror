@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "An attack may exfiltrate data from an EC2 instance to an S3 bucket outside the account.",
+  "deduplication_period": "3 Days",
+  "description": "A EC2 instance was exported to an S3 bucket. The instance was found to contain sensitive data.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Stealth Tactics, Data Detection & Response",
+  "investigative_actions": "Check the identity that exported the instance. Check to which S3 bucket the EC2 was exported into. Check the S3 bucket permission and policy.",
+  "name": "An AWS EC2 instance containing sensitive data was exported",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Account Access Removal (T1531)"
+  ],
+  "attackers_goals": "An attacker may interrupt the availability of an account, this may revoke access to the account.",
+  "deduplication_period": "1 Day",
+  "description": "An AWS IAM resource group was deleted, this action may affect the permissions of the members of the deleted group.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check what members were affected by this action.",
+  "name": "AWS IAM resource group deletion",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

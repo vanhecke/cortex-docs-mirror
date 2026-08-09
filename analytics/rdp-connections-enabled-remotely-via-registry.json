@@ -1,0 +1,50 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Services: Remote Desktop Protocol (T1021.001)"
+  ],
+  "attackers_goals": "Remotely enable RDP on the host for lateral movement.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker may remotely enable RDP connections to a machine by setting the fDenyTSConnections Registry key to 0.",
+  "detection_modules": "",
+  "detector_tags": "Enhanced RDP Analytics",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Search for RDP sessions to this host and investigate them for malicious activities.",
+  "name": "RDP connections enabled remotely via Registry",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "RDP connections enabled by a remote process via Registry",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)"
+      ],
+      "description": "An attacker may remotely enable RDP connections to a machine by setting the fDenyTSConnections Registry key to 0.",
+      "attackers_goals": "Remotely enable RDP on the host for lateral movement.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Search for RDP sessions to this host and investigate them for malicious activities."
+    },
+    {
+      "name": "RDP connections enabled remotely via Registry using WinRM",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)",
+        "Remote Services: Windows Remote Management (T1021.006)"
+      ],
+      "description": "An attacker may remotely enable RDP connections to a machine by setting the fDenyTSConnections Registry key to 0.",
+      "attackers_goals": "Remotely enable RDP on the host for lateral movement.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Search for RDP sessions to this host and investigate them for malicious activities."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)",
+    "Brute Force: Password Cracking (T1110.002)"
+  ],
+  "attackers_goals": "Exfiltrate data by sharing a link to a file-sharing service with external recipients, bypassing attachment inspection and potentially evading visibility controls.",
+  "deduplication_period": "1 Hour 30 Minutes",
+  "description": "Identifies outbound emails that include links to file-sharing services sent externally.",
+  "detection_modules": "Email",
+  "detector_tags": "Exfiltration",
+  "investigative_actions": "Review the shared URL to determine if the file is publicly accessible or shared outside the organization. Check if the file-sharing domain has been previously used by this sender or others in the organization. Investigate recent outbound emails for similar use of file-sharing services or unusual external recipients.",
+  "name": "Outbound email contains file-sharing service link sent to external recipient",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Outbound email to external recipient(s) uses first-seen for organization file-sharing service",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)",
+        "Brute Force: Password Cracking (T1110.002)"
+      ],
+      "description": "Identifies outbound emails that include links to file-sharing services sent externally.",
+      "attackers_goals": "Exfiltrate data by sharing a link to a file-sharing service with external recipients, bypassing attachment inspection and potentially evading visibility controls.",
+      "investigative_actions": "Review the shared URL to determine if the file is publicly accessible or shared outside the organization. Check if the file-sharing domain has been previously used by this sender or others in the organization. Investigate recent outbound emails for similar use of file-sharing services or unusual external recipients."
+    },
+    {
+      "name": "Outbound email to external recipient(s) uses first-seen for sender file-sharing service",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)",
+        "Brute Force: Password Cracking (T1110.002)"
+      ],
+      "description": "Identifies outbound emails that include links to file-sharing services sent externally.",
+      "attackers_goals": "Exfiltrate data by sharing a link to a file-sharing service with external recipients, bypassing attachment inspection and potentially evading visibility controls.",
+      "investigative_actions": "Review the shared URL to determine if the file is publicly accessible or shared outside the organization. Check if the file-sharing domain has been previously used by this sender or others in the organization. Investigate recent outbound emails for similar use of file-sharing services or unusual external recipients."
+    }
+  ]
+}

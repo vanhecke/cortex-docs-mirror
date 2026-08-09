@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Exploitation for Privilege Escalation (T1068)"
+  ],
+  "attackers_goals": "The attacker may gain higher privileges via exploitation of sudoedit.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual amount of sudoedit commands executed in a short period of time. This may indicate an attempt to exploit CVE-2021-3156.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify that the current version of sudo in not vulnerable to CVE-2021-3156.",
+  "name": "Sudoedit Brute force attempt",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "1 Hour",
+  "variations": []
+}

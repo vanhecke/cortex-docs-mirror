@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Email Collection (T1114)"
+  ],
+  "attackers_goals": "Trick the user into interacting with a malicious email by disguising it as legitimate, potentially leading to credential theft, malware infection, or data exfiltration.",
+  "deduplication_period": "1 Hour",
+  "description": "An email reported by the user or administrator as a phishing attempt has been detected.",
+  "detection_modules": "Email",
+  "detector_tags": "",
+  "investigative_actions": "Analyze the sender's IP address and domain reputation. Check if the sender has appeared in other logs or alerts across the organization. Review any URLs or attachments for signs of phishing, malware, or command-and-control communication. Correlate user actions (e.g., link clicks, file downloads) to assess potential compromise. Determine whether similar emails were sent to other users to identify a broader campaign.",
+  "name": "SAAS - Email was reported by the user or administrator as a phishing attempt",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "SAAS - Phishing report with suspicious verdict on internal domain sender",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Email Collection (T1114)"
+      ],
+      "description": "An email with an internal sender domain was reported as a phishing attempt.This may indicate either a compromised internal account or an external attacker impersonating an internal user.",
+      "attackers_goals": "Trick the user into interacting with a malicious email by disguising it as legitimate, potentially leading to credential theft, malware infection, or data exfiltration.",
+      "investigative_actions": "Analyze the sender's IP address and domain reputation. Check if the sender has appeared in other logs or alerts across the organization. Review any URLs or attachments for signs of phishing, malware, or command-and-control communication. Correlate user actions (e.g., link clicks, file downloads) to assess potential compromise. Determine whether similar emails were sent to other users to identify a broader campaign."
+    },
+    {
+      "name": "SAAS - Phishing report with with suspicious verdict",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Email Collection (T1114)"
+      ],
+      "description": "An email with a Malware/Block verdict reported by the user or administrator has been detected.",
+      "attackers_goals": "Trick the user into interacting with a malicious email by disguising it as legitimate, potentially leading to credential theft, malware infection, or data exfiltration.",
+      "investigative_actions": "Analyze the sender's IP address and domain reputation. Check if the sender has appeared in other logs or alerts across the organization. Review any URLs or attachments for signs of phishing, malware, or command-and-control communication. Correlate user actions (e.g., link clicks, file downloads) to assess potential compromise. Determine whether similar emails were sent to other users to identify a broader campaign."
+    }
+  ]
+}

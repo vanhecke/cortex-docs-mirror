@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)"
+  ],
+  "attackers_goals": "Attackers attempt to obtain full control privileges and then move laterally.",
+  "deduplication_period": "1 Day",
+  "description": "A user modified the AdminSDHolder ACL, which may be an indication of a privilege escalation attack.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check if a new user was added to the AdminSDHolder object. Check if a suspicious user account was recently created. Check if a user was added to a privileged group (e.g. Domain Admins). Investigate any other potentially suspicious behavior from the compromised user. Search for actions that may trigger SDProp, such as modifying the registry or executing an LDAP query.",
+  "name": "Suspicious modification of the AdminSDHolder's ACL",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

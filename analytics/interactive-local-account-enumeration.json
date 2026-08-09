@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Account Discovery (T1087)",
+    "Brute Force (T1110)"
+  ],
+  "attackers_goals": "Discover valid accounts to gain credentials.",
+  "deduplication_period": "1 Day",
+  "description": "Multiple non-existing accounts attempted interactive local logins to a host within a short period. This may indicate that an attacker has physical access to the host and is trying to enumerate accounts.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check if the login attempts were part of a legitimate misunderstanding of the system or part of an attack.",
+  "name": "Interactive local account enumeration",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "1 Hour",
+  "variations": []
+}

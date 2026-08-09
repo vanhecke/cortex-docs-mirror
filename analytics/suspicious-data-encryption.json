@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Data Encrypted for Impact (T1486)",
+    "Obfuscated Files or Information: Encrypted/Encoded File (T1027.013)"
+  ],
+  "attackers_goals": "Damage or hide data on the local file system.",
+  "deduplication_period": "1 Day",
+  "description": "Known applications were used to encrypt data within a machine's local file system.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the action was done using an automation service. Check if there are any other suspicious activities originated from the same machine/executing user.",
+  "name": "Suspicious data encryption",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

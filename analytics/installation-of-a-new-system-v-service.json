@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Create or Modify System Process: Systemd Service (T1543.002)"
+  ],
+  "attackers_goals": "Attackers may create systemd services to run malicious payloads.",
+  "deduplication_period": "1 Day",
+  "description": "Installation of a new System-V service.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Installation of a new System-V service",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Installation of a new System-V service in a Kubernetes pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Create or Modify System Process: Systemd Service (T1543.002)"
+      ],
+      "description": "Installation of a new System-V service.",
+      "attackers_goals": "Attackers may create systemd services to run malicious payloads.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

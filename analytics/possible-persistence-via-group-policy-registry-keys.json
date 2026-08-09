@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder (T1547.001)"
+  ],
+  "attackers_goals": "Establish persistence on the host using Windows Group Policy mechanisms.",
+  "deduplication_period": "1 Day",
+  "description": "Group Policy registry keys were read during system startup. This behavior may indicate a persistence mechanism that triggers on reboot to execute malicious code.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Inspect the registry keys and determine which process or command is configured to run. Verify whether the executing process is benign and expected as part of normal system behavior.",
+  "name": "Possible Persistence via group policy Registry keys",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

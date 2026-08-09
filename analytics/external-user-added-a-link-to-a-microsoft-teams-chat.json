@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+  "deduplication_period": "1 Day",
+  "description": "An external user added a link to a Microsoft Teams chat.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Microsoft Teams",
+  "investigative_actions": "Confirm that the external tenant and user are authorized to share links or files with users in the organization. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that have been sent in the conversation. Evaluate the external domain reputation. Review past communication from the external user. Follow further actions done by the account.",
+  "name": "External user added a link to a Microsoft Teams chat",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "An external user sent a link via Microsoft Teams with suspicious parameters",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "An external user sent a link with suspicious parameters in a Microsoft Teams conversation.",
+      "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+      "investigative_actions": "Confirm that the external tenant and user are authorized to share links or files with users in the organization. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that have been sent in the conversation. Evaluate the external domain reputation. Review past communication from the external user. Follow further actions done by the account."
+    }
+  ]
+}

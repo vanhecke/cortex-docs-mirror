@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "The attacker's goal is to gain unauthorized access to sensitive information or resources and to gain control over the locked account.",
+  "deduplication_period": "3 Hours",
+  "description": "Okta user account was unlocked.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Okta Audit Analytics",
+  "investigative_actions": "Monitor the user account for indications of compromise, such as irregular login patterns or atypical activities. Examine the user's actions preceding and following the activation of the alert. Initiate contact with the user to verify the authenticity of the account unlock action. Check account the user successfully authenticated after the event. Continue monitoring the account for any subsequent actions that may indicate suspicious behavior.",
+  "name": "Okta account unlock",
+  "required_data": [
+    "Okta Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Okta account unlock with suspicious characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "Okta user account was unlocked.",
+      "attackers_goals": "The attacker's goal is to gain unauthorized access to sensitive information or resources and to gain control over the locked account.",
+      "investigative_actions": "Monitor the user account for indications of compromise, such as irregular login patterns or atypical activities. Examine the user's actions preceding and following the activation of the alert. Initiate contact with the user to verify the authenticity of the account unlock action. Check account the user successfully authenticated after the event. Continue monitoring the account for any subsequent actions that may indicate suspicious behavior."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation: Additional Email Delegate Permissions (T1098.002)"
+  ],
+  "attackers_goals": "An attacker may add permissions to a mailbox folder for persistence reasons. For instance, an attacker may assign the Default or Anonymous user permissions. This will allow them to maintain persistent access to the mailbox folder, which may lead to exfiltration of the messages.",
+  "deduplication_period": "1 Day",
+  "description": "A user modified permissions to an Exchange mailbox folder.",
+  "detection_modules": "Identity Threat Module, Email",
+  "detector_tags": "",
+  "investigative_actions": "Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Investigate the IP address associated with the activity. Follow further actions done by the account. Look for unusual email patterns from the affected mailbox (e.g. unusual email contents). Check for abnormal Azure AD non-interactive logins by the user. Monitor for changes that may indicate excessively broad permissions.",
+  "name": "Exchange mailbox folder permission modification",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Exchange mailbox folder permission modification for a default user",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: Additional Email Delegate Permissions (T1098.002)"
+      ],
+      "description": "A user modified permissions to an Exchange mailbox folder. The user granted the permission is a default user, which effectively grants the permission to any user.",
+      "attackers_goals": "An attacker may add permissions to a mailbox folder for persistence reasons. For instance, an attacker may assign the Default or Anonymous user permissions. This will allow them to maintain persistent access to the mailbox folder, which may lead to exfiltration of the messages.",
+      "investigative_actions": "Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Investigate the IP address associated with the activity. Follow further actions done by the account. Look for unusual email patterns from the affected mailbox (e.g. unusual email contents). Check for abnormal Azure AD non-interactive logins by the user. Monitor for changes that may indicate excessively broad permissions."
+    }
+  ]
+}

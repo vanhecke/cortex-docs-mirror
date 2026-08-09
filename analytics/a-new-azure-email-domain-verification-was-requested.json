@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Resource Development (TA0042)"
+  ],
+  "attack_techniques": [
+    "Compromise Accounts: Email Accounts (T1586.002)"
+  ],
+  "attackers_goals": "Use an existing domain to launch phishing attacks from your environment.",
+  "deduplication_period": "5 Days",
+  "description": "A new Azure email domain verification was requested.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check if you recognize the added email domain.",
+  "name": "A new Azure email domain verification was requested",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A new Azure email domain verification was requested by an unusual identity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Compromise Accounts: Email Accounts (T1586.002)"
+      ],
+      "description": "A new Azure email domain verification was requested. The identity was not seen performing operations on this resource type in the last 30 days.",
+      "attackers_goals": "Use an existing domain to launch phishing attacks from your environment.",
+      "investigative_actions": "Check if you recognize the added email domain."
+    }
+  ]
+}

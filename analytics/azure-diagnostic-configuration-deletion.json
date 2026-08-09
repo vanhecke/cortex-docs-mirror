@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)",
+    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+  ],
+  "attackers_goals": "Evade detection.",
+  "deduplication_period": "3 Hours",
+  "description": "An attacker might delete the Azure diagnostic settings to evade detection.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the identity and its actions after the deletion action.",
+  "name": "Azure diagnostic configuration deletion",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

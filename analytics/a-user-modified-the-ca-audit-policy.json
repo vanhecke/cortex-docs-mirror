@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable Windows Event Logging (T1562.002)"
+  ],
+  "attackers_goals": "An attacker is attempting to cover their tracks before an AD CS attack.",
+  "deduplication_period": "1 Day",
+  "description": "A user modified the CA audit policy. This may indicate that an attacker is attempting to cover their tracks before an AD CS attack.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Active Directory Certificate Services Analytics",
+  "investigative_actions": "Check the user account modifying the CA audit policy and verify its activity. Review AD CS logs to identify any unauthorized certificate issuances, modifications, or template changes. Examine recent activity from the user account, including logon patterns and privilege changes. Continue monitoring the account for any subsequent actions that may indicate suspicious behavior.",
+  "name": "A user modified the CA audit policy",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

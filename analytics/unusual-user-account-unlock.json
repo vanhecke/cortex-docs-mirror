@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "An attacker may unlock a user account to gain unauthorized access.",
+  "deduplication_period": "1 Day",
+  "description": "A user unlocked an account. This user does not usually unlock user accounts.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the associated authentication attempts and login failures (e.g. 4625, 4776 events). Check if the user is authorized to unlock accounts. Confirm that the user unlock was expected. Monitor services that may be running with a user's credentials, resulting in lockouts.",
+  "name": "Unusual user account unlock",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual sensitive user account unlock",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A user unlocked a sensitive account. This user does not usually unlock user accounts.",
+      "attackers_goals": "An attacker may unlock a user account to gain unauthorized access.",
+      "investigative_actions": "Investigate the associated authentication attempts and login failures (e.g. 4625, 4776 events). Check if the user is authorized to unlock accounts. Confirm that the user unlock was expected. Monitor services that may be running with a user's credentials, resulting in lockouts."
+    }
+  ]
+}

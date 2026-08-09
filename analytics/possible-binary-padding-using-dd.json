@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Obfuscated Files or Information: Binary Padding (T1027.001)"
+  ],
+  "attackers_goals": "An adversary may use binary padding to avoid hash-based blacklists and static antivirus signatures.",
+  "deduplication_period": "1 Hour",
+  "description": "A suspicious dd command ran and added data to a binary. This may indicate binary padding to change the hash of a file.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check the padded file and try to understand the impact of padding this specific binary.",
+  "name": "Possible binary padding using dd",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

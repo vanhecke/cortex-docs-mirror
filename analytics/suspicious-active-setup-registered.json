@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Boot or Logon Autostart Execution: Active Setup (T1547.014)"
+  ],
+  "attackers_goals": "Gain persistence using the legitimate windows active setup mechanism, which executes binary on system startup.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint registered a new active setup, which may be used to gain persistence on the host by loading libraries into the time management service.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify if the registered binary is malicious. Check if the installing software is a malicious binary.",
+  "name": "Suspicious active setup registered",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

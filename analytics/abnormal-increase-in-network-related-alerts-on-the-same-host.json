@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)"
+  ],
+  "attackers_goals": "Execute multiple covert actions to circumvent detection.",
+  "deduplication_period": "1 Day",
+  "description": "Abnormal increase in network-related alerts on the same host.",
+  "detection_modules": "",
+  "detector_tags": "NDR Insights Analytics",
+  "investigative_actions": "Investigate the source of all the linked alerts.",
+  "name": "Abnormal increase in network-related alerts on the same host",
+  "required_data": [
+    "Palo Alto Networks Platform Alerts",
+    "Third-Party Alerts"
+  ],
+  "severity": "Low",
+  "test_period": "1 Day",
+  "variations": []
+}

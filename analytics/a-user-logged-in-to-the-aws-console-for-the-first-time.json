@@ -1,0 +1,44 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Persistence (TA0003)",
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Cloud Accounts (T1078.004)",
+    "Account Manipulation: Additional Cloud Credentials (T1098.001)",
+    "Remote Services: Cloud Services (T1021.007)"
+  ],
+  "attackers_goals": "Evading detections by performing direct operations using the AWS console. Performing non-automatic operations easily.",
+  "deduplication_period": "5 Days",
+  "description": "A user logged in to the AWS console for the first time.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check if the identity is an AWS identity. Investigate which operations were performed by the identity.",
+  "name": "A user logged in to the AWS console for the first time",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A non-user identity logged in to the AWS console for the first time",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Persistence (TA0003)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Cloud Accounts (T1078.004)",
+        "Account Manipulation: Additional Cloud Credentials (T1098.001)",
+        "Remote Services: Cloud Services (T1021.007)"
+      ],
+      "description": "A non-user identity logged in to the AWS console for the first time.",
+      "attackers_goals": "Evading detections by performing direct operations using the AWS console. Performing non-automatic operations easily.",
+      "investigative_actions": "Check if the identity is an AWS identity. Investigate which operations were performed by the identity."
+    }
+  ]
+}

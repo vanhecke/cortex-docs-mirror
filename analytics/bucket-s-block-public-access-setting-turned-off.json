@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "Expose bucket to the public and maintain access to bucket's resources avoiding detection.",
+  "deduplication_period": "1 Day",
+  "description": "S3 bucket block public access setting turned off.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Data Detection & Response",
+  "investigative_actions": "Check if {cloud_best_identity_match} intended to modify block public access settings. Check if the {bucket_name} bucket contains any sensitive information.",
+  "name": "Bucket's block public access setting turned off",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

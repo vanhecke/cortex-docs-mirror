@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Boot or Logon Autostart Execution: Kernel Modules and Extensions (T1547.006)"
+  ],
+  "attackers_goals": "Adversaries can use this technique to execute arbitrary commands once the machine boots.",
+  "deduplication_period": "1 Day",
+  "description": "Udev driver rule was modified with unusual pattern, might be used by adversaries to backdoor existing drivers.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the action was done using an automation service. Check the rule modification content and look for any suspicious payloads. Check if there are any other suspicious activities originated from the same machine/executing user.",
+  "name": "Suspicious Udev driver rule execution manipulation",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual Udev driver rule execution manipulation",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Boot or Logon Autostart Execution: Kernel Modules and Extensions (T1547.006)"
+      ],
+      "description": "Udev driver rule was modified with unusual pattern, might be used by adversaries to backdoor existing drivers.",
+      "attackers_goals": "Adversaries can use this technique to execute arbitrary commands once the machine boots.",
+      "investigative_actions": "Check if the action was done using an automation service. Check the rule modification content and look for any suspicious payloads. Check if there are any other suspicious activities originated from the same machine/executing user."
+    }
+  ]
+}

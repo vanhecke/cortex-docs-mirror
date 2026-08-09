@@ -1,0 +1,58 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)",
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Email Collection: Email Forwarding Rule (T1114.003)",
+    "Automated Exfiltration (T1020)",
+    "Email Collection (T1114)"
+  ],
+  "attackers_goals": "Leverage a compromised user account to modify a mailbox's settings to forward emails to an external recipient and collect sensitive information.",
+  "deduplication_period": "1 Day",
+  "description": "A user configured Exchange SMTP forwarding on a mailbox, which forwards all emails sent to that mailbox to a specified recipient.",
+  "detection_modules": "Identity Threat Module, Email",
+  "detector_tags": "",
+  "investigative_actions": "Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the forwarding domain is an unknown external domain. Investigate the IP address associated with the rule. Follow further actions done by the account.",
+  "name": "Exchange user mailbox forwarding",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Exchange user mailbox forwarding by a delegate user",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Email Collection: Email Forwarding Rule (T1114.003)",
+        "Automated Exfiltration (T1020)",
+        "Email Collection (T1114)"
+      ],
+      "description": "A user configured Exchange SMTP forwarding on a mailbox, which forwards all emails sent to that mailbox to a specified recipient. The user who set the forwarding is a delegated user, who performed this action on behalf of another user.",
+      "attackers_goals": "Leverage a compromised user account to modify a mailbox's settings to forward emails to an external recipient and collect sensitive information.",
+      "investigative_actions": "Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the forwarding domain is an unknown external domain. Investigate the IP address associated with the rule. Follow further actions done by the account."
+    },
+    {
+      "name": "Suspicious Exchange user mailbox forwarding",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Email Collection: Email Forwarding Rule (T1114.003)",
+        "Automated Exfiltration (T1020)",
+        "Email Collection (T1114)"
+      ],
+      "description": "A user configured Exchange SMTP forwarding on a mailbox, which forwards all emails sent to that mailbox to a specified recipient.",
+      "attackers_goals": "Leverage a compromised user account to modify a mailbox's settings to forward emails to an external recipient and collect sensitive information.",
+      "investigative_actions": "Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the forwarding domain is an unknown external domain. Investigate the IP address associated with the rule. Follow further actions done by the account."
+    }
+  ]
+}

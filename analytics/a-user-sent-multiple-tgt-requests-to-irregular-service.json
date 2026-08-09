@@ -1,0 +1,50 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Steal or Forge Kerberos Tickets: Kerberoasting (T1558.003)"
+  ],
+  "attackers_goals": "Crack account credentials by obtaining an easy-to-crack Kerberos ticket.",
+  "deduplication_period": "1 Day",
+  "description": "A user sent multiple TGT requests to services other than KRBTGT and KADMIN. This is typically a sign of a Kerberoasting attack.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check who used the host at the time of the alert, to rule out a benign service or tool requesting weak Kerberos encryption.",
+  "name": "A user sent multiple TGT requests to irregular service",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "A user sent an excessive number of TGT requests to irregular services",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal or Forge Kerberos Tickets: Kerberoasting (T1558.003)"
+      ],
+      "description": "A user sent multiple TGT requests to services other than KRBTGT and KADMIN. This is typically a sign of a Kerberoasting attack.",
+      "attackers_goals": "Crack account credentials by obtaining an easy-to-crack Kerberos ticket.",
+      "investigative_actions": "Check who used the host at the time of the alert, to rule out a benign service or tool requesting weak Kerberos encryption."
+    },
+    {
+      "name": "A user sent a TGT request to irregular service",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal or Forge Kerberos Tickets: Kerberoasting (T1558.003)"
+      ],
+      "description": "A user sent a TGT request to a service other than KRBTGT and KADMIN. This might indicate an attempt to perform a Kerberoasting attack.",
+      "attackers_goals": "Crack account credentials by obtaining an easy-to-crack Kerberos ticket.",
+      "investigative_actions": "Check who used the host at the time of the alert, to rule out a benign service or tool requesting weak Kerberos encryption."
+    }
+  ]
+}

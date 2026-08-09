@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)"
+  ],
+  "attackers_goals": "Persistence using a valid account.",
+  "deduplication_period": "1 Day",
+  "description": "Azure Automation Webhook can be used to pass a payload with specific attributes to run a malicious Runbook.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the identity actions prior/after the webhook creation.* Find which Runbook was executed using the webhook.",
+  "name": "Azure Automation Webhook creation",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

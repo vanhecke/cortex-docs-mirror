@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "An attacker may attempt to gain unauthorized access to the account.",
+  "deduplication_period": "1 Day",
+  "description": "A user has flagged an MFA request as suspicious in Microsoft Entra ID. This could indicate a potential compromised user account or unauthorized access attempt.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check if the authentication attempt was legitimate. Investigate any recent unusual login behavior or IP addresses associated with the account. Verify whether the user has recently changed their authentication methods or account settings. Follow the account for possible suspicious or unusual logins.",
+  "name": "Suspicious MFA request reported by user in Entra ID",
+  "required_data": [
+    "AzureAD Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious MFA request reported by a sensitive user in Entra ID",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A user has flagged an MFA request as suspicious in Microsoft Entra ID. This could indicate a potential compromised user account or unauthorized access attempt.",
+      "attackers_goals": "An attacker may attempt to gain unauthorized access to the account.",
+      "investigative_actions": "Check if the authentication attempt was legitimate. Investigate any recent unusual login behavior or IP addresses associated with the account. Verify whether the user has recently changed their authentication methods or account settings. Follow the account for possible suspicious or unusual logins."
+    }
+  ]
+}

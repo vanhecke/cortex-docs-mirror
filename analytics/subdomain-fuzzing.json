@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Reconnaissance (TA0043)"
+  ],
+  "attack_techniques": [
+    "Active Scanning: Wordlist Scanning (T1595.003)"
+  ],
+  "attackers_goals": "Scan a known external facing asset to gain knowledge about the organization.",
+  "deduplication_period": "1 Day",
+  "description": "The root domain within the network is experiencing an unusually high number of access requests to its subdomains, significantly exceeding the typical activity levels for that domain. This anomaly could suggest that someone is attempting to enumerate subdomains or uncover additional virtual hosts associated with the domain, possibly as part of a reconnaissance effort to identify vulnerable or less-secured entry points into the network.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify that the domain doesn't host numerous subdomains. Verify that the source of the scan is not a known external scanner.",
+  "name": "Subdomain Fuzzing",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "20 Minutes",
+  "variations": [
+    {
+      "name": "Subdomain Fuzzing To a Rare Destination",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Reconnaissance (TA0043)"
+      ],
+      "attack_techniques": [
+        "Active Scanning: Wordlist Scanning (T1595.003)"
+      ],
+      "description": "The root domain within the network is experiencing an unusually high number of access requests to its subdomains, significantly exceeding the typical activity levels for that domain. This anomaly could suggest that someone is attempting to enumerate subdomains or uncover additional virtual hosts associated with the domain, possibly as part of a reconnaissance effort to identify vulnerable or less-secured entry points into the network.",
+      "attackers_goals": "Scan a known external facing asset to gain knowledge about the organization.",
+      "investigative_actions": "Verify that the domain doesn't host numerous subdomains. Verify that the source of the scan is not a known external scanner."
+    }
+  ]
+}

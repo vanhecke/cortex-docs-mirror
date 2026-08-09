@@ -1,0 +1,114 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify System Firewall (T1562.004)"
+  ],
+  "attackers_goals": "Adding or deleting system firewalls rules to avoid possible detection.",
+  "deduplication_period": "1 Day",
+  "description": "The iptables process was executed with a command to add or delete rules on the host.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands.",
+  "name": "Iptables configuration command was executed",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Rare iptables port forward command was executed",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify System Firewall (T1562.004)"
+      ],
+      "description": "An iptables command was executed to perform port forward, This command is unpopular.",
+      "attackers_goals": "Adding or deleting system firewalls rules to avoid possible detection.",
+      "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands."
+    },
+    {
+      "name": "Uncommon iptables port forward command was executed on the host",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify System Firewall (T1562.004)"
+      ],
+      "description": "An iptables command was executed to perform port forward, This command is uncommon for the host.",
+      "attackers_goals": "Adding or deleting system firewalls rules to avoid possible detection.",
+      "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands."
+    },
+    {
+      "name": "Rare iptables delete command was executed",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify System Firewall (T1562.004)"
+      ],
+      "description": "An iptables command was executed to delete rule, This command is unpopular.",
+      "attackers_goals": "Adding or deleting system firewalls rules to avoid possible detection.",
+      "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands."
+    },
+    {
+      "name": "A rare iptables delete command was executed on the host",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify System Firewall (T1562.004)"
+      ],
+      "description": "An iptables command was executed to delete rule, This command is uncommon for the host.",
+      "attackers_goals": "Adding or deleting system firewalls rules to avoid possible detection.",
+      "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands."
+    },
+    {
+      "name": "A rare iptables flush all command was executed",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify System Firewall (T1562.004)"
+      ],
+      "description": "An iptables command was executed to flush all rules, This command is unpopular.",
+      "attackers_goals": "Adding or deleting system firewalls rules to avoid possible detection.",
+      "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands."
+    },
+    {
+      "name": "A rare iptables flush command was executed",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify System Firewall (T1562.004)"
+      ],
+      "description": "An iptables command was executed to flush all rules, This command is unpopular.",
+      "attackers_goals": "Adding or deleting system firewalls rules to avoid possible detection.",
+      "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands."
+    },
+    {
+      "name": "A rare iptables flush command was executed on the host",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify System Firewall (T1562.004)"
+      ],
+      "description": "An iptables command was executed to flush rules, This command is uncommon for the host.",
+      "attackers_goals": "Adding or deleting system firewalls rules to avoid possible detection.",
+      "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands."
+    }
+  ]
+}

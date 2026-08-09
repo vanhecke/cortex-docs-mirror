@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Boot or Logon Initialization Scripts: RC Scripts (T1037.004)"
+  ],
+  "attackers_goals": "Adversaries may establish persistence by modifying RC scripts, which are executed during a Unix-like system's startup.",
+  "deduplication_period": "1 Day",
+  "description": "A suspicious process modified an RC script file. These files allow system administrators to map and start custom services at startup for different run levels. This may be done to establish persistence.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Check the modified RC script file and try to understand the impact of the file modification.",
+  "name": "Suspicious process modified RC script file",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious process modified RC script file in a Kubernetes pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Boot or Logon Initialization Scripts: RC Scripts (T1037.004)"
+      ],
+      "description": "A suspicious process modified an RC script file. These files allow system administrators to map and start custom services at startup for different run levels. This may be done to establish persistence.",
+      "attackers_goals": "Adversaries may establish persistence by modifying RC scripts, which are executed during a Unix-like system's startup.",
+      "investigative_actions": "Check the modified RC script file and try to understand the impact of the file modification."
+    }
+  ]
+}

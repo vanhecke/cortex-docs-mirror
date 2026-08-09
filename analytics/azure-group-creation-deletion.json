@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)",
+    "Account Manipulation (T1098)"
+  ],
+  "attackers_goals": "Gain persistence to the environment.",
+  "deduplication_period": "5 Days",
+  "description": "A group in Azure was created or deleted.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Microsoft Graph Activity Logs",
+  "investigative_actions": "Check group's assigned roles. Check which members were added to the group.",
+  "name": "Azure group creation/deletion",
+  "required_data": [
+    "Azure Audit Log",
+    "Microsoft Graph Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

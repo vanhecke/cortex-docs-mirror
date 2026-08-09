@@ -1,0 +1,88 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+  "deduplication_period": "1 Day",
+  "description": "An external user started a Microsoft Teams conversation with users in the organization.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Microsoft Teams",
+  "investigative_actions": "Confirm that the tenant and user are authorized to start a conversation with users in the organization. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that might have been sent in the conversation. Check external domain reputation. Review past communication from the external user. Follow further actions done by the account.",
+  "name": "External user started a Microsoft Teams conversation",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "An external user started multiple conversations in Microsoft Teams with suspicious chat names",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "An external user started a Microsoft Teams conversation with users in the organization.",
+      "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+      "investigative_actions": "Confirm that the tenant and user are authorized to start a conversation with users in the organization. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that might have been sent in the conversation. Check external domain reputation. Review past communication from the external user. Follow further actions done by the account."
+    },
+    {
+      "name": "An external user started a conversation in Microsoft Teams with a suspicious user or chat name",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "An external user started a Microsoft Teams conversation with users in the organization.",
+      "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+      "investigative_actions": "Confirm that the tenant and user are authorized to start a conversation with users in the organization. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that might have been sent in the conversation. Check external domain reputation. Review past communication from the external user. Follow further actions done by the account."
+    },
+    {
+      "name": "An external user started multiple conversations in Microsoft Teams",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "An external user started a Microsoft Teams conversation with users in the organization.",
+      "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+      "investigative_actions": "Confirm that the tenant and user are authorized to start a conversation with users in the organization. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that might have been sent in the conversation. Check external domain reputation. Review past communication from the external user. Follow further actions done by the account."
+    },
+    {
+      "name": "External user started a Microsoft Teams conversation and sent a message",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "An external user started a Microsoft Teams conversation with users in the organization.",
+      "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+      "investigative_actions": "Confirm that the tenant and user are authorized to start a conversation with users in the organization. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that might have been sent in the conversation. Check external domain reputation. Review past communication from the external user. Follow further actions done by the account."
+    },
+    {
+      "name": "An external user started conversations in Microsoft Teams with many internal users",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "An external user started a Microsoft Teams conversation with users in the organization.",
+      "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+      "investigative_actions": "Confirm that the tenant and user are authorized to start a conversation with users in the organization. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that might have been sent in the conversation. Check external domain reputation. Review past communication from the external user. Follow further actions done by the account."
+    }
+  ]
+}

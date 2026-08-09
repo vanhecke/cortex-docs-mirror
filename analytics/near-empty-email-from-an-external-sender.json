@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Reconnaissance (TA0043)"
+  ],
+  "attack_techniques": [
+    "Gather Victim Identity Information (T1589)"
+  ],
+  "attackers_goals": "Attackers send reconnaissance emails to explore an organization's email security by verifying email address validity and testing spam filter effectiveness. The gathered information enables them to craft more precise and effective attacks, such as phishing or business email compromise (BEC).",
+  "deduplication_period": "1 Day",
+  "description": "The email was sent from an external sender and contains minimal content. Near-empty emails from external sources are uncommon and may be used to bypass content-based detection or prompt user interaction without clear context.",
+  "detection_modules": "Email",
+  "detector_tags": "Reconnaissance",
+  "investigative_actions": "Check the content of the body and whether it has any relevance to the recipients. Check the email address for any unusual spellings. Check the email address for any missing letters. Verify the sender's address to confirm its legitimacy. Check for previous emails from the sender's address. Verify whether the sender's IP address has appeared in different log sources before.",
+  "name": "Near-empty email from an external sender",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Blank email with an inline attachment from an external sender",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Reconnaissance (TA0043)"
+      ],
+      "attack_techniques": [
+        "Gather Victim Identity Information (T1589)"
+      ],
+      "description": "This email was sent from an external sender and contains no readable message content, but includes an inline attachment. Empty emails with embedded content are often used to obscure the intent of the message and may be associated with phishing or malware delivery attempts.",
+      "attackers_goals": "Attackers send reconnaissance emails to explore an organization's email security by verifying email address validity and testing spam filter effectiveness. The gathered information enables them to craft more precise and effective attacks, such as phishing or business email compromise (BEC).",
+      "investigative_actions": "Check the content of the body and whether it has any relevance to the recipients. Check the email address for any unusual spellings. Check the email address for any missing letters. Verify the sender's address to confirm its legitimacy. Check for previous emails from the sender's address. Verify whether the sender's IP address has appeared in different log sources before."
+    },
+    {
+      "name": "Blank email with an attachment from an external sender",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Reconnaissance (TA0043)"
+      ],
+      "attack_techniques": [
+        "Gather Victim Identity Information (T1589)"
+      ],
+      "description": "The email was sent from an external sender and contains no message content while including an attachment. Attachment-only emails from external sources can be used to entice recipients into opening potentially malicious files without contextual information.",
+      "attackers_goals": "Attackers send reconnaissance emails to explore an organization's email security by verifying email address validity and testing spam filter effectiveness. The gathered information enables them to craft more precise and effective attacks, such as phishing or business email compromise (BEC).",
+      "investigative_actions": "Check the content of the body and whether it has any relevance to the recipients. Check the email address for any unusual spellings. Check the email address for any missing letters. Verify the sender's address to confirm its legitimacy. Check for previous emails from the sender's address. Verify whether the sender's IP address has appeared in different log sources before."
+    },
+    {
+      "name": "Empty email from an external sender",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Reconnaissance (TA0043)"
+      ],
+      "attack_techniques": [
+        "Gather Victim Identity Information (T1589)"
+      ],
+      "description": "The email was sent from an external sender and contains no subject or message content. While not always malicious, completely empty emails are unusual and may be part of reconnaissance, delivery testing, or social engineering activity.",
+      "attackers_goals": "Attackers send reconnaissance emails to explore an organization's email security by verifying email address validity and testing spam filter effectiveness. The gathered information enables them to craft more precise and effective attacks, such as phishing or business email compromise (BEC).",
+      "investigative_actions": "Check the content of the body and whether it has any relevance to the recipients. Check the email address for any unusual spellings. Check the email address for any missing letters. Verify the sender's address to confirm its legitimacy. Check for previous emails from the sender's address. Verify whether the sender's IP address has appeared in different log sources before."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: PowerShell (T1059.001)"
+  ],
+  "attackers_goals": "An attacker is attempting to run PowerShell without powershell.exe to evade detection.",
+  "deduplication_period": "1 Day",
+  "description": "An abnormal process accessed the PowerShell console history file. This may be a sign of malicious PowerShell execution without directly invoking the powershell.exe binary.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the process and command line executed and whether it's benign or normal for this host.",
+  "name": "Unusual process accessed the PowerShell history file",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

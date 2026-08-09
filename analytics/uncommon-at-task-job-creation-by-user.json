@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Scheduled Task/Job: At (T1053.002)"
+  ],
+  "attackers_goals": "Attackers may use at task-jobs for persistence or executing malicious files.",
+  "deduplication_period": "1 Day",
+  "description": "An unpopular AT task-job was created by a user.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check the AT job task for suspicious activity.",
+  "name": "Uncommon AT task-job creation by user",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon AT task-job creation by user from a web server process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job: At (T1053.002)"
+      ],
+      "description": "A web process used the AT command to create a new AT task-job.",
+      "attackers_goals": "Attackers may use at task-jobs for persistence or executing malicious files.",
+      "investigative_actions": "Check the AT job task for suspicious activity."
+    },
+    {
+      "name": "Uncommon AT task-job creation by user from unpopular process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job: At (T1053.002)"
+      ],
+      "description": "An unpopular process created an AT task-job on the host, which is not popular in the organization.",
+      "attackers_goals": "Attackers may use at task-jobs for persistence or executing malicious files.",
+      "investigative_actions": "Check the AT job task for suspicious activity."
+    }
+  ]
+}

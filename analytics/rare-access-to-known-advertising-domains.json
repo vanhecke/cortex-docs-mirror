@@ -1,0 +1,56 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol (T1071)",
+    "Software Extensions: Browser Extensions (T1176.001)"
+  ],
+  "attackers_goals": "Causing the user to view excessive advertising content.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint performed many connections to unpopular advertising domains. This could indicate the presence of adware on the endpoint.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the infected machine and search for suspicious browser extensions, see if changes were made to the homepage or if the browser is slower than usual, check whether sites that do not have ads usually, display ads when accessed from the possibly infected endpoint. Search for suspicious redirections or proxy configuration on the infected machine. Search for a C&C communication.",
+  "name": "Rare access to known advertising domains",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Day",
+  "variations": [
+    {
+      "name": "Rare access to known advertising domains from a Rare User Agent",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Software Extensions: Browser Extensions (T1176.001)"
+      ],
+      "description": "The endpoint performed many connections to unpopular advertising domains from a rare user agent. This could indicate the presence of adware on the endpoint.",
+      "attackers_goals": "Causing the user to view excessive advertising content.",
+      "investigative_actions": "Investigate the infected machine and search for suspicious browser extensions, see if changes were made to the homepage or if the browser is slower than usual, check whether sites that do not have ads usually, display ads when accessed from the possibly infected endpoint. Search for suspicious redirections or proxy configuration on the infected machine. Search for a C&C communication."
+    },
+    {
+      "name": "Suspicious Rare access to known advertising domains",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Software Extensions: Browser Extensions (T1176.001)"
+      ],
+      "description": "The endpoint performed many connections to unpopular advertising domains. This could indicate the presence of adware on the endpoint.",
+      "attackers_goals": "Causing the user to view excessive advertising content.",
+      "investigative_actions": "Investigate the infected machine and search for suspicious browser extensions, see if changes were made to the homepage or if the browser is slower than usual, check whether sites that do not have ads usually, display ads when accessed from the possibly infected endpoint. Search for suspicious redirections or proxy configuration on the infected machine. Search for a C&C communication."
+    }
+  ]
+}

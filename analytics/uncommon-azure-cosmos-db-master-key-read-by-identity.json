@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Unsecured Credentials (T1552)"
+  ],
+  "attackers_goals": "Obtain Cosmos DB master keys to gain full access to the database, allowing data exfiltration, modification, or destruction.",
+  "deduplication_period": "1 Day",
+  "description": "A cloud identity read master keys from an Azure Cosmos DB account, which is uncommon for this identity.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the identity's actions before and after the key read operation. Verify whether the identity is authorized to access Cosmos DB master keys. Determine if the retrieved keys were used to access or modify data in the Cosmos DB account.",
+  "name": "Uncommon Azure Cosmos DB master key read by identity",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

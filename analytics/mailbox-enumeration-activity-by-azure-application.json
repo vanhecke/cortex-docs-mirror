@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Cloud Service Discovery (T1526)"
+  ],
+  "attackers_goals": "To extract sensitive information stored in mailboxes.",
+  "deduplication_period": "5 Days",
+  "description": "Microsoft Graph API was used to enumerate mailboxes in Azure tenant.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Microsoft Graph Activity Logs",
+  "investigative_actions": "Determine which mailboxes were enumerated and whether they contained any sensitive information. Investigate the identity following actions.",
+  "name": "Mailbox enumeration activity by Azure application",
+  "required_data": [
+    "Azure Audit Log",
+    "Microsoft Graph Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Mailbox enumeration activity by Azure user",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Cloud Service Discovery (T1526)"
+      ],
+      "description": "Microsoft Graph API was used by a user to enumerate mailboxes.",
+      "attackers_goals": "To extract sensitive information stored in mailboxes.",
+      "investigative_actions": "Determine which mailboxes were enumerated and whether they contained any sensitive information. Investigate the identity following actions."
+    }
+  ]
+}

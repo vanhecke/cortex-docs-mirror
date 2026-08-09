@@ -1,0 +1,41 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Create Account: Cloud Account (T1136.003)",
+    "Create Account (T1136)",
+    "Account Manipulation: Additional Cloud Credentials (T1098.001)"
+  ],
+  "attackers_goals": "Escalate privileges in cloud environments.",
+  "deduplication_period": "1 Day",
+  "description": "New cloud identity was created and assigned administrative policy.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Confirm whether this activity was intentional. Check for other API calls that were executed by the identity. Look for any suspicious behavior from the IAM user/role to whom the administrative policy was attached.",
+  "name": "New cloud identity created with administrative policy",
+  "required_data": [
+    "AWS Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Administrative IAM User Created with Credentials",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Create Account: Cloud Account (T1136.003)",
+        "Create Account (T1136)",
+        "Account Manipulation: Additional Cloud Credentials (T1098.001)"
+      ],
+      "description": "New cloud identity was created and assigned administrative policy.",
+      "attackers_goals": "Escalate privileges in cloud environments. Maintain persistence in cloud environments.",
+      "investigative_actions": "Confirm whether this activity was intentional. Check for other API calls that were executed by the identity. Look for any suspicious behavior from the IAM user/role to whom the administrative policy was attached. Examine what additional API calls were made by the identity or by the newly created access token."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "System Binary Proxy Execution: Rundll32 (T1218.011)"
+  ],
+  "attackers_goals": "Evading detections by running code from a signed Microsoft executable.",
+  "deduplication_period": "1 Day",
+  "description": "This unusual parent-child process relationship may indicate that an attacker has abused rundll32.exe to run a console-based application such as PowerShell.",
+  "detection_modules": "",
+  "detector_tags": "LOLBIN Execution Analytics",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Rundll32.exe spawns conhost.exe",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

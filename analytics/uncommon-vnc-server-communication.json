@@ -1,0 +1,85 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)",
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Access Tools (T1219)",
+    "Remote Services: VNC (T1021.005)"
+  ],
+  "attackers_goals": "Accessing a remote machine with full interactive graphic interface capabilities.",
+  "deduplication_period": "1 Day",
+  "description": "Uncommon VNC server network traffic was observed.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the product usage is approved. Check if it was executed remotely or locally.",
+  "name": "Uncommon VNC server communication",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon VNC scanning activity detected from a scanning tool",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Access Tools (T1219)",
+        "Remote Services: VNC (T1021.005)"
+      ],
+      "description": "An uncommon VNC scanning network traffic was observed from a scanning tool.",
+      "attackers_goals": "Accessing a remote machine with full interactive graphic interface capabilities.",
+      "investigative_actions": "Check if the product usage is approved. Check if it was executed remotely or locally."
+    },
+    {
+      "name": "Uncommon VNC server communication from an unmanaged previously unseen external host",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Access Tools (T1219)",
+        "Remote Services: VNC (T1021.005)"
+      ],
+      "description": "Uncommon VNC server network traffic was observed from an unmanaged, previously unseen external host.",
+      "attackers_goals": "Accessing a remote machine with full interactive graphic interface capabilities.",
+      "investigative_actions": "Check the external client's IP address. Check if the product usage is approved. Check if it was executed remotely or locally."
+    },
+    {
+      "name": "Partially uncommon VNC server communication",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Access Tools (T1219)",
+        "Remote Services: VNC (T1021.005)"
+      ],
+      "description": "Uncommon VNC server network traffic was observed.",
+      "attackers_goals": "Accessing a remote machine with full interactive graphic interface capabilities.",
+      "investigative_actions": "Check if the product usage is approved. Check if it was executed remotely or locally."
+    },
+    {
+      "name": "Uncommon VNC server connection",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Access Tools (T1219)",
+        "Remote Services: VNC (T1021.005)"
+      ],
+      "description": "An uncommon VNC Server network connection was observed.",
+      "attackers_goals": "Accessing a remote machine with full interactive graphic interface capabilities.",
+      "investigative_actions": "Check if the product usage is approved. Check if it was executed remotely or locally."
+    }
+  ]
+}

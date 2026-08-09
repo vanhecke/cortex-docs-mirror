@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Gain administrative control and manipulate the application's permissions and settings.",
+  "deduplication_period": "5 Days",
+  "description": "An Owner was added to an Azure application.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Microsoft Graph Activity Logs",
+  "investigative_actions": "Look for any unusual behavior originated from the suspected identity, and check if they're compromised.",
+  "name": "Owner was added to Azure application",
+  "required_data": [
+    "Azure Audit Log",
+    "Microsoft Graph Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

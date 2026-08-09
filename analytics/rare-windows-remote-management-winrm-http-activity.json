@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Services (T1021)"
+  ],
+  "attackers_goals": "Attackers may use WinRM to execute code on remote hosts, in an attempt to gain persistence or move laterally in the network.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint performed unfamiliar WinRM HTTP activity to a remote host.",
+  "detection_modules": "",
+  "detector_tags": "NDR Lateral Movement Analytics",
+  "investigative_actions": "Correlate the WinRM HTTP request from the source host and understand which software initiated it. Verify that this isn't IT activity.",
+  "name": "Rare Windows Remote Management (WinRM) HTTP Activity",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

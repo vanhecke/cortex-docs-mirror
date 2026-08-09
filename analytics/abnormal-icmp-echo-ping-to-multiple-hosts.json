@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Remote System Discovery (T1018)"
+  ],
+  "attackers_goals": "An adversary may use the ICMP protocol to map IP addresses, hostnames and segments to plan its lateral movement over the network.",
+  "deduplication_period": "2 Days",
+  "description": "An endpoint performed an abnormal ICMP echo (PING) to multiple hosts on the network.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify if the host is a newly deployed host. Verify if newly services or applications that require network mapping were installed on the initiating host.",
+  "name": "Abnormal ICMP echo (PING) to multiple hosts",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "5 Hours",
+  "variations": []
+}

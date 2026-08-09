@@ -1,0 +1,63 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Network Service Discovery (T1046)"
+  ],
+  "attackers_goals": "An attacker is determining which ports are open or closed on remote endpoints in an attempt to identify the endpoint operating system, firewall configuration, and exploitable services.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint connected, or attempted to connect, to multiple privileged ports, which are infrequently used by other endpoints (i.e. destination ports that are normally used by many endpoints will not raise this alert). Attackers perform port scans for reconnaissance purposes, to find computers or servers that accept connections on these ports, and to find vulnerable services that can be exploited. Coverage for port scans using data arriving solely from Cortex agents is incomplete.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "New endpoints that use multiple ports can cause a false positive. Ensure that the endpoint is not new on the network, and is not hosting services such as FTP servers or domain controllers that are being contacted for the first time. Check if the activity is a SYN-ACK scan. These might result in Cortex XDR Analytics detecting the scan as coming from the wrong direction, and could mean that Cortex XDR Analytics used the wrong baseline in triggering the alert. Check for port map and/or X11 usage. These usually open multiple ports. If the protocol usage for the specific destination is sparse, Cortex XDR Analytics could raise a false alert.",
+  "name": "Port Scan",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "Third-Party Firewalls"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Port scan by suspicious process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Network Service Discovery (T1046)"
+      ],
+      "description": "The endpoint connected, or attempted to connect, to multiple privileged ports, which are infrequently used by other endpoints (i.e. destination ports that are normally used by many endpoints will not raise this alert). Attackers perform port scans for reconnaissance purposes, to find computers or servers that accept connections on these ports, and to find vulnerable services that can be exploited. Coverage for port scans using data arriving solely from Cortex agents is incomplete.",
+      "attackers_goals": "An attacker is determining which ports are open or closed on remote endpoints in an attempt to identify the endpoint operating system, firewall configuration, and exploitable services.",
+      "investigative_actions": "New endpoints that use multiple ports can cause a false positive. Ensure that the endpoint is not new on the network, and is not hosting services such as FTP servers or domain controllers that are being contacted for the first time. Check if the activity is a SYN-ACK scan. These might result in Cortex XDR Analytics detecting the scan as coming from the wrong direction, and could mean that Cortex XDR Analytics used the wrong baseline in triggering the alert. Check for port map and/or X11 usage. These usually open multiple ports. If the protocol usage for the specific destination is sparse, Cortex XDR Analytics could raise a false alert."
+    },
+    {
+      "name": "Highly suspicious port scan",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Network Service Discovery (T1046)"
+      ],
+      "description": "The endpoint connected, or attempted to connect, to multiple privileged ports, which are infrequently used by other endpoints (i.e. destination ports that are normally used by many endpoints will not raise this alert). Attackers perform port scans for reconnaissance purposes, to find computers or servers that accept connections on these ports, and to find vulnerable services that can be exploited. Coverage for port scans using data arriving solely from Cortex agents is incomplete.",
+      "attackers_goals": "An attacker is determining which ports are open or closed on remote endpoints in an attempt to identify the endpoint operating system, firewall configuration, and exploitable services.",
+      "investigative_actions": "New endpoints that use multiple ports can cause a false positive. Ensure that the endpoint is not new on the network, and is not hosting services such as FTP servers or domain controllers that are being contacted for the first time. Check if the activity is a SYN-ACK scan. These might result in Cortex XDR Analytics detecting the scan as coming from the wrong direction, and could mean that Cortex XDR Analytics used the wrong baseline in triggering the alert. Check for port map and/or X11 usage. These usually open multiple ports. If the protocol usage for the specific destination is sparse, Cortex XDR Analytics could raise a false alert."
+    },
+    {
+      "name": "Suspicious port scan",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Network Service Discovery (T1046)"
+      ],
+      "description": "The endpoint connected, or attempted to connect, to multiple privileged ports, which are infrequently used by other endpoints (i.e. destination ports that are normally used by many endpoints will not raise this alert). Attackers perform port scans for reconnaissance purposes, to find computers or servers that accept connections on these ports, and to find vulnerable services that can be exploited. Coverage for port scans using data arriving solely from Cortex agents is incomplete.",
+      "attackers_goals": "An attacker is determining which ports are open or closed on remote endpoints in an attempt to identify the endpoint operating system, firewall configuration, and exploitable services.",
+      "investigative_actions": "New endpoints that use multiple ports can cause a false positive. Ensure that the endpoint is not new on the network, and is not hosting services such as FTP servers or domain controllers that are being contacted for the first time. Check if the activity is a SYN-ACK scan. These might result in Cortex XDR Analytics detecting the scan as coming from the wrong direction, and could mean that Cortex XDR Analytics used the wrong baseline in triggering the alert. Check for port map and/or X11 usage. These usually open multiple ports. If the protocol usage for the specific destination is sparse, Cortex XDR Analytics could raise a false alert."
+    }
+  ]
+}

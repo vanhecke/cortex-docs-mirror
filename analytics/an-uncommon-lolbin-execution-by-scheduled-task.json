@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Scheduled Task/Job (T1053)"
+  ],
+  "attackers_goals": "Attackers may attempt to gain persistence, privilege escalation or proxy execution on the endpoint using scheduled tasks.",
+  "deduplication_period": "1 Day",
+  "description": "A lolbin was executed with uncommon commandline by a scheduled task.",
+  "detection_modules": "",
+  "detector_tags": "Scheduled tasks Analytics",
+  "investigative_actions": "Review the lolbin's command line executed by the schedule task. Investigate the specific scheduled task execution chain. Investigate how the scheduled task was created and the actor who created it.",
+  "name": "An uncommon lolbin execution by scheduled task",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "An uncommon lolbin execution by scheduled task on a sensitive server",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "A lolbin was executed with uncommon commandline by a scheduled task.",
+      "attackers_goals": "Attackers may attempt to gain persistence, privilege escalation or proxy execution on the endpoint using scheduled tasks.",
+      "investigative_actions": "Review the lolbin's command line executed by the schedule task. Investigate the specific scheduled task execution chain. Investigate how the scheduled task was created and the actor who created it."
+    },
+    {
+      "name": "A rare and commonly-abused lolbin execution by scheduled task",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "A commonly abused lolbin was executed with uncommon commandline by a scheduled task.",
+      "attackers_goals": "Attackers may attempt to gain persistence, privilege escalation or proxy execution on the endpoint using scheduled tasks.",
+      "investigative_actions": "Review the lolbin's command line executed by the schedule task. Investigate the specific scheduled task execution chain. Investigate how the scheduled task was created and the actor who created it."
+    }
+  ]
+}

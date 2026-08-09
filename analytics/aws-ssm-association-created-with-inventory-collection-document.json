@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Remote System Discovery (T1018)",
+    "Cloud Administration Command (T1651)"
+  ],
+  "attackers_goals": "Enumerating managed hosts and installed software across the environment to identify targets for lateral movement or further exploitation.",
+  "deduplication_period": "1 Day",
+  "description": "An identity created an AWS Systems Manager State Manager association using the AWS-GatherSoftwareInventory document. This document collects software inventory from managed instances and can be used by attackers for host discovery and enumeration.",
+  "detection_modules": "Cloud",
+  "detector_tags": "SSM Remote Management Analytics",
+  "investigative_actions": "Verify if the identity intended to create the SSM association. Examine the targets of the association to determine the scope of inventory collection. Follow further actions taken by the identity to detect potential lateral movement.",
+  "name": "AWS SSM association created with inventory collection document",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual AWS SSM association created with inventory collection document",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Remote System Discovery (T1018)",
+        "Cloud Administration Command (T1651)"
+      ],
+      "description": "An identity created an AWS Systems Manager State Manager association using the AWS-GatherSoftwareInventory document. This document collects software inventory from managed instances and can be used by attackers for host discovery and enumeration.",
+      "attackers_goals": "Enumerating managed hosts and installed software across the environment to identify targets for lateral movement or further exploitation.",
+      "investigative_actions": "Verify if the identity intended to create the SSM association. Examine the targets of the association to determine the scope of inventory collection. Follow further actions taken by the identity to detect potential lateral movement."
+    }
+  ]
+}

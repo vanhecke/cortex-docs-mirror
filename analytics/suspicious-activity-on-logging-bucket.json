@@ -1,0 +1,52 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)",
+    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+  ],
+  "attackers_goals": "Evade detection by tampering the logs.",
+  "deduplication_period": "1 Day",
+  "description": "An identity performed a suspicious activity on bucket used to store logs.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Verify whether the identity attempted to access the bucket. Verify no logs were modified in the bucket.",
+  "name": "Suspicious activity on logging bucket",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious deletion on CloudTrail logging bucket",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses (T1562)",
+        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+      ],
+      "description": "An identity performed a suspicious activity on bucket used to store CloudTrail logs.",
+      "attackers_goals": "Evade detection by tampering the logs.",
+      "investigative_actions": "Verify whether the identity attempted to access the bucket. Verify no logs were modified in the bucket."
+    },
+    {
+      "name": "Suspicious deletion on S3 access logs bucket",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses (T1562)",
+        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+      ],
+      "description": "An identity performed a suspicious activity on an S3 bucket used to store access logs.",
+      "attackers_goals": "Evade detection by tampering the logs.",
+      "investigative_actions": "Verify whether the identity attempted to access the bucket. Verify no logs were modified in the bucket."
+    }
+  ]
+}

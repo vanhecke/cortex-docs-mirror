@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Event Triggered Execution: Screensaver (T1546.002)"
+  ],
+  "attackers_goals": "Gain persistence by configuring a new screensaver.",
+  "deduplication_period": "6 Hours",
+  "description": "An executable file with a screensaver extension was executed from the Users or temp folder. This is not a common behavior for screensavers and may indicate a malicious file disguised as a screensaver in the Users or temp folder. It is recommended to further investigate the execution flow for malicious indicators.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process (with the SCR extension) is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Screensaver process executed from Users or temporary folder",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Screensaver process executed from Users or temporary folder by a scripting engine process",
+      "severity": "High",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Event Triggered Execution: Screensaver (T1546.002)"
+      ],
+      "description": "An executable file with a screensaver extension was executed from the Users or temp folder by a scripting engine process. This is not a common behavior for screensavers and may indicate a malicious file disguised as a screensaver in the Users or temp folder. It is recommended to further investigate the execution flow for malicious indicators.",
+      "attackers_goals": "Gain persistence by configuring a new screensaver.",
+      "investigative_actions": "Check whether the executing process (with the SCR extension) is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

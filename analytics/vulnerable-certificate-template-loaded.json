@@ -1,0 +1,50 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Steal or Forge Authentication Certificates (T1649)"
+  ],
+  "attackers_goals": "An attacker is attempting to exploit AD CS misconfigurations to obtain certificates that can be used for credential theft and privilege escalation.",
+  "deduplication_period": "1 Day",
+  "description": "A possible misconfigured certificate template was loaded by Certificate Services. This may indicate potential certificate template abuse.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Active Directory Certificate Services Analytics",
+  "investigative_actions": "Review the AD CS configuration for vulnerable templates and EKU settings. Review AD CS logs to identify any unauthorized certificate issuances, modifications, or template changes. Look for signs of certificate template enumeration via LDAP. Inspect certificates issued to privileged accounts. Check for abnormal PKINIT authentication or elevated Kerberos tickets.",
+  "name": "Vulnerable certificate template loaded",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "First detection of AD CS ESC vulnerability in certificate template",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal or Forge Authentication Certificates (T1649)"
+      ],
+      "description": "A misconfigured certificate template vulnerable to an AD CS ESC attack was loaded by Certificate Services for the first time. This may indicate potential certificate template abuse.",
+      "attackers_goals": "An attacker is attempting to exploit AD CS misconfigurations to obtain certificates that can be used for credential theft and privilege escalation.",
+      "investigative_actions": "Review the AD CS configuration for vulnerable templates and EKU settings. Review AD CS logs to identify any unauthorized certificate issuances, modifications, or template changes. Look for signs of certificate template enumeration via LDAP. Inspect certificates issued to privileged accounts. Check for abnormal PKINIT authentication or elevated Kerberos tickets."
+    },
+    {
+      "name": "Certificate template vulnerable to AD CS ESC attack",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal or Forge Authentication Certificates (T1649)"
+      ],
+      "description": "A misconfigured certificate template vulnerable to an AD CS ESC attack was loaded by Certificate Services. This may indicate potential certificate template abuse.",
+      "attackers_goals": "An attacker is attempting to exploit AD CS misconfigurations to obtain certificates that can be used for credential theft and privilege escalation.",
+      "investigative_actions": "Review the AD CS configuration for vulnerable templates and EKU settings. Review AD CS logs to identify any unauthorized certificate issuances, modifications, or template changes. Look for signs of certificate template enumeration via LDAP. Inspect certificates issued to privileged accounts. Check for abnormal PKINIT authentication or elevated Kerberos tickets."
+    }
+  ]
+}

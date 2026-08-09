@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Phishing (T1566)",
+    "Trusted Relationship (T1199)"
+  ],
+  "attackers_goals": "Create the illusion of being part of an existing email conversation to build trust and reduce the target's suspicion, mislead recipients by concealing harmful intents such as phishing or malware distribution.",
+  "deduplication_period": "1 Hour 30 Minutes",
+  "description": "An email with a subject line or body that includes signs of a reply or forward without an actual ongoing conversation.",
+  "detection_modules": "Email",
+  "detector_tags": "Spoofing",
+  "investigative_actions": "Analyze the full set of email headers to confirm the absence of legitimate References and In-Reply-To headers and verify if the email was altered or forged. Investigate if the sender's domain is known, flagged, or associated with suspicious activity to detect possible impersonation. If the message contains attachments or links, scrutinize them for any suspicious indications. Monitor further actions taken, such as file downloads or access to potentially malicious links.",
+  "name": "Email mimics replies or forwards without an actual ongoing conversation",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

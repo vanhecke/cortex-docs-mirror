@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "File and Directory Discovery (T1083)"
+  ],
+  "attackers_goals": "An attacker can use misconfigured certificate templates for escalation and authentication.",
+  "deduplication_period": "1 Day",
+  "description": "An LDAP query searching for misconfigured certificate templates was executed.",
+  "detection_modules": "",
+  "detector_tags": "LDAP Analytics (Client), LDAP Analytics (Server), Active Directory Certificate Services Analytics",
+  "investigative_actions": "Check if the LDAP search query was allowed for the user (logged on at event time) or process. Investigate the LDAP search query for any suspicious indicators.",
+  "name": "Discovery of misconfigured certificate templates using LDAP",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Frequent LDAP discovery of misconfigured certificate templates by a common process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)"
+      ],
+      "description": "An LDAP query searching for misconfigured certificate templates was executed regularly by a common process.",
+      "attackers_goals": "An attacker can use misconfigured certificate templates for escalation and authentication.",
+      "investigative_actions": "Check if the LDAP search query was allowed for the user (logged on at event time) or process. Investigate the LDAP search query for any suspicious indicators."
+    }
+  ]
+}

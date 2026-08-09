@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)"
+  ],
+  "attackers_goals": "This action may assist an attacker to evade detection.",
+  "deduplication_period": "1 Day",
+  "description": "AWS Guard-Duty detector was deleted.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check why the identity deleted the detector. Check what resources are relevant to the deleted detector.",
+  "name": "AWS Guard-Duty detector deletion",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

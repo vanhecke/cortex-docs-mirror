@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Permission Groups Discovery (T1069)"
+  ],
+  "attackers_goals": "Attackers can attempt to use the command to find endpoint groups and permissions settings or modify local group memberships.",
+  "deduplication_period": "1 Day",
+  "description": "The 'net localgroup' command is used to add, display, or modify groups local to the host. Adversaries may attempt to use the command to find host groups and permissions settings or modify local group memberships.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the queried group is a sensitive one (e.g. administrators). Check whether the initiating process has executed additional discovery commands.",
+  "name": "Uncommon net localgroup execution",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon net localgroup execution by an untrusted CGO",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Permission Groups Discovery (T1069)"
+      ],
+      "description": "The 'net localgroup' command is used to add, display, or modify groups local to the host by an untrusted CGO. Adversaries may attempt to use the command to find host groups and permissions settings or modify local group memberships.",
+      "attackers_goals": "Attackers can attempt to use the command to find endpoint groups and permissions settings or modify local group memberships.",
+      "investigative_actions": "Check if the queried group is a sensitive one (e.g. administrators). Check whether the initiating process has executed additional discovery commands."
+    }
+  ]
+}

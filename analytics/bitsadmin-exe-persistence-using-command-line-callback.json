@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "BITS Jobs (T1197)"
+  ],
+  "attackers_goals": "Gain persistence using the legitimate bitsadmin 'setnotifycmdline' mechanism, which triggers process executions once a Bits job is done or fails.",
+  "deduplication_period": "1 Day",
+  "description": "BITSAdmin.exe was used with a command-line that may indicate malware trying to gain persistence on the machine.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the command line contains any malicious indicators. Check if the parent process is suspicious. Check if the command-line used to persist is malicious or references a malicious binary.",
+  "name": "Bitsadmin.exe persistence using command-line callback",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

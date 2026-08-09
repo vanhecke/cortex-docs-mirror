@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)"
+  ],
+  "attackers_goals": "Evade detection.",
+  "deduplication_period": "5 Days",
+  "description": "An AWS GuardDuty IP set has been created.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check which IP set has been modified and confirm the changes.",
+  "name": "An AWS GuardDuty IP set was created",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

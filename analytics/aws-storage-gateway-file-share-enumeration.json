@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Cloud Infrastructure Discovery (T1580)",
+    "Cloud Service Discovery (T1526)"
+  ],
+  "attackers_goals": "Enumerate the organizational structure to plan lateral movement.",
+  "deduplication_period": "5 Days",
+  "description": "AWS Storage Gateway file shares were enumerated.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Review recent activity related to the identity and the affected cloud environment. Check for other enumeration activity or attempts to access sensitive resources.",
+  "name": "AWS Storage Gateway file share enumeration",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

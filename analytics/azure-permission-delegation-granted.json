@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)"
+  ],
+  "attackers_goals": "Gain access to sensitive data.* Gain control over user accounts.",
+  "deduplication_period": "5 Days",
+  "description": "An identity delegated permissions to access a certain resource or application.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the user access logs for any suspicious activity.* Review the permissions granted and the scope of the permissions.",
+  "name": "Azure permission delegation granted",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Azure permission delegation granted by an Azure AD privileged user",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)"
+      ],
+      "description": "An identity delegated permissions to access a certain resource or application.",
+      "attackers_goals": "Gain access to sensitive data.* Gain control over user accounts.",
+      "investigative_actions": "Check the user access logs for any suspicious activity.* Review the permissions granted and the scope of the permissions."
+    }
+  ]
+}

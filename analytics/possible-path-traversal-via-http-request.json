@@ -1,0 +1,63 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "File and Directory Discovery (T1083)"
+  ],
+  "attackers_goals": "Attackers may exploit server components or misconfigurations to access arbitrary sensitive files on the web server.",
+  "deduplication_period": "2 Days",
+  "description": "The endpoint received a suspicious URI via an HTTP request that resembles a path traversal attempt.",
+  "detection_modules": "",
+  "detector_tags": "Webshell Analytics",
+  "investigative_actions": "Inspect the legitimacy of the URI path. Ensure that the rare URI is not a legitimate result of routine development actions on the web server.",
+  "name": "Possible path traversal via HTTP request",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Possible sensitive path traversal via HTTP request",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)"
+      ],
+      "description": "The endpoint received a suspicious URI via an HTTP request that resembles a path traversal attempt.",
+      "attackers_goals": "Attackers may exploit server components or misconfigurations to access arbitrary sensitive files on the web server.",
+      "investigative_actions": "Inspect the legitimacy of the URI path. Ensure that the rare URI is not a legitimate result of routine development actions on the web server."
+    },
+    {
+      "name": "Possible path traversal via HTTP request from a TOR exit node",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)"
+      ],
+      "description": "The endpoint received a suspicious URI via an HTTP request that resembles a path traversal attempt.",
+      "attackers_goals": "Attackers may exploit server components or misconfigurations to access arbitrary sensitive files on the web server.",
+      "investigative_actions": "Inspect the legitimacy of the URI path. Ensure that the rare URI is not a legitimate result of routine development actions on the web server."
+    },
+    {
+      "name": "Possible credential path traversal via HTTP request",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)"
+      ],
+      "description": "The endpoint received a suspicious URI via an HTTP request that resembles a path traversal attempt.",
+      "attackers_goals": "Attackers may exploit server components or misconfigurations to access arbitrary sensitive files on the web server.",
+      "investigative_actions": "Inspect the legitimacy of the URI path. Ensure that the rare URI is not a legitimate result of routine development actions on the web server."
+    }
+  ]
+}

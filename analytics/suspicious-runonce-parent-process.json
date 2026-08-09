@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder (T1547.001)"
+  ],
+  "attackers_goals": "An attacker is trying to perform an action on the system at a later point, achieving persistence.",
+  "deduplication_period": "1 Day",
+  "description": "Runonce.exe executes commands under the Registry key HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce, typically on computer boot and user login events.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the endpoint to determine if it's a legitimate process that is supposed to use RunOnce in its operation.",
+  "name": "Suspicious RunOnce Parent Process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

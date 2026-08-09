@@ -1,0 +1,41 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Account Discovery (T1087)",
+    "Permission Groups Discovery (T1069)",
+    "Cloud Service Discovery (T1526)"
+  ],
+  "attackers_goals": "Gather information about the cloud environment, including IAM users, groups, roles, and policies.",
+  "deduplication_period": "7 Days",
+  "description": "An identity has executed a sequence of events which may be related to an IAM recon enumeration.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Verify whether the API calls were made by the identity and check for any additional related calls.",
+  "name": "IAM Enumeration sequence",
+  "required_data": [
+    "AWS Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "IAM Enumeration sequence executed from a cloud Internet facing instance",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Account Discovery (T1087)",
+        "Permission Groups Discovery (T1069)",
+        "Cloud Service Discovery (T1526)"
+      ],
+      "description": "A cloud Internet facing instance performed an unusual IAM enumeration.",
+      "attackers_goals": "Gather information about the cloud environment, including IAM users, groups, roles, and policies.",
+      "investigative_actions": "Verify whether the API calls were made by the identity and check for any additional related calls."
+    }
+  ]
+}

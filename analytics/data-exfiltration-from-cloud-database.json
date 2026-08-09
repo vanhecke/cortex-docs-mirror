@@ -1,0 +1,56 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)",
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data from Cloud Storage (T1530)",
+    "Automated Exfiltration (T1020)"
+  ],
+  "attackers_goals": "Exfiltrate data from the cloud environment.",
+  "deduplication_period": "1 Day",
+  "description": "An identity tries to exfiltrate data from cloud database, as indicated by multiple signals.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Exfiltration, Data Detection & Response",
+  "investigative_actions": "Check the identity which invoked the operation.",
+  "name": "Data exfiltration from cloud database",
+  "required_data": [
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Data exfiltration from cloud database containing sensitive data from a production account toa foreign account",
+      "severity": "High",
+      "attack_tactics": [
+        "Exfiltration (TA0010)",
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Data from Cloud Storage (T1530)",
+        "Automated Exfiltration (T1020)"
+      ],
+      "description": "An identity tries to exfiltrate data from cloud database, as indicated by multiple signals.",
+      "attackers_goals": "Exfiltrate data from the cloud environment.",
+      "investigative_actions": "Check the identity which invoked the operation."
+    },
+    {
+      "name": "Suspicious data exfiltration from cloud database",
+      "severity": "High",
+      "attack_tactics": [
+        "Exfiltration (TA0010)",
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Data from Cloud Storage (T1530)",
+        "Automated Exfiltration (T1020)"
+      ],
+      "description": "An identity tries to exfiltrate data from cloud database, as indicated by multiple signals.",
+      "attackers_goals": "Exfiltrate data from the cloud environment.",
+      "investigative_actions": "Check the identity which invoked the operation."
+    }
+  ]
+}

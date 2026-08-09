@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Service Stop (T1489)"
+  ],
+  "attackers_goals": "This may assist an attacker to exfiltrate sensitive information.",
+  "deduplication_period": "1 Day",
+  "description": "An Aurora DB cluster (RDS) was stopped.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Disaster Recovery Risks, Data Detection & Response",
+  "investigative_actions": "Check if the identity intended to stop the cluster. Check if this DB contains sensitive information. Check encryption for the DB cluster (at rest).",
+  "name": "Aurora DB cluster stopped",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

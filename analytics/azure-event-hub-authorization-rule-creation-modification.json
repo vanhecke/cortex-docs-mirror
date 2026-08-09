@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "External Remote Services (T1133)"
+  ],
+  "attackers_goals": "Persistence using the created/updated rule.",
+  "deduplication_period": "1 Day",
+  "description": "An authorization rule is bound with specific rights, once created within a namespace, which has management permissions.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the identity that created/updated the authorization rule. What actions were taken using the rule.",
+  "name": "Azure Event Hub Authorization rule creation/modification",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

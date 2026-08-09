@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Screen Capture (T1113)"
+  ],
+  "attackers_goals": "Evading security controls and collecting screen captures of the desktop.",
+  "deduplication_period": "1 Day",
+  "description": "Windows Problem Steps Recorder (psr.exe), can record screen and clicks. Adversaries may abuse psr.exe to create screen captures and collect them afterward.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Monitor the command-line arguments of psr.exe and the process causality. Validate the following criteria, if none of them are correct, follow incident response procedures: Check the causality of execution and if the TSS script was executed (Microsoft Troubleshooting Script). If output parameters in the command line are executed by the user. If the parent process is known in the organization as a support tool.",
+  "name": "Possible collection of screen captures with Windows Problem Steps Recorder",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

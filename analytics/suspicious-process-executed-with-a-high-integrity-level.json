@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Abuse Elevation Control Mechanism (T1548)"
+  ],
+  "attackers_goals": "An attacker may attempt to gain higher privileges.",
+  "deduplication_period": "7 Days",
+  "description": "A suspicious process was spawned with a High or System integrity level, which is higher than its parent process. This may indicate malicious privilege escalation.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the command line executed is benign or normal for the host and/or user performing it. Investigate the endpoint to determine if it's a legitimate process that is supposed to run with privileges.",
+  "name": "Suspicious process executed with a high integrity level",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious process executed with a high integrity level",
+      "severity": "Low",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Abuse Elevation Control Mechanism (T1548)"
+      ],
+      "description": "A suspicious process was spawned with a High or System integrity level, which is higher than its parent process. This may indicate malicious privilege escalation.",
+      "attackers_goals": "An attacker may attempt to gain higher privileges.",
+      "investigative_actions": "Check whether the command line executed is benign or normal for the host and/or user performing it. Investigate the endpoint to determine if it's a legitimate process that is supposed to run with privileges."
+    }
+  ]
+}

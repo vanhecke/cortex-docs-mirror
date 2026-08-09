@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)",
+    "Impair Defenses: Disable or Modify Tools (T1562.001)"
+  ],
+  "attackers_goals": "An attacker may abuse the audit bypass mechanism to conceal actions and evade detection.",
+  "deduplication_period": "1 Day",
+  "description": "A user added mailbox audit bypass for an account. This will allow the account to perform actions without being logged, and may indicate an attempt to evade detection.",
+  "detection_modules": "Identity Threat Module, Email",
+  "detector_tags": "",
+  "investigative_actions": "Follow further actions done by the account. Verify that the configuration change was expected.",
+  "name": "Exchange mailbox audit bypass",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

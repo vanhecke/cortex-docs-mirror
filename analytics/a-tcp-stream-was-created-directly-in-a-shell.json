@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter (T1059)"
+  ],
+  "attackers_goals": "Attackers may use this device file to create sockets though shell commands as part of a reverse shell.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers may create a TCP stream using the shell command line to generate a reverse shell, enabling remote access to the endpoint.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Review the command line used. Search for the corresponding network event. Check the prevalence of the target IP/domain.",
+  "name": "A TCP stream was created directly in a shell",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

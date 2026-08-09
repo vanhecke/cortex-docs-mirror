@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)",
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Remote Services (T1021)",
+    "Network Service Discovery (T1046)"
+  ],
+  "attackers_goals": "Attackers aim to compromise network infrastructure to redirect traffic, create illegitimate VPN tunnels, modify ACLs (Access Control Lists) to bypass segmentation, or perform Man-in-the-Middle (MitM) attacks.",
+  "deduplication_period": "1 Day",
+  "description": "Unusual internal access to Palo Alto Networks device on management port.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Identify the source address and machine role (e.g., Is it a known Admin Jump Host or a standard workstation?). Validate if a change request exists for the target network device at the time of the event. Check the connection protocol (SSH/HTTPS vs. insecure Telnet/HTTP) and the port used. Review the login status: Was the authentication successful or failed? Investigate the source machine for network scanning tools or terminal clients (e.g., PuTTY, SecureCRT). Analyze the causality chain: Did a suspicious process launch the connection?. Check if the user associated with the source address has network administration privileges.",
+  "name": "Unusual internal access to network device management interface",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

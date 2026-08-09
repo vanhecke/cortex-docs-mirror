@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol (T1071)"
+  ],
+  "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint is periodically connecting to an external domain (categorized as malware) that it and its peers rarely use. Access to this domain has occurred repeatedly over multiple days. This connection pattern is consistent with malware connecting to its command and control server for updates and operating instructions.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Identify the process/user contacting the remote domain and determine whether the traffic is malicious. Look for other endpoints on your network that are also periodically contacting the suspicious domain.",
+  "name": "Recurring access to rare domain",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "Palo Alto Networks Firewall threat LogsXDR Agent",
+    "Third-Party Firewalls"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Recurring access to rare domain",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "The endpoint is periodically connecting to an external domain (categorized as command-and-control) that it and its peers rarely use. Access to this domain has occurred repeatedly over multiple days. This connection pattern is consistent with malware connecting to its command and control server for updates and operating instructions.",
+      "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines.",
+      "investigative_actions": "Identify the process/user contacting the remote domain and determine whether the traffic is malicious. Look for other endpoints on your network that are also periodically contacting the suspicious domain."
+    }
+  ]
+}

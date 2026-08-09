@@ -1,0 +1,50 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)"
+  ],
+  "attackers_goals": "An attacker may attempt to control an Active Directory environment.",
+  "deduplication_period": "1 Day",
+  "description": "A user account was modified with delegation to a service.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Verify this action with the user who performed the change. Check if the account modified is a service account. Follow actions by the user, including TGT and TGS requests. Monitor for anomalous Kerberos activity.",
+  "name": "User account delegation change",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "User account delegation to KRBTGT",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal or Forge Kerberos Tickets (T1558)"
+      ],
+      "description": "A user account was modified with delegation to the KRBTGT service.",
+      "attackers_goals": "An attacker may attempt to control an Active Directory environment.",
+      "investigative_actions": "Verify this action with the user who performed the change. Check if the account modified is a service account. Follow actions by the user, including TGT and TGS requests. Monitor for anomalous Kerberos activity."
+    },
+    {
+      "name": "User account delegation to a DC",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)"
+      ],
+      "description": "A user account was modified with delegation to a service on a domain controller.",
+      "attackers_goals": "An attacker may attempt to control an Active Directory environment.",
+      "investigative_actions": "Verify this action with the user who performed the change. Check if the account modified is a service account. Follow actions by the user, including TGT and TGS requests. Monitor for anomalous Kerberos activity."
+    }
+  ]
+}

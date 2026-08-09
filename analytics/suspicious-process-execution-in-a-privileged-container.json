@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Container Administration Command (T1609)",
+    "Escape to Host (T1611)"
+  ],
+  "attackers_goals": "Perform lateral movement to new hosts to expand the foothold within a network and gain higher privileges.",
+  "deduplication_period": "1 Day",
+  "description": "A process was executed in a privileged Kubernetes Pod for the first time in the past 30 days.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Investigate the processes being spawned on the host for malicious activities. Correlate the command run from the host and understand which software initiated it.",
+  "name": "Suspicious process execution in a privileged container",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious process execution in a new privileged container",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Container Administration Command (T1609)",
+        "Escape to Host (T1611)"
+      ],
+      "description": "A process was executed in a privileged Kubernetes Pod for the first time in the past 30 days.",
+      "attackers_goals": "Perform lateral movement to new hosts to expand the foothold within a network and gain higher privileges.",
+      "investigative_actions": "Investigate the processes being spawned on the host for malicious activities. Correlate the command run from the host and understand which software initiated it."
+    }
+  ]
+}

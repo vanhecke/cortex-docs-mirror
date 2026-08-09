@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Gain access to SES account.* Abuse the new identity as a spambot.",
+  "deduplication_period": "5 Days",
+  "description": "An Email address was added to AWS SES.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check which identity was added to the service.",
+  "name": "An Email address was added to AWS SES",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

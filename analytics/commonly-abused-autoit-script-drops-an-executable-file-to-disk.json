@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: AutoHotKey & AutoIT (T1059.010)",
+    "Command and Scripting Interpreter: Windows Command Shell (T1059.003)"
+  ],
+  "attackers_goals": "Gain code execution on the host and evade security controls.",
+  "deduplication_period": "1 Day",
+  "description": "AutoIT scripts have legitimate uses but are often abused by malware to execute in a signed process context.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the command line executed is benign or normal for the host and/or user performing it. Check whether the user from the command line is an administrator or other sensitive account.",
+  "name": "Commonly abused AutoIT script drops an executable file to disk",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

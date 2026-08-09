@@ -1,0 +1,92 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Credentials from Password Stores: Keychain (T1555.001)"
+  ],
+  "attackers_goals": "Obtain access to credentials stored in the Keychain file.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual process accessed a Keychain file. This might indicate a credential-grabbing attempt.",
+  "detection_modules": "",
+  "detector_tags": "Credentials Grabbing Analytics",
+  "investigative_actions": "Determine whether it is legitimate for the process to access credential data directly. Analyze the process/application that touched the Keychain. Check for any other suspicious actions that were performed by the process. Look for unusual access to resources using credentials stored on said Keychain.",
+  "name": "Rare process accessed a Keychain file",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Rare process accessed a Keychain file using the networksetup tool",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Reconnaissance (TA0043)"
+      ],
+      "attack_techniques": [
+        "Credentials from Password Stores: Keychain (T1555.001)",
+        "Gather Victim Host Information (T1592)"
+      ],
+      "description": "An unusual process accessed a Keychain file. This might indicate a credential-grabbing attempt.",
+      "attackers_goals": "Obtain access to credentials stored in the Keychain file.",
+      "investigative_actions": "Determine whether it is legitimate for the process to access credential data directly. Analyze the process/application that touched the Keychain. Check for any other suspicious actions that were performed by the process. Look for unusual access to resources using credentials stored on said Keychain."
+    },
+    {
+      "name": "Rare process accessed a Keychain file while installing a new certificate",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Credentials from Password Stores: Keychain (T1555.001)",
+        "Subvert Trust Controls: Install Root Certificate (T1553.004)"
+      ],
+      "description": "An unusual process accessed a Keychain file. This might indicate a credential-grabbing attempt.",
+      "attackers_goals": "Obtain access to credentials stored in the Keychain file.",
+      "investigative_actions": "Determine whether it is legitimate for the process to access credential data directly. Analyze the process/application that touched the Keychain. Check for any other suspicious actions that were performed by the process. Look for unusual access to resources using credentials stored on said Keychain."
+    },
+    {
+      "name": "Rare process accessed a Keychain file initiated by a causality actor with a rare path",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Credentials from Password Stores: Keychain (T1555.001)"
+      ],
+      "description": "An unusual process accessed a Keychain file. This might indicate a credential-grabbing attempt.",
+      "attackers_goals": "Obtain access to credentials stored in the Keychain file.",
+      "investigative_actions": "Determine whether it is legitimate for the process to access credential data directly. Analyze the process/application that touched the Keychain. Check for any other suspicious actions that were performed by the process. Look for unusual access to resources using credentials stored on said Keychain."
+    },
+    {
+      "name": "Rare process accessed a Keychain file initiated by an unsigned causality actor",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Credentials from Password Stores: Keychain (T1555.001)"
+      ],
+      "description": "An unusual process accessed a Keychain file. This might indicate a credential-grabbing attempt.",
+      "attackers_goals": "Obtain access to credentials stored in the Keychain file.",
+      "investigative_actions": "Determine whether it is legitimate for the process to access credential data directly. Analyze the process/application that touched the Keychain. Check for any other suspicious actions that were performed by the process. Look for unusual access to resources using credentials stored on said Keychain."
+    },
+    {
+      "name": "Rare unsigned process accessed a Keychain file",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Credentials from Password Stores: Keychain (T1555.001)"
+      ],
+      "description": "An unusual process accessed a Keychain file. This might indicate a credential-grabbing attempt.",
+      "attackers_goals": "Obtain access to credentials stored in the Keychain file.",
+      "investigative_actions": "Determine whether it is legitimate for the process to access credential data directly. Analyze the process/application that touched the Keychain. Check for any other suspicious actions that were performed by the process. Look for unusual access to resources using credentials stored on said Keychain."
+    }
+  ]
+}

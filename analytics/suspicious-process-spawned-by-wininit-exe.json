@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Masquerading (T1036)"
+  ],
+  "attackers_goals": "Gain code execution on the host.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual process was spawned by wininit.exe, possibly indicating malicious local or remote code execution.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Suspicious Process Spawned by wininit.exe",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

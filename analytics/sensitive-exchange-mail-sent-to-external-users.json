@@ -1,0 +1,55 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)",
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Email Collection (T1114)",
+    "Exfiltration Over Alternative Protocol (T1048)"
+  ],
+  "attackers_goals": "An attacker is attempting to collect sensitive email information.",
+  "deduplication_period": "1 Day",
+  "description": "A user sent sensitive email messages to external users.",
+  "detection_modules": "Identity Threat Module, Email",
+  "detector_tags": "O365 DLP Analytics",
+  "investigative_actions": "Look for signs that the user account and mailboxes are compromised (e.g. abnormal logins, unusual activity). Follow further actions done by the account. Look for unusual email patterns from the affected mailbox (e.g. unusual email contents). Examine the user's email activity history for suspicious behavior.",
+  "name": "Sensitive Exchange mail sent to external users",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Exchange mail to external account matching high severity DLP rules",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Email Collection (T1114)",
+        "Exfiltration Over Alternative Protocol (T1048)"
+      ],
+      "description": "A user sent sensitive email messages to external users.",
+      "attackers_goals": "An attacker is attempting to collect sensitive email information.",
+      "investigative_actions": "Look for signs that the user account and mailboxes are compromised (e.g. abnormal logins, unusual activity). Follow further actions done by the account. Look for unusual email patterns from the affected mailbox (e.g. unusual email contents). Examine the user's email activity history for suspicious behavior."
+    },
+    {
+      "name": "Sensitive Exchange mail sent to an external user",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Email Collection (T1114)",
+        "Exfiltration Over Alternative Protocol (T1048)"
+      ],
+      "description": "A user sent sensitive email messages to external users.",
+      "attackers_goals": "An attacker is attempting to collect sensitive email information.",
+      "investigative_actions": "Look for signs that the user account and mailboxes are compromised (e.g. abnormal logins, unusual activity). Follow further actions done by the account. Look for unusual email patterns from the affected mailbox (e.g. unusual email contents). Examine the user's email activity history for suspicious behavior."
+    }
+  ]
+}

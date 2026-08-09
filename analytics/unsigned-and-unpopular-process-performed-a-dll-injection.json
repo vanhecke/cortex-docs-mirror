@@ -1,0 +1,88 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Process Injection (T1055)"
+  ],
+  "attackers_goals": "Attackers may inject DLLs into processes to evade process-based defenses, as well as possibly elevate privileges.",
+  "deduplication_period": "1 Day",
+  "description": "An unsigned process with low popularity injected a dll into another process.",
+  "detection_modules": "",
+  "detector_tags": "Injection Analytics",
+  "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Unsigned and unpopular process performed a DLL injection",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unsigned and unpopular process performed process hollowing DLL injection",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Process Injection (T1055)"
+      ],
+      "description": "An unsigned process with low popularity injected a dll into another process.",
+      "attackers_goals": "Attackers may inject DLLs into processes to evade process-based defenses, as well as possibly elevate privileges.",
+      "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Unsigned and unpopular process performed queue APC DLL injection",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Process Injection (T1055)"
+      ],
+      "description": "An unsigned process with low popularity injected a dll into another process.",
+      "attackers_goals": "Attackers may inject DLLs into processes to evade process-based defenses, as well as possibly elevate privileges.",
+      "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Unsigned and unpopular process performed a DLL injection to a sensitive process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Process Injection (T1055)"
+      ],
+      "description": "An unsigned process with low popularity injected a dll into another process.",
+      "attackers_goals": "Attackers may inject DLLs into processes to evade process-based defenses, as well as possibly elevate privileges.",
+      "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Unsigned and unpopular process performed a DLL injection to a commonly abused process",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Process Injection (T1055)"
+      ],
+      "description": "An unsigned process with low popularity injected a dll into another process.",
+      "attackers_goals": "Attackers may inject DLLs into processes to evade process-based defenses, as well as possibly elevate privileges.",
+      "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Unsigned and unpopular process performed a DLL injection to a security vendor signed process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Process Injection (T1055)"
+      ],
+      "description": "An unsigned process with low popularity injected a dll into another process.",
+      "attackers_goals": "Attackers may inject DLLs into processes to evade process-based defenses, as well as possibly elevate privileges.",
+      "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

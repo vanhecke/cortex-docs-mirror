@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation: Additional Cloud Roles (T1098.003)"
+  ],
+  "attackers_goals": "Add additional cloud roles or permissions to maintain persistent access or escalate permissions.",
+  "deduplication_period": "1 Day",
+  "description": "A cloud identity added an AWS IAM inline policy to an IAM user.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Investigate any unusual activity originating from the suspected identity.",
+  "name": "IAM inline policy was added to user",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

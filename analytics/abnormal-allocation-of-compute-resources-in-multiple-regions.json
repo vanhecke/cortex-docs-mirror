@@ -1,0 +1,86 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Resource Hijacking (T1496)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Leverage cloud compute resources to generate virtual currency.",
+  "deduplication_period": "5 Days",
+  "description": "An identity allocated an unusual compute resource pool, suspected as mining activity.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Verify that the identity creating the resources is legitimate. Check for unusual behavior from this identity, including potential compromise (e.g., exposed access keys or service accounts).",
+  "name": "Abnormal Allocation of compute resources in multiple regions",
+  "required_data": [
+    "AWS Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "30 Minutes",
+  "variations": [
+    {
+      "name": "Abnormal Unusual allocation of compute resources in multiple regions",
+      "severity": "High",
+      "attack_tactics": [
+        "Impact (TA0040)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Resource Hijacking (T1496)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "An identity allocated an unusual compute resource pool, suspected as mining activity.",
+      "attackers_goals": "Leverage cloud compute resources to generate virtual currency.",
+      "investigative_actions": "Verify that the identity creating the resources is legitimate. Check for unusual behavior from this identity, including potential compromise (e.g., exposed access keys or service accounts)."
+    },
+    {
+      "name": "Abnormal Suspicious allocation of compute resources in multiple regions",
+      "severity": "High",
+      "attack_tactics": [
+        "Impact (TA0040)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Resource Hijacking (T1496)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "An identity allocated an unusual compute resource pool, suspected as mining activity.",
+      "attackers_goals": "Leverage cloud compute resources to generate virtual currency.",
+      "investigative_actions": "Verify that the identity creating the resources is legitimate. Check for unusual behavior from this identity, including potential compromise (e.g., exposed access keys or service accounts)."
+    },
+    {
+      "name": "Abnormal Allocation of compute resources in a high number of regions",
+      "severity": "High",
+      "attack_tactics": [
+        "Impact (TA0040)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Resource Hijacking (T1496)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "An identity allocated an unusual compute resource pool, suspected as mining activity.",
+      "attackers_goals": "Leverage cloud compute resources to generate virtual currency.",
+      "investigative_actions": "Verify that the identity creating the resources is legitimate. Check for unusual behavior from this identity, including potential compromise (e.g., exposed access keys or service accounts)."
+    },
+    {
+      "name": "Abnormal Allocation of compute resources in multiple regions by an unusual identity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Impact (TA0040)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Resource Hijacking (T1496)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "An identity allocated an unusual compute resource pool, suspected as mining activity.",
+      "attackers_goals": "Leverage cloud compute resources to generate virtual currency.",
+      "investigative_actions": "Verify that the identity creating the resources is legitimate. Check for unusual behavior from this identity, including potential compromise (e.g., exposed access keys or service accounts)."
+    }
+  ]
+}

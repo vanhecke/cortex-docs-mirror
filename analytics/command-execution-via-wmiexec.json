@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Windows Management Instrumentation (T1047)"
+  ],
+  "attackers_goals": "Execute commands on the victim host.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers may use WMI to execute commands on the target host.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Correlate the RPC call from the source host and understand which process initiated it.",
+  "name": "Command execution via wmiexec",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

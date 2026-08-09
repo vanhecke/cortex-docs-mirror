@@ -1,0 +1,55 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Resource Development (TA0042)"
+  ],
+  "attack_techniques": [
+    "Compromise Accounts (T1586)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "An attacker is attempting to compromise an Azure account by exploiting weak or guessed passwords for initial access.",
+  "deduplication_period": "1 Day",
+  "description": "A risky sign-in attempt was observed in Azure.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Monitor the user account for indications of compromise, such as irregular login patterns or atypical activities. Reach out to the user to confirm the legitimacy of the recent password reset activity. Continue monitoring the account for any subsequent actions that may indicate suspicious behavior.",
+  "name": "A possible risky login to Azure",
+  "required_data": [
+    "AzureAD"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Azure Risky Login with Suspicious Characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Compromise Accounts (T1586)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A risky sign-in attempt was observed in Azure.",
+      "attackers_goals": "An attacker is attempting to compromise an Azure account by exploiting weak or guessed passwords for initial access.",
+      "investigative_actions": "Monitor the user account for indications of compromise, such as irregular login patterns or atypical activities. Reach out to the user to confirm the legitimacy of the recent password reset activity. Continue monitoring the account for any subsequent actions that may indicate suspicious behavior."
+    },
+    {
+      "name": "Azure-Defined High-Risk Login Attempt",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Compromise Accounts (T1586)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A risky sign-in attempt was observed in Azure.",
+      "attackers_goals": "An attacker is attempting to compromise an Azure account by exploiting weak or guessed passwords for initial access.",
+      "investigative_actions": "Monitor the user account for indications of compromise, such as irregular login patterns or atypical activities. Reach out to the user to confirm the legitimacy of the recent password reset activity. Continue monitoring the account for any subsequent actions that may indicate suspicious behavior."
+    }
+  ]
+}

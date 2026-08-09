@@ -1,0 +1,101 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "OS Credential Dumping: DCSync (T1003.006)",
+    "Rogue Domain Controller (T1207)"
+  ],
+  "attackers_goals": "An attacker is trying to retrieve Active Directory data, including password hashes.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers may pose a compromised host as a DC to replicate data to it (DCSync).",
+  "detection_modules": "",
+  "detector_tags": "Impacket Analytics",
+  "investigative_actions": "Check whether one of the machines is a new domain controller.",
+  "name": "Possible DCSync from a non domain controller",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "DCSync from a non domain controller from a non-standard process",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping: DCSync (T1003.006)",
+        "Rogue Domain Controller (T1207)"
+      ],
+      "description": "Attackers may pose a compromised host as a DC to replicate data to it (DCSync).",
+      "attackers_goals": "An attacker is trying to retrieve Active Directory data, including password hashes.",
+      "investigative_actions": "Check whether one of the machines is a new domain controller."
+    },
+    {
+      "name": "Large DCSync from a non domain controller by AppID",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping: DCSync (T1003.006)",
+        "Rogue Domain Controller (T1207)"
+      ],
+      "description": "Attackers may pose a compromised host as a DC to replicate data to it (DCSync).",
+      "attackers_goals": "An attacker is trying to retrieve Active Directory data, including password hashes.",
+      "investigative_actions": "Check whether one of the machines is a new domain controller."
+    },
+    {
+      "name": "Large DCSync from a non domain controller",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping: DCSync (T1003.006)",
+        "Rogue Domain Controller (T1207)"
+      ],
+      "description": "Attackers may pose a compromised host as a DC to replicate data to it (DCSync).",
+      "attackers_goals": "An attacker is trying to retrieve Active Directory data, including password hashes.",
+      "investigative_actions": "Check whether one of the machines is a new domain controller."
+    },
+    {
+      "name": "Possible DCSync from an internet-facing server",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping: DCSync (T1003.006)",
+        "Rogue Domain Controller (T1207)"
+      ],
+      "description": "Attackers may pose a compromised host as a DC to replicate data to it (DCSync).",
+      "attackers_goals": "An attacker is trying to retrieve Active Directory data, including password hashes.",
+      "investigative_actions": "Check whether one of the machines is a new domain controller."
+    },
+    {
+      "name": "DCSync from a non domain controller",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping: DCSync (T1003.006)",
+        "Rogue Domain Controller (T1207)"
+      ],
+      "description": "Attackers may pose a compromised host as a DC to replicate data to it (DCSync).",
+      "attackers_goals": "An attacker is trying to retrieve Active Directory data, including password hashes.",
+      "investigative_actions": "Check whether one of the machines is a new domain controller."
+    }
+  ]
+}

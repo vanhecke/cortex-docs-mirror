@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Access user data.* Gain control of the Azure environment.",
+  "deduplication_period": "5 Days",
+  "description": "A Service Principal was created in Azure. This could indicate a malicious actor attempting to gain access to a resource.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the Service Principal to ensure it has the correct access rights.* Review the Azure Activity Log to determine the source of the Service Principal creation.",
+  "name": "A Service Principal was created in Azure",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

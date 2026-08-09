@@ -1,0 +1,61 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)",
+    "Valid Accounts (T1078)",
+    "Steal or Forge Authentication Certificates (T1649)"
+  ],
+  "attackers_goals": "Elevate permissions and establish persistence.",
+  "deduplication_period": "1 Day",
+  "description": "A user logged on to multiple workstations with a certificate via Schannel. This may be indicative of a compromised account.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Active Directory Certificate Services Analytics",
+  "investigative_actions": "Verify the activity with the performing user. Check for possible certificate authentications with the subject user. Check if the user logged in to other endpoints via Schannel.",
+  "name": "A user logged on to multiple workstations via Schannel",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Rare user authentication with a certificate via Schannel",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)",
+        "Valid Accounts (T1078)",
+        "Steal or Forge Authentication Certificates (T1649)"
+      ],
+      "description": "A rare user authentication with a certificate via Schannel was observed. This may be indicative of a compromised account.",
+      "attackers_goals": "Elevate permissions and establish persistence.",
+      "investigative_actions": "Verify the activity with the performing user. Check for possible certificate authentications with the subject user. Check if the user logged in to other endpoints via Schannel."
+    },
+    {
+      "name": "Abnormal authentication with a certificate via Schannel",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)",
+        "Valid Accounts (T1078)",
+        "Steal or Forge Authentication Certificates (T1649)"
+      ],
+      "description": "An abnormal authentication with a certificate via Schannel was observed. This may be indicative of a compromised account.",
+      "attackers_goals": "Elevate permissions and establish persistence.",
+      "investigative_actions": "Verify the activity with the performing user. Check for possible certificate authentications with the subject user. Check if the user logged in to other endpoints via Schannel."
+    }
+  ]
+}

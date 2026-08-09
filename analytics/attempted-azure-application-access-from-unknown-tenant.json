@@ -1,0 +1,50 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Trusted Relationship (T1199)"
+  ],
+  "attackers_goals": "Abuse serverless services to execute code in cloud environments.",
+  "deduplication_period": "5 Days",
+  "description": "A Microsoft Graph API was unsuccessfully executed by an Azure application from an unknown tenant.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Microsoft Graph Activity Logs",
+  "investigative_actions": "Validate the legitimacy of the tenant in question. Investigate any unusual activity originating from the application.",
+  "name": "Attempted Azure application access from unknown tenant",
+  "required_data": [
+    "Azure Audit Log",
+    "Microsoft Graph Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Attempted Azure application access from an unusual tenant",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Trusted Relationship (T1199)"
+      ],
+      "description": "A Microsoft Graph API was unsuccessfully executed by an Azure application from an unknown tenant.",
+      "attackers_goals": "Abuse serverless services to execute code in cloud environments.",
+      "investigative_actions": "Validate the legitimacy of the tenant in question. Investigate any unusual activity originating from the application."
+    },
+    {
+      "name": "Azure application access from unknown tenant",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Trusted Relationship (T1199)"
+      ],
+      "description": "A Microsoft Graph API was executed by an Azure application from an unknown tenant.",
+      "attackers_goals": "Abuse serverless services to execute code in cloud environments.",
+      "investigative_actions": "Validate the legitimacy of the tenant in question. Investigate any unusual activity originating from the application."
+    }
+  ]
+}

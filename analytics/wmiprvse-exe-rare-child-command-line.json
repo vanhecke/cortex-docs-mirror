@@ -1,0 +1,42 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Remote Services (T1021)",
+    "Remote Services: Windows Remote Management (T1021.006)",
+    "Windows Management Instrumentation (T1047)"
+  ],
+  "attackers_goals": "Gain code execution on a remote host.",
+  "deduplication_period": "1 Day",
+  "description": "A remote WMI command executed a binary proxy, the Windows Management Instrumentation (WMI) Provider Host wmiprvse.exe, which executed a rare child command line. Executing a rare child process can be an indication of remote code execution abuse by an attacker.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the processes being spawned from WmiPrvse.exe on the host for malicious indicators. Correlate the RPC call from the source host and understand what initiated it.",
+  "name": "WmiPrvSe.exe Rare Child Command Line",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "WmiPrvSe.exe Rare Child Command Line",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Remote Services (T1021)",
+        "Remote Services: Windows Remote Management (T1021.006)",
+        "Windows Management Instrumentation (T1047)"
+      ],
+      "description": "A remote WMI command executed a binary proxy, the Windows Management Instrumentation (WMI) Provider Host wmiprvse.exe, which executed a rare child command line. Executing a rare child process can be an indication of remote code execution abuse by an attacker.",
+      "attackers_goals": "Gain code execution on a remote host.",
+      "investigative_actions": "Investigate the processes being spawned from WmiPrvse.exe on the host for malicious indicators. Correlate the RPC call from the source host and understand what initiated it."
+    }
+  ]
+}

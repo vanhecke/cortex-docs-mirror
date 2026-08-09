@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Account Discovery (T1087)"
+  ],
+  "attackers_goals": "The attacker may attempt to gain an initial foothold in the domain by enumerating users and finding service accounts.",
+  "deduplication_period": "1 Day",
+  "description": "A high amount of Kerberos principal unknown errors were generated on users in the last hour. This may be indicative of Kerberos user enumeration.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check whether any service principal names (SPNs) were not set correctly, as they will always return a principal unknown error.",
+  "name": "Kerberos User Enumeration",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "1 Hour",
+  "variations": []
+}

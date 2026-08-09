@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Ingress Tool Transfer (T1105)"
+  ],
+  "attackers_goals": "Expand attack vectors and compromise the rest of the network.",
+  "deduplication_period": "1 Day",
+  "description": "An adversary might use known tools to transfer tools/payloads into the compromised machine.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Check if the action was done using an automation service. Check if there are any other suspicious activities originated from the same machine/executing user.",
+  "name": "File transfer from unusual IP using known tools",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "File transfer from unusual IP using known tools in a Kubernetes pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Ingress Tool Transfer (T1105)"
+      ],
+      "description": "An adversary might use known tools to transfer tools/payloads into the compromised machine.",
+      "attackers_goals": "Expand attack vectors and compromise the rest of the network.",
+      "investigative_actions": "Check if the action was done using an automation service. Check if there are any other suspicious activities originated from the same machine/executing user."
+    }
+  ]
+}

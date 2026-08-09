@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Serverless Execution (T1648)"
+  ],
+  "attackers_goals": "Usage of known tools and frameworks.",
+  "deduplication_period": "2 Days",
+  "description": "A SaaS API was invoked by a penetration testing tool.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check if there is an active PT test ongoing.",
+  "name": "Penetration testing tool activity attempt",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Penetration testing tool activity attempt",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Serverless Execution (T1648)"
+      ],
+      "description": "A SaaS API was successfully invoked by a penetration testing tool.",
+      "attackers_goals": "Usage of known tools and frameworks.",
+      "investigative_actions": "Check if there is an active PT test ongoing."
+    }
+  ]
+}

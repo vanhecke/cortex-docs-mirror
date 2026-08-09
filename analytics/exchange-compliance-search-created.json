@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Email Collection (T1114)"
+  ],
+  "attackers_goals": "An attacker is searching mailboxes to access sensitive information.",
+  "deduplication_period": "1 Day",
+  "description": "A user created an Exchange compliance search. This feature enables Administrators to search mailboxes in an organization.",
+  "detection_modules": "Identity Threat Module, Email",
+  "detector_tags": "",
+  "investigative_actions": "Follow further actions done by the account. Check to see if the search contained sensitive information. Check if any data was exfiltrated after the search. Look for suspicious search terms.",
+  "name": "Exchange compliance search created",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious Exchange compliance search created",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Email Collection (T1114)"
+      ],
+      "description": "A user created an Exchange compliance search. This feature enables Administrators to search mailboxes in an organization. The query contains potentially suspicious keywords, which could indicate an attempt of sensitive data collection.",
+      "attackers_goals": "An attacker is searching mailboxes to access sensitive information.",
+      "investigative_actions": "Follow further actions done by the account. Check to see if the search contained sensitive information. Check if any data was exfiltrated after the search. Look for suspicious search terms."
+    },
+    {
+      "name": "Exchange compliance search created for the first time",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Email Collection (T1114)"
+      ],
+      "description": "A user created an Exchange compliance search. This feature enables Administrators to search mailboxes in an organization.",
+      "attackers_goals": "An attacker is searching mailboxes to access sensitive information.",
+      "investigative_actions": "Follow further actions done by the account. Check to see if the search contained sensitive information. Check if any data was exfiltrated after the search. Look for suspicious search terms."
+    }
+  ]
+}

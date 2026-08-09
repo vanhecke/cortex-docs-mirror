@@ -1,0 +1,41 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Container and Resource Discovery (T1613)",
+    "Cloud Service Discovery (T1526)"
+  ],
+  "attackers_goals": "Map the cluster environment and detect potential resources to abuse.",
+  "deduplication_period": "7 Days",
+  "description": "An identity attempted to discover available resources within a cluster. This may indicate an adversary attempting to map the Kubernetes environment and discover resources that may assist to perform additional attacks within the environment.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Kubernetes - API",
+  "investigative_actions": "Check the identity's role designation in the organization. Identify which available resources were discovered. Investigate if the discovered resources were used to extract sensitive information or perform other attacks in the cloud environment.",
+  "name": "Kubernetes enumeration activity",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log",
+    "Kubernetes Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Suspicious Kubernetes enumeration activity",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Container and Resource Discovery (T1613)",
+        "Cloud Service Discovery (T1526)"
+      ],
+      "description": "An identity attempted to discover available resources within a cluster. This may indicate an adversary attempting to map the Kubernetes environment and discover resources that may assist to perform additional attacks within the environment.",
+      "attackers_goals": "Map the cluster environment and detect potential resources to abuse.",
+      "investigative_actions": "Check the identity's role designation in the organization. Identify which available resources were discovered. Investigate if the discovered resources were used to extract sensitive information or perform other attacks in the cloud environment."
+    }
+  ]
+}

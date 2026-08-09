@@ -1,0 +1,44 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)",
+    "Domain or Tenant Policy Modification (T1484)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Adversaries are attempting to infiltrate Okta's administrative application, a breach that could lead to the manipulation of authentication procedures, creation of persistent user accounts, and various activities aiding in the compromise of additional assets.",
+  "deduplication_period": "1 Day",
+  "description": "An attempt to access Okta's admin management application.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Okta Audit Analytics",
+  "investigative_actions": "Reach out to the user responsible for the alert to confirm the legitimacy of the activity. Examine the user's actions preceding and following the activation of the alert. Assess the reputation of the IP address along with that of the Autonomous System Number (ASN).",
+  "name": "A user accessed Okta's admin application",
+  "required_data": [
+    "Okta Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious Okta Admin App Access Attempt",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)",
+        "Domain or Tenant Policy Modification (T1484)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A user attempted to access the Okta Admin Application in a suspicious way.",
+      "attackers_goals": "Adversaries are attempting to infiltrate Okta's administrative application, a breach that could lead to the manipulation of authentication procedures, creation of persistent user accounts, and various activities aiding in the compromise of additional assets.",
+      "investigative_actions": "Reach out to the user responsible for the alert to confirm the legitimacy of the activity. Examine the user's actions preceding and following the activation of the alert. Assess the reputation of the IP address along with that of the Autonomous System Number (ASN)."
+    }
+  ]
+}

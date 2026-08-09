@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Phishing: Spearphishing Link (T1566.002)",
+    "User Execution: Malicious File (T1204.002)"
+  ],
+  "attackers_goals": "The attacker may be attempting to deliver malware or exfiltrate data using auto-download file-sharing links.",
+  "deduplication_period": "1 Hour 30 Minutes",
+  "description": "The email contains a link to a file-sharing service that includes parameters likely to trigger automatic download.",
+  "detection_modules": "Email",
+  "detector_tags": "Malicious URLs",
+  "investigative_actions": "Analyze the linked file(s) to determine if they pose any security risk. Check the sender's communication history within the organization. Analyze the file reputation using sandbox or threat intelligence sources. Verify whether similar links were sent to other users.",
+  "name": "Email with file-sharing link containing auto-download parameter",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "External email with file-sharing link containing auto-download parameter",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Phishing: Spearphishing Link (T1566.002)",
+        "User Execution: Malicious File (T1204.002)"
+      ],
+      "description": "The email contains a link to a file-sharing service that includes parameters likely to trigger automatic download.",
+      "attackers_goals": "The attacker may be attempting to deliver malware or exfiltrate data using auto-download file-sharing links.",
+      "investigative_actions": "Analyze the linked file(s) to determine if they pose any security risk. Check the sender's communication history within the organization. Analyze the file reputation using sandbox or threat intelligence sources. Verify whether similar links were sent to other users."
+    }
+  ]
+}

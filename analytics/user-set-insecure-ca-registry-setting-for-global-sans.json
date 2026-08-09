@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify Tools (T1562.001)"
+  ],
+  "attackers_goals": "This flag can allow an attacker to obtain a certificate with higher privileges and escalate to Domain Admin.",
+  "deduplication_period": "1 Day",
+  "description": "A user enabled the EDITF_ATTRIBUTESUBJECTALTNAME2 registry flag, allowing custom Subject Alternative Names (SANs) to be specified on all certificate templates. This could enable attackers to bypass security controls by requesting certificates with user-defined SANs.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Active Directory Certificate Services Analytics",
+  "investigative_actions": "Confirm whether the registry change was authorized by the user or system administrator. Monitor certificate enrollments with Subject Alternate Names. Restore the secure configuration by disabling the EDITF_ATTRIBUTESUBJECTALTNAME2 flag and enforcing strict certificate policies. Investigate any unusual authentication attempts or certificates issued to high-privilege users or accounts.",
+  "name": "User set insecure CA registry setting for global SANs",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Abuse Elevation Control Mechanism: Setuid and Setgid (T1548.001)"
+  ],
+  "attackers_goals": "Attackers may try to run the executable application as a different user.",
+  "deduplication_period": "1 Day",
+  "description": "The setuid or setgid bits were set on a file.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands.",
+  "name": "Setuid and Setgid file bit manipulation",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Setuid and Setgid file bit manipulation in a Kubernetes pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Abuse Elevation Control Mechanism: Setuid and Setgid (T1548.001)"
+      ],
+      "description": "The setuid or setgid bits were set on a file.",
+      "attackers_goals": "Attackers may try to run the executable application as a different user.",
+      "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands."
+    }
+  ]
+}

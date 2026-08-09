@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Log Enumeration (T1654)"
+  ],
+  "attackers_goals": "Enumerate data about the SCCM configuration, infrastructure and deployments.",
+  "deduplication_period": "1 Day",
+  "description": "Multiple local SCCM logs were accessed within a short period of time.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Microsoft SCCM Analytics",
+  "investigative_actions": "Check suspicious network connections from the process or host. Check if the user account that initiated the enumeration is supposed to access these files.",
+  "name": "SCCM log files enumeration",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Suspicious SCCM log files enumeration",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Log Enumeration (T1654)"
+      ],
+      "description": "Multiple local SCCM logs were abnormally accessed within a short period of time.",
+      "attackers_goals": "Enumerate data about the SCCM configuration, infrastructure and deployments.",
+      "investigative_actions": "Check suspicious network connections from the process or host. Check if the user account that initiated the enumeration is supposed to access these files."
+    }
+  ]
+}

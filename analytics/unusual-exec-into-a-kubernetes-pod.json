@@ -1,0 +1,91 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Container Administration Command (T1609)"
+  ],
+  "attackers_goals": "Execute commands within the Kubernetes Pod. Access any resource the Kubernetes Pod has access to.",
+  "deduplication_period": "5 Days",
+  "description": "An identity initiated a shell session within a Kubernetes pod using the exec command. The command allows an identity to establish a temporary shell session and execute commands in the pod. This may indicate an attacker attempting to gain an interactive shell, which will allow access to the pod's data.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Kubernetes - API",
+  "investigative_actions": "Check the identity's role designation in the organization. Inspect for any additional suspicious activities inside the Kubernetes Pod.",
+  "name": "Unusual exec into a Kubernetes Pod",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log",
+    "Kubernetes Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Failed exec attempt into a Kubernetes Pod",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Container Administration Command (T1609)"
+      ],
+      "description": "An identity initiated a shell session within a Kubernetes pod using the exec command. The command allows an identity to establish a temporary shell session and execute commands in the pod. This may indicate an attacker attempting to gain an interactive shell, which will allow access to the pod's data.",
+      "attackers_goals": "Execute commands within the Kubernetes Pod. Access any resource the Kubernetes Pod has access to.",
+      "investigative_actions": "Check the identity's role designation in the organization. Inspect for any additional suspicious activities inside the Kubernetes Pod."
+    },
+    {
+      "name": "First time execution into Kubernetes Pod at the cluster-level",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Container Administration Command (T1609)"
+      ],
+      "description": "An identity initiated a shell session within a Kubernetes pod using the exec command. The command allows an identity to establish a temporary shell session and execute commands in the pod. This may indicate an attacker attempting to gain an interactive shell, which will allow access to the pod's data.",
+      "attackers_goals": "Execute commands within the Kubernetes Pod. Access any resource the Kubernetes Pod has access to.",
+      "investigative_actions": "Check the identity's role designation in the organization. Inspect for any additional suspicious activities inside the Kubernetes Pod."
+    },
+    {
+      "name": "Identity executed into Kubernetes Pod for the first time",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Container Administration Command (T1609)"
+      ],
+      "description": "An identity initiated a shell session within a Kubernetes pod using the exec command. The command allows an identity to establish a temporary shell session and execute commands in the pod. This may indicate an attacker attempting to gain an interactive shell, which will allow access to the pod's data.",
+      "attackers_goals": "Execute commands within the Kubernetes Pod. Access any resource the Kubernetes Pod has access to.",
+      "investigative_actions": "Check the identity's role designation in the organization. Inspect for any additional suspicious activities inside the Kubernetes Pod."
+    },
+    {
+      "name": "Identity executed into a Kubernetes namespace for the first time",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Container Administration Command (T1609)"
+      ],
+      "description": "An identity initiated a shell session within a Kubernetes pod using the exec command. The command allows an identity to establish a temporary shell session and execute commands in the pod. This may indicate an attacker attempting to gain an interactive shell, which will allow access to the pod's data.",
+      "attackers_goals": "Execute commands within the Kubernetes Pod. Access any resource the Kubernetes Pod has access to.",
+      "investigative_actions": "Check the identity's role designation in the organization. Inspect for any additional suspicious activities inside the Kubernetes Pod."
+    },
+    {
+      "name": "Identity executed into a Kubernetes Pod for the first time",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Container Administration Command (T1609)"
+      ],
+      "description": "An identity initiated a shell session within a Kubernetes pod using the exec command. The command allows an identity to establish a temporary shell session and execute commands in the pod. This may indicate an attacker attempting to gain an interactive shell, which will allow access to the pod's data.",
+      "attackers_goals": "Execute commands within the Kubernetes Pod. Access any resource the Kubernetes Pod has access to.",
+      "investigative_actions": "Check the identity's role designation in the organization. Inspect for any additional suspicious activities inside the Kubernetes Pod."
+    }
+  ]
+}

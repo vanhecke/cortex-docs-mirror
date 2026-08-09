@@ -1,0 +1,46 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Persistence (TA0003)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Cloud Administration Command (T1651)",
+    "Command and Scripting Interpreter: Cloud API (T1059.009)",
+    "Account Manipulation (T1098)",
+    "Impair Defenses: Disable or Modify Tools (T1562.001)"
+  ],
+  "attackers_goals": "Execute arbitrary code on VMs without network access (CustomScriptExtension). Gain persistent access by resetting local admin passwords (VMAccessExtension). Disable antimalware to deploy malware undetected (IaaSAntimalware deletion).",
+  "deduplication_period": "1 Day",
+  "description": "A suspicious Azure VM extension operation was detected. Attackers can use CustomScriptExtension to execute arbitrary scripts on VMs, VMAccessExtension to reset local passwords for persistence, or delete the IaaSAntimalware extension to disable antimalware protection and evade detection.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Identify the extension type involved (CustomScriptExtension, VMAccessExtension, IaaSAntimalware). For CustomScriptExtension: review the script payload executed on the VM. For VMAccessExtension: check if local admin credentials were reset and audit subsequent logins. For IaaSAntimalware deletion: verify the virtual machine audit log after the extension was removed. Verify whether the identity performing the operation is authorized to manage VM extensions. Check for correlated suspicious activity such as new role assignments or lateral movement.",
+  "name": "Azure VM extension abuse attempt",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual azure VM extension abuse",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Persistence (TA0003)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Cloud Administration Command (T1651)",
+        "Command and Scripting Interpreter: Cloud API (T1059.009)",
+        "Account Manipulation (T1098)",
+        "Impair Defenses: Disable or Modify Tools (T1562.001)"
+      ],
+      "description": "A suspicious Azure VM extension operation was detected. Attackers can use CustomScriptExtension to execute arbitrary scripts on VMs, VMAccessExtension to reset local passwords for persistence, or delete the IaaSAntimalware extension to disable antimalware protection and evade detection.",
+      "attackers_goals": "Execute arbitrary code on VMs without network access (CustomScriptExtension). Gain persistent access by resetting local admin passwords (VMAccessExtension). Disable antimalware to deploy malware undetected (IaaSAntimalware deletion).",
+      "investigative_actions": "Identify the extension type involved (CustomScriptExtension, VMAccessExtension, IaaSAntimalware). For CustomScriptExtension: review the script payload executed on the VM. For VMAccessExtension: check if local admin credentials were reset and audit subsequent logins. For IaaSAntimalware deletion: verify the virtual machine audit log after the extension was removed. Verify whether the identity performing the operation is authorized to manage VM extensions. Check for correlated suspicious activity such as new role assignments or lateral movement."
+    }
+  ]
+}

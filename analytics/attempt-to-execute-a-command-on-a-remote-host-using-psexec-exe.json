@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Remote Services: SMB/Windows Admin Shares (T1021.002)",
+    "System Services: Service Execution (T1569.002)"
+  ],
+  "attackers_goals": "Execute commands and run processes remotely.",
+  "deduplication_period": "1 Day",
+  "description": "There was an attempt to run a command on a remote host using PsExec.exe.",
+  "detection_modules": "",
+  "detector_tags": "Malicious Service Analytics",
+  "investigative_actions": "Confirm that the connection is benign and occurred as a part of normal behavior.",
+  "name": "Attempt to execute a command on a remote host using PsExec.exe",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Attempt to execute a command on a remote host using PsExec.exe",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Remote Services: SMB/Windows Admin Shares (T1021.002)",
+        "System Services: Service Execution (T1569.002)"
+      ],
+      "description": "There was an attempt to run a command on a remote host using PsExec.exe., the connection to the remote host was successful.",
+      "attackers_goals": "Execute commands and run processes remotely.",
+      "investigative_actions": "Confirm that the connection is benign and occurred as a part of normal behavior."
+    }
+  ]
+}

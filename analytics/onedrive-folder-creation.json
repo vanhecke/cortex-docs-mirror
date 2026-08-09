@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data Staged: Remote Data Staging (T1074.002)"
+  ],
+  "attackers_goals": "Establish persistence or prepare for data exfiltration by creating a storage location in OneDrive via the Microsoft Graph API, enabling them to later upload or manipulate files undetected.",
+  "deduplication_period": "5 Days",
+  "description": "A folder was created in OneDrive using Microsoft Graph API.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Microsoft Graph Activity Logs",
+  "investigative_actions": "Look for any unusual behavior originated from the suspected identity, and check if they're compromised.",
+  "name": "OneDrive folder creation",
+  "required_data": [
+    "Azure Audit Log",
+    "Microsoft Graph Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,181 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "File and Directory Discovery (T1083)",
+    "Process Discovery (T1057)",
+    "System Service Discovery (T1007)",
+    "System Network Configuration Discovery (T1016)",
+    "System Owner/User Discovery (T1033)",
+    "System Network Connections Discovery (T1049)",
+    "System Information Discovery (T1082)"
+  ],
+  "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+  "deduplication_period": "1 Day",
+  "description": "A process made an uncommon attempt to access a file that may contain sensitive information.",
+  "detection_modules": "",
+  "detector_tags": "EDR Discovery Analytics",
+  "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process.",
+  "name": "Uncommon attempt at discovering a sensitive file",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon attempt at discovering /etc/hosts",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "Process Discovery (T1057)",
+        "System Service Discovery (T1007)",
+        "System Network Configuration Discovery (T1016)",
+        "System Owner/User Discovery (T1033)",
+        "System Network Connections Discovery (T1049)",
+        "System Information Discovery (T1082)"
+      ],
+      "description": "A process made an uncommon attempt to access a file that may contain sensitive information.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    },
+    {
+      "name": "Uncommon attempt at discovering a sensitive file by a security testing tool",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "Process Discovery (T1057)",
+        "System Service Discovery (T1007)",
+        "System Network Configuration Discovery (T1016)",
+        "System Owner/User Discovery (T1033)",
+        "System Network Connections Discovery (T1049)",
+        "System Information Discovery (T1082)"
+      ],
+      "description": "A process made an uncommon attempt to access a file that may contain sensitive information.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    },
+    {
+      "name": "Uncommon attempt at discovering a sensitive file by a potentially known credential dumper or enumeration script",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "Process Discovery (T1057)",
+        "System Service Discovery (T1007)",
+        "System Network Configuration Discovery (T1016)",
+        "System Owner/User Discovery (T1033)",
+        "System Network Connections Discovery (T1049)",
+        "System Information Discovery (T1082)"
+      ],
+      "description": "A process made an uncommon attempt to access a file that may contain sensitive information.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    },
+    {
+      "name": "Uncommon attempt at discovering a sensitive file by a potential Webshell",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "Process Discovery (T1057)",
+        "System Service Discovery (T1007)",
+        "System Network Configuration Discovery (T1016)",
+        "System Owner/User Discovery (T1033)",
+        "System Network Connections Discovery (T1049)",
+        "System Information Discovery (T1082)"
+      ],
+      "description": "A process made an uncommon attempt to access a file that may contain sensitive information.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    },
+    {
+      "name": "Uncommon attempt at discovering a sensitive file by a script that was executed by a rare causality",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "Process Discovery (T1057)",
+        "System Service Discovery (T1007)",
+        "System Network Configuration Discovery (T1016)",
+        "System Owner/User Discovery (T1033)",
+        "System Network Connections Discovery (T1049)",
+        "System Information Discovery (T1082)"
+      ],
+      "description": "A process made an uncommon attempt to access a file that may contain sensitive information.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    },
+    {
+      "name": "Uncommon attempt at discovering a sensitive file from temporary or world writable directories",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "Process Discovery (T1057)",
+        "System Service Discovery (T1007)",
+        "System Network Configuration Discovery (T1016)",
+        "System Owner/User Discovery (T1033)",
+        "System Network Connections Discovery (T1049)",
+        "System Information Discovery (T1082)"
+      ],
+      "description": "A process made an uncommon attempt to access a file that may contain sensitive information.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    },
+    {
+      "name": "Uncommon attempt at discovering a sensitive file by a rare process that was executed by cron",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "Process Discovery (T1057)",
+        "System Service Discovery (T1007)",
+        "System Network Configuration Discovery (T1016)",
+        "System Owner/User Discovery (T1033)",
+        "System Network Connections Discovery (T1049)",
+        "System Information Discovery (T1082)"
+      ],
+      "description": "A process made an uncommon attempt to access a file that may contain sensitive information.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    },
+    {
+      "name": "Uncommon attempt at discovering a sensitive file by a non-GTFOBIN process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "Process Discovery (T1057)",
+        "System Service Discovery (T1007)",
+        "System Network Configuration Discovery (T1016)",
+        "System Owner/User Discovery (T1033)",
+        "System Network Connections Discovery (T1049)",
+        "System Information Discovery (T1082)"
+      ],
+      "description": "A process made an uncommon attempt to access a file that may contain sensitive information.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    }
+  ]
+}

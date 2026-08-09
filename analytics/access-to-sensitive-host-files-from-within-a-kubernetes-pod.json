@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Escape to Host (T1611)"
+  ],
+  "attackers_goals": "Access to the host filesystem.",
+  "deduplication_period": "1 Day",
+  "description": "A process accessed sensitive host files inside a Kubernetes pod, indicating a potential container escape or privilege escalation attempt.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Kubernetes Credentials Theft Analytics",
+  "investigative_actions": "Look for additional suspicious activities. Verify if the exposed files were used for malicious activity. Investigate which operations were used against the Kubernetes cluster with the exposed credentials.",
+  "name": "Access to sensitive host files from within a Kubernetes pod",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Access to sensitive host files from within a Kubernetes pod via an interactive shell",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Escape to Host (T1611)"
+      ],
+      "description": "A process accessed sensitive host files inside a Kubernetes pod, indicating a potential container escape or privilege escalation attempt.",
+      "attackers_goals": "Access to the host filesystem.",
+      "investigative_actions": "Look for additional suspicious activities. Verify if the exposed files were used for malicious activity. Investigate which operations were used against the Kubernetes cluster with the exposed credentials."
+    },
+    {
+      "name": "Unusual access to sensitive host files from within a Kubernetes pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Escape to Host (T1611)"
+      ],
+      "description": "A process accessed sensitive host files inside a Kubernetes pod, indicating a potential container escape or privilege escalation attempt.",
+      "attackers_goals": "Access to the host filesystem.",
+      "investigative_actions": "Look for additional suspicious activities. Verify if the exposed files were used for malicious activity. Investigate which operations were used against the Kubernetes cluster with the exposed credentials."
+    }
+  ]
+}

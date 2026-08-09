@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify System Firewall (T1562.004)"
+  ],
+  "attackers_goals": "An attacker may turn the firewall off to exfiltrate data and communicate with C2 servers.",
+  "deduplication_period": "1 Day",
+  "description": "The Windows Firewall has been disabled using PowerShell. Malware may turn it off to exfiltrate data and communicate with C2 servers.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check Windows event logs to see the PowerShell command or script that was executed. Check whether the PowerShell command is benign or normal for the host and/or user performing it. Investigate the endpoint to determine if it's a legitimate process that disabled the firewall.",
+  "name": "Suspicious disablement of the Windows Firewall using PowerShell commands",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

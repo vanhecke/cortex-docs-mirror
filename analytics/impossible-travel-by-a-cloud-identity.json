@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Cloud Accounts (T1078.004)"
+  ],
+  "attackers_goals": "Obtain and abuse credentials of cloud accounts.",
+  "deduplication_period": "5 Days",
+  "description": "Cloud identity activity detected from distant geographic regions within an short time window. This suggests unauthorized use of credentials, possibly indicating a compromised account.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Verify if the identity's credentials have been compromised. Examine the recent activity of the identity in question.",
+  "name": "Impossible travel by a cloud identity",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "2 Hours",
+  "variations": [
+    {
+      "name": "Impossible travel by an unusual cloud identity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Cloud Accounts (T1078.004)"
+      ],
+      "description": "Cloud identity activity detected from distant geographic regions within an short time window. This suggests unauthorized use of credentials, possibly indicating a compromised account.",
+      "attackers_goals": "Obtain and abuse credentials of cloud accounts.",
+      "investigative_actions": "Verify if the identity's credentials have been compromised. Examine the recent activity of the identity in question."
+    }
+  ]
+}

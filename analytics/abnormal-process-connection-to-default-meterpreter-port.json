@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Non-Standard Port (T1571)"
+  ],
+  "attackers_goals": "Run Metasploits's malicious post-exploitation tool named Meterpreter to further compromise the host.",
+  "deduplication_period": "1 Hour",
+  "description": "This process has probably been compromised by Meterpreter and is now used by it to run malicious commands.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify if the destination IP is running a Metasploit server. Look for malicious action being done by the suspicious process.",
+  "name": "Abnormal process connection to default Meterpreter port",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Abnormal process connection to default Meterpreter port on an internet-facing server",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "This process has probably been compromised by Meterpreter and is now used by it to run malicious commands.",
+      "attackers_goals": "Run Metasploits's malicious post-exploitation tool named Meterpreter to further compromise the host.",
+      "investigative_actions": "Verify if the destination IP is running a Metasploit server. Look for malicious action being done by the suspicious process."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter (T1059)"
+  ],
+  "attackers_goals": "Adversaries may execute malicious code using legitimate cloud administration tools.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual process was executed by the AWS Systems Manager agent. Adversaries may use the Systems Manager agent to execute malicious commands on an endpoint.",
+  "detection_modules": "Cloud",
+  "detector_tags": "SSM Remote Management Analytics",
+  "investigative_actions": "Verify if this is a legitimate script or command being run by an administrator using AWS Systems Manager.",
+  "name": "Unusual process executed by AWS Systems Manager",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

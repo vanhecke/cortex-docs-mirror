@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation: Additional Cloud Credentials (T1098.001)"
+  ],
+  "attackers_goals": "An attacker attempts to change Active Directory configuration for persistence or defense evasion.",
+  "deduplication_period": "1 Hour",
+  "description": "A new unverified domain was added to Azure AD.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check if the new domain is known for the organization. Check whether the user changing the configuration is permitted. Monitor network activity to and from the added domain.",
+  "name": "Unverified domain added to Azure AD",
+  "required_data": [
+    "AzureAD Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Rare unverified domain addition to Azure AD",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: Additional Cloud Credentials (T1098.001)"
+      ],
+      "description": "A new unverified domain was added to Azure AD.",
+      "attackers_goals": "An attacker attempts to change Active Directory configuration for persistence or defense evasion.",
+      "investigative_actions": "Check if the new domain is known for the organization. Check whether the user changing the configuration is permitted. Monitor network activity to and from the added domain."
+    }
+  ]
+}

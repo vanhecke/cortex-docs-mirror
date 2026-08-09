@@ -1,0 +1,52 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)",
+    "Domain or Tenant Policy Modification: Trust Modification (T1484.002)"
+  ],
+  "attackers_goals": "An adversary may add a trusted domain to collect and exfiltrate data from their target's organization with less restrictive security controls.",
+  "deduplication_period": "5 Days",
+  "description": "A domain was added to the Google Workspace trusted domains list.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Investigate the new domain in the trusted domains list. Follow further actions done by the account.",
+  "name": "A domain was added to the trusted domains list",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A domain was added to the trusted domains list by a non Google Workspace administrative user",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses (T1562)",
+        "Domain or Tenant Policy Modification: Trust Modification (T1484.002)"
+      ],
+      "description": "A domain was added to the Google Workspace trusted domains list.",
+      "attackers_goals": "An adversary may add a trusted domain to collect and exfiltrate data from their target's organization with less restrictive security controls.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Investigate the new domain in the trusted domains list. Follow further actions done by the account."
+    },
+    {
+      "name": "A domain was added to the trusted domains list from an unusual ASN",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses (T1562)",
+        "Domain or Tenant Policy Modification: Trust Modification (T1484.002)"
+      ],
+      "description": "A domain was added to the Google Workspace trusted domains list.",
+      "attackers_goals": "An adversary may add a trusted domain to collect and exfiltrate data from their target's organization with less restrictive security controls.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Investigate the new domain in the trusted domains list. Follow further actions done by the account."
+    }
+  ]
+}

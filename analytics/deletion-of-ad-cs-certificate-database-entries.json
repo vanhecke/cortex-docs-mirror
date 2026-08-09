@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Indicator Removal (T1070)"
+  ],
+  "attackers_goals": "An attacker is attempting to cover their tracks after issuing certificates.",
+  "deduplication_period": "1 Day",
+  "description": "A user has deleted rows from the certificate database of an AD CS server.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Active Directory Certificate Services Analytics",
+  "investigative_actions": "Check the user account deleting the certificate database entries and verify its activity.* Review AD CS logs to identify any unauthorized certificate issuances, modifications, or template changes.* Examine recent activity from the user account, including logon patterns and privilege changes.",
+  "name": "Deletion of AD CS certificate database entries",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Abnormal deletion of AD CS certificate database entries",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Indicator Removal (T1070)"
+      ],
+      "description": "A user has deleted rows from the certificate database of an AD CS server.",
+      "attackers_goals": "An attacker is attempting to cover their tracks after issuing certificates.",
+      "investigative_actions": "Check the user account deleting the certificate database entries and verify its activity.* Review AD CS logs to identify any unauthorized certificate issuances, modifications, or template changes.* Examine recent activity from the user account, including logon patterns and privilege changes."
+    }
+  ]
+}

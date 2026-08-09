@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "User Execution: Malicious File (T1204.002)",
+    "Masquerading: Double File Extension (T1036.007)"
+  ],
+  "attackers_goals": "Bypassing defenses and/or tricking the user into executing a file that seems like a trustworthy file.",
+  "deduplication_period": "1 Day",
+  "description": "An executable file with multiple extensions was created. This technique is frequently used to disguise malware as user content.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the actor process and the file created to determine if it was used for legitimate purposes or malicious activity.",
+  "name": "A suspicious executable with multiple file extensions was created",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

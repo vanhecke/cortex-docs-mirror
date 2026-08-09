@@ -1,0 +1,52 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "A TAP can allow setting of other authentication methods and can be used as an initial replacement of a multifactor authentication.",
+  "deduplication_period": "1 Day",
+  "description": "An identity registered an Azure Temporary Access Pass (TAP) to an account.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check if the account that got the TAP should get it. Check whether the account that registered the TAP is supposed to perform such actions. Check if the TAP was registered to a privileged account. Follow further actions done by the initiator and the account with the TAP.",
+  "name": "Azure Temporary Access Pass (TAP) registered to an account",
+  "required_data": [
+    "AzureAD Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Azure Temporary Access Pass (TAP) registered to a privileged account",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "An identity registered an Azure Temporary Access Pass (TAP) to an account.",
+      "attackers_goals": "A TAP can allow setting of other authentication methods and can be used as an initial replacement of a multifactor authentication.",
+      "investigative_actions": "Check if the account that got the TAP should get it. Check whether the account that registered the TAP is supposed to perform such actions. Check if the TAP was registered to a privileged account. Follow further actions done by the initiator and the account with the TAP."
+    },
+    {
+      "name": "Abnormal Azure Temporary Access Pass (TAP) account registration",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "An identity registered an Azure Temporary Access Pass (TAP) to an account.",
+      "attackers_goals": "A TAP can allow setting of other authentication methods and can be used as an initial replacement of a multifactor authentication.",
+      "investigative_actions": "Check if the account that got the TAP should get it. Check whether the account that registered the TAP is supposed to perform such actions. Check if the TAP was registered to a privileged account. Follow further actions done by the initiator and the account with the TAP."
+    }
+  ]
+}

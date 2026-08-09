@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Cloud Service Discovery (T1526)"
+  ],
+  "attackers_goals": "Discover deployed AI agents, knowledge bases, and foundation models. Assess AI model configurations, inference profiles, and provisioned throughputs to evaluate potential abuse paths. Enumerate AI infrastructure metadata for potential weaknesses or sensitive data. MITRE ATLAS Technique: AML.T0007 - Discover ML Artifacts.",
+  "deduplication_period": "1 Day",
+  "description": "Bedrock AI infrastructure enumeration activity detected, potentially indicating reconnaissance on AI resources.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud AI Infrastructure Analytics",
+  "investigative_actions": "Identify and review the specific Bedrock enumeration API calls executed and their frequency. Verify the identity performing the calls and assess if this behavior is typical or anomalous. Correlate with other discovery activities and check related logs for suspicious patterns or subsequent actions.",
+  "name": "AWS Bedrock AI infrastructure enumeration activity",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Suspicious AWS Bedrock AI infrastructure enumeration by an identity with no prior AI activity",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Cloud Service Discovery (T1526)"
+      ],
+      "description": "Bedrock AI infrastructure enumeration activity detected, potentially indicating reconnaissance on AI resources.",
+      "attackers_goals": "Discover deployed AI agents, knowledge bases, and foundation models. Assess AI model configurations, inference profiles, and provisioned throughputs to evaluate potential abuse paths. Enumerate AI infrastructure metadata for potential weaknesses or sensitive data. MITRE ATLAS Technique: AML.T0007 - Discover ML Artifacts.",
+      "investigative_actions": "Identify and review the specific Bedrock enumeration API calls executed and their frequency. Verify the identity performing the calls and assess if this behavior is typical or anomalous. Correlate with other discovery activities and check related logs for suspicious patterns or subsequent actions."
+    }
+  ]
+}

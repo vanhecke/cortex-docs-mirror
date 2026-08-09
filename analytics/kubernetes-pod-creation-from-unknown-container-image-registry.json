@@ -1,0 +1,39 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Deploy Container (T1610)"
+  ],
+  "attackers_goals": "Deploy container with a malicious image to facilitate execution.",
+  "deduplication_period": "5 Days",
+  "description": "A Kubernetes pod was created with a container image from an unknown registry.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Kubernetes - API",
+  "investigative_actions": "Check the image registry designation in the organization. Scan the container image for any malicious components.",
+  "name": "Kubernetes pod creation from unknown container image registry",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log",
+    "Kubernetes Audit Logs"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Kubernetes pod creation from unusual container image registry",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Deploy Container (T1610)"
+      ],
+      "description": "A Kubernetes pod was created with a container image from an unknown registry.",
+      "attackers_goals": "Deploy container with a malicious image to facilitate execution.",
+      "investigative_actions": "Check the image registry designation in the organization. Scan the container image for any malicious components."
+    }
+  ]
+}

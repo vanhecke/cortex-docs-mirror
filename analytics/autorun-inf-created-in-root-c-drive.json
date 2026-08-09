@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Hijack Execution Flow: Services File Permissions Weakness (T1574.010)",
+    "Replication Through Removable Media (T1091)"
+  ],
+  "attackers_goals": "The Autorun and AutoPlay components of Microsoft Windows operating systems may use 'Autorun.inf' to automatically execute a program (without user interaction). Adversaries can manipulate this mechanism to run a malicious program.",
+  "deduplication_period": "1 Day",
+  "description": "An autorun file installed at the root of a C:\\ drive is suspicious, as autorun files are typically associated with removable drives.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Read the content of the 'Autorun.inf' file from the root directory folder of the drive (the file may be hidden).",
+  "name": "Autorun.inf created in root C drive",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

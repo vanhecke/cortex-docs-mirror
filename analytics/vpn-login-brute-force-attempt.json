@@ -1,0 +1,59 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Resource Development (TA0042)"
+  ],
+  "attack_techniques": [
+    "Brute Force (T1110)",
+    "Compromise Accounts (T1586)",
+    "Brute Force: Password Guessing (T1110.001)"
+  ],
+  "attackers_goals": "An attacker attempts to gain access to the account.",
+  "deduplication_period": "1 Day",
+  "description": "A user account failed to log in to a VPN service multiple times in a short time period. This may indicate a brute-force attack.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Verify successful connections by the user account, as these can indicate the attacker managed to guess the credentials. Analyze login patterns for abnormal times, locations, or IPs for suspicious activity. Look for VPN login attempts from countries where the organization does not typically operate. Cross-reference the IP addresses with threat intelligence sources. Follow further actions taken by the account.",
+  "name": "VPN login Brute-Force attempt",
+  "required_data": [
+    "Palo Alto Networks Global Protect",
+    "Third-Party VPNs"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Successful VPN Login Brute Force",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Brute Force (T1110)",
+        "Compromise Accounts (T1586)",
+        "Brute Force: Password Guessing (T1110.001)"
+      ],
+      "description": "A user account failed to log in to a VPN service multiple times in a short time period. This may indicate a brute-force attack.",
+      "attackers_goals": "An attacker attempts to gain access to the account.",
+      "investigative_actions": "Verify successful connections by the user account, as these can indicate the attacker managed to guess the credentials. Analyze login patterns for abnormal times, locations, or IPs for suspicious activity. Look for VPN login attempts from countries where the organization does not typically operate. Cross-reference the IP addresses with threat intelligence sources. Follow further actions taken by the account."
+    },
+    {
+      "name": "VPN login brute-force attempt with suspicious characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Brute Force (T1110)",
+        "Compromise Accounts (T1586)",
+        "Brute Force: Password Guessing (T1110.001)"
+      ],
+      "description": "A user account failed to log in to a VPN service multiple times in a short time period. This may indicate a brute-force attack.",
+      "attackers_goals": "An attacker attempts to gain access to the account.",
+      "investigative_actions": "Verify successful connections by the user account, as these can indicate the attacker managed to guess the credentials. Analyze login patterns for abnormal times, locations, or IPs for suspicious activity. Look for VPN login attempts from countries where the organization does not typically operate. Cross-reference the IP addresses with threat intelligence sources. Follow further actions taken by the account."
+    }
+  ]
+}

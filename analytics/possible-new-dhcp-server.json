@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Adversary-in-the-Middle (T1557)"
+  ],
+  "attackers_goals": "The attacker is attempting a man-in-the-middle NTLM relay attack to intercept authentication attempts and move laterally within an environment.",
+  "deduplication_period": "1 Day",
+  "description": "A DHCP response was sent from an unknown DHCP server. Attackers may send a DHCP response to a host in his LAN to inject a DNS server, route or WPAD server.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the source agent is a legitimate DHCP server. Check if the attacked host send DNS queries to an unusual IP. Check if the attacked host send WPAD HTTP/S requests to an unusual host.",
+  "name": "Possible new DHCP server",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

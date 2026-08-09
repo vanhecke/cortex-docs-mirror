@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Indicator Removal: Clear Mailbox Data (T1070.008)"
+  ],
+  "attackers_goals": "An attacker is attempting to hide newly sent email messages for evasion purposes.",
+  "deduplication_period": "1 Day",
+  "description": "A user moved sent messages to deleted items in Exchange.",
+  "detection_modules": "Identity Threat Module, Email",
+  "detector_tags": "",
+  "investigative_actions": "Look for signs that the user account and mailboxes are compromised (e.g. abnormal logins, unusual activity). Investigate the IP address associated with the activity. Follow further actions done by the account. Look for unusual email patterns from the affected mailbox (e.g. unusual email contents). Examine the user's email activity history for suspicious behavior.",
+  "name": "User moved Exchange sent messages to deleted items",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Sensitive Exchange sent messages moved to deleted items from unusual source",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Indicator Removal: Clear Mailbox Data (T1070.008)"
+      ],
+      "description": "A user moved sensitive sent messages to deleted items in Exchange.",
+      "attackers_goals": "An attacker is attempting to hide newly sent email messages for evasion purposes.",
+      "investigative_actions": "Look for signs that the user account and mailboxes are compromised (e.g. abnormal logins, unusual activity). Investigate the IP address associated with the activity. Follow further actions done by the account. Look for unusual email patterns from the affected mailbox (e.g. unusual email contents). Examine the user's email activity history for suspicious behavior."
+    }
+  ]
+}

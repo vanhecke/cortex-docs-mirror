@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "An attacker tries infiltrating an Okta account to gain unauthorized access to valuable resources.",
+  "deduplication_period": "1 Day",
+  "description": "Okta Threat Insight Reported Threat Detected.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Okta Audit Analytics",
+  "investigative_actions": "Investigate the original events that were reported as suspicious. Investigate additional alerts that are activated based on the IP address. Follow further actions done by the ip.",
+  "name": "Okta Reported Threat Detected",
+  "required_data": [
+    "Okta Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "3 Hours",
+  "variations": [
+    {
+      "name": "Okta detected multiple threats from the same IP along with other suspicious characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "Okta Threat Insight Reported Threat Detected.",
+      "attackers_goals": "An attacker tries infiltrating an Okta account to gain unauthorized access to valuable resources.",
+      "investigative_actions": "Investigate the original events that were reported as suspicious. Investigate additional alerts that are activated based on the IP address. Follow further actions done by the ip."
+    }
+  ]
+}

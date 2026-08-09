@@ -1,0 +1,52 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Inhibit System Recovery (T1490)",
+    "Data Destruction (T1485)"
+  ],
+  "attackers_goals": "Adversaries may delete data to prevent the recovery of a corrupted system. They may also aim to interrupt availability to resources.",
+  "deduplication_period": "5 Days",
+  "description": "An identity deleted multiple S3 bucket objects from the project, considerably more than usual.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Identify the deleted objects and their containing bucket. Investigate the identity that performed the deletion and review recent related activity.",
+  "name": "Unusual AWS S3 objects deletion",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "A non administrative identity deleted multiple S3 objects from a project",
+      "severity": "Low",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Inhibit System Recovery (T1490)",
+        "Data Destruction (T1485)"
+      ],
+      "description": "An identity deleted multiple S3 bucket objects from the project, considerably more than usual.",
+      "attackers_goals": "Adversaries may delete data to prevent the recovery of a corrupted system. They may also aim to interrupt availability to resources.",
+      "investigative_actions": "Identify the deleted objects and their containing bucket. Investigate the identity that performed the deletion and review recent related activity."
+    },
+    {
+      "name": "An identity permanently deleted multiple S3 objects from a project",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Inhibit System Recovery (T1490)",
+        "Data Destruction (T1485)"
+      ],
+      "description": "An identity deleted multiple S3 bucket objects from the project, considerably more than usual.",
+      "attackers_goals": "Adversaries may delete data to prevent the recovery of a corrupted system. They may also aim to interrupt availability to resources.",
+      "investigative_actions": "Identify the deleted objects and their containing bucket. Investigate the identity that performed the deletion and review recent related activity."
+    }
+  ]
+}

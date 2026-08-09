@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Services (T1021)"
+  ],
+  "attackers_goals": "Attackers may use the SMB protocol in an attempt to move laterally in the network, and expand their foothold in the organization.",
+  "deduplication_period": "2 Days",
+  "description": "The endpoint performed a rare SMB activity to a remote host.",
+  "detection_modules": "",
+  "detector_tags": "NDR Lateral Movement Analytics",
+  "investigative_actions": "Check whether the username used in the SMB connection is legitimate. Verify that this isn't IT activity.",
+  "name": "Rare SMB session to a remote host",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent",
+    "Third-Party Firewalls"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Rare SMB session to a remote host",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services (T1021)"
+      ],
+      "description": "The endpoint performed a rare SMB activity to a remote host.",
+      "attackers_goals": "Attackers may use the SMB protocol in an attempt to move laterally in the network, and expand their foothold in the organization.",
+      "investigative_actions": "Check whether the username used in the SMB connection is legitimate. Verify that this isn't IT activity."
+    }
+  ]
+}

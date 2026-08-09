@@ -1,0 +1,51 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify Cloud Firewall (T1562.007)"
+  ],
+  "attackers_goals": "Bypass network security controls to gain access to restricted cloud resources.",
+  "deduplication_period": "1 Day",
+  "description": "A cloud identity created or modified a security group.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check which security rules were added or modified. Check whether the identity that modified the security group rules is permitted to perform such action. Check which cloud resources can be affected by the security group.",
+  "name": "A cloud identity created or modified a security group",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A cloud identity opened a security group to the Internet",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify Cloud Firewall (T1562.007)"
+      ],
+      "description": "A cloud identity modified a security group to allow network access from the Internet.",
+      "attackers_goals": "Bypass network security controls to gain access to restricted cloud resources.",
+      "investigative_actions": "Check which security rules were added or modified. Check whether the identity that modified the security group rules is permitted to perform such action. Check which cloud resources can be affected by the security group."
+    },
+    {
+      "name": "A cloud identity opened a security group to an unknown IP",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify Cloud Firewall (T1562.007)"
+      ],
+      "description": "A cloud identity modified a security group to allow network access from an unknown IP.",
+      "attackers_goals": "Bypass network security controls to gain access to restricted cloud resources.",
+      "investigative_actions": "Check which security rules were added or modified. Check whether the identity that modified the security group rules is permitted to perform such action. Check which cloud resources can be affected by the security group."
+    }
+  ]
+}

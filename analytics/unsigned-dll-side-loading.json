@@ -1,0 +1,115 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Hijack Execution Flow: DLL (T1574.001)"
+  ],
+  "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+  "deduplication_period": "1 Day",
+  "description": "A signed process loaded an unsigned and rare module from the same folder.",
+  "detection_modules": "",
+  "detector_tags": "DLL Hijacking Analytics",
+  "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations.",
+  "name": "Unsigned DLL Side-Loading",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "DLL Side-Loading of module bearing an invalid Microsoft signature",
+      "severity": "High",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow: DLL (T1574.001)"
+      ],
+      "description": "A signed process loaded an unsigned and rare module from the same folder.",
+      "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+      "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations."
+    },
+    {
+      "name": "Unsigned DLL Side-Loading to a signed microsoft process by a rare causality actor",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow: DLL (T1574.001)"
+      ],
+      "description": "A signed process loaded an unsigned and rare module from the same folder.",
+      "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+      "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations."
+    },
+    {
+      "name": "Unsigned DLL Side-Loading to a signed microsoft process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow: DLL (T1574.001)"
+      ],
+      "description": "A signed process loaded an unsigned and rare module from the same folder.",
+      "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+      "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations."
+    },
+    {
+      "name": "Unsigned DLL Side-Loading - DLL downloaded from an uncommon source",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow: DLL (T1574.001)"
+      ],
+      "description": "A signed process loaded an unsigned and rare module from the same folder.",
+      "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+      "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations."
+    },
+    {
+      "name": "Unsigned high entropy DLL Side-Loading by untrusted causality actor",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow: DLL (T1574.001)"
+      ],
+      "description": "A signed process loaded an unsigned and rare module from the same folder.",
+      "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+      "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations."
+    },
+    {
+      "name": "Unsigned DLL Side-Loading which was executed by a scheduled task",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow: DLL (T1574.001)"
+      ],
+      "description": "A signed process loaded an unsigned and rare module from the same folder.",
+      "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+      "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Phishing (T1566)",
+    "Impersonation (T1656)"
+  ],
+  "attackers_goals": "Get credentials for internal systems. Executing financial transfers from the company to the attacker's account. Extracting information outside the company. Encrypting critical information and demanding a ransom.",
+  "deduplication_period": "1 Hour 30 Minutes",
+  "description": "An external sender is possibly impersonating an employee by spoofing the company's internal address.",
+  "detection_modules": "Email",
+  "detector_tags": "Employee Impersonation, Spear Phishing",
+  "investigative_actions": "Check the received header path, especially the sender host. Check DMARC, SPF AND DKIM authentication results. Verify whether the sender's IP address has appeared in different log sources before and its reputation. If the message contains attachments or links, scrutinize them for any suspicious indications. Monitor further actions taken, such as file downloads or access to potentially malicious links.",
+  "name": "Potential spoofing of internal domain spotted",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

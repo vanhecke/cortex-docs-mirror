@@ -1,0 +1,64 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Unused/Unsupported Cloud Regions (T1535)"
+  ],
+  "attackers_goals": "Create compute resources in unmonitored regions to evade detection for purposes such as hijacking resources or establishing persistence.",
+  "deduplication_period": "5 Days",
+  "description": "A compute resource was created or updated in a cloud region that has been dormant for this project.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Verify if compute resources are authorized in this region. Terminate unauthorized compute resources and disable unused regions.",
+  "name": "Compute activity in dormant cloud region",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Compute activity in dormant cloud region from a non-VPN IP address",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Unused/Unsupported Cloud Regions (T1535)"
+      ],
+      "description": "A compute resource was created or updated in a cloud region that has been dormant for this project.",
+      "attackers_goals": "Create compute resources in unmonitored regions to evade detection for purposes such as hijacking resources or establishing persistence.",
+      "investigative_actions": "Verify if compute resources are authorized in this region. Terminate unauthorized compute resources and disable unused regions."
+    },
+    {
+      "name": "A cloud compute instance was created in a dormant region",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Unused/Unsupported Cloud Regions (T1535)"
+      ],
+      "description": "A compute resource was created or updated in a cloud region that has been dormant for this project.",
+      "attackers_goals": "Create compute resources in unmonitored regions to evade detection for purposes such as hijacking resources or establishing persistence.",
+      "investigative_actions": "Verify if compute resources are authorized in this region. Terminate unauthorized compute resources and disable unused regions."
+    },
+    {
+      "name": "Compute activity in dormant cloud region by a compromised AWS access key",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Unused/Unsupported Cloud Regions (T1535)"
+      ],
+      "description": "A compute resource was created or updated in a cloud region that has been dormant for this project.",
+      "attackers_goals": "Create compute resources in unmonitored regions to evade detection for purposes such as hijacking resources or establishing persistence.",
+      "investigative_actions": "Verify if compute resources are authorized in this region. Terminate unauthorized compute resources and disable unused regions."
+    }
+  ]
+}

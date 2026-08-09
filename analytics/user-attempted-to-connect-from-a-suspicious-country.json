@@ -1,0 +1,61 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Resource Development (TA0042)"
+  ],
+  "attack_techniques": [
+    "Compromise Accounts (T1586)",
+    "Brute Force: Password Guessing (T1110.001)"
+  ],
+  "attackers_goals": "Gain user-account credentials.",
+  "deduplication_period": "30 Days",
+  "description": "A user connected from an unusual country. This may indicate the account was compromised.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check if the user is currently located in the aforementioned country, or routed its traffic there via a VPN.",
+  "name": "User attempted to connect from a suspicious country",
+  "required_data": [
+    "AzureAD",
+    "Azure SignIn Log",
+    "Idira",
+    "Duo",
+    "Okta",
+    "OneLogin",
+    "PingOne"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "User attempted to connect from a suspicious country via a suspicious IP",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Compromise Accounts (T1586)",
+        "Brute Force: Password Guessing (T1110.001)"
+      ],
+      "description": "A user connected from an unusual country. This may indicate the account was compromised.",
+      "attackers_goals": "Gain user-account credentials.",
+      "investigative_actions": "Check if the user is currently located in the aforementioned country, or routed its traffic there via a VPN."
+    },
+    {
+      "name": "User successfully connected from a suspicious country",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Compromise Accounts (T1586)",
+        "Brute Force: Password Guessing (T1110.001)"
+      ],
+      "description": "A user successfully connected from an unusual country. This may indicate the account was compromised.",
+      "attackers_goals": "Gain user-account credentials.",
+      "investigative_actions": "Check if the user is currently located in the aforementioned country, or routed its traffic there via a VPN."
+    }
+  ]
+}

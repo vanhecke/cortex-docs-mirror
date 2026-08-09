@@ -1,0 +1,75 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Scheduled Task/Job (T1053)"
+  ],
+  "attackers_goals": "Attackers may attempt to use the command to gain persistence on the endpoint using scheduled tasks.",
+  "deduplication_period": "1 Day",
+  "description": "The schtasks.exe command enables creating, deleting, querying, changing, running, and ending scheduled tasks on a local or remote computer. Adversaries may attempt to use the command to gain persistence on this host using scheduled tasks.",
+  "detection_modules": "",
+  "detector_tags": "Scheduled tasks Analytics",
+  "investigative_actions": "Review the process that creates the schedule task. Investigate the specific scheduled task execution chain.",
+  "name": "Uncommon local scheduled task creation via schtasks.exe",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon local scheduled task creation via schtasks.exe by a remote actor",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "The schtasks.exe command enables creating, deleting, querying, changing, running, and ending scheduled tasks on a local or remote computer. Adversaries may attempt to use the command to gain persistence on this host using scheduled tasks.",
+      "attackers_goals": "Attackers may attempt to use the command to gain persistence on the endpoint using scheduled tasks.",
+      "investigative_actions": "Review the process that creates the schedule task. Investigate the specific scheduled task execution chain."
+    },
+    {
+      "name": "Uncommon scheduled task created by an unsigned and rare actor via schtasks.exe",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "The schtasks.exe command enables creating, deleting, querying, changing, running, and ending scheduled tasks on a local or remote computer. Adversaries may attempt to use the command to gain persistence on this host using scheduled tasks.",
+      "attackers_goals": "Attackers may attempt to use the command to gain persistence on the endpoint using scheduled tasks.",
+      "investigative_actions": "Review the process that creates the schedule task. Investigate the specific scheduled task execution chain."
+    },
+    {
+      "name": "Uncommon scheduled task created by an unsigned actor via schtasks.exe",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "The schtasks.exe command enables creating, deleting, querying, changing, running, and ending scheduled tasks on a local or remote computer. Adversaries may attempt to use the command to gain persistence on this host using scheduled tasks.",
+      "attackers_goals": "Attackers may attempt to use the command to gain persistence on the endpoint using scheduled tasks.",
+      "investigative_actions": "Review the process that creates the schedule task. Investigate the specific scheduled task execution chain."
+    },
+    {
+      "name": "Uncommon scheduled task created by a signed actor from a rare vendor via schtasks.exe",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "The schtasks.exe command enables creating, deleting, querying, changing, running, and ending scheduled tasks on a local or remote computer. Adversaries may attempt to use the command to gain persistence on this host using scheduled tasks.",
+      "attackers_goals": "Attackers may attempt to use the command to gain persistence on the endpoint using scheduled tasks.",
+      "investigative_actions": "Review the process that creates the schedule task. Investigate the specific scheduled task execution chain."
+    }
+  ]
+}

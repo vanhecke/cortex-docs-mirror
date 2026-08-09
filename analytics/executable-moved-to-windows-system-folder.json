@@ -1,0 +1,75 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Masquerading (T1036)"
+  ],
+  "attackers_goals": "An attacker may be trying to avoid detection by moving an executable to a Windows system folder.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker may be trying to avoid detection by moving an executable to a Windows system folder.",
+  "detection_modules": "",
+  "detector_tags": "EDR Windows Disguised Processes",
+  "investigative_actions": "Check if the file is known in organization or malicious. Check if the digital signature of the file is valid and belongs to a known good software vendor. Investigate the process that has moved the file to the system folder.",
+  "name": "Executable moved to Windows system folder",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Rare executable moved to Windows system folder by rare causality actor",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading (T1036)"
+      ],
+      "description": "An attacker may be trying to avoid detection by moving an executable to a Windows system folder.",
+      "attackers_goals": "An attacker may be trying to avoid detection by moving an executable to a Windows system folder.",
+      "investigative_actions": "Check if the file is known in organization or malicious. Check if the digital signature of the file is valid and belongs to a known good software vendor. Investigate the process that has moved the file to the system folder."
+    },
+    {
+      "name": "Executable moved to Windows system folder by remote causality and a rare actor",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading (T1036)"
+      ],
+      "description": "An attacker may be trying to avoid detection by moving an executable to a Windows system folder.",
+      "attackers_goals": "An attacker may be trying to avoid detection by moving an executable to a Windows system folder.",
+      "investigative_actions": "Check if the file is known in organization or malicious. Check if the digital signature of the file is valid and belongs to a known good software vendor. Investigate the process that has moved the file to the system folder."
+    },
+    {
+      "name": "Rare executable moved to Windows system folder by rare actor",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading (T1036)"
+      ],
+      "description": "An attacker may be trying to avoid detection by moving an executable to a Windows system folder.",
+      "attackers_goals": "An attacker may be trying to avoid detection by moving an executable to a Windows system folder.",
+      "investigative_actions": "Check if the file is known in organization or malicious. Check if the digital signature of the file is valid and belongs to a known good software vendor. Investigate the process that has moved the file to the system folder."
+    },
+    {
+      "name": "Executable moved to Windows system folder by rare and unsigned actor",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading (T1036)"
+      ],
+      "description": "An attacker may be trying to avoid detection by moving an executable to a Windows system folder.",
+      "attackers_goals": "An attacker may be trying to avoid detection by moving an executable to a Windows system folder.",
+      "investigative_actions": "Check if the file is known in organization or malicious. Check if the digital signature of the file is valid and belongs to a known good software vendor. Investigate the process that has moved the file to the system folder."
+    }
+  ]
+}

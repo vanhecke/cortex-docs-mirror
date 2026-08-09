@@ -1,0 +1,39 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Access Token Manipulation: SID-History Injection (T1134.005)"
+  ],
+  "attackers_goals": "Adversaries may use SID history to escalate privileges and bypass access controls.",
+  "deduplication_period": "1 Hour",
+  "description": "A user added SID history to an account. This may be indicative of a user's migration between domains or a SID injection attack.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Verify if migration between domains was involved. Search for suspicious actions by the user, such as forged Kerberos tickets.",
+  "name": "User added SID History to an account",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious SID History Addition",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Access Token Manipulation: SID-History Injection (T1134.005)"
+      ],
+      "description": "A user added SID history to an account. The account was not migrated between domains, which may indicate a SID injection attack.",
+      "attackers_goals": "Adversaries may use SID history to escalate privileges and bypass access controls.",
+      "investigative_actions": "Verify if migration between domains was involved. Search for suspicious actions by the user, such as forged Kerberos tickets."
+    }
+  ]
+}

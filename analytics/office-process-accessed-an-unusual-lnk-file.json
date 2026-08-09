@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)",
+    "Boot or Logon Autostart Execution: Shortcut Modification (T1547.009)"
+  ],
+  "attackers_goals": "Modify or create a shortcut to gain code or program execution.",
+  "deduplication_period": "7 Days",
+  "description": "An attacker may embed a .LNK file in an Office document to execute malicious code.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the Office document contains a shortcut object. Check the content (strings) of the document object for a .LNK shortcut. Check the content of the shortcut.",
+  "name": "Office process accessed an unusual .LNK file",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

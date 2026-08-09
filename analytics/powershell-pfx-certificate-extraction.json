@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Unsecured Credentials: Credentials In Files (T1552.001)"
+  ],
+  "attackers_goals": "Attackers may export certificates to .pfx files to use them for authentication, persistence or NTLM extraction.",
+  "deduplication_period": "1 Day",
+  "description": "PowerShell was used to extract a pfx certificate file.",
+  "detection_modules": "",
+  "detector_tags": "Active Directory Certificate Services Analytics",
+  "investigative_actions": "Check if the pfx creation is legitimate for the user (Testing, IT, etc.). Follow further actions done by the user (ex. authentication using certificates).",
+  "name": "PowerShell pfx certificate extraction",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious PowerShell pfx certificate extraction",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials: Credentials In Files (T1552.001)"
+      ],
+      "description": "A user used PowerShell to extract a pfx certificate file.",
+      "attackers_goals": "Attackers may export certificates to .pfx files to use them for authentication, persistence or NTLM extraction.",
+      "investigative_actions": "Check if the pfx creation is legitimate for the user (Testing, IT, etc.). Follow further actions done by the user (ex. authentication using certificates)."
+    }
+  ]
+}

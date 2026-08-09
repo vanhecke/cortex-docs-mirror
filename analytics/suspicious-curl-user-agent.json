@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol: Web Protocols (T1071.001)"
+  ],
+  "attackers_goals": "Impairing host defenses.",
+  "deduplication_period": "1 Day",
+  "description": "Suspicious user agent provided to curl command.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Suspicious curl user agent",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious curl user agent from within a Kubernetes Pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol: Web Protocols (T1071.001)"
+      ],
+      "description": "Suspicious user agent provided to curl command.",
+      "attackers_goals": "Impairing host defenses.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

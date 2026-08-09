@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Create Account (T1136)",
+    "Hide Artifacts: Hidden Users (T1564.002)"
+  ],
+  "attackers_goals": "Evasion using a valid account.",
+  "deduplication_period": "1 Day",
+  "description": "A user account was created with a name that mimics a machine account.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check the user account created and verify its activity.",
+  "name": "Suspicious hidden user created",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify System Firewall (T1562.004)"
+  ],
+  "attackers_goals": "An attacker may turn the firewall off to exfiltrate data and communicate with C2 servers.",
+  "deduplication_period": "7 Days",
+  "description": "The Windows Firewall has been disabled. Malware may turn it off to exfiltrate data and communicate with C2 servers.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the command line executed is benign or normal for the host and/or user performing it. Investigate the endpoint to determine if the process is legitimately disabling the firewall.",
+  "name": "Suspicious disablement of the Windows Firewall",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

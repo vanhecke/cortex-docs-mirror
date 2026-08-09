@@ -1,0 +1,44 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Credential Access (TA0006)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Phishing (T1566)",
+    "User Execution: Malicious Link (T1204.001)",
+    "Steal Application Access Token (T1528)"
+  ],
+  "attackers_goals": "Bypass identity trust controls to gain persistent unauthorized access to cloud resources.",
+  "deduplication_period": "1 Day",
+  "description": "Detection of potential OAuth token theft via a forced 'localhost' redirect and first-party app abuse. This indicates an attacker has likely bypassed MFA to hijack a user's cloud session.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check for successful logins to Azure CLI or PowerShell from anomalous IPs. Review sign-in logs for User-Agents associated with CLI tools or scripts. Revoke all active OAuth refresh tokens for the user immediately.",
+  "name": "Possible ConsentFix - OAuth Token Theft Detected",
+  "required_data": [
+    "AzureAD"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "OAuth Token Theft - Potential Session Hijacking Detected from new ASN",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Credential Access (TA0006)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)",
+        "User Execution: Malicious Link (T1204.001)",
+        "Steal Application Access Token (T1528)"
+      ],
+      "description": "Detection of potential OAuth token theft via a forced 'localhost' redirect and first-party app abuse. This indicates an attacker has likely bypassed MFA to hijack a user's cloud session.",
+      "attackers_goals": "Bypass identity trust controls to gain persistent unauthorized access to cloud resources.",
+      "investigative_actions": "Check for successful logins to Azure CLI or PowerShell from anomalous IPs. Review sign-in logs for User-Agents associated with CLI tools or scripts. Revoke all active OAuth refresh tokens for the user immediately."
+    }
+  ]
+}

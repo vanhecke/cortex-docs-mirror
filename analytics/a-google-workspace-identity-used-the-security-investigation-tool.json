@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data from Information Repositories (T1213)",
+    "Email Collection (T1114)"
+  ],
+  "attackers_goals": "Access sensitive data.",
+  "deduplication_period": "1 Day",
+  "description": "A Google Workspace identity used the security investigation tool The Google Workspace security investigation tool can be abused to access sensitive data.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Determine what data was accessed using the security investigation tool.",
+  "name": "A Google Workspace identity used the security investigation tool",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A suspicious Google Workspace identity used the security investigation tool",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Data from Information Repositories (T1213)",
+        "Email Collection (T1114)"
+      ],
+      "description": "A Google Workspace identity used the security investigation tool The Google Workspace security investigation tool can be abused to access sensitive data.",
+      "attackers_goals": "Access sensitive data.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Determine what data was accessed using the security investigation tool."
+    }
+  ]
+}

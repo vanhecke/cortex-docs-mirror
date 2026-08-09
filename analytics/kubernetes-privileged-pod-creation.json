@@ -1,0 +1,73 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Escape to Host (T1611)",
+    "Deploy Container (T1610)"
+  ],
+  "attackers_goals": "Gain access to the host's filesystem. Gain root access to the host.",
+  "deduplication_period": "5 Days",
+  "description": "An identity created a Kubernetes pod with a privileged container. This may indicate an adversary attempting to access that host's filesystem or gain root access to the host.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Kubernetes - API",
+  "investigative_actions": "Check the identity's role designation in the organization. Inspect for any additional suspicious activities inside the Kubernetes Pod.",
+  "name": "Kubernetes Privileged Pod Creation",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log",
+    "Kubernetes Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Kubernetes Privileged Pod Creation for the first time in the cluster",
+      "severity": "Low",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Escape to Host (T1611)",
+        "Deploy Container (T1610)"
+      ],
+      "description": "An identity created a Kubernetes pod with a privileged container. This may indicate an adversary attempting to access that host's filesystem or gain root access to the host.",
+      "attackers_goals": "Gain access to the host's filesystem. Gain root access to the host.",
+      "investigative_actions": "Check the identity's role designation in the organization. Inspect for any additional suspicious activities inside the Kubernetes Pod."
+    },
+    {
+      "name": "Kubernetes Privileged Pod Creation for the first time in the namespace",
+      "severity": "Low",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Escape to Host (T1611)",
+        "Deploy Container (T1610)"
+      ],
+      "description": "An identity created a Kubernetes pod with a privileged container. This may indicate an adversary attempting to access that host's filesystem or gain root access to the host.",
+      "attackers_goals": "Gain access to the host's filesystem. Gain root access to the host.",
+      "investigative_actions": "Check the identity's role designation in the organization. Inspect for any additional suspicious activities inside the Kubernetes Pod."
+    },
+    {
+      "name": "Kubernetes Privileged Pod Creation for the first time by the identity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Escape to Host (T1611)",
+        "Deploy Container (T1610)"
+      ],
+      "description": "An identity created a Kubernetes pod with a privileged container. This may indicate an adversary attempting to access that host's filesystem or gain root access to the host.",
+      "attackers_goals": "Gain access to the host's filesystem. Gain root access to the host.",
+      "investigative_actions": "Check the identity's role designation in the organization. Inspect for any additional suspicious activities inside the Kubernetes Pod."
+    }
+  ]
+}

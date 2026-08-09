@@ -1,0 +1,46 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Lateral Movement (TA0008)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Steal Application Access Token (T1528)",
+    "Use Alternate Authentication Material: Application Access Token (T1550.001)",
+    "Unsecured Credentials (T1552)",
+    "Valid Accounts: Cloud Accounts (T1078.004)"
+  ],
+  "attackers_goals": "Exfiltrate a token and abuse it remotely.",
+  "deduplication_period": "5 Days",
+  "description": "An AWS service token was used externally of the cloud environment.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check what actions were executed using the access-key. Check if the IAM role was assumed by a different identity.",
+  "name": "Remote usage of an AWS service token",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious usage of AWS service token",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Lateral Movement (TA0008)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Steal Application Access Token (T1528)",
+        "Use Alternate Authentication Material: Application Access Token (T1550.001)",
+        "Unsecured Credentials (T1552)",
+        "Valid Accounts: Cloud Accounts (T1078.004)"
+      ],
+      "description": "An AWS service token was used externally of the cloud environment.",
+      "attackers_goals": "Exfiltrate a token and abuse it remotely.",
+      "investigative_actions": "Check what actions were executed using the access-key. Check if the IAM role was assumed by a different identity."
+    }
+  ]
+}

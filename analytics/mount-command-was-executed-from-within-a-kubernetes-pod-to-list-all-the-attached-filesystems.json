@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Escape to Host (T1611)"
+  ],
+  "attackers_goals": "Access to the host filesystem.",
+  "deduplication_period": "1 Day",
+  "description": "The mount command was executed inside a Kubernetes pod to list all the attached filesystems, which may serve as a precursor to container escape and host filesystem access.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT",
+  "investigative_actions": "Look for additional suspicious activities. Verify if there was an attempt to access the host system.",
+  "name": "Mount command was executed from within a Kubernetes pod to list all the attached filesystems",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual mount command was executed from within a Kubernetes pod to list all the attached filesystems",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Escape to Host (T1611)"
+      ],
+      "description": "The mount command was executed inside a Kubernetes pod to list all the attached filesystems, which may serve as a precursor to container escape and host filesystem access.",
+      "attackers_goals": "Access to the host filesystem.",
+      "investigative_actions": "Look for additional suspicious activities. Verify if there was an attempt to access the host system."
+    }
+  ]
+}

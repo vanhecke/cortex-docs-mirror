@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Cloud Accounts (T1078.004)"
+  ],
+  "attackers_goals": "Gain access to cloud AI/ML resources and services.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity requested access to an AWS Bedrock model. MITRE ATLAS Technique: AML.T0012 - Valid Accounts.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud AI Infrastructure Analytics",
+  "investigative_actions": "Examine which AWS Bedrock models were affected. Investigate any unusual activity originating from the suspected identity.",
+  "name": "Unusual AWS Bedrock model access request",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

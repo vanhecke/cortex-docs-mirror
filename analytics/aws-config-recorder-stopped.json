@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+  ],
+  "attackers_goals": "An attacker may change the configuration of the affected resource to remain undetected.",
+  "deduplication_period": "1 Day",
+  "description": "Configuration Recorder was stopped for a resource in AWS Config.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the identity which stopped the configuration recording. Check what resources are affected by this change.",
+  "name": "AWS Config Recorder stopped",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

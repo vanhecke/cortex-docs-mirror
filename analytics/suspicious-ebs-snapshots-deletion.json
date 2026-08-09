@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Inhibit System Recovery (T1490)"
+  ],
+  "attackers_goals": "Adversaries may delete data to prevent the recovery of a corrupted system.",
+  "deduplication_period": "5 Days",
+  "description": "An identity deleted multiple EBS snapshots from the project, considerably more than usual.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Identify the deleted snapshots and their associated resources. Investigate the identity that performed the deletion and review recent related activity.",
+  "name": "Suspicious EBS snapshots deletion",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "A non administrative identity successfully deleted multiple snapshots from a project",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Inhibit System Recovery (T1490)"
+      ],
+      "description": "An identity deleted multiple EBS snapshots from the project, considerably more than usual.",
+      "attackers_goals": "Adversaries may delete data to prevent the recovery of a corrupted system.",
+      "investigative_actions": "Identify the deleted snapshots and their associated resources. Investigate the identity that performed the deletion and review recent related activity."
+    }
+  ]
+}

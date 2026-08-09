@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Inhibit System Recovery (T1490)"
+  ],
+  "attackers_goals": "Delete logs to cover tracks of the malicious activity, making it harder to perform analysis.",
+  "deduplication_period": "1 Day",
+  "description": "A command-line utility was used to clear the Windows Event Log. It may be used to delete logs to cover the tracks of the malicious activity, making it harder to perform analysis.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Windows Event Log was cleared using wevtutil.exe",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Security Event Log was cleared using wevtutil.exe",
+      "severity": "High",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Inhibit System Recovery (T1490)"
+      ],
+      "description": "A command-line utility was used to clear the Windows Event Log. It may be used to delete logs to cover the tracks of the malicious activity, making it harder to perform analysis.",
+      "attackers_goals": "Delete logs to cover tracks of the malicious activity, making it harder to perform analysis.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "A Sensitive Windows Event Log was cleared using wevtutil.exe",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Inhibit System Recovery (T1490)"
+      ],
+      "description": "A command-line utility was used to clear the Windows Event Log. It may be used to delete logs to cover the tracks of the malicious activity, making it harder to perform analysis.",
+      "attackers_goals": "Delete logs to cover tracks of the malicious activity, making it harder to perform analysis.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

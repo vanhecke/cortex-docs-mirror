@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Boot or Logon Autostart Execution (T1547)"
+  ],
+  "attackers_goals": "Attackers aim to get persistence to continue operating even after a reboot.",
+  "deduplication_period": "1 Day",
+  "description": "Uncommon execution of an executable found in an early startup stage by Windows system binary.",
+  "detection_modules": "",
+  "detector_tags": "Generic Persistence Analytics",
+  "investigative_actions": "Check if the Causality Group Owner (CGO) has a related persistence mechanism that may have been abused by an attacker.",
+  "name": "Execution of an uncommon process at an early startup stage by Windows system binary",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Execution of an uncommon process at an early startup stage by Windows system binary with suspicious characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Boot or Logon Autostart Execution (T1547)"
+      ],
+      "description": "Uncommon execution of an executable found in an early startup stage by Windows system binary.",
+      "attackers_goals": "Attackers aim to get persistence to continue operating even after a reboot.",
+      "investigative_actions": "Check if the Causality Group Owner (CGO) has a related persistence mechanism that may have been abused by an attacker."
+    },
+    {
+      "name": "Execution of an uncommon process at an early startup stage by Windows system binary with uncommon characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Boot or Logon Autostart Execution (T1547)"
+      ],
+      "description": "Uncommon execution of an executable found in an early startup stage by Windows system binary.",
+      "attackers_goals": "Attackers aim to get persistence to continue operating even after a reboot.",
+      "investigative_actions": "Check if the Causality Group Owner (CGO) has a related persistence mechanism that may have been abused by an attacker."
+    }
+  ]
+}

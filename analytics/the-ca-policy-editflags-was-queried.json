@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Querying this registry value can indicate an attacker is looking for an enabled EDITF_ATTRIBUTESUBJECTALTNAME2 flag. When this flag is enabled, it allows users to request certificates with a Subject Alternate Name(SAN). This can allow an attacker to obtain a certificate with higher privileges.",
+  "deduplication_period": "1 Day",
+  "description": "The CA policy EditFlags was queried.",
+  "detection_modules": "",
+  "detector_tags": "Active Directory Certificate Services Analytics",
+  "investigative_actions": "Check if the action was allowed by the user. Monitor certificate enrollments with Subject Alternate Names. Check for unusual high privilege users certificate authentications.",
+  "name": "The CA policy EditFlags was queried",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

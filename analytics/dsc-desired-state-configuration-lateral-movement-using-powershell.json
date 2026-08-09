@@ -1,0 +1,70 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Windows Management Instrumentation (T1047)",
+    "Remote Services: Windows Remote Management (T1021.006)"
+  ],
+  "attackers_goals": "Execute malicious content on and move laterally across machine in the network.",
+  "deduplication_period": "1 Hour",
+  "description": "An attacker is using the DSC feature with PowerShell to remotely modify / execute content / components on the machine.",
+  "detection_modules": "",
+  "detector_tags": "LOLBIN Execution Analytics",
+  "investigative_actions": "Search for suspicious WinRM sessions and the user created them, can be found at Event ID: 4102. Additionally, search for the DSC resource executed and related IOC, can be found at Event IDs: 400 or 4104.",
+  "name": "DSC (Desired State Configuration) lateral movement using PowerShell",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "DSC (Desired State Configuration) lateral movement using PowerShell to execute a script",
+      "severity": "High",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Windows Management Instrumentation (T1047)",
+        "Remote Services: Windows Remote Management (T1021.006)"
+      ],
+      "description": "An attacker may use the DSC feature with PowerShell to execute script remotely on a machine.",
+      "attackers_goals": "Execute malicious content on and move laterally across machine in the network.",
+      "investigative_actions": "Search for suspicious WinRM sessions and the user created them, can be found at Event ID: 4102. Additionally, search for the DSC resource executed and related IOC, can be found at Event IDs: 400 or 4104. The executed script is logged under Event ID 4104."
+    },
+    {
+      "name": "DSC (Desired State Configuration) lateral movement using PowerShell to execute a new service",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Windows Management Instrumentation (T1047)",
+        "Remote Services: Windows Remote Management (T1021.006)"
+      ],
+      "description": "An attacker may use the DSC feature with PowerShell to create and execute a service on the host.",
+      "attackers_goals": "Execute malicious content on and move laterally across machine in the network.",
+      "investigative_actions": "Search for suspicious WinRM sessions and the user created them, can be found at Event ID: 4102. Additionally, search for the DSC resource executed and related IOC, can be found at Event IDs: 400 or 4104."
+    },
+    {
+      "name": "DSC (Desired State Configuration) lateral movement using PowerShell to modify the registry",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Windows Management Instrumentation (T1047)",
+        "Remote Services: Windows Remote Management (T1021.006)"
+      ],
+      "description": "An attacker may use the DSC feature with PowerShell to create/modify/dump registry keys/values.",
+      "attackers_goals": "Execute malicious content on and move laterally across machine in the network.",
+      "investigative_actions": "Search for suspicious WinRM sessions and the user created them, can be found at Event ID: 4102. Additionally, search for the DSC resource executed and related IOC, can be found at Event IDs: 400 or 4104."
+    }
+  ]
+}

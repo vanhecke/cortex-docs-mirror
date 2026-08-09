@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Forge Web Credentials: SAML Tokens (T1606.002)",
+    "Exploitation of Remote Services (T1210)"
+  ],
+  "attackers_goals": "The attack goal is to forge a valid SAML token to impersonate any user and gain persistent, unauthorized access to cloud resources, effectively bypassing MFA and standard security controls.",
+  "deduplication_period": "1 Day",
+  "description": "Detected an unauthorized configuration sync request to the ADFS Policy Store from a non-ADFS server, step for forging SAML tokens in a Golden SAML attack.",
+  "detection_modules": "",
+  "detector_tags": "Active Directory Federation Services Analytics",
+  "investigative_actions": "Correlate this network event with AD FS service account activity. The attacker must use the service account's credentials to authenticate this request. Check for a possible DCSync alerts. Check alerts that related to ADFS server. Check for other correlated alerts on on-premises systems that may be related to the Golden SAML attack. Look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Inspect the source machine for the presence of tools like AADInternals or custom SOAP-based scripts.",
+  "name": "Unusual ADFS Remote Synchronization network connections from non-ADFS server",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

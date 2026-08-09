@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "System Binary Proxy Execution (T1218)"
+  ],
+  "attackers_goals": "Investigate the processes being spawned on the host for malicious activities.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers may abuse the conhost process to execute malicious files and evade detection.",
+  "detection_modules": "",
+  "detector_tags": "LOLBIN Execution Analytics",
+  "investigative_actions": "An adversary may use the conhost process to evade detection.",
+  "name": "Conhost.exe spawned a suspicious cmd process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Conhost.exe spawned a suspicious powershell encoded command",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "System Binary Proxy Execution (T1218)"
+      ],
+      "description": "Attackers may abuse the conhost process to execute malicious files and evade detection.",
+      "attackers_goals": "Investigate the processes being spawned on the host for malicious activities.",
+      "investigative_actions": "An adversary may use the conhost process to evade detection."
+    },
+    {
+      "name": "Conhost.exe spawned a suspicious scripting process with long command line",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "System Binary Proxy Execution (T1218)"
+      ],
+      "description": "Attackers may abuse the conhost process to execute malicious files and evade detection.",
+      "attackers_goals": "Investigate the processes being spawned on the host for malicious activities.",
+      "investigative_actions": "An adversary may use the conhost process to evade detection."
+    },
+    {
+      "name": "Conhost.exe spawned a suspicious child process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "System Binary Proxy Execution (T1218)"
+      ],
+      "description": "Attackers may abuse the conhost process to execute malicious files and evade detection.",
+      "attackers_goals": "Investigate the processes being spawned on the host for malicious activities.",
+      "investigative_actions": "An adversary may use the conhost process to evade detection."
+    }
+  ]
+}

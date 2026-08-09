@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation: Additional Cloud Roles (T1098.003)"
+  ],
+  "attackers_goals": "Elevate permissions and establish persistence.",
+  "deduplication_period": "1 Day",
+  "description": "A user made an addition to the site collection administrators group in SharePoint.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check the IP address from which the access originated. Verify the activity with the performing user. Follow further actions done by the account.",
+  "name": "SharePoint Site Collection admin group addition",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "SharePoint site collection admin added to personal site",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: Additional Cloud Roles (T1098.003)"
+      ],
+      "description": "A user was added as a site collection admin to a personal site, indicating that the user has accessed the SharePoint service for the first time.",
+      "attackers_goals": "Elevate permissions and establish persistence.",
+      "investigative_actions": "Check the IP address from which the access originated. Verify the activity with the performing user. Follow further actions done by the account."
+    },
+    {
+      "name": "Abnormal SharePoint Site Collection admin group addition",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: Additional Cloud Roles (T1098.003)"
+      ],
+      "description": "A user made an addition to the site collection administrators group in SharePoint. This user has not made any SharePoint site admin additions over the past 30 days.",
+      "attackers_goals": "Elevate permissions and establish persistence.",
+      "investigative_actions": "Check the IP address from which the access originated. Verify the activity with the performing user. Follow further actions done by the account."
+    }
+  ]
+}

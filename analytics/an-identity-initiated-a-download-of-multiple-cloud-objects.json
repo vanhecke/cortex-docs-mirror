@@ -1,0 +1,57 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)",
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Data from Cloud Storage (T1530)",
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "Exfiltrate data from the cloud environment.",
+  "deduplication_period": "1 Day",
+  "description": "An identity initiated a download of multiple cloud objects. This might be an indication for an adversary trying to exfiltrate data from cloud storage.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Exfiltration",
+  "investigative_actions": "Check the identity which invoked the operations. Check the accessed resource and verify it doesn't contain sensitive data.",
+  "name": "An identity initiated a download of multiple cloud objects",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "An identity initiated a download of multiple cloud objects in large volume compared to the project's usual volume",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Data from Cloud Storage (T1530)",
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "An identity initiated a download of multiple cloud objects. This might be an indication for an adversary trying to exfiltrate data from cloud storage. This large volume of downloaded cloud storage operations has not been in this project for the last 30 days.",
+      "attackers_goals": "Exfiltrate data from the cloud environment.",
+      "investigative_actions": "Check the identity which invoked the operations. Check the accessed resource and verify it doesn't contain sensitive data."
+    },
+    {
+      "name": "An identity initiated a download of multiple cloud objects in large volume compared to the bucket's usual volume",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Data from Cloud Storage (T1530)",
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "An identity initiated a download of multiple cloud objects. This might be an indication for an adversary trying to exfiltrate data from cloud storage. This large volume of downloaded cloud storage operations has not been seen in this bucket for the last 30 days.",
+      "attackers_goals": "Exfiltrate data from the cloud environment.",
+      "investigative_actions": "Check the identity which invoked the operations. Check the accessed resource and verify it doesn't contain sensitive data."
+    }
+  ]
+}

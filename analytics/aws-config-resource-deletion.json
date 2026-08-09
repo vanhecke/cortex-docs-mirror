@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)"
+  ],
+  "attackers_goals": "An attacker may modify Config configuration to evade detection.",
+  "deduplication_period": "1 Day",
+  "description": "An AWS config resource deletion this includes: Config rule, organization rule, configuration recorder, remediation configuration, conformance pack, configuration aggregator, delivery channel, retention configuration.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check why the identity deleted the configuration. Check what resources are relevant to the deleted config.",
+  "name": "AWS config resource deletion",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

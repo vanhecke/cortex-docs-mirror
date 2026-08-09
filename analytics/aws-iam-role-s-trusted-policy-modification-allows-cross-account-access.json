@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation: Additional Cloud Roles (T1098.003)",
+    "Account Manipulation (T1098)"
+  ],
+  "attackers_goals": "Obtaining persistency by assuming a role in the target's environment.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity has updated an IAM role's trust policy to allow external AWS account access.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Investigate any unusual activity originating from the suspected identity. Investigate any unusual activity performed in the assumed role sessions when originating from the allowed added accounts. Validate the legitimacy of the AWS accounts that were allowed external access.",
+  "name": "AWS IAM Role's Trusted Policy Modification Allows Cross-Account Access",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,43 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "An attacker is attempting to evade detection.",
+  "deduplication_period": "1 Hour",
+  "description": "A user connected via SSO on a day and hour that is unusual for this user. This may indicate that the account was compromised.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check the login of the user. Check further actions done by the account (e.g. creating files in suspicious locations, creating users, elevating permissions, etc.). Check if the user accessing remote resources or connecting to other services. Check if the user is logging in from an unusual time zone while traveling. Check if the user usually logs in from this country.",
+  "name": "A user logged in at an unusual time via SSO",
+  "required_data": [
+    "AzureAD",
+    "Azure SignIn Log",
+    "Idira",
+    "Duo",
+    "Google Workspace Authentication",
+    "Okta",
+    "OneLogin",
+    "PingOne"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Google Workspace - A user logged in at an unusual time via SSO",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A user connected via SSO on a day and hour that is unusual for this user. This may indicate that the account was compromised.",
+      "attackers_goals": "An attacker is attempting to evade detection.",
+      "investigative_actions": "Check the login of the user. Check further actions done by the account (e.g. creating files in suspicious locations, creating users, elevating permissions, etc.). Check if the user accessing remote resources or connecting to other services. Check if the user is logging in from an unusual time zone while traveling. Check if the user usually logs in from this country."
+    }
+  ]
+}

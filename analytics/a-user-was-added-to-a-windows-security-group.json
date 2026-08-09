@@ -1,0 +1,86 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Privilege escalation using a valid account.",
+  "deduplication_period": "1 Day",
+  "description": "A user was added to a Windows security group.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check the user who added the account to the group and verify its activity.",
+  "name": "A user was added to a Windows security group",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "User added a member to a Windows privileged group for the first time",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A user was added to a Windows security privileged group.",
+      "attackers_goals": "Privilege escalation using a valid account.",
+      "investigative_actions": "Check the user who added the account to the group and verify its activity."
+    },
+    {
+      "name": "User added to a Windows privileged group",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A user was added to a Windows security privileged group.",
+      "attackers_goals": "Privilege escalation using a valid account.",
+      "investigative_actions": "Check the user who added the account to the group and verify its activity."
+    },
+    {
+      "name": "User removed from a Windows privileged group",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A user was removed from a Windows security privileged group.",
+      "attackers_goals": "Privilege escalation using a valid account.",
+      "investigative_actions": "Check the user who removed the account from the group and verify its activity."
+    },
+    {
+      "name": "A user was removed from a Windows security group",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A user was removed from a Windows security group.",
+      "attackers_goals": "Privilege escalation using a valid account.",
+      "investigative_actions": "Check the user who removed the account from the group and verify its activity."
+    }
+  ]
+}

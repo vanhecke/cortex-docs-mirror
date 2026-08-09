@@ -1,0 +1,42 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Modify Cloud Compute Infrastructure (T1578)",
+    "Network Boundary Bridging (T1599)",
+    "Remote Services: Cloud Services (T1021.007)"
+  ],
+  "attackers_goals": "Redirect or intercept network traffic, bypass security appliances (firewalls, NVAs), or enable lateral movement between Azure subnets.",
+  "deduplication_period": "1 Day",
+  "description": "An Azure route table, or one of its individual routes, was created or modified. Azure route tables control how traffic flows between subnets and virtual networks. Adversaries can tamper with route tables to redirect traffic to attacker-controlled destinations, bypassing security appliances or enabling man-in-the-middle attacks.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Verify whether the identity should be making route table changes. Inspect the route's address prefix and next-hop -- a 0.0.0.0/0 route pointing at a Virtual Appliance or an internal IP is a strong tamper indicator. Examine other API calls made by the identity around the same time.",
+  "name": "Azure route table creation or modification",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual Azure route table creation or modification",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Modify Cloud Compute Infrastructure (T1578)",
+        "Network Boundary Bridging (T1599)",
+        "Remote Services: Cloud Services (T1021.007)"
+      ],
+      "description": "An Azure route table, or one of its individual routes, was created or modified. Azure route tables control how traffic flows between subnets and virtual networks. Adversaries can tamper with route tables to redirect traffic to attacker-controlled destinations, bypassing security appliances or enabling man-in-the-middle attacks.",
+      "attackers_goals": "Redirect or intercept network traffic, bypass security appliances (firewalls, NVAs), or enable lateral movement between Azure subnets.",
+      "investigative_actions": "Verify whether the identity should be making route table changes. Inspect the route's address prefix and next-hop -- a 0.0.0.0/0 route pointing at a Virtual Appliance or an internal IP is a strong tamper indicator. Examine other API calls made by the identity around the same time."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)",
+    "Brute Force: Password Cracking (T1110.002)"
+  ],
+  "attackers_goals": "BCC enables sending the same email to multiple hidden recipients without revealing them to each other.",
+  "deduplication_period": "1 Hour 30 Minutes",
+  "description": "External email with mailbox owner hidden in BCC as the only internal recipient.",
+  "detection_modules": "Email",
+  "detector_tags": "",
+  "investigative_actions": "Review the headers and content for patterns or anomalies. Assess the email's context and attack techniques to determine the potential risk. Investigate if similar patterns have occurred recently across the organization.",
+  "name": "External email with a single internal recipient hidden in BCC",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "External email with only a hidden internal BCC recipient",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)",
+        "Brute Force: Password Cracking (T1110.002)"
+      ],
+      "description": "External email with no visible recipients, mailbox owner is hidden in BCC.",
+      "attackers_goals": "BCC enables sending the same email to multiple hidden recipients without revealing them to each other.",
+      "investigative_actions": "Review the headers and content for patterns or anomalies. Assess the email's context and attack techniques to determine the potential risk. Investigate if similar patterns have occurred recently across the organization."
+    }
+  ]
+}

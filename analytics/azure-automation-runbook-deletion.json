@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)",
+    "Service Stop (T1489)"
+  ],
+  "attackers_goals": "Stop business services.",
+  "deduplication_period": "1 Day",
+  "description": "An Azure Automation runbook was deleted. This could disrupt business automation processes or remove a malicious runbook that was part of an attack.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check which runbook was deleted and whether it is malicious or valid.",
+  "name": "Azure Automation Runbook Deletion",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

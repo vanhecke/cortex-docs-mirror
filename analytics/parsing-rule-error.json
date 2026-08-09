@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Network Denial of Service (T1498)",
+    "Service Stop (T1489)"
+  ],
+  "attackers_goals": "N/A.",
+  "deduplication_period": "6 Hours",
+  "description": "A Parsing Rule error was detected.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "N/A.",
+  "name": "Parsing Rule Error",
+  "required_data": [
+    "Health Monitoring Data"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

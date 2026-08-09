@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Local Accounts (T1078.003)"
+  ],
+  "attackers_goals": "Persistence using a valid account.",
+  "deduplication_period": "1 Day",
+  "description": "A machine account was observed creating a rare local user account.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check the machine that created the user account and verify its activity. Check if the machine account is supposed to create user accounts. Investigate whether the same account was created on different hosts as part of an installation process.",
+  "name": "Local user account creation by a machine account",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

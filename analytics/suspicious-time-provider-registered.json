@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Boot or Logon Autostart Execution: Time Providers (T1547.003)"
+  ],
+  "attackers_goals": "Gain persistence using the legitimate Windows time provider mechanism, which loads libraries into Windows services.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint time provider has been tampered, this change may be used to gain persistence on the host by loading libraries into the time management service.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify if the registered library is malicious. Check if the software performing the installation is a malicious binary. Check for any network activity from a \"svchost.exe -k LocalService\" process that seems suspicious.",
+  "name": "Suspicious time provider registered",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious time provider registered manually by reg.exe",
+      "severity": "High",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Boot or Logon Autostart Execution: Time Providers (T1547.003)"
+      ],
+      "description": "The endpoint time provider has been tampered, this change may be used to gain persistence on the host by loading libraries into the time management service.",
+      "attackers_goals": "Gain persistence using the legitimate Windows time provider mechanism, which loads libraries into Windows services.",
+      "investigative_actions": "Verify if the registered library is malicious. Check if the software performing the installation is a malicious binary. Check for any network activity from a \"svchost.exe -k LocalService\" process that seems suspicious."
+    },
+    {
+      "name": "Suspicious time provider registered using an uncommon provider name",
+      "severity": "High",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Boot or Logon Autostart Execution: Time Providers (T1547.003)"
+      ],
+      "description": "The endpoint time provider has been tampered, this change may be used to gain persistence on the host by loading libraries into the time management service.",
+      "attackers_goals": "Gain persistence using the legitimate Windows time provider mechanism, which loads libraries into Windows services.",
+      "investigative_actions": "Verify if the registered library is malicious. Check if the software performing the installation is a malicious binary. Check for any network activity from a \"svchost.exe -k LocalService\" process that seems suspicious."
+    }
+  ]
+}

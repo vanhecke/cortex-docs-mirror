@@ -1,0 +1,55 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)",
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Data from Cloud Storage (T1530)",
+    "Automated Exfiltration (T1020)"
+  ],
+  "attackers_goals": "Exfiltrate sensitive data from the cloud environment.",
+  "deduplication_period": "1 Day",
+  "description": "An EBS snapshot block was downloaded using the EBS direct API. This may indicate an attacker's attempt to exfiltrate data from a volume snapshot in the cloud environment.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Exfiltration, Data Detection & Response",
+  "investigative_actions": "Check the accessed snapshot and corresponding volume. Monitor additional snapshot blocks downloads from the snapshot. Verify that the identity did not download any sensitive information that it shouldn't.",
+  "name": "An EBS snapshot block was downloaded",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "An EBS snapshot block was downloaded from a snapshot with sensitive data",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Data from Cloud Storage (T1530)",
+        "Automated Exfiltration (T1020)"
+      ],
+      "description": "An EBS snapshot block was downloaded using the EBS direct API. This may indicate an attacker's attempt to exfiltrate data from a volume snapshot in the cloud environment. The snapshot contains sensitive data.",
+      "attackers_goals": "Exfiltrate sensitive data from the cloud environment.",
+      "investigative_actions": "Check the accessed snapshot and corresponding volume. Monitor additional snapshot blocks downloads from the snapshot. Verify that the identity did not download any sensitive information that it shouldn't."
+    },
+    {
+      "name": "An unusual download of EBS snapshot block",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Data from Cloud Storage (T1530)",
+        "Automated Exfiltration (T1020)"
+      ],
+      "description": "An EBS snapshot block was downloaded using the EBS direct API. This may indicate an attacker's attempt to exfiltrate data from a volume snapshot in the cloud environment. The operation was not performed by this identity in the last 30 days.",
+      "attackers_goals": "Exfiltrate sensitive data from the cloud environment.",
+      "investigative_actions": "Check the accessed snapshot and corresponding volume. Monitor additional snapshot blocks downloads from the snapshot. Verify that the identity did not download any sensitive information that it shouldn't."
+    }
+  ]
+}

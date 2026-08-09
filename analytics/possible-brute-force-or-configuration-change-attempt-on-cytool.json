@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Brute Force: Password Guessing (T1110.001)"
+  ],
+  "attackers_goals": "The attacker may disable the agent to perform malicious activities.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual amount of cytool commands were executed in a short period from a user who doesn't usually run these commands. This may indicate an attempt to guess the Administrator password.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify which user ran these commands and if it is a legitimate behavior on this host.",
+  "name": "Possible brute force or configuration change attempt on cytool",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "High",
+  "test_period": "1 Hour",
+  "variations": []
+}

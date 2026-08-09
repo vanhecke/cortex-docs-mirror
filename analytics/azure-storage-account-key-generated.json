@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Steal Application Access Token (T1528)"
+  ],
+  "attackers_goals": "Exfiltrate information or damage critical services.",
+  "deduplication_period": "1 Day",
+  "description": "Azure storage access keys rotation, might affect services/applications depended on the key set.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Configuration, Data Detection & Response",
+  "investigative_actions": "Check what actions were made by the users a few hours prior/after to the generation operation. Which actions were taken using the newly generated access keys.",
+  "name": "Azure Storage Account key generated",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

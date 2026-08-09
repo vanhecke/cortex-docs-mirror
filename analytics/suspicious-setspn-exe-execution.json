@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Steal or Forge Kerberos Tickets (T1558)"
+  ],
+  "attackers_goals": "Retrieving SPN information to perform related attacks like 'Kerberoast'.",
+  "deduplication_period": "1 Day",
+  "description": "A Service Principal Name (SPN) is a unique identifier for a service, mapped to a specific account. Setspn.exe can be used to retrieve SPN information, which may indicate an attacker's attempt to \"Kerberoast\".",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the user who executed setspn.exe and find out if the act was malicious.",
+  "name": "Suspicious setspn.exe execution",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

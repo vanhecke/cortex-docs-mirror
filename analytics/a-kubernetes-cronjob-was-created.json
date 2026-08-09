@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Scheduled Task/Job: Container Orchestration Job (T1053.007)"
+  ],
+  "attackers_goals": "Maintain persistence by scheduling deployment of containers configured to execute malicious code.",
+  "deduplication_period": "5 Days",
+  "description": "A Kubernetes CronJob was created.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Kubernetes - API",
+  "investigative_actions": "Check which changes were made to the Kubernetes CronJob.",
+  "name": "A Kubernetes Cronjob was created",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log",
+    "Kubernetes Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

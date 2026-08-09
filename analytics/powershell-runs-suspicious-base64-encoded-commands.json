@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: PowerShell (T1059.001)"
+  ],
+  "attackers_goals": "Run code to perform actions or download other malicious programs.",
+  "deduplication_period": "1 Day",
+  "description": "Running PowerShell with a base64-encoded payload in the command line is often used by attackers to evade detection.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the initiator process is malicious. Check for other operations by the PowerShell instance.",
+  "name": "PowerShell runs suspicious base64-encoded commands",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "PowerShell runs rare base64-encoded command via remote causality actor",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: PowerShell (T1059.001)"
+      ],
+      "description": "Running PowerShell with a base64-encoded payload in the command line is often used by attackers to evade detection.",
+      "attackers_goals": "Run code to perform actions or download other malicious programs.",
+      "investigative_actions": "Check if the initiator process is malicious. Check for other operations by the PowerShell instance."
+    },
+    {
+      "name": "PowerShell runs rare base64-encoded command by windows built-in scripting engine",
+      "severity": "High",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: PowerShell (T1059.001)"
+      ],
+      "description": "Running PowerShell with a base64-encoded payload in the command line is often used by attackers to evade detection.",
+      "attackers_goals": "Run code to perform actions or download other malicious programs.",
+      "investigative_actions": "Check if the initiator process is malicious. Check for other operations by the PowerShell instance."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol: Web Protocols (T1071.001)"
+  ],
+  "attackers_goals": "Communicate with the attacker's Command and Control (C2) infrastructure.",
+  "deduplication_period": "1 Day",
+  "description": "A commonly abused process connected to a rare cloud resource.",
+  "detection_modules": "",
+  "detector_tags": "EDR Windows C2 Analytics",
+  "investigative_actions": "Investigate the actor process connected to the cloud resource. Is this use case usually takes place within the org? Determine if the cloud resource is owned by your organization or a known external entity. Assess whether this communication pattern is expected or not.",
+  "name": "A commonly abused process connected to a rare cloud resource",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A commonly abused software develop tool connected to a rare cloud resource",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol: Web Protocols (T1071.001)"
+      ],
+      "description": "A commonly abused software develop tool connected to a rare cloud resource.",
+      "attackers_goals": "Communicate with the attacker's Command and Control (C2) infrastructure.",
+      "investigative_actions": "Investigate the actor process connected to the cloud resource. Is this use case usually takes place within the org? Determine if the cloud resource is owned by your organization or a known external entity. Assess whether this communication pattern is expected or not."
+    },
+    {
+      "name": "A commonly abused rare process connected to a rare cloud resource",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol: Web Protocols (T1071.001)"
+      ],
+      "description": "A commonly abused rare process connected to a rare cloud resource.",
+      "attackers_goals": "Communicate with the attacker's Command and Control (C2) infrastructure.",
+      "investigative_actions": "Investigate the actor process connected to the cloud resource. Is this use case usually takes place within the org? Determine if the cloud resource is owned by your organization or a known external entity. Assess whether this communication pattern is expected or not."
+    },
+    {
+      "name": "A commonly abused renamed process connected to a rare cloud resource",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol: Web Protocols (T1071.001)",
+        "Masquerading (T1036)"
+      ],
+      "description": "A commonly abused renamed process connected to a rare cloud resource.",
+      "attackers_goals": "Communicate with the attacker's Command and Control (C2) infrastructure.",
+      "investigative_actions": "Investigate the actor process connected to the cloud resource. Is this use case usually takes place within the org? Determine if the cloud resource is owned by your organization or a known external entity. Assess whether this communication pattern is expected or not."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Domain or Tenant Policy Modification (T1484)"
+  ],
+  "attackers_goals": "Malicious Apps can be used to access the organization's Google data.",
+  "deduplication_period": "2 Days",
+  "description": "An identity modified Google Marketplace Restrictions.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Check if the identity intended to perform this action, or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the new settings look suspicious. Follow further actions done by the account.",
+  "name": "Google Marketplace restrictions were modified",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Google Marketplace restrictions were modified by a suspicious identity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Domain or Tenant Policy Modification (T1484)"
+      ],
+      "description": "An identity modified Google Marketplace Restrictions.",
+      "attackers_goals": "Malicious Apps can be used to access the organization's Google data.",
+      "investigative_actions": "Check if the identity intended to perform this action, or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the new settings look suspicious. Follow further actions done by the account."
+    },
+    {
+      "name": "Google Marketplace restrictions were modified from an unusual ASN",
+      "severity": "Low",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Domain or Tenant Policy Modification (T1484)"
+      ],
+      "description": "An identity modified Google Marketplace Restrictions.",
+      "attackers_goals": "Malicious Apps can be used to access the organization's Google data.",
+      "investigative_actions": "Check if the identity intended to perform this action, or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the new settings look suspicious. Follow further actions done by the account."
+    },
+    {
+      "name": "Google Marketplace restrictions were modified by a non Google Workspace administrative user",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Domain or Tenant Policy Modification (T1484)"
+      ],
+      "description": "An identity modified Google Marketplace Restrictions.",
+      "attackers_goals": "Malicious Apps can be used to access the organization's Google data.",
+      "investigative_actions": "Check if the identity intended to perform this action, or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the new settings look suspicious. Follow further actions done by the account."
+    }
+  ]
+}

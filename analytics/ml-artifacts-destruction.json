@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Data Destruction (T1485)"
+  ],
+  "attackers_goals": "Leverage access to the cloud to delete resources and cause damage to an organization's infrastructure.",
+  "deduplication_period": "5 Days",
+  "description": "An identity deleted multiple ML artifacts.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud AI Infrastructure Analytics",
+  "investigative_actions": "Confirm the legitimacy of the suspected identity and what cloud resources have been deleted by the identity. Look for any unusual activity associated with the suspected identity and determine whether they are compromised.",
+  "name": "ML artifacts destruction",
+  "required_data": [
+    "AWS Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Unusual ML artifacts destruction",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Data Destruction (T1485)"
+      ],
+      "description": "An identity deleted multiple ML artifacts. This large volume of deleted ML artifacts had not been seen across all projects for the last 30 days.",
+      "attackers_goals": "Leverage access to the cloud to delete resources and cause damage to an organization's infrastructure.",
+      "investigative_actions": "Confirm the legitimacy of the suspected identity and what cloud resources have been deleted by the identity. Look for any unusual activity associated with the suspected identity and determine whether they are compromised."
+    }
+  ]
+}

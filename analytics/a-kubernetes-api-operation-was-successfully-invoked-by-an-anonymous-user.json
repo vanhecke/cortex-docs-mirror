@@ -1,0 +1,39 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Default Accounts (T1078.001)"
+  ],
+  "attackers_goals": "Gain initial access to a Kubernetes cluster.",
+  "deduplication_period": "5 Days",
+  "description": "An unauthenticated user successfully invoked API calls within the Kubernetes cluster.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Kubernetes - API",
+  "investigative_actions": "Determine which resources were accessed anonymously. Verify whether the affected resource should be accessed by unauthenticated users.",
+  "name": "A Kubernetes API operation was successfully invoked by an anonymous user",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log",
+    "Kubernetes Audit Logs"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A Kubernetes API operation was successfully invoked by an anonymous user outside the cluster",
+      "severity": "High",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Default Accounts (T1078.001)"
+      ],
+      "description": "An unauthenticated user successfully invoked API calls within the Kubernetes cluster.",
+      "attackers_goals": "Gain initial access to a Kubernetes cluster.",
+      "investigative_actions": "Determine which resources were accessed anonymously. Verify whether the affected resource should be accessed by unauthenticated users."
+    }
+  ]
+}

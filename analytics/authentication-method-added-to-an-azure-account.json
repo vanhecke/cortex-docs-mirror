@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "An attacker can add an authentication method to an account, so they can have later access to the tenant and resources.",
+  "deduplication_period": "1 Day",
+  "description": "An identity attempted to add an Azure authentication method.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check if the authentication method is legitimate in the organization. Check whether the identity is permitted to perform such actions. Follow the account for possible suspicious or unusual logins.",
+  "name": "Authentication method added to an Azure account",
+  "required_data": [
+    "AzureAD Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious authentication method addition to privileged Azure account",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A privileged user added an Azure authentication method.",
+      "attackers_goals": "An attacker can add an authentication method to an account, so they can have later access to the tenant and resources.",
+      "investigative_actions": "Check if the authentication method is legitimate in the organization. Check whether the identity is permitted to perform such actions. Follow the account for possible suspicious or unusual logins."
+    },
+    {
+      "name": "Suspicious authentication method addition to Azure account",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "An identity added an Azure authentication method.",
+      "attackers_goals": "An attacker can add an authentication method to an account, so they can have later access to the tenant and resources.",
+      "investigative_actions": "Check if the authentication method is legitimate in the organization. Check whether the identity is permitted to perform such actions. Follow the account for possible suspicious or unusual logins."
+    }
+  ]
+}

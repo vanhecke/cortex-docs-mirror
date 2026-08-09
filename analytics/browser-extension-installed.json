@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Software Extensions: Browser Extensions (T1176.001)"
+  ],
+  "attackers_goals": "Establish persistent access to victim systems through Chromium-based browser, steal sensitive data such credentials, cookies hijacking and financial data.",
+  "deduplication_period": "1 Day",
+  "description": "Uncommon browser extension installed.",
+  "detection_modules": "",
+  "detector_tags": "Chromium Extensions Analytics",
+  "investigative_actions": "Investigate the extension and how it was loaded. Check if this extension is currently present at the relevant extensions web store by looking up for its extension ID.",
+  "name": "Browser Extension Installed",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon Browser Extension Installed",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Software Extensions: Browser Extensions (T1176.001)"
+      ],
+      "description": "Uncommon browser extension installed.",
+      "attackers_goals": "Establish persistent access to victim systems through Chromium-based browser, steal sensitive data such credentials, cookies hijacking and financial data.",
+      "investigative_actions": "Investigate the extension and how it was loaded. Check if this extension is currently present at the relevant extensions web store by looking up for its extension ID."
+    }
+  ]
+}

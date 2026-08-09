@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: Cloud API (T1059.009)"
+  ],
+  "attackers_goals": "Abuse cloud APIs to execute malicious commands.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity started a Cloud Shell session.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Investigate any unusual activity originating from the suspected identity.",
+  "name": "A cloud identity started a Cloud Shell session",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

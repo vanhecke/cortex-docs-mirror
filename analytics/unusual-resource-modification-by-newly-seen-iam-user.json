@@ -1,0 +1,73 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)",
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Cloud Accounts (T1078.004)",
+    "Data Destruction (T1485)"
+  ],
+  "attackers_goals": "Leverage access to manipulate cloud infrastructure.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud resource was modified by a newly seen IAM user.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Examine which resources were affected and how. Investigate any unusual activity originating from the identity.",
+  "name": "Unusual resource modification by newly seen IAM user",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual Kubernetes resource modification by newly seen IAM user",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Cloud Accounts (T1078.004)",
+        "Data Destruction (T1485)"
+      ],
+      "description": "A cloud resource was modified by a newly seen IAM user.",
+      "attackers_goals": "Leverage access to manipulate cloud infrastructure.",
+      "investigative_actions": "Examine which resources were affected and how. Investigate any unusual activity originating from the identity."
+    },
+    {
+      "name": "Unusual IAM resource modification by newly seen IAM user",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)"
+      ],
+      "description": "A cloud resource was modified by a newly seen IAM user.",
+      "attackers_goals": "Leverage access to manipulate cloud infrastructure.",
+      "investigative_actions": "Examine which resources were affected and how. Investigate any unusual activity originating from the identity."
+    },
+    {
+      "name": "Unusual resource modification by newly seen IAM user from an uncommon IP",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Cloud Accounts (T1078.004)",
+        "Data Destruction (T1485)"
+      ],
+      "description": "A cloud resource was modified by a newly seen IAM user.",
+      "attackers_goals": "Leverage access to manipulate cloud infrastructure.",
+      "investigative_actions": "Examine which resources were affected and how. Investigate any unusual activity originating from the identity."
+    }
+  ]
+}

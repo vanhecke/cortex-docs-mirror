@@ -1,0 +1,41 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Gain administrative control over Microsoft Configuration Manager to facilitate lateral movement, deploy malicious payloads, or exfiltrate data.",
+  "deduplication_period": "1 Day",
+  "description": "A user was added to the SMS Admins local group. This may indicate a potential attack targeting the Microsoft Configuration Manager infrastructure.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Microsoft SCCM Analytics",
+  "investigative_actions": "Verify the activity with the performing user. Confirm that the group addition was not accidental. Review related logs (e.g., Active Directory, SCCM logs) to identify the source of the modification and associated accounts. Investigate the user's activity before and after the addition to determine if any unauthorized actions or privilege escalation attempts occurred.",
+  "name": "User added to the SMS Admins local group",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "3 Hours",
+  "variations": [
+    {
+      "name": "User added to the SMS Admins group and removed",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A user was added to the SMS Admins group and removed within a short period of time, which may be a sign of compromise.",
+      "attackers_goals": "Gain administrative control over Microsoft Configuration Manager to facilitate lateral movement, deploy malicious payloads, or exfiltrate data.",
+      "investigative_actions": "Verify the activity with the performing user. Confirm that the group addition was not accidental. Review related logs (e.g., Active Directory, SCCM logs) to identify the source of the modification and associated accounts. Investigate the user's activity before and after the addition to determine if any unauthorized actions or privilege escalation attempts occurred."
+    }
+  ]
+}

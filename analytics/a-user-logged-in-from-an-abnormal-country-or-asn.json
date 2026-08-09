@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Resource Development (TA0042)"
+  ],
+  "attack_techniques": [
+    "Compromise Accounts (T1586)",
+    "Brute Force: Password Guessing (T1110.001)"
+  ],
+  "attackers_goals": "Gain user-account credentials.",
+  "deduplication_period": "1 Day",
+  "description": "A user logged in from an unusual country or ASN. This may indicate that the account was compromised.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check if the user is currently located in the aforementioned country. Check for any other suspicious activity related to the account. Check other ASNs and Countries that the user logged in from. Look for additional login attempts.",
+  "name": "A user logged in from an abnormal country or ASN",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A service account successfully logged in from a new country or ASN",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Compromise Accounts (T1586)",
+        "Brute Force: Password Guessing (T1110.001)"
+      ],
+      "description": "A service account successfully logged in to an internet facing server from an unusual country or ASN. This may indicate that the account was compromised.",
+      "attackers_goals": "Gain user-account credentials.",
+      "investigative_actions": "Check if the user is currently located in the aforementioned country. Check for any other suspicious activity related to the account. Check other ASNs and Countries that the user logged in from. Look for additional login attempts."
+    }
+  ]
+}

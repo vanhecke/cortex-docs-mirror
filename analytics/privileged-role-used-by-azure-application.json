@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation: Additional Cloud Roles (T1098.003)"
+  ],
+  "attackers_goals": "Leverage high-level permissions to gain persistence and access to sensitive information.",
+  "deduplication_period": "1 Day",
+  "description": "An Azure application with high-level API permissions invoked a request to the Microsoft Graph API.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Microsoft Graph Activity Logs",
+  "investigative_actions": "Check the application's role designation in the organization. Look for any unusual behavior originated from the suspected application.",
+  "name": "Privileged role used by Azure application",
+  "required_data": [
+    "Azure Audit Log",
+    "Microsoft Graph Logs"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Process Injection (T1055)"
+  ],
+  "attackers_goals": "Gain code execution on the host.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual script loads .NET DLLs, possibly indicating JScriptToDotnet execution.",
+  "detection_modules": "",
+  "detector_tags": "LOLBIN Execution Analytics",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Wscript/Cscript loads .NET DLLs",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

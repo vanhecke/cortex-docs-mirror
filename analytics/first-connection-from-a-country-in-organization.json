@@ -1,0 +1,61 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Resource Development (TA0042)"
+  ],
+  "attack_techniques": [
+    "Compromise Accounts (T1586)",
+    "Brute Force: Password Guessing (T1110.001)"
+  ],
+  "attackers_goals": "Gain user-account credentials.",
+  "deduplication_period": "1 Day",
+  "description": "A user connected to an SSO service from an unusual country that no one from this organization has connected from before. This may indicate the account was compromised.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check if the user is currently located in the aforementioned country, or routed its traffic there via a VPN.",
+  "name": "First connection from a country in organization",
+  "required_data": [
+    "AzureAD",
+    "Azure SignIn Log",
+    "Idira",
+    "Duo",
+    "Okta",
+    "OneLogin",
+    "PingOne"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "First connection from a country in organization via a suspicious IP",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Compromise Accounts (T1586)",
+        "Brute Force: Password Guessing (T1110.001)"
+      ],
+      "description": "A user connected to an SSO service from an unusual country that no one from this organization has connected from before. This may indicate the account was compromised.",
+      "attackers_goals": "Gain user-account credentials.",
+      "investigative_actions": "Check if the user is currently located in the aforementioned country, or routed its traffic there via a VPN."
+    },
+    {
+      "name": "First successful SSO connection from a country in organization",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Compromise Accounts (T1586)",
+        "Brute Force: Password Guessing (T1110.001)"
+      ],
+      "description": "A user successfully connected from an unusual country that no one from this organization has connected from before. This may indicate the account was compromised.",
+      "attackers_goals": "Gain user-account credentials.",
+      "investigative_actions": "Check if the user is currently located in the aforementioned country, or routed its traffic there via a VPN."
+    }
+  ]
+}

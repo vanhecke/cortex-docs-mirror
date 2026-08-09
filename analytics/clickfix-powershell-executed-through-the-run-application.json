@@ -1,0 +1,85 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)",
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "An attacker may be trying to trick a user to execute PowerShell through the run application.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker may be trying to trick a user to execute PowerShell through the run application.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the command line is known in the organization or malicious. And ask the user what is the source of it.",
+  "name": "ClickFix - PowerShell executed through the run application",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "ClickFix - PowerShell command executed through the run application and using Invoke-Expression cmdlet",
+      "severity": "High",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)",
+        "Phishing (T1566)"
+      ],
+      "description": "An attacker may be trying to trick a user to execute PowerShell through the run application.",
+      "attackers_goals": "An attacker may be trying to trick a user to execute PowerShell through the run application.",
+      "investigative_actions": "Check if the command line is known in the organization or malicious. And ask the user what is the source of it."
+    },
+    {
+      "name": "ClickFix - Long PowerShell command executed through the run application with URL in the command",
+      "severity": "High",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)",
+        "Phishing (T1566)"
+      ],
+      "description": "An attacker may be trying to trick a user to execute PowerShell through the run application.",
+      "attackers_goals": "An attacker may be trying to trick a user to execute PowerShell through the run application.",
+      "investigative_actions": "Check if the command line is known in the organization or malicious. And ask the user what is the source of it."
+    },
+    {
+      "name": "ClickFix - Long encoded PowerShell command executed through the run application",
+      "severity": "High",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)",
+        "Phishing (T1566)"
+      ],
+      "description": "An attacker may be trying to trick a user to execute PowerShell through the run application.",
+      "attackers_goals": "An attacker may be trying to trick a user to execute PowerShell through the run application.",
+      "investigative_actions": "Check if the command line is known in the organization or malicious. And ask the user what is the source of it."
+    },
+    {
+      "name": "ClickFix - Schedule task PowerShell command executed through the run application",
+      "severity": "High",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)",
+        "Phishing (T1566)"
+      ],
+      "description": "An attacker may be trying to trick a user to execute PowerShell through the run application.",
+      "attackers_goals": "An attacker may be trying to trick a user to execute PowerShell through the run application.",
+      "investigative_actions": "Check if the command line is known in the organization or malicious. And ask the user what is the source of it."
+    }
+  ]
+}

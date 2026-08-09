@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)"
+  ],
+  "attackers_goals": "Adversaries may manipulate accounts to pivot to their next point in the environment, and eventually to access or manipulate data.",
+  "deduplication_period": "1 Day",
+  "description": "A cloud identity performed multiple unusual activities across various cloud services.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check if the identity intended to preform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity).",
+  "name": "A cloud identity performed multiple unusual activities",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Medium",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "A cloud identity performed multiple suspicious activities",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)"
+      ],
+      "description": "A cloud identity performed multiple unusual activities across various cloud services.",
+      "attackers_goals": "Adversaries may manipulate accounts to pivot to their next point in the environment, and eventually to access or manipulate data.",
+      "investigative_actions": "Check if the identity intended to preform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity)."
+    }
+  ]
+}

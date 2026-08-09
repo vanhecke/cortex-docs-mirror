@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "System Binary Proxy Execution (T1218)"
+  ],
+  "attackers_goals": "An attacker may use this technique to install a malicious tool from a remote server.",
+  "deduplication_period": "1 Hour",
+  "description": "The Microsoft installer command line included a URL to a web page running a server-side script, which is suspicious.",
+  "detection_modules": "",
+  "detector_tags": "LOLBIN Execution Analytics",
+  "investigative_actions": "Check whether the URL is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "MSI accessed a web page running a server-side script",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "MSI accessed a web page running a server-side script",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "System Binary Proxy Execution (T1218)"
+      ],
+      "description": "MSI on an internet-facing server accessed a web page running a server-side script.",
+      "attackers_goals": "An attacker may use this technique to install a malicious tool from a remote server.",
+      "investigative_actions": "Check whether the URL is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

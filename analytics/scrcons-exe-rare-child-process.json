@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Windows Management Instrumentation (T1047)",
+    "Event Triggered Execution: Windows Management Instrumentation Event Subscription (T1546.003)"
+  ],
+  "attackers_goals": "The attacker is trying to gain Persistence via WMI script registration.",
+  "deduplication_period": "1 Day",
+  "description": "The Windows Management Instrumentation (WMI) standard event consumer scrcons.exe executed a rare VBScript or PowerShell script. Executing a rare script can be an indication of local or remote code execution abuse by an attacker.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Search for any executions of the Managed Object Format (MOF) compiler mofcomp.exe and review the process that ran it. Review registered WMI ActiveScriptEventConsumer by running \"WMIC /namespace:\\root\\default path ActiveScriptEventConsumer get *\".",
+  "name": "Scrcons.exe Rare Child Process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Scrcons.exe Rare Child Process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Windows Management Instrumentation (T1047)",
+        "Event Triggered Execution: Windows Management Instrumentation Event Subscription (T1546.003)"
+      ],
+      "description": "The Windows Management Instrumentation (WMI) standard event consumer scrcons.exe executed a rare VBScript or PowerShell script. Executing a rare script can be an indication of local or remote code execution abuse by an attacker.",
+      "attackers_goals": "The attacker is trying to gain Persistence via WMI script registration.",
+      "investigative_actions": "Search for any executions of the Managed Object Format (MOF) compiler mofcomp.exe and review the process that ran it. Review registered WMI ActiveScriptEventConsumer by running \"WMIC /namespace:\\root\\default path ActiveScriptEventConsumer get *\"."
+    }
+  ]
+}

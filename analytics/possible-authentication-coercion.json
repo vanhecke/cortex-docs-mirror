@@ -1,0 +1,52 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Forced Authentication (T1187)",
+    "Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay (T1557.001)"
+  ],
+  "attackers_goals": "An attacker can abuse Remote Procedure Calls to coerce authentication from servers.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual Remote Procedure Call (RPC) was made to potentially cause authentication coercion.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check for a suspicious process on the initiator. Check if the source host is a vulnerability scanner. Check for unusual connections from {actor_remote_ip} to other servers in the network. Check for logged-in users to {actor_remote_ip} and investigate their actions. Check for indicators of compromise on {actor_remote_ip}.",
+  "name": "Possible authentication coercion",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Possible authentication coercion from an unconstrained delegation server to a sensitive server",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Forced Authentication (T1187)",
+        "Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay (T1557.001)"
+      ],
+      "description": "An unusual Remote Procedure Call (RPC) was made towards a sensitive server, to potentially cause authentication coercion.",
+      "attackers_goals": "An attacker can abuse Remote Procedure Calls to coerce authentication from servers.",
+      "investigative_actions": "Check for a suspicious process on the initiator. Check if the source host is a vulnerability scanner. Check for unusual connections from {actor_remote_ip} to other servers in the network. Check for logged-in users to {actor_remote_ip} and investigate their actions. Check for indicators of compromise on {actor_remote_ip}."
+    },
+    {
+      "name": "Possible authentication coercion to a sensitive server",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Forced Authentication (T1187)",
+        "Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay (T1557.001)"
+      ],
+      "description": "An unusual Remote Procedure Call (RPC) was made towards a sensitive server, to potentially cause authentication coercion.",
+      "attackers_goals": "An attacker can abuse Remote Procedure Calls to coerce authentication from servers.",
+      "investigative_actions": "Check for a suspicious process on the initiator. Check if the source host is a vulnerability scanner. Check for unusual connections from {actor_remote_ip} to other servers in the network. Check for logged-in users to {actor_remote_ip} and investigate their actions. Check for indicators of compromise on {actor_remote_ip}."
+    }
+  ]
+}

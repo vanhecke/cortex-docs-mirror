@@ -1,0 +1,52 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)",
+    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+  ],
+  "attackers_goals": "Evade detection by limiting collected data.",
+  "deduplication_period": "5 Days",
+  "description": "CloudTrail logging trail deletion.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Verify whether the identity attempted to delete the trail. Determine whether an additional trail needs to be enabled.",
+  "name": "CloudTrail logging deletion",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Successful CloudTrail logging deletion by a non-admin identity",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses (T1562)",
+        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+      ],
+      "description": "CloudTrail logging trail deletion.",
+      "attackers_goals": "Evade detection by limiting collected data.",
+      "investigative_actions": "Verify whether the identity attempted to delete the trail. Determine whether an additional trail needs to be enabled."
+    },
+    {
+      "name": "Successful CloudTrail logging deletion by an unusual identity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses (T1562)",
+        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+      ],
+      "description": "CloudTrail logging trail deletion.",
+      "attackers_goals": "Evade detection by limiting collected data.",
+      "investigative_actions": "Verify whether the identity attempted to delete the trail. Determine whether an additional trail needs to be enabled."
+    }
+  ]
+}

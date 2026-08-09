@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Resource Development (TA0042)"
+  ],
+  "attack_techniques": [
+    "Compromise Accounts (T1586)",
+    "Brute Force: Password Guessing (T1110.001)"
+  ],
+  "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
+  "deduplication_period": "1 Day",
+  "description": "A user rejected an SSO authentication request from an abnormal country.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Verify the reject cause of the MFA attempts. Check to see if the user has successfully authenticated around the time of the alert, and confirm it's a legitimate login. Verify the authentication attempt from the rare country is benign.",
+  "name": "A user rejected an SSO request from an unusual country",
+  "required_data": [
+    "Okta"
+  ],
+  "severity": "Low",
+  "test_period": "1 Hour",
+  "variations": []
+}

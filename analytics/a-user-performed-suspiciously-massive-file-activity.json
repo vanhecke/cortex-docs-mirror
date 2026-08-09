@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Automated Collection (T1119)",
+    "Data Staged: Local Data Staging (T1074.001)",
+    "Data Staged: Remote Data Staging (T1074.002)"
+  ],
+  "attackers_goals": "Collect data and stage it on an endpoint in the organization.",
+  "deduplication_period": "1 Day",
+  "description": "A user generated massive file activity by size or distinct file count.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Data Detection & Response",
+  "investigative_actions": "Check whether the process that created the massive file activity creates network connections as well. Check which files the process performed the activity on. Check whether other users in the organization used the same process for file activity.",
+  "name": "A user performed suspiciously massive file activity",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "A user performed suspiciously large file activities over 1 GB in a short period of time",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Automated Collection (T1119)",
+        "Data Staged: Local Data Staging (T1074.001)",
+        "Data Staged: Remote Data Staging (T1074.002)"
+      ],
+      "description": "A user generated massive file activity by size or distinct file count.",
+      "attackers_goals": "Collect data and stage it on an endpoint in the organization.",
+      "investigative_actions": "Check whether the process that created the massive file activity creates network connections as well. Check which files the process performed the activity on. Check whether other users in the organization used the same process for file activity."
+    }
+  ]
+}

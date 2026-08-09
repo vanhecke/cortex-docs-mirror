@@ -1,0 +1,52 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Data Destruction (T1485)",
+    "Service Stop (T1489)"
+  ],
+  "attackers_goals": "N/A.",
+  "deduplication_period": "1 Day",
+  "description": "A collection error was detected on a broker VM.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "N/A.",
+  "name": "Broker Collection Error",
+  "required_data": [
+    "Health Monitoring Data"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Broker Collector Critical Error",
+      "severity": "High",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Data Destruction (T1485)",
+        "Service Stop (T1489)"
+      ],
+      "description": "A collection error was detected on a broker VM.",
+      "attackers_goals": "N/A.",
+      "investigative_actions": "N/A."
+    },
+    {
+      "name": "Broker Collection Issue",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Data Destruction (T1485)",
+        "Service Stop (T1489)"
+      ],
+      "description": "A collection error was detected on a broker VM.",
+      "attackers_goals": "N/A.",
+      "investigative_actions": "N/A."
+    }
+  ]
+}

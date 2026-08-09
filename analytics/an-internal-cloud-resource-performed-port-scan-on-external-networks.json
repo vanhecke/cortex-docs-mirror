@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)",
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Network Service Discovery (T1046)",
+    "Resource Hijacking (T1496)",
+    "Cloud Service Discovery (T1526)"
+  ],
+  "attackers_goals": "Detect vulnerable services, which listen on known ports and are opened to the Internet.",
+  "deduplication_period": "5 Days",
+  "description": "An internal cloud resource attempted to connect to the same destination port of multiple external IP addresses. This may be a result of the cloud resource being hijacked by an attacker. Attackers perform port scans on a specific destination port for reconnaissance purposes, to detect known vulnerable services that accept connections in the specific port, and perform targeted attacks against them.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check if similar activity was performed on additional cloud resources. Check if similar activity was performed against additional ports and external ip addresses from the same cloud resource. Check which process triggered the port scanning activity and for what purpose.",
+  "name": "An internal Cloud resource performed port scan on external networks",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "1 Hour",
+  "variations": []
+}

@@ -1,0 +1,77 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "Exfiltrate sensitive data that resides on the disk.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity has downloaded multiple virtual machines or DB snapshots locally.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Exfiltration, Data Detection & Response",
+  "investigative_actions": "Check if the identity intended to export the virtual machines or DB snapshots. Check if the identity performed additional operations in the cloud environment that might be malicious.",
+  "name": "Multiple cloud snapshots export",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "2 Hours",
+  "variations": [
+    {
+      "name": "Multiple cloud snapshots export",
+      "severity": "High",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "A cloud identity has downloaded multiple virtual machines or DB snapshots from an external IP address. This action was unusual based on the cloud project history.",
+      "attackers_goals": "Exfiltrate sensitive data that resides on the disk.",
+      "investigative_actions": "Check if the identity intended to export the virtual machines or DB snapshots. Check if the identity performed additional operations in the cloud environment that might be malicious."
+    },
+    {
+      "name": "Multiple cloud snapshots export",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "A cloud identity has downloaded multiple virtual machines or DB snapshots from an external IP address. This action was unusual based on The cloud identity history.",
+      "attackers_goals": "Exfiltrate sensitive data that resides on the disk.",
+      "investigative_actions": "Check if the identity intended to export the virtual machines or DB snapshots. Check if the identity performed additional operations in the cloud environment that might be malicious."
+    },
+    {
+      "name": "Multiple cloud snapshots export",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "A cloud identity has downloaded multiple virtual machines or DB snapshots locally. This action was unusual based on the unsuccessful attempts rate.",
+      "attackers_goals": "Exfiltrate sensitive data that resides on the disk.",
+      "investigative_actions": "Check if the identity intended to export the virtual machines or DB snapshots. Check if the identity performed additional operations in the cloud environment that might be malicious."
+    },
+    {
+      "name": "Multiple cloud snapshots export",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "A cloud identity has downloaded multiple virtual machines or DB snapshots locally. This action was unusual based on the cloud project or identity history.",
+      "attackers_goals": "Exfiltrate sensitive data that resides on the disk.",
+      "investigative_actions": "Check if the identity intended to export the virtual machines or DB snapshots. Check if the identity performed additional operations in the cloud environment that might be malicious."
+    }
+  ]
+}

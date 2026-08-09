@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Abuse Elevation Control Mechanism (T1548)"
+  ],
+  "attackers_goals": "An attacker is attempting to elevate its privileges on the machine.",
+  "deduplication_period": "2 Days",
+  "description": "A suspicious local network login was observed, which might indicate on Kerberos relay attack. This attack can lead to privilege escalation by obtaining system privileges on the target.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check for any other suspicious activity related to the host involved in the alert. Look for a new machine that was added to the domain.",
+  "name": "Possible Kerberos relay attack",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

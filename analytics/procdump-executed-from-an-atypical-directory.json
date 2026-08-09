@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Hide Artifacts: Hidden Files and Directories (T1564.001)",
+    "OS Credential Dumping: LSASS Memory (T1003.001)"
+  ],
+  "attackers_goals": "Attackers may attempt to dump the memory of sensitive processes.",
+  "deduplication_period": "1 Day",
+  "description": "Procdump.exe is a SysInternals tool used to dump process memory; it can be used to dump lsass.exe memory to extract credentials.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Procdump executed from an atypical directory",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

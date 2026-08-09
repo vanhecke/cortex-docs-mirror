@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Hide Artifacts: Email Hiding Rules (T1564.008)"
+  ],
+  "attackers_goals": "Prevent an organization from warning users that they've been compromised (e.g. an internal spear-phishing campaign).",
+  "deduplication_period": "1 Day",
+  "description": "A user configured an Exchange transport rule that may be used to hide emails in the organization.",
+  "detection_modules": "Identity Threat Module, Email",
+  "detector_tags": "",
+  "investigative_actions": "Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the rule contains keywords and if they look suspicious. Investigate the IP address associated with the rule. Follow further actions done by the account. Check for a possible phishing campaign on the organization.* Look for multiple instances of email hiding, which may be an indication of a larger campaign.* Check if the user regularly configures transport rules.",
+  "name": "Exchange email-hiding transport rule",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious Exchange email-hiding transport rule",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hide Artifacts: Email Hiding Rules (T1564.008)"
+      ],
+      "description": "A user configured an Exchange transport rule that may be used to hide emails in the organization. The rule hides emails that contain suspicious keywords, which may be a sign of a compromised account.",
+      "attackers_goals": "Prevent an organization from warning users that they've been compromised (e.g. an internal spear-phishing campaign).",
+      "investigative_actions": "Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the rule contains keywords and if they look suspicious. Investigate the IP address associated with the rule. Follow further actions done by the account. Check for a possible phishing campaign on the organization.* Look for multiple instances of email hiding, which may be an indication of a larger campaign.* Check if the user regularly configures transport rules."
+    },
+    {
+      "name": "Exchange email-hiding transport rule based on message keywords",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hide Artifacts: Email Hiding Rules (T1564.008)"
+      ],
+      "description": "A user configured an Exchange transport rule that may be used to hide emails in the organization. The rule hides emails that contain certain keywords, which may be a sign of a compromised account.",
+      "attackers_goals": "Prevent an organization from warning users that they've been compromised (e.g. an internal spear-phishing campaign).",
+      "investigative_actions": "Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the rule contains keywords and if they look suspicious. Investigate the IP address associated with the rule. Follow further actions done by the account. Check for a possible phishing campaign on the organization.* Look for multiple instances of email hiding, which may be an indication of a larger campaign.* Check if the user regularly configures transport rules."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: Cloud API (T1059.009)"
+  ],
+  "attackers_goals": "Gain access to AI/ML resources and services.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity accessed an AWS SageMaker notebook for the first time. MITRE ATLAS Technique: AML.T0008 - Acquire Infrastructure: AI Development Workspaces.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud AI Infrastructure Analytics",
+  "investigative_actions": "Examine which AWS SageMaker notebooks were accessed. Investigate any unusual activity originating from the suspected identity.",
+  "name": "Unusual AWS SageMaker notebook access",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

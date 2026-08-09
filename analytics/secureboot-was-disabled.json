@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Pre-OS Boot (T1542)"
+  ],
+  "attackers_goals": "Disable SecureBoot to install another OS on the machine.",
+  "deduplication_period": "14 Days",
+  "description": "SecureBoot was disabled, this might be indicative of someone trying to install an alternate non-UEFI supported OS.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if a new operating system was installed on the same hardware.",
+  "name": "SecureBoot was disabled",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

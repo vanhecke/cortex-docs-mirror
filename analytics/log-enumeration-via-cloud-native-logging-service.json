@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Log Enumeration (T1654)"
+  ],
+  "attackers_goals": "Gaining information about your environment as part of the discovery phase.",
+  "deduplication_period": "1 Day",
+  "description": "An activity of log enumeration operations via cloud native logging service was detected.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the identity which invoked the operations.",
+  "name": "Log enumeration via cloud native logging service",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Log enumeration via cloud native logging service invoked by an identity for the first time",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Log Enumeration (T1654)"
+      ],
+      "description": "An activity of log enumeration operations via cloud native logging service was detected.",
+      "attackers_goals": "Gaining information about your environment as part of the discovery phase.",
+      "investigative_actions": "Check the identity which invoked the operations."
+    }
+  ]
+}

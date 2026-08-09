@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Domain or Tenant Policy Modification (T1484)"
+  ],
+  "attackers_goals": "Bypass authentication controls.",
+  "deduplication_period": "5 Days",
+  "description": "An Azure conditional access policy was created or modified.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Microsoft Graph Activity Logs",
+  "investigative_actions": "Investigate the rule's details and confirm its legitimacy. Look for any unusual behavior originated from the suspected identity, and check if they're compromised.",
+  "name": "Azure conditional access policy creation or modification",
+  "required_data": [
+    "Azure Audit Log",
+    "Microsoft Graph Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

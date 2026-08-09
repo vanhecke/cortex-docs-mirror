@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "External Remote Services (T1133)",
+    "Server Software Component: Web Shell (T1505.003)"
+  ],
+  "attackers_goals": "Gaining the ability to execute commands on the host, as well as persistence.",
+  "deduplication_period": "1 Day",
+  "description": "An uncommon process was executed by a web server CGO, which might indicate a Webshell activity or a web server exploit.",
+  "detection_modules": "",
+  "detector_tags": "Webshell Analytics",
+  "investigative_actions": "Investigate the web server access logs for suspicious behavior. Check if the executed process is malicious or executes a suspicious action.",
+  "name": "Web server CGO executed an uncommon process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Web server CGO executed a LOLBIN process with direct IP in the command line",
+      "severity": "High",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "External Remote Services (T1133)",
+        "Server Software Component: Web Shell (T1505.003)"
+      ],
+      "description": "A LOLBIN process with a direct IP in the command line was executed by a web server CGO, which might indicate a Webshell activity or a web server exploit.",
+      "attackers_goals": "Gaining the ability to execute commands on the host, as well as persistence.",
+      "investigative_actions": "Investigate the web server access logs for suspicious behavior. Check if the executed process is malicious or executes a suspicious action."
+    }
+  ]
+}

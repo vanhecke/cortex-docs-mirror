@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Domain Accounts (T1078.002)"
+  ],
+  "attackers_goals": "Use an account that was possibly compromised in the past to gain access to the network.",
+  "deduplication_period": "1 Day",
+  "description": "A disabled user attempted to log in suspiciously to a VPN.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "See whether the service authentication was successful. Confirm that the activity is benign (e.g. a contractor user). Check whether you have issues with your Cloud Identity Engine failing to sync data from Active Directory.",
+  "name": "A disabled user attempted to log in to a VPN",
+  "required_data": [
+    "Palo Alto Networks Global Protect",
+    "Third-Party VPNs"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Possible VPN login attempt by disabled user",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Domain Accounts (T1078.002)"
+      ],
+      "description": "A disabled user attempted to log in suspiciously to a VPN.",
+      "attackers_goals": "Use an account that was possibly compromised in the past to gain access to the network.",
+      "investigative_actions": "See whether the service authentication was successful. Confirm that the activity is benign (e.g. a contractor user). Check whether you have issues with your Cloud Identity Engine failing to sync data from Active Directory."
+    }
+  ]
+}

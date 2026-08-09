@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "External Remote Services (T1133)"
+  ],
+  "attackers_goals": "Gain their initial foothold within the organization and explore the environment to achieve their target.",
+  "deduplication_period": "1 Day",
+  "description": "An operation was performed by an identity. This identity belongs to a domain that was not seen in the organization before.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the external domain name. Check the identity activity in the organization.",
+  "name": "SaaS suspicious external domain user activity",
+  "required_data": [
+    "Google Workspace Audit Logs",
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious external user activity detected from a domain first seen in the organization",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "External Remote Services (T1133)"
+      ],
+      "description": "An operation was performed by an identity. This identity belongs to a domain that was not seen in the organization, both in cloud and SaaS environments.",
+      "attackers_goals": "Gain their initial foothold within the organization and explore the environment to achieve their target.",
+      "investigative_actions": "Investigate the external domain name. Check the identity activity in the organization."
+    }
+  ]
+}

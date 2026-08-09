@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Endpoint Denial of Service: Application Exhaustion Flood (T1499.003)",
+    "Resource Hijacking (T1496)"
+  ],
+  "attackers_goals": "Disrupting or shutting down an ML service.",
+  "deduplication_period": "5 Days",
+  "description": "An ML model experienced a sudden spike in requests in a short time. MITRE ATLAS Techniques: AML.T0029 - Denial of ML Service, AML.T0034 - Cost Harvesting. OWASP Top 10 LLM Technique: LLM10 - Unbounded Consumption.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud AI Infrastructure Analytics",
+  "investigative_actions": "Investigate the impact on the ML service.",
+  "name": "Potential denial of wallet abusing AI services",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Possible denial of wallet abusing AI services",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Endpoint Denial of Service: Application Exhaustion Flood (T1499.003)",
+        "Resource Hijacking (T1496)"
+      ],
+      "description": "An ML model experienced a sudden spike in requests in a short time. MITRE ATLAS Techniques: AML.T0029 - Denial of ML Service, AML.T0034 - Cost Harvesting. OWASP Top 10 LLM Technique: LLM10 - Unbounded Consumption.",
+      "attackers_goals": "Disrupting or shutting down an ML service.",
+      "investigative_actions": "Investigate the impact on the ML service."
+    }
+  ]
+}

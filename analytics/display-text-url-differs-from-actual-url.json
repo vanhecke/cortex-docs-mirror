@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "Deceive recipients into trusting a visible URL while redirecting them to a different destination, often for phishing, credential harvesting, or malware delivery.",
+  "deduplication_period": "1 Hour 30 Minutes",
+  "description": "An email contains a hyperlink whose display text shows a URL different from the actual destination URL.",
+  "detection_modules": "Email",
+  "detector_tags": "Malicious URLs",
+  "investigative_actions": "Review the display text URL and the actual destination URL. Verify the reputation and legitimacy of the destination domain. Check whether the sender or domain is known or trusted within the organization.",
+  "name": "Display text URL differs from actual URL",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

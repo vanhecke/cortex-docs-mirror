@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)",
+    "Valid Accounts: Local Accounts (T1078.003)"
+  ],
+  "attackers_goals": "Persistence using a valid account.",
+  "deduplication_period": "1 Day",
+  "description": "A user executed a process associated with user account creation.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check the user who created the account and verify its activity. Investigate whether the same account was created on different hosts as part of an installation process.",
+  "name": "Linux local user account creation",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Linux local user account creation by non-root user",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)",
+        "Valid Accounts: Local Accounts (T1078.003)"
+      ],
+      "description": "A non-root user executed a process associated with user account creation. This user does not regularly create accounts.",
+      "attackers_goals": "Persistence using a valid account.",
+      "investigative_actions": "Check the user who created the account and verify its activity. Investigate whether the same account was created on different hosts as part of an installation process."
+    }
+  ]
+}

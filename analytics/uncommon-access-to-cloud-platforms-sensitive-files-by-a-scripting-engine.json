@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Credentials from Password Stores (T1555)"
+  ],
+  "attackers_goals": "Gain access/control over internal cloud platforms or repositories.",
+  "deduplication_period": "1 Day",
+  "description": "A scripting engine has accessed sensitive cloud platforms' files.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate if the behavior is known to the user or part of known product's procedure. Investigate if the actor processes command line contains malicious indicators or a script file.",
+  "name": "Uncommon access to cloud platforms' sensitive files by a scripting engine",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon access to cloud platforms' sensitive files by an uncommon script or utility",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Credentials from Password Stores (T1555)"
+      ],
+      "description": "A scripting engine has accessed sensitive cloud platforms' files.",
+      "attackers_goals": "Gain access/control over internal cloud platforms or repositories.",
+      "investigative_actions": "Investigate if the behavior is known to the user or part of known product's procedure. Investigate if the actor processes command line contains malicious indicators or a script file."
+    }
+  ]
+}

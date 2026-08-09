@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Account Discovery (T1087)",
+    "Permission Groups Discovery (T1069)"
+  ],
+  "attackers_goals": "Execute various commands to explore the cloud environment.",
+  "deduplication_period": "5 Days",
+  "description": "An identity performed multiple actions that were denied, which may indicate it is being misused.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check if the API calls were made by the identity. Check if there are additional calls executed by the identity.",
+  "name": "Cloud user performed multiple actions that were denied",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Cloud non-user identity performed multiple actions that were denied",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Account Discovery (T1087)",
+        "Permission Groups Discovery (T1069)"
+      ],
+      "description": "An identity performed multiple actions that were denied, which may indicate it is being misused.",
+      "attackers_goals": "Execute various commands to explore the cloud environment.",
+      "investigative_actions": "Check if the API calls were made by the identity. Check if there are additional calls executed by the identity."
+    }
+  ]
+}

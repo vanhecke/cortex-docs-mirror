@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: PowerShell (T1059.001)"
+  ],
+  "attackers_goals": "Executing PowerShell scripts in a stealthy manner.",
+  "deduplication_period": "1 Day",
+  "description": "A LOLBIN created a PSScriptPolicyTest file. This may be a sign of malicious PowerShell execution without directly invoking the powershell.exe binary.",
+  "detection_modules": "",
+  "detector_tags": "LOLBIN Execution Analytics",
+  "investigative_actions": "Investigate the process and command line that created the file and whether it's benign or normal for this host. Investigate the created PowerShell file for potential malicious commands.",
+  "name": "LOLBIN created a PSScriptPolicyTest PowerShell script file",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "LOLBIN created a larger than usual PSScriptPolicyTest PowerShell script file",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: PowerShell (T1059.001)"
+      ],
+      "description": "A LOLBIN created a PSScriptPolicyTest file. This may be a sign of malicious PowerShell execution without directly invoking the powershell.exe binary.",
+      "attackers_goals": "Executing PowerShell scripts in a stealthy manner.",
+      "investigative_actions": "Investigate the process and command line that created the file and whether it's benign or normal for this host. Investigate the created PowerShell file for potential malicious commands."
+    }
+  ]
+}

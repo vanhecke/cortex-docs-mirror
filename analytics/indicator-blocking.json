@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Indicator Blocking (T1562.006)"
+  ],
+  "attackers_goals": "Impairing host defenses.",
+  "deduplication_period": "1 Day",
+  "description": "Auditing or logging configuration changes on Linux host.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Indicator blocking",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Indicator blocking in a Kubernetes pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Indicator Blocking (T1562.006)"
+      ],
+      "description": "Auditing or logging configuration changes on Linux host.",
+      "attackers_goals": "Impairing host defenses.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

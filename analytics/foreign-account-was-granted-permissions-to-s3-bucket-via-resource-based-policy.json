@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "The attacker wants to maintain control over the resource.",
+  "deduplication_period": "1 Day",
+  "description": "Foreign account was granted access to S3 bucket.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Exfiltration, Data Detection & Response",
+  "investigative_actions": "Check if the {cloud_best_identity_match} intended to modify {aws_s3bucket_identifier} policy. Check the permissions that were granted to the {aws_grantee_project}. Restrict permissions for the {aws_grantee_project} if needed.",
+  "name": "Foreign account was granted permissions to S3 bucket via resource-based policy",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Foreign account was granted permissions to S3 bucket containing sensitive information via resource-based policy",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "Foreign account was granted access to S3 bucket.",
+      "attackers_goals": "The attacker wants to maintain control over the resource.",
+      "investigative_actions": "Check if the {cloud_best_identity_match} intended to modify {aws_s3bucket_identifier} policy. Check the permissions that were granted to the {aws_grantee_project}. Restrict permissions for the {aws_grantee_project} if needed."
+    }
+  ]
+}

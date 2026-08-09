@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Data Destruction (T1485)",
+    "Impair Defenses (T1562)",
+    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+  ],
+  "attackers_goals": "Evade detection.",
+  "deduplication_period": "3 Hours",
+  "description": "Resource group deletion permanently deletes all resources within the group, An attacker might use this technique to avoid detection or destroy procedures/data.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check which resource group was deleted.",
+  "name": "Azure Resource Group Deletion",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

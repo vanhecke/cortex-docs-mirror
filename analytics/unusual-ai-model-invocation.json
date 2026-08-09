@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: Cloud API (T1059.009)"
+  ],
+  "attackers_goals": "Gain access to AI models.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity invoked an AI model for the first time. MITRE ATLAS Technique: AML.T0050 - Command and Scripting Interpreter.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud AI Infrastructure Analytics",
+  "investigative_actions": "Examine which AI models were invoked. Investigate any unusual activity originating from the suspected identity.",
+  "name": "Unusual AI model invocation",
+  "required_data": [
+    "AWS Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

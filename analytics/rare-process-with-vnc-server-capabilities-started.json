@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)",
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Access Tools (T1219)",
+    "Remote Services: VNC (T1021.005)"
+  ],
+  "attackers_goals": "Accessing a remote machine with full interactive graphic interface capabilities.",
+  "deduplication_period": "1 Day",
+  "description": "A rare process with VNC server capabilities was started.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the product usage is approved. Check if it was executed remotely or locally.",
+  "name": "Rare process with VNC server capabilities started",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Cloud Accounts (T1078.004)",
+    "Abuse Elevation Control Mechanism: Temporary Elevated Cloud Access (T1548.005)"
+  ],
+  "attackers_goals": "Elevate permission to gain access to all Azure Subscriptions.",
+  "deduplication_period": "5 Days",
+  "description": "An identity was granted the User Access Administrator permission at the tenant scope.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Verify whether the identity should be making this action.* Check what additional API calls were made by the identity.",
+  "name": "An identity was granted permissions to manage user access to Azure resources",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

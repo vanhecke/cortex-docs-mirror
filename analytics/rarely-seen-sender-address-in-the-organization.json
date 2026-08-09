@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Reconnaissance (TA0043)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Phishing for Information (T1598)",
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "Aim to steal sensitive information Trick recipients into downloading harmful payloads Aim to gain unauthorized access to the organization's systems.",
+  "deduplication_period": "1 Day",
+  "description": "An email was received from a sender that has not been observed in the organization in the last 30 days.",
+  "detection_modules": "Email",
+  "detector_tags": "",
+  "investigative_actions": "Check the email address for any unusual spellings, missing letters, or unknown domains. If the message contains attachments or links, scrutinize them for any suspicious indications. Monitor further actions taken, such as file downloads or access to potentially malicious links.",
+  "name": "Rarely seen sender address in the organization",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation: SSH Authorized Keys (T1098.004)"
+  ],
+  "attackers_goals": "Adversaries use this to ensure that they possess the corresponding private key and may log in as an existing user via SSH.",
+  "deduplication_period": "1 Day",
+  "description": "A process modified an SSH authorized_keys file, which is used in SSH authentication. An attack can add or remove an SSH key to gain access to a targeted host.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers, Generic Persistence Analytics",
+  "investigative_actions": "Check the file modification, try to understand the impact of the related processes and network connections.",
+  "name": "A process modified an SSH authorized_keys file",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A process modified an SSH authorized_keys2 file",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: SSH Authorized Keys (T1098.004)"
+      ],
+      "description": "A process modified an SSH authorized_keys file, which is used in SSH authentication. An attack can add or remove an SSH key to gain access to a targeted host.",
+      "attackers_goals": "Adversaries use this to ensure that they possess the corresponding private key and may log in as an existing user via SSH.",
+      "investigative_actions": "Check the file modification, try to understand the impact of the related processes and network connections."
+    },
+    {
+      "name": "A process modified an SSH authorized_keys file from within a Kubernetes Pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: SSH Authorized Keys (T1098.004)"
+      ],
+      "description": "A process modified an SSH authorized_keys file, which is used in SSH authentication. An attack can add or remove an SSH key to gain access to a targeted host.",
+      "attackers_goals": "Adversaries use this to ensure that they possess the corresponding private key and may log in as an existing user via SSH.",
+      "investigative_actions": "Check the file modification, try to understand the impact of the related processes and network connections."
+    },
+    {
+      "name": "Unpopular process modified the SSH authorized_keys file",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: SSH Authorized Keys (T1098.004)"
+      ],
+      "description": "An unpopular process modified the SSH authorized_keys file.",
+      "attackers_goals": "Adversaries use this to ensure that they possess the corresponding private key and may log in as an existing user via SSH.",
+      "investigative_actions": "Check the file modification, try to understand the impact of the related processes and network connections."
+    }
+  ]
+}

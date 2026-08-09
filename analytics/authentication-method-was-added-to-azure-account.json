@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Modify Authentication Process (T1556)"
+  ],
+  "attackers_goals": "Establish a backdoor for persistent access.",
+  "deduplication_period": "5 Days",
+  "description": "A new authentication method was added to an Azure AD user.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Microsoft Graph Activity Logs",
+  "investigative_actions": "Review recent authentication attempts and access logs to detect any unauthorized activities or potential misuse of the newly added authentication method. Look for any unusual behavior originated from the suspected identity, and check if they're compromised.",
+  "name": "Authentication method was added to Azure account",
+  "required_data": [
+    "Azure Audit Log",
+    "Microsoft Graph Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

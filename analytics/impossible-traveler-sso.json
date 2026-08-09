@@ -1,0 +1,76 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Resource Development (TA0042)"
+  ],
+  "attack_techniques": [
+    "Compromise Accounts (T1586)",
+    "Brute Force: Password Guessing (T1110.001)"
+  ],
+  "attackers_goals": "Gain user-account credentials.",
+  "deduplication_period": "1 Day",
+  "description": "User connected from several remote countries, at least one of which is not commonly used in the organization, within a short period of time. This may indicate the account is compromised.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check if the user routed their traffic via a VPN, or shared their credentials with a remote employee.",
+  "name": "Impossible traveler - SSO",
+  "required_data": [
+    "AzureAD",
+    "Azure SignIn Log",
+    "Idira",
+    "Duo",
+    "Okta",
+    "OneLogin",
+    "PingOne"
+  ],
+  "severity": "Low",
+  "test_period": "6 Hours",
+  "variations": [
+    {
+      "name": "Impossible traveler - non-interactive SSO authentication",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Compromise Accounts (T1586)",
+        "Brute Force: Password Guessing (T1110.001)"
+      ],
+      "description": "User connected from several remote countries, at least one of which is not commonly used in the organization, within a short period of time. This may indicate the account is compromised.",
+      "attackers_goals": "Gain user-account credentials.",
+      "investigative_actions": "Check if the user routed their traffic via a VPN, or shared their credentials with a remote employee."
+    },
+    {
+      "name": "Possible Impossible traveler via SSO",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Compromise Accounts (T1586)",
+        "Brute Force: Password Guessing (T1110.001)"
+      ],
+      "description": "User connected from several remote countries, at least one of which is not commonly used in the organization, within a short period of time. This may indicate the account is compromised.",
+      "attackers_goals": "Gain user-account credentials.",
+      "investigative_actions": "Check if the user routed their traffic via a VPN, or shared their credentials with a remote employee."
+    },
+    {
+      "name": "SSO impossible traveler from a VPN or proxy",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Compromise Accounts (T1586)",
+        "Brute Force: Password Guessing (T1110.001)"
+      ],
+      "description": "User connected from several remote countries, at least one of which is not commonly used in the organization, within a short period of time. This may indicate the account is compromised.",
+      "attackers_goals": "Gain user-account credentials.",
+      "investigative_actions": "Check if the user routed their traffic via a VPN, or shared their credentials with a remote employee."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Domain Accounts (T1078.002)",
+    "Unsecured Credentials (T1552)"
+  ],
+  "attackers_goals": "Attackers aim to exploit misconfigurations in Microsoft Configuration Manager to access sensitive data, such as credentials and certificates, stored within the SCCMContentLib. This access can facilitate lateral movement and further compromise within the network.",
+  "deduplication_period": "1 Day",
+  "description": "A user generated suspicious file activity within the SCCMContentLib shared folder, which is considered a high-value target for attackers.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Microsoft SCCM Analytics",
+  "investigative_actions": "Verify the activity with the performing user. Check if SCCM admin credentials were accessed or exfiltrated. Review SCCM logs to identify unauthorized queries or modifications. Investigate recent access to the extracted files and their contents. Check other security logs (e.g., Windows Event Logs, SIEM alerts) for suspicious behavior. Identify the originating system and assess if it has been compromised. Monitor for any further lateral movement or privilege escalation attempts.",
+  "name": "Abnormal File Activity in SCCMContentLib Shared Folder by user",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "30 Minutes",
+  "variations": [
+    {
+      "name": "Suspicious File Activity in SCCMContentLib Shared Folder by user",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Domain Accounts (T1078.002)",
+        "Unsecured Credentials (T1552)"
+      ],
+      "description": "A user generated suspicious file activity within the SCCMContentLib shared folder, which is considered a high-value target for attackers.",
+      "attackers_goals": "Attackers aim to exploit misconfigurations in Microsoft Configuration Manager to access sensitive data, such as credentials and certificates, stored within the SCCMContentLib. This access can facilitate lateral movement and further compromise within the network.",
+      "investigative_actions": "Verify the activity with the performing user. Check if SCCM admin credentials were accessed or exfiltrated. Review SCCM logs to identify unauthorized queries or modifications. Investigate recent access to the extracted files and their contents. Check other security logs (e.g., Windows Event Logs, SIEM alerts) for suspicious behavior. Identify the originating system and assess if it has been compromised. Monitor for any further lateral movement or privilege escalation attempts."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Masquerading (T1036)",
+    "User Execution (T1204)"
+  ],
+  "attackers_goals": "Cause a different URL to be presented to the user as a legitimate URL, prompting user engagement.",
+  "deduplication_period": "1 Hour 30 Minutes",
+  "description": "Punycode character(s) detected within URL(s) in email content.",
+  "detection_modules": "Email",
+  "detector_tags": "Malicious URLs",
+  "investigative_actions": "Examine the sender's IP address and reputation. Check the email address and content for any unusual spellings, missing letters, or unknown domains. If the message contains attachments or links, scrutinize them for any suspicious indications. Monitor further actions taken, such as file downloads or access to potentially malicious links.",
+  "name": "Punycode characters detected in URL(s)",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

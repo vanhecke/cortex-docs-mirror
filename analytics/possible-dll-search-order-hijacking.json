@@ -1,0 +1,84 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Hijack Execution Flow: DLL (T1574.001)",
+    "Hijack Execution Flow: Path Interception by PATH Environment Variable (T1574.007)",
+    "Hijack Execution Flow: Path Interception by Unquoted Path (T1574.009)",
+    "Hijack Execution Flow: Path Interception by Search Order Hijacking (T1574.008)"
+  ],
+  "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker might abuse the Windows DLL search order to trigger known, signed processes to load the attacker's malicious module.",
+  "detection_modules": "",
+  "detector_tags": "DLL Hijacking Analytics",
+  "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations.",
+  "name": "Possible DLL Search Order Hijacking",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Possible DLL Search Order Hijacking by DLL Substitution",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow: DLL (T1574.001)",
+        "Hijack Execution Flow: Path Interception by PATH Environment Variable (T1574.007)",
+        "Hijack Execution Flow: Path Interception by Unquoted Path (T1574.009)",
+        "Hijack Execution Flow: Path Interception by Search Order Hijacking (T1574.008)",
+        "Masquerading (T1036)",
+        "Masquerading: Match Legitimate Resource Name or Location (T1036.005)"
+      ],
+      "description": "An attacker might abuse the Windows DLL search order to trigger known, signed processes to load the attacker's malicious module.",
+      "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+      "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations."
+    },
+    {
+      "name": "Possible DLL Search Order Hijacking - DLL extracted from an internet-downloaded archive",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow: DLL (T1574.001)",
+        "Hijack Execution Flow: Path Interception by PATH Environment Variable (T1574.007)",
+        "Hijack Execution Flow: Path Interception by Unquoted Path (T1574.009)",
+        "Hijack Execution Flow: Path Interception by Search Order Hijacking (T1574.008)"
+      ],
+      "description": "An attacker might abuse the Windows DLL search order to trigger known, signed processes to load the attacker's malicious module.",
+      "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+      "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations."
+    },
+    {
+      "name": "Possible DLL Search Order Hijacking - DLL downloaded from an uncommon source",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow: DLL (T1574.001)",
+        "Hijack Execution Flow: Path Interception by PATH Environment Variable (T1574.007)",
+        "Hijack Execution Flow: Path Interception by Unquoted Path (T1574.009)",
+        "Hijack Execution Flow: Path Interception by Search Order Hijacking (T1574.008)"
+      ],
+      "description": "An attacker might abuse the Windows DLL search order to trigger known, signed processes to load the attacker's malicious module.",
+      "attackers_goals": "An attacker is attempting to load an untrusted module into a trusted context to avoid detection, gain persistence or to perform privilege escalation.",
+      "investigative_actions": "Investigate the loaded module to verify if it is malicious. Investigate if the loading process and the loaded module reside in legitimate locations."
+    }
+  ]
+}

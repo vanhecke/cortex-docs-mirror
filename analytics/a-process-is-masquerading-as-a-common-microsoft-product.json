@@ -1,0 +1,88 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Masquerading (T1036)"
+  ],
+  "attackers_goals": "An attacker is attempting to masquerade as a Microsoft software image to execute malicious code.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker might leverage common Microsoft software image names to run malicious processes without being caught.",
+  "detection_modules": "",
+  "detector_tags": "EDR Windows Disguised Processes",
+  "investigative_actions": "Investigate the executed process image and check if it is malicious. Investigate the actor process that executed the process and check if it is malicious.",
+  "name": "A process is masquerading as a common Microsoft product",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "An unsigned actor executed masqueraded process which was downloaded from unexpected source",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading (T1036)"
+      ],
+      "description": "An attacker might leverage common Microsoft software image names to run malicious processes without being caught.",
+      "attackers_goals": "An attacker is attempting to masquerade as a Microsoft software image to execute malicious code.",
+      "investigative_actions": "Investigate the executed process image and check if it is malicious. Investigate the actor process that executed the process and check if it is malicious."
+    },
+    {
+      "name": "An unsigned and rare actor executing masqueraded process with uncommon characteristics",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading (T1036)"
+      ],
+      "description": "An attacker might leverage common Microsoft software image names to run malicious processes without being caught.",
+      "attackers_goals": "An attacker is attempting to masquerade as a Microsoft software image to execute malicious code.",
+      "investigative_actions": "Investigate the executed process image and check if it is malicious. Investigate the actor process that executed the process and check if it is malicious."
+    },
+    {
+      "name": "A process that was executed by remote causality actor is masquerading as a common Microsoft product",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading (T1036)"
+      ],
+      "description": "An attacker might leverage common Microsoft software image names to run malicious processes without being caught.",
+      "attackers_goals": "An attacker is attempting to masquerade as a Microsoft software image to execute malicious code.",
+      "investigative_actions": "Investigate the executed process image and check if it is malicious. Investigate the actor process that executed the process and check if it is malicious."
+    },
+    {
+      "name": "A process is masquerading as a common Microsoft Lolbin",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading (T1036)"
+      ],
+      "description": "An attacker might leverage common Microsoft software image names to run malicious processes without being caught.",
+      "attackers_goals": "An attacker is attempting to masquerade as a Microsoft software image to execute malicious code.",
+      "investigative_actions": "Investigate the executed process image and check if it is malicious. Investigate the actor process that executed the process and check if it is malicious."
+    },
+    {
+      "name": "A process running from a commonly abused directory is masquerading as a common Microsoft product",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading (T1036)"
+      ],
+      "description": "An attacker might leverage common Microsoft software image names to run malicious processes without being caught.",
+      "attackers_goals": "An attacker is attempting to masquerade as a Microsoft software image to execute malicious code.",
+      "investigative_actions": "Investigate the executed process image and check if it is malicious. Investigate the actor process that executed the process and check if it is malicious."
+    }
+  ]
+}

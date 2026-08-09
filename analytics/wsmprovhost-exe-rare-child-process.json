@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Remote Services: Windows Remote Management (T1021.006)",
+    "Command and Scripting Interpreter: PowerShell (T1059.001)"
+  ],
+  "attackers_goals": "Gain code execution on a remote host.",
+  "deduplication_period": "1 Day",
+  "description": "The PowerShell host wsmprovhost.exe is a proxy process executed remotely through PowerShell when using Windows Remote Management (WinRM). It has executed a rare child process, which may indicate remote code execution abuse by an attacker.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the processes being spawned from Wsmprovhost.exe on the host for malicious indicators. Correlate the initiator process (most likely PowerShell) to the source host and investigate it.",
+  "name": "Wsmprovhost.exe Rare Child Process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

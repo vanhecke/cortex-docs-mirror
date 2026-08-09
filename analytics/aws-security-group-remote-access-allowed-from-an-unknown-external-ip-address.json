@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify Cloud Firewall (T1562.007)"
+  ],
+  "attackers_goals": "Obtaining persistency persistence by creating a direct, reliable backdoor that allows them to remotely control the system without needing to re-exploit it.",
+  "deduplication_period": "1 Day",
+  "description": "A cloud identity has modified the ingress rules to allow unfamiliar ip addresses SSH or RDP access.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Investigate any unusual activity originating from the suspected identity and any activity performed from the newly added ip addresses.",
+  "name": "AWS Security Group remote access allowed from an unknown external IP address",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

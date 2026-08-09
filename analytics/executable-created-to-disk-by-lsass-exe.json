@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Process Injection (T1055)"
+  ],
+  "attackers_goals": "This activity was an important stage for several exploits.",
+  "deduplication_period": "6 Hours",
+  "description": "Lsass.exe does not normally create executables to disk. This activity was seen as part of several exploits, like EternalBlue and DoublePulsar, used during the WannaCry attacks.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check the file that was written to the disk for malicious activities.",
+  "name": "Executable created to disk by lsass.exe",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

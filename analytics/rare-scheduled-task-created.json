@@ -1,0 +1,77 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Scheduled Task/Job (T1053)"
+  ],
+  "attackers_goals": "Attackers may attempt to gain persistence on the endpoint using scheduled task.",
+  "deduplication_period": "1 Day",
+  "description": "A new rare scheduled task was created with a rare path and a rare command line.",
+  "detection_modules": "",
+  "detector_tags": "Impacket Analytics, Scheduled tasks Analytics",
+  "investigative_actions": "Review the action of the created scheduled task. Investigate the execution chain of the process creating the scheduled task.",
+  "name": "Rare scheduled task created",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Rare scheduled task created by an injected actor",
+      "severity": "High",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "A new rare scheduled task was created by an injected actor with a rare path and a rare command line.",
+      "attackers_goals": "Attackers may attempt to gain persistence on the endpoint using scheduled task.",
+      "investigative_actions": "Review the action of the created scheduled task. Investigate the execution chain of the process creating the scheduled task."
+    },
+    {
+      "name": "Uncommon remote scheduled task created",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)",
+        "Remote Services (T1021)"
+      ],
+      "description": "A new uncommon remote scheduled task was created with a rare path and a rare command line.",
+      "attackers_goals": "Attackers may attempt to gain persistence or perform lateral movement to new hosts to expand the foothold within a network.",
+      "investigative_actions": "Review the action of the created scheduled task. Correlate the RPC call from the source host and understand which software initiated it."
+    },
+    {
+      "name": "Uncommon local scheduled task created",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "A new uncommon local scheduled task was created with a rare path and a rare command line.",
+      "attackers_goals": "Attackers may attempt to gain persistence on the endpoint using scheduled task.",
+      "investigative_actions": "Review the action of the created scheduled task. Investigate the execution chain of the process creating the scheduled task."
+    },
+    {
+      "name": "Highly rare scheduled task created",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "A new rare scheduled task was created with an highly rare path and a rare command line.",
+      "attackers_goals": "Attackers may attempt to gain persistence on the endpoint using scheduled task.",
+      "investigative_actions": "Review the action of the created scheduled task. Investigate the execution chain of the process creating the scheduled task."
+    }
+  ]
+}

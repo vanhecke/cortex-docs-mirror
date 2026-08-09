@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Phishing: Spearphishing Attachment (T1566.001)"
+  ],
+  "attackers_goals": "An attacker attempts to gain code execution via a phishing document.",
+  "deduplication_period": "1 Day",
+  "description": "Unusual process spawned by Adobe Reader with an uncommon command line.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check the source of the document (received by mail or loaded locally). Investigate the child processes for malicious activity and network connections to an external host.",
+  "name": "Suspicious Process Spawned by Adobe Reader",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

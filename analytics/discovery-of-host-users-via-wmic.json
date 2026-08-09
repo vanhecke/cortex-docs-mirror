@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "System Owner/User Discovery (T1033)"
+  ],
+  "attackers_goals": "Attackers can attempt to use the command to discover host users and enumerate a huge amount of information.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers may use wmic.exe to list the users of a host, and potentially its owner.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify whether the command that was executed is benign or normal for the host and/or user performing it (for example, it may be an IT script).",
+  "name": "Discovery of host users via WMIC",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

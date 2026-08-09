@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Network Denial of Service (T1498)"
+  ],
+  "attackers_goals": "Attackers may attempt to perform denial-of-service attacks to make services unavailable.",
+  "deduplication_period": "5 Days",
+  "description": "A Kubernetes service was created or deleted.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Kubernetes - API",
+  "investigative_actions": "Check which changes were made to the Kubernetes service.",
+  "name": "A Kubernetes service was created or deleted",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log",
+    "Kubernetes Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

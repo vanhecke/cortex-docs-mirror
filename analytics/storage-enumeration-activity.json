@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Cloud Storage Object Discovery (T1619)",
+    "Cloud Infrastructure Discovery (T1580)"
+  ],
+  "attackers_goals": "Access sensitive data stored in cloud infrastructure.",
+  "deduplication_period": "5 Days",
+  "description": "An identity attempted to discover cloud objects within storage buckets. This might be an attempt by an adversary to find sensitive data stored in cloud storage, which could lead to data theft.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Stealth Tactics, Data Detection & Response",
+  "investigative_actions": "Check the identity's role designation in the organization. Identify which storage buckets were enumerated and whether they contained sensitive information.",
+  "name": "Storage enumeration activity",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": []
+}

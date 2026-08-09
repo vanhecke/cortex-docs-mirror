@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Modify Authentication Process (T1556)",
+    "Modify Authentication Process: Multi-Factor Authentication (T1556.006)"
+  ],
+  "attackers_goals": "Gain access to Google Workspace accounts with disabled MFA. Exploit Google Workspace accounts with weaker security. Steal sensitive data from Google Workspace accounts.",
+  "deduplication_period": "5 Days",
+  "description": "An administrator has disabled Multi-Factor Authentication for Google Workspace users.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Check the MFA settings for the Google Workspace users. Identify the users who have MFA disabled and investigate the reason for it. Check the security log to see if there have been any suspicious activities in the account.",
+  "name": "MFA Disabled for Google Workspace",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "MFA Disabled for Google Workspace from an unusual caller IP ASN",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Modify Authentication Process (T1556)",
+        "Modify Authentication Process: Multi-Factor Authentication (T1556.006)"
+      ],
+      "description": "An administrator has disabled Multi-Factor Authentication for Google Workspace users.",
+      "attackers_goals": "Gain access to Google Workspace accounts with disabled MFA. Exploit Google Workspace accounts with weaker security. Steal sensitive data from Google Workspace accounts.",
+      "investigative_actions": "Check the MFA settings for the Google Workspace users. Identify the users who have MFA disabled and investigate the reason for it. Check the security log to see if there have been any suspicious activities in the account."
+    }
+  ]
+}

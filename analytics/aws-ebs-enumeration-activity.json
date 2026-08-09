@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Cloud Infrastructure Discovery (T1580)",
+    "Cloud Service Discovery (T1526)"
+  ],
+  "attackers_goals": "Identify existing EBS volumes and snapshots to understand what storage resources are available and in use. Assess if snapshots are shared with other accounts or publicly accessible. Identify potential data exfiltration paths or targets.",
+  "deduplication_period": "1 Day",
+  "description": "EBS volume and snapshot enumeration activity, potentially indicating block storage reconnaissance.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Review which EBS API calls were executed and their frequency. Analyze the identity performing the actions. Inspect sharing or access configurations of enumerated snapshots.",
+  "name": "AWS EBS enumeration activity",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": []
+}

@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Archive Collected Data: Archive via Utility (T1560.001)",
+    "Data Staged (T1074)"
+  ],
+  "attackers_goals": "Stage data on an endpoint in the organization.",
+  "deduplication_period": "1 Day",
+  "description": "Multiple archive files were created by a user. This might indicate an attempt to stage data before exfiltration.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check for any other suspicious activity related to the host and the user involved in the alert.",
+  "name": "Massive file compression by user",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "3 Hours",
+  "variations": []
+}

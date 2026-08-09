@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)",
+    "Brute Force: Password Cracking (T1110.002)"
+  ],
+  "attackers_goals": "Extracting valuable information outside the company.",
+  "deduplication_period": "1 Day",
+  "description": "Internal sender emailed to an address hosted by a public email service provider.",
+  "detection_modules": "Email",
+  "detector_tags": "Exfiltration, Account Takeover",
+  "investigative_actions": "Check the content of the email that was sent. Review the external recipient address and assess its reputation. Review past emails sent from this mailbox for any suspicious activity. Check for unusual emails sent to this recipient's address. Monitor further action taken, such as accessing to private keys, API tokens and sensitive data.",
+  "name": "Outbound email to an address hosted by a public email service provider",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Outbound email to a single address hosted by a public email service provider",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)",
+        "Brute Force: Password Cracking (T1110.002)"
+      ],
+      "description": "Internal sender emailed to a single recipient with public email service provider.",
+      "attackers_goals": "Extracting valuable information outside the company.",
+      "investigative_actions": "Check the content of the email that was sent. Review the external recipient address and assess its reputation. Review past emails sent from this mailbox for any suspicious activity. Check for unusual emails sent to this recipient's address. Monitor further action taken, such as accessing to private keys, API tokens and sensitive data."
+    }
+  ]
+}

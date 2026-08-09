@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Masquerading: Space after Filename (T1036.006)"
+  ],
+  "attackers_goals": "Attackers may try to change the extension of the file to evade detection.",
+  "deduplication_period": "1 Day",
+  "description": "A file was created or renamed to have a space at the end of its name.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands.",
+  "name": "Space after filename",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

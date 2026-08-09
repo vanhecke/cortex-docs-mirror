@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Phishing (T1566)",
+    "Exfiltration Over Alternative Protocol (T1048)"
+  ],
+  "attackers_goals": "Extracting sensitive credentials, potentially leading to account takeover or unauthorized access to internal services. Extracting valuable information outside the company.",
+  "deduplication_period": "1 Hour 30 Minutes",
+  "description": "Unusual files sent to an external address.",
+  "detection_modules": "Email",
+  "detector_tags": "Exfiltration",
+  "investigative_actions": "Check the content of the unusual files that were sent. Review the external recipient address and assess its reputation. Review past emails sent from this mailbox for any suspicious activity. Check for unusual emails sent to this recipient's address. Monitor further actions taken, such as accessing private keys, API tokens and sensitive data.",
+  "name": "Sending unusual file(s) to an external address",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

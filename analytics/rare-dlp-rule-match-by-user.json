@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data from Information Repositories: Sharepoint (T1213.002)",
+    "Data from Information Repositories (T1213)"
+  ],
+  "attackers_goals": "An attacker is attempting to access sensitive information.",
+  "deduplication_period": "1 Day",
+  "description": "A user triggered an O365 DLP rule match, which may indicate an attacker's attempt to access sensitive information.",
+  "detection_modules": "Identity Threat Module, Email",
+  "detector_tags": "O365 DLP Analytics",
+  "investigative_actions": "Review the details of the triggered DLP rule match. Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Follow further actions done by the account. Communicate with the user to verify the legitimacy of the triggered event.",
+  "name": "Rare DLP rule match by user",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "DLP rule match by user for the first time",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Data from Information Repositories: Sharepoint (T1213.002)",
+        "Data from Information Repositories (T1213)"
+      ],
+      "description": "A user triggered an O365 DLP rule match, which may indicate an attacker's attempt to access sensitive information.",
+      "attackers_goals": "An attacker is attempting to access sensitive information.",
+      "investigative_actions": "Review the details of the triggered DLP rule match. Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Follow further actions done by the account. Communicate with the user to verify the legitimacy of the triggered event."
+    }
+  ]
+}

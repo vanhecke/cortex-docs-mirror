@@ -1,0 +1,63 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Exfiltration Over Alternative Protocol (T1048)"
+  ],
+  "attackers_goals": "Exfiltrate data over Microsoft Graph API.",
+  "deduplication_period": "5 Days",
+  "description": "An identity executed multiple Microsoft Graph actions, leading to an uncommon increase in API request sizes.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Microsoft Graph Activity Logs",
+  "investigative_actions": "Check the identity's role designation in the organization. Check if there are additional calls executed by the identity.",
+  "name": "Uncommon increase in Azure Microsoft Graph API request sizes",
+  "required_data": [
+    "Azure Audit Log",
+    "Microsoft Graph Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Unusual Azure high-volume data transfer",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Alternative Protocol (T1048)"
+      ],
+      "description": "An identity executed multiple Microsoft Graph actions, leading to an uncommon increase in API request sizes.",
+      "attackers_goals": "Exfiltrate data over Microsoft Graph API.",
+      "investigative_actions": "Check the identity's role designation in the organization. Check if there are additional calls executed by the identity."
+    },
+    {
+      "name": "Suspicious Azure data transfer by identity",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Alternative Protocol (T1048)"
+      ],
+      "description": "An identity executed multiple Microsoft Graph actions, leading to an uncommon increase in API request sizes.",
+      "attackers_goals": "Exfiltrate data over Microsoft Graph API.",
+      "investigative_actions": "Check the identity's role designation in the organization. Check if there are additional calls executed by the identity."
+    },
+    {
+      "name": "Unusual data transfer from multiple Azure tenants",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Alternative Protocol (T1048)"
+      ],
+      "description": "An identity executed multiple Microsoft Graph actions, leading to an uncommon increase in API request sizes.",
+      "attackers_goals": "Exfiltrate data over Microsoft Graph API.",
+      "investigative_actions": "Check the identity's role designation in the organization. Check if there are additional calls executed by the identity."
+    }
+  ]
+}

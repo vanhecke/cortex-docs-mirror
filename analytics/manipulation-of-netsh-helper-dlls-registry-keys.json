@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Event Triggered Execution: Netsh Helper DLL (T1546.007)"
+  ],
+  "attackers_goals": "Command execution and persistence on the host.",
+  "deduplication_period": "6 Hours",
+  "description": "Registering netsh helper DLLs is uncommon, and could be used by malware for persistence.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Manipulation of netsh helper DLLs Registry keys",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

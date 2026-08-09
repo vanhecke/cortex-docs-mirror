@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)"
+  ],
+  "attackers_goals": "Modify AI agents to evade certain restrictions and potentially access sensitive data.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity modified AI agent. MITRE ATLAS Technique: AML.T0015 - Evade ML Model.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud AI Infrastructure Analytics",
+  "investigative_actions": "Examine changed AI agent and determine how it was affected. Investigate any unusual activity originating from the suspected identity.",
+  "name": "Cloud AI agent was modified",
+  "required_data": [
+    "AWS Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual modification of AI agent",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses (T1562)"
+      ],
+      "description": "A cloud identity modified AI agent. MITRE ATLAS Technique: AML.T0015 - Evade ML Model.",
+      "attackers_goals": "Modify AI agents to evade certain restrictions and potentially access sensitive data.",
+      "investigative_actions": "Examine changed AI agent and determine how it was affected. Investigate any unusual activity originating from the suspected identity."
+    }
+  ]
+}

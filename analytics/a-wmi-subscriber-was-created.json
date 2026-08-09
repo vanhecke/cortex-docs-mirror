@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Event Triggered Execution: Windows Management Instrumentation Event Subscription (T1546.003)"
+  ],
+  "attackers_goals": "Command execution and persistence on the host.",
+  "deduplication_period": "1 Day",
+  "description": "A WMI subscriber was created.",
+  "detection_modules": "",
+  "detector_tags": "Impacket Analytics",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "A WMI subscriber was created",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

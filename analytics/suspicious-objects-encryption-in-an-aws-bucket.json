@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Data Encrypted for Impact (T1486)"
+  ],
+  "attackers_goals": "Gain monetary compensation in exchange for decryption or the decryption key. Permanently deny access to important storage objects.",
+  "deduplication_period": "1 Day",
+  "description": "An AWS KMS key from a non-organization account was used to encrypt multiple objects in a bucket for the first time. This may indicate an attacker attempting to perform a ransomware attack against the organization's cloud environment.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Protection Tampering, Data Detection & Response",
+  "investigative_actions": "Check if the external KMS service is a legit encryption service. Check if the identity performed enumeration activity to detect insecure S3 buckets, which are configured without the versioning and MFA Delete mechanisms. Detect additional buckets that were encrypted using the same external KMS service. Disable the identity from which the external service was configured. Enable versioning on every critical bucket. Enable MFA Delete on every critical bucket.",
+  "name": "Suspicious objects encryption in an AWS bucket",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "High",
+  "test_period": "1 Hour",
+  "variations": []
+}

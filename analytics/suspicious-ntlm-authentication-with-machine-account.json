@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Forced Authentication (T1187)"
+  ],
+  "attackers_goals": "An attacker aims to exploit authentication protocols to steal credentials and enable lateral movement within the network.",
+  "deduplication_period": "1 Day",
+  "description": "A suspicious NTLM authentication attempt was made by a machine account.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Identify the source and target users and hosts involved in the NTLM authentication attempt. Monitor the users associated with the authentication for any further suspicious activities or unauthorized actions. Look for earlier connections to the source which may cause it to initiate the session. Investigate the root cause of the behavior and determine if it can be mitigated or blocked in the future.",
+  "name": "Suspicious NTLM authentication with machine account",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Rare and sensitive NTLM authentication with machine account",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Forced Authentication (T1187)"
+      ],
+      "description": "A rare and sensitive NTLM authentication attempt was made by a machine account.",
+      "attackers_goals": "An attacker aims to exploit authentication protocols to steal credentials and enable lateral movement within the network.",
+      "investigative_actions": "Check for signs of data exfiltration from any internet-facing destination server. Identify the source and target users and hosts involved in the NTLM authentication attempt. Monitor the users associated with the authentication for any further suspicious activities or unauthorized actions. Look for earlier connections to the source which may cause it to initiate the session. Investigate the root cause of the behavior and determine if it can be mitigated or blocked in the future."
+    }
+  ]
+}

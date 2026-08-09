@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)",
+    "Brute Force: Password Cracking (T1110.002)"
+  ],
+  "attackers_goals": "Trick the user on clicking the link, while avoiding detection.",
+  "deduplication_period": "1 Day",
+  "description": "Identifies when a sender initiates contact with individuals with no prior history of interaction in the last 30 days.",
+  "detection_modules": "Email",
+  "detector_tags": "Phishing",
+  "investigative_actions": "Examine the sender's IP address and reputation. Verify whether the sender's IP address has appeared in different log sources before, and if it is recognizable. If the message contains attachments/links, scrutinize them for any suspicious indications. Monitor further actions taken, such as file downloads or access to potentially malicious links.",
+  "name": "Initial person-to-person email contact",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

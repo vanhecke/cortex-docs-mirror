@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Boot or Logon Autostart Execution (T1547)"
+  ],
+  "attackers_goals": "Gain persistence using the legitimate Windows registry run key mechanism, which executes commands on user login or computer boot.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker may add a script file to the Registry \"Run Keys\" or the \"Winlogon\\Userinit\" key to cause it to be executed as the user logs in.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify if the registered script is malicious. Check if the installed software is a malicious binary or script.",
+  "name": "Script file added to startup-related Registry keys",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

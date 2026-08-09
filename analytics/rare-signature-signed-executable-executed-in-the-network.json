@@ -1,0 +1,75 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Subvert Trust Controls: Code Signing (T1553.002)"
+  ],
+  "attackers_goals": "Adversaries may use signed binaries to bypass security features.",
+  "deduplication_period": "30 Days",
+  "description": "Attackers may use signed executables by less known vendors to bypass security features.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if this is legitimate software installed by a legitimate user and intentionally.",
+  "name": "Rare signature signed executable executed in the network",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Rare signature signed forensic tool remotely executed in the network",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Subvert Trust Controls: Code Signing (T1553.002)"
+      ],
+      "description": "Attackers may use signed executables by less known vendors to bypass security features.",
+      "attackers_goals": "Adversaries may use signed binaries to bypass security features.",
+      "investigative_actions": "Check if this is legitimate software installed by a legitimate user and intentionally. Check the capabilities of the forensic tool, for example if it can read data directly from the disk. Check other activities seen from the same remote IP address."
+    },
+    {
+      "name": "Rare signature signed forensic tool executed in the network",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Subvert Trust Controls: Code Signing (T1553.002)"
+      ],
+      "description": "Attackers may use signed executables by less known vendors to bypass security features.",
+      "attackers_goals": "Adversaries may use signed binaries to bypass security features.",
+      "investigative_actions": "Check if this is legitimate software installed by a legitimate user and intentionally. Check the capabilities of the forensic tool, for example if it can read data directly from the disk."
+    },
+    {
+      "name": "Rare signature signed executable extracted from an internet-downloaded archive and executed in the network",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Subvert Trust Controls: Code Signing (T1553.002)"
+      ],
+      "description": "Attackers may use signed executables by less known vendors to bypass security features.",
+      "attackers_goals": "Adversaries may use signed binaries to bypass security features.",
+      "investigative_actions": "Check if this is legitimate software installed by a legitimate user and intentionally."
+    },
+    {
+      "name": "Rare signature signed executable downloaded from an uncommon source and executed in the network",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Subvert Trust Controls: Code Signing (T1553.002)"
+      ],
+      "description": "Attackers may use signed executables by less known vendors to bypass security features.",
+      "attackers_goals": "Adversaries may use signed binaries to bypass security features.",
+      "investigative_actions": "Check if this is legitimate software installed by a legitimate user and intentionally."
+    }
+  ]
+}

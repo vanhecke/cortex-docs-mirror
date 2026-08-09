@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Trusted Relationship (T1199)",
+    "Modify Authentication Process (T1556)"
+  ],
+  "attackers_goals": "Gain privileged access to AWS accounts.",
+  "deduplication_period": "5 Days",
+  "description": "An AWS SAML provider was modified.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check what changes were made to the SAML provider.",
+  "name": "An AWS SAML provider was modified",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Cloud Accounts (T1078.004)"
+  ],
+  "attackers_goals": "Use legitimate credentials of a cloud account to access resources.",
+  "deduplication_period": "1 Day",
+  "description": "The AWS root account has successfully performed an operation in the project.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Look for any signs the Root user is compromised. Determine if the Root credentials need to be changed.",
+  "name": "AWS root account activity",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,45 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)",
+    "Valid Accounts (T1078)",
+    "Steal or Forge Authentication Certificates (T1649)"
+  ],
+  "attackers_goals": "Attackers may try to obtain certificates for privileged accounts or systems they do not normally have access to, to gain elevated access and move laterally within the network.",
+  "deduplication_period": "1 Day",
+  "description": "A certificate was issued to a user who was not the requester, this may indicate a certificate manipulation.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Active Directory Certificate Services Analytics",
+  "investigative_actions": "Verify the activity with the performing user. Identify if the requester is a user or system that normally requests certificates on behalf of other entities (e.g., a Mobile Device Management system). Search for further indicators of potential compromise, including atypical login behaviors, unauthorized attempts at privilege escalation, or lateral movements within the network attributed to the requester. Examine whether the mismatch between the requester and the subject is consistent with known and anticipated practices, or if it represents an unusual deviation. Check for possible certificate authentications with the subject user.",
+  "name": "A user certificate was issued with a mismatch",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious certificate issuance with a mismatch",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)",
+        "Valid Accounts (T1078)",
+        "Steal or Forge Authentication Certificates (T1649)"
+      ],
+      "description": "A user certificate was issued with a mismatch. This requester doesn't usually ask for a certificates on behalf of another subject. This may indicate a certificate manipulation.",
+      "attackers_goals": "Attackers may try to obtain certificates for privileged accounts or systems they do not normally have access to, to gain elevated access and move laterally within the network.",
+      "investigative_actions": "Verify the activity with the performing user. Identify if the requester is a user or system that normally requests certificates on behalf of other entities (e.g., a Mobile Device Management system). Search for further indicators of potential compromise, including atypical login behaviors, unauthorized attempts at privilege escalation, or lateral movements within the network attributed to the requester. Examine whether the mismatch between the requester and the subject is consistent with known and anticipated practices, or if it represents an unusual deviation. Check for possible certificate authentications with the subject user."
+    }
+  ]
+}

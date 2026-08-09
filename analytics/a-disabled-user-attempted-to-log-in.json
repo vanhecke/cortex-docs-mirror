@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Domain Accounts (T1078.002)"
+  ],
+  "attackers_goals": "Use an account that was possibly compromised in the past to gain access to the network.",
+  "deduplication_period": "1 Day",
+  "description": "A disabled user attempted to log in.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Confirm that the activity is benign (e.g. the user was recently enabled by an authorized entity). Check whether you have issues with your Cloud Identity Engine failing to sync data from Active Directory. Monitor services that may be running with a disabled user's credentials.",
+  "name": "A disabled user attempted to log in",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Cached interactive login attempt by a disabled user",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Domain Accounts (T1078.002)"
+      ],
+      "description": "A disabled user attempted to log in.",
+      "attackers_goals": "Use an account that was possibly compromised in the past to gain access to the network.",
+      "investigative_actions": "Confirm that the activity is benign (e.g. the user was recently enabled by an authorized entity). Check whether you have issues with your Cloud Identity Engine failing to sync data from Active Directory. Monitor services that may be running with a disabled user's credentials."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Masquerading: Masquerade File Type (T1036.008)",
+    "User Execution (T1204)"
+  ],
+  "attackers_goals": "Bypass security filters and deliver malicious content to users Mislead recipients into opening a malicious file by obscuring its true nature Deploy malicious attachments through emails to compromise systems, gain unauthorized access, or facilitate cyber threats.",
+  "deduplication_period": "1 Hour 30 Minutes",
+  "description": "The email message contains an attachment with a hidden Right-to-Left Override Unicode character.",
+  "detection_modules": "Email",
+  "detector_tags": "Evasion",
+  "investigative_actions": "Carefully analyze attachments for any indications of suspicious or malicious behavior. Scrutinize the attachments for any suspicious indications. Confirm whether the attachments were successfully delivered to the recipient's mailbox. If the attachments were delivered successfully, verify whether the recipient downloaded them.",
+  "name": "Email attachment with Right-to-Left Override Unicode character",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

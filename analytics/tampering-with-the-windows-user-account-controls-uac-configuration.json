@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Abuse Elevation Control Mechanism: Bypass User Account Control (T1548.002)"
+  ],
+  "attackers_goals": "Gain higher privileges by bypassing the User Account Control (UAC).",
+  "deduplication_period": "1 Day",
+  "description": "EnableLUA specifies whether Windows User Account Controls (UAC) notifies the user when programs try to modify the computer. UAC was formerly known as Limited User Account (LUA).",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Tampering with the Windows User Account Controls (UAC) configuration",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Tampering with the Windows User Account Controls (UAC) configuration by a remote host",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Abuse Elevation Control Mechanism: Bypass User Account Control (T1548.002)"
+      ],
+      "description": "EnableLUA specifies whether Windows User Account Controls (UAC) notifies the user when programs try to modify the computer. UAC was formerly known as Limited User Account (LUA).",
+      "attackers_goals": "Gain higher privileges by bypassing the User Account Control (UAC).",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Tampering with the Windows User Account Controls (UAC) configuration",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Abuse Elevation Control Mechanism: Bypass User Account Control (T1548.002)"
+      ],
+      "description": "EnableLUA specifies whether Windows User Account Controls (UAC) notifies the user when programs try to modify the computer. UAC was formerly known as Limited User Account (LUA).",
+      "attackers_goals": "Gain higher privileges by bypassing the User Account Control (UAC).",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Tampering with the Windows User Account Controls (UAC) configuration",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Abuse Elevation Control Mechanism: Bypass User Account Control (T1548.002)"
+      ],
+      "description": "EnableLUA specifies whether Windows User Account Controls (UAC) notifies the user when programs try to modify the computer. UAC was formerly known as Limited User Account (LUA).",
+      "attackers_goals": "Gain higher privileges by bypassing the User Account Control (UAC).",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

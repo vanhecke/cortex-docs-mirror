@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data Staged: Local Data Staging (T1074.001)"
+  ],
+  "attackers_goals": "Gain access to the data in the compromised mailbox.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker may use PowerShell to change the Client Access Settings (CAS) for a mailbox, hence gaining access to the data.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Examine the PowerShell command to identify which mailbox's access setting has been modified. Verify that the change in the client access setting was executed by a trusted source.",
+  "name": "Mailbox Client Access Setting (CAS) changed",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,55 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Masquerading: Masquerade Task or Service (T1036.004)",
+    "Create or Modify System Process: Windows Service (T1543.003)"
+  ],
+  "attackers_goals": "Masquerade execution on the host using a benign Windows process and achieve persistence.",
+  "deduplication_period": "1 Day",
+  "description": "A service was added as a dll, which will be executed by svchost.exe. This is a stealthy technique attackers use to persist their malware.",
+  "detection_modules": "",
+  "detector_tags": "Malicious Service Analytics",
+  "investigative_actions": "Investigate the suspicious DLL and check for malicious content. Go to the service registry key and investigate it to find the associated executable that runs the service. Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Rare service DLL was added to the registry",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Rare service DLL was added to the registry from an injected thread",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Masquerading: Masquerade Task or Service (T1036.004)",
+        "Create or Modify System Process: Windows Service (T1543.003)"
+      ],
+      "description": "A service was added as a dll, which will be executed by svchost.exe. This is a stealthy technique attackers use to persist their malware.",
+      "attackers_goals": "Masquerade execution on the host using a benign Windows process and achieve persistence.",
+      "investigative_actions": "Investigate the suspicious DLL and check for malicious content. Go to the service registry key and investigate it to find the associated executable that runs the service. Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Rare service DLL was added to the registry from a rare unsigned actor process",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Masquerading: Masquerade Task or Service (T1036.004)",
+        "Create or Modify System Process: Windows Service (T1543.003)"
+      ],
+      "description": "A service was added as a dll, which will be executed by svchost.exe. This is a stealthy technique attackers use to persist their malware.",
+      "attackers_goals": "Masquerade execution on the host using a benign Windows process and achieve persistence.",
+      "investigative_actions": "Investigate the suspicious DLL and check for malicious content. Go to the service registry key and investigate it to find the associated executable that runs the service. Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

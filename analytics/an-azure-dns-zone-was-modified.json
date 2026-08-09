@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol: DNS (T1071.004)"
+  ],
+  "attackers_goals": "Take control of DNS zones to redirect traffic to malicious websites.",
+  "deduplication_period": "5 Days",
+  "description": "An Azure DNS zone has been changed or removed, which may indicate malicious activity or a misconfiguration.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Verify whether the identity should be making this action.* Check what Azure DNS zones were changed or removed.",
+  "name": "An Azure DNS Zone was modified",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

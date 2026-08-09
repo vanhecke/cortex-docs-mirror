@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)"
+  ],
+  "attackers_goals": "An attacker may enable a user account to gain persistence.",
+  "deduplication_period": "1 Day",
+  "description": "A user enabled an account. This user does not usually enable user accounts.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the associated enabling event. Check if the user is authorized to enable accounts. Confirm that the account enablement was expected. If the account enablement seems suspicious, address it accordingly by disabling the account again, forcing a password change, or monitoring its activity.",
+  "name": "Unusual user account enablement",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual sensitive user account enablement",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)"
+      ],
+      "description": "A user enabled a sensitive account. This user does not usually enable user accounts.",
+      "attackers_goals": "An attacker may enable a user account to gain persistence.",
+      "investigative_actions": "Investigate the associated enabling event. Check if the user is authorized to enable accounts. Confirm that the account enablement was expected. If the account enablement seems suspicious, address it accordingly by disabling the account again, forcing a password change, or monitoring its activity."
+    }
+  ]
+}

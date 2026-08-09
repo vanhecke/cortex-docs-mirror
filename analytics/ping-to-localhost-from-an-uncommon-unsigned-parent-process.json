@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Virtualization/Sandbox Evasion (T1497)"
+  ],
+  "attackers_goals": "Use ping as an easy way to wait to try and evade detection between executions.",
+  "deduplication_period": "1 Hour",
+  "description": "Ping is often used by malware and attackers to delay the execution of suspicious commands in sandbox environments.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Validate if the executing process is malicious.",
+  "name": "Ping to localhost from an uncommon, unsigned parent process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

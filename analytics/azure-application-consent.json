@@ -1,0 +1,44 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Phishing (T1566)",
+    "Phishing: Spearphishing Link (T1566.002)",
+    "Steal Application Access Token (T1528)",
+    "Trusted Relationship (T1199)"
+  ],
+  "attackers_goals": "Get access to credentials, data or an organization via applications with sufficient permissions.",
+  "deduplication_period": "1 Day",
+  "description": "An identity consented permissions to an application.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Follow further actions by the consenting user. Check for new resource creations by the new user. Check how the consenting user got to the application. Verify the application creators. Check what permissions the application requested. Check for possible phishing in the organization.",
+  "name": "Azure application consent",
+  "required_data": [
+    "AzureAD Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "First seen Azure admin consent to an application",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)",
+        "Phishing: Spearphishing Link (T1566.002)",
+        "Steal Application Access Token (T1528)",
+        "Trusted Relationship (T1199)"
+      ],
+      "description": "An administrative identity consented permissions to an application.",
+      "attackers_goals": "Get access to credentials, data or an organization via applications with sufficient permissions.",
+      "investigative_actions": "Follow further actions by the consenting user. Check for new resource creations by the new user. Check how the consenting user got to the application. Verify the application creators. Check what permissions the application requested. Check for possible phishing in the organization."
+    }
+  ]
+}

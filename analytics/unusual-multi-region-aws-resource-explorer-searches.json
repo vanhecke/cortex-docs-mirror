@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Cloud Infrastructure Discovery (T1580)",
+    "Account Discovery: Cloud Account (T1087.004)"
+  ],
+  "attackers_goals": "Obtain a list of resources that could be targeted for lateral movement.",
+  "deduplication_period": "5 Days",
+  "description": "An identity performed unusual discovery activity in multiple regions using Resource Explorer's Search operation.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Investigate any unusual activity originating from the suspected identity.",
+  "name": "Unusual multi-region AWS Resource Explorer searches",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": []
+}

@@ -1,0 +1,55 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)",
+    "Brute Force: Password Cracking (T1110.002)"
+  ],
+  "attackers_goals": "Extracting valuable information outside the company. Bypass Data Loss Prevention (DLP) by splitting data across multiple emails.",
+  "deduplication_period": "2 Hours",
+  "description": "Unusual amount of emails sent by an internal sender to one or more external recipients within a short timeframe.",
+  "detection_modules": "Email",
+  "detector_tags": "",
+  "investigative_actions": "Check the content of the email that was sent. Review the external recipient address and assess its reputation. Review past emails sent from this mailbox for any suspicious activity. Check for unusual emails sent to this recipient's address. Monitor further action taken, such as accessing to private keys, API tokens and sensitive data.",
+  "name": "Sudden spike in outbound email volume",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Sudden spike in outbound emails sent to external recipients",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)",
+        "Brute Force: Password Cracking (T1110.002)"
+      ],
+      "description": "Unusual amount of emails sent by an internal sender to one or more external recipients within a short timeframe.",
+      "attackers_goals": "Extracting valuable information outside the company. Bypass Data Loss Prevention (DLP) by splitting data across multiple emails.",
+      "investigative_actions": "Check the content of the email that was sent. Review the external recipient address and assess its reputation. Review past emails sent from this mailbox for any suspicious activity. Check for unusual emails sent to this recipient's address. Monitor further action taken, such as accessing to private keys, API tokens and sensitive data."
+    },
+    {
+      "name": "Sudden spike in outbound emails sent to internal recipients",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)",
+        "Brute Force: Password Cracking (T1110.002)"
+      ],
+      "description": "Unusual amount of emails sent by an internal sender to one or more external recipients within a short timeframe.",
+      "attackers_goals": "Extracting valuable information outside the company. Bypass Data Loss Prevention (DLP) by splitting data across multiple emails.",
+      "investigative_actions": "Check the content of the email that was sent. Review the external recipient address and assess its reputation. Review past emails sent from this mailbox for any suspicious activity. Check for unusual emails sent to this recipient's address. Monitor further action taken, such as accessing to private keys, API tokens and sensitive data."
+    }
+  ]
+}

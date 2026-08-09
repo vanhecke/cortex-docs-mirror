@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)"
+  ],
+  "attackers_goals": "Bypass security measures.",
+  "deduplication_period": "5 Days",
+  "description": "An Azure Suppression Rule was created.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the user's activity to determine the cause of the alert.",
+  "name": "An Azure Suppression Rule was created",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

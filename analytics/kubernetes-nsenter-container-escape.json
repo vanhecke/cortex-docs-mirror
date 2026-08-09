@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Escape to Host (T1611)"
+  ],
+  "attackers_goals": "Attackers may break out of a container to run commands on the host.",
+  "deduplication_period": "7 Days",
+  "description": "The nsenter command was used to execute a process in the context of the initialization process.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Kubernetes nsenter container escape",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Kubernetes nsenter container escape from a new Pod",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Escape to Host (T1611)"
+      ],
+      "description": "The nsenter command was used to execute a process in the context of the initialization process.",
+      "attackers_goals": "Attackers may break out of a container to run commands on the host.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Kubernetes nsenter container escape from a Pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Escape to Host (T1611)"
+      ],
+      "description": "The nsenter command was used to execute a process in the context of the initialization process.",
+      "attackers_goals": "Attackers may break out of a container to run commands on the host.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

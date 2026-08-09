@@ -1,0 +1,52 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Services: Direct Cloud VM Connections (T1021.008)",
+    "Remote Services: Cloud Services (T1021.007)"
+  ],
+  "attackers_goals": "Gaining unauthorized access, executing unauthorized commands, or compromising sensitive information within the target system.",
+  "deduplication_period": "3 Days",
+  "description": "An identity started an AWS SSM interactive session.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Lateral Movement Analytics",
+  "investigative_actions": "Examine the specifics of the SSM session, including the source IP address, identity, and timestamp. Validate the permissions and roles associated with the user initiating the SSM session to ensure they align with the expected level of access. Follow further actions taken by the identity or on the relevant instance.",
+  "name": "An identity started an AWS SSM session",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "An identity started an unusual AWS SSM session",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Direct Cloud VM Connections (T1021.008)",
+        "Remote Services: Cloud Services (T1021.007)"
+      ],
+      "description": "An identity started an AWS SSM interactive session.",
+      "attackers_goals": "Gaining unauthorized access, executing unauthorized commands, or compromising sensitive information within the target system.",
+      "investigative_actions": "Examine the specifics of the SSM session, including the source IP address, identity, and timestamp. Validate the permissions and roles associated with the user initiating the SSM session to ensure they align with the expected level of access. Follow further actions taken by the identity or on the relevant instance."
+    },
+    {
+      "name": "An unusual identity started an AWS SSM session",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Direct Cloud VM Connections (T1021.008)",
+        "Remote Services: Cloud Services (T1021.007)"
+      ],
+      "description": "An identity started an AWS SSM interactive session.",
+      "attackers_goals": "Gaining unauthorized access, executing unauthorized commands, or compromising sensitive information within the target system.",
+      "investigative_actions": "Examine the specifics of the SSM session, including the source IP address, identity, and timestamp. Validate the permissions and roles associated with the user initiating the SSM session to ensure they align with the expected level of access. Follow further actions taken by the identity or on the relevant instance."
+    }
+  ]
+}

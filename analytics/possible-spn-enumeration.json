@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Account Discovery (T1087)"
+  ],
+  "attackers_goals": "An attacker is attempting to enumerate Active Directory.",
+  "deduplication_period": "1 Day",
+  "description": "A possible SPN enumeration via LDAP was performed. Such enumeration may be used during attacks against the organization.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "LDAP Analytics (Client), LDAP Analytics (Server)",
+  "investigative_actions": "Check if the process executes LDAP search queries as part of its normal behavior. Investigate the LDAP search query for any suspicious indicators. Determine whether the search query is generic. Wide search queries (often using wildcards) tend to be more suspicious. In our case, we are looking for targeted search queries.",
+  "name": "Possible SPN enumeration",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious SPN enumeration via LDAP",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Account Discovery (T1087)"
+      ],
+      "description": "A possible SPN enumeration via LDAP was performed. Such enumeration may be used during attacks against the organization.",
+      "attackers_goals": "An attacker is attempting to enumerate Active Directory.",
+      "investigative_actions": "Check if the process executes LDAP search queries as part of its normal behavior. Investigate the LDAP search query for any suspicious indicators. Determine whether the search query is generic. Wide search queries (often using wildcards) tend to be more suspicious. In our case, we are looking for targeted search queries."
+    }
+  ]
+}

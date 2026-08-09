@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "System Service Discovery (T1007)",
+    "Steal or Forge Authentication Certificates (T1649)"
+  ],
+  "attackers_goals": "An attacker might look for AD CS servers, certificate templates or request certificates. With the wrong setting or loose vulnerable templates or enabled enrollment, the attacker will be able to authenticate as users on the network.",
+  "deduplication_period": "1 Day",
+  "description": "A suspicious occurrence of Certutil attempted to contact the AD CS Request Interface.",
+  "detection_modules": "",
+  "detector_tags": "Active Directory Certificate Services Analytics",
+  "investigative_actions": "Look at further action done by the user. Investigate whether other non-standard operations were done regarding the AD CS.",
+  "name": "Suspicious Certutil AD CS contact",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious Certutil AD CS Admin Interface contact",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "System Service Discovery (T1007)",
+        "Steal or Forge Authentication Certificates (T1649)"
+      ],
+      "description": "A suspicious occurrence of Certutil attempted to contact the AD CS Admin Interface.",
+      "attackers_goals": "An attacker might look for AD CS servers, certificate templates or request certificates. With the wrong setting or loose vulnerable templates or enabled enrollment, the attacker will be able to authenticate as users on the network.",
+      "investigative_actions": "Look at further action done by the user. Investigate whether other non-standard operations were done regarding the AD CS."
+    }
+  ]
+}

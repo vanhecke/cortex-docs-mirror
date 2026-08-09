@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Account Access Removal (T1531)"
+  ],
+  "attackers_goals": "Prevent billing notifications from being sent to the billing admin.",
+  "deduplication_period": "5 Days",
+  "description": "Sensitive Action - Billing admin role was removed.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check if the identity intended to remove the billing admin. Check if the identity performed additional malicious operations in the cloud environment.",
+  "name": "Billing admin role was removed",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

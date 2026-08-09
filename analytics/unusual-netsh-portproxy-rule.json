@@ -1,0 +1,55 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify System Firewall (T1562.004)",
+    "Proxy: Internal Proxy (T1090.001)"
+  ],
+  "attackers_goals": "Adding or deleting netsh forwarding rules as a proxy and to avoid possible detection.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers may use Netsh PortProxy rules as part of malicious actions performed in an organizational network (e.g., for tunneling).",
+  "detection_modules": "",
+  "detector_tags": "LOLBIN Execution Analytics",
+  "investigative_actions": "Check the connect address and if it's a known IP/domain. Check whether the causality group owner (CGO) process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Unusual Netsh PortProxy rule",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual Netsh PortProxy rule by non-netsh process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify System Firewall (T1562.004)",
+        "Proxy: Internal Proxy (T1090.001)"
+      ],
+      "description": "Attackers may use Netsh PortProxy rules as part of malicious actions performed in an organizational network (e.g., for tunneling).",
+      "attackers_goals": "Adding or deleting netsh forwarding rules as a proxy and to avoid possible detection.",
+      "investigative_actions": "Check the connect address and if it's a known IP/domain. Check whether the causality group owner (CGO) process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Unusual Netsh PortProxy rule by an unsigned causality actor",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify System Firewall (T1562.004)",
+        "Proxy: Internal Proxy (T1090.001)"
+      ],
+      "description": "Attackers may use Netsh PortProxy rules as part of malicious actions performed in an organizational network (e.g., for tunneling).",
+      "attackers_goals": "Adding or deleting netsh forwarding rules as a proxy and to avoid possible detection.",
+      "investigative_actions": "Check the connect address and if it's a known IP/domain. Check whether the causality group owner (CGO) process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

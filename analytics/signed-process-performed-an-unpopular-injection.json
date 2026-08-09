@@ -1,0 +1,101 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Process Injection (T1055)"
+  ],
+  "attackers_goals": "Attackers may inject code into processes to evade process-based defenses, as well as possibly elevate privileges.",
+  "deduplication_period": "1 Day",
+  "description": "A signed process performed an unpopular injection to another process.",
+  "detection_modules": "",
+  "detector_tags": "Injection Analytics",
+  "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Signed process performed an unpopular injection",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Signed process that got injected performed an unpopular and suspicious injection",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Process Injection (T1055)"
+      ],
+      "description": "A signed process performed an unpopular injection to another process.",
+      "attackers_goals": "Attackers may inject code into processes to evade process-based defenses, as well as possibly elevate privileges.",
+      "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Signed process that got injected performed an unpopular and suspicious injection",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Process Injection (T1055)"
+      ],
+      "description": "A signed process performed an unpopular injection to another process.",
+      "attackers_goals": "Attackers may inject code into processes to evade process-based defenses, as well as possibly elevate privileges.",
+      "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Signed process that got injected performed an unpopular injection",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Process Injection (T1055)"
+      ],
+      "description": "A signed process performed an unpopular injection to another process.",
+      "attackers_goals": "Attackers may inject code into processes to evade process-based defenses, as well as possibly elevate privileges.",
+      "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Commonly abused signed process performed a globally unpopular injection to a Microsoft signed process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Process Injection (T1055)"
+      ],
+      "description": "A signed process performed an unpopular injection to another process.",
+      "attackers_goals": "Attackers may inject code into processes to evade process-based defenses, as well as possibly elevate privileges.",
+      "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Signed process performed an unpopular injection",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Process Injection (T1055)"
+      ],
+      "description": "A signed process performed an unpopular injection to another process.",
+      "attackers_goals": "Attackers may inject code into processes to evade process-based defenses, as well as possibly elevate privileges.",
+      "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Signed process executed by a scheduled task performed an unpopular injection",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Process Injection (T1055)"
+      ],
+      "description": "A signed process performed an unpopular injection to another process.",
+      "attackers_goals": "Attackers may inject code into processes to evade process-based defenses, as well as possibly elevate privileges.",
+      "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Scheduled Task/Job (T1053)",
+    "Scheduled Task/Job: At (T1053.002)"
+  ],
+  "attackers_goals": "Attackers may attempt to use the command to gain persistence on the endpoint using recurring tasks.",
+  "deduplication_period": "1 Day",
+  "description": "Detects an interactive AT scheduled task, which may be used as a form of privilege escalation.",
+  "detection_modules": "",
+  "detector_tags": "Scheduled tasks Analytics",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Interactive at.exe privilege escalation method",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

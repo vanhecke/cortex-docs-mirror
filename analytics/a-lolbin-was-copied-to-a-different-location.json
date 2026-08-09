@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Masquerading: Rename Legitimate Utilities (T1036.003)"
+  ],
+  "attackers_goals": "Command execution via lolbins and detection avoidance via file rename.",
+  "deduplication_period": "6 Hours",
+  "description": "To evade detection, attackers may copy a LOLBIN executable to a different location.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the destination path of the lolbin and try to see if it's benign.",
+  "name": "A LOLBIN was copied to a different location",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A LOLBIN was copied to a different location using a rare command line",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading: Rename Legitimate Utilities (T1036.003)"
+      ],
+      "description": "To evade detection, attackers may copy a LOLBIN executable to a different location.",
+      "attackers_goals": "Command execution via lolbins and detection avoidance via file rename.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the destination path of the lolbin and try to see if it's benign."
+    },
+    {
+      "name": "A LOLBIN was copied to a different location using a rare command line via a commonly used method",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading: Rename Legitimate Utilities (T1036.003)"
+      ],
+      "description": "To evade detection, attackers may copy a LOLBIN executable to a different location.",
+      "attackers_goals": "Command execution via lolbins and detection avoidance via file rename.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the destination path of the lolbin and try to see if it's benign."
+    }
+  ]
+}

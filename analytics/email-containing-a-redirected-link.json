@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Hide Artifacts (T1564)",
+    "User Execution (T1204)"
+  ],
+  "attackers_goals": "Attackers can use link redirection to disguise malicious URLs.",
+  "deduplication_period": "1 Day",
+  "description": "An email with a redirected link has been detected.",
+  "detection_modules": "Email",
+  "detector_tags": "Malicious URLs",
+  "investigative_actions": "Carefully analyze the full redirection chain. Be cautious with this process, as clicking on links can pose security risks. Use URL reputation services to check if the final destination or any of the intermediate URLs are known to be malicious or associated with phishing. If the message contains attachments or links, scrutinize them for any suspicious indications. Monitor further actions taken, such as file downloads or access to potentially malicious links.",
+  "name": "Email containing a redirected link",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Email containing a redirected link with multiple redirections",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Hide Artifacts (T1564)",
+        "User Execution (T1204)"
+      ],
+      "description": "An email with a redirected link has been detected. The email contains at least one redirected link with multiple redirection patterns, which is concerning as it can obscure malicious URLs and evade security filters.",
+      "attackers_goals": "Attackers can use link redirection to disguise malicious URLs.",
+      "investigative_actions": "Carefully analyze the full redirection chain. Be cautious with this process, as clicking on links can pose security risks. Use URL reputation services to check if the final destination or any of the intermediate URLs are known to be malicious or associated with phishing. If the message contains attachments or links, scrutinize them for any suspicious indications. Monitor further actions taken, such as file downloads or access to potentially malicious links."
+    }
+  ]
+}

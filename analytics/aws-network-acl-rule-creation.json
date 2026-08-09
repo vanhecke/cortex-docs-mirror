@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "External Remote Services (T1133)",
+    "Exfiltration Over Alternative Protocol (T1048)"
+  ],
+  "attackers_goals": "Deleting an ingress rule may allow an attacker to gain persistence in the cloud environment. Deleting an egress rule may enable data exfiltration.",
+  "deduplication_period": "1 Day",
+  "description": "An AWS network ACL rule was created with a specific rule number.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the VPC affected by this change. Verify the rule number (as rules are applied in order). Determine whether the rule is ingress or egress.",
+  "name": "AWS network ACL rule creation",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

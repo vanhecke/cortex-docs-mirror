@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "OS Credential Dumping: NTDS (T1003.003)"
+  ],
+  "attackers_goals": "Retrieve Active Directory data, to perform malicious activities such as lateral movement.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers may attempt to dump the ntds.dit file, which stores all Active Directory account information, to later extract passwords and hashes from it.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check the initiator process for additional suspicious activity.",
+  "name": "Suspicious dump of ntds.dit using Shadow Copy with ntdsutil/vssadmin",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "High",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

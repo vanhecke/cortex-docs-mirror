@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)",
+    "Data Encrypted for Impact (T1486)"
+  ],
+  "attackers_goals": "Modify storage configuration to detection or allow access to sensitive information.",
+  "deduplication_period": "5 Days",
+  "description": "An AWS S3 bucket configuration has been modified.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Configuration, Data Detection & Response",
+  "investigative_actions": "Examine AWS S3 access to identify any suspicious activity.* Check which S3 buckets were affected.",
+  "name": "An AWS S3 bucket configuration was modified",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

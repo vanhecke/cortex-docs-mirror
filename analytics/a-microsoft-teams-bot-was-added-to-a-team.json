@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Cloud Application Integration (T1671)"
+  ],
+  "attackers_goals": "Attackers may leverage Teams bots to maintain persistent access to compromised Teams accounts.",
+  "deduplication_period": "1 Day",
+  "description": "A user added a bot to a team in Microsoft Teams.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Microsoft Teams",
+  "investigative_actions": "Confirm that the bot was created by a certified and trusted entity. Evaluate the permissions requested by the bot to determine if they are excessive or unusual. Determine if it is within the user's role to add bots to teams. Follow further actions done by the account.",
+  "name": "A Microsoft Teams bot was added to a team",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

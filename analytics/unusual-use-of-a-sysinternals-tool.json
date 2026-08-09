@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Obfuscated Files or Information (T1027)"
+  ],
+  "attackers_goals": "Attackers may leverage SysInternals tools for lateral movement, credential access, or to delete recovery backups to cause impact.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker may be trying to avoid detection by using an obfuscated copy of SysInternals tools.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the file is familiar to the user, if not, investigate further the source of it.",
+  "name": "Unusual use of a 'SysInternals' tool",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual use of a 'SysInternals' tool by a process with an invalid or non-standard signature",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Obfuscated Files or Information (T1027)"
+      ],
+      "description": "An attacker may be trying to avoid detection by using an obfuscated copy of SysInternals tools.",
+      "attackers_goals": "Attackers may leverage SysInternals tools for lateral movement, credential access, or to delete recovery backups to cause impact.",
+      "investigative_actions": "Check if the file is familiar to the user, if not, investigate further the source of it."
+    },
+    {
+      "name": "Unusual use of a 'SysInternals' tool that can be used for offensive operations",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Obfuscated Files or Information (T1027)"
+      ],
+      "description": "An attacker may be trying to avoid detection by using an obfuscated copy of SysInternals tools.",
+      "attackers_goals": "Attackers may leverage SysInternals tools for lateral movement, credential access, or to delete recovery backups to cause impact.",
+      "investigative_actions": "Check if the file is familiar to the user, if not, investigate further the source of it."
+    },
+    {
+      "name": "A registry key related to SysInternals was modified by a known registry editor",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Obfuscated Files or Information (T1027)"
+      ],
+      "description": "A registry key related to SysInternals was modified by a known registry editor to circumvent a EULA prompt.",
+      "attackers_goals": "Attackers may leverage SysInternals tools for lateral movement, credential access, or to delete recovery backups to cause impact.",
+      "investigative_actions": "Check if the file is familiar to the user, if not, investigate further the source of it."
+    }
+  ]
+}

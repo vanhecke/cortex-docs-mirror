@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Resource Development (TA0042)"
+  ],
+  "attack_techniques": [
+    "Compromise Accounts: Email Accounts (T1586.002)"
+  ],
+  "attackers_goals": "Use the existing account to send phishing or spread malware at scale.",
+  "deduplication_period": "1 Day",
+  "description": "An identity requested to move the SES account from a restricted sandbox mode into production mode.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check if the identity has performed any email-related operations in the past. Check if this account should be used for email sending.",
+  "name": "SES Production Access Requested",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "SES Production Access Requested by an unusual identity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Compromise Accounts: Email Accounts (T1586.002)"
+      ],
+      "description": "An identity requested to move the SES account from a restricted sandbox mode into production mode. The identity was not seen performing any operations in SES in the last 30 days.",
+      "attackers_goals": "Use the existing account to send phishing or spread malware at scale.",
+      "investigative_actions": "Check if the identity has performed any email-related operations in the past. Check if this account should be used for email sending."
+    }
+  ]
+}

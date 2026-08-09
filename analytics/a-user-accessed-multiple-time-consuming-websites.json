@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Reconnaissance (TA0043)"
+  ],
+  "attack_techniques": [
+    "Search Open Websites/Domains (T1593)"
+  ],
+  "attackers_goals": "A user may utilize work time for personal reasons.",
+  "deduplication_period": "1 Day",
+  "description": "A user was observed visiting multiple domains for personal reasons. Time theft happens when an employee is paid to work but did not actually work during that time. It might affect your business as it reduces the employee's efficiency.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the domains accessed and how popular they are in the organization. Verify that the user is not part of a department that visits these websites as part of their daily operations.",
+  "name": "A user accessed multiple time-consuming websites",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "Palo Alto Networks Firewall threat LogsPalo Alto Networks Firewall EAL Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "12 Hours",
+  "variations": []
+}

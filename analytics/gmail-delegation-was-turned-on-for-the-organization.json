@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Domain or Tenant Policy Modification (T1484)"
+  ],
+  "attackers_goals": "Email Collection.",
+  "deduplication_period": "5 Days",
+  "description": "A Google Workspace admin turned on Gmail delegation for all the organization's users.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if any user in the organization granted other users access to their mail inbox. Follow further actions done by the account.",
+  "name": "Gmail delegation was turned on for the organization",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,54 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Services: Direct Cloud VM Connections (T1021.008)",
+    "Remote Services: Cloud Services (T1021.007)"
+  ],
+  "attackers_goals": "Utilize direct access to virtual infrastructure to pivot through a cloud environment.",
+  "deduplication_period": "5 Days",
+  "description": "An identity connected to a compute instance using serial console access. This may indicate an attacker attempting to move laterally between cloud instances.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Verify whether the identity should be making this action. Investigate which actions were performed via serial console access.",
+  "name": "Cloud compute serial console access",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Cloud compute serial console access by an identity with high administrative activity",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Direct Cloud VM Connections (T1021.008)",
+        "Remote Services: Cloud Services (T1021.007)"
+      ],
+      "description": "An identity with high administrative activity connected to a compute instance using serial console access. This may indicate an attacker attempting to move laterally between cloud instances.",
+      "attackers_goals": "Utilize direct access to virtual infrastructure to pivot through a cloud environment.",
+      "investigative_actions": "Verify whether the identity should be making this action. Investigate which actions were performed via serial console access."
+    },
+    {
+      "name": "Suspicious cloud compute serial console access in a project",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Direct Cloud VM Connections (T1021.008)",
+        "Remote Services: Cloud Services (T1021.007)"
+      ],
+      "description": "An identity connected to a compute instance using serial console access. This may indicate an attacker attempting to move laterally between cloud instances.",
+      "attackers_goals": "Utilize direct access to virtual infrastructure to pivot through a cloud environment.",
+      "investigative_actions": "Verify whether the identity should be making this action. Investigate which actions were performed via serial console access."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Steal Web Session Cookie (T1539)"
+  ],
+  "attackers_goals": "Obtain access to or hijack sessions to websites stored in the web browser's cookies.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual process has accessed a web browser's session cookie store.",
+  "detection_modules": "",
+  "detector_tags": "Credentials Grabbing Analytics",
+  "investigative_actions": "Determine whether it is legitimate for the process to access session cookies directly. Analyze the process/application that accessed the cookie store. Check for any other suspicious actions that were performed by the process. Look for unusual access to resources using credentials cached in the web browser/cookie store.",
+  "name": "Unusual process accessed web browser cookies",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual unsigned process accessed web browser cookies",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal Web Session Cookie (T1539)"
+      ],
+      "description": "An unusual process has accessed a web browser's session cookie store.",
+      "attackers_goals": "Obtain access to or hijack sessions to websites stored in the web browser's cookies.",
+      "investigative_actions": "Determine whether it is legitimate for the process to access session cookies directly. Analyze the process/application that accessed the cookie store. Check for any other suspicious actions that were performed by the process. Look for unusual access to resources using credentials cached in the web browser/cookie store."
+    }
+  ]
+}

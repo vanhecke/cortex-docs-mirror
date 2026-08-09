@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Use Alternate Authentication Material: Pass the Hash (T1550.002)"
+  ],
+  "attackers_goals": "An attacker is attempting to steal credentials and move laterally within a network.",
+  "deduplication_period": "7 Days",
+  "description": "A domain controller has initiated an SMB connection to another host. The domain controllers usually communicate over SMB only with other domain controllers. An attacker can abuse such sessions for relay attacks.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the destination is domain controller, if it is, exclude it. Look for earlier connections to the DC, which may cause it to initiate the session.",
+  "name": "Suspicious SMB connection from domain controller",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent",
+    "Third-Party Firewalls"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

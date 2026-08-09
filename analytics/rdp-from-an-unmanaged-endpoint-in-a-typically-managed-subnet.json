@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Services: Remote Desktop Protocol (T1021.001)"
+  ],
+  "attackers_goals": "Lateral movement to critical assets from an unmanaged host.",
+  "deduplication_period": "1 Day",
+  "description": "An RDP connection was established from an unmanaged endpoint in a typically managed subnet, indicating a possible lateral movement.",
+  "detection_modules": "",
+  "detector_tags": "Enhanced RDP Analytics",
+  "investigative_actions": "Verify if the source endpoint is authorized to perform RDP connections. Validate that the source endpoint is managed or unmanaged. Investigate the user account used for the RDP connection.",
+  "name": "RDP from an unmanaged endpoint in a typically managed subnet",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "RDP from an unmanaged endpoint in a typically managed subnet with a significantly higher number of managed endpoints in the subnet",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)"
+      ],
+      "description": "An RDP connection was established from an unmanaged endpoint in a typically managed subnet, indicating a possible lateral movement. The source subnet has a significantly higher number of managed endpoints compared to the unmanaged ones.",
+      "attackers_goals": "Lateral movement to critical assets from an unmanaged host.",
+      "investigative_actions": "Verify if the source endpoint is authorized to perform RDP connections. Validate that the source endpoint is managed or unmanaged. Investigate the user account used for the RDP connection."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Unsecured Credentials: Credentials In Files (T1552.001)"
+  ],
+  "attackers_goals": "Impersonate the node agent to gain control over the cluster.",
+  "deduplication_period": "1 Day",
+  "description": "A process accessed both the Kubelet credentials and the Kubernetes CA certificate, indicating an attempt to impersonate the node agent and communicate with the API server.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Kubernetes Credentials Theft Analytics",
+  "investigative_actions": "Look for additional suspicious activities. Verify if the exposed credentials were used to access the API server. Investigate which operations were used against the Kubernetes cluster with the exposed credentials.",
+  "name": "Potential kubelet impersonation attempt",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Potential kubelet impersonation attempt by an unusual process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials: Credentials In Files (T1552.001)"
+      ],
+      "description": "A process accessed both the Kubelet credentials and the Kubernetes CA certificate, indicating an attempt to impersonate the node agent and communicate with the API server.",
+      "attackers_goals": "Impersonate the node agent to gain control over the cluster.",
+      "investigative_actions": "Look for additional suspicious activities. Verify if the exposed credentials were used to access the API server. Investigate which operations were used against the Kubernetes cluster with the exposed credentials."
+    }
+  ]
+}

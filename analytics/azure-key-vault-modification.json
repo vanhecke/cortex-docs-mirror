@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Unsecured Credentials (T1552)"
+  ],
+  "attackers_goals": "Exfiltrate information, persistence on existing users or damage critical accounts.",
+  "deduplication_period": "3 Hours",
+  "description": "Azure Key Vault modifications can be crucial as it stores secrets e.g. encryption keys, certifications, etc.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the identity actions before or after the Key Vault modification. Find which credentials were modified and their usage.",
+  "name": "Azure Key Vault modification",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

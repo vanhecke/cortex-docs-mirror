@@ -1,0 +1,106 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Remote Services (T1021)",
+    "System Services: Service Execution (T1569.002)",
+    "Lateral Tool Transfer (T1570)"
+  ],
+  "attackers_goals": "Perform lateral movement to new hosts to expand the foothold within a network.",
+  "deduplication_period": "1 Day",
+  "description": "A remotely triggered service initiated a command execution in a PsExec-like manner by a host that rarely triggers services to other remote hosts.",
+  "detection_modules": "",
+  "detector_tags": "Impacket Analytics",
+  "investigative_actions": "Investigate the processes being spawned on the host for malicious activities. Correlate the RPC call from the source host and understand which software initiated it.",
+  "name": "Remote PsExec-like command execution",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Remote PsExec-like LOLBIN command execution from an unsigned non-standard PsExec service",
+      "severity": "High",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Remote Services (T1021)",
+        "System Services: Service Execution (T1569.002)",
+        "Lateral Tool Transfer (T1570)"
+      ],
+      "description": "A remotely triggered service initiated a command execution in a PsExec-like manner by a host that rarely triggers services to other remote hosts.",
+      "attackers_goals": "Perform lateral movement to new hosts to expand the foothold within a network.",
+      "investigative_actions": "Investigate the processes being spawned on the host for malicious activities. Correlate the RPC call from the source host and understand which software initiated it."
+    },
+    {
+      "name": "Remote PsExec-like LOLBIN command execution from a signed non-standard PsExec service",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Remote Services (T1021)",
+        "System Services: Service Execution (T1569.002)",
+        "Lateral Tool Transfer (T1570)"
+      ],
+      "description": "A remotely triggered service initiated a command execution in a PsExec-like manner by a host that rarely triggers services to other remote hosts.",
+      "attackers_goals": "Perform lateral movement to new hosts to expand the foothold within a network.",
+      "investigative_actions": "Investigate the processes being spawned on the host for malicious activities. Correlate the RPC call from the source host and understand which software initiated it."
+    },
+    {
+      "name": "Remote PsExec-like command execution from an unsigned non-standard PsExec service",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Remote Services (T1021)",
+        "System Services: Service Execution (T1569.002)",
+        "Lateral Tool Transfer (T1570)"
+      ],
+      "description": "A remotely triggered service initiated a command execution in a PsExec-like manner by a host that rarely triggers services to other remote hosts.",
+      "attackers_goals": "Perform lateral movement to new hosts to expand the foothold within a network.",
+      "investigative_actions": "Investigate the processes being spawned on the host for malicious activities. Correlate the RPC call from the source host and understand which software initiated it."
+    },
+    {
+      "name": "Remote PsExec-like command execution from a signed non-standard PsExec service",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Remote Services (T1021)",
+        "System Services: Service Execution (T1569.002)",
+        "Lateral Tool Transfer (T1570)"
+      ],
+      "description": "A remotely triggered service initiated a command execution in a PsExec-like manner by a host that rarely triggers services to other remote hosts.",
+      "attackers_goals": "Perform lateral movement to new hosts to expand the foothold within a network.",
+      "investigative_actions": "Investigate the processes being spawned on the host for malicious activities. Correlate the RPC call from the source host and understand which software initiated it."
+    },
+    {
+      "name": "Remote PsExec command execution",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Remote Services (T1021)",
+        "System Services: Service Execution (T1569.002)",
+        "Lateral Tool Transfer (T1570)"
+      ],
+      "description": "A remotely triggered service initiated a command execution in a PsExec-like manner by a host that rarely triggers services to other remote hosts.",
+      "attackers_goals": "Perform lateral movement to new hosts to expand the foothold within a network.",
+      "investigative_actions": "Investigate the processes being spawned on the host for malicious activities. Correlate the RPC call from the source host and understand which software initiated it."
+    }
+  ]
+}

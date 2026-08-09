@@ -1,0 +1,52 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Network Sniffing (T1040)"
+  ],
+  "attackers_goals": "Enable access to raw network traffic via promiscuous mode, allowing an attacker to sniff credentials and other sensitive data from the organization's network, and in some cases interfere with network communications.",
+  "deduplication_period": "1 Day",
+  "description": "A process wrote a known networking driver with network sniffing capabilities to disk, attackers can use it to sniff passwords and other credentials from the network.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify whether the process is expected and recognized by IT or the user. Check whether the driver was installed recently. If it was installed using sc.exe, this may indicate malicious activity. Review who executed sc.exe to validate legitimacy.",
+  "name": "Possible use of a networking driver for network sniffing",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Possible use of a networking driver for network sniffing",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Network Sniffing (T1040)"
+      ],
+      "description": "A process wrote a known and rare networking driver with network sniffing capabilities to not standard location for drivers on the disk, attackers can use it to sniff passwords and other credentials from the network.",
+      "attackers_goals": "Enable access to raw network traffic via promiscuous mode, allowing an attacker to sniff credentials and other sensitive data from the organization's network, and in some cases interfere with network communications.",
+      "investigative_actions": "Verify whether the process is expected and recognized by IT or the user. Check whether the driver was installed recently. If it was installed using sc.exe, this may indicate malicious activity. Review who executed sc.exe to validate legitimacy."
+    },
+    {
+      "name": "Possible use of a networking driver for network sniffing",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Network Sniffing (T1040)"
+      ],
+      "description": "A process wrote a known networking driver with network sniffing capabilities to not standard location for drivers on the disk, attackers can use it to sniff passwords and other credentials from the network.",
+      "attackers_goals": "Enable access to raw network traffic via promiscuous mode, allowing an attacker to sniff credentials and other sensitive data from the organization's network, and in some cases interfere with network communications.",
+      "investigative_actions": "Verify whether the process is expected and recognized by IT or the user. Check whether the driver was installed recently. If it was installed using sc.exe, this may indicate malicious activity. Review who executed sc.exe to validate legitimacy."
+    }
+  ]
+}

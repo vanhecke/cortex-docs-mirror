@@ -1,0 +1,74 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "System Binary Proxy Execution (T1218)",
+    "Process Injection (T1055)",
+    "Compromise Host Software Binary (T1554)"
+  ],
+  "attackers_goals": "Attackers may use various methods to execute code in the context of a signed process to avoid detection.",
+  "deduplication_period": "1 Day",
+  "description": "A signed process injected into another process that it does not normally target at a global level.",
+  "detection_modules": "",
+  "detector_tags": "Injection Analytics, Global Anomaly Analytics",
+  "investigative_actions": "Check if the actor process loaded a suspicious DLL before the alert. Check if the actor process was injected before the alert. Check if the process execution and connections are legitimate.",
+  "name": "Globally uncommon injection from a signed process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Globally uncommon suspicious injection from a signed process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "System Binary Proxy Execution (T1218)",
+        "Process Injection (T1055)",
+        "Compromise Host Software Binary (T1554)"
+      ],
+      "description": "A non-injected thread in a signed process with a suspicious injection type injected into another process that it does not normally target at a global level.",
+      "attackers_goals": "Attackers may use various methods to execute code in the context of a signed process to avoid detection.",
+      "investigative_actions": "Check if the actor process loaded a suspicious DLL before the alert. Check if the actor process was injected before the alert. Check if the process execution and connections are legitimate."
+    },
+    {
+      "name": "Globally uncommon injection from a signed process which was executed by a scheduled task",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "System Binary Proxy Execution (T1218)",
+        "Process Injection (T1055)",
+        "Compromise Host Software Binary (T1554)"
+      ],
+      "description": "A signed process injected into another process that it does not normally target at a global level.",
+      "attackers_goals": "Attackers may use various methods to execute code in the context of a signed process to avoid detection.",
+      "investigative_actions": "Check if the actor process loaded a suspicious DLL before the alert. Check if the actor process was injected before the alert. Check if the process execution and connections are legitimate."
+    },
+    {
+      "name": "Globally uncommon injection from a signed process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "System Binary Proxy Execution (T1218)",
+        "Process Injection (T1055)",
+        "Compromise Host Software Binary (T1554)"
+      ],
+      "description": "A signed process injected into another process that it does not normally target at a global level.",
+      "attackers_goals": "Attackers may use various methods to execute code in the context of a signed process to avoid detection.",
+      "investigative_actions": "Check if the actor process loaded a suspicious DLL before the alert. Check if the actor process was injected before the alert. Check if the process execution and connections are legitimate."
+    }
+  ]
+}

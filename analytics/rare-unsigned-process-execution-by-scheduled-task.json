@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Scheduled Task/Job (T1053)"
+  ],
+  "attackers_goals": "Attackers may attempt to gain persistence on the endpoint using scheduled tasks.",
+  "deduplication_period": "1 Day",
+  "description": "Rare and unsigned process was executed by a scheduled task.",
+  "detection_modules": "",
+  "detector_tags": "Scheduled tasks Analytics",
+  "investigative_actions": "Review the process executed by the schedule task. Investigate the specific scheduled task execution chain.",
+  "name": "Rare unsigned process execution by scheduled task",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon unsigned process execution by scheduled task",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "Uncommon and unsigned process was executed by a scheduled task.",
+      "attackers_goals": "Attackers may attempt to gain persistence on the endpoint using scheduled tasks.",
+      "investigative_actions": "Review the process executed by the schedule task. Investigate the specific scheduled task execution chain."
+    },
+    {
+      "name": "Rare unsigned process execution with high integrity level by scheduled task",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "Rare and unsigned process was execution with high integrity level by a scheduled task.",
+      "attackers_goals": "Attackers may attempt to gain persistence on the endpoint using scheduled tasks.",
+      "investigative_actions": "Review the process executed by the schedule task. Investigate the specific scheduled task execution chain."
+    },
+    {
+      "name": "Rare unsigned process execution by scheduled task on a sensitive server",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "Rare and unsigned process was executed by a scheduled task.",
+      "attackers_goals": "Attackers may attempt to gain persistence on the endpoint using scheduled tasks.",
+      "investigative_actions": "Review the process executed by the schedule task. Investigate the specific scheduled task execution chain."
+    }
+  ]
+}

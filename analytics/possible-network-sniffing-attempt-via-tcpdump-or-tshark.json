@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Network Sniffing (T1040)"
+  ],
+  "attackers_goals": "Gain user-account credentials.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers may monitor network traffic for cleartext credentials or to learn the network's configuration.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Possible network sniffing attempt via tcpdump or tshark",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

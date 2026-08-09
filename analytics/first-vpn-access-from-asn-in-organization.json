@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Domain Accounts (T1078.002)"
+  ],
+  "attackers_goals": "Use an account that was possibly compromised to gain access to the network.",
+  "deduplication_period": "1 Day",
+  "description": "A VPN connection was attempted from a new ASN.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "See whether the connection was successful. Confirm that the activity is benign (e.g. the provider or location is allowed or a new user). Verify if the ASN is an approved ASN to authenticate from. Follow further actions done by the user.",
+  "name": "First VPN access from ASN in organization",
+  "required_data": [
+    "Palo Alto Networks Global Protect",
+    "Third-Party VPNs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

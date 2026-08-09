@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Abuse Elevation Control Mechanism: Bypass User Account Control (T1548.002)"
+  ],
+  "attackers_goals": "Gain higher privileges by bypassing the User Account Control (UAC).",
+  "deduplication_period": "1 Day",
+  "description": "Attackers may use Fodhelper.exe to bypass UAC (User Account Control) by having it spawn their malicious process.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Search for a registry event that changes the key Software\\Classes\\ms-settings. Review the process that made the registry key. Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Fodhelper.exe UAC bypass",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

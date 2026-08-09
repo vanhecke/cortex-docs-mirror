@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Deobfuscate/Decode Files or Information (T1140)"
+  ],
+  "attackers_goals": "Attackers may use obfuscated files to cover their tracks.",
+  "deduplication_period": "1 Day",
+  "description": "A command that can be used for file obfuscation was executed with an uncommon command line.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Possible data obfuscation",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Possible data obfuscation in a Kubernetes pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Deobfuscate/Decode Files or Information (T1140)"
+      ],
+      "description": "A command that can be used for file obfuscation was executed with an uncommon command line.",
+      "attackers_goals": "Attackers may use obfuscated files to cover their tracks.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

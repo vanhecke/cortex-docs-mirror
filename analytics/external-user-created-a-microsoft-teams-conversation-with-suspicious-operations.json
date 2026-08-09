@@ -1,0 +1,140 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+  "deduplication_period": "1 Day",
+  "description": "An external user created a Microsoft Teams conversation with users in the organization with additional suspicious operations.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Microsoft Teams",
+  "investigative_actions": "Confirm that the tenant and user are authorized to start a conversation with users in the organization. Verify whether any user was removed from the conversation, and determine the reason for their removal. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that might have been sent in the conversation. Check external domain reputation. Review past communication from the external user. Follow further actions done by the account.",
+  "name": "External user created a Microsoft Teams conversation with suspicious operations",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "3 Hours",
+  "variations": [
+    {
+      "name": "An external user initiated a Microsoft Teams chat in which a suspicious link was shared and a member was removed",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "An external user initiated a Microsoft Teams chat in which a link, with a domain that hasn't been seen the last 30 days, was shared, and a member was removed.",
+      "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+      "investigative_actions": "Confirm that the tenant and user are authorized to start a conversation with users in the organization. Verify whether any user was removed from the conversation, and determine the reason for their removal. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that might have been sent in the conversation. Check external domain reputation. Review past communication from the external user. Follow further actions done by the account."
+    },
+    {
+      "name": "An external user created a chat and shortly after sent a link with a newly seen domain name",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "An external user created a chat and shortly after sent a link to a conversation via Microsoft Teams that refers to a domain that was seen for the first time in the past 30 days.",
+      "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+      "investigative_actions": "Confirm that the tenant and user are authorized to start a conversation with users in the organization. Verify whether any user was removed from the conversation, and determine the reason for their removal. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that might have been sent in the conversation. Check external domain reputation. Review past communication from the external user. Follow further actions done by the account."
+    },
+    {
+      "name": "An external user initiated a Microsoft Teams chat in which a link was shared and a member was removed",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "An external user initiated a Microsoft Teams chat in which a link with a rarely seen domain was shared, and a member was removed.",
+      "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+      "investigative_actions": "Confirm that the tenant and user are authorized to start a conversation with users in the organization. Verify whether any user was removed from the conversation, and determine the reason for their removal. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that might have been sent in the conversation. Check external domain reputation. Review past communication from the external user. Follow further actions done by the account."
+    },
+    {
+      "name": "An external user created a chat then sent a link with a file for the first time via Microsoft Teams",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "An external user sent a link for the first time during the past 30 days in a Microsoft Teams conversation, and the link points to a file.",
+      "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+      "investigative_actions": "Confirm that the tenant and user are authorized to start a conversation with users in the organization. Verify whether any user was removed from the conversation, and determine the reason for their removal. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that might have been sent in the conversation. Check external domain reputation. Review past communication from the external user. Follow further actions done by the account."
+    },
+    {
+      "name": "An external user created a chat with a suspicious user or chat name and then sent a link via Microsoft Teams",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "An external user created a chat with a suspicious user or chat name and sent a link in Microsoft Teams, which can be a phishing attempt.",
+      "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+      "investigative_actions": "Confirm that the tenant and user are authorized to start a conversation with users in the organization. Verify whether any user was removed from the conversation, and determine the reason for their removal. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that might have been sent in the conversation. Check external domain reputation. Review past communication from the external user. Follow further actions done by the account."
+    },
+    {
+      "name": "External user created a Microsoft Teams conversation with a suspicious user or chat name and shortly after removed a user from it",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "An external user created a conversation with a suspicious user or chat name, and then removed a member, which could indicate potential suspicious activity.",
+      "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+      "investigative_actions": "Confirm that the tenant and user are authorized to start a conversation with users in the organization. Verify whether any user was removed from the conversation, and determine the reason for their removal. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that might have been sent in the conversation. Check external domain reputation. Review past communication from the external user. Follow further actions done by the account."
+    },
+    {
+      "name": "An external user created a chat then sent a link via Microsoft Teams",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "An external user created a chat and sent a link in Microsoft Teams, which can be a phishing attempt.",
+      "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+      "investigative_actions": "Confirm that the tenant and user are authorized to start a conversation with users in the organization. Verify whether any user was removed from the conversation, and determine the reason for their removal. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that might have been sent in the conversation. Check external domain reputation. Review past communication from the external user. Follow further actions done by the account."
+    },
+    {
+      "name": "An external user created a chat and then sent a link via Microsoft Teams",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "An external user created a chat and sent a link in Microsoft Teams, which can be a phishing attempt.",
+      "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+      "investigative_actions": "Confirm that the tenant and user are authorized to start a conversation with users in the organization. Verify whether any user was removed from the conversation, and determine the reason for their removal. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that might have been sent in the conversation. Check external domain reputation. Review past communication from the external user. Follow further actions done by the account."
+    },
+    {
+      "name": "External user created a Microsoft Teams conversation and shortly after removed a user from it",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "An external user created a conversation and then removed a member, which could indicate potential suspicious activity.",
+      "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
+      "investigative_actions": "Confirm that the tenant and user are authorized to start a conversation with users in the organization. Verify whether any user was removed from the conversation, and determine the reason for their removal. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that might have been sent in the conversation. Check external domain reputation. Review past communication from the external user. Follow further actions done by the account."
+    }
+  ]
+}

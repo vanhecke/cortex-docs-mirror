@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Unsecured Credentials: Credentials In Files (T1552.001)"
+  ],
+  "attackers_goals": "An attacker may attempt to gain higher privileges.",
+  "deduplication_period": "1 Day",
+  "description": "An unprivileged process opened a registry hive directly.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the command line executed is benign or normal for the host and/or user performing it. Investigate the endpoint to determine if it's a legitimate process that is supposed to run with privileges.",
+  "name": "Unprivileged process opened a registry hive",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

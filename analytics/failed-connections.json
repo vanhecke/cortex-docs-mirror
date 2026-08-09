@@ -1,0 +1,51 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Remote System Discovery (T1018)"
+  ],
+  "attackers_goals": "An attacker does not know your network and is exploring it for new or unknown subnets.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint has failed connections to other endpoints that have been inactive for more than 24 hours, or that Cortex XDR Analytics has never seen on the network. The endpoint has made an abnormally large number of these failed connections and/or is attempting to connect to an abnormal mixture of missing or inactive endpoints. Your network might contain legitimate scanners that could cause a false positive for this alert. Cortex XDR Analytics attempts to filter these out by checking if a scanner has been active for a long consecutive period of time. Consequently, if this alert is seen, it represents new activity on your network. An attacker may be trying to move laterally, or to scan different parts of the network to look for other endpoints that expose a specific service. Worms also perform a similar activity to automatically infect additional hosts in the network.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Validate that the source is not a sanctioned port scanner. Check for suspicious artifacts in the endpoint profile.",
+  "name": "Failed Connections",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent",
+    "Third-Party Firewalls"
+  ],
+  "severity": "Low",
+  "test_period": "1 Day",
+  "variations": [
+    {
+      "name": "Failed Connections",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Remote System Discovery (T1018)"
+      ],
+      "description": "The endpoint has failed connections to other endpoints that have been inactive for more than 24 hours, or that Cortex XDR Analytics has never seen on the network. The endpoint has made an abnormally large number of these failed connections and/or is attempting to connect to an abnormal mixture of missing or inactive endpoints. Your network might contain legitimate scanners that could cause a false positive for this alert. Cortex XDR Analytics attempts to filter these out by checking if a scanner has been active for a long consecutive period of time. Consequently, if this alert is seen, it represents new activity on your network. An attacker may be trying to move laterally, or to scan different parts of the network to look for other endpoints that expose a specific service. Worms also perform a similar activity to automatically infect additional hosts in the network.",
+      "attackers_goals": "An attacker does not know your network and is exploring it for new or unknown subnets.",
+      "investigative_actions": "Validate that the source is not a sanctioned port scanner. Check for suspicious artifacts in the endpoint profile."
+    },
+    {
+      "name": "Failed Connections with a rare causality and actor processes relations",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Remote System Discovery (T1018)"
+      ],
+      "description": "The endpoint has failed connections to other endpoints that have been inactive for more than 24 hours, or that Cortex XDR Analytics has never seen on the network. The endpoint has made an abnormally large number of these failed connections and/or is attempting to connect to an abnormal mixture of missing or inactive endpoints. Your network might contain legitimate scanners that could cause a false positive for this alert. Cortex XDR Analytics attempts to filter these out by checking if a scanner has been active for a long consecutive period of time. Consequently, if this alert is seen, it represents new activity on your network. An attacker may be trying to move laterally, or to scan different parts of the network to look for other endpoints that expose a specific service. Worms also perform a similar activity to automatically infect additional hosts in the network. These failed connections originated from a rare relation between an actor process and its causality.",
+      "attackers_goals": "An attacker does not know your network and is exploring it for new or unknown subnets.",
+      "investigative_actions": "Validate that the source is not a sanctioned port scanner. Check for suspicious artifacts in the endpoint profile."
+    }
+  ]
+}

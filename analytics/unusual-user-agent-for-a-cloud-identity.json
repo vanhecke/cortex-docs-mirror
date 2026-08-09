@@ -1,0 +1,44 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Cloud Accounts (T1078.004)"
+  ],
+  "attackers_goals": "Evade detection by using non-standard tools or scripts.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity has executed an API call with an unusual user-agent.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Examine the recent actions of the user for any abnormal or unauthorized behavior. Verify if the user intentionally used a new device or tool.",
+  "name": "Unusual user-agent for a cloud identity",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual user-agent for a cloud identity by a compromised AWS access key",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Cloud Accounts (T1078.004)"
+      ],
+      "description": "A cloud identity has executed an API call with an unusual user-agent.",
+      "attackers_goals": "Evade detection by using non-standard tools or scripts.",
+      "investigative_actions": "Examine the recent actions of the user for any abnormal or unauthorized behavior. Verify if the user intentionally used a new device or tool."
+    }
+  ]
+}

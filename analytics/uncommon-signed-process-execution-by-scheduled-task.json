@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Scheduled Task/Job (T1053)"
+  ],
+  "attackers_goals": "Attackers may attempt to gain persistence, privilege escalation or proxy execution on the endpoint using scheduled tasks.",
+  "deduplication_period": "1 Day",
+  "description": "An uncommon process was executed by a scheduled task.",
+  "detection_modules": "",
+  "detector_tags": "Scheduled tasks Analytics",
+  "investigative_actions": "Review the process executed by the schedule task. Investigate the specific scheduled task execution chain. Check if the vendor is known in the organization for creating scheduled tasks to execute his product.",
+  "name": "Uncommon signed process execution by scheduled task",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon Microsoft signed process execution by scheduled task",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "An uncommon process was executed by a scheduled task.",
+      "attackers_goals": "Attackers may attempt to gain persistence, privilege escalation or proxy execution on the endpoint using scheduled tasks.",
+      "investigative_actions": "Review the process executed by the schedule task. Investigate the specific scheduled task execution chain. Check if the vendor is known in the organization for creating scheduled tasks to execute his product."
+    },
+    {
+      "name": "Uncommon signed process execution by scheduled task on a sensitive server",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "An uncommon process was executed by a scheduled task.",
+      "attackers_goals": "Attackers may attempt to gain persistence, privilege escalation or proxy execution on the endpoint using scheduled tasks.",
+      "investigative_actions": "Review the process executed by the schedule task. Investigate the specific scheduled task execution chain. Check if the vendor is known in the organization for creating scheduled tasks to execute his product."
+    },
+    {
+      "name": "Rare signed process execution by scheduled task",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "A rare process was executed by a scheduled task.",
+      "attackers_goals": "Attackers may attempt to gain persistence, privilege escalation or proxy execution on the endpoint using scheduled tasks.",
+      "investigative_actions": "Review the process executed by the schedule task. Investigate the specific scheduled task execution chain. Check if the vendor is known in the organization for creating scheduled tasks to execute his product."
+    }
+  ]
+}

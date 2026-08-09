@@ -1,0 +1,75 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Remote Access Tools (T1219)"
+  ],
+  "attackers_goals": "Accessing a remote machine with full interactive graphic interface capabilities.",
+  "deduplication_period": "1 Day",
+  "description": "An uncommon Remote Monitoring and Management (RMM) product was observed.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the product usage is approved. Ask the owners of the machine if they knowingly used this software. Investigate why the software was being used. Check if it was executed remotely or locally.",
+  "name": "Uncommon remote monitoring and management tool",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon renamed remote monitoring and management tool",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Remote Access Tools (T1219)"
+      ],
+      "description": "An uncommon renamed Remote Monitoring and Management (RMM) product was observed.",
+      "attackers_goals": "Accessing a remote machine with full interactive graphic interface capabilities.",
+      "investigative_actions": "Check if the product usage is approved. Ask the owners of the machine if they knowingly used this software. Investigate why the software was being used. Check if it was executed remotely or locally."
+    },
+    {
+      "name": "Uncommon remote monitoring and management tool (browser origin)",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Remote Access Tools (T1219)"
+      ],
+      "description": "An uncommon Remote Monitoring and Management (RMM) product was observed. (browser origin).",
+      "attackers_goals": "Accessing a remote machine with full interactive graphic interface capabilities.",
+      "investigative_actions": "Check if the product usage is approved. Ask the owners of the machine if they knowingly used this software. Investigate why the software was being used. Check if it was executed remotely or locally."
+    },
+    {
+      "name": "Uncommon remote monitoring and management tool extracted from an internet-downloaded archive and executed",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Remote Access Tools (T1219)"
+      ],
+      "description": "An uncommon Remote Monitoring and Management (RMM) product extracted from an internet-downloaded archive and executed.",
+      "attackers_goals": "Accessing a remote machine with full interactive graphic interface capabilities.",
+      "investigative_actions": "Check if the product usage is approved. Ask the owners of the machine if they knowingly used this software. Investigate why the software was being used. Check if it was executed remotely or locally."
+    },
+    {
+      "name": "Uncommon remote monitoring and management tool downloaded from an uncommon source and executed",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Remote Access Tools (T1219)"
+      ],
+      "description": "An uncommon Remote Monitoring and Management (RMM) product downloaded from an uncommon source and executed.",
+      "attackers_goals": "Accessing a remote machine with full interactive graphic interface capabilities.",
+      "investigative_actions": "Check if the product usage is approved. Ask the owners of the machine if they knowingly used this software. Investigate why the software was being used. Check if it was executed remotely or locally."
+    }
+  ]
+}

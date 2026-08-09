@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol: Web Protocols (T1071.001)"
+  ],
+  "attackers_goals": "Communicate with the attacker's Command and Control (C2) infrastructure.",
+  "deduplication_period": "1 Day",
+  "description": "A process connected to a rare external host.",
+  "detection_modules": "",
+  "detector_tags": "EDR Windows C2 Analytics",
+  "investigative_actions": "Get further details about the uncommon external destination and the actor process.",
+  "name": "A process connected to rare external host",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A process connected to globally rare external host",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol: Web Protocols (T1071.001)"
+      ],
+      "description": "A process connected to a globally rare external host.",
+      "attackers_goals": "Communicate with the attacker's Command and Control (C2) infrastructure.",
+      "investigative_actions": "Get further details about the uncommon external destination and the actor process."
+    }
+  ]
+}

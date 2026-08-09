@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Scheduled Task/Job: Scheduled Task (T1053.005)",
+    "Process Injection (T1055)"
+  ],
+  "attackers_goals": "To ensure they have persistence on the system, the threat actor may use scheduled tasks to set persistence, Then, to avoid detection and carry out stealth execution, they may inject a malicious payload into a remote process.",
+  "deduplication_period": "1 Day",
+  "description": "An unsigned process created scheduled task and performed an injection.",
+  "detection_modules": "",
+  "detector_tags": "Scheduled tasks Analytics",
+  "investigative_actions": "Investigate the injection payload and the injection process. Check if the scheduled task trigger payload is malicious.",
+  "name": "An unsigned process created scheduled task and performed an injection",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "4 Hours",
+  "variations": [
+    {
+      "name": "Possible an unsigned installer created scheduled task and performed an injection",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job: Scheduled Task (T1053.005)",
+        "Process Injection (T1055)"
+      ],
+      "description": "Possible an unsigned installer created scheduled task and performed an injection.",
+      "attackers_goals": "To ensure they have persistence on the system, the threat actor may use scheduled tasks to set persistence, Then, to avoid detection and carry out stealth execution, they may inject a malicious payload into a remote process.",
+      "investigative_actions": "Investigate the injection payload and the injection process. Check if the scheduled task trigger payload is malicious."
+    }
+  ]
+}

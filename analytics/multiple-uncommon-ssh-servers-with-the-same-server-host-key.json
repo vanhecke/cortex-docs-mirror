@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Adversary-in-the-Middle (T1557)"
+  ],
+  "attackers_goals": "Attackers may attempt to move laterally within the network by exploiting and relaying stolen client credentials to another SSH server.",
+  "deduplication_period": "1 Day",
+  "description": "Multiple uncommon SSH servers were observed using the same host key.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Audit the authentication attempts to the SSH server using the same key. Look for unusual or repeated connections from the same or unexpected hosts. Audit Client Credentials, check for any signs of compromised client credentials being used on different SSH servers.",
+  "name": "Multiple uncommon SSH Servers with the same Server host key",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL LogsXDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

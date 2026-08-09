@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "Creating Amazon machine images might be part of elastic compute cloud instance exfiltration chain.",
+  "deduplication_period": "1 Day",
+  "description": "Amazon machine image was created from elastic compute cloud instance.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check if {identity_name} to create Amazon machine image. Check if the {cloud_aws_instance_id} instance did not contain any sensitive data.",
+  "name": "EC2 instance Amazon machine image was created",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

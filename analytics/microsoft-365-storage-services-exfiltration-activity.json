@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data from Cloud Storage (T1530)"
+  ],
+  "attackers_goals": "To extract sensitive information stored in Microsoft 365 storage services.",
+  "deduplication_period": "5 Days",
+  "description": "The Microsoft Graph API was used to download Microsoft OneDrive and SharePoint files.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Microsoft Graph Activity Logs",
+  "investigative_actions": "Determine which items were downloaded and whether they contained any sensitive information. Investigate the identity following actions.",
+  "name": "Microsoft 365 storage services exfiltration activity",
+  "required_data": [
+    "Azure Audit Log",
+    "Microsoft Graph Logs"
+  ],
+  "severity": "Low",
+  "test_period": "10 Minutes",
+  "variations": []
+}

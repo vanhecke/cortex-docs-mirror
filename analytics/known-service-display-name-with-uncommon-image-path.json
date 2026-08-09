@@ -1,0 +1,70 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Create or Modify System Process: Windows Service (T1543.003)",
+    "System Services: Service Execution (T1569.002)"
+  ],
+  "attackers_goals": "Run malicious code with seemingly trustworthy services.",
+  "deduplication_period": "1 Day",
+  "description": "Service created with a known display name but has an uncommon image-path.",
+  "detection_modules": "",
+  "detector_tags": "Malicious Service Analytics",
+  "investigative_actions": "Investigate the image path of the newly created service. Investigate the causality actor process that initiated the activity.",
+  "name": "Known service display name with uncommon image-path",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Known service display name with uncommon image-path created by an untrusted CGO",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Create or Modify System Process: Windows Service (T1543.003)",
+        "System Services: Service Execution (T1569.002)"
+      ],
+      "description": "Service created with a known display name but has an uncommon image-path.",
+      "attackers_goals": "Run malicious code with seemingly trustworthy services.",
+      "investigative_actions": "Investigate the image path of the newly created service. Investigate the causality actor process that initiated the activity."
+    },
+    {
+      "name": "Known Palo Alto service display name with uncommon image-path",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Create or Modify System Process: Windows Service (T1543.003)",
+        "System Services: Service Execution (T1569.002)"
+      ],
+      "description": "Service created with a known display name but has an uncommon image-path.",
+      "attackers_goals": "Run malicious code with seemingly trustworthy services.",
+      "investigative_actions": "Investigate the image path of the newly created service. Investigate the causality actor process that initiated the activity."
+    },
+    {
+      "name": "Known service display name with uncommon image-path in a suspicious folder",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Create or Modify System Process: Windows Service (T1543.003)",
+        "System Services: Service Execution (T1569.002)"
+      ],
+      "description": "Service created with a known display name but has an uncommon image-path.",
+      "attackers_goals": "Run malicious code with seemingly trustworthy services.",
+      "investigative_actions": "Investigate the image path of the newly created service. Investigate the causality actor process that initiated the activity."
+    }
+  ]
+}

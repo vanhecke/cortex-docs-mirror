@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Modify Cloud Compute Infrastructure: Delete Cloud Instance (T1578.003)"
+  ],
+  "attackers_goals": "To remove evidence or disrupt operations.",
+  "deduplication_period": "5 Days",
+  "description": "An attempt was made to delete a cloud compute instance.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Review recent activity associated with the identity and the deleted instance.",
+  "name": "Cloud instance deletion attempt",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Cloud instance deletion attempt using Cloud Formation or Terraform",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Modify Cloud Compute Infrastructure: Delete Cloud Instance (T1578.003)"
+      ],
+      "description": "An attempt was made to delete a cloud compute instance.",
+      "attackers_goals": "To remove evidence or disrupt operations.",
+      "investigative_actions": "Review recent activity associated with the identity and the deleted instance."
+    }
+  ]
+}

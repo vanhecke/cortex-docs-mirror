@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Network Denial of Service (T1498)"
+  ],
+  "attackers_goals": "Manipulate, interrupt, or destroy data.",
+  "deduplication_period": "5 Days",
+  "description": "An Azure virtual network has been modified or deleted.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Verify whether the identity should be making this action.* Check the audit logs for any suspicious activity related to the virtual network.",
+  "name": "An Azure virtual network was modified",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

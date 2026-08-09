@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Inhibit System Recovery (T1490)"
+  ],
+  "attackers_goals": "Adversaries may delete the backup catalog to prevent recovery of a corrupted system.",
+  "deduplication_period": "1 Day",
+  "description": "Wbadmin was used to delete files in quiet mode.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the delete action was legitimate and performed by an authorized user.",
+  "name": "Wbadmin deleted files in quiet mode",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "High",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

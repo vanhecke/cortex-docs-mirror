@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Abuse Elevation Control Mechanism (T1548)"
+  ],
+  "attackers_goals": "Elevate privileges from standard domain user to system.",
+  "deduplication_period": "1 Day",
+  "description": "A newly created machine attempted to perform a Kerberos delegation. This suspicious activity might indicate a Kerberos relay attack.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check for any other suspicious activity related to the machine involved in the alert. Look for a new machine that was added to the domain.",
+  "name": "A new machine attempted Kerberos delegation",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "12 Hours",
+  "variations": []
+}

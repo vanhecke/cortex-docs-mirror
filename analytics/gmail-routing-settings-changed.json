@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data Staged (T1074)",
+    "Email Collection (T1114)"
+  ],
+  "attackers_goals": "Email Collection.",
+  "deduplication_period": "1 Day",
+  "description": "Gmail routing settings were modified.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the new routing settings look suspicious. Investigate the IP address associated with the routing settings. Follow further actions done by the account.",
+  "name": "Gmail routing settings changed",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Gmail routing settings changed by a non-administrative Google Workspace identity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Data Staged (T1074)",
+        "Email Collection (T1114)"
+      ],
+      "description": "Gmail routing settings were modified.",
+      "attackers_goals": "Email Collection.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the new routing settings look suspicious. Investigate the IP address associated with the routing settings. Follow further actions done by the account."
+    }
+  ]
+}

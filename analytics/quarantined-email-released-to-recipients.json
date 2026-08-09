@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "Achieve financial gain, distribute malware, or phish for sensitive information through mass unsolicited emails.",
+  "deduplication_period": "1 Hour 30 Minutes",
+  "description": "This message was previously quarantined by vendor and has now been released and delivered to the intended recipients.",
+  "detection_modules": "Email",
+  "detector_tags": "",
+  "investigative_actions": "Examine email headers to trace origins and check for signs of spoofing. Analyze the email content for spam indicators like suspicious links and aggressive marketing language. Monitor further actions taken, such as file downloads or access to potentially malicious links.",
+  "name": "Quarantined email released to recipients",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Repeated quarantine releases to mailbox from previously quarantined sender",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "This message was previously quarantined by vendor and later released and delivered to the intended recipients, while the mailbox has received multiple quarantined messages and the sender has been quarantined several times over the past 30 days.",
+      "attackers_goals": "Achieve financial gain, distribute malware, or phish for sensitive information through mass unsolicited emails.",
+      "investigative_actions": "Examine email headers to trace origins and check for signs of spoofing. Analyze the email content for spam indicators like suspicious links and aggressive marketing language. Monitor further actions taken, such as file downloads or access to potentially malicious links."
+    },
+    {
+      "name": "Repeated quarantine releases from previously quarantined sender",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "This message was previously quarantined by vendor and later released and delivered to the intended recipients, while the sender has been quarantined multiple times over the past 30 days.",
+      "attackers_goals": "Achieve financial gain, distribute malware, or phish for sensitive information through mass unsolicited emails.",
+      "investigative_actions": "Examine email headers to trace origins and check for signs of spoofing. Analyze the email content for spam indicators like suspicious links and aggressive marketing language. Monitor further actions taken, such as file downloads or access to potentially malicious links."
+    },
+    {
+      "name": "Repeated quarantine-released emails received by mailbox",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "This mailbox has repeatedly received messages over the past 30 days that were quarantined by vendor and later released and delivered to the recipient.",
+      "attackers_goals": "Achieve financial gain, distribute malware, or phish for sensitive information through mass unsolicited emails.",
+      "investigative_actions": "Examine email headers to trace origins and check for signs of spoofing. Analyze the email content for spam indicators like suspicious links and aggressive marketing language. Monitor further actions taken, such as file downloads or access to potentially malicious links."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Exfiltration Over Alternative Protocol (T1048)"
+  ],
+  "attackers_goals": "SMTP and its SSL-secured variant SMTPS are used to send email. Attackers can use SMTP/S to exfiltrate data from your network.",
+  "deduplication_period": "1 Day",
+  "description": "The Simple Mail Transfer Protocol (SMTP) and its SSL-secured variant SMTPS are used to send email. Attackers can use SMTP/S to exfiltrate data from your network.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the initiator process is benign or normal for the host and/or user performing it. Check whether additional malicious commands were executed from the same process.",
+  "name": "Rare SMTP/S Session",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent",
+    "Third-Party Firewalls"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

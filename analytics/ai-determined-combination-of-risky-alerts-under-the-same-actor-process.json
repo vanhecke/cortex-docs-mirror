@@ -1,0 +1,39 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)",
+    "Native API (T1106)"
+  ],
+  "attackers_goals": "Perform multiple activities to achieve the attacker's goals in the target environment.",
+  "deduplication_period": "1 Day",
+  "description": "Multiple alerts likely to be associated with an incident were identified under the same actor process.",
+  "detection_modules": "",
+  "detector_tags": "AI Insight Fusion Analytics",
+  "investigative_actions": "Investigate the actor process of these alerts. Track down other suspicious activity under this actor process.",
+  "name": "AI-determined combination of risky alerts under the same actor process",
+  "required_data": [
+    "Palo Alto Networks Platform Alerts",
+    "Third-Party Alerts"
+  ],
+  "severity": "Informational",
+  "test_period": "12 Hours",
+  "variations": [
+    {
+      "name": "AI-determined combination of risky alerts under the same actor process: LDAP traffic from non-standard process with SMB traffic from non-standard process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)",
+        "Native API (T1106)"
+      ],
+      "description": "A non-standard process communicated over LDAP ports, combined with SMB traffic from a non-standard process under the same actor process. This combination may indicate an attacker performing Active Directory enumeration while leveraging SMB for lateral movement or discovery.",
+      "attackers_goals": "Perform multiple activities to achieve the attacker's goals in the target environment.",
+      "investigative_actions": "Investigate the actor process of these alerts. Track down other suspicious activity under this actor process."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Services: Remote Desktop Protocol (T1021.001)"
+  ],
+  "attackers_goals": "An attacker may initiate RDP tunneling for a more convenient and stable interface.",
+  "deduplication_period": "1 Hour",
+  "description": "An RDP connection to localhost can be used for privilege escalation by leveraging Windows accessibility features.",
+  "detection_modules": "",
+  "detector_tags": "Enhanced RDP Analytics",
+  "investigative_actions": "Identify the process/user performing RDP and check that it is authorized. Check whether the initiating process also connects to an external host.",
+  "name": "RDP Connection to localhost",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

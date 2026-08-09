@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "The attacker attempts to gain access to the organization's resources.",
+  "deduplication_period": "1 Day",
+  "description": "A user interactively logged in to Azure AD via PowerShell.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Analyze the actions taken by the user during the session and verify that this is a legitimate session. Look for signs that the user account is compromised (e.g. abnormal logins, unusual activity).",
+  "name": "Suspicious Azure AD interactive sign-in using PowerShell",
+  "required_data": [
+    "AzureAD"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual Azure AD interactive sign-in using PowerShell",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A user interactively logged in to Azure AD via PowerShell from an unusual geolocation or ASN.",
+      "attackers_goals": "The attacker attempts to gain access to the organization's resources.",
+      "investigative_actions": "Analyze the actions taken by the user during the session and verify that this is a legitimate session. Look for signs that the user account is compromised (e.g. abnormal logins, unusual activity)."
+    }
+  ]
+}

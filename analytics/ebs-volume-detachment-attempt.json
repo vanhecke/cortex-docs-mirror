@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Modify Cloud Compute Infrastructure (T1578)"
+  ],
+  "attackers_goals": "Exfiltrate sensitive data stored on the detached volume.",
+  "deduplication_period": "5 Days",
+  "description": "An attempt was made to detach an AWS EBS volume from an EC2 instance.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Review recent activity related to the identity and the detached volume.",
+  "name": "EBS volume detachment attempt",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "EBS volume detachment attempt using Cloud Formation or Terraform",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Modify Cloud Compute Infrastructure (T1578)"
+      ],
+      "description": "An attempt was made to detach an AWS EBS volume from an EC2 instance.",
+      "attackers_goals": "Exfiltrate sensitive data stored on the detached volume.",
+      "investigative_actions": "Review recent activity related to the identity and the detached volume."
+    }
+  ]
+}

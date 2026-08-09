@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)",
+    "Brute Force: Password Cracking (T1110.002)"
+  ],
+  "attackers_goals": "Use BCC to covertly exfiltrate data to an unusual external recipient without visibility to other recipients or monitoring systems.",
+  "deduplication_period": "1 Day",
+  "description": "Internal sender BCC'd an external recipient whose address has not been observed in prior communications.",
+  "detection_modules": "Email",
+  "detector_tags": "Exfiltration",
+  "investigative_actions": "Review headers and content for anomalies or potential exposure of sensitive data. Assess the email's context and attack techniques to determine the potential risk. Investigate if similar patterns have occurred recently across the organization.",
+  "name": "Outbound email includes an external BCC recipient observed for the first time",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Outbound email sent to an unknown external BCC recipient with no To or CC addresses",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)",
+        "Brute Force: Password Cracking (T1110.002)"
+      ],
+      "description": "Internal sender BCC'd an external recipient whose address has not been observed in prior communications.",
+      "attackers_goals": "Use BCC to covertly exfiltrate data to an unusual external recipient without visibility to other recipients or monitoring systems.",
+      "investigative_actions": "Review headers and content for anomalies or potential exposure of sensitive data. Assess the email's context and attack techniques to determine the potential risk. Investigate if similar patterns have occurred recently across the organization."
+    }
+  ]
+}

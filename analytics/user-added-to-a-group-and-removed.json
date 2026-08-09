@@ -1,0 +1,56 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Elevate permissions and establish persistence.",
+  "deduplication_period": "1 Day",
+  "description": "A user was added to an Active Directory group and removed within a short period of time, which may be a sign of compromise.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Verify the activity with the performing user. Confirm that the group addition was not accidental. Check for any suspicious actions performed by the added user. Check for a possible compromise of the initiating user.",
+  "name": "User added to a group and removed",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Hours",
+  "variations": [
+    {
+      "name": "Rare privileged group addition and removal",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A user was added to an Active Directory privileged group and removed within a short period of time, which may be a sign of compromise.",
+      "attackers_goals": "Elevate permissions and establish persistence.",
+      "investigative_actions": "Verify the activity with the performing user. Confirm that the group addition was not accidental. Check for any suspicious actions performed by the added user. Check for a possible compromise of the initiating user."
+    },
+    {
+      "name": "User added to a privileged group and removed",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A user was added to an Active Directory privileged group and removed within a short period of time, which may be a sign of compromise.",
+      "attackers_goals": "Elevate permissions and establish persistence.",
+      "investigative_actions": "Verify the activity with the performing user. Confirm that the group addition was not accidental. Check for any suspicious actions performed by the added user. Check for a possible compromise of the initiating user."
+    }
+  ]
+}

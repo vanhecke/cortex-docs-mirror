@@ -1,0 +1,72 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol (T1071)",
+    "Command and Scripting Interpreter (T1059)"
+  ],
+  "attackers_goals": "Connect to the attacker's Command and Control server.",
+  "deduplication_period": "1 Day",
+  "description": "Scripts connecting to external IP addresses may be sanctioned IT scripts. However, when those external IP addresses are only receiving connections from a few specific endpoints in the organization, these scripts may be an indicator of more suspicious activity. Security testers and adversaries use offensive frameworks that employ forms of scripting which result in this type of network activity.",
+  "detection_modules": "",
+  "detector_tags": "EDR Windows C2 Analytics",
+  "investigative_actions": "Check the external address the process connects to. Fetch and investigate the executed script.",
+  "name": "Scripting engine connected to a rare external host",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Scripting engine failed to connect to a rare external host",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Command and Scripting Interpreter (T1059)"
+      ],
+      "description": "Scripts connecting to external IP addresses may be sanctioned IT scripts. However, when those external IP addresses are only receiving connections from a few specific endpoints in the organization, these scripts may be an indicator of more suspicious activity. Security testers and adversaries use offensive frameworks that employ forms of scripting which result in this type of network activity.",
+      "attackers_goals": "Connect to the attacker's Command and Control server.",
+      "investigative_actions": "Check the external address the process connects to. Fetch and investigate the executed script."
+    },
+    {
+      "name": "Scripting engine with a modified image name connected to a rare external host",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Execution (TA0002)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Command and Scripting Interpreter (T1059)",
+        "Masquerading (T1036)"
+      ],
+      "description": "Scripts connecting to external IP addresses may be sanctioned IT scripts. However, when those external IP addresses are only receiving connections from a few specific endpoints in the organization, these scripts may be an indicator of more suspicious activity. Security testers and adversaries use offensive frameworks that employ forms of scripting which result in this type of network activity.",
+      "attackers_goals": "Connect to the attacker's Command and Control server.",
+      "investigative_actions": "Check the external address the process connects to. Fetch and investigate the executed script."
+    },
+    {
+      "name": "Windows LOLBIN scripting engine connected to a rare external host",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Command and Scripting Interpreter (T1059)"
+      ],
+      "description": "Scripts connecting to external IP addresses may be sanctioned IT scripts. However, when those external IP addresses are only receiving connections from a few specific endpoints in the organization, these scripts may be an indicator of more suspicious activity. Security testers and adversaries use offensive frameworks that employ forms of scripting which result in this type of network activity.",
+      "attackers_goals": "Connect to the attacker's Command and Control server.",
+      "investigative_actions": "Check the external address the process connects to. Fetch and investigate the executed script."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Gain access to Google Workspace data and services. Collect confidential information from Google Workspace. Compromise user accounts and data.",
+  "deduplication_period": "5 Days",
+  "description": "A domain administrator authorized a third-party application to access the Google Workspace APIs. This allows the application to interact with the domain user's data within the authorized scope, as specified in the API call.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Check which account was granted access to the Domain API. Identify the source IP address of the request. Verify the legitimacy of the request.",
+  "name": "A third-party application was authorized to access the Google Workspace APIs",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

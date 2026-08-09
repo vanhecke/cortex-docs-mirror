@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Exfiltration Over Physical Medium (T1052)"
+  ],
+  "attackers_goals": "In an attempt to exfiltrate data, a malicious insider might print an unusual number of files.",
+  "deduplication_period": "1 Day",
+  "description": "A user printed an unusual number of files. This may be indicative of malicious activity and an attempt to exfiltrate data.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check for any other suspicious activity related to the host and the user involved in the alert.",
+  "name": "A user printed an unusual number of files",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "2 Hours",
+  "variations": []
+}

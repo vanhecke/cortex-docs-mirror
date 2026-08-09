@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "External Remote Services (T1133)",
+    "Server Software Component: Web Shell (T1505.003)"
+  ],
+  "attackers_goals": "Attackers may exploit server components or misconfigurations to access arbitrary sensitive files on the web server.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint received suspicious HTTP parameters via an HTTP request, which may indicate attempts to exploit server components or web shell activity.",
+  "detection_modules": "",
+  "detector_tags": "Webshell Analytics",
+  "investigative_actions": "Inspect the legitimacy of the URI path and the parameters values sent to the server. Ensure that the rare URI is not a legitimate result of routine development actions on the web server.",
+  "name": "Suspicious HTTP parameters detected",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

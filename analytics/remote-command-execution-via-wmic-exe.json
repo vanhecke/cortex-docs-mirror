@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Windows Management Instrumentation (T1047)"
+  ],
+  "attackers_goals": "The attacker is expanding his reach into your network by executing commands on a remote endpoint.",
+  "deduplication_period": "1 Day",
+  "description": "Remote command execution using the Windows Management Instrumentation command-line tool.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Examine Alert Details > Overview to identify the source endpoint, process running the command execution, process owner, and execution destination.",
+  "name": "Remote command execution via wmic.exe",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Remote command execution via wmic.exe",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Windows Management Instrumentation (T1047)"
+      ],
+      "description": "Remote command execution using the Windows Management Instrumentation command-line tool.",
+      "attackers_goals": "The attacker is expanding his reach into your network by executing commands on a remote endpoint.",
+      "investigative_actions": "Examine Alert Details > Overview to identify the source endpoint, process running the command execution, process owner, and execution destination."
+    }
+  ]
+}

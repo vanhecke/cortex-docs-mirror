@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Protocol Tunneling (T1572)"
+  ],
+  "attackers_goals": "Attackers may use SSH to create an encrypted tunnel to allow an attacker to covertly connect to an internal host.",
+  "deduplication_period": "1 Day",
+  "description": "An uncommon reverse SSH tunnel might have been created.",
+  "detection_modules": "",
+  "detector_tags": "Abnormal Communication Analytics",
+  "investigative_actions": "Review the external ip/domain. Investigate the causality of the process.",
+  "name": "Uncommon reverse SSH tunnel to external domain/ip",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon reverse SSH tunnel to external domain/ip using a sensitive port",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Protocol Tunneling (T1572)"
+      ],
+      "description": "An uncommon reverse SSH tunnel might have been created.",
+      "attackers_goals": "Attackers may use SSH to create an encrypted tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external ip/domain. Investigate the causality of the process."
+    }
+  ]
+}

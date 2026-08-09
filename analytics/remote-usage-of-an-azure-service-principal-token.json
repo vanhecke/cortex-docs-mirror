@@ -1,0 +1,52 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Steal Application Access Token (T1528)",
+    "Unsecured Credentials (T1552)"
+  ],
+  "attackers_goals": "Exfiltrate valid token and abuse it remotely.",
+  "deduplication_period": "5 Days",
+  "description": "An Azure Service Principal token was used externally of the cloud environment.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Verify whether the service principal should be used remotely. Check what API calls were executed by the service principal. Determine whether the service principal is compromised.",
+  "name": "Remote usage of an Azure Service Principal token",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Remote usage of an Azure Service Principal token from an unusual ASN",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal Application Access Token (T1528)",
+        "Unsecured Credentials (T1552)"
+      ],
+      "description": "An Azure Service Principal token was used externally of the cloud environment.",
+      "attackers_goals": "Exfiltrate valid token and abuse it remotely.",
+      "investigative_actions": "Verify whether the service principal should be used remotely. Check what API calls were executed by the service principal. Determine whether the service principal is compromised."
+    },
+    {
+      "name": "Remote usage of an Azure Service Principal token from an unusual IP",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal Application Access Token (T1528)",
+        "Unsecured Credentials (T1552)"
+      ],
+      "description": "An Azure Service Principal token was used externally of the cloud environment.",
+      "attackers_goals": "Exfiltrate valid token and abuse it remotely.",
+      "investigative_actions": "Verify whether the service principal should be used remotely. Check what API calls were executed by the service principal. Determine whether the service principal is compromised."
+    }
+  ]
+}

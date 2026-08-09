@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Create Account (T1136)"
+  ],
+  "attackers_goals": "Gain persistence through an IAM user who may be a member of the newly created group.",
+  "deduplication_period": "1 Day",
+  "description": "An IAM group was created.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Review the group's permissions. Identify which users were added to the group.",
+  "name": "An IAM group was created",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

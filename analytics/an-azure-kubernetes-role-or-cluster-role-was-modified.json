@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Escalate privileges to gain access to restricted resources in Azure Kubernetes cluster.",
+  "deduplication_period": "5 Days",
+  "description": "An Azure Kubernetes Role or Cluster-Role was modified or deleted. This could indicate malicious activity and should be investigated.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Review the role or ClusterRole changes made by the identity. Determine whether the identity is authorized to perform these actions.",
+  "name": "An Azure Kubernetes Role or Cluster-Role was modified",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

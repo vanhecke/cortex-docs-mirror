@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "Exfiltrate data to an unknown bucket.",
+  "deduplication_period": "1 Day",
+  "description": "An S3 replication policy was added to an S3 bucket. The referenced destination bucket was not seen in your tenant in the last 30 days.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Exfiltration, Cloud Data Asset Configuration, Data Detection & Response",
+  "investigative_actions": "Check the legitimacy of the referenced destination bucket. Review further logs for the source bucket. Review further actions performed by the identity.",
+  "name": "An S3 replication policy to an unknown bucket was created",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual S3 replication policy to an unknown bucket was created",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "An S3 replication policy was added to an S3 bucket. The referenced destination bucket was not seen in your tenant in the last 30 days. The operation was not performed in your organization in the last 30 days.",
+      "attackers_goals": "Exfiltrate data to an unknown bucket.",
+      "investigative_actions": "Check the legitimacy of the referenced destination bucket. Review further logs for the source bucket. Review further actions performed by the identity."
+    },
+    {
+      "name": "An S3 replication policy to an unknown bucket was created by an admin identity",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "An S3 replication policy was added to an S3 bucket. The referenced destination bucket was not seen in your tenant in the last 30 days. The identity has an administrative behavior.",
+      "attackers_goals": "Exfiltrate data to an unknown bucket.",
+      "investigative_actions": "Check the legitimacy of the referenced destination bucket. Review further logs for the source bucket. Review further actions performed by the identity."
+    },
+    {
+      "name": "An S3 replication policy to an unknown bucket was created - denied attempt",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "A denied attempt to create an S3 replication policy to an unknown bucket.",
+      "attackers_goals": "Exfiltrate data to an unknown bucket.",
+      "investigative_actions": "Check the legitimacy of the referenced destination bucket. Review further logs for the source bucket. Review further actions performed by the identity."
+    }
+  ]
+}

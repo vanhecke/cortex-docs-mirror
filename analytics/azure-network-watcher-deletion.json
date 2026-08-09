@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)",
+    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+  ],
+  "attackers_goals": "Avoid security mitigations and detections.",
+  "deduplication_period": "3 Hours",
+  "description": "Azure Network Watchers are used for monitoring and diagnosing Azure resources. An attacker might use this technique to avoid security mitigations.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check which devices are monitored by the deleted Network Watcher.",
+  "name": "Azure Network Watcher Deletion",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

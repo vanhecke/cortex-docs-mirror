@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Hijack Execution Flow: Dynamic Linker Hijacking (T1574.006)"
+  ],
+  "attackers_goals": "This allows attackers to inject malicious code into system processes, gain persistence, code injection, evade detection, and potentially escalate privileges.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers can modify ld.so.preload to inject malicious code into every dynamically linked process, enabling persistence and code execution. This detected operation is considered atypical in terms of access.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Download the /etc/ld.so.preload file from the host and see if and what libraries are specified there. Download any library specified and see if it's benign.",
+  "name": "Unusual process access to ld.so.preload file",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

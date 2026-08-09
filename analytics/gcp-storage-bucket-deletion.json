@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Data Destruction (T1485)"
+  ],
+  "attackers_goals": "Data destruction.",
+  "deduplication_period": "3 Hours",
+  "description": "A GCP bucket was deleted. An attacker might use this technique to destroy business data and its workflows.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Disaster Recovery Risks, Data Detection & Response",
+  "investigative_actions": "Check which data was deleted from the bucket.",
+  "name": "GCP Storage Bucket deletion",
+  "required_data": [
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "First time seen deleting a GCP Storage Bucket containing sensitive data",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Data Destruction (T1485)"
+      ],
+      "description": "A GCP bucket was deleted. An attacker might use this technique to destroy business data and its workflows.",
+      "attackers_goals": "Data destruction.",
+      "investigative_actions": "Check which data was deleted from the bucket."
+    },
+    {
+      "name": "GCP Storage Bucket containing sensitive data was deleted",
+      "severity": "Low",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Data Destruction (T1485)"
+      ],
+      "description": "A GCP bucket was deleted. An attacker might use this technique to destroy business data and its workflows.",
+      "attackers_goals": "Data destruction.",
+      "investigative_actions": "Check which data was deleted from the bucket."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: PowerShell (T1059.001)"
+  ],
+  "attackers_goals": "Remove evidence for mailbox export commands.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker may use PowerShell to remove evidence of an export request for a mailbox as part of the clean-up stage.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Examine the PowerShell command to identify which mailbox has been compromised. Investigate the host that executes the command for potential further exploitation.",
+  "name": "PowerShell used to remove mailbox export request logs",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "High",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

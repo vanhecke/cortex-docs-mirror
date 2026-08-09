@@ -1,0 +1,101 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Unsecured Credentials: Cloud Instance Metadata API (T1552.005)"
+  ],
+  "attackers_goals": "Extract sensitive cloud compute tokens to access restricted cloud resources.",
+  "deduplication_period": "1 Day",
+  "description": "A request to cloud Instance Metadata Service (IMDS) was made by an unusual process. This process does not usually access the Instance Metadata Service. An attacker may extract cloud compute tokens to gain access to a cloud environment.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Kubernetes - AGENT, Kubernetes Credentials Theft Analytics",
+  "investigative_actions": "Determine whether a web service was involved and if it was exploited to execute this technique. Identify any additional commands that were executed. Review the permissions assigned to the target machine to identify which resources may be affected. Examine related compute activity in the cloud audit logs.",
+  "name": "Unusual cloud Instance Metadata Service (IMDS) access",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual cloud Instance Metadata Service (IMDS) access from an unusual known Windows web service",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials: Cloud Instance Metadata API (T1552.005)"
+      ],
+      "description": "A request to cloud Instance Metadata Service (IMDS) was made by an unusual process. This process does not usually access the Instance Metadata Service. An attacker may extract cloud compute tokens to gain access to a cloud environment.",
+      "attackers_goals": "Extract sensitive cloud compute tokens to access restricted cloud resources.",
+      "investigative_actions": "Determine whether a web service was involved and if it was exploited to execute this technique. Identify any additional commands that were executed. Review the permissions assigned to the target machine to identify which resources may be affected. Examine related compute activity in the cloud audit logs."
+    },
+    {
+      "name": "Unusual cloud Instance Metadata Service (IMDS) access from an unusual known web service",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials: Cloud Instance Metadata API (T1552.005)"
+      ],
+      "description": "A request to cloud Instance Metadata Service (IMDS) was made by an unusual process. This process does not usually access the Instance Metadata Service. An attacker may extract cloud compute tokens to gain access to a cloud environment.",
+      "attackers_goals": "Extract sensitive cloud compute tokens to access restricted cloud resources.",
+      "investigative_actions": "Determine whether a web service was involved and if it was exploited to execute this technique. Identify any additional commands that were executed. Review the permissions assigned to the target machine to identify which resources may be affected. Examine related compute activity in the cloud audit logs."
+    },
+    {
+      "name": "Unusual cloud Instance Metadata Service (IMDS) access from an unusual known Windows shell process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials: Cloud Instance Metadata API (T1552.005)"
+      ],
+      "description": "A request to cloud Instance Metadata Service (IMDS) was made by an unusual process. This process does not usually access the Instance Metadata Service. An attacker may extract cloud compute tokens to gain access to a cloud environment.",
+      "attackers_goals": "Extract sensitive cloud compute tokens to access restricted cloud resources.",
+      "investigative_actions": "Determine whether a web service was involved and if it was exploited to execute this technique. Identify any additional commands that were executed. Review the permissions assigned to the target machine to identify which resources may be affected. Examine related compute activity in the cloud audit logs."
+    },
+    {
+      "name": "Unusual cloud Instance Metadata Service (IMDS) access from an unusual known shell process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials: Cloud Instance Metadata API (T1552.005)"
+      ],
+      "description": "A request to cloud Instance Metadata Service (IMDS) was made by an unusual process. This process does not usually access the Instance Metadata Service. An attacker may extract cloud compute tokens to gain access to a cloud environment.",
+      "attackers_goals": "Extract sensitive cloud compute tokens to access restricted cloud resources.",
+      "investigative_actions": "Determine whether a web service was involved and if it was exploited to execute this technique. Identify any additional commands that were executed. Review the permissions assigned to the target machine to identify which resources may be affected. Examine related compute activity in the cloud audit logs."
+    },
+    {
+      "name": "Unusual cloud Instance Metadata Service (IMDS) access from an unusual known Windows scripting process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials: Cloud Instance Metadata API (T1552.005)"
+      ],
+      "description": "A request to cloud Instance Metadata Service (IMDS) was made by an unusual process. This process does not usually access the Instance Metadata Service. An attacker may extract cloud compute tokens to gain access to a cloud environment.",
+      "attackers_goals": "Extract sensitive cloud compute tokens to access restricted cloud resources.",
+      "investigative_actions": "Determine whether a web service was involved and if it was exploited to execute this technique. Identify any additional commands that were executed. Review the permissions assigned to the target machine to identify which resources may be affected. Examine related compute activity in the cloud audit logs."
+    },
+    {
+      "name": "Unusual cloud Instance Metadata Service (IMDS) access from an unusual known scripting process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials: Cloud Instance Metadata API (T1552.005)"
+      ],
+      "description": "A request to cloud Instance Metadata Service (IMDS) was made by an unusual process. This process does not usually access the Instance Metadata Service. An attacker may extract cloud compute tokens to gain access to a cloud environment.",
+      "attackers_goals": "Extract sensitive cloud compute tokens to access restricted cloud resources.",
+      "investigative_actions": "Determine whether a web service was involved and if it was exploited to execute this technique. Identify any additional commands that were executed. Review the permissions assigned to the target machine to identify which resources may be affected. Examine related compute activity in the cloud audit logs."
+    }
+  ]
+}

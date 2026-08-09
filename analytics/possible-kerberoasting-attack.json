@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Steal or Forge Kerberos Tickets: Kerberoasting (T1558.003)"
+  ],
+  "attackers_goals": "Crack account credentials by obtaining an easy-to-crack Kerberos ticket.",
+  "deduplication_period": "1 Day",
+  "description": "A user enumerated all service principals in the organization and specifically requested weak and deprecated encryption in a ticket request. This is typically a sign of a Kerberoasting attack.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check who used the host at the time of the alert to rule out a benign service or tool requesting weak Kerberos encryption.",
+  "name": "Possible Kerberoasting attack",
+  "required_data": [
+    "XDR AgentXDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Kerberoasting attack",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal or Forge Kerberos Tickets: Kerberoasting (T1558.003)"
+      ],
+      "description": "A user enumerated all service principals in the organization and specifically requested weak and deprecated encryption in a ticket request. This is typically a sign of a Kerberoasting attack.",
+      "attackers_goals": "Crack account credentials by obtaining an easy-to-crack Kerberos ticket.",
+      "investigative_actions": "Check who used the host at the time of the alert to rule out a benign service or tool requesting weak Kerberos encryption."
+    }
+  ]
+}

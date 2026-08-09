@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Steal or Forge Kerberos Tickets: Kerberoasting (T1558.003)"
+  ],
+  "attackers_goals": "Crack service account credentials by obtaining an easy-to-crack Kerberos ticket.",
+  "deduplication_period": "1 Day",
+  "description": "A user specifically requested weak and deprecated encryption in a Kerberos TGS request. This provides easy-to-crack hashes, and is typically a sign of a Kerberoasting attack. The requested service was specified by using a suspicious SPN type, which is often used by Kerberoasting tools to request by SAN instead of SPN.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check who used the host at the time of the alert to rule out a benign service or tool requesting weak Kerberos encryption.",
+  "name": "Possible Kerberoasting without SPNs",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Possible Kerberoasting without SPNs on a sensitive server",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal or Forge Kerberos Tickets: Kerberoasting (T1558.003)"
+      ],
+      "description": "A user specifically requested weak and deprecated encryption in a Kerberos TGS request. This provides easy-to-crack hashes, and is typically a sign of a Kerberoasting attack. The requested service was specified by using a suspicious SPN type, which is often used by Kerberoasting tools to request by SAN instead of SPN.",
+      "attackers_goals": "Crack service account credentials by obtaining an easy-to-crack Kerberos ticket.",
+      "investigative_actions": "Check who used the host at the time of the alert to rule out a benign service or tool requesting weak Kerberos encryption."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Unsecured Credentials (T1552)",
+    "Steal or Forge Authentication Certificates (T1649)"
+  ],
+  "attackers_goals": "Attackers may search for local certificate files for authentication, persistence or NTLM extraction.",
+  "deduplication_period": "1 Day",
+  "description": "A suspicious process accessed certificate files.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "See whether this was a legitimate action. Follow process/user activities.",
+  "name": "Suspicious process accessed certificate files",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Exploitation of Remote Services (T1210)"
+  ],
+  "attackers_goals": "The Windows Server Update Services enable machines to discover and download software updates from a dedicated update server. Attacker may use the MS-Update protocol to execute unauthorized code through Microsoft binaries.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint requested an MS-Update operation with abnormal HTTP traffic characteristics.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Inspect the legitimacy of the server as a WSUS functioning server. Verify that your MS-Update network routine is HTTPS enforced* Verify that this MS-Update server is not a newly deployed server as part of a legitimate IT activity.",
+  "name": "Rare MS-Update traffic over HTTP",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

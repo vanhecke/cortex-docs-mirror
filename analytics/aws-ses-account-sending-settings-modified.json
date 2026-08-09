@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Gain access to confidential emails of an organization. Compromise the organization's cloud Email infrastructure.",
+  "deduplication_period": "5 Days",
+  "description": "AWS SES account sending settings were modified.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the SES Email sending setting modification was intentional.",
+  "name": "AWS SES account sending settings modified",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

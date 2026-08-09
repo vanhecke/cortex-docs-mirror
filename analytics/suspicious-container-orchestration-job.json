@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Scheduled Task/Job: Container Orchestration Job (T1053.007)"
+  ],
+  "attackers_goals": "Adversaries may abuse task scheduling functionality provided by container orchestration tools The adversaries do that to schedule deployment of containers configured to execute malicious code.",
+  "deduplication_period": "10 Minutes",
+  "description": "A suspicious orchestration job ran with a rare command line.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate The process activities and impact on the relevant container.",
+  "name": "Suspicious container orchestration job",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

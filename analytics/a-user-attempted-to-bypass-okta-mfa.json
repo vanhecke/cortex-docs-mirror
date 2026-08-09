@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Modify Authentication Process (T1556)",
+    "Multi-Factor Authentication Request Generation (T1621)"
+  ],
+  "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
+  "deduplication_period": "1 Day",
+  "description": "A user may have attempted to bypass Okta MFA.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Okta Audit Analytics",
+  "investigative_actions": "Contact the user who attempted to bypass MFA and ensure the request was legitimate. Check if the user successfully authenticated after the event.",
+  "name": "A user attempted to bypass Okta MFA",
+  "required_data": [
+    "Okta Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A successful bypass of Okta MFA",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Modify Authentication Process (T1556)",
+        "Multi-Factor Authentication Request Generation (T1621)"
+      ],
+      "description": "Suspicious MFA bypass attempt in Okta.",
+      "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
+      "investigative_actions": "Contact the user who attempted to bypass MFA and ensure the request was legitimate. Check if the user successfully authenticated after the event."
+    }
+  ]
+}

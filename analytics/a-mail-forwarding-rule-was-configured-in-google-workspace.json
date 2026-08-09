@@ -1,0 +1,42 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)",
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Email Collection: Email Forwarding Rule (T1114.003)",
+    "Automated Exfiltration (T1020)",
+    "Email Collection (T1114)"
+  ],
+  "attackers_goals": "Adversaries may abuse email forwarding rules to monitor the activities of a victim, steal information, and further gain intelligence on the victim or the victim's organization to use as part of further exploits or operations. Furthermore, email forwarding rules can allow adversaries to maintain persistent access to victim's emails even after compromised credentials are reset by administrators.",
+  "deduplication_period": "2 Days",
+  "description": "A rule was set up to forward emails outside the Google Workspace domain.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Check if the identity intended to preform this action, * and look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the forwarding domain is an unknown external domain and look up its reputation. Follow further actions done by the account.",
+  "name": "A mail forwarding rule was configured in Google Workspace",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A mail forwarding rule was configured in Google Workspace to an uncommon domain",
+      "severity": "High",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Email Collection: Email Forwarding Rule (T1114.003)",
+        "Automated Exfiltration (T1020)",
+        "Email Collection (T1114)"
+      ],
+      "description": "A rule was set up to forward emails outside the Google Workspace domain.",
+      "attackers_goals": "Adversaries may abuse email forwarding rules to monitor the activities of a victim, steal information, and further gain intelligence on the victim or the victim's organization to use as part of further exploits or operations. Furthermore, email forwarding rules can allow adversaries to maintain persistent access to victim's emails even after compromised credentials are reset by administrators.",
+      "investigative_actions": "Check if the identity intended to preform this action, * and look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the forwarding domain is an unknown external domain and look up its reputation. Follow further actions done by the account."
+    }
+  ]
+}

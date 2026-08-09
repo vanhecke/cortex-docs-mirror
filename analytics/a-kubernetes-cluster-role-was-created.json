@@ -1,0 +1,69 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation: Additional Container Cluster Roles (T1098.006)"
+  ],
+  "attackers_goals": "Create overpermissive cluster roles to escalate privileges within the Kubernetes cluster.",
+  "deduplication_period": "1 Day",
+  "description": "A Kubernetes cluster role was created.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Kubernetes - API",
+  "investigative_actions": "Check the permissions granted to the newly created Kubernetes cluster role. Check whether this cluster role was bound to an identity via a ClusterRoleBinding or RoleBinding. Verify whether the identity that created the cluster role is authorized to perform RBAC operations. Review subsequent API calls made by the same identity for signs of privilege escalation or lateral movement.",
+  "name": "A Kubernetes cluster role was created",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log",
+    "Kubernetes Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Administrative Kubernetes cluster role was created for the first time",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: Additional Container Cluster Roles (T1098.006)"
+      ],
+      "description": "A Kubernetes cluster role with administrative permissions was created for the first time by the identity.",
+      "attackers_goals": "Create overpermissive cluster roles to escalate privileges within the Kubernetes cluster.",
+      "investigative_actions": "Check the permissions granted to the newly created Kubernetes cluster role. Check whether this cluster role was bound to an identity via a ClusterRoleBinding or RoleBinding. Verify whether the identity that created the cluster role is authorized to perform RBAC operations. Review subsequent API calls made by the same identity for signs of privilege escalation or lateral movement."
+    },
+    {
+      "name": "A Kubernetes cluster role with administrative permissions was created",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: Additional Container Cluster Roles (T1098.006)"
+      ],
+      "description": "A Kubernetes cluster role with administrative permissions was created.",
+      "attackers_goals": "Create overpermissive cluster roles to escalate privileges within the Kubernetes cluster.",
+      "investigative_actions": "Check the permissions granted to the newly created Kubernetes cluster role. Check whether this cluster role was bound to an identity via a ClusterRoleBinding or RoleBinding. Verify whether the identity that created the cluster role is authorized to perform RBAC operations. Review subsequent API calls made by the same identity for signs of privilege escalation or lateral movement."
+    },
+    {
+      "name": "A Kubernetes cluster role was created for the first time by the identity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: Additional Container Cluster Roles (T1098.006)"
+      ],
+      "description": "A Kubernetes cluster role was created for the first time by the identity.",
+      "attackers_goals": "Create overpermissive cluster roles to escalate privileges within the Kubernetes cluster.",
+      "investigative_actions": "Check the permissions granted to the newly created Kubernetes cluster role. Check whether this cluster role was bound to an identity via a ClusterRoleBinding or RoleBinding. Verify whether the identity that created the cluster role is authorized to perform RBAC operations. Review subsequent API calls made by the same identity for signs of privilege escalation or lateral movement."
+    }
+  ]
+}

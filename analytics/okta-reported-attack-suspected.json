@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "An attacker might attempt to compromise Okta accounts to gain access to sensitive assets or data.",
+  "deduplication_period": "1 Day",
+  "description": "Okta Threat Insight Reported Attack Suspected.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Okta Audit Analytics",
+  "investigative_actions": "Examine Okta alerts and search for signs of compromise to evaluate the potential risk.",
+  "name": "Okta Reported Attack Suspected",
+  "required_data": [
+    "Okta Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

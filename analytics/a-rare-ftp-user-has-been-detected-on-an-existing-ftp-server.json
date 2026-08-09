@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data from Information Repositories (T1213)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Attackers may seek to access FTP resources to exfiltrate data, stage attack tools or create a command and control channel through a trusted service.",
+  "deduplication_period": "1 Day",
+  "description": "A rare or new FTP user has been detected on an existing FTP server.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify that the new username is legitimate.* Examine the legitimacy of the application that produced this uncommon FTP. Examine the parent process of this application. Check the logs on the FTP server for a new user creation.",
+  "name": "A rare FTP user has been detected on an existing FTP server",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Possible FTP User Scanning Detected",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Data from Information Repositories (T1213)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A rare or new FTP user has been detected on an existing FTP server.",
+      "attackers_goals": "Attackers may seek to access FTP resources to exfiltrate data, stage attack tools or create a command and control channel through a trusted service.",
+      "investigative_actions": "Verify that the new username is legitimate.* Examine the legitimacy of the application that produced this uncommon FTP. Examine the parent process of this application. Check the logs on the FTP server for a new user creation."
+    }
+  ]
+}

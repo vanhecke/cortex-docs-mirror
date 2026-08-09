@@ -1,0 +1,85 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)",
+    "Use Alternate Authentication Material (T1550)"
+  ],
+  "attackers_goals": "A malicious user may attempt to access a domain controller to access and control Active Directory.",
+  "deduplication_period": "1 Day",
+  "description": "A user account has successfully logged on to a Domain Controller (DC), generating a Windows Event Log. This may be a sign of DC and Active Directory (AD) compromise.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Ensure that the user is not a Domain Admin account. By default, Administrator groups have permission to access the domain controller. Check if the user is a service account that accesses a domain controller as part of its normal behavior. Verify that the user is not authenticating to group policy.",
+  "name": "Abnormal User Login to Domain Controller",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Rare RDP User Login to Domain Controller by an Abnormal Department",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)",
+        "Use Alternate Authentication Material (T1550)"
+      ],
+      "description": "A user account has successfully interactively logged on to a Domain Controller (DC), generating a Windows Event Log. This may be a sign of DC and Active Directory (AD) compromise.",
+      "attackers_goals": "A malicious user may attempt to access a domain controller to access and control Active Directory.",
+      "investigative_actions": "Ensure that the user is not a Domain Admin account. By default, Administrator groups have permission to access the domain controller. Check if the user is a service account that accesses a domain controller as part of its normal behavior. Verify that the user is not authenticating to group policy."
+    },
+    {
+      "name": "Abnormal RDP User Login to Domain Controller",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)",
+        "Use Alternate Authentication Material (T1550)"
+      ],
+      "description": "A user account has successfully interactively logged on to a Domain Controller (DC), generating a Windows Event Log. This may be a sign of DC and Active Directory (AD) compromise.",
+      "attackers_goals": "A malicious user may attempt to access a domain controller to access and control Active Directory.",
+      "investigative_actions": "Ensure that the user is not a Domain Admin account. By default, Administrator groups have permission to access the domain controller. Check if the user is a service account that accesses a domain controller as part of its normal behavior. Verify that the user is not authenticating to group policy."
+    },
+    {
+      "name": "RDP User Login to Domain Controller",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)",
+        "Use Alternate Authentication Material (T1550)"
+      ],
+      "description": "A user account has successfully logged on to a Domain Controller (DC), generating a Windows Event Log. This may be a sign of DC and Active Directory (AD) compromise.",
+      "attackers_goals": "A malicious user may attempt to access a domain controller to access and control Active Directory.",
+      "investigative_actions": "Ensure that the user is not a Domain Admin account. By default, Administrator groups have permission to access the domain controller. Check if the user is a service account that accesses a domain controller as part of its normal behavior. Verify that the user is not authenticating to group policy."
+    },
+    {
+      "name": "Abnormal User Login to Domain Controller by an Abnormal Department",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)",
+        "Use Alternate Authentication Material (T1550)"
+      ],
+      "description": "A user account has successfully logged on to a Domain Controller (DC), generating a Windows Event Log. This may be a sign of DC and Active Directory (AD) compromise.",
+      "attackers_goals": "A malicious user may attempt to access a domain controller to access and control Active Directory.",
+      "investigative_actions": "Ensure that the user is not a Domain Admin account. By default, Administrator groups have permission to access the domain controller. Check if the user is a service account that accesses a domain controller as part of its normal behavior. Verify that the user is not authenticating to group policy."
+    }
+  ]
+}

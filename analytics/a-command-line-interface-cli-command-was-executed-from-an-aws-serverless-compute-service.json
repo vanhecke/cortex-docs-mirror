@@ -1,0 +1,64 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Credential Access (TA0006)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Cloud Accounts (T1078.004)",
+    "Steal Application Access Token (T1528)",
+    "Unsecured Credentials (T1552)",
+    "Command and Scripting Interpreter: Cloud API (T1059.009)"
+  ],
+  "attackers_goals": "Exfiltrate serverless token and abuse it.",
+  "deduplication_period": "5 Days",
+  "description": "AWS serverless compute service token was used to execute a Command Line Interface (CLI) command. This may indicate token theft due to the nature of serverless compute.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Serverless Function Credentials Theft Analytics",
+  "investigative_actions": "Verify whether the serverless-attached identity's credentials were intentionally used in CLI. Check what CLI commands were executed using the serverless attached token. Check if the suspected serverless function is compromised.",
+  "name": "A Command Line Interface (CLI) command was executed from an AWS serverless compute service",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A Command Line Interface (AWS-CLI) command was executed from an AWS serverless compute service",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Credential Access (TA0006)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Cloud Accounts (T1078.004)",
+        "Steal Application Access Token (T1528)",
+        "Unsecured Credentials (T1552)",
+        "Command and Scripting Interpreter: Cloud API (T1059.009)"
+      ],
+      "description": "AWS serverless compute service token was used to execute a Command Line Interface (CLI) command. This may indicate token theft due to the nature of serverless compute.",
+      "attackers_goals": "Exfiltrate serverless token and abuse it.",
+      "investigative_actions": "Verify whether the serverless-attached identity's credentials were intentionally used in CLI. Check what CLI commands were executed using the serverless attached token. Check if the suspected serverless function is compromised."
+    },
+    {
+      "name": "Unusual Command Line Interface (CLI) command was executed from an AWS serverless compute service",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Credential Access (TA0006)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Cloud Accounts (T1078.004)",
+        "Steal Application Access Token (T1528)",
+        "Unsecured Credentials (T1552)",
+        "Command and Scripting Interpreter: Cloud API (T1059.009)"
+      ],
+      "description": "AWS serverless compute service token was used to execute a Command Line Interface (CLI) command. This may indicate token theft due to the nature of serverless compute.",
+      "attackers_goals": "Exfiltrate serverless token and abuse it.",
+      "investigative_actions": "Verify whether the serverless-attached identity's credentials were intentionally used in CLI. Check what CLI commands were executed using the serverless attached token. Check if the suspected serverless function is compromised."
+    }
+  ]
+}

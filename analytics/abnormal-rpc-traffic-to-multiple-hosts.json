@@ -1,0 +1,39 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Reconnaissance (TA0043)"
+  ],
+  "attack_techniques": [
+    "Active Scanning (T1595)",
+    "Active Scanning: Vulnerability Scanning (T1595.002)"
+  ],
+  "attackers_goals": "An adversary may enumerate different protocols to gain information and plan its lateral movement over the network.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint performed unfamiliar RPC activity to multiple hosts.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the host is a newly deployed server that provides RPC based services to multiple hosts. Verify the legitimacy of the actor process (and its causality) that initiated this RPC traffic.",
+  "name": "Abnormal RPC traffic to multiple hosts",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Abnormal RPC traffic to multiple IPs",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Reconnaissance (TA0043)"
+      ],
+      "attack_techniques": [
+        "Active Scanning (T1595)",
+        "Active Scanning: Vulnerability Scanning (T1595.002)"
+      ],
+      "description": "The endpoint performed unfamiliar RPC activity to multiple hosts.",
+      "attackers_goals": "An adversary may enumerate different protocols to gain information and plan its lateral movement over the network.",
+      "investigative_actions": "Check if the host is a newly deployed server that provides RPC based services to multiple hosts. Verify the legitimacy of the actor process (and its causality) that initiated this RPC traffic."
+    }
+  ]
+}

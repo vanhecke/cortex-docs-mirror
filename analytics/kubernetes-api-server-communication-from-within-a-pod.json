@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Container and Resource Discovery (T1613)"
+  ],
+  "attackers_goals": "Usage of the Kubernetes API server to perform operations inside the cluster.",
+  "deduplication_period": "5 Days",
+  "description": "The Kubernetes API server was accessed from within a pod.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT",
+  "investigative_actions": "Check if there is an active attack against the Kubernetes cluster.",
+  "name": "Kubernetes API server communication from within a pod",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual Kubernetes API server communication from within a pod performed by curl process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Container and Resource Discovery (T1613)"
+      ],
+      "description": "The Kubernetes API server was accessed from within a pod.",
+      "attackers_goals": "Usage of the Kubernetes API server to perform operations inside the cluster.",
+      "investigative_actions": "Check if there is an active attack against the Kubernetes cluster."
+    },
+    {
+      "name": "Unusual Kubernetes API server communication from within a pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Container and Resource Discovery (T1613)"
+      ],
+      "description": "The Kubernetes API server was accessed from within a pod.",
+      "attackers_goals": "Usage of the Kubernetes API server to perform operations inside the cluster.",
+      "investigative_actions": "Check if there is an active attack against the Kubernetes cluster."
+    }
+  ]
+}

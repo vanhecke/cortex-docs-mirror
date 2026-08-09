@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Achieve initial access to a company's resources.",
+  "deduplication_period": "1 Day",
+  "description": "A user performed an Azure AD operation using a PowerShell user-agent for the first time.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Follow the actions the user performed using PowerShell. Confirm with the user that the action was intended.",
+  "name": "First Azure AD PowerShell operation for a user",
+  "required_data": [
+    "AzureAD Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

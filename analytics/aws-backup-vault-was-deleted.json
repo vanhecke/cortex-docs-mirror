@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Inhibit System Recovery (T1490)"
+  ],
+  "attackers_goals": "Destroy all backup data stored in the vault to prevent recovery after a ransomware or destructive attack. Deleting a vault is more impactful than deleting individual recovery points as it wipes all backups at once.",
+  "deduplication_period": "1 Day",
+  "description": "An AWS Backup vault was deleted by a cloud identity.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Disaster Recovery Risks, Cloud Data Asset Protection Tampering, Data Detection & Response",
+  "investigative_actions": "Confirm that the identity intended to delete this backup vault. Determine whether the vault contained recovery points for critical resources. Review further actions performed by the identity. Check whether other backup vaults or recovery points remain for the affected resources.",
+  "name": "AWS Backup vault was deleted",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "AWS Backup vault was deleted from a production account",
+      "severity": "Low",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Inhibit System Recovery (T1490)"
+      ],
+      "description": "An AWS Backup vault was deleted by a cloud identity. The backup vault was deleted from a production account.",
+      "attackers_goals": "Destroy all backup data stored in the vault to prevent recovery after a ransomware or destructive attack. Deleting a vault is more impactful than deleting individual recovery points as it wipes all backups at once.",
+      "investigative_actions": "Confirm that the identity intended to delete this backup vault. Determine whether the vault contained recovery points for critical resources. Review further actions performed by the identity. Check whether other backup vaults or recovery points remain for the affected resources."
+    },
+    {
+      "name": "AWS Backup vault was deleted for the first time by this identity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Inhibit System Recovery (T1490)"
+      ],
+      "description": "An AWS Backup vault was deleted by a cloud identity. This is the first time this identity has deleted an AWS Backup vault.",
+      "attackers_goals": "Destroy all backup data stored in the vault to prevent recovery after a ransomware or destructive attack. Deleting a vault is more impactful than deleting individual recovery points as it wipes all backups at once.",
+      "investigative_actions": "Confirm that the identity intended to delete this backup vault. Determine whether the vault contained recovery points for critical resources. Review further actions performed by the identity. Check whether other backup vaults or recovery points remain for the affected resources."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Escape to Host (T1611)"
+  ],
+  "attackers_goals": "Gain high privileged command execution on the host machine via one of its running containers.",
+  "deduplication_period": "1 Day",
+  "description": "A contained executable from a mounted share initiated a suspicious outbound network connection. Running binaries from a mounted share is highly dangerous and not typical.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the requested IP address is known or malicious. Investigate the contained process and its process tree.",
+  "name": "A contained executable from a mounted share initiated a suspicious outbound network connection",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A contained executable from a mounted share initiated a suspicious outbound network connection",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Escape to Host (T1611)"
+      ],
+      "description": "A cloud machine contained executable from a mounted share initiated a suspicious outbound network connection. Running binaries from a mounted share is highly dangerous and not typical.",
+      "attackers_goals": "Gain high privileged command execution on the host machine via one of its running containers.",
+      "investigative_actions": "Check if the requested IP address is known or malicious. Investigate the contained process and its process tree."
+    }
+  ]
+}

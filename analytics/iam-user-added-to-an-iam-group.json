@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Cloud Accounts (T1078.004)",
+    "Account Manipulation: Additional Cloud Roles (T1098.003)"
+  ],
+  "attackers_goals": "Add a user to a group to establish persistence or escalate privileges within a cloud account.",
+  "deduplication_period": "1 Day",
+  "description": "An IAM user was added to an IAM group.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Identify the identity that executed the API call. Determine which IAM user was added to the group. Evaluate the group's permissions to determine their applicability to the IAM user.",
+  "name": "IAM User added to an IAM group",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

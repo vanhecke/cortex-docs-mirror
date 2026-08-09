@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay (T1557.001)",
+    "Use Alternate Authentication Material: Pass the Hash (T1550.002)"
+  ],
+  "attackers_goals": "The attacker is attempting a man-in-the-middle NTLM relay attack to intercept authentication attempts and move laterally within an environment.",
+  "deduplication_period": "1 Day",
+  "description": "An NTLM NTProofStr was seen from more than one source. This indicates that NTLM authentication data has been relayed.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check that the alerted host is not a NAT or a proxy that duplicates traffic as part of its normal behavior. Check if the protocols used are vulnerable to an NTLM relay attack (e.g. LDAP, SMB). Ensure that SMB signing is enabled in the case of a possible SMB relay attack.",
+  "name": "NTLM Relay",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": []
+}

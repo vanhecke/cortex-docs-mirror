@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Unsecured Credentials (T1552)"
+  ],
+  "attackers_goals": "Attackers can abuse the Azure AD Connect database files to get access to the AD Sync account. The AD Sync account is a highly privileged account that can perform a DCSync and get access to on-premise password hashes.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual process accessed the ADConnect database files.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "See whether this was a legitimate action. Follow process/user/host activities. Follow unusual actions of the AD Sync user. Check for unusual Azure AD authentications. Check for a possible DCSync.",
+  "name": "Unusual ADConnect database file access",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious access to ADConnect database file",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials (T1552)"
+      ],
+      "description": "An unusual process accessed the ADConnect database files with some suspicious characteristics that flagged this access attempt as a suspicious.",
+      "attackers_goals": "Attackers can abuse the Azure AD Connect database files to get access to the AD Sync account. The AD Sync account is a highly privileged account that can perform a DCSync and get access to on-premise password hashes.",
+      "investigative_actions": "See whether this was a legitimate action. Follow process/user/host activities. Follow unusual actions of the AD Sync user. Check for unusual Azure AD authentications. Check for a possible DCSync."
+    },
+    {
+      "name": "Access to ADConnect database file by an unsigned or unusual process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials (T1552)"
+      ],
+      "description": "An unusual process accessed the ADConnect database files with some suspicious characteristics that flagged this access attempt as a suspicious access.",
+      "attackers_goals": "Attackers can abuse the Azure AD Connect database files to get access to the AD Sync account. The AD Sync account is a highly privileged account that can perform a DCSync and get access to on-premise password hashes.",
+      "investigative_actions": "See whether this was a legitimate action. Follow process/user/host activities. Follow unusual actions of the AD Sync user. Check for unusual Azure AD authentications. Check for a possible DCSync."
+    }
+  ]
+}

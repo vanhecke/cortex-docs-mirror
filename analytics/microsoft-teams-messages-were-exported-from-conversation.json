@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data from Information Repositories: Messaging Applications (T1213.005)"
+  ],
+  "attackers_goals": "Attackers may leverage message extraction from Microsoft Teams to obtain valuable information.",
+  "deduplication_period": "1 Day",
+  "description": "Microsoft Teams messages were exported from conversation.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Microsoft Teams",
+  "investigative_actions": "Confirm that the exported messages were extracted from a certified and trusted entity. Determine if it is within the user's role to extract messages from Microsoft Teams. Follow further actions done by the account and validate that the exported conversations were not sent to an untrusted entity.",
+  "name": "Microsoft Teams messages were exported from conversation",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Microsoft Teams messages were exported from conversation by a privileged user for the first time",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Data from Information Repositories: Messaging Applications (T1213.005)"
+      ],
+      "description": "Microsoft Teams messages were exported from conversation.",
+      "attackers_goals": "Attackers may leverage message extraction from Microsoft Teams to obtain valuable information.",
+      "investigative_actions": "Confirm that the exported messages were extracted from a certified and trusted entity. Determine if it is within the user's role to extract messages from Microsoft Teams. Follow further actions done by the account and validate that the exported conversations were not sent to an untrusted entity."
+    }
+  ]
+}

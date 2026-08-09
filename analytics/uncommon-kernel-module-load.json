@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Rootkit (T1014)"
+  ],
+  "attackers_goals": "Gain persistence using the kernel module.",
+  "deduplication_period": "1 Day",
+  "description": "Loading of a kernel module using the modprobe command.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands.",
+  "name": "Uncommon kernel module load",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon kernel module load in a Kubernetes pod",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Rootkit (T1014)"
+      ],
+      "description": "Loading of a kernel module using the modprobe command.",
+      "attackers_goals": "Gain persistence using the kernel module.",
+      "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands."
+    }
+  ]
+}

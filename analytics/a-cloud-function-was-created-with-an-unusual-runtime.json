@@ -1,0 +1,63 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Serverless Execution (T1648)"
+  ],
+  "attackers_goals": "Execute arbitrary code in cloud environments.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud function was created with an unusual runtime.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Examine the cloud function's code implementation and look for any unusual invocations. Check for any unusual activities within the same project.",
+  "name": "A cloud function was created with an unusual runtime",
+  "required_data": [
+    "AWS Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A cloud function was created with an unusual runtime by a known cloud identity",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Serverless Execution (T1648)"
+      ],
+      "description": "A cloud function was created with an unusual runtime.",
+      "attackers_goals": "Execute arbitrary code in cloud environments.",
+      "investigative_actions": "Examine the cloud function's code implementation and look for any unusual invocations. Check for any unusual activities within the same project."
+    },
+    {
+      "name": "A cloud function was created with a runtime that was not seen in the organization",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Serverless Execution (T1648)"
+      ],
+      "description": "A cloud function was created with an unusual runtime.",
+      "attackers_goals": "Execute arbitrary code in cloud environments.",
+      "investigative_actions": "Examine the cloud function's code implementation and look for any unusual invocations. Check for any unusual activities within the same project."
+    },
+    {
+      "name": "A cloud function was created with a custom runtime",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Serverless Execution (T1648)"
+      ],
+      "description": "A cloud function was created with an unusual runtime.",
+      "attackers_goals": "Execute arbitrary code in cloud environments.",
+      "investigative_actions": "Examine the cloud function's code implementation and look for any unusual invocations. Check for any unusual activities within the same project."
+    }
+  ]
+}

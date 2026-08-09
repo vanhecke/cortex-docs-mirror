@@ -1,0 +1,75 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "OS Credential Dumping (T1003)"
+  ],
+  "attackers_goals": "Attackers may attempt to dump the contents of these sensitive files to perform offline password cracking.",
+  "deduplication_period": "7 Days",
+  "description": "An unpopular process accessed the shadow file.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Check the process for more suspicious activity. Check whether this was a legitimate action.",
+  "name": "Suspicious access to shadow file",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious access to shadow file in a Kubernetes Pod using a known text editor",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "An unpopular process accessed the shadow file in a Kubernetes Pod.",
+      "attackers_goals": "Attackers may attempt to dump the contents of these sensitive files to perform offline password cracking.",
+      "investigative_actions": "Check the process for more suspicious activity. Check whether this was a legitimate action."
+    },
+    {
+      "name": "Suspicious access to shadow file using a known text editor",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "An unpopular process accessed the shadow file.",
+      "attackers_goals": "Attackers may attempt to dump the contents of these sensitive files to perform offline password cracking.",
+      "investigative_actions": "Check the process for more suspicious activity. Check whether this was a legitimate action."
+    },
+    {
+      "name": "Suspicious access to shadow file in a Kubernetes Pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "An unpopular process accessed the shadow file.",
+      "attackers_goals": "Attackers may attempt to dump the contents of these sensitive files to perform offline password cracking.",
+      "investigative_actions": "Check the process for more suspicious activity. Check whether this was a legitimate action."
+    },
+    {
+      "name": "Suspicious access to shadow file",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "An unpopular process accessed the shadow file.",
+      "attackers_goals": "Attackers may attempt to dump the contents of these sensitive files to perform offline password cracking.",
+      "investigative_actions": "Check the process for more suspicious activity. Check whether this was a legitimate action."
+    }
+  ]
+}

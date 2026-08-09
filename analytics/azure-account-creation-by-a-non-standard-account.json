@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)",
+    "Create Account (T1136)"
+  ],
+  "attackers_goals": "Create a backdoor account for later access to Azure AD or Azure resources, or delete evidence of such an account.",
+  "deduplication_period": "1 Day",
+  "description": "An Azure AD account creation was performed by a user that doesn't typically create users.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Follow further actions by the initiator. Check for new resource creations by the new user. Check if the new user was added to a privileged role. Follow further actions done by the new user.",
+  "name": "Azure account creation by a non-standard account",
+  "required_data": [
+    "AzureAD Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual Azure account creation by a non-standard account",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)",
+        "Create Account (T1136)"
+      ],
+      "description": "An Azure AD account creation was performed by a user that doesn't typically create users.",
+      "attackers_goals": "Create a backdoor account for later access to Azure AD or Azure resources, or delete evidence of such an account.",
+      "investigative_actions": "Follow further actions by the initiator. Check for new resource creations by the new user. Check if the new user was added to a privileged role. Follow further actions done by the new user."
+    }
+  ]
+}

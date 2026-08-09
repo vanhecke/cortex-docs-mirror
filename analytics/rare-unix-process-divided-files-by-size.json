@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Data Transfer Size Limits (T1030)"
+  ],
+  "attackers_goals": "This may assist an attacker to exfiltrate sensitive information.",
+  "deduplication_period": "1 Day",
+  "description": "A file was divided into sub-files by size limit by a rare process.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the user normally uses this capability. Check if this capability is used often on this endpoint.",
+  "name": "Rare Unix process divided files by size",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

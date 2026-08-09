@@ -1,0 +1,70 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Exploit Public-Facing Application (T1190)",
+    "Exploitation of Remote Services (T1210)"
+  ],
+  "attackers_goals": "Obtain access to either the database or its hosting machine for various purposes like privilege escalation, lateral movement, and data theft.",
+  "deduplication_period": "1 Day",
+  "description": "A DB related process abnormally spawned a shell. This might indicate an exploitation attempt.",
+  "detection_modules": "",
+  "detector_tags": "Shell Analytics",
+  "investigative_actions": "Review the commands/processes executed by the shell for malicious actions. Check if and what else the DB process has executed. Check for any additional alerts raised in the context of the DB process. Audit the query/access logs of the DB for suspicious actions (Such as SQL injection or similar).",
+  "name": "Unusual DB process spawning a shell",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual DB process spawning a shell with a possible reconnaissance command",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Exploit Public-Facing Application (T1190)",
+        "Exploitation of Remote Services (T1210)"
+      ],
+      "description": "A DB related process abnormally spawned a shell. This might indicate an exploitation attempt.",
+      "attackers_goals": "Obtain access to either the database or its hosting machine for various purposes like privilege escalation, lateral movement, and data theft.",
+      "investigative_actions": "Review the commands/processes executed by the shell for malicious actions. Check if and what else the DB process has executed. Check for any additional alerts raised in the context of the DB process. Audit the query/access logs of the DB for suspicious actions (Such as SQL injection or similar)."
+    },
+    {
+      "name": "Unusual DB process spawning a shell with a possible web download/access command",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Exploit Public-Facing Application (T1190)",
+        "Exploitation of Remote Services (T1210)"
+      ],
+      "description": "A DB related process abnormally spawned a shell. This might indicate an exploitation attempt.",
+      "attackers_goals": "Obtain access to either the database or its hosting machine for various purposes like privilege escalation, lateral movement, and data theft.",
+      "investigative_actions": "Review the commands/processes executed by the shell for malicious actions. Check if and what else the DB process has executed. Check for any additional alerts raised in the context of the DB process. Audit the query/access logs of the DB for suspicious actions (Such as SQL injection or similar)."
+    },
+    {
+      "name": "Unusual DB process spawning a shell with an unusual command line",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Exploit Public-Facing Application (T1190)",
+        "Exploitation of Remote Services (T1210)"
+      ],
+      "description": "A DB related process abnormally spawned a shell. This might indicate an exploitation attempt.",
+      "attackers_goals": "Obtain access to either the database or its hosting machine for various purposes like privilege escalation, lateral movement, and data theft.",
+      "investigative_actions": "Review the commands/processes executed by the shell for malicious actions. Check if and what else the DB process has executed. Check for any additional alerts raised in the context of the DB process. Audit the query/access logs of the DB for suspicious actions (Such as SQL injection or similar)."
+    }
+  ]
+}

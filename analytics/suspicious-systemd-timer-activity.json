@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Scheduled Task/Job: Systemd Timers (T1053.006)"
+  ],
+  "attackers_goals": "An adversary may use systemd timers to execute malicious code at system startup or on a scheduled basis for persistence.",
+  "deduplication_period": "1 Day",
+  "description": "Suspicious systemd timer activity, which may indicate an attempt to establish persistence.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check the systemd timer file change and try to understand the impact of the systemd timers change.",
+  "name": "Suspicious systemd timer activity",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

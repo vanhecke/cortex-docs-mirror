@@ -1,0 +1,63 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+  ],
+  "attackers_goals": "Avoiding detection of their activities by limiting the amount of data collected. This action may be preliminary to resource deletion or data exhilaration from the resource. Setting the stage for further attacks, like a Ransomware Attack.",
+  "deduplication_period": "1 Day",
+  "description": "Cloud resource logging was disabled.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Disaster Recovery Risks, Cloud Data Asset Protection Tampering, Data Detection & Response",
+  "investigative_actions": "Confirm that the identity intended to disable logging on this resource. Follow further actions done by the identity. Monitor other (non-disabled) activity logs related to this resource.",
+  "name": "Cloud resource logging was disabled",
+  "required_data": [
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Cloud resource logging was disabled - failed attempt",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+      ],
+      "description": "A failed attempt to disable cloud resource logging.",
+      "attackers_goals": "Avoiding detection of their activities by limiting the amount of data collected. This action may be preliminary to resource deletion or data exhilaration from the resource. Setting the stage for further attacks, like a Ransomware Attack.",
+      "investigative_actions": "Confirm that the identity intended to disable logging on this resource. Follow further actions done by the identity. Monitor other (non-disabled) activity logs related to this resource."
+    },
+    {
+      "name": "Cloud resource logging was disabled on an Azure DB/storage resource",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+      ],
+      "description": "Cloud resource logging was disabled on a DB/storage resource.",
+      "attackers_goals": "Avoiding detection of their activities by limiting the amount of data collected. This action may be preliminary to resource deletion or data exhilaration from the resource. Setting the stage for further attacks, like a Ransomware Attack.",
+      "investigative_actions": "Confirm that the identity intended to disable logging on this resource. Follow further actions done by the identity. Monitor other (non-disabled) activity logs related to this resource."
+    },
+    {
+      "name": "Cloud resource logging was disabled on a GCP DB/storage resource",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+      ],
+      "description": "Cloud resource logging was disabled on a DB/storage resource.",
+      "attackers_goals": "Avoiding detection of their activities by limiting the amount of data collected. This action may be preliminary to resource deletion or data exhilaration from the resource. Setting the stage for further attacks, like a Ransomware Attack.",
+      "investigative_actions": "Confirm that the identity intended to disable logging on this resource. Follow further actions done by the identity. Monitor other (non-disabled) activity logs related to this resource."
+    }
+  ]
+}

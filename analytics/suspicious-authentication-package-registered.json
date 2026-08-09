@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Boot or Logon Autostart Execution: Authentication Package (T1547.002)"
+  ],
+  "attackers_goals": "Gain persistence using the legitimate Windows authentication package mechanism, which loads libraries into Windows services.",
+  "deduplication_period": "14 Days",
+  "description": "The endpoint registered a suspicious authentication package, which may be used to gain persistence on the host by loading libraries into the time management service.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify if the registered library is malicious. Check if the installing software is a malicious binary. Check for any suspicious network activity from \"lsass.exe\".",
+  "name": "Suspicious authentication package registered",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

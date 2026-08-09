@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)",
+    "System Binary Proxy Execution (T1218)"
+  ],
+  "attackers_goals": "Gain code execution on the host and evade security controls.",
+  "deduplication_period": "6 Hours",
+  "description": "SearchProtocolHost.exe has been launched from a process that is different from SearchIndexer.exe This may indicate malicious activity (such as malware later being injected to it, or it being used for phantom DLL hijacking).",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Suspicious SearchProtocolHost.exe parent process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

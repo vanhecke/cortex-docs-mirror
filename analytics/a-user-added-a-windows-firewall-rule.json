@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify System Firewall (T1562.004)"
+  ],
+  "attackers_goals": "Firewall rules determine what traffic your firewall will block or allow. A malicious insider might want to change these rules in an attempt to bypass network limitations or disrupt network communication.",
+  "deduplication_period": "1 Day",
+  "description": "A user added a new Windows Firewall rule. Adding a firewall rule may indicate an attempt to bypass controls limiting network usage or to disrupt network communications.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check for any other suspicious activity related to the host and the user involved in the alert. Check Windows Defender Firewall with Advanced Security for a new rule that was added. Check if the new rule was added to different machines as well.",
+  "name": "A user added a Windows firewall rule",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

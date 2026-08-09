@@ -1,0 +1,75 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "OS Credential Dumping (T1003)"
+  ],
+  "attackers_goals": "Adversary may attempt to extract credentials from the Windows Registry Credentials can then be used to perform lateral movement and access restricted information.",
+  "deduplication_period": "1 Day",
+  "description": "A sensitive registry hive was extracted, which is used for accessing credentials.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the process that tried to access the registry hive. Investigate the actions of the user for which his credentials were stored in the registry hive.",
+  "name": "Uncommon sensitive registry hive dump",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon sensitive registry hive dump by unsigned and rare process",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "A sensitive registry hive was extracted, which is used for accessing credentials.",
+      "attackers_goals": "Adversary may attempt to extract credentials from the Windows Registry Credentials can then be used to perform lateral movement and access restricted information.",
+      "investigative_actions": "Investigate the process that tried to access the registry hive. Investigate the actions of the user for which his credentials were stored in the registry hive."
+    },
+    {
+      "name": "Uncommon sensitive registry hive dump by injected process",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "A sensitive registry hive was extracted, which is used for accessing credentials.",
+      "attackers_goals": "Adversary may attempt to extract credentials from the Windows Registry Credentials can then be used to perform lateral movement and access restricted information.",
+      "investigative_actions": "Investigate the process that tried to access the registry hive. Investigate the actions of the user for which his credentials were stored in the registry hive."
+    },
+    {
+      "name": "Uncommon sensitive registry hive dump by reg.exe lolbin process which was executed by rare causality process",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "A sensitive registry hive was extracted, which is used for accessing credentials.",
+      "attackers_goals": "Adversary may attempt to extract credentials from the Windows Registry Credentials can then be used to perform lateral movement and access restricted information.",
+      "investigative_actions": "Investigate the process that tried to access the registry hive. Investigate the actions of the user for which his credentials were stored in the registry hive."
+    },
+    {
+      "name": "Uncommon sensitive registry hive dump by reg.exe lolbin process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "A sensitive registry hive was extracted, which is used for accessing credentials.",
+      "attackers_goals": "Adversary may attempt to extract credentials from the Windows Registry Credentials can then be used to perform lateral movement and access restricted information.",
+      "investigative_actions": "Investigate the process that tried to access the registry hive. Investigate the actions of the user for which his credentials were stored in the registry hive."
+    }
+  ]
+}

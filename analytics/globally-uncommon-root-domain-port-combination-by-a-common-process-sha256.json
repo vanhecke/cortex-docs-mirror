@@ -1,0 +1,77 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol (T1071)"
+  ],
+  "attackers_goals": "Attackers may use various methods to execute code from the context of another process to avoid detection.",
+  "deduplication_period": "1 Day",
+  "description": "A process with a common sha256 connected to an external domain in a specific port that, on a global level, it usually doesn't connect to.",
+  "detection_modules": "",
+  "detector_tags": "Global Anomaly Analytics",
+  "investigative_actions": "Check if the actor process loaded a suspicious DLL before the alert. Check if the actor process was injected before the alert. Check if the process execution and connections are legitimate.",
+  "name": "Globally uncommon root-domain port combination by a common process (sha256)",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Globally uncommon root-domain port combination by a common process (sha256) from an injected thread",
+      "severity": "High",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Process Injection (T1055)"
+      ],
+      "description": "A process with a common sha256 connected to an external domain in a specific port that, on a global level, it usually doesn't connect to.",
+      "attackers_goals": "Attackers may use various methods to execute code from the context of another process to avoid detection.",
+      "investigative_actions": "Check if the actor process loaded a suspicious DLL before the alert. Check if the actor process was injected before the alert. Check if the process execution and connections are legitimate."
+    },
+    {
+      "name": "Globally uncommon and very rare root-domain port combination by a common process (sha256)",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "A process with a common sha256 connected to an external domain in a specific port that, on a global level, it usually doesn't connect to.",
+      "attackers_goals": "Attackers may use various methods to execute code from the context of another process to avoid detection.",
+      "investigative_actions": "Check if the actor process loaded a suspicious DLL before the alert. Check if the actor process was injected before the alert. Check if the process execution and connections are legitimate."
+    },
+    {
+      "name": "Globally uncommon root-domain port combination by a common process (sha256) from a known vendor",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "A process with a common sha256 connected to an external domain in a specific port that, on a global level, it usually doesn't connect to.",
+      "attackers_goals": "Attackers may use various methods to execute code from the context of another process to avoid detection.",
+      "investigative_actions": "Check if the actor process loaded a suspicious DLL before the alert. Check if the actor process was injected before the alert. Check if the process execution and connections are legitimate."
+    },
+    {
+      "name": "Globally uncommon and rare root-domain port combination by a common process (sha256)",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "A process with a common sha256 connected to an external domain in a specific port that, on a global level, it usually doesn't connect to.",
+      "attackers_goals": "Attackers may use various methods to execute code from the context of another process to avoid detection.",
+      "investigative_actions": "Check if the actor process loaded a suspicious DLL before the alert. Check if the actor process was injected before the alert. Check if the process execution and connections are legitimate."
+    }
+  ]
+}

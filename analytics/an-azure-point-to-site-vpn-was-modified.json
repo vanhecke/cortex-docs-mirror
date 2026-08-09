@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)"
+  ],
+  "attackers_goals": "Bypass security controls.",
+  "deduplication_period": "5 Days",
+  "description": "An Azure Point-to-Site VPN was modified or deleted.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Determine how the Azure Point-to-Site VPN was modified or deleted. Verify whether the identity performing this action is authorized to make such changes.",
+  "name": "An Azure Point-to-Site VPN was modified",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

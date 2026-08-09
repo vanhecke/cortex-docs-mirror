@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Account Access Removal (T1531)"
+  ],
+  "attackers_goals": "An attacker might remove an application to impair the environment.",
+  "deduplication_period": "5 Days",
+  "description": "An identity removed a third-party application's access to Google Workspace domain's resources.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Check the Google Workspace Application settings to determine which actions were triggered. Investigate the source of the request and the user associated with it. Review the access control policies to determine if the removal of the application is allowed.",
+  "name": "A third-party application's access to the Google Workspace domain's resources was revoked",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

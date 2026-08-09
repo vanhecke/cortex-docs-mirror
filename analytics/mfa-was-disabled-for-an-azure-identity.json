@@ -1,0 +1,55 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Defense Evasion (TA0005)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Modify Authentication Process (T1556)"
+  ],
+  "attackers_goals": "This allows the attacker to connect using this account without the need for the additional layer of authentication.",
+  "deduplication_period": "1 Hour",
+  "description": "MFA was disabled for the user.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Follow further actions by the initiator. Check the login activity from this account. Follow further actions done by this account.",
+  "name": "MFA was disabled for an Azure identity",
+  "required_data": [
+    "AzureAD Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious MFA was disabled for an Azure identity",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Defense Evasion (TA0005)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Modify Authentication Process (T1556)"
+      ],
+      "description": "MFA was disabled for the user.",
+      "attackers_goals": "This allows the attacker to connect using this account without the need for the additional layer of authentication.",
+      "investigative_actions": "Follow further actions by the initiator. Check the login activity from this account. Follow further actions done by this account."
+    },
+    {
+      "name": "MFA was disabled for an Azure identity regularly by the user",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Defense Evasion (TA0005)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Modify Authentication Process (T1556)"
+      ],
+      "description": "MFA was disabled for the user.",
+      "attackers_goals": "This allows the attacker to connect using this account without the need for the additional layer of authentication.",
+      "investigative_actions": "Follow further actions by the initiator. Check the login activity from this account. Follow further actions done by this account."
+    }
+  ]
+}

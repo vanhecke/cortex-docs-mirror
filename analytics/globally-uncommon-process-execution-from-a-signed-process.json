@@ -1,0 +1,81 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)"
+  ],
+  "attackers_goals": "Unusual processes may be executed for various purposes, including exfiltration, lateral movement, etc.",
+  "deduplication_period": "1 Day",
+  "description": "A signed process has executed a process that, on a global level, it usually doesn't execute.",
+  "detection_modules": "",
+  "detector_tags": "Global Anomaly Analytics",
+  "investigative_actions": "Check if the actor process was injected or loaded a suspicious DLL before the alert. Check if the process execution and connections are legitimate.",
+  "name": "Globally uncommon process execution from a signed process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Globally uncommon process execution from a signed process from a known vendor",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)"
+      ],
+      "description": "A signed process has executed a process that, on a global level, it usually doesn't execute.",
+      "attackers_goals": "Unusual processes may be executed for various purposes, including exfiltration, lateral movement, etc.",
+      "investigative_actions": "Check if the actor process was injected or loaded a suspicious DLL before the alert. Check if the process execution and connections are legitimate."
+    },
+    {
+      "name": "Globally rare process execution from a signed process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)"
+      ],
+      "description": "A signed process has executed a process that, on a global level, it usually doesn't execute.",
+      "attackers_goals": "Unusual processes may be executed for various purposes, including exfiltration, lateral movement, etc.",
+      "investigative_actions": "Check if the actor process was injected or loaded a suspicious DLL before the alert. Check if the process execution and connections are legitimate."
+    },
+    {
+      "name": "Globally uncommon process execution from an injected thread in a signed process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)",
+        "Process Injection (T1055)"
+      ],
+      "description": "An injected thread in a signed process has executed a process that, on a global level, it usually doesn't execute.",
+      "attackers_goals": "Unusual processes may be executed for various purposes, including exfiltration, lateral movement, etc.",
+      "investigative_actions": "Check if the actor process was injected or loaded a suspicious DLL before the alert. Check if the process execution and connections are legitimate."
+    },
+    {
+      "name": "Globally uncommon process execution from a web server process or CGO",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Initial Access (TA0001)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)",
+        "External Remote Services (T1133)",
+        "Server Software Component: Web Shell (T1505.003)"
+      ],
+      "description": "A web server process or CGO has executed a process that, on a global level, it usually doesn't execute.",
+      "attackers_goals": "Unusual processes may be executed for various purposes, including exfiltration, lateral movement, etc.",
+      "investigative_actions": "Check if the actor process was injected or loaded a suspicious DLL before the alert. Check if the process execution and connections are legitimate."
+    }
+  ]
+}

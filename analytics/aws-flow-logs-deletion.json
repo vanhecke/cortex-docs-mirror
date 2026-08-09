@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)"
+  ],
+  "attackers_goals": "Exfiltrate information.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity has deleted one or more Flow Logs records.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check if the Identity intended to delete the Flow Logs record/s. Check what VPC is affected by this.",
+  "name": "AWS Flow Logs deletion",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

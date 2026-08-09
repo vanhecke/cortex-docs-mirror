@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Service Stop (T1489)"
+  ],
+  "attackers_goals": "Interrupt business services.",
+  "deduplication_period": "1 Day",
+  "description": "A GCP Pub/Sub subscription was deleted. An attacker might use this technique to affect business workflows.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check which services were affected due to the Pub/Sub deletion. Check The cloud identity activity prior/after the subscription deletion.",
+  "name": "GCP Pub/Sub Subscription Deletion",
+  "required_data": [
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

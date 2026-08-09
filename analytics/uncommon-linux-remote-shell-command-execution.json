@@ -1,0 +1,295 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: Unix Shell (T1059.004)",
+    "Command and Scripting Interpreter (T1059)",
+    "Remote Services (T1021)"
+  ],
+  "attackers_goals": "An attacker may attempt to execute a malicious shell command on the system.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual process execution of a shell command on Linux from a remote source. This action may indicate possible exploitation or shell command execution via a backdoor.",
+  "detection_modules": "",
+  "detector_tags": "Shell Analytics",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the executed shell command (and possible child processes) for malicious actions.",
+  "name": "Uncommon Linux remote shell command execution",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon Linux remote shell command execution, possibly running LinPEAS",
+      "severity": "High",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Lateral Movement (TA0008)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)",
+        "Command and Scripting Interpreter (T1059)",
+        "Remote Services (T1021)",
+        "Exploitation for Privilege Escalation (T1068)"
+      ],
+      "description": "An unusual process execution of a shell command on Linux from a remote source. This action may indicate possible exploitation or shell command execution via a backdoor.",
+      "attackers_goals": "An attacker may attempt to execute a malicious shell command on the system.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the executed shell command (and possible child processes) for malicious actions."
+    },
+    {
+      "name": "Uncommon Linux remote shell command execution using an exploitation tool",
+      "severity": "High",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)",
+        "Command and Scripting Interpreter (T1059)",
+        "Remote Services (T1021)",
+        "Exploitation of Remote Services (T1210)"
+      ],
+      "description": "An unusual process execution of a shell command on Linux from a remote source. This action may indicate possible exploitation or shell command execution via a backdoor.",
+      "attackers_goals": "An attacker may attempt to execute a malicious shell command on the system.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the executed shell command (and possible child processes) for malicious actions."
+    },
+    {
+      "name": "Uncommon Linux remote shell command execution executing a reverse interactive shell",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)",
+        "Command and Scripting Interpreter (T1059)",
+        "Remote Services (T1021)"
+      ],
+      "description": "An unusual process execution of a shell command on Linux from a remote source. This action may indicate possible exploitation or shell command execution via a backdoor.",
+      "attackers_goals": "An attacker may attempt to execute a malicious shell command on the system.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the executed shell command (and possible child processes) for malicious actions."
+    },
+    {
+      "name": "Uncommon Linux remote shell command execution downloading a shell script",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)",
+        "Command and Scripting Interpreter (T1059)",
+        "Remote Services (T1021)"
+      ],
+      "description": "An unusual process execution of a shell command on Linux from a remote source. This action may indicate possible exploitation or shell command execution via a backdoor.",
+      "attackers_goals": "An attacker may attempt to execute a malicious shell command on the system.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the executed shell command (and possible child processes) for malicious actions."
+    },
+    {
+      "name": "Uncommon Linux remote shell command execution disabling firewall",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Lateral Movement (TA0008)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)",
+        "Command and Scripting Interpreter (T1059)",
+        "Remote Services (T1021)",
+        "Impair Defenses (T1562)"
+      ],
+      "description": "An unusual process execution of a shell command on Linux from a remote source. This action may indicate possible exploitation or shell command execution via a backdoor.",
+      "attackers_goals": "An attacker may attempt to execute a malicious shell command on the system.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the executed shell command (and possible child processes) for malicious actions."
+    },
+    {
+      "name": "Uncommon Linux remote shell command execution taking a screenshot",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Lateral Movement (TA0008)",
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)",
+        "Command and Scripting Interpreter (T1059)",
+        "Remote Services (T1021)",
+        "Screen Capture (T1113)"
+      ],
+      "description": "An unusual process execution of a shell command on Linux from a remote source. This action may indicate possible exploitation or shell command execution via a backdoor.",
+      "attackers_goals": "An attacker may attempt to execute a malicious shell command on the system.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the executed shell command (and possible child processes) for malicious actions."
+    },
+    {
+      "name": "Uncommon Linux remote shell command execution possibly running from an XZ backdoor",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)",
+        "Command and Scripting Interpreter (T1059)",
+        "Remote Services (T1021)"
+      ],
+      "description": "An unusual process execution of a shell command on Linux from a remote source. This action may indicate possible exploitation or shell command execution via a backdoor.",
+      "attackers_goals": "An attacker may attempt to execute a malicious shell command on the system.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the executed shell command (and possible child processes) for malicious actions."
+    },
+    {
+      "name": "Uncommon Linux remote shell command execution running as root",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)",
+        "Command and Scripting Interpreter (T1059)",
+        "Remote Services (T1021)"
+      ],
+      "description": "An unusual process execution of a shell command on Linux from a remote source. This action may indicate possible exploitation or shell command execution via a backdoor.",
+      "attackers_goals": "An attacker may attempt to execute a malicious shell command on the system.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the executed shell command (and possible child processes) for malicious actions."
+    },
+    {
+      "name": "Uncommon Linux remote shell command execution setting a scheduled task",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)",
+        "Command and Scripting Interpreter (T1059)",
+        "Remote Services (T1021)",
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "An unusual process execution of a shell command on Linux from a remote source. This action may indicate possible exploitation or shell command execution via a backdoor.",
+      "attackers_goals": "An attacker may attempt to execute a malicious shell command on the system.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the executed shell command (and possible child processes) for malicious actions."
+    },
+    {
+      "name": "Uncommon Linux remote shell command execution running a process kill command",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)",
+        "Command and Scripting Interpreter (T1059)",
+        "Remote Services (T1021)"
+      ],
+      "description": "An unusual process execution of a shell command on Linux from a remote source. This action may indicate possible exploitation or shell command execution via a backdoor.",
+      "attackers_goals": "An attacker may attempt to execute a malicious shell command on the system.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the executed shell command (and possible child processes) for malicious actions."
+    },
+    {
+      "name": "Uncommon Linux remote shell command execution loading a kernel module",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Lateral Movement (TA0008)",
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)",
+        "Command and Scripting Interpreter (T1059)",
+        "Remote Services (T1021)",
+        "Boot or Logon Autostart Execution: Kernel Modules and Extensions (T1547.006)"
+      ],
+      "description": "An unusual process execution of a shell command on Linux from a remote source. This action may indicate possible exploitation or shell command execution via a backdoor.",
+      "attackers_goals": "An attacker may attempt to execute a malicious shell command on the system.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the executed shell command (and possible child processes) for malicious actions."
+    },
+    {
+      "name": "Uncommon Linux remote shell command execution via non-SSH or SSH on a non-standard port",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Lateral Movement (TA0008)",
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)",
+        "Command and Scripting Interpreter (T1059)",
+        "Remote Services (T1021)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "An unusual process execution of a shell command on Linux from a remote source. This action may indicate possible exploitation or shell command execution via a backdoor.",
+      "attackers_goals": "An attacker may attempt to execute a malicious shell command on the system.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the executed shell command (and possible child processes) for malicious actions."
+    },
+    {
+      "name": "Uncommon Linux remote shell command execution running a network tool",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Lateral Movement (TA0008)",
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)",
+        "Command and Scripting Interpreter (T1059)",
+        "Remote Services (T1021)",
+        "Network Service Discovery (T1046)"
+      ],
+      "description": "An unusual process execution of a shell command on Linux from a remote source. This action may indicate possible exploitation or shell command execution via a backdoor.",
+      "attackers_goals": "An attacker may attempt to execute a malicious shell command on the system.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the executed shell command (and possible child processes) for malicious actions."
+    },
+    {
+      "name": "Uncommon Linux remote shell command execution trying to gather information about the system",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Lateral Movement (TA0008)",
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)",
+        "Command and Scripting Interpreter (T1059)",
+        "Remote Services (T1021)",
+        "System Information Discovery (T1082)",
+        "Software Discovery (T1518)",
+        "Account Discovery (T1087)",
+        "Account Discovery: Local Account (T1087.001)",
+        "System Owner/User Discovery (T1033)",
+        "Network Service Discovery (T1046)",
+        "System Network Configuration Discovery (T1016)",
+        "System Network Connections Discovery (T1049)",
+        "File and Directory Discovery (T1083)",
+        "Peripheral Device Discovery (T1120)",
+        "Software Discovery: Security Software Discovery (T1518.001)"
+      ],
+      "description": "An unusual process execution of a shell command on Linux from a remote source. This action may indicate possible exploitation or shell command execution via a backdoor.",
+      "attackers_goals": "An attacker may attempt to execute a malicious shell command on the system.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the executed shell command (and possible child processes) for malicious actions."
+    },
+    {
+      "name": "Uncommon Linux remote shell command execution, possibly granting file execution permissions",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Lateral Movement (TA0008)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)",
+        "Command and Scripting Interpreter (T1059)",
+        "Remote Services (T1021)",
+        "File and Directory Permissions Modification (T1222)"
+      ],
+      "description": "An unusual process execution of a shell command on Linux from a remote source. This action may indicate possible exploitation or shell command execution via a backdoor.",
+      "attackers_goals": "An attacker may attempt to execute a malicious shell command on the system.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the executed shell command (and possible child processes) for malicious actions."
+    }
+  ]
+}

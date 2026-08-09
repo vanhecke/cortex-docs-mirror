@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)"
+  ],
+  "attackers_goals": "Bypass security measures to gain access to cloud resources.",
+  "deduplication_period": "5 Days",
+  "description": "An Azure Network Security Group was modified or deleted. This could indicate malicious activity or a misconfiguration.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the network security settings of the Azure account to identify any recent changes.",
+  "name": "An Azure Network Security Group was modified",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

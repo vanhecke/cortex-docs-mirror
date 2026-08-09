@@ -1,0 +1,56 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)",
+    "Create Account: Cloud Account (T1136.003)",
+    "Valid Accounts: Cloud Accounts (T1078.004)",
+    "Account Manipulation: Additional Cloud Credentials (T1098.001)"
+  ],
+  "attackers_goals": "Maintain persistence in cloud environments.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity invoked IAM related persistence operations.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check what API calls were executed by the identity. Check what cloud resources were affected. Look for signs that the identity is compromised.",
+  "name": "A cloud identity invoked IAM related persistence operations",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A cloud identity invoked compute instance related persistence operations",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Event Triggered Execution (T1546)",
+        "Implant Internal Image (T1525)",
+        "Account Manipulation: Additional Cloud Credentials (T1098.001)"
+      ],
+      "description": "A cloud identity invoked compute instance related persistence operations.",
+      "attackers_goals": "Maintain persistence in cloud environments.",
+      "investigative_actions": "Check what API calls were executed by the identity. Check what cloud resources were affected. Look for signs that the identity is compromised."
+    },
+    {
+      "name": "A cloud identity invoked compute function related persistence operations",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Event Triggered Execution (T1546)"
+      ],
+      "description": "A cloud identity invoked compute function related persistence operations.",
+      "attackers_goals": "Maintain persistence in cloud environments.",
+      "investigative_actions": "Check what API calls were executed by the identity. Check what cloud resources were affected. Look for signs that the identity is compromised."
+    }
+  ]
+}

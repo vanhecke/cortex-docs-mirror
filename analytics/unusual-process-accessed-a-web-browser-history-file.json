@@ -1,0 +1,42 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)",
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Browser Information Discovery (T1217)",
+    "Data from Local System (T1005)",
+    "Automated Collection (T1119)"
+  ],
+  "attackers_goals": "Obtain access to the user's browsing history and steal their contents.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual process has accessed a web browser history file.",
+  "detection_modules": "",
+  "detector_tags": "Sensitive Information Stealing Analytics",
+  "investigative_actions": "Determine whether it is legitimate for the process to access web browser history. Analyze the process/application that accessed the file. Check for any other suspicious actions that were performed by the process. Look for unusual access of resources using credentials that may be stored in the above file.",
+  "name": "Unusual process accessed a web browser history file",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual process accessed a web browser history file on Linux",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Browser Information Discovery (T1217)",
+        "Data from Local System (T1005)",
+        "Automated Collection (T1119)"
+      ],
+      "description": "An unusual process has accessed a web browser history file.",
+      "attackers_goals": "Obtain access to the user's browsing history and steal their contents.",
+      "investigative_actions": "Determine whether it is legitimate for the process to access web browser history. Analyze the process/application that accessed the file. Check for any other suspicious actions that were performed by the process. Look for unusual access of resources using credentials that may be stored in the above file."
+    }
+  ]
+}

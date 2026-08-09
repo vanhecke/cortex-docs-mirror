@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Data Destruction (T1485)"
+  ],
+  "attackers_goals": "Destruction of data.",
+  "deduplication_period": "1 Day",
+  "description": "A previously provisioned DB cluster (RDS) was deleted. When a DB cluster is being deleted, all automated backups for that DB cluster are deleted and can't be recovered.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Disaster Recovery Risks, Data Detection & Response",
+  "investigative_actions": "Check which cluster was deleted. Check if there are any manual backups for that cluster (as they are not affected by this action).",
+  "name": "AWS RDS cluster deletion",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

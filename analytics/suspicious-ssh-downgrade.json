@@ -1,0 +1,55 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Remote Services (T1021)",
+    "Impair Defenses: Downgrade Attack (T1562.010)"
+  ],
+  "attackers_goals": "Attackers may attempt to move laterally over the network by exploiting problems in a lower version of SSH.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint asked for an ssh downgrade, ssh downgrade may enable attackers to perform attacks such as data decryption, man in the middle, session hijack, replay attack and more.",
+  "detection_modules": "",
+  "detector_tags": "NDR Lateral Movement Analytics",
+  "investigative_actions": "Audit the authentication attempts in the SSH server from the alerted host. If the source host authenticated to the SSH server, it may indicate that the attacker managed to connect to the remote host maliciously.",
+  "name": "Suspicious SSH Downgrade",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A Host Performed an SSH Downgrade For The First Time In The Last 30 Days",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Remote Services (T1021)",
+        "Impair Defenses: Downgrade Attack (T1562.010)"
+      ],
+      "description": "The endpoint asked for an ssh downgrade, ssh downgrade may enable attackers to perform attacks such as data decryption, man in the middle, session hijack, replay attack and more. With a lower version than the source host used in the past.",
+      "attackers_goals": "Attackers may attempt to move laterally over the network by exploiting problems in a lower version of SSH.",
+      "investigative_actions": "Audit the authentication attempts in the SSH server from the alerted host. If the source host authenticated to the SSH server, it may indicate that the attacker managed to connect to the remote host maliciously."
+    },
+    {
+      "name": "A Target Server Performed an SSH Downgrade For The First Time In The Last 30 Days",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Remote Services (T1021)",
+        "Impair Defenses: Downgrade Attack (T1562.010)"
+      ],
+      "description": "The endpoint asked for an ssh downgrade, ssh downgrade may enable attackers to perform attacks such as data decryption, man in the middle, session hijack, replay attack and more. With a lower version than the remote host used in the past.",
+      "attackers_goals": "Attackers may attempt to move laterally over the network by exploiting problems in a lower version of SSH.",
+      "investigative_actions": "Audit the authentication attempts in the SSH server from the alerted host. If the source host authenticated to the SSH server, it may indicate that the attacker managed to connect to the remote host maliciously."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Remote Services: Direct Cloud VM Connections (T1021.008)",
+    "Cloud Administration Command (T1651)"
+  ],
+  "attackers_goals": "Gaining unauthorized access, executing unauthorized commands, or compromising sensitive information within the target system.",
+  "deduplication_period": "3 Days",
+  "description": "An identity executed an AWS SSM Document.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Lateral Movement Analytics",
+  "investigative_actions": "Examine the code in the SSM document, and the target objects. Validate the permissions and roles associated with the user initiating the SSM session to ensure they align with the expected level of access. Follow further actions taken by the identity or on the relevant targets.",
+  "name": "AWS SSM send command attempt",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "AWS SSM SendCommand targeting multiple instances",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Direct Cloud VM Connections (T1021.008)",
+        "Cloud Administration Command (T1651)"
+      ],
+      "description": "An identity executed an AWS SSM Document.",
+      "attackers_goals": "Gaining unauthorized access, executing unauthorized commands, or compromising sensitive information within the target system.",
+      "investigative_actions": "Examine the code in the SSM document, and the target objects. Validate the permissions and roles associated with the user initiating the SSM session to ensure they align with the expected level of access. Follow further actions taken by the identity or on the relevant targets."
+    },
+    {
+      "name": "Unusual AWS SSM send command",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Direct Cloud VM Connections (T1021.008)",
+        "Cloud Administration Command (T1651)"
+      ],
+      "description": "An identity executed an AWS SSM Document.",
+      "attackers_goals": "Gaining unauthorized access, executing unauthorized commands, or compromising sensitive information within the target system.",
+      "investigative_actions": "Examine the code in the SSM document, and the target objects. Validate the permissions and roles associated with the user initiating the SSM session to ensure they align with the expected level of access. Follow further actions taken by the identity or on the relevant targets."
+    }
+  ]
+}

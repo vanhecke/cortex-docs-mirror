@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Screen Capture (T1113)",
+    "Data Staged: Local Data Staging (T1074.001)"
+  ],
+  "attackers_goals": "Collect data and stage it on an endpoint in the organization.",
+  "deduplication_period": "1 Day",
+  "description": "A user took numerous screenshots. A valuable organization's information may have been collected in this way.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check whether this activity fits the user profile. Check for any other suspicious activity related to the host and the user involved in the alert. Check if there was a suspicious file upload following the massive screenshot activity. Check whether other users in the organization used the same process for file activity.",
+  "name": "A user took numerous screenshots",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": []
+}

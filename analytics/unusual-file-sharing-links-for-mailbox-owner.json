@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Phishing: Spearphishing Link (T1566.002)",
+    "User Execution: Malicious File (T1204.002)"
+  ],
+  "attackers_goals": "Deliver malware or exfiltrate data via auto-download file-sharing links.",
+  "deduplication_period": "1 Hour 30 Minutes",
+  "description": "The email contains unusual file-sharing link(s) for mailbox owner.",
+  "detection_modules": "Email",
+  "detector_tags": "Malicious URLs",
+  "investigative_actions": "Analyze the linked file(s) to determine if they pose any security risk. Check the sender's communication history within the organization. Analyze the file reputation using sandbox or threat intelligence sources. Verify whether similar links were sent to other users.",
+  "name": "Unusual file-sharing links for mailbox owner",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual file-sharing links for organization",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Phishing: Spearphishing Link (T1566.002)",
+        "User Execution: Malicious File (T1204.002)"
+      ],
+      "description": "The email contains unusual file-sharing link(s) for organization.",
+      "attackers_goals": "Deliver malware or exfiltrate data via auto-download file-sharing links.",
+      "investigative_actions": "Analyze the linked file(s) to determine if they pose any security risk. Check the sender's communication history within the organization. Analyze the file reputation using sandbox or threat intelligence sources. Verify whether similar links were sent to other users."
+    }
+  ]
+}

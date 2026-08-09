@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)"
+  ],
+  "attackers_goals": "To impair defense, this may assist data exfiltration.",
+  "deduplication_period": "1 Day",
+  "description": "Web ACL defines a collection of rules to use to inspect and control web requests. A Web ACL has been deleted.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Verify if the identity intended to delete the Web ACL. Check what resources are affected by the Web ACL deletion.",
+  "name": "AWS web ACL deletion",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Successful AWS web ACL deletion by a non-admin identity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses (T1562)"
+      ],
+      "description": "Web ACL defines a collection of rules to use to inspect and control web requests. A Web ACL has been deleted.",
+      "attackers_goals": "To impair defense, this may assist data exfiltration.",
+      "investigative_actions": "Verify if the identity intended to delete the Web ACL. Check what resources are affected by the Web ACL deletion."
+    }
+  ]
+}

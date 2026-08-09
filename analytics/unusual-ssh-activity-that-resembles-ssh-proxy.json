@@ -1,0 +1,63 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Proxy: Internal Proxy (T1090.001)"
+  ],
+  "attackers_goals": "Attackers aim to establish a covert command and control channel or relay communications through a compromised SSH connection.",
+  "deduplication_period": "1 Day",
+  "description": "A host initiated and received an unusual SSH connection, which is consistent with being an SSH proxy. This behavior may indicate an attempt to establish covert command and control communication or to exfiltrate data.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Review the SSH connections to identify any unusual proxy activity or traffic patterns. Investigate the user accounts involved in the SSH connections to determine if credentials were compromised. Additionally, examine logs for any unexpected data transfers or commands that may indicate malicious intent.",
+  "name": "Unusual SSH activity that resembles SSH proxy",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "High Volume Unusual SSH activity that resembles SSH proxy",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Proxy: Internal Proxy (T1090.001)"
+      ],
+      "description": "A host initiated and received an unusual SSH connection, which is consistent with being an SSH proxy. This behavior may indicate an attempt to establish covert command and control communication or to exfiltrate data.",
+      "attackers_goals": "Attackers aim to establish a covert command and control channel or relay communications through a compromised SSH connection.",
+      "investigative_actions": "Review the SSH connections to identify any unusual proxy activity or traffic patterns. Investigate the user accounts involved in the SSH connections to determine if credentials were compromised. Additionally, examine logs for any unexpected data transfers or commands that may indicate malicious intent."
+    },
+    {
+      "name": "Suspicious SSH activity that resembles SSH proxy",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Proxy: Internal Proxy (T1090.001)"
+      ],
+      "description": "A host initiated and received an unusual SSH connection, which is consistent with being an SSH proxy. This behavior may indicate an attempt to establish covert command and control communication or to exfiltrate data.",
+      "attackers_goals": "Attackers aim to establish a covert command and control channel or relay communications through a compromised SSH connection.",
+      "investigative_actions": "Review the SSH connections to identify any unusual proxy activity or traffic patterns. Investigate the user accounts involved in the SSH connections to determine if credentials were compromised. Additionally, examine logs for any unexpected data transfers or commands that may indicate malicious intent."
+    },
+    {
+      "name": "Unusual SSH activity that resembles SSH proxy detected",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Proxy: Internal Proxy (T1090.001)"
+      ],
+      "description": "A host initiated and received an unusual SSH connection, which is consistent with being an SSH proxy. This behavior may indicate an attempt to establish covert command and control communication or to exfiltrate data.",
+      "attackers_goals": "Attackers aim to establish a covert command and control channel or relay communications through a compromised SSH connection.",
+      "investigative_actions": "Review the SSH connections to identify any unusual proxy activity or traffic patterns. Investigate the user accounts involved in the SSH connections to determine if credentials were compromised. Additionally, examine logs for any unexpected data transfers or commands that may indicate malicious intent."
+    }
+  ]
+}

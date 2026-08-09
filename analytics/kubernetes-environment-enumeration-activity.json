@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Container and Resource Discovery (T1613)"
+  ],
+  "attackers_goals": "Map the Kubernetes cluster environment and detect potential resources to abuse.",
+  "deduplication_period": "5 Days",
+  "description": "Multiple resources within a Kubernetes cluster were enumerated. This may indicate an adversary attempting to map the Kubernetes environment and discover resources that may assist to perform additional attacks within the environment.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT",
+  "investigative_actions": "Identify which Kubernetes resources were discovered. Investigate whether affected resources were used to extract sensitive information.",
+  "name": "Kubernetes environment enumeration activity",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Kubernetes environment enumeration activity from a pod",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Container and Resource Discovery (T1613)"
+      ],
+      "description": "Multiple resources within a Kubernetes cluster were enumerated. This may indicate an adversary attempting to map the Kubernetes environment and discover resources that may assist to perform additional attacks within the environment.",
+      "attackers_goals": "Map the Kubernetes cluster environment and detect potential resources to abuse.",
+      "investigative_actions": "Identify which Kubernetes resources were discovered. Investigate whether affected resources were used to extract sensitive information."
+    },
+    {
+      "name": "Suspicious Kubernetes environment enumeration activity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Container and Resource Discovery (T1613)"
+      ],
+      "description": "Multiple resources within a Kubernetes cluster were enumerated. This may indicate an adversary attempting to map the Kubernetes environment and discover resources that may assist to perform additional attacks within the environment.",
+      "attackers_goals": "Map the Kubernetes cluster environment and detect potential resources to abuse.",
+      "investigative_actions": "Identify which Kubernetes resources were discovered. Investigate whether affected resources were used to extract sensitive information."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Create Account (T1136)"
+  ],
+  "attackers_goals": "Persistence using a valid account.",
+  "deduplication_period": "1 Day",
+  "description": "A user was observed creating a machine account for the first time.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Verify the activity of the user who created the account. Follow actions performed by the new machine account.",
+  "name": "Rare machine account creation",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

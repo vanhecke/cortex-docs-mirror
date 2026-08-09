@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Steal or Forge Authentication Certificates (T1649)"
+  ],
+  "attackers_goals": "An attacker may be attempting to exploit AD CS misconfigurations and obtain forged authentication certificates for privilege escalation or persistence.",
+  "deduplication_period": "1 Day",
+  "description": "A remote host wrote to a certificate log file via RPC over SMB, which may indicate the use of an AD CS attack tool like Certipy. This behavior is commonly associated with certificate-based authentication attacks.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Active Directory Certificate Services Analytics",
+  "investigative_actions": "Determine whether this was a legitimate certificate request or an unauthorized write operation. Review logs for preceding and subsequent authentication attempts. Investigate the remote host for any suspicious activity. Identify any subsequent Kerberos ticket usage, such as forging or relaying attacks.",
+  "name": "Unusual CertLog Remote File Write",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious CertLog Remote File Write",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal or Forge Authentication Certificates (T1649)"
+      ],
+      "description": "A remote host wrote to a certificate log file via RPC over SMB, which may indicate the use of an AD CS attack tool like Certipy. This behavior is commonly associated with certificate-based authentication attacks.",
+      "attackers_goals": "An attacker may be attempting to exploit AD CS misconfigurations and obtain forged authentication certificates for privilege escalation or persistence.",
+      "investigative_actions": "Determine whether this was a legitimate certificate request or an unauthorized write operation. Review logs for preceding and subsequent authentication attempts. Investigate the remote host for any suspicious activity. Identify any subsequent Kerberos ticket usage, such as forging or relaying attacks."
+    }
+  ]
+}

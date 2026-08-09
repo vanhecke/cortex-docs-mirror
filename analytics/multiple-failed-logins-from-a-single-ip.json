@@ -1,0 +1,54 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Trusted Relationship (T1199)",
+    "Valid Accounts: Cloud Accounts (T1078.004)"
+  ],
+  "attackers_goals": "Gain initial access to the cloud console.",
+  "deduplication_period": "5 Days",
+  "description": "Multiple failed logins were observed in a short period of time from a single external IP. The IP is not a known identity provider.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check if the IP is a known IP. Check if a successful login from the same IP occurred after the failed login attempts.",
+  "name": "Multiple failed logins from a single IP",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Multiple failed logins from an unknown IP",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Trusted Relationship (T1199)",
+        "Valid Accounts: Cloud Accounts (T1078.004)"
+      ],
+      "description": "Multiple failed logins were observed in a short period of time from a single external IP. The IP is not a known identity provider. The IP is not a known IP in the organization. This could indicate on an active brute force attempt.",
+      "attackers_goals": "Gain initial access to the cloud console.",
+      "investigative_actions": "Check if the IP is a known IP. Check if a successful login from the same IP occurred after the failed login attempts."
+    },
+    {
+      "name": "Multiple failed logins from a single IP by a compromised AWS access key",
+      "severity": "High",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Trusted Relationship (T1199)",
+        "Valid Accounts: Cloud Accounts (T1078.004)"
+      ],
+      "description": "Multiple failed logins were observed in a short period of time from a single external IP. The IP is not a known identity provider.",
+      "attackers_goals": "Gain initial access to the cloud console.",
+      "investigative_actions": "Check if the IP is a known IP. Check if a successful login from the same IP occurred after the failed login attempts."
+    }
+  ]
+}

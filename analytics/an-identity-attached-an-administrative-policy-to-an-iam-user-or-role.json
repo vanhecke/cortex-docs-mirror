@@ -1,0 +1,70 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Cloud Accounts (T1078.004)",
+    "Account Manipulation: Additional Cloud Roles (T1098.003)"
+  ],
+  "attackers_goals": "Escalate privileges in cloud environments.",
+  "deduplication_period": "5 Days",
+  "description": "An identity attached an administrative policy to an IAM user or role.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Confirm whether this activity was intentional. Check for other API calls that were executed by the identity. Look for any suspicious behavior from the IAM user or role to whom the administrative policy was attached.",
+  "name": "An identity attached an administrative policy to an IAM user or role",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "An identity attached an administrative policy to itself",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Cloud Accounts (T1078.004)",
+        "Account Manipulation: Additional Cloud Roles (T1098.003)"
+      ],
+      "description": "An identity attached an administrative policy to an IAM user or role.",
+      "attackers_goals": "Escalate privileges in cloud environments.",
+      "investigative_actions": "Confirm whether this activity was intentional. Check for other API calls that were executed by the identity. Look for any suspicious behavior from the IAM user or role to whom the administrative policy was attached."
+    },
+    {
+      "name": "An identity failed to attach an administrative policy to an IAM user or role",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Cloud Accounts (T1078.004)",
+        "Account Manipulation: Additional Cloud Roles (T1098.003)"
+      ],
+      "description": "An identity attached an administrative policy to an IAM user or role.",
+      "attackers_goals": "Escalate privileges in cloud environments.",
+      "investigative_actions": "Confirm whether this activity was intentional. Check for other API calls that were executed by the identity. Look for any suspicious behavior from the IAM user or role to whom the administrative policy was attached."
+    },
+    {
+      "name": "A suspicious identity attached an administrative policy to an IAM user/role",
+      "severity": "Low",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Cloud Accounts (T1078.004)",
+        "Account Manipulation: Additional Cloud Roles (T1098.003)"
+      ],
+      "description": "An identity attached an administrative policy to an IAM user or role.",
+      "attackers_goals": "Escalate privileges in cloud environments.",
+      "investigative_actions": "Confirm whether this activity was intentional. Check for other API calls that were executed by the identity. Look for any suspicious behavior from the IAM user or role to whom the administrative policy was attached."
+    }
+  ]
+}

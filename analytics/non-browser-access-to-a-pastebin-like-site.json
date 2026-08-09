@@ -1,0 +1,75 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Web Service (T1102)"
+  ],
+  "attackers_goals": "Data exfiltration or attack tool staging.",
+  "deduplication_period": "1 Day",
+  "description": "Non-browser access to a pastebin-like site.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Examine the host to verify that the host was not part of infiltration or data exfiltration from the organization. Verify that the host doesn't have sensitive company data that can be easily exfiltrated.",
+  "name": "Non-browser access to a pastebin-like site",
+  "required_data": [
+    "Palo Alto Networks Url Logs"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Non-browser or an uncommon browser access to a pastebin-like site",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Web Service (T1102)"
+      ],
+      "description": "Non-browser or an uncommon browser access to a pastebin-like site.",
+      "attackers_goals": "Data exfiltration or attack tool staging.",
+      "investigative_actions": "Examine the host to verify that the host was not part of infiltration or data exfiltration from the organization. Verify that the host doesn't have sensitive company data that can be easily exfiltrated. Check if the process is indeed an uncommon browser or not."
+    },
+    {
+      "name": "Non-browser access to google sheets API",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Web Service (T1102)"
+      ],
+      "description": "Non-browser access to google sheets API.",
+      "attackers_goals": "Data exfiltration or attack tool staging.",
+      "investigative_actions": "Examine the host to verify that the host was not part of infiltration or data exfiltration from the organization. Verify that the host doesn't have sensitive company data that can be easily exfiltrated."
+    },
+    {
+      "name": "Non-browser failed access to a pastebin-like site",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Web Service (T1102)"
+      ],
+      "description": "Non-browser failed access to a pastebin-like site.",
+      "attackers_goals": "Data exfiltration or attack tool staging.",
+      "investigative_actions": "Examine the host to verify that the host was not part of infiltration or data exfiltration from the organization. Verify that the host doesn't have sensitive company data that can be easily exfiltrated."
+    },
+    {
+      "name": "Rare non-browser access to a pastebin-like site",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Web Service (T1102)"
+      ],
+      "description": "Rare non-browser access to a pastebin-like site.",
+      "attackers_goals": "Data exfiltration or attack tool staging.",
+      "investigative_actions": "Examine the host to verify that the host was not part of infiltration or data exfiltration from the organization. Verify that the host doesn't have sensitive company data that can be easily exfiltrated."
+    }
+  ]
+}

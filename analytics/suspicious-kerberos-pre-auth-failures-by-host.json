@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Brute Force: Password Spraying (T1110.003)"
+  ],
+  "attackers_goals": "The attacker is attempting to gain an initial foothold in the domain using a list of valid users and a guessed password.",
+  "deduplication_period": "1 Day",
+  "description": "An endpoint failed unusual number of Kerberos pre-authentications (TGT requests) which may indicate a password-spraying attack.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Identify the source host from which the failed logons originated, by making sure the IP is not a shared address. Review source host activity to detect any additional suspicious or lateral movement behavior. Correlate successful logons from the source host to identify potential account compromises following the failed attempts.",
+  "name": "Suspicious Kerberos Pre-Auth Failures by Host",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "10 Minutes",
+  "variations": []
+}

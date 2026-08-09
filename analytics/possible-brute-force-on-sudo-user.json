@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Brute Force: Password Guessing (T1110.001)"
+  ],
+  "attackers_goals": "The attacker may gain full privileges to the host.",
+  "deduplication_period": "1 Day",
+  "description": "A user executed an unusual amount of sudo commands in a short time period. This may indicate an attempt to guess the sudo password.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify which user ran these commands and if it is a legitimate behavior on this host.",
+  "name": "Possible brute force on sudo user",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Possible brute force on sudo user",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Brute Force: Password Guessing (T1110.001)"
+      ],
+      "description": "A user executed an unusual amount of sudo commands in a short time period. This may indicate an attempt to guess the sudo password.",
+      "attackers_goals": "The attacker may gain full privileges to the host.",
+      "investigative_actions": "Verify which user ran these commands and if it is a legitimate behavior on this host."
+    }
+  ]
+}

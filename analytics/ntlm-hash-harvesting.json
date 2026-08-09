@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "OS Credential Dumping (T1003)"
+  ],
+  "attackers_goals": "The attacker may attempt to extract NTLM hashes for credential access.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual number of users has sent NTLM to a target in the last hour. This may be indicative of poisoning and NTLM hash harvesting.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check that the destination is not a server. Verify that the destination is not external to the organization.",
+  "name": "NTLM Hash Harvesting",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "1 Hour",
+  "variations": []
+}

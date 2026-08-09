@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Unsecured Credentials: Shell History (T1552.003)"
+  ],
+  "attackers_goals": "Adversaries may search the bash history file to search for insecurely stored credentials.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers may access the bash history file to glean cleartext usernames and passwords that were entered on the command line.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the process activities and use of the extracted credentials.",
+  "name": "Reading bash command history file",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

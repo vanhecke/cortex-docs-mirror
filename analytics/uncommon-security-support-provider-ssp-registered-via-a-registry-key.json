@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Boot or Logon Autostart Execution: Security Support Provider (T1547.005)"
+  ],
+  "attackers_goals": "Gain clear text passwords and persistency in the network.",
+  "deduplication_period": "1 Day",
+  "description": "Security Support Provider (SSP) exposes a number of callbacks to be invoked during certain authentication and authorization events. An attacker may register SSP to try and gain access to clear text passwords.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Audit the specific key values to verify that the additional values are trusted.",
+  "name": "Uncommon Security Support Provider (SSP) registered via a registry key",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

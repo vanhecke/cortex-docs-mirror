@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "System Binary Proxy Execution: Rundll32 (T1218.011)"
+  ],
+  "attackers_goals": "Evading detections by running code from a signed Microsoft executable.",
+  "deduplication_period": "1 Day",
+  "description": "Rundll32.exe executes a rare unsigned module, which can indicate an attacker's malicious execution.",
+  "detection_modules": "",
+  "detector_tags": "LOLBIN Execution Analytics",
+  "investigative_actions": "Check whether the loaded module with the corresponding hash is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Rundll32.exe executes a rare unsigned module",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Rundll32.exe executes a rare unsigned module with very high entropy",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "System Binary Proxy Execution: Rundll32 (T1218.011)"
+      ],
+      "description": "Rundll32.exe executes a rare unsigned module, which can indicate an attacker's malicious execution. The module executed by Rundll32 has very high entropy.",
+      "attackers_goals": "Evading detections by running code from a signed Microsoft executable.",
+      "investigative_actions": "Check whether the loaded module with the corresponding hash is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Rundll32.exe executes a rare unsigned module with suspicious characteristics",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "System Binary Proxy Execution: Rundll32 (T1218.011)"
+      ],
+      "description": "Rundll32.exe executes a rare unsigned module, which can indicate an attacker's malicious execution.",
+      "attackers_goals": "Evading detections by running code from a signed Microsoft executable.",
+      "investigative_actions": "Check whether the loaded module with the corresponding hash is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

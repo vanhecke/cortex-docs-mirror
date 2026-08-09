@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Masquerading (T1036)",
+    "Masquerading: Rename Legitimate Utilities (T1036.003)"
+  ],
+  "attackers_goals": "Detection avoidance via file rename.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker may be trying to avoid detection of lolbin's execution using a renamed lolbin.",
+  "detection_modules": "",
+  "detector_tags": "EDR Windows Disguised Processes",
+  "investigative_actions": "Check the lolbin's origin or whether it comes with any packages the user has used.",
+  "name": "Execution of renamed lolbin",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Execution of significantly renamed lolbin",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading (T1036)",
+        "Masquerading: Rename Legitimate Utilities (T1036.003)"
+      ],
+      "description": "An attacker may be trying to avoid detection of lolbin's execution using a renamed lolbin.",
+      "attackers_goals": "Detection avoidance via file rename.",
+      "investigative_actions": "Check the lolbin's origin or whether it comes with any packages the user has used."
+    }
+  ]
+}

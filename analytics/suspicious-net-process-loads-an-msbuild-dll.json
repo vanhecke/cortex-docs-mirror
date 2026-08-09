@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Trusted Developer Utilities Proxy Execution: MSBuild (T1127.001)"
+  ],
+  "attackers_goals": "Gain code execution on the host and evade security controls.",
+  "deduplication_period": "1 Day",
+  "description": "A suspicious process in the Microsoft .NET directory loaded the Microsoft Build Framework DLL. This may occur if an attacker masquerades a process like MSBuild (PowerLessShell).",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Suspicious .NET process loads an MSBuild DLL",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

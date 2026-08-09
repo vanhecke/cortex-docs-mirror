@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Brute Force (T1110)",
+    "Brute Force: Password Spraying (T1110.003)"
+  ],
+  "attackers_goals": "An attacker may be attempting to gain unauthorized access to user accounts.",
+  "deduplication_period": "1 Day",
+  "description": "A high amount of user accounts were locked out from a single source host in a short time period. This may be the result of a brute-force or password spray attack.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the associated authentication attempts and login failures (e.g. 4740, 4625, 4776 events). Check if any programs were cached with old credentials, resulting in account lockouts. Find the computer responsible for the lockouts and verify if it exists on the domain. Monitor services that may be running with a user's credentials.",
+  "name": "Multiple user accounts failed login due to account lockouts",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Excessive user account login failure due to lockout from a suspicious source",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Brute Force (T1110)",
+        "Brute Force: Password Spraying (T1110.003)"
+      ],
+      "description": "A high amount of user accounts were locked out from a single source host in a short time period. This may be the result of a brute-force or password spray attack.",
+      "attackers_goals": "An attacker may be attempting to gain unauthorized access to user accounts.",
+      "investigative_actions": "Investigate the associated authentication attempts and login failures (e.g. 4740, 4625, 4776 events). Check if any programs were cached with old credentials, resulting in account lockouts. Find the computer responsible for the lockouts and verify if it exists on the domain. Monitor services that may be running with a user's credentials."
+    }
+  ]
+}

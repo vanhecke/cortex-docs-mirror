@@ -1,0 +1,50 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Protocol Tunneling (T1572)"
+  ],
+  "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+  "deduplication_period": "1 Day",
+  "description": "Unusual SSH activity was detected that involved a higher than usual volume of data transfer and an abnormally long session.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Review the client IP/Agent for using known intelligence tools. Investigate the user accounts involved in the SSH connections to determine if credentials were compromised, Additionally examine logs for any unexpected data transfers or commands that may indicate malicious intent.",
+  "name": "Unusual SSH Activity",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "2 Hours",
+  "variations": [
+    {
+      "name": "Unusual, long SSH activity with tunnel characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Protocol Tunneling (T1572)"
+      ],
+      "description": "Unusual SSH activity was detected that involved a high volume of data transfer and abnormal session duration.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the client IP/Agent for using known intelligence tools. Investigate the user accounts involved in the SSH connections to determine if credentials were compromised, Additionally examine logs for any unexpected data transfers or commands that may indicate malicious intent."
+    },
+    {
+      "name": "Unusual SSH activity with tunnel characteristics to external destination",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Protocol Tunneling (T1572)"
+      ],
+      "description": "Unusual SSH activity was detected that involved a higher than usual volume of data transfer and an abnormally long session.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the client IP/Agent for using known intelligence tools. Investigate the user accounts involved in the SSH connections to determine if credentials were compromised, Additionally examine logs for any unexpected data transfers or commands that may indicate malicious intent."
+    }
+  ]
+}

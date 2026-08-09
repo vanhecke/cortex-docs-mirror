@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "Exfiltrate the VM disk image to access sensitive data stored on the disk.",
+  "deduplication_period": "1 Day",
+  "description": "A SAS URL for an Azure VM snapshot was generated. The operation was performed within a production subscription. SAS URLs allow others to download or export the snapshot.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Data Detection & Response, Cloud Data Asset Exfiltration",
+  "investigative_actions": "Verify if the identity is authorized to generate SAS URLs for VM snapshots. Check if the snapshot export aligns with scheduled maintenance or backup procedures. Review further actions performed by the identity to see if the snapshot was downloaded or accessed.",
+  "name": "An Azure VM snapshot SAS URL was generated for export from a production subscription",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

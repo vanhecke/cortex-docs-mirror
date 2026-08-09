@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Rootkit (T1014)"
+  ],
+  "attackers_goals": "Install rootkit to gain kernel-level to gain full control over the machine or disable security products.",
+  "deduplication_period": "1 Day",
+  "description": "An uncommon driver loaded which may be an attempt to kill the EDR or install rootkit.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate which process created the driver or how it has been loaded.",
+  "name": "Uncommon driver loaded",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon driver loaded by a Web server process",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Rootkit (T1014)"
+      ],
+      "description": "An uncommon driver loaded which may be an attempt to kill the EDR or install rootkit by a Web server process.",
+      "attackers_goals": "Install rootkit to gain kernel-level to gain full control over the machine or disable security products.",
+      "investigative_actions": "Investigate which process created the driver or how it has been loaded."
+    },
+    {
+      "name": "Globally rare and unsigned driver loaded",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Rootkit (T1014)"
+      ],
+      "description": "Globally rare and unsigned driver loaded.",
+      "attackers_goals": "Install rootkit to gain kernel-level to gain full control over the machine or disable security products.",
+      "investigative_actions": "Investigate which process created the driver or how it has been loaded."
+    },
+    {
+      "name": "Uncommon driver with a globally rare vendor loaded as a service",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Rootkit (T1014)"
+      ],
+      "description": "An uncommon driver loaded which may be an attempt to kill the EDR or install rootkit.",
+      "attackers_goals": "Install rootkit to gain kernel-level to gain full control over the machine or disable security products.",
+      "investigative_actions": "Investigate which process created the driver or how it has been loaded."
+    }
+  ]
+}

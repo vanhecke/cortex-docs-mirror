@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+  ],
+  "attackers_goals": "Evade detection by automatically deleting audit logs.",
+  "deduplication_period": "5 Days",
+  "description": "A retention policy was set on a S3 bucket used by a CloudTrail Trail, using a S3 Lifecycle Rule.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Review the new S3 bucket lifecycle policy. Check The cloud identity activity prior/after to the lifecycle policy modification.",
+  "name": "AWS S3 bucket data retention policy change through S3 Lifecycle rule",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

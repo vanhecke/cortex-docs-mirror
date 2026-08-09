@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Modify Cloud Compute Infrastructure (T1578)",
+    "Data from Cloud Storage (T1530)"
+  ],
+  "attackers_goals": "Exfiltrate sensitive data stored on snapshots.",
+  "deduplication_period": "5 Days",
+  "description": "An attempt was made to create an EBS volume.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Review recent activity related to the identity, the created volume and the cloud snapshot.",
+  "name": "Cloud compute volume creation attempt",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Cloud compute volume creation attempt using Cloud Formation or Terraform",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Modify Cloud Compute Infrastructure (T1578)",
+        "Data from Cloud Storage (T1530)"
+      ],
+      "description": "An attempt was made to create an EBS volume.",
+      "attackers_goals": "Exfiltrate sensitive data stored on snapshots.",
+      "investigative_actions": "Review recent activity related to the identity, the created volume and the cloud snapshot."
+    }
+  ]
+}

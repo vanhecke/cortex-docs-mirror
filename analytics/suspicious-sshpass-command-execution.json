@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Brute Force: Credential Stuffing (T1110.004)"
+  ],
+  "attackers_goals": "Attackers may try to check and reuse credentials on the host.",
+  "deduplication_period": "1 Day",
+  "description": "The sshpass command was executed, This could be an attempt to check for credential stuffing.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Suspicious sshpass command execution",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious sshpass command execution in a Kubernetes pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Brute Force: Credential Stuffing (T1110.004)"
+      ],
+      "description": "The sshpass command was executed, This could be an attempt to check for credential stuffing.",
+      "attackers_goals": "Attackers may try to check and reuse credentials on the host.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)",
+    "Native API (T1106)"
+  ],
+  "attackers_goals": "Perform multiple activities to achieve the attacker's goals in the target environment.",
+  "deduplication_period": "1 Day",
+  "description": "Multiple alerts likely to be associated with an incident were identified under the same causality.",
+  "detection_modules": "",
+  "detector_tags": "AI Insight Fusion Analytics",
+  "investigative_actions": "Investigate the causality of these alerts. Track down other suspicious activity under this causality.",
+  "name": "AI-determined combination of risky alerts under the same causality",
+  "required_data": [
+    "Palo Alto Networks Platform Alerts",
+    "Third-Party Alerts"
+  ],
+  "severity": "Informational",
+  "test_period": "12 Hours",
+  "variations": []
+}

@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Container and Resource Discovery (T1613)"
+  ],
+  "attackers_goals": "Usage of the Kubernetes API server to disclose information about the Kubernetes environment.",
+  "deduplication_period": "7 Days",
+  "description": "The Kubernetes API server was inquired about the Kubernetes version by a process from within a pod.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT",
+  "investigative_actions": "Check if there is an active attack against the Kubernetes cluster.",
+  "name": "Kubernetes version disclosure",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

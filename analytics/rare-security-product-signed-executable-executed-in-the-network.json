@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Exploitation for Defense Evasion (T1211)"
+  ],
+  "attackers_goals": "Adversaries may exploit the application vulnerability to bypass security features.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers may attempt to install a security product with a known vulnerability to bypass security features.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the security product was installed by a legitimate user and intentionally.",
+  "name": "Rare security product signed executable executed in the network",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

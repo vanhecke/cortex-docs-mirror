@@ -1,0 +1,90 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Exfiltration Over Web Service (T1567)"
+  ],
+  "attackers_goals": "A user accessed an uncommon AppID that is rarely accessed by them or anyone else in the organization. This may indicate an attempt to exfiltrate sensitive data.",
+  "deduplication_period": "1 Day",
+  "description": "A user accessed an uncommon AppID that is rarely accessed by them or anyone else in the organization.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check for any other suspicious activity related to the host and the user involved in the alert.",
+  "name": "A user accessed an uncommon AppID",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "Palo Alto Networks Firewall threat Logs",
+    "Palo Alto Networks Firewall traffic LogsXDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A user accessed an uncommon external peer-to-peer service",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Web Service (T1567)"
+      ],
+      "description": "A user accessed an uncommon external peer-to-peer service that is rarely accessed by them or anyone else in the organization.",
+      "attackers_goals": "A user accessed an uncommon external peer-to-peer service that is rarely accessed by them or anyone else in the organization. This may indicate an attempt to exfiltrate sensitive data.",
+      "investigative_actions": "Check for any other suspicious activity related to the host and the user involved in the alert."
+    },
+    {
+      "name": "A user accessed an uncommon external file-sharing service",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Web Service (T1567)"
+      ],
+      "description": "A user accessed an uncommon external file-sharing service that is rarely accessed by them or anyone else in the organization.",
+      "attackers_goals": "A user accessed an uncommon external file-sharing service that is rarely accessed by them or anyone else in the organization. This may indicate an attempt to exfiltrate sensitive data.",
+      "investigative_actions": "Check for any other suspicious activity related to the host and the user involved in the alert."
+    },
+    {
+      "name": "A user accessed an uncommon peer-to-peer service",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Web Service (T1567)"
+      ],
+      "description": "A user accessed an uncommon peer-to-peer service that is rarely accessed by them or anyone else in the organization.",
+      "attackers_goals": "A user accessed an uncommon peer-to-peer service that is rarely accessed by them or anyone else in the organization. This may indicate an attempt to exfiltrate sensitive data.",
+      "investigative_actions": "Check for any other suspicious activity related to the host and the user involved in the alert."
+    },
+    {
+      "name": "A user accessed an uncommon file-sharing service",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Web Service (T1567)"
+      ],
+      "description": "A user accessed an uncommon file-sharing service that is rarely accessed by them or anyone else in the organization.",
+      "attackers_goals": "A user accessed an uncommon file-sharing service that is rarely accessed by them or anyone else in the organization. This may indicate an attempt to exfiltrate sensitive data.",
+      "investigative_actions": "Check for any other suspicious activity related to the host and the user involved in the alert."
+    },
+    {
+      "name": "A user accessed an uncommon VPN service",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Web Service (T1567)"
+      ],
+      "description": "A user connected to an unusual VPN service that is rarely accessed by them or anyone else in the organization. This may indicate an attempt to hide their online activity.",
+      "attackers_goals": "A user connected to an unusual VPN service that is rarely accessed by them or anyone else in the organization. This may indicate an attempt to hide their online activity.",
+      "investigative_actions": "Check for any other suspicious activity related to the host and the user involved in the alert."
+    }
+  ]
+}

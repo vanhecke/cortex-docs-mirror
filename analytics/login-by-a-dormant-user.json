@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Domain Accounts (T1078.002)"
+  ],
+  "attackers_goals": "Use a compromised user account that has not been used for a long time and is therefore less likely to be noticed.",
+  "deduplication_period": "1 Day",
+  "description": "A dormant user logged on after having been unused for a month or longer. This may indicate the account is misused by an attacker.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Confirm that the activity is benign (e.g. the user returned from a long leave of absence). See whether there are other abnormal actions done by the user (e.g. files\\commands\\other logins). Check whether you have issues with your Cloud Identity Engine failing to sync data from Active Directory.",
+  "name": "Login by a dormant user",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Cached interactive login by a dormant user",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Domain Accounts (T1078.002)"
+      ],
+      "description": "A dormant user logged on after having been unused for a month or longer. This may indicate the account is misused by an attacker.",
+      "attackers_goals": "Use a compromised user account that has not been used for a long time and is therefore less likely to be noticed.",
+      "investigative_actions": "Confirm that the activity is benign (e.g. the user returned from a long leave of absence). See whether there are other abnormal actions done by the user (e.g. files\\commands\\other logins). Check whether you have issues with your Cloud Identity Engine failing to sync data from Active Directory."
+    }
+  ]
+}

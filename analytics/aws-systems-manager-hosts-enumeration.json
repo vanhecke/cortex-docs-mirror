@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Cloud Infrastructure Discovery (T1580)"
+  ],
+  "attackers_goals": "Discover SSM managed instances to plan lateral movement, remote command execution, or further reconnaissance.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity enumerated hosts managed by AWS Systems Manager. Adversaries may use this API to discover SSM managed instances as a precursor to lateral movement or remote code execution.",
+  "detection_modules": "Cloud",
+  "detector_tags": "SSM Remote Management Analytics",
+  "investigative_actions": "Determine whether the identity legitimately needs to enumerate SSM managed instances. Review subsequent activity by the identity, especially SSM SendCommand, StartSession, or instance profile modifications. Validate the source IP and user-agent of the API call.",
+  "name": "AWS Systems Manager hosts enumeration",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "AWS Systems Manager hosts enumeration via programmatic access",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Cloud Infrastructure Discovery (T1580)"
+      ],
+      "description": "A cloud identity enumerated hosts managed by AWS Systems Manager. Adversaries may use this API to discover SSM managed instances as a precursor to lateral movement or remote code execution.",
+      "attackers_goals": "Discover SSM managed instances to plan lateral movement, remote command execution, or further reconnaissance.",
+      "investigative_actions": "Determine whether the identity legitimately needs to enumerate SSM managed instances. Review subsequent activity by the identity, especially SSM SendCommand, StartSession, or instance profile modifications. Validate the source IP and user-agent of the API call."
+    }
+  ]
+}

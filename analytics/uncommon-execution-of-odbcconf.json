@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "System Binary Proxy Execution: Odbcconf (T1218.008)"
+  ],
+  "attackers_goals": "Execute arbitrary code or load malicious DLL modules undetected within Microsoft signed program from Microsoft signed process.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers may abuse the Odbcconf.exe Windows utility to proxy the execution of malicious DLL files.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check the execution command-line, in case of 'REGSVR' points to a DLL, then check it. If the command-line contains '/f' argument (for script file) check the content of the script.",
+  "name": "Uncommon execution of ODBCConf",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon execution of ODBCConf to load dll directly",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "System Binary Proxy Execution: Odbcconf (T1218.008)"
+      ],
+      "description": "Attackers may abuse the Odbcconf.exe Windows utility to proxy the execution of malicious DLL files.",
+      "attackers_goals": "Execute arbitrary code or load malicious DLL modules undetected within Microsoft signed program from Microsoft signed process.",
+      "investigative_actions": "Check the execution command-line, in case of 'REGSVR' points to a DLL, then check it. If the command-line contains '/f' argument (for script file) check the content of the script."
+    }
+  ]
+}

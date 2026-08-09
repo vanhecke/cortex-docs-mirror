@@ -1,0 +1,27 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol (T1071)",
+    "Non-Standard Port (T1571)",
+    "Trusted Relationship (T1199)",
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "An attacker may use peer-to-peer communication to gain initial access, as a C&C tool, or an exfiltration tool.",
+  "deduplication_period": "1 Day",
+  "description": "A possible P2P protocol was spotted from an internal host.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Confirm that the port accessed is a P2P port/ is run by a P2P application. View the downloaded content and determine it's not malicious. Check for large uploads from this host and check for sensitive information that might not be required on the host.",
+  "name": "Upload pattern that resembles Peer to Peer traffic",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "30 Minutes",
+  "variations": []
+}

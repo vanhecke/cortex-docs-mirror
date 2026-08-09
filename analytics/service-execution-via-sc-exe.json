@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "System Services: Service Execution (T1569.002)"
+  ],
+  "attackers_goals": "Execute commands and run code on local or remote hosts.",
+  "deduplication_period": "1 Day",
+  "description": "Sc.exe has the ability to start services on local and remote hosts. An attacker may abuse it to execute malicious services on a host.",
+  "detection_modules": "",
+  "detector_tags": "Malicious Service Analytics",
+  "investigative_actions": "Check whether the service that was created via sc.exe is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Service execution via sc.exe",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

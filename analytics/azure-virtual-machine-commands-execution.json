@@ -1,0 +1,58 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Cloud Administration Command (T1651)",
+    "Command and Scripting Interpreter: Cloud API (T1059.009)",
+    "Remote Services: Cloud Services (T1021.007)"
+  ],
+  "attackers_goals": "Execute arbitrary code inside a VM without needing SSH/RDP or any open inbound network path.",
+  "deduplication_period": "3 Hours",
+  "description": "An Azure virtual machine executed PowerShell commands with System privileges.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Identify the target VM resource and the subscription / resource group it belongs to. Retrieve the script payload sent via Run Command. Verify whether the calling identity is normally entitled to perform VM Run Command on this VM. Check for related anomalies on the same identity.",
+  "name": "Azure virtual machine commands execution",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual Azure VM remote command execution",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Cloud Administration Command (T1651)",
+        "Command and Scripting Interpreter: Cloud API (T1059.009)",
+        "Remote Services: Cloud Services (T1021.007)"
+      ],
+      "description": "An Azure virtual machine executed PowerShell commands with System privileges.",
+      "attackers_goals": "Execute arbitrary code inside a VM without needing SSH/RDP or any open inbound network path.",
+      "investigative_actions": "Identify the target VM resource and the subscription / resource group it belongs to. Retrieve the script payload sent via Run Command. Verify whether the calling identity is normally entitled to perform VM Run Command on this VM. Check for related anomalies on the same identity."
+    },
+    {
+      "name": "First Azure VM remote command execution on this VM",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Cloud Administration Command (T1651)",
+        "Command and Scripting Interpreter: Cloud API (T1059.009)",
+        "Remote Services: Cloud Services (T1021.007)"
+      ],
+      "description": "An Azure virtual machine executed PowerShell commands with System privileges.",
+      "attackers_goals": "Execute arbitrary code inside a VM without needing SSH/RDP or any open inbound network path.",
+      "investigative_actions": "Identify the target VM resource and the subscription / resource group it belongs to. Retrieve the script payload sent via Run Command. Verify whether the calling identity is normally entitled to perform VM Run Command on this VM. Check for related anomalies on the same identity."
+    }
+  ]
+}

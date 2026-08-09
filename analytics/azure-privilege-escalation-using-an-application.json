@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Abuse Elevation Control Mechanism (T1548)"
+  ],
+  "attackers_goals": "An attacker may add additional roles or permissions to an attacker controlled cloud account to maintain persistent access to a tenant.",
+  "deduplication_period": "1 Day",
+  "description": "An Azure application was observed assigning an Azure administrator role to a user. This might indicate a privilege escalation attempt.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check if the affected account is new to the organization. Check whether the application that added the account to the role is permitted to perform such actions. Check what can be affected by the assigned role* Follow further actions done by the account that was added to the role.",
+  "name": "Azure Privilege Escalation Using an Application",
+  "required_data": [
+    "AzureAD Audit LogMicrosoft Graph LogsOffice 365 AuditOktaPalo Alto Networks Global Protect",
+    "Third-Party VPNsXDR AgentXDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "5 Hours",
+  "variations": []
+}

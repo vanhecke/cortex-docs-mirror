@@ -1,0 +1,80 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Process Injection: Portable Executable Injection (T1055.002)"
+  ],
+  "attackers_goals": "Gain code execution on the host in the context of another process.",
+  "deduplication_period": "1 Day",
+  "description": "A process wrote a PE header to another process by calling the NtWriteVirtualMemoryRemote API function.",
+  "detection_modules": "",
+  "detector_tags": "Injection Analytics",
+  "investigative_actions": "Investigate the acting process for other malicious activities. Check if the target process was injected and for anomalies in its behavior after this event.",
+  "name": "Uncommon NtWriteVirtualMemoryRemote API invocation with a PE header buffer",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon NtWriteVirtualMemoryRemote API invocation with a PE header buffer from an office process",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Process Injection: Portable Executable Injection (T1055.002)"
+      ],
+      "description": "An office process wrote a PE header to another process by calling the NtWriteVirtualMemoryRemote API function.",
+      "attackers_goals": "Gain code execution on the host in the context of another process.",
+      "investigative_actions": "Investigate the acting process for other malicious activities. Check if the target process was injected and for anomalies in its behavior after this event."
+    },
+    {
+      "name": "Uncommon NtWriteVirtualMemoryRemote API invocation with a PE header buffer from an injected thread",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Process Injection: Portable Executable Injection (T1055.002)"
+      ],
+      "description": "An injected thread wrote a PE header to another process by calling the NtWriteVirtualMemoryRemote API function.",
+      "attackers_goals": "Gain code execution on the host in the context of another process.",
+      "investigative_actions": "Investigate the acting process for other malicious activities. Check if the target process was injected and for anomalies in its behavior after this event."
+    },
+    {
+      "name": "Uncommon NtWriteVirtualMemoryRemote API invocation with a PE header buffer from a LOLBIN process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Process Injection: Portable Executable Injection (T1055.002)"
+      ],
+      "description": "A LOLBIN process wrote a PE header to another process by calling the NtWriteVirtualMemoryRemote API function.",
+      "attackers_goals": "Gain code execution on the host in the context of another process.",
+      "investigative_actions": "Investigate the acting process for other malicious activities. Check if the target process was injected and for anomalies in its behavior after this event."
+    },
+    {
+      "name": "Uncommon NtWriteVirtualMemoryRemote API invocation with a PE header buffer from an unsigned process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Process Injection: Portable Executable Injection (T1055.002)"
+      ],
+      "description": "An unsigned process wrote a PE header to another process by calling the NtWriteVirtualMemoryRemote API function.",
+      "attackers_goals": "Gain code execution on the host in the context of another process.",
+      "investigative_actions": "Investigate the acting process for other malicious activities. Check if the target process was injected and for anomalies in its behavior after this event."
+    }
+  ]
+}

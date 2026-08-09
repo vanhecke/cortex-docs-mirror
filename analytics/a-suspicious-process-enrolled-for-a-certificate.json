@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Unsecured Credentials (T1552)",
+    "Steal or Forge Authentication Certificates (T1649)"
+  ],
+  "attackers_goals": "Attackers may authenticate as users using a certificate. If a policy is configured with permissive options, the attacker can authenticate as a user with high privileges.",
+  "deduplication_period": "1 Day",
+  "description": "A suspicious process enrolled for a certificate.",
+  "detection_modules": "",
+  "detector_tags": "Active Directory Certificate Services Analytics",
+  "investigative_actions": "See whether this was a legitimate action. Follow process/user activities. Check for suspicious certificate authentications.",
+  "name": "A suspicious process enrolled for a certificate",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "An unsigned suspicious process enrolled for a certificate",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials (T1552)",
+        "Steal or Forge Authentication Certificates (T1649)"
+      ],
+      "description": "An unsigned suspicious process enrolled for a certificate.",
+      "attackers_goals": "Attackers may authenticate as users using a certificate. If a policy is configured with permissive options, the attacker can authenticate as a user with high privileges.",
+      "investigative_actions": "See whether this was a legitimate action. Follow process/user activities. Check for suspicious certificate authentications."
+    }
+  ]
+}

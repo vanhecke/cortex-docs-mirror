@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Proxy: Internal Proxy (T1090.001)"
+  ],
+  "attackers_goals": "Adversaries may use an internal proxy to direct command and control traffic between two or more systems in a compromised environment.",
+  "deduplication_period": "1 Hour",
+  "description": "Suspicious proxy environment variable change or definition with a rare command line.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the process activities and try to understand the network impact os the new proxy setting.",
+  "name": "Suspicious proxy environment variable setting",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

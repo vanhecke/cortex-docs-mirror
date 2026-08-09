@@ -1,0 +1,65 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)"
+  ],
+  "attackers_goals": "Leverage known attack tools to enumerate resources, identify vulnerabilities, or exploit cloud configurations.",
+  "deduplication_period": "7 Days",
+  "description": "A cloud API was successfully executed using a known cloud penetration testing tool.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Microsoft Graph Activity Logs",
+  "investigative_actions": "Confirm if authorized penetration testing activity is currently scheduled. Review the API operations performed by the identity to determine the intent and scope of the activity.",
+  "name": "Cloud penetration testing tool activity",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log",
+    "Microsoft Graph Logs"
+  ],
+  "severity": "High",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Cloud penetration testing tool usage attempt",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)"
+      ],
+      "description": "A failed cloud API was executed using a known cloud penetration testing tool.",
+      "attackers_goals": "Leverage known attack tools to enumerate resources, identify vulnerabilities, or exploit cloud configurations.",
+      "investigative_actions": "Confirm if authorized penetration testing activity is currently scheduled. Review the API operations performed by the identity to determine the intent and scope of the activity."
+    },
+    {
+      "name": "Cloud security assessment tool activity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)"
+      ],
+      "description": "A cloud API was successfully executed using a known cloud security assessment tool.",
+      "attackers_goals": "Leverage known attack tools to enumerate resources, identify vulnerabilities, or exploit cloud configurations.",
+      "investigative_actions": "Confirm if authorized penetration testing activity is currently scheduled. Review the API operations performed by the identity to determine the intent and scope of the activity."
+    },
+    {
+      "name": "Cloud penetration testing tool activity by Azure application",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)"
+      ],
+      "description": "A cloud API was successfully executed using a known cloud penetration testing tool by an Azure application.",
+      "attackers_goals": "Leverage known attack tools to enumerate resources, identify vulnerabilities, or exploit cloud configurations.",
+      "investigative_actions": "Confirm if authorized penetration testing activity is currently scheduled. Review the API operations performed by the identity to determine the intent and scope of the activity."
+    }
+  ]
+}

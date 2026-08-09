@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Masquerading: Masquerade Task or Service (T1036.004)"
+  ],
+  "attackers_goals": "Attackers may masquerade as the crond executable.",
+  "deduplication_period": "1 Day",
+  "description": "Copies a file and renames it as crond.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands.",
+  "name": "Masquerading as the Linux crond process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Masquerading as the Linux crond process from a Kubernetes pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading: Masquerade Task or Service (T1036.004)"
+      ],
+      "description": "Copies a file and renames it as crond.",
+      "attackers_goals": "Attackers may masquerade as the crond executable.",
+      "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands."
+    }
+  ]
+}

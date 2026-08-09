@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Unsecured Credentials: Private Keys (T1552.004)"
+  ],
+  "attackers_goals": "Adversaries may use the rsync tool to exfiltrate secrets.",
+  "deduplication_period": "1 Day",
+  "description": "Copy a user's GnuPG (.gnupg) directory on to a staging folder using the 'find' and 'rsync' commands.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Copy a user's GnuPG directory with rsync",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Scheduled Task/Job (T1053)"
+  ],
+  "attackers_goals": "Attackers may attempt to gain persistence on the endpoint using scheduled tasks.",
+  "deduplication_period": "1 Day",
+  "description": "A scheduled task was created via file access from an unsigned process. This is uncommon and may indicate malicious activity.",
+  "detection_modules": "",
+  "detector_tags": "Scheduled tasks Analytics",
+  "investigative_actions": "Review the process executed by the schedule task. Investigate the specific scheduled task execution chain.",
+  "name": "Unsigned process creates a scheduled task via file access",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unsigned process creates a scheduled task via file access on a sensitive server",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "A scheduled task was created via file access from an unsigned process. This is uncommon and may indicate malicious activity.",
+      "attackers_goals": "Attackers may attempt to gain persistence on the endpoint using scheduled tasks.",
+      "investigative_actions": "Review the process executed by the schedule task. Investigate the specific scheduled task execution chain."
+    }
+  ]
+}

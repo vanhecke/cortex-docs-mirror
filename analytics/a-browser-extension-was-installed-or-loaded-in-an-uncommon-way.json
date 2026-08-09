@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Software Extensions: Browser Extensions (T1176.001)"
+  ],
+  "attackers_goals": "Gain persistency on a machine and steal sensitive browsing data.",
+  "deduplication_period": "1 Day",
+  "description": "A browser extension was installed or loaded in an uncommon way.",
+  "detection_modules": "",
+  "detector_tags": "Chromium Extensions Analytics",
+  "investigative_actions": "Investigate the extension files and the process that installed them. Check if this extension is currently present at the relevant extensions web store by looking up for its extension ID.",
+  "name": "A browser extension was installed or loaded in an uncommon way",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A browser was forced to load an extension using a special command line argument",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Software Extensions: Browser Extensions (T1176.001)"
+      ],
+      "description": "A browser was forced to load an extension using a special command line argument, an uncommon method.",
+      "attackers_goals": "Gain persistency on a machine and steal sensitive browsing data.",
+      "investigative_actions": "Investigate the extension files and the process that installed them. Check if this extension is currently present at the relevant extensions web store by looking up for its extension ID."
+    },
+    {
+      "name": "A browser extension was installed or loaded in an uncommon way by a LOLBIN process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Software Extensions: Browser Extensions (T1176.001)"
+      ],
+      "description": "A browser extension was installed or loaded in an uncommon way.",
+      "attackers_goals": "Gain persistency on a machine and steal sensitive browsing data.",
+      "investigative_actions": "Investigate the extension files and the process that installed them. Check if this extension is currently present at the relevant extensions web store by looking up for its extension ID."
+    },
+    {
+      "name": "A browser extension was installed or loaded in an uncommon way by an uncommon process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Software Extensions: Browser Extensions (T1176.001)"
+      ],
+      "description": "A browser extension was installed or loaded in an uncommon way.",
+      "attackers_goals": "Gain persistency on a machine and steal sensitive browsing data.",
+      "investigative_actions": "Investigate the extension files and the process that installed them. Check if this extension is currently present at the relevant extensions web store by looking up for its extension ID."
+    }
+  ]
+}

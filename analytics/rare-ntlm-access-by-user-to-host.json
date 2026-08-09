@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Use Alternate Authentication Material (T1550)"
+  ],
+  "attackers_goals": "The attacker may be attempting lateral movement within a compromised network.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual NTLM authentication attempt by a user to a host. This may indicate the use of stolen credentials or access tokens to access restricted hosts.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Verify any successful authentication for the user account referenced by the alert, as this could indicate the attacker has used stolen credentials.",
+  "name": "Rare NTLM Access By User To Host",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

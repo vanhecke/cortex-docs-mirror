@@ -1,0 +1,117 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Access sensitive resources and gain high privileges.",
+  "deduplication_period": "1 Day",
+  "description": "A cloud identity that normally connects from a limited set of countries connected from a new country for the first time.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Kubernetes - API",
+  "investigative_actions": "Check if the identity routed their traffic via a VPN or shared their credentials with a remote employee.",
+  "name": "A cloud identity executed an API call from an unusual country",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log",
+    "Kubernetes Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A suspicious cloud identity executed an API call from an unusual country",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A cloud identity that normally connects from a limited set of countries connected from a new country for the first time.",
+      "attackers_goals": "Access sensitive resources and gain high privileges.",
+      "investigative_actions": "Check if the identity routed their traffic via a VPN or shared their credentials with a remote employee."
+    },
+    {
+      "name": "A Kubernetes identity executed an API call from a country that was not seen in the organization",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A Kubernetes identity that normally connects from a limited set of countries connected from a new country for the first time.",
+      "attackers_goals": "Access sensitive resources and gain high privileges.",
+      "investigative_actions": "Check if the identity routed their traffic via a VPN or shared their credentials with a remote employee."
+    },
+    {
+      "name": "A cloud identity executed an API call from a country that was not seen in the organization",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A cloud identity that normally connects from a limited set of countries connected from a new country for the first time.",
+      "attackers_goals": "Access sensitive resources and gain high privileges.",
+      "investigative_actions": "Check if the identity routed their traffic via a VPN or shared their credentials with a remote employee."
+    },
+    {
+      "name": "A cloud identity executed an API call from an unusual country",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A cloud identity that normally connects from a limited set of countries connected from a new country for the first time.",
+      "attackers_goals": "Access sensitive resources and gain high privileges.",
+      "investigative_actions": "Check if the identity routed their traffic via a VPN or shared their credentials with a remote employee."
+    },
+    {
+      "name": "A Kubernetes API call was executed from an unusual country",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A Kubernetes identity that normally connects from a limited set of countries connected from a new country for the first time.",
+      "attackers_goals": "Access sensitive resources and gain high privileges.",
+      "investigative_actions": "Check if the identity routed their traffic via a VPN or shared their credentials with a remote employee."
+    },
+    {
+      "name": "A cloud API call was executed from an unusual country",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A cloud identity that normally connects from a limited set of countries connected from a new country for the first time.",
+      "attackers_goals": "Access sensitive resources and gain high privileges.",
+      "investigative_actions": "Check if the identity routed their traffic via a VPN or shared their credentials with a remote employee."
+    },
+    {
+      "name": "A cloud identity executed an API call from an unusual country using a compromised AWS access key",
+      "severity": "High",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A cloud identity that normally connects from a limited set of countries connected from a new country for the first time.",
+      "attackers_goals": "Access sensitive resources and gain high privileges.",
+      "investigative_actions": "Check if the identity routed their traffic via a VPN or shared their credentials with a remote employee."
+    }
+  ]
+}

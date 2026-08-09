@@ -1,0 +1,52 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol (T1071)",
+    "Non-Standard Port (T1571)"
+  ],
+  "attackers_goals": "Attackers might use TOR IP combined with random ports.to hide C2 inbound communication from inside a host.",
+  "deduplication_period": "1 Day",
+  "description": "Suspicious connection from a known TOR IP to an uncommon port.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the network configuration related to the participating port. Investigate processes that were listening to that port.",
+  "name": "Abnormal network communication through TOR using an uncommon port",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Abnormal network communication through TOR using an uncommon port and App-id",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "Suspicious connection from a known TOR IP to an uncommon port and App-id.",
+      "attackers_goals": "Attackers might use TOR IP combined with random ports.to hide C2 inbound communication from inside a host.",
+      "investigative_actions": "Investigate the network configuration related to the participating port. Investigate processes that were listening to that port."
+    },
+    {
+      "name": "Abnormal network communication through TOR using a suspicious port",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "Suspicious connection from a known TOR IP to an uncommon potential C2 communication port.",
+      "attackers_goals": "Attackers might use TOR IP combined with random ports.to hide C2 inbound communication from inside a host.",
+      "investigative_actions": "Investigate the network configuration related to the participating port. Investigate processes that were listening to that port."
+    }
+  ]
+}

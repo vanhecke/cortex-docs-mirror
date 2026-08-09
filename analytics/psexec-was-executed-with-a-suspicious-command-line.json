@@ -1,0 +1,85 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "System Services: Service Execution (T1569.002)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "An adversary may attempt to use PsExec to gain execution capabilities, run remote commands or perform privilege escalation.",
+  "deduplication_period": "1 Day",
+  "description": "PsExec.exe was executed.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if any other suspicious activities happened under the same causality. Confirm the PsExec.exe command is benign.",
+  "name": "PsExec was executed with a suspicious command line",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "PsExec was executed with a suspicious command line by a LOLBIN",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "System Services: Service Execution (T1569.002)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "PsExec.exe was executed with NT/System privilege level by a LOLBIN.",
+      "attackers_goals": "An adversary may attempt to use PsExec to gain execution capabilities, run remote commands or perform privilege escalation.",
+      "investigative_actions": "Check if any other suspicious activities happened under the same causality. Confirm the PsExec.exe command is benign."
+    },
+    {
+      "name": "PsExec was executed with a suspicious command line by an unsigned actor",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "System Services: Service Execution (T1569.002)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "PsExec.exe was executed with NT/System privilege level by an unsigned actor.",
+      "attackers_goals": "An adversary may attempt to use PsExec to gain execution capabilities, run remote commands or perform privilege escalation.",
+      "investigative_actions": "Check if any other suspicious activities happened under the same causality. Confirm the PsExec.exe command is benign."
+    },
+    {
+      "name": "PsExec was executed with a suspicious command line",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "System Services: Service Execution (T1569.002)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "PsExec.exe was executed with NT/System privilege level.",
+      "attackers_goals": "An adversary may attempt to use PsExec to gain execution capabilities, run remote commands or perform privilege escalation.",
+      "investigative_actions": "Check if any other suspicious activities happened under the same causality. Confirm the PsExec.exe command is benign."
+    },
+    {
+      "name": "PsExec was executed with a suspicious command line",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "System Services: Service Execution (T1569.002)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "PsExec.exe was executed with plain-text credentials.",
+      "attackers_goals": "An adversary may attempt to use PsExec to gain execution capabilities, run remote commands or perform privilege escalation.",
+      "investigative_actions": "Check if any other suspicious activities happened under the same causality. Confirm the PsExec.exe command is benign."
+    }
+  ]
+}

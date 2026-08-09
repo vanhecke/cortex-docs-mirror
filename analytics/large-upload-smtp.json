@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Exfiltration Over Alternative Protocol (T1048)"
+  ],
+  "attackers_goals": "Transfer data they have stolen from your network to a location that is convenient and useful to him.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint, which is not an internal SMTP server, emailed an excessive amount of data from your network.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Identify the process/user performing the data transfer to determine if the transfer is sanctioned. Verify that the source is not a mail server. Check if the target address represents a mail service that rarely used in the organization. If so, this might indicate on file exfiltration attempt.",
+  "name": "Large Upload (SMTP)",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent",
+    "Third-Party Firewalls"
+  ],
+  "severity": "Low",
+  "test_period": "1 Day",
+  "variations": [
+    {
+      "name": "Large Upload (SMTP)",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Alternative Protocol (T1048)"
+      ],
+      "description": "The endpoint, which is not an internal SMTP server, emailed an excessive amount of data from your network.",
+      "attackers_goals": "Transfer data they have stolen from your network to a location that is convenient and useful to him.",
+      "investigative_actions": "Identify the process/user performing the data transfer to determine if the transfer is sanctioned. Verify that the source is not a mail server. Check if the target address represents a mail service that rarely used in the organization. If so, this might indicate on file exfiltration attempt."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Scheduled Task/Job: Scheduled Task (T1053.005)"
+  ],
+  "attackers_goals": "Create a new scheduled task or alter an existing one to gain persistence in the system or to gain higher privileges.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers may create or alter scheduled task parameters to gain higher privileges or persistence on the system.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Examine the PowerShell command to identify suspicious scheduled task creation or modification. Inspect the system for suspicious activity that is triggered by a scheduled task.",
+  "name": "Uncommon PowerShell commands used to create or alter scheduled task parameters",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

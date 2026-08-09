@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Defense Evasion (TA0005)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Modify Authentication Process: Pluggable Authentication Modules (T1556.003)"
+  ],
+  "attackers_goals": "Credential access, defense evasion or persistence.",
+  "deduplication_period": "1 Day",
+  "description": "Modification of PAM configuration files.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Modification of PAM",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Modification of PAM from a Kubernetes pod",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Defense Evasion (TA0005)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Modify Authentication Process: Pluggable Authentication Modules (T1556.003)"
+      ],
+      "description": "Modification of PAM configuration files.",
+      "attackers_goals": "Credential access, defense evasion or persistence.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

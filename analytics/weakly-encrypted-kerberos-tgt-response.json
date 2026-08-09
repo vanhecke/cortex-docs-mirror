@@ -1,0 +1,41 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Defense Evasion (TA0005)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Modify Authentication Process: Domain Controller Authentication (T1556.001)"
+  ],
+  "attackers_goals": "Manipulate the domain controller authentication process to bypass standard authentication and gain access to hosts and resources in environments relying on single-factor authentication.",
+  "deduplication_period": "1 Day",
+  "description": "A weakly encrypted Kerberos TGT was issued by a domain controller. The encryption type is abnormal for this DC and results in a TGT that is easier to crack. This behavior may indicate a Skeleton Key attack.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Identify the user or entity that requested the TGT during the alert timeframe. Determine whether a legitimate service or application requested weak Kerberos encryption. Verify whether the domain controller is patched against the Skeleton Key vulnerability (CVE-2016-1567).",
+  "name": "Weakly-Encrypted Kerberos TGT Response",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Abnormal Weakly-Encrypted Kerberos TGT Response",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Defense Evasion (TA0005)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Modify Authentication Process: Domain Controller Authentication (T1556.001)"
+      ],
+      "description": "A weakly encrypted Kerberos TGT was issued by a domain controller. The encryption type is abnormal for this DC and results in a TGT that is easier to crack. This behavior may indicate a Skeleton Key attack.",
+      "attackers_goals": "Manipulate the domain controller authentication process to bypass standard authentication and gain access to hosts and resources in environments relying on single-factor authentication.",
+      "investigative_actions": "Identify the user or entity that requested the TGT during the alert timeframe. Determine whether a legitimate service or application requested weak Kerberos encryption. Verify whether the domain controller is patched against the Skeleton Key vulnerability (CVE-2016-1567)."
+    }
+  ]
+}

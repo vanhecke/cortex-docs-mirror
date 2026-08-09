@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Exploit Public-Facing Application (T1190)",
+    "Unsecured Credentials (T1552)"
+  ],
+  "attackers_goals": "Gain unauthorized access by leveraging valid cloud credentials.",
+  "deduplication_period": "1 Hour",
+  "description": "A request was made to the cloud Instance Metadata Service (IMDS) followed by a remote usage of EC2 role token.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Identify the process that accessed the IMDS on the cloud instance. Examine the AWS API calls made by the stolen token, focusing on unusual or sensitive actions. Assess the role's permissions and rotate credentials if compromise is confirmed.",
+  "name": "Cloud IMDS access followed by remote token usage",
+  "required_data": [
+    "AWS Audit LogXDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "1 Hour",
+  "variations": []
+}

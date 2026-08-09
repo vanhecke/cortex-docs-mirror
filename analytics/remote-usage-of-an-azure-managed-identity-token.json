@@ -1,0 +1,80 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Steal Application Access Token (T1528)",
+    "Unsecured Credentials (T1552)"
+  ],
+  "attackers_goals": "Exfiltrate valid token and abuse it remotely.",
+  "deduplication_period": "5 Days",
+  "description": "An Azure Managed Identity token, which is attached to a compute service, was used externally of the cloud environment.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Serverless Function Credentials Theft Analytics",
+  "investigative_actions": "Verify whether the Managed Identity should be used remotely. Check what API calls were executed by the Managed Identity. Check if the relevant compute service is compromised.",
+  "name": "Remote usage of an Azure Managed Identity token",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Remote usage of an Azure Function App's Managed Identity token",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal Application Access Token (T1528)",
+        "Unsecured Credentials (T1552)"
+      ],
+      "description": "An Azure Managed Identity token, which is attached to a compute service, was used externally of the cloud environment.",
+      "attackers_goals": "Exfiltrate valid token and abuse it remotely.",
+      "investigative_actions": "Verify whether the Managed Identity should be used remotely. Check what API calls were executed by the Managed Identity. Check if the relevant compute service is compromised."
+    },
+    {
+      "name": "Remote usage of an Azure Automation Account's Managed Identity token",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal Application Access Token (T1528)",
+        "Unsecured Credentials (T1552)"
+      ],
+      "description": "An Azure Managed Identity token, which is attached to a compute service, was used externally of the cloud environment.",
+      "attackers_goals": "Exfiltrate valid token and abuse it remotely.",
+      "investigative_actions": "Verify whether the Managed Identity should be used remotely. Check what API calls were executed by the Managed Identity. Check if the relevant compute service is compromised."
+    },
+    {
+      "name": "Remote usage of an Azure Managed Identity token from an unusual ASN",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal Application Access Token (T1528)",
+        "Unsecured Credentials (T1552)"
+      ],
+      "description": "An Azure Managed Identity token, which is attached to a compute service, was used externally of the cloud environment.",
+      "attackers_goals": "Exfiltrate valid token and abuse it remotely.",
+      "investigative_actions": "Verify whether the Managed Identity should be used remotely. Check what API calls were executed by the Managed Identity. Check if the relevant compute service is compromised."
+    },
+    {
+      "name": "Remote usage of an Azure Managed Identity token from an unusual IP",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal Application Access Token (T1528)",
+        "Unsecured Credentials (T1552)"
+      ],
+      "description": "An Azure Managed Identity token, which is attached to a compute service, was used externally of the cloud environment.",
+      "attackers_goals": "Exfiltrate valid token and abuse it remotely.",
+      "investigative_actions": "Verify whether the Managed Identity should be used remotely. Check what API calls were executed by the Managed Identity. Check if the relevant compute service is compromised."
+    }
+  ]
+}

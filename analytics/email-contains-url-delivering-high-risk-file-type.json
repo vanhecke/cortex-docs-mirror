@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)",
+    "Brute Force: Password Cracking (T1110.002)"
+  ],
+  "attackers_goals": "To bypass attachment-based blocking by delivering malware or exploiting payloads via URLs pointing to file types commonly blocked by email vendors.",
+  "deduplication_period": "1 Hour 30 Minutes",
+  "description": "Emails with URLs linking to file types commonly blocked by email vendors due to their use in malware delivery.",
+  "detection_modules": "Email",
+  "detector_tags": "Malicious URLs",
+  "investigative_actions": "Review the URLs and determine if they host executable or script-based content. Check threat intelligence sources for reputation or known associations with malware. Investigate whether any users clicked the URL or downloaded the file. Analyze the file content using sandbox or static analysis tools.",
+  "name": "Email contains URL delivering high-risk file type",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "External email with URL delivers blocked file types",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)",
+        "Brute Force: Password Cracking (T1110.002)"
+      ],
+      "description": "Emails with URLs linking to file types commonly blocked by email vendors due to their use in malware delivery.",
+      "attackers_goals": "To bypass attachment-based blocking by delivering malware or exploiting payloads via URLs pointing to file types commonly blocked by email vendors.",
+      "investigative_actions": "Review the URLs and determine if they host executable or script-based content. Check threat intelligence sources for reputation or known associations with malware. Investigate whether any users clicked the URL or downloaded the file. Analyze the file content using sandbox or static analysis tools."
+    }
+  ]
+}

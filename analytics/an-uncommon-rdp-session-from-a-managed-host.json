@@ -1,0 +1,88 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Services: Remote Desktop Protocol (T1021.001)"
+  ],
+  "attackers_goals": "Adversaries may use RDP for initial access or lateral movement within a network.",
+  "deduplication_period": "1 Day",
+  "description": "An RDP session was established with uncommon parameters from a managed host.",
+  "detection_modules": "",
+  "detector_tags": "Enhanced RDP Analytics",
+  "investigative_actions": "Investigate the source and destination of the RDP communication. Check if this communication is legitimate and expected. Analyze the user and process that initiated the RDP connection.",
+  "name": "An uncommon RDP session from a managed host",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "An uncommon RDP session initiated by a chained RDP client",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)"
+      ],
+      "description": "An RDP session was established by a process that is itself an RDP client, which is uncommon behavior.",
+      "attackers_goals": "Adversaries may use RDP for initial access or lateral movement within a network.",
+      "investigative_actions": "Investigate the source and destination of the RDP communication. Check if this communication is legitimate and expected. Analyze the user and process that initiated the RDP connection."
+    },
+    {
+      "name": "An uncommon RDP session initiated by a globally rare RDP client",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)"
+      ],
+      "description": "An RDP session was established by a process hash that has not been seen globally, which is uncommon.",
+      "attackers_goals": "Adversaries may use RDP for initial access or lateral movement within a network.",
+      "investigative_actions": "Investigate the source and destination of the RDP communication. Check if this communication is legitimate and expected. Analyze the user and process that initiated the RDP connection."
+    },
+    {
+      "name": "An uncommon RDP session initiated by a rare RDP client",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)"
+      ],
+      "description": "An RDP session was established by a process hash that is rare in the environment.",
+      "attackers_goals": "Adversaries may use RDP for initial access or lateral movement within a network.",
+      "investigative_actions": "Investigate the source and destination of the RDP communication. Check if this communication is legitimate and expected. Analyze the user and process that initiated the RDP connection."
+    },
+    {
+      "name": "An uncommon RDP session from a host that rarely initiates RDP",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)"
+      ],
+      "description": "An RDP session was initiated from a host that does not typically establish RDP connections.",
+      "attackers_goals": "Adversaries may use RDP for initial access or lateral movement within a network.",
+      "investigative_actions": "Investigate the source and destination of the RDP communication. Check if this communication is legitimate and expected. Analyze the user and process that initiated the RDP connection."
+    },
+    {
+      "name": "An uncommon RDP session initiated by a process with rare causality",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)"
+      ],
+      "description": "An RDP session was established by a process with an uncommon parent process relationship.",
+      "attackers_goals": "Adversaries may use RDP for initial access or lateral movement within a network.",
+      "investigative_actions": "Investigate the source and destination of the RDP communication. Check if this communication is legitimate and expected. Analyze the user and process that initiated the RDP connection."
+    }
+  ]
+}

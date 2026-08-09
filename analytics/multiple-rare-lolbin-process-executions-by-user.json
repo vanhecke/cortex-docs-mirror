@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)"
+  ],
+  "attackers_goals": "Unusual processes may be executed for various purposes, including exfiltration, lateral movement, etc.",
+  "deduplication_period": "30 Days",
+  "description": "A user executed multiple living-off-the-land binary (LOLBIN) processes that are unusual for this user. This may be indicative of a compromised account.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the processes that were executed to determine if they were used for legitimate purposes or malicious activity.",
+  "name": "Multiple Rare LOLBIN Process Executions by User",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Multiple curl process executions by user",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)"
+      ],
+      "description": "A user executed multiple living-off-the-land binary (LOLBIN) processes that are unusual for this user. This may be indicative of a compromised account.",
+      "attackers_goals": "Unusual processes may be executed for various purposes, including exfiltration, lateral movement, etc.",
+      "investigative_actions": "Investigate the processes that were executed to determine if they were used for legitimate purposes or malicious activity."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: Unix Shell (T1059.004)"
+  ],
+  "attackers_goals": "Attackers may use chmod to grant execution privileges to scripts or binaries for malicious execution.",
+  "deduplication_period": "1 Day",
+  "description": "A script was granted execution privileges using chmod before being run.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Verify that this activity is not part of normal IT operations. Check for similar commands executed on other hosts.",
+  "name": "Adding execution privileges",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Adding execution privileges in a Kubernetes pod",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)"
+      ],
+      "description": "A script was granted execution privileges using chmod before being run.",
+      "attackers_goals": "Attackers may use chmod to grant execution privileges to scripts or binaries for malicious execution.",
+      "investigative_actions": "Verify that this activity is not part of normal IT operations. Check for similar commands executed on other hosts."
+    }
+  ]
+}

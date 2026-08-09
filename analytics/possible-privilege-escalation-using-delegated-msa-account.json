@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)"
+  ],
+  "attackers_goals": "Attackers may leverage dMSA account migration process to escalate privileges.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker might abuse dMSA account to escalate its privileges.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Confirm that the user is authorized to create and modify dMSA accounts in the domain. Verify the user should have permissions on the OU under which the dMSA account was created. Validate that the dMSA account should be created under the OU that appeared in the log (use the GUID). Verify that the user superseded an account, with the dMSA account, that should have superseded. Check the GUID of the dMSA object to get the account itself (can be viewed also in computer account creation event). Check what is the superseded account in the attribute 'msDS-ManagedAccountPrecededByLink' of the dMSA object. Investigate the host that initiated the dMSA account migration process for malicious activity.",
+  "name": "Possible Privilege Escalation using Delegated MSA account",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Possible Privilege Escalation using Delegated MSA account attempt",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)"
+      ],
+      "description": "An attacker might abuse dMSA account to escalate its privileges.",
+      "attackers_goals": "Attackers may leverage dMSA account migration process to escalate privileges.",
+      "investigative_actions": "Confirm that the user is authorized to create and modify dMSA accounts in the domain. Verify the user should have permissions on the OU under which the dMSA account was created. Validate that the dMSA account should be created under the OU that appeared in the log (use the GUID). Verify that the user superseded an account, with the dMSA account, that should have superseded. Check the GUID of the dMSA object to get the account itself (can be viewed also in computer account creation event). Check what is the superseded account in the attribute 'msDS-ManagedAccountPrecededByLink' of the dMSA object. Investigate the host that initiated the dMSA account migration process for malicious activity."
+    }
+  ]
+}

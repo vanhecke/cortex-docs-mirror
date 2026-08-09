@@ -1,0 +1,54 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol (T1071)",
+    "Non-Standard Port (T1571)"
+  ],
+  "attackers_goals": "Attackers might use well-known ports with uncommon applications to avoid being detected by a non-application aware firewall or to bypass firewall rules based only on ports.",
+  "deduplication_period": "14 Days",
+  "description": "Rare AppID with port usage to rare destination.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the endpoints participating in the session.",
+  "name": "Rare AppID usage to a rare destination",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent",
+    "Third-Party Firewalls"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Rare AppID usage to a rare destination using an unsigned process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "Rare AppID with port usage to rare destination.",
+      "attackers_goals": "Attackers might use well-known ports with uncommon applications to avoid being detected by a non-application aware firewall or to bypass firewall rules based only on ports.",
+      "investigative_actions": "Investigate the endpoints participating in the session."
+    },
+    {
+      "name": "Rare AppID usage to a rare destination from an internet-facing server",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "Rare AppID with port usage to rare destination.",
+      "attackers_goals": "Attackers might use well-known ports with uncommon applications to avoid being detected by a non-application aware firewall or to bypass firewall rules based only on ports.",
+      "investigative_actions": "Investigate the endpoints participating in the session."
+    }
+  ]
+}

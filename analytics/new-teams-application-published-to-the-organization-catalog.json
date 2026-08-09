@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)"
+  ],
+  "attackers_goals": "Attackers may leverage Teams applications to maintain persistent access to compromised Teams accounts.",
+  "deduplication_period": "1 Day",
+  "description": "A new Teams application was published to the organization catalog.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Microsoft Teams",
+  "investigative_actions": "Confirm that the application was created by a certified and trusted entity. Evaluate the permissions requested by the application to determine if they are excessive or unusual. Determine if it is within the user's role to publish this type of application. Correlate the alert with the sign-in event to get additional information on the identity performing the action. Follow further actions done by the account.",
+  "name": "New Teams application published to the organization catalog",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A Microsoft Teams application was published to the organization catalog by an unusual user",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)"
+      ],
+      "description": "A new Teams application was published to the organization catalog.",
+      "attackers_goals": "Attackers may leverage Teams applications to maintain persistent access to compromised Teams accounts.",
+      "investigative_actions": "Confirm that the application was created by a certified and trusted entity. Evaluate the permissions requested by the application to determine if they are excessive or unusual. Determine if it is within the user's role to publish this type of application. Correlate the alert with the sign-in event to get additional information on the identity performing the action. Follow further actions done by the account."
+    }
+  ]
+}

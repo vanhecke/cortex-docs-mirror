@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Network Service Discovery (T1046)"
+  ],
+  "attackers_goals": "An attacker is determining which ports are open or closed on remote endpoints in an attempt to identify the endpoint operating system, firewall configuration, and exploitable services.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint connected, or attempted to connect, to multiple hosts using privileged ports that serve a well-defined function. Attackers perform port sweep for reconnaissance purposes, to find computers or servers that accept connections on these ports, and to find vulnerable services that can be exploited. Coverage for port sweeps using data arriving solely from Cortex agents is incomplete.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Ensure that the source of the port sweep is not a new server in the network. New domain controllers or servers hosting services such as SNMP can cause false positives. Check for new known vulnerabilities in the ports scanned, this method is often used to target known vulnerabilities.",
+  "name": "Port Sweep",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent",
+    "Third-Party Firewalls"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Port Sweep to multiple subnets",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Network Service Discovery (T1046)"
+      ],
+      "description": "The endpoint connected, or attempted to connect, to multiple hosts using privileged ports that serve a well-defined function. Attackers perform port sweep for reconnaissance purposes, to find computers or servers that accept connections on these ports, and to find vulnerable services that can be exploited. Coverage for port sweeps using data arriving solely from Cortex agents is incomplete.",
+      "attackers_goals": "An attacker is determining which ports are open or closed on remote endpoints in an attempt to identify the endpoint operating system, firewall configuration, and exploitable services.",
+      "investigative_actions": "Ensure that the source of the port sweep is not a new server in the network. New domain controllers or servers hosting services such as SNMP can cause false positives. Check for new known vulnerabilities in the ports scanned, this method is often used to target known vulnerabilities."
+    }
+  ]
+}

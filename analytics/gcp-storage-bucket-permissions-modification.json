@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "File and Directory Permissions Modification (T1222)"
+  ],
+  "attackers_goals": "Exfiltrate information.",
+  "deduplication_period": "3 Hours",
+  "description": "A GCP storage bucket's IAM permissions were modified. An attacker might use this technique to expose sensitive data or cause data loss.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Disaster Recovery Risks, Cloud Data Asset Configuration, Data Detection & Response",
+  "investigative_actions": "Check which data exists in the modified bucket and its classification. Look for events that involve actions for the bucket data.",
+  "name": "GCP Storage Bucket Permissions Modification",
+  "required_data": [
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

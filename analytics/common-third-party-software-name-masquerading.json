@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Masquerading (T1036)"
+  ],
+  "attackers_goals": "An attacker is attempting to masquerade as a common third-party software image to execute malicious code.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker might leverage common third-party software image names to run malicious processes without being caught.",
+  "detection_modules": "",
+  "detector_tags": "EDR Windows Disguised Processes",
+  "investigative_actions": "Investigate the executed process image and check if it is malicious. Investigate the actor process that executed the process and check if it is malicious.",
+  "name": "Common third-party software name masquerading",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Common third-party software name masquerading which was downloaded from an unexpected source",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading (T1036)"
+      ],
+      "description": "An attacker might leverage common third-party software image names to run malicious processes without being caught.",
+      "attackers_goals": "An attacker is attempting to masquerade as a common third-party software image to execute malicious code.",
+      "investigative_actions": "Investigate the executed process image and check if it is malicious. Investigate the actor process that executed the process and check if it is malicious."
+    },
+    {
+      "name": "Common third-party software name masquerading with uncommon characteristics by actor with uncommon characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading (T1036)"
+      ],
+      "description": "An attacker might leverage common third-party software image names to run malicious processes without being caught.",
+      "attackers_goals": "An attacker is attempting to masquerade as a common third-party software image to execute malicious code.",
+      "investigative_actions": "Investigate the executed process image and check if it is malicious. Investigate the actor process that executed the process and check if it is malicious."
+    }
+  ]
+}

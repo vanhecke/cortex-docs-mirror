@@ -1,0 +1,55 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Masquerading: Masquerade File Type (T1036.008)",
+    "User Execution (T1204)"
+  ],
+  "attackers_goals": "Bypass security filters and deliver malicious content to users Deploy malicious attachments through emails to compromise systems, gain unauthorized access, or facilitate cyber threats.",
+  "deduplication_period": "1 Day",
+  "description": "The email message contains an attachment(s) with a potentially malicious MIME type.",
+  "detection_modules": "Email",
+  "detector_tags": "",
+  "investigative_actions": "Carefully analyze attachments for any indications of suspicious or malicious behavior. Scrutinize the attachments for any suspicious indications. Confirm whether the attachments were successfully delivered to the recipient's mailbox. If the attachments were delivered successfully, verify whether the recipient downloaded them.",
+  "name": "Email attachment(s) with potentially malicious MIME type",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Attachment(s) with potentially malicious MIME type unusual for the organization",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Masquerading: Masquerade File Type (T1036.008)",
+        "User Execution (T1204)"
+      ],
+      "description": "At least one attachment with a potentially malicious file mime-type was received in an email for the first time within the organization in the past 30 days.",
+      "attackers_goals": "Bypass security filters and deliver malicious content to users Deploy malicious attachments through emails to compromise systems, gain unauthorized access, or facilitate cyber threats.",
+      "investigative_actions": "Carefully analyze attachments for any indications of suspicious or malicious behavior. Scrutinize the attachments for any suspicious indications. Confirm whether the attachments were successfully delivered to the recipient's mailbox. If the attachments were delivered successfully, verify whether the recipient downloaded them."
+    },
+    {
+      "name": "Attachment(s) with a potentially malicious MIME type that is unusual for the recipient",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Masquerading: Masquerade File Type (T1036.008)",
+        "User Execution (T1204)"
+      ],
+      "description": "At least one attachment with a potentially malicious file mime-type was received in an email for the first time for the recipient in the past 30 days.",
+      "attackers_goals": "Bypass security filters and deliver malicious content to users Deploy malicious attachments through emails to compromise systems, gain unauthorized access, or facilitate cyber threats.",
+      "investigative_actions": "Carefully analyze attachments for any indications of suspicious or malicious behavior. Scrutinize the attachments for any suspicious indications. Confirm whether the attachments were successfully delivered to the recipient's mailbox. If the attachments were delivered successfully, verify whether the recipient downloaded them."
+    }
+  ]
+}

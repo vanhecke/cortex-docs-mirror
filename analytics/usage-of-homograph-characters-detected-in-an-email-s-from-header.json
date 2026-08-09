@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Masquerading (T1036)",
+    "Impersonation (T1656)"
+  ],
+  "attackers_goals": "Impersonate known legitimate brands or evade defenses, tricking recipients into clicking on malicious links or attachments.",
+  "deduplication_period": "1 Hour 30 Minutes",
+  "description": "Detected characters resembling Latin letters within an email's From header. This could indicate an attempt to impersonate a well-known brand or impersonate someone's identity. This could also be used as a method to evade text scanners and analyzers.",
+  "detection_modules": "Email",
+  "detector_tags": "Evasion",
+  "investigative_actions": "Check the characters in the email address for any characters that might look slightly different. Examine the sender's IP address and reputation. Verify whether the sender's IP address has appeared in different log sources before, and if it is recognizable. Check the domain the email came from, and if this domain is recognized within the organization. If the message contains attachments or links, scrutinize them for any suspicious indications. Monitor further actions taken, such as file downloads or access to potentially malicious links.",
+  "name": "Usage of homograph characters detected in an email's from header",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

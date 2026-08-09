@@ -1,0 +1,42 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)",
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Data from Cloud Storage (T1530)",
+    "Automated Exfiltration (T1020)"
+  ],
+  "attackers_goals": "Exfiltrate data from the cloud environment.",
+  "deduplication_period": "1 Day",
+  "description": "An identity accessed a backup cloud storage.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Exfiltration",
+  "investigative_actions": "Check the identity which invoked the operation. Check the accessed resource and verify it doesn't contain sensitive data.",
+  "name": "An identity accessed a backup cloud storage",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "An identity accessed a backup cloud storage which wasn't read recently",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Data from Cloud Storage (T1530)",
+        "Automated Exfiltration (T1020)"
+      ],
+      "description": "An identity accessed a backup cloud storage.",
+      "attackers_goals": "Exfiltrate data from the cloud environment.",
+      "investigative_actions": "Check the identity which invoked the operation. Check the accessed resource and verify it doesn't contain sensitive data."
+    }
+  ]
+}

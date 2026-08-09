@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Serverless Execution (T1648)",
+    "Scheduled Task/Job: Scheduled Task (T1053.005)"
+  ],
+  "attackers_goals": "Execute malicious code on AWS using Lambda functions.* Maintain persistence on AWS Lambda by creating or invoking Lambda functions.",
+  "deduplication_period": "5 Days",
+  "description": "An AWS Lambda Function was created.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Identify the Lambda function that was created and analyze its code for any malicious activity.",
+  "name": "An AWS Lambda Function was created",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

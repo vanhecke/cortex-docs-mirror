@@ -1,0 +1,85 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Reconnaissance (TA0043)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Phishing for Information (T1598)",
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "Achieve financial gain, distribute malware, or phish for sensitive information through mass unsolicited emails.",
+  "deduplication_period": "1 Day",
+  "description": "The Spam Confidence Level (SCL) and Bulk Complaint Level (BCL) values, detected in the email's antispam headers, indicate that a message is more likely to be spam.",
+  "detection_modules": "Email",
+  "detector_tags": "Spam",
+  "investigative_actions": "Examine email headers to trace origins and check for signs of spoofing. Analyze the email content for spam indicators like suspicious links and aggressive marketing language. Monitor further actions taken, such as file downloads or access to potentially malicious links.",
+  "name": "Email marked as spam and bulk based on Spam Confidence Level and Bulk Complaint Level values",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Email with high Spam Confidence Level and Bulk Complaint Level values",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Reconnaissance (TA0043)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing for Information (T1598)",
+        "Phishing (T1566)"
+      ],
+      "description": "The Spam Confidence Level (SCL) and Bulk Complaint Level (BCL) values, detected in the email's antispam headers, indicate that a message is more likely to be spam.",
+      "attackers_goals": "Achieve financial gain, distribute malware, or phish for sensitive information through mass unsolicited emails.",
+      "investigative_actions": "Examine email headers to trace origins and check for signs of spoofing. Analyze the email content for spam indicators like suspicious links and aggressive marketing language. Monitor further actions taken, such as file downloads or access to potentially malicious links."
+    },
+    {
+      "name": "Email with high Spam Confidence Level or Bulk Complaint Level values",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Reconnaissance (TA0043)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing for Information (T1598)",
+        "Phishing (T1566)"
+      ],
+      "description": "The Spam Confidence Level (SCL) and Bulk Complaint Level (BCL) values, detected in the email's antispam headers, indicate that a message is more likely to be spam.",
+      "attackers_goals": "Achieve financial gain, distribute malware, or phish for sensitive information through mass unsolicited emails.",
+      "investigative_actions": "Examine email headers to trace origins and check for signs of spoofing. Analyze the email content for spam indicators like suspicious links and aggressive marketing language. Monitor further actions taken, such as file downloads or access to potentially malicious links."
+    },
+    {
+      "name": "Email with medium Spam Confidence Level and Bulk Complaint Level values",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Reconnaissance (TA0043)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing for Information (T1598)",
+        "Phishing (T1566)"
+      ],
+      "description": "The Spam Confidence Level (SCL) and Bulk Complaint Level (BCL) values, detected in the email's antispam headers, indicate that a message is more likely to be spam.",
+      "attackers_goals": "Achieve financial gain, distribute malware, or phish for sensitive information through mass unsolicited emails.",
+      "investigative_actions": "Examine email headers to trace origins and check for signs of spoofing. Analyze the email content for spam indicators like suspicious links and aggressive marketing language. Monitor further actions taken, such as file downloads or access to potentially malicious links."
+    },
+    {
+      "name": "Email with medium Spam Confidence Level or Bulk Complaint Level values",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Reconnaissance (TA0043)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing for Information (T1598)",
+        "Phishing (T1566)"
+      ],
+      "description": "The Spam Confidence Level (SCL) and Bulk Complaint Level (BCL) values, detected in the email's antispam headers, indicate that a message is more likely to be spam.",
+      "attackers_goals": "Achieve financial gain, distribute malware, or phish for sensitive information through mass unsolicited emails.",
+      "investigative_actions": "Examine email headers to trace origins and check for signs of spoofing. Analyze the email content for spam indicators like suspicious links and aggressive marketing language. Monitor further actions taken, such as file downloads or access to potentially malicious links."
+    }
+  ]
+}

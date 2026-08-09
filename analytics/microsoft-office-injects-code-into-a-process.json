@@ -1,0 +1,101 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Phishing: Spearphishing Attachment (T1566.001)",
+    "Process Injection (T1055)"
+  ],
+  "attackers_goals": "An attacker attempts to gain code execution via a phishing document. Attackers may inject code into processes to evade process-based defenses, as well as possibly elevate privileges.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker may inject payloads into processes via Microsoft Office. While legitimate in certain cases, code injection can also be used in malicious ways.",
+  "detection_modules": "",
+  "detector_tags": "Injection Analytics",
+  "investigative_actions": "Check the source of the document (received by mail or loaded locally). Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Microsoft Office injects code into a process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unsigned Microsoft Office injects code into a process",
+      "severity": "High",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Phishing: Spearphishing Attachment (T1566.001)",
+        "Process Injection (T1055)",
+        "Masquerading: Match Legitimate Resource Name or Location (T1036.005)"
+      ],
+      "description": "An attacker may inject payloads into processes via Microsoft Office. While legitimate in certain cases, code injection can also be used in malicious ways.",
+      "attackers_goals": "An attacker attempts to gain code execution via a phishing document. Attackers may inject code into processes to evade process-based defenses, as well as possibly elevate privileges.",
+      "investigative_actions": "Check the source of the document (received by mail or loaded locally). Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Microsoft Office injects code into a process to a non-standard PE section",
+      "severity": "High",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Phishing: Spearphishing Attachment (T1566.001)",
+        "Process Injection (T1055)"
+      ],
+      "description": "An attacker may inject payloads into processes via Microsoft Office. While legitimate in certain cases, code injection can also be used in malicious ways.",
+      "attackers_goals": "An attacker attempts to gain code execution via a phishing document. Attackers may inject code into processes to evade process-based defenses, as well as possibly elevate privileges.",
+      "investigative_actions": "Check the source of the document (received by mail or loaded locally). Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Microsoft Office injects code into a process to an undeclared memory page",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Phishing: Spearphishing Attachment (T1566.001)",
+        "Process Injection (T1055)"
+      ],
+      "description": "An attacker may inject payloads into processes via Microsoft Office. While legitimate in certain cases, code injection can also be used in malicious ways.",
+      "attackers_goals": "An attacker attempts to gain code execution via a phishing document. Attackers may inject code into processes to evade process-based defenses, as well as possibly elevate privileges.",
+      "investigative_actions": "Check the source of the document (received by mail or loaded locally). Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Microsoft Office injects code into a process from an unsigned process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Phishing: Spearphishing Attachment (T1566.001)",
+        "Process Injection (T1055)"
+      ],
+      "description": "An attacker may inject payloads into processes via Microsoft Office. While legitimate in certain cases, code injection can also be used in malicious ways.",
+      "attackers_goals": "An attacker attempts to gain code execution via a phishing document. Attackers may inject code into processes to evade process-based defenses, as well as possibly elevate privileges.",
+      "investigative_actions": "Check the source of the document (received by mail or loaded locally). Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Microsoft Office macro-enabled spreadsheet (XLSM) injects code into a process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Phishing: Spearphishing Attachment (T1566.001)",
+        "Process Injection (T1055)"
+      ],
+      "description": "An attacker may inject payloads into processes via Microsoft Office. While legitimate in certain cases, code injection can also be used in malicious ways.",
+      "attackers_goals": "An attacker attempts to gain code execution via a phishing document. Attackers may inject code into processes to evade process-based defenses, as well as possibly elevate privileges.",
+      "investigative_actions": "Check the source of the document (received by mail or loaded locally). Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

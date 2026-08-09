@@ -1,0 +1,128 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)",
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol (T1071)",
+    "Exfiltration Over C2 Channel (T1041)",
+    "Remote Access Tools (T1219)"
+  ],
+  "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines. Additionally, establish command and control channels for remote malware control, conduct discovery activities to gather information about the target environment, or exfiltrate sensitive data from compromised systems.",
+  "deduplication_period": "14 Days",
+  "description": "A process has established recurring connections to an uncommon external host.",
+  "detection_modules": "",
+  "detector_tags": "Abnormal Communication Analytics",
+  "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also periodically contacting the same external host. Inspect the domain or URL for malicious indicators or its presence in threat intelligence feeds and reputation lists.",
+  "name": "Uncommon recurring rare external host access",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon recurring rare external host access by an automated penetration testing tool",
+      "severity": "High",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Exfiltration Over C2 Channel (T1041)",
+        "Remote Access Tools (T1219)"
+      ],
+      "description": "A process has established recurring connections to an uncommon external host.",
+      "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines. Additionally, establish command and control channels for remote malware control, conduct discovery activities to gather information about the target environment, or exfiltrate sensitive data from compromised systems.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also periodically contacting the same external host. Inspect the domain or URL for malicious indicators or its presence in threat intelligence feeds and reputation lists."
+    },
+    {
+      "name": "Uncommon recurring rare external host access to a dynamic DNS domain",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Exfiltration Over C2 Channel (T1041)",
+        "Remote Access Tools (T1219)"
+      ],
+      "description": "A process has established recurring connections to an uncommon external host.",
+      "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines. Additionally, establish command and control channels for remote malware control, conduct discovery activities to gather information about the target environment, or exfiltrate sensitive data from compromised systems.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also periodically contacting the same external host. Inspect the domain or URL for malicious indicators or its presence in threat intelligence feeds and reputation lists."
+    },
+    {
+      "name": "Uncommon recurring rare external host access initiated by a cron job",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Execution (TA0002)",
+        "Persistence (TA0003)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Scheduled Task/Job: Cron (T1053.003)",
+        "Scheduled Transfer (T1029)"
+      ],
+      "description": "A process has established recurring connections to an uncommon external host.",
+      "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines. Additionally, establish command and control channels for remote malware control, conduct discovery activities to gather information about the target environment, or exfiltrate sensitive data from compromised systems.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also periodically contacting the same external host. Inspect the domain or URL for malicious indicators or its presence in threat intelligence feeds and reputation lists."
+    },
+    {
+      "name": "Uncommon recurring rare external host access with a rare top-level domain",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Exfiltration Over C2 Channel (T1041)",
+        "Remote Access Tools (T1219)"
+      ],
+      "description": "A process has established recurring connections to an uncommon external host.",
+      "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines. Additionally, establish command and control channels for remote malware control, conduct discovery activities to gather information about the target environment, or exfiltrate sensitive data from compromised systems.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also periodically contacting the same external host. Inspect the domain or URL for malicious indicators or its presence in threat intelligence feeds and reputation lists."
+    },
+    {
+      "name": "Uncommon recurring rare external host access using an exfiltration tool",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Exfiltration Over C2 Channel (T1041)",
+        "Remote Access Tools (T1219)"
+      ],
+      "description": "A process has established recurring connections to an uncommon external host.",
+      "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines. Additionally, establish command and control channels for remote malware control, conduct discovery activities to gather information about the target environment, or exfiltrate sensitive data from compromised systems.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also periodically contacting the same external host. Inspect the domain or URL for malicious indicators or its presence in threat intelligence feeds and reputation lists."
+    },
+    {
+      "name": "Uncommon recurring rare external host access with a sensitive file in actor or causality command line",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)",
+        "Credential Access (TA0006)",
+        "Discovery (TA0007)",
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Exfiltration Over C2 Channel (T1041)",
+        "Steal Application Access Token (T1528)",
+        "System Owner/User Discovery (T1033)",
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "A process has established recurring connections to an uncommon external host.",
+      "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines. Additionally, establish command and control channels for remote malware control, conduct discovery activities to gather information about the target environment, or exfiltrate sensitive data from compromised systems.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also periodically contacting the same external host. Inspect the domain or URL for malicious indicators or its presence in threat intelligence feeds and reputation lists."
+    }
+  ]
+}

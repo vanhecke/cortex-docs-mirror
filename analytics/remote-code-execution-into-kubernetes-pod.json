@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Container Administration Command (T1609)"
+  ],
+  "attackers_goals": "Attackers may use the container administration commands to execute commands within a Kubernetes Pod.",
+  "deduplication_period": "5 Days",
+  "description": "A container administration service was used to execute commands within a Kubernetes Pod.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Remote code execution into Kubernetes Pod",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Remote code execution into Kubernetes Pod from another Pod for the first time",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Container Administration Command (T1609)"
+      ],
+      "description": "A container administration service was used to execute commands within a Kubernetes Pod.",
+      "attackers_goals": "Attackers may use the container administration commands to execute commands within a Kubernetes Pod.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Remote code execution into Kubernetes Pod from another Pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Container Administration Command (T1609)"
+      ],
+      "description": "A container administration service was used to execute commands within a Kubernetes Pod.",
+      "attackers_goals": "Attackers may use the container administration commands to execute commands within a Kubernetes Pod.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

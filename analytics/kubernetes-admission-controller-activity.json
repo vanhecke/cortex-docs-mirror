@@ -1,0 +1,88 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)",
+    "Unsecured Credentials: Container API (T1552.007)"
+  ],
+  "attackers_goals": "Intercept the requests to the Kubernetes API sever, records secrets, and other sensitive information. Modify requests to the Kubernetes API sever.",
+  "deduplication_period": "5 Days",
+  "description": "A Kubernetes admission controller has been created or modified.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Kubernetes - API",
+  "investigative_actions": "Verify whether the identity should use Kubernetes admission controllers. Examine the role of the Kubernetes admission controller and its intended function. Investigate other operations that were performed by the identity within the cluster.",
+  "name": "Kubernetes admission controller activity",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log",
+    "Kubernetes Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Kubernetes validating admission controller was used in the organization for the first time",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)",
+        "Unsecured Credentials: Container API (T1552.007)"
+      ],
+      "description": "A validating Kubernetes admission controller has been created or modified.",
+      "attackers_goals": "Intercept the requests to the Kubernetes API sever, records secrets, and other sensitive information. Modify requests to the Kubernetes API sever.",
+      "investigative_actions": "Verify whether the identity should use Kubernetes admission controllers. Examine the role of the Kubernetes admission controller and its intended function. Investigate other operations that were performed by the identity within the cluster."
+    },
+    {
+      "name": "Kubernetes mutating admission controller was used in the organization for the first time",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)",
+        "Unsecured Credentials: Container API (T1552.007)"
+      ],
+      "description": "A mutating Kubernetes admission controller has been created or modified.",
+      "attackers_goals": "Intercept the requests to the Kubernetes API sever, records secrets, and other sensitive information. Modify requests to the Kubernetes API sever.",
+      "investigative_actions": "Verify whether the identity should use Kubernetes admission controllers. Examine the role of the Kubernetes admission controller and its intended function. Investigate other operations that were performed by the identity within the cluster."
+    },
+    {
+      "name": "Kubernetes validating admission controller was used in the cluster for the first time",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)",
+        "Unsecured Credentials: Container API (T1552.007)"
+      ],
+      "description": "A validating Kubernetes admission controller has been created or modified.",
+      "attackers_goals": "Intercept the requests to the Kubernetes API sever, records secrets, and other sensitive information. Modify requests to the Kubernetes API sever.",
+      "investigative_actions": "Verify whether the identity should use Kubernetes admission controllers. Examine the role of the Kubernetes admission controller and its intended function. Investigate other operations that were performed by the identity within the cluster."
+    },
+    {
+      "name": "Kubernetes mutating admission controller was used in the cluster for the first time",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)",
+        "Unsecured Credentials: Container API (T1552.007)"
+      ],
+      "description": "A mutating Kubernetes admission controller has been created or modified.",
+      "attackers_goals": "Intercept the requests to the Kubernetes API sever, records secrets, and other sensitive information. Modify requests to the Kubernetes API sever.",
+      "investigative_actions": "Verify whether the identity should use Kubernetes admission controllers. Examine the role of the Kubernetes admission controller and its intended function. Investigate other operations that were performed by the identity within the cluster."
+    }
+  ]
+}

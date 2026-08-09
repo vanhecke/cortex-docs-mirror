@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)",
+    "Native API (T1106)"
+  ],
+  "attackers_goals": "Execute multiple covert actions to circumvent detection.",
+  "deduplication_period": "1 Day",
+  "description": "Multiple alerts of different MITRE tactics were seen on the same host under the same causality.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the causality of all the linked alerts. It is visible in the bottom of the causality page. Assess whether it looks like a threat actor executing multiple tactics.",
+  "name": "Multiple alerts of different MITRE tactics were seen",
+  "required_data": [
+    "Palo Alto Networks Platform Alerts",
+    "Third-Party Alerts"
+  ],
+  "severity": "Low",
+  "test_period": "3 Hours",
+  "variations": []
+}

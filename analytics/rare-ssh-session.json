@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Services (T1021)"
+  ],
+  "attackers_goals": "Secure Shell (SSH) provides a secure means of remote administration. Attackers can use valid SSH credentials and keys to remotely connect to endpoints running the SSH service.",
+  "deduplication_period": "1 Hour",
+  "description": "Secure Shell (SSH) provides a secure means of remote administration. Attackers can use valid SSH credentials and keys to remotely connect to endpoints running the SSH service.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify that the process is allowed in the organization. Check if the user should access the destination and whether the session was successful or not.",
+  "name": "Rare SSH Session",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

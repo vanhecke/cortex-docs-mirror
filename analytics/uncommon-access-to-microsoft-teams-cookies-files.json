@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Credentials from Password Stores (T1555)",
+    "Steal Application Access Token (T1528)"
+  ],
+  "attackers_goals": "Attacker may access credentials files and steal application access tokens to gain remote access.",
+  "deduplication_period": "1 Day",
+  "description": "Sensitive Microsoft Teams cookies files were accessed.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Microsoft Teams",
+  "investigative_actions": "Investigate the actor process to determine if it was used for legitimate purposes or malicious activity. Review the host for any additional unusual activity. Investigate the Graph API calls followed by the user that might be related.",
+  "name": "Uncommon access to Microsoft Teams cookies files",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Suspicious uncommon access to Microsoft Teams cookies files",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Credentials from Password Stores (T1555)",
+        "Steal Application Access Token (T1528)"
+      ],
+      "description": "Sensitive Microsoft Teams cookies files were accessed by a suspicious process.",
+      "attackers_goals": "Attacker may access credentials files and steal application access tokens to gain remote access.",
+      "investigative_actions": "Investigate the actor process to determine if it was used for legitimate purposes or malicious activity. Review the host for any additional unusual activity. Investigate the Graph API calls followed by the user that might be related."
+    }
+  ]
+}

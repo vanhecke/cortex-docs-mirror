@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data from Cloud Storage (T1530)"
+  ],
+  "attackers_goals": "Adversaries may collect ML artifacts for exfiltration or for use in ML Attack Staging.",
+  "deduplication_period": "5 Days",
+  "description": "A model artifact was accessed from cloud storage by an identity that typically doesn't interact with model files. MITRE ATLAS Technique: AML.T0035 - ML Artifact Collection.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud AI Infrastructure Analytics",
+  "investigative_actions": "Examine the bucket to determine which model was accessed. Verify that this command was executed by a trusted source.",
+  "name": "Suspicious ML Model Download",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious First-Time AI Model Download by Identity",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Data from Cloud Storage (T1530)"
+      ],
+      "description": "A model artifact was accessed from cloud storage by an identity that did not interact with model files recently.",
+      "attackers_goals": "Adversaries may collect ML artifacts for exfiltration or for use in ML Attack Staging.",
+      "investigative_actions": "Examine the bucket to determine which model was accessed. Verify that this command was executed by a trusted source."
+    }
+  ]
+}

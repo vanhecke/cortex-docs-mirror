@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Domain Accounts (T1078.002)",
+    "Unsecured Credentials (T1552)"
+  ],
+  "attackers_goals": "An attacker aims to extract plaintext credentials of the Network Access Account (NAA) from an SCCM environment, enabling unauthorized access to resources and lateral movement within the network.",
+  "deduplication_period": "1 Day",
+  "description": "A user registered a device and requested a Microsoft Configuration Manager policy.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Microsoft SCCM Analytics",
+  "investigative_actions": "Verify the activity with the performing user. Review related logs (e.g., Active Directory, SCCM logs) to identify the source of the modification and associated accounts. Look for unusual logins using the Network Access Account (NAA), on systems or at times that deviate from normal patterns. Looking for signs of credential extraction, such as tools or scripts.",
+  "name": "Microsoft Configuration Manager device registration and policy request",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Suspicious Microsoft Configuration Manager device registration and policy request",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Domain Accounts (T1078.002)",
+        "Unsecured Credentials (T1552)"
+      ],
+      "description": "A suspicious process registered a new device and requested policies from Microsoft Configuration Manager, triggering a suspicious activity alert due to unusual characteristics.",
+      "attackers_goals": "An attacker aims to extract plaintext credentials of the Network Access Account (NAA) from an SCCM environment, enabling unauthorized access to resources and lateral movement within the network.",
+      "investigative_actions": "Verify the activity with the performing user. Review related logs (e.g., Active Directory, SCCM logs) to identify the source of the modification and associated accounts. Look for unusual logins using the Network Access Account (NAA), on systems or at times that deviate from normal patterns. Looking for signs of credential extraction, such as tools or scripts."
+    }
+  ]
+}

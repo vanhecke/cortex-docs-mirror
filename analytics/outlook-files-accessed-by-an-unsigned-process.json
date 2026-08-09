@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data Staged: Local Data Staging (T1074.001)",
+    "Email Collection: Local Email Collection (T1114.001)"
+  ],
+  "attackers_goals": "Gain access to the data in the compromised mailbox.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker may use an uncommon and unsigned process to access Outlook data files.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Examine the process command and file activity to identify the mailbox. Check if the process performed any other suspicious file activity. Check if the process generated network connections.",
+  "name": "Outlook files accessed by an unsigned process",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "1 Hour",
+  "variations": []
+}

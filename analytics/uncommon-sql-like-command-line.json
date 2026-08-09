@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Unsecured Credentials: Credentials In Files (T1552.001)"
+  ],
+  "attackers_goals": "An attacker may use SQL queries to steal information stored at the target databases.",
+  "deduplication_period": "1 Day",
+  "description": "Uncommon SQL query in command line of an executed process.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the CGO (Causality Group Owner) is known for running SQL queries in the organization.",
+  "name": "Uncommon SQL like command line",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon SQL like command line executed by a remote actor",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials: Credentials In Files (T1552.001)"
+      ],
+      "description": "Uncommon SQL query in command line of a process which executed remotely.",
+      "attackers_goals": "An attacker may use SQL queries to steal information stored at the target databases.",
+      "investigative_actions": "Check if the CGO (Causality Group Owner) is known for running SQL queries in the organization."
+    },
+    {
+      "name": "Uncommon SQL like command line executed by an RMM tool",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials: Credentials In Files (T1552.001)"
+      ],
+      "description": "Uncommon SQL query in command line of a process executed by a Remote Monitoring & Management tool.",
+      "attackers_goals": "An attacker may use SQL queries to steal information stored at the target databases.",
+      "investigative_actions": "Check if the CGO (Causality Group Owner) is known for running SQL queries in the organization."
+    },
+    {
+      "name": "Uncommon SQL like command line executed by an uncommon CGO",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials: Credentials In Files (T1552.001)"
+      ],
+      "description": "Uncommon SQL query in command line of an executed process.",
+      "attackers_goals": "An attacker may use SQL queries to steal information stored at the target databases.",
+      "investigative_actions": "Check if the CGO (Causality Group Owner) is known for running SQL queries in the organization."
+    }
+  ]
+}

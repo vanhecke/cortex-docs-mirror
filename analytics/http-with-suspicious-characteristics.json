@@ -1,0 +1,71 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)",
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Web Service (T1102)",
+    "Exfiltration Over Web Service (T1567)"
+  ],
+  "attackers_goals": "Data exfiltration, attack tool staging or command and control channel through a trusted service.",
+  "deduplication_period": "1 Day",
+  "description": "Uncommon HTTP communication was performed by the host that might indicate its attempt to hide malicious activities.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Examine the legitimacy of the application that produced this uncommon connection. Examine the parent process of this application. Check for anomalies at the time when the communication occurred.",
+  "name": "HTTP with suspicious characteristics",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "2 Hours",
+  "variations": [
+    {
+      "name": "HTTP with suspicious characteristics which is repetitive",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Web Service (T1102)",
+        "Exfiltration Over Web Service (T1567)"
+      ],
+      "description": "Repetitevne HTTP communication was performed by the host that might indicate its attempt to hide malicious activities.",
+      "attackers_goals": "Data exfiltration, attack tool staging or command and control channel through a trusted service.",
+      "investigative_actions": "Examine the legitimacy of the application that produced this uncommon connection. Examine the parent process of this application. Check for anomalies at the time when the communication occurred."
+    },
+    {
+      "name": "HTTP with suspicious characteristics to an IP address",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Web Service (T1102)",
+        "Exfiltration Over Web Service (T1567)"
+      ],
+      "description": "Uncommon HTTP communication to IP address was performed by the host that might indicate its attempt to hide malicious activities.",
+      "attackers_goals": "Data exfiltration, attack tool staging or command and control channel through a trusted service.",
+      "investigative_actions": "Examine the legitimacy of the application that produced this uncommon connection. Examine the parent process of this application. Check for anomalies at the time when the communication occurred."
+    },
+    {
+      "name": "HTTP with suspicious characteristics that always fails",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Web Service (T1102)",
+        "Exfiltration Over Web Service (T1567)"
+      ],
+      "description": "Unsuccessful HTTP communication to IP address was performed by the host that might indicate its attempt to hide malicious activities.",
+      "attackers_goals": "Data exfiltration, attack tool staging or command and control channel through a trusted service.",
+      "investigative_actions": "Examine the legitimacy of the application that produced this uncommon connection. Examine the parent process of this application. Check for anomalies at the time when the communication occurred."
+    }
+  ]
+}

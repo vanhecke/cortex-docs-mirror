@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: Unix Shell (T1059.004)"
+  ],
+  "attackers_goals": "Attackers may try to download a script using wget or curl.",
+  "deduplication_period": "1 Day",
+  "description": "Downloading a script using wget or curl and executing it using a pipe to a shell.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Run downloaded script using pipe",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Run downloaded script using pipe in a Kubernetes pod",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)"
+      ],
+      "description": "Downloading a script using wget or curl and executing it using a pipe to a shell.",
+      "attackers_goals": "Attackers may try to download a script using wget or curl.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

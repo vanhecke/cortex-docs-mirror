@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "Trick the user into clicking a link, while avoiding detection.",
+  "deduplication_period": "1 Day",
+  "description": "Numerous emails were sent to multiple internal recipients. This may indicate spam or any other malicious attempt.",
+  "detection_modules": "Email",
+  "detector_tags": "Phishing, Spam",
+  "investigative_actions": "Examine the sender's IP address and reputation. Verify whether the sender's IP address has appeared in different log sources before, and if it is recognizable. If the message contains attachments or links, scrutinize them for any suspicious indications. Monitor further actions taken, such as file downloads or access to potentially malicious links.",
+  "name": "Numerous emails sent by a single sender to multiple internal recipients",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": []
+}

@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Hijack Execution Flow (T1574)"
+  ],
+  "attackers_goals": "The attacker's goal is to establish a persistent, high-privilege backdoor by forcing the service to load a malicious configuration that enables remote code execution and the bypass of security controls like MFA.",
+  "deduplication_period": "1 Day",
+  "description": "The AD FS service configuration file was modified.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Active Directory Federation Services Analytics",
+  "investigative_actions": "Check if the AD FS service was stopped or restarted around the time of modification. Investigate the process and user that performed the write operation for signs of compromise.",
+  "name": "Modification of the AD FS IdentityServer configuration file",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious Modification of the AD FS IdentityServer configuration file",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow (T1574)"
+      ],
+      "description": "The AD FS service configuration file was modified.",
+      "attackers_goals": "The attacker's goal is to establish a persistent, high-privilege backdoor by forcing the service to load a malicious configuration that enables remote code execution and the bypass of security controls like MFA.",
+      "investigative_actions": "Check if the AD FS service was stopped or restarted around the time of modification. Investigate the process and user that performed the write operation for signs of compromise."
+    }
+  ]
+}

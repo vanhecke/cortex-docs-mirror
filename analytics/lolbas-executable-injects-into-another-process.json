@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Process Injection (T1055)"
+  ],
+  "attackers_goals": "Gain code execution on the host and evade security controls.",
+  "deduplication_period": "1 Day",
+  "description": "A signed binary, which can be abused to run code, injected code to another process.",
+  "detection_modules": "",
+  "detector_tags": "Injection Analytics",
+  "investigative_actions": "Check whether the injecting process is benign, and if this was a desired behavior as part of its normal execution flow.",
+  "name": "LOLBAS executable injects into another process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "LOLBAS executable injects into another process under an uncommon CGO",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Process Injection (T1055)"
+      ],
+      "description": "A signed binary, which can be abused to run code, injected code to another process.",
+      "attackers_goals": "Gain code execution on the host and evade security controls.",
+      "investigative_actions": "Check whether the injecting process is benign, and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

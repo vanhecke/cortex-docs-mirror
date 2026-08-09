@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "Exfiltrate the proprietary model to a foreign account and establish persistent access to it.",
+  "deduplication_period": "1 Day",
+  "description": "A bedrock model was shared with a foreign account through AWS resource access manager.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud AI Infrastructure Analytics",
+  "investigative_actions": "Investigate the foreign cloud accounts that gained access to the models. Assess the sensitivity of the shared models to determine the potential impact of this exposure. Identify the actor and investigate their identity for compromise.",
+  "name": "Bedrock model shared with a foreign account",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

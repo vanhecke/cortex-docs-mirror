@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Forced Authentication (T1187)"
+  ],
+  "attackers_goals": "Elevate privileges from standard domain user to domain admin.",
+  "deduplication_period": "1 Day",
+  "description": "A host which is trusted for unconstrained delegation initiated an SMB connection to a DC using the Print System Remote Protocol. An attacker can abuse such sessions for relay attacks.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check if the domain controller is patched or vulnerable to the attack. Check if the suspected account is compromised. Check if the source machine is trusted for unconstrained delegation and verify that the machine's configuration should stay that way. Follow actions by the account and if it performed a DCSync.",
+  "name": "Suspicious Print System Remote Protocol usage by a process",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

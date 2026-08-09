@@ -1,0 +1,58 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Remote System Discovery (T1018)",
+    "System Information Discovery (T1082)",
+    "System Network Configuration Discovery (T1016)",
+    "System Service Discovery (T1007)"
+  ],
+  "attackers_goals": "Collect information about the host, network and user configuration for lateral movement and privilege escalation.",
+  "deduplication_period": "1 Day",
+  "description": "The alerted process performed multiple consecutive discovery commands in a short timeframe.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify if the script or process initiating the discovery commands is benign. Verify that this isn't sanctioned IT activity. Look for other hosts executing similar commands.",
+  "name": "Multiple discovery commands on a Linux host by the same process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Multiple discovery commands on a Linux host by the same process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Remote System Discovery (T1018)",
+        "System Information Discovery (T1082)",
+        "System Network Configuration Discovery (T1016)",
+        "System Service Discovery (T1007)"
+      ],
+      "description": "The alerted process performed multiple consecutive discovery commands in a short timeframe.",
+      "attackers_goals": "Collect information about the host, network and user configuration for lateral movement and privilege escalation.",
+      "investigative_actions": "Verify if the script or process initiating the discovery commands is benign. Verify that this isn't sanctioned IT activity. Look for other hosts executing similar commands."
+    },
+    {
+      "name": "Multiple discovery commands on a Linux host by the same process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Remote System Discovery (T1018)",
+        "System Information Discovery (T1082)",
+        "System Network Configuration Discovery (T1016)",
+        "System Service Discovery (T1007)"
+      ],
+      "description": "The alerted process performed multiple consecutive discovery commands in a short timeframe.",
+      "attackers_goals": "Collect information about the host, network and user configuration for lateral movement and privilege escalation.",
+      "investigative_actions": "Verify if the script or process initiating the discovery commands is benign. Verify that this isn't sanctioned IT activity. Look for other hosts executing similar commands."
+    }
+  ]
+}

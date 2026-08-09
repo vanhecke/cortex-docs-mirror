@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Boot or Logon Autostart Execution (T1547)"
+  ],
+  "attackers_goals": "Adversaries continuously find and develop new undetectable, novel methods of launching malware during startup. Attackers aim to get persistence to continue operating even after a reboot.",
+  "deduplication_period": "1 Day",
+  "description": "Uncommon execution of an executable found in an early startup stage.",
+  "detection_modules": "",
+  "detector_tags": "Generic Persistence Analytics",
+  "investigative_actions": "Check if the CGO (causality group owner) is familiar and if one of it configuration/parameters/registry keys has been modified.",
+  "name": "Execution of an uncommon process at an early startup stage",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Execution of an uncommon process at an early startup stage with suspicious characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Boot or Logon Autostart Execution (T1547)"
+      ],
+      "description": "Uncommon execution of an executable found in an early startup stage.",
+      "attackers_goals": "Adversaries continuously find and develop new undetectable, novel methods of launching malware during startup. Attackers aim to get persistence to continue operating even after a reboot.",
+      "investigative_actions": "Check if the CGO (causality group owner) is familiar and if one of it configuration/parameters/registry keys has been modified."
+    },
+    {
+      "name": "Execution of an uncommon process at an early startup stage with uncommon characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Boot or Logon Autostart Execution (T1547)"
+      ],
+      "description": "Uncommon execution of an executable found in an early startup stage.",
+      "attackers_goals": "Adversaries continuously find and develop new undetectable, novel methods of launching malware during startup. Attackers aim to get persistence to continue operating even after a reboot.",
+      "investigative_actions": "Check if the CGO (causality group owner) is familiar and if one of it configuration/parameters/registry keys has been modified."
+    }
+  ]
+}

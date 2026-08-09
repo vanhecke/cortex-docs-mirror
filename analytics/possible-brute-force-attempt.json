@@ -1,0 +1,55 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Brute Force (T1110)",
+    "Remote Services (T1021)"
+  ],
+  "attackers_goals": "The attacker attempts to gain access to the accounts.",
+  "deduplication_period": "1 Day",
+  "description": "A user account attempted to authenticate to a target an excessive number of times in a short period. This may indicate a brute-force attack.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Verify any successful authentication by the user account referenced by the alert, as these can indicate the attacker managed to guess the credentials.",
+  "name": "Possible Brute-Force attempt",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "15 Minutes",
+  "variations": [
+    {
+      "name": "Possible Brute-Force attempt on a Honey User Account",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Brute Force (T1110)",
+        "Remote Services (T1021)"
+      ],
+      "description": "A user account attempted to authenticate to a target an excessive number of times in a short period. This may indicate a brute-force attack.",
+      "attackers_goals": "The attacker attempts to gain access to the accounts.",
+      "investigative_actions": "Verify any successful authentication by the user account referenced by the alert, as these can indicate the attacker managed to guess the credentials."
+    },
+    {
+      "name": "Possible Brute-Force attempt with a successful login and suspicious characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Brute Force (T1110)",
+        "Remote Services (T1021)"
+      ],
+      "description": "A user account attempted to authenticate to a target an excessive number of times in a short period. This may indicate a brute-force attack.",
+      "attackers_goals": "The attacker attempts to gain access to the accounts.",
+      "investigative_actions": "Verify any successful authentication by the user account referenced by the alert, as these can indicate the attacker managed to guess the credentials."
+    }
+  ]
+}

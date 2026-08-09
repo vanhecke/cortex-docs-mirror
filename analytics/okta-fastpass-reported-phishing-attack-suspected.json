@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "An attacker might attempt to compromise Okta accounts to gain initial access to the organization, sensitive assets or data.",
+  "deduplication_period": "1 Day",
+  "description": "Okta FastPass authentication reported a phishing attack suspected.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Examine Okta alerts and search for signs of compromise to evaluate the potential risk. Examine email logs and headers to understand how the phishing email bypassed email security filters. Review the details of the phishing attempt, including the source email address, sender domain, and the content of the phishing message if available. Review recent login attempts, session details, and activity logs in OKTA for anomalies. Use threat intelligence feeds to identify if similar phishing tactics are part of a larger campaign. Examine historical access logs to see if there have been other attempts from the same IP or country and evaluate the potential threat level.",
+  "name": "Okta FastPass reported phishing attack suspected",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR AgentPalo Alto Networks Firewall threat Logs"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Okta FastPass reported phishing attack suspected from a suspicious IP",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing (T1566)"
+      ],
+      "description": "Okta FastPass authentication reported a phishing attack suspected.",
+      "attackers_goals": "An attacker might attempt to compromise Okta accounts to gain initial access to the organization, sensitive assets or data.",
+      "investigative_actions": "Examine Okta alerts and search for signs of compromise to evaluate the potential risk. Examine email logs and headers to understand how the phishing email bypassed email security filters. Review the details of the phishing attempt, including the source email address, sender domain, and the content of the phishing message if available. Review recent login attempts, session details, and activity logs in OKTA for anomalies. Use threat intelligence feeds to identify if similar phishing tactics are part of a larger campaign. Examine historical access logs to see if there have been other attempts from the same IP or country and evaluate the potential threat level."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)",
+    "Impair Defenses: Disable or Modify Tools (T1562.001)",
+    "Command and Scripting Interpreter: Cloud API (T1059.009)"
+  ],
+  "attackers_goals": "Blind defenders by removing alerts that watch for suspicious cloud activity. Avoid detection of subsequent operations such as data exfiltration, lateral movement, or persistence.",
+  "deduplication_period": "1 Day",
+  "description": "An Azure Monitor alert rule was deleted. Azure Monitor alert rules watch telemetry from cloud resources and fire when suspicious or anomalous activity occurs. Adversaries may delete these rules to blind defenders and avoid detection of follow-on malicious activity.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Identify which alert rule was deleted (metric, scheduled query, or activity-log alert) and what it was watching. Verify whether the identity that performed the deletion is authorized to manage Azure Monitor alert rules. Check the Azure Activity Log for the caller's other recent operations in the subscription / resource group. Look for correlated suspicious activity such as resource modifications, role assignments, or diagnostic-settings changes that would normally have been alerted on. Re-create the alert rule (or restore from infrastructure-as-code) to re-establish monitoring coverage.",
+  "name": "Azure Monitor alert rule deleted",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual Azure Monitor alert rule deletion",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses (T1562)",
+        "Impair Defenses: Disable or Modify Tools (T1562.001)",
+        "Command and Scripting Interpreter: Cloud API (T1059.009)"
+      ],
+      "description": "An Azure Monitor alert rule was deleted. Azure Monitor alert rules watch telemetry from cloud resources and fire when suspicious or anomalous activity occurs. Adversaries may delete these rules to blind defenders and avoid detection of follow-on malicious activity.",
+      "attackers_goals": "Blind defenders by removing alerts that watch for suspicious cloud activity. Avoid detection of subsequent operations such as data exfiltration, lateral movement, or persistence.",
+      "investigative_actions": "Identify which alert rule was deleted (metric, scheduled query, or activity-log alert) and what it was watching. Verify whether the identity that performed the deletion is authorized to manage Azure Monitor alert rules. Check the Azure Activity Log for the caller's other recent operations in the subscription / resource group. Look for correlated suspicious activity such as resource modifications, role assignments, or diagnostic-settings changes that would normally have been alerted on. Re-create the alert rule (or restore from infrastructure-as-code) to re-establish monitoring coverage."
+    },
+    {
+      "name": "Azure Monitor alert rule deleted by compute workload",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses (T1562)",
+        "Impair Defenses: Disable or Modify Tools (T1562.001)",
+        "Command and Scripting Interpreter: Cloud API (T1059.009)"
+      ],
+      "description": "An Azure Monitor alert rule was deleted. Azure Monitor alert rules watch telemetry from cloud resources and fire when suspicious or anomalous activity occurs. Adversaries may delete these rules to blind defenders and avoid detection of follow-on malicious activity.",
+      "attackers_goals": "Blind defenders by removing alerts that watch for suspicious cloud activity. Avoid detection of subsequent operations such as data exfiltration, lateral movement, or persistence.",
+      "investigative_actions": "Identify which alert rule was deleted (metric, scheduled query, or activity-log alert) and what it was watching. Verify whether the identity that performed the deletion is authorized to manage Azure Monitor alert rules. Check the Azure Activity Log for the caller's other recent operations in the subscription / resource group. Look for correlated suspicious activity such as resource modifications, role assignments, or diagnostic-settings changes that would normally have been alerted on. Re-create the alert rule (or restore from infrastructure-as-code) to re-establish monitoring coverage."
+    }
+  ]
+}

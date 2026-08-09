@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Use Alternate Authentication Material: Pass the Hash (T1550.002)"
+  ],
+  "attackers_goals": "An attacker is attempting to steal credentials and move laterally within a network.",
+  "deduplication_period": "1 Day",
+  "description": "An Encrypting File System Remote call (EFSRPC) was made to a domain controller.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check for suspicious processes on the host. Check if the source host is a vulnerability scanner. Look for following suspicious connections using the DC machine account.",
+  "name": "Suspicious Encrypting File System Remote call (EFSRPC) to domain controller",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

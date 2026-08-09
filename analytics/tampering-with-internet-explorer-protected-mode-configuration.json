@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify Tools (T1562.001)"
+  ],
+  "attackers_goals": "When an add-on is running inside Protected Mode attempts to launch a broker process, this key is checked to determine how the process should be launched. Attackers may change this value to make the process launch with higher privileges.",
+  "deduplication_period": "1 Day",
+  "description": "When an add-on is running inside Protected Mode attempts to launch a broker process (or any other program), the ElevationPolicy Registry key is checked to determine how the process should be launched. Internet Explorer will run a broker process with higher rights that can use the current user's permissions to take actions that would otherwise be prohibited when rendering content inside the Protected Mode sandbox. https://blogs.msdn.microsoft.com/ieinternals/2009/11/30/understanding-the-protected-mode-elevation-dialog/.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Tampering with Internet Explorer Protected Mode configuration",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Tampering with Internet Explorer Protected Mode default configuration",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify Tools (T1562.001)"
+      ],
+      "description": "When an add-on is running inside Protected Mode attempts to launch a broker process (or any other program), the ElevationPolicy Registry key is checked to determine how the process should be launched. Internet Explorer will run a broker process with higher rights that can use the current user's permissions to take actions that would otherwise be prohibited when rendering content inside the Protected Mode sandbox. https://blogs.msdn.microsoft.com/ieinternals/2009/11/30/understanding-the-protected-mode-elevation-dialog/.",
+      "attackers_goals": "When an add-on is running inside Protected Mode attempts to launch a broker process, this key is checked to determine how the process should be launched. Attackers may change this value to make the process launch with higher privileges.",
+      "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    },
+    {
+      "name": "Tampering with Internet Explorer Protected Mode specific app configuration",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify Tools (T1562.001)"
+      ],
+      "description": "When an add-on is running inside Protected Mode attempts to launch a broker process (or any other program), the ElevationPolicy Registry key is checked to determine how the process should be launched. Internet Explorer will run a broker process with higher rights that can use the current user's permissions to take actions that would otherwise be prohibited when rendering content inside the Protected Mode sandbox. https://blogs.msdn.microsoft.com/ieinternals/2009/11/30/understanding-the-protected-mode-elevation-dialog/.",
+      "attackers_goals": "When an add-on is running inside Protected Mode attempts to launch a broker process, this key is checked to determine how the process should be launched. Attackers may change this value to make the process launch with higher privileges.",
+      "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

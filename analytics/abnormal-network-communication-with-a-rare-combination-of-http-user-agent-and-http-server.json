@@ -1,0 +1,41 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)",
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Web Service (T1102)",
+    "Exfiltration Over Web Service (T1567)"
+  ],
+  "attackers_goals": "Data exfiltration, attack tool staging or command and control channel through a trusted service.",
+  "deduplication_period": "1 Day",
+  "description": "Abnormal network communication with a rare combination of HTTP User Agent and HTTP Server to an external address.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Examine the legitimacy of the application that produced this rare combination of HTTP User Agent with the external HTTP Server. Examine the parent process of this application. Check for anomalies at the time when the communication occurred.",
+  "name": "Abnormal network communication with a rare combination of HTTP User Agent and HTTP Server",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Abnormal network communication with a rare combination of HTTP User Agent and HTTP Server where both the User Agent and the HTTP Server are rare",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Web Service (T1102)",
+        "Exfiltration Over Web Service (T1567)"
+      ],
+      "description": "Abnormal network communication with a rare combination of HTTP User Agent and HTTP Server to an external address.",
+      "attackers_goals": "Data exfiltration, attack tool staging or command and control channel through a trusted service.",
+      "investigative_actions": "Examine the legitimacy of the application that produced this rare combination of HTTP User Agent with the external HTTP Server. Examine the parent process of this application. Check for anomalies at the time when the communication occurred."
+    }
+  ]
+}

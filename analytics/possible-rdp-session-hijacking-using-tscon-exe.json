@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Service Session Hijacking: RDP Hijacking (T1563.002)"
+  ],
+  "attackers_goals": "Attackers might hijack existing sessions on the same host to gain access to private data or leverage the logged-in user credentials to laterally move across the network.",
+  "deduplication_period": "1 Day",
+  "description": "The executable tscon.exe can be used to hijack other sessions on the same computer. The attacker may use another user's credentials to proceed with the lateral movement or disguise the activity.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify if the executing process is suspicious. Investigate if the interactive user did any more suspicious or malicious actions.",
+  "name": "Possible RDP session hijacking using tscon.exe",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

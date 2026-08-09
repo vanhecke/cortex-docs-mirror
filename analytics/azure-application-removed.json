@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Hide Artifacts (T1564)"
+  ],
+  "attackers_goals": "Delete apps used for malicious activities.* Delete evidence of activity.",
+  "deduplication_period": "5 Days",
+  "description": "An Azure application has been deleted.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the Azure Portal for any changes in applications. Review the activities performed by the application.",
+  "name": "Azure application removed",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

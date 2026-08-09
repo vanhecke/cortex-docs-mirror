@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Reconnaissance (TA0043)"
+  ],
+  "attack_techniques": [
+    "Gather Victim Network Information (T1590)"
+  ],
+  "attackers_goals": "An attacker is attempting to enumerate Microsoft Configuration Manager and identify accessible site servers.",
+  "deduplication_period": "1 Day",
+  "description": "A user accessed the System Management container, which may be an indication of a reconnaissance for site servers.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Microsoft SCCM Analytics",
+  "investigative_actions": "Look for the suspicious LDAP query that may trigger this event. Check if the process executes LDAP search queries as part of its normal behavior. Investigate any other potentially suspicious behavior from the compromised user. Looking for suspicious activity or logins to the Microsoft Configuration Manager site server.",
+  "name": "Suspicious access of the System Management Container",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

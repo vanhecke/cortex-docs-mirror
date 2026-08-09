@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Automated Collection (T1119)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "An adversary may attempt to use a compromised account in an unusual way to harvest as much data as possible, which could result in exceeding the access limit policy.",
+  "deduplication_period": "1 Day",
+  "description": "A user surpassed Okta's rate limit, leading to an access limit violation. This could suggest a potential account takeover attempt.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Okta Audit Analytics",
+  "investigative_actions": "Reach out to the user responsible for the alert to confirm the legitimacy of the activity. Examine the user's actions preceding and following the activation of the alert. Investigate abnormal logins, reported suspicious activities, new processes run, and recent configuration changes for any indicators of potential compromise. Assess the reputation of the IP address along with that of the Autonomous System Number (ASN).",
+  "name": "Potential Okta access limit breach",
+  "required_data": [
+    "Okta Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A breach in access limits within Okta, accompanied by suspicious characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Automated Collection (T1119)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "The user exceeded the access threshold in Okta, triggering a violation alert.",
+      "attackers_goals": "An adversary may attempt to use a compromised account in an unusual way to harvest as much data as possible, which could result in exceeding the access limit policy.",
+      "investigative_actions": "Reach out to the user responsible for the alert to confirm the legitimacy of the activity. Examine the user's actions preceding and following the activation of the alert. Investigate abnormal logins, reported suspicious activities, new processes run, and recent configuration changes for any indicators of potential compromise. Assess the reputation of the IP address along with that of the Autonomous System Number (ASN)."
+    }
+  ]
+}

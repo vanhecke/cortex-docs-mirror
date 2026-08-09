@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Forced Authentication (T1187)",
+    "Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay (T1557.001)"
+  ],
+  "attackers_goals": "An attacker can abuse the Distributed File System Namespace Management protocol to coerce an authentication from a DC. This authentication can later be used for obtaining a DC certificate for DCSync.",
+  "deduplication_period": "1 Day",
+  "description": "A possible abuse of Distributed File System Namespace Management (DFSNM).",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check for a suspicious process on the initiator. Check if the source host is a vulnerability scanner. Look for unusual AD CS certificate requests. Check for possible DCSync alerts.",
+  "name": "Possible Distributed File System Namespace Management (DFSNM) abuse",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "High",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

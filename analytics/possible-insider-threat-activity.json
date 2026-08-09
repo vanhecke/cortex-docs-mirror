@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Financial Theft (T1657)"
+  ],
+  "attackers_goals": "An insider threat might use their access to organizational resources for personal gain.",
+  "deduplication_period": "1 Day",
+  "description": "A user was observed performing suspicious activity that might indicate an attempt to use their access to organizational resources for personal gain.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check how long the user has been part of the organization. Check if the user is about to leave the company. Verify that the user is not part of a department that performs such activity as part of daily operations.",
+  "name": "Possible Insider Threat Activity",
+  "required_data": [
+    "AzureAD Audit LogMicrosoft Graph LogsOffice 365 AuditOktaPalo Alto Networks Global Protect",
+    "Third-Party VPNsXDR AgentXDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "3 Hours",
+  "variations": [
+    {
+      "name": "Indicate Insider Threat Activity",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Financial Theft (T1657)"
+      ],
+      "description": "A user was observed performing suspicious activity that might indicate an attempt to use their access to organizational resources for personal gain.",
+      "attackers_goals": "An insider threat might use their access to organizational resources for personal gain.",
+      "investigative_actions": "Check how long the user has been part of the organization. Check if the user is about to leave the company. Verify that the user is not part of a department that performs such activity as part of daily operations."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Domain Accounts (T1078.002)"
+  ],
+  "attackers_goals": "Use an account that has access to resources to move laterally in the network and access privileged resources.",
+  "deduplication_period": "1 Day",
+  "description": "A machine account successfully authenticated via SSO.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the account has done any administrative actions it should not usually do. Look for more logins and authentications by the account throughout the network.",
+  "name": "SSO authentication by a machine account",
+  "required_data": [
+    "AzureAD",
+    "Azure SignIn Log",
+    "Idira",
+    "Duo",
+    "Okta",
+    "OneLogin",
+    "PingOne"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "SSO authentication by a machine account from a suspicious IP",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Domain Accounts (T1078.002)"
+      ],
+      "description": "A machine account successfully authenticated via SSO.",
+      "attackers_goals": "Use an account that has access to resources to move laterally in the network and access privileged resources.",
+      "investigative_actions": "Check whether the account has done any administrative actions it should not usually do. Look for more logins and authentications by the account throughout the network."
+    }
+  ]
+}

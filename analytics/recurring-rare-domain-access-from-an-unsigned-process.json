@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol (T1071)"
+  ],
+  "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines.",
+  "deduplication_period": "14 Days",
+  "description": "An unsigned process is periodically connecting to an external domain that it and its peers rarely use. Access to this domain has occurred repeatedly over multiple days. This connection pattern is consistent with malware connecting to its command and control server for updates and operating instructions.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Identify the process contacting the remote domain and determine whether the traffic is malicious. Look for other endpoints on your network that are also periodically contacting the suspicious domain. Inspect the domain or URL for suspicious indicators or its presence in malicious reputation lists.",
+  "name": "Recurring rare domain access from an unsigned process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Recurring rare domain access from an uncommon unsigned process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "An unsigned process is periodically connecting to an external domain that it and its peers rarely use. Access to this domain has occurred repeatedly over multiple days. This connection pattern is consistent with malware connecting to its command and control server for updates and operating instructions.",
+      "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines.",
+      "investigative_actions": "Identify the process contacting the remote domain and determine whether the traffic is malicious. Look for other endpoints on your network that are also periodically contacting the suspicious domain. Inspect the domain or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
+      "name": "Recurring access to a rare domain associated with known threats",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "An unsigned process is periodically connecting to an external domain that it and its peers rarely use. Access to this domain has occurred repeatedly over multiple days. This connection pattern is consistent with malware connecting to its command and control server for updates and operating instructions.",
+      "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines.",
+      "investigative_actions": "Identify the process contacting the remote domain and determine whether the traffic is malicious. Look for other endpoints on your network that are also periodically contacting the suspicious domain. Inspect the domain or URL for suspicious indicators or its presence in malicious reputation lists."
+    }
+  ]
+}

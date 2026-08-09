@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Unsecured Credentials: Credentials In Files (T1552.001)"
+  ],
+  "attackers_goals": "Attackers may export certificates to pfx files to use them for authentication, persistence or NTLM extraction.",
+  "deduplication_period": "1 Day",
+  "description": "A user created a pfx file for the first time.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Active Directory Certificate Services Analytics",
+  "investigative_actions": "Check if the pfx creation is legitimate for the user (testing, IT, etc.). Follow further actions done by the user (ex. authentication using certificates).",
+  "name": "A user created a pfx file for the first time",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A user created a pfx in a suspicious folder for the first time",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials: Credentials In Files (T1552.001)"
+      ],
+      "description": "A user created a pfx in a suspicious folder which is publicly accessible, for the first time.",
+      "attackers_goals": "Attackers may export certificates to pfx files to use them for authentication, persistence or NTLM extraction.",
+      "investigative_actions": "Check if the pfx creation is legitimate for the user (testing, IT, etc.). Follow further actions done by the user (ex. authentication using certificates)."
+    }
+  ]
+}

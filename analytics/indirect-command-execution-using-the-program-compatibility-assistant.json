@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Indirect Command Execution (T1202)"
+  ],
+  "attackers_goals": "Evading detection by indirectly executing their malicious programs.",
+  "deduplication_period": "1 Day",
+  "description": "Pcalua.exe (Program Compatibility Assistant) is used for running old programs that have compatibility issues. Attackers can use pcalua.exe to indirectly execute their malicious programs.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Indirect command execution using the Program Compatibility Assistant",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

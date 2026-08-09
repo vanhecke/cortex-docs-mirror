@@ -1,0 +1,52 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Masquerading (T1036)",
+    "Masquerading: Rename Legitimate Utilities (T1036.003)"
+  ],
+  "attackers_goals": "Detection avoidance via file masquerading.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker may be trying to avoid detection of third-party utility execution by renaming it.",
+  "detection_modules": "",
+  "detector_tags": "EDR Windows Disguised Processes",
+  "investigative_actions": "Check the process origin or whether it comes with any packages the user has used.",
+  "name": "Execution of masqueraded third-party utility",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Execution of masqueraded third-party automation utility",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading (T1036)",
+        "Masquerading: Rename Legitimate Utilities (T1036.003)"
+      ],
+      "description": "An attacker may be trying to avoid detection of third-party utility execution by renaming it.",
+      "attackers_goals": "Detection avoidance via file masquerading.",
+      "investigative_actions": "Check the process origin or whether it comes with any packages the user has used."
+    },
+    {
+      "name": "Execution of significantly masqueraded third-party utility",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading (T1036)",
+        "Masquerading: Rename Legitimate Utilities (T1036.003)"
+      ],
+      "description": "An attacker may be trying to avoid detection of third-party utility execution by renaming it.",
+      "attackers_goals": "Detection avoidance via file masquerading.",
+      "investigative_actions": "Check the process origin or whether it comes with any packages the user has used."
+    }
+  ]
+}

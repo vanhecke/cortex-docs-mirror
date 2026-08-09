@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Authenticate using the principal in the TGT, not knowing that it has been revoked.",
+  "deduplication_period": "1 Day",
+  "description": "A locked-out user account (event ID 4725 or 4740) was used in a Kerberos TGT pre-authentication attempt.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether you have issues with your Cloud Identity Engine failing to sync data from Active Directory. Check whether the attempt to use the principals (user accounts) specified in the alert are legitimate. For example, a user or a script that was not updated that the account has been revoked. The lockout can be temporary, for example, in the case of too many login attempts, and may not be visible after the account was released. Search for Windows Event Log 4740 to ascertain whether the account was locked out during the time of the alert.",
+  "name": "Failed Login For Locked-Out Account",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

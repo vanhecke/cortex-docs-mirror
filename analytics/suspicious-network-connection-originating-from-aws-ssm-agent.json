@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)",
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol (T1071)",
+    "Exfiltration Over C2 Channel (T1041)"
+  ],
+  "attackers_goals": "Abuse the Amazon SSM agent to establish a covert command and control channel or exfiltrate data outside the cloud environment.",
+  "deduplication_period": "1 Day",
+  "description": "A process spawned by the AWS SSM agent connected to an anonymous tunnel or TOR IP outside AWS. This may indicate the SSM agent was abused for command and control or data exfiltration.",
+  "detection_modules": "Cloud",
+  "detector_tags": "SSM Remote Management Analytics",
+  "investigative_actions": "Verify the process spawned by SSM agent and validate its legitimacy. Inspect the destination IP and ASN in threat intelligence feeds. Review recent SSM document executions on the affected host.",
+  "name": "Suspicious Network Connection Originating from AWS SSM Agent",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

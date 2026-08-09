@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Getting elevated permissions to perform malicious actions.",
+  "deduplication_period": "1 Day",
+  "description": "An Azure AD PIM elevation request was denied/approved.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check if the elevation is authorized. Follow further actions or suspicious logins from the elevated account.",
+  "name": "Azure AD PIM elevation request",
+  "required_data": [
+    "AzureAD Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

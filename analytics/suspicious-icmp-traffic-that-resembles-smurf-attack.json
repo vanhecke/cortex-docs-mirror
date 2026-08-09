@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Endpoint Denial of Service: Service Exhaustion Flood (T1499.002)",
+    "Network Denial of Service (T1498)"
+  ],
+  "attackers_goals": "Attempt to perform a denial-of-service attack by network exhaustion.",
+  "deduplication_period": "1 Day",
+  "description": "ICMP smurf attack was used.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the ICMP message to broadcast was used for a legitimate reason. If not, check for denial-of-service impact on the subnet.",
+  "name": "Suspicious ICMP traffic that resembles smurf attack",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "1 Hour",
+  "variations": []
+}

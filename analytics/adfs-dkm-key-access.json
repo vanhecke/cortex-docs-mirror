@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Forge Web Credentials: SAML Tokens (T1606.002)"
+  ],
+  "attackers_goals": "The attack goal is to forge a valid SAML token to impersonate any user and gain persistent, unauthorized access to cloud resources, effectively bypassing MFA and standard security controls.",
+  "deduplication_period": "1 Day",
+  "description": "ADFS DKM key attribute (thumbnailphoto) access in AD container, potential Golden SAML token forging attempt.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Active Directory Federation Services Analytics",
+  "investigative_actions": "Check for recent changes to the SAML signing certificate on both the Identity Provider and the Service Provider to rule out a configuration drift or expiration issue. Check for other correlated alerts on on-premises systems that may be related to the Golden SAML attack. Look for signs that the user account is compromised (e.g. abnormal logins, unusual activity).",
+  "name": "ADFS DKM Key Access",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

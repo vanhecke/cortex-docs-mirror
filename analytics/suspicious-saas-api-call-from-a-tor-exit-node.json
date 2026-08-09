@@ -1,0 +1,52 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Proxy: Multi-hop Proxy (T1090.003)"
+  ],
+  "attackers_goals": "Conceal information about malicious activities, such as location and network usage.",
+  "deduplication_period": "1 Day",
+  "description": "A SaaS API was called from a Tor exit node.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Block all web traffic to and from public Tor entry and exit nodes.",
+  "name": "Suspicious SaaS API call from a Tor exit node",
+  "required_data": [
+    "Box Audit Log",
+    "DropBox",
+    "Google Workspace Audit Logs",
+    "Office 365 Audit"
+  ],
+  "severity": "High",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A Failed API call from a Tor exit node",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Proxy: Multi-hop Proxy (T1090.003)"
+      ],
+      "description": "A SaaS API was called from a Tor exit node.",
+      "attackers_goals": "Conceal information about malicious activities, such as location and network usage.",
+      "investigative_actions": "Block all web traffic to and from public Tor entry and exit nodes."
+    },
+    {
+      "name": "Suspicious SaaS API call from a Tor exit node via Mobile Device",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Proxy: Multi-hop Proxy (T1090.003)"
+      ],
+      "description": "A SaaS API was called from a Tor exit node.",
+      "attackers_goals": "Conceal information about malicious activities, such as location and network usage.",
+      "investigative_actions": "Block all web traffic to and from public Tor entry and exit nodes."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol: Web Protocols (T1071.001)"
+  ],
+  "attackers_goals": "Threat actors may use the WebDAV to blend in existing network traffic.",
+  "deduplication_period": "1 Day",
+  "description": "Uncommon file access over WebDAV.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the process {actor_process_image_name} which tried to access the remote file. Investigate the remote host {webdav_dst_from_file_event}.",
+  "name": "Uncommon file access over WebDAV",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "High-risk file read over WebDAV by a LOLBIN process",
+      "severity": "High",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol: Web Protocols (T1071.001)"
+      ],
+      "description": "High-risk file read over WebDAV by a LOLBIN process.",
+      "attackers_goals": "Threat actors may use the WebDAV to blend in existing network traffic.",
+      "investigative_actions": "Investigate the process {actor_process_image_name} which tried to access the remote file. Investigate the remote host {webdav_dst_from_file_event}."
+    }
+  ]
+}

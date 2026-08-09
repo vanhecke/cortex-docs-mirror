@@ -1,0 +1,55 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Create or Modify System Process: Windows Service (T1543.003)",
+    "System Services: Service Execution (T1569.002)"
+  ],
+  "attackers_goals": "Escalate privileges to system and execute commands.",
+  "deduplication_period": "1 Day",
+  "description": "Services were affected by a non SYSTEM integrity level process.",
+  "detection_modules": "",
+  "detector_tags": "Malicious Service Analytics",
+  "investigative_actions": "Investigate the service being spawned on the host for malicious activities.",
+  "name": "Elevation to SYSTEM via services",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Elevation to SYSTEM via service creation",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Create or Modify System Process: Windows Service (T1543.003)",
+        "System Services: Service Execution (T1569.002)"
+      ],
+      "description": "A service was created from a non SYSTEM integrity level process.",
+      "attackers_goals": "Escalate privileges to system and execute commands.",
+      "investigative_actions": "Investigate the service being spawned on the host for malicious activities."
+    },
+    {
+      "name": "Elevation to SYSTEM via service modification",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Create or Modify System Process: Windows Service (T1543.003)",
+        "System Services: Service Execution (T1569.002)"
+      ],
+      "description": "An existing service was modified from a non SYSTEM integrity level process.",
+      "attackers_goals": "Escalate privileges to system and execute commands.",
+      "investigative_actions": "Investigate the service being spawned on the host for malicious activities."
+    }
+  ]
+}

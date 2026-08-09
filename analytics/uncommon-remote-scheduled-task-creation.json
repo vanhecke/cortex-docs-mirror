@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Scheduled Task/Job (T1053)"
+  ],
+  "attackers_goals": "Attackers can attempt to use the command to execute programs or persist malware on remote endpoints.",
+  "deduplication_period": "1 Day",
+  "description": "The schtasks.exe command enables creating, deleting, querying, changing, running, and ending scheduled tasks on a local or remote computer. Adversaries may attempt to use the command to execute programs or persist malware on remote machines.",
+  "detection_modules": "",
+  "detector_tags": "Scheduled tasks Analytics",
+  "investigative_actions": "Investigate the initiator process and whether it should create remote tasks. Investigate the scheduled task execution on the remote machine.",
+  "name": "Uncommon remote scheduled task creation",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon remote scheduled task creation by a remote actor via RDP",
+      "severity": "High",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Scheduled Task/Job (T1053)"
+      ],
+      "description": "The schtasks.exe command enables creating, deleting, querying, changing, running, and ending scheduled tasks on a local or remote computer. Adversaries may attempt to use the command to execute programs or persist malware on remote machines.",
+      "attackers_goals": "Attackers can attempt to use the command to execute programs or persist malware on remote endpoints.",
+      "investigative_actions": "Investigate the initiator process and whether it should create remote tasks. Investigate the scheduled task execution on the remote machine."
+    }
+  ]
+}

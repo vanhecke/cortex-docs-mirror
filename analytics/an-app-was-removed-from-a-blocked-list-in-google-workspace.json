@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Modify Authentication Process (T1556)"
+  ],
+  "attackers_goals": "Malicious OAuth Apps can be used to request elevated permissions or to impersonate another user.",
+  "deduplication_period": "2 Days",
+  "description": "An identity removed an app from Google Workspace blocked OAuth or third-party apps list.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the app that was removed from the trusted apps list looks suspicious. Follow further actions done by the account.",
+  "name": "An app was removed from a blocked list in Google Workspace",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "An app was removed from a blocked list in Google Workspace by a suspicious identity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Modify Authentication Process (T1556)"
+      ],
+      "description": "An identity removed an app from Google Workspace blocked OAuth or third-party apps list.",
+      "attackers_goals": "Malicious OAuth Apps can be used to request elevated permissions or to impersonate another user.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the app that was removed from the trusted apps list looks suspicious. Follow further actions done by the account."
+    },
+    {
+      "name": "An app was removed from a blocked list in Google Workspace by a non Google Workspace administrative user",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Modify Authentication Process (T1556)"
+      ],
+      "description": "An identity removed an app from Google Workspace blocked OAuth or third-party apps list.",
+      "attackers_goals": "Malicious OAuth Apps can be used to request elevated permissions or to impersonate another user.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the app that was removed from the trusted apps list looks suspicious. Follow further actions done by the account."
+    },
+    {
+      "name": "An app was removed from a blocked list in Google Workspace from an unusual ASN",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Modify Authentication Process (T1556)"
+      ],
+      "description": "An identity removed an app from Google Workspace blocked OAuth or third-party apps list.",
+      "attackers_goals": "Malicious OAuth Apps can be used to request elevated permissions or to impersonate another user.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the app that was removed from the trusted apps list looks suspicious. Follow further actions done by the account."
+    }
+  ]
+}

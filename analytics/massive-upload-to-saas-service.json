@@ -1,0 +1,45 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)",
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Exfiltration Over Web Service (T1567)",
+    "Exfiltration Over Web Service: Exfiltration to Cloud Storage (T1567.002)",
+    "Data Staged: Remote Data Staging (T1074.002)"
+  ],
+  "attackers_goals": "An attacker may upload files to a SaaS service to stage and exfiltrate data from the organization.",
+  "deduplication_period": "1 Day",
+  "description": "A user uploaded a large amount of data to an organizational cloud storage. This behavior may indicate that the data is being exfiltrated or staged.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Data Detection & Response",
+  "investigative_actions": "Check for signs of account compromise, such as abnormal login activity or unusual behavior. Review the files that were uploaded to determine if they contain sensitive data. Verify if the user account that uploaded the files is authorized to access them. Analyze the file types that were uploaded. Monitor the account for any further suspicious actions.",
+  "name": "Massive upload to SaaS service",
+  "required_data": [
+    "Box Audit Log",
+    "DropBox",
+    "Google Workspace Audit Logs",
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "3 Hours",
+  "variations": [
+    {
+      "name": "Massive upload to SaaS service by suspicious user",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)",
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Web Service (T1567)",
+        "Exfiltration Over Web Service: Exfiltration to Cloud Storage (T1567.002)",
+        "Data Staged: Remote Data Staging (T1074.002)"
+      ],
+      "description": "A suspicious user uploaded a large amount of data to an organizational cloud storage. This behavior may indicate that the data is being exfiltrated or staged.",
+      "attackers_goals": "An attacker may upload files to a SaaS service to stage and exfiltrate data from the organization.",
+      "investigative_actions": "Check for signs of account compromise, such as abnormal login activity or unusual behavior. Review the files that were uploaded to determine if they contain sensitive data. Verify if the user account that uploaded the files is authorized to access them. Analyze the file types that were uploaded. Monitor the account for any further suspicious actions."
+    }
+  ]
+}

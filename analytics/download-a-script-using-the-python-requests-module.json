@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: Python (T1059.006)"
+  ],
+  "attackers_goals": "Adversaries may abuse Python commands and scripts to download additional malicious files or for exfiltration.",
+  "deduplication_period": "1 Day",
+  "description": "Download a shell script from a remote location using the Python requests module.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Download a script using the python requests module",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

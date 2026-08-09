@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "User Execution: Malicious Image (T1204.003)"
+  ],
+  "attackers_goals": "Download a second stage payload for execution.",
+  "deduplication_period": "3 Hours",
+  "description": "A contained process was executed with a suspicious GitHub url in the command line. This may be a legitimate use, but this technique is frequently used by attackers to download malicious payloads.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the initiator process is malicious. Check the user activity on the same container at that time. Check if the container is a development container. Check if this installation was related to more installations at the same time. Check for additional file/network operations by the same process instance.",
+  "name": "Contained process execution with a rare GitHub URL",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

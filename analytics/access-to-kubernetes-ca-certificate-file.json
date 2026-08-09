@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Unsecured Credentials: Credentials In Files (T1552.001)"
+  ],
+  "attackers_goals": "Make API calls against the Kubernetes cluster.",
+  "deduplication_period": "1 Day",
+  "description": "A process accessed a Kubernetes CA certificate file.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Kubernetes Credentials Theft Analytics",
+  "investigative_actions": "Look for additional suspicious activities. Verify if the exposed certificate was used to access the API server. Investigate which operations were used against the Kubernetes cluster with the exposed certificate.",
+  "name": "Access to Kubernetes CA certificate file",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Access to Kubernetes CA certificate file by an unusual process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials: Credentials In Files (T1552.001)"
+      ],
+      "description": "A process accessed a Kubernetes CA certificate file for the first time.",
+      "attackers_goals": "Make API calls against the Kubernetes cluster.",
+      "investigative_actions": "Look for additional suspicious activities. Verify if the exposed certificate was used to access the API server. Investigate which operations were used against the Kubernetes cluster with the exposed certificate."
+    }
+  ]
+}

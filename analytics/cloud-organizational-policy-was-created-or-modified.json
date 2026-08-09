@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)",
+    "Domain or Tenant Policy Modification (T1484)"
+  ],
+  "attackers_goals": "Gain elevated privileges, disable security measures, misuse resources or cause disruption.",
+  "deduplication_period": "5 Days",
+  "description": "Cloud organizational policy was created or modified.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check which services were affected by the policy creation. Check The cloud identity activity prior/after the policy creation.",
+  "name": "Cloud Organizational policy was created or modified",
+  "required_data": [
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Cloud Organizational policy was created or modified",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses (T1562)",
+        "Domain or Tenant Policy Modification (T1484)"
+      ],
+      "description": "Cloud organizational policy was created or modified.",
+      "attackers_goals": "Gain elevated privileges, disable security measures, misuse resources or cause disruption.",
+      "investigative_actions": "Check which services were affected by the policy creation. Check The cloud identity activity prior/after the policy creation."
+    }
+  ]
+}

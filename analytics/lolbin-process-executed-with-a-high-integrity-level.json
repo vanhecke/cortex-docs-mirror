@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Abuse Elevation Control Mechanism (T1548)"
+  ],
+  "attackers_goals": "An attacker may attempt to gain higher privileges.",
+  "deduplication_period": "1 Day",
+  "description": "A process spawned a suspicious LOLBIN process with a higher/system integrity level. The LOLBIN process spawned with an uncommon command line. This may be an indication of malicious code execution to gain privileges.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the command line executed is benign or normal for the host and/or user performing it. Investigate the endpoint to determine if it's a legitimate process that is supposed to run with privileges.",
+  "name": "LOLBIN process executed with a high integrity level",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "LOLBIN process executed with a high integrity level by a web server process or CGO",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Initial Access (TA0001)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Abuse Elevation Control Mechanism (T1548)",
+        "External Remote Services (T1133)",
+        "Server Software Component: Web Shell (T1505.003)"
+      ],
+      "description": "A process spawned a suspicious LOLBIN process with a higher/system integrity level by a web server process or CGO. The LOLBIN process spawned with an uncommon command line. This may be an indication of malicious code execution to gain privileges.",
+      "attackers_goals": "An attacker may attempt to gain higher privileges.",
+      "investigative_actions": "Check whether the command line executed is benign or normal for the host and/or user performing it. Investigate the endpoint to determine if it's a legitimate process that is supposed to run with privileges."
+    }
+  ]
+}

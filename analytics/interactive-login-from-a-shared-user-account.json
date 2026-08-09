@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Gaining access to a shared account and multiple hosts and systems throughout the organization.",
+  "deduplication_period": "30 Days",
+  "description": "A user account has been seen active on multiple hosts. Shared accounts are often considered 'bad practice' and may present multiple security risks to the organization.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Ensure that the shared account is legitimate and has a justified role in the organization.",
+  "name": "Interactive login from a shared user account",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

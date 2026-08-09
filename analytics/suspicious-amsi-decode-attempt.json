@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Deobfuscate/Decode Files or Information (T1140)"
+  ],
+  "attackers_goals": "Avoid security mitigations and detections.",
+  "deduplication_period": "1 Minute",
+  "description": "A script has executed commands that can be used to decode commands or files.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check the payload for malicious activity.",
+  "name": "Suspicious AMSI decode attempt",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

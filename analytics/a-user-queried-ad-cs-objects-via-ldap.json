@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "File and Directory Discovery (T1083)",
+    "Steal or Forge Authentication Certificates (T1649)"
+  ],
+  "attackers_goals": "An attacker might look for AD CS servers, certificate templates or request certificates. With the wrong setting or loose vulnerable templates or enabled enrollment, the attacker will be able to authenticate as users on the network.",
+  "deduplication_period": "1 Day",
+  "description": "A user queried AD CS objects via LDAP.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "LDAP Analytics (Server), Active Directory Certificate Services Analytics",
+  "investigative_actions": "Check if the LDAP search query was allowed for the user (logged on at event time). Investigate the LDAP search query for any suspicious indicators.",
+  "name": "A user queried AD CS objects via LDAP",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A user enumerated AD CS objects using suspicious LDAP query",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "Steal or Forge Authentication Certificates (T1649)"
+      ],
+      "description": "A user enumerated AD CS objects using suspicious LDAP query.",
+      "attackers_goals": "An attacker might look for AD CS servers, certificate templates or request certificates. With the wrong setting or loose vulnerable templates or enabled enrollment, the attacker will be able to authenticate as users on the network.",
+      "investigative_actions": "Check if the LDAP search query was allowed for the user (logged on at event time). Investigate the LDAP search query for any suspicious indicators."
+    }
+  ]
+}

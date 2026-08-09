@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "An attacker may add roles to service principals that will allow them to access sensitive information and perform other actions.",
+  "deduplication_period": "1 Day",
+  "description": "An identity assigned an app role (permissions) to a service principal.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check if the added service principle is new to the organization. Check whether the account that added the app role is supposed to perform such actions. Check for possible logins and actions from the service principle with the role. Follow further actions done by the application and the assigner.",
+  "name": "Azure service principal assigned app role",
+  "required_data": [
+    "AzureAD Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

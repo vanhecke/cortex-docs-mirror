@@ -1,0 +1,50 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Steal or Forge Kerberos Tickets: AS-REP Roasting (T1558.004)"
+  ],
+  "attackers_goals": "Crack account credentials by obtaining an easy-to-crack Kerberos ticket.",
+  "deduplication_period": "1 Day",
+  "description": "Multiple TGT requests for users that do not require Kerberos pre-authentication were observed. This is typically a sign of an AS-REP attack.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check who used the host at the time of the alert, to rule out a benign service or tool requesting weak Kerberos encryption.",
+  "name": "Multiple TGT requests for users without Kerberos pre-authentication",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "An excessive number of TGT requests were sent for users that do not require Kerberos pre-authentication",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal or Forge Kerberos Tickets: AS-REP Roasting (T1558.004)"
+      ],
+      "description": "Multiple TGT requests for users that do not require Kerberos pre-authentication were observed. This is typically a sign of an AS-REP attack.",
+      "attackers_goals": "Crack account credentials by obtaining an easy-to-crack Kerberos ticket.",
+      "investigative_actions": "Check who used the host at the time of the alert, to rule out a benign service or tool requesting weak Kerberos encryption."
+    },
+    {
+      "name": "A TGT request was sent for a user who does not require Kerberos pre-authentication",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal or Forge Kerberos Tickets: AS-REP Roasting (T1558.004)"
+      ],
+      "description": "A TGT request was sent for a user who does not require Kerberos pre-authentication. This might indicate an AS-REP attack.",
+      "attackers_goals": "Crack account credentials by obtaining an easy-to-crack Kerberos ticket.",
+      "investigative_actions": "Check who used the host at the time of the alert, to rule out a benign service or tool requesting weak Kerberos encryption."
+    }
+  ]
+}

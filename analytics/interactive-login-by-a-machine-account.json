@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Domain Accounts (T1078.002)"
+  ],
+  "attackers_goals": "Use an account that has access to resources to move laterally in the network and access privileged resources.",
+  "deduplication_period": "1 Day",
+  "description": "A machine account performed an interactive or remote interactive login.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "See whether the login was successful. Check whether the account has done any administrative actions it should not usually do. Look for more logins and authentications by the account throughout the network.",
+  "name": "Interactive login by a machine account",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Successful interactive login by a machine account",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Domain Accounts (T1078.002)"
+      ],
+      "description": "A machine account performed a successful interactive or remote interactive login.",
+      "attackers_goals": "Use an account that has access to resources to move laterally in the network and access privileged resources.",
+      "investigative_actions": "See whether the login was successful. Check whether the account has done any administrative actions it should not usually do. Look for more logins and authentications by the account throughout the network."
+    }
+  ]
+}

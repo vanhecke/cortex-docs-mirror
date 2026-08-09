@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Archive Collected Data: Archive via Utility (T1560.001)",
+    "Data Staged (T1074)"
+  ],
+  "attackers_goals": "Stage data on an endpoint in the organization.",
+  "deduplication_period": "3 Days",
+  "description": "An archive file was created by a user who doesn't usually create such files. This might indicate an attempt to stage data before exfiltration.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check for any other suspicious activity related to the host and the user involved in the alert.",
+  "name": "An unusual archive file creation by a user",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A user created an archive file for the first time",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Archive Collected Data: Archive via Utility (T1560.001)",
+        "Data Staged (T1074)"
+      ],
+      "description": "A user created an archive file for the first time. This might indicate an attempt to stage data before exfiltration.",
+      "attackers_goals": "Stage data on an endpoint in the organization.",
+      "investigative_actions": "Check for any other suspicious activity related to the host and the user involved in the alert."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Internal Spearphishing (T1534)"
+  ],
+  "attackers_goals": "Attackers may leverage a compromised user account to send phishing or malicious messages via Graph API to multiple recipients, aiming to propagate the attack while evading detection.",
+  "deduplication_period": "1 Day",
+  "description": "A user who rarely uses the Graph API for Microsoft Teams messaging sent multiple messages using it.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Microsoft Teams",
+  "investigative_actions": "Verify the user's role and typical usage of Microsoft Graph API. Check if the user's account has recently logged in from unusual locations or devices. Review recent email and chat activity to identify any phishing or suspicious messages sent. Examine the Graph API call logs to see what actions were performed and their timestamps. Correlate with endpoint logs to detect any malware or suspicious processes running on the user's device. Check for signs of account compromise, such as password changes or MFA bypass attempts. Follow further actions done by the account.",
+  "name": "User sent messages in Microsoft Teams to multiple conversations via Graph API",
+  "required_data": [
+    "Microsoft Graph Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "User sent messages in Microsoft Teams to several conversations via Graph API with suspicious characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Internal Spearphishing (T1534)"
+      ],
+      "description": "A user who rarely uses the Graph API for Microsoft Teams messaging sent multiple messages using it.",
+      "attackers_goals": "Attackers may leverage a compromised user account to send phishing or malicious messages via Graph API to multiple recipients, aiming to propagate the attack while evading detection.",
+      "investigative_actions": "Verify the user's role and typical usage of Microsoft Graph API. Check if the user's account has recently logged in from unusual locations or devices. Review recent email and chat activity to identify any phishing or suspicious messages sent. Examine the Graph API call logs to see what actions were performed and their timestamps. Correlate with endpoint logs to detect any malware or suspicious processes running on the user's device. Check for signs of account compromise, such as password changes or MFA bypass attempts. Follow further actions done by the account."
+    }
+  ]
+}

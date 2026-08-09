@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Resource Development (TA0042)"
+  ],
+  "attack_techniques": [
+    "Compromise Accounts (T1586)",
+    "Multi-Factor Authentication Request Generation (T1621)"
+  ],
+  "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
+  "deduplication_period": "1 Day",
+  "description": "Multiple SSO MFA attempts were sent to the user. This may indicate an MFA fatigue attack.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Verify the reasoning behind the MFA request rejections. Follow further actions performed by the user.",
+  "name": "Multiple Okta MFA requests sent to a user",
+  "required_data": [
+    "Okta"
+  ],
+  "severity": "Informational",
+  "test_period": "30 Minutes",
+  "variations": [
+    {
+      "name": "Multiple Okta MFA requests sent to a user with unusual characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Compromise Accounts (T1586)",
+        "Multi-Factor Authentication Request Generation (T1621)"
+      ],
+      "description": "Multiple SSO MFA attempts were sent to the user. This may indicate an MFA fatigue attack.",
+      "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
+      "investigative_actions": "Verify the reasoning behind the MFA request rejections. Follow further actions performed by the user."
+    }
+  ]
+}

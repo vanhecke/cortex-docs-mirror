@@ -1,0 +1,41 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Exfiltration Over Alternative Protocol (T1048)",
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "IPFS access may expose your organization to new malware or allow attackers/ malicious insiders to exfiltrate data.",
+  "deduplication_period": "1 Day",
+  "description": "The host produced traffic consistent with IPFS.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check the host for IPFS client software. Look at the user's website history for IPFS url's and check the content ID (CID) for malicious indicators. Examine the client's network traffic for uploaded or downloaded file hashes.",
+  "name": "Possible use of IPFS was detected",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Possible use of IPFS was detected",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Exfiltration (TA0010)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Alternative Protocol (T1048)",
+        "Phishing (T1566)"
+      ],
+      "description": "The host produced traffic consistent with IPFS.",
+      "attackers_goals": "IPFS access may expose your organization to new malware or allow attackers/ malicious insiders to exfiltrate data.",
+      "investigative_actions": "Check the host for IPFS client software. Look at the user's website history for IPFS url's and check the content ID (CID) for malicious indicators. Examine the client's network traffic for uploaded or downloaded file hashes."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)"
+  ],
+  "attackers_goals": "Exfiltrate information, network persistence of a service/resource.",
+  "deduplication_period": "3 Hours",
+  "description": "An Azure Firewall policy was deleted. An attacker might use this technique to disable network defenses.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check which subnets or specific IP addresses were affected by the change. Check which services were accessed after the firewall change and via which protocols or network traffic.",
+  "name": "An Azure Firewall policy deletion",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

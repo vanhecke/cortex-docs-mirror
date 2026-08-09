@@ -1,0 +1,66 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Masquerading (T1036)",
+    "Impersonation (T1656)"
+  ],
+  "attackers_goals": "Embedding suspicious Unicode characters in the email to appear legitimate, evade security filters and bypass detection mechanisms.",
+  "deduplication_period": "1 Day",
+  "description": "Unicode characters can be used for obfuscation, allowing malicious actors to disguise harmful intent, URLs or attachments By embedding non-printing Unicode characters, attackers can bypass security filters and evade detection mechanisms Such characters may also be used for phishing attempts that appear legitimate to both users and security systems.",
+  "detection_modules": "Email",
+  "detector_tags": "Evasion, Phishing",
+  "investigative_actions": "Check the email address for any unusual spellings, missing letters, or unknown domains. If the message contains attachments or links, scrutinize them for any suspicious indications. Monitor further actions taken, such as file downloads or access to potentially malicious links.",
+  "name": "Suspicious Unicode character detected in email",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Phishing terms obfuscation using Unicode characters detected in email",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading (T1036)",
+        "Impersonation (T1656)"
+      ],
+      "description": "Unicode characters can be used for obfuscation, allowing malicious actors to disguise harmful intent, URLs or attachments By embedding non-printing Unicode characters, attackers can bypass security filters and evade detection mechanisms Such characters may also be used for phishing attempts that appear legitimate to both users and security systems.",
+      "attackers_goals": "Embedding suspicious Unicode characters in the email to appear legitimate, evade security filters and bypass detection mechanisms.",
+      "investigative_actions": "Check the email address for any unusual spellings, missing letters, or unknown domains. If the message contains attachments or links, scrutinize them for any suspicious indications. Monitor further actions taken, such as file downloads or access to potentially malicious links."
+    },
+    {
+      "name": "Words obfuscation using Unicode characters detected in email",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading (T1036)",
+        "Impersonation (T1656)"
+      ],
+      "description": "Unicode characters can be used for obfuscation, allowing malicious actors to disguise harmful intent, URLs or attachments By embedding non-printing Unicode characters, attackers can bypass security filters and evade detection mechanisms Such characters may also be used for phishing attempts that appear legitimate to both users and security systems.",
+      "attackers_goals": "Embedding suspicious Unicode characters in the email to appear legitimate, evade security filters and bypass detection mechanisms.",
+      "investigative_actions": "Check the email address for any unusual spellings, missing letters, or unknown domains. If the message contains attachments or links, scrutinize them for any suspicious indications. Monitor further actions taken, such as file downloads or access to potentially malicious links."
+    },
+    {
+      "name": "Multiple suspicious Unicode characters detected in email",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading (T1036)",
+        "Impersonation (T1656)"
+      ],
+      "description": "Unicode characters can be used for obfuscation, allowing malicious actors to disguise harmful intent, URLs or attachments By embedding non-printing Unicode characters, attackers can bypass security filters and evade detection mechanisms Such characters may also be used for phishing attempts that appear legitimate to both users and security systems.",
+      "attackers_goals": "Embedding suspicious Unicode characters in the email to appear legitimate, evade security filters and bypass detection mechanisms.",
+      "investigative_actions": "Check the email address for any unusual spellings, missing letters, or unknown domains. If the message contains attachments or links, scrutinize them for any suspicious indications. Monitor further actions taken, such as file downloads or access to potentially malicious links."
+    }
+  ]
+}

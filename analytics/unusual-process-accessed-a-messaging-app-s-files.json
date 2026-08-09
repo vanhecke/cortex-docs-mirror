@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)",
+    "Reconnaissance (TA0043)"
+  ],
+  "attack_techniques": [
+    "Data from Local System (T1005)",
+    "Gather Victim Host Information (T1592)"
+  ],
+  "attackers_goals": "Obtain access to the user's message history and steal their contents.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual process has accessed files belonging to a messaging app.",
+  "detection_modules": "",
+  "detector_tags": "Sensitive Information Stealing Analytics",
+  "investigative_actions": "Determine whether it is legitimate for the process to access such files. Analyze the process/application that accessed the file. Check for any other suspicious actions that were performed by the process. Look for unusual access of resources using credentials that may have been associated with the above messaging app.",
+  "name": "Unusual process accessed a messaging app's files",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

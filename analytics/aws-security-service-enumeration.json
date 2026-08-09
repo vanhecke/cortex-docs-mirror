@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Software Discovery (T1518)",
+    "Software Discovery: Security Software Discovery (T1518.001)",
+    "Cloud Infrastructure Discovery (T1580)"
+  ],
+  "attackers_goals": "Reconnaissance of security defenses to assess and identify exploitable weaknesses.",
+  "deduplication_period": "5 Days",
+  "description": "AWS security service enumeration activity, potentially indicating reconnaissance.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Review which API calls were executed and their frequency. Analyze the identity performing the actions. Inspect configurations of enumerated services.",
+  "name": "AWS Security Service Enumeration",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "15 Minutes",
+  "variations": [
+    {
+      "name": "AWS Multiple Security Services Enumeration",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Software Discovery (T1518)",
+        "Software Discovery: Security Software Discovery (T1518.001)",
+        "Cloud Infrastructure Discovery (T1580)"
+      ],
+      "description": "AWS security service enumeration activity, potentially indicating reconnaissance.",
+      "attackers_goals": "Reconnaissance of security defenses to assess and identify exploitable weaknesses.",
+      "investigative_actions": "Review which API calls were executed and their frequency. Analyze the identity performing the actions. Inspect configurations of enumerated services."
+    }
+  ]
+}

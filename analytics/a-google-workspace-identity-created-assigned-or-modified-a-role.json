@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "An adversary may create, assign or modify a role to elevate the permissions of other user accounts and persist in their target's environment.",
+  "deduplication_period": "2 Days",
+  "description": "A Google Workspace identity created, assigned or modified a delegated admin role.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check the identity's role designation in the organization. Follow further actions done by the account.",
+  "name": "A Google Workspace identity created, assigned or modified a role",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A non-administrative Google Workspace identity created, assigned or modified a role from an unusual ASN",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A Google Workspace identity created, assigned or modified a delegated admin role.",
+      "attackers_goals": "An adversary may create, assign or modify a role to elevate the permissions of other user accounts and persist in their target's environment.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check the identity's role designation in the organization. Follow further actions done by the account."
+    },
+    {
+      "name": "A non-administrative Google Workspace identity created, assigned or modified a role",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A Google Workspace identity created, assigned or modified a delegated admin role.",
+      "attackers_goals": "An adversary may create, assign or modify a role to elevate the permissions of other user accounts and persist in their target's environment.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check the identity's role designation in the organization. Follow further actions done by the account."
+    },
+    {
+      "name": "A Google Workspace identity created, assigned or modified a role from an unusual ASN",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A Google Workspace identity created, assigned or modified a delegated admin role.",
+      "attackers_goals": "An adversary may create, assign or modify a role to elevate the permissions of other user accounts and persist in their target's environment.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check the identity's role designation in the organization. Follow further actions done by the account."
+    }
+  ]
+}

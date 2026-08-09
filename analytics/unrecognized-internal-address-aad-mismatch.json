@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "The attacker aims to impersonate an internal user to gain trust, bypass security controls, and potentially extract sensitive information or distribute malicious content through internal-looking emails.",
+  "deduplication_period": "1 Day",
+  "description": "An email was received from an address using an internal domain, but the sender is not found in Active Directory. This may indicate an impersonation attempt or domain spoofing.",
+  "detection_modules": "Email",
+  "detector_tags": "Employee Impersonation, Spear Phishing",
+  "investigative_actions": "Verify if the sender address exists in Active Directory. Check historical email activity from the spoofed address. Review email headers for spoofing indicators (SPF, DKIM, DMARC failures). Identify if recipients engaged with the email (clicked links, downloaded attachments). Correlate with other alerts involving the same sender or domain.",
+  "name": "Unrecognized internal address (AAD mismatch)",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

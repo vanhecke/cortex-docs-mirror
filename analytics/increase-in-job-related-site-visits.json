@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Reconnaissance (TA0043)"
+  ],
+  "attack_techniques": [
+    "Search Open Websites/Domains (T1593)"
+  ],
+  "attackers_goals": "This may be an early indicator of an insider threat.",
+  "deduplication_period": "1 Day",
+  "description": "A user has visited multiple job-related sites in the past day.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the domains accessed and how popular they are in the organization. Check how long the user has been part of the organization. Verify that the user is not part of a department that accesses job sites as part of daily operations.",
+  "name": "Increase in Job-Related Site Visits",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "Palo Alto Networks Firewall threat LogsPalo Alto Networks Firewall EAL Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Day",
+  "variations": []
+}

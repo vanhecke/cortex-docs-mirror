@@ -1,0 +1,42 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Cloud Accounts (T1078.004)",
+    "Abuse Elevation Control Mechanism: Temporary Elevated Cloud Access (T1548.005)",
+    "Account Discovery: Cloud Account (T1087.004)"
+  ],
+  "attackers_goals": "Identify accessible roles and move laterally or escalate privileges within a cloud environment.",
+  "deduplication_period": "5 Days",
+  "description": "An AWS identity performed an unusual high number of failed assume role attempts.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check if the attempting identity is aware of this activity and if its recent behavior appears suspicious. Evaluate if the source IP address or user agent associated with these attempts is known or suspicious. Verify if any successful assume role operations occurred from the same identity around the same time. Review any additional activity from the specific roles the identity assumed.",
+  "name": "Multiple failed AWS assume role attempts",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Suspicious multiple failed AWS assume role attempts",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Cloud Accounts (T1078.004)",
+        "Abuse Elevation Control Mechanism: Temporary Elevated Cloud Access (T1548.005)",
+        "Account Discovery: Cloud Account (T1087.004)"
+      ],
+      "description": "An AWS identity performed an unusual high number of failed assume role attempts.",
+      "attackers_goals": "Identify accessible roles and move laterally or escalate privileges within a cloud environment.",
+      "investigative_actions": "Check if the attempting identity is aware of this activity and if its recent behavior appears suspicious. Evaluate if the source IP address or user agent associated with these attempts is known or suspicious. Verify if any successful assume role operations occurred from the same identity around the same time. Review any additional activity from the specific roles the identity assumed."
+    }
+  ]
+}

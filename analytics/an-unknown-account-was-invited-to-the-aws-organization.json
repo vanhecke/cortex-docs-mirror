@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)"
+  ],
+  "attackers_goals": "Establish persistent access to the compromised cloud account.",
+  "deduplication_period": "1 Day",
+  "description": "An unknown account was invited to your AWS organization. The target account was not seen in your tenant for the last 30 days.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Identify the invited account ID and ownership. Review additional actions performed by the identity and role.",
+  "name": "An unknown account was invited to the AWS organization",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

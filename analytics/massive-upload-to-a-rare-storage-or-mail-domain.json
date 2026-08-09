@@ -1,0 +1,39 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Exfiltration Over Web Service (T1567)",
+    "Exfiltration Over Web Service: Exfiltration to Cloud Storage (T1567.002)"
+  ],
+  "attackers_goals": "A user uploaded an abnormal amount of data to a file sharing service. This activity might indicate an attempt to exfiltrate files and data from the organization.",
+  "deduplication_period": "1 Day",
+  "description": "A large amount of data was transferred to an external site that is used for mail or storage. This behavior may indicate data exfiltration.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Data Detection & Response",
+  "investigative_actions": "Check for any other suspicious activity related to the host and the user involved in the alert. Identify the user uploading the data to determine if the transfer is sanctioned.",
+  "name": "Massive upload to a rare storage or mail domain",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "Palo Alto Networks Firewall threat LogsXDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "A user uploaded over 500 MB to a rare storage or mail domain",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Web Service (T1567)",
+        "Exfiltration Over Web Service: Exfiltration to Cloud Storage (T1567.002)"
+      ],
+      "description": "A user uploaded over 500 MB to a file sharing service that is rarely accessed by them or anyone else in the organization.",
+      "attackers_goals": "A user uploaded an abnormal amount of data to a file sharing service. This activity might indicate an attempt to exfiltrate files and data from the organization.",
+      "investigative_actions": "Check for any other suspicious activity related to the host and the user involved in the alert. Identify the user uploading the data to determine if the transfer is sanctioned."
+    }
+  ]
+}

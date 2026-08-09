@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Indicator Removal (T1070)"
+  ],
+  "attackers_goals": "Bypass security measures implemented by AWS SecurityHub.",
+  "deduplication_period": "5 Days",
+  "description": "AWS SecurityHub findings were modified.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the current AWS SecurityHub settings and verify they are configured properly.",
+  "name": "AWS SecurityHub findings were modified",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

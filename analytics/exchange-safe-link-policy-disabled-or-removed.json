@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify Tools (T1562.001)",
+    "Phishing: Spearphishing Link (T1566.002)"
+  ],
+  "attackers_goals": "An attacker is attempting to bypass security measures associated with hyperlinks in email messages.",
+  "deduplication_period": "1 Day",
+  "description": "A user disabled an Exchange Safe Link policy, which provides phishing protection to emails that contain hyperlinks.",
+  "detection_modules": "Identity Threat Module, Email",
+  "detector_tags": "",
+  "investigative_actions": "Follow further actions done by the account. Verify that the configuration change was expected. Look for email messages received with hyperlinks. Check for a possible phishing campaign on the organization.",
+  "name": "Exchange Safe Link policy disabled or removed",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

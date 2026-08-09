@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "OS Credential Dumping (T1003)"
+  ],
+  "attackers_goals": "Attackers may try to extract OS credentials from the dumped Lsass.exe file.",
+  "deduplication_period": "1 Day",
+  "description": "Dumping Lsass.exe (Local Security Authority Subsystem Service) memory to file allows attackers to later extract credentials from the memory dump.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check the dumping process for more suspicious activity.",
+  "name": "LSASS dump file written to disk",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

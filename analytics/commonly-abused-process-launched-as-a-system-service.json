@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "System Services: Service Execution (T1569.002)"
+  ],
+  "attackers_goals": "Attackers may use services to persist or execute commands on remote hosts.",
+  "deduplication_period": "1 Day",
+  "description": "This commonly abused host process has been launched by a services.exe parent, indicating it has been installed as a system service. This behavior can have legitimate uses, but often used by malware as a persistence mechanism.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether additional malicious commands were executed from the same process. Verify if the command-line seems suspicious or contains malicious indicators.",
+  "name": "Commonly abused process launched as a system service",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

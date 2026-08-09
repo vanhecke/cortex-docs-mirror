@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Boot or Logon Autostart Execution (T1547)"
+  ],
+  "attackers_goals": "Attackers aim to get persistence to continue operating even after a reboot.",
+  "deduplication_period": "1 Day",
+  "description": "Execution of an uncommon process with a local/domain user SID at an early startup stage may be an indication of a persistent mechanism on boot that is being actively abused.",
+  "detection_modules": "",
+  "detector_tags": "Generic Persistence Analytics",
+  "investigative_actions": "Check if the CGO (causality group owner) is familiar and if any configuration, parameters, or registry keys have been modified.",
+  "name": "Execution of an uncommon process with a local/domain user SID at an early startup stage",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Execution of an uncommon process with a local/domain user SID at an early startup stage with suspicious characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Boot or Logon Autostart Execution (T1547)"
+      ],
+      "description": "Execution of an uncommon process with a local/domain user SID at an early startup stage may be an indication of a persistent mechanism on boot that is being actively abused.",
+      "attackers_goals": "Attackers aim to get persistence to continue operating even after a reboot.",
+      "investigative_actions": "Check if the CGO (causality group owner) is familiar and if any configuration, parameters, or registry keys have been modified."
+    },
+    {
+      "name": "Execution of an uncommon process with a local/domain user SID at an early startup stage with uncommon characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Boot or Logon Autostart Execution (T1547)"
+      ],
+      "description": "Execution of an uncommon process with a local/domain user SID at an early startup stage may be an indication of a persistent mechanism on boot that is being actively abused.",
+      "attackers_goals": "Attackers aim to get persistence to continue operating even after a reboot.",
+      "investigative_actions": "Check if the CGO (causality group owner) is familiar and if any configuration, parameters, or registry keys have been modified."
+    }
+  ]
+}

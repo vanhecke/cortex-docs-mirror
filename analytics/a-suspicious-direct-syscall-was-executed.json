@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Native API (T1106)"
+  ],
+  "attackers_goals": "An attacker might try to use direct syscalls to evade detection from a legitimate program.",
+  "deduplication_period": "1 Day",
+  "description": "A suspicious direct syscall was executed.",
+  "detection_modules": "",
+  "detector_tags": "Direct Syscall Analytics",
+  "investigative_actions": "Investigate the direct syscall-mapped image to verify if it is malicious. Check if this direct syscall is part of the process execution flow.",
+  "name": "A suspicious direct syscall was executed",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A suspicious direct syscall was executed by unsigned process from a user folder",
+      "severity": "High",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Native API (T1106)"
+      ],
+      "description": "A suspicious direct syscall was executed by unsigned process from a user folder.",
+      "attackers_goals": "An attacker might try to use direct syscalls to evade detection from a legitimate program.",
+      "investigative_actions": "Investigate the direct syscall-mapped image to verify if it is malicious. Check if this direct syscall is part of the process execution flow."
+    },
+    {
+      "name": "A suspicious direct syscall was executed by a DLL host application",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Native API (T1106)"
+      ],
+      "description": "A suspicious direct syscall was executed by a DLL host application.",
+      "attackers_goals": "An attacker might try to use direct syscalls to evade detection from a legitimate program.",
+      "investigative_actions": "Investigate the direct syscall-mapped image to verify if it is malicious. Check if this direct syscall is part of the process execution flow."
+    }
+  ]
+}

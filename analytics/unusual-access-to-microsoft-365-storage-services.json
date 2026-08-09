@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Cloud Service Discovery (T1526)"
+  ],
+  "attackers_goals": "Extract sensitive information stored in Microsoft 365 storage services.",
+  "deduplication_period": "5 Days",
+  "description": "Unusual access was detected to a Microsoft 365 storage service.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Microsoft Graph Activity Logs",
+  "investigative_actions": "Determine which items were accessed. Identify whether they contained any sensitive information. Check for signs of a compromised identity, such as abnormal login activity or unusual behavior. Verify if the identity is authorized to access these drives. Monitor the identity for any further suspicious actions.",
+  "name": "Unusual access to Microsoft 365 storage services",
+  "required_data": [
+    "Azure Audit Log",
+    "Microsoft Graph Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual access to Microsoft 365 storage services from an uncommon IP",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Cloud Service Discovery (T1526)"
+      ],
+      "description": "Unusual access was detected to a Microsoft 365 storage service.",
+      "attackers_goals": "Extract sensitive information stored in Microsoft 365 storage services.",
+      "investigative_actions": "Determine which items were accessed. Identify whether they contained any sensitive information. Check for signs of a compromised identity, such as abnormal login activity or unusual behavior. Verify if the identity is authorized to access these drives. Monitor the identity for any further suspicious actions."
+    }
+  ]
+}

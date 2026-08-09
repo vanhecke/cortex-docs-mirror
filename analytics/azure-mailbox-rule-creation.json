@@ -1,0 +1,41 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Email Collection: Email Forwarding Rule (T1114.003)",
+    "Indicator Removal: Clear Mailbox Data (T1070.008)"
+  ],
+  "attackers_goals": "Intercept or exfiltrate sensitive information.",
+  "deduplication_period": "5 Days",
+  "description": "A Mailbox rule in Azure was created.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Microsoft Graph Activity Logs",
+  "investigative_actions": "Investigate the rule's details and confirm its legitimacy. Look for any unusual behavior originated from the suspected identity, and check if they're compromised.",
+  "name": "Azure mailbox rule creation",
+  "required_data": [
+    "Azure Audit Log",
+    "Microsoft Graph Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual Azure mailbox rule creation",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Email Collection: Email Forwarding Rule (T1114.003)",
+        "Indicator Removal: Clear Mailbox Data (T1070.008)"
+      ],
+      "description": "A Mailbox rule in Azure was created.",
+      "attackers_goals": "Intercept or exfiltrate sensitive information.",
+      "investigative_actions": "Investigate the rule's details and confirm its legitimacy. Look for any unusual behavior originated from the suspected identity, and check if they're compromised."
+    }
+  ]
+}

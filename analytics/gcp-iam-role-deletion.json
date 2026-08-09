@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Account Access Removal (T1531)"
+  ],
+  "attackers_goals": "Inhibit users from accessing resources.",
+  "deduplication_period": "3 Hours",
+  "description": "A GCP IAM role was created. An attacker might use this technique to interrupt users' actions.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check which users were affected by the role deletion. Check what other actions were taken by the identity that deleted the role.",
+  "name": "GCP IAM Role Deletion",
+  "required_data": [
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

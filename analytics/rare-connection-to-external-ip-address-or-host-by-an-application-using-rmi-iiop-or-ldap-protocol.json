@@ -1,0 +1,75 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol (T1071)"
+  ],
+  "attackers_goals": "Connect to a server to retrieve commands or exfiltrate data.",
+  "deduplication_period": "1 Day",
+  "description": "A process made a connection to an external IP address or host that is rarely connected to by the organization.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the process was injected or otherwise subverted for malicious use.",
+  "name": "Rare connection to external IP address or host by an application using RMI-IIOP or LDAP protocol",
+  "required_data": [
+    "Palo Alto Networks Url Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Rare connection to external IP address or host by a java application using LDAP protocol",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "A Java Process that never created LDAP connection before connected to an external IP address or host, which is rarely connected to from the organization using LDAP protocol.",
+      "attackers_goals": "Connect to a server to retrieve commands or exfiltrate data.",
+      "investigative_actions": "Check whether the process was injected or otherwise subverted for malicious use."
+    },
+    {
+      "name": "Rare connection to external IP address or host by a java application using LDAP protocol",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "A Java Process that never created RMI-IIOP connection before connected to an external IP address or host, which is rarely connected to from the organization using LDAP protocol.",
+      "attackers_goals": "Connect to a server to retrieve commands or exfiltrate data.",
+      "investigative_actions": "Check whether the process was injected or otherwise subverted for malicious use."
+    },
+    {
+      "name": "Rare connection to external IP address or host by a java application using LDAP protocol",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "A Java Process connected to an external IP address or host, which is rarely connected to from the organization using LDAP protocol.",
+      "attackers_goals": "Connect to a server to retrieve commands or exfiltrate data.",
+      "investigative_actions": "Check whether the process was injected or otherwise subverted for malicious use."
+    },
+    {
+      "name": "Rare connection to external IP address or host by a java application using RMI-IIOP protocol",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "A Java Process connected to an external IP address or host, which is rarely connected to from the organization using RMI-IIOP protocol.",
+      "attackers_goals": "Connect to a server to retrieve commands or exfiltrate data.",
+      "investigative_actions": "Check whether the process was injected or otherwise subverted for malicious use."
+    }
+  ]
+}

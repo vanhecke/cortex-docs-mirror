@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Data Destruction (T1485)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Gain access to the cluster and its resources. Gain access to sensitive data stored in the cluster.",
+  "deduplication_period": "5 Days",
+  "description": "An AWS EKS cluster has been created or deleted.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the identity is authorized to perform changes to AWS EKS clusters.",
+  "name": "An AWS EKS cluster was created or deleted",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

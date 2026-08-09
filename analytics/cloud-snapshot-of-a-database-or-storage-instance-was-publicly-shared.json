@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "Exfiltrate sensitive data that resides on the snapshot.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity has publicly shared a snapshot of a database or storage instance.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Exfiltration, Cloud Data Asset Public Exposure, Data Detection & Response",
+  "investigative_actions": "Check if the identity intended to share the snapshot publicly. Check if the identity performed additional malicious operations within the cloud environment.",
+  "name": "Cloud snapshot of a database or storage instance was publicly shared",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

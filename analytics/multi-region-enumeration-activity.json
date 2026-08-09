@@ -1,0 +1,27 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Cloud Infrastructure Discovery (T1580)",
+    "Unused/Unsupported Cloud Regions (T1535)",
+    "Cloud Service Discovery (T1526)"
+  ],
+  "attackers_goals": "Discover cloud resources that are available within the environment and leverage them to perform additional attacks against the organization. Detect unused geographic regions and leverage them to evade detection of malicious operations.",
+  "deduplication_period": "5 Days",
+  "description": "An internal identity performed an operation on multiple regions, considerably more than usual. This may indicate an attacker's attempt to identify all available resources in the cloud environment.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the identity designation. Verify that the identity did not perform any operation in a region that it shouldn't.",
+  "name": "Multi region enumeration activity",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "30 Minutes",
+  "variations": []
+}

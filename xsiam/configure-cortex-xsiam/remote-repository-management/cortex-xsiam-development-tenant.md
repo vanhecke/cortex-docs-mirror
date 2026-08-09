@@ -43,6 +43,7 @@ Not all custom content can be pushed/pulled. Content that cannot be pushed/pulle
 
 The following system and user-defined content types are push/pull supported:
 
+* Case fields and layouts
 * Issue types and fields
 * Indicator types and fields
 * Issue and indicator layouts

@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Privilege Escalation (TA0004)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Cloud Accounts (T1078.004)"
+  ],
+  "attackers_goals": "The attacker wants to maintain indirect control over the resource. Attackers intend to allow public access, making it harder to detect future activity. Attackers are constantly monitoring for public assets to steal sensitive information.",
+  "deduplication_period": "5 Days",
+  "description": "It is possible to configure anonymous access to blobs within the storage account.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Exfiltration, Cloud Data Asset Public Exposure, Data Detection & Response",
+  "investigative_actions": "Check if the blobs within the storage account should be accessed from all networks. Disable public network access or disable blob anonymous access to storage account if needed. Check if the identity performed additional malicious activity and restrict permissions for the identity if required.",
+  "name": "Azure storage account blob anonymous access is enabled",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

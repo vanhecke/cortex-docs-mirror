@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "System Binary Proxy Execution (T1218)"
+  ],
+  "attackers_goals": "Evade detection when running suspicious commands.",
+  "deduplication_period": "1 Day",
+  "description": "The process dllhost.exe was executed with an empty command line. This behavior is suspicious, and may be caused by a malicious actor using 'Image File Execution Options' in the registry to evade detection.",
+  "detection_modules": "",
+  "detector_tags": "LOLBIN Execution Analytics",
+  "investigative_actions": "Check if an entry for dllhost.exe was added in the registry, under HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options.",
+  "name": "Execution of dllhost.exe with an empty command line",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Execution of unsigned dllhost from a non-typical path with empty command line",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Masquerading: Masquerade Task or Service (T1036.004)"
+      ],
+      "description": "An unsigned process was executed with the name dllhost.exe from a non-typical path, this behavior is suspicious and maybe performed by a malicious actor in an attempt to hide their actions.",
+      "attackers_goals": "Evade detection when performing suspicious actions.",
+      "investigative_actions": "Review actions performed by the executed process and the causality owner, and check if they are suspicious."
+    },
+    {
+      "name": "Globally uncommon execution of dllhost.exe with an empty command line",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "System Binary Proxy Execution (T1218)"
+      ],
+      "description": "The process dllhost.exe was executed with an empty command line. This behavior is suspicious, and may be caused by a malicious actor using 'Image File Execution Options' in the registry to evade detection.",
+      "attackers_goals": "Evade detection when running suspicious commands.",
+      "investigative_actions": "Check if an entry for dllhost.exe was added in the registry, under HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options."
+    }
+  ]
+}

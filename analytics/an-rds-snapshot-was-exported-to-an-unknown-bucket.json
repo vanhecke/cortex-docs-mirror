@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "Exfiltrate data to an unknown bucket.",
+  "deduplication_period": "1 Day",
+  "description": "An RDS snapshot was exported to an unknown S3 bucket. The destination bucket has not been seen in your tenant in the last 30 days.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Data Detection & Response, Cloud Data Asset Exfiltration",
+  "investigative_actions": "Check the legitimacy of the destination bucket. Review further logs for the source RDS instance. Review further actions performed by the identity.",
+  "name": "An RDS snapshot was exported to an unknown bucket",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Failed RDS snapshot export attempt to an unknown bucket",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "A failed attempt to export an RDS snapshot to an unknown bucket.",
+      "attackers_goals": "Exfiltrate data to an unknown bucket.",
+      "investigative_actions": "Check the legitimacy of the destination bucket. Review further logs for the source RDS instance. Review further actions performed by the identity."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation: Additional Cloud Credentials (T1098.001)"
+  ],
+  "attackers_goals": "Persist in the environment.",
+  "deduplication_period": "5 Days",
+  "description": "Cloud access key creation by a cloud identity.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "investigate the identity who created the access keys. Check the access key activity in the organization.",
+  "name": "Cloud access key creation",
+  "required_data": [
+    "AWS Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Successful access key creation by an unusual identity type",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: Additional Cloud Credentials (T1098.001)"
+      ],
+      "description": "Cloud access key creation by a cloud identity.",
+      "attackers_goals": "Persist in the environment.",
+      "investigative_actions": "investigate the identity who created the access keys. Check the access key activity in the organization."
+    },
+    {
+      "name": "Unusual successful cloud access key creation",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: Additional Cloud Credentials (T1098.001)"
+      ],
+      "description": "Cloud access key creation by a cloud identity.",
+      "attackers_goals": "Persist in the environment.",
+      "investigative_actions": "investigate the identity who created the access keys. Check the access key activity in the organization."
+    }
+  ]
+}

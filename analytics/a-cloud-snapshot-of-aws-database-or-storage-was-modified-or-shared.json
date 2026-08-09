@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "Exfiltrate sensitive data that resides on the snapshot.",
+  "deduplication_period": "1 Day",
+  "description": "A cloud identity has shared a snapshot of an AWS database or storage instance.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Disaster Recovery Risks, Cloud Data Asset Configuration, Data Detection & Response",
+  "investigative_actions": "Check if the identity intended to modify the snapshot. Check if the identity performed additional malicious operations within the cloud environment.",
+  "name": "A cloud snapshot of AWS database or storage was modified or shared",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Cloud snapshot of a database or storage instance was shared public",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "A cloud identity has shared a snapshot of an AWS database or storage instance.",
+      "attackers_goals": "Exfiltrate sensitive data that resides on the snapshot.",
+      "investigative_actions": "Check if the identity intended to modify the snapshot. Check if the identity performed additional malicious operations within the cloud environment. Check if snapshot contained sensitive information and investigate aws account that shared it."
+    },
+    {
+      "name": "Cloud snapshot of a database or storage instance was shared with an unknown AWS account",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "A cloud identity has shared a snapshot of an AWS database or storage instance.",
+      "attackers_goals": "Exfiltrate sensitive data that resides on the snapshot.",
+      "investigative_actions": "Check if the identity intended to modify the snapshot. Check if the identity performed additional malicious operations within the cloud environment. Check which AWS accounts the snapshot was shared with."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Indicator Removal (T1070)",
+    "Impair Defenses (T1562)",
+    "Data Manipulation (T1565)",
+    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+  ],
+  "attackers_goals": "Adversaries may stop audit log events from being sent to remove evidence of their presence or hinder defenses.",
+  "deduplication_period": "2 Days",
+  "description": "An identity has modified data sharing settings between GCP and Google Workspace.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check whether Google Workspace audit log events were configured to be sent to Google Cloud. Follow further actions done by the account.",
+  "name": "Data Sharing between GCP and Google Workspace was disabled",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Data Sharing between GCP and Google Workspace was disabled by a suspicious identity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Indicator Removal (T1070)",
+        "Impair Defenses (T1562)",
+        "Data Manipulation (T1565)",
+        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+      ],
+      "description": "An identity has modified data sharing settings between GCP and Google Workspace.",
+      "attackers_goals": "Adversaries may stop audit log events from being sent to remove evidence of their presence or hinder defenses.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check whether Google Workspace audit log events were configured to be sent to Google Cloud. Follow further actions done by the account."
+    },
+    {
+      "name": "Data Sharing between GCP and Google Workspace was disabled by a non Google Workspace administrative user",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Indicator Removal (T1070)",
+        "Impair Defenses (T1562)",
+        "Data Manipulation (T1565)",
+        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+      ],
+      "description": "An identity has modified data sharing settings between GCP and Google Workspace.",
+      "attackers_goals": "Adversaries may stop audit log events from being sent to remove evidence of their presence or hinder defenses.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check whether Google Workspace audit log events were configured to be sent to Google Cloud. Follow further actions done by the account."
+    },
+    {
+      "name": "Data Sharing between GCP and Google Workspace was disabled from an unusual ASN",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Indicator Removal (T1070)",
+        "Impair Defenses (T1562)",
+        "Data Manipulation (T1565)",
+        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+      ],
+      "description": "An identity has modified data sharing settings between GCP and Google Workspace.",
+      "attackers_goals": "Adversaries may stop audit log events from being sent to remove evidence of their presence or hinder defenses.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check whether Google Workspace audit log events were configured to be sent to Google Cloud. Follow further actions done by the account."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Use a compromised user account that has not been used in a long time and therefore less likely to be noticed.",
+  "deduplication_period": "31 Days",
+  "description": "A dormant user account tried to authenticate to a service using a TGS after having been unused for a year or more. This may indicate the account is misused by an attacker.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "See whether the service authentication was successful. Confirm that the activity is benign (e.g. the user returned from a long leave of absence). Check whether you have issues with your Cloud Identity Engine failing to sync data from Active Directory.",
+  "name": "Authentication Attempt From a Dormant Account",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Authentication Attempt From a Dormant Account to a sensitive server",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A dormant user account tried to authenticate to a service using a TGS after having been unused for a year or more. This may indicate the account is misused by an attacker on a sensitive server.",
+      "attackers_goals": "Use a compromised user account that has not been used in a long time and therefore less likely to be noticed.",
+      "investigative_actions": "See whether the service authentication was successful. Confirm that the activity is benign (e.g. the user returned from a long leave of absence). Check whether you have issues with your Cloud Identity Engine failing to sync data from Active Directory."
+    }
+  ]
+}

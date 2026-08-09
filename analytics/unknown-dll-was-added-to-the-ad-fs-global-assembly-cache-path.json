@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Hijack Execution Flow (T1574)"
+  ],
+  "attackers_goals": "Attackers may inject malicious code into the AD FS server and manipulate the IdentityServer adapters to gain persistence.",
+  "deduplication_period": "1 Day",
+  "description": "A new and unknown DLL was created within the Active Directory Federation Services (AD FS) Global Assembly Cache (GAC). Attackers may manipulate IdentityServer adapters to achieve persistence or execute malicious code within the AD FS environment.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Active Directory Federation Services Analytics",
+  "investigative_actions": "Check if the AD FS service was stopped or restarted around the time of modification. Identify the user or process responsible for the file creation. Verify if the DLL is digitally signed by Microsoft. Compare the modification timestamp of this DLL against others in the same directory.",
+  "name": "Unknown DLL was added to the AD FS Global Assembly Cache path",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious DLL was added to the AD FS Global Assembly Cache path",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Hijack Execution Flow (T1574)"
+      ],
+      "description": "A new and unknown DLL was created within the Active Directory Federation Services (AD FS) Global Assembly Cache (GAC). Attackers may manipulate IdentityServer adapters to achieve persistence or execute malicious code within the AD FS environment.",
+      "attackers_goals": "Attackers may inject malicious code into the AD FS server and manipulate the IdentityServer adapters to gain persistence.",
+      "investigative_actions": "Check if the AD FS service was stopped or restarted around the time of modification. Identify the user or process responsible for the file creation. Verify if the DLL is digitally signed by Microsoft. Compare the modification timestamp of this DLL against others in the same directory."
+    }
+  ]
+}

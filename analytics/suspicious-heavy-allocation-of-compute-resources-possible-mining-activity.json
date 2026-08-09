@@ -1,0 +1,72 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Resource Hijacking (T1496)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Leverage cloud compute resources to earn virtual currency.",
+  "deduplication_period": "5 Days",
+  "description": "An identity allocated an unusual heavy compute resource, suspected as mining activity. Heavy machines normally have a high amount of CPU cores or attached with GPU, which are targeted by adversaries to mine Cryptocurrency.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the identity created resources and its legitimacy. Look for any unusual behavior originated from the suspected identity, and check if they're compromised, e.g. access key, service account, etc.",
+  "name": "Suspicious heavy allocation of compute resources - possible mining activity",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious heavy allocation of compute resources - possible mining activity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Impact (TA0040)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Resource Hijacking (T1496)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "An identity allocated an unusual heavy compute resource, suspected as mining activity. Heavy machines normally have a high amount of CPU cores or attached with GPU, which are targeted by adversaries to mine Cryptocurrency.",
+      "attackers_goals": "Leverage cloud compute resources to earn virtual currency.",
+      "investigative_actions": "Check the identity created resources and its legitimacy. Look for any unusual behavior originated from the suspected identity, and check if they're compromised, e.g. access key, service account, etc."
+    },
+    {
+      "name": "Suspicious heavy allocation of compute resources - possible mining activity",
+      "severity": "High",
+      "attack_tactics": [
+        "Impact (TA0040)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Resource Hijacking (T1496)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "An identity allocated an unusual heavy compute resource, suspected as mining activity. Heavy machines normally have a high amount of CPU cores or attached with GPU, which are targeted by adversaries to mine Cryptocurrency.",
+      "attackers_goals": "Leverage cloud compute resources to earn virtual currency.",
+      "investigative_actions": "Check the identity created resources and its legitimacy. Look for any unusual behavior originated from the suspected identity, and check if they're compromised, e.g. access key, service account, etc."
+    },
+    {
+      "name": "Suspicious heavy allocation of compute resources - possible mining activity",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Impact (TA0040)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Resource Hijacking (T1496)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "An identity allocated an unusual heavy compute resource, suspected as mining activity. Heavy machines normally have a high amount of CPU cores or attached with GPU, which are targeted by adversaries to mine Cryptocurrency.",
+      "attackers_goals": "Leverage cloud compute resources to earn virtual currency.",
+      "investigative_actions": "Check the identity created resources and its legitimacy. Look for any unusual behavior originated from the suspected identity, and check if they're compromised, e.g. access key, service account, etc."
+    }
+  ]
+}

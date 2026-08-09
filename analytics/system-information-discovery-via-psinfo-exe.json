@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "System Information Discovery (T1082)"
+  ],
+  "attackers_goals": "Collect information about the host, network and user configuration for lateral movement and privilege escalation.",
+  "deduplication_period": "6 Hours",
+  "description": "Using psinfo.exe, the attacker can gather information about the network, and gain an in-depth understanding of which devices are relevant to attack.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Verify that this isn't sanctioned IT activity. Look for other hosts executing similar commands.",
+  "name": "System information discovery via psinfo.exe",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

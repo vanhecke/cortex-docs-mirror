@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data from Information Repositories (T1213)"
+  ],
+  "attackers_goals": "Obtain access to user's notes and steal their contents.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual process has accessed a user's notes DB file.",
+  "detection_modules": "",
+  "detector_tags": "Sensitive Information Stealing Analytics",
+  "investigative_actions": "Determine whether it is legitimate for the process to access user's notes. Analyze the process/application that accessed the DB file. Check for any other suspicious actions that were performed by the process. Look for unusual access of resources using credentials that may be stored in the above notes.",
+  "name": "Unusual process accessed a macOS notes DB file",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual unsigned process accessed a macOS notes DB file",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Data from Information Repositories (T1213)"
+      ],
+      "description": "An unusual process has accessed a user's notes DB file.",
+      "attackers_goals": "Obtain access to user's notes and steal their contents.",
+      "investigative_actions": "Determine whether it is legitimate for the process to access user's notes. Analyze the process/application that accessed the DB file. Check for any other suspicious actions that were performed by the process. Look for unusual access of resources using credentials that may be stored in the above notes."
+    }
+  ]
+}

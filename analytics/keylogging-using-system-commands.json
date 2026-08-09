@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Input Capture: Keylogging (T1056.001)"
+  ],
+  "attackers_goals": "Attackers may capture keystrokes to intercept user credentials.",
+  "deduplication_period": "1 Day",
+  "description": "Usage of a Linux system utility to capture input.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Keylogging using system commands",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Keylogging using system commands in a Kubernetes pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Input Capture: Keylogging (T1056.001)"
+      ],
+      "description": "Usage of a Linux system utility to capture input.",
+      "attackers_goals": "Attackers may capture keystrokes to intercept user credentials.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

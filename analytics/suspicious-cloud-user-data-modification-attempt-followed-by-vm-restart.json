@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Cloud Administration Command (T1651)"
+  ],
+  "attackers_goals": "Execute arbitrary code, establish persistence, or alter instance startup behavior through modified user data.",
+  "deduplication_period": "1 Day",
+  "description": "Suspicious user data modification followed by VM restart, possibly an attempt to run altered startup scripts at boot.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Review the identity who modified the instance user data. Inspect the user data script for malicious content.",
+  "name": "Suspicious cloud user data modification attempt followed by VM restart",
+  "required_data": [
+    "AWS Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "1 Hour",
+  "variations": []
+}

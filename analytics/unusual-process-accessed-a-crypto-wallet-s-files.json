@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data from Local System (T1005)"
+  ],
+  "attackers_goals": "Obtain access to cryptocurrency stored in the wallet.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual process has accessed files belonging to a cryptocurrency wallet.",
+  "detection_modules": "",
+  "detector_tags": "Sensitive Information Stealing Analytics",
+  "investigative_actions": "Determine whether it is legitimate for the process to access such files. Analyze the process/application that accessed the file. Check for any other suspicious actions that were performed by the process. Audit the usage of the cryptocurrency stored in the wallet.",
+  "name": "Unusual process accessed a crypto wallet's files",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

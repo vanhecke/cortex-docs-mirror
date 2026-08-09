@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)"
+  ],
+  "attackers_goals": "Gain persistence and elevate privileges.",
+  "deduplication_period": "1 Day",
+  "description": "AWS user added to AWS group, possibly to elevate privileges and gain more access to resources.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Check if the action was done using an automation service. Check if there are any other suspicious activities originated from the same machine/executing user.",
+  "name": "Unusual AWS user added to group",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual AWS user added to group from a Kubernetes Pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)"
+      ],
+      "description": "AWS user added to AWS group, possibly to elevate privileges and gain more access to resources.",
+      "attackers_goals": "Gain persistence and elevate privileges.",
+      "investigative_actions": "Check if the action was done using an automation service. Check if there are any other suspicious activities originated from the same machine/executing user."
+    }
+  ]
+}

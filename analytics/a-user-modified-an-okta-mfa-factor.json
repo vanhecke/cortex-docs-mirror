@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Modify Authentication Process (T1556)",
+    "Modify Authentication Process: Multi-Factor Authentication (T1556.006)"
+  ],
+  "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
+  "deduplication_period": "1 Day",
+  "description": "An Okta MFA factor was modified by a user, suggesting a potential compromise of the account.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Okta Audit Analytics",
+  "investigative_actions": "Contact the user and ensure the operation was legitimate. Check if the user modifies more factors. If the user activates a weak factor, check for abnormal successful sign-ins from different countries and times. If the user deactivates a strong factor, check if he authenticates with unusual factors and checks for abnormal successful sign-ins from different countries and times.",
+  "name": "A user modified an Okta MFA factor",
+  "required_data": [
+    "Okta Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Abnormal Okta MFA Factor Authentication Modification",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Modify Authentication Process (T1556)",
+        "Modify Authentication Process: Multi-Factor Authentication (T1556.006)"
+      ],
+      "description": "An OKTA MFA factor was modified by a user with suspicious conditions.",
+      "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
+      "investigative_actions": "Contact the user and ensure the operation was legitimate. Check if the user modifies more factors. If the user activates a weak factor, check for abnormal successful sign-ins from different countries and times. If the user deactivates a strong factor, check if he authenticates with unusual factors and checks for abnormal successful sign-ins from different countries and times."
+    }
+  ]
+}

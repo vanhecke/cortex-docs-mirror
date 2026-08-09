@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Account Access Removal (T1531)"
+  ],
+  "attackers_goals": "Interrupt availability of cloud resources by inhibiting access to accounts utilized by legitimate users.",
+  "deduplication_period": "5 Days",
+  "description": "An identity created a GCP IAM deny policy.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Examine the details of the created deny policy. Review the recent activity of the identity.",
+  "name": "GCP IAM deny policy creation",
+  "required_data": [
+    "Gcp Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual GCP IAM deny policy creation",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Account Access Removal (T1531)"
+      ],
+      "description": "An identity created a GCP IAM deny policy.",
+      "attackers_goals": "Interrupt availability of cloud resources by inhibiting access to accounts utilized by legitimate users.",
+      "investigative_actions": "Examine the details of the created deny policy. Review the recent activity of the identity."
+    }
+  ]
+}

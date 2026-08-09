@@ -1,0 +1,130 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Permission Groups Discovery (T1069)",
+    "Create Account (T1136)"
+  ],
+  "attackers_goals": "Attackers may attempt to use the command to find domain-level group permissions settings or modify domain-level memberships.",
+  "deduplication_period": "1 Day",
+  "description": "Uncommon net group command execution which may be used for groups and users enumeration and unauthorized user creation.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the queried group is a sensitive one (e.g. administrators). Check whether the initiating process has executed additional discovery commands.",
+  "name": "Uncommon net group command execution",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon unsigned net group administrators command execution",
+      "severity": "High",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Permission Groups Discovery (T1069)",
+        "Create Account (T1136)"
+      ],
+      "description": "Uncommon net group command execution which may be used for groups and users enumeration and unauthorized user creation.",
+      "attackers_goals": "Attackers may attempt to use the command to find domain-level group permissions settings or modify domain-level memberships.",
+      "investigative_actions": "Check if the queried group is a sensitive one (e.g. administrators). Check whether the initiating process has executed additional discovery commands."
+    },
+    {
+      "name": "Uncommon unsigned net group administrators command execution - fixed localization issues",
+      "severity": "High",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Permission Groups Discovery (T1069)",
+        "Create Account (T1136)"
+      ],
+      "description": "Uncommon net group command execution which may be used for groups and users enumeration and unauthorized user creation.",
+      "attackers_goals": "Attackers may attempt to use the command to find domain-level group permissions settings or modify domain-level memberships.",
+      "investigative_actions": "Check if the queried group is a sensitive one (e.g. administrators). Check whether the initiating process has executed additional discovery commands."
+    },
+    {
+      "name": "Uncommon remote net group administrators command execution",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Permission Groups Discovery (T1069)",
+        "Create Account (T1136)"
+      ],
+      "description": "Uncommon net group command execution which may be used for groups and users enumeration and unauthorized user creation.",
+      "attackers_goals": "Attackers may attempt to use the command to find domain-level group permissions settings or modify domain-level memberships.",
+      "investigative_actions": "Check if the queried group is a sensitive one (e.g. administrators). Check whether the initiating process has executed additional discovery commands."
+    },
+    {
+      "name": "Uncommon net group administrators command execution",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Permission Groups Discovery (T1069)",
+        "Create Account (T1136)"
+      ],
+      "description": "Uncommon net group command execution which may be used for groups and users enumeration and unauthorized user creation.",
+      "attackers_goals": "Attackers may attempt to use the command to find domain-level group permissions settings or modify domain-level memberships.",
+      "investigative_actions": "Check if the queried group is a sensitive one (e.g. administrators). Check whether the initiating process has executed additional discovery commands."
+    },
+    {
+      "name": "Uncommon net group execution",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Permission Groups Discovery (T1069)",
+        "Create Account (T1136)"
+      ],
+      "description": "Uncommon net group command execution which may be used for groups and users enumeration and unauthorized user creation.",
+      "attackers_goals": "Attackers may attempt to use the command to find domain-level group permissions settings or modify domain-level memberships.",
+      "investigative_actions": "Check if the queried group is a sensitive one (e.g. administrators). Check whether the initiating process has executed additional discovery commands."
+    },
+    {
+      "name": "Uncommon remote net group execution",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Permission Groups Discovery (T1069)",
+        "Create Account (T1136)"
+      ],
+      "description": "Uncommon net group command execution which may be used for groups and users enumeration and unauthorized user creation.",
+      "attackers_goals": "Attackers may attempt to use the command to find domain-level group permissions settings or modify domain-level memberships.",
+      "investigative_actions": "Check if the queried group is a sensitive one (e.g. administrators). Check whether the initiating process has executed additional discovery commands."
+    },
+    {
+      "name": "Uncommon administrator net group execution by scripting engine or command prompt",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Permission Groups Discovery (T1069)",
+        "Create Account (T1136)"
+      ],
+      "description": "Uncommon net group command execution which may be used for groups and users enumeration and unauthorized user creation.",
+      "attackers_goals": "Attackers may attempt to use the command to find domain-level group permissions settings or modify domain-level memberships.",
+      "investigative_actions": "Check if the queried group is a sensitive one (e.g. administrators). Check whether the initiating process has executed additional discovery commands."
+    }
+  ]
+}

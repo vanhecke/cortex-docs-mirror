@@ -1,0 +1,114 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Remote System Discovery (T1018)",
+    "System Information Discovery (T1082)",
+    "System Network Configuration Discovery (T1016)",
+    "System Service Discovery (T1007)"
+  ],
+  "attackers_goals": "Collect information about the host, network and user configuration for lateral movement and privilege escalation.",
+  "deduplication_period": "1 Day",
+  "description": "The alerted process performed multiple discovery commands in a short timeframe.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify if the script or process initiating the discovery commands is benign. Verify that this isn't sanctioned IT activity. Look for other hosts executing similar commands.",
+  "name": "Multiple discovery commands on a Windows host by the same process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Remote Multiple discovery commands on a Windows host by the same IP",
+      "severity": "High",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Remote Services (T1021)",
+        "Remote System Discovery (T1018)",
+        "System Information Discovery (T1082)",
+        "System Network Configuration Discovery (T1016)",
+        "System Service Discovery (T1007)"
+      ],
+      "description": "The alerted process performed multiple discovery commands in a short timeframe.",
+      "attackers_goals": "Collect information about the host, network and user configuration for lateral movement and privilege escalation.",
+      "investigative_actions": "Verify if the script or process initiating the discovery commands is benign. Verify that this isn't sanctioned IT activity. Look for other hosts executing similar commands."
+    },
+    {
+      "name": "Multiple discovery commands on a Windows host by the same process from a web server CGO",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Server Software Component: Web Shell (T1505.003)",
+        "Remote System Discovery (T1018)",
+        "System Information Discovery (T1082)",
+        "System Network Configuration Discovery (T1016)",
+        "System Service Discovery (T1007)"
+      ],
+      "description": "The alerted process performed multiple discovery commands in a short timeframe.",
+      "attackers_goals": "Collect information about the host, network and user configuration for lateral movement and privilege escalation.",
+      "investigative_actions": "Verify if the script or process initiating the discovery commands is benign. Verify that this isn't sanctioned IT activity. Look for other hosts executing similar commands."
+    },
+    {
+      "name": "Multiple discovery commands on a Windows host by the same process from an SQL server CGO",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Server Software Component: SQL Stored Procedures (T1505.001)",
+        "Remote System Discovery (T1018)",
+        "System Information Discovery (T1082)",
+        "System Network Configuration Discovery (T1016)",
+        "System Service Discovery (T1007)"
+      ],
+      "description": "The alerted process performed multiple discovery commands in a short timeframe.",
+      "attackers_goals": "Collect information about the host, network and user configuration for lateral movement and privilege escalation.",
+      "investigative_actions": "Verify if the script or process initiating the discovery commands is benign. Verify that this isn't sanctioned IT activity. Look for other hosts executing similar commands."
+    },
+    {
+      "name": "Multiple discovery commands on a Windows host by the same process from a remote CGO",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Remote Services (T1021)",
+        "Remote System Discovery (T1018)",
+        "System Information Discovery (T1082)",
+        "System Network Configuration Discovery (T1016)",
+        "System Service Discovery (T1007)"
+      ],
+      "description": "The alerted process performed multiple discovery commands in a short timeframe.",
+      "attackers_goals": "Collect information about the host, network and user configuration for lateral movement and privilege escalation.",
+      "investigative_actions": "Verify if the script or process initiating the discovery commands is benign. Verify that this isn't sanctioned IT activity. Look for other hosts executing similar commands."
+    },
+    {
+      "name": "Rare Multiple discovery commands on a Windows host by the same process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Remote System Discovery (T1018)",
+        "System Information Discovery (T1082)",
+        "System Network Configuration Discovery (T1016)",
+        "System Service Discovery (T1007)"
+      ],
+      "description": "The alerted process performed multiple discovery commands in a short timeframe.",
+      "attackers_goals": "Collect information about the host, network and user configuration for lateral movement and privilege escalation.",
+      "investigative_actions": "Verify if the script or process initiating the discovery commands is benign. Verify that this isn't sanctioned IT activity. Look for other hosts executing similar commands."
+    }
+  ]
+}

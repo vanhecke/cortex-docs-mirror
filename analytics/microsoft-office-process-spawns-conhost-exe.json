@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "User Execution: Malicious File (T1204.002)",
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "An attacker attempts to gain code execution via an Office application or via an Office document.",
+  "deduplication_period": "1 Day",
+  "description": "This unusual parent-child relationship may indicate that a Microsoft Office application executed a console-based application.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check the source of the file or email (received by mail or loaded locally). Investigate the child processes for malicious activity and network connections to an external host.",
+  "name": "Microsoft Office process spawns conhost.exe",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

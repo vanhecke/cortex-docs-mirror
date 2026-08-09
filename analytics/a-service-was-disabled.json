@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Service Stop (T1489)"
+  ],
+  "attackers_goals": "Evade detection by certain programs. Limit the functionality and availability of systems, services, and network resources.",
+  "deduplication_period": "1 Day",
+  "description": "A service was disabled abnormally. This may be performed by malicious actors in an attempt to evade detection or limit functionality.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the disabled service could potentially threaten a malicious actor, or if holds a critical role. Investigate the disabling process to understand if it performed other suspicious actions.",
+  "name": "A service was disabled",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A service was disabled without using the ServiceControlManager RPC interface",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Service Stop (T1489)"
+      ],
+      "description": "A service was disabled abnormally through the registry. This may be performed by malicious actors in an attempt to evade detection or limit functionality.",
+      "attackers_goals": "Evade detection by certain programs. Limit the functionality and availability of systems, services, and network resources.",
+      "investigative_actions": "Check if the disabled service could potentially threaten a malicious actor, or if holds a critical role. Investigate the disabling process to understand if it performed other suspicious actions."
+    },
+    {
+      "name": "An injected process performed an uncommon service deactivation",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Service Stop (T1489)"
+      ],
+      "description": "A service was disabled abnormally. This may be performed by malicious actors in an attempt to evade detection or limit functionality.",
+      "attackers_goals": "Evade detection by certain programs. Limit the functionality and availability of systems, services, and network resources.",
+      "investigative_actions": "Check if the disabled service could potentially threaten a malicious actor, or if holds a critical role. Investigate the disabling process to understand if it performed other suspicious actions."
+    },
+    {
+      "name": "An unsigned process performed an uncommon service deactivation",
+      "severity": "Low",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Service Stop (T1489)"
+      ],
+      "description": "A service was disabled abnormally. This may be performed by malicious actors in an attempt to evade detection or limit functionality.",
+      "attackers_goals": "Evade detection by certain programs. Limit the functionality and availability of systems, services, and network resources.",
+      "investigative_actions": "Check if the disabled service could potentially threaten a malicious actor, or if holds a critical role. Investigate the disabling process to understand if it performed other suspicious actions."
+    }
+  ]
+}

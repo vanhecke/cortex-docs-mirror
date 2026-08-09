@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Data Destruction (T1485)"
+  ],
+  "attackers_goals": "Modify or delete data stored in the EFS File-share.",
+  "deduplication_period": "5 Days",
+  "description": "An AWS EFS File-share mount was deleted.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Disaster Recovery Risks, Data Detection & Response",
+  "investigative_actions": "Verify whether the identity that deleted the File-share should be making this action.",
+  "name": "An AWS EFS File-share mount was deleted",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

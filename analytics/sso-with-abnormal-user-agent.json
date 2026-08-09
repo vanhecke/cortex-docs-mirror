@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Domain Accounts (T1078.002)"
+  ],
+  "attackers_goals": "Use a legitimate user and authenticate via an SSO service to gain access to the network.",
+  "deduplication_period": "1 Day",
+  "description": "A user successfully authenticated via SSO with an abnormal user agent.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Confirm that the activity is benign (e.g. the user has really moved to a new user agent app). Follow actions and suspicious activities regarding the user.",
+  "name": "SSO with abnormal user agent",
+  "required_data": [
+    "Okta",
+    "AzureAD",
+    "Azure SignIn Log",
+    "Duo",
+    "PingOne"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "SSO with an offensive user agent",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Domain Accounts (T1078.002)"
+      ],
+      "description": "A user successfully authenticated via SSO with an offensive user agent.",
+      "attackers_goals": "Use a legitimate user and authenticate via an SSO service to gain access to the network.",
+      "investigative_actions": "Confirm that the activity is benign (e.g. the user has really moved to a new user agent app). Follow actions and suspicious activities regarding the user."
+    }
+  ]
+}

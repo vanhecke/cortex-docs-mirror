@@ -1,0 +1,215 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol (T1071)"
+  ],
+  "attackers_goals": "Establish a remote backdoor to issue instructions, deploy additional payloads, and maintain long-term persistence across the infected fleet.",
+  "deduplication_period": "1 Day",
+  "description": "An uncommon process is connecting to an external host that is rarely accessed within the organization. This connection pattern is consistent with malicious activity such as command and control execution, malware download and so on.",
+  "detection_modules": "",
+  "detector_tags": "Abnormal Communication Analytics",
+  "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also contacting the suspicious host. Inspect the host or URL for suspicious indicators or its presence in malicious reputation lists.",
+  "name": "Uncommon macOS process communication to a rare external host",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon macOS process communication to a rare external host by security testing tool",
+      "severity": "High",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "An uncommon process is connecting to an external host that is rarely accessed within the organization. This connection pattern is consistent with malicious activity such as command and control execution, malware download and so on.",
+      "attackers_goals": "Establish a remote backdoor to issue instructions, deploy additional payloads, and maintain long-term persistence across the infected fleet.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also contacting the suspicious host. Inspect the host or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
+      "name": "Uncommon macOS process communication to a rare external host with a frequently abused TLD",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Masquerading (T1036)"
+      ],
+      "description": "An uncommon process is connecting to an external host that is rarely accessed within the organization. This connection pattern is consistent with malicious activity such as command and control execution, malware download and so on.",
+      "attackers_goals": "Establish a remote backdoor to issue instructions, deploy additional payloads, and maintain long-term persistence across the infected fleet.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also contacting the suspicious host. Inspect the host or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
+      "name": "Uncommon macOS process communication to a rare external host while using a CLI utility to establish a connection with a messaging service API",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Exfiltration Over C2 Channel (T1041)",
+        "Exfiltration Over Web Service (T1567)",
+        "Command and Scripting Interpreter (T1059)"
+      ],
+      "description": "An uncommon process is connecting to an external host that is rarely accessed within the organization. This connection pattern is consistent with malicious activity such as command and control execution, malware download and so on.",
+      "attackers_goals": "Establish a remote backdoor to issue instructions, deploy additional payloads, and maintain long-term persistence across the infected fleet.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also contacting the suspicious host. Inspect the host or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
+      "name": "Uncommon macOS process communication to a rare external host related to LOTTunnels",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Protocol Tunneling (T1572)",
+        "Exfiltration Over Alternative Protocol (T1048)",
+        "Obfuscated Files or Information (T1027)"
+      ],
+      "description": "An uncommon process is connecting to an external host that is rarely accessed within the organization. This connection pattern is consistent with malicious activity such as command and control execution, malware download and so on.",
+      "attackers_goals": "Establish a remote backdoor to issue instructions, deploy additional payloads, and maintain long-term persistence across the infected fleet.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also contacting the suspicious host. Inspect the host or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
+      "name": "Uncommon macOS process communication to a rare external host with a rare TLD",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Masquerading (T1036)"
+      ],
+      "description": "An uncommon process is connecting to an external host that is rarely accessed within the organization. This connection pattern is consistent with malicious activity such as command and control execution, malware download and so on.",
+      "attackers_goals": "Establish a remote backdoor to issue instructions, deploy additional payloads, and maintain long-term persistence across the infected fleet.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also contacting the suspicious host. Inspect the host or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
+      "name": "Uncommon macOS process communication to a rare external host while using a CLI utility and piping to script",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Exfiltration Over C2 Channel (T1041)",
+        "Command and Scripting Interpreter (T1059)",
+        "Command and Scripting Interpreter: Unix Shell (T1059.004)"
+      ],
+      "description": "An uncommon process is connecting to an external host that is rarely accessed within the organization. This connection pattern is consistent with malicious activity such as command and control execution, malware download and so on.",
+      "attackers_goals": "Establish a remote backdoor to issue instructions, deploy additional payloads, and maintain long-term persistence across the infected fleet.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also contacting the suspicious host. Inspect the host or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
+      "name": "Uncommon macOS process communication to a rare external host while using a CLI utility to download and change permission",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)",
+        "Execution (TA0002)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Exfiltration Over C2 Channel (T1041)",
+        "Command and Scripting Interpreter (T1059)",
+        "File and Directory Permissions Modification (T1222)",
+        "File and Directory Permissions Modification: Linux and Mac File and Directory Permissions Modification (T1222.002)",
+        "Ingress Tool Transfer (T1105)"
+      ],
+      "description": "An uncommon process is connecting to an external host that is rarely accessed within the organization. This connection pattern is consistent with malicious activity such as command and control execution, malware download and so on.",
+      "attackers_goals": "Establish a remote backdoor to issue instructions, deploy additional payloads, and maintain long-term persistence across the infected fleet.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also contacting the suspicious host. Inspect the host or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
+      "name": "Uncommon macOS process communication to a rare external host while using a CLI utility running by an unsigned process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Exfiltration Over C2 Channel (T1041)",
+        "Subvert Trust Controls (T1553)",
+        "Masquerading (T1036)"
+      ],
+      "description": "An uncommon process is connecting to an external host that is rarely accessed within the organization. This connection pattern is consistent with malicious activity such as command and control execution, malware download and so on.",
+      "attackers_goals": "Establish a remote backdoor to issue instructions, deploy additional payloads, and maintain long-term persistence across the infected fleet.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also contacting the suspicious host. Inspect the host or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
+      "name": "Uncommon macOS process communication to a rare external host while using a CLI utility and saving data to a temporary folder",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)",
+        "Defense Evasion (TA0005)",
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Exfiltration Over C2 Channel (T1041)",
+        "Data Staged (T1074)",
+        "Data Staged: Local Data Staging (T1074.001)",
+        "Hide Artifacts (T1564)",
+        "Indicator Removal (T1070)"
+      ],
+      "description": "An uncommon process is connecting to an external host that is rarely accessed within the organization. This connection pattern is consistent with malicious activity such as command and control execution, malware download and so on.",
+      "attackers_goals": "Establish a remote backdoor to issue instructions, deploy additional payloads, and maintain long-term persistence across the infected fleet.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also contacting the suspicious host. Inspect the host or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
+      "name": "Uncommon macOS process communication to a rare external host while using a CLI utility and downloading a script",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Exfiltration Over C2 Channel (T1041)",
+        "Ingress Tool Transfer (T1105)",
+        "Command and Scripting Interpreter (T1059)"
+      ],
+      "description": "An uncommon process is connecting to an external host that is rarely accessed within the organization. This connection pattern is consistent with malicious activity such as command and control execution, malware download and so on.",
+      "attackers_goals": "Establish a remote backdoor to issue instructions, deploy additional payloads, and maintain long-term persistence across the infected fleet.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also contacting the suspicious host. Inspect the host or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
+      "name": "Uncommon macOS process communication to a rare external host while using a CLI utility",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Exfiltration Over C2 Channel (T1041)",
+        "Command and Scripting Interpreter (T1059)"
+      ],
+      "description": "An uncommon process is connecting to an external host that is rarely accessed within the organization. This connection pattern is consistent with malicious activity such as command and control execution, malware download and so on.",
+      "attackers_goals": "Establish a remote backdoor to issue instructions, deploy additional payloads, and maintain long-term persistence across the infected fleet.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also contacting the suspicious host. Inspect the host or URL for suspicious indicators or its presence in malicious reputation lists."
+    }
+  ]
+}

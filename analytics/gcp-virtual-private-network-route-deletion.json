@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Network Denial of Service (T1498)"
+  ],
+  "attackers_goals": "Block the availability of targeted resources to users/services.",
+  "deduplication_period": "1 Day",
+  "description": "A GCP VPC route was deleted. An attacker might use this technique to impact business workflows.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check which services were affected by the route deletion. Check The cloud identity activity prior/after the route deletion.",
+  "name": "GCP Virtual Private Network Route Deletion",
+  "required_data": [
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

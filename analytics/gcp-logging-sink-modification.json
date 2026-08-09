@@ -1,0 +1,54 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)",
+    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+  ],
+  "attackers_goals": "Evade detection by limiting collected data.",
+  "deduplication_period": "5 Days",
+  "description": "A GCP logging sink entity was modified. Logs that match the logging sink rule will not arrive at their destination. An attacker might use this technique to evade detection.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Identify the relevant logs impacted by the modification. Review The cloud identity activity before and after the logging sink modification.",
+  "name": "GCP logging sink modification",
+  "required_data": [
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "GCP logging sink modification",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses (T1562)",
+        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)",
+        "Cloud Service Discovery (T1526)"
+      ],
+      "description": "A GCP logging sink entity was modified. Logs that match the logging sink rule will not arrive at their destination. An attacker might use this technique to evade detection.",
+      "attackers_goals": "Evade detection by limiting collected data.",
+      "investigative_actions": "Identify the relevant logs impacted by the modification. Review The cloud identity activity before and after the logging sink modification."
+    },
+    {
+      "name": "GCP logging sink modification",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses (T1562)",
+        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+      ],
+      "description": "A GCP logging sink entity was modified. Logs that match the logging sink rule will not arrive at their destination. An attacker might use this technique to evade detection.",
+      "attackers_goals": "Evade detection by limiting collected data.",
+      "investigative_actions": "Identify the relevant logs impacted by the modification. Review The cloud identity activity before and after the logging sink modification."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data from Local System (T1005)"
+  ],
+  "attackers_goals": "Attackers want to check pfx details. If details suffice, the correct certificate can be used for authentication, persistence or NTLM extraction.",
+  "deduplication_period": "1 Day",
+  "description": "Certutil was used to parse a pfx certificate file.",
+  "detection_modules": "",
+  "detector_tags": "Active Directory Certificate Services Analytics",
+  "investigative_actions": "Check if the pfx parsing is legitimate for the user (Testing, IT, etc.). Follow further actions done by the user (ex. authentication using certificates).",
+  "name": "Certutil pfx parsing",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

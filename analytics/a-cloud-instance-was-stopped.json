@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "System Shutdown/Reboot (T1529)"
+  ],
+  "attackers_goals": "Interrupt business services.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud compute instance was stopped.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Review recent activity related to the identity and the affected cloud instance.",
+  "name": "A cloud instance was stopped",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

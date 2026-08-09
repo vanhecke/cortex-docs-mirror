@@ -1,0 +1,63 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Services (T1021)"
+  ],
+  "attackers_goals": "Attackers may attempt to gain persistence or move laterally over the network by executing code on remote hosts using services. The service control manager RPC interface is used to create and start services on a local or a remote host.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint performed abnormal RPC activity via Service Control Manager interface to a remote host.",
+  "detection_modules": "",
+  "detector_tags": "NDR Lateral Movement Analytics",
+  "investigative_actions": "Review the action of services.exe on the remote host where possible. Correlate the RPC call from the source host and understand which software initiated it.* Verify that this isn't IT activity.",
+  "name": "Rare Remote Service (SVCCTL) RPC activity",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Rare remote service creation and initiation via Remote Service (SVCCTL) RPC interface",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services (T1021)"
+      ],
+      "description": "The endpoint performed abnormal service creation and initiation via Remote Service (SVCCTL) RPC interface to a remote host.",
+      "attackers_goals": "Attackers may attempt to gain persistence or move laterally over the network by executing code on remote hosts using services. The service control manager RPC interface is used to create and start services on a local or a remote host.",
+      "investigative_actions": "Review the action of services.exe on the remote host where possible. Correlate the RPC call from the source host and understand which software initiated it.* Verify that this isn't IT activity."
+    },
+    {
+      "name": "Rare remote service change or creation via Remote Service (SVCCTL) RPC interface",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services (T1021)"
+      ],
+      "description": "The endpoint performed abnormal service creation via Remote Service (SVCCTL) RPC interface to a remote host.",
+      "attackers_goals": "Attackers may attempt to gain persistence or move laterally over the network by executing code on remote hosts using services. The service control manager RPC interface is used to create and start services on a local or a remote host.",
+      "investigative_actions": "Review the action of services.exe on the remote host where possible. Correlate the RPC call from the source host and understand which software initiated it.* Verify that this isn't IT activity."
+    },
+    {
+      "name": "Rare Remote Service (SVCCTL) RPC activity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services (T1021)"
+      ],
+      "description": "The endpoint performed abnormal RPC activity via Service Control Manager interface to a remote host.",
+      "attackers_goals": "Attackers may attempt to gain persistence or move laterally over the network by executing code on remote hosts using services. The service control manager RPC interface is used to create and start services on a local or a remote host.",
+      "investigative_actions": "Review the action of services.exe on the remote host where possible. Correlate the RPC call from the source host and understand which software initiated it.* Verify that this isn't IT activity."
+    }
+  ]
+}

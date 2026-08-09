@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Server Software Component: Web Shell (T1505.003)"
+  ],
+  "attackers_goals": "Gaining the ability to execute commands on the host, as well as persistence.",
+  "deduplication_period": "1 Day",
+  "description": "A process was executed by a web server CGO following a potential drop of a webshell file.",
+  "detection_modules": "",
+  "detector_tags": "Webshell Analytics",
+  "investigative_actions": "Investigate the web server access logs for suspicious behavior. Check if the dropped file contains malicious content.",
+  "name": "Web server CGO executed a process following a potential Webshell dropped",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "4 Hours",
+  "variations": []
+}

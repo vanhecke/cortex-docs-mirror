@@ -1,0 +1,55 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Reconnaissance (TA0043)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Phishing for Information (T1598)",
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "Evade defenses and hide potential malicious data inside the email display name.",
+  "deduplication_period": "1 Day",
+  "description": "An email was detected with an unusual display name in the From header.",
+  "detection_modules": "Email",
+  "detector_tags": "",
+  "investigative_actions": "Analyze the email further to determine the source of the anomaly and what can be done about it.",
+  "name": "Unusual display name in From header",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual display name in the From header containing an embedded URL",
+      "severity": "Low",
+      "attack_tactics": [
+        "Reconnaissance (TA0043)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing for Information (T1598)",
+        "Phishing (T1566)"
+      ],
+      "description": "An email was detected with an unusual sender display name in the From header containing an embedded URL.",
+      "attackers_goals": "Evade defenses and hide potential malicious data inside the email display name.",
+      "investigative_actions": "Analyze the email further to determine the source of the anomaly and what can be done about it."
+    },
+    {
+      "name": "Unusual display name in the From header that is identical to the email address",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Reconnaissance (TA0043)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Phishing for Information (T1598)",
+        "Phishing (T1566)"
+      ],
+      "description": "An email was detected where the display name in the From header is unusual and matches the sender email address.",
+      "attackers_goals": "Evade defenses and hide potential malicious data inside the email display name.",
+      "investigative_actions": "Analyze the email further to determine the source of the anomaly and what can be done about it."
+    }
+  ]
+}

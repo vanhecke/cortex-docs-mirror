@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Weaken Encryption (T1600)",
+    "Impair Defenses (T1562)"
+  ],
+  "attackers_goals": "An attacker is trying to access sensitive data in plaintext. An attacker might try to exfiltrate plaintext data to an endpoint controlled by the attacker and avoid detection. An attacker can re-encrypt the data with a key that is available only to the attacker.",
+  "deduplication_period": "1 Day",
+  "description": "A cloud identity has disabled data encryption.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Disaster Recovery Risks, Cloud Data Asset Protection Tampering, Data Detection & Response",
+  "investigative_actions": "Check if the identity intended to disable data encryption. Check which cloud assets were affected by manipulating the above-mentioned configuration file. Check if the identity performed additional suspicious actions to affected assets.",
+  "name": "Data encryption was disabled",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

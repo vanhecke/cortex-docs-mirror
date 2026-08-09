@@ -1,0 +1,104 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol (T1071)"
+  ],
+  "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines.",
+  "deduplication_period": "1 Day",
+  "description": "An uncommon process is connecting to an external domain that is rarely accessed within the organization. This connection pattern is consistent with malware initiating connection to its command and control server.",
+  "detection_modules": "",
+  "detector_tags": "Abnormal Communication Analytics",
+  "investigative_actions": "Identify the process contacting the remote domain and determine whether the traffic is malicious. Look for other endpoints on your network that are alsocontacting the suspicious domain. Inspect the domain or URL for suspicious indicators or its presence in malicious reputation lists.",
+  "name": "Uncommon Linux process communication to a rare external host",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon Linux process communication to a rare external host by an automated penetration testing tool",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "An uncommon process is connecting to an external domain that is rarely accessed within the organization. This connection pattern is consistent with malware initiating connection to its command and control server.",
+      "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines.",
+      "investigative_actions": "Identify the process contacting the remote domain and determine whether the traffic is malicious. Look for other endpoints on your network that are alsocontacting the suspicious domain. Inspect the domain or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
+      "name": "Uncommon Linux process communication to a rare external host involving a code sharing website",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Web Service (T1102)"
+      ],
+      "description": "An uncommon process is connecting to an external domain that is rarely accessed within the organization. This connection pattern is consistent with malware initiating connection to its command and control server.",
+      "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines.",
+      "investigative_actions": "Identify the process contacting the remote domain and determine whether the traffic is malicious. Look for other endpoints on your network that are alsocontacting the suspicious domain. Inspect the domain or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
+      "name": "Uncommon Linux process communication to a rare external host involving a low-prevalence process connecting to a rare Top-Level Domain",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "An uncommon process is connecting to an external domain that is rarely accessed within the organization. This connection pattern is consistent with malware initiating connection to its command and control server.",
+      "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines.",
+      "investigative_actions": "Identify the process contacting the remote domain and determine whether the traffic is malicious. Look for other endpoints on your network that are alsocontacting the suspicious domain. Inspect the domain or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
+      "name": "Uncommon Linux process communication to a rare external host with an external IP in the command line",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "An uncommon process is connecting to an external domain that is rarely accessed within the organization. This connection pattern is consistent with malware initiating connection to its command and control server.",
+      "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines.",
+      "investigative_actions": "Identify the process contacting the remote domain and determine whether the traffic is malicious. Look for other endpoints on your network that are alsocontacting the suspicious domain. Inspect the domain or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
+      "name": "Uncommon Linux process communication to a rare external host using a data transfer tool",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Exfiltration Over C2 Channel (T1041)"
+      ],
+      "description": "An uncommon process is connecting to an external domain that is rarely accessed within the organization. This connection pattern is consistent with malware initiating connection to its command and control server.",
+      "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines.",
+      "investigative_actions": "Identify the process contacting the remote domain and determine whether the traffic is malicious. Look for other endpoints on your network that are alsocontacting the suspicious domain. Inspect the domain or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
+      "name": "Uncommon Linux process communication to a rare external host identified as global anomaly",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "An uncommon process is connecting to an external domain that is rarely accessed within the organization. This connection pattern is consistent with malware initiating connection to its command and control server.",
+      "attackers_goals": "Communicate with malware running on your network to control malware activities, perform software updates on the malware, or to take inventory of infected machines.",
+      "investigative_actions": "Identify the process contacting the remote domain and determine whether the traffic is malicious. Look for other endpoints on your network that are alsocontacting the suspicious domain. Inspect the domain or URL for suspicious indicators or its presence in malicious reputation lists."
+    }
+  ]
+}

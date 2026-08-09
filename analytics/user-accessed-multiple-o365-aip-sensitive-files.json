@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data from Information Repositories (T1213)",
+    "Data from Local System (T1005)"
+  ],
+  "attackers_goals": "An attacker is attempting to collect sensitive information.",
+  "deduplication_period": "1 Day",
+  "description": "A user accessed multiple O365 AIP sensitive files.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "O365 DLP Analytics",
+  "investigative_actions": "Look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Follow further actions done by the account. Check what sensitivity labels are detected and how suspicious they are. Examine the user's account history for suspicious behavior.",
+  "name": "User accessed multiple O365 AIP sensitive files",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": []
+}

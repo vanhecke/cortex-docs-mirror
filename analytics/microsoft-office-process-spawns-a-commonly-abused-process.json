@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)",
+    "Phishing: Spearphishing Attachment (T1566.001)"
+  ],
+  "attackers_goals": "An attacker attempts to gain code execution via a phishing document.",
+  "deduplication_period": "1 Day",
+  "description": "Microsoft Office process spawns a commonly abused process with an uncommon command.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check the source of the document (received by mail or loaded locally). Investigate the child processes for malicious activity and network connections to an external host.",
+  "name": "Microsoft Office process spawns a commonly abused process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

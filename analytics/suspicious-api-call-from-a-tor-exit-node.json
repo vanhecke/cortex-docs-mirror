@@ -1,0 +1,58 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Proxy: Multi-hop Proxy (T1090.003)",
+    "Valid Accounts: Cloud Accounts (T1078.004)"
+  ],
+  "attackers_goals": "Conceal information about malicious activities, such as location and network usage.",
+  "deduplication_period": "1 Day",
+  "description": "A cloud API was called from a Tor exit node.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Kubernetes - API",
+  "investigative_actions": "Block all web traffic to and from public Tor entry and exit nodes.",
+  "name": "Suspicious API call from a Tor exit node",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log",
+    "Kubernetes Audit Logs"
+  ],
+  "severity": "High",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious Kubernetes API call from a Tor exit node",
+      "severity": "High",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Proxy: Multi-hop Proxy (T1090.003)",
+        "Valid Accounts: Cloud Accounts (T1078.004)"
+      ],
+      "description": "A Kubernetes API was called from a Tor exit node.",
+      "attackers_goals": "Conceal information about malicious activities, such as location and network usage.",
+      "investigative_actions": "Block all web traffic to and from public Tor entry and exit nodes."
+    },
+    {
+      "name": "A Failed API call from a Tor exit node",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Proxy: Multi-hop Proxy (T1090.003)",
+        "Valid Accounts: Cloud Accounts (T1078.004)"
+      ],
+      "description": "A cloud API was called from a Tor exit node.",
+      "attackers_goals": "Conceal information about malicious activities, such as location and network usage.",
+      "investigative_actions": "Block all web traffic to and from public Tor entry and exit nodes."
+    }
+  ]
+}

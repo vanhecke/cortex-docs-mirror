@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Account Discovery: Cloud Account (T1087.004)"
+  ],
+  "attackers_goals": "Identify users and roles in a cloud environment to find privileged accounts for further exploitation.",
+  "deduplication_period": "5 Days",
+  "description": "AWS IAM managed policies that are attached to a role were listed.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Determine which managed policies were listed.* Investigate any suspicious activities related to the identity and the role.",
+  "name": "IAM role-attached managed policies were listed",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

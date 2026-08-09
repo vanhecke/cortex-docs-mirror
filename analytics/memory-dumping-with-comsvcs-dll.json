@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "OS Credential Dumping (T1003)",
+    "OS Credential Dumping: LSASS Memory (T1003.001)"
+  ],
+  "attackers_goals": "Attackers may attempt to dump the memory of sensitive processes.",
+  "deduplication_period": "6 Hours",
+  "description": "A process memory dump was performed using comsvcs.dll MiniDump. This method is commonly used by attackers to dump Lsass.exe (Local Security Authority Subsystem Service) process memory to a file, so they could later extract credentials from the memory dump.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Memory dumping with comsvcs.dll",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "High",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Account Discovery (T1087)",
+    "Permission Groups Discovery (T1069)"
+  ],
+  "attackers_goals": "An adversary may enumerate users and groups to gain information and plan its lateral movement over the network.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint performed unfamiliar SAMR querying activity to a domain controller.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the host is a newly deployed server that provides RPC-based services to multiple hosts. Check if there are any other suspicious activities originating from the same machine.",
+  "name": "User and Group Enumeration via SAMR",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": []
+}

@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)",
+    "Valid Accounts: Cloud Accounts (T1078.004)"
+  ],
+  "attackers_goals": "Compromise a cloud user account to gain access and perform malicious activities.",
+  "deduplication_period": "1 Day",
+  "description": "Multiple risk indicators detected for a cloud identity, combining unusual activity with activity from unusual geolocation or high-risk IP.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Review the user's recent activity for any unauthorized actions. Rotate the user's credentials immediately if confirmed compromised.",
+  "name": "Multiple risk indicators for a cloud identity",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "High",
+  "test_period": "1 Hour",
+  "variations": []
+}

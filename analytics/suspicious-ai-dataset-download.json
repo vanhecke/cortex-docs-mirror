@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Data Manipulation: Stored Data Manipulation (T1565.001)"
+  ],
+  "attackers_goals": "Manipulate datasets used by ML models.",
+  "deduplication_period": "5 Days",
+  "description": "A model dataset was accessed by an identity that typically doesn't interact with dataset files. MITRE ATLAS Technique: AML.T0035 - ML Artifact Collection.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud AI Infrastructure Analytics",
+  "investigative_actions": "Determine which dataset was accessed. Examine the changes made to the dataset.",
+  "name": "Suspicious AI Dataset Download",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious First-Time AI Dataset Download by Identity",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Data Manipulation: Stored Data Manipulation (T1565.001)"
+      ],
+      "description": "A model dataset was accessed by an identity that typically doesn't interact with dataset files. MITRE ATLAS Technique: AML.T0035 - ML Artifact Collection.",
+      "attackers_goals": "Manipulate datasets used by ML models.",
+      "investigative_actions": "Determine which dataset was accessed. Examine the changes made to the dataset."
+    }
+  ]
+}

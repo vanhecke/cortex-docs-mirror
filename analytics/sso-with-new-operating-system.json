@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Domain Accounts (T1078.002)"
+  ],
+  "attackers_goals": "Use a legitimate user and authenticate via an SSO service to gain access to the network.",
+  "deduplication_period": "1 Day",
+  "description": "A user successfully authenticated via SSO with a new operating system.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Confirm that the activity is benign (e.g. the user has really moved to a new operating system). Follow actions and suspicious activities regarding the user.",
+  "name": "SSO with new operating system",
+  "required_data": [
+    "Okta",
+    "Azure SignIn Log",
+    "AzureAD",
+    "Duo"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

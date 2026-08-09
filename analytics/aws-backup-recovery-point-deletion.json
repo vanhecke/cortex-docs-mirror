@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Inhibit System Recovery (T1490)"
+  ],
+  "attackers_goals": "Adversaries may delete backup recovery points to prevent system recovery after compromise.",
+  "deduplication_period": "5 Days",
+  "description": "An attempt was made to delete an AWS Backup recovery point.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Identify the deleted recovery point and its associated resource. Investigate the identity that performed the deletion and review recent related activity.",
+  "name": "AWS Backup recovery point deletion",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

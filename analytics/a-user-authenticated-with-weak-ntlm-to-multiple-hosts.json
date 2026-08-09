@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Use Alternate Authentication Material (T1550)"
+  ],
+  "attackers_goals": "The attacker attempts to gain access to the accounts.",
+  "deduplication_period": "1 Day",
+  "description": "A user account authenticated to multiple hosts via NTLMv1 or LM authentication for the first time in the past 30 days.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Audit all login events with a weaker protocol and review any anomalous usage. Investigate the mentioned user for additional suspicious activity.",
+  "name": "A user authenticated with weak NTLM to multiple hosts",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": []
+}

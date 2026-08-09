@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Abuse Elevation Control Mechanism: Sudo and Sudo Caching (T1548.003)"
+  ],
+  "attackers_goals": "Attackers may use the sudoers file to elevate privileges.",
+  "deduplication_period": "1 Day",
+  "description": "Change of sudo caching configuration may have been intended to enable privilege escalation.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Change of sudo caching configuration",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Change of sudo caching configuration in a Kubernetes pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Abuse Elevation Control Mechanism: Sudo and Sudo Caching (T1548.003)"
+      ],
+      "description": "Change of sudo caching configuration may have been intended to enable privilege escalation.",
+      "attackers_goals": "Attackers may use the sudoers file to elevate privileges.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow."
+    }
+  ]
+}

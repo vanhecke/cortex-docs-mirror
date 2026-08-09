@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify Cloud Firewall (T1562.007)"
+  ],
+  "attackers_goals": "Bypass security measures to gain access to cloud resources.",
+  "deduplication_period": "5 Days",
+  "description": "An Azure Firewall rule collection group was modified or deleted. This could indicate a malicious actor attempting to bypass security measures.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the Azure Firewall rule collection group to identify the modified or deleted rules.",
+  "name": "An Azure Firewall rule collection group was modified or deleted",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,80 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)",
+    "Cloud Service Dashboard (T1538)",
+    "Cloud Service Discovery (T1526)"
+  ],
+  "attackers_goals": "Unusual resources may be accessed for various purposes, including exfiltration, lateral movement, etc.",
+  "deduplication_period": "1 Day",
+  "description": "A user accessed multiple resources via SSO that are unusual for this user. This may be indicative of a compromised account.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the resources that were accessed to determine if they were used for legitimate purposes or malicious activity.",
+  "name": "A user accessed multiple unusual resources via SSO",
+  "required_data": [
+    "AzureAD",
+    "Azure SignIn Log",
+    "Idira",
+    "Duo",
+    "Okta",
+    "OneLogin",
+    "PingOne"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "A user accessed multiple resources via SSO using an anonymized proxy",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)",
+        "Cloud Service Dashboard (T1538)",
+        "Cloud Service Discovery (T1526)"
+      ],
+      "description": "A user accessed multiple resources via SSO, using an anonymized proxy, that are unusual for this user. This may be indicative of a compromised account.",
+      "attackers_goals": "Unusual resources may be accessed for various purposes, including exfiltration, lateral movement, etc.",
+      "investigative_actions": "Investigate the resources that were accessed to determine if they were used for legitimate purposes or malicious activity."
+    },
+    {
+      "name": "Suspicious user access to multiple resources via SSO",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)",
+        "Cloud Service Dashboard (T1538)",
+        "Cloud Service Discovery (T1526)"
+      ],
+      "description": "A user accessed multiple resources via SSO that are unusual for this user. This may be indicative of a compromised account.",
+      "attackers_goals": "Unusual resources may be accessed for various purposes, including exfiltration, lateral movement, etc.",
+      "investigative_actions": "Investigate the resources that were accessed to determine if they were used for legitimate purposes or malicious activity."
+    },
+    {
+      "name": "Multiple Resource Access from a New IP via SSO",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)",
+        "Cloud Service Dashboard (T1538)",
+        "Cloud Service Discovery (T1526)"
+      ],
+      "description": "A user accessed multiple resources via SSO that are unusual for this user. This may be indicative of a compromised account.",
+      "attackers_goals": "Unusual resources may be accessed for various purposes, including exfiltration, lateral movement, etc.",
+      "investigative_actions": "Investigate the resources that were accessed to determine if they were used for legitimate purposes or malicious activity."
+    }
+  ]
+}

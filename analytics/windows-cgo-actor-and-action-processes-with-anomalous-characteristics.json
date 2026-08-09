@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)"
+  ],
+  "attackers_goals": "Processes anomalous characteristics which commonly appear in malicious activities.",
+  "deduplication_period": "1 Day",
+  "description": "Windows CGO, actor and action processes with anomalous characteristics.",
+  "detection_modules": "",
+  "detector_tags": "Process Anomaly Analytics",
+  "investigative_actions": "Investigate the executed process image and check if it is malicious. Investigate the CGO and actor processes that executed the process and check if they are malicious.",
+  "name": "Windows CGO, actor and action processes with anomalous characteristics",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Windows CGO, actor and action processes with highly anomalous characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "User Execution (T1204)"
+      ],
+      "description": "Windows CGO, actor and action processes with anomalous characteristics.",
+      "attackers_goals": "Processes anomalous characteristics which commonly appear in malicious activities.",
+      "investigative_actions": "Investigate the executed process image and check if it is malicious. Investigate the CGO and actor processes that executed the process and check if they are malicious."
+    }
+  ]
+}

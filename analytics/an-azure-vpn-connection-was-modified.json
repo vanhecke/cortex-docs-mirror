@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)"
+  ],
+  "attackers_goals": "Bypass security measures.",
+  "deduplication_period": "5 Days",
+  "description": "Modification or removal of an Azure VPN connection was detected. This alert indicates a change to an existing VPN connection or the deletion of an existing connection.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check how Azure VPN Connection was modified.* Verify whether the identity should be making this action.",
+  "name": "An Azure VPN Connection was modified",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

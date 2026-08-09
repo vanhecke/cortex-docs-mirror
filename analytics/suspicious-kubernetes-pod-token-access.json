@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Unsecured Credentials: Credentials In Files (T1552.001)"
+  ],
+  "attackers_goals": "Gain access to the Kubernetes environment.",
+  "deduplication_period": "1 Day",
+  "description": "A Kubernetes pod has accessed the access token of another pod. This could indicate potential unauthorized access or a security breach within the cluster.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Kubernetes Credentials Theft Analytics",
+  "investigative_actions": "Look for additional suspicious activities. Verify if the exposed credentials were used to access the API server. Investigate which operations were used against the Kubernetes cluster with the exposed credentials.",
+  "name": "Suspicious Kubernetes pod token access",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious Kubernetes pod token access via remote access",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials: Credentials In Files (T1552.001)"
+      ],
+      "description": "A Kubernetes pod has accessed the access token of another pod. This could indicate potential unauthorized access or a security breach within the cluster.",
+      "attackers_goals": "Gain access to the Kubernetes environment.",
+      "investigative_actions": "Look for additional suspicious activities. Verify if the exposed credentials were used to access the API server. Investigate which operations were used against the Kubernetes cluster with the exposed credentials."
+    },
+    {
+      "name": "Suspicious Kubernetes pod token access by an unusual pod",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials: Credentials In Files (T1552.001)"
+      ],
+      "description": "A Kubernetes pod has accessed the access token of another pod. This could indicate potential unauthorized access or a security breach within the cluster.",
+      "attackers_goals": "Gain access to the Kubernetes environment.",
+      "investigative_actions": "Look for additional suspicious activities. Verify if the exposed credentials were used to access the API server. Investigate which operations were used against the Kubernetes cluster with the exposed credentials."
+    },
+    {
+      "name": "Suspicious Kubernetes pod token access by an unusual process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials: Credentials In Files (T1552.001)"
+      ],
+      "description": "A Kubernetes pod has accessed the access token of another pod. This could indicate potential unauthorized access or a security breach within the cluster.",
+      "attackers_goals": "Gain access to the Kubernetes environment.",
+      "investigative_actions": "Look for additional suspicious activities. Verify if the exposed credentials were used to access the API server. Investigate which operations were used against the Kubernetes cluster with the exposed credentials."
+    }
+  ]
+}

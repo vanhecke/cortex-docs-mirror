@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Resource Development (TA0042)"
+  ],
+  "attack_techniques": [
+    "Acquire Infrastructure: Domains (T1583.001)"
+  ],
+  "attackers_goals": "Gain access to DNS records and abuse them for malicious purposes.",
+  "deduplication_period": "5 Days",
+  "description": "An AWS Route 53 domain was transferred to another AWS account.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check if the domain transfer was done by an authorized user.",
+  "name": "An AWS Route 53 domain was transferred to another AWS account",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

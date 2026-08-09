@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify Tools (T1562.001)"
+  ],
+  "attackers_goals": "Adversaries may modify or disable security rules to avoid detection of their activities.",
+  "deduplication_period": "1 Day",
+  "description": "A security object was deleted in Google Workspace Admin Console.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Investigate the security object name deleted and whether it was intended. Check if the user was recently granted new elevated permissions that allowed them to delete security rules. Follow other administrative or suspicious actions performed by this user around the same time.",
+  "name": "Security object deletion in Google Workspace Admin Console",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Security object deletion in Google Workspace Admin Console for the first time",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify Tools (T1562.001)"
+      ],
+      "description": "A security object was deleted in Google Workspace Admin Console.",
+      "attackers_goals": "Adversaries may modify or disable security rules to avoid detection of their activities.",
+      "investigative_actions": "Investigate the security object name deleted and whether it was intended. Check if the user was recently granted new elevated permissions that allowed them to delete security rules. Follow other administrative or suspicious actions performed by this user around the same time."
+    }
+  ]
+}

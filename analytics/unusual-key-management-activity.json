@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Unsecured Credentials (T1552)"
+  ],
+  "attackers_goals": "Abuse exposed cryptographic keys to decrypt sensitive information or create digital signatures to craft malicious messages. Using the decrypted information, the attacker may perform additional activities in an evasive manner.",
+  "deduplication_period": "1 Day",
+  "description": "A cloud identity performed a key management operation for the first time.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the identity's role designation in the organization. Verify that the identity did not perform any sensitive KMS operation that it shouldn't.",
+  "name": "Unusual key management activity",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

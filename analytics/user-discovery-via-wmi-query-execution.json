@@ -1,0 +1,73 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Windows Management Instrumentation (T1047)",
+    "System Owner/User Discovery (T1033)",
+    "Account Discovery (T1087)"
+  ],
+  "attackers_goals": "Attacker or malware can use WMI queries to discover host users and enumerate a huge amount of information.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers or malware may use WMI queries to list the users of a host, and potentially its owner.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Examine the process that executed the WMI query and verify that the process is from a trusted source. Inspect the system for suspicious activity that is related to that process.",
+  "name": "User discovery via WMI query execution",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "User discovery via WMI query execution by an unsigned process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Windows Management Instrumentation (T1047)",
+        "System Owner/User Discovery (T1033)",
+        "Account Discovery (T1087)"
+      ],
+      "description": "Attackers or malware may use WMI queries to list the users of a host, and potentially its owner.",
+      "attackers_goals": "Attacker or malware can use WMI queries to discover host users and enumerate a huge amount of information.",
+      "investigative_actions": "Examine the process that executed the WMI query and verify that the process is from a trusted source. Inspect the system for suspicious activity that is related to that process."
+    },
+    {
+      "name": "User modification via WMIC query execution",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Windows Management Instrumentation (T1047)",
+        "Account Manipulation (T1098)"
+      ],
+      "description": "Attackers or malware may use WMI queries to modify the users of a host, and potentially its owner.",
+      "attackers_goals": "Attacker or malware can use WMI queries to discover host users and enumerate a huge amount of information.",
+      "investigative_actions": "Examine the process that executed the WMI query and verify that the process is from a trusted source. Inspect the system for suspicious activity that is related to that process."
+    },
+    {
+      "name": "User discovery via WMIC query execution",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Windows Management Instrumentation (T1047)",
+        "System Owner/User Discovery (T1033)",
+        "Account Discovery (T1087)"
+      ],
+      "description": "Attackers or malware may use WMI queries to list the users of a host, and potentially its owner.",
+      "attackers_goals": "Attacker or malware can use WMI queries to discover host users and enumerate a huge amount of information.",
+      "investigative_actions": "Examine the process that executed the WMI query and verify that the process is from a trusted source. Inspect the system for suspicious activity that is related to that process."
+    }
+  ]
+}

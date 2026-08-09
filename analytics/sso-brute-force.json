@@ -1,0 +1,80 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Resource Development (TA0042)"
+  ],
+  "attack_techniques": [
+    "Brute Force (T1110)",
+    "Brute Force: Password Guessing (T1110.001)",
+    "Compromise Accounts (T1586)"
+  ],
+  "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
+  "deduplication_period": "1 Day",
+  "description": "An abnormally high amount of SSO authentication attempts were seen within a short period of time. This may have resulted from a brute-force attack.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check the legitimacy of this activity and determine whether it is malicious or not. Check if the user usually logs in from this country. Check whether a successful login was made after unsuccessful attempts.",
+  "name": "SSO Brute Force",
+  "required_data": [
+    "AzureAD",
+    "Azure SignIn Log",
+    "Idira",
+    "Duo",
+    "Okta",
+    "OneLogin",
+    "PingOne"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "SSO Brute Force on a Honey User Account",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Brute Force (T1110)",
+        "Brute Force: Password Guessing (T1110.001)",
+        "Compromise Accounts (T1586)"
+      ],
+      "description": "An abnormally high amount of SSO authentication attempts were seen within a short period of time. This may have resulted from a brute-force attack.",
+      "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
+      "investigative_actions": "Check the legitimacy of this activity and determine whether it is malicious or not. Check if the user usually logs in from this country. Check whether a successful login was made after unsuccessful attempts."
+    },
+    {
+      "name": "Successful SSO Brute Force Threat Detected",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Brute Force (T1110)",
+        "Brute Force: Password Guessing (T1110.001)",
+        "Compromise Accounts (T1586)"
+      ],
+      "description": "An abnormally high amount of SSO authentication attempts were seen within a short period of time. This may have resulted from a brute-force attack.",
+      "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
+      "investigative_actions": "Check the legitimacy of this activity and determine whether it is malicious or not. Check if the user usually logs in from this country. Check whether a successful login was made after unsuccessful attempts."
+    },
+    {
+      "name": "SSO Brute Force Activity Observed",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Brute Force (T1110)",
+        "Brute Force: Password Guessing (T1110.001)",
+        "Compromise Accounts (T1586)"
+      ],
+      "description": "An abnormally high amount of SSO authentication attempts were seen within a short period of time. This may have resulted from a brute-force attack.",
+      "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
+      "investigative_actions": "Check the legitimacy of this activity and determine whether it is malicious or not. Check if the user usually logs in from this country. Check whether a successful login was made after unsuccessful attempts."
+    }
+  ]
+}

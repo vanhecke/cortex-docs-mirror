@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data from Network Shared Drive (T1039)"
+  ],
+  "attackers_goals": "Collect valuable data about the organization for exfiltration purposes.",
+  "deduplication_period": "1 Day",
+  "description": "A user accessed an abnormal number of remote shared folders. This might indicate an attempt to collect data before exfiltration.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Data Detection & Response",
+  "investigative_actions": "Check for other suspicious activity made by the user at the time of the event. Inspect the shared folder and verify if the user should have accessed to that folder. Go over the list of files and check if such user should have access to those files.",
+  "name": "A user accessed an abnormal number of remote shared folders",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "A user accessed an abnormal number of remote shared folders for the first time",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Data from Network Shared Drive (T1039)"
+      ],
+      "description": "A user accessed for the first time to an abnormal number of remote shared folders. This might indicate an attempt to collect data before exfiltration.",
+      "attackers_goals": "Collect valuable data about the organization for exfiltration purposes.",
+      "investigative_actions": "Check for other suspicious activity made by the user at the time of the event. Inspect the shared folder and verify if the user should have accessed to that folder. Go over the list of files and check if such user should have access to those files."
+    }
+  ]
+}

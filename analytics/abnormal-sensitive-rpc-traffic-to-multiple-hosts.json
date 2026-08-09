@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Services (T1021)"
+  ],
+  "attackers_goals": "An adversary may enumerate different protocols to gain information and plan its lateral movement over the network.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint performed unfamiliar RPC activity to multiple hosts using a known sensitive interface.",
+  "detection_modules": "",
+  "detector_tags": "NDR Lateral Movement Analytics",
+  "investigative_actions": "Check if the host is a newly deployed server that provides RPC based services to multiple hosts. Verify the legitimacy of the actor process (and its causality) that initiated this RPC traffic.",
+  "name": "Abnormal sensitive RPC traffic to multiple hosts",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "5 Hours",
+  "variations": [
+    {
+      "name": "Abnormal sensitive RPC traffic to multiple IPs",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services (T1021)"
+      ],
+      "description": "The endpoint performed unfamiliar RPC activity to multiple hosts using a known sensitive interface.",
+      "attackers_goals": "An adversary may enumerate different protocols to gain information and plan its lateral movement over the network.",
+      "investigative_actions": "Check if the host is a newly deployed server that provides RPC based services to multiple hosts. Verify the legitimacy of the actor process (and its causality) that initiated this RPC traffic."
+    }
+  ]
+}

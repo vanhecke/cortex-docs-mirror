@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impersonation (T1656)"
+  ],
+  "attackers_goals": "Impersonate known legitimate brands or other technological entities to trick recipients into disclosing information or executing malicious code unwillingly.",
+  "deduplication_period": "1 Day",
+  "description": "Sender headers include a well-known brand with header inconsistencies indicating possible impersonation.",
+  "detection_modules": "Email",
+  "detector_tags": "Brand Impersonation",
+  "investigative_actions": "Identify the specific emails responsible for the accumulation of these alerts. Review their headers and content for patterns or anomalies. Assess the email's context and attack techniques to determine the potential risk. Review the email headers and metadata of each flagged email to identify potential spoofing techniques or unusual routing patterns. Analyze any URLs or attachments in a secure sandbox environment to detect possible malware or phishing attempts. Engage potentially affected users to understand if any actions were taken in response to these emails, which could increase the overall risk. Document and escalate findings in case this is a broader phenomenon.",
+  "name": "Well-known brand in sender headers with header inconsistencies",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

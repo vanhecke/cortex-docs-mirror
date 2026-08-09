@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Account Discovery: Domain Account (T1087.002)"
+  ],
+  "attackers_goals": "The attacker may attempt to gain an initial foothold in the domain by enumerating users.",
+  "deduplication_period": "1 Day",
+  "description": "Multiple Kerberos TGT requests with KDC_ERR_C_PRINCIPAL_UNKNOWN errors were generated on different users in the last 10 minutes which may indicate Kerberos user enumeration.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Identify the source host from which the failed logons originated, by making sure the IP is not a shared address. Check the host from which the errors originated, and verify the legitimacy of the TGT requests. Correlate successful logons from the source host to identify potential account compromises following the failed attempts. Review source host activity to detect any additional suspicious or lateral movement behavior.",
+  "name": "Possible Kerberos User Enumeration",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Possible Kerberos User Enumeration Involving Exposed Users",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Account Discovery: Domain Account (T1087.002)"
+      ],
+      "description": "Multiple Kerberos TGT requests with KDC_ERR_C_PRINCIPAL_UNKNOWN errors were generated on different users in the last 10 minutes which may indicate Kerberos user enumeration.",
+      "attackers_goals": "The attacker may attempt to gain an initial foothold in the domain by enumerating users.",
+      "investigative_actions": "Identify the source host from which the failed logons originated, by making sure the IP is not a shared address. Check the host from which the errors originated, and verify the legitimacy of the TGT requests. Correlate successful logons from the source host to identify potential account compromises following the failed attempts. Review source host activity to detect any additional suspicious or lateral movement behavior."
+    }
+  ]
+}

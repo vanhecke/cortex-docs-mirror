@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)",
+    "Brute Force (T1110)"
+  ],
+  "attackers_goals": "Gain access to hosts by using stolen user-account credentials.",
+  "deduplication_period": "1 Day",
+  "description": "A user failed to log in to multiple hosts it never accessed before in a short amount of time. This may indicate the account is compromised and an attacker is probing for a host it can access with those credentials.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check if the user account was compromised, and which resources it could access.",
+  "name": "Account probing",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "1 Hour",
+  "variations": []
+}

@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)",
+    "Account Manipulation: Additional Cloud Roles (T1098.003)"
+  ],
+  "attackers_goals": "Maintain persistent access or escalate privileges within the cloud environment.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity granted itself a sensitive Cloud Run IAM role.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Verify which permissions were granted to the identity.",
+  "name": "GCP sensitive Cloud Run role granted",
+  "required_data": [
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "GCP sensitive Cloud Run role granted",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)",
+        "Account Manipulation: Additional Cloud Roles (T1098.003)"
+      ],
+      "description": "A cloud identity granted itself a sensitive Cloud Run IAM role.",
+      "attackers_goals": "Maintain persistent access or escalate privileges within the cloud environment.",
+      "investigative_actions": "Verify which permissions were granted to the identity."
+    }
+  ]
+}

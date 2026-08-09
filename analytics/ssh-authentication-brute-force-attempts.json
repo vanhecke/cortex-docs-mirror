@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Brute Force (T1110)"
+  ],
+  "attackers_goals": "Attackers attempt to log in to a remote host.",
+  "deduplication_period": "3 Hours",
+  "description": "A user attempted to authenticate via SSH an excessive number of times in a short period. This may indicate a brute force attack.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Verify any successful authentication by the user account referenced by the alert, as these can indicate the attacker managed to guess the credentials.",
+  "name": "SSH authentication brute force attempts",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "15 Minutes",
+  "variations": [
+    {
+      "name": "Successful SSH Brute Force",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Brute Force (T1110)"
+      ],
+      "description": "A user successfully authenticated via SSH after an excessive number of failures in a short period.",
+      "attackers_goals": "Attackers attempt to log in to a remote host.",
+      "investigative_actions": "Verify any successful authentication by the user account referenced by the alert, as these can indicate the attacker managed to guess the credentials."
+    },
+    {
+      "name": "Possible SSH Brute Force",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Brute Force (T1110)"
+      ],
+      "description": "A user attempted to authenticate via SSH an excessive number of times in a short period. This may indicate a brute force attack.",
+      "attackers_goals": "Attackers attempt to log in to a remote host.",
+      "investigative_actions": "Verify any successful authentication by the user account referenced by the alert, as these can indicate the attacker managed to guess the credentials."
+    }
+  ]
+}

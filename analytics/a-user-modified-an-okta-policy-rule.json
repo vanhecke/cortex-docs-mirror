@@ -1,0 +1,42 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)",
+    "Domain or Tenant Policy Modification (T1484)",
+    "Modify Authentication Process (T1556)"
+  ],
+  "attackers_goals": "An attacker may attempt to modify an Okta policy rule to weaken an organization's security controls.",
+  "deduplication_period": "2 Days",
+  "description": "An Okta policy rule was modified by a user, suggesting a potential compromise of the account.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Okta Audit Analytics",
+  "investigative_actions": "Follow further actions done by the account. Verify that the configuration change was expected. Look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Investigate if any other security policies have been changed or removed.",
+  "name": "A user modified an Okta policy rule",
+  "required_data": [
+    "Okta Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A user modified an Okta policy rule with suspicious characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses (T1562)",
+        "Domain or Tenant Policy Modification (T1484)",
+        "Modify Authentication Process (T1556)"
+      ],
+      "description": "An Okta policy rule was modified by a suspicious user, suggesting a potential compromise of the account.",
+      "attackers_goals": "An attacker may attempt to modify an Okta policy rule to weaken an organization's security controls.",
+      "investigative_actions": "Follow further actions done by the account. Verify that the configuration change was expected. Look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Investigate if any other security policies have been changed or removed."
+    }
+  ]
+}

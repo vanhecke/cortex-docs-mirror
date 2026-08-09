@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Exfiltration Over Alternative Protocol (T1048)"
+  ],
+  "attackers_goals": "Extracting valuable information outside the company. Bypass Data Loss Prevention (DLP) by splitting data across multiple emails.",
+  "deduplication_period": "1 Hour",
+  "description": "Numerous emails with substantial attachments sent by an internal sender to one or more external recipients within a short timeframe.",
+  "detection_modules": "Email",
+  "detector_tags": "Exfiltration",
+  "investigative_actions": "Check the content of the email that was sent. Review the external recipient address and assess its reputation. Review past emails sent from this mailbox for any suspicious activity. Check for unusual emails sent to this recipient's address. Monitor further action taken, such as accessing to private keys, API tokens and sensitive data.",
+  "name": "Unusual attachment volume in outbound emails",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Unusual attachment volume in outbound emails to a single external recipient",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Alternative Protocol (T1048)"
+      ],
+      "description": "Numerous emails with substantial attachments sent by internal sender to one external recipient within a short timeframe.",
+      "attackers_goals": "Extracting valuable information outside the company. Bypass Data Loss Prevention (DLP) by splitting data across multiple emails.",
+      "investigative_actions": "Check the content of the email that was sent. Review the external recipient address and assess its reputation. Review past emails sent from this mailbox for any suspicious activity. Check for unusual emails sent to this recipient's address. Monitor further action taken, such as accessing to private keys, API tokens and sensitive data."
+    },
+    {
+      "name": "Unusual attachment amount and size in outbound emails",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Alternative Protocol (T1048)"
+      ],
+      "description": "Numerous emails with substantial attachments sent by an internal sender to one or more external recipients within a short timeframe.",
+      "attackers_goals": "Extracting valuable information outside the company. Bypass Data Loss Prevention (DLP) by splitting data across multiple emails.",
+      "investigative_actions": "Check the content of the email that was sent. Review the external recipient address and assess its reputation. Review past emails sent from this mailbox for any suspicious activity. Check for unusual emails sent to this recipient's address. Monitor further action taken, such as accessing to private keys, API tokens and sensitive data."
+    }
+  ]
+}

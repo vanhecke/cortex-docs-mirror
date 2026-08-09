@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "Manipulate access to a backup vault.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity has modified backup vault access policy.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Configuration, Data Detection & Response",
+  "investigative_actions": "Check if the {identity_name} intended to modify the backup vault policy. Check additional activity by {identity_name}.",
+  "name": "A Backup vault policy was modified",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

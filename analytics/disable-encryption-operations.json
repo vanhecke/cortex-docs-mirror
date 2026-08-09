@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Data Manipulation (T1565)"
+  ],
+  "attackers_goals": "Decrypt sensitive data host on EC2 instance, this may be a step in a flow for data exfiltration.",
+  "deduplication_period": "1 Day",
+  "description": "Encryption was disabled on the servers that host EC2 instances, both for data-at-rest and data-in-transit.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Protection Tampering, Data Detection & Response",
+  "investigative_actions": "Check if Identity intended to disable the encryption.",
+  "name": "Disable encryption operations",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

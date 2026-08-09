@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify System Firewall (T1562.004)"
+  ],
+  "attackers_goals": "Exfiltrate data or move laterally in the organization.",
+  "deduplication_period": "1 Day",
+  "description": "The system firewall was modified.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Examine the command to understand which IPs or ports were affected. Check the communication allowed by the modified firewall rule.",
+  "name": "Linux system firewall was modified",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

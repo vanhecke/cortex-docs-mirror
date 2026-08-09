@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Steal or Forge Kerberos Tickets: Kerberoasting (T1558.003)"
+  ],
+  "attackers_goals": "Crack account credentials by obtaining an easy-to-crack Kerberos ticket.",
+  "deduplication_period": "30 Days",
+  "description": "A user specifically requested weak and deprecated encryption in a Kerberos TGS request. This provides easy-to-crack hashes and is typically a sign of a Kerberoasting attack.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check who used the host at the time of the alert to rule out a benign service or tool requesting weak Kerberos encryption.",
+  "name": "Weakly-Encrypted Kerberos Ticket Requested",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Weakly-Encrypted Kerberos Ticket Requested on a sensitive server",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Steal or Forge Kerberos Tickets: Kerberoasting (T1558.003)"
+      ],
+      "description": "A user specifically requested weak and deprecated encryption in a Kerberos TGS request. This provides easy-to-crack hashes and is typically a sign of a Kerberoasting attack. This action occurred on a sensitive server, which may indicate a malicious activity.",
+      "attackers_goals": "Crack account credentials by obtaining an easy-to-crack Kerberos ticket.",
+      "investigative_actions": "Check who used the host at the time of the alert to rule out a benign service or tool requesting weak Kerberos encryption."
+    }
+  ]
+}

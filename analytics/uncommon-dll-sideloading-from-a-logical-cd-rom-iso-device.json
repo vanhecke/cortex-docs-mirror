@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Defense Evasion (TA0005)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Hijack Execution Flow: DLL (T1574.001)",
+    "User Execution: Malicious File (T1204.002)"
+  ],
+  "attackers_goals": "An attacker is attempting to load untrusted code into trusted contexts to avoid detection or escalate privileges.",
+  "deduplication_period": "1 Day",
+  "description": "A DLL was loaded by an executable from the same folder on a logical CD-ROM device (ISO).",
+  "detection_modules": "",
+  "detector_tags": "DLL Hijacking Analytics",
+  "investigative_actions": "Investigate the loaded module and verify if it is malicious. Check if the disk is a mounted CD-ROM (for example from an ISO file), and if it contains hidden files and folders. Check the content of an 'autorun.inf' or '*.lnk' files if they exist.",
+  "name": "Uncommon DLL-sideloading from a logical CD-ROM (ISO) device",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

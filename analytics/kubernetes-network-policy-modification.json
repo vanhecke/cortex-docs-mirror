@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Network Denial of Service (T1498)"
+  ],
+  "attackers_goals": "Gain access to the network infrastructure.* Gain access to sensitive data.* Gain access to Kubernetes resources.",
+  "deduplication_period": "5 Days",
+  "description": "A change has been made to the network policies of a Kubernetes cluster.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Kubernetes - API",
+  "investigative_actions": "Investigate the Kubernetes Network Policy to identify the changes made.* Verify whether the identity should be making this action.",
+  "name": "Kubernetes network policy modification",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log",
+    "Kubernetes Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

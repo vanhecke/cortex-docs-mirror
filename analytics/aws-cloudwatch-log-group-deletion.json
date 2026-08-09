@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Data Destruction (T1485)",
+    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+  ],
+  "attackers_goals": "An attacker may change the configuration of the affected resource to remain undetected.",
+  "deduplication_period": "1 Day",
+  "description": "An AWS CloudWatch log group was deleted, this action permanently deletes all the archives associated with this group.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check why the identity deleted the log group. Check what resources were affected by this change.",
+  "name": "AWS CloudWatch log group deletion",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

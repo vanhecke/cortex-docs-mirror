@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "Exfiltrate sensitive database content to an external or attacker-controlled bucket.",
+  "deduplication_period": "1 Day",
+  "description": "A Cloud DB instance was exported to a foreign storage destination. The destination storage has not been seen in the organization in the last 30 days.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Data Detection & Response, Cloud Data Asset Exfiltration",
+  "investigative_actions": "Verify if the destination bucket is authorized for data export. Investigate the identity performing the action for unusual behavior or lack of authorization. Assess the sensitivity of the data within the source Cloud DB instance to determine impact.",
+  "name": "A Cloud DB instance was exported to an unknown destination",
+  "required_data": [
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

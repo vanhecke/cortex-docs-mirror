@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Trusted Relationship (T1199)"
+  ],
+  "attackers_goals": "The Windows Server Update Services enable machines to discover and download software updates from a dedicated update server. Attackers may use the MS-Update protocol to execute unauthorized code through Microsoft binaries.",
+  "deduplication_period": "2 Days",
+  "description": "The endpoint requested an MS-Update operation from a rare update server.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Inspect the legitimacy of the server as a WSUS functioning server. Verify that your MS-Update network routine is HTTPS enforced* Verify that this MS-Update server is not a newly deployed server as part of a legitimate IT activity.",
+  "name": "Rare MS-Update Server was detected",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Rare MS-Update Server was detected",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Trusted Relationship (T1199)"
+      ],
+      "description": "The endpoint requested an MS-Update operation from a rare update server.",
+      "attackers_goals": "The Windows Server Update Services enable machines to discover and download software updates from a dedicated update server. Attackers may use the MS-Update protocol to execute unauthorized code through Microsoft binaries.",
+      "investigative_actions": "Inspect the legitimacy of the server as a WSUS functioning server. Verify that your MS-Update network routine is HTTPS enforced* Verify that this MS-Update server is not a newly deployed server as part of a legitimate IT activity."
+    }
+  ]
+}

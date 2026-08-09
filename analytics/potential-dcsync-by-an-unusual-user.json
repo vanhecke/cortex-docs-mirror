@@ -1,0 +1,41 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "OS Credential Dumping: DCSync (T1003.006)",
+    "Rogue Domain Controller (T1207)"
+  ],
+  "attackers_goals": "An attacker is trying to retrieve Active Directory data, including password hashes.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers may leverage the domain replication process to extract sensitive information (DCSync).",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the replicating account is an account that should initiate a DC synchronization.* Check the role of the account, and see if it should initiate a DC synchronization.* Check if the account performing the DCSync is related to a new DC.* Find the source host of the DCSync (correlate between event 4662 and 4624 based on the field 'Logon ID').* Check if the account was recently added to an administrative groups/had new sensitive privileges assigned to it.* Monitor suspicious traffic to/from the host to identify lateral movement or access to sensitive resources.",
+  "name": "Potential DCSync by an unusual user",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Possible DCSync by an unusual user",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping: DCSync (T1003.006)",
+        "Rogue Domain Controller (T1207)"
+      ],
+      "description": "Attackers may leverage the domain replication process to extract sensitive information (DCSync).",
+      "attackers_goals": "An attacker is trying to retrieve Active Directory data, including password hashes.",
+      "investigative_actions": "Check whether the replicating account is an account that should initiate a DC synchronization.* Check the role of the account, and see if it should initiate a DC synchronization.* Check if the account performing the DCSync is related to a new DC.* Find the source host of the DCSync (correlate between event 4662 and 4624 based on the field 'Logon ID').* Check if the account was recently added to an administrative groups/had new sensitive privileges assigned to it.* Monitor suspicious traffic to/from the host to identify lateral movement or access to sensitive resources."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Abuse Elevation Control Mechanism: Bypass User Account Control (T1548.002)"
+  ],
+  "attackers_goals": "Gain higher privileges by bypassing the User Account Control (UAC).",
+  "deduplication_period": "1 Day",
+  "description": "Creation or modification of these registry keys can cause the execution of the specified programs, bypassing UAC.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check the registry data modified for a potentially malicious command line. Look for processes running matching the command line for malicious activity.",
+  "name": "Creation or modification of the default command executed when opening an application",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Creation or modification of the default command executed when opening the Microsoft optional features settings (Fodhelper.exe)",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Abuse Elevation Control Mechanism: Bypass User Account Control (T1548.002)"
+      ],
+      "description": "Creation or modification of these registry keys can cause the execution of the specified programs, bypassing UAC.",
+      "attackers_goals": "Gain higher privileges by bypassing the User Account Control (UAC).",
+      "investigative_actions": "Check the registry data modified for a potentially malicious command line. Look for processes running matching the command line for malicious activity."
+    },
+    {
+      "name": "Creation or modification of the default command executed when opening an MMC application",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Abuse Elevation Control Mechanism: Bypass User Account Control (T1548.002)"
+      ],
+      "description": "Creation or modification of these registry keys can cause the execution of the specified programs, bypassing UAC.",
+      "attackers_goals": "Gain higher privileges by bypassing the User Account Control (UAC).",
+      "investigative_actions": "Check the registry data modified for a potentially malicious command line. Look for processes running matching the command line for malicious activity."
+    },
+    {
+      "name": "Creation or modification of the default command executed when opening Windows backup and restore (sdclt.exe)",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Abuse Elevation Control Mechanism: Bypass User Account Control (T1548.002)"
+      ],
+      "description": "Creation or modification of these registry keys can cause the execution of the specified programs, bypassing UAC.",
+      "attackers_goals": "Gain higher privileges by bypassing the User Account Control (UAC).",
+      "investigative_actions": "Check the registry data modified for a potentially malicious command line. Look for processes running matching the command line for malicious activity."
+    },
+    {
+      "name": "Creation or modification of the default command executed when opening Windows Store settings (Wsreset.exe)",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Abuse Elevation Control Mechanism: Bypass User Account Control (T1548.002)"
+      ],
+      "description": "Creation or modification of these registry keys can cause the execution of the specified programs, bypassing UAC.",
+      "attackers_goals": "Gain higher privileges by bypassing the User Account Control (UAC).",
+      "investigative_actions": "Check the registry data modified for a potentially malicious command line. Look for processes running matching the command line for malicious activity."
+    }
+  ]
+}

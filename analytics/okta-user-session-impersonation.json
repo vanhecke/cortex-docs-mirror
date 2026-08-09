@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Trusted Relationship (T1199)"
+  ],
+  "attackers_goals": "An attacker's goal is to gain unauthorized access to sensitive information or perform malicious actions on behalf of the impersonated user.",
+  "deduplication_period": "1 Day",
+  "description": "A user has initiated a session impersonation in Okta.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Okta Audit Analytics",
+  "investigative_actions": "Ensure the user is authorized to impersonate a user session. Review any activities that occurred during the impersonation session. Look for any activities related to the impersonated user's account during and after the impersonation event.",
+  "name": "Okta User Session Impersonation",
+  "required_data": [
+    "Okta Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Okta User Session Impersonation with suspicious characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Trusted Relationship (T1199)"
+      ],
+      "description": "A user has initiated a session impersonation with suspicious characteristics in Okta.",
+      "attackers_goals": "An attacker's goal is to gain unauthorized access to sensitive information or perform malicious actions on behalf of the impersonated user.",
+      "investigative_actions": "Ensure the user is authorized to impersonate a user session. Review any activities that occurred during the impersonation session. Look for any activities related to the impersonated user's account during and after the impersonation event."
+    }
+  ]
+}

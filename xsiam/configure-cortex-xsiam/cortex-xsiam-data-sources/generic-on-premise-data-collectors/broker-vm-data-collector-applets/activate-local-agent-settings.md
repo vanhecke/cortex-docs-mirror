@@ -1,6 +1,8 @@
 # Activate Local Agent Settings
 
 {% hint style="info" %}
+**License**
+
 This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that includes endpoints or Cortex Cloud Runtime Security.
 {% endhint %}
 
@@ -85,8 +87,8 @@ The broker needs to communicate with the same URLs that the agents communicate w
 
 After you configure and register your Palo Alto Networks Broker VM, proceed to set up your Local Agent Settings applet.
 
-1. Select Settings → Configurations → Data Broker → Broker VMs.
-2. In either the Brokers tab or the Clusters tab, locate your Broker VM.
+1. Select **Settings** → **Configurations** → **Data Broker** → **Broker VMs**.
+2. In either the **Brokers** tab or the **Clusters** tab, locate your Broker VM.
 3.  (Optional) To set up the Agent Proxy:
 
     a. Right-click the Broker VM and select **Configure**.
@@ -125,7 +127,7 @@ After you configure and register your Palo Alto Networks Broker VM, proceed to s
    To help you easily troubleshoot connectivity issues for a Local Agent Settings applet on the Palo Alto Networks Broker VM, Cortex XSIAM displays a list of Denied URLs. These URLs are displayed when you left-click the Local Agent Settings applet to view the Connectivity Status. As a result, in a situation where the Local Agent Settings applet is reported as activated with a failed connection, you can easily determine the URLs that need to be allowed in your network environment.
 6. Manage the local agent settings. After the local agent settings have been activated, left-click the Local Agent Settings connection in the APPS column to display the settings, and select:
 
-* Configure to change your settings.
-* Deactivate to disable the local agent settings altogether.
+* **Configure** to change your settings.
+* **Deactivate** to disable the local agent settings altogether.
 
 </details>

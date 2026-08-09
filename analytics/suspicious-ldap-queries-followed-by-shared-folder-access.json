@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Steal or Forge Kerberos Tickets (T1558)"
+  ],
+  "attackers_goals": "An attacker may use LDAP based account discovery and a forged Kerberos ticket (e.g. Silver Ticket) to access shared resources and collect sensitive data.",
+  "deduplication_period": "1 Day",
+  "description": "The user executed suspicious LDAP queries shortly before accessing a shared folder. This behavior may be indicative of Rubeus activity involving Kerberos ticket forgery, such as Golden Ticket or Silver Ticket attacks.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Review the LDAP query content to determine if it targets privileged groups (e.g., Domain Admins) or sensitive objects. Correlate the shared folder path with sensitive file shares (e.g., SYSVOL, NETLOGON, backup shares). Check if the IP address {ip_address} is associated with known administrative systems or unusual user behavior. Determine if Rubeus or other Kerberos abuse tools were used based on timing, patterns, or command line artifacts. Inspect for potential Silver Ticket or Golden Ticket activity by reviewing Kerberos ticket logs and security events. Verify if the user account had prior suspicious authentication events or privilege escalation.",
+  "name": "Suspicious LDAP queries followed by shared folder access",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "10 Minutes",
+  "variations": []
+}

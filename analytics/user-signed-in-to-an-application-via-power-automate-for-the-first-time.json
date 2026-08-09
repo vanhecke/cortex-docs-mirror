@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)",
+    "Automated Exfiltration (T1020)"
+  ],
+  "attackers_goals": "Use automation flows to automate data exfiltration, C2 communication, lateral movement and evade DLP solutions.",
+  "deduplication_period": "1 Day",
+  "description": "A user signed in to an application via Power Automate for the first time. This may be indicative of a compromised account.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check if this was a desired behavior as part of the automation flow.* Analyze the actions taken by the user during the session and verify that this is a legitimate session. Look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Look for signs of different data exfiltration via email, shared links or uploads to online storage.",
+  "name": "User signed in to an application via Power Automate for the first time",
+  "required_data": [
+    "AzureAD"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "User signed in to an uncommon application via Power Automate for the first time",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)",
+        "Automated Exfiltration (T1020)"
+      ],
+      "description": "A user signed in to an uncommon application via Power Automate for the first time. This may be indicative of a compromised account.",
+      "attackers_goals": "Use automation flows to automate data exfiltration, C2 communication, lateral movement and evade DLP solutions.",
+      "investigative_actions": "Check if this was a desired behavior as part of the automation flow.* Analyze the actions taken by the user during the session and verify that this is a legitimate session. Look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Look for signs of different data exfiltration via email, shared links or uploads to online storage."
+    }
+  ]
+}

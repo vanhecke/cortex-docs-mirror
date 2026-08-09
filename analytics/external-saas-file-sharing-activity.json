@@ -1,0 +1,39 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data from Cloud Storage (T1530)"
+  ],
+  "attackers_goals": "An attacker may share files from a SaaS service to exfiltrate sensitive data.",
+  "deduplication_period": "1 Day",
+  "description": "A user shared files from within a SaaS service to an external domain.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Data Detection & Response",
+  "investigative_actions": "Check for signs of account compromise, such as abnormal login activity or unusual behavior. Determine if the files are shared with users outside the organization and if the recipients are familiar. Review the files that were shared to determine if they contain sensitive data. Analyze the file types that were shared. Monitor the account for any further suspicious actions.",
+  "name": "External SaaS file-sharing activity",
+  "required_data": [
+    "Box Audit Log",
+    "DropBox",
+    "Google Workspace Audit Logs",
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "SaaS external file sharing to an abnormal domain",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Data from Cloud Storage (T1530)"
+      ],
+      "description": "A user shared files to an external domain, which the organization does not typically share files with.",
+      "attackers_goals": "An attacker may share files from a SaaS service to exfiltrate sensitive data.",
+      "investigative_actions": "Check for signs of account compromise, such as abnormal login activity or unusual behavior. Determine if the files are shared with users outside the organization and if the recipients are familiar. Review the files that were shared to determine if they contain sensitive data. Analyze the file types that were shared. Monitor the account for any further suspicious actions."
+    }
+  ]
+}

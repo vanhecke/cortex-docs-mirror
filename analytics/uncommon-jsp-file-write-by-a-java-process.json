@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Server Software Component: Web Shell (T1505.003)"
+  ],
+  "attackers_goals": "Persistence on the host.",
+  "deduplication_period": "1 Day",
+  "description": "An uncommon jsp file was written by a Java process.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the file was added during regular java process actions. Check if the jsp file contains malicious content.",
+  "name": "Uncommon jsp file write by a Java process",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

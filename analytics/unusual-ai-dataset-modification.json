@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Data Manipulation: Stored Data Manipulation (T1565.001)"
+  ],
+  "attackers_goals": "Poison datasets used by ML models.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity modified an AI dataset. MITRE ATLAS Techniques: AML.T0059 - Erode Dataset Integrity, AML.T0018.000 - Backdoor ML Model: Poison ML Model. OWASP Top 10 LLM Technique: LLM04 - Data and Model Poisoning.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud AI Infrastructure Analytics",
+  "investigative_actions": "Examine changed datasets and determine which ML models were affected. Investigate any unusual activity originating from the suspected identity.",
+  "name": "Unusual AI dataset modification",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual AI dataset modification from an internal IP address",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Data Manipulation: Stored Data Manipulation (T1565.001)"
+      ],
+      "description": "A cloud identity modified an AI dataset. MITRE ATLAS Techniques: AML.T0059 - Erode Dataset Integrity, AML.T0018.000 - Backdoor ML Model: Poison ML Model. OWASP Top 10 LLM Technique: LLM04 - Data and Model Poisoning.",
+      "attackers_goals": "Poison datasets used by ML models.",
+      "investigative_actions": "Examine changed datasets and determine which ML models were affected. Investigate any unusual activity originating from the suspected identity."
+    }
+  ]
+}

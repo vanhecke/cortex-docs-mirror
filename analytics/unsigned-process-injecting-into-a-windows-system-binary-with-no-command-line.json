@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Process Injection (T1055)"
+  ],
+  "attackers_goals": "Attackers may inject code into processes to evade process-based defenses, as well as possibly elevate privileges.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker may be trying to avoid detection by injecting their malicious code into a legitimate Windows system binary.",
+  "detection_modules": "",
+  "detector_tags": "Injection Analytics",
+  "investigative_actions": "Check whether the injecting process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Unsigned process injecting into a Windows system binary with no command line",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

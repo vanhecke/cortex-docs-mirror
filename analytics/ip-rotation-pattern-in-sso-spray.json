@@ -1,0 +1,64 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Resource Development (TA0042)"
+  ],
+  "attack_techniques": [
+    "Brute Force: Password Spraying (T1110.003)",
+    "Brute Force: Password Guessing (T1110.001)",
+    "Compromise Accounts (T1586)"
+  ],
+  "attackers_goals": "An attacker may be attempting to compromise user accounts through unauthorized access attempts.",
+  "deduplication_period": "1 Day",
+  "description": "A high volume of SSO authentication attempts was observed in a short time window. This behavior may indicate a password spray attack targeting multiple accounts.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Determine if the activity was performed by a legitimate user. Check for any successful logins that occurred following a series of failed attempts. Investigate the AS organization and evaluate the ASN's reputation for malicious activity. Review historical login behavior from the same IP addresses or ASN. Validate whether MFA was triggered or bypassed during the authentication attempts.",
+  "name": "IP Rotation Pattern in SSO Spray",
+  "required_data": [
+    "AzureAD",
+    "Azure SignIn Log",
+    "Idira",
+    "Duo",
+    "Okta",
+    "OneLogin",
+    "PingOne"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Potential Targeted SSO Password Spray Activity Detected",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Brute Force: Password Spraying (T1110.003)",
+        "Brute Force: Password Guessing (T1110.001)",
+        "Compromise Accounts (T1586)"
+      ],
+      "description": "A high volume of SSO authentication attempts was observed in a short time window. This behavior may indicate a password spray attack targeting multiple accounts.",
+      "attackers_goals": "An attacker may be attempting to compromise user accounts through unauthorized access attempts.",
+      "investigative_actions": "Determine if the activity was performed by a legitimate user. Check for any successful logins that occurred following a series of failed attempts. Investigate the AS organization and evaluate the ASN's reputation for malicious activity. Review historical login behavior from the same IP addresses or ASN. Validate whether MFA was triggered or bypassed during the authentication attempts."
+    },
+    {
+      "name": "Suspicious SSO Login Attempts from Multiple IPs",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Brute Force: Password Spraying (T1110.003)",
+        "Brute Force: Password Guessing (T1110.001)",
+        "Compromise Accounts (T1586)"
+      ],
+      "description": "A high volume of SSO authentication attempts was observed in a short time window. This behavior may indicate a password spray attack targeting multiple accounts.",
+      "attackers_goals": "An attacker may be attempting to compromise user accounts through unauthorized access attempts.",
+      "investigative_actions": "Determine if the activity was performed by a legitimate user. Check for any successful logins that occurred following a series of failed attempts. Investigate the AS organization and evaluate the ASN's reputation for malicious activity. Review historical login behavior from the same IP addresses or ASN. Validate whether MFA was triggered or bypassed during the authentication attempts."
+    }
+  ]
+}

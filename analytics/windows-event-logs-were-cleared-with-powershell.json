@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Indicator Removal: Clear Windows Event Logs (T1070.001)"
+  ],
+  "attackers_goals": "Attackers may clear events from Windows event logs to remove traces of their malicious activity.",
+  "deduplication_period": "1 Day",
+  "description": "Windows event logs were cleared or deleted with PowerShell.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Validate if the script that was executed is from a legitimate IT activity. Look for additional suspicious actions that were executed on the host.",
+  "name": "Windows event logs were cleared with PowerShell",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious clear or delete security provider event logs with PowerShell",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Indicator Removal: Clear Windows Event Logs (T1070.001)"
+      ],
+      "description": "Windows event logs were cleared or deleted with PowerShell.",
+      "attackers_goals": "Attackers may clear events from Windows event logs to remove traces of their malicious activity.",
+      "investigative_actions": "Validate if the script that was executed is from a legitimate IT activity. Look for additional suspicious actions that were executed on the host."
+    },
+    {
+      "name": "Suspicious clear or delete default providers event logs with PowerShell",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Indicator Removal: Clear Windows Event Logs (T1070.001)"
+      ],
+      "description": "Windows event logs were cleared or deleted with PowerShell.",
+      "attackers_goals": "Attackers may clear events from Windows event logs to remove traces of their malicious activity.",
+      "investigative_actions": "Validate if the script that was executed is from a legitimate IT activity. Look for additional suspicious actions that were executed on the host."
+    },
+    {
+      "name": "Windows event logs were cleared with uncommon PowerShell command line",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Indicator Removal: Clear Windows Event Logs (T1070.001)"
+      ],
+      "description": "Windows event logs were cleared or deleted with PowerShell.",
+      "attackers_goals": "Attackers may clear events from Windows event logs to remove traces of their malicious activity.",
+      "investigative_actions": "Validate if the script that was executed is from a legitimate IT activity. Look for additional suspicious actions that were executed on the host."
+    }
+  ]
+}

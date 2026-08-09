@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Remote Services (T1021)",
+    "System Services: Service Execution (T1569.002)"
+  ],
+  "attackers_goals": "Perform lateral movement to new hosts to expand the foothold within a network.",
+  "deduplication_period": "1 Day",
+  "description": "A remotely triggered service initiated by a host that rarely triggers services to other remote hosts.",
+  "detection_modules": "",
+  "detector_tags": "Impacket Analytics",
+  "investigative_actions": "Investigate the service being spawned on the host for malicious activities. Correlate the RPC call from the source host and understand which software initiated it.",
+  "name": "Remote service start from an uncommon source",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

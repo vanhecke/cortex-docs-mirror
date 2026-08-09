@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Remote Access Tools (T1219)"
+  ],
+  "attackers_goals": "An adversary may add a malicious application to an organization's Google Workspace domain to maintain a presence in their target's organization and steal data.",
+  "deduplication_period": "5 Days",
+  "description": "An app was added to the Google Workspace Marketplace.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Investigate the new app that was added to Google workspace Marketplace. Follow further actions done by the account.",
+  "name": "An app was added to Google Marketplace",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "An app was added to Google Marketplace by a non-administrative identity",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Remote Access Tools (T1219)"
+      ],
+      "description": "An app was added to the Google Workspace Marketplace.",
+      "attackers_goals": "An adversary may add a malicious application to an organization's Google Workspace domain to maintain a presence in their target's organization and steal data.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Investigate the new app that was added to Google workspace Marketplace. Follow further actions done by the account."
+    },
+    {
+      "name": "An app was added to Google Marketplace from an unusual ASN",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Remote Access Tools (T1219)"
+      ],
+      "description": "An app was added to the Google Workspace Marketplace.",
+      "attackers_goals": "An adversary may add a malicious application to an organization's Google Workspace domain to maintain a presence in their target's organization and steal data.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Investigate the new app that was added to Google workspace Marketplace. Follow further actions done by the account."
+    },
+    {
+      "name": "An unusual app was added to Google Marketplace",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Remote Access Tools (T1219)"
+      ],
+      "description": "An app was added to the Google Workspace Marketplace.",
+      "attackers_goals": "An adversary may add a malicious application to an organization's Google Workspace domain to maintain a presence in their target's organization and steal data.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Investigate the new app that was added to Google workspace Marketplace. Follow further actions done by the account."
+    }
+  ]
+}

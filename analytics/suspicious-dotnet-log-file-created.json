@@ -1,0 +1,66 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Reflective Code Loading (T1620)",
+    "Process Injection (T1055)"
+  ],
+  "attackers_goals": "Run/Inject DotNet code in the context of a signed process.",
+  "deduplication_period": "1 Day",
+  "description": "Payloads that use the DotNet framework may generate suspicious Microsoft DotNet log files.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify if the actor process is using DotNet in a valid way.* Check if a new application was recently installed on the host at the time of the alert.",
+  "name": "Suspicious DotNet log file created",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "DotNet log file created by svchost from 'Absolute software Corp' causality",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Reflective Code Loading (T1620)",
+        "Process Injection (T1055)"
+      ],
+      "description": "Causality 'Absolute software Corp' loads/injects into svchost and creates DotNet log files.",
+      "attackers_goals": "Run/Inject DotNet code in the context of a signed process.",
+      "investigative_actions": "Verify if the actor process is using DotNet in a valid way.* Check if a new application was recently installed on the host at the time of the alert."
+    },
+    {
+      "name": "Suspicious DotNet log file created from an injected thread",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Reflective Code Loading (T1620)",
+        "Process Injection (T1055)"
+      ],
+      "description": "Payloads that use the DotNet framework may generate suspicious Microsoft DotNet log files.",
+      "attackers_goals": "Run/Inject DotNet code in the context of a signed process.",
+      "investigative_actions": "Verify if the actor process is using DotNet in a valid way.* Check if a new application was recently installed on the host at the time of the alert."
+    },
+    {
+      "name": "Suspicious DotNet log file created",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Reflective Code Loading (T1620)",
+        "Process Injection (T1055)"
+      ],
+      "description": "Payloads that use the DotNet framework may generate suspicious Microsoft DotNet log files.",
+      "attackers_goals": "Run/Inject DotNet code in the context of a signed process.",
+      "investigative_actions": "Verify if the actor process is using DotNet in a valid way.* Check if a new application was recently installed on the host at the time of the alert."
+    }
+  ]
+}

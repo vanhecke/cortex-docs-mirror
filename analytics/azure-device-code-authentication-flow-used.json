@@ -1,0 +1,70 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)",
+    "Use Alternate Authentication Material (T1550)"
+  ],
+  "attackers_goals": "An attacker may use a device to access resources in the tenant using an access token from device code authentication flows.",
+  "deduplication_period": "1 Day",
+  "description": "An Azure AD login was performed with device code flow.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check what devices are listed with the logged-in user. Check if the account is authorized to use such devices to access resources. Check for possible logins from the device. Follow further actions done by the account and device.",
+  "name": "Azure device code authentication flow used",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious Azure device code authentication flow used by an Azure AD privileged user",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)",
+        "Use Alternate Authentication Material (T1550)"
+      ],
+      "description": "An Azure AD login was performed with device code flow.",
+      "attackers_goals": "An attacker may use a device to access resources in the tenant using an access token from device code authentication flows.",
+      "investigative_actions": "Check what devices are listed with the logged-in user. Check if the account is authorized to use such devices to access resources. Check for possible logins from the device. Follow further actions done by the account and device."
+    },
+    {
+      "name": "Suspicious Azure device code authentication flow used",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)",
+        "Use Alternate Authentication Material (T1550)"
+      ],
+      "description": "An Azure AD login was performed with device code flow.",
+      "attackers_goals": "An attacker may use a device to access resources in the tenant using an access token from device code authentication flows.",
+      "investigative_actions": "Check what devices are listed with the logged-in user. Check if the account is authorized to use such devices to access resources. Check for possible logins from the device. Follow further actions done by the account and device."
+    },
+    {
+      "name": "Azure device code authentication flow used by an Azure AD privileged user",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)",
+        "Use Alternate Authentication Material (T1550)"
+      ],
+      "description": "An Azure AD login was performed with device code flow.",
+      "attackers_goals": "An attacker may use a device to access resources in the tenant using an access token from device code authentication flows.",
+      "investigative_actions": "Check what devices are listed with the logged-in user. Check if the account is authorized to use such devices to access resources. Check for possible logins from the device. Follow further actions done by the account and device."
+    }
+  ]
+}

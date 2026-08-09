@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Brute Force (T1110)"
+  ],
+  "attackers_goals": "The attacker attempts to gain access to the account.",
+  "deduplication_period": "1 Day",
+  "description": "A local user account failed to log in multiple times in a short time period. This may indicate a brute-force attack.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Verify any successful authentication by the user account referenced by the alert, as these can indicate the attacker managed to guess the credentials.",
+  "name": "Brute-force attempt on a local account",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "15 Minutes",
+  "variations": [
+    {
+      "name": "Brute force on a local account",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Brute Force (T1110)"
+      ],
+      "description": "A local user account failed to log in multiple times in a short time period. This may indicate a brute-force attack.",
+      "attackers_goals": "The attacker attempts to gain access to the account.",
+      "investigative_actions": "Verify any successful authentication by the user account referenced by the alert, as these can indicate the attacker managed to guess the credentials."
+    }
+  ]
+}

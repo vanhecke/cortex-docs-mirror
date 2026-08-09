@@ -1,0 +1,50 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)"
+  ],
+  "attackers_goals": "Evade model's restrictions and potentially accessing sensitive data or banned topics.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity modified AI safeguards. MITRE ATLAS Technique: AML.T0015 - Evade ML Model.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud AI Infrastructure Analytics",
+  "investigative_actions": "Examine changed safeguards filters and determine which AI models were affected. Investigate any unusual activity originating from the suspected identity.",
+  "name": "AI safeguards were modified",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual modification of AI safeguards",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses (T1562)"
+      ],
+      "description": "A cloud identity modified AI safeguards. MITRE ATLAS Technique: AML.T0015 - Evade ML Model.",
+      "attackers_goals": "Evade model's restrictions and potentially accessing sensitive data or banned topics.",
+      "investigative_actions": "Examine changed safeguards filters and determine which AI models were affected. Investigate any unusual activity originating from the suspected identity."
+    },
+    {
+      "name": "AI safeguards were created or modified",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses (T1562)"
+      ],
+      "description": "A cloud identity created or modified AI safeguards.",
+      "attackers_goals": "Evade model's restrictions and potentially accessing sensitive data or banned topics.",
+      "investigative_actions": "Examine changed safeguards filters and determine which AI models were affected. Investigate any unusual activity originating from the suspected identity."
+    }
+  ]
+}

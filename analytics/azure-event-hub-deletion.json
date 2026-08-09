@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)",
+    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+  ],
+  "attackers_goals": "Evade detection.",
+  "deduplication_period": "5 Days",
+  "description": "An Azure event hub was deleted. An attacker might use this technique to evade detection.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check what actions were taken by the identity that deleted the event hub.",
+  "name": "Azure Event Hub Deletion",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

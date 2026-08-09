@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)",
+    "Modify Cloud Compute Infrastructure (T1578)"
+  ],
+  "attackers_goals": "Exfiltrate sensitive data that resides inside BigQuery tables or datasets.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual cloud identity was granted permissions to a BigQuery table or dataset.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Data Detection & Response",
+  "investigative_actions": "Check if {cloud_best_identity_match} intended to change BigQuery resource policy. Verify if the affected tables or datasets did not contain any sensitive information.",
+  "name": "An unusual cloud identity was granted permissions to a BigQuery resource",
+  "required_data": [
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Cloud admin granted an unknown identity permissions to a BigQuery resource",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Exfiltration (TA0010)",
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)",
+        "Modify Cloud Compute Infrastructure (T1578)"
+      ],
+      "description": "An unusual cloud identity was granted permissions to a BigQuery table or dataset.",
+      "attackers_goals": "Exfiltrate sensitive data that resides inside BigQuery tables or datasets.",
+      "investigative_actions": "Check if {cloud_best_identity_match} intended to change BigQuery resource policy. Verify if the affected tables or datasets did not contain any sensitive information."
+    }
+  ]
+}

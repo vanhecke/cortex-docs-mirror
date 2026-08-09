@@ -1,0 +1,72 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)",
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Data from Cloud Storage (T1530)",
+    "Automated Exfiltration (T1020)"
+  ],
+  "attackers_goals": "Exfiltrate sensitive data from the cloud environment.",
+  "deduplication_period": "5 Days",
+  "description": "An identity downloaded multiple objects from a bucket, considerably more than usual. This may indicate an attacker's attempt to download sensitive data from a bucket in the cloud environment.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Exfiltration, Data Detection & Response",
+  "investigative_actions": "Check the accessed bucket and objects designation. Verify that the identity did not download any sensitive information that it shouldn't.",
+  "name": "Suspicious identity downloaded multiple objects from a bucket",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Suspicious identity with DevOps behavior downloaded multiple objects from a bucket",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Data from Cloud Storage (T1530)",
+        "Automated Exfiltration (T1020)"
+      ],
+      "description": "An identity with DevOps behavior downloaded multiple objects from a bucket, considerably more than usual. This may indicate an attacker's attempt to download sensitive data from a bucket in the cloud environment.",
+      "attackers_goals": "Exfiltrate sensitive data from the cloud environment.",
+      "investigative_actions": "Check the accessed bucket and objects designation. Verify that the identity did not download any sensitive information that it shouldn't."
+    },
+    {
+      "name": "Suspicious identity downloaded multiple objects from a bucket that contains sensitive files",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Data from Cloud Storage (T1530)",
+        "Automated Exfiltration (T1020)"
+      ],
+      "description": "An identity downloaded multiple objects from a bucket, considerably more than usual. This may indicate an attacker's attempt to download sensitive data from a bucket in the cloud environment. The bucket contains sensitive files.",
+      "attackers_goals": "Exfiltrate sensitive data from the cloud environment.",
+      "investigative_actions": "Check the accessed bucket and objects designation. Verify that the identity did not download any sensitive information that it shouldn't."
+    },
+    {
+      "name": "Suspicious identity downloaded multiple objects from a backup storage bucket",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Data from Cloud Storage (T1530)",
+        "Automated Exfiltration (T1020)"
+      ],
+      "description": "An identity downloaded multiple objects from a bucket, considerably more than usual. This may indicate an attacker's attempt to download sensitive data from a bucket in the cloud environment.",
+      "attackers_goals": "Exfiltrate sensitive data from the cloud environment.",
+      "investigative_actions": "Check the accessed bucket and objects designation. Verify that the identity did not download any sensitive information that it shouldn't."
+    }
+  ]
+}

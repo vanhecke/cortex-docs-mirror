@@ -1,0 +1,64 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol (T1071)"
+  ],
+  "attackers_goals": "Attackers may use SSH or any similar utility to as a Command and Control (C2) channel or to exfiltrate data to a remote host.",
+  "deduplication_period": "1 Day",
+  "description": "Rare process created an SSH session to an uncommon external host.",
+  "detection_modules": "",
+  "detector_tags": "EDR Windows C2 Analytics",
+  "investigative_actions": "Investigate the actor process and its causality. Review the external IP/domain using known intelligence tools. Search for processes or files that were accessed by this SSH instance.",
+  "name": "Rare process created an SSH session to an uncommon external host",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent",
+    "Third-Party Firewalls"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Rare process created an SSH session to a domain with an uncommon TLD",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "Rare process created an SSH session to a domain with an uncommon TLD.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to as a Command and Control (C2) channel or to exfiltrate data to a remote host.",
+      "investigative_actions": "Investigate the actor process and its causality. Review the external IP/domain using known intelligence tools. Search for processes or files that were accessed by this SSH instance."
+    },
+    {
+      "name": "Rare process created an SSH session to an globally uncommon external host",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "Rare process created an SSH session to an globally uncommon external host.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to as a Command and Control (C2) channel or to exfiltrate data to a remote host.",
+      "investigative_actions": "Investigate the actor process and its causality. Review the external IP/domain using known intelligence tools. Search for processes or files that were accessed by this SSH instance."
+    },
+    {
+      "name": "Rare process created an SSH session to an external host",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "Rare process created an SSH session to an external host.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to as a Command and Control (C2) channel or to exfiltrate data to a remote host.",
+      "investigative_actions": "Investigate the actor process and its causality. Review the external IP/domain using known intelligence tools. Search for processes or files that were accessed by this SSH instance."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Modify Cloud Compute Infrastructure: Delete Cloud Instance (T1578.003)"
+  ],
+  "attackers_goals": "Evade defensive measures by deleting a possibly malicious service principal.",
+  "deduplication_period": "5 Days",
+  "description": "A service principal was removed from Azure. This indicates a change in access permissions and may indicate malicious activity.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the Azure Active Directory audit logs for the details of the removed service principal.* Check the Azure role assignments to identify which resources were impacted by the removal of the service principal.",
+  "name": "A Service Principal was removed from Azure",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

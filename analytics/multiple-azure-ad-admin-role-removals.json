@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Account Access Removal (T1531)"
+  ],
+  "attackers_goals": "An attacker may want to lock out an organization and retain sole access.",
+  "deduplication_period": "1 Day",
+  "description": "An Azure AD identity removed multiple administrators from their roles.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check if the identity performing the actions was authorized to perform them. Check what roles the users were removed from. Check whether the identity is a newly added admin. Check if the identity is operating in its usual manner (location, time, operations)* Check if the identity performed additional operations in the cloud environment that might be malicious.",
+  "name": "Multiple Azure AD admin role removals",
+  "required_data": [
+    "AzureAD Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "3 Hours",
+  "variations": []
+}

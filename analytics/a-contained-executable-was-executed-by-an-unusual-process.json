@@ -1,0 +1,70 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Escape to Host (T1611)",
+    "Boot or Logon Autostart Execution: Kernel Modules and Extensions (T1547.006)"
+  ],
+  "attackers_goals": "Gain high privileged command execution on the host machine via one of its running containers.",
+  "deduplication_period": "1 Day",
+  "description": "A Docker-contained executable from a mounted share was executed on a host. Running a contained executable is highly dangerous and atypical.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check what actions were made after the suspicious file execution. Investigate the contained process and its process tree.",
+  "name": "A contained executable was executed by an unusual process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A contained executable was executed by the Linux kernel thread daemon",
+      "severity": "High",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Escape to Host (T1611)",
+        "Boot or Logon Autostart Execution: Kernel Modules and Extensions (T1547.006)"
+      ],
+      "description": "A contained executable in a cloud machine was executed by the Linux kernel thread daemon. This behavior is suspicious as it may be a result of an attacker attempting to escape from a container, as the kernel thread daemon is usually used to spawn kernel processes only.",
+      "attackers_goals": "Gain high privileged command execution on the host machine via one of its running containers.",
+      "investigative_actions": "Check what actions were made after the suspicious file execution. Investigate the contained process and its process tree."
+    },
+    {
+      "name": "A contained executable was executed by the Linux kernel thread daemon",
+      "severity": "High",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Escape to Host (T1611)",
+        "Boot or Logon Autostart Execution: Kernel Modules and Extensions (T1547.006)"
+      ],
+      "description": "A contained executable was executed by the Linux kernel thread daemon. This behavior is suspicious as it may be a result of an attacker attempting to escape from a container, as the kernel thread daemon is usually used to spawn kernel processes only.",
+      "attackers_goals": "Gain high privileged command execution on the host machine via one of its running containers.",
+      "investigative_actions": "Check what actions were made after the suspicious file execution. Investigate the contained process and its process tree."
+    },
+    {
+      "name": "A contained executable was executed by an unusual process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Escape to Host (T1611)",
+        "Boot or Logon Autostart Execution: Kernel Modules and Extensions (T1547.006)"
+      ],
+      "description": "A Docker-contained executable from a mounted share on a cloud machine was executed on a host. Running a contained executable is highly dangerous and atypical.",
+      "attackers_goals": "Gain high privileged command execution on the host machine via one of its running containers.",
+      "investigative_actions": "Check what actions were made after the suspicious file execution. Investigate the contained process and its process tree."
+    }
+  ]
+}

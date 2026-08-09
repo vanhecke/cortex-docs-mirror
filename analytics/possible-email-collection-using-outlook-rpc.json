@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Email Collection: Local Email Collection (T1114.001)"
+  ],
+  "attackers_goals": "An attacker is trying to perform email collection or manipulation using Outlook.",
+  "deduplication_period": "1 Day",
+  "description": "Outlook was executed using RPC by an uncommon parent process, this may be an indication of email collection activities.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the endpoint to determine if it's a legitimate process that is supposed to use Outlook in its operation to send or extract emails.",
+  "name": "Possible Email collection using Outlook RPC",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

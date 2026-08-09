@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)"
+  ],
+  "attackers_goals": "Unusual processes may be executed for various purposes, including exfiltration, lateral movement, etc.",
+  "deduplication_period": "30 Days",
+  "description": "An unusual process was executed in the organization. This may be indicative of a compromised account.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the process that was executed to determine if it was used for legitimate purposes or malicious activity.",
+  "name": "Rare process execution in organization",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

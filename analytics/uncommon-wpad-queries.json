@@ -1,0 +1,63 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Adversary-in-the-Middle (T1557)"
+  ],
+  "attackers_goals": "Attackers may attempt to move laterally over the network by exploiting problems in WPAD.",
+  "deduplication_period": "1 Day",
+  "description": "There were multiple attempts to access WPAD resources by a single host in your network. This may indicate a malicious activity.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify that the source host is legitimate.* Examine the legitimacy of the application that produced this uncommon WPAD. Examine the parent process of this application.",
+  "name": "Uncommon WPAD queries",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Uncommon WPAD queries to a external domain",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Adversary-in-the-Middle (T1557)"
+      ],
+      "description": "There were multiple attempts to access WPAD resources by a single host in your network. This may indicate a malicious activity.",
+      "attackers_goals": "Attackers may attempt to move laterally over the network by exploiting problems in WPAD.",
+      "investigative_actions": "Verify that the source host is legitimate.* Examine the legitimacy of the application that produced this uncommon WPAD. Examine the parent process of this application."
+    },
+    {
+      "name": "Suspicious WPAD queries",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Adversary-in-the-Middle (T1557)"
+      ],
+      "description": "There were multiple attempts to access WPAD resources by a single host in your network. This may indicate a malicious activity.",
+      "attackers_goals": "Attackers may attempt to move laterally over the network by exploiting problems in WPAD.",
+      "investigative_actions": "Verify that the source host is legitimate.* Examine the legitimacy of the application that produced this uncommon WPAD. Examine the parent process of this application."
+    },
+    {
+      "name": "Uncommon WPAD queries using an uncommon port",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Adversary-in-the-Middle (T1557)"
+      ],
+      "description": "There were multiple attempts to access WPAD resources by a single host in your network. This may indicate a malicious activity.",
+      "attackers_goals": "Attackers may attempt to move laterally over the network by exploiting problems in WPAD.",
+      "investigative_actions": "Verify that the source host is legitimate.* Examine the legitimacy of the application that produced this uncommon WPAD. Examine the parent process of this application."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "External Remote Services (T1133)"
+  ],
+  "attackers_goals": "The attacker attempts to gain access to the accounts through RDP from an external source.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual successful RDP connection by a user from an external IP. This may be indicative of using stolen credentials or malicious activity.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Identify the user performing RDP and check that it is authorized. Check whether this IP has a malicious reputation. Reset the user's password. Follow further actions done by the user.",
+  "name": "Suspicious External RDP Login",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

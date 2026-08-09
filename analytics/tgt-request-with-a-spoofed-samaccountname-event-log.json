@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Elevate privileges from standard domain user to domain admin.",
+  "deduplication_period": "3 Hours",
+  "description": "A Kerberos authentication ticket (TGT) was requested for an account with a spoofed sAMAccountName.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check if the domain controller is patched or vulnerable to the attack. Look for associated sAMAccountName rename events. Check if any associated service tickets were granted. Follow actions by the account and if it performed a DCSync.",
+  "name": "TGT request with a spoofed sAMAccountName - Event log",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

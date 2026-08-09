@@ -1,0 +1,69 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Domain Accounts (T1078.002)"
+  ],
+  "attackers_goals": "Use an account that was possibly compromised to gain access to the network.",
+  "deduplication_period": "1 Day",
+  "description": "An SSO authentication was made with a new ASN.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Confirm that the activity is benign (e.g. the provider or location is allowed or a new user). Verify if the ASN is an approved ASN to authenticate from. Follow further actions done by the user.",
+  "name": "First SSO access from ASN in organization",
+  "required_data": [
+    "AzureAD",
+    "Azure SignIn Log",
+    "Idira",
+    "Duo",
+    "Google Workspace Authentication",
+    "Okta",
+    "OneLogin",
+    "PingOne"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "First SSO access from ASN in organization via a suspicious IP",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Domain Accounts (T1078.002)"
+      ],
+      "description": "An SSO authentication was made with a new ASN.",
+      "attackers_goals": "Use an account that was possibly compromised to gain access to the network.",
+      "investigative_actions": "Confirm that the activity is benign (e.g. the provider or location is allowed or a new user). Verify if the ASN is an approved ASN to authenticate from. Follow further actions done by the user."
+    },
+    {
+      "name": "First successful SSO access from ASN in the organization",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Domain Accounts (T1078.002)"
+      ],
+      "description": "An SSO authentication was made with a new ASN.",
+      "attackers_goals": "Use an account that was possibly compromised to gain access to the network.",
+      "investigative_actions": "Confirm that the activity is benign (e.g. the provider or location is allowed or a new user). Verify if the ASN is an approved ASN to authenticate from. Follow further actions done by the user."
+    },
+    {
+      "name": "Google Workspace - First SSO access from ASN in organization",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Domain Accounts (T1078.002)"
+      ],
+      "description": "An SSO authentication was made with a new ASN.",
+      "attackers_goals": "Use an account that was possibly compromised to gain access to the network.",
+      "investigative_actions": "Confirm that the activity is benign (e.g. the provider or location is allowed or a new user). Verify if the ASN is an approved ASN to authenticate from. Follow further actions done by the user."
+    }
+  ]
+}

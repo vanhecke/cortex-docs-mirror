@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Cloud Infrastructure Discovery (T1580)"
+  ],
+  "attackers_goals": "Discover resources across regions to understand the cloud deployment footprint. Target regions or services that may have weaker controls, lower visibility, or misconfiguration for potential exploitation. Build a complete view of infrastructure for lateral movement or privilege escalation.",
+  "deduplication_period": "5 Days",
+  "description": "Discovery API calls were executed across multiple AWS regions.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Identify which services and regions were targeted. Analyze the identity performing the discovery. Correlate with other discovery or suspicious activities.",
+  "name": "Cloud infrastructure discovery across multiple regions",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Cloud infrastructure discovery across multiple AWS services within a single region",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Cloud Infrastructure Discovery (T1580)"
+      ],
+      "description": "Discovery API calls were executed across multiple AWS regions.",
+      "attackers_goals": "Discover resources across regions to understand the cloud deployment footprint. Target regions or services that may have weaker controls, lower visibility, or misconfiguration for potential exploitation. Build a complete view of infrastructure for lateral movement or privilege escalation.",
+      "investigative_actions": "Identify which services and regions were targeted. Analyze the identity performing the discovery. Correlate with other discovery or suspicious activities."
+    },
+    {
+      "name": "Cloud infrastructure discovery across multiple AWS services and regions",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Cloud Infrastructure Discovery (T1580)"
+      ],
+      "description": "Discovery API calls were executed across multiple AWS regions.",
+      "attackers_goals": "Discover resources across regions to understand the cloud deployment footprint. Target regions or services that may have weaker controls, lower visibility, or misconfiguration for potential exploitation. Build a complete view of infrastructure for lateral movement or privilege escalation.",
+      "investigative_actions": "Identify which services and regions were targeted. Analyze the identity performing the discovery. Correlate with other discovery or suspicious activities."
+    }
+  ]
+}

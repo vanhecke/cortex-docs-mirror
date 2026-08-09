@@ -1,0 +1,56 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation: Additional Cloud Credentials (T1098.001)",
+    "Valid Accounts: Cloud Accounts (T1078.004)"
+  ],
+  "attackers_goals": "Manipulate IAM configuration to strengthen the foothold in the cloud environment of the organization, by creating new accounts, modifying credentials, and permissions. Using the modified accounts, the attacker may perform additional activities in an evasive manner.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity performed an unusual IAM operation.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the identity's role designation in the organization. Verify that the identity did not perform any sensitive IAM operation that it shouldn't.",
+  "name": "Unusual Identity and Access Management (IAM) activity",
+  "required_data": [
+    "AWS Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual Identity and Access Management (IAM) activity executed from a cloud Internet facing instance",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: Additional Cloud Credentials (T1098.001)",
+        "Valid Accounts: Cloud Accounts (T1078.004)"
+      ],
+      "description": "A cloud Internet facing instance performed an unusual IAM operation.",
+      "attackers_goals": "Manipulate IAM configuration to strengthen the foothold in the cloud environment of the organization, by creating new accounts, modifying credentials, and permissions. Using the modified accounts, the attacker may perform additional activities in an evasive manner.",
+      "investigative_actions": "Check the identity's role designation in the organization. Verify that the identity did not perform any sensitive IAM operation that it shouldn't."
+    },
+    {
+      "name": "Unusual Identity and Access Management (IAM) activity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: Additional Cloud Credentials (T1098.001)",
+        "Valid Accounts: Cloud Accounts (T1078.004)"
+      ],
+      "description": "A cloud non-user identity performed an unusual IAM operation.",
+      "attackers_goals": "Manipulate IAM configuration to strengthen the foothold in the cloud environment of the organization, by creating new accounts, modifying credentials, and permissions. Using the modified accounts, the attacker may perform additional activities in an evasive manner.",
+      "investigative_actions": "Check the identity's role designation in the organization. Verify that the identity did not perform any sensitive IAM operation that it shouldn't."
+    }
+  ]
+}

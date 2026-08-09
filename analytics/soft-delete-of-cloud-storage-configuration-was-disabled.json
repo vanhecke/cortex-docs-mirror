@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Inhibit System Recovery (T1490)"
+  ],
+  "attackers_goals": "Impair the ability of the cloud environment to recover in disaster scenarios.",
+  "deduplication_period": "1 Day",
+  "description": "A Soft Delete configuration was disabled on a cloud storage account. Soft delete allows a deletion of a blob or a container to be restored. Disabling it will impair the ability of the cloud environment to recover in disaster scenarios.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Disaster Recovery Risks, Cloud Data Asset Protection Tampering, Cloud Data Asset Configuration, Data Detection & Response",
+  "investigative_actions": "Check if the identity intended to disable soft delete for this storage account. Check if the identity performed additional malicious operations in the cloud environment.",
+  "name": "Soft delete of cloud storage configuration was disabled",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Data Manipulation: Stored Data Manipulation (T1565.001)"
+  ],
+  "attackers_goals": "Contaminating knowledge base, so that contextual information will be incorrect, biased or harmful.",
+  "deduplication_period": "5 Days",
+  "description": "An AI knowledge base was modified by an identity that typically doesn't interact with knowledge bases. MITRE ATLAS Technique: AML.T0070 - RAG Poisoning. OWASP Top 10 LLM Technique: LLM04 - Data and Model Poisoning.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud AI Infrastructure Analytics",
+  "investigative_actions": "Check the identity that modified the knowledge base. Check recent additions to the knowledge base.",
+  "name": "Unusual AI Knowledge Base Modification",
+  "required_data": [
+    "AWS Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious AI Knowledge Base Modification",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Data Manipulation: Stored Data Manipulation (T1565.001)"
+      ],
+      "description": "An AI knowledge base was modified by an identity that typically doesn't interact with knowledge bases, adding a new data source type.",
+      "attackers_goals": "Contaminating knowledge base, so that contextual information will be incorrect, biased or harmful.",
+      "investigative_actions": "Check the identity that modified the knowledge base. Check recent additions to the knowledge base."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)",
+    "Phishing: Spearphishing Attachment (T1566.001)"
+  ],
+  "attackers_goals": "An attacker is trying to gain code execution on the host.",
+  "deduplication_period": "1 Day",
+  "description": "A Microsoft Office process spawned a commonly abused process with a full command (not a script), this is a typically malicious behavior.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the command line executed is benign or normal for the host and/or user performing it. For example, employees working in finance may have legitimate use cases for complex Excel commands.",
+  "name": "Microsoft Office Process Spawning a Suspicious One-Liner",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

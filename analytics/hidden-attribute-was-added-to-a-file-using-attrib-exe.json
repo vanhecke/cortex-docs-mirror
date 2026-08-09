@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Hide Artifacts: Hidden Files and Directories (T1564.001)"
+  ],
+  "attackers_goals": "Hide malware or staged files from standard file explorers.",
+  "deduplication_period": "1 Day",
+  "description": "Hidden attribute was added to a file using attrib.exe, adversaries may set files to be hidden to evade detection mechanisms.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the hidden file is malicious. Verify if the process executing the command is malicious. Check for more suspicious actions done by the user and process.",
+  "name": "Hidden Attribute was added to a file using attrib.exe",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

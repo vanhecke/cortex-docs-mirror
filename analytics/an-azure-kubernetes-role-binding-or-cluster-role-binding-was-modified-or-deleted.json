@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Escalate privileges to gain access to restricted resources in Azure Kubernetes cluster.",
+  "deduplication_period": "5 Days",
+  "description": "An Azure Kubernetes Role-Binding or Cluster-Role-Binding was modified or deleted. This could indicate a security breach or malicious activity.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Investigate which actions were made by the identity and identify any suspicious activity.* Review the Kubernetes configuration to identify any other changes.",
+  "name": "An Azure Kubernetes Role-Binding or Cluster-Role-Binding was modified or deleted",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

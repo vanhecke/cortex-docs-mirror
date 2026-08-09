@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses (T1562)",
+    "Cloud Application Integration (T1671)"
+  ],
+  "attackers_goals": "Attackers may modify the application setup policy to maintain persistent access to compromised Teams accounts and conversations.",
+  "deduplication_period": "1 Day",
+  "description": "Microsoft Teams the application setup policy, which is responsible for application management, was modified.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Microsoft Teams",
+  "investigative_actions": "Determine if it is within the user's role to modify the policy. Verify whether the modification of the policy is both legitimate and necessary. If the policy change causes an application installed for the whole organization, confirm that the application was created by a certified and trusted entity. Correlate the event with its sign-in event to get additional information on the identity performing the action using the session ID or the unique token identifier.",
+  "name": "Microsoft Teams application setup policy was modified",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A user changed the Microsoft Teams application setup policy for the first time",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses (T1562)",
+        "Cloud Application Integration (T1671)"
+      ],
+      "description": "Microsoft Teams the application setup policy, which is responsible for application management, was modified.",
+      "attackers_goals": "Attackers may modify the application setup policy to maintain persistent access to compromised Teams accounts and conversations.",
+      "investigative_actions": "Determine if it is within the user's role to modify the policy. Verify whether the modification of the policy is both legitimate and necessary. If the policy change causes an application installed for the whole organization, confirm that the application was created by a certified and trusted entity. Correlate the event with its sign-in event to get additional information on the identity performing the action using the session ID or the unique token identifier."
+    }
+  ]
+}

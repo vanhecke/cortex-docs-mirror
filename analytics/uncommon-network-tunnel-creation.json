@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Protocol Tunneling (T1572)"
+  ],
+  "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+  "deduplication_period": "12 Hours",
+  "description": "An uncommon network tunnel was established.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance.",
+  "name": "Uncommon network tunnel creation",
+  "required_data": [
+    "Palo Alto Networks Url Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon network tunnel creation",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Protocol Tunneling (T1572)"
+      ],
+      "description": "An uncommon network tunnel was established using ACS_ssh.exe.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance."
+    },
+    {
+      "name": "Uncommon SSH tunnel to unpopular IP address",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Protocol Tunneling (T1572)"
+      ],
+      "description": "An uncommon SSH tunnel was established to an unpopular remote IP address at the organization.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance."
+    },
+    {
+      "name": "An uncommon network tunnel was established over the default SSH port",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Protocol Tunneling (T1572)"
+      ],
+      "description": "An unpopular process and command line created a network tunnel over the default SSH port.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance."
+    }
+  ]
+}

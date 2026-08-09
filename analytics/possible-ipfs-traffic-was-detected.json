@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Exfiltration Over Alternative Protocol (T1048)",
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "IPFS access may expose your organization to new malware or allow attackers/ malicious insiders to exfiltrate data.",
+  "deduplication_period": "1 Day",
+  "description": "The host attempted to access other nodes in an IPFS manner.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check the host for IPFS client software. Examine the client's network traffic for uploaded or downloaded file hashes.",
+  "name": "Possible IPFS traffic was detected",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

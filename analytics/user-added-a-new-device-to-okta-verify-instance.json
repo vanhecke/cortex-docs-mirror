@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Attackers may exploit the device registration process in Okta by registering unauthorized devices, thereby gaining access to sensitive resources and user accounts within an organization.",
+  "deduplication_period": "1 Day",
+  "description": "The user has successfully registered a new device with the Okta Verify application.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Okta Audit Analytics",
+  "investigative_actions": "Reach out to the user responsible for the device registration to confirm its legitimacy. Examine the user's actions preceding and following the activation of the alert. Assess the reputation of the IP address along with that of the Autonomous System Number (ASN). Make sure the IP address is not showing any abnormal activity. Monitor the activity from the new registered device and ensure that it matches the user's normal activity.",
+  "name": "User added a new device to Okta Verify instance",
+  "required_data": [
+    "Okta Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious device enrollment to Okta",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation (T1098)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A new device was registered on Okta with suspicious characteristics, which increased the alert severity.",
+      "attackers_goals": "Attackers may exploit the device registration process in Okta by registering unauthorized devices, thereby gaining access to sensitive resources and user accounts within an organization.",
+      "investigative_actions": "Reach out to the user responsible for the device registration to confirm its legitimacy. Examine the user's actions preceding and following the activation of the alert. Assess the reputation of the IP address along with that of the Autonomous System Number (ASN). Make sure the IP address is not showing any abnormal activity. Monitor the activity from the new registered device and ensure that it matches the user's normal activity."
+    }
+  ]
+}

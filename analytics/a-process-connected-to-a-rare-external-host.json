@@ -1,0 +1,103 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol (T1071)"
+  ],
+  "attackers_goals": "Beacon to C2 server and/or exfiltrate data.",
+  "deduplication_period": "1 Day",
+  "description": "A process connected to an external host name or directly to an IP address, which is rarely connected to from the organization.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the process was injected or otherwise subverted for malicious use.",
+  "name": "A process connected to a rare external host",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "MSBuild process connected to a rare external host",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Trusted Developer Utilities Proxy Execution: MSBuild (T1127.001)",
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "MSBuild normally does not make any network connections. This unusual activity may be malicious since attackers can leverage MSBuild for code execution.",
+      "attackers_goals": "Beacon to C2 server and/or exfiltrate data.",
+      "investigative_actions": "Check if CGO actor process is not code developing tool (IDE) and whether the actor process subverted for malicious use."
+    },
+    {
+      "name": "MSBuild process connected to a rare external host",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Trusted Developer Utilities Proxy Execution: MSBuild (T1127.001)"
+      ],
+      "description": "MSBuild normally does not make any network connections. This unusual activity may be malicious since attackers can leverage MSBuild for code execution.",
+      "attackers_goals": "Beacon to C2 server and/or exfiltrate data.",
+      "investigative_actions": "Check if CGO actor process is not code developing tool (IDE) and whether the actor process subverted for malicious use."
+    },
+    {
+      "name": "LOLBIN spawned by an Office executable connected to a rare external host",
+      "severity": "High",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "A LOLBIN run by an Office process connected to an external IP address or host, which is rarely connected to from the organization.",
+      "attackers_goals": "Beacon to C2 server and/or exfiltrate data.",
+      "investigative_actions": "Check whether the process was injected or otherwise subverted for malicious use."
+    },
+    {
+      "name": "A curl process connected to a rare external host",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "A process connected to an external host name or directly to an IP address, which is rarely connected to from the organization.",
+      "attackers_goals": "Beacon to C2 server and/or exfiltrate data.",
+      "investigative_actions": "Check whether the process was injected or otherwise subverted for malicious use."
+    },
+    {
+      "name": "VSCode extension process connected to a rare external host",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "A VSCode extension connected to an external IP address or host, which is rarely connected to from the organization.",
+      "attackers_goals": "Beacon to C2 server and/or exfiltrate data.",
+      "investigative_actions": "Check whether the process was injected or otherwise subverted for malicious use."
+    },
+    {
+      "name": "UNIX LOLBIN process connected to a rare external host",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "A UNIX LOLBIN connected to an external IP address or host, which is rarely connected to from the organization.",
+      "attackers_goals": "Beacon to C2 server and/or exfiltrate data.",
+      "investigative_actions": "Check whether the process was injected or otherwise subverted for malicious use."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Masquerading (T1036)"
+  ],
+  "attackers_goals": "Manipulating namespace name to make it appear legitimate or benign.",
+  "deduplication_period": "5 Days",
+  "description": "A Kubernetes namespace was created or deleted.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Kubernetes - API",
+  "investigative_actions": "Check which changes were made to the Kubernetes namespace.",
+  "name": "A Kubernetes namespace was created or deleted",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log",
+    "Kubernetes Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

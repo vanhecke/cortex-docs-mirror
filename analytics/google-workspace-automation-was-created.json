@@ -1,0 +1,44 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Persistence (TA0003)",
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter (T1059)",
+    "Event Triggered Execution (T1546)",
+    "Automated Exfiltration (T1020)"
+  ],
+  "attackers_goals": "Adversaries may create automations to maintain persistence, execute malicious code, or exfiltrate data automatically.",
+  "deduplication_period": "1 Day",
+  "description": "Google Workspace automation was created.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Verify if the automation creation was authorized and expected for this user. Investigate the automation logic to determine if it is malicious. Investigate other suspicious activities performed by the user around the same timeframe.",
+  "name": "Google Workspace automation was created",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Google Workspace automation was created for a public document",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Persistence (TA0003)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter (T1059)",
+        "Event Triggered Execution (T1546)",
+        "Automated Exfiltration (T1020)"
+      ],
+      "description": "Google Workspace automation was created. The document that the automation was created for is publicly shared.",
+      "attackers_goals": "Adversaries may create automations to maintain persistence, execute malicious code, or exfiltrate data automatically.",
+      "investigative_actions": "Verify if the automation creation was authorized and expected for this user. Investigate the automation logic to determine if it is malicious. Investigate other suspicious activities performed by the user around the same timeframe."
+    }
+  ]
+}

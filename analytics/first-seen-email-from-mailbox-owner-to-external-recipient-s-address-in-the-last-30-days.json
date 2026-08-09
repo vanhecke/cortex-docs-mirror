@@ -1,0 +1,101 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Exfiltration Over Alternative Protocol (T1048)"
+  ],
+  "attackers_goals": "Extracting valuable information outside the company.",
+  "deduplication_period": "1 Day",
+  "description": "Internal sender initiated first-time communication with an external recipient in the last 30 days.",
+  "detection_modules": "Email",
+  "detector_tags": "Exfiltration, Account Takeover",
+  "investigative_actions": "Check the content of the email that was sent. Review the external recipient address and assess its reputation. Review past emails sent from this mailbox for any suspicious activity. Check for unusual emails sent to this recipient's address. Monitor further action taken, such as accessing to private keys, API tokens and sensitive data.",
+  "name": "First-seen email from mailbox owner to external recipient's address in the last 30 days",
+  "required_data": [
+    "Microsoft 365 Emails"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "First-time email to the disposable domain",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Alternative Protocol (T1048)"
+      ],
+      "description": "Internal sender emailed to external address(es) with disposable domain.",
+      "attackers_goals": "Extracting valuable information outside the company.",
+      "investigative_actions": "Check the content of the email that was sent. Review the external recipient address and assess its reputation. Review past emails sent from this mailbox for any suspicious activity. Check for unusual emails sent to this recipient's address. Monitor further action taken, such as accessing to private keys, API tokens and sensitive data."
+    },
+    {
+      "name": "First-time email from organization's domain with the external recipient's domain in the last 30 days",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Alternative Protocol (T1048)"
+      ],
+      "description": "Internal sender emailed an external address belonging to a domain seen for the first time by the organization domain in the last 30 days.",
+      "attackers_goals": "Extracting valuable information outside the company.",
+      "investigative_actions": "Check the content of the email that was sent. Review the external recipient address and assess its reputation. Review past emails sent from this mailbox for any suspicious activity. Check for unusual emails sent to this recipient's address. Monitor further action taken, such as accessing to private keys, API tokens and sensitive data."
+    },
+    {
+      "name": "First-time email from organization with the external recipient in the last 30 days",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Alternative Protocol (T1048)"
+      ],
+      "description": "Internal sender emailed to external address(es) that first-seen by the the whole organization in the last 30 days.",
+      "attackers_goals": "Extracting valuable information outside the company.",
+      "investigative_actions": "Check the content of the email that was sent. Review the external recipient address and assess its reputation. Review past emails sent from this mailbox for any suspicious activity. Check for unusual emails sent to this recipient's address. Monitor further action taken, such as accessing to private keys, API tokens and sensitive data."
+    },
+    {
+      "name": "First-time email from organization's domain to the external recipient in the last 30 days",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Alternative Protocol (T1048)"
+      ],
+      "description": "Internal sender emailed to external address(es) that first-seen by the organization domain in the last 30 days.",
+      "attackers_goals": "Extracting valuable information outside the company.",
+      "investigative_actions": "Check the content of the email that was sent. Review the external recipient address and assess its reputation. Review past emails sent from this mailbox for any suspicious activity. Check for unusual emails sent to this recipient's address. Monitor further action taken, such as accessing to private keys, API tokens and sensitive data."
+    },
+    {
+      "name": "First-time email from mailbox owner to the external recipient's domain in the last 30 days",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Alternative Protocol (T1048)"
+      ],
+      "description": "Internal sender emailed to external address(es) with domain that first-seen by that sender in the last 30 days.",
+      "attackers_goals": "Extracting valuable information outside the company.",
+      "investigative_actions": "Check the content of the email that was sent. Review the external recipient address and assess its reputation. Review past emails sent from this mailbox for any suspicious activity. Check for unusual emails sent to this recipient's address. Monitor further action taken, such as accessing to private keys, API tokens and sensitive data."
+    },
+    {
+      "name": "First-time outbound email from mailbox owner to multiple external recipients without any internal recipients in the last 30 days",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Exfiltration Over Alternative Protocol (T1048)"
+      ],
+      "description": "Internal sender emailed first-time to multiple external recipients with no internal recipients included in the last 30 days.",
+      "attackers_goals": "Extracting valuable information outside the company.",
+      "investigative_actions": "Check the content of the email that was sent. Review the external recipient address and assess its reputation. Review past emails sent from this mailbox for any suspicious activity. Check for unusual emails sent to this recipient's address. Monitor further action taken, such as accessing to private keys, API tokens and sensitive data."
+    }
+  ]
+}

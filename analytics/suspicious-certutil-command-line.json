@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)",
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "System Binary Proxy Execution (T1218)",
+    "Ingress Tool Transfer (T1105)"
+  ],
+  "attackers_goals": "An attacker may use certutil to download malware.",
+  "deduplication_period": "1 Day",
+  "description": "An attacker may use certutil to download malware.",
+  "detection_modules": "",
+  "detector_tags": "LOLBIN Execution Analytics",
+  "investigative_actions": "Check whether the URL is benign and if this was a desired behavior as part of its normal execution flow. Check whether the downloaded file is malicious.",
+  "name": "Suspicious certutil command line",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

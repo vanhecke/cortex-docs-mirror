@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "Enable unauthorized data transfer to an external or attacker-controlled environment. Establish a persistent channel for ongoing data exfiltration. Conceal malicious activity by utilizing legitimate cross-tenant object replication functionality.",
+  "deduplication_period": "1 Day",
+  "description": "Azure cross-tenant object replication in a storage account was enabled.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Stealth Tactics, Cloud Data Asset Exfiltration, Data Detection & Response",
+  "investigative_actions": "Confirm that the identity intended to enable cross-tenant replication. Follow further actions done by the identity. Monitor the storage account for other suspicious activities.",
+  "name": "Azure storage account cross-tenant object replication was enabled",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Azure storage account cross-tenant object replication was enabled for the first time in a subscription",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "Azure cross-tenant object replication in a storage account was enabled for the first time in a subscription.",
+      "attackers_goals": "Enable unauthorized data transfer to an external or attacker-controlled environment. Establish a persistent channel for ongoing data exfiltration. Conceal malicious activity by utilizing legitimate cross-tenant object replication functionality.",
+      "investigative_actions": "Confirm that the identity intended to enable cross-tenant replication. Follow further actions done by the identity. Monitor the storage account for other suspicious activities."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "OS Credential Dumping (T1003)"
+  ],
+  "attackers_goals": "Attackers may try to copy sensitive data or dump OS credentials from the host file system by using Shadow Copy volume utilities.",
+  "deduplication_period": "1 Day",
+  "description": "An uncommon creation or access of a sensitive Shadow Copy volume path.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify if the shadow copy operation is part of an IT activity. Look for other hosts performing the same shadow copy event with similar causality process behavior.* Inspect the causality process and its characteristics as they appear on other hosts.",
+  "name": "Uncommon creation or access operation of sensitive shadow copy",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon creation or access operation of sensitive shadow copy by a remote actor",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "An uncommon creation or access of a sensitive Shadow Copy volume path.",
+      "attackers_goals": "Attackers may try to copy sensitive data or dump OS credentials from the host file system by using Shadow Copy volume utilities.",
+      "investigative_actions": "Verify if the shadow copy operation is part of an IT activity. Look for other hosts performing the same shadow copy event with similar causality process behavior.* Inspect the causality process and its characteristics as they appear on other hosts. Investigate the remote machine, search for the stolen shadow copies and for any infection that may initiated the activity."
+    },
+    {
+      "name": "Uncommon creation or access operation of sensitive shadow copy by a high-risk process",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "An uncommon creation or access of a sensitive Shadow Copy volume path by a high-risk process.",
+      "attackers_goals": "Attackers may try to copy sensitive data or dump OS credentials from the host file system by using Shadow Copy volume utilities.",
+      "investigative_actions": "Verify if the shadow copy operation is part of an IT activity. Look for other hosts performing the same shadow copy event with similar causality process behavior.* Inspect the causality process and its characteristics as they appear on other hosts."
+    }
+  ]
+}

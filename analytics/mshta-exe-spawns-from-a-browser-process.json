@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "System Binary Proxy Execution: Mshta (T1218.005)"
+  ],
+  "attackers_goals": "Execute malicious code through system binary proxy execution to bypass application controls and security monitoring.",
+  "deduplication_period": "1 Day",
+  "description": "Mshta is the Microsoft HTML Application Host. It executes HTML applications on Windows. Detected when a browser process has spawned mshta, which can be a potential attack vector.",
+  "detection_modules": "",
+  "detector_tags": "LOLBIN Execution Analytics",
+  "investigative_actions": "Examine the command line arguments passed to mshta for suspicious URLs or file paths. Check the browser process that spawned mshta for signs of compromise. Review network connections around the time of execution. Analyze any HTML applications (.hta files) that may have been executed.",
+  "name": "Mshta.exe spawns from a browser process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Mshta.exe spawns from a browser process that executes a script from a URL",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "System Binary Proxy Execution: Mshta (T1218.005)"
+      ],
+      "description": "Mshta is the Microsoft HTML Application Host. It executes HTML applications on Windows. Detected when a browser process has spawned mshta, which can be a potential attack vector.",
+      "attackers_goals": "Execute malicious code through system binary proxy execution to bypass application controls and security monitoring.",
+      "investigative_actions": "Examine the command line arguments passed to mshta for suspicious URLs or file paths. Check the browser process that spawned mshta for signs of compromise. Review network connections around the time of execution. Analyze any HTML applications (.hta files) that may have been executed."
+    }
+  ]
+}

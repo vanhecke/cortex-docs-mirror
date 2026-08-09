@@ -1,0 +1,88 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Services: Remote Desktop Protocol (T1021.001)"
+  ],
+  "attackers_goals": "Adversaries may use RDP for initial access or lateral movement within a network.",
+  "deduplication_period": "1 Day",
+  "description": "An RDP session was established with uncommon parameters.",
+  "detection_modules": "",
+  "detector_tags": "Enhanced RDP Analytics",
+  "investigative_actions": "Investigate the source and destination of the RDP communication. Check if this communication is legitimate and expected. Analyze the user and process that initiated the RDP connection.",
+  "name": "An uncommon RDP session was established",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "An uncommon RDP session was established from a Suspicious Autonomous System (AS)",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)"
+      ],
+      "description": "An RDP session was established with uncommon parameters.",
+      "attackers_goals": "Adversaries may use RDP for initial access or lateral movement within a network.",
+      "investigative_actions": "Investigate the source and destination of the RDP communication. Check if this communication is legitimate and expected. Analyze the user and process that initiated the RDP connection."
+    },
+    {
+      "name": "An uncommon RDP session was established originating from a chained RDP session which is also from a rare subnet",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)"
+      ],
+      "description": "An RDP session was established with uncommon parameters. The connection appears to originate from an endpoint that itself received an RDP connection, suggesting a chained session.",
+      "attackers_goals": "Adversaries may use RDP for initial access or lateral movement within a network.",
+      "investigative_actions": "Investigate the source and destination of the RDP communication. Check if this communication is legitimate and expected. Analyze the user and process that initiated the RDP connection."
+    },
+    {
+      "name": "An uncommon RDP session was established between subnets with no prior communication",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)"
+      ],
+      "description": "An RDP session was established with uncommon parameters. The source and destination subnets have not been observed communicating with each other previously.",
+      "attackers_goals": "Adversaries may use RDP for initial access or lateral movement within a network.",
+      "investigative_actions": "Investigate the source and destination of the RDP communication. Check if this communication is legitimate and expected. Analyze the user and process that initiated the RDP connection."
+    },
+    {
+      "name": "An uncommon RDP session was established involving subnets with no prior RDP history",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)"
+      ],
+      "description": "An RDP session was established with uncommon parameters. Neither the source nor the destination subnet has been observed participating in RDP sessions previously.",
+      "attackers_goals": "Adversaries may use RDP for initial access or lateral movement within a network.",
+      "investigative_actions": "Investigate the source and destination of the RDP communication. Check if this communication is legitimate and expected. Analyze the user and process that initiated the RDP connection."
+    },
+    {
+      "name": "An uncommon RDP session was established involving a destination subnet which rarely receives incoming RDP sessions",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)"
+      ],
+      "description": "An RDP session was established with uncommon parameters. The destination subnet is rarely involved in RDP activity.",
+      "attackers_goals": "Adversaries may use RDP for initial access or lateral movement within a network.",
+      "investigative_actions": "Investigate the source and destination of the RDP communication. Check if this communication is legitimate and expected. Analyze the user and process that initiated the RDP connection."
+    }
+  ]
+}

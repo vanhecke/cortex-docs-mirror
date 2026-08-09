@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Remote System Discovery (T1018)"
+  ],
+  "attackers_goals": "While probing the network, an attacker may discover dormant hosts. These inactive systems can then be used for lateral movement or privilege escalation.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint has performed multiple connections to an endpoint that is relatively inactive on the network.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Validate that the source is not a sanctioned port scanner. Check for suspicious artifacts in the endpoint profile.",
+  "name": "Abnormal connections to a dormant host from a newly seen endpoint",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "6 Hours",
+  "variations": [
+    {
+      "name": "Abnormal connections to a dormant host",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Remote System Discovery (T1018)"
+      ],
+      "description": "The endpoint has performed multiple connections to an endpoint that is relatively inactive on the network.",
+      "attackers_goals": "While probing the network, an attacker may discover dormant hosts. These inactive systems can then be used for lateral movement or privilege escalation.",
+      "investigative_actions": "Validate that the source is not a sanctioned port scanner. Check for suspicious artifacts in the endpoint profile."
+    }
+  ]
+}

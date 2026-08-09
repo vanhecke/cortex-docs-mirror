@@ -1,0 +1,75 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Hide Artifacts: Hidden Files and Directories (T1564.001)"
+  ],
+  "attackers_goals": "Attackers may try to run the executable application from a folder that is writable to all users and use it to avoid detection.",
+  "deduplication_period": "1 Day",
+  "description": "An unpopular process was executed from the tmp folder.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands.",
+  "name": "Suspicious process execution from tmp folder",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A web server process executed an unpopular application from the tmp folder",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hide Artifacts: Hidden Files and Directories (T1564.001)"
+      ],
+      "description": "An executable application ran from the tmp folder by a web server process.",
+      "attackers_goals": "Attackers may try to run the executable application from a folder that is writable to all users and use it to avoid detection.",
+      "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands."
+    },
+    {
+      "name": "Suspicious cron job task execution of a binary from the tmp folder",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hide Artifacts: Hidden Files and Directories (T1564.001)"
+      ],
+      "description": "An unpopular process was executed from the tmp folder.",
+      "attackers_goals": "Attackers may try to run the executable application from a folder that is writable to all users and use it to avoid detection.",
+      "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands."
+    },
+    {
+      "name": "Suspicious interactive execution of a binary from the tmp folder",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hide Artifacts: Hidden Files and Directories (T1564.001)"
+      ],
+      "description": "An unpopular process was executed from the tmp folder.",
+      "attackers_goals": "Attackers may try to run the executable application from a folder that is writable to all users and use it to avoid detection.",
+      "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands."
+    },
+    {
+      "name": "Suspicious process execution from tmp folder in a Kubernetes pod",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hide Artifacts: Hidden Files and Directories (T1564.001)"
+      ],
+      "description": "An unpopular process was executed from the tmp folder.",
+      "attackers_goals": "Attackers may try to run the executable application from a folder that is writable to all users and use it to avoid detection.",
+      "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: PowerShell (T1059.001)"
+  ],
+  "attackers_goals": "An attacker is attempting to run PowerShell without PowerShell.exe to evade detection.",
+  "deduplication_period": "8 Hours",
+  "description": "A non-PowerShell process loaded a known PowerShell module. This image load may be an indication of PowerShell execution without directly invoking the PowerShell.exe binary.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the process and command line executed and whether it's benign or normal for this host.",
+  "name": "Suspicious process loads a known PowerShell module",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious unsigned process loads a known PowerShell module",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: PowerShell (T1059.001)"
+      ],
+      "description": "A non-PowerShell process loaded a known PowerShell module. This image load may be an indication of PowerShell execution without directly invoking the PowerShell.exe binary.",
+      "attackers_goals": "An attacker is attempting to run PowerShell without PowerShell.exe to evade detection.",
+      "investigative_actions": "Investigate the process and command line executed and whether it's benign or normal for this host."
+    },
+    {
+      "name": "Office process loads a known PowerShell DLL",
+      "severity": "High",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: PowerShell (T1059.001)"
+      ],
+      "description": "A Microsoft Office process loaded a known PowerShell module. This image load may be a sign of PowerShell execution without directly invoking the PowerShell.exe binary.",
+      "attackers_goals": "An attacker is attempting to run PowerShell without PowerShell.exe to evade detection.",
+      "investigative_actions": "Investigate the process and command line executed and whether it's benign or normal for this host."
+    }
+  ]
+}

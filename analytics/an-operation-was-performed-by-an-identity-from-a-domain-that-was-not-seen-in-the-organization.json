@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "External Remote Services (T1133)"
+  ],
+  "attackers_goals": "Gain their initial foothold within the organization and explore the environment to achieve their target.",
+  "deduplication_period": "5 Days",
+  "description": "An operation was performed by an identity. This identity belongs to a domain that was not seen in the organization before.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the external domain name. Check The cloud identity activity in the organization.",
+  "name": "An operation was performed by an identity from a domain that was not seen in the organization",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "An operation was performed by an identity from a domain that was not seen in the tenant",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "External Remote Services (T1133)"
+      ],
+      "description": "An operation was performed by an identity. This identity belongs to a domain that was not seen in the organization before.",
+      "attackers_goals": "Gain their initial foothold within the organization and explore the environment to achieve their target.",
+      "investigative_actions": "Investigate the external domain name. Check The cloud identity activity in the organization."
+    }
+  ]
+}

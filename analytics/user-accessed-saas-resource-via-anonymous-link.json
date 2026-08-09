@@ -1,0 +1,50 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Data from Cloud Storage (T1530)"
+  ],
+  "attackers_goals": "An attacker is attempting to collect sensitive data.",
+  "deduplication_period": "1 Day",
+  "description": "A user accessed a SaaS resource via an anonymous link.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check the IP address from which the access originated. Examine the file that was accessed for any sensitive indicators. Follow further actions taken, such as downloading files.",
+  "name": "User accessed SaaS resource via anonymous link",
+  "required_data": [
+    "Google Workspace Audit Logs",
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "External user accessed a sensitive SaaS file via anonymous link",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Data from Cloud Storage (T1530)"
+      ],
+      "description": "An external user accessed a sensitive SaaS file via an anonymous link.",
+      "attackers_goals": "An attacker is attempting to collect sensitive data.",
+      "investigative_actions": "Check the IP address from which the access originated. Examine the file that was accessed for any sensitive indicators. Follow further actions taken, such as downloading files."
+    },
+    {
+      "name": "User accessed a public Google Drive document",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Data from Cloud Storage (T1530)"
+      ],
+      "description": "A user accessed a Google Drive document that is public on the web.",
+      "attackers_goals": "An attacker is attempting to collect sensitive data.",
+      "investigative_actions": "Check the IP address from which the access originated. Examine the file that was accessed for any sensitive indicators. Follow further actions taken, such as downloading files."
+    }
+  ]
+}

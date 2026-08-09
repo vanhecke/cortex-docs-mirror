@@ -1,0 +1,42 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Proxy: Multi-hop Proxy (T1090.003)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Gain initial access using a compromised identity while obfuscating origin.",
+  "deduplication_period": "5 Days",
+  "description": "An identity executed a cloud API from a high-risk IP address.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Verify if the user is authorized to use anonymizing services. Review subsequent actions by the user for suspicious activity. Check for other users accessing from the same IP or tunnel operator.",
+  "name": "Cloud activity from a high-risk IP address",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Cloud activity from an unusual high-risk IP",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Proxy: Multi-hop Proxy (T1090.003)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "An identity executed a cloud API from a high-risk IP address.",
+      "attackers_goals": "Gain initial access using a compromised identity while obfuscating origin.",
+      "investigative_actions": "Verify if the user is authorized to use anonymizing services. Review subsequent actions by the user for suspicious activity. Check for other users accessing from the same IP or tunnel operator."
+    }
+  ]
+}

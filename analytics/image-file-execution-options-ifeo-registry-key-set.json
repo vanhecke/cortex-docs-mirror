@@ -1,0 +1,66 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Event Triggered Execution: Image File Execution Options Injection (T1546.012)"
+  ],
+  "attackers_goals": "Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by Image File Execution Options debuggers.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers may use the Image File Execution Options Registry key to launch their executable whenever the user attempts to execute a certain executable.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Look at the debugged process and what it is executing to determine if it is malicious.",
+  "name": "Image file execution options (IFEO) registry key set",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Image file execution options (IFEO) registry key set to execute a shell or scripting engine process",
+      "severity": "High",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Event Triggered Execution: Image File Execution Options Injection (T1546.012)"
+      ],
+      "description": "Attackers may use the Image File Execution Options Registry key to launch their executable whenever the user attempts to execute a certain executable.",
+      "attackers_goals": "Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by Image File Execution Options debuggers.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Look at the debugged process and what it is executing to determine if it is malicious."
+    },
+    {
+      "name": "Image file execution options (IFEO) registry key set to activate Windows licenses illegally",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Event Triggered Execution: Image File Execution Options Injection (T1546.012)"
+      ],
+      "description": "Attackers may use the Image File Execution Options Registry key to launch their executable whenever the user attempts to execute a certain executable. This is also used by tools that were made to activate Windows licenses illegally.",
+      "attackers_goals": "Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by Image File Execution Options debuggers.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Look at the debugged process and what it is executing to determine if it is malicious."
+    },
+    {
+      "name": "Image file execution options (IFEO) registry key set using reg.exe",
+      "severity": "High",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Event Triggered Execution: Image File Execution Options Injection (T1546.012)"
+      ],
+      "description": "Attackers may use the Image File Execution Options Registry key to launch their executable whenever the user attempts to execute a certain executable.",
+      "attackers_goals": "Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by Image File Execution Options debuggers.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Look at the debugged process and what it is executing to determine if it is malicious."
+    }
+  ]
+}

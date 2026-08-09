@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Credentials from Password Stores: Cloud Secrets Management Stores (T1555.006)"
+  ],
+  "attackers_goals": "Gain access to sensitive data stored in the Azure Key Vault.",
+  "deduplication_period": "5 Days",
+  "description": "An Azure Key Vault key was modified.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the Azure Key Vault configuration to identify what changes were made.",
+  "name": "An Azure Key Vault key was modified",
+  "required_data": [
+    "Azure Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

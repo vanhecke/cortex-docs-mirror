@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "User Execution (T1204)"
+  ],
+  "attackers_goals": "Gain a special user Kerberos ticket to move laterally.",
+  "deduplication_period": "1 Day",
+  "description": "A Kerberos TGT for machine account has been used and does not match the hostname.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check the source host for possible credential dumping. Check the delegated account credentials and if it has high privileges. Check the ticket destination to verify whether it is a sensitive asset.",
+  "name": "Possible compromised machine account",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

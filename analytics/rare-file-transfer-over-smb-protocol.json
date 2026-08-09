@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Services (T1021)"
+  ],
+  "attackers_goals": "Attackers may attempt to gain persistence or move laterally over the network by dropping executable files and scripts on remote hosts using the SMB protocol.",
+  "deduplication_period": "2 Days",
+  "description": "The endpoint performed an abnormal file transfer over SMB to a remote host.",
+  "detection_modules": "",
+  "detector_tags": "NDR Lateral Movement Analytics",
+  "investigative_actions": "Inspect the file that was transferred to the remote host. Verify that this isn't IT activity.",
+  "name": "Rare file transfer over SMB protocol",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

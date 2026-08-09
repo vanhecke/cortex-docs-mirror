@@ -1,0 +1,66 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation: Additional Cloud Roles (T1098.003)",
+    "Account Manipulation (T1098)"
+  ],
+  "attackers_goals": "Obtaining persistency by using a Lambda function in the target's environment as a backdoor.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity has granted external AWS account sensitive permissions to a Lambda function.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Investigate any unusual activity originating from the suspected identity. Investigate any unusual Lambda functions related operations originating from the allowed added accounts. Validate the legitimacy of the AWS accounts that were allowed external access.",
+  "name": "AWS Lambda Cross-Account sensitive permissions configured",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "AWS Lambda public sensitive permissions configured",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: Additional Cloud Roles (T1098.003)",
+        "Account Manipulation (T1098)"
+      ],
+      "description": "A cloud identity has granted public sensitive permissions to a Lambda function.",
+      "attackers_goals": "Obtaining persistency by using a Lambda function in the target's environment as a backdoor.",
+      "investigative_actions": "Investigate any unusual activity originating from the suspected identity. Investigate any unusual Lambda functions related operations originating from the allowed added accounts. Validate the legitimacy of the AWS accounts that were allowed external access."
+    },
+    {
+      "name": "AWS Lambda public permissions configured",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: Additional Cloud Roles (T1098.003)",
+        "Account Manipulation (T1098)"
+      ],
+      "description": "A cloud identity has granted public permissions to a Lambda function.",
+      "attackers_goals": "Obtaining persistency by using a Lambda function in the target's environment as a backdoor.",
+      "investigative_actions": "Investigate any unusual activity originating from the suspected identity. Investigate any unusual Lambda functions related operations originating from the allowed added accounts. Validate the legitimacy of the AWS accounts that were allowed external access."
+    },
+    {
+      "name": "AWS Lambda Cross-Account permissions configured",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: Additional Cloud Roles (T1098.003)",
+        "Account Manipulation (T1098)"
+      ],
+      "description": "A cloud identity has granted an external AWS account permissions to a Lambda function.",
+      "attackers_goals": "Obtaining persistency by using a Lambda function in the target's environment as a backdoor.",
+      "investigative_actions": "Investigate any unusual activity originating from the suspected identity. Investigate any unusual Lambda functions related operations originating from the allowed added accounts. Validate the legitimacy of the AWS accounts that were allowed external access."
+    }
+  ]
+}

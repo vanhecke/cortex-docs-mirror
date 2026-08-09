@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Masquerading: Rename Legitimate Utilities (T1036.003)"
+  ],
+  "attackers_goals": "Detection avoidance via file rename.",
+  "deduplication_period": "1 Day",
+  "description": "To evade detection, attackers may copy a third-party utility executable to a different location.",
+  "detection_modules": "",
+  "detector_tags": "EDR Windows Disguised Processes",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the destination path of the third-party utility and try to see if it's benign.",
+  "name": "A third-party utility was copied to a different location",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

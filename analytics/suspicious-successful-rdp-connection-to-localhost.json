@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "External Remote Services (T1133)"
+  ],
+  "attackers_goals": "The attacker attempts to gain access to the accounts through RDP from an external source.",
+  "deduplication_period": "1 Day",
+  "description": "An unusual process created a successful RDP connection to localhost. This may indicate the use of a tunnel to bypass a firewall.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Enhanced RDP Analytics",
+  "investigative_actions": "Investigate the actor process to determine if it was used for legitimate purposes or malicious activity. Identify the user performing RDP and check that it is authorized. Follow further actions done by the user.",
+  "name": "Suspicious successful RDP connection to localhost",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious successful RDP connection to localhost via reverse SSH tunnel",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "External Remote Services (T1133)"
+      ],
+      "description": "An unusual process created a successful RDP connection to localhost. The command line indicates the usage of SSH tunnel to bypass the firewall.",
+      "attackers_goals": "The attacker attempts to gain access to the accounts through RDP from an external source.",
+      "investigative_actions": "Investigate the actor process to determine if it was used for legitimate purposes or malicious activity. Identify the user performing RDP and check that it is authorized. Follow further actions done by the user."
+    },
+    {
+      "name": "Suspicious successful RDP connection to localhost on DC server",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "External Remote Services (T1133)"
+      ],
+      "description": "An unusual process created a successful RDP connection to localhost on a DC server. This may indicate the use of a tunnel to bypass a firewall.",
+      "attackers_goals": "The attacker attempts to gain access to the accounts through RDP from an external source.",
+      "investigative_actions": "Investigate the actor process to determine if it was used for legitimate purposes or malicious activity. Identify the user performing RDP and check that it is authorized. Follow further actions done by the user."
+    }
+  ]
+}

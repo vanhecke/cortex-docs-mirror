@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "An attacker is attempting to evade detection.",
+  "deduplication_period": "1 Hour",
+  "description": "A user connected to a VPN on a day and hour, which is unusual for this user. This may indicate that the account was compromised.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check the amount of traffic and how long it continues. Follow further actions done by the user.",
+  "name": "A user logged in at an unusual time via VPN",
+  "required_data": [
+    "Palo Alto Networks Global Protect",
+    "Third-Party VPNs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

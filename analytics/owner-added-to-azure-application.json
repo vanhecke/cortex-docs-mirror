@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Steal Application Access Token (T1528)"
+  ],
+  "attackers_goals": "An attacker may add owners to an application to authenticate as the application later on and access resources.",
+  "deduplication_period": "1 Day",
+  "description": "An identity was added as an owner to an Azure application.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "Check if the added account is new to the organization. Check whether the account that added the new owner is supposed to perform such actions. Check for possible logins from the application modified. Follow further actions done by the application.",
+  "name": "Owner added to Azure application",
+  "required_data": [
+    "AzureAD Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

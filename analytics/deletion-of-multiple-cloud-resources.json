@@ -1,0 +1,51 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Data Destruction (T1485)"
+  ],
+  "attackers_goals": "Leverage access to the cloud to delete resources and cause damage to an organization's infrastructure.",
+  "deduplication_period": "5 Days",
+  "description": "An identity deleted multiple cloud resources.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Confirm the legitimacy of the suspected identity and what cloud resources have been deleted by the identity. Look for any unusual activity associated with the suspected identity and determine whether they are compromised.",
+  "name": "Deletion of multiple cloud resources",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "30 Minutes",
+  "variations": [
+    {
+      "name": "Deletion of multiple cloud resources",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Data Destruction (T1485)"
+      ],
+      "description": "An identity deleted multiple cloud resources. This large volume of deleted cloud resources had not been seen across all projects for the last 30 days.",
+      "attackers_goals": "Leverage access to the cloud to delete resources and cause damage to an organization's infrastructure.",
+      "investigative_actions": "Confirm the legitimacy of the suspected identity and what cloud resources have been deleted by the identity. Look for any unusual activity associated with the suspected identity and determine whether they are compromised."
+    },
+    {
+      "name": "Deletion of multiple cloud resources",
+      "severity": "Low",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Data Destruction (T1485)"
+      ],
+      "description": "An identity deleted multiple cloud resources. This large volume of deleted cloud resources had not been seen in this project for the last 30 days.",
+      "attackers_goals": "Leverage access to the cloud to delete resources and cause damage to an organization's infrastructure.",
+      "investigative_actions": "Confirm the legitimacy of the suspected identity and what cloud resources have been deleted by the identity. Look for any unusual activity associated with the suspected identity and determine whether they are compromised."
+    }
+  ]
+}

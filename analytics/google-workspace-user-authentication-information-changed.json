@@ -1,0 +1,55 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Modify Authentication Process: Multi-Factor Authentication (T1556.006)",
+    "Account Manipulation (T1098)"
+  ],
+  "attackers_goals": "Adversaries may manipulate user authentication information to obtain Persistence or Bypass Multi-Factor Authentication (MFA) controls.",
+  "deduplication_period": "1 Day",
+  "description": "Google Workspace authentication information was changed for a user.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Verify if the authentication information change was authorized. Follow further actions done by the user and IP address.",
+  "name": "Google Workspace user authentication information changed",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Google Workspace administrative user authentication information changed",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Modify Authentication Process: Multi-Factor Authentication (T1556.006)",
+        "Account Manipulation (T1098)"
+      ],
+      "description": "Google Workspace authentication information was changed for a user.",
+      "attackers_goals": "Adversaries may manipulate user authentication information to obtain Persistence or Bypass Multi-Factor Authentication (MFA) controls.",
+      "investigative_actions": "Verify if the authentication information change was authorized. Follow further actions done by the user and IP address."
+    },
+    {
+      "name": "Google Workspace user authentication information changed by another account",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Modify Authentication Process: Multi-Factor Authentication (T1556.006)",
+        "Account Manipulation (T1098)"
+      ],
+      "description": "Google Workspace authentication information was changed for a user.",
+      "attackers_goals": "Adversaries may manipulate user authentication information to obtain Persistence or Bypass Multi-Factor Authentication (MFA) controls.",
+      "investigative_actions": "Verify if the authentication information change was authorized. Follow further actions done by the user and IP address."
+    }
+  ]
+}

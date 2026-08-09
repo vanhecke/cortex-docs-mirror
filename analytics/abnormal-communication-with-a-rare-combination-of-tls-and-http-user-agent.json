@@ -1,0 +1,56 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)",
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Web Service (T1102)",
+    "Exfiltration Over Web Service (T1567)"
+  ],
+  "attackers_goals": "Data exfiltration, attack tool staging or command and control channel through a trusted service.",
+  "deduplication_period": "1 Day",
+  "description": "Abnormal communication with a rare combination of TLS and HTTP User Agent to an external address.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Examine the legitimacy of the application that produced this rare TLS fingerprint with the external server. Examine the parent process of this application. Check for anomalies at the time when the communication occurred. Verify if the outbound communication is being routed through a legitimate HTTP tunneling solution.",
+  "name": "Abnormal communication with a rare combination of TLS and HTTP User Agent",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Abnormal communication with a rare combination of TLS and HTTP User Agent to an instant messaging server",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Web Service (T1102)",
+        "Exfiltration Over Web Service (T1567)"
+      ],
+      "description": "Abnormal communication with a rare combination of TLS and HTTP User Agent to an instant messaging server.",
+      "attackers_goals": "Data exfiltration, attack tool staging or command and control channel through a trusted service.",
+      "investigative_actions": "Examine the legitimacy of the application that produced this rare TLS fingerprint with the external server. Examine the parent process of this application. Check for anomalies at the time when the communication occurred. Verify if the outbound communication is being routed through a legitimate HTTP tunneling solution."
+    },
+    {
+      "name": "Abnormal communication with a rare combination of TLS and HTTP User Agent to a globally rare domain",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Web Service (T1102)",
+        "Exfiltration Over Web Service (T1567)"
+      ],
+      "description": "Abnormal communication with a rare combination of TLS and HTTP User Agent to a globally rare domain.",
+      "attackers_goals": "Data exfiltration, attack tool staging or command and control channel through a trusted service.",
+      "investigative_actions": "Examine the legitimacy of the application that produced this rare TLS fingerprint with the external server. Examine the parent process of this application. Check for anomalies at the time when the communication occurred. Verify if the outbound communication is being routed through a legitimate HTTP tunneling solution."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "Exfiltrate data to an unknown bucket.",
+  "deduplication_period": "1 Day",
+  "description": "A GCP Cloud SQL DB instance was exported to a storage bucket. The DB instance was exported from a production account.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Data Detection & Response, Cloud Data Asset Exfiltration",
+  "investigative_actions": "Check the legitimacy of the referenced destination bucket. Review further logs for the source Cloud DB instance. Review further actions performed by the identity.",
+  "name": "A GCP Cloud SQL DB instance was exported from a production account",
+  "required_data": [
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

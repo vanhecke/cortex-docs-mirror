@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Non-Application Layer Protocol (T1095)"
+  ],
+  "attackers_goals": "Attackers might use well-known email ports as a C&C channel to evade detection and firewall rules.",
+  "deduplication_period": "1 Hour",
+  "description": "These methods are used by malware and attackers to leak data and remain undetected.",
+  "detection_modules": "",
+  "detector_tags": "EDR Windows C2 Analytics",
+  "investigative_actions": "Check whether the initiator process is benign or normal for the host and/or user performing it. Check whether additional malicious commands were executed from the same process.",
+  "name": "Rare communication over email ports to external email server by unsigned process",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

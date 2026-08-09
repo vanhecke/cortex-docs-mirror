@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Impair Defenses: Disable or Modify Tools (T1562.001)",
+    "Phishing (T1566)"
+  ],
+  "attackers_goals": "An attacker is attempting to evade detection.",
+  "deduplication_period": "1 Day",
+  "description": "A user disabled or removed an Exchange anti-phish policy, which may indicate evasion of a possible phishing campaign.",
+  "detection_modules": "Identity Threat Module, Email",
+  "detector_tags": "",
+  "investigative_actions": "Follow further actions done by the account. Verify that the configuration change was expected. Check for a possible phishing campaign on the organization.",
+  "name": "Exchange anti-phish policy disabled or removed",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Recently configured Exchange anti-phish policy disabled or removed",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Impair Defenses: Disable or Modify Tools (T1562.001)",
+        "Phishing (T1566)"
+      ],
+      "description": "A user disabled or removed an Exchange anti-phish policy, which may indicate evasion of a possible phishing campaign.",
+      "attackers_goals": "An attacker is attempting to evade detection.",
+      "investigative_actions": "Follow further actions done by the account. Verify that the configuration change was expected. Check for a possible phishing campaign on the organization."
+    }
+  ]
+}

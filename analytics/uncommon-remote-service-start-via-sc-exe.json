@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "System Services: Service Execution (T1569.002)"
+  ],
+  "attackers_goals": "The Service Control command is used to create, start, stop, query, or delete Windows services. Attackers can use the command to attempt to execute and persist a binary, command, or script.",
+  "deduplication_period": "1 Day",
+  "description": "The Service Control command (sc.exe) is used to create, start, stop, query, or delete Windows services. Adversaries may attempt to use the command to execute and persist a binary, command, or script.",
+  "detection_modules": "",
+  "detector_tags": "Malicious Service Analytics",
+  "investigative_actions": "Check whether the executed process is benign and if this was desired behavior as part of its normal execution flow. Check the remote host for any evidence of the executed service and investigate it.",
+  "name": "Uncommon remote service start via sc.exe",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

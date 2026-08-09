@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol: Web Protocols (T1071.001)"
+  ],
+  "attackers_goals": "Communicate with the attacker's Command and Control (C2) infrastructure.",
+  "deduplication_period": "1 Day",
+  "description": "A commonly abused process connected to a rare external host.",
+  "detection_modules": "",
+  "detector_tags": "EDR Windows C2 Analytics",
+  "investigative_actions": "Investigate the actor process connected to the external host. Get further details about the uncommon external destination. Assess whether this communication pattern is expected or not.",
+  "name": "A commonly abused process connected to a rare external host",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A commonly abused renamed process connected to a rare external host",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol: Web Protocols (T1071.001)"
+      ],
+      "description": "A commonly abused renamed process connected to a rare external host.",
+      "attackers_goals": "Communicate with the attacker's Command and Control (C2) infrastructure.",
+      "investigative_actions": "Investigate the actor process connected to the external host. Get further details about the uncommon external destination. Assess whether this communication pattern is expected or not."
+    },
+    {
+      "name": "A commonly abused process connected to a globally rare external host",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol: Web Protocols (T1071.001)"
+      ],
+      "description": "A commonly abused process connected to a globally rare external host.",
+      "attackers_goals": "Communicate with the attacker's Command and Control (C2) infrastructure.",
+      "investigative_actions": "Investigate the actor process connected to the external host. Get further details about the uncommon external destination. Assess whether this communication pattern is expected or not."
+    },
+    {
+      "name": "A commonly abused rare process connected to a rare external host",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol: Web Protocols (T1071.001)"
+      ],
+      "description": "A commonly abused rare process connected to a rare external host.",
+      "attackers_goals": "Communicate with the attacker's Command and Control (C2) infrastructure.",
+      "investigative_actions": "Investigate the actor process connected to the external host. Get further details about the uncommon external destination. Assess whether this communication pattern is expected or not."
+    }
+  ]
+}

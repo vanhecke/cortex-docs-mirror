@@ -1,0 +1,140 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation: SSH Authorized Keys (T1098.004)",
+    "Remote Services: Cloud Services (T1021.007)",
+    "Remote Services: Direct Cloud VM Connections (T1021.008)"
+  ],
+  "attackers_goals": "Maintain persistence on a compromised compute instance. Escalate local privileges to gain root on compute instance.",
+  "deduplication_period": "5 Days",
+  "description": "An identity attempted to modify the SSH keys of a single compute instance. This may indicate an attacker's attempt to maintain persistence on the cloud instance.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Lateral Movement Analytics",
+  "investigative_actions": "Investigate if SSH keys were modified or added at the instance or project level. Investigate which permissions were obtained as a result of the SSH keys modification.",
+  "name": "Suspicious cloud compute instance SSH keys modification attempt",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious cloud compute instance SSH keys modification attempt by an identity with high administrative activity",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: SSH Authorized Keys (T1098.004)",
+        "Remote Services: Cloud Services (T1021.007)",
+        "Remote Services: Direct Cloud VM Connections (T1021.008)"
+      ],
+      "description": "An identity attempted to modify the SSH keys of a single compute instance. The identity has high administrative activity This may indicate an attacker's attempt to maintain persistence on the cloud instance.",
+      "attackers_goals": "Maintain persistence on a compromised compute instance. Escalate local privileges to gain root on compute instance.",
+      "investigative_actions": "Investigate if SSH keys were modified or added at the instance or project level. Investigate which permissions were obtained as a result of the SSH keys modification."
+    },
+    {
+      "name": "Instance SSH keys were modified for the first time in the cloud provider",
+      "severity": "High",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: SSH Authorized Keys (T1098.004)",
+        "Remote Services: Cloud Services (T1021.007)",
+        "Remote Services: Direct Cloud VM Connections (T1021.008)"
+      ],
+      "description": "An identity has modified the SSH keys of an instance for the first time in the cloud provider. This may indicate an attacker's attempt to maintain persistence on the cloud instance.",
+      "attackers_goals": "Maintain persistence on a compromised compute instance. Escalate local privileges to gain root on compute instance.",
+      "investigative_actions": "Investigate if SSH keys were modified or added at the instance or project level. Investigate which permissions were obtained as a result of the SSH keys modification."
+    },
+    {
+      "name": "Suspicious cloud compute instance SSH keys modification by a service account",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: SSH Authorized Keys (T1098.004)",
+        "Remote Services: Cloud Services (T1021.007)",
+        "Remote Services: Direct Cloud VM Connections (T1021.008)"
+      ],
+      "description": "A service account has modified the SSH keys of a single compute instance. This may indicate an attacker's attempt to maintain persistence on the cloud instance.",
+      "attackers_goals": "Maintain persistence on a compromised compute instance. Escalate local privileges to gain root on compute instance.",
+      "investigative_actions": "Investigate if SSH keys were modified or added at the instance or project level. Investigate which permissions were obtained as a result of the SSH keys modification."
+    },
+    {
+      "name": "Suspicious cloud compute instance SSH keys modification",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: SSH Authorized Keys (T1098.004)",
+        "Remote Services: Cloud Services (T1021.007)",
+        "Remote Services: Direct Cloud VM Connections (T1021.008)"
+      ],
+      "description": "An identity has modified the SSH keys of a single compute instance. This may indicate an attacker's attempt to maintain persistence on the cloud instance.",
+      "attackers_goals": "Maintain persistence on a compromised compute instance. Escalate local privileges to gain root on compute instance.",
+      "investigative_actions": "Investigate if SSH keys were modified or added at the instance or project level. Investigate which permissions were obtained as a result of the SSH keys modification."
+    },
+    {
+      "name": "Suspicious GCP project level metadata modification by a service account",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: SSH Authorized Keys (T1098.004)",
+        "Remote Services: Cloud Services (T1021.007)",
+        "Remote Services: Direct Cloud VM Connections (T1021.008)"
+      ],
+      "description": "A service account has modified the metadata of the entire instances in the project. This may indicate an attacker's attempt to perform lateral movement within the project.",
+      "attackers_goals": "Maintain persistence on a compromised compute instance. Escalate local privileges to gain root on compute instance.",
+      "investigative_actions": "Investigate if SSH keys were modified or added at the instance or project level. Investigate which permissions were obtained as a result of the SSH keys modification."
+    },
+    {
+      "name": "Suspicious GCP project level metadata modification",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: SSH Authorized Keys (T1098.004)",
+        "Remote Services: Cloud Services (T1021.007)",
+        "Remote Services: Direct Cloud VM Connections (T1021.008)"
+      ],
+      "description": "An identity account has modified the metadata of the entire instances in the project. This may indicate an attacker's attempt to perform lateral movement within the project.",
+      "attackers_goals": "Maintain persistence on a compromised compute instance. Escalate local privileges to gain root on compute instance.",
+      "investigative_actions": "Investigate if SSH keys were modified or added at the instance or project level. Investigate which permissions were obtained as a result of the SSH keys modification."
+    },
+    {
+      "name": "Suspicious GCP project level metadata modification attempt",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Account Manipulation: SSH Authorized Keys (T1098.004)",
+        "Remote Services: Cloud Services (T1021.007)",
+        "Remote Services: Direct Cloud VM Connections (T1021.008)"
+      ],
+      "description": "An identity account has modified the metadata of the entire instances in the project. This may indicate an attacker's attempt to perform lateral movement within the project.",
+      "attackers_goals": "Maintain persistence on a compromised compute instance. Escalate local privileges to gain root on compute instance.",
+      "investigative_actions": "Investigate if SSH keys were modified or added at the instance or project level. Investigate which permissions were obtained as a result of the SSH keys modification."
+    }
+  ]
+}

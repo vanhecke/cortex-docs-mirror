@@ -1,0 +1,66 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Obfuscated Files or Information (T1027)"
+  ],
+  "attackers_goals": "Adversaries may attempt to make an executable difficult to discover or analyze by compressing, encrypting, encoding, or otherwise obfuscating its contents.",
+  "deduplication_period": "1 Day",
+  "description": "A process with high entropy and a globally uncommon hash was executed.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the process' file is either compressed, encrypted, obfuscated or packed.",
+  "name": "Globally uncommon high entropy process was executed",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Globally uncommon high entropy process was executed by a web server process or CGO",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)",
+        "Initial Access (TA0001)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Obfuscated Files or Information (T1027)",
+        "External Remote Services (T1133)",
+        "Server Software Component: Web Shell (T1505.003)"
+      ],
+      "description": "A process with high entropy and a globally uncommon hash was executed by a web server process or CGO.",
+      "attackers_goals": "Adversaries may attempt to make an executable difficult to discover or analyze by compressing, encrypting, encoding, or otherwise obfuscating its contents.",
+      "investigative_actions": "Check if the process' file is either compressed, encrypted, obfuscated or packed."
+    },
+    {
+      "name": "Globally uncommon high entropy process was extracted from an internet-downloaded archive and executed",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Obfuscated Files or Information (T1027)"
+      ],
+      "description": "A process with high entropy and a globally uncommon hash was extracted from an internet-downloaded archive and executed.",
+      "attackers_goals": "Adversaries may attempt to make an executable difficult to discover or analyze by compressing, encrypting, encoding, or otherwise obfuscating its contents.",
+      "investigative_actions": "Check if the process' file is either compressed, encrypted, obfuscated or packed."
+    },
+    {
+      "name": "Globally uncommon high entropy process was downloaded from an uncommon source and executed",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Obfuscated Files or Information (T1027)"
+      ],
+      "description": "A process with high entropy and a globally uncommon hash was downloaded from an uncommon source and executed.",
+      "attackers_goals": "Adversaries may attempt to make an executable difficult to discover or analyze by compressing, encrypting, encoding, or otherwise obfuscating its contents.",
+      "investigative_actions": "Check if the process' file is either compressed, encrypted, obfuscated or packed."
+    }
+  ]
+}

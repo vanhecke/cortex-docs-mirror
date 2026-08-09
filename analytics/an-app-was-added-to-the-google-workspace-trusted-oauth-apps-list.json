@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Modify Authentication Process (T1556)"
+  ],
+  "attackers_goals": "Malicious OAuth apps can be used to request elevated permissions or to impersonate another user.",
+  "deduplication_period": "2 Days",
+  "description": "An identity added an OAuth app to the Google Workspace trusted OAuth apps list.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Check if the identity intended to perform this action, or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the app that was added to the trusted apps list looks suspicious. Follow further actions done by the account.",
+  "name": "An app was added to the Google Workspace trusted OAuth apps list",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "An unusual app was added to the Google Workspace trusted OAuth apps list",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Modify Authentication Process (T1556)"
+      ],
+      "description": "An identity added an OAuth app to the Google Workspace trusted OAuth apps list.",
+      "attackers_goals": "Malicious OAuth apps can be used to request elevated permissions or to impersonate another user.",
+      "investigative_actions": "Check if the identity intended to perform this action, or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the app that was added to the trusted apps list looks suspicious. Follow further actions done by the account."
+    },
+    {
+      "name": "An app was added to the Google Workspace trusted OAuth apps list by a non-administrative identity",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Modify Authentication Process (T1556)"
+      ],
+      "description": "An identity added an OAuth app to the Google Workspace trusted OAuth apps list.",
+      "attackers_goals": "Malicious OAuth apps can be used to request elevated permissions or to impersonate another user.",
+      "investigative_actions": "Check if the identity intended to perform this action, or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the app that was added to the trusted apps list looks suspicious. Follow further actions done by the account."
+    }
+  ]
+}

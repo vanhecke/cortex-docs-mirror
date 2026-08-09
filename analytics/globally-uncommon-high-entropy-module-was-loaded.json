@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Obfuscated Files or Information (T1027)"
+  ],
+  "attackers_goals": "Adversaries may attempt to make an executable difficult to discover or analyze by compressing, encrypting, encoding, or otherwise obfuscating its contents.",
+  "deduplication_period": "1 Day",
+  "description": "A module with high entropy and a globally uncommon hash was loaded.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the module is either compressed, encrypted, obfuscated or packed.",
+  "name": "Globally uncommon high entropy module was loaded",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Globally uncommon high entropy module was loaded by process which was executed by a scheduled task",
+      "severity": "Low",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Obfuscated Files or Information (T1027)"
+      ],
+      "description": "A module with high entropy and a globally uncommon hash was loaded.",
+      "attackers_goals": "Adversaries may attempt to make an executable difficult to discover or analyze by compressing, encrypting, encoding, or otherwise obfuscating its contents.",
+      "investigative_actions": "Check if the module is either compressed, encrypted, obfuscated or packed."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder (T1547.001)"
+  ],
+  "attackers_goals": "Maintain persistence on the host through automatic execution at startup.",
+  "deduplication_period": "7 Days",
+  "description": "An uncommon file was created in the startup folder.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Determine if the file was created as part of a legitimate application installation, and check other files written by the same process. Identify which program opens this file based on its extension. Check the registry at HKEY_CLASSES_ROOT[extension]\\shell[action]\\command to see the default application or command used to execute the file.",
+  "name": "An uncommon file was created in the startup folder",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "An executable file with a non-default extension was added to the startup folder",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder (T1547.001)"
+      ],
+      "description": "An executable file with a non-default extension was added to the startup folder.",
+      "attackers_goals": "Maintain persistence on the host through automatic execution at startup.",
+      "investigative_actions": "Determine if the file was created as part of a legitimate application installation, and check other files written by the same process. Identify which program opens this file based on its extension. Check the registry at HKEY_CLASSES_ROOT[extension]\\shell[action]\\command to see the default application or command used to execute the file."
+    },
+    {
+      "name": "An executable or script was added to the startup folder",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder (T1547.001)"
+      ],
+      "description": "An executable or script was added to the startup folder. This may occur during a legitimate program installation but could also indicate a malicious program persisting on the system.",
+      "attackers_goals": "Maintain persistence on the host through automatic execution at startup.",
+      "investigative_actions": "Determine if the file was created as part of a legitimate application installation, and check other files written by the same process. Identify which program opens this file based on its extension. Check the registry at HKEY_CLASSES_ROOT[extension]\\shell[action]\\command to see the default application or command used to execute the file."
+    },
+    {
+      "name": "A file with an uncommon extension was added to the startup folder",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Event Triggered Execution: Change Default File Association (T1546.001)",
+        "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder (T1547.001)"
+      ],
+      "description": "A file with an uncommon extension was added to the startup folder, which may happen on new program installation, but may also indicate a malicious program persisting itself.",
+      "attackers_goals": "Persistence on the host.",
+      "investigative_actions": "Check if the file was set during installation process (what other files were written by the process). Check the registry at HKEY_CLASSES_ROOT.[extension]\\shell[action]\\command for the default application or command to execute."
+    },
+    {
+      "name": "A new shortcut (lnk) was added to the startup folder",
+      "severity": "Low",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder (T1547.001)"
+      ],
+      "description": "A new shortcut (lnk) file was added to the startup folder, which may happen on new program installation, but may also indicate a malicious program persisting itself.",
+      "attackers_goals": "Maintain persistence on the host through automatic execution at startup.",
+      "investigative_actions": "Determine if the file was created as part of a legitimate application installation, and check other files written by the same process. Identify which program opens this file based on its extension. Check the registry at HKEY_CLASSES_ROOT[extension]\\shell[action]\\command to see the default application or command used to execute the file."
+    }
+  ]
+}

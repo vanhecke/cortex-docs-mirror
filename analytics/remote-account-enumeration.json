@@ -1,0 +1,55 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Account Discovery (T1087)",
+    "Brute Force (T1110)"
+  ],
+  "attackers_goals": "Discover valid accounts to gain credentials.",
+  "deduplication_period": "1 Day",
+  "description": "Multiple non-existing accounts failed to remotely log in to a host in a short period of time. This may indicate an attacker is trying to remotely enumerate accounts.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check if the login attempts were part of a legitimate misunderstanding of the system or part of an attack.",
+  "name": "Remote account enumeration",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "Suspicious Remote domain account enumeration",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Account Discovery (T1087)",
+        "Brute Force (T1110)"
+      ],
+      "description": "Multiple non-existing accounts failed to remotely log in to a host in a short period of time. This may indicate an attacker is trying to remotely enumerate accounts.",
+      "attackers_goals": "Discover valid accounts to gain credentials.",
+      "investigative_actions": "Check if the login attempts were part of a legitimate misunderstanding of the system or part of an attack."
+    },
+    {
+      "name": "Remote account enumeration on domain accounts",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Account Discovery (T1087)",
+        "Brute Force (T1110)"
+      ],
+      "description": "Multiple non-existing accounts failed to remotely log in to a host in a short period of time. This may indicate an attacker is trying to remotely enumerate accounts.",
+      "attackers_goals": "Discover valid accounts to gain credentials.",
+      "investigative_actions": "Check if the login attempts were part of a legitimate misunderstanding of the system or part of an attack."
+    }
+  ]
+}

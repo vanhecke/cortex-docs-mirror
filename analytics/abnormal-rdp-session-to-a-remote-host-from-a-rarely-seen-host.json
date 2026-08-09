@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Services: Remote Desktop Protocol (T1021.001)"
+  ],
+  "attackers_goals": "Attackers may attempt to move laterally over the network by using compromised accounts or machines to connect to remote hosts using the RDP protocol.",
+  "deduplication_period": "1 Day",
+  "description": "The endpoint performed a rare RDP session to a remote host.",
+  "detection_modules": "",
+  "detector_tags": "NDR Lateral Movement Analytics, NDR Unmanaged Subnet Analytics",
+  "investigative_actions": "Inspect the legitimacy of the user which the RDP made the connection with. Verify that this isn't IT activity.",
+  "name": "Abnormal RDP session to a remote host from a rarely seen host",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent",
+    "Third-Party Firewalls"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

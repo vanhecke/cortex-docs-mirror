@@ -1,0 +1,53 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)",
+    "Trusted Relationship (T1199)"
+  ],
+  "attackers_goals": "Escalate privileges to bypass access controls Avoid detection throughout their compromise.",
+  "deduplication_period": "5 Days",
+  "description": "A suspicious identity type has attempted to impersonate another identity.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the identity's designation. Verify that the identity did not perform sensitive operation on behalf of the impersonated identity.",
+  "name": "Cloud impersonation attempt by unusual identity type",
+  "required_data": [
+    "AWS Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Cloud impersonation attempt of a management role by unusual identity type",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)",
+        "Trusted Relationship (T1199)"
+      ],
+      "description": "An unusual cloud identity type attempted to impersonate a management role.",
+      "attackers_goals": "Escalate privileges to bypass access controls Avoid detection throughout their compromise.",
+      "investigative_actions": "Check the identity's designation. Verify that the identity did not perform sensitive operation on behalf of the impersonated identity."
+    },
+    {
+      "name": "Successful cloud impersonation by an unusual identity type",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)",
+        "Trusted Relationship (T1199)"
+      ],
+      "description": "A suspicious identity type has successfully impersonated another identity.",
+      "attackers_goals": "Escalate privileges to bypass access controls Avoid detection throughout their compromise.",
+      "investigative_actions": "Check the identity's designation. Verify that the identity did not perform sensitive operation on behalf of the impersonated identity."
+    }
+  ]
+}

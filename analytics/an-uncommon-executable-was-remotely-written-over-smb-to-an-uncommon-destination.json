@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Remote Services: SMB/Windows Admin Shares (T1021.002)"
+  ],
+  "attackers_goals": "Transfer tools as part of lateral movement activity across the network.",
+  "deduplication_period": "1 Day",
+  "description": "An uncommon executable was remotely written over SMB to a destination, which was not involved in significant similar activity during last month.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify if the shared file is malicious. Investigate if the file was executed on the host. Check the remote SMB client for other suspicious activities.",
+  "name": "An uncommon executable was remotely written over SMB to an uncommon destination",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "An uncommon executable was remotely written over SMB to a highly suspicious destination",
+      "severity": "High",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: SMB/Windows Admin Shares (T1021.002)"
+      ],
+      "description": "An uncommon executable was remotely written over SMB to a highly suspicious destination, which was not involved in significant similar activity during last month.",
+      "attackers_goals": "Transfer tools as part of lateral movement activity across the network.",
+      "investigative_actions": "Verify if the shared file is malicious. Investigate if the file was executed on the host. Check the remote SMB client for other suspicious activities."
+    },
+    {
+      "name": "An uncommon executable with SCR extension was remotely written over SMB to an uncommon destination",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: SMB/Windows Admin Shares (T1021.002)"
+      ],
+      "description": "An uncommon executable with SCR extension was remotely written over SMB to a destination, which was not involved in significant similar activity during last month.",
+      "attackers_goals": "Transfer tools as part of lateral movement activity across the network, leveraging lesser known PE extension to masquerade a malicious file.",
+      "investigative_actions": "Verify if the shared file is malicious. Investigate if the file was executed on the host. Check the remote SMB client for other suspicious activities. Verify whether or not the executable file is a genuine screensaver, possibly by detonating it in a controlled environment."
+    },
+    {
+      "name": "PsExec remote service component was remotely written over SMB to an uncommon destination",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: SMB/Windows Admin Shares (T1021.002)"
+      ],
+      "description": "PsExec remote service component was remotely written over SMB to a destination, which was not involved in significant similar activity during last month.",
+      "attackers_goals": "Transfer tools as part of lateral movement activity across the network.",
+      "investigative_actions": "Verify if the shared file is malicious. Investigate if the file was executed on the host. Check the remote SMB client for other suspicious activities. Verify whether this is part of authorized activity or not as PsExec can be used for both benign and malicious purposes."
+    }
+  ]
+}

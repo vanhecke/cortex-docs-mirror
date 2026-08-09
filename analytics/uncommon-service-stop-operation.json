@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Service Stop (T1489)"
+  ],
+  "attackers_goals": "Attackers may disable services to disrupt system functionality and weaken security defenses.",
+  "deduplication_period": "1 Day",
+  "description": "An attempt to stop a service was made using an unusual shell command.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "Uncommon service stop operation",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

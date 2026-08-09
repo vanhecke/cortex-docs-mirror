@@ -1,0 +1,75 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: Cloud API (T1059.009)"
+  ],
+  "attackers_goals": "Abuse cloud APIs to execute malicious commands.",
+  "deduplication_period": "5 Days",
+  "description": "An uncommon execution of a cloud CLI tool.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check what cloud CLI commands were executed.* Verify which cloud resources may have been affected.",
+  "name": "Uncommon cloud CLI tool usage",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon cloud CLI tool usage within a web server pod",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Cloud API (T1059.009)"
+      ],
+      "description": "An uncommon execution of a cloud CLI tool.",
+      "attackers_goals": "Abuse cloud APIs to execute malicious commands.",
+      "investigative_actions": "Check what cloud CLI commands were executed.* Verify which cloud resources may have been affected."
+    },
+    {
+      "name": "Uncommon cloud CLI tool usage within a web server",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Cloud API (T1059.009)"
+      ],
+      "description": "An uncommon execution of a cloud CLI tool.",
+      "attackers_goals": "Abuse cloud APIs to execute malicious commands.",
+      "investigative_actions": "Check what cloud CLI commands were executed.* Verify which cloud resources may have been affected."
+    },
+    {
+      "name": "Uncommon cloud CLI tool usage within a cloud instance",
+      "severity": "Low",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Cloud API (T1059.009)"
+      ],
+      "description": "An uncommon execution of a cloud CLI tool.",
+      "attackers_goals": "Abuse cloud APIs to execute malicious commands.",
+      "investigative_actions": "Check what cloud CLI commands were executed.* Verify which cloud resources may have been affected."
+    },
+    {
+      "name": "Uncommon cloud CLI tool usage within a Kubernetes pod",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: Cloud API (T1059.009)"
+      ],
+      "description": "An uncommon execution of a cloud CLI tool.",
+      "attackers_goals": "Abuse cloud APIs to execute malicious commands.",
+      "investigative_actions": "Check what cloud CLI commands were executed.* Verify which cloud resources may have been affected."
+    }
+  ]
+}

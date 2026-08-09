@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Web Service (T1102)"
+  ],
+  "attackers_goals": "Data exfiltration or attack tool staging through a trusted service.",
+  "deduplication_period": "1 Day",
+  "description": "A rare communication between a process to a known instant messaging server.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Examine the legitimacy of the application that made the communication with the provider's server. Examine the parent process of this application. Check for anomalies regarding the time frame where the communication occurred.",
+  "name": "Uncommon communication to an instant messaging server",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon communication to an instant messaging server by a suspicious process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Web Service (T1102)"
+      ],
+      "description": "A rare communication by a suspicious process to a known instant messaging server.",
+      "attackers_goals": "Data exfiltration or attack tool staging through a trusted service.",
+      "investigative_actions": "Examine the legitimacy of the application that made the communication with the provider's server. Examine the parent process of this application. Check for anomalies regarding the time frame where the communication occurred."
+    },
+    {
+      "name": "Uncommon communication to an instant messaging server by an uncommon scripting engine execution",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Web Service (T1102)"
+      ],
+      "description": "A rare communication by an uncommon execution of a scripting engine to a known instant messaging server.",
+      "attackers_goals": "Data exfiltration or attack tool staging through a trusted service.",
+      "investigative_actions": "Examine the legitimacy of the application that made the communication with the provider's server. Examine the parent process of this application. Check for anomalies regarding the time frame where the communication occurred."
+    }
+  ]
+}

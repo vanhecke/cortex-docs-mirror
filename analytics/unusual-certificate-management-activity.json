@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Unsecured Credentials: Private Keys (T1552.004)"
+  ],
+  "attackers_goals": "Abuse certificate management functionalities to generate valid signed certificates, which enable to launch man-in-the-middle attacks against different services.",
+  "deduplication_period": "1 Day",
+  "description": "A cloud identity performed a certificate management operation for the first time.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the identity's role designation in the organization. Verify that the identity did not perform any sensitive certificate management operation that it shouldn't.",
+  "name": "Unusual certificate management activity",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

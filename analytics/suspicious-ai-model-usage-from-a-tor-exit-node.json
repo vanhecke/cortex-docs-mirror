@@ -1,0 +1,37 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Proxy: Multi-hop Proxy (T1090.003)"
+  ],
+  "attackers_goals": "Conceal information about malicious activities, such as location and network usage.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity invoked an AI model from a Tor exit node.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud AI Infrastructure Analytics",
+  "investigative_actions": "Block all web traffic to and from public Tor entry and exit nodes.",
+  "name": "Suspicious AI model usage from a Tor exit node",
+  "required_data": [
+    "AWS Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "High",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Failed AI model usage from a Tor exit node",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Proxy: Multi-hop Proxy (T1090.003)"
+      ],
+      "description": "A cloud identity invoked an AI model from a Tor exit node.",
+      "attackers_goals": "Conceal information about malicious activities, such as location and network usage.",
+      "investigative_actions": "Block all web traffic to and from public Tor entry and exit nodes."
+    }
+  ]
+}

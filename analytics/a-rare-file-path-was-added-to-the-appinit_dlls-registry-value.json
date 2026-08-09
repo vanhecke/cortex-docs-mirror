@@ -1,0 +1,52 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Event Triggered Execution (T1546)"
+  ],
+  "attackers_goals": "Establish persistence and/or elevate privileges by injecting malicious content triggered by AppInit DLLs loaded into processes.",
+  "deduplication_period": "1 Day",
+  "description": "A rare file path was added to AppInit_DLLs registry value.",
+  "detection_modules": "",
+  "detector_tags": "Injection Analytics",
+  "investigative_actions": "Investigate the path of the modified value. Investigate the causality actor process which initiated the activity.",
+  "name": "A rare file path was added to the AppInit_DLLs registry value",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A rare file path was added to the AppInit_DLLs registry valueusing a manual registry tool",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Event Triggered Execution (T1546)"
+      ],
+      "description": "A rare file path was added to AppInit_DLLs registry value.",
+      "attackers_goals": "Establish persistence and/or elevate privileges by injecting malicious content triggered by AppInit DLLs loaded into processes.",
+      "investigative_actions": "Investigate the path of the modified value. Investigate the causality actor process which initiated the activity."
+    },
+    {
+      "name": "A rare file path was added to the AppInit_DLLs registry valuewith a commonly abused path",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Persistence (TA0003)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Event Triggered Execution (T1546)"
+      ],
+      "description": "A rare file path was added to AppInit_DLLs registry value.",
+      "attackers_goals": "Establish persistence and/or elevate privileges by injecting malicious content triggered by AppInit DLLs loaded into processes.",
+      "investigative_actions": "Investigate the path of the modified value. Investigate the causality actor process which initiated the activity."
+    }
+  ]
+}

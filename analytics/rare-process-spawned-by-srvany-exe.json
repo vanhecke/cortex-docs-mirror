@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "System Services: Service Execution (T1569.002)"
+  ],
+  "attackers_goals": "Execute malware on the host in a manner that doesn't leave event logs within the system.",
+  "deduplication_period": "1 Hour",
+  "description": "Unusual process spawned by srvany.exe, which allows applications to run as services with system privileges, this might be an indication of malicious local or remote code execution.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Validate if the binary that srvany.exe executed is malicious. Track down the source of the srvany.exe binary and the executed process. Validate if this is a legitimate software installed by IT.",
+  "name": "Rare process spawned by srvany.exe",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

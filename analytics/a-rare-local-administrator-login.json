@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "The attacker attempts to change sensitive settings on the host.",
+  "deduplication_period": "1 Day",
+  "description": "A rare local administrator login was observed. This may indicate an attempt to change sensitive settings on the host.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check for any other suspicious activity related to the host and the user involved in the alert.",
+  "name": "A rare local administrator login",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious local administrator login",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A rare local administrator login was observed. This may indicate an attempt to change sensitive settings on the host.",
+      "attackers_goals": "The attacker attempts to change sensitive settings on the host.",
+      "investigative_actions": "Check for any other suspicious activity related to the host and the user involved in the alert."
+    }
+  ]
+}

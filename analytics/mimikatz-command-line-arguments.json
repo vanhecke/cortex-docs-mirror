@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "OS Credential Dumping (T1003)"
+  ],
+  "attackers_goals": "An attacker is attempting to use Mimikatz, a known credential theft tool, to dump and harvest credentials.",
+  "deduplication_period": "1 Day",
+  "description": "These command-line arguments are often used by Mimikatz to dump and harvest credentials.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the executed process to verify if it is malicious. Investigate the command line purpose.",
+  "name": "Mimikatz command-line arguments",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "High",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

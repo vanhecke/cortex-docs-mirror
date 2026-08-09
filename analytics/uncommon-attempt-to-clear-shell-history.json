@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Indicator Removal (T1070)"
+  ],
+  "attackers_goals": "Attackers may clear or modify shell history files to remove traces of their activities.",
+  "deduplication_period": "1 Day",
+  "description": "An attempt to clear or manipulate shell history files was detected.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the user and process that executed the command. Examine other related activities on the host to understand the context of this action.",
+  "name": "Uncommon attempt to clear shell history",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Globally uncommon attempt to clear shell history",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Indicator Removal (T1070)"
+      ],
+      "description": "An attempt to clear or manipulate shell history files was detected.",
+      "attackers_goals": "Attackers may clear or modify shell history files to remove traces of their activities.",
+      "investigative_actions": "Investigate the user and process that executed the command. Examine other related activities on the host to understand the context of this action."
+    }
+  ]
+}

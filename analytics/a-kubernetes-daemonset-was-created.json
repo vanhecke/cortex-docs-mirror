@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Deploy Container (T1610)"
+  ],
+  "attackers_goals": "Deploy a container into an environment to facilitate execution.",
+  "deduplication_period": "5 Days",
+  "description": "A Kubernetes DaemonSet was created.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Kubernetes - API",
+  "investigative_actions": "Check which changes were made to the Kubernetes DaemonSet.",
+  "name": "A Kubernetes DaemonSet was created",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log",
+    "Kubernetes Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

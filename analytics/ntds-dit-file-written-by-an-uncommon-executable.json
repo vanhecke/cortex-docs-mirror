@@ -1,0 +1,66 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "OS Credential Dumping (T1003)",
+    "OS Credential Dumping: NTDS (T1003.003)"
+  ],
+  "attackers_goals": "Dump the sensitive contents of the database to masquerade as legitimate domain users.",
+  "deduplication_period": "1 Day",
+  "description": "The Active Directory database file was written by an uncommon process to a non-default location.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the nature of the process writing the sensitive file. Is it a standard backup procedure? Check the path the file was written to. Is it local? Are there other relevant artifacts in this location?",
+  "name": "NTDS.dit file written by an uncommon executable",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "NTDS.dit file written by a remote actor",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping (T1003)",
+        "OS Credential Dumping: NTDS (T1003.003)"
+      ],
+      "description": "The Active Directory database file was written to the disk by a remote actor.",
+      "attackers_goals": "Dump the sensitive contents of the database to masquerade as legitimate domain users.",
+      "investigative_actions": "Investigate the nature of the process writing the sensitive file. Is it a standard backup procedure? Check the path the file was written to. Is it local? Are there other relevant artifacts in this location?"
+    },
+    {
+      "name": "NTDS.dit file written by a rare executable to a suspicious path",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping (T1003)",
+        "OS Credential Dumping: NTDS (T1003.003)"
+      ],
+      "description": "The Active Directory database file was written by a rare process to a suspicious path.",
+      "attackers_goals": "Dump the sensitive contents of the database to masquerade as legitimate domain users.",
+      "investigative_actions": "Investigate the nature of the process writing the sensitive file. Is it a standard backup procedure? Check the path the file was written to. Is it local? Are there other relevant artifacts in this location?"
+    },
+    {
+      "name": "NTDS.dit file written by a rare executable",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping (T1003)",
+        "OS Credential Dumping: NTDS (T1003.003)"
+      ],
+      "description": "The Active Directory database file was written by a rare process to a non-default location.",
+      "attackers_goals": "Dump the sensitive contents of the database to masquerade as legitimate domain users.",
+      "investigative_actions": "Investigate the nature of the process writing the sensitive file. Is it a standard backup procedure? Check the path the file was written to. Is it local? Are there other relevant artifacts in this location?"
+    }
+  ]
+}

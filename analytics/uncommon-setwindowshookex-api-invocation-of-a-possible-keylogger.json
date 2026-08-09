@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Input Capture: Keylogging (T1056.001)"
+  ],
+  "attackers_goals": "Attackers can monitor keyboard events as another way for credential gathering or to collect more user data over time for espionage purposes.",
+  "deduplication_period": "1 Day",
+  "description": "A process installed a Windows desktop hook by calling the SetWindowsHookEx API function with an unpopular module. This behavior is commonly seen in keyloggers.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the process has a user interface (a visible window). Check if the process has an option to set or modify keyboard hot-keys. Check if the process is part of a remote control tool. Check if the process is a known user application that was updated recently. Check if the process is built with AutoHotkey and is known to the user.* If the process is a scripting engine or a hosting executable, check the actor process command line. Investigate the endpoint if the process writes files to disk.",
+  "name": "Uncommon SetWindowsHookEx API invocation of a possible keylogger",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

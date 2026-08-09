@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "Brute Force (T1110)"
+  ],
+  "attackers_goals": "The attacker is attempting to gain an initial foothold in the domain using a list of valid users and a guessed password.",
+  "deduplication_period": "1 Hour",
+  "description": "The endpoint failed an unusual number of Kerberos pre-authentications (TGT requests) from at least three users when compared to its baseline. This can indicate a password-spraying attack.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Verify whether the host that generated the alert is normally used by many users (for example, a terminal server). Verify any later authentication success for the user accounts referenced by the alert, as these can indicate the attacker managed to guess the credentials.",
+  "name": "Kerberos Pre-Auth Failures by Host",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "10 Minutes",
+  "variations": []
+}

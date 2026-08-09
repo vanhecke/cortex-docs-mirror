@@ -1,0 +1,222 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol (T1071)",
+    "Non-Standard Port (T1571)"
+  ],
+  "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+  "deduplication_period": "1 Day",
+  "description": "An uncommon SSH session was established.",
+  "detection_modules": "",
+  "detector_tags": "NDR Lateral Movement Analytics",
+  "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance.",
+  "name": "Uncommon SSH session was established",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent",
+    "Third-Party Firewalls"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "An Uncommon SSH session was established using a rare server HASSH for the ssh server",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "An Uncommon SSH session was established using a rare server HASSH for the ssh server.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance."
+    },
+    {
+      "name": "An Uncommon SSH session was established using a rare client HASSH for the agent",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "An uncommon SSH session was established using a rare client HASSH for the agent.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance."
+    },
+    {
+      "name": "An Uncommon SSH session was established using a rare request banner for the agent",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "An Uncommon SSH session was established using a rare request banner for the agent.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance."
+    },
+    {
+      "name": "An Uncommon SSH session was established using a rare Response banner for the ssh server",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "An Uncommon SSH session was established using a rare Response banner for the ssh server.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance."
+    },
+    {
+      "name": "An Uncommon SSH session was established using a rare Response banner",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "An Uncommon SSH session was established using a rare Response banner.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance."
+    },
+    {
+      "name": "An Uncommon SSH session was established using a rare request banner",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "An Uncommon SSH session was established using a rare request banner.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance."
+    },
+    {
+      "name": "An Uncommon SSH session was established using a rare Client HASSH",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "An uncommon SSH session was established using a rare client HASSH.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance."
+    },
+    {
+      "name": "An Uncommon SSH session was established using a rare Server HASSH",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "An Uncommon SSH session was established using a rare Server HASSH.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance."
+    },
+    {
+      "name": "A suspicious SSH session was established",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "A suspicious SSH session was established to a globally rare external IP using a nonstandard SSH port.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance."
+    },
+    {
+      "name": "An Uncommon SSH session was established to a rare IP address",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "An uncommon SSH session was established to a rare remote IP address.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance."
+    },
+    {
+      "name": "An Uncommon SSH session was established using a nonstandard SSH port",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "An uncommon SSH session was established with a destination port using a nonstandard SSH port.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance."
+    },
+    {
+      "name": "Uncommon SSH session was established to a rare internal IP",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "An uncommon SSH session was established to a rare internal IP.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance."
+    },
+    {
+      "name": "Uncommon SSH session was established that involved a higher than usual volume",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "Uncommon SSH session was established that involved a higher than usual volume.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance."
+    },
+    {
+      "name": "Uncommon SSH session was established to an internal IP",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Non-Standard Port (T1571)"
+      ],
+      "description": "An uncommon SSH session was established to an internal IP.",
+      "attackers_goals": "Attackers may use SSH or any similar utility to create a network tunnel to allow an attacker to covertly connect to an internal host.",
+      "investigative_actions": "Review the external IP/domain using known intelligence tools. Investigate the causality of the process and its user ID to find uncommon behaviors. Search for processes or files that were created by this SSH instance."
+    }
+  ]
+}

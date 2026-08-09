@@ -1,0 +1,56 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Use Alternate Authentication Material (T1550)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Gain unauthorized access to high-privilege accounts by abusing certificate-based authentication mechanisms.",
+  "deduplication_period": "1 Day",
+  "description": "A Kerberos TGT was requested using PKINIT. This may indicate an attack on Active Directory Certificate Services (AD CS), such as shadow credential exploitation or certificate-based authentication abuse.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Active Directory Certificate Services Analytics",
+  "investigative_actions": "Verify if Windows Hello for Business (WHfB) is deployed and actively used in the environment, as it may explain the PKINIT activity. Inspect the Key Credentials attribute of the target account for recent modifications. Review associated service tickets or lateral movement activities tied to the target account. Investigate unusual certificate issuance or PKI activities.",
+  "name": "PKINIT TGT authentication request",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious PKINIT TGT authentication request",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Use Alternate Authentication Material (T1550)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A Kerberos TGT was requested using PKINIT. This may indicate an attack on Active Directory Certificate Services (AD CS), such as shadow credential exploitation or certificate-based authentication abuse.",
+      "attackers_goals": "Gain unauthorized access to high-privilege accounts by abusing certificate-based authentication mechanisms.",
+      "investigative_actions": "Verify if Windows Hello for Business (WHfB) is deployed and actively used in the environment, as it may explain the PKINIT activity. Inspect the Key Credentials attribute of the target account for recent modifications. Review associated service tickets or lateral movement activities tied to the target account. Investigate unusual certificate issuance or PKI activities."
+    },
+    {
+      "name": "Abnormal PKINIT TGT authentication request",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)",
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Use Alternate Authentication Material (T1550)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A Kerberos TGT was requested using PKINIT. This may indicate an attack on Active Directory Certificate Services (AD CS), such as shadow credential exploitation or certificate-based authentication abuse.",
+      "attackers_goals": "Gain unauthorized access to high-privilege accounts by abusing certificate-based authentication mechanisms.",
+      "investigative_actions": "Verify if Windows Hello for Business (WHfB) is deployed and actively used in the environment, as it may explain the PKINIT activity. Inspect the Key Credentials attribute of the target account for recent modifications. Review associated service tickets or lateral movement activities tied to the target account. Investigate unusual certificate issuance or PKI activities."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Hide Artifacts: Hidden Files and Directories (T1564.001)"
+  ],
+  "attackers_goals": "Attackers may attempt to transfer tools or other files to a compromised host.",
+  "deduplication_period": "1 Day",
+  "description": "An unpopular rsync process was executed on the host.",
+  "detection_modules": "",
+  "detector_tags": "Kubernetes - AGENT, Containers",
+  "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands.",
+  "name": "Unpopular rsync process execution",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unpopular rsync process execution in a Kubernetes Pod",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hide Artifacts: Hidden Files and Directories (T1564.001)"
+      ],
+      "description": "An unpopular rsync process was executed on the host.",
+      "attackers_goals": "Attackers may attempt to transfer tools or other files to a compromised host.",
+      "investigative_actions": "Verify that this isn't IT activity. Look for other hosts executing similar commands."
+    }
+  ]
+}

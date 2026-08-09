@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Hide Artifacts: File/Path Exclusions (T1564.012)",
+    "Impair Defenses: Disable or Modify Tools (T1562.001)"
+  ],
+  "attackers_goals": "Gain code execution on the host and evade security controls.",
+  "deduplication_period": "1 Hour",
+  "description": "Windows Defender keeps the exclusion list in the registry, and any addition to it will cause it to ignore a process, path or file extension.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the excluded object type (process, path or extension) and nature. Check if the excluded object is malicious.",
+  "name": "New addition to Windows Defender exclusion list",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "New addition to Windows Defender exclusion list from an unsigned process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Hide Artifacts: File/Path Exclusions (T1564.012)",
+        "Impair Defenses: Disable or Modify Tools (T1562.001)"
+      ],
+      "description": "Windows Defender keeps the exclusion list in the registry, and any addition to it will cause it to ignore a process, path or file extension.",
+      "attackers_goals": "Gain code execution on the host and evade security controls.",
+      "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow. Check the excluded object type (process, path or extension) and nature. Check if the excluded object is malicious."
+    }
+  ]
+}

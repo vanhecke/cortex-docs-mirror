@@ -1,0 +1,50 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "Exfiltrate data to a foreign account.",
+  "deduplication_period": "1 Day",
+  "description": "A cloud storage object was copied or moved to a foreign cloud storage account. The destination account was either not monitored or not seen within your tenant for the last 30 days.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Exfiltration, Cloud Data Asset Configuration, Data Detection & Response",
+  "investigative_actions": "Check the legitimacy of the copy operation. Review further actions performed by the identity.",
+  "name": "A cloud storage object was copied to a foreign cloud account",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A cloud storage object from a sensitive bucket was copied to a foreign cloud account from a production account",
+      "severity": "High",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "A cloud storage object was copied or moved to a foreign cloud storage account from a production account. The destination account was either not monitored or not seen within your tenant for the last 30 days.",
+      "attackers_goals": "Exfiltrate data to a foreign account.",
+      "investigative_actions": "Check the legitimacy of the copy operation. Review further actions performed by the identity."
+    },
+    {
+      "name": "A cloud storage object was copied to a foreign cloud account from a production account",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "A cloud storage object was copied or moved to a foreign cloud storage account from a production account. The destination account was either not monitored or not seen within your tenant for the last 30 days.",
+      "attackers_goals": "Exfiltrate data to a foreign account.",
+      "investigative_actions": "Check the legitimacy of the copy operation. Review further actions performed by the identity."
+    }
+  ]
+}

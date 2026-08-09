@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Obfuscated Files or Information (T1027)"
+  ],
+  "attackers_goals": "Hide its action and avoid detection.",
+  "deduplication_period": "6 Hours",
+  "description": "A process was executed with a command line obfuscated by Unicode character substitution.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the executing process is benign and if this was a desired behavior as part of its normal execution flow.",
+  "name": "A process was executed with a command line obfuscated by Unicode character substitution",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

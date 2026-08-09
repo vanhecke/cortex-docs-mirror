@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "To do.",
+  "deduplication_period": "2 Days",
+  "description": "A Google Workspace identity performed an admin console activity for the first time.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the changes that were made look suspicious. Follow further actions done by the account.",
+  "name": "A Google Workspace identity performed an unusual admin console activity",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A non-administrative Google Workspace identity performed an unusual admin console activity",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A Google Workspace identity performed an admin console activity for the first time.",
+      "attackers_goals": "To do.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the changes that were made look suspicious. Follow further actions done by the account."
+    }
+  ]
+}

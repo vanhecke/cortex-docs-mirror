@@ -1,0 +1,44 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Account Discovery (T1087)",
+    "Permission Groups Discovery: Domain Groups (T1069.002)",
+    "Domain Trust Discovery (T1482)",
+    "Remote System Discovery (T1018)",
+    "System Network Configuration Discovery (T1016)"
+  ],
+  "attackers_goals": "An adversary may utilize the LDAP protocol to gain information on the Active Directory environment and plan its lateral movement over the network.",
+  "deduplication_period": "1 Day",
+  "description": "A user executed multiple LDAP enumeration queries.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "LDAP Analytics (Server)",
+  "investigative_actions": "Where possible, check the legitimacy of the process that executed these LDAP queries. Investigate the LDAP search query for any suspicious indicators. Determine whether the search query is generic, those search queries (often using wildcards) tend to be more suspicious.",
+  "name": "A user executed multiple LDAP enumeration queries",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "10 Minutes",
+  "variations": [
+    {
+      "name": "A user executed suspicious LDAP enumeration queries",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Account Discovery (T1087)",
+        "Permission Groups Discovery: Domain Groups (T1069.002)",
+        "Domain Trust Discovery (T1482)",
+        "Remote System Discovery (T1018)",
+        "System Network Configuration Discovery (T1016)"
+      ],
+      "description": "A user executed multiple LDAP enumeration queries.",
+      "attackers_goals": "An adversary may utilize the LDAP protocol to gain information on the Active Directory environment and plan its lateral movement over the network.",
+      "investigative_actions": "Where possible, check the legitimacy of the process that executed these LDAP queries. Investigate the LDAP search query for any suspicious indicators. Determine whether the search query is generic, those search queries (often using wildcards) tend to be more suspicious."
+    }
+  ]
+}

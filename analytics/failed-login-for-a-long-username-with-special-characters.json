@@ -1,0 +1,23 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Exploit Public-Facing Application (T1190)"
+  ],
+  "attackers_goals": "An attacker is trying to get code execution on internet-facing assets through command injection.",
+  "deduplication_period": "1 Day",
+  "description": "A long username containing special characters failed to log in to the domain.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check the host and/or user triggering these failed attempts: Is the host running internet-facing services? Are we looking at sanction vulnerability scanning?",
+  "name": "Failed Login For a Long Username With Special Characters",
+  "required_data": [
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

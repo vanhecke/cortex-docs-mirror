@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)",
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Account Manipulation (T1098)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "An attacker may attempt to gain domain administrator privileges.",
+  "deduplication_period": "1 Day",
+  "description": "A computer account was promoted to a domain controller via a User Account Control (UAC) change.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Verify if the domain controller promotion is expected. Check if the computer account is a new account. Confirm this action with the user who performed the change. Follow actions by the account and if it performed a DCSync.",
+  "name": "A computer account was promoted to DC",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

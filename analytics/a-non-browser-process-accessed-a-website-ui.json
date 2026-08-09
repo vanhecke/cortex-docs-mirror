@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Web Service (T1102)"
+  ],
+  "attackers_goals": "Data exfiltration or attack tool staging.",
+  "deduplication_period": "1 Day",
+  "description": "An uncommon network communication between a non-browser process and a website UI.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Examine the host to verify that the host was not part of infiltration or data exfiltration from the organization. Verify that the host doesn't have sensitive company data that can be easily exfiltrated.",
+  "name": "A non-browser process accessed a website UI",
+  "required_data": [
+    "Palo Alto Networks Url Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious content upload to a known text share website by Non browser process",
+      "severity": "High",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Web Service (T1102)"
+      ],
+      "description": "Uncommon data upload to a known text share website through a Non-browser process.",
+      "attackers_goals": "Data exfiltration or attack tool staging.",
+      "investigative_actions": "Examine the host to verify that the host was not part of infiltration or data exfiltration from the organization. Verify that the host doesn't have sensitive company data that can be easily exfiltrated."
+    },
+    {
+      "name": "Uncommon data upload to a website through a Non-browser process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Web Service (T1102)"
+      ],
+      "description": "Uncommon data upload to a website through a Non browser process.",
+      "attackers_goals": "Data exfiltration or attack tool staging.",
+      "investigative_actions": "Examine the host to verify that the host was not part of infiltration or data exfiltration from the organization. Verify that the host doesn't have sensitive company data that can be easily exfiltrated."
+    },
+    {
+      "name": "Uncommon data download from a known text share website through a Non-browser process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Web Service (T1102)"
+      ],
+      "description": "Uncommon content download from a known text share website through a Non browser process.",
+      "attackers_goals": "Data exfiltration or attack tool staging.",
+      "investigative_actions": "Examine the host to verify that the host was not part of infiltration or data exfiltration from the organization. Verify that the host doesn't have sensitive company data that can be easily exfiltrated."
+    }
+  ]
+}

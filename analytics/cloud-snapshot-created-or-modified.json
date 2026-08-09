@@ -1,0 +1,80 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)",
+    "Defense Evasion (TA0005)",
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)",
+    "Modify Cloud Compute Infrastructure (T1578)",
+    "Data from Cloud Storage (T1530)"
+  ],
+  "attackers_goals": "Exfiltrate sensitive data that resides on the snapshot.",
+  "deduplication_period": "1 Day",
+  "description": "A cloud identity has created or modified a cloud snapshot.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Disaster Recovery Risks, Cloud Data Asset Configuration, Data Detection & Response",
+  "investigative_actions": "Check if the identity intended to create or modify the snapshot. Check if the identity performed additional malicious operations within the cloud environment.",
+  "name": "Cloud snapshot created or modified",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Cloud snapshot was configured for public access",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)",
+        "Defense Evasion (TA0005)",
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)",
+        "Modify Cloud Compute Infrastructure (T1578)",
+        "Data from Cloud Storage (T1530)"
+      ],
+      "description": "A cloud identity has created or modified a cloud snapshot.",
+      "attackers_goals": "Exfiltrate sensitive data that resides on the snapshot.",
+      "investigative_actions": "Check if the identity intended to create or modify the snapshot. Check if the identity performed additional malicious operations within the cloud environment."
+    },
+    {
+      "name": "Cloud snapshot was shared with an unusual AWS account(s)",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)",
+        "Defense Evasion (TA0005)",
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)",
+        "Modify Cloud Compute Infrastructure (T1578)",
+        "Data from Cloud Storage (T1530)"
+      ],
+      "description": "A cloud identity has created or modified a cloud snapshot.",
+      "attackers_goals": "Exfiltrate sensitive data that resides on the snapshot.",
+      "investigative_actions": "Check if the identity intended to create or modify the snapshot. Check if the identity performed additional malicious operations within the cloud environment. Check which AWS accounts the snapshot was shared with."
+    },
+    {
+      "name": "Previously unseen GCP principal was bound to cloud snapshot",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)",
+        "Defense Evasion (TA0005)",
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)",
+        "Modify Cloud Compute Infrastructure (T1578)",
+        "Data from Cloud Storage (T1530)"
+      ],
+      "description": "A cloud identity has created or modified a cloud snapshot.",
+      "attackers_goals": "Exfiltrate sensitive data that resides on the snapshot.",
+      "investigative_actions": "Check if the identity intended to create or modify the snapshot. Check if the identity performed additional malicious operations within the cloud environment. Restrict permissions from suspicious GCP Principal."
+    }
+  ]
+}

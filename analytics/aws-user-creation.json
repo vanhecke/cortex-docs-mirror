@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Create Account: Cloud Account (T1136.003)"
+  ],
+  "attackers_goals": "Maintaining persistence by creating backdoor users or malicious resources, ensuring ongoing access even if their initial entry is detected.",
+  "deduplication_period": "1 Day",
+  "description": "A new AWS user was created.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check which user was created. Investigate the created user role and permissions. Verify the user who created the new identity is aware of this action. Be aware of any suspicious activity originating from the new user.",
+  "name": "AWS user creation",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

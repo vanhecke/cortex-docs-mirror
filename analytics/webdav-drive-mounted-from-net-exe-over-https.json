@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Exfiltration Over Alternative Protocol (T1048)"
+  ],
+  "attackers_goals": "Attackers might use WebDAV as a C&C or exfiltration channel to evade detection and firewall rules.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers may mount a WebDAV drive over HTTPS to upload files to and download files from a compromised machine.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the initiator process is benign or normal for the host and/or user performing it. Check whether additional malicious commands were executed from the same process.",
+  "name": "WebDAV drive mounted from net.exe over HTTPS",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

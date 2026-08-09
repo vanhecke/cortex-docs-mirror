@@ -1,0 +1,51 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Modify Cloud Compute Infrastructure: Create Cloud Instance (T1578.002)"
+  ],
+  "attackers_goals": "Create a new cloud instance to evade detection or leverage it for further malicious activity.",
+  "deduplication_period": "5 Days",
+  "description": "An attempt was made to create a cloud compute instance.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Review recent activity related to the identity and the created cloud instance.",
+  "name": "Cloud instance creation attempt",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "EC2 instance creation with admin profile, public IP address and external security group",
+      "severity": "High",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Modify Cloud Compute Infrastructure: Create Cloud Instance (T1578.002)"
+      ],
+      "description": "An attempt was made to create a cloud compute instance.",
+      "attackers_goals": "Create a new cloud instance to evade detection or leverage it for further malicious activity.",
+      "investigative_actions": "Review recent activity related to the identity and the created cloud instance."
+    },
+    {
+      "name": "EC2 instance creation with admin profile and public IP address",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Evasion (TA0005)"
+      ],
+      "attack_techniques": [
+        "Modify Cloud Compute Infrastructure: Create Cloud Instance (T1578.002)"
+      ],
+      "description": "An attempt was made to create a cloud compute instance.",
+      "attackers_goals": "Create a new cloud instance to evade detection or leverage it for further malicious activity.",
+      "investigative_actions": "Review recent activity related to the identity and the created cloud instance."
+    }
+  ]
+}

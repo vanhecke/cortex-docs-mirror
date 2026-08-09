@@ -1,0 +1,38 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Inhibit System Recovery (T1490)"
+  ],
+  "attackers_goals": "Impair built-in protection of the cloud environment. This action may be a preliminary action before deleting the cloud resource itself.",
+  "deduplication_period": "1 Day",
+  "description": "Automatic backup of a cloud storage resource was disabled.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Data Asset Disaster Recovery Risks, Cloud Data Asset Protection Tampering, Data Detection & Response",
+  "investigative_actions": "Confirm that the identity intended to disable automatic backup on this resource. Follow further actions done by the identity. Monitor this resource for other suspicious activities.",
+  "name": "Cloud storage automatic backup disabled",
+  "required_data": [
+    "AWS Audit Log",
+    "Azure Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Cloud storage automatic backup disabled from a CLI",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Inhibit System Recovery (T1490)"
+      ],
+      "description": "Automatic backup of a cloud storage resource was disabled from a CLI.",
+      "attackers_goals": "Impair built-in protection of the cloud environment. This action may be a preliminary action before deleting the cloud resource itself.",
+      "investigative_actions": "Confirm that the identity intended to disable automatic backup on this resource. Follow further actions done by the identity. Monitor this resource for other suspicious activities."
+    }
+  ]
+}

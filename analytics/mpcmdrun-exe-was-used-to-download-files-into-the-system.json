@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Ingress Tool Transfer (T1105)"
+  ],
+  "attackers_goals": "Download malicious tools onto the host for more activities.",
+  "deduplication_period": "1 Day",
+  "description": "Attackers might be using legitimate Windows Defender executables to download malicious code onto the system.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check if the downloaded file is malicious. Verify if the process executing the command is malicious. Check for more suspicious actions done by the user and process.",
+  "name": "MpCmdRun.exe was used to download files into the system",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

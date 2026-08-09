@@ -1,0 +1,62 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Transfer Data to Cloud Account (T1537)"
+  ],
+  "attackers_goals": "Adversaries may exfiltrate data, such as sensitive documents.",
+  "deduplication_period": "5 Days",
+  "description": "An identity has modified Google Drive sharing settings and allowed external sharing.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Google Workspace",
+  "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). check the new setting details. Follow further actions done by the account.",
+  "name": "External Sharing was turned on for Google Drive",
+  "required_data": [
+    "Google Workspace Audit Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "External Sharing was turned on for Google Drive by a non Google Workspace administrative user from an unusual ASN",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "An identity has modified Google Drive sharing settings and allowed external sharing.",
+      "attackers_goals": "Adversaries may exfiltrate data, such as sensitive documents.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). check the new setting details. Follow further actions done by the account."
+    },
+    {
+      "name": "External Sharing was turned on for Google Drive by a non Google Workspace administrative user",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "An identity has modified Google Drive sharing settings and allowed external sharing.",
+      "attackers_goals": "Adversaries may exfiltrate data, such as sensitive documents.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). check the new setting details. Follow further actions done by the account."
+    },
+    {
+      "name": "External Sharing was turned on for Google Drive from an unusual ASN",
+      "severity": "Low",
+      "attack_tactics": [
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Transfer Data to Cloud Account (T1537)"
+      ],
+      "description": "An identity has modified Google Drive sharing settings and allowed external sharing.",
+      "attackers_goals": "Adversaries may exfiltrate data, such as sensitive documents.",
+      "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). check the new setting details. Follow further actions done by the account."
+    }
+  ]
+}

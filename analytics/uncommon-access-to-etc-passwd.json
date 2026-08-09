@@ -1,0 +1,251 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)",
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "File and Directory Discovery (T1083)",
+    "System Service Discovery (T1007)",
+    "System Owner/User Discovery (T1033)",
+    "System Information Discovery (T1082)",
+    "Account Discovery (T1087)",
+    "Account Discovery: Local Account (T1087.001)",
+    "OS Credential Dumping (T1003)"
+  ],
+  "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+  "deduplication_period": "1 Day",
+  "description": "A process made an uncommon attempt to access /etc/passwd.",
+  "detection_modules": "",
+  "detector_tags": "EDR Discovery Analytics, Credentials Grabbing Analytics",
+  "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process.",
+  "name": "Uncommon access to /etc/passwd",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon access to /etc/passwd by a security testing tool",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "System Service Discovery (T1007)",
+        "System Owner/User Discovery (T1033)",
+        "System Information Discovery (T1082)",
+        "Account Discovery (T1087)",
+        "Account Discovery: Local Account (T1087.001)",
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "A process made an uncommon attempt to access /etc/passwd.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    },
+    {
+      "name": "Uncommon access to /etc/passwd by a potentially known credential dumper or enumeration script",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "System Service Discovery (T1007)",
+        "System Owner/User Discovery (T1033)",
+        "System Information Discovery (T1082)",
+        "Account Discovery (T1087)",
+        "Account Discovery: Local Account (T1087.001)",
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "A process made an uncommon attempt to access /etc/passwd.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    },
+    {
+      "name": "Uncommon access to /etc/passwd by a potential Webshell",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "System Service Discovery (T1007)",
+        "System Owner/User Discovery (T1033)",
+        "System Information Discovery (T1082)",
+        "Account Discovery (T1087)",
+        "Account Discovery: Local Account (T1087.001)",
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "A process made an uncommon attempt to access /etc/passwd.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    },
+    {
+      "name": "Uncommon link creation to /etc/passwd",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "System Service Discovery (T1007)",
+        "System Owner/User Discovery (T1033)",
+        "System Information Discovery (T1082)",
+        "Account Discovery (T1087)",
+        "Account Discovery: Local Account (T1087.001)",
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "A process made an uncommon attempt to access /etc/passwd.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    },
+    {
+      "name": "Uncommon access to /etc/passwd with both /etc/passwd and /etc/shadow in the command line",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "System Service Discovery (T1007)",
+        "System Owner/User Discovery (T1033)",
+        "System Information Discovery (T1082)",
+        "Account Discovery (T1087)",
+        "Account Discovery: Local Account (T1087.001)",
+        "OS Credential Dumping (T1003)",
+        "OS Credential Dumping: /etc/passwd and /etc/shadow (T1003.008)"
+      ],
+      "description": "A process made an uncommon attempt to access /etc/passwd.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    },
+    {
+      "name": "Uncommon access to /etc/passwd, involving a network utility",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "System Service Discovery (T1007)",
+        "System Owner/User Discovery (T1033)",
+        "System Information Discovery (T1082)",
+        "Account Discovery (T1087)",
+        "Account Discovery: Local Account (T1087.001)",
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "A process made an uncommon attempt to access /etc/passwd.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    },
+    {
+      "name": "Uncommon access to /etc/passwd from temporary or world writable directories",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "System Service Discovery (T1007)",
+        "System Owner/User Discovery (T1033)",
+        "System Information Discovery (T1082)",
+        "Account Discovery (T1087)",
+        "Account Discovery: Local Account (T1087.001)",
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "A process made an uncommon attempt to access /etc/passwd.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    },
+    {
+      "name": "Uncommon access to /etc/passwd with additional sensitive files in the command line",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "System Service Discovery (T1007)",
+        "System Owner/User Discovery (T1033)",
+        "System Information Discovery (T1082)",
+        "Account Discovery (T1087)",
+        "Account Discovery: Local Account (T1087.001)",
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "A process made an uncommon attempt to access /etc/passwd.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    },
+    {
+      "name": "Uncommon access to /etc/passwd via a new inline bash script",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "System Service Discovery (T1007)",
+        "System Owner/User Discovery (T1033)",
+        "System Information Discovery (T1082)",
+        "Account Discovery (T1087)",
+        "Account Discovery: Local Account (T1087.001)",
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "A process made an uncommon attempt to access /etc/passwd.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    },
+    {
+      "name": "Uncommon access to /etc/passwd using an interactive binary",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "System Service Discovery (T1007)",
+        "System Owner/User Discovery (T1033)",
+        "System Information Discovery (T1082)",
+        "Account Discovery (T1087)",
+        "Account Discovery: Local Account (T1087.001)",
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "A process made an uncommon attempt to access /etc/passwd.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    },
+    {
+      "name": "Uncommon access to /etc/passwd using an interactive shell",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "File and Directory Discovery (T1083)",
+        "System Service Discovery (T1007)",
+        "System Owner/User Discovery (T1033)",
+        "System Information Discovery (T1082)",
+        "Account Discovery (T1087)",
+        "Account Discovery: Local Account (T1087.001)",
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "A process made an uncommon attempt to access /etc/passwd.",
+      "attackers_goals": "Attackers may attempt to access sensitive files to steal credentials, perform reconnaissance on system configurations and users, and find pathways for lateral movement.",
+      "investigative_actions": "Review the event's context - examine the process, its command line, and its origin to gain a comprehensive understanding of the anomalous access.* Assess the behavior's legitimacy: Given that this is an uncommon event, determine if this file access is an expected and authorized behavior for the actor process."
+    }
+  ]
+}

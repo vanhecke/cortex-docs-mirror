@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Evasion (TA0005)"
+  ],
+  "attack_techniques": [
+    "Reflective Code Loading (T1620)"
+  ],
+  "attackers_goals": "Adversaries may reflectively load DotNet code into a process to conceal execution of malicious payloads.",
+  "deduplication_period": "1 Day",
+  "description": "A signed process that usually doesn't use DotNet loaded a common DotNet module.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the actor process for potential malicious activity. Check for recently installed services that may load DotNet modules.",
+  "name": "Uncommon DotNet module load relationship",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

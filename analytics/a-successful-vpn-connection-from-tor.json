@@ -1,0 +1,41 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Proxy: Multi-hop Proxy (T1090.003)",
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Gain initial access to organization and hiding itself.",
+  "deduplication_period": "1 Hour",
+  "description": "A successful VPN connection from a TOR exit node.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Block all web traffic to and from public Tor entry and exit nodes. Search for additional logins from the same user around the alert timestamp.",
+  "name": "A Successful VPN connection from TOR",
+  "required_data": [
+    "Palo Alto Networks Global Protect",
+    "Third-Party VPNs"
+  ],
+  "severity": "High",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A Successful VPN connection from TOR via Mobile Device",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Proxy: Multi-hop Proxy (T1090.003)",
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A successful VPN connection from a TOR exit node.",
+      "attackers_goals": "Gain initial access to organization and hiding itself.",
+      "investigative_actions": "Block all web traffic to and from public Tor entry and exit nodes. Search for additional logins from the same user around the alert timestamp."
+    }
+  ]
+}

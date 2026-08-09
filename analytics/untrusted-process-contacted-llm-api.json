@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Resource Development (TA0042)"
+  ],
+  "attack_techniques": [
+    "Obtain Capabilities: Artificial Intelligence (T1588.007)"
+  ],
+  "attackers_goals": "Adversaries may use LLM APIs to create malicious payload dynamically. Each payload will be slightly different making detection more complex.",
+  "deduplication_period": "1 Day",
+  "description": "An untrusted process contacted an LLM API.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the process that contacted the LLM API. Check if this LLM API access is legitimate and expected. Analyze the data potentially sent to the LLM service.",
+  "name": "Untrusted process contacted LLM API",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Untrusted process contacted a rare LLM API",
+      "severity": "Low",
+      "attack_tactics": [
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Obtain Capabilities: Artificial Intelligence (T1588.007)"
+      ],
+      "description": "An untrusted process contacted a rare LLM API.",
+      "attackers_goals": "Adversaries may use LLM APIs to create malicious payload dynamically. Each payload will be slightly different making detection more complex.",
+      "investigative_actions": "Investigate the process that contacted the LLM API. Check if this LLM API access is legitimate and expected. Analyze the data potentially sent to the LLM service."
+    }
+  ]
+}

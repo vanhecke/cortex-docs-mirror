@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Achieve initial access to a company's resources.",
+  "deduplication_period": "1 Day",
+  "description": "A suspicious SSO authentication was made by a user.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "See whether this was a legitimate action. Review the external IP/domain involved in the alert. Contact the user whose account is being accessed and verify that they are actually attempting to log in. Check if the login attempt is coming from an unfamiliar location or device. Look for unusual login patterns, such as login attempts at odd hours. Monitor the user's account for further unusual activity.",
+  "name": "Suspicious SSO authentication",
+  "required_data": [
+    "Okta"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Successful SSO authentication with suspicious characteristics",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A user successfully accessed SSO with some suspicious characteristics that flagged this login attempt as a suspicious login.",
+      "attackers_goals": "Achieve initial access to a company's resources.",
+      "investigative_actions": "See whether this was a legitimate action. Review the external IP/domain involved in the alert. Contact the user whose account is being accessed and verify that they are actually attempting to log in. Check if the login attempt is coming from an unfamiliar location or device. Look for unusual login patterns, such as login attempts at odd hours. Monitor the user's account for further unusual activity."
+    },
+    {
+      "name": "SSO authentication attempt with suspicious characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A user accessed SSO with some suspicious characteristics that flagged this login attempt as a suspicious login.",
+      "attackers_goals": "Achieve initial access to a company's resources.",
+      "investigative_actions": "See whether this was a legitimate action. Review the external IP/domain involved in the alert. Contact the user whose account is being accessed and verify that they are actually attempting to log in. Check if the login attempt is coming from an unfamiliar location or device. Look for unusual login patterns, such as login attempts at odd hours. Monitor the user's account for further unusual activity."
+    }
+  ]
+}

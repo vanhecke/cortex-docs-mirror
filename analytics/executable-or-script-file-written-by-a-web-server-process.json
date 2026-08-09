@@ -1,0 +1,70 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "External Remote Services (T1133)",
+    "Server Software Component: Web Shell (T1505.003)"
+  ],
+  "attackers_goals": "Gain the ability to execute commands on the host and establish persistence.",
+  "deduplication_period": "1 Day",
+  "description": "An uncommon executable or script file was created, written, or renamed by a web server process.",
+  "detection_modules": "",
+  "detector_tags": "Webshell Analytics",
+  "investigative_actions": "Review web server access logs for suspicious requests or uploads. Inspect the dropped file to determine whether it contains malicious content.",
+  "name": "Executable or Script file written by a web server process",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "A driver was written by a web server process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "External Remote Services (T1133)",
+        "Server Software Component: Web Shell (T1505.003)"
+      ],
+      "description": "An uncommon driver file was created, written, or renamed by a web server process.",
+      "attackers_goals": "Gain the ability to execute commands on the host and establish persistence.",
+      "investigative_actions": "Review web server access logs for suspicious requests or uploads. Inspect the dropped file to determine whether it contains malicious content."
+    },
+    {
+      "name": "Executable or Script file written by a web server process in an internet facing server",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "External Remote Services (T1133)",
+        "Server Software Component: Web Shell (T1505.003)"
+      ],
+      "description": "An uncommon executable or script file was created, written, or renamed by a web server process.",
+      "attackers_goals": "Gain the ability to execute commands on the host and establish persistence.",
+      "investigative_actions": "Review web server access logs for suspicious requests or uploads. Inspect the dropped file to determine whether it contains malicious content."
+    },
+    {
+      "name": "Executable or Script file written by a web server process with connections from various sources and high web traffic",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "External Remote Services (T1133)",
+        "Server Software Component: Web Shell (T1505.003)"
+      ],
+      "description": "An uncommon executable or script file was created, written, or renamed by a web server process.",
+      "attackers_goals": "Gain the ability to execute commands on the host and establish persistence.",
+      "investigative_actions": "Review web server access logs for suspicious requests or uploads. Inspect the dropped file to determine whether it contains malicious content."
+    }
+  ]
+}

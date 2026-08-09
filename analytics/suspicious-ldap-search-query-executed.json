@@ -1,0 +1,49 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)"
+  ],
+  "attack_techniques": [
+    "Account Discovery (T1087)"
+  ],
+  "attackers_goals": "An attacker is attempting to enumerate Active Directory.",
+  "deduplication_period": "1 Day",
+  "description": "A suspicious and unpopular LDAP search query was executed. This may be indicative of Active Directory domain enumeration, which may be used during attacks against the organization.",
+  "detection_modules": "",
+  "detector_tags": "LDAP Analytics (Client)",
+  "investigative_actions": "Check if the process executes LDAP search queries as part of its normal behavior. Investigate the LDAP search query for any suspicious indicators. Determine whether the search query is generic. Wide search queries (often using wildcards) tend to be more suspicious. In our case, we are looking for targeted search queries.",
+  "name": "Suspicious LDAP search query executed",
+  "required_data": [
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious LDAP search query executed",
+      "severity": "High",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Account Discovery (T1087)"
+      ],
+      "description": "A suspicious and unpopular LDAP search query was executed. This may be indicative of Active Directory domain enumeration, which may be used during attacks against the organization.",
+      "attackers_goals": "An attacker is attempting to enumerate Active Directory.",
+      "investigative_actions": "Check if the process executes LDAP search queries as part of its normal behavior. Investigate the LDAP search query for any suspicious indicators. Determine whether the search query is generic. Wide search queries (often using wildcards) tend to be more suspicious. In our case, we are looking for targeted search queries."
+    },
+    {
+      "name": "Suspicious LDAP search query executed",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)"
+      ],
+      "attack_techniques": [
+        "Domain Trust Discovery (T1482)"
+      ],
+      "description": "A suspicious and unpopular LDAP search query was executed. This may be indicative of Active Directory domain enumeration, which may be used during attacks against the organization.",
+      "attackers_goals": "An attacker is attempting to enumerate Active Directory.",
+      "investigative_actions": "Check if the process executes LDAP search queries as part of its normal behavior. Investigate the LDAP search query for any suspicious indicators. Determine whether the search query is generic. Wide search queries (often using wildcards) tend to be more suspicious. In our case, we are looking for targeted search queries."
+    }
+  ]
+}

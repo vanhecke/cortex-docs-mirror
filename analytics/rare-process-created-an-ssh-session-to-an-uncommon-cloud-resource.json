@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Application Layer Protocol (T1071)"
+  ],
+  "attackers_goals": "Attackers may use SSH or any similar utility as a Command and Control (C2) channel or to exfiltrate data to a remote host.",
+  "deduplication_period": "1 Day",
+  "description": "A rare process created an SSH session to an uncommon cloud resource.",
+  "detection_modules": "",
+  "detector_tags": "EDR Windows C2 Analytics",
+  "investigative_actions": "Investigate the actor process and its causality. Review the remote cloud asset, is it managed by the organization or a partner? Search for processes or files that were accessed by this SSH instance.",
+  "name": "Rare process created an SSH session to an uncommon cloud resource",
+  "required_data": [
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent",
+    "Third-Party Firewalls"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

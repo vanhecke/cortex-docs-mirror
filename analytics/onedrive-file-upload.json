@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Resource Development (TA0042)"
+  ],
+  "attack_techniques": [
+    "Stage Capabilities (T1608)",
+    "Stage Capabilities: Upload Malware (T1608.001)"
+  ],
+  "attackers_goals": "Establish persistence by uploading files to OneDrive, potentially using it as a staging area for further malicious activities.",
+  "deduplication_period": "5 Days",
+  "description": "A file was uploaded to OneDrive using Microsoft Graph API.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Microsoft Graph Activity Logs",
+  "investigative_actions": "Look for any unusual behavior originated from the suspected identity, and check if they're compromised.",
+  "name": "OneDrive file upload",
+  "required_data": [
+    "Azure Audit Log",
+    "Microsoft Graph Logs"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

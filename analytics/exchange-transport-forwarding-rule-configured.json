@@ -1,0 +1,58 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)",
+    "Exfiltration (TA0010)"
+  ],
+  "attack_techniques": [
+    "Email Collection: Email Forwarding Rule (T1114.003)",
+    "Automated Exfiltration (T1020)",
+    "Email Collection (T1114)"
+  ],
+  "attackers_goals": "Forward all emails in the organization that match specific criteria to an external recipient to collect sensitive information.",
+  "deduplication_period": "1 Day",
+  "description": "A user configured an Exchange transport (mail flow) forwarding rule, which is applied to all emails that match certain conditions in the organization.",
+  "detection_modules": "Identity Threat Module, Email",
+  "detector_tags": "",
+  "investigative_actions": "Check what mailboxes are affected by the transport rule. Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the forwarding domain is an unknown external domain and look up its reputation. Investigate the IP address associated with the rule. Follow further actions done by the account. Check for a possible phishing campaign on the organization. Look for emails sent to this recipient by other users.",
+  "name": "Exchange transport forwarding rule configured",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Exchange transport forwarding rule configured by a delegate user",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Email Collection: Email Forwarding Rule (T1114.003)",
+        "Automated Exfiltration (T1020)",
+        "Email Collection (T1114)"
+      ],
+      "description": "A user configured an Exchange transport (mail flow) forwarding rule, which is applied to all emails that match certain conditions in the organization. The user who set the forwarding is a delegated user, who performed this action on behalf of another user.",
+      "attackers_goals": "Forward all emails in the organization that match specific criteria to an external recipient to collect sensitive information.",
+      "investigative_actions": "Check what mailboxes are affected by the transport rule. Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the forwarding domain is an unknown external domain and look up its reputation. Investigate the IP address associated with the rule. Follow further actions done by the account. Check for a possible phishing campaign on the organization. Look for emails sent to this recipient by other users."
+    },
+    {
+      "name": "Suspicious Exchange transport forwarding rule configured",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Exfiltration (TA0010)"
+      ],
+      "attack_techniques": [
+        "Email Collection: Email Forwarding Rule (T1114.003)",
+        "Automated Exfiltration (T1020)",
+        "Email Collection (T1114)"
+      ],
+      "description": "A user configured an Exchange transport (mail flow) forwarding rule, which is applied to all emails that match certain conditions in the organization.",
+      "attackers_goals": "Forward all emails in the organization that match specific criteria to an external recipient to collect sensitive information.",
+      "investigative_actions": "Check what mailboxes are affected by the transport rule. Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the forwarding domain is an unknown external domain and look up its reputation. Investigate the IP address associated with the rule. Follow further actions done by the account. Check for a possible phishing campaign on the organization. Look for emails sent to this recipient by other users."
+    }
+  ]
+}

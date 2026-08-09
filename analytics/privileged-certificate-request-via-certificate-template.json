@@ -1,0 +1,50 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Domain Accounts (T1078.002)"
+  ],
+  "attackers_goals": "An attacker may attempt to exploit the Active Directory Certificate Services to escalate privileges to a domain controller or privileged account.",
+  "deduplication_period": "1 Day",
+  "description": "A privileged certificate was requested via certificate template.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "Active Directory Certificate Services Analytics",
+  "investigative_actions": "Check if this is a legitimate certificate request. Check if the certificate issued was used to request a Kerberos ticket. Investigate actions done with the issued certificate and its owner. Check for possible NTLM relay alerts.",
+  "name": "Privileged certificate request via certificate template",
+  "required_data": [
+    "Windows Event Collector",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Suspicious privileged certificate request denied via certificate template",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Domain Accounts (T1078.002)"
+      ],
+      "description": "A suspicious privileged certificate request was denied via certificate template.",
+      "attackers_goals": "An attacker may attempt to exploit the Active Directory Certificate Services to escalate privileges to a domain controller or privileged account.",
+      "investigative_actions": "Check if this is a legitimate certificate request. Check if the certificate issued was used to request a Kerberos ticket. Investigate actions done with the issued certificate and its owner. Check for possible NTLM relay alerts."
+    },
+    {
+      "name": "Suspicious privileged certificate request via certificate template",
+      "severity": "Low",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Domain Accounts (T1078.002)"
+      ],
+      "description": "A suspicious privileged certificate was requested via certificate template.",
+      "attackers_goals": "An attacker may attempt to exploit the Active Directory Certificate Services to escalate privileges to a domain controller or privileged account.",
+      "investigative_actions": "Check if this is a legitimate certificate request. Check if the certificate issued was used to request a Kerberos ticket. Investigate actions done with the issued certificate and its owner. Check for possible NTLM relay alerts."
+    }
+  ]
+}

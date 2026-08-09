@@ -1,0 +1,79 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Privilege Escalation (TA0004)",
+    "Defense Evasion (TA0005)",
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Cloud Accounts (T1078.004)",
+    "Abuse Elevation Control Mechanism: Temporary Elevated Cloud Access (T1548.005)",
+    "Trusted Relationship (T1199)"
+  ],
+  "attackers_goals": "Escalate privileges and bypass access controls Avoid detection throughout their compromise.",
+  "deduplication_period": "5 Days",
+  "description": "A cloud identity attempted to impersonate another identity for the first time.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Check the identity's designation. Verify that the identity did not perform any sensitive operation on behalf of the impersonated identity.",
+  "name": "Unusual cloud identity impersonation",
+  "required_data": [
+    "AWS Audit Log",
+    "Gcp Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual cloud identity impersonation of a management role",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Cloud Accounts (T1078.004)",
+        "Abuse Elevation Control Mechanism: Temporary Elevated Cloud Access (T1548.005)",
+        "Trusted Relationship (T1199)"
+      ],
+      "description": "A cloud identity attempted to impersonate a management role for the first time.",
+      "attackers_goals": "Escalate privileges and bypass access controls Avoid detection throughout their compromise.",
+      "investigative_actions": "Check the identity's designation. Verify that the identity did not perform any sensitive operation on behalf of the impersonated identity."
+    },
+    {
+      "name": "Suspicious cloud identity impersonation was succeeded",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Cloud Accounts (T1078.004)",
+        "Abuse Elevation Control Mechanism: Temporary Elevated Cloud Access (T1548.005)",
+        "Trusted Relationship (T1199)"
+      ],
+      "description": "A cloud identity has impersonated another identity for the first time.",
+      "attackers_goals": "Escalate privileges and bypass access controls Avoid detection throughout their compromise.",
+      "investigative_actions": "Check the identity's designation. Verify that the identity did not perform any sensitive operation on behalf of the impersonated identity."
+    },
+    {
+      "name": "Suspicious cloud identity impersonation was failed",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Privilege Escalation (TA0004)",
+        "Defense Evasion (TA0005)",
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Cloud Accounts (T1078.004)",
+        "Abuse Elevation Control Mechanism: Temporary Elevated Cloud Access (T1548.005)",
+        "Trusted Relationship (T1199)"
+      ],
+      "description": "A cloud identity has failed to impersonate another identity.",
+      "attackers_goals": "Escalate privileges and bypass access controls Avoid detection throughout their compromise.",
+      "investigative_actions": "Check the identity's designation. Verify that the identity did not perform any sensitive operation on behalf of the impersonated identity."
+    }
+  ]
+}

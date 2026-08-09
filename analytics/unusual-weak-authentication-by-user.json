@@ -1,0 +1,22 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Lateral Movement (TA0008)"
+  ],
+  "attack_techniques": [
+    "Use Alternate Authentication Material (T1550)"
+  ],
+  "attackers_goals": "The attacker attempts to gain access to the accounts.",
+  "deduplication_period": "1 Day",
+  "description": "A user account authenticated to a host via NTLMv1 or LM authentication for the first time in the past 30 days. This may be indicative of an NTLM downgrade attack A downgrade attack may force the client to authenticate with a weaker hash/protocol (such as NTLMv1 or even LM) instead of NTLMv2.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Audit all login events with a weaker protocol and review any anomalous usage.",
+  "name": "Unusual weak authentication by user",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

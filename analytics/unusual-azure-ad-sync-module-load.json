@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)"
+  ],
+  "attack_techniques": [
+    "OS Credential Dumping (T1003)"
+  ],
+  "attackers_goals": "Attackers can abuse the Azure AD Connect database files to get access to the AD Sync account. The AD Sync account is a highly privileged account that can perform a DCSync and get access to on-premise password hashes.",
+  "deduplication_period": "1 Day",
+  "description": "A process that does not usually load the Azure AD Sync mcrypt.dll loaded the module.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "",
+  "investigative_actions": "See whether this was a legitimate action. Follow process/user/host activities. Follow unusual actions of the AD Sync user. Check for unusual Azure AD authentications. Check for a possible DCSync.",
+  "name": "Unusual Azure AD sync module load",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Unusual Azure AD sync module load by suspicious process",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "OS Credential Dumping (T1003)"
+      ],
+      "description": "A suspicious process that does not usually load the Azure AD Sync mcrypt.dll loaded the module.",
+      "attackers_goals": "Attackers can abuse the Azure AD Connect database files to get access to the AD Sync account. The AD Sync account is a highly privileged account that can perform a DCSync and get access to on-premise password hashes.",
+      "investigative_actions": "See whether this was a legitimate action. Follow process/user/host activities. Follow unusual actions of the AD Sync user. Check for unusual Azure AD authentications. Check for a possible DCSync."
+    }
+  ]
+}
