@@ -1,0 +1,25 @@
+{
+  "date": "2026-07-27",
+  "source": "content",
+  "sha": "9e43323c18f8630d6ea691c8f21d8c329e158962",
+  "headline": "New Vega integration pack added; FortiGate modeling rule crash fixed",
+  "summary_md": "A quiet day: one new pack and one bug fix.\n\n- **Vega** is a new integration pack that ingests alerts and incidents from the Vega platform, with dedicated incident/alert fields for detections, MITRE ATT&CK mapping, verdicts, and an external-IP enrichment playbook.\n- **FortiGate**'s modeling rule crashed when `saddr` held an address-object name with an embedded IP (e.g. `Ransom_140.88.40.4`) instead of a bare IP, raising \"is not a valid IP address\" in `incidr()`. The rule now extracts the embedded IP before evaluating it.",
+  "highlights": [
+    {
+      "title": "New pack: Vega",
+      "detail": "Ingests alerts and incidents from the Vega platform, including MITRE ATT&CK tactics/techniques, verdicts, and a generic external-IP enrichment playbook.",
+      "paths": ["Packs/Vega"]
+    },
+    {
+      "title": "FortiGate modeling rule no longer crashes on address-object saddr values",
+      "detail": "Address-object names containing an embedded IP (e.g. Ransom_140.88.40.4) previously reached incidr() unparsed and threw an error; the IP is now extracted first and still mapped.",
+      "paths": ["Packs/FortiGate"]
+    }
+  ],
+  "items": {
+    "Packs/Vega": "New pack: ingests alerts and incidents from the Vega platform into Cortex XSOAR.",
+    "Packs/FortiGate": "Fixed a modeling rule crash on non-standard IPv4 saddr values (address-object names with an embedded IP)."
+  },
+  "generated_by": "claude-code/claude-sonnet-5",
+  "truncated": false
+}
