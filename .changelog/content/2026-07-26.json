@@ -1,0 +1,47 @@
+{
+  "date": "2026-07-26",
+  "source": "content",
+  "sha": "f57f957107f0d73edf0d096749436735e0a16338",
+  "headline": "ThreatMon adds a Threat Feed pack and CVE commands; Sysdig ships a breaking v2.0.0 rewrite",
+  "summary_md": "A mix of real integration work landed alongside a large `[AUD Isolation] PaloAltoNetworks_IoT` bookkeeping commit that re-added ~82,000 files across virtually every pack in the catalog — that commit is a repository snapshot from an internal isolation/build process, not a day of content change, and is excluded from the detail below.\n\n- **ThreatMon** shipped a new **ThreatMon Threat Feed** pack, and the base ThreatMon integration gained `threatmon_list_cves` and `threatmon_list_subscribed_cves` commands.\n- **Sysdig** cut a breaking **v2.0.0**: the incoming mapper was rewritten for the real Secure V2 webhook payload (the old mapper targeted fields that didn't exist), 34 new incident fields were added, and `execute-response-action` now supports all 24 response action types with per-action validation. Agent ID/Customer ID are no longer supplied by the webhook and must be resolved via a new `sysdig-agent-info-get` command.\n- **GravityZone**'s `gz-endpoint-list` command gained recursive listing across managed companies plus new filters and output fields.\n- **Anthropic Claude** integration added `claude-chat-file-delete` and `claude-project-document-delete` commands.\n- **Doppel** fixed duplicate incident creation in `fetch-incidents` (now paginated and de-duplicated by alert ID) and switched to the API's max page size.\n- **Cybersixgill Actionable Alerts** moved case-details/alert-info URL construction into integration code and appended the organization ID as a query parameter.\n- **Microsoft Entra ID** parsing rule added a `time` field fallback for events missing `TimeGenerated`.\n- **Base** pack bumped Docker images for `GetMLModelEvaluation`, `DBotPredictPhishingWords`, and `GetIndicatorsByQuery`.",
+  "highlights": [
+    {
+      "title": "Sysdig pack v2.0.0 is a breaking change: Agent ID and Customer ID no longer come from the webhook",
+      "detail": "The V2 Secure webhook payload doesn't carry these fields; they're now resolved at playbook time via the new sysdig-agent-info-get command. Custom automations reading them directly from the incident need to run after the enrichment playbook.",
+      "paths": ["Packs/Sysdig"]
+    },
+    {
+      "title": "New pack: ThreatMon Threat Feed",
+      "detail": "A companion feed pack to the existing ThreatMon integration.",
+      "paths": ["Packs/ThreatMonThreatFeed"]
+    },
+    {
+      "title": "ThreatMon integration gains CVE listing commands",
+      "detail": "threatmon_list_cves and threatmon_list_subscribed_cves return paginated CVE data with CVSS v2/v3/v3.1/v4 scores.",
+      "paths": ["Packs/ThreatMon"]
+    },
+    {
+      "title": "GravityZone endpoint listing enhanced",
+      "detail": "gz-endpoint-list now lists recursively across managed companies with additional filters and output fields.",
+      "paths": ["Packs/GravityZone"]
+    },
+    {
+      "title": "Doppel fetch-incidents duplication fix",
+      "detail": "Alerts are now de-duplicated by Doppel alert ID within and across fetch runs, and paginated with a bounded number of pages per run.",
+      "paths": ["Packs/Doppel"]
+    }
+  ],
+  "items": {
+    "Packs/ThreatMon": "Added threatmon_list_cves and threatmon_list_subscribed_cves commands; bumped Docker image.",
+    "Packs/ThreatMonThreatFeed": "New pack: a Threat Feed integration companion to ThreatMon.",
+    "Packs/Sysdig": "Breaking v2.0.0: rewritten V2 webhook mapper, 34 new incident fields, all 24 response action types supported.",
+    "Packs/GravityZone": "gz-endpoint-list gained recursive cross-company listing, filters, and output fields.",
+    "Packs/AnthropicClaude": "Added claude-chat-file-delete and claude-project-document-delete commands.",
+    "Packs/Doppel": "Fixed duplicate incidents from fetch-incidents via alert-ID de-duplication and pagination.",
+    "Packs/Cybersixgill-ActionableAlerts": "Case details and alert URLs are now built in integration code with the org ID as a query parameter.",
+    "Packs/MicrosoftEntraID": "Parsing rule now falls back to the 'time' field when TimeGenerated is missing.",
+    "Packs/Base": "Docker image bumps for GetMLModelEvaluation, DBotPredictPhishingWords, and GetIndicatorsByQuery."
+  },
+  "generated_by": "claude-code/claude-sonnet-5",
+  "truncated": true
+}
