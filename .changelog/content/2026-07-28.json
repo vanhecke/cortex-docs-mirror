@@ -1,0 +1,32 @@
+{
+  "date": "2026-07-28",
+  "source": "content",
+  "sha": "061f38f17a0ebe72623ca5d93ffcbc99a2664ee2",
+  "headline": "PAN-OS polling timeouts made configurable; ServiceNow gains note-formatted attachments",
+  "summary_md": "- **PAN-OS** made the polling timeout/interval configurable on its content-, antivirus-, WildFire-, and GlobalProtect-update download/install commands, replacing a hardcoded 300s timeout / 10s interval with defaults of 3600s / 30s.\n- **ServiceNow v2** added a *Mark attachment as note* parameter and an *Interpret comments in a specific format* parameter (Source, Text, or HTML), plus a Docker image bump.\n- **Microsoft Graph Files (Standard Connector)** was un-deprecated (the `deprecated: true` flag was removed from the integration YAML).\n- A routine auto-generated Docker image update PR bumped images across 22 unrelated packs (AccentureCTI_Feed, MISP, GitHub, Zabbix, and others) — bookkeeping, not functional change.\n- **Core** picked up a release-notes/metadata-only bump (3.5.75 → 3.5.76) from an automated RN sync.",
+  "highlights": [
+    {
+      "title": "PAN-OS polling timeout/interval no longer hardcoded",
+      "detail": "The eight pan-os-*-latest-*-update download/install commands gained timeout_in_seconds (default 3600) and interval_in_seconds (default 30) arguments, replacing a fixed 300s/10s polling loop.",
+      "paths": ["Packs/PAN-OS"]
+    },
+    {
+      "title": "ServiceNow v2 can mark attachments as notes and format comments",
+      "detail": "New mark_attachments_as_note and comment_format (Source/Text/HTML) configuration parameters, so a notes filter can surface both comments and attachments.",
+      "paths": ["Packs/ServiceNow"]
+    },
+    {
+      "title": "Microsoft Graph Files (Standard Connector) un-deprecated",
+      "detail": "The deprecated: true flag was removed from the integration YAML.",
+      "paths": ["Packs/MicrosoftGraphFilesStandardConnector"]
+    }
+  ],
+  "items": {
+    "Packs/PAN-OS": "Made polling timeout/interval configurable on content/antivirus/WildFire/GlobalProtect update commands.",
+    "Packs/ServiceNow": "Added attachment-as-note and comment-format parameters; Docker image bump.",
+    "Packs/MicrosoftGraphFilesStandardConnector": "Un-deprecated; metadata and documentation improvements.",
+    "Packs/Core": "Automated release-notes/metadata-only version bump (3.5.75 to 3.5.76)."
+  },
+  "generated_by": "claude-code/claude-sonnet-5",
+  "truncated": false
+}
