@@ -1,0 +1,45 @@
+{
+  "date": "2026-08-09",
+  "source": "docs",
+  "sha": "b19e78862e9c66d22d0329f1f6b9696bc71f88fe",
+  "headline": "Cribl gains a generic-UUID onboarding workflow; dev tenant now syncs case fields and layouts",
+  "summary_md": "Cortex XSIAM data-source docs got one substantial new workflow and one small feature note; the rest of the day's docs changes were formatting cleanup with no content change.\n\n- **Cribl generic UUID ingestion**: a new step-by-step section explains how to onboard a data source that isn't in Cribl's dedicated UUID catalog — create a pipeline, set `__sourceIdentifier`/`__vendor`/`__product` fields, and route the data to the XSIAM destination.\n- **Dev tenant sync**: \"Case fields and layouts\" joins the list of content types Cortex XSIAM can push/pull with a remote repository.\n- **Syslog Collector applet**: its content-pack/integration links table now scopes itself to integrations \"onboarded prior to July 26, 2026\".\n- Three broker VM applet pages (DSPM Fileshare, Local Agent Settings, Network Mapper) were reformatted into call-out boxes with bolded UI labels — the instructions themselves did not change.\n- The Cribl UUID reference table's cross-links were rewritten from opaque short links to descriptive relative paths pointing at the actual vendor pages.",
+  "highlights": [
+    {
+      "title": "Cribl gains a generic-UUID onboarding workflow",
+      "detail": "New \"Apply XSIAM pack using generic UUID collector\" section walks through creating a dedicated pipeline, setting __sourceIdentifier/__vendor/__product fields, and building a route — for data sources not in Cribl's dedicated UUID catalog.",
+      "paths": ["xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/cribl/ingest-data-from-cribl"]
+    },
+    {
+      "title": "Case fields and layouts now sync via remote repository",
+      "detail": "Added to the list of push/pull-supported content types on the Cortex XSIAM development tenant page.",
+      "paths": ["xsiam/configure-cortex-xsiam/remote-repository-management/cortex-xsiam-development-tenant"]
+    },
+    {
+      "title": "Syslog Collector applet scopes its content-pack links to a cutoff date",
+      "detail": "The integration-links table header now reads \"Links to content pack/integration details (onboarded prior to July 26, 2026)\".",
+      "paths": ["xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/syslog-collector-applet"]
+    },
+    {
+      "title": "Three broker VM applet pages reformatted, not rewritten",
+      "detail": "DSPM Fileshare, Local Agent Settings, and Network Mapper pages now wrap License/Prerequisite notes in call-out boxes and bold UI labels; the instructions themselves are unchanged.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-dspm-fileshare",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-local-agent-settings",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-network-mapper"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/cribl/ingest-data-from-cribl": "Adds a full \"generic UUID collector\" onboarding workflow for data sources outside Cribl's dedicated catalog, plus a relative link fix into the UUID table.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/cribl/ingest-data-from-cribl/data-souce-uuids": "Cross-reference links for each vendor UUID now point at the actual doc pages instead of opaque short links.",
+    "xsiam/configure-cortex-xsiam/remote-repository-management/cortex-xsiam-development-tenant": "\"Case fields and layouts\" added to the list of content push/pull-supported between the dev tenant and a remote repository.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/syslog-collector-applet": "Content pack/integration links table now notes it covers sources onboarded prior to July 26, 2026.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/syslog-collector-applet/ingest-logs-from-a-syslog-receiver": "Vendor-support cross-reference now points at the Syslog Collector applet page instead of an external GitBook link.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-dspm-fileshare": "Reformats the License and Prerequisite sections into call-out boxes and bolds UI labels; no content change.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-local-agent-settings": "Adds a bold \"License\" label inside the existing license call-out; no content change.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-network-mapper": "Wraps the Prerequisite note in a call-out box and bolds UI labels; no content change."
+  },
+  "generated_by": "claude-code/claude-sonnet-5",
+  "truncated": false
+}
