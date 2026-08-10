@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-30",
+  "source": "content",
+  "sha": "a350b85b01d468b41efebdb4e22b45ce7ec4d0f7",
+  "headline": "New Binalyze AIR Extended forensics pack; Reco 1.8.0 migrates to the External API",
+  "summary_md": "- **Binalyze AIR Extended** is a new community-supported pack: 28 `binalyze-air-*` commands covering forensic acquisition, triage rules, cases, tasks, repositories and endpoint isolation.\n- **Reco 1.8.0** migrated alert, identity, app, file and label commands to the Reco External API and added 14 new list commands taking SCIM v2 filter expressions.\n- Reco's *Risk level* fetch parameter changed meaning: it now fetches the given severity **and above** rather than an exact match, so existing instances will ingest more alerts.\n- **Slack v3** fixed SlackBlockBuilder and SlackAsk failing inside a Cortex Platform Case War Room, where investigation IDs take the form `INCIDENT-<n>`.\n- **HPE Aruba Central** added an authentication-method choice, and Feedly, Flashpoint, ThreatQ and ReadQRCode took targeted fixes.",
+  "highlights": [
+    {
+      "title": "New pack: Binalyze AIR Extended for DFIR orchestration",
+      "detail": "A community-supported pack adding 28 commands for endpoint forensic acquisition, triage rule management, case and task operations, repositories and isolation.",
+      "paths": ["Packs/BinalyzeAIRExtended"]
+    },
+    {
+      "title": "Reco's Risk level fetch parameter is no longer an exact match",
+      "detail": "Setting it to MEDIUM now also returns HIGH and CRITICAL alerts, changing what existing instances ingest without any configuration change.",
+      "paths": ["Packs/Reco"]
+    },
+    {
+      "title": "Reco migrated to the External API and gained 14 commands",
+      "detail": "Alert, identity, app, file and label commands now use the External API with 429 retry and exponential backoff; pre-migration output field names are still populated for backward compatibility.",
+      "paths": ["Packs/Reco"]
+    },
+    {
+      "title": "Slack entitlements broke in Cortex Platform Case War Rooms",
+      "detail": "SlackBlockBuilder failed with invalid_blocks_format and SlackAsk replies were not routed back when the investigation ID was of the form INCIDENT-<n>.",
+      "paths": ["Packs/Slack"]
+    },
+    {
+      "title": "HPE Aruba Central Event Collector can authenticate two ways",
+      "detail": "A new Authentication Method parameter selects between pasting the Access Token JSON and Basic Auth with Username, Password and Customer ID.",
+      "paths": ["Packs/HPEArubaCentral"]
+    },
+    {
+      "title": "ReadQRCode failed on FIPS-enabled environments",
+      "detail": "Fixed alongside a Docker image bump to demisto/qrcode:1.0.0.11449351.",
+      "paths": ["Packs/CommonScripts"]
+    }
+  ],
+  "items": {
+    "Packs/BinalyzeAIRExtended": "New community pack with 28 binalyze-air-* commands for forensic acquisition, triage, cases, tasks, repositories and isolation.",
+    "Packs/Reco": "Migrated to the Reco External API with 429 retry, added 14 SCIM-filtered list commands, and changed Risk level to severity-and-above.",
+    "Packs/Slack": "Fixed SlackBlockBuilder invalid_blocks_format and unrouted SlackAsk replies for INCIDENT-<n> Case War Room ids.",
+    "Packs/HPEArubaCentral": "Added an Authentication Method parameter offering Access Token JSON or Basic Auth with Customer ID.",
+    "Packs/CommonScripts": "Fixed ReadQRCode failing on FIPS-enabled environments; Docker image bump.",
+    "Packs/FeedFeedly": "Fixed the instance-level Tags configuration not being applied to ingested indicators; Docker image bump.",
+    "Packs/Flashpoint": "Improved resource URL generation so vulnerability and report alerts fetch successfully; Docker image bump.",
+    "Packs/ThreatQ": "Fixed Python 2-style artifacts that raised a SyntaxError; the integration remains deprecated.",
+    "Packs/CortexResponseAndRemediation": "Automated release-note sync; documentation and metadata improvements only.",
+    "Packs/CloudSecurityPostureManagement": "Secrets-ignore lint configuration only; no functional change."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
