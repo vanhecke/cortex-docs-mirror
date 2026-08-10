@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-09",
+  "source": "content",
+  "sha": "d4a5a52e2f493f069bf7d84567b15a7b1811f2b6",
+  "headline": "AWS Security Hub v2 and Intel471 Credentials land; 663 CommonTypes definitions gain module gating",
+  "summary_md": "- **AWS - Security Hub v2** is a new integration: OCSF-format findings, four `aws-securityhub-v2-*` commands, and bidirectional incident mirroring with incoming/outgoing mappers and its own incident type.\n- **Intel471 Credentials** is a new integration fetching leaked credentials as one indicator per credential, alongside twelve new *Intel471 Info Stealer* indicator fields.\n- **CommonTypes** added a `supportedModules` list to 663 field, classifier and indicator-type definitions — `xsiam` and `agentix` throughout, plus `xti` on the five core reputation types.\n- **Cyware Intel Exchange (CTIX) 2.5.0** shipped a flagged-indicator deletion job, five new flag fields, and deprecated the older Cyware Threat Intelligence eXchange integration.\n- Three authentication and severity-mapping fixes: Defender for Endpoint on GCC High/DoD, Graph Security severity, and CTIX revoked indicators.",
+  "highlights": [
+    {
+      "title": "New integration: AWS - Security Hub v2 with bidirectional mirroring",
+      "detail": "Ingests unified findings in OCSF format via the Security Hub V2 API, adds enable/disable/get/batch-update commands, and mirrors incidents both ways with a Resolve finding of closed incident parameter.",
+      "paths": ["Packs/AWS-SecurityHub"]
+    },
+    {
+      "title": "New integration: Intel471 Credentials for leaked-credential feeds",
+      "detail": "Fetches from the Intel471 Credentials API and produces an indicator per credential plus an associated incident, exposed through intel471-credentials-get-indicators.",
+      "paths": ["Packs/FeedIntel471"]
+    },
+    {
+      "title": "663 CommonTypes definitions are now gated by supported module",
+      "detail": "Every touched field, classifier and indicator type gained a supportedModules list of xsiam and agentix; the domain, file, ip, ipv6 and url reputation types also list xti.",
+      "paths": ["Packs/CommonTypes"]
+    },
+    {
+      "title": "Defender for Endpoint authentication fixed for GCC High and DoD",
+      "detail": "The OAuth scope used an invalid windowsatpservice resource principal on those endpoint types, failing with resource principal not found in the tenant.",
+      "paths": ["Packs/MicrosoftDefenderAdvancedThreatProtection"]
+    },
+    {
+      "title": "CTIX revoked indicators were invisible to Threat Intel queries",
+      "detail": "The is_revoked flag was not mapped to the CTIX - Is Revoked field; the five new CTIX flag fields were also renamed to a ctix prefix to avoid cliName collisions.",
+      "paths": ["Packs/CTIX"]
+    },
+    {
+      "title": "Cyware Threat Intelligence eXchange deprecated",
+      "detail": "The older integration is marked deprecated in favour of Cyware Intel Exchange, which gained a 12-hourly job and playbook for deleting flagged indicators.",
+      "paths": ["Packs/CTIX"]
+    }
+  ],
+  "items": {
+    "Packs/AWS-SecurityHub": "New AWS - Security Hub v2 integration: OCSF findings, four commands, bidirectional mirroring, mappers and an incident type.",
+    "Packs/FeedIntel471": "New Intel471 Credentials integration for leaked credentials, plus twelve Intel471 Info Stealer indicator fields.",
+    "Packs/CommonTypes": "Added supportedModules (xsiam, agentix) to 663 definitions; xti added to the five core reputation indicator types.",
+    "Packs/CTIX": "Added a flagged-indicator deletion script, playbook and 12-hourly job, five ctix-prefixed flag fields, and an is_revoked mapping fix; deprecated Cyware Threat Intelligence eXchange.",
+    "Packs/MicrosoftDefenderAdvancedThreatProtection": "Fixed the OAuth scope's invalid windowsatpservice resource principal for GCC High and DoD endpoint types.",
+    "Packs/MicrosoftGraphSecurity": "Fixed Informational incidents being mapped as Unknown severity, and severity input_values/mapped_values in the alert mapper.",
+    "Packs/MicrosoftGraphMail": "Added a folder_id argument to msgraph-mail-list-emails and clarified the error when the associated email address is misconfigured.",
+    "Packs/ThreatMon": "Added threatmon_request_data_removal to submit a Black Market Monitoring removal request, checking remaining credits first.",
+    "Packs/Cisco-umbrella-cloud-security": "Proxy log modeling now maps the most granular identity to xdm.source.user.username for AD Users, and to xdm.source.host.hostname otherwise.",
+    "Packs/FeedDomainTools": "Switched the feed endpoints to the DomainTools Python Wrapper; Docker image bumped to demisto/vendors-sdk:1.0.0.10470199.",
+    "Packs/EDL": "Documented that each instance uses three consecutive ports and that concurrent requests during cache population return HTTP 429.",
+    "Packs/TAXIIServer": "Documentation and metadata improvements only."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": true
+}
