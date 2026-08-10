@@ -1,0 +1,51 @@
+{
+  "date": "2026-07-29",
+  "source": "content",
+  "sha": "8cec7d3aebc2a3ae229248de68e8d90276f6a4eb",
+  "headline": "CrowdStrike Falcon event fetching restricted to XSIAM tenants; F5 BIG-IP iRule HTTP logs supported",
+  "summary_md": "- **CrowdStrike Falcon** fixed ingestion latency when fetching events, and limited event fetching to Cortex Platform tenants with the XSIAM module — it is no longer available on EDR, Cloud, or Cloud Runtime Security tenants.\n- **F5 BIG-IP LTM** added parsing and modeling support for iRule HTTP access logs (`ir-log_http`), a new log source with client- and server-side connection details.\n- **AWS** gained three Network Firewall subnet commands: associate, disassociate, and subnet-change-protection update.\n- A `FormatURL` bug that mangled percent-encoded spaces — corrupting indicator extraction — was fixed in both the script and the shared API module.\n- The rest of the day is fixes: Elasticsearch fetch parsing, Netcraft lookback, PAN-OS job polling, and similar-incident hyperlinks on XSOAR 8.x.",
+  "highlights": [
+    {
+      "title": "CrowdStrike Falcon event fetching now requires the XSIAM module",
+      "detail": "Fetching events is available only on Cortex Platform tenants with the Cortex XSIAM module, and no longer on tenants with the EDR, Cloud, or Cloud Runtime Security modules.",
+      "paths": ["Packs/CrowdStrikeFalcon"]
+    },
+    {
+      "title": "F5 BIG-IP iRule HTTP access logs are a new supported source",
+      "detail": "Both the parsing rule and the modeling rule added ir-log_http, mapping client-side and server-side connection details.",
+      "paths": ["Packs/F5LTM"]
+    },
+    {
+      "title": "FormatURL corrupted URLs containing spaces",
+      "detail": "Percent-encoded spaces were decoded to literal spaces and URLs with literal spaces were dropped, producing invalid URLs and wrong indicator extraction; spaces are now consistently kept as %20.",
+      "paths": ["Packs/CommonScripts", "Packs/ApiModules"]
+    },
+    {
+      "title": "AWS Network Firewall subnet association commands added",
+      "detail": "aws-network-firewall-subnets-associate, -subnets-disassociate, and -subnet-change-protection-update, each documented with its required IAM permission.",
+      "paths": ["Packs/AWS"]
+    },
+    {
+      "title": "Similar-incident links broke on Cortex XSOAR 8.x",
+      "detail": "DBotFindSimilarIncidents generated legacy hash-based hyperlinks (#/Details/ID) that redirected to the dashboard; links now use the correct format per version.",
+      "paths": ["Packs/Base"]
+    }
+  ],
+  "items": {
+    "Packs/CrowdStrikeFalcon": "Fixed event-fetch ingestion latency; event fetching restricted to Cortex Platform tenants with the XSIAM module.",
+    "Packs/F5LTM": "Added parsing and modeling support for F5 BIG-IP iRule HTTP access logs (ir-log_http).",
+    "Packs/AWS": "Added three Network Firewall commands for associating, disassociating, and change-protecting firewall subnets.",
+    "Packs/CommonScripts": "FormatURL now preserves %20 instead of decoding it, and no longer drops URLs containing literal spaces.",
+    "Packs/ApiModules": "Same %20 preservation fix applied in FormatURLApiModule.",
+    "Packs/Base": "DBotFindSimilarIncidents no longer emits legacy hash-based hyperlinks that redirected to the dashboard on XSOAR 8.x.",
+    "Packs/Elasticsearch": "Fixed fetch-incidents failing with a ParsingException when Fields to Fetch was left empty; Docker image bump.",
+    "Packs/Netcraft_V2": "Added a look-back-minutes fetch parameter and a netcraft-get-incidents command filtered by id; Docker image bump.",
+    "Packs/PAN-OS": "Added native polling to pan-os-platform-get-jobs for a single job id, polling until status FIN or timeout.",
+    "Packs/Core": "core-script-run now processes multiple endpoint IDs in one command instead of one command per endpoint.",
+    "Packs/DemistoRESTAPI": "UploadFile gained a retry mechanism with exponential backoff for transient upload failures.",
+    "Packs/BarracudaWAF": "Fixed resource fields being mis-parsed when the log contained extra whitespace or values with spaces.",
+    "Packs/RubrikPolaris": "Maintenance and stability enhancements only."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
