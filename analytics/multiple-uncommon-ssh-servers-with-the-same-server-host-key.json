@@ -14,7 +14,8 @@
   "investigative_actions": "Audit the authentication attempts to the SSH server using the same key. Look for unusual or repeated connections from the same or unexpected hosts. Audit Client Credentials, check for any signs of compromised client credentials being used on different SSH servers.",
   "name": "Multiple uncommon SSH Servers with the same Server host key",
   "required_data": [
-    "Palo Alto Networks Firewall EAL LogsXDR Agent"
+    "Palo Alto Networks Firewall EAL Logs",
+    "XDR Agent"
   ],
   "severity": "Low",
   "test_period": "N/A (single event)",

@@ -8,7 +8,7 @@ To help you better understand your Cortex Query Language (XQL) query results and
 Alternatively, you can use the Cortex Agentic Assistant to generate custom graphs and charts using natural language prompts. By simply prompting the agent, it will build and execute the query, returning the visual representation. For more information, see [Use natural language to query and visualize your data](../../../agentic-assistant-chat/use-natural-language-to-query-and-visualize-your-data).
 {% endhint %}
 
-1. Select **Investigation & Response** → **Search** → **Query Builder** → **XQL**.
+1. Select **Investigation & Response** → **Search** → **XQL Search**.
 2.  Run an XQL query.
 
     Enter the following query:

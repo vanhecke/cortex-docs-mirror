@@ -1,14 +1,3 @@
 # Cloud platforms supported with Cortex XDR agent
 
-Learn about the cloud platforms that support Cortex XDR agents.
-
-### Supported cloud platforms
-
-| Linux Cloud Platform              | <p>Agent version<br>9.3</p> | <p>Agent version<br>9.2</p> | <p>Agent version<br>9.1-CE</p> | <p>Agent version<br>9.1</p> | <p>Agent version<br>9.0</p> | <p>Agent version<br>8.7-CE</p> |
-| --------------------------------- | --------------------------- | --------------------------- | ------------------------------ | --------------------------- | --------------------------- | ------------------------------ |
-| Alibaba Cloud                     | ✓                           | ✓                           | ✓                              | ✓                           | ✓                           | ✓                              |
-| Amazon Web Services (AWS)         | ✓                           | ✓                           | ✓                              | ✓                           | ✓                           | ✓                              |
-| Google Cloud Platform             | ✓                           | ✓                           | ✓                              | ✓                           | ✓                           | ✓                              |
-| IBM Cloud                         | ✓                           | ✓                           | ✓                              | ✓                           | ✓                           | ✓                              |
-| Microsoft Azure                   | ✓                           | ✓                           | ✓                              | ✓                           | ✓                           | ✓                              |
-| Oracle Cloud Infrastructure (OCI) | ✓                           | ✓                           | ✓                              | ✓                           | ✓                           | ✓                              |
+<table data-search="false"><thead><tr><th></th><th>Cortex XDR agent</th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td>9.3</td><td>9.2</td><td>9.1-CE</td><td>9.1</td><td>9.0</td><td>8.7-CE</td></tr><tr><td>Alibaba Cloud</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Amazon Web Services (AWS)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Google Cloud Platform</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>IBM Cloud</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Microsoft Azure</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Oracle Cloud Infrastructure (OCI)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr></tbody></table>

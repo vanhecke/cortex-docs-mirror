@@ -14,7 +14,8 @@
   "investigative_actions": "Check who used the host at the time of the alert to rule out a benign service or tool requesting weak Kerberos encryption.",
   "name": "Possible Kerberoasting attack",
   "required_data": [
-    "XDR AgentXDR Agent with eXtended Threat Hunting (XTH)"
+    "XDR Agent",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
   ],
   "severity": "Medium",
   "test_period": "1 Hour",

@@ -15,7 +15,8 @@
   "name": "A user accessed multiple time-consuming websites",
   "required_data": [
     "Palo Alto Networks Firewall EAL Logs",
-    "Palo Alto Networks Firewall threat LogsPalo Alto Networks Firewall EAL Logs",
+    "Palo Alto Networks Firewall threat Logs",
+    "Palo Alto Networks Firewall EAL Logs",
     "XDR Agent"
   ],
   "severity": "Informational",

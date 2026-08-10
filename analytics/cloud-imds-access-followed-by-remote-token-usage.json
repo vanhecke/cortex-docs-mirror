@@ -16,7 +16,8 @@
   "investigative_actions": "Identify the process that accessed the IMDS on the cloud instance. Examine the AWS API calls made by the stolen token, focusing on unusual or sensitive actions. Assess the role's permissions and rotate credentials if compromise is confirmed.",
   "name": "Cloud IMDS access followed by remote token usage",
   "required_data": [
-    "AWS Audit LogXDR Agent"
+    "AWS Audit Log",
+    "XDR Agent"
   ],
   "severity": "Medium",
   "test_period": "1 Hour",

@@ -11,7 +11,7 @@ This procedure is required if you are using custom Control Tower (BYOB) log coll
 
 When a KMS key and the accessing IAM role reside in different AWS accounts, AWS requires a two-way trust handshake to authorize access:
 
-* IAM side (Automated): The Cortex XSIAM CloudFormation template automatically attaches `kms:Decrypt` permissions for your specified key ARN to the `cortex-logs-ingestion-access-<resource-suffix>` role in the Log Archive account.
+* IAM side (Automated): The Cortex XSIAM CloudFormation template automatically attaches `kms:Decrypt` permissions for your specified key ARN to the `CloudTrailReadRole` role in the Log Archive account.
 * KMS key policy side (Manual): You must update the KMS key's resource policy to explicitly trust and allow the Cortex XSIAM IAM role in the Log Archive account to perform the `kms:Decrypt` action.
 
 {% hint style="info" %}
@@ -20,7 +20,7 @@ When a KMS key and the accessing IAM role reside in different AWS accounts, AWS 
 Before you begin, retrieve and note the following values:
 
 * **Logging account ID**: The 12-digit AWS account ID of your logging account where the Cortex IAM role is deployed.
-* Cortex role name: The exact name of the IAM role created by the Cortex XSIAM CloudFormation template in the Log Archive account (e.g., `cortex-logs-ingestion-access-<resource>-<suffix>`). You can retrieve this from the **Outputs** tab of the deployed CloudFormation stack.
+* Cortex role name: The exact name of the IAM role created by the Cortex XSIAM CloudFormation template in the Log Archive account (e.g., `CloudTrailReadRole`). You can retrieve this from the **Outputs** tab of the deployed CloudFormation stack.
 * KMS key ID or ARN: The identifier of the KMS key used to encrypt your Control Tower S3 bucket.
 {% endhint %}
 
@@ -36,7 +36,7 @@ Before you begin, retrieve and note the following values:
       "Sid": "AllowCortexCrossAccountKmsDecrypt",
       "Effect": "Allow",
       "Principal": {
-        "AWS": "arn:aws:iam::<LOGGING_ACCOUNT_ID>:role/<CORTEX_ROLE_NAME>"
+        "AWS": "arn:aws:iam::<LOGGING_ACCOUNT_ID>:role/<CloudTrailReadRole>"
       },
       "Action": "kms:Decrypt",
       "Resource": "*"
@@ -46,7 +46,7 @@ Before you begin, retrieve and note the following values:
     Where:
 
     * `<LOGGING_ACCOUNT_ID>` is your 12-digit Log Archive account ID.
-    * `<CORTEX_ROLE_NAME>` is the full name of your Cortex IAM role.
+    * `<CloudTrailReadRole>` is the full name of your Cortex IAM role.
 7. Click **Save changes**.
 
 ### Verify connection

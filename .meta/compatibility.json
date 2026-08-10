@@ -2,7 +2,7 @@
   "book": "compatibility",
   "title": "Cortex XDR Compatibility Matrix",
   "section": "compatibility-matrix",
-  "page_count": 15,
+  "page_count": 13,
   "tree": [
     {
       "title": "Where can I install the Cortex XDR agent?",
@@ -56,20 +56,7 @@
           "title": "Mobile operating systems supported with Cortex XDR",
           "path": "where-can-i-install-the-cortex-xdr-agent/mobile-operating-systems-supported-with-cortex-xdr",
           "type": "document",
-          "children": [
-            {
-              "title": "Android",
-              "path": "where-can-i-install-the-cortex-xdr-agent/mobile-operating-systems-supported-with-cortex-xdr/android",
-              "type": "document",
-              "children": []
-            },
-            {
-              "title": "iOS/iPadOS",
-              "path": "where-can-i-install-the-cortex-xdr-agent/mobile-operating-systems-supported-with-cortex-xdr/ios-ipados",
-              "type": "document",
-              "children": []
-            }
-          ]
+          "children": []
         }
       ]
     },

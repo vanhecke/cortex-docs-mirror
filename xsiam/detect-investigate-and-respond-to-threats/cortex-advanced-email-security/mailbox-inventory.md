@@ -1,7 +1,3 @@
----
-description: View and manage your active email security assets
----
-
 # Mailbox Inventory
 
 {% hint style="info" %}

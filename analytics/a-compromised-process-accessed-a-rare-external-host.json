@@ -14,7 +14,8 @@
   "investigative_actions": "Investigate the compromised process. Check the rare remote host.",
   "name": "A compromised process accessed a rare external host",
   "required_data": [
-    "XDR AgentXDR Agent with eXtended Threat Hunting (XTH)"
+    "XDR Agent",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
   ],
   "severity": "Low",
   "test_period": "2 Hours",

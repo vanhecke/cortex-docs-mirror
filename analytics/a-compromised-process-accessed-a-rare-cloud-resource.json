@@ -14,7 +14,8 @@
   "investigative_actions": "Investigate the compromised process. Identify the rare cloud resource accessed, is it managed by your organization?",
   "name": "A compromised process accessed a rare cloud resource",
   "required_data": [
-    "XDR AgentXDR Agent with eXtended Threat Hunting (XTH)"
+    "XDR Agent",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
   ],
   "severity": "Informational",
   "test_period": "2 Hours",

@@ -1,7 +1,3 @@
----
-description: Triage, analyze, and act on malicious email threats
----
-
 # Malicious Email Inventory
 
 {% hint style="info" %}

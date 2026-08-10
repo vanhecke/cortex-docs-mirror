@@ -8,7 +8,7 @@ description: >-
 
 The complete data source catalog is a conceptual grouping that is comprised of all configuration points available for data ingestion across Cortex XSIAM. It represents the aggregate of every integration method, from unified vendor connectors and cloud onboarding wizards to generic on-premise collectors and specialized Marketplace integrations.
 
-The catalog is best understood by categorizing ingestion methods into the following core groups. By consulting the specific documentation sections dedicated to each category as detailed below, you gain a complete overview of all available ingestion options that collectively form the data source catalog.
+The catalog is best understood by categorizing ingestion methods into the following core groups. By consulting the specific documentation sections dedicated to each category as detailed below, you gain a complete overview of all available ingestion options that collectively form the data source and connector catalog.
 
 ### Vendor-specific data sources and connectors
 

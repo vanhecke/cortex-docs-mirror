@@ -1,7 +1,3 @@
----
-description: Configure the Microsoft O365 integration and the module.
----
-
 # Deploy and configure the Email Security module
 
 To start using the Cortex Advanced Email Security module, configure the Microsoft O365 integration and then configure the module.

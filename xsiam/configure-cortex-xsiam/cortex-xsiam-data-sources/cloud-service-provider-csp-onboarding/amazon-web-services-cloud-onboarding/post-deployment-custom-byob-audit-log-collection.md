@@ -1,6 +1,6 @@
-# Post-deployment: Custom (BYOB) audit log collection
+# Post-deployment: Custom (BYOB) and Control Tower audit log collection
 
-If you selected **Custom (BYOB)** audit log collection, you must configure your S3 bucket to forward event notifications to the SQS queue created by the template. The steps differ depending on your deployment method.
+If you selected **Custom (BYOB) or Custom Control Tower** audit log collection, you must configure your S3 bucket to forward event notifications to the SQS queue created by the template. The steps differ depending on your deployment method.
 
 {% tabs %}
 {% tab title="CloudFormation Custom (BYOB)" %}
@@ -51,7 +51,7 @@ Use this section to diagnose issues with custom (BYOB) audit log collection afte
 
 * **S3 event notifications not configured or misconfigured**: For Terraform and standard CloudFormation deployments, you must manually configure your S3 bucket to forward `s3:ObjectCreated:*` events to the SQS queue created by the template. If this step is skipped or the wrong SQS ARN is used, logs will not reach Cortex XSIAM.
 * **Cross-region resources**: The S3 bucket, SNS topic, SQS queue, and authentication template deployment must all be in the same AWS region. Cross-region configurations are not supported.
-* **KMS key policy not updated**: If your S3 bucket is encrypted with a customer-managed KMS key, you must manually update the KMS key policy to allow the Cortex log-collector IAM role to call `kms:Decrypt`. This cannot be done automatically by the template.
+* **KMS key policy not updated:** (Only relevant for Custom Control Tower audit log collection) If your S3 bucket is encrypted with a customer-managed KMS key, you must manually update the KMS key policy to allow the Cortex log-collector IAM role to call `kms:Decrypt`. This cannot be done automatically by the template.
 * **Instance remains in Pending state**: This indicates the template deployed successfully but the notification to Cortex XSIAM did not complete. You can connect the instance manually from the Cortex XSIAM pending instances panel. See [Manually connect a cloud instance](../manually-connect-a-cloud-instance) for more details.
 
 Select the tab for your deployment method for specific troubleshooting steps.

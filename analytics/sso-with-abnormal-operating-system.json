@@ -15,7 +15,8 @@
   "name": "SSO with abnormal operating system",
   "required_data": [
     "AzureAD",
-    "OktaOneLogin"
+    "Okta",
+    "OneLogin"
   ],
   "severity": "Informational",
   "test_period": "N/A (single event)",

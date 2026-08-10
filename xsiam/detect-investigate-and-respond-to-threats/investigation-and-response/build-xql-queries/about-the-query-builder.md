@@ -1,9 +1,3 @@
----
-description: >-
-  The Query Builder facilitates threat detection, case expansion, and data
-  analytics for suspected threats.
----
-
 # About the Query Builder
 
 The Query Builder aids in the detection of threats by allowing you to search for indicators of compromise and suspicious patterns within data sources. It assists in expanding case investigations by identifying related events and entities, such as activities associated with specific user accounts or network lateral movement. In addition, the Query Builder enables data analytics on suspected threats, helping organizations analyze large volumes of data to identify trends, anomalies, and correlations that may indicate potential security issues.

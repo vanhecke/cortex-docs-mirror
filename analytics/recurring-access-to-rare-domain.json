@@ -15,7 +15,8 @@
   "name": "Recurring access to rare domain",
   "required_data": [
     "Palo Alto Networks Firewall EAL Logs",
-    "Palo Alto Networks Firewall threat LogsXDR Agent",
+    "Palo Alto Networks Firewall threat Logs",
+    "XDR Agent",
     "Third-Party Firewalls"
   ],
   "severity": "Low",

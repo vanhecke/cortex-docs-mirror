@@ -16,7 +16,8 @@
   "required_data": [
     "Palo Alto Networks Firewall EAL Logs",
     "Palo Alto Networks Firewall threat Logs",
-    "Palo Alto Networks Firewall traffic LogsXDR Agent"
+    "Palo Alto Networks Firewall traffic Logs",
+    "XDR Agent"
   ],
   "severity": "Informational",
   "test_period": "N/A (single event)",

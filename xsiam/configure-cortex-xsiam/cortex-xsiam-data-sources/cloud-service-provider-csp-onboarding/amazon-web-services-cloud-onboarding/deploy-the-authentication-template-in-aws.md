@@ -23,7 +23,8 @@ When you select to manually deploy the authentication template, you must connect
    * `CloudTrailLogBucket`**:** The name of the Amazon S3 bucket where CloudTrail stores the log files.
    * `CloudTrailSnsArn`**:** The ARN of the Amazon SNS topic that CloudTrail uses to send notifications when new log files are delivered.
    * `LoggingAccountId`: (Only for custom Control Tower BYOB) The AWS Account ID of the dedicated AWS Control Tower logging account where the centralized S3 bucket resides.
-   * `SnsTopicOuId`: (Only for custom Control Tower BYOB) OU containing the SNS topic account (where `aws-controltower-AllConfigNotifications` resides).
+   * `SnsTopicOuId`: (Only for custom Control Tower BYOB) OU containing the SNS topic account.
+   * `LoggingAccountOuId`: (Only for custom Control Tower BYOB) OU containing the Log Archive account.
    * `OrganizationalUnitId`: (Only for organization or organizational unit scope) Organizational root ID.
 8. Click **Next** and **Next** again.
 9. In **Review**, in the **Capabilities** section, acknowledge that CloudFormation might create IAM resources with custom names and click Submit. (This is required because the template creates the IAM roles Cortex XSIAM uses to access your account.) The stack is complete when it appears in the Stacks list with status of **CREATE\_COMPLETE**.

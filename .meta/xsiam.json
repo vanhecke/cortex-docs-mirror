@@ -5696,7 +5696,7 @@
                       "children": []
                     },
                     {
-                      "title": "Post-deployment: Custom (BYOB) audit log collection",
+                      "title": "Post-deployment: Custom (BYOB) and Control Tower audit log collection",
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/post-deployment-custom-byob-audit-log-collection",
                       "type": "document",
                       "children": []

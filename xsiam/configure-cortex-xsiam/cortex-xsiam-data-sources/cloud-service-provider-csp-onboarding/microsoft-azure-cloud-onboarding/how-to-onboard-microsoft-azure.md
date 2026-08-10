@@ -85,10 +85,10 @@ Cortex XSIAM performs a live verification of each tenant's approval status again
     * **Agentless disk scanning:** (Recommended) Implement agentless disk scanning to remotely detect and remediate vulnerabilities during the development lifecycle.
   * **Cloud Tags:** Define tags and tag values to be added to any new resource created by Cortex XSIAM in Microsoft Azure. Note: The `managed_by = paloaltonetworks` tag is automatically added to all resources. This tag is mandatory. You cannot edit or remove this tag.
 * **Log Collection Configuration:** To maximize security coverage, include the collection of audit logs using Event Hub. Select the collection method:
-  * Automated collection: Cortex XSIAM provisions the resource group, Event Hub namespace, Event Hub, consumer group, storage account, user-assigned managed identity (UAMI), federated identity credential, diagnostic settings, and role assignment resources in your Azure environment to collect audit logs.
-    * Tenant/management group scope: An Azure policy definition is also created to automatically deploy diagnostic settings to each subscription in the scope.
+  * **Automated collection:** Cortex XSIAM provisions the resource group, Event Hub namespace, Event Hub, consumer group, storage account, user-assigned managed identity (UAMI), federated identity credential, diagnostic settings, and role assignment resources in your Azure environment to collect audit logs.
+    * **Tenant/management group scope:** A single diagnostic setting is created at the management group scope. Azure natively propagates Activity Logs from all child subscriptions through this management group-level setting and no per-subscription diagnostic setting is created. An Azure policy definition is also deployed to create the Cortex resource group in each child subscription.
     * **Cost considerations:** Event Hub pricing is based on throughput units and ingress/egress. High-volume environments with many subscriptions can generate significant event throughput. We recommend you review your [Azure Event Hubs pricing](https://azure.microsoft.com/en-us/pricing/details/event-hubs/) and expected event volume before enabling.
-  *   Custom (user defined): Select this option to use an existing Event Hub for storing your audit logs.
+  *   **Custom** (user defined): Select this option to use an existing Event Hub for storing your audit logs.
 
       * When you deploy the authentication template in ARM, you will enter the following details: Event Hub name, Event Hub namespace, Event Hub resource group name.
       * Cortex XSIAM creates the user-assigned managed identity (UAMI), federated identity credential, role assignments, and consumer group.

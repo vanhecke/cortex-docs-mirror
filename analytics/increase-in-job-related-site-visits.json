@@ -15,7 +15,8 @@
   "name": "Increase in Job-Related Site Visits",
   "required_data": [
     "Palo Alto Networks Firewall EAL Logs",
-    "Palo Alto Networks Firewall threat LogsPalo Alto Networks Firewall EAL Logs",
+    "Palo Alto Networks Firewall threat Logs",
+    "Palo Alto Networks Firewall EAL Logs",
     "XDR Agent"
   ],
   "severity": "Informational",

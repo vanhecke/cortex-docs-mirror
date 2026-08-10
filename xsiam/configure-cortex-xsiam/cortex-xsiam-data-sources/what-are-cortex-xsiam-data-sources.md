@@ -17,7 +17,7 @@ The ingestion methods and configuration options available to you in the UI depen
 
 ### **Clarifying terminology: Data sources and connectors**
 
-In the Cortex XSIAM user interface (UI), configuring ingestion involves different areas and terminologies depending on the type of connection and your tenant onboarding date. While Cortex XSIAM is introducing connectors as a new, unified approach to ingestion, traditional Data Source methods remain supported.
+In the Cortex XSIAM user interface (UI), configuring ingestion involves different areas and terminologies depending on the type of connection and your tenant onboarding date. While Cortex XSIAM is introducing connectors as a new, unified approach to ingestion, traditional data source methods remain supported.
 
 In the current intermediate state, it is important to understand how these terms relate to each other:
 

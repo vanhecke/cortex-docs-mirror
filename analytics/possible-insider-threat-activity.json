@@ -14,8 +14,14 @@
   "investigative_actions": "Check how long the user has been part of the organization. Check if the user is about to leave the company. Verify that the user is not part of a department that performs such activity as part of daily operations.",
   "name": "Possible Insider Threat Activity",
   "required_data": [
-    "AzureAD Audit LogMicrosoft Graph LogsOffice 365 AuditOktaPalo Alto Networks Global Protect",
-    "Third-Party VPNsXDR AgentXDR Agent with eXtended Threat Hunting (XTH)"
+    "AzureAD Audit Log",
+    "Microsoft Graph Logs",
+    "Office 365 Audit",
+    "Okta",
+    "Palo Alto Networks Global Protect",
+    "Third-Party VPNs",
+    "XDR Agent",
+    "XDR Agent with eXtended Threat Hunting (XTH)"
   ],
   "severity": "Low",
   "test_period": "3 Hours",

@@ -20,7 +20,7 @@ records each book's navigation tree and the section it came from.
 | [Cortex XQL Schema Reference](xql-schema/) | `xql-schema-reference` | 10 |
 | [Cortex XDR Agent Administrator Guide](agent/) | `cortex-xdr-agent/9.3` | 35 |
 | [Cortex XSIAM Developer Guide](developer/) | `cortex-xsiam-developer-guide` | 84 |
-| [Cortex XDR Compatibility Matrix](compatibility/) | `compatibility-matrix` | 15 |
+| [Cortex XDR Compatibility Matrix](compatibility/) | `compatibility-matrix` | 13 |
 | [Linux Kernel Versions](linux-kernels/) | `linux-kernel-versions` | 100 |
 | [Cortex XDR Agent Releases](agent-releases/) | `agent-release-notes` | 4 |
 

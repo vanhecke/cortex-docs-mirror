@@ -15,7 +15,8 @@
   "name": "Okta FastPass reported phishing attack suspected",
   "required_data": [
     "Palo Alto Networks Firewall EAL Logs",
-    "XDR AgentPalo Alto Networks Firewall threat Logs"
+    "XDR Agent",
+    "Palo Alto Networks Firewall threat Logs"
   ],
   "severity": "Low",
   "test_period": "N/A (single event)",

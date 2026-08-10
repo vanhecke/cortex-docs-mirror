@@ -1,7 +1,3 @@
----
-description: Learn how to onboard, configure, and operate the Email Security module.
----
-
 # Cortex Advanced Email Security module overview
 
 {% hint style="warning" %}

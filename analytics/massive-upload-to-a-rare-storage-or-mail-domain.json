@@ -16,7 +16,8 @@
   "name": "Massive upload to a rare storage or mail domain",
   "required_data": [
     "Palo Alto Networks Firewall EAL Logs",
-    "Palo Alto Networks Firewall threat LogsXDR Agent"
+    "Palo Alto Networks Firewall threat Logs",
+    "XDR Agent"
   ],
   "severity": "Informational",
   "test_period": "1 Hour",
