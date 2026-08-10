@@ -1,0 +1,74 @@
+{
+  "date": "2026-08-10",
+  "source": "docs",
+  "sha": "4b7022556477f9cdaef7ca37434a47b01b8e27ac",
+  "headline": "Mobile compatibility pages folded into one; AWS Control Tower BYOB onboarding corrected",
+  "summary_md": "- **Cortex XDR Compatibility Matrix** lost two pages: the Android and iOS/iPadOS tables now live on their parent page, taking the book from 15 pages to 13.\n- Most compatibility tables were re-emitted as raw HTML with a single **Cortex XDR agent** header row over the version columns.\n- **AWS Control Tower (BYOB) audit log collection** gained a CloudFormation parameter, a corrected IAM role name, and a post-deployment page retitled to cover it.\n- **Microsoft Azure** automated collection now documents one management-group diagnostic setting instead of per-subscription ones.\n- Nine pages lost their front-matter `description` blocks, and several XSOAR/XSIAM naming slips were fixed.",
+  "highlights": [
+    {
+      "title": "Android and iOS/iPadOS compatibility pages were deleted",
+      "detail": "Both tables were merged into the parent mobile page, so bookmarks to the two child pages break and the compatibility book drops from 15 to 13 pages.",
+      "paths": [
+        "compatibility/where-can-i-install-the-cortex-xdr-agent/mobile-operating-systems-supported-with-cortex-xdr/android",
+        "compatibility/where-can-i-install-the-cortex-xdr-agent/mobile-operating-systems-supported-with-cortex-xdr/ios-ipados",
+        "compatibility/where-can-i-install-the-cortex-xdr-agent/mobile-operating-systems-supported-with-cortex-xdr"
+      ]
+    },
+    {
+      "title": "The Control Tower BYOB IAM role is named CloudTrailReadRole, not cortex-logs-ingestion-access-<suffix>",
+      "detail": "Every occurrence in the cross-account KMS procedure changed, including the key-policy principal ARN a reader copies verbatim.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/grant-cross-account-kms-key-access-for-control-tower-byob-log-collection"
+      ]
+    },
+    {
+      "title": "A LoggingAccountOuId parameter was added to the AWS authentication template",
+      "detail": "It names the OU containing the Log Archive account, and the neighbouring SnsTopicOuId description no longer spells out the aws-controltower-AllConfigNotifications topic.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/deploy-the-authentication-template-in-aws"
+      ]
+    },
+    {
+      "title": "Azure management-group scope creates a single diagnostic setting",
+      "detail": "Activity Logs propagate natively from child subscriptions through that one setting, and no per-subscription diagnostic setting is created.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/microsoft-azure-cloud-onboarding/how-to-onboard-microsoft-azure"
+      ]
+    },
+    {
+      "title": "XQL navigation is now Investigation & Response → Search → XQL Search",
+      "detail": "The Query Builder → XQL step was removed from both query procedures, shortening each numbered list by one step.",
+      "paths": [
+        "xsiam/detect-investigate-and-respond-to-threats/investigation-and-response/build-xql-queries/how-to-build-xql-queries/create-xql-query",
+        "xsiam/detect-investigate-and-respond-to-threats/investigation-and-response/build-xql-queries/how-to-build-xql-queries/graph-query-results"
+      ]
+    },
+    {
+      "title": "Two internal links moved in opposite directions",
+      "detail": "The ITDR Identity profile link was resolved from broken-reference to a real anchor, while the Windows agent release-notes link became broken-reference.",
+      "paths": [
+        "xsiam/detect-investigate-and-respond-to-threats/identity-threat-module-itdr/prevent-malicious-ldap-queries",
+        "compatibility/where-can-i-install-the-cortex-xdr-agent/endpoint-operating-systems-supported/windows"
+      ]
+    }
+  ],
+  "items": {
+    "compatibility/where-can-i-install-the-cortex-xdr-agent/mobile-operating-systems-supported-with-cortex-xdr": "Absorbs the Android and iOS/iPadOS tables, including the note that SMS filtering and call blocking work only on iPhones.",
+    "compatibility/where-can-i-install-the-cortex-xdr-agent/mobile-operating-systems-supported-with-cortex-xdr/android": "Deleted; its agent 9.1-8.8 support table now sits on the parent mobile page.",
+    "compatibility/where-can-i-install-the-cortex-xdr-agent/mobile-operating-systems-supported-with-cortex-xdr/ios-ipados": "Deleted; its agent 9.1-8.8 support table and iPhone-only note now sit on the parent mobile page.",
+    "compatibility/where-can-i-install-the-cortex-xdr-agent/endpoint-operating-systems-supported/linux": "Intro rewritten around the kernel-module vs eBPF choice, and the kernel support link repointed to cortex-docs.paloaltonetworks.com/linux-kernel-versions.",
+    "compatibility/where-can-i-install-the-cortex-xdr-agent/endpoint-operating-systems-supported/windows": "Windows 10 and 11 tables drop the empty 7.9.103-CE column; the agent release-notes link is now broken-reference.",
+    "compatibility/where-can-i-install-the-cortex-xdr-agent/kubernetes-platforms-supported": "Platform table re-emitted as HTML with sub-OS rows nested, and the admin-guide link now points at an app.gitbook.com authoring URL.",
+    "compatibility/where-can-i-install-the-cortex-xdr-agent/cloud-platforms-supported-with-cortex-xdr-agent": "Lead-in sentence and the Supported cloud platforms heading removed; only the HTML table remains.",
+    "compatibility/where-can-i-install-the-cortex-xdr-agent/endpoint-operating-systems-supported/mac": "Wording only: the FedRAMP note now reads \"for Intel processors only\" and the table's row label was blanked.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/deploy-the-authentication-template-in-aws": "Adds the LoggingAccountOuId CloudFormation parameter for the OU holding the Log Archive account.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/grant-cross-account-kms-key-access-for-control-tower-byob-log-collection": "The cross-account role is now CloudTrailReadRole everywhere, including the sample KMS key-policy principal.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/post-deployment-custom-byob-audit-log-collection": "Retitled to cover Custom (BYOB) and Control Tower; the KMS key-policy troubleshooting item is now Control Tower only.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/cortex-cloud-and-aws-audit-log-collection-architecture": "Bucket lifecycle and retention are now described as customer-managed for custom Control Tower collection as well as BYOB.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/microsoft-azure-cloud-onboarding/how-to-onboard-microsoft-azure": "Tenant and management-group scope now uses one management-group diagnostic setting rather than one per subscription.",
+    "xsiam/detect-investigate-and-respond-to-threats/investigation-and-response/build-xql-queries/how-to-build-xql-queries/create-xql-query": "The dataset query procedure now starts at Search → XQL Search, dropping the separate Query Builder and XQL steps.",
+    "xsiam/detect-investigate-and-respond-to-threats/identity-threat-module-itdr/prevent-malicious-ldap-queries": "The Set up Identity Profiles link now resolves to the ITDR getting-started anchor instead of broken-reference."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
