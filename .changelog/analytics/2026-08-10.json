@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-10",
+  "source": "analytics",
+  "sha": "4b7022556477f9cdaef7ca37434a47b01b8e27ac",
+  "headline": "Run-together required_data entries split into separate sources on 18 rules",
+  "summary_md": "- 18 analytics rules were modified; **nothing was added or withdrawn**.\n- Every edit is inside `required_data`: sources that had been stored as one run-together string are now separate list items.\n- Four identity and cloud rules went from two merged strings to eight named sources each.\n- No severity, test period, description or investigative action changed on any rule.",
+  "highlights": [
+    {
+      "title": "Eight identity and cloud sources unmerged across four rules",
+      "detail": "Azure Privilege Escalation Using an Application, Possible Insider Threat Activity, Possible phishing attack via Microsoft Teams and Potential extraction of NAA Account Credentials each replaced two merged strings with AzureAD Audit Log, Microsoft Graph Logs, Office 365 Audit, Okta, Palo Alto Networks Global Protect, Third-Party VPNs and both XDR Agent tiers.",
+      "paths": [
+        "analytics/azure-privilege-escalation-using-an-application",
+        "analytics/possible-insider-threat-activity",
+        "analytics/possible-phishing-attack-via-microsoft-teams",
+        "analytics/potential-extraction-of-naa-account-credentials-in-microsoft-configuration-manager"
+      ]
+    },
+    {
+      "title": "The split reveals a duplicated source on two firewall rules",
+      "detail": "A user accessed multiple time-consuming websites and Increase in Job-Related Site Visits now list Palo Alto Networks Firewall EAL Logs twice, a repeat the merged string had concealed.",
+      "paths": [
+        "analytics/a-user-accessed-multiple-time-consuming-websites",
+        "analytics/increase-in-job-related-site-visits"
+      ]
+    },
+    {
+      "title": "XDR Agent and XDR Agent with XTH are now distinct requirements",
+      "detail": "Four rules carried \"XDR AgentXDR Agent with eXtended Threat Hunting (XTH)\" as a single value and now name the base agent and the XTH agent separately.",
+      "paths": [
+        "analytics/a-compromised-process-accessed-a-rare-cloud-resource",
+        "analytics/a-compromised-process-accessed-a-rare-external-host",
+        "analytics/possible-as-rep-roasting-attack",
+        "analytics/possible-kerberoasting-attack"
+      ]
+    },
+    {
+      "title": "No detection parameter moved",
+      "detail": "All 18 changed files are modifications confined to required_data; severity, test period, name, description and investigative actions are untouched.",
+      "paths": []
+    }
+  ],
+  "items": {
+    "analytics/azure-privilege-escalation-using-an-application": "Two merged required_data strings became eight entries, from AzureAD Audit Log through XDR Agent with eXtended Threat Hunting (XTH).",
+    "analytics/possible-insider-threat-activity": "Same eight-source split: AzureAD Audit Log, Microsoft Graph Logs, Office 365 Audit, Okta, Global Protect, Third-Party VPNs and both XDR Agent tiers.",
+    "analytics/possible-phishing-attack-via-microsoft-teams": "Same eight-source split, so its Microsoft Graph Logs and Office 365 Audit requirements now stand on their own.",
+    "analytics/potential-extraction-of-naa-account-credentials-in-microsoft-configuration-manager": "Same eight-source split across the identity, VPN and XDR Agent requirements.",
+    "analytics/a-user-accessed-multiple-time-consuming-websites": "Now lists Palo Alto Networks Firewall EAL Logs twice; the duplicate sat inside the previously merged threat-logs string.",
+    "analytics/increase-in-job-related-site-visits": "The same duplicated Palo Alto Networks Firewall EAL Logs entry surfaces once the merged string is split.",
+    "analytics/recurring-access-to-rare-domain": "\"Palo Alto Networks Firewall threat LogsXDR Agent\" separated, leaving Third-Party Firewalls as before.",
+    "analytics/sso-with-abnormal-operating-system": "\"OktaOneLogin\" separated into Okta and OneLogin.",
+    "analytics/invalid-saml-detected": "\"AzureADOkta\" separated into AzureAD and Okta.",
+    "analytics/cloud-imds-access-followed-by-remote-token-usage": "\"AWS Audit LogXDR Agent\" separated into AWS Audit Log and XDR Agent.",
+    "analytics/multiple-uncommon-ssh-servers-with-the-same-server-host-key": "\"Palo Alto Networks Firewall EAL LogsXDR Agent\" separated into two sources.",
+    "analytics/okta-fastpass-reported-phishing-attack-suspected": "\"XDR AgentPalo Alto Networks Firewall threat Logs\" separated into two sources."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
