@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Trellix Email Security - Cloud is a cloud-based platform that protects against advanced email attacks. Use this connector to import messages as issues, search for messages with specific attributes, retrieve alert data, and fetch Alert, Email Trace, and Activity Log events for investigation and threat hunting.

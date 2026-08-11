@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Elasticsearch is the distributed search and analytics engine at the heart of the Elastic Stack, where the indexing, search, and analysis happens. Query Elasticsearch instances using DSL, EQL, and Lucene syntaxes, search and index documents, collect events, fetch issues with a predefined query, and fetch threat intelligence indicators from an Elasticsearch database.

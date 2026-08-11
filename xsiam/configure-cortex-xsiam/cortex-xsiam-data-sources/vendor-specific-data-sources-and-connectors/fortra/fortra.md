@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Integrate with Fortra products. Digital Guardian's Data Loss Prevention (DLP) platform Analytics & Reporting Cloud (ARC) solution identifies, remediates, and protects sensitive data from insider and outsider threats. Tripwire is a file integrity management (FIM) system that monitors files and folders on systems and is triggered when they have changed.

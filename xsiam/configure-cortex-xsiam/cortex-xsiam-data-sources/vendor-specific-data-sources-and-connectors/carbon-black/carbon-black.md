@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 VMware Carbon Black is a cloud-delivered endpoint protection platform. Carbon Black Endpoint Standard (formerly CB Defense) is a next-generation antivirus (NGAV) and behavioral EDR solution, Enterprise EDR delivers advanced threat hunting and issue response, App Control (formerly Enterprise Protection) provides endpoint threat prevention, and Live Response lets security operators collect information and take action on remote endpoints in real time.

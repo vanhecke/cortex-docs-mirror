@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Trend Micro security products for endpoint, server, cloud, email, and extended detection and response (XDR). Manage Apex One agents and User-Defined Suspicious Objects, administer Deep Security computers, firewall rules, and policies, protect cloud applications with Cloud App Security, analyze samples with Deep Discovery Analyzer, and collect logs and events from Trend Micro Email Security and Trend Vision One.

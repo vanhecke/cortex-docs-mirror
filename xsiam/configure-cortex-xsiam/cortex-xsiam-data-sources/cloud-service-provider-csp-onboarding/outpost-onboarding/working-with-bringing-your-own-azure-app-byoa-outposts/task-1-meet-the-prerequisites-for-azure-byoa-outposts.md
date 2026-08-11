@@ -64,7 +64,7 @@ The following permissions are persistent and must remain in place for the life o
 | User Access Administrator (or Owner, which also includes Contributor) | Azure subscription              | Create role assignments between UAMIs and scanned resources                                                                            |
 
 {% hint style="info" %}
-**Security note**: BYOA grants the Terraform runner zero tenant-level Microsoft Graph permissions. The runner's ability to write federated identity credentials comes entirely from being an owner of one specific app registration. Object-scoped `Application.ReadWrite.OwnedBy` is implicit via ownership, so no admin consent at tenant scope is required. This is a significant reduction compared to standard outposts, which require `Application.ReadWrite.All` at tenant scope.
+**Note**: BYOA mode leverages a least-privilege security model by eliminating the need for tenant-level Microsoft Graph permissions. The Terraform runner service principal modifies the app registration and writes federated identity credentials strictly through direct object ownership. This ownership-based approach ensures secure resource isolation, keeping the app registration strictly scoped to its own environment so it does not read or enumerate other tenant applications. By relying on ownership rather than directory permissions, BYOA bypasses the need for tenant-level admin consent (such as `Application.ReadWrite.OwnedBy`), offering a highly secure alternative to the `Application.ReadWrite.All` permission used by standard outposts.
 {% endhint %}
 
 ## What's next?

@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Integrate with GitLab, the DevOps platform for managing repositories, projects, and pipelines. Automate the creation, updating, and tracking of GitLab issues, merge requests, branches, files, and pipelines, and collect audit event logs via the GitLab API.

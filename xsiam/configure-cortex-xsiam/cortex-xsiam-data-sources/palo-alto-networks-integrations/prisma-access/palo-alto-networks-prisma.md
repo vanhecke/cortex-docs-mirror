@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Integrate with Palo Alto Networks Prisma Access to monitor the status of the service and take actions, and with Prisma SASE (Strata Cloud Manager) to view or make changes to Prisma Access configurations. Also dynamically retrieve the egress IPs that Prisma Access uses to reach the internet and SaaS apps for use as a threat intelligence feed.

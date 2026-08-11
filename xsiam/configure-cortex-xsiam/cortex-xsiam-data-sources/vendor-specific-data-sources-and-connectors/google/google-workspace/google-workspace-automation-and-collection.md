@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../../marketplace).
 {% endhint %}
 
 Automate and collect across Google Workspace: manage users, groups, roles, and devices in the Admin console; fetch security alerts and audit logs; send and process Gmail messages; work with Calendar, Docs, and Sheets; and support archiving and eDiscovery with Google Vault.

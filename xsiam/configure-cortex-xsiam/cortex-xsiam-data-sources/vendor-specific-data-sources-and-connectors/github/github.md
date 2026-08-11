@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 [GitHub](https://github.com/about) is an internet hosting provider that uses Git for software development and version control, adding access control and collaboration features such as bug tracking, feature requests, task management, and continuous integration. This connector lets you manage GitHub issues and pull requests, provision organization membership, connect to a GitHub Model Context Protocol (MCP) server, collect organization audit logs, and publish indicators from a repository.

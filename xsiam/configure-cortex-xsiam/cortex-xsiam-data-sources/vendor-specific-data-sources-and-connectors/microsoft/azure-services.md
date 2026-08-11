@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Integrate with Microsoft Azure services. Create and manage Azure Virtual Machines (Azure Compute), deploy and manage containerized applications with Azure Kubernetes Services (AKS), filter network traffic with Azure Network Security Groups, manage auditing and threat policies for Azure SQL, deploy and manage storage accounts, blob services, containers, file shares, tables, and queues (Azure Storage), query resources at scale with Azure Resource Graph, collect and analyze data in Azure Data Explorer clusters, and safeguard and manage cryptographic keys and secrets with Azure Key Vault.

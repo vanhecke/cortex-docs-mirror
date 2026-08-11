@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Rapid7 InsightIDR is a cloud-based SIEM that provides real-time alerting and investigation tools for detection and response, authentication monitoring, and endpoint visibility. Rapid7 InsightVM (Nexpose) provides vulnerability management, assessment, and response, prioritizing risk across vulnerabilities, configurations, and controls. Rapid7 AppSec manages application vulnerabilities and scans.

@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Integrate with Zoho Corporation products. ManageEngine Endpoint Central is a unified endpoint management (UEM) platform that manages and secures servers, desktops, laptops, and mobile devices from a single console, and serves as an event collector for audit logs. Service Desk Plus is an IT service management (ITSM) solution for fetching and managing service desk requests.

@@ -4,7 +4,7 @@ description: Learn how to uninstall the Cortex XDR agent from a Mac endpoint.
 
 # Uninstall the Cortex XDR Agent for Mac
 
-From the Cortex XDR management console, you can uninstall the Cortex XDR agent on an endpoint (refer to _Uninstall the Cortex XDR Agent_ in the Administrator's Guide for your Cortex XDR license type). You can also uninstall the agent from the endpoint directly by using the uninstaller that comes with the Cortex XDR agent installation package that you downloaded from the Cortex XDR management console to install the agent (Endpoints → Endpoint Management → **Agent Installations**).
+From the Cortex XDR management console, you can uninstall the Cortex XDR agent on an endpoint (refer to _Uninstall the Cortex XDR Agent_ in the Administrator's Guide for your Cortex XDR license type). You can also uninstall the agent from the endpoint directly by using the uninstaller that comes with the Cortex XDR agent installation package that you downloaded from the Cortex XDR management console to install the agent (**Endpoints** → **Endpoint** **Management** → **Agent Installations**).
 
 After you uninstall the agent, the endpoint is no longer protected by Cortex XDR security policies and the license returns to the pool of available licenses.
 

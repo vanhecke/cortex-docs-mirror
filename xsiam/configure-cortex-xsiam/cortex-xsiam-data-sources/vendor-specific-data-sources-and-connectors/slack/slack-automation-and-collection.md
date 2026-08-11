@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Send messages and notifications to your Slack team and integrate with Slack's services to execute create, read, update, and delete operations for employee lifecycle processes. Collect and model Slack audit logs in Cortex, and interact with the Cortex Agentic Assistant directly from Slack.

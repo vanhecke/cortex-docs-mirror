@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Tenable vulnerability management for auditors and security analysts. Nessus is a vulnerability scanner by Tenable Network Security. Tenable Vulnerability Management (formerly Tenable.io) is a comprehensive asset-centric solution that accurately tracks resources while accommodating dynamic assets such as cloud, mobile devices, containers, and web applications. Tenable.sc gives you a real-time, continuous assessment of your security posture so you can find and fix vulnerabilities faster.

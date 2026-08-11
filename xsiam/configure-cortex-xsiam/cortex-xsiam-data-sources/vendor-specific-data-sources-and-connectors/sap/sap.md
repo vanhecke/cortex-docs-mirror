@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Integrate with SAP services to manage employee lifecycle identity operations and to collect audit log events for security monitoring and compliance. SAP - IAM executes get and disable operations for employee lifecycle processes, SAP BTP (Business Technology Platform) collects audit log events from SAP's cloud platform, and SAP Cloud for Customer (C4C) collects audit events from SAP's CRM solution via the OData Analytics API.

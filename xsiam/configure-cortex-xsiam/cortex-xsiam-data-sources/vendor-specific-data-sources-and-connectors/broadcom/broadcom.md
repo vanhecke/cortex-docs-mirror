@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Broadcom Symantec security products for endpoint, email, web, and data protection. This connector groups Symantec Endpoint Detection and Response (EDR), Endpoint Protection, Endpoint Security, Data Loss Prevention, Email Security Cloud, Messaging Gateway, Management Center, Cloud Secure Web Gateway, CloudSOC, and Blue Coat Content and Malware Analysis to manage protection, collect events, and perform remediation.

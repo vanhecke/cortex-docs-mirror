@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Integrate with IBM Security products. IBM MaaS360 is a mobile device management solution for monitoring and managing smartphones, tablets, and other mobile devices. IBM Security Guardium is a data security platform providing visibility and protection for sensitive data across databases, data warehouses, big data platforms, and cloud environments. IBM Security Verify secures and manages user identity and access, and collects security events across your organization's network. IBM X-Force Exchange provides threat intelligence about applications, IP addresses, URLs, and hashes.

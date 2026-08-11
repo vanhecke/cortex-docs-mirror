@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Workday offers enterprise-level software solutions for financial management, human resources, and planning. Automate actions in Workday, fetch Workday reports to create corresponding issues as part of identity lifecycle management, and collect user activity and sign-on events from Workday.

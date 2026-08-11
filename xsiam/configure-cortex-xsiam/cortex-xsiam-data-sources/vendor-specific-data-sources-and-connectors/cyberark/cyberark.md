@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 CyberArk secures human and machine identities across hybrid and multi-cloud environments. This connector collects audit and authentication events from the CyberArk Identity Security Platform, CyberArk Identity, and CyberArk Endpoint Privilege Manager (EPM), activates and deactivates EPM risk plans for endpoints as a SOC response, and retrieves certificate information from CyberArk Certificate Manager.

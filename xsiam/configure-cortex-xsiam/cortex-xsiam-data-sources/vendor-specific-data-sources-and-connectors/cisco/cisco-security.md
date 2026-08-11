@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Cisco security products for endpoint malware protection (AMP/Secure Endpoint), email and web security (ESA, SMA, WSA), network and cloud analytics (Secure Network Analytics/Stealthwatch, Secure Cloud Analytics), malware analysis and threat intelligence (Secure Malware Analytics/Threat Grid, Webex Feed), collaboration (Webex Teams), application performance (AppDynamics), cloud security (CloudLock), vulnerability management (Kenna), phishing lookup (PhishTank), and event collection across the Cisco portfolio. Use these connectors to fetch events and issues, enrich indicators, and run automation and remediation.

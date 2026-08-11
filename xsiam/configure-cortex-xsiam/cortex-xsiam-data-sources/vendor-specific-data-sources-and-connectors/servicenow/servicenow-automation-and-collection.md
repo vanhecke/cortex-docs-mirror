@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 ServiceNow is an IT service management platform that helps streamline security-related service management and IT operations. It provides a service-centric CMDB that proactively analyzes service-impacting changes, identifies issues, and eliminates outages. Cortex integrates with ServiceNow to create, update, query, and delete tickets and table records, perform Identity Lifecycle Management, collect audit and syslog events, and connect to ServiceNow MCP servers for agentic AI workflows.

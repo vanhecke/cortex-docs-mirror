@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 CrowdStrike Falcon is a leading Endpoint Protection Platform (EPP) that helps organizations quickly detect, analyze, block, and contain malicious attacks on enterprise endpoints and servers. It provides real-time response, vulnerability assessment, and host containment, along with a CrowdStrike Falcon Intel threat intelligence feed to help organizations defend against adversary activity.

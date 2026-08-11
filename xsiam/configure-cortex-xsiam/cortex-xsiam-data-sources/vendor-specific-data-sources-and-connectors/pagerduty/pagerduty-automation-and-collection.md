@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Use PagerDuty to manage schedules and on-call users via PagerDuty API v2. Use Rundeck for runbook automation for issue management, business continuity, and self-service operations — enabling you to install software on a list of machines or perform tasks periodically.

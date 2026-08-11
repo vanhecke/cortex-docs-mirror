@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Proofpoint is an email security and threat protection platform that guards against phishing, malware, and advanced email attacks. It includes Targeted Attack Protection (TAP), Threat Response for automated issue response, Protection Server for email gateway management, Cloud Threat Response, Browser Isolation, and URL phishing validation via IsItPhishing.

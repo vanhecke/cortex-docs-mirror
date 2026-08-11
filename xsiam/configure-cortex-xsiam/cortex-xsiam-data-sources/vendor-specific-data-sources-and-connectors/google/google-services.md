@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Google Services groups multiple Google integrations: Apigee (Google Cloud's API management platform) for collecting Apigee Edge audit logs, Google IP Ranges Feed for GCP and Google global IP ranges, Google Safe Browsing v2 for checking URLs against Google's lists of unsafe web resources, and Google Maps for the Geocoding API.

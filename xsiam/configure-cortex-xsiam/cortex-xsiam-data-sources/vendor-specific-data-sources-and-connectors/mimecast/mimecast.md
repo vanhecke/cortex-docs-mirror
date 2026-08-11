@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 The Mimecast platform offers protection against email threats and data leaks while preventing service downtime through email archiving and uptime services. Use this connector to fetch Audit and SIEM events with the Mimecast Event Collector v2, and to run automation and fetch issues with Mimecast v2.

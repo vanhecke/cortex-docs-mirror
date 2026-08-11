@@ -17,7 +17,7 @@ Use the following workflow to manually uninstall the Cortex XDR agent. If you in
 1. Use one of the following methods to disable the Cortex XDR agent security protection on the endpoint:
    * Run the **`Cytool protect disable`** command.
    * Apply an Agent Settings profile that disables XDR **Agent Tampering Protection** on the endpoint.
-2. Select Start → Control Panel → (Programs) → **Programs and Features**.
+2. Select **Start** → **Control Panel** → (**Programs**) → **Programs and Features**.
 3. Select **Cortex XDR** from the list and then **Uninstall**.
 4. When prompted to continue uninstalling, click **Yes** and acknowledge any notifications.
 
@@ -33,7 +33,7 @@ Use the following workflow to uninstall the Cortex XDR agent using Msiexec. If y
    * Run the **`Cytool protect disable`** command.
    * Apply an Agent Settings profile that disables XDR **Agent Tampering Protection** on the endpoint.
 2. Use one of the following options to open a command prompt as an administrator:
-   * Select Start → All Programs → **Accessories**. Then right-click **Command prompt** and **Run as administrator**.
+   * Select **Start** → **All** **Programs** → **Accessories**. Then right-click **Command prompt** and **Run as administrator**.
    * Select **Start**. In the **Start Search** box, type **cmd**. Then, to open the command prompt as an administrator, press **CTRL**+ **SHIFT**+ **ENTER**.
 3.  Run the **`msiexec`** command followed by one or more of the following options or properties:
 

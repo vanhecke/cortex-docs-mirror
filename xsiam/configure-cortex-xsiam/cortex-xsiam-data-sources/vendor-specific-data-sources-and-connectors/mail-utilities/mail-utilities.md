@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Mail Utilities lets you listen to a mailbox and spawn an issue from received email, and send emails including rich HTML and embedded files. It includes the Mail Listener v2 and MailListener - POP3 integrations for fetching mail, and the Mail Sender (New) integration for sending mail.

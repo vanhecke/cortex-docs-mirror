@@ -10,6 +10,6 @@ Cortex XDR agent is installed on all endpoints in your organization. It works in
 
 This guide explains the installation and configuration procedures for Cortex XDR agent setup and operation on, Windows, MacOS, and Linux operating systems. Additional guides are available for agent installation and operation on Android and iOS devices.
 
-For compatibility with operating systems per agent release versions see the [Cortex XDR Compatibility Matrix](https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-Compatibility-Matrix/Where-can-I-install-the-Cortex-XDR-agent).
+For compatibility with operating systems per agent release versions see the [Cortex XDR Compatibility Matrix](https://app.gitbook.com/s/fZ8QSMnkjnXpuOeuRcam/).
 
-With every Cortex product release, new agent features are released with specific agent versions. For feature support, known and addressed issues, and changes to default behavior by Cortex XDR agent version, see the [Cortex XDR Agent Releases](https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-Agent-Releases/Cortex-XDR-Agent-Releases).
+With every Cortex product release, new agent features are released with specific agent versions. For feature support, known and addressed issues, and changes to default behavior by Cortex XDR agent version, see the [Cortex XDR Agent Releases](https://app.gitbook.com/s/RwAoI4lZv8Q7OzaOg2cK/cortex-xdr-agent-releases/readme).

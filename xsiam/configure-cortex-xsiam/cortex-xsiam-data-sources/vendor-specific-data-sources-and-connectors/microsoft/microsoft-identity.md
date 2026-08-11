@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Manage Microsoft Entra ID (formerly Azure Active Directory) identity resources — users, groups, applications and service principals, directory roles, conditional access, and risky users — and ingest Azure public IP address and endpoint indicator feeds. Fetches Microsoft Entra ID Protection risk detections as issues and enables automation and remediation across the Microsoft Graph and Azure APIs.

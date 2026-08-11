@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 FireEye Endpoint Security (HX) is an integrated solution that detects what others miss and protects endpoints against known and unknown threats. It provides access to information about endpoints, acquisitions, alerts, indicators, and containment, and collects FireEye HX audit events into Cortex.

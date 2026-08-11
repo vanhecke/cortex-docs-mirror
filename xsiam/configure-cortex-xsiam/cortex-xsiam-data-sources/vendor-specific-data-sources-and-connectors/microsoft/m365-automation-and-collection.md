@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Automate and collect across Microsoft 365 and Office 365 services, including Exchange Online mail (EWS and Microsoft Graph), Outlook calendars, Microsoft Teams messaging and management, the Microsoft Management Activity (O365/Azure) audit feed, unified audit-log policy and compliance search, message trace, endpoint configuration management, and the Office 365 IP/URL feed. Send messages and notifications, manage mailboxes and teams, search and remediate email, and fetch issues, indicators, and logs from your M365 tenant.

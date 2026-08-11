@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Cloudflare provides network and security products for consumers and businesses, using reverse proxies for web traffic, edge computing, and a content delivery network. This connector fetches indicators from the Cloudflare feed, connects to a Cloudflare Model Context Protocol (MCP) server to access Cloudflare tools in real time, collects Cloudflare Zero Trust audit and access authentication logs as events, and manages Cloudflare WAF firewall rules, filters, and IP-lists.

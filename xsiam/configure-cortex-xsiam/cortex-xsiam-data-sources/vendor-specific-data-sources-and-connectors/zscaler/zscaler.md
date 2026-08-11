@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Zscaler is a cloud security solution built for performance and flexible scalability. This connector manages URL and IP address allow lists and block lists, categories, IP destination groups, and Sandbox reports, and it can also collect Zscaler Internet Access (ZIA) logs. It includes Red Canary, which collects and standardizes endpoint data to help teams detect, analyze, and respond to security issues.

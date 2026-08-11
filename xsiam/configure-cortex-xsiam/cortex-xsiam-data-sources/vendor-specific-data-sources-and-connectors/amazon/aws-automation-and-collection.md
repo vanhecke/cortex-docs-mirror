@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Integrate with Amazon Web Services (AWS) to automate and orchestrate security operations across AWS services. This connector runs automation and remediation commands, fetches issues, collects logs and events, ingests threat intelligence indicators, and retrieves secrets across services such as EC2, IAM, GuardDuty, Security Hub, S3, Lambda, CloudTrail, CloudWatch Logs, Organizations, WAF, EKS, DynamoDB, and Secrets Manager.

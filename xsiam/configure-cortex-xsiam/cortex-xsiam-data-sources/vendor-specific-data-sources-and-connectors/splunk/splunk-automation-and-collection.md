@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Run queries on Splunk servers and fetch events from both Splunk Enterprise Security (ES) and non-ES environments. SplunkPy fetches notable events (for Splunk ES up to 8.1) and SplunkPy v2 fetches Findings and Investigations (for Splunk ES 8.2 and higher), enriching them with Asset, Identity, and Drilldown data and supporting bi-directional mirroring between Splunk and Cortex.

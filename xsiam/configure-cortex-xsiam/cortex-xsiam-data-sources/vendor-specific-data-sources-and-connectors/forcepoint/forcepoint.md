@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Forcepoint is an advanced threat protection product with added local management controls. This connector lets you create and manage custom URL/IP block-list categories in Forcepoint Web Security, centrally manage Forcepoint engines through the Security Management Center, and collect activity logs from Forcepoint DLP.

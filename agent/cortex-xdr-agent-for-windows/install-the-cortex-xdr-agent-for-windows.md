@@ -71,7 +71,7 @@ To install Cortex XDR using Msiexec:
 
 1. Before installing the Cortex XDR agent on a Windows endpoint, verify that the system meets the requirements described in [Cortex XDR Agent for Windows Requirements](cortex-xdr-agent-for-windows-requirements).
 2. Use one of the following methods to open a command prompt as an administrator.
-   * Select Start → **All Programs** → **Accessories**. Right-click **Command prompt** and **Run as administrator**.
+   * Select **Start** → **All Programs** → **Accessories**. Right-click **Command prompt** and **Run as administrator**.
    * Select **Start**. In the **Start Search** box, type **cmd**. Then, to open the command prompt as an administrator, press **CTRL**+**SHIFT**+**ENTER**.
 3.  Run the **`msiexec`** command followed by one or more supported options and properties.
 

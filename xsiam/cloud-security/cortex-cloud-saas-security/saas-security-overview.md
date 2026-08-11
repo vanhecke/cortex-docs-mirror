@@ -7,7 +7,7 @@ description: >-
 
 # SaaS Security Overview
 
-The SaaS Overview dashboard provides unified visibility into your multi-SaaS security posture to streamline daily operations. The dashboard seamlessly aggregates and presents security data from all four core SaaS Security pillars including: SSPM (Posture), SaaS Identity Security, SaaS Data Security, and SaaS Agent Security. Leverage this view to:
+The SaaS Overview dashboard provides unified visibility into your multi-SaaS security posture to streamline daily operations. The dashboard seamlessly aggregates and presents security data from all four core SaaS Security pillars including: SaaS Security Posture Management, SaaS Identity Security, SaaS Data Security, and SaaS Agent Security. Leverage this view to:
 
 * Triage Threats: Detect and investigate active security events in real time.
 * Manage Posture: Surface and prioritize misconfigurations across connected applications and assets.

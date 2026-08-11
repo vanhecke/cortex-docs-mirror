@@ -69,7 +69,7 @@ Configure your identity profiles, create and manage context-driven access rules,
 
 ### **Configure an Identity profile**
 
-Use the toggle in [Set up an Identity profile](broken-reference) to enable or disable the ​Conditional Access policy .
+Use the toggle in [Set up an Identity](../get-started-with-itdr#set-up-identity-profiles) profile to enable or disable the ​Conditional Access policy .
 
 **Important:** To activate the engine, you must enable the Conditional Access Policy (CAP) feature flag and configure its specific system parameters within the Identity Profile settings. These global configurations determine how the underlying agent handles authentication interception and structural service errors across your domain.
 

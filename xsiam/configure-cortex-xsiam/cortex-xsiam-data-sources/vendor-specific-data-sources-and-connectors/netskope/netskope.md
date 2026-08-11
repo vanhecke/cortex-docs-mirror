@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Integrate with Netskope to retrieve alerts and events, collect events extracted from SaaS traffic and logs, and manage quarantine files, URL lists, and hash lists. With the Netskope API you can proactively respond to security threats, enforce web access policies, and administer your Netskope environment.

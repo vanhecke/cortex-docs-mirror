@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see Marketplace.
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
 Zoom lets users create and join virtual meeting rooms to communicate over video and audio, share screens and files, and chat. This connector manages Zoom users and meetings, provisions users via IAM, collects operation logs and activity reports, interacts with the Zoom Mail API, and fetches Zoom endpoint IP ranges as an indicator feed.
