@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-11",
+  "source": "analytics",
+  "sha": "cf6a8837f23eac246ebca383ef335cd3e05b524d",
+  "headline": "No analytics rule changed; the reference holds at 1,293 detections",
+  "summary_md": "- The analytics rule reference exported with **no rule added, modified or withdrawn**.\n- The corpus stands at **1,293 rules**, the identical set as 2026-08-10.\n- The last movement in this source was the previous day's `required_data` split across 18 rules.",
+  "highlights": [],
+  "items": {},
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
