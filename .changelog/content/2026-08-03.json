@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-03",
+  "source": "content",
+  "sha": "fdc7f6a41362f4977d23c0a2ab0f1a7268e4507a",
+  "headline": "Cyberint 1.5.0 adds four Check Point Exposure Management playbooks and two intelligence commands",
+  "summary_md": "- **Cyberint 1.5.0** added four Check Point Exposure Management playbooks — IOC enrichment and triage, credential leak validation and response, vulnerability exploitation monitoring, and phishing takedown — all available from Cortex XSOAR 6.10.0.\n- Two new feed commands: `cyberint-cve-enrich` returns EPSS, CVSS, CWE, the Cyberint CVE score and active-exploitation evidence, and `cyberint-credential-leak-lookup` finds leaked credentials for a company domain.\n- **Check Point EM Premium Feed** was renamed **Check Point EM ThreatCloud Intelligence Feed**; the integration ID and the TIM `service` value stay `Cyberint Premium Feed`, so existing instances and indicator filters keep working.\n- Cyberint alerts now extract indicators through two new incident fields — **Cyberint Alert URL** and **CyberInt CVEs** — wired into the incoming mapper, incident type and layout.\n- **Vega 1.0.1** added a Recommended Actions field, layout section and mapper support; **Tenable Vulnerability Management** exposed its assets fetch interval in the Exposure Management module.",
+  "highlights": [
+    {
+      "title": "Four new Check Point Exposure Management playbooks",
+      "detail": "IOC Enrichment and Triage escalates on a malicious indicator, Credential Leak Validation and Response drives remediation then notification, Vulnerability Exploitation Monitoring prioritizes CVEs by real-world exploitation, and Phishing Takedown submits and polls takedowns.",
+      "paths": ["Packs/Cyberint"]
+    },
+    {
+      "title": "New commands for CVE enrichment and leaked-credential lookup",
+      "detail": "cyberint-cve-enrich returns EPSS, CVSS, CWE, the Cyberint CVE score and active-exploitation evidence; cyberint-credential-leak-lookup returns leaked employee or customer credentials for a company domain.",
+      "paths": ["Packs/Cyberint"]
+    },
+    {
+      "title": "Check Point EM Premium Feed renamed, without breaking existing instances",
+      "detail": "Only the display name became Check Point EM ThreatCloud Intelligence Feed; the integration ID and the service value written to indicators in TIM remain Cyberint Premium Feed.",
+      "paths": ["Packs/Cyberint"]
+    },
+    {
+      "title": "Cyberint alerts now extract URLs and CVEs as indicators",
+      "detail": "New Cyberint Alert URL and CyberInt CVEs incident fields are mapped from alert_data.url and alert_data.cves, with extraction enabled on the incident type so the new playbooks can read them.",
+      "paths": ["Packs/Cyberint"]
+    },
+    {
+      "title": "Vega surfaces recommended actions on incidents",
+      "detail": "Added the Vega Recommended Actions incident field, a Recommended Actions layout section, mapper support, and handling of the new actionKey and targetParams fields when fetching.",
+      "paths": ["Packs/Vega"]
+    },
+    {
+      "title": "Tenable fetch interval reaches the Exposure Management module",
+      "detail": "The Assets and vulnerabilities fetch interval parameter was unavailable there; separate Fetch events and Fetch assets and vulnerabilities parameters were also added.",
+      "paths": ["Packs/Tenable_io"]
+    }
+  ],
+  "items": {
+    "Packs/Cyberint": "1.5.0: four Check Point EM playbooks, cyberint-cve-enrich and cyberint-credential-leak-lookup, two new incident fields with mapper and layout wiring, and a takedown alert_id type fix.",
+    "Packs/Vega": "1.0.1: Vega Recommended Actions incident field, layout section and mapper mapping, plus actionKey and targetParams support when fetching recommended actions.",
+    "Packs/Tenable_io": "Exposed the assets and vulnerabilities fetch interval in the Exposure Management module and added Fetch events and Fetch assets and vulnerabilities parameters."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
