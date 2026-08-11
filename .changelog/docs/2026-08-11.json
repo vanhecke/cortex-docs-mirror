@@ -1,0 +1,75 @@
+{
+  "date": "2026-08-11",
+  "source": "docs",
+  "sha": "cf6a8837f23eac246ebca383ef335cd3e05b524d",
+  "headline": "Marketplace links restored on 296 data-source pages; Cloud Application Security rewritten with licensing",
+  "summary_md": "- 296 XSIAM data-source connector pages turned a plain-text **Marketplace** mention into a working link — the bulk of the day, and the only change on those pages.\n- **Cortex Cloud Application Security** was rewritten around three use cases and now states which base licence each one needs.\n- Nine Cortex XDR agent pages replaced their markdown tables with raw HTML, and several console names picked up bold.\n- Outbound links in the agent guide moved from `docs-cortex.paloaltonetworks.com` to `app.gitbook.com` spaces.\n- Nothing was added, deleted or renamed: all 316 files were modifications.",
+  "highlights": [
+    {
+      "title": "Cortex Cloud Application Security now states its licence requirements",
+      "detail": "ASPM and Supply Chain Security are included with a Cloud Posture, Cloud Runtime or XSIAM Premium base licence, while Code Security requires a separate Application Security add-on purchase.",
+      "paths": [
+        "xsiam/cloud-security/cortex-cloud-application-security"
+      ]
+    },
+    {
+      "title": "296 data-source pages gained a working Marketplace link",
+      "detail": "The notice that a connector is only available to tenants onboarded after July 26, 2026 now links \"Marketplace\" to ../../marketplace instead of naming it in plain text.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/saas-security-aperture",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/cortex-data-lake",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/cortex-attack-surface-management"
+      ]
+    },
+    {
+      "title": "The agent guide's compatibility and release links now point at GitBook",
+      "detail": "Both references on the agent introduction moved from docs-cortex.paloaltonetworks.com to app.gitbook.com space URLs, and the Mac uninstall page gained a GitBook link where it previously had bare text.",
+      "paths": [
+        "agent/introduction",
+        "agent/cortex-xdr-agent-for-macos/uninstall-the-cortex-xdr-agent-for-mac"
+      ]
+    },
+    {
+      "title": "The Azure BYOA security note was reframed from a statement of fact into a least-privilege claim",
+      "detail": "\"BYOA grants the Terraform runner zero tenant-level Microsoft Graph permissions\" became \"BYOA mode leverages a least-privilege security model\"; the mechanism described — write access through direct object ownership — is unchanged.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/outpost-onboarding/working-with-bringing-your-own-azure-app-byoa-outposts/task-1-meet-the-prerequisites-for-azure-byoa-outposts"
+      ]
+    },
+    {
+      "title": "Requirements and cytool reference tables became raw HTML",
+      "detail": "Nine Cortex XDR agent pages swapped markdown pipe tables for <table> markup, which shows as a large deletion count against a single added line without any content changing.",
+      "paths": [
+        "agent/cortex-xdr-agent-for-linux/troubleshooting-resources-for-linux/cytool-for-linux",
+        "agent/cortex-xdr-agent-for-windows/troubleshooting-resources-for-windows/cytool-for-windows",
+        "agent/cortex-xdr-agent-for-linux/cortex-xdr-agent-for-linux-requirements"
+      ]
+    },
+    {
+      "title": "The ITDR Conditional Access link was resolved out of broken-reference",
+      "detail": "It now points at the get-started-with-itdr#set-up-identity-profiles anchor, though the link text was split so only \"Set up an Identity\" is linked and \"profile\" trails outside it.",
+      "paths": [
+        "xsiam/detect-investigate-and-respond-to-threats/identity-threat-module-itdr/conditional-access-policy"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/cloud-security/cortex-cloud-application-security": "Retitled from Cloud Application Security and rewritten into use cases plus base-licence and add-on requirements per module component.",
+    "xsiam/detect-investigate-and-respond-to-threats/identity-threat-module-itdr/conditional-access-policy": "The Set up an Identity profile link resolves to the ITDR getting-started anchor instead of broken-reference.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/outpost-onboarding/working-with-bringing-your-own-azure-app-byoa-outposts/task-1-meet-the-prerequisites-for-azure-byoa-outposts": "The BYOA security note is reworded as a least-privilege model rather than a claim of zero tenant-level Microsoft Graph permissions.",
+    "xsiam/cloud-security/cortex-cloud-saas-security/saas-security-overview": "The first SaaS pillar is spelled out as SaaS Security Posture Management instead of the SSPM (Posture) abbreviation.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/saas-security-aperture": "Representative of the day's 296-page fix: the Marketplace reference in the onboarding-date notice is now a link.",
+    "agent/introduction": "Both the Compatibility Matrix and Agent Releases references were repointed from docs-cortex.paloaltonetworks.com to app.gitbook.com spaces.",
+    "agent/cortex-xdr-agent-for-macos/uninstall-the-cortex-xdr-agent-for-mac": "The \"Where can I install the Cortex XDR agent\" reference became a GitBook link.",
+    "agent/cortex-xdr-agent-for-linux/cortex-xdr-agent-for-linux-requirements": "The whole requirements table was re-emitted as a header-hidden HTML table; processor, RAM, disk, kernel and networking values are unchanged.",
+    "agent/cortex-xdr-agent-for-linux/install-the-cortex-xdr-agent-for-linux": "The distribution install-command table and the installer-options table both became HTML; the commands and options themselves did not change.",
+    "agent/cortex-xdr-agent-for-linux/troubleshooting-resources-for-linux": "The resources table became an HTML table, keeping the same pmd/dypd process, log path and kernel module entries.",
+    "agent/cortex-xdr-agent-for-linux/troubleshooting-resources-for-linux/cytool-for-linux": "All 23 cytool command-option rows were re-emitted as one HTML table; no option was added or removed.",
+    "agent/cortex-xdr-agent-for-windows/troubleshooting-resources-for-windows/cytool-for-windows": "The cytool command reference was converted to an HTML table with no change to the documented options.",
+    "agent/cortex-xdr-agent-for-macos/troubleshooting-resources-for-mac/cytool-for-mac": "The cytool command reference was converted to an HTML table with no change to the documented options.",
+    "agent/cortex-xdr-agent-for-windows/cortex-xdr-agent-for-windows-requirements": "Markup only: the Defend console reference is now bold and the table's separator row was widened.",
+    "agent/cortex-xdr-agent-for-windows/uninstall-the-cortex-xdr-agent-for-windows": "Markup only: Start, Control Panel, Programs and All Programs in the uninstall steps are now bold."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": true
+}

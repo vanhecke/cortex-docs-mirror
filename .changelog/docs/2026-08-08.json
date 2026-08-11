@@ -1,0 +1,75 @@
+{
+  "date": "2026-08-08",
+  "source": "docs",
+  "sha": "c2a0d0b770c4526cca8a78000d16b4dbb398bc42",
+  "headline": "Cortex Network Scanner is now supported for FedRAMP; Finland added to the regional IP allowlists",
+  "summary_md": "- **Cortex Network Scanner** flipped from *not* supported to supported for FedRAMP customers, in both places the page says so.\n- A **Finland (FI)** region was added to four allowlist tables — engine outbound, inbound sources, regional egress and the syslog receiver — so firewall rules need updating.\n- **Prisma Access Browser** gained a parent page and its ingestion topic moved one level deeper, taking the XSIAM book from 2,271 to 2,272 pages.\n- Several connector descriptions that still said **Cortex XSOAR** now say **Cortex XSIAM**, and two links that pointed at a `file:///` path or an opaque portal id were made relative.\n- The rest is markup: allowlist tables re-emitted as raw HTML, notes converted to GitBook hint blocks, and console names bolded.",
+  "highlights": [
+    {
+      "title": "Cortex Network Scanner is now supported for FedRAMP customers",
+      "detail": "Both occurrences of \"is not supported\" became \"is supported\". A reversal, not a clarification.",
+      "paths": [
+        "xsiam/detect-investigate-and-respond-to-threats/exposure-management/cortex-network-scanner"
+      ]
+    },
+    {
+      "title": "A Finland (FI) region was added across four IP allowlist tables",
+      "detail": "New addresses appear for engine outbound, inbound sources, regional egress and syslog forwarding; the Broker VM column on the regional egress row was left blank and the inbound page labels the region \"Finland (F)\".",
+      "paths": [
+        "xsiam/onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources/regional-egress-resources",
+        "xsiam/onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources/engine-ip-addresses-outbound",
+        "xsiam/onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources/inbound-source-resources",
+        "xsiam/onboard-cortex-xsiam/post-deployment/data-and-log-forwarding/forward-logs-and-data-from-cortex-xsiam-to-external-services/configure-external-applications-for-forwarding/integrate-a-syslog-receiver"
+      ]
+    },
+    {
+      "title": "The Prisma Access Browser ingestion page moved under a new parent",
+      "detail": "A near-empty Prisma Access Browser page was added and the ingestion topic relocated beneath it unchanged, so the old URL breaks.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/prisma-access-browser",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/prisma-access-browser/ingest-logs-from-prisma-access-browser"
+      ]
+    },
+    {
+      "title": "Policy Audit Scan added Debian and Ubuntu benchmarks",
+      "detail": "The supported list grew from the two CIS Windows benchmarks to also cover Debian and Ubuntu.",
+      "paths": [
+        "xsiam/detect-investigate-and-respond-to-threats/exposure-management/cortex-network-scanner"
+      ]
+    },
+    {
+      "title": "Two references were repointed at pages a reader can reach",
+      "detail": "The API security link was a local `file:///` path and the Defender for Endpoint prerequisite pointed at an opaque docs-cortex resource id; both are now relative portal paths.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/api-security/ingest-data-for-api-security",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-defender-for-endpoint-events/ingest-raw-edr-events-from-microsoft-defender-for-endpoint"
+      ]
+    },
+    {
+      "title": "The Azure Event Hub procedure lost its step numbering",
+      "detail": "Reflowing the diagnostic-settings section left lettered steps \"c.\" and \"d.\" inside a numbered list and renumbered the final Cortex XSIAM step from 6 to 4.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/azure-event-hub/ingest-logs-from-microsoft-azure-event-hub"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/detect-investigate-and-respond-to-threats/exposure-management/cortex-network-scanner": "FedRAMP support reversed to supported in both notices, and Policy Audit Scan now also covers Debian and Ubuntu alongside the CIS Windows benchmarks.",
+    "xsiam/onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources/regional-egress-resources": "Adds Finland (FI) with five of six addresses; the Broker VM column is empty. Both region tables and the service table became HTML.",
+    "xsiam/onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources/engine-ip-addresses-outbound": "Adds Finland (FI) engine outbound addresses 35.228.175.228 and 35.228.44.44.",
+    "xsiam/onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources/inbound-source-resources": "Adds an inbound row for the new region, labelled \"Finland (F)\" rather than (FI).",
+    "xsiam/onboard-cortex-xsiam/post-deployment/data-and-log-forwarding/forward-logs-and-data-from-cortex-xsiam-to-external-services/configure-external-applications-for-forwarding/integrate-a-syslog-receiver": "Adds Finland (FI) syslog forwarding addresses 34.88.235.28 and 34.88.248.229.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/prisma-access-browser": "New page, currently a heading only, inserted as the parent of the Prisma Access Browser ingestion topic.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/prisma-access-browser/ingest-logs-from-prisma-access-browser": "Moved here unchanged from the palo-alto-networks-integrations root; the previous path no longer resolves.",
+    "xsiam/onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources": "The full FQDN, IP and App-ID allowlist table was re-emitted as one HTML table; no FQDN or port was added or removed.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/azure-event-hub/ingest-logs-from-microsoft-azure-event-hub": "Notes became GitBook hint blocks and console names were bolded, but the diagnostic-settings steps are now mis-numbered.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/crowdstrike/crowdstrike-apis/ingest-alerts-and-metadata-from-crowdstrike-apis": "The inline base64 Falcon logo became a hosted image, and the two API-client screenshots were dropped from the procedure.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/workday": "Gains a row describing the Workday content pack for tenants onboarded before July 26, 2026.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/forcepoint/forcepoint-dlp": "The table's first column header changed from \"Forcepoint DLP vendor\" to \"Collection Method\".",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/cortex-data-lake": "The Strata Logging Service connector is described as an XSIAM connector rather than an XSOAR one, in both the intro and the sub-capability list.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/api-security/ingest-data-for-api-security": "The API security link was a local file:/// path and now resolves to the cloud-security API landscape page.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-defender-for-endpoint-events/ingest-raw-edr-events-from-microsoft-defender-for-endpoint": "The Enable access to required PANW resources prerequisite now uses a relative path instead of an opaque docs-cortex resource id."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}

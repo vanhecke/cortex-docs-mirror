@@ -1,0 +1,38 @@
+{
+  "date": "2026-08-07",
+  "source": "docs",
+  "sha": "3bb858a77cc1cc9f5973341950c7bcac2ffcc92a",
+  "headline": "Initial import: 2,711 pages across eight books seeded from the Cortex documentation portal",
+  "summary_md": "- This is the mirror's first export, not a day of change: 2,711 of the 2,712 files are additions and the one modification is the generated `README.md`.\n- Eight books were seeded — the largest by far is the **Cortex XSIAM Documentation** at 2,271 pages.\n- Within XSIAM, **Configure Cortex XSIAM** accounts for 1,224 pages and **Detect, Investigate, and Respond to Threats** for another 408.\n- Nothing here should be read as an upstream edit; the first meaningful docs diff is the following day.",
+  "highlights": [
+    {
+      "title": "The mirror starts from a snapshot, so every page reads as new",
+      "detail": "There is no prior state to diff against, so no page on this date was actually added, removed or changed upstream.",
+      "paths": []
+    },
+    {
+      "title": "Eight books were captured, each at its portal path under a book-named directory",
+      "detail": "Cortex XSIAM Documentation (2,271), Cortex XQL Command Reference (184), Linux Kernel Versions (100), Cortex XSIAM Developer Guide (84), Cortex XDR Agent Administrator Guide (35), Cortex XDR Compatibility Matrix (15), Cortex XQL Schema Reference (10) and Cortex XDR Agent Releases (4).",
+      "paths": [
+        "README"
+      ]
+    },
+    {
+      "title": "The Cortex XDR Agent Administrator Guide was pinned at version 9.3",
+      "detail": "Its 35 pages came from the cortex-xdr-agent/9.3 portal section, the only book seeded from a version-specific section.",
+      "paths": [
+        "agent"
+      ]
+    },
+    {
+      "title": "Navigation trees were recorded alongside the pages",
+      "detail": "Eight `.meta/<book>.json` manifests capture each book's navigation and the portal section it was collapsed from, which is what later diffs use to detect added, removed or reordered pages.",
+      "paths": []
+    }
+  ],
+  "items": {
+    "README": "Regenerated with the per-book page counts for all eight seeded books; the only file on this date that was modified rather than added."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": true
+}
