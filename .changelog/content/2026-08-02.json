@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-02",
+  "source": "content",
+  "sha": "ff497640ac0688230cbe8510616720a850e48e9e",
+  "headline": "Automated Docker bump across 242 packs, with no functional content change",
+  "summary_md": "- The day's only commit is the automated Docker update from the 2026-07-30 pipeline, touching 827 files across 242 packs.\n- Every content line in the diff is a Docker image reference, a version bump, or the release note announcing it — 343 integration and script entries got a new image and nothing else.\n- The two exceptions are non-ASCII characters re-encoded in the IBM Guardium and Apigee pack descriptions.\n- No integration commands, playbooks, mapping or detection logic moved.",
+  "highlights": [],
+  "items": {},
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": true
+}
