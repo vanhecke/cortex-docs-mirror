@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-10",
+  "source": "content",
+  "sha": "79d8151ed5e931f296ed5c68692efb44433426fc",
+  "headline": "Eight new AWS Network Firewall commands; SOC Framework Pack Manager 1.1.0 reworks pack installation",
+  "summary_md": "- **Amazon Web Services 2.5.0** added eight `aws-network-firewall-*` commands covering resource policies, resource tagging and logging configuration.\n- **SOC Framework Pack Manager 1.1.0** now upgrades packs in place instead of installing each release as a separate pack, adds a `diagnose` action, and no longer needs the *XSIAMContentPackInstaller* automation.\n- Three ingestion and mirroring fixes: **CrowdStrike Falcon** event fetch past 10,000 records, **SplunkPy v2** mirror-out to Splunk Enterprise Security 8.2.x, and **Microsoft Defender for Cloud Apps** dropping low-volume event types.\n- Cloud Posture remediation content moved off the deprecated `azure-nsg-*` and `azure-disk-*` commands onto the new `azure-vn-*` and `azure-compute-*` names.\n- An automated Docker bump touched 85 packs, and eight core packs were re-released as dependency locks with no functional change.",
+  "highlights": [
+    {
+      "title": "AWS gains resource-policy, tagging and logging commands for Network Firewall",
+      "detail": "Six commands manage resource policies and tags on rule groups and firewall policies, and two describe or update a firewall's logging configuration.",
+      "paths": ["Packs/AWS"]
+    },
+    {
+      "title": "SOC Framework Pack Manager stopped installing every release as its own pack",
+      "detail": "It also stripped a trailing non-version component from pack names such as soc-v3-tools, installing them under the wrong pack ID, and compared pre-release suffixes so 1.0.6-pr1008 ranked above 1.0.7.",
+      "paths": ["Packs/SocFrameworkManager"]
+    },
+    {
+      "title": "CrowdStrike Falcon event fetch failed beyond 10,000 records",
+      "detail": "Fetching events errored with \"offset + limit must be less than or equal to 10000\".",
+      "paths": ["Packs/CrowdStrikeFalcon"]
+    },
+    {
+      "title": "SplunkPy v2 mirror-out to Splunk Enterprise Security 8.2.x fixed",
+      "detail": "The outgoing finding mapper was updated for 8.2.x, and the processed-mirrored-events cache made concurrency-safe so parallel executions no longer overwrite each other's integration context.",
+      "paths": ["Packs/SplunkPy"]
+    },
+    {
+      "title": "Cloud Posture playbooks moved to the new Azure command names",
+      "detail": "NSG remediation now calls azure-vn-security-rule-* and the public-access auto-remediation calls azure-compute-disk-update; the rule creation argument action was renamed access.",
+      "paths": ["Packs/CloudSecurityPolicyManagement", "Packs/CloudSecurityPostureManagement"]
+    },
+    {
+      "title": "Active Directory Query v2 can write binary attribute values",
+      "detail": "A new optional attribute-type argument adds Octet String support to ad-update-user, ad-update-contact and ad-update-group.",
+      "paths": ["Packs/Active_Directory_Query"]
+    }
+  ],
+  "items": {
+    "Packs/AWS": "Added eight aws-network-firewall-* commands: resource policy put/describe/delete, resource tag/untag, tag listing, and logging configuration describe/update.",
+    "Packs/SocFrameworkManager": "1.1.0 installs packs in place, resolves mandatory dependencies before installing, adds a diagnose action and a Pack catalog URL parameter, and surfaces upload failures.",
+    "Packs/CrowdStrikeFalcon": "Fixed event fetching failing with an \"offset + limit must be less than or equal to 10000\" error.",
+    "Packs/SplunkPy": "Fixed mirror-out to Splunk Enterprise Security 8.2.x and made the processed mirrored events cache concurrency-safe; outgoing mapper updated for 8.2.x.",
+    "Packs/MicrosoftCloudAppSecurity": "Event collector now fetches up to 1000 events per type per cycle, no longer drops low-volume event types, and isolates a failure in one type from the others.",
+    "Packs/CloudSecurityPolicyManagement": "NSG remediation playbook and AzureIdentifyNSGExposureRule moved to the azure-vn-* commands; the rule creation argument action was renamed access.",
+    "Packs/CloudSecurityPostureManagement": "Azure Public Access Misconfiguration auto-remediation replaced the deprecated azure-disk-update with azure-compute-disk-update.",
+    "Packs/Active_Directory_Query": "Added an attribute-type argument for binary (Octet String) values in ad-update-user, ad-update-contact and ad-update-group.",
+    "Packs/VMwareVCenter": "Fixed VM Operations hostname mapping when descriptions contain repeated spaces, and stopped mapping extended envoy access logs by classic field positions.",
+    "Packs/Vega": "Alert event JSON fields are parsed and fields._raw promoted to top level, expanding dotted and {}-suffixed keys; added the Vega.AlertEvents.Events context output.",
+    "Packs/ImageOCR": "image-ocr-extract-text now returns a warning instead of erroring on an empty or truncated image file.",
+    "Packs/CommonScripts": "ReadQRCode now returns a warning entry instead of erroring on a zero-byte image file."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": true
+}
