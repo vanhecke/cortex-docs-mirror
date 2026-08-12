@@ -1,0 +1,44 @@
+{
+  "date": "2026-08-11",
+  "source": "content",
+  "sha": "47f32a4a200f333912b2de9f20a5231001be3998",
+  "headline": "Horizon3.ai NodeZero pack added; Akamai WAF SIEM splits incident and event fetch limits",
+  "summary_md": "- **NodeZero 1.0.0** is a new partner pack from Horizon3.ai that fetches high and critical weaknesses from autonomous pentest operations as incidents.\n- **Akamai WAF SIEM 1.3.0** is a flagged breaking change: the *Fetch limit* parameter was renamed and split into separate incident and event limits, and *Akamai Page size* was removed.\n- **Amazon Web Services 2.6.0** added `aws-s3-bucket-objects-list-v2`, built on the ListObjectsV2 API.\n- Two small fixes: PAN-OS job polling stopping early, and a stray space in a GCP context output.\n- An automated Docker bump touched 18 packs.",
+  "highlights": [
+    {
+      "title": "NodeZero joins the catalog as a partner-supported vulnerability management pack",
+      "detail": "The integration fetches HIGH and CRITICAL weaknesses from Horizon3.ai pentest operations, with incident fields for attack path count, weakness score, proof status, CISA KEV listing and ransomware use.",
+      "paths": ["Packs/NodeZero"]
+    },
+    {
+      "title": "Akamai WAF SIEM fetch limits are a breaking change",
+      "detail": "*Fetch limit* became *Incident fetch limit* (`fetchLimit`, max 2000) and now governs incidents only, while a new *Events fetch limit* (`eventsFetchLimit`, default 60000, max 80000) governs event collection.",
+      "paths": ["Packs/Akamai_SIEM"]
+    },
+    {
+      "title": "Akamai page size is no longer configurable",
+      "detail": "The **Akamai Page size** parameter was removed and the page size is now managed internally by the integration.",
+      "paths": ["Packs/Akamai_SIEM"]
+    },
+    {
+      "title": "A second S3 object listing command sits alongside the original",
+      "detail": "`aws-s3-bucket-objects-list-v2` returns a pagination token for truncated results even when no delimiter is set, which the existing `aws-s3-bucket-objects-list` does not.",
+      "paths": ["Packs/AWS"]
+    },
+    {
+      "title": "Cortex Core IOC documents that enable and disable are TIM-only",
+      "detail": "The integration YAML and README now state that enabling or disabling an indicator applies only to TIM-managed indicators.",
+      "paths": ["Packs/Core"]
+    }
+  ],
+  "items": {
+    "Packs/NodeZero": "New partner pack (Horizon3.ai, 1.0.0): fetches high and critical NodeZero pentest weaknesses as incidents, with a classifier, mapper, seven incident fields and a NodeZero Weakness incident type.",
+    "Packs/Akamai_SIEM": "1.3.0 breaking change: incident and event fetch limits separated into Incident fetch limit and Events fetch limit, Akamai Page size removed, and the event collection flow refactored.",
+    "Packs/AWS": "Added aws-s3-bucket-objects-list-v2, which lists up to 1,000 objects using the ListObjectsV2 API and always returns a pagination token for truncated results.",
+    "Packs/PAN-OS": "Fixed pan-os-platform-get-jobs stopping polling prematurely when status or job_type were passed together with id and polling=true.",
+    "Packs/Core": "Indicators detection now documents that enable and disable apply only to TIM-managed indicators.",
+    "Packs/GCP": "Fixed an extra space in the context output of gcp-compute-network-tag-set."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
