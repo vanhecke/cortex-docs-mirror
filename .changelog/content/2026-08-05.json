@@ -1,0 +1,39 @@
+{
+  "date": "2026-08-05",
+  "source": "content",
+  "sha": "7edfa5cfe2fbf3a1894ef21b9e2085ec72c022f2",
+  "headline": "Cisco Email Threat Defense connector added; AWS CloudWatchLogs marked for deprecation",
+  "summary_md": "- **Cisco Email Threat Defense (ETD) Cortex XSOAR Connector** is a new pack that fetches ETD message events as incidents and ships a reclassification and remediation playbook.\n- **AWS - CloudWatchLogs** carries a deprecation notice for November 2026, pointing users at the unified **AWS** integration.\n- Deprecations landed on two Microsoft commands: the *display_name* argument of `azure-sentinel-threat-indicator-update`, and the *filter*, *select* and *expand* arguments of `azure-sc-list-alert`.\n- **Microsoft Sentinel** also gained two incident fetch filters, and **Amazon Web Services** a *tags* argument on EKS access entry creation.",
+  "highlights": [
+    {
+      "title": "Cisco ETD email threats can be ingested and remediated from XSOAR",
+      "detail": "The pack fetches malicious and suspicious ETD message events as incidents and includes a playbook that reclassifies verdicts and moves messages to quarantine, junk, inbox, trash or delete.",
+      "paths": ["Packs/ETDXsoarConnector"]
+    },
+    {
+      "title": "AWS - CloudWatchLogs will be deprecated in November 2026",
+      "detail": "The release note recommends migrating to the unified AWS integration, which covers the same functionality plus broader AWS service support.",
+      "paths": ["Packs/AWS-CloudWatchLogs"]
+    },
+    {
+      "title": "Microsoft Sentinel can exclude incidents by title and alert product",
+      "detail": "New *Incident Titles to Not Fetch* and *Alert Product Names to Not Fetch* parameters filter fetched incidents.",
+      "paths": ["Packs/AzureSentinel"]
+    },
+    {
+      "title": "Two Microsoft command arguments stopped working upstream",
+      "detail": "Sentinel's API no longer supports updating indicator display names, and Defender for Cloud ignores the alert list filter arguments — use azure-rg-query instead.",
+      "paths": ["Packs/AzureSentinel", "Packs/AzureSecurityCenter"]
+    }
+  ],
+  "items": {
+    "Packs/ETDXsoarConnector": "New pack: fetches Cisco Email Threat Defense message events as incidents, with an ETD Malicious Email incident type, an ETD Message ID field and a reclassification and remediation playbook.",
+    "Packs/AWS-CloudWatchLogs": "Deprecation notice: the integration will be deprecated in November 2026 in favour of the unified AWS integration.",
+    "Packs/AzureSentinel": "Added Incident Titles to Not Fetch and Alert Product Names to Not Fetch parameters, and deprecated and hid the display_name argument of azure-sentinel-threat-indicator-update.",
+    "Packs/AzureSecurityCenter": "Deprecated the filter, select and expand arguments of azure-sc-list-alert, which Defender for Cloud no longer supports; use azure-rg-query to filter alerts.",
+    "Packs/AWS": "Added a tags argument to the aws-eks-access-entry-create command.",
+    "Packs/GoogleDrive": "Binary output from the Google Drive get-file-content command is now tagged ;base64, alongside the shared GoogleDriveApiModule and the Google Drive standard connector."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
