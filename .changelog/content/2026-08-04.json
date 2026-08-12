@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-04",
+  "source": "content",
+  "sha": "dde6c432df9d86abad31be909867f60d535ebf94",
+  "headline": "TXOne StellarOne parsing and modeling rules added; Salesforce gains file and Knowledge commands",
+  "summary_md": "- **TXOne StellarOne** is a new XSIAM-only pack: parsing and modeling rules for OT endpoint security logs collected over syslog through the Broker VM.\n- **Salesforce 2.2.0** added five commands covering file deletion, public links and Knowledge article lifecycle, and made *Credentials* optional for unified-connector instances.\n- **Rapid7 InsightVM** no longer times out mid-stream on large `fetch-assets` report downloads.\n- A quiet day otherwise: four packs moved in total, with no Docker bump.",
+  "highlights": [
+    {
+      "title": "TXOne StellarOne logs can now be modeled in XSIAM",
+      "detail": "Parsing and modeling rules cover audit, system, console and agent (StellarProtect) events forwarded in CEF, queryable as the txone_stellarone_raw dataset.",
+      "paths": ["Packs/TXOneStellarOne"]
+    },
+    {
+      "title": "Salesforce added Knowledge article archive and draft commands",
+      "detail": "salesforce-knowledge-article-archive and salesforce-knowledge-article-draft-create wrap the standard archiveKnowledgeArticles and createDraftFromOnlineKnowledgeArticle actions, the latter unpublishing the online version by default.",
+      "paths": ["Packs/Salesforce"]
+    },
+    {
+      "title": "Salesforce Credentials became optional for unified-connector instances",
+      "detail": "UCP-managed instances resolve the access token at runtime and were being rejected during pre-execution config validation as missing required config values.",
+      "paths": ["Packs/Salesforce"]
+    },
+    {
+      "title": "Rapid7 InsightVM fetch-assets survives large reports",
+      "detail": "The report download stream was cut off after five minutes; it now uses an idle-read timeout with no overall limit, so a large report completes in one run.",
+      "paths": ["Packs/Rapid7_Nexpose"]
+    },
+    {
+      "title": "ASM stopped offering a remediation it could not perform",
+      "detail": "The Cortex ASM - Remediation Path Rules playbook offered *Restrict Open Ports* even when on-prem enrichment had not identified a firewall rule to update.",
+      "paths": ["Packs/CortexAttackSurfaceManagement"]
+    }
+  ],
+  "items": {
+    "Packs/TXOneStellarOne": "New XSIAM pack: parsing and modeling rules for TXOne StellarOne OT endpoint audit, system, console and agent logs ingested via the Broker VM as txone_stellarone_raw.",
+    "Packs/Salesforce": "2.2.0 added file delete, public link list and remove, and Knowledge article archive and draft-create commands; the Credentials parameter is now optional.",
+    "Packs/Rapid7_Nexpose": "Fixed fetch-assets failing on large reports after a five-minute stream cutoff, added the underlying error type to streaming failure messages, and logged received line counts.",
+    "Packs/CortexAttackSurfaceManagement": "Cortex ASM - Remediation Path Rules no longer offers Restrict Open Ports when on-prem enrichment did not identify a firewall rule to update."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
