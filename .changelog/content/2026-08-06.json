@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-06",
+  "source": "content",
+  "sha": "74b982bf28174a595cd66b45abd5b58728dc5f39",
+  "headline": "Brandefense DRPS joins the catalog; EWS Online Powershell v3 gains transport rule commands",
+  "summary_md": "- **Brandefense Digital Risk Protection Services 1.0.0** is a new partner pack: a threat intelligence integration with two incident types, eleven incident fields, a classifier and a mapper.\n- **EWS Extension Online Powershell v3** added `ews-mail-flow-rule-create` and `ews-mail-flow-rule-update`, and pinned its EXO Docker version around a Microsoft bug.\n- **Arista Switch** fixed ACL modeling for `%ACL-6-IPACCESS` events that carry no interface token, which had been shifting every field one position.\n- Fixes elsewhere: CrowdStrike Falcon ODS/OFP mirroring, Magnet Automate's API base path, the generic account enrichment playbook, and a HealthCheck script crash.\n- A quiet day otherwise — eight packs, no removals.",
+  "highlights": [
+    {
+      "title": "Brandefense Digital Risk Protection Services is a new partner pack",
+      "detail": "A Brandefense-supported threat intelligence integration (min server 6.10.0) shipping Brandefense Incident and Brandefense Intelligence incident types, eleven incident fields, two layouts, a classifier and an incoming mapper, published to xsoar, marketplacev2 and platform.",
+      "paths": ["Packs/BrandefenseDRPS"]
+    },
+    {
+      "title": "Arista ACL events without an interface were parsed one field out of place",
+      "detail": "The rule split the log into a positional `acl_tuple`, so an `%ACL-6-IPACCESS` message missing the interface token pushed the action into the interface slot; named regex extractions now supply `acl_name`, action, protocol and interface whether or not the interface is present.",
+      "paths": ["Packs/AristaSwitch"]
+    },
+    {
+      "title": "Exchange Online can now create and modify mail flow rules",
+      "detail": "`ews-mail-flow-rule-create` and `ews-mail-flow-rule-update` add transport rule management to EWS Extension Online Powershell v3.",
+      "paths": ["Packs/MicrosoftExchangeOnline"]
+    },
+    {
+      "title": "CrowdStrike ODS and OFP detections were mirrored in as generic endpoint detections",
+      "detail": "Detections with `product=epp` were classified as Endpoint Detection incidents during incoming mirroring rather than as On-Demand Scan or OFP detections.",
+      "paths": ["Packs/CrowdStrikeFalcon"]
+    },
+    {
+      "title": "Magnet Automate Beta was calling the wrong endpoints entirely",
+      "detail": "Requests omitted the `/api/v0` base path, five commands sent no request body, and `mf-automate-workflow-run-cancel` posted to an incorrect endpoint.",
+      "paths": ["Packs/MagnetForensics"]
+    }
+  ],
+  "items": {
+    "Packs/BrandefenseDRPS": "New partner pack (Brandefense, 1.0.0): digital risk protection, external attack surface and threat intelligence, with IP and domain reputation commands and incident fetching.",
+    "Packs/AristaSwitch": "1.0.9: ACL modeling handles %ACL-6-IPACCESS events with no interface token, so action, protocol and interface map correctly either way.",
+    "Packs/MicrosoftExchangeOnline": "1.10.7 added ews-mail-flow-rule-create and ews-mail-flow-rule-update; 1.10.6 pinned the pwsh-exchangev3 image over a Microsoft bug causing GetResponseHeader failures.",
+    "Packs/CrowdStrikeFalcon": "2.12.6: ODS and OFP detections with product=epp are no longer misclassified as generic Endpoint Detection incidents during incoming mirroring.",
+    "Packs/MagnetForensics": "1.0.1: restored the /api/v0 base path, added missing request bodies on five commands, and corrected the workflow-run-cancel endpoint.",
+    "Packs/RubrikPolaris": "1.9.2: Rubrik Object Location extended to the Rubrik Radar incident type, surfaced on the Radar layout and populated with the full object path by the context analysis playbook.",
+    "Packs/CommonPlaybooks": "2.8.7: Account Enrichment - Generic v2.1 no longer passes a placeholder \"N/A\" or empty username to enrichment commands.",
+    "Packs/HealthCheck": "3.1.4: HealthCheckIncidentTypes no longer fails with KeyError: 0, and gains its first test file."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
