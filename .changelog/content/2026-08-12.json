@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-12",
+  "source": "content",
+  "sha": "2fea0cae1f40cb033258616abd08349813a841ea",
+  "headline": "Six packs get XSIAM 3.19 identity.* modeling rules; MS Graph Security stops mapping every host to the tenant ID",
+  "summary_md": "- A campaign (CRTX-271523, PRs 1 and 3 of 7) adds a second modeling rule to six packs that mirrors every `xdm.*.user.*` mapping into `xdm.*.identity.*`, gated to platform 8.15.0 while the old rule is capped at 8.14.0.\n- **Microsoft Graph Security** fixed `xdm.source.host.device_id`, which was mapped to `tenantId` and therefore identical on every alert.\n- **Druva** gained modeling for Cybersecurity events; **PAN-OS** added polling to `pan-os-platform-get-system-status`.\n- **Core** removed the `SearchIndicatorInEventsAgentix` script, superseded by the managed Agentix pack.\n- **SOCRadar** and **GenericAPICall** were Docker image bumps only.",
+  "highlights": [
+    {
+      "title": "Every Microsoft Graph Security alert reported the same device_id",
+      "detail": "`xdm.source.host.device_id` was mapped to `tenantId` — the Entra tenant, identical across all alerts — and is now `coalesce(deviceEvidence.mdeDeviceId, deviceEvidence.azureAdDeviceId)`, with `xdm.source.host.hostname` newly mapped from `deviceEvidence.hostName`.",
+      "paths": ["Packs/MicrosoftGraphSecurity"]
+    },
+    {
+      "title": "identity.* modeling rules ship as parallel 3.19 rule versions, not in-place edits",
+      "detail": "Each pack keeps its existing rule with a new `toversion: 8.14.0` and adds a `<Pack>_3_19` rule at `fromversion: 8.15.0`, so the identity fields only populate on Cortex XSIAM 3.19 and later.",
+      "paths": [
+        "Packs/AzureDevOps",
+        "Packs/Barracuda_Cloudgen_Firewall",
+        "Packs/CybelAngel",
+        "Packs/FortinetFortiwebVM",
+        "Packs/NetmotionVPN",
+        "Packs/BeyondTrustRemoteSupport"
+      ]
+    },
+    {
+      "title": "Druva's schema swapped timeStamp for timestamp and gained a Cybersecurity event set",
+      "detail": "The modeling rule schema drops `timeStamp` and adds `timestamp` alongside `category`, `details`, `type`, `feature`, `syslogSeverity`, `facility`, `profileID` and `globalID` for the Cybersecurity stream.",
+      "paths": ["Packs/Druva"]
+    },
+    {
+      "title": "Three Agentix actions and a script were removed as capped at 8.13.0",
+      "detail": "`SearchIndicatorInEventsAgentix` was deleted from Core, and the Base and Core release notes record `SendMail`, `CortexRunXQLQuery` and `CortexCreateAppSecPolicy` as removed in favour of the managed Agentix pack — though those notes are commented out and surface only as \"Documentation and metadata improvements\".",
+      "paths": ["Packs/Core", "Packs/Base"]
+    },
+    {
+      "title": "PAN-OS can now wait for a device to come back up",
+      "detail": "`pan-os-platform-get-system-status` accepts `polling=true` and polls the target device until its operational mode reads \"normal\" or the timeout expires.",
+      "paths": ["Packs/PAN-OS"]
+    }
+  ],
+  "items": {
+    "Packs/MicrosoftGraphSecurity": "2.5.7: device_id remapped from tenantId to deviceEvidence.mdeDeviceId (falling back to azureAdDeviceId), and hostname mapped from deviceEvidence.hostName.",
+    "Packs/AzureDevOps": "1.4.23: new AzureDevOps_3_19 modeling rule adding xdm.*.identity.* alongside xdm.*.user.*; the existing rule is capped at platform 8.14.0.",
+    "Packs/Barracuda_Cloudgen_Firewall": "1.0.9: new Barracuda_CGFWModelingRules_3_19 rule adding the xdm.*.identity.* mappings, existing rule capped at 8.14.0.",
+    "Packs/CybelAngel": "1.1.11: new CybelAngel_3_19 modeling rule adding the xdm.*.identity.* mappings, existing rule capped at 8.14.0.",
+    "Packs/FortinetFortiwebVM": "2.0.20: new FortinetFortiwebVM_3_19 modeling rule adding the xdm.*.identity.* mappings, existing rule capped at 8.14.0.",
+    "Packs/NetmotionVPN": "1.0.6: new NetmotionVPN_3_19 modeling rule adding the xdm.*.identity.* mappings, existing rule capped at 8.14.0.",
+    "Packs/BeyondTrustRemoteSupport": "1.0.6: new BeyondTrustRemoteSupport_3_19 modeling rule adding the xdm.*.identity.* mappings, existing rule capped at 8.14.0.",
+    "Packs/Druva": "1.3.7: modeling rule and schema extended to cover Druva Cybersecurity events; timeStamp replaced by timestamp.",
+    "Packs/Core": "3.5.83: deleted the SearchIndicatorInEventsAgentix script, capped at platform 8.13.0 and superseded by the managed Agentix pack.",
+    "Packs/PAN-OS": "2.6.47: pan-os-platform-get-system-status gained polling=true, waiting for the device to reach operational mode \"normal\" or time out.",
+    "Packs/Slack": "3.8.13: fixed an invalid_blocks error from empty markdown delimiters that could stop Cortex Agentic Assistant approval prompts reaching Slack.",
+    "Packs/ApiModules": "2.4.39: the same empty-markdown-delimiter fix in SlackUtilsApiModule, which SlackV3 shares.",
+    "Packs/SOCRadar": "2.3.2: Docker bump to demisto/python3:3.12.13.10116658 across all seven SOCRadar integrations. No behaviour change.",
+    "Packs/GenericAPICall": "1.0.5: Docker bump to demisto/python3:3.12.13.10404775 only.",
+    "Packs/Base": "1.42.17: metadata bump recording the removal of the SendMail Agentix Action, capped at platform 8.13.0."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
