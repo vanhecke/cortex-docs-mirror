@@ -1,0 +1,32 @@
+{
+  "date": "2026-08-13",
+  "source": "content",
+  "sha": "3586dc1b512d3d077c1858717312b5c664c2faf4",
+  "headline": "Azure Key Vault serves credentials on demand; Entra ID IPv6 caller IPs reach the Authentication story",
+  "summary_md": "- A quiet day: four commits across four packs, 22 files, no new or withdrawn packs.\n- **Azure Key Vault** gained a *Credentials Fetch Mode* parameter whose on-demand mode keeps secret values out of the Cortex credentials store.\n- **Microsoft Entra ID** rewrote its caller-IP extraction so IPv6 addresses populate in the Authentication story, and added `xdm.source.ipv4`/`ipv6`.\n- **GreyNoise** added Trust Level 3 handling and stopped querying the installed-pack API for its own version; **Picus Security NG** moved one command to the v2 endpoint.",
+  "highlights": [
+    {
+      "title": "Azure Key Vault can list secrets without storing their values in Cortex",
+      "detail": "The new `credentials_fetch_mode` parameter defaults to \"Store in Cortex\"; set to \"External Credentials Vault (on-demand)\" the credentials picker shows only `KEY_VAULT_NAME/SECRET_NAME` and the value is fetched from Azure at request time.",
+      "paths": ["Packs/AzureKeyVault"]
+    },
+    {
+      "title": "Entra ID's IPv6 caller IPs were silently dropped",
+      "detail": "The `caller_ipv4`/`caller_ipv6` extractions replaced chained `if(... ~= regex ...)` matching with `coalesce(arrayindex(regextract(...)))` over both `callerIpAddress` and `properties.ipAddress`, and the release note records that IPv6 caller IPs were not populated for the `msft_azure_raw` and `msft_azure_ad_raw` datasets.",
+      "paths": ["Packs/MicrosoftEntraID"]
+    },
+    {
+      "title": "GreyNoise now recognises Trust Level 3 responses",
+      "detail": "`ip_reputation_command` and `riot_command` map `trust_level` 3 to \"3 - Context Only\" with classification `unknown`; previously only levels 1 and 2 were translated.",
+      "paths": ["Packs/GreyNoise"]
+    }
+  ],
+  "items": {
+    "Packs/AzureKeyVault": "1.2.0: new Credentials Fetch Mode parameter adding an External Credentials Vault (on-demand) mode that resolves secret values at request time.",
+    "Packs/MicrosoftEntraID": "1.0.33: caller IP extraction rewritten with coalesce/regextract so IPv6 populates, plus new xdm.source.ipv4 and xdm.source.ipv6 mappings.",
+    "Packs/GreyNoise": "2.1.0: Trust Level 3 (\"Context Only\") handled in both integrations, pack-version lookup wrapped in a helper with a fallback, Docker bumped to demisto/greynoise:1.0.0.10926121.",
+    "Packs/PicusNGAutomation": "1.0.18: picus-get-mitigation-devices switched from /v1/mitigation/devices to the v2 endpoint."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
