@@ -16,7 +16,8 @@
   "investigative_actions": "Verify the reject cause of the MFA attempts. Check to see if the user has successfully authenticated around the time of the alert, and confirm it's a legitimate login. Verify the authentication attempt from the rare country is benign.",
   "name": "A user rejected an SSO request from an unusual country",
   "required_data": [
-    "Okta"
+    "Okta",
+    "OneLogin"
   ],
   "severity": "Low",
   "test_period": "1 Hour",

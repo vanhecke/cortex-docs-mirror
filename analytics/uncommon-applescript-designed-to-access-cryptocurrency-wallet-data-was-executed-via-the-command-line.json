@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: AppleScript (T1059.002)",
+    "Data from Local System (T1005)"
+  ],
+  "attackers_goals": "Exfiltrate cryptocurrency wallet data and seed phrases for direct financial theft.",
+  "deduplication_period": "1 Day",
+  "description": "The AppleScript interpreter was executed with a script designed to access cryptocurrency wallet data.",
+  "detection_modules": "",
+  "detector_tags": "AppleScript Analytics, Sensitive Information Stealing Analytics",
+  "investigative_actions": "Identify which cryptocurrency wallet application data was targeted. Check if wallet seed phrases, private keys, or transaction data were accessed. Verify whether the process or its children attempted to exfiltrate the wallet data. Determine if the executing user typically uses cryptocurrency applications.",
+  "name": "Uncommon AppleScript designed to access cryptocurrency wallet data was executed via the command line",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon AppleScript designed to access cryptocurrency wallet data was executed via the command line accessed crypto wallet's files",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Execution (TA0002)",
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter: AppleScript (T1059.002)",
+        "Data from Local System (T1005)"
+      ],
+      "description": "The AppleScript interpreter was executed with a script designed to access cryptocurrency wallet data.",
+      "attackers_goals": "Exfiltrate cryptocurrency wallet data and seed phrases for direct financial theft.",
+      "investigative_actions": "Identify which cryptocurrency wallet application data was targeted. Check if wallet seed phrases, private keys, or transaction data were accessed. Verify whether the process or its children attempted to exfiltrate the wallet data. Determine if the executing user typically uses cryptocurrency applications."
+    }
+  ]
+}

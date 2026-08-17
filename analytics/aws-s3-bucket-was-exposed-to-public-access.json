@@ -7,11 +7,11 @@
     "Impair Defenses (T1562)"
   ],
   "attackers_goals": "The attacker wants to maintain indirect control over the resource. The attacker intends to allow public access, making it harder to detect future activity. Attackers are constantly monitoring for public assets to steal sensitive information.",
-  "deduplication_period": "5 Days",
-  "description": "AWS bucket was publicly shared.",
+  "deduplication_period": "1 Day",
+  "description": "AWS S3 bucket was publicly shared.",
   "detection_modules": "Cloud",
   "detector_tags": "Cloud Data Asset Exfiltration, Cloud Data Asset Public Exposure, Data Detection & Response",
-  "investigative_actions": "Check if the identity intended to change the state of the bucket to public. Change the bucket or ACL policy for bucket. Restrict permissions for the identity if needed.",
+  "investigative_actions": "Check if the identity intended to change the state of the bucket or object to public. Review the bucket ACL policy. Restrict permissions for the identity if needed.",
   "name": "AWS S3 bucket was exposed to public access",
   "required_data": [
     "AWS Audit Log"
@@ -28,9 +28,9 @@
       "attack_techniques": [
         "Impair Defenses (T1562)"
       ],
-      "description": "AWS bucket was publicly shared.",
+      "description": "AWS S3 bucket was publicly shared.",
       "attackers_goals": "The attacker wants to maintain indirect control over the resource. The attacker intends to allow public access, making it harder to detect future activity. Attackers are constantly monitoring for public assets to steal sensitive information.",
-      "investigative_actions": "Check if the identity intended to change the state of the bucket to public. Change the bucket or ACL policy for bucket. Restrict permissions for the identity if needed."
+      "investigative_actions": "Check if the identity intended to change the state of the bucket or object to public. Review the bucket ACL policy. Restrict permissions for the identity if needed."
     },
     {
       "name": "AWS S3 bucket was exposed to public access containing sensitive information",
@@ -41,9 +41,9 @@
       "attack_techniques": [
         "Impair Defenses (T1562)"
       ],
-      "description": "AWS bucket was publicly shared.",
+      "description": "AWS S3 bucket was publicly shared.",
       "attackers_goals": "The attacker wants to maintain indirect control over the resource. The attacker intends to allow public access, making it harder to detect future activity. Attackers are constantly monitoring for public assets to steal sensitive information.",
-      "investigative_actions": "Check if the identity intended to change the state of the bucket to public. Change the bucket or ACL policy for bucket. Restrict permissions for the identity if needed."
+      "investigative_actions": "Check if the identity intended to change the state of the bucket or object to public. Review the bucket ACL policy. Restrict permissions for the identity if needed."
     }
   ]
 }

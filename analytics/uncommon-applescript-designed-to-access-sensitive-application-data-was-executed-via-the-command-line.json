@@ -1,0 +1,24 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: AppleScript (T1059.002)",
+    "Data from Local System (T1005)"
+  ],
+  "attackers_goals": "Access sensitive application data such as messaging history and notes for intelligence gathering or data exfiltration.",
+  "deduplication_period": "1 Day",
+  "description": "The AppleScript interpreter was executed with a script designed to access sensitive application data such as Telegram messages, Apple Notes, or cached data.",
+  "detection_modules": "",
+  "detector_tags": "AppleScript Analytics, Sensitive Information Stealing Analytics",
+  "investigative_actions": "Identify which sensitive application data was targeted (Telegram, Apple Notes, cached data, etc.). Check if application databases or message stores were copied or exfiltrated. Verify the legitimacy of the data access attempt and whether it aligns with the user's normal activity. Examine child processes for signs of data exfiltration.",
+  "name": "Uncommon AppleScript designed to access sensitive application data was executed via the command line",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "High",
+  "test_period": "N/A (single event)",
+  "variations": []
+}

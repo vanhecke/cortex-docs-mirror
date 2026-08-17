@@ -33,7 +33,7 @@
       "investigative_actions": "Check the external address the process connects to."
     },
     {
-      "name": "Windows LOLBIN executable connected to a rare external host",
+      "name": "Windows LOLBIN executable utilizing known port to connect to a rare external host",
       "severity": "Medium",
       "attack_tactics": [
         "Command and Control (TA0011)"
@@ -42,6 +42,19 @@
         "Application Layer Protocol (T1071)"
       ],
       "description": "Scripts connecting to external IP addresses may be sanctioned IT scripts. However, when those external IP addresses are only receiving connections from a few specific endpoints in the organization, these scripts may be an indicator of more suspicious activity. Security testers and adversaries use offensive frameworks that employ forms of scripting which result in this type of network activity.",
+      "attackers_goals": "Connect to the attacker's Command and Control server.",
+      "investigative_actions": "Check the external address the process connects to."
+    },
+    {
+      "name": "Windows LOLBIN executable connected to a rare external host by an RMM CGO",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)"
+      ],
+      "description": "Scripts connecting to external IP addresses may be sanctioned IT scripts. However, when those external IP addresses are only receiving connections from a few specific endpoints in the organization, these scripts may be an indicator of more suspicious activity. Security testers and adversaries use offensive frameworks that employ forms of scripting which result in this type of network activity. The CGO of this process was a Remote Monitoring & Management tool.",
       "attackers_goals": "Connect to the attacker's Command and Control server.",
       "investigative_actions": "Check the external address the process connects to."
     }

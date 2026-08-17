@@ -20,6 +20,19 @@
   "test_period": "N/A (single event)",
   "variations": [
     {
+      "name": "Rare binary executing under an RMM CGO connected to a rare external host",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol: Web Protocols (T1071.001)"
+      ],
+      "description": "Rare binary executing under an RMM CGO connected to a rare external host.",
+      "attackers_goals": "Communicate with the attacker's Command and Control (C2) infrastructure.",
+      "investigative_actions": "Check the rare binary file. Get further details about the rare external destination."
+    },
+    {
       "name": "Rare unsigned binary connected to a globally rare external host",
       "severity": "Medium",
       "attack_tactics": [

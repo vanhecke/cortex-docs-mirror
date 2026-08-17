@@ -66,6 +66,34 @@
       "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also contacting the suspicious host. Inspect the host or URL for suspicious indicators or its presence in malicious reputation lists."
     },
     {
+      "name": "Uncommon macOS process communication to a rare external host involving a code sharing website by a high-risk actor",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Web Service (T1102)"
+      ],
+      "description": "An uncommon process is connecting to an external host that is rarely accessed within the organization. This connection pattern is consistent with malicious activity such as command and control execution, malware download and so on.",
+      "attackers_goals": "Establish a remote backdoor to issue instructions, deploy additional payloads, and maintain long-term persistence across the infected fleet.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also contacting the suspicious host. Inspect the host or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
+      "name": "Uncommon macOS process communication to a rare external host involving a code sharing website",
+      "severity": "Low",
+      "attack_tactics": [
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Application Layer Protocol (T1071)",
+        "Web Service (T1102)"
+      ],
+      "description": "An uncommon process is connecting to an external host that is rarely accessed within the organization. This connection pattern is consistent with malicious activity such as command and control execution, malware download and so on.",
+      "attackers_goals": "Establish a remote backdoor to issue instructions, deploy additional payloads, and maintain long-term persistence across the infected fleet.",
+      "investigative_actions": "Identify the process contacting the remote host and determine whether the traffic is malicious. Look for other endpoints on your network that are also contacting the suspicious host. Inspect the host or URL for suspicious indicators or its presence in malicious reputation lists."
+    },
+    {
       "name": "Uncommon macOS process communication to a rare external host related to LOTTunnels",
       "severity": "Low",
       "attack_tactics": [

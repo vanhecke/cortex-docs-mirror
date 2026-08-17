@@ -20,6 +20,19 @@
   "test_period": "N/A (single event)",
   "variations": [
     {
+      "name": "An uncommon RDP session was established by an RMM actor",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)"
+      ],
+      "description": "An RDP session was established with uncommon parameters. The session was initiated under a Remote Monitoring & Management CGO.",
+      "attackers_goals": "Adversaries may use RDP for initial access or lateral movement within a network.",
+      "investigative_actions": "Investigate the source and destination of the RDP communication. Check if this communication is legitimate and expected. Analyze the user and process that initiated the RDP connection."
+    },
+    {
       "name": "An uncommon RDP session was established from a Suspicious Autonomous System (AS)",
       "severity": "Medium",
       "attack_tactics": [

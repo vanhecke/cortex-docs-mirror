@@ -1,0 +1,25 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Execution (TA0002)",
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter: AppleScript (T1059.002)",
+    "Screen Capture (T1113)",
+    "Clipboard Data (T1115)"
+  ],
+  "attackers_goals": "Capture screen content or clipboard data to steal visible credentials, session tokens, or sensitive information.",
+  "deduplication_period": "1 Day",
+  "description": "The AppleScript interpreter was executed with a script designed to capture screen content or clipboard data.",
+  "detection_modules": "",
+  "detector_tags": "AppleScript Analytics, Sensitive Information Stealing Analytics",
+  "investigative_actions": "Determine whether the screen capture or clipboard access was initiated by a legitimate application. Check if the captured data was written to a suspicious location or exfiltrated. Verify whether the user was aware of the screen capture activity.",
+  "name": "Uncommon AppleScript designed to capture screen or clipboard data was executed via the command line",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": []
+}
