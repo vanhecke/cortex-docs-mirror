@@ -1,7 +1,5 @@
 ---
-description: >-
-  Learn how cloud security policies scope rules and promote findings to
-  actionable issues.
+description: Learn about cloud security policies.
 ---
 
 # Cloud security policies

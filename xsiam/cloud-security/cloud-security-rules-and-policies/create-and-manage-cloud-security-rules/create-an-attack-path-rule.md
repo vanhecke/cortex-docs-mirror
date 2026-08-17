@@ -1,3 +1,9 @@
+---
+description: >-
+  Create attack path rules that identify breach paths to high-value cloud
+  assets.
+---
+
 # Create an attack path rule
 
 Attack path rules identify critical risks arising from combinations of individual risk signals—such as overly permissive identities, network exposures, and exploitable vulnerabilities—that together form a potential breach path to high-value assets.

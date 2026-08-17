@@ -48,7 +48,7 @@ To set up Amazon CloudWatch integration, you require certain permissions in AWS.
    1. Log in to the AWS Management Console, and open the [Kinesis console](https://console.aws.amazon.com/kinesis).
    2.  Select Data Firehose → Create delivery stream.
 
-       ![aws-kinesis-firehose-create-delivery-system.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/K27mAf_Gl7CNhDOV~2mP1A-5CAbsl8idaK8R43ZLhoTOw/content?v=f380e5f4faa33a99\&Ft-Calling-App=ft/turnkey-portal)
+       <figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FAIBGYWeOsSARBtK8XWjm%2FKinesis_Data_Firehose.png?alt=media&#x26;token=866a3644-c124-413a-a211-ef8a9194d5f7" alt=""><figcaption></figcaption></figure>
    3.  Define the name and source for your stream.
 
        * Delivery stream name: Enter a descriptive name for your stream configuration.

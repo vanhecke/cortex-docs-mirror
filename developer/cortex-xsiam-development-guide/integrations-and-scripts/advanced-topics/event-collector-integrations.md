@@ -126,7 +126,7 @@ def main():
 {% hint style="info" %}
 ### Important
 
-* The `send_events_to_xsiam()` function only works if the integration is a system integration. The function fails if it is called from a custom integration.
+* The `send_events_to_xsiam()` function should only be used with a system integration. For custom data ingestion needs, use the [HTTP Log Collector](https://docs-cortex.paloaltonetworks.com/r/Cortex-XSIAM/Cortex-XSIAM-3.x-Documentation/Set-up-an-HTTP-log-collector-to-receive-logs) or contact support to request an official integration.
 * Always pass events to the `send_events_to_xsiam()` function, even if no events were fetched, because the `send_events_to_xsiam()` function also updates the UI for the number of events fetched, which could also be 0. Empty data will not be sent to the database.
 * Only call `demisto.setLastRun` after calling `send_events_to_xsiam()`.
 {% endhint %}

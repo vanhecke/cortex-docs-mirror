@@ -1,7 +1,5 @@
 ---
-description: >-
-  Modify custom cloud security rules and supported out-of-the-box rule
-  parameters.
+description: Edit cloud security rules and understand how changes affect related issues.
 ---
 
 # Edit a cloud security rule

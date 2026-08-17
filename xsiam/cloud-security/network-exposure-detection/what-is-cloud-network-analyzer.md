@@ -1,3 +1,9 @@
+---
+description: >-
+  Understand how CNA identifies internet, outbound, and lateral exposure across
+  cloud accounts.
+---
+
 # What is Cloud Network Analyzer?
 
 Cloud Network Analyzer (CNA) in Cortex XSIAM determines which assets—such as virtual machines, databases, containers, and serverless functions—are exposed to the internet, have unrestricted access to the internet, or can laterally move within a cloud account.

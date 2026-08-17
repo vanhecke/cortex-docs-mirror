@@ -1,7 +1,7 @@
 ---
 description: >-
-  Define cloud security rules and policies to detect risks and generate
-  actionable issues.
+  Learn how cloud security rules and policies detect threats and
+  misconfigurations across your environment.
 ---
 
 # Cloud security rules and policies

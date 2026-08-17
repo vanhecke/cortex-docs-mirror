@@ -6,9 +6,7 @@ description: Learn more about actions available to remediate Issues.
 
 Review remediation actions to see a prioritized list of steps you can take to resolve posture issues originating from SaaS Applications. Follow the steps below to view all the Remediation options:
 
-<img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Flblec90lvsYy5z6pvakW%2Funknown.png?alt=media&#x26;token=997c7e80-031e-4115-9c09-33bd384f2d23" alt="" height="416" width="624">
-
-
+<figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FoUA3785rtlcJyMIjTxHF%2Fimage.png?alt=media&#x26;token=8a607716-c174-4f97-a440-fd96a70edcf0" alt=""><figcaption></figcaption></figure>
 
 1. Navigate to **Modules > SaaS Security > Security Issues > Posture** to view a list of all issues with vulnerabilities originating from SaaS Application Posture.&#x20;
 2. Click on any Issue to be taken to the Issue view.&#x20;

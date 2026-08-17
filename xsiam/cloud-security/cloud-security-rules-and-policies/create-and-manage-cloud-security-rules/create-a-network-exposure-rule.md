@@ -1,7 +1,7 @@
 ---
 description: >-
-  Create network exposure rules that detect cloud assets exposed to the
-  internet.
+  Create network exposure rules to detect risky inbound, outbound, and east-west
+  access.
 ---
 
 # Create a network exposure rule

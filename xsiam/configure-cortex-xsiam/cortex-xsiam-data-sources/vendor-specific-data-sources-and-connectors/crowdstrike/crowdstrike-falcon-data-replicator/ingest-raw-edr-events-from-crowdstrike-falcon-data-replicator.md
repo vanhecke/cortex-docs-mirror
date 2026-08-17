@@ -65,9 +65,8 @@ Ensure that you copy the Secret, and store it in a safe place. You will not be a
 3.  On the same line as FDR AWS S3 Credentials and SQS Queue, click Create new credentials.
 
     CrowdStrike Falcon Data Replicator only supports one FDR credential configuration.
-4.  Configure your new FDR credentials.
-
-    [![cs-fdr-credentials-created.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/8G7uHCynn3byKIvwX_GstA-5CAbsl8idaK8R43ZLhoTOw/content?v=7053be22722d53b1\&Ft-Calling-App=ft/turnkey-portal)](https://docs-cortex.paloaltonetworks.com/viewer/attachment/5CAbsl8idaK8R43ZLhoTOw/8G7uHCynn3byKIvwX_GstA-5CAbsl8idaK8R43ZLhoTOw)
+4. Configure your new FDR credentials.\
+   &#x20;![](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2F0ZHJ3cWg9QIIA7eV2hlS%2Ffdr-credentials-created.png?alt=media\&token=98bce0b7-5c0c-4c4b-9525-d8e2b4e260aa)
 5. Copy the values for the CLIENT ID, SECRET, S3 IDENTIFIER, and SQS URL, and save them somewhere safe, because you will need them when you configure data collection in Cortex XSIAM.
 
 {% hint style="warning" %}

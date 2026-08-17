@@ -1,5 +1,5 @@
 ---
-description: Investigate internet-exposed assets through CNA issues and Graph Search.
+description: Investigate internet-exposed assets through Issues and Graph Search.
 ---
 
 # Investigate an internet exposure

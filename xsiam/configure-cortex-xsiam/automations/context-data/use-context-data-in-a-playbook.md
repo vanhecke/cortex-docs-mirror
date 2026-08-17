@@ -47,7 +47,7 @@ By default, the context data for sub-playbooks is stored in a separate context k
 * If the sub-playbook has been configured to share globally, the sub-playbook context data is available to the main playbook and vice versa.
 
 {% hint style="info" %}
-Generic polling does not work if a playbook’s context data is shared globally. For more information, see [Playbook polling](https://app.gitbook.com/s/1BTuP6WlLsNzo2wlKa5w/learn-about-cortex-xsoar/customize-and-configure-cortex-xsoar/playbooks/playbook-polling).
+Generic polling does not work if a playbook’s context data is shared globally. For more information, see [Playbook polling](https://app.gitbook.com/s/1BTuP6WlLsNzo2wlKa5w/customize-cortex-xsoar/customize-and-configure-cortex-xsoar/playbooks/playbook-polling).
 {% endhint %}
 
 **Use case: Use context data in a Jira ticketing system**

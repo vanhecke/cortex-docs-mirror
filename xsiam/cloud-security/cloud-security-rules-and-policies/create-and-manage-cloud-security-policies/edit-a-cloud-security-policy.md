@@ -1,5 +1,5 @@
 ---
-description: Modify a cloud security policy’s details, rules, and asset scope.
+description: Edit cloud security policies to update their details, rules, and scopes.
 ---
 
 # Edit a cloud security policy

@@ -4,7 +4,9 @@
 
 The following Linux operating systems support the Cortex XDR agent.
 
-There are two methods for agent protection on Linux endpoints; a Kernel module and a user-mode (eBPF-based) approach. To help you choose the best deployment for your environment, see the feature differences between these two modes in the latest Cortex XDR agent Admin guide.
+
+
+The Cortex XDR agent protects Linux servers, there are two methods for agent protection; a Kernel module and a user-mode (eBPF-based) approach. To help you choose the best deployment for your environment, see the feature differences between these two modes in the latest Cortex XDR agent Admin guide [Broken link](broken-reference "mention").
 
 For the latest Kernel modules support see [here](https://cortex-docs.paloaltonetworks.com/linux-kernel-versions).
 

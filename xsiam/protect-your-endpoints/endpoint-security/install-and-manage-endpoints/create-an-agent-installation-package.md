@@ -11,12 +11,14 @@ To install the Cortex XDR agent software, you must use a valid installation pack
    * (Linux only) **Kubernetes**: Use for fresh installations and upgrades of Cortex XDR agents running on Kubernetes clusters. [#guidelines-for-kubernetes-installer](#guidelines-for-kubernetes-installer "mention")
    * **Helm**: Use this package for fresh installations and upgrades of Cortex XDR agents running on Kubernetes clusters.
    * **CaaS**: Create the Cortex XSIAM container-embedded agent Dockerfile. For installer instructions and guidelines [see CaaS workloads](../endpoint-protection/caas-workloads).
-   * **Amazon ECS EC2**: Create an installation package to deploy the agent on Amazon ECS clusters with EC2 launch types.
+   * **Amazon ECS EC2**: Create an installation package to deploy the agent on Amazon ECS clusters with EC2 launch types. [Guidelines for Amazon ECS EC2 installer](#guidelines-for-amazon-ecs-ec2-installer)
    * **Serverless**: Create an installation package for serverless function to deploy to your runtime platform. [#guidelines-for-serverless-installer](#guidelines-for-serverless-installer "mention")
 
 <details>
 
 <summary>Guidelines for Kubernetes installer</summary>
+
+**Installer configuration:**
 
 * Settings for the Kubernetes installer cannot be changed after you create the installation package.
 *   For Version, select the desired Cortex XDR agent version.
@@ -30,33 +32,68 @@ To install the Cortex XDR agent software, you must use a valid installation pack
 
 <details>
 
+<summary>Guidelines for Amazon ECS EC2 installer</summary>
+
+When you create a Cortex XDR agent installation package for Linux on AWS ECS EC2 clusters, the package downloads as a JSON task definition file that you deploy to your cluster. Once running, the agent provides the same protection as a standard Cortex XDR agent for Linux.
+
+Cortex issues a license for every node running the agent and revokes it when you remove the agent or delete the node. The Cortex management console identifies processes running within containers, including the container name, ID, and image.
+
+**Prerequisites**
+
+| Requirement             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **System Architecture** | <ul><li>Supports X86_64 and ARM64 architectures. Hybrid clusters and Windows are unsupported.</li><li>Cortex XDR agent 9.1 or later.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **AWS IAM Roles**       | <p>The following roles and policies are required for communication and logging:</p><ul><li><strong>ecsTaskExecutionRole</strong>: Required to pull images and send logs to CloudWatch.</li><li><strong>AmazonECSTaskExecutionRolePolicy</strong>: Grants the ECS agent permission to act for your task. This includes pulling container images from Amazon ECR and sending logs to Amazon CloudWatch.</li><li><strong>CloudWatchLogsFullAccess</strong>: Recommended for viewing container standard output.</li><li><strong>ecsInstanceRole</strong>: Grants the ECS agent on the EC2 instance permission to communicate with the ECS service.</li><li><strong>AWSServiceRoleForECS</strong>: Allows ECS to manage resources, such as load balancers and container instances.</li></ul> |
+
+**Installer configuration**
+
+* For **Version**, select Cortex XDR agent 9.1 or later.
+* For **Family**, enter the AWS task definition name.
+* For **Cluster**, enter the ECS cluster name.
+* Download the installer as a valid JSON task definition file. Use it to deploy the agent in AWS ECS.
+
+**Deploy the agent task definition and service**
+
+1. In the AWS ECS console, go to **Task Definitions**.
+2. Select **Create new task definition with JSON**.
+3. Paste the JSON from the Cortex XDR installer. Save the new revision.
+4. Go to your ECS cluster and select the **Services** tab.
+5. Select **Create**.
+6. In **Deployment Configuration**, set **Launch type** to **EC2**.
+7. **Important:** Select **Daemon** as the service type. This runs one Cortex XDR agent task on every container instance in the cluster.
+8. Complete the creation process. AWS runs a CloudFormation stack in the background to deploy the service.
+
+When the service is stable, verify the deployment:
+
+* In the Cortex management console, check the **All Endpoints** table. The endpoint type appears as **Amazon ECS EC2**.
+* The **Protection Status** column shows **Protected**.<br>
+
+</details>
+
+<details>
+
 <summary>Guidelines for serverless installer</summary>
 
-**How to create an agent package for serverless function:**
+**Installer configuration:**
 
-1. From Cortex XSIAM, go to Inventory+Endpoints+Installations and click Create.
-2. Add name, description and add any endpoint tags that will be added to the agent as part of the installation process.
-3. For Package Type, select Serverless Function.
-4.  Configure the following settings for Serverless Function:
+* For Version, select the required Cortex agent version.
+* For Cloud Provider, AWS is configured for this release.
+* For Runtime, select one of the environments:
+  * node.js
+  * python
+* For Deployment Type, select the type:
+  * Embedded
+  * AWS Layers
+* If node.js and the deployment type, AWS Layers are selected, select one of the Modules:
+  * ECMAScript
+  * CommonJS
+* For Embed Default Profile From, select from the profile rules configured for serverless functions.
 
-    1. For Version, select the required Cortex agent version.
-    2. For Cloud Provider, AWS is configured for this release.
-    3. For Runtime, select one of the environments:
-       * node.js
-       * python
-    4. For Deployment Type, select the type:
-       * Embedded
-       * AWS Layers
-    5. If node.js and the deployment type, AWS Layers are selected, select one of the Modules:
-       * ECMAScript
-       * CommonJS
-    6. For Embed Default Profile From, select from the profile rules configured for serverless functions.
-
-    The profile will be applied if the security policy cannot be retrieved in real-time.
+The profile will be applied if the security policy cannot be retrieved in real-time.
 
 The package is created and ready to be deployed.
 
-**How to deploy the package to your runtime environment:**
+**Deploy the package to your runtime environment**
 
 1. From Cortex XSIAM, go to Inventory+Endpoints+Installations and from the Agent Installations page, right click and select View Installation Instructions.
 2. Depending on the runtime environment, the instructions are slightly different.
@@ -90,10 +127,9 @@ The package is created and ready to be deployed.
 4.  In Parameters, enter a unique name and an optional description to identify the installation package.
 
     The package name can contain letters, numbers, hyphens, underscores, commas, and spaces, and should not exceed 100 characters.
-5. In Metadata, define the appropriate settings for the package type, and then click Create.
+5. In Metadata, define the appropriate settings for the package type, and then click **Create**.
 6.  Download your installation package.
 
-    When the status of the package shows `Completed`, right-click the package, and click Download.
+    When the status of the package shows `Completed`, right-click the package, and click **Download**.
 
 For the Kubernetes Connect instructions see [Onboard the Kubernetes Connector](https://app.gitbook.com/s/SqNMu2K0VWh4WXps5pCW/onboard-the-kubernetes-connector)
-

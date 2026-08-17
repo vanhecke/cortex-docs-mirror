@@ -1,7 +1,7 @@
 ---
 description: >-
-  View assessment results and drill into controls, rules, asset status, and
-  issues.
+  View assessment results and drill into control, rule, and asset compliance
+  details.
 ---
 
 # Review assessments

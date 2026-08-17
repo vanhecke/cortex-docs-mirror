@@ -4,16 +4,44 @@ Use the `bin` stage to discretize a continuous numerical field or timestamp into
 
 ## Syntax
 
+You can add the `bin` stage to your queries using two different formats, depending on whether you are grouping events by quantity or by time span.
+
+**Quantity**:
+
 ```sql
-bin <field_name> span=<number><timescale>
+bin <field_name> bins=<number>
+```
+
+**Time span**:
+
+```sql
+bin <field_name> span=<number><timescale> [timeshift=<epoch time> [timezone="<time zone>"]]
 ```
 
 ## Parameters
 
-| Name         | Type   | Required | Description                                                                                                                                                                                    |
-| ------------ | ------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `field_name` | string | Yes      | The name of the numeric or timestamp field to be binned.                                                                                                                                       |
-| `span`       | string | Yes      | The size of each bin. For timestamps, this is a number followed by a timescale suffix (for example, `1h`, `15m`, `1d`). For numeric fields, this is an integer representing the interval size. |
+| Name         | Type   | Required | Description                                                                                                                                                                                                                                                                                                           |
+| ------------ | ------ | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `field_name` | string | Yes      | The name of the numeric or timestamp field to be binned. When grouping by quantity, the field must be a number. When grouping by time, the field must be a date type. Otherwise, the query fails.                                                                                                                     |
+| `bins`       | number | No       | The maximum number of bins to divide the data into. Instead of specifying a fixed bin size with `span`, use `bins` to let the stage automatically calculate an appropriate bin size so that the values are distributed across (at most) the specified number of bins. Provide either `span` or `bins`, but not both.  |
+| `span`       | string | No       | The size of each bin. For timestamps, this is a number followed by a timescale suffix (for example, `1h`, `15m`, `1d`). See [Time suffixes](#time-suffixes) for the list of supported suffixes. For numeric fields, this is an integer representing the interval size. Provide either `span` or `bins`, but not both. |
+| `timeshift`  | number | No       | A start time for grouping the events, expressed as a Unix epoch time. Use with `span` when binning by time. If not set, the query runs according to the last time set in the log.                                                                                                                                     |
+| `timezone`   | string | No       | The time zone applied when grouping events by time. Configure it using an hours offset, such as `"+08:00"`, or using a time zone name from the List of Supported Time Zones, such as `"America/Chicago"`. Optionally used together with `timeshift`.                                                                  |
+
+## Time suffixes
+
+When binning by time span, `<span>` is a combination of a number and one of the following time suffixes. The time suffix is not case sensitive.
+
+| Time suffix | Description  |
+| ----------- | ------------ |
+| `MS`        | milliseconds |
+| `S`         | seconds      |
+| `M`         | minutes      |
+| `H`         | hours        |
+| `D`         | days         |
+| `W`         | weeks        |
+| `MO`        | months       |
+| `Y`         | years        |
 
 ## Returns
 
@@ -21,10 +49,15 @@ The `bin` stage modifies the specified field in the dataset, replacing the origi
 
 ## Usage notes
 
-* The `bin` stage is often used immediately before an aggregation stage like `comp` to group records by time or numeric ranges.
+* The `bin` stage is often used immediately before an aggregation stage like `comp` to group records by time or numeric ranges. The most common use case is for timecharts.
 * Binning simplifies complex continuous data by separating it into manageable categories.
 * When binning timestamps, the returned value is the start time of the interval. For example, with `span=1h`, a timestamp of `10:45` becomes `10:00`.
 * The `span` parameter determines the granularity of the groups.
+* You must specify either `span` or `bins`, but not both. Use `span` when you know the exact bin size you want, and use `bins` when you want a specific number of buckets and want the stage to determine the bin size automatically.
+* When you use `bins`, the stage calculates a bin size that distributes the values across at most the specified number of bins, so the actual number of populated bins can be fewer.
+* When you group events by quantity, the binned field must be a number. When you group events by time, the binned field must be a date type. Otherwise, the query fails.
+* The `bin` stage is only supported using the equal sign (`=`) operator, without any boolean operators (`and`, `or`).
+* Use the optional `timeshift` parameter to define a start time for grouping the events according to the Unix epoch time, and use the optional `timezone` parameter to apply a specific time zone. If neither is set, the query runs according to the last time set in the log.
 
 ## Examples
 
@@ -77,8 +110,62 @@ config timeframe = 1d
 | 100            | 40          |
 | 200            | 12          |
 
+### Example 3: Binning into a fixed number of buckets
+
+**Goal**: Group file sizes into at most 5 buckets without specifying an exact bin size, letting the stage calculate the interval automatically.
+
+**XQL code**:
+
+```sql
+config timeframe = 1d
+| dataset = sample_xql_raw
+| alter file_size_mb = divide(file_size, 1024 * 1024)
+| bin file_size_mb bins = 5
+| comp count(event_id) as file_count by file_size_mb
+| fields file_size_mb, file_count
+```
+
+**Explanation**: Instead of defining a fixed interval with `span`, the `bins = 5` parameter instructs the stage to divide the range of `file_size_mb` values into at most 5 buckets, automatically calculating an appropriate bin size. The `comp` stage then counts how many files fall into each bucket.
+
+**Output:**
+
+| file\_size\_mb | file\_count |
+| -------------- | ----------- |
+| 0              | 120         |
+| 50             | 60          |
+| 100            | 15          |
+| 150            | 5           |
+| 200            | 2           |
+
+### Example 4: Binning by time with a time zone offset
+
+**Goal**: Group events into 1-hour intervals starting from a specific epoch time, using a time zone configured with an hours offset.
+
+**XQL code**:
+
+```sql
+dataset = xdr_data
+| bin _time span = 1h timeshift = 1615353499 timezone = "+08:00"
+| limit 1000
+```
+
+**Explanation**: The `_time` field is grouped into 1-hour increments starting from the Unix epoch time `1615353499`, applying a time zone offset of `+08:00`. The `limit` stage returns a maximum of 1,000 records.
+
+### Example 5: Binning by time with a time zone name
+
+**Goal**: Group events into 1-hour intervals starting from a specific epoch time, using a named time zone.
+
+**XQL code**:
+
+```sql
+dataset = xdr_data
+| bin _time span = 1h timeshift = 1615353499 timezone = "America/Los_Angeles"
+| limit 1000
+```
+
+**Explanation**: The `_time` field is grouped into 1-hour increments starting from the Unix epoch time `1615353499`, applying the `America/Los_Angeles` time zone. The `limit` stage returns a maximum of 1,000 records.
+
 ## Related articles
 
-* **Stages**: [`comp`](comp), [`alter`](alter)
-* **Functions**: [`count`](../functions/count_with_windowcomp_stage), [`divide`](../functions/divide)
-* **Datasets**: [`xdr_data`](https://docs-cortex.paloaltonetworks.com/r/Cortex-XQL-Schema-Reference-Guide/Introduction)
+* **Stages**: [`comp`](broken-reference), [`alter`](broken-reference)
+* **Functions**: [`count`](broken-reference), [`divide`](broken-reference)

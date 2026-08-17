@@ -1,7 +1,5 @@
 ---
-description: >-
-  Create data rules that protect against malware and support data
-  classification.
+description: Create data rules to detect data risks, malware, and classification issues.
 ---
 
 # Create a data rule

@@ -10,19 +10,19 @@ The Agentic Assistant is built on responsible AI principles to ensure its use is
 
 The following describes how the Agentic Assistant protects sensitive data and gives you control and understanding over its automated actions.
 
-**Access control and permissions**
+### **Access control and permissions**
 
 **User roles and RBAC options**
 
-Instance and Account admins have full control over the permissions and access that users have to the Cortex Agentic Assistant. Cortex XSIAM uses Role-Based Access Control (RBAC) to manage access to the chat, as well as access to view, create, edit, delete, disable, and enable Agents and Actions in the Agentic Assistant Hub.
+Instance and Account admins control user access to Cortex Agentic Assistant. Cortex XSIAM uses role-based access control (RBAC) to govern chat access and permissions to view, create, edit, delete, enable, and disable agents and actions in the Agentic Assistant Hub.
 
 **Action Execution Scope**
 
-Agents can only use actions that have been assigned to them, and execution is limited to the user's existing permissions in your Cortex XSIAM tenant. If a required integration is not active, its commands and any actions that wrap them will not work.
+Agents can only use actions assigned to them, and execution is limited to the user's existing permissions in your Cortex XSIAM tenant. If a required integration is not active, its commands and any actions that wrap them will not work.
 
 To perform actions in Slack, your Slack email must match your Cortex XSIAM user email. This ensures the system can strictly follow your assigned permissions (RBAC). If you do not have the required permissions to interact with agents, the system will block the action.
 
-**Data security and control**
+### **Data security and control**
 
 **How sensitive data is protected**
 
@@ -40,11 +40,9 @@ Your prompts and outputs are processed only to generate the immediate response. 
 
 All prompts and responses stay inside that region’s compute boundary, aligning with modern data-residency practices.
 
-**Transparency**
+### **Transparency**
 
-**How the Cortex Agentic Assistant maintains transparency**
-
-You can see how the agent reaches its answer. Click the down arrow next to **Plan**, to view how the user input was interpreted, the planned steps, and the actions used. You can view JSON artifacts created during the plan execution, when data was retrieved or an object was created.
+You can see how the agent reaches its answer. Click the down arrow next to the **Plan**, to view how the user input was interpreted, the planned steps, and the actions used. You can view JSON artifacts created during plan execution, when data was retrieved, or when an object was created.
 
 All actions an agent takes are saved in an audit dataset. You can see which agent ran which action, and which user invoked it.
 

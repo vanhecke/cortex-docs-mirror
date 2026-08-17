@@ -1,5 +1,7 @@
 ---
-description: Detect unrestricted east-west network access across cloud resources.
+description: >-
+  Learn about workloads with unrestricted lateral access and the controls
+  causing that exposure.
 ---
 
 # East-west exposure detection

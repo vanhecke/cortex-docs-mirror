@@ -1,3 +1,9 @@
+---
+description: >-
+  Create and manage custom cloud security rules for detecting cloud security
+  risks.
+---
+
 # Create and manage cloud security rules
 
 You can create your own custom rules to use them in custom cloud security policies for the following use cases:

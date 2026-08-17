@@ -2,7 +2,7 @@
 
 Learn more about managing your Broker VM data collector applets from the Broker VMs page.
 
-After you activate a Broker VM data collector applet, you can make additional changes as needed to the specific applet configured on the Broker VM or cluster. Select Settings → Configurations → Data Broker → Broker VMs to view detailed information regarding your registered Broker VMs in either the Brokers or Clusters tab. To modify a configuration, left-click the Broker VM applet in the APPS column to display the data collector applet settings and view detailed information regarding your applet.
+After you activate a Broker VM data collector applet, you can make additional changes as needed to the specific applet configured on the Broker VM or cluster. Select **Settings** → **Configurations** → **Data Broker** → **Broker VMs** to view detailed information regarding your registered Broker VMs in either the **Brokers** or **Clusters** tab. To modify a configuration, left-click the Broker VM applet in the **APPS** column to display the data collector applet settings and view detailed information regarding your applet. For more information on configuring these specific applets, see [Broker VM data collector applets](../../cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets).
 
 {% hint style="info" %}
 #### Note

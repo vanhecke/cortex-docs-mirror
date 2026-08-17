@@ -9,7 +9,7 @@ Within the unified Analytics rules table, you can leverage powerful capabilities
 * Filter rules by any column, including "Variant Severities" to quickly locate rule variants associated with specific severity criteria.
 * Order by any column, enabling you to prioritize and evaluate issues based on severity, name, modification time, and other critical factors.
 * Fine-tune your XDR Analytics rules by disabling or enabling specific ones, and changing the severity of the rules or the rule variants.
-* View more information for a selected analytics rule, including all its variants, and pivot to the Cortex Analytics Reference for the specific rule.
+* View more information for a selected analytics rule, including all its variants, and pivot to the [Cortex Analytics Reference](https://cortex-docs.paloaltonetworks.com/analytics-alerts) for the specific rule.
 
 The Analytics Rules page is under Threat Management → Detection Rules.
 

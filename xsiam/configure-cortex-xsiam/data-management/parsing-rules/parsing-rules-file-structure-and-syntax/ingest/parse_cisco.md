@@ -1,16 +1,16 @@
 # parse\_cisco
 
-**Syntax**
+## **Syntax**
 
 ```programlisting
 parse_cisco(<string>)
 ```
 
-**Description**
+## **Description**
 
 The `parse_cisco()` function processes a Cisco string and returns an object whose structure (key and value pairs) is determined by the input parameters. This function isn't available through the autocomplete when defining a user defined parsing rule. Yet, it is used in the parsing rule syntax for default parsing rules. Only a subset of Cisco ASA message types is supported as detailed in the Marketplace content pack.
 
-**Example**
+## **Example**
 
 This example shows how to parse a Cisco string called `_raw_log` into a JSON field called `_json` in a parsing rule.
 

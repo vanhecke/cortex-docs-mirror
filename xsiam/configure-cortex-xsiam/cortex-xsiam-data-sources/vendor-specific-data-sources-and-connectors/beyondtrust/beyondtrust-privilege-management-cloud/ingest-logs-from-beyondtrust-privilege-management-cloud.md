@@ -13,7 +13,7 @@ Configure BeyondTrust Privilege Management Cloud collection in Cortex XSIAM.
 1.  Configure SIEM settings and an AWS S3 Bucket according to the requirements provided in the [BeyondTrust documentation](https://docs.beyondtrust.com/epm-wm/docs/configure-siem-settings).
 
     Ensure that when you add the AWS S3 bucket in the PMC and set the SIEM settings, you select **ECS - Elastic Common Schema** as the **SIEM Format**.
-2.  Configure BeyondTrust logs collection with Cortex XSIAM using an [Amazon S3 data collector for generic data](file:///document/preview/1039055#UUID-d5ace3ce-5a93-86f4-55f2-4943fbf09cbe)Ingest generic logs from Amazon S3.
+2.  Configure BeyondTrust logs collection with Cortex XSIAM using an [Amazon S3 data collector for generic data](../../amazon/amazon-s3/ingest-generic-logs-from-amazon-s3).
 
     Ensure your Amazon S3 data collector is configured with the following settings.
 

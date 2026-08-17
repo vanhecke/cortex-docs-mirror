@@ -1,7 +1,5 @@
 ---
-description: >-
-  Browse available compliance standards and review their controls, metadata, and
-  profiles.
+description: Browse available compliance standards.
 ---
 
 # Standards catalog

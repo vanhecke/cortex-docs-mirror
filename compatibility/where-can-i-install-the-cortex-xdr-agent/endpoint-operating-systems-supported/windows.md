@@ -54,7 +54,7 @@ The extended-life agent 7.9.103-CE does not support Windows 8.1
 
 The Enterprise edition is tested for compatibility. Unless specifically stated otherwise, assume that all sub-editions are also compatible.
 
-|                                                            | Cortex XDR Agent |     |        |     |     |        |
+|                                                            | Cortex XDR agent |     |        |     |     |        |
 | ---------------------------------------------------------- | ---------------- | --- | ------ | --- | --- | ------ |
 |                                                            | 9.3              | 9.2 | 9.1-CE | 9.1 | 9.0 | 8.7-CE |
 | 19H2, 20H1, 20H2, 21H1                                     | —                | —   | —      | —   | —   | ✓      |
@@ -65,7 +65,7 @@ The Enterprise edition is tested for compatibility. Unless specifically stated o
 
 The Enterprise edition is tested for compatibility. Unless specifically stated otherwise, assume that all sub-editions are also compatible.
 
-|                               | Cortex XDR Agent |     |        |     |     |        |
+|                               | Cortex XDR agent |     |        |     |     |        |
 | ----------------------------- | ---------------- | --- | ------ | --- | --- | ------ |
 |                               | 9.3              | 9.2 | 9.1-CE | 9.1 | 9.0 | 8.7-CE |
 | <p>25H2<br>x86_64 and ARM</p> | ✓                | ✓   | ✓      | ✓   | ✓   | —      |
@@ -76,7 +76,7 @@ The Enterprise edition is tested for compatibility. Unless specifically stated o
 {% hint style="info" %}
 ### Note
 
-Windows running on ARM is subject to certain limitations, see Known limitations in the latest Cortex XDR agent [release notes](broken-reference).
+Windows running on ARM is subject to certain limitations, see Known limitations in the latest Cortex XDR agent [release notes](https://cortex-docs.paloaltonetworks.com/agent-release-notes).
 {% endhint %}
 
 ### Windows Server
@@ -91,4 +91,4 @@ Release 7.9-CE, up to release 7.9.102-CE, was supported Windows Server until Mar
 The extended-life agent 7.9.103-CE supports Windows Server 2008 R2 SP1 until December 31, 2027.
 {% endhint %}
 
-<table data-search="false"><thead><tr><th></th><th>Cortex XDR Agent</th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td>9.3</td><td>9.2</td><td>9.1-CE</td><td>9.1</td><td>9.0</td><td>8.7-CE</td><td>7.9.103-CE</td></tr><tr><td>2025</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr><tr><td>2022</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr><tr><td>2019 LTSC<br>2019 Core</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr><tr><td>2016</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr><tr><td>2012 (Support until Oct 2027)<br>2012 R2 (Support until Oct 2027)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr><tr><td>2012 Core</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr><tr><td>2008 R2 SP1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✓</td></tr></tbody></table>
+<table data-search="false"><thead><tr><th></th><th width="138.5">Cortex XDR agent</th><th width="109.25"></th><th width="108"></th><th width="109.25"></th><th width="105.5"></th><th width="108"></th><th width="110"></th></tr></thead><tbody><tr><td></td><td>9.3</td><td>9.2</td><td>9.1-CE</td><td>9.1</td><td>9.0</td><td>8.7-CE</td><td>7.9.103-CE</td></tr><tr><td>2025</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr><tr><td>2022</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr><tr><td>2019 LTSC<br>2019 Core</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr><tr><td>2016</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr><tr><td>2012 (Support until Oct 2027)<br>2012 R2 (Support until Oct 2027)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr><tr><td>2012 Core</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr><tr><td>2008 R2 SP1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✓</td></tr></tbody></table>

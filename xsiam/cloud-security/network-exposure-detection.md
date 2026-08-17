@@ -1,8 +1,14 @@
+---
+description: >-
+  Identify, prioritize, and remediate internet, outbound, and lateral network
+  exposure risks in public cloud environments.
+---
+
 # Network exposure detection
 
 Cortex XSIAM improves network security posture in your public cloud environments. It identifies assets exposed to the internet so you can prioritize and remediate risks.
 
-Cortex XSIAM publishes network exposure findings and issues based on out-of-the-box and custom cloud security rules and policies. Security teams can review these findings and issues to gain visibility into network exposures, finding answers to the following questions:
+Cortex XSIAM publishes network exposure findings and issues based on out-of-the-box and custom [cloud security rules and policies](cloud-security-rules-and-policies). Security teams can review these findings and issues to gain visibility into network exposures, finding answers to the following questions:
 
 * Which assets are exposed to the internet?
 * Which assets can connect to the internet?

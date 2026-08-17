@@ -56,7 +56,7 @@ In **Event Viewer** → **Expand Applications and Services Logs** → **Microsof
 
 <details>
 
-<summary>Event IDs 1006, 1009, 1116, 1119</summary>
+<summary>Event IDs 1006, 1009, 1116-1119</summary>
 
 In **Event Viewer** → **Expand Applications and Services Logs** → **Microsoft** → **Windows** → **Windows Defender**, right click **Operational** and select **Enable Log**.
 

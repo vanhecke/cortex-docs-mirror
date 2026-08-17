@@ -4,7 +4,7 @@ Sync profiles provide a blueprint for how information is exchanged between Corte
 
 When you link an issue with an external application (such as Jira), or set up an automation, you can select the sync profile you want to use. Cortex XSIAM provides default outbound and inbound sync profiles, or you can create custom sync profiles as described in the following procedure.
 
-How to create a sync profile
+### How to create a sync profile
 
 1. Go to **Settings** → **Configurations** → **Object Setup** → **Issues** → **Sync Profiles**.
 2. Click **New Profile**.

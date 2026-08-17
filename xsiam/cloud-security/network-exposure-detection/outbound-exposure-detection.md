@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn about detecting workloads with unrestricted outbound internet access
+  based on security configurations.
+---
+
 # Outbound exposure detection
 
 CNA supports outbound internet exposure detection. If CNA detects a workload that based on their security configurations has unrestricted internet access, CNA generates a finding.

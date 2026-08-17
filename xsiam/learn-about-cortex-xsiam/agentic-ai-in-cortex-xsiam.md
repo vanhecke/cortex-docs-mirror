@@ -9,7 +9,7 @@ description: >-
 
 Cortex XSIAM integrates advanced artificial intelligence to streamline security operations. Through the Cortex Agentic Assistant, the platform provides a unified interface for interacting with both system-provided and custom AI agents capable of creating and executing multi-step plans. These agents leverage specific capabilities to perform actions across your infrastructure, facilitating deep case investigations and proactive threat hunting while allowing for the creation of tailored automation.
 
-#### Key AI Capabilities
+### Key AI Capabilities
 
 * **Agentic Assistant Hub**: A centralized hub for managing agents and actions. System agents can be enabled and disabled, and you can create custom agents tailored to your organizational needs, including the ability to execute custom scripts.
 * **Automation Engineer Agent**: Provides a natural language interface to draft, refine, and deploy automation scripts.
@@ -17,9 +17,9 @@ Cortex XSIAM integrates advanced artificial intelligence to streamline security 
 * **Embedded AI Prompts**: Facilitates the inclusion of generative AI tasks within playbooks. These prompts function as standalone workflow steps to analyze data or generate content without requiring a dedicated agent.
 * **AI-Generated Case Summaries**: Automatically generate technical overviews of security incidents. These summaries consolidate complex telemetry and impact data into high-level reports to accelerate initial triage and stakeholder reporting.
 
-#### Cortex Agentic Assistant
+### Cortex Agentic Assistant
 
-Cortex Agentic Assistant is the autonomous "brain" of Cortex XSIAM. It utilizes AI agents that plan, reason, and investigate complex threats, such as cloud identity theft or container breaches. Cortex Agentic Assistant enables security operations teams to use natural language prompts to interact with AI agents. The agents have access to case context and can create plans and perform actions such as running commands, playbooks, and scripts, as well as visualizing data or investigations.
+Cortex Agentic Assistant uses AI agents to investigate threats and execute multi-step security tasks in Cortex XSIAM. It utilizes AI agents that plan, reason, and investigate complex threats, such as cloud identity theft or container breaches. Cortex Agentic Assistant enables security operations teams to use natural language prompts to interact with AI agents. The agents have access to case context and can create plans and perform actions such as running commands, playbooks, and scripts, as well as visualizing data or investigations.
 
 You can also interact directly from Slack with the Agentic Assistant. This enables you to trigger agents, investigate, and perform remote executions within your collaboration workflow without needing to log into Cortex XSIAM.
 
@@ -37,7 +37,7 @@ For more information, see [Compare Agentic Assistant with Cortex Assistant](agen
 
 Cortex Agentic Assistant is based on an ecosystem of agents and actions.
 
-The Cortex Agentic Assistant includes system agents that are mission-focused, as well as the ability to create custom agents. An analyst focused on threat hunting, for example, might communicate primarily with the system Threat Intel agent, while analysts focused on general investigations might build custom agents that include all the actions required to perform their daily tasks.
+The Cortex Agentic Assistant includes mission-focused system agents and the ability to create custom agents. An analyst focused on threat hunting, for example, might communicate primarily with the system Threat Intel agent. In contrast, analysts focused on general investigations might build custom agents that include all the actions required to perform their daily tasks.
 
 Each agent is assigned actions it can execute. System actions can be based on playbooks, scripts, commands, or AI prompts. You can also register custom actions, which are based on scripts, commands, or AI prompts.
 
@@ -51,7 +51,7 @@ The system **Help Center** agent delivers fast, context-aware assistance to answ
 
 Within the **XSIAM Command Center** dashboard, you can click **Cortex Agentic Assistant** to view how your organization utilizes the Agentic Assistant, including information on agent plans, user prompts, as well as open cases. For more information, see [XSIAM Command Center](../detect-investigate-and-respond-to-threats/monitor-dashboards-and-reports/dashboard-reference/command-center-reference/xsiam-command-center).
 
-#### Supported regions
+### Supported regions
 
 The Cortex Agentic Assistant is currently available for tenants in the following regions:
 
@@ -73,7 +73,7 @@ The Cortex Agentic Assistant is currently available for tenants in the following
 In multi-tenant/MSSP environments, agentic AI features are not available on the main tenant.
 {% endhint %}
 
-#### Frontier Models
+### Frontier Models
 
 **EU and US Regions**
 

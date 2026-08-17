@@ -2,7 +2,7 @@
   "book": "xsiam",
   "title": "Cortex XSIAM Documentation",
   "section": "cortex-xsiam",
-  "page_count": 2272,
+  "page_count": 2282,
   "tree": [
     {
       "title": "Learn about Cortex XSIAM",
@@ -950,8 +950,20 @@
                       "type": "document",
                       "children": [
                         {
+                          "title": "parse_cef",
+                          "path": "configure-cortex-xsiam/data-management/parsing-rules/parsing-rules-file-structure-and-syntax/ingest/parse_cef",
+                          "type": "document",
+                          "children": []
+                        },
+                        {
                           "title": "parse_cisco",
                           "path": "configure-cortex-xsiam/data-management/parsing-rules/parsing-rules-file-structure-and-syntax/ingest/parse_cisco",
+                          "type": "document",
+                          "children": []
+                        },
+                        {
+                          "title": "parse_json",
+                          "path": "configure-cortex-xsiam/data-management/parsing-rules/parsing-rules-file-structure-and-syntax/ingest/parse_json",
                           "type": "document",
                           "children": []
                         }
@@ -6444,7 +6456,26 @@
                           "title": "Add an XDR Collector profile for Windows",
                           "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/xdr-collectors/xdr-collector-profiles/add-an-xdr-collector-profile-for-windows",
                           "type": "document",
-                          "children": []
+                          "children": [
+                            {
+                              "title": "How to configure XDR Collector profiles",
+                              "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/xdr-collectors/xdr-collector-profiles/add-an-xdr-collector-profile-for-windows/how-to-configure-xdr-collector-profiles",
+                              "type": "document",
+                              "children": []
+                            },
+                            {
+                              "title": "Additional XDR Collector profile management options",
+                              "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/xdr-collectors/xdr-collector-profiles/add-an-xdr-collector-profile-for-windows/additional-xdr-collector-profile-management-options",
+                              "type": "document",
+                              "children": []
+                            },
+                            {
+                              "title": "Query Windows Event Log records",
+                              "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/xdr-collectors/xdr-collector-profiles/add-an-xdr-collector-profile-for-windows/query-windows-event-log-records",
+                              "type": "document",
+                              "children": []
+                            }
+                          ]
                         },
                         {
                           "title": "Ingest logs from Windows DHCP using Elasticsearch Filebeat",
@@ -7012,7 +7043,7 @@
                       "children": []
                     },
                     {
-                      "title": "Monitor data ingestion health",
+                      "title": "Monitor data ingestion health (BETA)",
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/administration-and-troubleshooting/about-health-issues/monitor-data-ingestion-health",
                       "type": "document",
                       "children": []
@@ -7146,29 +7177,22 @@
           "type": "document",
           "children": [
             {
-              "title": "Cortex MCP server overview",
-              "path": "configure-cortex-xsiam/cortex-mcp-server/cortex-mcp-server-overview",
+              "title": "Install the Cortex MCP server",
+              "path": "configure-cortex-xsiam/cortex-mcp-server/install-the-cortex-mcp-server",
               "type": "document",
-              "children": [
-                {
-                  "title": "Install the Cortex MCP server",
-                  "path": "configure-cortex-xsiam/cortex-mcp-server/cortex-mcp-server-overview/install-the-cortex-mcp-server",
-                  "type": "document",
-                  "children": []
-                },
-                {
-                  "title": "Configure the MCP client",
-                  "path": "configure-cortex-xsiam/cortex-mcp-server/cortex-mcp-server-overview/configure-the-mcp-client",
-                  "type": "document",
-                  "children": []
-                },
-                {
-                  "title": "Use the Cortex MCP server",
-                  "path": "configure-cortex-xsiam/cortex-mcp-server/cortex-mcp-server-overview/use-the-cortex-mcp-server",
-                  "type": "document",
-                  "children": []
-                }
-              ]
+              "children": []
+            },
+            {
+              "title": "Configure the MCP client",
+              "path": "configure-cortex-xsiam/cortex-mcp-server/configure-the-mcp-client",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Use the Cortex MCP server",
+              "path": "configure-cortex-xsiam/cortex-mcp-server/use-the-cortex-mcp-server",
+              "type": "document",
+              "children": []
             },
             {
               "title": "Create custom Cortex MCP server tools",
@@ -7935,151 +7959,6 @@
           ]
         },
         {
-          "title": "Multi-Tenant",
-          "path": "configure-cortex-xsiam/multi-tenant",
-          "type": "document",
-          "children": [
-            {
-              "title": "What is Cortex XSIAM multi-tenant?",
-              "path": "configure-cortex-xsiam/multi-tenant/what-is-cortex-xsiam-multi-tenant",
-              "type": "document",
-              "children": [
-                {
-                  "title": "MSSP multi-tenant",
-                  "path": "configure-cortex-xsiam/multi-tenant/what-is-cortex-xsiam-multi-tenant/mssp-multi-tenant",
-                  "type": "document",
-                  "children": []
-                },
-                {
-                  "title": "Enterprise multi-tenant",
-                  "path": "configure-cortex-xsiam/multi-tenant/what-is-cortex-xsiam-multi-tenant/enterprise-multi-tenant",
-                  "type": "document",
-                  "children": []
-                }
-              ]
-            },
-            {
-              "title": "Multi-tenant central licensing management",
-              "path": "configure-cortex-xsiam/multi-tenant/multi-tenant-central-licensing-management",
-              "type": "document",
-              "children": []
-            },
-            {
-              "title": "Onboard Cortex multi-tenant",
-              "path": "configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant",
-              "type": "document",
-              "children": [
-                {
-                  "title": "Onboarding checklist for multi-tenant central licensing deployments",
-                  "path": "configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant/onboarding-checklist-for-multi-tenant-central-licensing-deployments",
-                  "type": "document",
-                  "children": [
-                    {
-                      "title": "Step 1. Activate Cortex XSIAM (main account)",
-                      "path": "configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant/onboarding-checklist-for-multi-tenant-central-licensing-deployments/step-1.-activate-cortex-xsiam-main-account",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
-                      "title": "Step 2. Create a child tenant",
-                      "path": "configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant/onboarding-checklist-for-multi-tenant-central-licensing-deployments/step-2.-create-a-child-tenant",
-                      "type": "document",
-                      "children": []
-                    }
-                  ]
-                },
-                {
-                  "title": "Onboarding checklist for multi-tenant customer-owned license deployments",
-                  "path": "configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant/onboarding-checklist-for-multi-tenant-customer-owned-license-deployments",
-                  "type": "document",
-                  "children": [
-                    {
-                      "title": "Step 1. Active Cortex XSIAM (parent and child tenants)",
-                      "path": "configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant/onboarding-checklist-for-multi-tenant-customer-owned-license-deployments/step-1.-active-cortex-xsiam-parent-and-child-tenants",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
-                      "title": "Step 2. Define access configuations and role permissions",
-                      "path": "configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant/onboarding-checklist-for-multi-tenant-customer-owned-license-deployments/step-2.-define-access-configuations-and-role-permissions",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
-                      "title": "Step 3. Pair a parent tenant with a child tenant",
-                      "path": "configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant/onboarding-checklist-for-multi-tenant-customer-owned-license-deployments/step-3.-pair-a-parent-tenant-with-a-child-tenant",
-                      "type": "document",
-                      "children": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "title": "Dynamic license allocation",
-              "path": "configure-cortex-xsiam/multi-tenant/dynamic-license-allocation",
-              "type": "document",
-              "children": []
-            },
-            {
-              "title": "Child tenant management",
-              "path": "configure-cortex-xsiam/multi-tenant/child-tenant-management",
-              "type": "document",
-              "children": [
-                {
-                  "title": "Track your tenant management",
-                  "path": "configure-cortex-xsiam/multi-tenant/child-tenant-management/track-your-tenant-management",
-                  "type": "document",
-                  "children": []
-                },
-                {
-                  "title": "Investigate child tenant data",
-                  "path": "configure-cortex-xsiam/multi-tenant/child-tenant-management/investigate-child-tenant-data",
-                  "type": "document",
-                  "children": []
-                },
-                {
-                  "title": "Create and allocate configurations",
-                  "path": "configure-cortex-xsiam/multi-tenant/child-tenant-management/create-and-allocate-configurations",
-                  "type": "document",
-                  "children": []
-                },
-                {
-                  "title": "Create a security managed action",
-                  "path": "configure-cortex-xsiam/multi-tenant/child-tenant-management/create-a-security-managed-action",
-                  "type": "document",
-                  "children": []
-                }
-              ]
-            },
-            {
-              "title": "About managed threat hunting",
-              "path": "configure-cortex-xsiam/multi-tenant/about-managed-threat-hunting",
-              "type": "document",
-              "children": [
-                {
-                  "title": "Set up Managed Threat Hunting",
-                  "path": "configure-cortex-xsiam/multi-tenant/about-managed-threat-hunting/set-up-managed-threat-hunting",
-                  "type": "document",
-                  "children": []
-                },
-                {
-                  "title": "Investigate Managed Threat Hunting reports",
-                  "path": "configure-cortex-xsiam/multi-tenant/about-managed-threat-hunting/investigate-managed-threat-hunting-reports",
-                  "type": "document",
-                  "children": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "XQL query management",
-          "path": "configure-cortex-xsiam/xql-query-management",
-          "type": "document",
-          "children": []
-        },
-        {
           "title": "Customize cases and issues",
           "path": "configure-cortex-xsiam/customize-cases-and-issues",
           "type": "document",
@@ -8344,6 +8223,151 @@
               "path": "configure-cortex-xsiam/customize-cases-and-issues/run-indicator-extraction-in-the-cli",
               "type": "document",
               "children": []
+            }
+          ]
+        },
+        {
+          "title": "XQL query management",
+          "path": "configure-cortex-xsiam/xql-query-management",
+          "type": "document",
+          "children": []
+        },
+        {
+          "title": "Multi-Tenant",
+          "path": "configure-cortex-xsiam/multi-tenant",
+          "type": "document",
+          "children": [
+            {
+              "title": "What is Cortex XSIAM multi-tenant?",
+              "path": "configure-cortex-xsiam/multi-tenant/what-is-cortex-xsiam-multi-tenant",
+              "type": "document",
+              "children": [
+                {
+                  "title": "MSSP multi-tenant",
+                  "path": "configure-cortex-xsiam/multi-tenant/what-is-cortex-xsiam-multi-tenant/mssp-multi-tenant",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Enterprise multi-tenant",
+                  "path": "configure-cortex-xsiam/multi-tenant/what-is-cortex-xsiam-multi-tenant/enterprise-multi-tenant",
+                  "type": "document",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "title": "Multi-tenant central licensing management",
+              "path": "configure-cortex-xsiam/multi-tenant/multi-tenant-central-licensing-management",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Onboard Cortex multi-tenant",
+              "path": "configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant",
+              "type": "document",
+              "children": [
+                {
+                  "title": "Onboarding checklist for multi-tenant central licensing deployments",
+                  "path": "configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant/onboarding-checklist-for-multi-tenant-central-licensing-deployments",
+                  "type": "document",
+                  "children": [
+                    {
+                      "title": "Step 1. Activate Cortex XSIAM (main account)",
+                      "path": "configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant/onboarding-checklist-for-multi-tenant-central-licensing-deployments/step-1.-activate-cortex-xsiam-main-account",
+                      "type": "document",
+                      "children": []
+                    },
+                    {
+                      "title": "Step 2. Create a child tenant",
+                      "path": "configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant/onboarding-checklist-for-multi-tenant-central-licensing-deployments/step-2.-create-a-child-tenant",
+                      "type": "document",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "title": "Onboarding checklist for multi-tenant customer-owned license deployments",
+                  "path": "configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant/onboarding-checklist-for-multi-tenant-customer-owned-license-deployments",
+                  "type": "document",
+                  "children": [
+                    {
+                      "title": "Step 1. Active Cortex XSIAM (parent and child tenants)",
+                      "path": "configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant/onboarding-checklist-for-multi-tenant-customer-owned-license-deployments/step-1.-active-cortex-xsiam-parent-and-child-tenants",
+                      "type": "document",
+                      "children": []
+                    },
+                    {
+                      "title": "Step 2. Define access configuations and role permissions",
+                      "path": "configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant/onboarding-checklist-for-multi-tenant-customer-owned-license-deployments/step-2.-define-access-configuations-and-role-permissions",
+                      "type": "document",
+                      "children": []
+                    },
+                    {
+                      "title": "Step 3. Pair a parent tenant with a child tenant",
+                      "path": "configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant/onboarding-checklist-for-multi-tenant-customer-owned-license-deployments/step-3.-pair-a-parent-tenant-with-a-child-tenant",
+                      "type": "document",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Dynamic license allocation",
+              "path": "configure-cortex-xsiam/multi-tenant/dynamic-license-allocation",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Child tenant management",
+              "path": "configure-cortex-xsiam/multi-tenant/child-tenant-management",
+              "type": "document",
+              "children": [
+                {
+                  "title": "Track your tenant management",
+                  "path": "configure-cortex-xsiam/multi-tenant/child-tenant-management/track-your-tenant-management",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Investigate child tenant data",
+                  "path": "configure-cortex-xsiam/multi-tenant/child-tenant-management/investigate-child-tenant-data",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Create and allocate configurations",
+                  "path": "configure-cortex-xsiam/multi-tenant/child-tenant-management/create-and-allocate-configurations",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Create a security managed action",
+                  "path": "configure-cortex-xsiam/multi-tenant/child-tenant-management/create-a-security-managed-action",
+                  "type": "document",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "title": "About managed threat hunting",
+              "path": "configure-cortex-xsiam/multi-tenant/about-managed-threat-hunting",
+              "type": "document",
+              "children": [
+                {
+                  "title": "Set up Managed Threat Hunting",
+                  "path": "configure-cortex-xsiam/multi-tenant/about-managed-threat-hunting/set-up-managed-threat-hunting",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Investigate Managed Threat Hunting reports",
+                  "path": "configure-cortex-xsiam/multi-tenant/about-managed-threat-hunting/investigate-managed-threat-hunting-reports",
+                  "type": "document",
+                  "children": []
+                }
+              ]
             }
           ]
         },
@@ -9142,6 +9166,12 @@
                     {
                       "title": "Cloud Security Operations",
                       "path": "detect-investigate-and-respond-to-threats/monitor-dashboards-and-reports/dashboard-reference/system-dashboards/cloud-security-operations",
+                      "type": "document",
+                      "children": []
+                    },
+                    {
+                      "title": "Data Ingestion",
+                      "path": "detect-investigate-and-respond-to-threats/monitor-dashboards-and-reports/dashboard-reference/system-dashboards/data-ingestion",
                       "type": "document",
                       "children": []
                     }
@@ -13382,65 +13412,85 @@
           ]
         },
         {
-          "title": "Cortex CLI",
-          "path": "reference-and-developer-docs/cortex-cli",
+          "title": "About Cortex CLI",
+          "path": "reference-and-developer-docs/about-cortex-cli",
           "type": "document",
           "children": [
             {
               "title": "Connect Cortex CLI",
-              "path": "reference-and-developer-docs/cortex-cli/connect-cortex-cli",
+              "path": "reference-and-developer-docs/about-cortex-cli/connect-cortex-cli",
               "type": "document",
-              "children": []
-            },
-            {
-              "title": "Authenticate credentials",
-              "path": "reference-and-developer-docs/cortex-cli/authenticate-credentials",
-              "type": "document",
-              "children": []
+              "children": [
+                {
+                  "title": "Installation workflows",
+                  "path": "reference-and-developer-docs/about-cortex-cli/connect-cortex-cli/installation-workflows",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Manage the CLI after installation",
+                  "path": "reference-and-developer-docs/about-cortex-cli/connect-cortex-cli/manage-the-cli-after-installation",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Authenticate credentials",
+                  "path": "reference-and-developer-docs/about-cortex-cli/connect-cortex-cli/authenticate-credentials",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Self-service API keys for CLI scans",
+                  "path": "reference-and-developer-docs/about-cortex-cli/connect-cortex-cli/self-service-api-keys-for-cli-scans",
+                  "type": "document",
+                  "children": []
+                }
+              ]
             },
             {
               "title": "Cortex CLI usage",
-              "path": "reference-and-developer-docs/cortex-cli/cortex-cli-usage",
-              "type": "document",
-              "children": []
-            },
-            {
-              "title": "Self-service API keys for CLI scans",
-              "path": "reference-and-developer-docs/cortex-cli/self-service-api-keys-for-cli-scans",
+              "path": "reference-and-developer-docs/about-cortex-cli/cortex-cli-usage",
               "type": "document",
               "children": []
             },
             {
               "title": "Cortex CLI common command line reference guide",
-              "path": "reference-and-developer-docs/cortex-cli/cortex-cli-common-command-line-reference-guide",
+              "path": "reference-and-developer-docs/about-cortex-cli/cortex-cli-common-command-line-reference-guide",
               "type": "document",
               "children": []
             },
             {
               "title": "Cortex CLI for Code Security",
-              "path": "reference-and-developer-docs/cortex-cli/cortex-cli-for-code-security",
+              "path": "reference-and-developer-docs/about-cortex-cli/cortex-cli-for-code-security",
               "type": "document",
               "children": [
                 {
                   "title": "Cortex CLI usage for Cortex Cloud Application Security",
-                  "path": "reference-and-developer-docs/cortex-cli/cortex-cli-for-code-security/cortex-cli-usage-for-application-security",
+                  "path": "reference-and-developer-docs/about-cortex-cli/cortex-cli-for-code-security/cortex-cli-usage-for-application-security",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Cortex CLI Cortex Cloud Application Security command line reference",
-                  "path": "reference-and-developer-docs/cortex-cli/cortex-cli-for-code-security/cortex-cli-application-security-command-line-reference",
+                  "path": "reference-and-developer-docs/about-cortex-cli/cortex-cli-for-code-security/cortex-cli-application-security-command-line-reference",
                   "type": "document",
-                  "children": []
+                  "children": [
+                    {
+                      "title": "Custom Cortex checks and signature verification",
+                      "path": "reference-and-developer-docs/about-cortex-cli/cortex-cli-for-code-security/cortex-cli-application-security-command-line-reference/custom-cortex-checks-and-signature-verification",
+                      "type": "document",
+                      "children": []
+                    }
+                  ]
                 },
                 {
                   "title": "Cortex CLI pre-commit hooks",
-                  "path": "reference-and-developer-docs/cortex-cli/cortex-cli-for-code-security/cortex-cli-pre-commit-hooks",
+                  "path": "reference-and-developer-docs/about-cortex-cli/cortex-cli-for-code-security/cortex-cli-pre-commit-hooks",
                   "type": "document",
                   "children": [
                     {
                       "title": "Pre-commit hook usage",
-                      "path": "reference-and-developer-docs/cortex-cli/cortex-cli-for-code-security/cortex-cli-pre-commit-hooks/pre-commit-hook-usage",
+                      "path": "reference-and-developer-docs/about-cortex-cli/cortex-cli-for-code-security/cortex-cli-pre-commit-hooks/pre-commit-hook-usage",
                       "type": "document",
                       "children": []
                     }
@@ -13448,12 +13498,12 @@
                 },
                 {
                   "title": "Cortex CLI pre-receive hooks",
-                  "path": "reference-and-developer-docs/cortex-cli/cortex-cli-for-code-security/cortex-cli-pre-receive-hooks",
+                  "path": "reference-and-developer-docs/about-cortex-cli/cortex-cli-for-code-security/cortex-cli-pre-receive-hooks",
                   "type": "document",
                   "children": [
                     {
                       "title": "Pre-receive hook usage",
-                      "path": "reference-and-developer-docs/cortex-cli/cortex-cli-for-code-security/cortex-cli-pre-receive-hooks/pre-receive-hook-usage",
+                      "path": "reference-and-developer-docs/about-cortex-cli/cortex-cli-for-code-security/cortex-cli-pre-receive-hooks/pre-receive-hook-usage",
                       "type": "document",
                       "children": []
                     }
@@ -13463,12 +13513,12 @@
             },
             {
               "title": "Cortex CLI for Cloud Workload Protection",
-              "path": "reference-and-developer-docs/cortex-cli/cortex-cli-for-cloud-workload-protection",
+              "path": "reference-and-developer-docs/about-cortex-cli/cortex-cli-for-cloud-workload-protection",
               "type": "document",
               "children": [
                 {
                   "title": "Cloud Workload Protection command line reference",
-                  "path": "reference-and-developer-docs/cortex-cli/cortex-cli-for-cloud-workload-protection/cloud-workload-protection-command-line-reference",
+                  "path": "reference-and-developer-docs/about-cortex-cli/cortex-cli-for-cloud-workload-protection/cloud-workload-protection-command-line-reference",
                   "type": "document",
                   "children": []
                 }
@@ -13476,14 +13526,27 @@
             },
             {
               "title": "Cortex CLI for API Security",
-              "path": "reference-and-developer-docs/cortex-cli/cortex-cli-for-api-security",
+              "path": "reference-and-developer-docs/about-cortex-cli/cortex-cli-for-api-security",
               "type": "document",
               "children": [
                 {
                   "title": "Cortex CLI API Security command line reference guide",
-                  "path": "reference-and-developer-docs/cortex-cli/cortex-cli-for-api-security/cortex-cli-api-security-command-line-reference-guide",
+                  "path": "reference-and-developer-docs/about-cortex-cli/cortex-cli-for-api-security/cortex-cli-api-security-command-line-reference-guide",
                   "type": "document",
-                  "children": []
+                  "children": [
+                    {
+                      "title": "API Security scan report schema",
+                      "path": "reference-and-developer-docs/about-cortex-cli/cortex-cli-for-api-security/cortex-cli-api-security-command-line-reference-guide/api-security-scan-report-schema",
+                      "type": "document",
+                      "children": []
+                    },
+                    {
+                      "title": "API Security scan output example",
+                      "path": "reference-and-developer-docs/about-cortex-cli/cortex-cli-for-api-security/cortex-cli-api-security-command-line-reference-guide/api-security-scan-output-example",
+                      "type": "document",
+                      "children": []
+                    }
+                  ]
                 }
               ]
             }

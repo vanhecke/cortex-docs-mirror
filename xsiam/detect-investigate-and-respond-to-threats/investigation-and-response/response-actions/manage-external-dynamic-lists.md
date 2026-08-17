@@ -7,7 +7,7 @@ Cortex XSIAM hosts the following external dynamic lists that you can configure a
 * IP Addresses EDL
 * Domain Names EDL
 
-### Configure an EDL
+### Prerequisites
 
 Before you start, you must have a role that includes View/Edit EDL permissions, such as Instance Admin.
 
@@ -47,7 +47,7 @@ You can set up an EDL on the Cortex XSIAM tenant or an engine.
 ### Configure the Firewall to authenticate the EDL
 
 1. Enable the firewall to authenticate the EDL.
-   * Download the following root certificate: [https://certs.godaddy.com/repository/gdroot-g2.crt](https://certs.godaddy.com/repository/gdroot-g2.crt).
+   * Download the following root certificate: [https://cacerts.digicert.com/DigiCertGlobalRootG2.crt.pem](https://cacerts.digicert.com/DigiCertGlobalRootG2.crt.pem).
    * On the firewall, select **Device** → **Certificate Management** → **Certificates** and import the certificate. Make sure to give the device certificate a descriptive name, and select **OK** to save the certificate.
    * Select **Device** → **Certificate Management** → **Certificate Profile** and **Add** a certificate profile.
    * Give the profile a descriptive name and add the certificate to the profile.

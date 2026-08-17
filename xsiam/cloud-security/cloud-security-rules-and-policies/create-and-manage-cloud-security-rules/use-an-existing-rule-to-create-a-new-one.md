@@ -1,5 +1,5 @@
 ---
-description: Create a custom cloud security rule by copying an existing rule.
+description: Duplicate an existing cloud security rule and customize it for your needs.
 ---
 
 # Use an existing rule to create a new one

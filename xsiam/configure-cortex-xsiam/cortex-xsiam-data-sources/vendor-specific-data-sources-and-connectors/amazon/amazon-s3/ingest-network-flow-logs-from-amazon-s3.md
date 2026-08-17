@@ -28,7 +28,7 @@ Be sure you do the following tasks before you begin configuring data collection 
 * Ensure that you can access your Amazon Virtual Private Cloud (VPC) and have the necessary permissions to create flow logs.
 * Determine how you want to provide access to Cortex XSIAM to your logs and perform API operations. You have the following options:
   * Use Workload Federated Identity to allow Cortex XSIAM's dedicated log collector service account to assume an IAM role in your AWS environment using a short-lived OIDC token, without storing any long-lived credentials. This is the Workload Federated Identity option in the Amazon S3 collection configuration and is the recommended option when available.
-  * Designate an AWS IAM user, where you will need to know the Account ID for the user and have the relevant permissions to create an access key/id for the relevant IAM user. This is the default option as explained in Configure the Amazon S3 Collection in Cortex Cloud by selecting Access Key.
+  * Designate an AWS IAM user, where you will need to know the Account ID for the user and have the relevant permissions to create an access key/id for the relevant IAM user. This is the default option as explained in Configure the Amazon S3 Collection in Cortex XSIAM by selecting Access Key.
   * Create an assumed role in AWS to delegate permissions to a Cortex XSIAM AWS service. This role grants Cortex XSIAM access to your flow logs. For more information, see [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html). This is the Assumed Role option as described in Configure the Amazon S3 collection in Cortex XSIAM. For more information on creating an assumed role for Cortex XSIAM, see [create an assumed role](create-an-assumed-role). To collect Amazon S3 logs that use server-side encryption (SSE), the user role must have an IAM policy that states that Cortex XSIAM has kms:Decrypt permissions. With this permission, Amazon S3 automatically detects if a bucket is encrypted and decrypts it. If you want to collect encrypted logs from different accounts, you must have the decrypt permissions for the user role also in the key policy for the master account Key Management Service (KMS). For more information, see [Allowing users in other accounts to use a KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html).
 * If using Workload Federated Identity, ensure you have permissions to create an AWS IAM Identity Provider and an IAM role with a trust policy in your AWS account. You will need the Cortex XSIAM service account identifier (provided in the Cortex XSIAM UI after saving the configuration) to configure the trust relationship.
 
@@ -54,18 +54,18 @@ Configure Cortex XSIAM to receive network flow logs from Amazon S3 using the Clo
        * Prerequisite - Prepare template → Prepare template: Select Template is ready.
        * Specify Template
          * Template source: Select Upload a template file.
-         *   Upload a template file: Choose file, and select the `cortex-xdr-create-s3-with-sqs-flow-logs.json` file that you downloaded from Cortex XDR.
+         *   Upload a template file: Choose file, and select the `cortex-xdr-create-s3-with-sqs-flow-logs.json` file that you downloaded from Cortex XSIAM.
 
-             ![create-stack.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/GD6sG6FlxDWxAn13_eZuUQ/resources/6q07Q9W56L~~ip_4wzB2EQ-GD6sG6FlxDWxAn13_eZuUQ/content?v=9ed87be0ff7945fd\&Ft-Calling-App=ft/turnkey-portal)
+             <figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fu8N4bMGKrHsIn3WaUY9j%2Fcreate_stack.png?alt=media&#x26;token=0f49722a-316f-4d45-a5ad-199bd520b92f" alt=""><figcaption></figcaption></figure>
     5. Click Next.
     6. In the Specify stack details page, configure the following stack details.
        * Stack name: Specify a descriptive name for your stack.
-       * Parameters → Cortex Cloud Flow Logs Integration
+       * Parameters → Cortex XDR Flow Logs Integration
          * Bucket Name: Specify the name of the S3 bucket to create, where you can leave the default populated name as xdr-flow-logs or create a new one. The name must be unique.
          * Publisher Account ID: Specify the AWS IAM user account ID with whom you are sharing access.
          *   Queue Name: Specify the name for your Amazon SQS queue to create, where you can leave the default populated name as xdr-flow or create a new one. The name must be unique.
 
-             ![specify-stack-details.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/GD6sG6FlxDWxAn13_eZuUQ/resources/URGquS0kmRNUZK5FNwBXtw-GD6sG6FlxDWxAn13_eZuUQ/content?v=34ebdd8e260f94ff\&Ft-Calling-App=ft/turnkey-portal)
+             <figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fl9Dd8yYtFNisFHnMtnxq%2Fspecify_stack_details.png?alt=media&#x26;token=1e8cbfa9-d692-44c2-8087-479becbc8def" alt=""><figcaption></figcaption></figure>
     7. Click Next.
     8. In the Configure stack options page, there is nothing to configure, so click Next.
     9.  In the Review page, look over the stack configurations settings that you have configured and if they are correct, click Create stack. If you need to make a change, click Edit beside the particular step that you want to update.
@@ -79,7 +79,7 @@ Configure Cortex XSIAM to receive network flow logs from Amazon S3 using the Clo
        <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note:</strong> To create a new VPC, click Launch VPC Wizard. For more information, see <a href="https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html">AWS VPC Flow Logs</a>.</p></div>
    2.  From the list of Your VPCs, select the checkbox beside the VPC that you want to configure to create flow logs, and then select Actions → Create flow log.
 
-       ![your-vpcs.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/GD6sG6FlxDWxAn13_eZuUQ/resources/N_2u4EvbUv2Q8mZyDKetZw-GD6sG6FlxDWxAn13_eZuUQ/content?v=95b915e850556508\&Ft-Calling-App=ft/turnkey-portal)
+       <figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Ffbn3IeZabZlFfT9VvhTs%2Fcreate_flow_log.png?alt=media&#x26;token=5e3a99d5-a73c-445d-9643-9ed51546829b" alt=""><figcaption></figcaption></figure>
    3. Configure the following Flow log settings:
       * Name - optional: (Optional) Specify a descriptive name for your VPC flow log.
       * Filter: Select All types of traffic to capture.
@@ -89,7 +89,7 @@ Configure Cortex XSIAM to receive network flow logs from Amazon S3 using the Clo
 
           You can retrieve your bucket’s ARN by opening another instance of the AWS Management Console in a browser window and opening the [Amazon S3 console](https://console.aws.amazon.com/s3/). In the Buckets section, select the bucket that you created for collecting the Amazon S3 flow logs when you created your stack, click Copy ARN, and paste the ARN in this field.
 
-          ![bucket-copy-arn.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/GD6sG6FlxDWxAn13_eZuUQ/resources/9VZLtdPYotIjTFCpZQf9vg-GD6sG6FlxDWxAn13_eZuUQ/content?v=0a86423f550de7ed\&Ft-Calling-App=ft/turnkey-portal)
+          <figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FQ0HKKosAuodsupQR3Aqk%2Fbuckets.png?alt=media&#x26;token=d682e8c4-daf9-4bc3-b94d-c4e1d8c91934" alt=""><figcaption></figcaption></figure>
       * Log record format: Select Custom Format, and in the Log Format field, specify the following fields to include in the flow log record, which you can select from the list displayed:
         * account-id
         * action
@@ -138,30 +138,18 @@ Configure Cortex XSIAM to receive network flow logs from Amazon S3 using the Clo
 6. Configure the Amazon S3 collection in Cortex XSIAM.
    1. Navigate to Settings → Data Sources & Integrations.
    2. Select the Amazon S3 integration and click Add Instance.
-   3. Select the authentication method you configured and enter the following values:
+   3. Set these parameters, where the parameters change depending on whether you configured an Access Key or Assumed Role.
+      * SQS URL: Specify the SQS URL, which is taken from the stack you created. In the browser you left open after creating the stack, open the Outputs tab, copy the Value of the QueueURL and paste it in this field.
+      * Name: Specify a descriptive name for your log collection configuration.
+      * When setting an Access Key, set these parameters.
+        * AWS Client ID: Specify the Access key ID, which you received when you created access keys for the AWS IAM user in AWS.
+        * AWS Client Secret: Specify the Secret access key you received when you created access keys for the AWS IAM user in AWS.
+      * When setting an Assumed Role, set these parameters.
+        * Role ARN: Specify the Role ARN for the Assumed Role you created for in AWS.
+        * External Id:Specify the External Id for the Assumed Role you created for in AWS.
+      *   Log Type: Select Flow Logs to configure your log collection to receive network flow logs from Amazon S3. When configuring network flow log collection, the following additional field is displayed for Enhanced Cloud Protection.
 
-{% tabs %}
-{% tab title="Workload Federated Identity" %}
-Delegates permissions to a Cortex XSIAM AWS service using an IAM assumed role. For more information, see [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html).
+          You can Normalize and enrich flow logs by selecting the checkbox. If selected, Cortex XSIAM ingests the network flow logs as network connection stories, which you can query using XQL Search from the `xdr_data` dataset using the preset called `network_story`.
+   4.  Click Test to validate access, and then click Enable.
 
-<table><thead><tr><th width="169.71484375">Field</th><th>Input</th></tr></thead><tbody><tr><td>SQS URL</td><td>Specify the <strong>SQS URL</strong>, which is the URL of the Amazon SQS that you configured in the AWS Management Console.</td></tr><tr><td>Name</td><td>Specify a descriptive name for your log collection configuration.</td></tr><tr><td>Role ARN</td><td>Specify the ARN of the IAM role that Cortex Cloud's log collector will assume. This role must have a trust policy that allows Cortex Cloud's service account to assume it.</td></tr><tr><td>Audience</td><td>Specify the OIDC audience value configured in your AWS IAM identity provider trust policy. This value scopes the OIDC token to your specific AWS environment.</td></tr><tr><td>Log Type</td><td>Select <strong>Flow Logs</strong> to configure your log collection to receive network flow logs from Amazon S3.</td></tr></tbody></table>
-
-Click **Copy Identifier** to copy the Cortex XSIAM service account identifier. Add this identifier to the trust policy of the IAM role in AWS to authorize Cortex XSIAM's log collector to assume the role.
-{% endtab %}
-
-{% tab title="Access Key" %}
-Uses a designated AWS IAM user's static access key and secret to authenticate.
-
-<table><thead><tr><th width="188.20703125">Field</th><th>Input</th></tr></thead><tbody><tr><td>SQS URL</td><td>Specify the <strong>SQS URL</strong>, which is the URL of the Amazon SQS that you configured in the AWS Management Console.</td></tr><tr><td>Name</td><td>Specify a descriptive name for your log collection configuration.</td></tr><tr><td>AWS Client ID</td><td>Specify the Access key ID, which you received when you configured access keys for the AWS IAM user in AWS.</td></tr><tr><td>AWS Client Secret</td><td>Specify the Secret access key you received when you configured access keys for the AWS IAM user in AWS.</td></tr><tr><td>Log Type</td><td>Select <strong>Flow Logs</strong> to configure your log collection to receive network flow logs from Amazon S3.</td></tr></tbody></table>
-{% endtab %}
-
-{% tab title="Assumed Role" %}
-Delegates permissions to a Cortex XSIAM AWS service using an IAM assumed role. For more information, see [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html).
-
-<table><thead><tr><th width="168.859375">Field</th><th>Input</th></tr></thead><tbody><tr><td>SQS URL</td><td>Specify the <strong>SQS URL</strong>, which is the URL of the Amazon SQS that you configured in the AWS Management Console.</td></tr><tr><td>Name</td><td>Specify a descriptive name for your log collection configuration.</td></tr><tr><td>Role ARN</td><td>Specify the Role ARN for the Assumed Role you created in AWS.</td></tr><tr><td>External ID</td><td>Specify the External ID for the Assumed Role you created in AWS.</td></tr><tr><td>Log Type</td><td>Select <strong>Flow Logs</strong> to configure your log collection to receive network flow logs from Amazon S3.</td></tr></tbody></table>
-{% endtab %}
-{% endtabs %}
-
-d. Click Test to validate access, and then click **Enable**.
-
-Once events start to come in, a green check mark appears underneath the Amazon S3 configuration with the number of logs received.
+       When events start to come in, a green check mark appears underneath the Amazon S3 configuration with the number of logs received.

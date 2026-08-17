@@ -1,0 +1,79 @@
+# Data Ingestion
+
+The **Data Ingestion** dashboard provides interactive, high-level overviews of your data ingestion health, rates, and storage consumption across different ingestion tiers. You can use this dashboard to monitor the status of your data sources and ensure that logs are being ingested as expected.
+
+### What the Data Ingestion dashboard measures
+
+The Data Ingestion dashboard, including the **Ingestion Rate** widget, reports the volume of data ingested from third-party and external data sources, such as:
+
+* Next-generation firewalls and other network devices
+* Cloud providers and SaaS applications
+* Syslog and other collectors
+* Custom integrations and API-based ingestion
+
+**Data collected by the Cortex XDR agent is not included in these figures.**
+
+{% hint style="info" %}
+**Note**\
+Endpoint data collected by the Cortex XDR agent is excluded from the Data Ingestion dashboard by design. If your tenant collects data exclusively through Cortex XDR agents, the **Ingestion Rate** widget displays **0** even though endpoint data is being ingested normally. This does not indicate data loss or an ingestion failure.
+{% endhint %}
+
+### Verifying Cortex XDR agent data ingestion
+
+Cortex XDR agent data is always ingested into, and queryable from, the `xdr_data` dataset. To confirm that endpoint data is arriving, run the following XQL query:
+
+```xql
+dataset = xdr_data 
+| filter _time > to_timestamp(to_epoch(current_time()) - 3600, "SECONDS") 
+| comp count() as events by agent_hostname 
+| sort desc events 
+| limit 50
+```
+
+If the query returns rows, agent data is being ingested as expected, regardless of what the **Ingestion Rate** widget shows.
+
+#### Troubleshooting: Ingestion Rate shows 0
+
+If the **Ingestion Rate** widget shows 0, use this checklist to verify your environment:
+
+1. **Identify your data sources**: If the tenant is connected only to Cortex XDR agents and has no third-party data sources, an Ingestion Rate of **0** is expected.
+2. **Confirm endpoint data is arriving**: Query `xdr_data` as shown above. If rows are returned, ingestion is healthy.
+3. **Check third-party sources**: If you have external data sources configured and the widget still shows 0, verify those integrations under **Settings > Data Sources & Integrations**.
+
+{% hint style="info" %}
+**Note**
+
+If you need Cortex XDR agent volume to be reflected in the ingestion dashboard, contact your account team to submit a feature request.
+{% endhint %}
+
+### Key Features
+
+* **Unified monitoring**: Displays a unified view of your ingestion health across different storage tiers, such as Analytics and Cortex Data Lake.
+* **Consumption tracking**: Monitors daily data consumption to help you manage license quotas and plan capacity.
+* **Drill-down capabilities**: Allows you to click on widgets to see a full breakdown of ingested data by source or investigate specific ingestion alerts.
+
+### Data Ingestion widgets
+
+The dashboard includes several widgets to help you visualize your data pipeline:
+
+* **Ingestion Rate**: Displays the rate at which logs are ingested by each data source.
+* **Analytics Daily Consumption**: Shows the amount of data consuming your primary Analytics (GB) license quota.
+* **Data Lake Daily Consumption**: Shows data ingested into the low-cost Cortex Data Lake tier for long-term storage and compliance .
+
+### Important Design Considerations
+
+When using the Data Ingestion dashboard, keep the following design exclusions in mind:
+
+* **Cortex XDR agent data**: By design, data collected from Cortex XDR agents is excluded from the Data Ingestion dashboard and the Ingestion Rate widget . This dashboard focuses on external data sources and integrations rather than endpoint agent telemetry.
+* **Enhanced Application Logs (EAL)**: EAL data is now non-billable and is no longer displayed on the Data Ingestion dashboard to ensure the graphs reflect billable totals only .
+* **Stale data**: While the system can collect data offline (such as using the Broker VM), the ingestion dashboard focuses on real-time pipeline health. Large uploads of stale data from prolonged disconnections are typically handled to avoid triggering daily ingestion limit alerts.
+
+### Monitoring and Troubleshooting
+
+You can use the dashboard in conjunction with the **Data Ingestion Health** page to investigate disruptions. When a significant deviation from normal ingestion patterns is detected, the system triggers health alerts .
+
+From the dashboard, you can:
+
+1. Identify sources with zero or unexpected ingestion rates.
+2. Right-click an alert or widget to **Investigate in XQL**.
+3. View related metrics in the `metrics_view` preset to troubleshoot pipeline issues.

@@ -1,7 +1,7 @@
 ---
 description: >-
-  Create custom detection rules to evaluate assets against tailored compliance
-  requirements.
+  Create custom detection rules to enforce compliance requirements and security
+  best practices.
 ---
 
 # Create a new custom detection rule

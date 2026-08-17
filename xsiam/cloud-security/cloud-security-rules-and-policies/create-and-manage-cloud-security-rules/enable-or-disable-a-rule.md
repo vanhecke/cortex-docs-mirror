@@ -1,5 +1,5 @@
 ---
-description: Enable or disable cloud security rules to control their evaluations.
+description: Enable or disable cloud security rules to control when they evaluate assets.
 ---
 
 # Enable or disable a rule

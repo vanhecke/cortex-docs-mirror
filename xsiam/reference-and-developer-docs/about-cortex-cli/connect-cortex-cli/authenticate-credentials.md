@@ -14,6 +14,8 @@ Choose the method that fits your workflow:
 * Use environment variables for CI/CD pipelines.
 * Use command-line flags for one-off commands or overrides.
 
+Generate API keys in the UI, or use the self-service workflow to create role-restricted CLI and IDE keys through the Public API. The self-service workflow uses a Primary API key. See [Self-service API keys for CLI scans](self-service-api-keys-for-cli-scans).
+
 {% hint style="warning" %}
 Do not commit API keys or credential files to source control.
 {% endhint %}

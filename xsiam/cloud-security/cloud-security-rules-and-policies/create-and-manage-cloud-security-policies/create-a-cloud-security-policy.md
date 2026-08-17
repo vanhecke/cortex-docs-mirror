@@ -1,5 +1,7 @@
 ---
-description: Create cloud security policies that select rules and define their asset scope.
+description: >-
+  Create a cloud security policy that applies security rules to selected cloud
+  assets.
 ---
 
 # Create a cloud security policy

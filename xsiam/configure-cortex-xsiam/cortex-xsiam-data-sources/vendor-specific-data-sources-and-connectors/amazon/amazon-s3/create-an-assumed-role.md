@@ -72,19 +72,19 @@ When creating the S3 bucket and SQS, follow any other relevant instructions prov
               * Operator: Select StringEquals.
               * Value: Enter the value of the External ID, a unique alphanumeric string, by generating a secure UUIDv4 using an [Online UUID Generator](https://www.uuidgenerator.net/version4). Copy the External ID as you will use this when configuring the Amazon S3 Collector in Cortex XSIAM.
 
-              ![add\_condition.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/GD6sG6FlxDWxAn13_eZuUQ/resources/ucKzbkRfyt9_Ol9htQUFBw-GD6sG6FlxDWxAn13_eZuUQ/content?v=95ee53ba4778bb97\&Ft-Calling-App=ft/turnkey-portal)
+              <figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FNr3QLuWbBFvp1f8hglgI%2Fadd-condition.png?alt=media&#x26;token=961565fa-9424-4daf-81cf-15afdfa7ca6e" alt=""><figcaption></figcaption></figure>
 
               When you are finished, click Add condition.
 
-        ![select\_trusted\_entity\_updated.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/GD6sG6FlxDWxAn13_eZuUQ/resources/xH6~wyDmfyRISxfEp43pmg-GD6sG6FlxDWxAn13_eZuUQ/content?v=fe6dbe031c6a64b7\&Ft-Calling-App=ft/turnkey-portal)
+        <figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FFmCPWQgC4Parmvsa71Lr%2Fselect-trusted-entity.png?alt=media&#x26;token=2902a1c8-f521-47dc-9cc9-9e790ce1a2af" alt=""><figcaption></figcaption></figure>
     3.  Click Next and add permissions by selecting the policy you created.
 
-        ![add\_permissions.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/GD6sG6FlxDWxAn13_eZuUQ/resources/yohjnb87uW86Zq~PJZEgyw-GD6sG6FlxDWxAn13_eZuUQ/content?v=5b370b18e39e942f\&Ft-Calling-App=ft/turnkey-portal)
+        <figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FL8qI8UImsTYwK48NqjKC%2Fadd-permissions.png?alt=media&#x26;token=b6a6adb9-cf6c-4343-b9f0-2d569c2137d3" alt=""><figcaption></figcaption></figure>
 3.  Click Next to name, review, and create.
 
     * Role name: Specify a name for the new role, and click Create role.
 
-    ![name\_review\_create.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/GD6sG6FlxDWxAn13_eZuUQ/resources/oIa1MrkLP9SAoSbue2e6ag-GD6sG6FlxDWxAn13_eZuUQ/content?v=ccd92b22e4f26658\&Ft-Calling-App=ft/turnkey-portal)
+    <figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fo4Eomsck1rOFolzX8xsy%2Fname-review-create.png?alt=media&#x26;token=fd5866ff-3ed5-4799-b36b-10e99711a2fa" alt=""><figcaption></figcaption></figure>
 4. Copy the Policy ARN and Role ARN for future use by opening the policy and role that you created.
 5.  Continue with the task for the applicable Amazon S3 logs you want to configure.
 

@@ -2,6 +2,11 @@
 
 View and manage your correlation rules in **Threat Management → Detection Rules → Correlations**. To manage a Correlation Rule, right-click the Correlation Rule and select an action.
 
+{% hint style="info" %}
+**Note**\
+The maximum number of active scheduled correlations is 1200. This limit applies only to enabled, user-created scheduled correlations. If your organizational needs exceed this limit, please contact your support agent.
+{% endhint %}
+
 You can also monitor your correlation rule executions with the `correlations_auditing` data set. For more information, see [Monitor correlation rules](../../../../../configure-cortex-xsiam/cortex-xsiam-data-sources/administration-and-troubleshooting/about-health-issues/monitor-correlation-rules).
 
 <details>

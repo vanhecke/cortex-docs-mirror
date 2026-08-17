@@ -1,10 +1,10 @@
 # Ingest audit logs from AWS CloudTrail
 
-You can forward audit logs for the relative service to Cortex Cloud from AWS CloudTrail.
+You can forward audit logs for the relative service to Cortex XSIAM from AWS CloudTrail.
 
-To receive audit logs from Amazon Simple Storage Service (Amazon S3) via AWS CloudTrail, you must first configure data collection from Amazon S3. You can then configure the Data Sources & Integrations settings in Cortex Cloud for Amazon S3. After you set up collection integration, Cortex Cloud begins receiving new logs and data from the source.
+To receive audit logs from Amazon Simple Storage Service (Amazon S3) via AWS CloudTrail, you must first configure data collection from Amazon S3. You can then configure the Data Sources & Integrations settings in Cortex XSIAM for Amazon S3. After you set up collection integration, Cortex XSIAM begins receiving new logs and data from the source.
 
-We do not recommend ingestion of data from an AWS commercial environment into a FedRAMP-certified Cortex Cloud tenant. However, if you must do so, contact Customer Support for assistance.
+We do not recommend ingestion of data from an AWS commercial environment into a FedRAMP-certified Cortex XSIAM tenant. However, if you must do so, contact Customer Support for assistance.
 
 {% hint style="info" %}
 **Note**
@@ -12,9 +12,9 @@ We do not recommend ingestion of data from an AWS commercial environment into a 
 For more information on configuring data collection from Amazon S3 using AWS CloudTrail, see the [AWS CloudTrail Documentation](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-a-trail-using-the-console-first-time.html).
 {% endhint %}
 
-When Cortex Cloud begins receiving logs, the app automatically creates an Amazon S3 Cortex Query Language (XQL) dataset (`aws_s3_raw`). This enables you to search the logs with XQL Search using the dataset. For example queries, refer to the in-app XQL Library.
+When Cortex XSIAM begins receiving logs, the app automatically creates an Amazon S3 Cortex Query Language (XQL) dataset (`aws_s3_raw`). This enables you to search the logs with XQL Search using the dataset. For example queries, refer to the in-app XQL Library.
 
-For enhanced cloud protection, you can also configure Cortex Cloud to stitch Amazon S3 audit logs with other Cortex Cloud authentication stories across all cloud providers using the same format, which you can query with XQL Search using the `cloud_audit_logs` dataset. Cortex Cloud can also generate Cortex Cloud issues (Analytics, IOC, BIOC, and Correlation Rules), when relevant, from Amazon S3 logs. While Correlation Rules issues are generated on non-normalized and normalized logs, Analytics, IOC, and BIOC issues are only generated on normalized logs.
+For enhanced cloud protection, you can also configure Cortex XSIAM to stitch Amazon S3 audit logs with other Cortex XSIAM authentication stories across all cloud providers using the same format, which you can query with XQL Search using the `cloud_audit_logs` dataset. Cortex XSIAM can also generate Cortex XSIAM issues (Analytics, IOC, BIOC, and Correlation Rules), when relevant, from Amazon S3 logs. While Correlation Rules issues are generated on non-normalized and normalized logs, Analytics, IOC, and BIOC issues are only generated on normalized logs.
 
 Enhanced cloud protection provides the following:
 
@@ -31,13 +31,13 @@ Be sure you do the following tasks before you begin configuring data collection 
 * Ensure that you have the proper permissions to access AWS CloudTrail and have the necessary permissions to create audit logs. The following permissions in AWS are the minimum requirements for an Amazon S3 bucket and Amazon Simple Queue Service (SQS).
   * **Amazon S3 bucket**: `GetObject`
   * **SQS**: `ChangeMessageVisibility`, `ReceiveMessage`, and `DeleteMessage`.
-* Determine how you want to provide access to Cortex Cloud to your logs and to perform API operations. You have the following options:
-  * Use Workload Federated Identity to allow Cortex Cloud's dedicated log collector service account to assume an IAM role in your AWS environment without storing any long-lived credentials. This is the **Workload Federated Identity** option described in the Amazon S3 collection configuration. This is the recommended option when your log collector is deployed as a Cortex-managed cloud service.
+* Determine how you want to provide access to Cortex XSIAM to your logs and to perform API operations. You have the following options:
+  * Use Workload Federated Identity to allow Cortex XSIAM's dedicated log collector service account to assume an IAM role in your AWS environment without storing any long-lived credentials. This is the **Workload Federated Identity** option described in the Amazon S3 collection configuration. This is the recommended option when your log collector is deployed as a Cortex-managed cloud service.
   * Designate an AWS IAM user, where you will need to know the Account ID for the user and have the relevant permissions to create an access key/id for the relevant IAM user. This is the default option as explained in Configure the Amazon S3 collection by selecting Access Key.
-  * Create an assumed role in AWS to delegate permissions to a Cortex Cloud AWS service. This role grants Cortex Cloud access to your flow logs. For more information, see [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html). This is the Assumed Role option described in the Amazon S3 collection configuration. To collect Amazon S3 logs that use server-side encryption (SSE), the user role must have an IAM policy that states that Cortex Cloud has kms:Decrypt permissions. With this permission, Amazon S3 automatically detects if a bucket is encrypted and decrypts it. If you want to collect encrypted logs from different accounts, you must have the decrypt permissions for the user role also in the key policy for the master account Key Management Service (KMS). For more information, see [Allowing users in other accounts to use a KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html).
-* If using **Workload Federated Identity**, ensure you have permissions to create an AWS IAM Identity Provider and an IAM role with a trust policy in your AWS account. You will need the Cortex Cloud service account identifier (provided in the Cortex Cloud UI after saving the configuration) to configure the trust relationship.
+  * Create an assumed role in AWS to delegate permissions to a Cortex XSIAM AWS service. This role grants Cortex XSIAM access to your flow logs. For more information, see [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html). This is the Assumed Role option described in the Amazon S3 collection configuration. To collect Amazon S3 logs that use server-side encryption (SSE), the user role must have an IAM policy that states that Cortex XSIAM has kms:Decrypt permissions. With this permission, Amazon S3 automatically detects if a bucket is encrypted and decrypts it. If you want to collect encrypted logs from different accounts, you must have the decrypt permissions for the user role also in the key policy for the master account Key Management Service (KMS). For more information, see [Allowing users in other accounts to use a KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html).
+* If using **Workload Federated Identity**, ensure you have permissions to create an AWS IAM Identity Provider and an IAM role with a trust policy in your AWS account. You will need the Cortex XSIAM service account identifier (provided in the Cortex XSIAM UI after saving the configuration) to configure the trust relationship.
 
-To configure Cortex Cloud to receive audit logs from Amazon S3 via AWS Cloudtrail:
+To configure Cortex XSIAM to receive audit logs from Amazon S3 via AWS Cloudtrail:
 
 1. Log in to the [AWS Management Console](https://console.aws.amazon.com/).
 2. From the menu bar, ensure that you have selected the correct region for your configuration.
@@ -84,7 +84,7 @@ To configure Cortex Cloud to receive audit logs from Amazon S3 via AWS Cloudtrai
 
            You can retrieve your bucket’s ARN by opening the [Amazon S3 Console](https://console.aws.amazon.com/s3/) in a browser window. In the Buckets section, select the bucket that you created for collecting the AWS CloudTrail logs, click Copy ARN, and paste the ARN in the field.
 
-           ![bucket-copy-arn.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/GD6sG6FlxDWxAn13_eZuUQ/resources/9VZLtdPYotIjTFCpZQf9vg-GD6sG6FlxDWxAn13_eZuUQ/content?v=0a86423f550de7ed\&Ft-Calling-App=ft/turnkey-portal)
+           <figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FQ0HKKosAuodsupQR3Aqk%2Fbuckets.png?alt=media&#x26;token=d682e8c4-daf9-4bc3-b94d-c4e1d8c91934" alt=""><figcaption></figcaption></figure>
 
            <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>For more information on granting permissions to publish messages to an SQS queue, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/grant-destinations-permissions-to-s3.html">Granting permissions to publish event notification messages to a destination</a>.</p></div>
 
@@ -129,19 +129,19 @@ To configure Cortex Cloud to receive audit logs from Amazon S3 via AWS Cloudtrai
        Once the event notification is created, a message indicating that the event notification was successfully created is displayed at the top of the page.
 
        <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>If your receive an error when trying to save your changes, you should ensure that the permissions are set up correctly.</p></div>
-6.  Configure access keys for the AWS IAM user that Cortex Cloud uses for API operations.
+6.  Configure access keys for the AWS IAM user that Cortex XSIAM uses for API operations.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><ul><li>It your organization's responsibility to ensure that the user who performs this task of creating the access key is designated with the relevant permissions. Otherwise, this can cause the process to fail with errors.</li><li>Skip this step if you are using an <strong>Assumed Role</strong> or <strong>Workload Federated Identity</strong> for Cortex Cloud.</li></ul></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><ul><li>It your organization's responsibility to ensure that the user who performs this task of creating the access key is designated with the relevant permissions. Otherwise, this can cause the process to fail with errors.</li><li>Skip this step if you are using an <strong>Assumed Role</strong> or <strong>Workload Federated Identity</strong> for Cortex XSIAM.</li></ul></div>
 
     1. Open the [AWS IAM Console](https://console.aws.amazon.com/iam/), and in the navigation pane, select Access management → Users.
     2. Select the User name of the AWS IAM user.
     3. Select the Security credentials tab, scroll down to the Access keys section, and click Create access key.
-    4.  Click the copy icon next to the Access key ID and Secret access key keys, where you must click Show secret access key to see the secret key and record them somewhere safe before closing the window. You will need to provide these keys when you edit the Access policy of the SQS queue and when setting the AWS Client ID and AWS Client Secret in Cortex Cloud. If you forget to record the keys and close the window, you will need to generate new keys and repeat this process.
+    4.  Click the copy icon next to the Access key ID and Secret access key keys, where you must click Show secret access key to see the secret key and record them somewhere safe before closing the window. You will need to provide these keys when you edit the Access policy of the SQS queue and when setting the AWS Client ID and AWS Client Secret in Cortex XSIAM. If you forget to record the keys and close the window, you will need to generate new keys and repeat this process.
 
         <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html">Managing access keys for IAM users</a>.</p></div>
 7.  Update the Access policy of your Amazon SQS queue.
 
-    Skip this step if you are using an **Assumed Role** or **Workload Federated Identity** for Cortex Cloud.
+    Skip this step if you are using an **Assumed Role** or **Workload Federated Identity** for Cortex XSIAM.
 
     1. In the [Amazon SQS Console](https://console.aws.amazon.com/sqs/), select the SQS queue that you created in Configure an Amazon Simple Queue Service (SQS).
     2. Select the Access policy tab, and Edit the Access policy code in the editor window to enable the IAM user to perform operations on the Amazon SQS with permissions to `SQS:ChangeMessageVisibility`, `SQS:DeleteMessage`, and `SQS:ReceiveMessage`. Use this sample code as a guide for defining the `“Sid”: “__receiver_statement”` with the following definitions:
@@ -183,33 +183,22 @@ To configure Cortex Cloud to receive audit logs from Amazon S3 via AWS Cloudtrai
              ]
            }
            ```
-8. Configure the Amazon S3 collection in Cortex Cloud.
-   1. Navigate to **Settings → Data Sources & Integrations**.
-   2. On the **Data Sources & Integrations** page, click **+ Add New**, search for Amazon S3, then hover over it and click **Add**.
-   3. Select the authentication method you configured and enter the following values:
+8. Configure the Amazon S3 collection in Cortex XSIAM.
+   1. Navigate to Settings → Data Sources & Integrations.
+   2. On the Data Sources & Integrations page, click + Add New, search for Amazon S3, then hover over it and click Add.
+   3. Set these parameters, where the parameters change depending on whether you configured an Access Key or Assumed Role.
+      * To provide access to Cortex XSIAM to your logs and perform API operations using a designated AWS IAM user, leave the Access Key option selected. Otherwise, select Assumed Role, and ensure that you Create an Assumed Role for Cortex XSIAM before continuing with these instructions. In addition, when you create an Assumed Role for Cortex XSIAM, ensure that you edit the policy that defines the permissions for the role with the Amazon S3 Bucket ARN and SQS ARN.
+      * SQS URL: Specify the SQS URL, which is the ARN of the Amazon SQS that you configured in the AWS Management Console.
+      * Name: Specify a descriptive name for your log collection configuration.
+      * When setting an Access Key, set these parameters.
+        * AWS Client ID: Specify the Access key ID, which you received when you configured access keys for the AWS IAM user in AWS.
+        * AWS Client Secret: Specify the Secret access key you received when you configured access keys for the AWS IAM user in AWS.
+      * When setting an Assumed Role, set these parameters.
+        * Role ARN: Specify the Role ARN for the Assumed Role you created for in AWS.
+        * External Id: Specify the External Id for the Assumed Role you created for in AWS.
+      *   Log Type: Select Audit Logs to configure your log collection to receive audit logs from Amazon S3 via AWS CloudTrail. When configuring audit log collection, the following additional field is displayed for Enhanced Cloud Protection.
 
-{% tabs %}
-{% tab title="Workload Federated Identity" %}
-Delegates permissions to a Cortex Cloud AWS service using an IAM assumed role. For more information, see [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html).
+          You can Normalize and enrich audit logs by selecting the checkbox. If selected, Cortex XSIAM stitches Amazon S3 audit logs with other Cortex XSIAM authentication stories across all cloud providers using the same format, which you can query with XQL Search using the `cloud_audit_logs` dataset.
+   4.  Click Test to validate access, and then click Enable.
 
-<table><thead><tr><th width="169.71484375">Field</th><th>Input</th></tr></thead><tbody><tr><td>SQS URL</td><td>Specify the <strong>SQS URL</strong>, which is the URL of the Amazon SQS that you configured in the AWS Management Console.</td></tr><tr><td>Name</td><td>Specify a descriptive name for your log collection configuration.</td></tr><tr><td>Role ARN</td><td>Specify the ARN of the IAM role that Cortex Cloud's log collector will assume. This role must have a trust policy that allows Cortex Cloud's service account to assume it.</td></tr><tr><td>Audience</td><td>Specify the OIDC audience value configured in your AWS IAM identity provider trust policy. This value scopes the OIDC token to your specific AWS environment.</td></tr><tr><td>Log Type</td><td>Select <strong>Audit Logs</strong> to configure your log collection to receive audit logs from Amazon S3 via AWS CloudTrail.</td></tr><tr><td>Use audit logs in analytics</td><td>If selected, Cortex Cloud stitches Amazon S3 audit logs with other Cortex Cloud authentication stories across all cloud providers using the same format, which you can query with XQL Search using the <code>cloud_audit_logs</code> dataset.</td></tr></tbody></table>
-
-Click **Copy Identifier** to copy the Cortex Cloud service account identifier. Add this identifier to the trust policy of the IAM role in AWS to authorize Cortex Cloud's log collector to assume the role.
-{% endtab %}
-
-{% tab title="Access Key" %}
-Uses a designated AWS IAM user's static access key and secret to authenticate.
-
-<table><thead><tr><th width="188.20703125">Field</th><th>Input</th></tr></thead><tbody><tr><td>SQS URL</td><td>Specify the <strong>SQS URL</strong>, which is the URL of the Amazon SQS that you configured in the AWS Management Console.</td></tr><tr><td>Name</td><td>Specify a descriptive name for your log collection configuration.</td></tr><tr><td>AWS Client ID</td><td>Specify the Access key ID, which you received when you configured access keys for the AWS IAM user in AWS.</td></tr><tr><td>AWS Client Secret</td><td>Specify the Secret access key you received when you configured access keys for the AWS IAM user in AWS.</td></tr><tr><td>Log Type</td><td>Select <strong>Audit Logs</strong> to configure your log collection to receive audit logs from Amazon S3 via AWS CloudTrail.</td></tr><tr><td>Use audit logs in analytics</td><td>If selected, Cortex Cloud stitches Amazon S3 audit logs with other Cortex Cloud authentication stories across all cloud providers using the same format, which you can query with XQL Search using the <code>cloud_audit_logs</code> dataset.</td></tr></tbody></table>
-{% endtab %}
-
-{% tab title="Assumed Role" %}
-Delegates permissions to a Cortex Cloud AWS service using an IAM assumed role. For more information, see [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html).
-
-<table><thead><tr><th width="168.859375">Field</th><th>Input</th></tr></thead><tbody><tr><td>SQS URL</td><td>Specify the <strong>SQS URL</strong>, which is the URL of the Amazon SQS that you configured in the AWS Management Console.</td></tr><tr><td>Name</td><td>Specify a descriptive name for your log collection configuration.</td></tr><tr><td>Role ARN</td><td>Specify the Role ARN for the Assumed Role you created in AWS.</td></tr><tr><td>External ID</td><td>Specify the External ID for the Assumed Role you created in AWS.</td></tr><tr><td>Log Type</td><td>Select <strong>Audit Logs</strong> to configure your log collection to receive audit logs from Amazon S3 via AWS CloudTrail.</td></tr><tr><td>Use audit logs in analytics</td><td>If selected, Cortex Cloud stitches Amazon S3 audit logs with other Cortex Cloud authentication stories across all cloud providers using the same format, which you can query with XQL Search using the <code>cloud_audit_logs</code> dataset.</td></tr></tbody></table>
-{% endtab %}
-{% endtabs %}
-
-d. Click Test to validate access, and then click **Enable**.
-
-Once events start to come in, a green check mark appears underneath the Amazon S3 configuration with the number of logs received.
+       Once events start to come in, a green check mark appears underneath the Amazon S3 configuration with the number of logs received.

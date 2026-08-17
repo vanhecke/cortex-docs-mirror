@@ -31,7 +31,7 @@ The `fields` stage returns specific columns, which are then utilized as fields i
 * If you use the `as` clause, all subsequent stages in the query must refer to the field by its new alias.
 * To perform exclusion from a wider set of selected fields, you must use multiple `fields` stages: one for initial inclusion, followed by one or more for exclusion.
 * Employing the `fields` stage early in your query, immediately after any primary filtering, significantly reduces the amount of data processed.
-* Avoid using `SELECT *` (or omitting the `fields` stage when running dataset queries) with large datasets like `xdr_data`, as this can vastly impact performance.
+* Avoid using `fields`  (or omitting the `fields` stage when running dataset queries) with large datasets like `xdr_data`, as this can vastly impact performance.
 
 ## Examples
 

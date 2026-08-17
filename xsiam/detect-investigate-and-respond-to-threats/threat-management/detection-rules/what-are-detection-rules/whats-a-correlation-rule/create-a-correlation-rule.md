@@ -22,7 +22,8 @@ When setting up correlation rules, you have the following capabilities:
 {% hint style="info" %}
 ### Note
 
-To ensure your correlation rules raise issues efficiently and do not overcrowd your Issues table, Cortex XSIAM automatically disables correlation rules that reach 5000 or more hits over a 24-hour period.
+1. To ensure your correlation rules raise issues efficiently and do not overcrowd your Issues table, Cortex XSIAM automatically disables correlation rules that reach 5000 or more hits over a 24-hour period.
+2. The maximum number of active scheduled correlations is 1200. This limit applies only to enabled, user-created scheduled correlations. If your organizational needs exceed this limit, please contact your support agent.
 {% endhint %}
 
 <details>

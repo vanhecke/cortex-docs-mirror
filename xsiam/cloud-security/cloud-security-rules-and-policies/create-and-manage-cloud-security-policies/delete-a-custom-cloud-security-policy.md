@@ -1,5 +1,5 @@
 ---
-description: Delete custom cloud security policies that you no longer need.
+description: Remove custom cloud security policies that are no longer needed.
 ---
 
 # Delete a custom cloud security policy

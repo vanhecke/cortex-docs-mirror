@@ -1,7 +1,5 @@
 ---
-description: >-
-  Create identity rules that detect excessive access and unused cloud
-  permissions.
+description: Create identity rules to detect excessive or unused cloud permissions.
 ---
 
 # Create an identity rule

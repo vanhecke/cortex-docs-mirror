@@ -1,7 +1,7 @@
 ---
 description: >-
-  Create AI rules that detect misconfigurations and security flaws in AI
-  services.
+  Create AI rules to detect risks and misconfigurations across your AI
+  ecosystem.
 ---
 
 # Create an AI rule

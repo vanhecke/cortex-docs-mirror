@@ -1,5 +1,5 @@
 ---
-description: Create a new cloud security policy by copying an existing policy.
+description: Duplicate an existing cloud security policy and tailor it to your needs.
 ---
 
 # Use an existing policy to create a new one

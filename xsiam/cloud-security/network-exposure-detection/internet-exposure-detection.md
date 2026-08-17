@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how CNA detects publicly reachable cloud assets and validates exposure
+  through external network scanning.
+---
+
 # Internet exposure detection
 
 CNA detects assets that are exposed to unrestricted public network access. It uses three different methods to determine if an asset is exposed to the internet:
@@ -96,7 +102,7 @@ CNA detects inbound exposure of workloads deployed behind a Palo Alto Networks N
 
 The following diagram illustrates a network topology supported by CNA:
 
-<figure><img src="https://docs-cortex.paloaltonetworks.com/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/T0GTYTrFYFoGCqZ8VYB1BQ-5CAbsl8idaK8R43ZLhoTOw/content?v=8ac9e2d233e7959f&#x26;Ft-Calling-App=ft/turnkey-portal" alt=""><figcaption></figcaption></figure>
+![cna-example-of-isolated-single-VPC-AWS-NGFW-deployment.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fz0sdoIy1tUjzPIO9Z0nh%2Ff6b192d27200221cd0feadb74aeff3f71f677a5b15b49186cc802711b924e5b1.png?alt=media\&token=1376dcf5-20c2-432a-8007-cb66df1799bb)
 
 The example network topology includes a single VPC where traffic to the target web server (top right) is forced to go through the GWLB (and thus through the NGFW VM-Series instances) to allow firewall inspection of the incoming and outgoing traffic. In a real-life scenario, there may be several firewall instances in the GWLB target group; however, for brevity, the diagram only shows one. The firewall EC2 instance itself (bottom right) is detected as a NGFW based on its image.
 

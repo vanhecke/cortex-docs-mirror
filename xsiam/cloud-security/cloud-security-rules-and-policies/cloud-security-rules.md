@@ -1,7 +1,5 @@
 ---
-description: >-
-  Learn how cloud security rules detect threats and misconfigurations in cloud
-  resources.
+description: Learn about out-of-the-box and custom cloud security rules.
 ---
 
 # Cloud security rules

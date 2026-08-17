@@ -4,11 +4,13 @@ description: >-
   Protection, API Security, and Code Security scans into a single executable.
 ---
 
-# Cortex CLI
+# About Cortex CLI
 
-The Cortex CLI is a unified command-line tool that integrates scanning for [Cloud Workload Protection](cortex-cli/cortex-cli-for-cloud-workload-protection) (CWP), [API Security](cortex-cli/cortex-cli-for-api-security) (WAAS), and [Code Security (AppSec)](cortex-cli/cortex-cli-for-code-security). From a single binary, security teams can enforce organizational policies and proactively detect vulnerabilities, misconfigurations, and exposed secrets across source code, container images, and API specifications.**Scope**: The Cortex CLI evaluates findings against Unified Application Security Policies and returns structured results with policy correlation, severity breakdowns, and remediation guidance. The Cortex CLI does not create, edit, or delete policies; all policy management operations are performed through the Cortex Cloud tenant or the public API.
+The Cortex CLI is a unified command-line tool that integrates scanning for [Cloud Workload Protection](about-cortex-cli/cortex-cli-for-cloud-workload-protection) (CWP), [API Security](about-cortex-cli/cortex-cli-for-api-security) (WAAS), and [Code Security (AppSec)](about-cortex-cli/cortex-cli-for-code-security). From a single binary, security teams can enforce organizational policies and proactively detect vulnerabilities, misconfigurations, and exposed secrets across source code, container images, and API specifications.
 
-## Primary use cases <a href="#primary-use-cases" id="primary-use-cases"></a>
+**Scope**: The Cortex CLI evaluates findings against Unified Application Security Policies and returns structured results with policy correlation, severity breakdowns, and remediation guidance. The Cortex CLI does not create, edit, or delete policies; all policy management operations are performed through the Cortex Cloud tenant or the public API.
+
+## Primary use cases
 
 The CLI supports the following primary workflows:
 
@@ -17,7 +19,7 @@ The CLI supports the following primary workflows:
 * **Container Workloads (CWP)**: Integrate container scanning directly into CI builds to detect vulnerabilities and malware before images are pushed to production registries
 * **API Testing**: Evaluate application endpoints for high-risk vulnerabilities and specification leaks as a standard step prior to deployment
 
-## Core capabilities <a href="#core-capabilities" id="core-capabilities"></a>
+## Core capabilities
 
 The Cortex CLI consolidates multi-domain security scanning into a single executable tool:
 
@@ -27,7 +29,7 @@ The Cortex CLI consolidates multi-domain security scanning into a single executa
 * **API risk validation**: Identifies vulnerabilities, sensitive data leaks, and configuration errors by analyzing OpenAPI and Swagger specifications. API testing validates application endpoints for high-risk vulnerabilities and specification leaks as a standard step prior to deployment
 * **Automated security guardrails**: Enforces compliance directly within CI/CD pipelines by dynamically blocking deployments that violate organizational security policies
 
-## Prerequisites <a href="#prerequisites" id="prerequisites"></a>
+## Prerequisites
 
 Before installing and running the Cortex CLI, verify that your environment and account meet the following system and access requirements:
 

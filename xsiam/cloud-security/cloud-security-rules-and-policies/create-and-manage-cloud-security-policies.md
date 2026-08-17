@@ -1,3 +1,7 @@
+---
+description: Create and manage cloud security policies.
+---
+
 # Create and manage cloud security policies
 
 You can create custom policies with rules that are tailored to meet your organization’s specific needs for compliance or monitoring of cloud resources.

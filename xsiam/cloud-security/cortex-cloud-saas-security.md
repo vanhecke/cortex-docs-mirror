@@ -18,7 +18,7 @@ Note: SaaS Security is currently in Beta with limited availability. Contact your
 
 SaaS Security offers a robust framework that:
 
-* Delivers full visibility and governance over various shadow IT vulnerabilities.
+* Delivers full visibility into security misconfigurations and ensures continuous hardening of the SaaS environment.
 * Defends cloud applications against both identified and emerging threats.
 * Ensures data protection and compliance across the entire SaaS environment.
 * Restricts corporate application access to authorized individuals only.

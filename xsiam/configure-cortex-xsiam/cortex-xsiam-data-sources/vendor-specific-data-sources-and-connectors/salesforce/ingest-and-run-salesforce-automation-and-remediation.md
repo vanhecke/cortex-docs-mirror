@@ -57,7 +57,7 @@ Salesforce requirements depend on the capabilities you use:
 Requires the Full System Admin permission enabled in Salesforce.
 {% endhint %}
 
-### How to configure the Salesforce data source
+### How to configure the Salesforce connector
 
 Perform the following procedures in the order that they appear, below.
 
@@ -115,7 +115,9 @@ An Account Admin or Instance Administrator must configure egress settings in the
 5. In the New Path dialog box, configure the following:
    * Requester: In the dropdown, select the requester from the list of users.
    * Flow: In the dropdown, select the appropriate data service option for a generic webhook/host out (or Salesforce if it is explicitly listed).
-   * Path: Enter the domain name or host of your Salesforce instance (for example, your-company.my.salesforce.com). ### Note Do not include https:// or trailing slashes.
+   *   Path: Enter the domain name or host of your Salesforce instance (for example, your-company.my.salesforce.com).
+
+       <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>Do not include https:// or trailing slashes.</p></div>
 6. Click Add to create the path. Once the status of the path shows as Approved in the Egress Configuration table, Cortex XSIAM can successfully authenticate and execute commands against your Salesforce environment.
 
 #### Task 6. Configure Cortex XSIAM

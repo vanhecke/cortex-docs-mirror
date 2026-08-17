@@ -114,7 +114,7 @@ config timeframe = 1d
 
 ## Related articles
 
-* **Stages**: [`bin`](bin), [`fields`](fields)
+* **Stages**: [`bin`](broken-reference), [`fields`](fields)
 * **Functions**: [`count`](../functions/count_with_windowcomp_stage), [`sum`](../functions/sum_with_comp_stage), [`min`](../functions/min_with_comp_stage), [`max`](../functions/max_with_comp_stage), [`values`](../functions/values)
 * **Datasets**: [`xdr_data`](https://docs-cortex.paloaltonetworks.com/r/Cortex-XQL-Schema-Reference-Guide/Introduction)
 

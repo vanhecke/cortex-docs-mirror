@@ -1,7 +1,7 @@
 ---
 description: >-
-  Create assessment profiles to check asset groups against selected compliance
-  standards.
+  Create assessment profiles to evaluate selected asset groups against
+  compliance standards.
 ---
 
 # Use an assessment profile to run compliance checks on your assets

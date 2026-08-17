@@ -44,14 +44,11 @@ Configure Cortex XSIAM to receive logs and data from Box.
        * In the **App Access Level** section, select **App + Enterprise Access**.
        *   In the **Application Scopes** section, set the following **Administrative Action** permissions depending on the type of data you want to collect.
 
-           | Administrative action        | Data type            |
-           | ---------------------------- | -------------------- |
-           | Manage users                 | Users                |
-           | Manage groups                | Groups               |
-           | Manage enterprise properties | Events (admin\_logs) |
-           |                              | Box Shield Alerts    |
-
-           <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>There is a current bug with the Groups API from Box. If you don't configure the Box app with the proper permissions for managing groups data, the Groups API from Box won't return an error message to Cortex XDR indicating that the API failed to receive the data, and the Groups data will not be collected.</p></div>
+           | Administrative action        | Data type                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+           | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+           | Manage users                 | Users                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+           | Manage groups                | <p>Groups</p><div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>There is a current bug with the Groups API from Box. If you don't configure the Box app with the proper permissions for managing groups data, the Groups API from Box won't return an error message to Cortex XSIAM indicating that the API failed to receive the data, and the Groups data will not be collected.</p></div> |
+           | Manage enterprise properties | <ul><li>Events (admin_logs)</li><li>Box Shield Alerts</li></ul>                                                                                                                                                                                                                                                                                                                                                                                             |
 
        Once completed, scroll up in the tab to **Save Changes**.
    5.  In the Authorization tab, click **Review and Submit** to send your changes to the administrator for approval.

@@ -444,7 +444,7 @@ The `json_extract_scalar_array()` function returns `null` if:
 ```xql
 dataset = xdr_data
 | alter blocked_ips = json_extract_scalar_array(network_json, "$.blocked_ips")
-| filter array_contains(blocked_ips, "10.0.0.5")
+| filter array_any(blocked_ips, "10.0.0.5")
 ```
 
 **Input:**

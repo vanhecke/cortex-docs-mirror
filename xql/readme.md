@@ -165,7 +165,7 @@ XQL queries are composed of **stages** connected in a pipeline, with **functions
 | ------------------------------------------ | ----------- |
 | [`alter`](readme/stages/alter)             |             |
 | [`arrayexpand`](readme/stages/arrayexpand) |             |
-| [`bin`](readme/stages/bin)                 |             |
+| [`bin`](broken-reference)                  |             |
 | [`call`](readme/stages/call)               |             |
 | [`comp`](readme/stages/comp)               |             |
 | [`config`](readme/stages/config)           |             |

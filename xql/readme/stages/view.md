@@ -153,6 +153,6 @@ config timeframe = 1d
 
 ## Related articles
 
-* **Stages**: [`bin`](bin), [`comp`](comp), [`config`](config)
+* **Stages**: [`bin`](broken-reference), [`comp`](comp), [`config`](config)
 * **Functions**: [`count`](../functions/count_with_windowcomp_stage), [`sum`](../functions/sum_with_comp_stage)
 * **Datasets**: [`xdr_data`](https://www.google.com/search?q=%5Bhttps://docs-cortex.paloaltonetworks.com/r/Cortex-XQL-Schema-Reference-Guide/Introduction%5D\(https://docs-cortex.paloaltonetworks.com/r/Cortex-XQL-Schema-Reference-Guide/Introduction\))

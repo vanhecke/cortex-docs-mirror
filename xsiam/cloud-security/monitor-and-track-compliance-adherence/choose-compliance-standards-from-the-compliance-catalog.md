@@ -1,5 +1,7 @@
 ---
-description: Select built-in or custom standards and controls from the compliance catalogs.
+description: >-
+  Select built-in or custom compliance standards and controls from the
+  compliance catalogs.
 ---
 
 # Choose compliance standards from the compliance catalog

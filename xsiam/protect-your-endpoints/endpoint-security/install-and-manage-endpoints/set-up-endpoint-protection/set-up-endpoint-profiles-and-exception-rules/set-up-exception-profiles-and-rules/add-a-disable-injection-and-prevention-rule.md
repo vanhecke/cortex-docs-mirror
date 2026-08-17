@@ -5,7 +5,7 @@ You can generate a temporary exception to bypass a process from prevention modul
 {% hint style="info" %}
 ### Important
 
-* Exceptions are limited up to 48 hours by default and configurable up to one week.
+* Exceptions are limited up to 48 hours.
 * Consider the consequences of disabling a prevention rule before you add the exception and monitor it over time.
 * You can only apply a Disable Prevention Rule to agents version 7.9 and later.
 {% endhint %}

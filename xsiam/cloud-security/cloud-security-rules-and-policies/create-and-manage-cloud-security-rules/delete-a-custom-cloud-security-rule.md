@@ -1,5 +1,5 @@
 ---
-description: Delete custom cloud security rules that you no longer need.
+description: Delete custom cloud security rules that are no longer needed.
 ---
 
 # Delete a custom cloud security rule

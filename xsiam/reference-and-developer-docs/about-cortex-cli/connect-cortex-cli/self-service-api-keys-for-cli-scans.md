@@ -58,6 +58,6 @@ The following `curl` command demonstrates how developers can use the Primary Key
 }'
 ```
 
-For more information about generating API Keys, refer to [Manage API keys](../../learn-about-cortex-xsiam/manage-api-keys).
+For more information about generating API Keys, refer to [Manage API keys](../../../learn-about-cortex-xsiam/manage-api-keys).
 
 To ensure the keys are configured correctly, privileged users can verify their status by navigating to **Settings** → **API Keys**. Locate the generated key in the API Keys inventory and confirm that the Role column reflects the specific custom role assigned rather than a broad administrative role.
