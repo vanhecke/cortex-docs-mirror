@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-16",
+  "source": "content",
+  "sha": "67d9a44281421240aad75f8e4b49e5e6205e3469",
+  "headline": "Cyberhaven DLP pack lands at 1.0.0; Elasticsearch v2 gains two-way case and alert mirroring",
+  "summary_md": "- 19 commits, 225 files net across 26 packs — one new partner pack, **Cyberhaven** 1.0.0, for DLP incident fetch and data-lineage investigation.\n- **Elasticsearch v2** 1.6.0 turns into a mirroring integration: two new incident types, four mappers, eight incident fields and the three `*-remote-*` commands.\n- Ten packs each gained a second modeling rule mapping `xdm.*.identity.*` alongside `xdm.*.user.*`, with the existing rule capped at `toversion: 8.14.0`.\n- **Microsoft Graph Security** 2.6.0 now fetches incidents as well as alerts; **Okta Event Collector** 3.4.0 retries HTTP 429s.\n- Two rounds of Docker base-image bumps (XSUP-74966, XSUP-71787) landed and were reverted the same day — no net change to HealthCheck, GitHub, Defender for Endpoint or ZipFile.",
+  "highlights": [
+    {
+      "title": "New pack: Cyberhaven 1.0.0, a partner-supported DLP integration",
+      "detail": "81 files add the Cyberhaven integration, 46 incident fields (data lineage start/end IDs, policy and dataset metadata, an event lineage graph link), an incoming mapper, a layout, a CyberhavenIncidentRefresh script and a Synchronize Incident Closure playbook; the metadata lists marketplaces xsoar, marketplacev2 and platform, and supported modules agentix and xsiam.",
+      "paths": ["Packs/Cyberhaven"]
+    },
+    {
+      "title": "Elasticsearch v2 can now mirror cases and security alerts in both directions",
+      "detail": "New Elasticsearch Case and Elasticsearch Security Alert incident types with incoming and outgoing mappers, a classifier keyed on the integration-set `elastic_entity_kind` field, and parameters for fetch type, mirroring direction, case severity and status filters, and closing the mirrored incident on either side.",
+      "paths": ["Packs/Elasticsearch"]
+    },
+    {
+      "title": "Ten log sources gained an identity-aware modeling rule for XSIAM 2.11",
+      "detail": "CRTX-271526 (PRs 1–3 of 7) added a `_2_11` modeling rule to Avaya Aura Communication Manager, Cisco Firepower, Cisco Stealthwatch, Duo Admin API, Juniper SRX, Microsoft DHCP, Office 365, Synopsys Coverity, Ubiquiti UniFi and VMware ESXi, each capping the prior rule at `toversion: 8.14.0` so only one applies per tenant version.",
+      "paths": ["Packs/VMwareESXi", "Packs/Office365", "Packs/CiscoFirepower", "Packs/JuniperSRX", "Packs/DuoAdminApi"]
+    },
+    {
+      "title": "Microsoft Graph Security fetches incidents alongside alerts",
+      "detail": "A Fetch incidents type parameter and a new Graph Security Incident type; the existing filter was renamed Alerts Filter, Max incidents per fetch became Fetch limit per type with a default of 50, and msg-list-security-incident gained an extra_data argument.",
+      "paths": ["Packs/MicrosoftGraphSecurity"]
+    },
+    {
+      "title": "Both Docker base-image bump batches were reverted the same day",
+      "detail": "XSUP-74966 (four commits, touching HealthCheck, CommunityCommonScripts, GitHub, Microsoft Defender for Endpoint and others) and XSUP-71787 (ZipFile/UnzipFile) were each reverted within the day, leaving those packs unchanged; only the separate xsoar-tools:1.0.0.11807991 bump in Base, CommonScripts, ContentManagement and SilentPush survived.",
+      "paths": ["Packs/HealthCheck", "Packs/GitHub", "Packs/MicrosoftDefenderAdvancedThreatProtection"]
+    },
+    {
+      "title": "Okta Event Collector stopped giving up on rate limits",
+      "detail": "The collector previously stopped retrying after an HTTP 429; 3.4.0 adds automatic retries for rate-limited and transient responses and reworks the event collection mechanism.",
+      "paths": ["Packs/Okta"]
+    }
+  ],
+  "items": {
+    "Packs/Cyberhaven": "New partner pack 1.0.0: DLP incident fetch from the Cyberhaven platform, 46 incident fields, an incoming mapper, a layout, a refresh script and a closure-sync playbook.",
+    "Packs/Elasticsearch": "1.6.0: adds Elasticsearch Case and Security Alert incident types, four mappers, eight incident fields, a classifier and full incident mirroring in Elasticsearch v2.",
+    "Packs/MicrosoftGraphSecurity": "2.6.0: fetches incidents in addition to alerts, adds an Incidents Filter and a Graph Security Incident type, and fixes odata not being passed as a raw $filter.",
+    "Packs/Okta": "3.4.0: automatic retries for rate-limited and transient API responses; the collector no longer stops retrying after an HTTP 429.",
+    "Packs/CrowdStrikeFalcon": "2.12.8: the Test button now reports a clear message instead of a raw connection error when the server is unreachable.",
+    "Packs/SilentPush": "2.0.3: the Test button validates the response payload rather than the HTTP status code, a missing API Key now errors clearly, and Threat Check Access Key was renamed.",
+    "Packs/ThreatMon": "1.0.6: threatmon_update_incident_status no longer fails with \"Failed to parse json object from response\" when the API returns an empty body on success.",
+    "Packs/AtlassianConfluenceCloud": "1.1.17: the parsing rule no longer fails with an invalid named capture error when a changedValues field name contains a dot.",
+    "Packs/ApiModules": "2.4.40: CoreIRApiModule fix for core-get-script-execution-result-files failing to retrieve the results file on Cortex XSIAM tenants.",
+    "Packs/Core": "3.5.84: picks up the same core-get-script-execution-result-files fix for XSIAM tenants in Investigation & Response.",
+    "Packs/CovalenceForSecurityProviders": "1.1.11: adds an Incidents Fetch Interval parameter, plus the xsoar-tools Docker bump.",
+    "Packs/ContentManagement": "1.2.40: seven scripts moved to demisto/xsoar-tools:1.0.0.11807991 — the one Docker bump of the day that was not reverted."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
