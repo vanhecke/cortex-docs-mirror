@@ -1,0 +1,74 @@
+{
+  "date": "2026-08-17",
+  "source": "analytics",
+  "sha": "03df04fdfba5125707a4a101f743ab2c9ba9718f",
+  "headline": "Seven macOS AppleScript detectors added; RMM variations land across five endpoint rules",
+  "summary_md": "- **Eight detectors added**, seven of them AppleScript rules covering macOS credential, wallet, clipboard and exfiltration abuse.\n- **Five detectors withdrawn**, including both Email-module URL-popularity detectors and the Slack Connect invite detector.\n- **Remote Monitoring & Management** became a first-class variation dimension: RDP, WinRM, rare binary, `net localgroup` and Windows LOLBIN rules each gained an RMM-actor variation.\n- Smaller field moves: the AWS S3 public-exposure rule dropped its deduplication period from 5 days to 1, and the SSO-rejection rule now also reads OneLogin.",
+  "highlights": [
+    {
+      "title": "Remote Monitoring & Management tooling became its own detection dimension",
+      "detail": "Five existing endpoint detectors each gained a variation that fires when the causality group owner is an RMM tool, raising severity from Informational to Low in every case.",
+      "paths": [
+        "analytics/an-uncommon-rdp-session-was-established",
+        "analytics/rare-winrm-session",
+        "analytics/rare-binary-connected-to-a-rare-external-host",
+        "analytics/uncommon-net-localgroup-command-execution",
+        "analytics/windows-lolbin-executable-connected-to-a-rare-external-host"
+      ]
+    },
+    {
+      "title": "Seven new AppleScript detectors target macOS infostealer behaviour",
+      "detail": "They split what an AppleScript does into separate rules — keychain and SSH key access, crypto wallet data, Telegram and Notes data, screen and clipboard capture, obfuscated command lines, dscl-based password grabbing, and curl exfiltration to an external server.",
+      "paths": [
+        "analytics/uncommon-applescript-designed-to-access-sensitive-application-data-was-executed-via-the-command-line",
+        "analytics/uncommon-applescript-designed-to-access-credential-files-was-executed-via-the-command-line",
+        "analytics/uncommon-applescript-containing-a-potential-obfuscation-technique-was-executed"
+      ]
+    },
+    {
+      "title": "The Email module lost both of its URL-popularity detectors",
+      "detail": "\"Unpopular domains detected in email URLs for a recipient\" and \"Rarely seen URL(s) within a well-known domain\" were both withdrawn; both read Microsoft 365 Emails and carried the Malicious URLs tag.",
+      "paths": [
+        "analytics/unpopular-domains-detected-in-email-urls-for-a-recipient",
+        "analytics/rarely-seen-url-s-within-a-well-known-domain-detected-in-your-organization-s-email"
+      ]
+    },
+    {
+      "title": "A new analytics-enhanced detector correlates firewall vulnerability alerts with XDR data",
+      "detail": "It fires on internal-to-internal vulnerability threat alerts that are rare for both the source host and the destination pair, and needs Palo Alto Networks Firewall threat logs alongside the XDR Agent.",
+      "paths": ["analytics/analytics-enhanced-rare-internal-firewall-vulnerability-threat-alert"]
+    },
+    {
+      "title": "The two net localgroup detectors were consolidated into one",
+      "detail": "\"Uncommon net localgroup execution\" was deleted and its untrusted-CGO variation went with it; \"Uncommon net localgroup command execution\" survives and now also covers account creation under an RMM CGO.",
+      "paths": [
+        "analytics/uncommon-net-localgroup-execution",
+        "analytics/uncommon-net-localgroup-command-execution"
+      ]
+    },
+    {
+      "title": "OneLogin joins Okta as a source for the SSO rejection detector",
+      "detail": "\"A user rejected an SSO request from an unusual country\" now lists both identity providers in its required data.",
+      "paths": ["analytics/a-user-rejected-an-sso-request-from-an-unusual-country"]
+    }
+  ],
+  "items": {
+    "analytics/analytics-enhanced-rare-internal-firewall-vulnerability-threat-alert": "New detector: an internal host triggers a firewall vulnerability alert against another internal host, rare for both. Needs PAN-OS threat logs plus the XDR Agent.",
+    "analytics/uncommon-applescript-designed-to-access-sensitive-application-data-was-executed-via-the-command-line": "New High-severity detector for AppleScript reaching into Telegram messages, Apple Notes or cached application data.",
+    "analytics/uncommon-applescript-designed-to-access-credential-files-was-executed-via-the-command-line": "New Medium-severity detector for AppleScript touching keychains or SSH keys.",
+    "analytics/uncommon-applescript-potentially-utilizes-credential-grabbing-techniques-to-steal-user-passwords": "New detector for AppleScript password prompts; escalates to High when 'dscl -authonly' is used to silently verify the captured password.",
+    "analytics/uncommon-applescript-containing-a-potential-obfuscation-technique-was-executed": "New detector for obfuscated AppleScript command lines; High when launched by an uncommon parent process.",
+    "analytics/uncommon-applescript-was-executed-via-the-command-line-to-contact-an-external-server": "New detector for AppleScript contacting an external server, with variations for curl uploading a file or a .zip archive.",
+    "analytics/uncommon-applescript-designed-to-access-cryptocurrency-wallet-data-was-executed-via-the-command-line": "New detector for AppleScript reading cryptocurrency wallet data; Medium once wallet files are actually accessed.",
+    "analytics/uncommon-applescript-designed-to-capture-screen-or-clipboard-data-was-executed-via-the-command-line": "New detector for AppleScript performing screen capture (T1113) or clipboard access (T1115).",
+    "analytics/unpopular-domains-detected-in-email-urls-for-a-recipient": "Withdrawn. Removes an Email-module phishing detector that read Microsoft 365 Emails.",
+    "analytics/rarely-seen-url-s-within-a-well-known-domain-detected-in-your-organization-s-email": "Withdrawn. The companion Email-module detector for rare URLs inside otherwise well-known domains.",
+    "analytics/slack-connect-direct-message-invite-was-accepted": "Withdrawn. The Identity Threat Module loses its Slack Connect external-invite detector and both of its variations.",
+    "analytics/execution-of-an-uncommon-process-with-a-local-domain-user-sid-at-an-early-startup-stage-by-windows-system-binary": "Withdrawn. Removes a Generic Persistence Analytics detector for boot-time execution under a user SID.",
+    "analytics/uncommon-net-localgroup-execution": "Withdrawn in favour of \"Uncommon net localgroup command execution\", which covers the same discovery behaviour.",
+    "analytics/applescript-process-executed-with-a-rare-command-line": "Variations reshuffled: persistence and proxy-install dropped; uncommon arguments (High) and muted audio output (Low) added.",
+    "analytics/aws-s3-bucket-was-exposed-to-public-access": "Deduplication period cut from 5 days to 1, and the wording now covers exposing an object as well as a bucket."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
