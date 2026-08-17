@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-17",
+  "source": "docs",
+  "sha": "e270e76a3606dcb399be699c50d378a89faef4f8",
+  "headline": "Cortex CLI and MCP server docs restructured; EDL root certificate switches to DigiCert",
+  "summary_md": "- The **Cortex CLI** section moved to `about-cortex-cli` and the **Cortex MCP server** overview collapsed into its parent, renaming 19 pages between them — bookmarks break.\n- Twelve pages are new, ten of them net: CLI installation and post-install management, `parse_cef()` and `parse_json()` for parsing rules, a **Data Ingestion** dashboard reference, and three XDR Collector profile pages.\n- Acting on today: EDL setup needs the DigiCert root certificate, scheduled correlations are capped at 1,200, and data ingestion health monitoring is now labelled BETA.\n- Quieter churn: ~25 Cloud Security pages changed only their front-matter `description`, and 30 Linux kernel tables gained newly supported kernel versions.",
+  "highlights": [
+    {
+      "title": "The root certificate for EDL setup changed from GoDaddy to DigiCert",
+      "detail": "The download link moved from `gdroot-g2.crt` to DigiCert Global Root G2, so an EDL configured from the old page trusts the wrong root.",
+      "paths": ["xsiam/detect-investigate-and-respond-to-threats/investigation-and-response/response-actions/manage-external-dynamic-lists"]
+    },
+    {
+      "title": "New Amazon ECS EC2 agent installation package",
+      "detail": "The installer downloads as a JSON task definition for agent 9.1 or later on x86_64 or ARM64, and must be deployed as a Daemon service so one agent task runs per container instance.",
+      "paths": ["xsiam/protect-your-endpoints/endpoint-security/install-and-manage-endpoints/create-an-agent-installation-package"]
+    },
+    {
+      "title": "Scheduled correlations are capped at 1,200 active rules",
+      "detail": "The limit counts only enabled, user-created scheduled correlations and is now stated on both the create and manage pages.",
+      "paths": [
+        "xsiam/detect-investigate-and-respond-to-threats/threat-management/detection-rules/what-are-detection-rules/whats-a-correlation-rule/create-a-correlation-rule",
+        "xsiam/detect-investigate-and-respond-to-threats/threat-management/detection-rules/what-are-detection-rules/whats-a-correlation-rule/manage-correlation-rules"
+      ]
+    },
+    {
+      "title": "Data ingestion health monitoring is now labelled BETA",
+      "detail": "Three limitations are stated: it does not distinguish ingestion lag from data loss, auto-generated health issues are not dispatched or grouped into cases, and as orphan issues they cannot trigger playbook automation.",
+      "paths": ["xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/administration-and-troubleshooting/about-health-issues/monitor-data-ingestion-health"]
+    },
+    {
+      "title": "The XQL bin stage gains bins, timeshift and timezone",
+      "detail": "`span` is now optional against a new `bins=` count, `timeshift`/`timezone` set the grouping origin — but `comp`, `view` and the stage index all now link to `bin` as `broken-reference`.",
+      "paths": ["xql/readme/stages/bin", "xql/readme", "xql/readme/stages/comp", "xql/readme/stages/view"]
+    },
+    {
+      "title": "Cortex CLI pages moved under About Cortex CLI",
+      "detail": "Sixteen pages were renamed from `cortex-cli/` to `about-cortex-cli/`, with `authenticate-credentials` pushed a level deeper under Connect Cortex CLI and the API Security page rewritten in place.",
+      "paths": ["xsiam/reference-and-developer-docs/about-cortex-cli"]
+    }
+  ],
+  "items": {
+    "xsiam/detect-investigate-and-respond-to-threats/investigation-and-response/response-actions/manage-external-dynamic-lists": "The certificate to download is now DigiCert Global Root G2 instead of GoDaddy gdroot-g2, and the section heading became Prerequisites.",
+    "xsiam/protect-your-endpoints/endpoint-security/install-and-manage-endpoints/create-an-agent-installation-package": "Adds an Amazon ECS EC2 installer with its own prerequisites table, IAM role requirements and deployment steps for the ECS console.",
+    "xsiam/detect-investigate-and-respond-to-threats/threat-management/detection-rules/what-are-detection-rules/whats-a-correlation-rule/create-a-correlation-rule": "Adds the 1,200 active scheduled correlation limit next to the existing auto-disable of rules reaching 5,000 or more hits.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/administration-and-troubleshooting/about-health-issues/monitor-data-ingestion-health": "Retitled BETA, with a new limitations section covering lag versus loss, undispatched health issues and no playbook automation.",
+    "xql/readme/stages/bin": "Documents binning by quantity via bins=, the timeshift and timezone options for span=, the eight supported time suffixes, and three new examples.",
+    "xsiam/reference-and-developer-docs/about-cortex-cli/connect-cortex-cli/installation-workflows": "New page covering Homebrew, Scoop, manual download and UI-generated installation, including how to pin a release line or exact version.",
+    "xsiam/reference-and-developer-docs/about-cortex-cli/connect-cortex-cli/manage-the-cli-after-installation": "New page for upgrading, pinning and uninstalling the CLI, plus a script that pulls signed release downloads from the public API.",
+    "xsiam/reference-and-developer-docs/about-cortex-cli/cortex-cli-for-api-security": "Re-added at the new path rather than renamed, and now carries the authentication file schema and Java 11 prerequisite.",
+    "xsiam/configure-cortex-xsiam/cortex-mcp-server": "Absorbs the deleted overview page, and its install, client-configuration and usage pages moved up one level to sit directly beneath it.",
+    "xsiam/configure-cortex-xsiam/data-management/parsing-rules/parsing-rules-file-structure-and-syntax/ingest/parse_cef": "New page documenting parse_cef(), which turns a CEF string into a key/value object inside an INGEST section; parse_json() was added alongside it.",
+    "xsiam/detect-investigate-and-respond-to-threats/monitor-dashboards-and-reports/dashboard-reference/system-dashboards/data-ingestion": "New reference page for the Data Ingestion dashboard, stating that the Ingestion Rate widget counts third-party and external sources.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/xdr-collectors/xdr-collector-profiles/add-an-xdr-collector-profile-for-windows": "The Filebeat, Winlogbeat and Settings procedures moved out into three new child pages.",
+    "xsiam/protect-your-endpoints/endpoint-security/install-and-manage-endpoints/set-up-endpoint-protection/set-up-endpoint-profiles-and-exception-rules/set-up-exception-profiles-and-rules/add-a-disable-injection-and-prevention-rule": "Temporary exceptions are now simply limited to 48 hours; the clause saying they were configurable up to one week is gone.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/amazon/amazon-s3/configure-data-collection-from-amazon-s3-manually": "Says Cortex XSIAM instead of Cortex Cloud, and the auth tabs collapse to Access Key or Assumed Role while the prerequisites still describe Workload Federated Identity.",
+    "developer/cortex-xsiam-development-guide/integrations-and-scripts/advanced-topics/event-collector-integrations": "send_events_to_xsiam() is no longer described as failing from a custom integration; it should be used with system integrations, with HTTP Log Collector as the alternative."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": true
+}
