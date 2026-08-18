@@ -1,0 +1,297 @@
+{
+  "date": "2026-08-17",
+  "sha": "2c0ed411c03767d7463e1d2b5f3cda90906a3e79",
+  "committed_at": "2026-08-17T20:33:58+03:00",
+  "packs": [
+    {
+      "name": "AnthropicClaude",
+      "insertions": 100,
+      "deletions": 1
+    },
+    {
+      "name": "ApacheTomcat",
+      "insertions": 52,
+      "deletions": 1
+    },
+    {
+      "name": "Auditd",
+      "insertions": 60,
+      "deletions": 1
+    },
+    {
+      "name": "Base",
+      "insertions": 104,
+      "deletions": 5
+    },
+    {
+      "name": "BreachNotification-US",
+      "insertions": 18,
+      "deletions": 1
+    },
+    {
+      "name": "BruteForce",
+      "insertions": 11,
+      "deletions": 2
+    },
+    {
+      "name": "CarbonBlackDefense",
+      "insertions": 248,
+      "deletions": 1
+    },
+    {
+      "name": "CheckpointFirewall",
+      "insertions": 712,
+      "deletions": 1
+    },
+    {
+      "name": "Cisco-umbrella-cloud-security",
+      "insertions": 104,
+      "deletions": 1
+    },
+    {
+      "name": "CiscoISR",
+      "insertions": 71,
+      "deletions": 1
+    },
+    {
+      "name": "CitrixADC",
+      "insertions": 112,
+      "deletions": 1
+    },
+    {
+      "name": "CloudIncidentResponse",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "CommonPlaybooks",
+      "insertions": 11,
+      "deletions": 2
+    },
+    {
+      "name": "CommonScripts",
+      "insertions": 357,
+      "deletions": 32
+    },
+    {
+      "name": "CommvaultBackupSolutions",
+      "insertions": 121,
+      "deletions": 1
+    },
+    {
+      "name": "ConcentricAI",
+      "insertions": 50,
+      "deletions": 2
+    },
+    {
+      "name": "CyberArkEPM",
+      "insertions": 1032,
+      "deletions": 36
+    },
+    {
+      "name": "DeCYFIR",
+      "insertions": 8,
+      "deletions": 2
+    },
+    {
+      "name": "FeedTAXII",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "FiltersAndTransformers",
+      "insertions": 18,
+      "deletions": 4
+    },
+    {
+      "name": "FortinetFortiwebVM",
+      "insertions": 3,
+      "deletions": 3
+    },
+    {
+      "name": "GDPR",
+      "insertions": 8,
+      "deletions": 1
+    },
+    {
+      "name": "GitGuardian",
+      "insertions": 154,
+      "deletions": 1
+    },
+    {
+      "name": "GoogleChronicleBackstory",
+      "insertions": 8,
+      "deletions": 2
+    },
+    {
+      "name": "GuardiCore",
+      "insertions": 962,
+      "deletions": 1
+    },
+    {
+      "name": "HIPAA-BreachNotification",
+      "insertions": 12,
+      "deletions": 2
+    },
+    {
+      "name": "HPEArubaCentral",
+      "insertions": 135,
+      "deletions": 1
+    },
+    {
+      "name": "IBMMaaS360Security",
+      "insertions": 128,
+      "deletions": 1
+    },
+    {
+      "name": "ImageOCR",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "KeeperSecurity",
+      "insertions": 166,
+      "deletions": 1
+    },
+    {
+      "name": "Kenna",
+      "insertions": 11,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftTeams",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "NIST",
+      "insertions": 12,
+      "deletions": 3
+    },
+    {
+      "name": "Okta",
+      "insertions": 8,
+      "deletions": 2
+    },
+    {
+      "name": "OracleCloudInfrastructure",
+      "insertions": 254,
+      "deletions": 19
+    },
+    {
+      "name": "PrismaCloud",
+      "insertions": 147,
+      "deletions": 1
+    },
+    {
+      "name": "QRadar",
+      "insertions": 8,
+      "deletions": 2
+    },
+    {
+      "name": "SANS",
+      "insertions": 17,
+      "deletions": 3
+    },
+    {
+      "name": "SOCRadar",
+      "insertions": 12,
+      "deletions": 3
+    },
+    {
+      "name": "Silverfort",
+      "insertions": 177,
+      "deletions": 1
+    },
+    {
+      "name": "Slack",
+      "insertions": 1278,
+      "deletions": 286
+    },
+    {
+      "name": "SplunkPy",
+      "insertions": 8,
+      "deletions": 2
+    },
+    {
+      "name": "SymantecDLP",
+      "insertions": 67,
+      "deletions": 1
+    },
+    {
+      "name": "SymantecEndpointProtection",
+      "insertions": 140,
+      "deletions": 1
+    },
+    {
+      "name": "Tanium",
+      "insertions": 42,
+      "deletions": 1
+    },
+    {
+      "name": "Tenable_io",
+      "insertions": 96,
+      "deletions": 1
+    },
+    {
+      "name": "Zscaler",
+      "insertions": 641,
+      "deletions": 1
+    },
+    {
+      "name": "rasterize",
+      "insertions": 23,
+      "deletions": 14648
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d7f2d4a6d7943a354bb578e4d47c5392701322d7",
+      "subject": "CRTX-271526: add identity.* to modeling rules (PR 5 of 7) (#45460)"
+    },
+    {
+      "sha": "79f056683442716d96452e31f311ad5b1b462216",
+      "subject": "Bug Fix in Fetch-Events Slack Event Collector (#45377)"
+    },
+    {
+      "sha": "04b3507f882888fe457e0e730ce1c6d045e93d3b",
+      "subject": "CRTX-271523: add identity.* to modeling rules (PR 2 of 7) - clean packs only (BC107 legacy packs moved to consolidated force-merge PR) (#45434)"
+    },
+    {
+      "sha": "074b1aac0177923920b080937d9c158fe2d30192",
+      "subject": "CRTX-271523: add identity.* to modeling rules (PR 7 of 7) - clean packs only (BC107 legacy packs moved to consolidated force-merge PR) (#45439)"
+    },
+    {
+      "sha": "10abc3d6a2b1cbd6ee48dcd569d3759690cf44d1",
+      "subject": "Fix (GetDockerImageLatestTag): filter out OCI artifact tags (.sig/.att/.sbom) (#45542)"
+    },
+    {
+      "sha": "d014713e9a7c00817c09e5daeeac682a2679bc7f",
+      "subject": "docs(FortinetFortiwebVM): fix broken FortiWeb Cloud doc links (#45506)"
+    },
+    {
+      "sha": "8781eed4ef748ca3cee914c19780dccbc47ea48d",
+      "subject": "CyberArk EPM add authentication method and update get-events command (#45363)"
+    },
+    {
+      "sha": "1e4da7224063b95246e06e98aac4e3a8f7c425e7",
+      "subject": "Error Handling OCI Event Collector (#45387)"
+    },
+    {
+      "sha": "2c0ed411c03767d7463e1d2b5f3cda90906a3e79",
+      "subject": "DBotFindSimilarIncidents script - escape special characters in exact … (#45538)"
+    },
+    {
+      "sha": "da35e8ab4e4386f1b76a83b816ce229295ab0f26",
+      "subject": "Revert \"CRTX-271523: add identity.* to modeling rules (PR 2 of 7) - clean pac…\" (#45558)"
+    },
+    {
+      "sha": "16751974702b22b201dd91f1652e78af7006be6c",
+      "subject": "fix(SOCRadar): rename FeedSOCRadarThreatFeed v2 files to FeedSOCRadar… (#45512)"
+    },
+    {
+      "sha": "57e0c168ae25aacced400db476a595eef17d0869",
+      "subject": "Update cvss_color & MailListener - POP3 (#45507)"
+    }
+  ]
+}
