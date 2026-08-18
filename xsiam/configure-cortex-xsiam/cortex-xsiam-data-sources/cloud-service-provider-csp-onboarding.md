@@ -71,12 +71,12 @@ Cortex XSIAM supports two scan modes:
 {% step %}
 #### Step 4: Select the deployment method
 
-Before you begin onboarding your CSP environment, decide whether you want to use the automated or manual process to create the roles and authorize permissions for Cortex XSIAM.
+Before you begin onboarding your CSP environment, decide whether to provision resources automatically using Infrastructure as Code (IaC) or manually.
 
-The automated onboarding workflow creates the Cortex XSIAM roles and adds the permissions required to secure your CSP environment. If you want to create these roles manually instead, refer to the manual onboarding documentation for your specific CSP.
+IaC automatically provisions all required cloud resources and permissions using an IaC template. If you want full control over the onboarding process including role and resource creation, select the manual deployment method. Refer to the manual onboarding documentation for your specific CSP.
 
 {% hint style="info" %}
-**Note:** Manual onboarding is only available for AWS and GCP.
+**Note:** Manual onboarding is available for AWS, Azure, and GCP.
 {% endhint %}
 {% endstep %}
 

@@ -2,6 +2,10 @@
 
 You can link and unlink issues from cases. An issue can be assigned to more than one case, and the case domain can be different from the issue domain.
 
+{% hint style="warning" %}
+If all issues are unlinked from a case, the case is deleted.
+{% endhint %}
+
 <details>
 
 <summary>Link issues to a case</summary>
