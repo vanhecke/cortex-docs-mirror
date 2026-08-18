@@ -46,7 +46,6 @@ These prerequisites are required whenever you run the script, regardless of what
 
     <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note:</strong> Do not confuse the object ID with the client ID. They are both GUIDs, both are returned by the Azure CLI, and they are not interchangeable.</p></div>
 * **Entra ID tenant:** The tenant where you want the app registration to live. This is usually your home tenant, not the tenant that hosts the monitored subscription. The script creates the app registration in whichever tenant your Azure CLI session is signed in to, so signing in to the correct tenant when you perform [Step 4](#shell-script-step-4-sign-in-to-the-correct-entra-id-tenant-terminal-azure-cli) is critical.
-* **Outpost Terraform bundle:** Download the Cortex outpost Terraform bundle from the Cortex XSIAM console and extract it. The helper script is located in the bundle at `<customer_managed>/app_registration/setup-byo-app-registration.sh`.
 
 #### Also required when creating scanner managed identities
 

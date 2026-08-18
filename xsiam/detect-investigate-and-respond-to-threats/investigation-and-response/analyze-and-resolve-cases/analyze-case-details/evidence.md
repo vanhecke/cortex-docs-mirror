@@ -87,7 +87,7 @@ Graph evidence provides a visual representation of interconnected assets, relati
 You can view connected asset paths on the interactive graph canvas for both issue types, but they differ based on who created the rule and how the issue is categorized:<br>
 
 * **Attack path issues:** Triggered by Out-of-the-Box (OOTB) Rules. They detail specific exploit trajectories, from entry points to sensitive targets.
-* **Graph issues:** Triggered by Graph Rules. They visualize cross-domain posture findings, asset dependencies, and custom graph queries. For more information, see [Create a graph rule](../../../../cloud-security/cloud-security-rules-and-policies/create-and-manage-cloud-security-rules/create-a-graph-rule).
+* **Graph issues:** Triggered by Graph Rules. They visualize cross-domain posture findings, asset dependencies, and custom graph queries. For more information, see [Create detection rules based on graph search](../../../../reference-and-developer-docs/graph-search/create-detection-rules-based-on-graph-search).
 
 #### Locating & Reviewing Graph Evidence
 
