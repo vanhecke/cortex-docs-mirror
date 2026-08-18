@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-18",
+  "source": "docs",
+  "sha": "c45769e16f34d1ed5539f07d5f744bd8e6911e09",
+  "headline": "Unlinking every issue deletes the case; XDR agent 9.3 and 9.2 added to the mobile support tables",
+  "summary_md": "- **Linking issues to cases** gains a warning: unlink the last issue and the case itself is deleted.\n- **Mobile operating systems supported with Cortex XDR** adds Cortex XDR agent 9.3 and 9.2 columns to both the Android and the iOS/iPadOS table.\n- **CSP onboarding** now lists manual onboarding for Azure alongside AWS and GCP, and renames the automated path to Infrastructure as Code.\n- The remaining two changes are housekeeping: a duplicated icon table removed and a link title typo fixed.\n- Five pages in total, none added, removed or renamed.",
+  "highlights": [
+    {
+      "title": "Unlinking all issues from a case deletes the case",
+      "detail": "A new warning hint on the link/unlink page states the case is deleted once its last issue is unlinked, which the page did not previously say.",
+      "paths": ["xsiam/detect-investigate-and-respond-to-threats/investigation-and-response/investigate-issues/link-or-unlink-issues-from-a-case"]
+    },
+    {
+      "title": "Manual CSP onboarding is now available for Azure",
+      "detail": "The note limiting manual onboarding to AWS and GCP now reads AWS, Azure and GCP, and the automated alternative is described as provisioning resources from an Infrastructure as Code template.",
+      "paths": ["xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding"]
+    },
+    {
+      "title": "Cortex XDR agent 9.3 and 9.2 join the mobile compatibility tables",
+      "detail": "Both tables gain two columns; Android 26 and iOS 26 are marked supported on 9.3 and 9.2, and the existing 9.1 through 8.8 rows are unchanged.",
+      "paths": ["compatibility/where-can-i-install-the-cortex-xdr-agent/mobile-operating-systems-supported-with-cortex-xdr"]
+    }
+  ],
+  "items": {
+    "xsiam/detect-investigate-and-respond-to-threats/investigation-and-response/investigate-issues/link-or-unlink-issues-from-a-case": "Adds a warning that a case is deleted when all of its issues are unlinked.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding": "Manual onboarding is now documented for AWS, Azure and GCP; the automated deployment method is restated as an IaC template.",
+    "compatibility/where-can-i-install-the-cortex-xdr-agent/mobile-operating-systems-supported-with-cortex-xdr": "Android and iOS/iPadOS support tables extended with Cortex XDR agent 9.3 and 9.2 columns.",
+    "xsiam/detect-investigate-and-respond-to-threats/investigation-and-response/investigate-issues/causality-view/causality-icons-key": "The event icons table was published twice; the duplicate is removed and its AI icon row kept in the table that remains.",
+    "xsiam/detect-investigate-and-respond-to-threats/investigation-and-response/analyze-and-resolve-cases/analyze-case-details/evidence": "Link text corrected from \"Create a graph rules\" to \"Create a graph rule\"."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
