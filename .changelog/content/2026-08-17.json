@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-17",
+  "source": "content",
+  "sha": "2c0ed411c03767d7463e1d2b5f3cda90906a3e79",
+  "headline": "CyberArk EPM adds Idira OAuth; rasterize's 8.15 fork removed; 21 more packs get identity modeling rules",
+  "summary_md": "- 13 commits, 269 files across 48 packs — the bulk of it CRTX-271523/271526 PRs 2, 4, 5 and 7 of 7, which added a second `_2_11` modeling rule to 21 more log sources.\n- **CyberArk EPM** 1.3.0 gains a third authentication method: CyberArk Identity (Idira ISPSS) OAuth 2.0 `client_credentials`.\n- The version-forked **rasterize_8_15** integration was deleted and folded into the single **Rasterize** integration, which loses its `toversion: 8.14.0` cap.\n- XSUP-74186 restricted the three summary-report scripts to the Cortex XSOAR marketplace and updated 16 playbooks across the compliance and IR packs to skip that task gracefully.\n- Fixes to the **Slack** and **Oracle Cloud Infrastructure** event collectors, `DBotFindSimilarIncidents` and `GetDockerImageLatestTag`, plus a round of Docker base-image bumps.",
+  "highlights": [
+    {
+      "title": "CyberArk EPM Event Collector accepts CyberArk Identity (Idira ISPSS) OAuth",
+      "detail": "1.3.0 adds an *Authentication Method* parameter selecting the new OAuth 2.0 `client_credentials` flow alongside the existing EPM and SAML methods, with *Identity URL* and *Web App ID* parameters required for it, and updates the get-events command.",
+      "paths": ["Packs/CyberArkEPM"]
+    },
+    {
+      "title": "The two rasterize integrations became one",
+      "detail": "All 14 files of `rasterize_8_15` were deleted and its behaviour folded into the main Rasterize integration through `:platform` marketplace overrides — a hidden `lightweight` parameter and per-marketplace `isArray` on the url and file_name arguments — while `toversion: 8.14.0` was dropped so the single integration covers every version.",
+      "paths": ["Packs/rasterize"]
+    },
+    {
+      "title": "Twenty-one more log sources gained an identity-aware modeling rule for XSIAM 2.11",
+      "detail": "CRTX-271523 and CRTX-271526 (PRs 2, 4, 5 and 7 of 7) added a `_2_11` rule mapping `xdm.*.identity.*` alongside `xdm.*.user.*` to Anthropic Claude, Apache Tomcat, Auditd, Carbon Black Defense, Check Point Firewall, Cisco ISR, Cisco Umbrella, Citrix ADC, Commvault, GitGuardian, GuardiCore, HPE Aruba Central, IBM MaaS360, Keeper Security, Prisma Cloud, Silverfort, Symantec DLP, Symantec Endpoint Protection, Tanium, Tenable.io and Zscaler, each capping the prior rule at `toversion: 8.14.0`.",
+      "paths": ["Packs/Zscaler", "Packs/PrismaCloud", "Packs/CheckpointFirewall", "Packs/SymantecDLP", "Packs/Tanium"]
+    },
+    {
+      "title": "Summary-report scripts are now Cortex XSOAR only, and 16 playbooks were rewired around them",
+      "detail": "GenerateInvestigationSummaryReport, GenerateSummaryReportButton and GenerateSummaryReports were restricted to the XSOAR marketplace; the playbooks that call them — across BreachNotification-US, GDPR, HIPAA, NIST, SANS, Brute Force, Kenna, DeCYFIR, SOCRadar, QRadar, Chronicle, SplunkPy and CommonPlaybooks — now skip that task gracefully where the script is unavailable.",
+      "paths": ["Packs/CommonScripts", "Packs/CommonPlaybooks", "Packs/SplunkPy", "Packs/BreachNotification-US"]
+    },
+    {
+      "title": "Slack Event Collector no longer stalls on old events",
+      "detail": "3.8.14 fixes fetch-events returning older events without progressing toward the current time, and changes slack-get-events to return oldest events first.",
+      "paths": ["Packs/Slack"]
+    },
+    {
+      "title": "GetDockerImageLatestTag stopped returning unrunnable OCI artifact tags",
+      "detail": "The script filtered nothing out of the tag list and could hand back a `.sig`, `.att` or `.sbom` artifact tag, breaking downstream script execution.",
+      "paths": ["Packs/CommonScripts"]
+    }
+  ],
+  "items": {
+    "Packs/CyberArkEPM": "1.3.0: adds CyberArk Identity (Idira ISPSS) OAuth 2.0 client_credentials authentication, an Authentication Method selector, and Identity URL and Web App ID parameters.",
+    "Packs/rasterize": "2.1.44: the rasterize_8_15 integration is deleted and merged into Rasterize via :platform overrides; the toversion: 8.14.0 cap is removed.",
+    "Packs/Slack": "3.8.14: fetch-events no longer keeps returning older events without advancing; slack-get-events now returns oldest events first.",
+    "Packs/OracleCloudInfrastructure": "1.0.39: improved error handling in the Oracle Cloud Infrastructure Event Collector.",
+    "Packs/Base": "1.42.20: DBotFindSimilarIncidents no longer fails when an exact-match field value contains unescaped special characters such as double quotes; plus ML Docker bumps in 1.42.19.",
+    "Packs/CommonScripts": "1.22.46–48: three summary-report scripts restricted to Cortex XSOAR, GetDockerImageLatestTag filters out .sig/.att/.sbom artifact tags, and twelve scripts take Docker bumps.",
+    "Packs/CommonPlaybooks": "2.8.9: the Send Investigation Summary Reports playbook skips the Generate Summary Reports task gracefully on non-XSOAR marketplaces.",
+    "Packs/SplunkPy": "4.3.2: the Splunk Generic playbook skips its Generate Investigation Summary Report task where the script is unavailable.",
+    "Packs/ConcentricAI": "1.2.17: the demo playbook and the ConcentricAI Security Event incident type are restricted to Cortex XSOAR; the playbook image was renamed and a README added.",
+    "Packs/Zscaler": "1.5.12: new ZscalerModelingRule_2_11 (fromversion 8.15.0) mapping xdm.*.identity.* for NSS web, firewall and tunnel datasets; the prior rule is capped at 8.14.0.",
+    "Packs/PrismaCloud": "4.4.34: adds PrismaCloud_2_11, an identity-aware copy of the modeling rule for XSIAM 2.11 and later.",
+    "Packs/CheckpointFirewall": "2.4.2: adds CheckpointFirewall_2_11 mapping xdm.*.identity.* alongside the existing xdm.*.user.* fields.",
+    "Packs/SymantecDLP": "2.1.12: adds SymantecDLP_2_11, the identity-aware modeling rule version for XSIAM 2.11.",
+    "Packs/AnthropicClaude": "1.3.1: adds AnthropicClaudeModelingRules_2_11 mapping xdm.*.identity.* for the Claude audit log dataset.",
+    "Packs/FortinetFortiwebVM": "README-only change fixing broken links to the FortiWeb Cloud documentation."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
