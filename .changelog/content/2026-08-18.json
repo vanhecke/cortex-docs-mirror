@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-18",
+  "source": "content",
+  "sha": "35172e00af3ef40e0d144b84fcfcc841d825202c",
+  "headline": "Confluence Cloud gains OAuth and deprecates v1 commands; identity.* modeling rules both land and revert",
+  "summary_md": "- **Atlassian Confluence Cloud** is the day: +2,969/-439 lines for new OAuth authentication and v2 commands, with the v1 commands deprecated (#45378).\n- The `identity.*` modeling-rule series moves in both directions — PR 6 of 7 lands (#45461) while PR 2 of 7 is reverted (#45558).\n- Four packs shrink sharply: **GuardiCore** (-963), **Silverfort** (-178), **CommvaultBackupSolutions** (-121) and **CitrixADC** (-112).\n- Five packs are addition-only, led by **MicrosoftWindowsEvents** (+318), and seven more carry an identical +9/-2 bump.",
+  "highlights": [
+    {
+      "title": "Atlassian Confluence Cloud deprecates its v1 commands",
+      "detail": "The pack adds OAuth authentication and a v2 command set and deprecates the v1 commands, at +2,969/-439 lines — by far the largest change of the day.",
+      "paths": ["Packs/AtlassianConfluenceCloud"]
+    },
+    {
+      "title": "The identity.* modeling-rule series lands one PR and reverts another",
+      "detail": "PR 6 of 7 (#45461) is merged the same day PR 2 of 7 is reverted (#45558), and a separate commit corrects a rule version token from 3_19 to 2_11 (#45505).",
+      "paths": []
+    },
+    {
+      "title": "GuardiCore and Silverfort are cut back in a single bump",
+      "detail": "GuardiCore loses 963 lines and Silverfort 178, both under one commit (#45564); CommvaultBackupSolutions (-121) and CitrixADC (-112) shrink the same way without a commit subject naming them.",
+      "paths": ["Packs/GuardiCore", "Packs/Silverfort", "Packs/CommvaultBackupSolutions", "Packs/CitrixADC"]
+    },
+    {
+      "title": "SOCRadar's v2 feed files are renamed",
+      "detail": "FeedSOCRadarThreatFeed v2 files are renamed under the SOCRadar pack (#45512), touching both packs.",
+      "paths": ["Packs/SOCRadar", "Packs/FeedSOCRadarThreatFeed"]
+    },
+    {
+      "title": "Seven packs carry an identical +9/-2 bump",
+      "detail": "AzureDevOps, Barracuda CloudGen Firewall, BeyondTrust Remote Support, CybelAngel, FeedSOCRadarThreatFeed, Fortinet FortiWeb VM and NetMotion VPN all move by the same two-line shape.",
+      "paths": []
+    }
+  ],
+  "items": {
+    "Packs/AtlassianConfluenceCloud": "The day's largest change at +2,969/-439: new OAuth authentication, new v2 commands, and deprecation of the v1 commands (#45378).",
+    "Packs/GuardiCore": "Loses 963 lines against 5 added, in the commit that bumps GuardiCore and Silverfort together (#45564).",
+    "Packs/Silverfort": "Loses 178 lines against 5 added, bumped alongside GuardiCore (#45564).",
+    "Packs/CommvaultBackupSolutions": "Drops 121 lines and adds 1; no commit subject names the pack.",
+    "Packs/CitrixADC": "Drops 112 lines and adds 1, the same shape as CommvaultBackupSolutions.",
+    "Packs/MicrosoftWindowsEvents": "Gains 318 lines against a single deletion — the largest addition-only change of the day.",
+    "Packs/DelineaSS": "Gains 103 lines against a single deletion.",
+    "Packs/ApiModules": "+97/-13 in the shared API module code.",
+    "Packs/McAfeeWebGateway": "Gains 86 lines against a single deletion.",
+    "Packs/ProofpointCasb": "Gains 70 lines against a single deletion.",
+    "Packs/ManageEngine-ADSelfServicePlus": "Gains 62 lines against a single deletion.",
+    "Packs/SOCRadar": "+22/-16, receiving the FeedSOCRadarThreatFeed v2 files under a rename (#45512).",
+    "Packs/McAfee-TIE": "Removes a no-op statement and adds debug logging to the DXL configuration (#45552).",
+    "Packs/FeedSOCRadarThreatFeed": "Carries the +9/-2 bump; its v2 files were renamed into the SOCRadar pack (#45512).",
+    "Packs/MailListener_-_POP3": "+17/-4, updated together with cvss_color (#45507)."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
