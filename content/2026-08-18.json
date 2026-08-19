@@ -1,0 +1,151 @@
+{
+  "date": "2026-08-18",
+  "sha": "39819bd9dfdbfc80dedfb0ee48200667d7b3a263",
+  "committed_at": "2026-08-18T20:11:16+03:00",
+  "packs": [
+    {
+      "name": "ApiModules",
+      "insertions": 97,
+      "deletions": 13
+    },
+    {
+      "name": "AtlassianConfluenceCloud",
+      "insertions": 2969,
+      "deletions": 439
+    },
+    {
+      "name": "AzureDevOps",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "Barracuda_Cloudgen_Firewall",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "BeyondTrustRemoteSupport",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "CitrixADC",
+      "insertions": 1,
+      "deletions": 112
+    },
+    {
+      "name": "CommonScripts",
+      "insertions": 14,
+      "deletions": 7
+    },
+    {
+      "name": "CommvaultBackupSolutions",
+      "insertions": 1,
+      "deletions": 121
+    },
+    {
+      "name": "CybelAngel",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "DelineaSS",
+      "insertions": 103,
+      "deletions": 1
+    },
+    {
+      "name": "FeedSOCRadarThreatFeed",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "FortinetFortiwebVM",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "GuardiCore",
+      "insertions": 5,
+      "deletions": 963
+    },
+    {
+      "name": "MailListener_-_POP3",
+      "insertions": 17,
+      "deletions": 4
+    },
+    {
+      "name": "ManageEngine-ADSelfServicePlus",
+      "insertions": 62,
+      "deletions": 1
+    },
+    {
+      "name": "McAfee-TIE",
+      "insertions": 22,
+      "deletions": 2
+    },
+    {
+      "name": "McAfeeWebGateway",
+      "insertions": 86,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftWindowsEvents",
+      "insertions": 318,
+      "deletions": 1
+    },
+    {
+      "name": "NetmotionVPN",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "ProofpointCasb",
+      "insertions": 70,
+      "deletions": 1
+    },
+    {
+      "name": "SOCRadar",
+      "insertions": 22,
+      "deletions": 16
+    },
+    {
+      "name": "Silverfort",
+      "insertions": 5,
+      "deletions": 178
+    }
+  ],
+  "commits": [
+    {
+      "sha": "da35e8ab4e4386f1b76a83b816ce229295ab0f26",
+      "subject": "Revert \"CRTX-271523: add identity.* to modeling rules (PR 2 of 7) - clean pac…\" (#45558)"
+    },
+    {
+      "sha": "16751974702b22b201dd91f1652e78af7006be6c",
+      "subject": "fix(SOCRadar): rename FeedSOCRadarThreatFeed v2 files to FeedSOCRadar… (#45512)"
+    },
+    {
+      "sha": "57e0c168ae25aacced400db476a595eef17d0869",
+      "subject": "Update cvss_color & MailListener - POP3 (#45507)"
+    },
+    {
+      "sha": "d7889fbcee84a85b6a1a1144b2bf77e1de91a2e6",
+      "subject": "CRTX-271520 - correct rule version token 3_19 -> 2_11 (#45505)"
+    },
+    {
+      "sha": "f7b23275cc2e06d490182d36f224fbfc91efc3ed",
+      "subject": "CRTX-271526: add identity.* to modeling rules (PR 6 of 7) (#45461)"
+    },
+    {
+      "sha": "b00a8edbe872759eecb10dfeb155ffa6c3f70858",
+      "subject": "Bump GuardiCore and Silverfort packs (#45564)"
+    },
+    {
+      "sha": "78a10b1afa89ef55c1c1d883c07f55259bcd03d7",
+      "subject": "Atlasian Confluence new Oauth Authentication, new v2 commands and v1 commands deprecation. (#45378)"
+    },
+    {
+      "sha": "39819bd9dfdbfc80dedfb0ee48200667d7b3a263",
+      "subject": "fix(McAfee TIE v2): remove no-op statement and add debug logs to DXL config (#45552)"
+    }
+  ]
+}
