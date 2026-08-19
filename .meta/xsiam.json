@@ -3804,24 +3804,6 @@
                       "children": []
                     },
                     {
-                      "title": "Microsoft365",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft365",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
-                      "title": "Microsoft 365",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-365",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
-                      "title": "Microsoft 365 Copilot",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-365-copilot",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
                       "title": "Microsoft Office 365",
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365",
                       "type": "document",
@@ -3829,6 +3811,30 @@
                         {
                           "title": "Ingest logs from Microsoft Office 365",
                           "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/ingest-logs-from-microsoft-office-365",
+                          "type": "document",
+                          "children": []
+                        },
+                        {
+                          "title": "Microsoft 365",
+                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft-365",
+                          "type": "document",
+                          "children": []
+                        },
+                        {
+                          "title": "Microsoft365",
+                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft365",
+                          "type": "document",
+                          "children": []
+                        },
+                        {
+                          "title": "Microsoft 365 Copilot",
+                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft-365-copilot",
+                          "type": "document",
+                          "children": []
+                        },
+                        {
+                          "title": "Microsoft Graph",
+                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft-graph",
                           "type": "document",
                           "children": []
                         }
@@ -3887,12 +3893,6 @@
                     {
                       "title": "Microsoft Active Directory",
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-active-directory",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
-                      "title": "Microsoft Graph",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-graph",
                       "type": "document",
                       "children": []
                     },

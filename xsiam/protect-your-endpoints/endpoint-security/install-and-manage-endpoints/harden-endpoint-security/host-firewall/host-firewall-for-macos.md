@@ -16,7 +16,7 @@ Configure host firewall profiles that contain one or more rules groups. The grou
 Rules that were created on macOS 10 and Cortex XDR agent 7.5 and prior are managed only in the Legacy Host Firewall Rules and do not appear in the Rule Groups tables.
 {% endhint %}
 
-1. From Inventory → Endpoints → Policy Management → Extensions Profiles → Profiles, select + New Profile or Import from File. Select the Platform and click Host Firewall → Next.
+1. From Inventory → Endpoints → Policy Management → Extensions Profiles → Profiles, select +New Profile or Import from File. Select the Platform and click Host Firewall → Next.
 2.  Fill-in the General Information for the new profile.
 
     Assign a Profile Name and optional description to the profile.
@@ -100,6 +100,6 @@ After you define the required host firewall profiles, configure the Protection P
 
 To view only the communication events on the endpoint to which the Cortex XDR host firewall rules were applied, you can run the `Cytool firewall show` command.
 
-Additionally, to monitor the communication on your macOS endpoint, you can use the following operating system utilities: From the endpoint System Preferences → Security and Privacy → Firewall → Firewall options, you can view the list of blocked and allowed applications in the firewall. The Cortex XSIAM host firewall blocks only incoming communications on Mac endpoints, still allowing outbound communication initiated from the endpoint.
+Additionally, to monitor the communication on your macOS endpoint, you can use the following operating system utilities: From the endpoint System Preferences → Security and Privacy → Firewall → Firewall options, you can view the list of blocked and allowed applications in the firewall. The Cortex XSIAM host firewall can be defined to block incoming communications on Mac endpoints, while still allowing outbound communication initiated from the endpoint. To restrict outgoing traffic, you can create specific rules to block targeted outbound connections as needed.
 
 <br>

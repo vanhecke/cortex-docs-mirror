@@ -73,7 +73,7 @@ In order to establish trust between Cortex XSIAM and Alibaba Cloud, you must add
 2. In **SSO**, select the **OIDC** tab.
 3. In the list of IdPs, identify the existing entry for GCP (`accounts.google.com`) and click it.
 4. Under **Client ID**, click **Add**.
-5. Enter `alibaba-cortex-wif` as the audience value for the new client ID and save the changes.
+5. Enter alibaba-cortex-wif- as the audience value for the new client ID where corresponds to the Cortex XSIAM Project ID. Save the changes.
 
 #### Create a new OIDC provider
 
@@ -85,7 +85,9 @@ Before you begin, obtain the Cortex XSIAM Project ID of your tenant by clicking 
 4. In **Create IdP**, enter the **IdP Name**. For example, `CortexGCPProvider`.
 5. In **Issuer URL**, enter the GCP IdP URL: `https://accounts.google.com`.
 6. In **Client ID**, enter: `alibaba-cortex-wif-<accountID>` where `<accountID>` corresponds to the Cortex XSIAM Project ID.
-7. In **Fingerprint**, enter the SHA1 fingerprint of the signing certificate for `accounts.google.com`. Note that this fingerprint changes periodically and must be kept up-to-date.
-8. Save the changes.
+7. In **Fingerprint**, click **Auto-add** to automatically retrieve and add the signing certificate fingerprint for `accounts.google.com`.
+8. (cn-hongkong accounts only) In **Fingerprint**, click **Add** and enter the following SHA1 fingerprint: `932bed339aa69212c89375b79304b475490b89a0`.
+9. Click **Add Fingerprint**.
+10. Save the changes.
 
 #### <br>

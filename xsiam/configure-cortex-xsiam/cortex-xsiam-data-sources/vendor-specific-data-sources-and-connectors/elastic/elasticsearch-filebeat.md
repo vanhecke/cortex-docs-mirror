@@ -8,7 +8,7 @@ You can configure collecting container logs from Google Kubernetes Engine using 
 
 You can ingest logs related to file activity on your endpoints and servers without using the Cortex XDR agent by installing Elasticsearch Filebeat as a system logger and then forward those logs to Cortex XSIAM using a Custom - Filebeat based Collector.
 
-| Collection Methods                                                            | Description                                                                                                       |
+| Collection Method                                                             | Description                                                                                                       |
 | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | Custom - Filebeat based Collector (standard data source) overview             | Forward logs from Elasticsearch Filebeat to Cortex XSIAM using the Custom - Filebeat based Collector data source. |
 | Link to custom - Filebeat based Collector (standard data source) instructions | [Ingest logs from Elasticsearch Filebeat](elasticsearch-filebeat/ingest-logs-from-elasticsearch-filebeat)         |

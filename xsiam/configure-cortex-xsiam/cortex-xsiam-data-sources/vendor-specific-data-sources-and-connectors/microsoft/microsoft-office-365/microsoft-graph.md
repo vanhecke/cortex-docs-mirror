@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **Important**
 
-This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
+This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../../marketplace).
 {% endhint %}
 
 Integrate with Microsoft products through the Microsoft Graph API and Microsoft Endpoint Manager (Intune). Use the Microsoft Graph API to interact with Microsoft APIs that do not have dedicated connectors, and use Microsoft Endpoint Manager (Intune) for cloud-based mobile device and operating system management.

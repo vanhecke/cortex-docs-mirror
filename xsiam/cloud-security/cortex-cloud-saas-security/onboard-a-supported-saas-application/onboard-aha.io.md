@@ -9,7 +9,7 @@ For SaaS Security to detect posture risks in your Aha.io instance, you must onbo
 SaaS Security gets access to your Aha.io instance by using Okta SSO or Microsoft Azure credentials that you provide during the onboarding process. For this reason, your organization must be using Okta or Microsoft Azure as an identity provider. The Okta or Microsoft Azure account must be configured for multi-factor authentication (MFA) using one-time passcodes.&#x20;
 
 \
-To onboard your Aha.io instance, you complete the following actions:&#x20;
+To onboard your Aha.io instance, you must complete the following actions:&#x20;
 
 1. Collect information for accessing your Aha.io instance.&#x20;
 

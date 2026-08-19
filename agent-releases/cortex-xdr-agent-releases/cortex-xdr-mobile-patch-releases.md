@@ -10,6 +10,7 @@ Palo Alto Networks has introduced the following Cortex XDR mobile patch releases
 
 | **Release**     | **Description**                                                                                                                                             | **Release date**   |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| iOS agent 9.3   | See [Cortex XDR agent 9.3 for iOS Admin Guide](https://app.gitbook.com/s/SWFPEIBoXldQgCVj3v2G/get-started/release-notes-for-cortex-xdr-agent-app-for-ios)   | August 17, 2026    |
 | iOS agent 9.2.1 | See [Cortex XDR agent 9.2.1 for iOS Admin Guide](https://app.gitbook.com/s/F35cjNUN0gfmSMoHZaoZ/get-started/release-notes-for-cortex-xdr-agent-app-for-ios) | June 21, 2026      |
 | iOS agent 9.2   | See [Cortex XDR agent 9.2 for iOS Admin Guide](https://app.gitbook.com/s/F35cjNUN0gfmSMoHZaoZ/get-started/cortex-xdr-agent-app-for-ios-overview)            | June 1, 2026       |
 | iOS agent 9.1   | See [Cortex XDR agent 9.1 for iOS Admin Guide](https://app.gitbook.com/s/5fxpS5AyVNn00U58Dbvo/get-started/cortex-xdr-agent-app-for-ios-overview)            | February 22, 2026  |
@@ -42,6 +43,7 @@ Palo Alto Networks has introduced the following Cortex XDR mobile patch releases
 
 | Release             | Description                                                                                                                                                                                                      | Release date       |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| Android agent 9.3   | See [Cortex XDR agent 9.3 for Android Admin Guide](https://app.gitbook.com/s/nEfCCoGvJviwT2qZg51w/release-notes-for-cortex-xdr-app-for-android)                                                                  | August 17, 2026    |
 | Android agent 9.2   | See [Cortex XDR agent 9.2 for Android Admin Guide](https://app.gitbook.com/s/xwubWOQcxXUOPZsR9Uht/)                                                                                                              | June 14, 2026      |
 | Android agent 9.1   | See [Cortex XDR agent 9.1 for Android Admin Guide](https://app.gitbook.com/s/UeC5Yo1VlRfI7KCnJy58/)                                                                                                              | March 8, 2026      |
 | Android agent 9.0.2 | See [Cortex XDR agent 9.0 for Android Admin Guide](https://app.gitbook.com/s/6ETa5ce6hEj1jPE5qXtg/)                                                                                                              | January 7, 2026    |
