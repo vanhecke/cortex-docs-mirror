@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-19",
+  "source": "analytics",
+  "sha": "0d88a3215938aa76a41c33a37dd124050152ad2f",
+  "headline": "A second quiet day: no analytics rule changed, and the reference holds at 1,296 detectors",
+  "summary_md": "- **Nothing changed.** The export ran and touched no rule file — nothing added, withdrawn or edited.\n- The reference stands at **1,296 detectors**, unchanged for a second day running.",
+  "highlights": [],
+  "items": {},
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
