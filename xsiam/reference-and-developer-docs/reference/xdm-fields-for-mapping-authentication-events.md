@@ -8,7 +8,7 @@ description: >-
 
 This section provides a comprehensive guide to mapping authentication events from various customer log sources to the XDM (Cortex Data Model) schema. Each relevant XDM field is detailed, including whether the field is mandatory or optional, the corresponding **Authentication Story** field , data type, and purpose, ensuring consistent data normalization essential for robust security analysis and threat detection.
 
-The mandatory fields to map are listed below with an asterisk (\*) beside them as these fields must be mapped to automatically create authentication stories for XDM identity data.
+The fields that are mandatory to map are listed below with an asterisk (\*) beside them as these fields must be mapped to automatically create authentication stories for XDM identity data.
 
 {% hint style="info" %}
 ### Note
@@ -189,12 +189,13 @@ xdm.event.operation =
 
 **Requirement**: Mandatory
 
-**Description**: This field defines the role the system played in the authentication flow, such as identity provider or relying party, and should reflect event-specific context.
+**Description**: This field defines the **role** the system played in the authentication flow for this specific record.
 
 **Supported values**:
 
-* `״SP״` (Service Provider): The system initiating the authentication request.
-* `״IDP״` (Identity Provider): The system that validates the user authentication.
+* **IDP**: Use when the system validates the credential (such as Okta, Entra ID, Domain Controller).
+* **SP**: Use when the system initiates the request and relies on another to validate (such as a relying-party app consuming SSO).
+* **Universal**: Use when the source is NOT a known IdP provider (such as local accounts, TACACS+, RADIUS, device SSH).
 
 **Data Model Rule example for Okta**:
 
@@ -206,7 +207,7 @@ if(eventType = "user.authentication.auth_via_AD_agent", "IDP",
 {% hint style="info" %}
 ### Note
 
-Mapping should be done per event type. The same system could be an IDP in one event and an SP in another.
+Mapping should be done per event type. The same system could be an IDP in one event and an SP in another. NEVER use a service or protocol name like "Kerberos", "SSH", or "Login" in this field. Mapping should be done per event type. The same system could be an IDP in one event and an SP in another.
 {% endhint %}
 
 ### 11. xdm.event.outcome\*

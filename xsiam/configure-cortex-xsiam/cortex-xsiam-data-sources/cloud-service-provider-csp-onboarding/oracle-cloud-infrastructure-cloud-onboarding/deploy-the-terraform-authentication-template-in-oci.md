@@ -61,4 +61,4 @@ Before you begin, ensure you have:
 
 Once the status changes from **Enabling** to **Enabled**, the domain is ready to handle identities in that specific region.
 
-When the template is successfully uploaded to GCP, the initial discovery scan is started. When the scan is complete, you can view your cloud assets in **Asset Inventory**.
+When the template is successfully uploaded to OCI, the initial discovery scan is started. When the scan is complete, you can view your cloud assets in **Asset Inventory**.

@@ -28,3 +28,29 @@ alter raw ="<14>Oct  2 10:06:18 PAN-PROD-APPSVC-EU-W4-FW01 CEF:0|Palo Alto Netwo
 * `alter raw`: In this rule context, this defines the source string to be parsed (simulating the `_raw_log` input).
 * `parse_cef(raw)`: Processes the CEF string into a structured object containing key-value pairs.
 * Semicolon (`;`): Required at the end of the rule to ensure proper compilation.
+
+## Output results
+
+The following JSON represents the structured object stored in the parsed field of the `test_parse_cef_raw` dataset after the rule is applied:<br>
+
+```
+"parsed": {
+"ad.subtype": "forward",
+"ad.vd": "root",
+"app": "ssl",
+"cefDeviceEventClassId": "end",
+"cefDeviceProduct": "PAN-OS",
+"cefDeviceVendor": "Palo Alto Networks",
+"cefDeviceVersion": "8.1.15-h3",
+"cefName": "TRAFFIC",
+"cefSeverity": "1",
+"cefVersion": "CEF:0",
+"double": "1.15",
+"in": "8697",
+"mac": "B3-F5-10-ED-C4-EE",
+"pattern:test": "test",
+"proto": "6",
+"rt": 1664730378000,
+"src": "35.204.254.72"
+}
+```

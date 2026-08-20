@@ -6,8 +6,6 @@ description: >-
 
 # Extended Threat Intelligence
 
-## Extended Threat Intelligence overview
-
 Extended Threat Intelligence (XTI) offers operationalized Threat Intelligence (TI) seamlessly integrated across the Cortex platform.
 
 <figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FfgqohfZlHMei5r9mobRS%2Funknown.png?alt=media&#x26;token=d63be7a9-dc9a-4afe-b999-2ec139433e8e" alt="This screenshot from Cortex UI shows the XTI Threat Intel Library page listing threat actors." height="411" width="624"><figcaption></figcaption></figure>

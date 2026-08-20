@@ -2,7 +2,7 @@
   "book": "xsiam",
   "title": "Cortex XSIAM Documentation",
   "section": "cortex-xsiam",
-  "page_count": 2282,
+  "page_count": 2283,
   "tree": [
     {
       "title": "Learn about Cortex XSIAM",
@@ -1052,7 +1052,7 @@
                   ]
                 },
                 {
-                  "title": "How to map authentication story events?",
+                  "title": "How to map authentication events for analytics",
                   "path": "configure-cortex-xsiam/data-management/data-model-rules/how-to-map-authentication-story-events",
                   "type": "document",
                   "children": []
@@ -6600,8 +6600,14 @@
                   "type": "document",
                   "children": [
                     {
-                      "title": "Ingest alerts and assets from IoT Security",
+                      "title": "Ingest alerts and assets from IoT Security (Deprecated)",
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/iot-security/ingest-alerts-and-assets-from-iot-security",
+                      "type": "document",
+                      "children": []
+                    },
+                    {
+                      "title": "Ingest alerts and assets from Device Security",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/iot-security/ingest-alerts-and-assets-from-device-security",
                       "type": "document",
                       "children": []
                     },

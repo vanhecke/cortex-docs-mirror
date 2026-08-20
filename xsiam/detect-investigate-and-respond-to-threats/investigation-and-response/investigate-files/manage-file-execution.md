@@ -6,11 +6,17 @@ Adding files to the allow and block lists takes precedence over any other policy
 
 Supported file types are:
 
-<table><thead><tr><th width="198">Operating system</th><th>Supported file types</th></tr></thead><tbody><tr><td>Windows</td><td><ul><li>PE, PE64</li><li>doc, docx, xls, xlsx (only if they contain macro files)</li><li>PS1</li></ul></td></tr><tr><td>Mac</td><td>macho, DMG</td></tr><tr><td>Linux</td><td>ELF</td></tr></tbody></table>
+| Operating system | Supported file types                                                                                                                                        |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Windows          | <ul><li>PE, PE64</li><li>doc, docx, xls, xlsx (only if they contain macro files)</li><li>PS1</li><li>VBS, VBE, JSE, Java (JAR/WAR), JS, JSP, JSPX</li></ul> |
+| Mac              | <ul><li>macho, DMG</li><li>JS, JSP, JSPX</li></ul>                                                                                                          |
+| Linux            | <ul><li>ELFS</li><li>JE, JSP, JSPX</li></ul>                                                                                                                |
 
-#### **How to add a file to the allow or block list or allow list**
+If **On-write File Examination** is enabled, the following file type hashes are also supported in the allow and block list: War, Asp, Aspx.
 
-1. Go to **Investigation & Response → Response → Action Center →** **New Action**.
+### How to add a file to the allow or block list or allow list
+
+1. Go to Investigation & Response → Response → Action Center → **New Action**.
 2. Select **Add to Block List** or **Add to Allow List**.
 3.  Enter the SHA-256 hash of the file and click ![blue-arrow.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-b47968b899f3a98d57cf861065aea89ac279de34%2Fabd4b966d975f5dbafe0a11234eccca4542a43850825284f0bf43eda2f372695.png?alt=media).
 
@@ -18,6 +24,6 @@ Supported file types are:
 4. Click **Next**.
 5.  Review the summary and click **Done**.
 
-    In the next heartbeat, the agent retrieves the updated lists from Cortex XSIAM.
+    In the next heartbeat, the agent retrieves the updated lists from Cortex XDR.
 6. You are automatically redirected to the **Block List** or **Allow List** that corresponds to the action in the **Action Center**.
 7. To manage the file hashes on the **Block List** or the **Allow List**, right-click a file to see the available actions.
