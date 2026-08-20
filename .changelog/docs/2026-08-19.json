@@ -1,0 +1,69 @@
+{
+  "date": "2026-08-19",
+  "source": "docs",
+  "sha": "fffb924acd9968600f239af1616dff18f736b65f",
+  "headline": "IoT Security collector deprecated for a new Device Security one; authentication mapping rewritten",
+  "summary_md": "- The **IoT Security** data collector is marked deprecated and a new **Device Security** collector replaces it, keeping both existing datasets.\n- Authentication mapping was rewritten around a 15-field mandatory set, and `xdm.auth.service` gained a third value, `Universal`.\n- Allow and block lists now accept script and Java file types on Windows, Mac and Linux.\n- Quarantine gained per-OS folder paths, a 180-day retention and a configurable pending-action expiry.\n- The rest is restructuring — the architecture, XTI and role-scoping pages were reorganized without changing what they say; the XSIAM book is now 2,283 pages.",
+  "highlights": [
+    {
+      "title": "Device Security replaces the IoT Security collector",
+      "detail": "The new collector authenticates with a Strata Cloud Manager service account (TSG ID, client ID and secret) where the legacy one used an IoT portal access key, and the legacy page now warns it will be discontinued.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/iot-security/ingest-alerts-and-assets-from-device-security",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/iot-security/ingest-alerts-and-assets-from-iot-security"
+      ]
+    },
+    {
+      "title": "xdm.auth.service gains a third value, Universal",
+      "detail": "Alongside IDP and SP it now covers sources that are not a known identity provider — local accounts, TACACS+, RADIUS and device SSH — and the page forbids putting a protocol name in the field.",
+      "paths": [
+        "xsiam/reference-and-developer-docs/reference/xdm-fields-for-mapping-authentication-events"
+      ]
+    },
+    {
+      "title": "An unmapped mandatory authentication field drops the event",
+      "detail": "The mapping page now states that all 15 mandatory fields must be mapped or the event is dropped from authentication stories and identity analytics, and that identity analytics requires the ITDR licence.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/data-management/data-model-rules/how-to-map-authentication-story-events"
+      ]
+    },
+    {
+      "title": "Allow and block lists accept more file types",
+      "detail": "Windows adds VBS, VBE, JSE, Java (JAR/WAR), JS, JSP and JSPX, Mac and Linux add JS, JSP and JSPX, and War, Asp and Aspx are supported when On-write File Examination is enabled.",
+      "paths": [
+        "xsiam/detect-investigate-and-respond-to-threats/investigation-and-response/investigate-files/manage-file-execution"
+      ]
+    },
+    {
+      "title": "Quarantine retention and expiry are now documented",
+      "detail": "Records stay in the Quarantine List for 180 days, and a quarantine command sent to an offline endpoint expires after 4 days by default, configurable between 1 and 30.",
+      "paths": [
+        "xsiam/detect-investigate-and-respond-to-threats/investigation-and-response/investigate-files/manage-quarantined-files"
+      ]
+    },
+    {
+      "title": "The Broker VM allowlist table was rewritten, but nothing was allowlisted",
+      "detail": "The tenant placeholder changed from br-__.xdr.<region> to br-<XDR tenant>.xdr.<region>; no FQDN or port was added or removed.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/data-management/broker-vm/set-up-and-configure-broker-vm"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/iot-security/ingest-alerts-and-assets-from-device-security": "New page. Configures the Device Security collector with a Strata Cloud Manager service account, ingesting alerts every 15 minutes and device activity every 30 seconds.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/iot-security/ingest-alerts-and-assets-from-iot-security": "Retitled with a Deprecated suffix and warns legacy collectors will be discontinued; asset updates are documented at 5 minutes against the new collector's 30 seconds.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations/iot-security": "The data source overview now links to both collector pages instead of only the IoT Security one.",
+    "xsiam/configure-cortex-xsiam/data-management/data-model-rules/how-to-map-authentication-story-events": "Retitled How to map authentication events for analytics and expanded with MAP/DERIVE/PAD field treatment, principal classification, AAA topologies and a logout convention.",
+    "xsiam/reference-and-developer-docs/reference/xdm-fields-for-mapping-authentication-events": "xdm.auth.service adds a Universal value for non-IdP sources and forbids naming a protocol such as Kerberos, SSH or Login in the field.",
+    "xsiam/detect-investigate-and-respond-to-threats/investigation-and-response/investigate-files/manage-file-execution": "Adds script and Java file types to the allow and block lists on all three operating systems, plus War, Asp and Aspx when On-write File Examination is enabled.",
+    "xsiam/detect-investigate-and-respond-to-threats/investigation-and-response/investigate-files/manage-quarantined-files": "Broadens quarantine beyond Windows with per-OS folder paths and adds retention and expiry timeframes; an editorial note about adding the macOS path is left published in that line.",
+    "xsiam/configure-cortex-xsiam/data-management/broker-vm/set-up-and-configure-broker-vm": "The allowlist table rewrites the tenant placeholder in the Broker Service FQDNs; no FQDN or port was added or removed.",
+    "xsiam/configure-cortex-xsiam/data-management/parsing-rules/parsing-rules-file-structure-and-syntax/ingest/parse_cef": "Adds an Output results section showing the parsed JSON object the rule writes to the dataset.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/oracle-cloud-infrastructure-cloud-onboarding/deploy-the-terraform-authentication-template-in-oci": "Corrects the closing step, which said the template is uploaded to GCP, to OCI.",
+    "xsiam/learn-about-cortex-xsiam/get-started-cortex-xsiam/cortex-xsiam-architecture": "Reorganized under headings for core capabilities, XDL, the Agentic Assistant and Broker VM, and the ecosystem diagram was replaced.",
+    "xsiam/onboard-cortex-xsiam/deployment-steps/set-up-users-and-roles/assign-user-roles-and-groups": "The granular scoping table, previously broken across malformed markdown rows, is rebuilt as an HTML table.",
+    "xsiam/detect-investigate-and-respond-to-threats/threat-management/extended-threat-intelligence": "Drops a redundant Extended Threat Intelligence overview heading."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
