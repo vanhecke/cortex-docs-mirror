@@ -1,0 +1,249 @@
+{
+  "date": "2026-08-19",
+  "sha": "5b2408e5179d2b323551a0b1161afd52727e05fb",
+  "committed_at": "2026-08-19T23:37:14+03:00",
+  "packs": [
+    {
+      "name": "AMP",
+      "insertions": 134,
+      "deletions": 1
+    },
+    {
+      "name": "AWS",
+      "insertions": 157,
+      "deletions": 67
+    },
+    {
+      "name": "AristaSwitch",
+      "insertions": 7,
+      "deletions": 2
+    },
+    {
+      "name": "Armis",
+      "insertions": 321,
+      "deletions": 1
+    },
+    {
+      "name": "Azure",
+      "insertions": 1383,
+      "deletions": 3
+    },
+    {
+      "name": "BarracudaEmailProtection",
+      "insertions": 44,
+      "deletions": 1
+    },
+    {
+      "name": "Base",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "Box",
+      "insertions": 89,
+      "deletions": 1
+    },
+    {
+      "name": "CaseManagement-Generic",
+      "insertions": 49,
+      "deletions": 10
+    },
+    {
+      "name": "CitrixADC",
+      "insertions": 117,
+      "deletions": 1
+    },
+    {
+      "name": "CommunityCommonDashboards",
+      "insertions": 19,
+      "deletions": 4
+    },
+    {
+      "name": "CommunityCommonScripts",
+      "insertions": 194,
+      "deletions": 39
+    },
+    {
+      "name": "CommvaultBackupSolutions",
+      "insertions": 121,
+      "deletions": 1
+    },
+    {
+      "name": "Core",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "CorelightZeek",
+      "insertions": 374,
+      "deletions": 1
+    },
+    {
+      "name": "CyberArkEPM",
+      "insertions": 281,
+      "deletions": 1
+    },
+    {
+      "name": "GitHub",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "GoogleDrive",
+      "insertions": 74,
+      "deletions": 1
+    },
+    {
+      "name": "GuardiCore",
+      "insertions": 962,
+      "deletions": 1
+    },
+    {
+      "name": "HealthCheck",
+      "insertions": 254,
+      "deletions": 51
+    },
+    {
+      "name": "HuaweiNetworkDevices",
+      "insertions": 411,
+      "deletions": 1
+    },
+    {
+      "name": "JamfProtect",
+      "insertions": 268,
+      "deletions": 1
+    },
+    {
+      "name": "Kubernetes",
+      "insertions": 82,
+      "deletions": 1
+    },
+    {
+      "name": "LinuxEventsCollection",
+      "insertions": 253,
+      "deletions": 3
+    },
+    {
+      "name": "McAfeeDatabaseSecurity",
+      "insertions": 109,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftDefenderAdvancedThreatProtection",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "MicrosoftGraphUser",
+      "insertions": 12,
+      "deletions": 3
+    },
+    {
+      "name": "NasuniFileServices",
+      "insertions": 83,
+      "deletions": 1
+    },
+    {
+      "name": "Oracle",
+      "insertions": 82,
+      "deletions": 1
+    },
+    {
+      "name": "Orca",
+      "insertions": 1160,
+      "deletions": 242
+    },
+    {
+      "name": "PAN-OS",
+      "insertions": 19,
+      "deletions": 5
+    },
+    {
+      "name": "Silverfort",
+      "insertions": 177,
+      "deletions": 1
+    },
+    {
+      "name": "Slack",
+      "insertions": 386,
+      "deletions": 2
+    },
+    {
+      "name": "TrendMicroDeepSecurity",
+      "insertions": 621,
+      "deletions": 1
+    },
+    {
+      "name": "Whois",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "Workday",
+      "insertions": 274,
+      "deletions": 1
+    }
+  ],
+  "commits": [
+    {
+      "sha": "e849805225a0e03a550ee0a9f91ff1cb24fba66f",
+      "subject": "fixed backwards resolution ucp (#45548)"
+    },
+    {
+      "sha": "84184df8f9043286f35d8a2e17e7d3f14bec1ba3",
+      "subject": "CRTX-271525: add identity.* to modeling rules (PR 1 of 7) (#45448)"
+    },
+    {
+      "sha": "bc1bde961eeb04368769814259d74ff29306342c",
+      "subject": "CRTX-271523: add identity.* to modeling rules (PR 2 of 7) + fix CitrixADC_2_11 malformed coalesce nesting (#45565)"
+    },
+    {
+      "sha": "345ca625a88492bbec24fd97d467b202a6dae1d1",
+      "subject": "Auto Updated Docker PR from 2026-08-18 GitLab Pipeline ID 12005646 [Success] (#45559)"
+    },
+    {
+      "sha": "225d61beeb4000a3236c8bf39e2db3892cab446d",
+      "subject": "[AUD Isolation] MicrosoftGraphUser - from 2026-08-18 (#45560)"
+    },
+    {
+      "sha": "4ea59755c17629c905dee927aa13a7f38cf0d5c9",
+      "subject": "Orca Event Collector: fix event pagination and cursor handling, add _ENTRY_STATUS field (#45415)"
+    },
+    {
+      "sha": "993c94f3cfec329904b1a48d0a899c70a223b4df",
+      "subject": "CRTX-271523: add identity.* to modeling rules (PR 6 of 7) (#45438)"
+    },
+    {
+      "sha": "d222bd431cd72a5fe8ab35cc15cf0bf0a7e92b0b",
+      "subject": "CRTX-271523: add identity.* to modeling rules (PR 4 of 7) (#45436)"
+    },
+    {
+      "sha": "a5e1b4b18e5cd28f8d458b888085fcbac8af6044",
+      "subject": "CRTX-271523: add identity.* to modeling rules (PR 5 of 7) (#45437)"
+    },
+    {
+      "sha": "1a754c4add2cb9422969f19cbbb6b3178805a2d0",
+      "subject": "CRTX-265696: Test in Azure that the yml and py files match (#45420)"
+    },
+    {
+      "sha": "b5e4ddbfabe01edf9233c4c9034323155a59092e",
+      "subject": "CRTX-271526: add identity.* to modeling rules (PR 7 of 7) (#45462)"
+    },
+    {
+      "sha": "a171fb6a6627d1808b412337615d1b1f66b11c14",
+      "subject": "Bugfix/XSUP-72872-wildfire-malware-prevented-contains (#45356)"
+    },
+    {
+      "sha": "27a6659a1055f59759bafa7356bdb151bef38d17",
+      "subject": "CRTX-222558:  Update the context outputs of AWS S3 commands (#45254)"
+    },
+    {
+      "sha": "5b35ffcef7b3c7d104a60639e967330f90def408",
+      "subject": "XSUP-74923 - ingest XDR Collector RFC-3164 syslog into linux_linux_raw (#45574)"
+    },
+    {
+      "sha": "5b2408e5179d2b323551a0b1161afd52727e05fb",
+      "subject": "XSUP-75068 - Arista Switch parsing rule support milliseconds timestamp format (#45571)"
+    }
+  ]
+}
