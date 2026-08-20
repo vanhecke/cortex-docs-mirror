@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-19",
+  "source": "content",
+  "sha": "1fc820cc46f1881efce50b0fefdd1c472e061f77",
+  "headline": "Six identity.* modeling-rule PRs land in one day; Orca's event collector fixes pagination",
+  "summary_md": "- The `identity.*` modeling-rule series lands in bulk: PRs 1, 2, 4, 5, 6 and 7 of 7 all merge on the same day (#45448, #45565, #45438, #45436, #45437, #45462).\n- Yesterday's revert is undone — **GuardiCore** (+962), **Silverfort** (+177), **CommvaultBackupSolutions** (+121) and **CitrixADC** (+117) regain almost exactly the lines PR 2's revert removed.\n- 36 packs move and 19 of them are addition-only against a single deleted line; **Azure** (+1,383) and **Orca** (+1,160/-242) are the largest.\n- Two collection fixes land: XDR Collector RFC-3164 syslog now ingests into `linux_linux_raw` (#45574), and Arista Switch parsing accepts millisecond timestamps (#45571).",
+  "highlights": [
+    {
+      "title": "The reverted identity.* modeling rules return, with a CitrixADC fix attached",
+      "detail": "PR 2 of 7 re-lands as #45565 carrying a fix for malformed coalesce nesting in CitrixADC_2_11, and the four packs cut back yesterday recover within a line or two of what they lost.",
+      "paths": ["Packs/GuardiCore", "Packs/Silverfort", "Packs/CommvaultBackupSolutions", "Packs/CitrixADC"]
+    },
+    {
+      "title": "Six of the seven identity.* modeling-rule PRs merge on one day",
+      "detail": "PRs 1, 2, 4, 5, 6 and 7 land under CRTX-271523, CRTX-271525 and CRTX-271526; only PR 3 is absent from the day's commits.",
+      "paths": []
+    },
+    {
+      "title": "Orca Event Collector fixes event pagination and cursor handling",
+      "detail": "At +1,160/-242 it is the day's only substantial rewrite, and it adds an _ENTRY_STATUS field (#45415).",
+      "paths": ["Packs/Orca"]
+    },
+    {
+      "title": "XDR Collector RFC-3164 syslog is ingested into linux_linux_raw",
+      "detail": "LinuxEventsCollection gains 253 lines against 3 deleted for the new syslog path (#45574).",
+      "paths": ["Packs/LinuxEventsCollection"]
+    },
+    {
+      "title": "AWS S3 command context outputs are rewritten",
+      "detail": "The AWS pack moves +157/-67 updating the context outputs of its S3 commands (#45254) — the largest deletion count of the day outside Orca.",
+      "paths": ["Packs/AWS"]
+    },
+    {
+      "title": "Arista Switch parsing rule accepts millisecond timestamps",
+      "detail": "A seven-line change adds millisecond timestamp format support to the parsing rule (#45571).",
+      "paths": ["Packs/AristaSwitch"]
+    }
+  ],
+  "items": {
+    "Packs/Azure": "The day's largest gain at +1,383 against 3 deleted; a same-day commit adds a check that Azure's yml and py files match (#45420).",
+    "Packs/Orca": "+1,160/-242 for the event collector's pagination and cursor handling fix, plus a new _ENTRY_STATUS field (#45415).",
+    "Packs/GuardiCore": "Gains 962 lines against a single deletion, restoring nearly the 963 lines yesterday's revert removed.",
+    "Packs/TrendMicroDeepSecurity": "Gains 621 lines against a single deletion — the largest addition-only pack untouched by yesterday's revert.",
+    "Packs/HuaweiNetworkDevices": "Gains 411 lines against a single deletion.",
+    "Packs/Slack": "Gains 386 lines against 2 deleted.",
+    "Packs/CorelightZeek": "Gains 374 lines against a single deletion.",
+    "Packs/Armis": "Gains 321 lines against a single deletion.",
+    "Packs/CyberArkEPM": "Gains 281 lines against a single deletion.",
+    "Packs/Workday": "Gains 274 lines against a single deletion.",
+    "Packs/HealthCheck": "+254/-51, one of only four packs with substantial deletions; no commit subject names it.",
+    "Packs/LinuxEventsCollection": "+253/-3 to ingest XDR Collector RFC-3164 syslog into linux_linux_raw (#45574).",
+    "Packs/CommunityCommonScripts": "+194/-39; no commit subject names the pack.",
+    "Packs/AWS": "+157/-67 updating the context outputs of the S3 commands (#45254).",
+    "Packs/MicrosoftGraphUser": "+12/-3 under an AUD isolation change dated 2026-08-18 (#45560)."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
