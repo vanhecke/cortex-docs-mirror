@@ -1,0 +1,68 @@
+{
+  "date": "2026-08-20",
+  "source": "docs",
+  "sha": "3fb2709c9a3a2ef3cbaa82767437757e0400c0ec",
+  "headline": "233 Cortex XSIAM pages restyled for search; SaaS section renamed; 18 compliance standards added",
+  "summary_md": "- Every changed file is in the **Cortex XSIAM** book: 192 modified and 41 renamed, with no page added or deleted.\n- Mostly an authoring pass — 97 pages changed *only* by gaining a `description:` frontmatter line, and 12 page titles were rewritten into keyword-rich forms.\n- The **SaaS Security** onboarding section moved from `onboard-a-supported-saas-application` to `connect-a-saas-application`, taking 40 application pages with it.\n- The one substantive change is the **compliance standards catalog**, which gained 18 standards including CIS benchmarks for Ubuntu 24.04 LTS, Debian 13 and AWS Foundations v7.0.0.\n- Egress, inbound and engine IP tables, supported regions, retention periods and licence tiers were all re-headed, but **no value in them changed**.",
+  "highlights": [
+    {
+      "title": "The SaaS Security onboarding section was renamed, moving 41 pages",
+      "detail": "`onboard-a-supported-saas-application` became `connect-a-saas-application`; 40 of the 41 pages moved at 100% similarity, and the parent page's own per-app link table was left untouched and still points at the old segment.",
+      "paths": [
+        "xsiam/cloud-security/cortex-cloud-saas-security/connect-a-saas-application"
+      ]
+    },
+    {
+      "title": "The compliance standards catalog gained 18 standards",
+      "detail": "New CIS benchmarks for Alibaba Cloud 2.0.0, Debian 13, Ubuntu 24.04 LTS, Red Hat OpenShift 1.9.0, EKS 1.8.0, AWS Foundations v7.0.0 and Azure Foundations v6.0.0, each at Level 1 and Level 2, plus NIST SP 800-190.",
+      "paths": [
+        "xsiam/cloud-security/monitor-and-track-compliance-adherence/choose-compliance-standards-from-the-compliance-catalog/standards-catalog"
+      ]
+    },
+    {
+      "title": "The allowlist and region reference pages changed only in their headings",
+      "detail": "The egress, inbound, engine-IP and FedRAMP resource pages were retitled and given real `###` headings in place of bold labels, but every IP address, FQDN, port and App-ID in their tables is unchanged.",
+      "paths": [
+        "xsiam/onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources/regional-egress-resources",
+        "xsiam/onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources/engine-ip-addresses-outbound",
+        "xsiam/onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources/inbound-source-resources"
+      ]
+    },
+    {
+      "title": "97 pages changed only by gaining a search description",
+      "detail": "Each added a four- or six-line `description:` frontmatter block and nothing else — zero deletions, no body text touched.",
+      "paths": []
+    },
+    {
+      "title": "12 page titles were rewritten and the navigation manifest followed",
+      "detail": "`.meta/xsiam.json` records the new titles: \"Engine IP addresses (outbound)\" became \"Cortex XSIAM engine outbound IP addresses\", \"Use the interface\" became \"Use the Cortex XSIAM interface\", and \"Limitations & supported regions\" became \"FedRAMP limitations and supported government cloud regions\".",
+      "paths": []
+    },
+    {
+      "title": "Role-based access control hub pages now link to their children",
+      "detail": "Plain-text component lists became cross-links — configuration permissions went from 8 bare names to 19 linked sub-pages, and cloud security and posture management gained links to its 9.",
+      "paths": [
+        "xsiam/reference-and-developer-docs/role-based-access-control/configuration-permissions",
+        "xsiam/reference-and-developer-docs/role-based-access-control/cloud-security-and-posture-management-permissions"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/cloud-security/monitor-and-track-compliance-adherence/choose-compliance-standards-from-the-compliance-catalog/standards-catalog": "Adds 18 compliance standards — CIS benchmarks for Alibaba Cloud, Debian 13, Ubuntu 24.04 LTS, OpenShift 1.9.0, EKS 1.8.0, AWS v7.0.0 and Azure v6.0.0, plus NIST SP 800-190.",
+    "xsiam/cloud-security/cortex-cloud-saas-security/connect-a-saas-application": "Renamed from \"Onboard a Supported SaaS Application\"; the per-app link table was left untouched and still points at the old path segment.",
+    "xsiam/onboard-cortex-xsiam/deployment-steps/set-up-users-and-roles/assign-user-roles-and-groups": "The SBAC scoping table, rebuilt as an HTML table only a day earlier, becomes expandable sections inside a stepper; the asset, case, endpoint and dataset-row rules are unchanged.",
+    "xsiam/reference-and-developer-docs/role-based-access-control/configuration-permissions": "The eight plain-text component names become 19 links to individual permission pages, including auditing, credentials and network scanners.",
+    "xsiam/reference-and-developer-docs/role-based-access-control/cloud-security-and-posture-management-permissions": "Gains a \"For detailed access guidance\" list linking its nine child permission pages.",
+    "xsiam/learn-about-cortex-xsiam/cortex-xsiam-product-licenses": "Retitled to \"license tiers and product licenses\" and gains a three-bullet tier comparison; the NG-SIEM, Enterprise and Premium feature tables are unchanged.",
+    "xsiam/onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources/regional-egress-resources": "Section labels become headings and the intro is rewritten; every FQDN, IP address and App-ID in the regional tables is unchanged.",
+    "xsiam/onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources/engine-ip-addresses-outbound": "Retitled to \"Cortex XSIAM engine outbound IP addresses\"; the regional IP lists are unchanged.",
+    "xsiam/onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources/inbound-source-resources": "Retitled to \"Cortex XSIAM inbound source IP addresses\"; the infrastructure and data-collection IP tables are unchanged.",
+    "xsiam/onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/cortex-xsiam-supported-regions": "Retitled to \"supported regions and data residency\"; the Americas, EMEA and JPAC country lists are unchanged.",
+    "xsiam/learn-about-cortex-xsiam/cortex-xsiam-product-licenses/data-retention": "Bold labels become headings and redundant \"Note\" titles are dropped; the 31-, 186- and 365-day default retention periods are unchanged.",
+    "xsiam/learn-about-cortex-xsiam/in-product-support-case-creation": "The six-step support ticket procedure is converted to a stepper, with each embedded note becoming its own hint callout.",
+    "xsiam/onboard-cortex-xsiam/deployment-steps/fedramp-overview/limitations-and-supported-regions": "Retitled for FedRAMP; the AWS GovCloud and Azure Government region lists are unchanged apart from correcting \"Governement\".",
+    "xsiam/onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/bring-your-own-keys": "Two \"success\" callouts merge into one info hint and the key-rotation wording is tidied; the rotation and disable procedures are unchanged."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": true
+}
