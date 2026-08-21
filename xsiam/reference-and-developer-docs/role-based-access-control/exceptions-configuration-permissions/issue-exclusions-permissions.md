@@ -1,10 +1,8 @@
 ---
-description: Configure Issue Exclusions permissions.
+description: Configure Issue Exclusions permissions in Cortex XSIAM.
 ---
 
 # Issue Exclusions permissions
-
-**Issue Exclusions permissions**
 
 Issue Exclusions controls access to the **All Issue Exclusions and Exceptions** page under **Settings** → **Issue Exception & Exclusion**, which includes the following:
 
@@ -12,8 +10,6 @@ Issue Exclusions controls access to the **All Issue Exclusions and Exceptions** 
 * Exception Rules: Defines conditions under which issues are flagged as exceptions that may require approval before being acted upon, rather than being silently suppressed.
 
 {% hint style="info" %}
-### Note
-
 This permission controls access to the **All Issue Exclusions and Exceptions** page. If users require access to **Exception Rules**, they also need **Exception Approver Admin** View or View/Edit permission.
 {% endhint %}
 

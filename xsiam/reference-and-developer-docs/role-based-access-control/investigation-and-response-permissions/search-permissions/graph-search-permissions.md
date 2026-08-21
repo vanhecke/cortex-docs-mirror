@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage access to Cortex XSIAM's Graph Search for cloud assets and security
+  findings.
+---
+
 # Graph Search permissions
 
 Limits access to Graph Search **Investigation & Response** → **Search** → **Query Builder** → **Graph Search)**, which enables visual exploration of cloud asset relationships, configurations, and security findings through an interactive graph interface, such as discovering cloud asset relationships, investigating security findings, and analyzing effective permissions.

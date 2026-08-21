@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM network scanner configuration and operations.
+---
+
 # Network Scanners permissions
 
 Located under Settings → Configurations → Network Scanning, this permission allows administrators to set up scan definitions, manage credentials for authenticated scans, configure targets, and view results.

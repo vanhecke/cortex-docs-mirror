@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM scripts for automation and remediation.
+---
+
 # Script permissions
 
 The Scripts permission is a foundational administrative and operational tool. In Cortex XSIAM, scripts (primarily Python-based) are the engine behind automated enrichment, complex data manipulation, and custom remediation actions.. For more information, see [Scripts](../../../../configure-cortex-xsiam/automations/scripts).

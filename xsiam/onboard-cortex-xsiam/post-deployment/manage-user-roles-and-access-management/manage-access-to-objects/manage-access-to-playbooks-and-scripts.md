@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM playbook and script access with role permissions,
+  ownership, sharing, public visibility, and automation controls.
+---
+
 # Manage access to playbooks and scripts
 
 Review the following:

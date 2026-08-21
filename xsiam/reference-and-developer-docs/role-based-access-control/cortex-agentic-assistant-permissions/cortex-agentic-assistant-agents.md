@@ -1,5 +1,5 @@
 ---
-description: Configure Cortex Agentic Assistant Agents permissions.
+description: Configure Cortex Agentic Assistant Agents permissions in Cortex XSIAM.
 ---
 
 # Cortex Agentic Assistant Agents

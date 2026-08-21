@@ -1,3 +1,9 @@
+---
+description: >-
+  Control access to create and manage in-product technical support cases  in
+  Cortex XSIAM.
+---
+
 # Help permissions
 
 **Support**

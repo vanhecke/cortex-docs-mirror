@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM audit logs and administrative activity records.
+---
+
 # Auditing permissions
 
 Provides access to view audit logs that track all administrative and operational activities within Cortex XSIAM:

@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage endpoint application groups for Data Loss Prevention policies in Cortex
+  XSIAM.
+---
+
 # Endpoint Applications Groups
 
 Endpoint Applications Groups allow organizing endpoint applications into logical groups for use in Data-in-motion Rules. Instead of selecting individual applications in a rule, administrators can reference an application group, making rule management more scalable. Groups can contain custom application groups (user-defined collections of applications) and catalog web application groups (predefined web application categories).

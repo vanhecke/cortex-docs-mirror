@@ -1,7 +1,7 @@
 ---
 description: >-
-  Configure security settings such as session expiration, user login expiration,
-  and dashboard expiration.
+  Configure Cortex XSIAM security settings for session expiration, login
+  domains, approved IP ranges, inactive users, cookies, and report emails.
 ---
 
 # Configure security settings

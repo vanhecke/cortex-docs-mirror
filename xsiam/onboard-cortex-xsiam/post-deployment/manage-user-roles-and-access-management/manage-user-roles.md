@@ -1,3 +1,9 @@
+---
+description: >-
+  Create and manage Cortex XSIAM user roles with RBAC permissions, XQL dataset
+  access controls, and scoped access settings.
+---
+
 # Manage user roles
 
 {% hint style="warning" %}
@@ -15,9 +21,9 @@ Review the following topics:
 
 Manage user roles that are assigned to Cortex XSIAM users, user groups, or API keys. User roles enable you to define the type of access and actions a user can perform.
 
-You can only set dataset access permissions from a user role in Cortex XSIAM **Access Management** for the tenant. When creating user roles from the Cortex Gateway, these settings are disabled. By default, dataset access management is disabled, and users have access to all datasets. If you enable dataset access management, you must configure access permissions for each dataset type, and for each user role. When a dataset component is enabled for a particular role, the Issues and Cases pages include information about datasets.
+You can only set dataset access permissions from a user role in Cortex XSIAM **Access Management** for the tenant. When creating user roles from the Cortex Gateway, these settings are disabled. By default, dataset access management is disabled, and users have access to all datasets. If you enable dataset access management, you must configure access permissions for each dataset type and for each user role. When a dataset component is enabled for a particular role, the Issues and Cases pages include information about datasets.
 
-Be aware that even with scoped access to dataset rows applied, users can still indirectly access unauthorized dataset rows through dataset views and correlation rules. You can prevent this by ensuring that users don't have access to these dataset views and are unable to write correlation rules based on these datasets by enabling dataset access management for the relevant user roles, and limiting access to the applicable datasets. You may also want to consider not allowing these dataset-scoped users to write correlation rules, which we recommend as a best practice. For more information on row-level scoping, see Manage user scope.
+Be aware that even with scoped access to dataset rows applied, users can still indirectly access unauthorized dataset rows through dataset views and correlation rules. You can prevent this by ensuring that users don't have access to these dataset views and are unable to write correlation rules based on these datasets by enabling dataset access management for the relevant user roles and limiting access to the applicable datasets. You may also want to consider not allowing these dataset-scoped users to write correlation rules, which we recommend as a best practice. For more information on row-level scoping, see Manage user scope.
 
 <details>
 

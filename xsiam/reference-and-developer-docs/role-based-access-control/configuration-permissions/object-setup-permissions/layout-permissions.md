@@ -1,3 +1,9 @@
+---
+description: >-
+  Control access to case and issue layouts, including their layout rules in
+  Cortex XSIAM.
+---
+
 # Layout permissions
 
 Controls access within Object Setup (**Settings** → **Configurations** → **Object Setup**) to the following:

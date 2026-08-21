@@ -1,3 +1,7 @@
+---
+description: Configure cloud compliance permissions in Cortex XSIAM.
+---
+
 # Compliance - Cloud permissions
 
 Configure access to Cloud compliance, which allows organizations to track adherence against regulatory frameworks (e.g., CIS, NIST, PCI DSS), monitor cloud compliance violations, and manage compliance assessment schedules

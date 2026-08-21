@@ -1,3 +1,7 @@
+---
+description: Configure endpoint agent profiles and communication settings in Cortex XSIAM.
+---
+
 # Agent Profiles
 
 Defines agent behavior and configuration settings, including agent communication settings and proxy configurations.

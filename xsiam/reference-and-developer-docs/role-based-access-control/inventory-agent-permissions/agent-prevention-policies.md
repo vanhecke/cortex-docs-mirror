@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure endpoint prevention policies and protection settings in Cortex
+  XSIAM.
+---
+
 # Agent Prevention Policies
 
 Agent Prevention Policies define the security posture for endpoints.

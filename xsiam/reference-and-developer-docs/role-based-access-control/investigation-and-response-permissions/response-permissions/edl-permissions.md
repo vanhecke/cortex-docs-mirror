@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM External Dynamic Lists for firewall-enforced threat
+  blocking.
+---
+
 # EDL permissions
 
 EDL (External Dynamic List) enables security teams to:

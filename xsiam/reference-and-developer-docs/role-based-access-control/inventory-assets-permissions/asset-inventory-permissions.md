@@ -1,3 +1,7 @@
+---
+description: Control access to asset inventory data and metadata in Cortex XSIAM.
+---
+
 # Asset Inventory permissions
 
 Asset Inventory provides comprehensive visibility into organizational assets, such as a unified view of all assets (endpoints, cloud instances, domains, certificates), asset categorization and tagging, asset relationship mapping, and attack surface visibility.

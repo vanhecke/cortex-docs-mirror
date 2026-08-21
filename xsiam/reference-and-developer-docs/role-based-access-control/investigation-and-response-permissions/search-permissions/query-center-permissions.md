@@ -1,3 +1,7 @@
+---
+description: Manage access to write, run, schedule, and export XQL queries in Cortex XSIAM.
+---
+
 # Query Center permissions
 
 Controls access to the Query Center (under **Investigation & Response** → **Search**), which is the primary interface for writing, executing, and managing XQL queries in Cortex XSIAM. It is the core investigation tool that enables security analysts to search across all ingested data using a powerful query language. Key capabilities:

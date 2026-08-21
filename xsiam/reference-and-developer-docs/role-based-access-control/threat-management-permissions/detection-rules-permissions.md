@@ -1,5 +1,5 @@
 ---
-description: Configure Detection Rules permissions.
+description: Configure Detection Rules permissions in Cortex XSIAM.
 ---
 
 # Detection Rules permissions

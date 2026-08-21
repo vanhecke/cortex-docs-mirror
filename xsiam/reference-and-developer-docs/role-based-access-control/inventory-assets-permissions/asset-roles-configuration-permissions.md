@@ -1,3 +1,7 @@
+---
+description: Configure functional asset roles and endpoint assignments in Cortex XSIAM.
+---
+
 # Asset Roles configuration permissions
 
 Asset Roles Configuration allows organizations to define and manage specific functional roles for assets across their environment (such as Admin, User, or Server). By associating specific users and endpoints with these roles, security teams can enrich security events with role context and support role-based analytics and alerting. Users access these features by going to **Inventory** → **Assets** → **Asset Roles Configuration**.

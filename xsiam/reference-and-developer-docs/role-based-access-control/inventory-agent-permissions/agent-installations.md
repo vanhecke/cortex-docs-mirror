@@ -1,3 +1,7 @@
+---
+description: Manage Cortex XSIAM agent installation packages and deployments.
+---
+
 # Agent Installations
 
 **Agent Installations**

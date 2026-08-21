@@ -1,3 +1,9 @@
+---
+description: >-
+  Reference legacy Cortex XSIAM Analytics issue log formats for email and
+  syslog, including detection, network activity, user, device, and file fields.
+---
+
 # Analytics log format
 
 Cortex XSIAM Analytics logs issues as analytics issue logs. If you configure Cortex XSIAM to forward logs in the legacy format, each log record has the following format:

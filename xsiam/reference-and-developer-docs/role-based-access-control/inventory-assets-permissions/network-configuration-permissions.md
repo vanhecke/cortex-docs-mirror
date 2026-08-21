@@ -1,3 +1,7 @@
+---
+description: Configure network topology, ranges, and trusted networks in Cortex XSIAM.
+---
+
 # Network Configuration permissions
 
 Network Configuration (**Inventory** → **Assets** → **Network Configuration**) enables administrators to define and manage the organization's network topology, such as internal and external IP address ranges, internal domain suffixes, and trusted networks.

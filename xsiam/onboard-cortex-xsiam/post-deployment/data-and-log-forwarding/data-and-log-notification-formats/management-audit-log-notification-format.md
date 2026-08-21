@@ -1,3 +1,9 @@
+---
+description: >-
+  Reference Cortex XSIAM Management Audit Log notification formats for email and
+  syslog, including CEF field mappings and payload examples.
+---
+
 # Management Audit log notification format
 
 Cortex XSIAM forwards the Management Audit log to these external data sources:

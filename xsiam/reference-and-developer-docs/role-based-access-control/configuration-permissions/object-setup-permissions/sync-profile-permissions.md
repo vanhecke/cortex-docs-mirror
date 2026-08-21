@@ -1,3 +1,9 @@
+---
+description: >-
+  Control access to sync profiles for mirroring cases with external platforms 
+  in Cortex XSIAM.
+---
+
 # Sync Profile permissions
 
 Controls access to case mirroring profiles configuration in **Settings** → **Configurations** → **Object Setup** → **Issues** → **Sync Profiles**.

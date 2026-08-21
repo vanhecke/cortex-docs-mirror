@@ -9,5 +9,14 @@ You do not need to configure egress for email, Slack, or syslog forwarding. No p
 {% hint style="info" %}
 ### Note
 
-There are two options for configuring external applications. To configure relevant external applications before you begin creating forwarding notifications, follow the steps in the following topics using the menu path **Settings** → **Configurations** → **Integrations** → **External Applications**. You can also configure an external application as part of the workflow for configuring notification forwarding found at **Settings** → **Configurations** → **General** → **Notifications** → **Add Forwarding Notifications**. After defining the configuration and setting the scope of the notifications, you can select an existing external application or **Add Application**. After you choose **Add Application**, the steps are identical to those described in the following topics.
+You can configure external applications using either of these methods:
+
+* Pre-configuration: Navigate to **Settings → Configurations → Integrations → External Applications** and follow the setup guide for your specific service:
+  * [forward-notifications-to-amazon-sqs](configure-external-applications-for-forwarding/forward-notifications-to-amazon-sqs "mention")
+  * [forward-notifications-to-amazon-s3](configure-external-applications-for-forwarding/forward-notifications-to-amazon-s3 "mention")
+  * [forward-notifications-to-splunk](configure-external-applications-for-forwarding/forward-notifications-to-splunk "mention")
+  * [forward-notifications-to-webhook](configure-external-applications-for-forwarding/forward-notifications-to-webhook "mention")
+  * [integrate-a-syslog-receiver](configure-external-applications-for-forwarding/integrate-a-syslog-receiver "mention")
+  * [integrate-slack-for-outbound-notifications](configure-external-applications-for-forwarding/integrate-slack-for-outbound-notifications "mention")
+* In-workflow configuration: Navigate to **Settings → Configurations → General → Notifications → Add Forwarding Notifications**. Define the configuration and notification scope, then click **Add Application** and complete the setup steps for your chosen service.
 {% endhint %}

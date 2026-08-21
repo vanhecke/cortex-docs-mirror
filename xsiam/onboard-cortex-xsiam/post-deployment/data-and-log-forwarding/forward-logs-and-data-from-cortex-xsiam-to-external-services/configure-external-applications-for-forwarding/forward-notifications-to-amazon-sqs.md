@@ -1,14 +1,14 @@
 # Forward notifications to Amazon SQS
 
-Create the SQS queue
+### Create the SQS queue
 
 Log in to your AWS Management Console and create a new **Standard SQS queue**.
 
-Configure egress in Cortex Gateway
+### Configure egress in Cortex Gateway
 
 Before forwarding cases or issues to Amazon SQS, you need to configure egress. Only a user with Account Admin or Instance Admin permissions can configure egress.
 
-To configure egress, you need to enter the queue name. For example, if the full URL is https://sqs.region.amazonaws.com/account-id/queue-name, enter only `queue-name`.
+To configure egress, to enter the queue name. For example, if the full URL is https://sqs.region.amazonaws.com/account-id/queue-name, enter only `queue-name`.
 
 1. In the Cortex Gateway, go to **Permission Management** → **Egress Configurations** → **Path**.
 2. Select the account name and tenant.
@@ -16,7 +16,7 @@ To configure egress, you need to enter the queue name. For example, if the full 
 4. Enter the exact \<queue\_name>. For example, `my-example-queue`. Note that the path does not include HTTP or HTTPS.
 5. Add the configuration.
 
-Generate the authorized party ID
+### Generate the authorized party ID
 
 1. In Cortex XSIAM, go to **Settings** → **Configurations** → **Integrations** → **External Applications** → **Add Application** and select **Amazon SQS**.
 2. Enter the queue URL from Amazon SQS. Use the URL format rather than the ARN for this specific field.
@@ -24,7 +24,7 @@ Generate the authorized party ID
 4. After verification is successful, an authorized party ID is generated. Copy this ID for your AWS configuration.
 5. Leave this page open to complete the application configuration.
 
-Configure the IAM role and permissions in AWS
+### Configure the IAM role and permissions in AWS
 
 Cortex XSIAM needs permission to assume a role in your account.
 
@@ -75,7 +75,7 @@ You can authenticate using either an IAM role or IAM access keys.
       ```
 * **IAM access keys**: Verify the user associated with the access key and secret key has related permissions to accept the data.
 
-Complete external application configuration in Cortex XSIAM
+### Complete external application configuration in Cortex XSIAM
 
 1. Go back to Cortex XSIAM and enter the instance name and an optional description.
 2. Select either **IAM Role** or **IAM Access Keys**.
@@ -83,6 +83,6 @@ Complete external application configuration in Cortex XSIAM
    * For IAM access keys, enter the access key and secret key.
 3. Click **Test** to verify Cortex XSIAM can write a test object, then click **Connect**.
 
-Configure notification forwarding
+### Configure notification forwarding
 
 Follow the instructions for [Configure notification forwarding](../configure-notification-forwarding).

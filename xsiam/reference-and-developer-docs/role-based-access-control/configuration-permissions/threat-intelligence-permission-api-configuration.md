@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM Threat Intelligence API configuration.
+---
+
 # Threat Intelligence permission - API configuration
 
 Controls access to the configuration page for external threat intelligence API keys (Virus Total) on Settings → Configurations → Integrations → Threat Intelligence. This configuration enables the enrichment of indicators within the tenant using Virus Total.

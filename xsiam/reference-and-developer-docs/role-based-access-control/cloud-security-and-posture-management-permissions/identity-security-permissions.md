@@ -1,10 +1,14 @@
+---
+description: Configure Identity Security permissions in Cortex XSIAM.
+---
+
 # Identity Security permissions
 
 Identity Security provides centralized visibility and governance over both human and non-human identities across cloud, SaaS, and on-premises environments. Users access these features by going to Modules → Identity Security.
 
 Identity Security permissions controls the following permissions :
 
-* Cloud Identity Security (Posture Management): Focuses on identity posture, detecting misconfigured IAM policies, over-privileged accounts, inactive identities, and excessive permissions.&#x20;
+* Cloud Identity Security (Posture Management): Focuses on identity posture, detecting misconfigured IAM policies, over-privileged accounts, inactive identities, and excessive permissions.
 *   Identity Threat Detection and Response (ITDR): Focuses on real-time threat detection, identifying active attacks such as compromised credentials, privilege escalation, lateral movement, and suspicious authentication patterns.
 
     .

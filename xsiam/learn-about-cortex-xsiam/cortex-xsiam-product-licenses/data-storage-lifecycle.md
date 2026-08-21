@@ -1,10 +1,16 @@
+---
+description: >-
+  Understand the Cortex XSIAM data storage lifecycle, including hot and cold
+  storage, retention extensions, and Event Forwarding exports.
+---
+
 # Data storage lifecycle
 
 Cortex XSIAM data storage is managed in the Cortex XSIAM Data Layer. You receive data storage based on the amount associated with your licenses, determined by factors such as daily ingestion needs and the number of users. All licenses provide default retention periods, which can be extended for hot and cold storage.
 
 To determine your requirements, you must understand the differences between the available storage options. The following image shows examples of these differences:
 
-![Dataset\_storage\_timeline.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-4bf55a15315a2d858ff0eb96f2847a00f9500e72%2F27dd6b30ab1279048b24187ba6a8b4e9dd52b50a4f53d20905cd0b9b8d4c2c92.png?alt=media)
+![](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-4bf55a15315a2d858ff0eb96f2847a00f9500e72%2F27dd6b30ab1279048b24187ba6a8b4e9dd52b50a4f53d20905cd0b9b8d4c2c92.png?alt=media)
 
 <details>
 
@@ -70,7 +76,5 @@ To optimize your data strategy and prevent data loss, consider the following bes
 </details>
 
 {% hint style="info" %}
-### Tip
-
 You can view details about your Cortex XSIAM licenses by selecting **Settings** → **Cortex XSIAM License**.
 {% endhint %}

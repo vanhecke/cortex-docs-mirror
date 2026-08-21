@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM interactive endpoint shell access for investigation and
+  remediation.
+---
+
 # Live Terminal permissions
 
 Live Terminal enables security teams to establish real-time interactive shell sessions with endpoints for investigation, forensic analysis, and remediation activities.

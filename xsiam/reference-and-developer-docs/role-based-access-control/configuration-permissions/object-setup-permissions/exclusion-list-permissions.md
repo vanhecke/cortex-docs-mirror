@@ -1,3 +1,9 @@
+---
+description: >-
+  Control access to manage excluded threat indicators and their exclusion
+  settings in Cortex XSIAM.
+---
+
 # Exclusion List permissions
 
 Controls access to the indicator exclusion list configuration under **Settings** → **Configurations** → **Object Setup** → **Indicators** → **Exclusion List**. This governs the permanent exclusion of indicators such as IP addresses, domains, URLs, file hashes, and email addresses. It is primarily used for:

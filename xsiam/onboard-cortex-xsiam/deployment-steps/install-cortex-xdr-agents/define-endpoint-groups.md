@@ -1,3 +1,9 @@
+---
+description: >-
+  Create and manage static or dynamic Cortex XDR Agent endpoint groups to target
+  security policies and actions by endpoint attributes.
+---
+
 # Define endpoint groups
 
 You can define an endpoint group and then apply policy rules and manage specific endpoints. If you set up Cloud Identity Engine, you can also leverage your Active Directory user, group, and computer details to define endpoint groups.

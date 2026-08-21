@@ -1,17 +1,23 @@
-# Engine IP addresses (outbound)
+---
+description: >-
+  Configure firewall allowlists for Cortex XSIAM engine outbound IP addresses by
+  deployment region.
+---
 
-These are specific regional IP addresses used for engines. If your automation playbooks or scripts need to access On-prem resources (for example, querying Active Directory, connecting to an internal GitLab instance), the traffic will originate from these IPs. Engine outbound refers to the traffic originating from these engines and directed toward your network.
+# Cortex XSIAM engine outbound IP addresses
+
+Use these Cortex XSIAM engine outbound IP addresses to configure firewall allowlists by deployment region. Automation playbooks and scripts use these IPs to access on-premises resources, such as Active Directory or internal GitLab.
 
 APP-ID: None
 
-**Americas**
+### Cortex XSIAM engine IP addresses in the Americas
 
 | Region             | IP Addresses                 |
 | ------------------ | ---------------------------- |
 | United States (US) | 35.225.156.101, 34.69.88.119 |
 | Canada (CA)        | 35.203.57.162, 35.203.90.79  |
 
-**EMEA (Europe, Middle East, Africa)**
+### Cortex XSIAM engine IP addresses in EMEA
 
 | Region                                | IP Addresses                  |
 | ------------------------------------- | ----------------------------- |
@@ -29,7 +35,7 @@ APP-ID: None
 | United Kingdom (UK)                   | 34.142.3.42, 34.142.44.136    |
 | Finland (FI)                          | 35.228.175.228, 35.228.44.44  |
 
-**JPAC (Asia-Pacific)**
+### Cortex XSIAM engine IP addresses in JPAC
 
 | Region           | IP Addresses                  |
 | ---------------- | ----------------------------- |

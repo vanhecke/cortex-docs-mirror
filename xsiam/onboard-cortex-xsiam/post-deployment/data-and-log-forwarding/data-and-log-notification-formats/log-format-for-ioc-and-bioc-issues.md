@@ -1,3 +1,9 @@
+---
+description: >-
+  Reference legacy Cortex XSIAM IOC and BIOC issue log formats for email and
+  syslog, including fields, prefixes, and categories.
+---
+
 # Log format for IOC and BIOC issues
 
 Cortex XSIAM logs IOC and BIOC issues. If you configure Cortex XSIAM to forward logs in the legacy format, when issue logs are forwarded from Cortex XSIAM, each log record has the following format:

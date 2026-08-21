@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage access to Cortex XSIAM forensic investigations, collections, and threat
+  hunts.
+---
+
 # Forensics permissions
 
 Controls access to Forensics (**Investigation & Response** → **Forensics**). Forensic investigations streamline your case response, data collection, threat hunting, and analysis of your endpoints.

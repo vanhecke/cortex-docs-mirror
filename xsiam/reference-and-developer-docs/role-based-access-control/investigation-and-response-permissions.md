@@ -1,13 +1,13 @@
 ---
 description: >-
-  Configure investigation and response permissions, which include search,
-  response, and automation permissions.
+  Configure role permissions for search, response, and automation capabilities
+  in Cortex XSIAM.
 ---
 
 # Investigation and Response permissions
 
 Investigation and Response permissions are split as follows:
 
-* Search permissions: Query Library, Query Center, Forensics, Host Insights, and Graph Search.
-* Response permissions: Action Center, EDL, Agent Scripts Library, and Live Terminal.
-* Automation permissions: Playbooks, Scripts, Playground, and Automation Exclusion Center.
+* **Search permissions:** Query Library permissions, Query Center permissions, Forensics permissions, Host Insights permissions, and Graph Search permissions.
+* **Response permissions:** Action Center permissions, EDL permissions, Agent Scripts Library permissions, and Live Terminal permissions.
+* **Automation permissions:** Playbook permissions, Script permissions, Jobs permissions, Playground permissions, and Automation Exclusion Center permissions.

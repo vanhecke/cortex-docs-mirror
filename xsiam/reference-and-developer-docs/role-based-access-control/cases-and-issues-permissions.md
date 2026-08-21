@@ -1,5 +1,7 @@
 ---
-description: Set up Cases and Issues permissions.
+description: >-
+  Control access to investigate, manage, and respond to cases and issues in
+  Cortex XSIAM.
 ---
 
 # Cases and Issues permissions

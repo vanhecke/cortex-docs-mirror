@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure access to case domains, custom statuses, and resolution statuses in
+  Cortex XSIAM.
+---
+
 # Case Properties permissions
 
 Controls access to the following tabs from Cases (**Settings** → **Configurations** → **Object Setup** → **Cases**):

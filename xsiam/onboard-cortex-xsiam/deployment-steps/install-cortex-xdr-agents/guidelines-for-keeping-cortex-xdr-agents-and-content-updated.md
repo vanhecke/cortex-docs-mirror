@@ -1,3 +1,9 @@
+---
+description: >-
+  Plan phased Cortex XDR agent upgrades and content updates with rollout
+  schedules, staging content, and bandwidth controls.
+---
+
 # Guidelines for keeping Cortex XDR agents and content updated
 
 This topic covers a recommended strategy and best practices for managing agent and content updates to help reduce the risk of downtime in a production environment, while helping ensure timely delivery of security content and capabilities.
@@ -12,7 +18,7 @@ When planning Cortex XDR agent upgrades and content updates, consult with the ap
 
 Cortex XSIAM can be configured to manage the deployment of agent and content updates by adjusting the following settings:
 
-### AGENT UPGRADE SETTINGS
+### Agent upgrade settings
 
 **Agent settings per endpoint:**
 
@@ -22,7 +28,7 @@ Cortex XSIAM can be configured to manage the deployment of agent and content upd
 
 **Global agent settings:** Configure the number of parallel upgrades to apply to all endpoints in your organization.
 
-### CONTENT UPDATE SETTINGS
+### Content update settings
 
 **Content updates per endpoint:**
 

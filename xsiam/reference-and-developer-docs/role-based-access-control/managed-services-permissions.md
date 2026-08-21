@@ -6,11 +6,7 @@ description: >-
 
 # Managed Services permissions
 
-Controls access to the **Managed Services** page for the Unit 42 Managed Threat Hunting (MTH) and Managed Detection & Response (MDR).
-
 {% hint style="info" %}
-### Notice
-
 Requires a Managed Threat Hunting or Managed Detection and Response license. The tenant must be paired as a managed service tenant.
 {% endhint %}
 

@@ -1,3 +1,7 @@
+---
+description: Configure Application Security scan permissions in Cortex XSIAM.
+---
+
 # Application Security - Scans permissions
 
 Configure the following permission for Application Security Scans:

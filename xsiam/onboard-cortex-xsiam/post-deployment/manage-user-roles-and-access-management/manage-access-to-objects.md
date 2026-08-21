@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM per-object access for dashboards, reports, playbooks,
+  scripts, and saved XQL queries using owner, editor, and viewer roles.
+---
+
 # Manage access to objects
 
 Cortex XSIAM enforces least-privileged access by allowing you to manage access for individual instances of custom (user-defined) objects. Access management for these items is handled through a common experience for per-object access, which allows you to treat these tools as distinct objects with their own access settings.

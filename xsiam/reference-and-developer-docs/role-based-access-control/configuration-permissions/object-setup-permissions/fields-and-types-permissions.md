@@ -1,3 +1,9 @@
+---
+description: >-
+  Control access to custom fields, indicator types, and SLA rule configurations
+  in Cortex XSIAM.
+---
+
 # Fields and Types permissions
 
 Controls access to custom fields and indicator types within Object Setup **Settings** → **Configurations** → **Object Setup**:

@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM playbooks and automated response workflows.
+---
+
 # Playbook permissions
 
 Playbooks are automated response workflows. By default, the **Playbooks** permission is set to **Disabled**. To set it to **Enabled**, you must first set **Scripts** to **Enabled**. When you enable **Playbooks**, you can then set **Cases and Issues** to View or View/Edit.

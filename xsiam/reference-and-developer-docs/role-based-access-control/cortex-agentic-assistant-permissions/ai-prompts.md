@@ -1,10 +1,8 @@
 ---
-description: Configure AI Prompts permissions.
+description: Configure AI Prompts permissions in Cortex XSIAM.
 ---
 
 # AI Prompts
-
-**AI Prompts**
 
 Controls access to the AI Prompts Library (**Investigation & Response** → **Automation** → **AI Prompts**), where users create and manage reusable prompt templates (including system instructions and few-shot examples) used to guide the LLM's behavior.
 

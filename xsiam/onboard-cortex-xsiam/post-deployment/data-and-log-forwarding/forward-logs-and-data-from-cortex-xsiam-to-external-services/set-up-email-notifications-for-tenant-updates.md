@@ -1,3 +1,9 @@
+---
+description: >-
+  Set up Cortex XSIAM email notifications for tenant upgrades, hotfixes,
+  downtime warnings, and Management Audit Log events.
+---
+
 # Set up email notifications for tenant updates
 
 Your Cortex tenant generates Management Audit Logs throughout the tenant update lifecycle. This includes version upgrades and hotfixes, covering both the pending (before) and completed (after) phases of a scheduled update.

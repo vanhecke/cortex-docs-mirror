@@ -1,3 +1,7 @@
+---
+description: Manage access to the Cortex XSIAM playground for testing commands and scripts.
+---
+
 # Playground permissions
 
 Controls Playground **Investigation & Response** → **Automation** → **Playground**, which is a testing environment for commands and scripts that is not connected to a live (active) investigation.

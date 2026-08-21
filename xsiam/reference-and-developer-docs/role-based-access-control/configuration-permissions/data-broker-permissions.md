@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM Data Broker configuration and operations.
+---
+
 # Data Broker permissions
 
 Data Broker permissions control access to the Broker VM infrastructure.
@@ -38,4 +42,3 @@ Managing Broker VMs effectively requires visibility into the data sources they c
 | Live Terminal         | View             | Remote terminal access to Broker VMs for troubleshooting. Recommended.                                                             |
 | General Configuration | View             | Server settings may affect Broker behavior. Recommended.                                                                           |
 | Query Center          | View             | Query Broker-related data for troubleshooting collection issues. Recommended.                                                      |
-

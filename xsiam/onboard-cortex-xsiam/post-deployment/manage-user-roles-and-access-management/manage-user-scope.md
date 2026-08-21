@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XSIAM Scope-Based Access Control (SBAC) for users, groups,
+  and API keys across assets, cases, endpoints, and dataset rows.
+---
+
 # Manage user scope
 
 {% hint style="warning" %}
@@ -259,8 +265,8 @@ Make sure to assign the required default granular scoping for users. This depend
            The Scope field for the dataset that you added the filter on is updated with the query.
 
            In the above example, the Scope field displays `_collector_name = “bu2_collector”`.
-4. Click Save.&#x20;
-5. Repeat steps 2 to 4 until you have configured all users, user groups, and API keys with the correct granular scoping access.&#x20;
+4. Click Save.
+5. Repeat steps 2 to 4 until you have configured all users, user groups, and API keys with the correct granular scoping access.
 6.  Enable granular scoping in Cortex XSIAM.
 
     1. Select Settings → Configurations → General → Server Settings, and select the Enable Scope-Based Access Control toggle.

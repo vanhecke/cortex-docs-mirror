@@ -1,8 +1,12 @@
+---
+description: Configure Data Security permissions in Cortex XSIAM.
+---
+
 # Data Security permissions
 
 The Data Security permission includes the following permissions:
 
-* Endpoint DLP: Includes permissions such as Data-in-motion rules and Endpoint Applications.&#x20;
+* Endpoint DLP: Includes permissions such as Data-in-motion rules and Endpoint Applications.
 * Data Security: Data Security Posture Management (DSPM)
 
 This section controls access to the DSPM features, which provide deep visibility into cloud data assets (such as storage buckets, databases, and backups) and their underlying data objects (files, columns, and tables). It also controls access to the Data Pattern Inventory, Data Security Detection Rules, and the Data Security Issues queue.

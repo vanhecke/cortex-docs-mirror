@@ -1,8 +1,14 @@
-# FedRamp and the US Federal Government required resources
+---
+description: >-
+  Configure required Cortex XSIAM network resources for FedRAMP and US federal
+  government deployments.
+---
 
-The following table lists the required resources for the federal government of the United States, including FQDNs, IP addresses, ports, and App-ID coverage for your deployment:
+# FedRAMP and US federal Cortex XSIAM required resources
 
-**Egress and engine resources**
+Configure firewall access for FedRAMP and US federal government Cortex XSIAM deployments. The following tables list required FQDNs, IP addresses, ports, and App-ID coverage.
+
+### Cortex XSIAM egress and engine resources
 
 All ports are 443 unless otherwise specified.
 
@@ -13,7 +19,7 @@ All ports are 443 unless otherwise specified.
 | Outbound IPs for Engines | FedRAMP Moderate                     | 34.123.127.174:443, 34.71.135.18:443 |
 | FedRAMP High             | 34.123.153.175:443, 35.223.253.2:443 | ​                                    |
 
-**Core Cortex XSIAM communication**
+### Core Cortex XSIAM communication resources
 
 These resources handle agent registration, heartbeats, data uploads, and API connections. All ports are 443 unless specified otherwise.
 
@@ -27,7 +33,7 @@ These resources handle agent registration, heartbeats, data uploads, and API con
 | Live terminalUsed in live terminal flow.                                                                                                                                                                     | `wss://lrc-fed.paloaltonetworks.com`                 | 35.188.188.91     | `cortex-xdr`               |
 | App proxy                                                                                                                                                                                                    | `app-proxy.federal.paloaltonetworks.com`             | 35.186.217.42     | N/a                        |
 
-**Content updates and storage (GCP)**
+### Cortex XSIAM content updates and GCP storage
 
 These resources are hosted on Google Cloud Platform. All ports are 443 unless otherwise specified.
 
@@ -39,7 +45,7 @@ These resources are hosted on Google Cloud Platform. All ports are 443 unless ot
 | Content updatesUsed to download content updates.                                                                       | `global-content-profiles-policy-prod-fr.storage.googleapis.com` | IP ranges in GCP | `cortex-xdr` |
 | Scanning verdictsUsed to download extended verdict request results in scanning.                                        | `panw-xdr-evr-prod-fr.storage.googleapis.com`                   | IP ranges in GCP | `cortex-xdr` |
 
-**Broker VM resources**
+### Cortex XSIAM Broker VM resources
 
 Required only for deployments utilizing Broker VM features. All ports are 443, unless otherwise stated.
 
@@ -50,7 +56,7 @@ Required only for deployments utilizing Broker VM features. All ports are 443, u
 | <p>XSIAM gateway</p><p>Broker VM 3.0 and above</p>                                                                                      | `xsiam-gateway`                                     | N/a            |             N/a            |
 | <p>Time sync (NTP)</p><p>Used by the Broker VM to ensure accurate timestamping for forwarded logs.</p>                                  | N/a                                                 | UDP port 123   |             N/a            |
 
-**Authentication (SSO)**
+### Cortex XSIAM authentication and SSO
 
 Required for administrator login and Single Sign-On. All ports are 443 unless specified
 
@@ -59,7 +65,7 @@ Required for administrator login and Single Sign-On. All ports are 443 unless sp
 | Identity service | `identity.paloaltonetworks.com` | 34.107.215.35         |   N/a  |
 | Login service    | `login.paloaltonetworks.com`    | 34.107.190.184        |   N/a  |
 
-**Ingress: Third-party data collection**
+### Cortex XSIAM ingress for third-party data collection
 
 Allow traffic from these IPs to your network when collecting data from SaaS and Cloud resources.
 
@@ -67,6 +73,6 @@ Allow traffic from these IPs to your network when collecting data from SaaS and 
 | ---------------------------------------------------- | ------------ |
 | <ul><li>34.68.217.16</li><li>34.69.175.202</li></ul> | `cortex-xdr` |
 
-**Log forwarding to a syslog receiver**
+### Cortex XSIAM log forwarding to a syslog receiver
 
 If you want to send logs to a syslog receiver, you need to enable access to Cortex XSIAM IP addresses for your region in your firewall. For more information, see [Integrate a syslog receiver](../../../post-deployment/data-and-log-forwarding/forward-logs-and-data-from-cortex-xsiam-to-external-services/configure-external-applications-for-forwarding/integrate-a-syslog-receiver).

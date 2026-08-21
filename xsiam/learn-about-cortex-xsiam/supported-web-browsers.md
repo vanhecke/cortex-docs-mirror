@@ -1,3 +1,7 @@
+---
+description: View the web browsers and minimum browser versions supported for Cortex XSIAM.
+---
+
 # Supported web browsers
 
 Cortex XSIAM supports the following web browsers:

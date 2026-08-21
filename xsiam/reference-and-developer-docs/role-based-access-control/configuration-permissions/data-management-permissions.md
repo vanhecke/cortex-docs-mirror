@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM data management and retention settings.
+---
+
 # Data Management permissions
 
 Controls access to dataset configuration, data transformation rules, and data lifecycle management in Cortex XSIAM through **Settings** → **Configurations** → **Data Management**.

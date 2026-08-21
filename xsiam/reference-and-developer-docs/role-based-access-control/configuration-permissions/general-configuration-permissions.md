@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM general settings and system-wide configuration.
+---
+
 # General Configuration permissions
 
 Controls access to core platform settings that affect system-wide behavior, such as server settings, timezone settings, and system preferences. Access these through **Settings** → **Configurations** → **General** → **Server Settings**.

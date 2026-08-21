@@ -1,3 +1,9 @@
+---
+description: >-
+  Review endpoint metadata, EDR events, Windows event logs, and performance
+  metrics collected by Cortex XDR agents.
+---
+
 # Endpoint data collection
 
 When the Cortex XDR agent generates an issue on endpoint activity, a minimum set of metadata about the endpoint is sent to the server.

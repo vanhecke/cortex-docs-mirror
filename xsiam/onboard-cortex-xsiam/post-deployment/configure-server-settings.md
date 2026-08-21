@@ -1,7 +1,7 @@
 ---
 description: >-
-  Configure server settings such as keyboard shortcuts, timezone, and timestamp
-  format.
+  Configure Cortex XSIAM server settings for localization, branding, AI, access
+  control, data ingestion, security, and support access.
 ---
 
 # Configure server settings

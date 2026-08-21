@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XSIAM forwarding notifications for issues, cases, and audit
+  logs with scoped filters, formats, grouping, and external destinations.
+---
+
 # Configure notification forwarding
 
 After you integrate with an external service such as Slack, a syslog server, Amazon S3, Amazon SQS, Webhook, or Splunk, create a forwarding configuration that specifies the data or log type you want to forward. You can configure notifications for issues, cases, and logs. To send reports to email or Slack, see Run or schedule reports.
@@ -16,12 +22,12 @@ How to configure notifications
 
     *   **Issues:** Send notifications for specific issue types.
 
-        <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><ul><li><strong>Forwarding destinations</strong>: Only issues and cases can be forwarded to Slack, Splunk, Amazon SQS, Amazon S3, or Webhook.</li><li><strong>Notification forwarding by domain</strong>: To configure notification forwarding for issues by domain, select <strong>Issues</strong> and filter the Issues table by <strong>Issue Domain</strong>.</li><li><p><strong>Alert vs. issue format</strong>:By default, new configurations use the issue format, but you can select the alert format if needed, when forwarding to email, Slack, or a syslog server. You cannot forward issues in the alert format to Splunk, Amazon SQS, Amazon S3, or Webhook.</p><p>Existing legacy configurations are not automatically updated and continue to send notifications in the alert format. To use the issue format, edit the existing configuration.</p></li></ul></div>
+        <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><ul><li><strong>Forwarding destinations</strong>: Only issues and cases can be forwarded to Slack, Splunk, Amazon SQS, Amazon S3, or Webhook.</li><li><strong>Notification forwarding by domain</strong>: To configure notification forwarding for issues by domain, select <strong>Issues</strong> and filter the Issues table by <strong>Issue Domain</strong>.</li><li><p><strong>Alert vs. issue format</strong>: By default, new configurations use the issue format, but you can select the alert format if needed when forwarding to email, Slack, or a syslog server. You cannot forward issues in the alert format to Splunk, Amazon SQS, Amazon S3, or Webhook.</p><p>Existing legacy configurations are not automatically updated and continue to send notifications in the alert format. To use the issue format, edit the existing configuration.</p></li></ul></div>
     * **Agent Audit Logs:** Send notifications for audit logs reported by your Cortex XDR agents.
     * **Management Audit Logs:** Send notifications for audit logs about events related to your Cortex XSIAM tenant.
-    * **Cases**—Send notifications for specific cases.
+    * **Cases:** Send notifications for specific cases.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>Not all data and log types can be sent to all external services. For more information, see <a href="">Forward logs and data from Cortex XSIAM to external services</a>.</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>Not all data and log types can be sent to all external services. For more information, see <a href="">Forward logs and data from Cortex XSIAM to external services</a>.</p></div>
 4. (Optional) Enter a description of the forwarding configuration.
 5.  Click **Next**, and under **Scope**, filter which issues, cases, or logs you want included in a notification.
 

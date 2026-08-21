@@ -1,3 +1,7 @@
+---
+description: Manage global prevention exceptions and their endpoint scope in Cortex XSIAM.
+---
+
 # Global Exceptions
 
 Global Exceptions allow security teams to exclude specific items from detection, such as creating hash-based exceptions (SHA256, MD5) and defining path-based exceptions for files and folders.

@@ -1,23 +1,29 @@
-# Inbound source resources
+---
+description: >-
+  Configure firewall allowlists for Cortex XSIAM inbound source IP addresses by
+  deployment region.
+---
 
-Allow these IPs to connect inbound to your network. These are required for communication with your resources (Broker VM, Syslog) and for collecting data from your SaaS/Cloud environments.
+# Cortex XSIAM inbound source IP addresses
+
+Use these Cortex XSIAM inbound source IP addresses to configure firewall allowlists by deployment region. They support inbound communication with Broker VM and syslog resources, plus data collection from SaaS and cloud environments.
 
 Configure your firewall (and relevant receivers) to allow inbound traffic from these Source IPs.
 
-Service definitions
+### Cortex XSIAM inbound service definitions
 
 * Infrastructure: Communication to your on-premise resources (for example, Broker VM, Syslog)
 * Data collection: Traffic from Cortex XSIAM to your network to collect data.
 * App-ID: `cortex-xdr`
 
-**Americas**
+### Cortex XSIAM inbound IP addresses in the Americas
 
 | Region             | Infrastructure IP Addresses (allow inbound) | Data Collection IP Addresses (allow inbound) |
 | ------------------ | ------------------------------------------- | -------------------------------------------- |
 | United States (US) | 34.132.108.184, 34.69.63.16                 | 34.66.69.154, 35.202.21.123                  |
 | Canada (CA)        | 35.203.108.13, 35.203.101.162               | 34.95.33.72, 34.95.62.136                    |
 
-**EMEA (Europe, Middle East, Africa)**
+### Cortex XSIAM inbound IP addresses in EMEA
 
 | Region                                | Infrastructure IP Addresses (allow inbound) | Data Collection IP Addresses (allow inbound) |
 | ------------------------------------- | ------------------------------------------- | -------------------------------------------- |
@@ -35,7 +41,7 @@ Service definitions
 | United Kingdom (UK)                   | 35.242.180.163, 34.105.173.229              | 34.105.227.146, 34.105.137.22                |
 | Finland (F)                           | 34.88.97.182, 34.88.189.1                   | 35.228.192.167, 34.88.193.126                |
 
-**JPAC (Asia-Pacific)**
+### Cortex XSIAM inbound IP addresses in JPAC
 
 | Region           | Infrastructure IP Addresses (allow inbound) | Data Collection IP Addresses (allow inbound) |
 | ---------------- | ------------------------------------------- | -------------------------------------------- |

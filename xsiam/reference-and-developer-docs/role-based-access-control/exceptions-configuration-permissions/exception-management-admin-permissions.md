@@ -1,16 +1,12 @@
 ---
-description: Configure Exception Management Admin permissions.
+description: Configure Exception Management Admin permissions in Cortex XSIAM.
 ---
 
 # Exception Management Admin permissions
 
-**Exception Management Admin permissions**
-
-Exception Management Admin controls access to the **Exception Rules** tab on the **Issue Exclusions and Exceptions** page under **Settings** → **Issue Exception & Exclusion** . Exception rules differ from exclusion rules in that they define conditions under which issues are flagged as exceptions that may require approval before being acted upon, rather than being silently suppressed.
+Exception Management Admin controls access to the **Exception Rules** tab on the **Issue Exclusions and Exceptions** page under **Settings** → **Issue Exception & Exclusion**. Exception rules differ from exclusion rules in that they define conditions under which issues are flagged as exceptions that may require approval before being acted upon, rather than being silently suppressed.
 
 {% hint style="info" %}
-### Note
-
 Requires **Issue Exclusions** permission (at least View) to access the page. Without Issue Exclusions, the entire page is hidden.
 {% endhint %}
 

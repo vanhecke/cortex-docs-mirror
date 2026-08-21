@@ -1,8 +1,7 @@
 ---
 description: >-
-  Stay informed and updated about events in your system by forwarding logs and
-  data to an external service, such as a syslog receiver, a Slack channel, or an
-  email account.
+  Configure Cortex XSIAM notifications and forward logs, alerts, cases, and
+  issues to email, Slack, syslog, and third-party services.
 ---
 
 # Data and log forwarding

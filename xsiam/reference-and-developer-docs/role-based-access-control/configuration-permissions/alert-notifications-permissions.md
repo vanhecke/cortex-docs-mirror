@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM alert notification rules, templates, and forwarding
+  settings.
+---
+
 # Alert Notifications permissions
 
 Controls access to configure notification rules, templates, and external integration forwarding.:

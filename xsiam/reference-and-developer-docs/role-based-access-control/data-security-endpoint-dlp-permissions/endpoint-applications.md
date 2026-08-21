@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage endpoint applications monitored by Data Loss Prevention in Cortex
+  XSIAM.
+---
+
 # Endpoint Applications
 
 Endpoint Applications is a catalog of applications that can be referenced in Data-in-motion Rules. It includes predefined applications (web applications, local file-sharing applications, cloud storage applications, USB devices) and allows creation of custom local and web applications. Each application entry defines process names, URLs/domains, and application type that the DLP engine uses to identify data movement channels.

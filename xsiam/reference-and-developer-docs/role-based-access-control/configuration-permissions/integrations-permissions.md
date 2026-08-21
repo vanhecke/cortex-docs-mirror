@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage access to Cortex XSIAM integration configuration and available
+  instances.
+---
+
 # Integrations Permissions
 
 Controls access to the Integration Permissions page, a command-level access control layer that determines which roles are allowed to execute specific integration commands. This is distinct from the Integrations permission, which controls access to integration instances and their configuration.

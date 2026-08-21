@@ -1,5 +1,5 @@
 ---
-description: Configure issue exclusion permissions.
+description: Configure issue exclusion permissions in Cortex XSIAM.
 ---
 
 # Exceptions Configuration permissions

@@ -1,3 +1,7 @@
+---
+description: Manage access to the Cortex XSIAM Cloud Security Command Center.
+---
+
 # Cloud Security Command Center permissions
 
 Controls the ability to view and edit the Cortex Cloud Command Center, which is the central command center for cloud security, and includes capabilities like Cloud Security Posture Management (CSPM), Application Security Posture Management (ASPM), and Data Security Posture Management (DSPM).

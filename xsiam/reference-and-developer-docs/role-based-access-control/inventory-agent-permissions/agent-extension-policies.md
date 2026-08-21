@@ -1,6 +1,10 @@
+---
+description: Configure endpoint extension policies and capabilities in Cortex XSIAM.
+---
+
 # Agent Extension Policies
 
-Manage profiles for additional endpoint capabilities, such as configuring third-party integrations, managing agent extension modules, and defining extension deployment policies.&#x20;
+Manage profiles for additional endpoint capabilities, such as configuring third-party integrations, managing agent extension modules, and defining extension deployment policies.
 
 {% hint style="info" %}
 ### Note

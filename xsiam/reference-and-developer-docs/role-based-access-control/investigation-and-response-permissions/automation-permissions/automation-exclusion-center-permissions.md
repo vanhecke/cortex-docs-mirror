@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM automation exclusions for commands, scripts, and
+  remediation.
+---
+
 # Automation Exclusion Center permissions
 
 Controls access to the Automation Exclusion Center (**Settings** → **Configurations** → **Automation** → **Automation Exclusion Center**), which prevents a command or script from a remediation action. For more information, see [Automation Exclusion Center](../../../../configure-cortex-xsiam/automations/automation-exclusion-center).

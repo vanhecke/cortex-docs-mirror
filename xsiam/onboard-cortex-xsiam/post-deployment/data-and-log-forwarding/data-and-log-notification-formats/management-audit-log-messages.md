@@ -1,3 +1,9 @@
+---
+description: >-
+  Reference Cortex XSIAM Management Audit Log message types for administrative,
+  authentication, automation, endpoint, policy, and integration activity.
+---
+
 # Management audit log messages
 
 Cortex XSIAM management audit log messages are sent based on the various log types, for example, Action Center, Issue Rules, or Authentication.

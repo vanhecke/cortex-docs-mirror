@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage access to Cortex XSIAM Command Center dashboards and their security
+  metrics.
+---
+
 # Command Center Dashboard permissions
 
 Controls access to XSIAM Command Center and Cortex Command Center.

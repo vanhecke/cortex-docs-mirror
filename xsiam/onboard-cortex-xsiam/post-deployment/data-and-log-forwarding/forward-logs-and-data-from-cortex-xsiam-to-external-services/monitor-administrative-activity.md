@@ -1,3 +1,9 @@
+---
+description: >-
+  Monitor Cortex XSIAM administrative and investigative activity with Management
+  Audit Logs, filters, 365-day retention, and notification forwarding.
+---
+
 # Monitor administrative activity
 
 From **Settings** → **Management Audit Logs**, you can track the status of all administrative and investigative actions. Cortex XSIAM stores audit logs for 365 days (instead of 180 days, which was the retention period in the past). Use the page filters to narrow the results or manage tables to add or remove fields as needed.

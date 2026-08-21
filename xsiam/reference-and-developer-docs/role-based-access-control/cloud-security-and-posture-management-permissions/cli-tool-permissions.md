@@ -1,3 +1,7 @@
+---
+description: Configure CLI Tool permissions in Cortex XSIAM.
+---
+
 # CLI Tool permissions
 
 CLI Tools (Cortex CLI) provides a unified command interface to efficiently scan Cloud Workload Protection (CWP), API Security, and Application Security environments with a single installation, enabling integration of security checks into development processes. It controls access to view the CLI Tools setup within the **Data Sources & Integrations** page (**Settings** → **Data Sources & Integrations**), download the CLI, and generate the required API keys.

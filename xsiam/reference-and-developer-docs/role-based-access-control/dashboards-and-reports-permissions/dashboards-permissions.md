@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM dashboards, widgets, and dashboard sharing.
+---
+
 # Dashboards permissions
 
 Controls the ability to monitor security posture through visual data and documented summaries.

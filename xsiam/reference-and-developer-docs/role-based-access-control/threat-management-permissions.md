@@ -1,5 +1,5 @@
 ---
-description: Configure Detection Rules and Threat Intel permissions.
+description: Configure Detection Rules and Threat Intel permissions in Cortex XSIAM.
 ---
 
 # Threat Management permissions

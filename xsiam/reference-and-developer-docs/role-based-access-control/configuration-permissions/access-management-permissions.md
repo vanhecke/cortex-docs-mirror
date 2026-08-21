@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM users, roles, and access management settings.
+---
+
 # Access management permissions
 
 Set permissions for Users, Roles, User Groups, and Authentication Settings under Access Management (**Settings** → **Configurations** → **Access Management**).

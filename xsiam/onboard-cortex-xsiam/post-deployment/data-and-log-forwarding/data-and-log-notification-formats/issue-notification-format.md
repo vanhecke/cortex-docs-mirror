@@ -1,4 +1,14 @@
-# Issue notification format
+---
+description: >-
+  Reference Cortex XSIAM issue notification formats and payloads for email,
+  Slack, syslog, Splunk, Amazon S3, Amazon SQS, and webhooks.
+---
+
+# Cortex XSIAM issue notification format
+
+Understand Cortex XSIAM issue notification formats and payloads for each supported forwarding destination.
+
+### Issue notification destinations
 
 Issues can be forwarded to the following:
 
@@ -11,7 +21,7 @@ Issues can be forwarded to the following:
 For issues with relevant assets, issue notifications sent to Amazon S3, Amazon SQS, Webhook, Splunk, and email provide asset and remediation information including the asset name, cloud resource name, asset tags, account name, region, and evidence.
 {% endhint %}
 
-**Email account**
+### **Email account**
 
 Cortex XSIAM sends issues to email accounts based on the settings you configure. Email messages also include an issue code snippet of the fields according to the columns in the Issue table.
 
@@ -20,9 +30,7 @@ The notification format is as follows:
 * If only one issue exists in the queue, a single-issue email format is sent.
 * If more than one issue was grouped in the time frame, all the issues in the queue are forwarded together in a grouped email format.
 
-**Example**
-
-Single-issue email message
+#### **Example:** Single-issue email message
 
 ```
 Email Subject: Issue: <issue_name>
@@ -40,10 +48,7 @@ Email Subject: Issue: <issue_name>
 	    Case: <link to the tenant case view>
 ```
 
-\
-**Example**
-
-Single-issue email message with asset
+#### **Example:** Single-issue email message with asset
 
 ```
 Email Subject: Issue: <issue_name>
@@ -69,10 +74,7 @@ Email Subject: Issue: <issue_name>
 	    Case: <link to the tenant case view>
 ```
 
-\
-**Example**
-
-Grouped issue email message
+#### **Example:** Grouped issue email message
 
 ```
 Email Subject: Issues: <first_highest_severity_issue> + x others
@@ -102,10 +104,7 @@ Email Subject: Issues: <first_highest_severity_issue> + x others
 	   Notification Description: “Starred issues with medium severity”
 ```
 
-\
-**Example**
-
-Email attachment
+#### **Example:** Email attachment
 
 ```
 {
@@ -132,10 +131,7 @@ Email attachment
 }
 ```
 
-\
-**Example**
-
-Email attachment with asset
+#### **Example:** Email attachment with asset
 
 ```
 {
@@ -249,11 +245,11 @@ Email attachment with asset
 
 <br>
 
-**Slack channel, Splunk, Amazon S3, Amazon SQS, Webhook**
+### **Slack channel, Splunk, Amazon S3, Amazon SQS, Webhook**
 
 You can send issue notifications to a single Slack contact or a Slack channel, or to Splunk, Amazon S3, Amazon SQS, or Webhook. Notifications are similar to the email format.
 
-**Syslog receiver**
+#### **Syslog receiver**
 
 Issue notifications forwarded to a syslog receiver are sent in a CEF format RF 5425.
 

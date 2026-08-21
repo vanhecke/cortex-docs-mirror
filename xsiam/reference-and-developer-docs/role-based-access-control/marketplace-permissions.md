@@ -1,5 +1,7 @@
 ---
-description: Configure Marketplace permissions for RBAC.
+description: >-
+  Control access to discover, install, and manage Marketplace content packs in
+  Cortex XSIAM.
 ---
 
 # Marketplace permissions

@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Microsoft Entra ID SAML 2.0 single sign-on, security group claims,
+  and user group mapping for Cortex XSIAM.
+---
+
 # Set up Microsoft Entra ID as the Identity Provider Using SAML 2.0
 
 This topic provides specific instructions for using Microsoft Entra ID (formerly Azure AD) to authenticate your Cortex XSIAM users. As Microsoft Entra ID is a third-party software, specific procedures, and screenshots may change without notice. We encourage you to also review the [Microsoft Entra ID documentation](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/add-application-portal-setup-sso).

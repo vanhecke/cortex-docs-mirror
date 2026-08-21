@@ -1,3 +1,9 @@
+---
+description: >-
+  Integrate Cortex XSIAM with Slack to forward issue and report notifications to
+  dedicated workspace channels.
+---
+
 # Integrate Slack for outbound notifications
 
 Integrate Cortex XSIAM with your Slack workspace to manage and highlight your issues and reports. Creating a Cortex XSIAM Slack channel ensures that defined issues are exposed on laptop and mobile devices using the Slack interface. Unlike email notifications, Slack channels provide dedicated spaces where you can contact specific members regarding your issues.

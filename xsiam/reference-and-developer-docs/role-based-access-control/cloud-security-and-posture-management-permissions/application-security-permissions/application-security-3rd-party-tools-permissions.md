@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure third-party tool permissions for Application Security in Cortex
+  XSIAM.
+---
+
 # Application Security - 3rd Party tools permissions
 
 Provides visibility into supply chain security, including external tools integrated with your development pipeline and a catalog of known supply chain components.

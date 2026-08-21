@@ -1,10 +1,16 @@
-# Cortex XSIAM federal compliance
+---
+description: >-
+  Learn how FedRAMP-authorized Cortex XSIAM supports U.S. federal agencies with
+  isolated tenants, U.S. data residency, and government cloud infrastructure.
+---
 
-Cortex XSIAM is FedRAMP **High**- and **Moderate-authorized**, providing a secure environment specifically for U.S. Federal agencies and highly regulated industries.
+# Cortex XSIAM FedRAMP compliance for federal agencies
 
-**Security & infrastructure architecture**
+Cortex XSIAM is FedRAMP **High**- and **Moderate-authorized** for U.S. federal agencies and regulated industries. FedRAMP-authorized Cortex XSIAM tenants provide isolated government cloud environments, U.S. data residency, and secure federal network access.
 
-To ensure strict compliance, these environments utilize the following safeguards:
+### FedRAMP security and infrastructure architecture
+
+FedRAMP Cortex XSIAM environments use the following compliance safeguards:
 
 * **Isolation**: Dedicated single-tenant instances that are physically and logically isolated from the commercial user base.
 * **Data sovereignty**: All logs and ingested data remain strictly within the United States.
@@ -12,7 +18,7 @@ To ensure strict compliance, these environments utilize the following safeguards
 * **Secure egress**: Implementation of federal FQDNs, such as `p-proxy.federal.paloaltonetworks.com`, to secure all egress traffic paths.
 * **Scanning rights:** FedRAMP instances are authorized to scan both secure government and standard commercial cloud accounts, whereas commercial instances are strictly prohibited from accessing government-authorized environments.
 
-### Software Composition Analysis (SCA) for FedRAMP
+### Software Composition Analysis (SCA) in FedRAMP
 
 Application Security Software Composition Analysis (SCA) is available in FedRAMP and Government (Gov) tenant environments. Organizations operating under FedRAMP or public-sector compliance requirements can scan open-source dependencies for known vulnerabilities (CVEs), license miscompliance, and package operational risks using the same SCA scanner available in commercial environments.
 

@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Okta SAML 2.0 single sign-on and group mapping for Cortex XSIAM
+  users.
+---
+
 # Set up Okta as the Identity Provider Using SAML 2.0
 
 This topic provides specific instructions for using Okta to authenticate your Cortex XSIAM users. As Okta is a third-party software, specific procedures, and screenshots may change without notice. We encourage you to also review the [Okta documentation for app integrations](https://help.okta.com/oie/en-us/content/topics/apps/apps_apps.htm).

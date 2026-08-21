@@ -1,14 +1,20 @@
-# User group management
+---
+description: >-
+  Manage Cortex XSIAM user groups for RBAC, SBAC scoping, SAML mapping, and
+  Active Directory synchronization.
+---
 
-Users are assigned roles and permissions either by being assigned a role directly or by being assigned membership in one or more user groups.
+# Manage Cortex XSIAM user groups
+
+Manage Cortex XSIAM user groups to assign roles, permissions, and access controls. Users receive access through direct role assignments or membership in one or more user groups.
 
 A user group can only be assigned to a single role, but users can be added to multiple groups if they require multiple roles. You can also nest groups to achieve the same effect.
 
 Users who have multiple roles through either method will receive the highest level of access based on the combination of their roles. The same principle for users with multiple roles is followed for both the Role-Based Access Control (RBAC) access permissions and the Scope-Based Access Control (SBAC) granular scoping, so that users receive the highest level of access by combining their roles.
 
-### Example
+**Example**
 
-Joe has an Analyst role and is a member of the Tier-1 Analyst user group, which is assigned the Triage role. Joe has the permissions of the Analyst role and the Triage role. Joe is assigned 2 roles, and has the highest permission based on the combination of both roles.
+Joe has an Analyst role and is a member of the Tier-1 Analyst user group, which is assigned the Triage role. Joe has the permissions of the Analyst role and the Triage role. Joe is assigned 2 roles and has the highest permission based on the combination of both roles.
 
 * John is a member of two user groups - Tier-1 Analyst and Tier-2 Analyst. One group is configured to use the Triage role and the other group is configured to use the Incident Response role. John is assigned both roles and has the highest permissions based on the combination of all roles.
 * Jack is a member of the Tier-2 user group, which has an Incident response role. This user group is included in a Tier-3 user group (Threat Hunter role), added as a nested group. Jack is assigned both roles and has the highest permissions based on the combination of all roles.
@@ -20,8 +26,6 @@ You can see information including the details of all user groups, the roles, nes
 You can also right-click in the table to edit, save as a new group, remove (delete) a group, and copy text to the clipboard.
 
 {% hint style="info" %}
-**Note**
-
 Non-administrator users with **Access Management** permissions cannot create or modify user groups to include the **Instance Administrator** role. Additionally, the **Edit** and **Delete** options are hidden for any user group that holds the **Instance Administrator** role, whether assigned directly or indirectly (through parent group assignments).
 {% endhint %}
 
@@ -35,7 +39,7 @@ To use scope-based access control (SBAC), you must enable it in the **Server Set
 
 <details>
 
-<summary>Core identity and group provisioning strategies</summary>
+<summary>Cortex XSIAM identity and group provisioning strategies</summary>
 
 To govern user-to-group lifecycle relationships within individual tenant workloads, administrators must utilize one of three core provisioning strategies to ingest or evaluate directory identities:
 
@@ -81,7 +85,7 @@ The Cloud Identity Engine (CIE) is used exclusively for directory group manageme
 
 <details>
 
-<summary>How to create a user group</summary>
+<summary>Create a Cortex XSIAM user group</summary>
 
 1. Go to **Settings** → **Configurations** → **Access Management** → **User Groups**.
 2.  To create a new user group for several different system users or groups, click **New Group**, and add the following parameters:<br>
@@ -120,11 +124,9 @@ By default, **Enable Scope-Based Access Control** is disabled in Settings → Co
 
 <details>
 
-<summary>How to create a user group by importing an active directory group</summary>
+<summary>Import an Active Directory group into Cortex XSIAM</summary>
 
 {% hint style="info" %}
-### Note
-
 To automatically synchronize group membership with your organization's Active Directory, you can import an AD group. When someone joins or leaves a team in AD, their Cortex permissions update automatically.
 
 The Import AD Group feature is only enabled when the Cloud Identity Engine (CIE) is connected and configured.
@@ -134,16 +136,16 @@ The Import AD Group feature is only enabled when the Cloud Identity Engine (CIE)
 2. Click **Import AD Group**.
 3.  In the **Role** tab, define the following parameters:<br>
 
-    | Parameter          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-    | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | Import AD Group    | <p>Type to search the CIE in real time, and choose a group or Organizational Unit (OU) to import from Active Directory.</p><div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>Only CSP and SSO users already existing in Cortex will be imported.</p></div>                                                                                                                                                                                                                                                                                                                                                                                  |
-    | Description        | Description of the imported user group.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-    | Role               | Select the group role associated with this user group. You can only have a single role designated per group.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-    | SAML Group Mapping | <p>Maps the SAML group membership to this user group. For example, you have defined a <code>Cortex Admins</code> group. You need to name this group exactly how it appears in Okta.</p><p>You can add multiple groups by pressing enter after each name to build a list.</p><div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>When using Microsoft Entra ID for SSO, the SAML group mapping needs to be provided using the group object ID (GUID) and not the group name.</p></div><p>If you have not set up SSO in your tenant, skip this field and add it later. After you have added it, follow the procedure relevant to your IdP. </p> |
+    | Parameter          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+    | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | Import AD Group    | <p>Type to search the CIE in real time, and choose a group or Organizational Unit (OU) to import from Active Directory.</p><div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>Only CSP and SSO users already existing in Cortex will be imported.</p></div>                                                                                                                                                                                                                                                                                                                                                                                                             |
+    | Description        | Description of the imported user group.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+    | Role               | Select the group role associated with this user group. You can only have a single role designated per group.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+    | SAML Group Mapping | <p>Maps the SAML group membership to this user group. For example, you have defined a <code>Cortex Admins</code> group. You need to name this group exactly how it appears in Okta.</p><p>You can add multiple groups by pressing enter after each name to build a list.</p><div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>When using Microsoft Entra ID for SSO, the SAML group mapping needs to be provided using the group object ID (GUID) and not the group name.</p></div><p>If you have not set up SSO in your tenant, skip this field and add it later. After you have added it, follow the procedure relevant to your IdP.</p> |
 4. Click the **Scope** tab to configure granular scoping for the imported group. You can limit the data and content that users can access by configuring the **Assets**, **Cases and Issues**, **Endpoints**, and **Datasets Rows** options the same as detailed in the custom user group instructions.
 5. Click **Import**.
 6.  Cortex creates a new User Group of type **AD Group** and immediately fetches the current members in the background. An update appears in **Notifications** when the import is complete. Following the import, Cortex XSIAM automatically runs periodic background syncs with the CIE to ensure the group's membership stays up to date.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>If an imported group is later deleted from your Active Directory, Cortex XSIAM automatically deletes the corresponding user group at the next sync cycle.</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>If an imported group is later deleted from your Active Directory, Cortex XSIAM automatically deletes the corresponding user group at the next sync cycle.</p></div>
 
 </details>

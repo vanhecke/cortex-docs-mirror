@@ -1,12 +1,16 @@
+---
+description: Manage Cortex XSIAM endpoint scripts for response, collection, and automation.
+---
+
 # Agent Scripts Library permissions
 
 The Agents Script Library in the Action Center (**Investigation & Response** → **Response** → **Action Center** → **Agent Script Library**) enables security teams to create, manage, and execute Python scripts on endpoints for response actions, forensic collection, and custom automation.
 
-| Permission | Description                                                                                                                                                                                             | Roles Example                                                                                                     |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| None       | No access to the Agent Script Library. Users cannot run scripts on endpoints, access script execution history, create, edit, or delete scripts.                                                         |                                                                                                                   |
-| View       | Users can access the Agent Script Library and view the script list, details, and code. Download the script code and definitions file and view the script history and results.                           | SOC Analyst Tier-1: Should have visibility into scripts and execution history, but no execution capabilities.     |
-| View/Edit  | <p>When set to <strong>View/Edit</strong>, the following action checkboxes become available:</p><ul><li>Run Standard Script</li><li>Run High Risk Script</li><li>Script Configurations</li></ul><p></p> | SOC Tier 2 and 3 Analysts, Threat Hunters, and Security Engineers should have full access with granular controls. |
+| Permission | Description                                                                                                                                                                                      | Roles Example                                                                                                     |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| None       | No access to the Agent Script Library. Users cannot run scripts on endpoints, access script execution history, create, edit, or delete scripts.                                                  |                                                                                                                   |
+| View       | Users can access the Agent Script Library and view the script list, details, and code. Download the script code and definitions file and view the script history and results.                    | SOC Analyst Tier-1: Should have visibility into scripts and execution history, but no execution capabilities.     |
+| View/Edit  | <p>When set to <strong>View/Edit</strong>, the following action checkboxes become available:</p><ul><li>Run Standard Script</li><li>Run High Risk Script</li><li>Script Configurations</li></ul> | SOC Tier 2 and 3 Analysts, Threat Hunters, and Security Engineers should have full access with granular controls. |
 
 Agent Script Sub-permissions
 

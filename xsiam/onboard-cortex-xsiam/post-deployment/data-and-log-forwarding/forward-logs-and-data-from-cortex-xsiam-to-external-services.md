@@ -1,3 +1,9 @@
+---
+description: >-
+  Forward Cortex XSIAM logs, cases, and issues to email, Slack, syslog, Splunk,
+  Amazon SQS, Amazon S3, or webhooks.
+---
+
 # Forward logs and data from Cortex XSIAM to external services
 
 You can forward logs, cases, and issues from Cortex XSIAM to an external service. By forwarding logs and data, you can manage alerts and investigations in external systems and meet data retention requirements. Available services include the following:

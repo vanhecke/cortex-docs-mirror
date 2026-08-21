@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM app instances and their configuration.
+---
+
 # Apps - Instance permissions
 
 Controls the ability to install, configure, and delete Jupyter Notebooks and Observability instances (Settings → Configurations → Integrations → Apps).

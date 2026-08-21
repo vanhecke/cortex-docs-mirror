@@ -1,7 +1,7 @@
 ---
 description: >-
-  Search the Cortex Marketplace and find content. Search by use cases,
-  integrations, and categories.
+  Discover Cortex Marketplace content packs for integrations, playbooks,
+  automations, correlation rules, dashboards, and security use cases.
 ---
 
 # Cortex Marketplace

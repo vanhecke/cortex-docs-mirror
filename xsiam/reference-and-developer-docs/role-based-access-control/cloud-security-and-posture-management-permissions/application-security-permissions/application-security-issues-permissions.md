@@ -1,3 +1,7 @@
+---
+description: Configure Application Security issue permissions in Cortex XSIAM.
+---
+
 # Application Security - Issues permissions
 
 Issues display security findings discovered across your code repositories, container images, and CI/CD pipelines. To view Issues, go to **Modules** → **Application Security** → **Issues**, and select one of the issues, such as IaC Misconfigurations, vulnerabilities, and Secrets.

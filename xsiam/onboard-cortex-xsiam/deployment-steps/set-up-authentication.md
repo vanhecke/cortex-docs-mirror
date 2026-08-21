@@ -30,7 +30,5 @@ To restrict a user to SSO login only, ensure they are not assigned the **Cortex 
 For more information, see [Assign user roles and groups](set-up-users-and-roles/assign-user-roles-and-groups).
 
 {% hint style="info" %}
-### Tip
-
 You should have at least one user in the Customer Support Portal for backup, in case of any authentication issues with your IdP provider.
 {% endhint %}

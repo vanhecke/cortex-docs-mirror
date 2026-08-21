@@ -26,7 +26,7 @@ You can quarantine a file in the following ways:
 * **Quarantine List Retention:** Quarantined file records remain in the Quarantine List for a default retention period of 180 days (6 months).
 * **Pending Action Expiration:** When a Quarantine command is issued to an offline or unreachable endpoint, the command stays in Pending status for 4 days by default before expiring. This setting is configurable between 1 and 30 days.
 
-To update the Pending Action Expiration setting, go to **Settings → Configurations → Action Center Expiration** (or **Settings → Configurations → Security & Server Settings**, depending on tenant version), locate **Quarantine** under the **Response** category, modify the Expiration (Days) field, and click **Save**.
+To update the Pending Action Expiration setting, go to **Settings → Configurations → Agent Configurations → Action Center Expiration** and locate **Quarantine** under the **Response** category, modify the Expiration (Days) field, and click **Save**.
 
 ### View and manage quarantined files
 

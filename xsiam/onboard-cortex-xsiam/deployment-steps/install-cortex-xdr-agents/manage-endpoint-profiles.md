@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM endpoint security profiles and policy mappings to apply
+  reusable threat protection settings across endpoint groups.
+---
+
 # Manage endpoint profiles
 
 Cortex XSIAM provides default security profiles that you can use out of the box to immediately begin protecting your endpoints from threats. These profiles are applied to endpoints by mapping them to policies and then mapping the policies to endpoints.

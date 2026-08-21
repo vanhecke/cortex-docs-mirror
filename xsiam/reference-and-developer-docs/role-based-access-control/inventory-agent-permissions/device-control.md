@@ -1,3 +1,7 @@
+---
+description: Manage device control policies, rules, and exceptions in Cortex XSIAM.
+---
+
 # Device Control
 
 Manage policies for external devices connected to endpoints. Controls access permissions for USB drives, Bluetooth devices, and other peripherals.

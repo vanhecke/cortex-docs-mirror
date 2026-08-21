@@ -1,3 +1,9 @@
+---
+description: >-
+  Set up, import, rotate, and disable Cortex BYOK encryption keys for Cortex
+  XSIAM tenant data.
+---
+
 # Bring your own keys
 
 ### What is Cortex BYOK?
@@ -49,20 +55,14 @@ Cortex BYOK uses two keys for encrypting your tenant data at rest: one for the D
 
 <summary>Rotate encryption keys</summary>
 
-To rotate your encryption keys, in the Cortex gateway, open the more options menu next to the tenant, select **Rotate Encryption Key**, and follow the Bring your own keys (BYOK) setup.
+To rotate your encryption keys, in the Cortex gateway, open the More options menu next to the tenant, select **Rotate Encryption Key**, and follow the Bring your own keys (BYOK) setup.
 
-To resume the process, in the main gateway, open the more menu next to the tenant, select **Continue Rotation**, and follow the Bring your own keys (BYOK) setup.
+To resume the process, in the main gateway, open the more options menu next to the tenant, select **Continue Rotation**, and follow the Bring your own keys (BYOK) setup.
 
-As long as the rotation hasn't been completed, you can cancel the rotation process from the three dot menu next to the tenant.
+As long as the rotation hasn't been completed, you can cancel the rotation process from the three-dot menu next to the tenant.
 
-{% hint style="success" %}
-**NOTE:**
-
+{% hint style="info" %}
 The new keys you import will serve as primary encryption keys for newly generated data.
-{% endhint %}
-
-{% hint style="success" %}
-**NOTE:**
 
 For BYOK key rotation, you can select your preferred key import method, replacing the previously fixed default RSA\_OAEP\_3072\_SHA256.
 
@@ -88,7 +88,7 @@ To disable your encryption keys and deactivate a tenant, you must have an Accoun
 
 Disabling all encryption keys and deactivating the tenant renders the tenant inaccessible and non-operational.
 
-Disabling the keys affects the communication with the agents, may prevent the agents from receiving updates to policies, configurations, and crucial information, and may result in loss of data.
+Disabling the keys affects communication with the agents, may prevent the agents from receiving updates to policies, configurations, and crucial information, and may result in loss of data.
 
 To secure your tenant data and to prevent unauthorized access, re-enabling the keys and re-activating the tenant are strictly controlled and require manual intervention by the Cortex XSIAM Customer Success team.
 {% endhint %}

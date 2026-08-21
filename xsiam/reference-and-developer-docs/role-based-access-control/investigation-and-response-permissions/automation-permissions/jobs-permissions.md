@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM scheduled automation jobs and their execution.
+---
+
 # Jobs permissions
 
 Configure access to automation jobs. Jobs are scheduled playbook tasks that run at predefined intervals or in response to feed changes.

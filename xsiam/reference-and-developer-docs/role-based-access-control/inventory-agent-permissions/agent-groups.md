@@ -1,3 +1,7 @@
+---
+description: Manage endpoint groups and policy targeting in Cortex XSIAM.
+---
+
 # Agent Groups
 
 Create and manage logical groups of endpoints. These groups are used to assign specific security policies and target actions to specific subsets of devices.

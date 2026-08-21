@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage access to Cortex XSIAM data source configuration and ingestion
+  settings.
+---
+
 # Data Sources permissions
 
 Enables the configuration and management of cloud and third-party data source integrations. This includes Cloud Service Provider (CSP) integrations (AWS, Azure, GCP), Cloud Workload Protection (CWP) instances, Cloud Access Security (CAS) connectors, and Outposts.

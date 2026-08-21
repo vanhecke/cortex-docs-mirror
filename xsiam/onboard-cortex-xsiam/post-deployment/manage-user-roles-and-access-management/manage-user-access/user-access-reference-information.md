@@ -1,3 +1,9 @@
+---
+description: >-
+  Reference Cortex XSIAM Users page fields for user types, direct roles, groups,
+  group roles, and granular access scopes.
+---
+
 # User access reference information
 
 The following is a list of common fields on the **Users** page:

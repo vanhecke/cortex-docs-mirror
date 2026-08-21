@@ -1,10 +1,12 @@
 ---
-description: Learn more about how to use the Cortex XSIAM interface.
+description: >-
+  Learn Cortex XSIAM interface navigation, filtering, saved views, result
+  exports, system tools, and product areas.
 ---
 
-# Use the interface
+# Use the Cortex XSIAM interface
 
-The Cortex XSIAM interface provides a centralized workspace for viewing and managing security data across your environment.
+The Cortex XSIAM interface provides a centralized security operations workspace. Use it to view and manage security data across your environment.
 
 Use the navigation menu on the left to move between product areas in the tenant. For a quick overview of each area, see the **Navigation cheat sheet** below.
 
@@ -18,15 +20,13 @@ From the interface, you can:
 * Access in-product help and documentation.
 
 {% hint style="info" %}
-### Note
-
-* Each SAML login session is valid for 8 hours.
-* Some menu items only appear if you have the relevant license.
+- Each SAML login session is valid for 8 hours.
+- Some menu items only appear if you have the relevant license.
 {% endhint %}
 
 <details>
 
-<summary>Filter page results</summary>
+<summary>Filter Cortex XSIAM page results</summary>
 
 To reduce the number of results, you can filter by any heading and value. When you apply a filter, Cortex XSIAM displays the filter criteria above the results table. You can also filter individual columns for specific values using the icon to the right of the column heading.
 
@@ -44,17 +44,17 @@ To build a filter using one or more fields:
        Use **=** to include results that match the value you specify, or **!=** to exclude results that match the value.
    3.  Enter a value to complete the filter criteria.
 
-       <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>CMD fields have a 128-character limit. Shorten longer query strings to 127 characters and add an asterisk (*).</p></div>
+       <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>CMD fields have a 128-character limit. Shorten longer query strings to 127 characters and add an asterisk (*).</p></div>
 
        Alternatively, you can select **Include empty values** to create a filter that excludes or includes results when the field has empty values.
-3. To add additional filters, click **+AND,** within the filter brackets, to display results that must match all specified criteria, or **+OR** to display results that match any of the criteria.
+3. To add additional filters, click **+AND,** within the filter brackets to display results that must match all specified criteria, or **+OR** to display results that match any of the criteria.
 4. To see the results, click out of the filter area.
 
 </details>
 
 <details>
 
-<summary>Save views and filters</summary>
+<summary>Save Cortex XSIAM views and filters</summary>
 
 Cortex XSIAM allows you to save filter configurations so you can quickly return to commonly used data selections. Depending on the page you are working on, you can save either views or filters:
 
@@ -87,11 +87,9 @@ Manage views
   * Delete the view.
 
 {% hint style="info" %}
-### Note
-
-* Deleting a shared view removes it for all users.
-* You can delete your own saved views.
-* To delete views created by other users, you must have the Account administrator or Instance administrator role.
+- Deleting a shared view removes it for all users.
+- You can delete your own saved views.
+- To delete views created by other users, you must have the Account administrator or Instance administrator role.
 {% endhint %}
 
 **Saved filters**
@@ -119,8 +117,6 @@ Share or delete a saved filter
 3. Click the **Actions** menu next to a filter name and select the relevant action.
 
 {% hint style="info" %}
-### Note
-
 * Deleting a shared filter removes it for all users.
 * You can delete your own saved filters.
 * To delete filters created by other users, you must have the Account administrator or Instance administrator role.
@@ -130,7 +126,7 @@ Share or delete a saved filter
 
 <details>
 
-<summary>Export results</summary>
+<summary>Export Cortex XSIAM results</summary>
 
 You can export the page results for most pages in Cortex XSIAM to a tab-separated values (TSV) file.
 
@@ -143,13 +139,13 @@ You can export the page results for most pages in Cortex XSIAM to a tab-separate
 
 <details>
 
-<summary>System tools and services</summary>
+<summary>Cortex XSIAM system tools and services</summary>
 
 The following controls appear in the navigation bar and provide access to system tools, help resources, and tenant settings.
 
 **Cortex Agentic Assistant**
 
-Click ![agentic-assistant.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-fbf527afd3e824d282bea6ff747d08c2e5856a75%2Feb4f93ad10298e4a1a29a18b9b4c1d4415325cda8066af5f7ec57590d0c20cca.png?alt=media) in the top-right corner to open the assistant.
+Click <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-fbf527afd3e824d282bea6ff747d08c2e5856a75%2Feb4f93ad10298e4a1a29a18b9b4c1d4415325cda8066af5f7ec57590d0c20cca.png?alt=media" alt="agentic-assistant.png" data-size="line"> in the top-right corner to open the assistant.
 
 The Cortex Agentic Assistant is the autonomous AI capability of Cortex XSIAM. It uses AI agents that plan, reason, and investigate complex threats, such as cloud identity theft or container breaches.
 
@@ -183,9 +179,10 @@ Click <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.
 * Documentation Portal
 * Initiate Support Request
 
-If you have the Cortex Agentic Assistant enabled, when you select **Initiate Support Request,** the **Help Center** agent opens to assists with finding relevant documentation, troubleshooting, and creating a support ticket. After your first prompt to the **Help Center** agent, you can click **Submit support ticket** from above the chat. If you click **Submit Support Ticket**, you are brought directly to the **Submit Support Ticket** wizard.\
-\
-If you do not have Cortex Agentic Assistant enabled, selecting **Initiate Support Request** brings you directly to the **Submit Support Ticket** wizard.\
+If you have the Cortex Agentic Assistant enabled, when you select **Initiate Support Request,** the **Help Center** agent opens to assist with finding relevant documentation, troubleshooting, and creating a support ticket. After your first prompt to the **Help Center** agent, you can click **Submit Support Ticket** above the chat. If you click **Submit Support Ticket**, you are brought directly to the **Submit Support Ticket** wizard.
+
+If you do not have Cortex Agentic Assistant enabled, selecting **Initiate Support Request** brings you directly to the **Submit Support Ticket** wizard.
+
 **User menu**
 
 Click your **username** to access user and tenant options.
@@ -201,7 +198,7 @@ From the user menu, you can:
 
 <details>
 
-<summary>Navigation cheat sheet</summary>
+<summary>Cortex XSIAM navigation cheat sheet</summary>
 
 **Dashboards & Reports**
 
@@ -329,8 +326,6 @@ Requires Cortex XSIAM Premium or any other XSIAM license with the Cloud Runtime 
 **Agentic Assistant Hub**
 
 {% hint style="info" %}
-### Note
-
 This menu item appears if you have enabled the Cortex Agentic Assistant.
 {% endhint %}
 

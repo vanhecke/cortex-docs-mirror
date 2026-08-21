@@ -1,3 +1,7 @@
+---
+description: Configure endpoint Data Loss Prevention settings in Cortex XSIAM.
+---
+
 # Endpoint DLP Settings
 
 Endpoint DLP Settings provide global options that dictate the overarching behavior of the Data Loss Prevention (DLP) engine across all endpoints.

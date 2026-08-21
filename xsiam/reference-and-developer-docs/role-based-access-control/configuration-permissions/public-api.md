@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM public API configuration and credentials.
+---
+
 # Public API
 
 Controls access to API key management for external integrations. This includes creating, viewing, editing, and revoking API keys that allow external systems to interact with Cortex XSIAM in Settings → Configurations → Integrations → API Keys. The Public API permissions also manage access to the Compute Unit Usage page.

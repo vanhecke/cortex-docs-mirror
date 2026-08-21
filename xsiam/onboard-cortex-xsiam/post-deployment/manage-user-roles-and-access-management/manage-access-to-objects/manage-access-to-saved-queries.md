@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM saved XQL query access with role permissions, ownership,
+  sharing, public visibility, and Query Library controls.
+---
+
 # Manage access to saved queries
 
 Review the following:

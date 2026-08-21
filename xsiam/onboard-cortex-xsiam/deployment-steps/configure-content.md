@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn how to configure data ingestion from a variety of Palo Alto Networks and
-  third-party sources.
+  Configure Cortex XSIAM data sources with standard collectors, Broker VM
+  applets, XDR Collectors, CSP onboarding, and content packs.
 ---
 
 # Configure content

@@ -1,7 +1,7 @@
 ---
 description: >-
-  Configure the Cortex Agentic Assistant permissions, which include AI Prompts
-  and Agent permissions.
+  Configure the Cortex Agentic Assistant permissions, which includes AI Prompts
+  and Agent permissions in Cortex XSIAM.
 ---
 
 # Cortex Agentic Assistant permissions

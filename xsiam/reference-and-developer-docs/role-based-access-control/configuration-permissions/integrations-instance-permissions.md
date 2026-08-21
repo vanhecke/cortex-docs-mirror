@@ -1,3 +1,7 @@
+---
+description: Manage access to individual Cortex XSIAM integration instances and settings.
+---
+
 # Integrations - instance permissions
 
 Controls access to data collection integration instances, such as automation and feed integrations that collect and process data on the **Data Sources & Integrations** page (**Settings** → **Data Sources & Integrations**). It also controls access to classifiers and mappers **Settings** → **Configurations** → **Object Setup** → **Issues** → **Classification & Mapping**.

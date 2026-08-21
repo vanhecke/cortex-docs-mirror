@@ -1,3 +1,10 @@
+---
+description: >-
+  Deploy Cortex XDR agent installation packages to Windows, macOS, Linux,
+  Kubernetes, and Android endpoints using manual or software distribution
+  methods.
+---
+
 # Deploy installation packages
 
 After you create and download an installation package, you can then install it directly on an endpoint or you can use a software deployment tool, such as JAMF or GPO, to distribute the software to multiple endpoints.

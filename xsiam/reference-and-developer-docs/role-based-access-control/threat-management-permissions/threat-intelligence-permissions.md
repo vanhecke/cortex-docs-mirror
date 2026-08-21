@@ -1,10 +1,8 @@
 ---
-description: Configure Threat Intelligence permissions.
+description: Configure Threat Intelligence permissions in Cortex XSIAM
 ---
 
 # Threat Intelligence permissions
-
-**Threat Intelligence permissions**
 
 Located under **Threat Management** → **Threat Intelligence**, these permissions govern how your organization interacts with indicators (IPs, URLs, Domains, Hashes) and intelligence feeds. It allows you to transform raw data from sources like Unit 42 or AlienVault into actionable security logic.
 

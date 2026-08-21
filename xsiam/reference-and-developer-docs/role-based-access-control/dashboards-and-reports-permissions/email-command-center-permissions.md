@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage access to the Cortex XSIAM Email Command Center and email threat
+  metrics.
+---
+
 # Email Command Center permissions
 
 Controls access to the Email Command Center, which enables you to view high-level metrics on inbound email threats, phishing trends, and top targeted users.

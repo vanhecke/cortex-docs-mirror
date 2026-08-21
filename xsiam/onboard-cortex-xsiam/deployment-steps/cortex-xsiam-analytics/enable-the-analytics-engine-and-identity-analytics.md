@@ -1,3 +1,9 @@
+---
+description: >-
+  Enable Cortex XSIAM Analytics Engine and Identity Analytics to baseline
+  activity and detect anomalous endpoint and user behavior.
+---
+
 # Enable the Analytics Engine and Identity Analytics
 
 Cortex XSIAM - Analytics includes the following:

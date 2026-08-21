@@ -1,3 +1,7 @@
+---
+description: Configure endpoint data-in-motion protection rules in Cortex XSIAM.
+---
+
 # Data-in-Motion Rules
 
 Data-in-motion Rules define the DLP policies that govern how sensitive data is handled when it moves across endpoints. These rules specify what data patterns to detect, which applications and destinations to monitor, and what actions to take (allow, block, notify) when sensitive data movement is detected. Rules can be created, edited, cloned, enabled/disabled, deleted, and prioritized.

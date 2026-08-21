@@ -54,7 +54,7 @@
           ]
         },
         {
-          "title": "Cortex XSIAM product licenses",
+          "title": "Cortex XSIAM license tiers and product licenses",
           "path": "learn-about-cortex-xsiam/cortex-xsiam-product-licenses",
           "type": "document",
           "children": [
@@ -103,7 +103,7 @@
           "children": []
         },
         {
-          "title": "Use the interface",
+          "title": "Use the Cortex XSIAM interface",
           "path": "learn-about-cortex-xsiam/use-the-interface",
           "type": "document",
           "children": []
@@ -163,7 +163,7 @@
                   "children": []
                 },
                 {
-                  "title": "Cortex XSIAM supported regions",
+                  "title": "Cortex XSIAM supported regions and data residency",
                   "path": "onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/cortex-xsiam-supported-regions",
                   "type": "document",
                   "children": []
@@ -174,25 +174,25 @@
                   "type": "document",
                   "children": [
                     {
-                      "title": "Regional egress resources",
+                      "title": "Cortex XSIAM regional egress resources",
                       "path": "onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources/regional-egress-resources",
                       "type": "document",
                       "children": []
                     },
                     {
-                      "title": "Engine IP addresses (outbound)",
+                      "title": "Cortex XSIAM engine outbound IP addresses",
                       "path": "onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources/engine-ip-addresses-outbound",
                       "type": "document",
                       "children": []
                     },
                     {
-                      "title": "Inbound source resources",
+                      "title": "Cortex XSIAM inbound source IP addresses",
                       "path": "onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources/inbound-source-resources",
                       "type": "document",
                       "children": []
                     },
                     {
-                      "title": "FedRamp and the US Federal Government required resources",
+                      "title": "FedRAMP and US federal Cortex XSIAM required resources",
                       "path": "onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources/fedramp-and-the-us-federal-government-required-resources",
                       "type": "document",
                       "children": []
@@ -207,7 +207,7 @@
               "type": "document",
               "children": [
                 {
-                  "title": "User group management",
+                  "title": "Manage Cortex XSIAM user groups",
                   "path": "onboard-cortex-xsiam/deployment-steps/set-up-users-and-roles/user-group-management",
                   "type": "document",
                   "children": []
@@ -337,19 +337,19 @@
               "type": "document",
               "children": [
                 {
-                  "title": "Cortex XSIAM federal compliance",
+                  "title": "Cortex XSIAM FedRAMP compliance for federal agencies",
                   "path": "onboard-cortex-xsiam/deployment-steps/fedramp-overview/cortex-xsiam-federal-compliance",
                   "type": "document",
                   "children": []
                 },
                 {
-                  "title": "Onboarding & configuration",
+                  "title": "Onboard and configure government cloud environments",
                   "path": "onboard-cortex-xsiam/deployment-steps/fedramp-overview/onboarding-and-configuration",
                   "type": "document",
                   "children": []
                 },
                 {
-                  "title": "Limitations & supported regions",
+                  "title": "FedRAMP limitations and supported government cloud regions",
                   "path": "onboard-cortex-xsiam/deployment-steps/fedramp-overview/limitations-and-supported-regions",
                   "type": "document",
                   "children": []
@@ -364,7 +364,7 @@
           "type": "document",
           "children": [
             {
-              "title": "Post-deployment checklist",
+              "title": "Cortex XSIAM post-deployment checklist",
               "path": "onboard-cortex-xsiam/post-deployment/post-deployment-checklist",
               "type": "document",
               "children": []
@@ -567,7 +567,7 @@
                       "children": []
                     },
                     {
-                      "title": "Issue notification format",
+                      "title": "Cortex XSIAM issue notification format",
                       "path": "onboard-cortex-xsiam/post-deployment/data-and-log-forwarding/data-and-log-notification-formats/issue-notification-format",
                       "type": "document",
                       "children": []
@@ -11858,247 +11858,247 @@
               "children": []
             },
             {
-              "title": "Onboard a Supported SaaS Application",
-              "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application",
+              "title": "Connect a SaaS application",
+              "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application",
               "type": "document",
               "children": [
                 {
                   "title": "Onboard Aha.io",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-aha.io",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-aha.io",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Asana",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-asana",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-asana",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Atlassian",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-atlassian",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-atlassian",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Automox",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-automox",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-automox",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Businessmap",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-businessmap",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-businessmap",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Celonis",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-celonis",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-celonis",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Cisco Duo",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-cisco-duo",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-cisco-duo",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Cisco Meraki",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-cisco-meraki",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-cisco-meraki",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard ClickUp",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-clickup",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-clickup",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Contentful",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-contentful",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-contentful",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Couchbase",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-couchbase",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-couchbase",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Coveo",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-coveo",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-coveo",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Databricks",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-databricks",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-databricks",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Datadog",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-datadog",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-datadog",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Gainsight PX",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-gainsight-px",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-gainsight-px",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Grammarly",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-grammarly",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-grammarly",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Harness",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-harness",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-harness",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Intercom",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-intercom",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-intercom",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Jamf Pro",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-jamf-pro",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-jamf-pro",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard JumpCloud",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-jumpcloud",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-jumpcloud",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Kustomer",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-kustomer",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-kustomer",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Microsoft Entra ID",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-microsoft-entra-id",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-microsoft-entra-id",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Monday.com",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-monday.com",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-monday.com",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard MongoDB Atlas",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-mongodb-atlas",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-mongodb-atlas",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard MuleSoft",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-mulesoft",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-mulesoft",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Mural",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-mural",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-mural",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Office 365",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-office-365",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-office-365",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Okta",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-okta",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-okta",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard PagerDuty",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-pagerduty",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-pagerduty",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Redis Labs",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-redis-labs",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-redis-labs",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Salesforce",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-salesforce",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-salesforce",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard SAP Ariba",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-sap-ariba",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-sap-ariba",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Sentry",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-sentry",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-sentry",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard ServiceNow",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-servicenow",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-servicenow",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Shopify",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-shopify",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-shopify",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Slack Enterprise",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-slack-enterprise",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-slack-enterprise",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Sumo Logic",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-sumo-logic",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-sumo-logic",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Workday",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-workday",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-workday",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard Wrike",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-wrike",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-wrike",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "Onboard YouTrack",
-                  "path": "cloud-security/cortex-cloud-saas-security/onboard-a-supported-saas-application/onboard-youtrack",
+                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-youtrack",
                   "type": "document",
                   "children": []
                 }

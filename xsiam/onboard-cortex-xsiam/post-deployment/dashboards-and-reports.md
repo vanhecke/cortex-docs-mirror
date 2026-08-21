@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM dashboards, widgets, reports, and report templates to
+  visualize security data and monitor system activity.
+---
+
 # Dashboards and reports
 
 Dashboards consist of visualized data powered by fully customizable widgets, which enable you to analyze data from inside or outside Cortex XSIAM, in different formats such as graphs, pie charts, or text. Cortex XSIAM displays the predefined dashboards when you log in. You can also create custom dashboards that are based on the predefined dashboards, or built to your specifications, and you can save any of your dashboards as reports.

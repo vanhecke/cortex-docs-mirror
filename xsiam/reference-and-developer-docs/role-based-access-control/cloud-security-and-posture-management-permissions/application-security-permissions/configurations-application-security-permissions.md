@@ -1,3 +1,7 @@
+---
+description: Configure Application Security configuration permissions in Cortex XSIAM.
+---
+
 # Configurations - Application Security permissions
 
 Application Security Configurations controls access to the Application Security settings under **Settings** → **Configurations** → **Application Security**, which includes the following:

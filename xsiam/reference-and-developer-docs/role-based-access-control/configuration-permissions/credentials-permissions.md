@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM credentials and secure connection settings.
+---
+
 # Credentials permissions
 
 Controls access to stored credential sets (reusable authentication objects that integrations and systems reference for connecting to external services). Credential sets centralize sensitive authentication data (such as, usernames, passwords, certificates, and API tokens) so they can be managed in one place rather than being embedded in each integration configuration.

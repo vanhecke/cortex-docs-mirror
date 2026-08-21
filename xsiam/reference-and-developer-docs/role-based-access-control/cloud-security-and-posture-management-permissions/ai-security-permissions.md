@@ -1,3 +1,7 @@
+---
+description: Configure AI Security permissions in Cortex XSIAM.
+---
+
 # AI Security permissions
 
 Cloud AI Security provides a comprehensive overview of the AI assets within an organization. It is designed to ensure AI security by offering tools to review and prioritize AI risks effectively. Users access these features by going to Modules → AI Security). This module covers the following:

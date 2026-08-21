@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn about the initial steps required to deploy Cortex XDR agent software to
-  endpoints.
+  Install Cortex XDR agents with agent installation packages to monitor
+  endpoints and collect Cortex XSIAM endpoint data.
 ---
 
 # Install Cortex XDR agents

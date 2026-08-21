@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM report template access with role permissions, ownership,
+  sharing, public visibility, and SBAC data scopes.
+---
+
 # Manage access to report templates
 
 Review the following:

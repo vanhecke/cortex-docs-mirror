@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM reports and custom report templates.
+---
+
 # Reports permissions
 
 Controls access to the generation and management of documented security summaries, ranging from shift handoffs to compliance evidence

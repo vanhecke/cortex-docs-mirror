@@ -1,5 +1,7 @@
 ---
-description: Plan how you are going to deploy your Cortex XDR agent.
+description: >-
+  Plan phased Cortex XDR agent deployment, from pilot testing to
+  organization-wide Cortex XSIAM rollout.
 ---
 
 # Plan your agent deployment

@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM endpoint response actions and action history.
+---
+
 # Action Center permissions
 
 **Action Center permissions**

@@ -1,3 +1,7 @@
+---
+description: Configure Cloud Security permissions in Cortex XSIAM.
+---
+
 # Cloud Security permissions
 
 You can edit Cloud Security policies and rules permissions by selecting CLOUDSEC when creating or editing a role.

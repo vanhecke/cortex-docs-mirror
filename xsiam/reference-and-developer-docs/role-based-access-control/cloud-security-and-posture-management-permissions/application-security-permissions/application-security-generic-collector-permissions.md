@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Generic Collector permissions for Application Security in Cortex
+  XSIAM.
+---
+
 # Application Security - Generic Collector permissions
 
 The Generic Collector is a data source integration type within the Application Security module that allows ingestion of code scan data from external third-party security tools into Cortex XSIAM. Access the **3rd party AppSec Collector** data source by going to **Settings** → **Data Sources & Integrations**

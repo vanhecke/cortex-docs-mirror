@@ -1,3 +1,7 @@
+---
+description: Configure Cloud Workload policy permissions in Cortex XSIAM.
+---
+
 # Policies - Cloud Workload permissions
 
 Policy permissions control access to Cloud Workload rules and policies (Compute Policies). This module maintains security compliance, prevents misconfigurations, and reduces risks across your cloud environments. Users manage Cloud Workload Policies and Rules by going to Posture Management → Rules & Policies and then selecting Cloud Workload under Policies or Rules.

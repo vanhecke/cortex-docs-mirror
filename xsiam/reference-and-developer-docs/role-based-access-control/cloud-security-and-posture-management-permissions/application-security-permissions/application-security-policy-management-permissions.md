@@ -1,3 +1,7 @@
+---
+description: Configure Application Security policy management permissions in Cortex XSIAM.
+---
+
 # Application Security - Policy Management permissions
 
 This section describes how to configure Application Security Policy Management (rules and policies) permissions.

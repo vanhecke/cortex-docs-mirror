@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM data ingestion monitoring dashboards.
+---
+
 # Ingestion Monitoring dashboard permissions
 
 Access to the Data Ingestion Dashboard, which provides an overview of data ingestion by product and vendor:

@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XSIAM SAML 2.0 single sign-on with identity providers, group
+  mapping, and user provisioning.
+---
+
 # Authenticate users using SSO
 
 Cortex XSIAM enables you to authenticate system users securely across enterprise-wide applications and websites with one set of credentials using single sign-on (SSO) with SAML 2.0. System users can authenticate using your organization's Identity Provider (IdP), such as Okta or PingOne. You can integrate with any IdP that is supported by SAML 2.0.
@@ -7,38 +13,34 @@ Use SAML SSO when you want your platform users to be authenticated according to 
 Configuring SSO with SAML 2.0 is dependent on your organization’s IdP. Some of the parameter values need to be supplied from your organization’s IdP and some need to be added to your organization’s IdP. You must have sufficient knowledge about IdPs, how to access your organization’s IdP, which values to add to Cortex XSIAM, and which values to add to your IdP fields.
 
 {% hint style="info" %}
-### Note
-
 * To set up SSO authentication in the tenant, you must be assigned an Instance Administrator or Account Admin role.
-* SAML 2.0 users must log in to Cortex XSIAM using the FQDN (full URL) of the tenant. To allow login directly from the IdP to , you must set the relay state on the IdP to the FQDN of the tenant.
+* SAML 2.0 users must log in to Cortex XSIAM using the FQDN (full URL) of the tenant. To allow login directly from the IdP to the tenant, you must set the relay state on the IdP to the FQDN of the tenant.
 * If you have multiple tenants, you must set up the SSO configuration separately for each tenant, both in the IdP and in Cortex XSIAM.
 * If you are using AWS SSO, the `Application ACS URL` refers to the `Single Sign-On URL` and the `Application SAML Audience` refers to the `Audience URL (SP Entity ID)`. Both values can be copied from the **Authentication Settings** in Cortex XSIAM.
 * Unlike users who authenticate through the Customer Support Portal (CSP), users who log in via SSO do not require the **Cortex User** role to be assigned in the CSP. Their access and permissions are governed by the SAML Group Mapping configured in Cortex XSIAM.
 {% endhint %}
 
-<details>
+### Identity provisioning and de-provisioning lifecycle
 
-<summary>Identity provisioning and de-provisioning lifecycle</summary>
-
-**Just-In-Time (JIT) account creation**
+#### **Just-In-Time (JIT) account creation**
 
 When an enterprise user authenticates through your configured Identity Provider (IdP) for the very first time, an explicit user account entry is dynamically generated inside the platform via Just-In-Time (JIT) provisioning. Once provisioned, this newly formed user identity appears within the primary Users Table console.
 
 Following initial JIT creation, administrators can open the account entry to assign targeted Access Management controls, defining precise Roles and granular data Scopes. You can choose to select an optional global **Default Role** parameter within the general SSO configuration menu to automatically apply baseline permissions to newly provisioned users.
 
-To maintain a secure posture, it is critical that this **Default Role** is configured with the least-privileged permissions possible (such as read-only or a basic viewer role) to ensure users without explicit role or group assignments inherit minimal access by default. For detailed implementation steps and advice on structuring these permissions, see.
+To maintain a secure posture, it is critical that this **Default Role** is configured with the least-privileged permissions possible (such as read-only or a basic viewer role) to ensure users without explicit role or group assignments inherit minimal access by default.
 
-**SECURITY MINIMIZATION BEST PRACTICE**: If a Default Role is utilized for JIT automation, it is strongly recommended to restrict this role to the most minimal, low-privilege read-only permissions possible. This ensures that if a platform administrator forgets to manually apply an explicit target role or scope assignment to a newly synced user, that account remains structurally isolated from sensitive security controls or data views.
+#### **Security minimization best practice**
+
+If a Default Role is utilized for JIT automation, it is strongly recommended to restrict this role to the most minimal, low-privilege read-only permissions possible. This ensures that if a platform administrator forgets to manually apply an explicit target role or scope assignment to a newly synced user, that account remains structurally isolated from sensitive security controls or data views.
 
 Once account objects successfully register via JIT login, administrators can manually pair those known identities directly with local Custom Cortex User Groups within the console.
 
-**Deprovisioning and account disabling actions**
+#### **Deprovisioning and account disabling actions**
 
 * **Identity Provider (IdP) account suspensions**: If a user account is deleted, suspended, or disabled directly within your organization's external Identity Provider (IdP), that target user is blocked from executing any further single sign-on validation attempts into Cortex XSIAM if you set SSO as the authentication method, taking effect upon their next login sequence. For continuity tracking purposes, the historical record for that user will continue to populate inside the internal console Users table until an inactivity threshold triggers a backend purge. For more information, see the \[Inactivity removal cycles] policy explained directly below.
 * **Inactivity removal cycles**: For accounts bound to both single sign-on (SSO) pipelines and native Customer Support Portal (CSP) infrastructure, identity profiles and group mappings are automatically purged and removed from the platform console following a specified period of prolonged system inactivity. This inactivity threshold is explicitly configured by navigating to **Settings** → **Configurations** → **General** → **Security Settings** and selecting **Enabled** from the **Deactivate Inactive User** drop-down menu. Selecting this option exposes the **Deactivation period** field, which is set to 30 days by default, allowing administrators to specify the exact number of inactive days required to trigger user deactivation.
 * **Cloud Identity Engine (CIE) separation boundary**: Disabling, removing, or changing user records directly inside the Cloud Identity Engine interface does not disable, modify, or block corresponding user accounts inside Cortex XSIAM. User lifecycle connectivity is governed purely by active IdP authentication responses or CSP invitation status.
-
-</details>
 
 If you are configuring Okta or Microsoft Entra ID, follow the procedure in Okta or Microsoft Entra ID. You can also adapt these instructions for use with any similar SAML 2.0 IdP.
 
@@ -50,7 +52,7 @@ If you are configuring Okta or Microsoft Entra ID, follow the procedure in Okta 
 
     Different SSO parameters for an SSO are displayed to configure according to your organization’s additional IdP.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><ul><li>The first SSO cannot be deleted; it can only be deactivated by toggling <strong>SSO Enabled</strong> to off.</li><li><p>The <strong>Domain</strong> parameter is predefined for the first SSO.</p><p>If you add additional SSO providers, you must provide the email Domain in the SSO Integration settings for all providers except the first. Cortex XSIAM uses this domain to determine to which identity provider to send the user for authentication.</p></li><li>When mapping IdP user groups to Cortex XSIAM user groups, you must include the group attribute for each IdP you want to use. For example, if you are using Microsoft Entra ID and Okta, your Cortex XSIAM user group SAML Group Mapping field must include the IdP groups for each provider. Each group name is separated by a comma.</li></ul></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><ul><li>The first SSO cannot be deleted; it can only be deactivated by toggling <strong>SSO Enabled</strong> to off.</li><li><p>The <strong>Domain</strong> parameter is predefined for the first SSO.</p><p>If you add additional SSO providers, you must provide the email Domain in the SSO Integration settings for all providers except the first. Cortex XSIAM uses this domain to determine to which identity provider to send the user for authentication.</p></li><li>When mapping IdP user groups to Cortex XSIAM user groups, you must include the group attribute for each IdP you want to use. For example, if you are using Microsoft Entra ID and Okta, your Cortex XSIAM user group SAML Group Mapping field must include the IdP groups for each provider. Each group name is separated by a comma.</li></ul></div>
 4. Set the following parameters using your organization’s IdP, where the field parameters are explained in the tables below.
    * **General parameters**
    * **IdP Attribute Mapping**
@@ -63,7 +65,7 @@ If you are configuring Okta or Microsoft Entra ID, follow the procedure in Okta 
 
         If you have enabled more than one SSO provider, an optional email field appears. If the user does not enter an email address or if the email address does not match an existing domain, the user is automatically directed to the default IdP provider (the first in the list of SSO providers in the Authentication Settings). If the user enters an email address and it matches a domain listed in the **Domain** field in the SSO Integration settings for one of your IdPs, **Sign-In with SSO** sends the user to the IdP associated with that email domain.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Important</h3><p><strong>PROGRAMMATIC CONTRAINT</strong>:</p><p>There is no public API endpoint available to provision or de-provision users programmatically within Cortex XSIAM. All target accounts must be initialized or explicitly managed using the native interactive Single Sign-On (SSO) or Customer Support Portal (CSP) interface workflows defined in this guide. To review the list of supported programmatic actions and ingestion endpoints, see the Cortex XSIAM API Reference guide.</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="warning" class="hint hint-warning"><p><strong>Programmatic constraint</strong>:</p><p>There is no public API endpoint available to provision or de-provision users programmatically within Cortex XSIAM. All target accounts must be initialized or explicitly managed using the native interactive Single Sign-On (SSO) or Customer Support Portal (CSP) interface workflows defined in this guide. To review the list of supported programmatic actions and ingestion endpoints, see the Cortex XSIAM API Reference guide.</p></div>
 
 <details>
 

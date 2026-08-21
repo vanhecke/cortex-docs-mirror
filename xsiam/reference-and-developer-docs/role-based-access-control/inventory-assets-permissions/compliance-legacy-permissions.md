@@ -1,3 +1,7 @@
+---
+description: View legacy cloud compliance violations for assets in Cortex XSIAM.
+---
+
 # Compliance (Legacy) permissions
 
 Cloud Compliance (Legacy) under **Inventory** → **Endpoints** → **Cloud Compliance** provides a read-only view of CIS benchmark compliance violations for cloud assets.

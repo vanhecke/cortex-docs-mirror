@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage access to Cortex XSIAM's endpoint inventory, host details, and hygiene
+  data.
+---
+
 # Host Insights permissions
 
 Limits access to Host Insights/Inventory (**Inventory** → **Endpoints** → **Host Insights)**), which enables you to gain visibility and inventory into the business and IT operational data on all your endpoints. For more information, see [Host Inventory](../../../../protect-your-endpoints/endpoint-security/install-and-manage-endpoints/harden-endpoint-security/host-inventory).

@@ -1,3 +1,9 @@
+---
+description: >-
+  Understand Cortex XSIAM notification formats for forwarded cases, issues, and
+  logs, including optional alert formatting for email, syslog, and Slack.
+---
+
 # Data and log notification formats
 
 When Cortex XSIAM cases, issues, and logs are forwarded to email or a third-party system, notifications are sent in a specific format.

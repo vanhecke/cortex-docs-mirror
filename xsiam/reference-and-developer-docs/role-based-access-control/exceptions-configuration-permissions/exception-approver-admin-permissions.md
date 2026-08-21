@@ -1,10 +1,8 @@
 ---
-description: Configure Exception Approver Admin permissions.
+description: Configure Exception Approver Admin permissions in Cortex XSIAM.
 ---
 
 # Exception Approver Admin permissions
-
-**Exception Approver Admin permissions**
 
 Controls access to the **Exception Management** section on the **Server Settings** page, located at **Settings** → **Configurations** → **General** → **Server Settings**.
 

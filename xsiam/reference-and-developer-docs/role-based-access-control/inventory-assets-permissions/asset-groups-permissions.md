@@ -1,12 +1,12 @@
-# Asset Groups permissions
+---
+description: Manage asset groups and scoped access controls in Cortex XSIAM.
+---
 
-**Asset Groups permissions**
+# Asset Groups permissions
 
 Asset Groups enable organizations to manage asset groups, such as creating logical groupings of assets, applying policies and rules to asset groups, scoping user access to specific asset groups (SBAC), and supporting automation exclusions by asset group.
 
 {% hint style="warning" %}
-### Caution
-
 SBAC: Asset Groups form the foundation of Scope-Based Access Control (SBAC). Granting a user View/Edit access to Asset Groups allows them to modify the groups that dictate data access boundaries for other users in the tenant.
 {% endhint %}
 

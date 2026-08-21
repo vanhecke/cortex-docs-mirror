@@ -1,3 +1,7 @@
+---
+description: Manage access to saved XQL queries in Cortex XSIAM's Query Library.
+---
+
 # Query Library permissions
 
 Controls access to the Query Library, which is a repository of saved XQL queries within Cortex XSIAM. It allows users to save, organize, share, and reuse XQL queries across the team. Key capabilities include:

@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM log collection configuration and data sources.
+---
+
 # Log Collection permissions
 
 Configure XDR Collectors, installers, and collection policies through **Settings** → **Configurations** → **XDR Collectors**.

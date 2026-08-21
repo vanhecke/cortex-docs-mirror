@@ -1,8 +1,14 @@
-# Cortex XSIAM supported regions
+---
+description: >-
+  View Cortex XSIAM supported hosting regions and data residency locations in
+  Americas, EMEA, and JPAC.
+---
 
-The following table lists the regions available to host Cortex XSIAM and any associated Cortex services:
+# Cortex XSIAM supported regions and data residency
 
-**Americas**
+View the supported Cortex XSIAM hosting regions for tenant deployment and data residency. The following tables list regions for Cortex XSIAM and associated Cortex services.
+
+### Cortex XSIAM regions in the Americas
 
 | Country            | Description                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -10,7 +16,7 @@ The following table lists the regions available to host Cortex XSIAM and any ass
 | Brazil (BR)        | All Cortex XSIAM logs and ingested data remain hosted within the boundaries of Brazil.                                                                                                                                                                                                                                                                                                                                            |
 | Canada (CA)        | <p>All Cortex XSIAM logs and ingested data remain hosted within the boundaries of Canada. However, if you have a WildFire Canada cloud subscription, consider the following:</p><ul><li>You cannot send file submissions for bare-metal analysis.</li><li>You will not be protected against macOS-borne zero-day threats. However, you will receive protection against other macOS malware in regular WildFire updates.</li></ul> |
 
-**EMEA (Europe, the Middle East, Africa)**
+### Cortex XSIAM regions in EMEA
 
 | Country             | Description                                                                                        |
 | ------------------- | -------------------------------------------------------------------------------------------------- |
@@ -28,7 +34,7 @@ The following table lists the regions available to host Cortex XSIAM and any ass
 | Switzerland (CH)    | All Cortex XSIAM logs and ingested data remain hosted within the boundaries of Switzerland.        |
 | UK (United Kingdom) | All Cortex XSIAM logs and ingested data remain hosted within the boundaries of the United Kingdom. |
 
-**JPAC (Asia-Pacific)**
+### Cortex XSIAM regions in JPAC
 
 | Country          | Description                                                                                 |
 | ---------------- | ------------------------------------------------------------------------------------------- |

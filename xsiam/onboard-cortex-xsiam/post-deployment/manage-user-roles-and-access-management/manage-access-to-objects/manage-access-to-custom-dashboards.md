@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM custom dashboard access with role permissions, object
+  sharing, owners, editors, viewers, and SBAC data scopes.
+---
+
 # Manage access to custom dashboards
 
 Review the following:

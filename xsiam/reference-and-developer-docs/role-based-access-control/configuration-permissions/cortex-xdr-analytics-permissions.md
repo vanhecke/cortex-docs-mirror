@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM analytics configuration and related settings.
+---
+
 # Cortex XDR Analytics permissions
 
 Controls access to the Analytics Engine configuration page through **Settings** → **Configurations** → **Cortex-Analytics**.

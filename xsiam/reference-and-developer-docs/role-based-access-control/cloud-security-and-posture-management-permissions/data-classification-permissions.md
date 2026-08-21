@@ -1,3 +1,7 @@
+---
+description: Configure Data Classification permissions in Cortex XSIAM.
+---
+
 # Data Classification permissions
 
 Data Classification governs how sensitive data is identified, categorized, and labeled across the platform. It serves as the foundational engine that powers both Data Security Posture Management (DSPM) cloud scanning and Endpoint Data Loss Prevention (DLP) detection capabilities.

@@ -9,7 +9,7 @@ description: >-
 {% hint style="warning" %}
 ### Prerequisite
 
-Managing users, roles, scopes, user groups, authentication settings in Cortex XSIAM Access Management requires **View/Edit** RBAC permissions for **Access Management** (under **Configurations**). Account Admin and Instance Administrator roles are granted this permission by default. For more information, see _Predefined user roles_ in [Set up users and roles](../deployment-steps/set-up-users-and-roles).
+Managing users, roles, scopes, user groups, and authentication settings in Cortex XSIAM Access Management requires **View/Edit** RBAC permissions for **Access Management** (under **Configurations**). Account Admin and Instance Administrator roles are granted this permission by default. For more information, see _Predefined user roles_ in [Set up users and roles](../deployment-steps/set-up-users-and-roles).
 {% endhint %}
 
 Access management enables you to control who can access the different parts of your organization's resources. It ensures only authorized users can interact with sensitive data.
@@ -20,9 +20,9 @@ Cortex XSIAM uses a combination of Role-Based Access Control (RBAC) and Scope-Ba
 
 <summary>What is the difference between RBAC and SBAC?</summary>
 
-RBAC assigns permissions based on a user's organizational role, such as Investigator or Responder, establishing a clear hierarchy and set of capabilities for each role and simplifying management by linking access to job functions. RBAC does this by helping to manage access to Cortex XSIAM components and Cortex Query Language (XQL) datasets, so that users, based on their roles, are granted minimal access required to accomplish their tasks.
+RBAC assigns permissions based on a user's organizational role, such as Investigator or Responder, establishing a clear hierarchy and set of capabilities for each role and simplifying management by linking access to job functions. RBAC does this by helping to manage access to Cortex XSIAM components and Cortex Query Language (XQL) datasets, so that users, based on their roles, are granted the minimal access required to accomplish their tasks.
 
-SBAC refines RBAC by granting access only to the relevant data that the user requires for their designated role. Users with **Access Management** permission apply scopes to limit the data and content that users can be granted access to in Cortex XSIAM, which are divided into different scoping areas. The scoping areas include Assets, Cases and Issues, Endpoints, and Datasets Rows, which can be applied as relevant to the enforcement area, entity, or dataset.
+SBAC refines RBAC by granting access only to the relevant data that the user requires for their designated role. Users with **Access Management** permission apply scopes to limit the data and content that users can be granted access to in Cortex XSIAM, which are divided into different scoping areas. The scoping areas include Assets, Cases and Issues, Endpoints, and Dataset Rows, which can be applied as relevant to the enforcement area, entity, or dataset.
 
 For example, an Investigator role might have access to asset information based on the RBAC permissions, but SBAC granular scoping could limit that investigator's view and control to only assets within a particular scoping area. This hybrid approach ensures scalability and granular control, significantly strengthening system security.
 
@@ -32,15 +32,13 @@ For example, an Investigator role might have access to asset information based o
 
 <summary>Understanding more about access management concepts</summary>
 
-You can manage access for users, and create and assign user roles and user groups for a specific tenant. When Single Sign-On (SSO) is enabled, you can manage SSO for users.
+You can manage access for users and create and assign user roles and user groups for a specific tenant. When Single Sign-On (SSO) is enabled, you can manage SSO for users.
 
 **Users**
 
 You can manage access permissions and activities for users allocated to a specific Customer Support Portal account and tenant. All users must belong to a user group or have an assigned role.
 
 {% hint style="info" %}
-### Note
-
 To remove users added to your CSP account, you must do so in the CSP, not in Cortex Gateway.
 {% endhint %}
 
@@ -49,8 +47,6 @@ To remove users added to your CSP account, you must do so in the CSP, not in Cor
 User roles enable you to define the type of access and actions a user can perform. User roles are assigned to users, user groups, or API keys.
 
 {% hint style="info" %}
-### Note
-
 For more information on assigning user roles when generating an API key, see [Manage API keys](../../learn-about-cortex-xsiam/manage-api-keys).
 {% endhint %}
 
@@ -60,13 +56,11 @@ Cortex XSIAM provides predefined built-in user roles that provide specific acces
 
 **Dataset access permissions**
 
-You can also set dataset access permissions using user roles or set specific permissions using role-based access control (RBAC). Configuring administrative access depends on the security requirements of your organization. Dataset permissions control dataset access for all components, while RBAC controls access to a specific component. By default, dataset access management is disabled, and users have access to all datasets. If you enable dataset access management, you must configure access permissions for each dataset type, and for each user role. When a dataset component is enabled for a particular role, the Issues and Cases pages include information about datasets. For more information on how to set dataset access permissions, see [Manage user roles](#UUID-751d26ed-9390-dddd-d4f6-bb1f20db3a1d).
+You can also set dataset access permissions using user roles or set specific permissions using role-based access control (RBAC). Configuring administrative access depends on the security requirements of your organization. Dataset permissions control dataset access for all components, while RBAC controls access to a specific component. By default, dataset access management is disabled, and users have access to all datasets. If you enable dataset access management, you must configure access permissions for each dataset type and for each user role. When a dataset component is enabled for a particular role, the Issues and Cases pages include information about datasets. For more information on how to set dataset access permissions, see [Manage user roles](#UUID-751d26ed-9390-dddd-d4f6-bb1f20db3a1d).
 
 Be aware that even with scoped access to dataset rows applied, users can still indirectly access unauthorized dataset rows through dataset views and correlation rules. You can prevent this by ensuring that users don't have access to these dataset views and are unable to write correlation rules based on these datasets by enabling dataset access management for the relevant user roles, and limiting access to the applicable datasets. You may also want to consider not allowing these dataset-scoped users to write correlation rules, which we recommend as a best practice. For more information on how to set dataset access permissions, see [Manage user roles](manage-user-roles-and-access-management/manage-user-roles). For more information on row-level scoping, see [Manage user scope](manage-user-roles-and-access-management/manage-user-scope).
 
 {% hint style="info" %}
-### Note
-
 Some features are license-dependent. Accordingly, users may not see a specific feature if the feature is not supported by the license type or if they do not have access based on their assigned role or scope.
 {% endhint %}
 
@@ -77,8 +71,6 @@ You can use user groups to streamline configuration activities by grouping toget
 Users with **Access Management** permission can further restrict access of these user groups, specifically for the designated role and list of users configured in the user group by granting access only to the relevant data that the user requires for their designated role. This is performed by applying scopes to limit the data and content that users can be granted access to in Cortex XSIAM, which are divided into different scoping areas. The scoping areas include Assets, Cases and Issues, Endpoints, and Dataset Rows, which can be applied as relevant to the enforcement area, entity, or dataset. This enables you to adhere to your company's security policies of limiting user access by specifying, for example, which groups of assets users can access and what actions they can perform.
 
 {% hint style="info" %}
-### Note
-
 For features where scoping is not applicable, Role-Based Access Control (RBAC) is used and can be configured when managing user roles. For more information, see [Manage user roles](#UUID-751d26ed-9390-dddd-d4f6-bb1f20db3a1d).
 {% endhint %}
 
@@ -86,8 +78,8 @@ For features where scoping is not applicable, Role-Based Access Control (RBAC) i
 
 Manage your SSO integration with the Security Assertion Markup Language (SAML) 2.0 standard to securely authenticate system users across enterprise-wide applications and websites, with one set of credentials. This configuration allows system users to authenticate using your organization's Identity Provider (IdP), such as Okta or PingOne. You can integrate any IdP with Cortex XSIAM supported by SAML 2.0.
 
-SSO with SAML 2.0 configuration activities are dependent on your organization’s IdP. Some of the field values need to be obtained from your organization’s IdP, and some values need to be added to your organization’s IdP. It is your responsibility to understand how to access your organization’s IdP to provide these fields, and to add any fields from Cortex XSIAM to your IdP.
+SSO with SAML 2.0 configuration activities are dependent on your organization’s IdP. Some of the field values need to be obtained from your organization’s IdP, and some values need to be added to your organization’s IdP. It is your responsibility to understand how to access your organization’s IdP to provide these fields and to add any fields from Cortex XSIAM to your IdP.
 
-After SSO configuration is complete, when you sign in as an SSO user, the Cortex XSIAM permissions granted to you after logging in, either from the group mapping or from the default role configuration, are effective throughout the entire session for the defined maximum session length. Maximum session length is defined in your Cortex XSIAM Session Security Settings. This applies even if the default role configuration is updated or the group membership settings were changed.
+After SSO configuration is complete, when you sign in as an SSO user, the Cortex XSIAM permissions granted to you after logging in, either from the group mapping or from the default role configuration, are effective throughout the entire session for the defined maximum session length. The maximum session length is defined in your Cortex XSIAM Session Security Settings. This applies even if the default role configuration is updated or the group membership settings are changed.
 
 </details>

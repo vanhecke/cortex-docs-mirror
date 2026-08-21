@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM user access with roles, user groups, RBAC permissions,
+  SBAC scopes, and XQL dataset row controls.
+---
+
 # Manage user access
 
 {% hint style="warning" %}

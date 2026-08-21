@@ -1,3 +1,7 @@
+---
+description: Manage access to Cortex XSIAM mappings for external issue integrations.
+---
+
 # External Issues Mapping permissions
 
 Configure how alerts from third-party systems are translated into Cases through **Settings** → **Configurations** → **Data Collection** → **External Issues Mapping**.

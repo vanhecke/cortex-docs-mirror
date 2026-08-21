@@ -1,10 +1,14 @@
+---
+description: Manage access to Cortex XSIAM long-running HTTP integration configuration.
+---
+
 # Long-running HTTP Integrations configuration
 
 Governs the backend service that hosts and serves dynamic content to external security devices, such as Palo Alto Networks firewalls. It allows administrators to enable or disable the EDL service and manage its global settings. Access this through Settings → Configurations → Integrations → External Dynamic List Integration.
 
 This permission is used by administrators to set up and maintain the EDL service infrastructure.
 
-EDL (under Investigation & Response permissions): Used by analysts to add or remove specific IP addresses and domains to lists during active investigations.&#x20;
+EDL (under Investigation & Response permissions): Used by analysts to add or remove specific IP addresses and domains to lists during active investigations.
 
 | Permission | Description                                                                                                | Role Example                                                                                                            |
 | ---------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |

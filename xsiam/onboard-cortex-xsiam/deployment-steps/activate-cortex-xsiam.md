@@ -1,5 +1,7 @@
 ---
-description: Learn how to activate your tenant.
+description: >-
+  Activate Cortex XSIAM tenants in Cortex Gateway, including prerequisites,
+  encryption, and access configuration.
 ---
 
 # Activate Cortex XSIAM
@@ -37,7 +39,7 @@ How to activate Cortex XSIAM
     * Tenants that were activated and are now available. If you have more than one Customer Support Portal account, the tenants are displayed according to the Customer Support Portal account name.
 3.  In the **Available for Activation** section, use the serial number to locate the tenant that needs activation, and then click **Activate**.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>When you activate, a production tenant is first activated. After activation, you can set up a development tenant (subject to your license).</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>When you activate, a production tenant is activated first. After activation, you can set up a development tenant (subject to your license).</p></div>
 4.  On the **Tenant Activation** page, define the following:
 
     | Parameter         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -49,7 +51,7 @@ How to activate Cortex XSIAM
 5.  Review and **agree to the terms and conditions of the Privacy policy, Terms of Use, and EULA** , and then **Activate** your tenant.
 
     <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>Activation can take about an hour and does not require you to remain on the activation page. Cortex XSIAM sends a notification to your email when the process is complete.</p></div>
-6. After activation, from Cortex Gateway, in the **Available Tenants**, when hovering over the activated tenant, do the following:
+6. After activation, from the Cortex Gateway, in the **Available Tenants**, when hovering over the activated tenant, do the following:
    * Ensure that you can successfully access the tenant by clicking the Cortex XSIAM tenant name (when the tenant is active).
    *   In the dialog box, view the tenant status, region, serial number, and license details.
 

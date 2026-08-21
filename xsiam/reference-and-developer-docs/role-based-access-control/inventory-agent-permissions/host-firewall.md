@@ -1,3 +1,7 @@
+---
+description: Configure host firewall rules and review firewall events in Cortex XSIAM.
+---
+
 # Host Firewall
 
 Provides endpoint-level network protection, such as defining inbound and outbound firewall rules and creating application-based rules in the Host Firewall page (**Inventory** → **Endpoints** → **Host Firewall)**. Users can also **Collect Detailed Host Firewall Logs** from **Inventory** → **Endpoints** → **Endpoint Control**.

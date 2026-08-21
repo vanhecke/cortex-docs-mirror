@@ -1,13 +1,19 @@
+---
+description: >-
+  Configure Cortex XSIAM notification forwarding to Amazon S3 with Cortex
+  Gateway egress, AWS IAM roles, bucket permissions, and file rollup.
+---
+
 # Forward notifications to Amazon S3
 
-Create the S3 Bucket
+### Create the S3 Bucket
 
 1. Log in to your AWS Management Console.
 2. Navigate to S3 and click **Create bucket**.
 3. Enter a unique bucket name and select the AWS Region. Note the region, as you will need it later.
 4. Verify **Block all public access** is turned on for security.
 
-Configure egress in Cortex Gateway
+### Configure egress in Cortex Gateway
 
 Before forwarding cases or issues to Amazon S3, you need to configure egress. Only a user with Account Admin or Instance Admin permissions can configure egress.
 
@@ -19,11 +25,11 @@ To configure egress, you must enter the bucket name. For example, if the full pa
 4. Enter the exact `<bucket_name>`. For example, `my-example-bucket`. Do not include subfolders.
 5. Add the configuration.
 
-Generate the authorized party ID
+### Generate the authorized party ID
 
 1. In Cortex XSIAM, go to **Settings** → **Configurations** → **Integrations** → **External Applications** → **Add Application** and select **Amazon S3**.
 2. Enter the S3 URI.
-3. Click **Verify**. If egress has not been configured in the Cortex Gateway, verification will fail and a message will display that the endpoint does not match any approved routes.
+3. Click **Verify**. If egress has not been configured in the Cortex Gateway, verification will fail, and a message will display that the endpoint does not match any approved routes.
 4. After verification is successful, an authorized party ID is generated. Copy this ID for your AWS configuration.
 5. Leave this page open to complete the application configuration after configuring the IAM role and permissions in AWS.
 
@@ -54,7 +60,7 @@ Cortex XSIAM needs permission to assume a role in your account.
     ```
 2.  Create and attach a policy granting permissions.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>The policy must allow <code>s3:PutObject</code> and <code>s3:ListBucket</code>. Verify the resource matches your exact bucket name, formatted as <code>arn:aws:s3:::your-bucket-name/*</code>. The following is an example:</p><pre class="language-programlisting"><code class="lang-programlisting">{
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>The policy must allow <code>s3:PutObject</code> and <code>s3:ListBucket</code>. Verify the resource matches your exact bucket name, formatted as <code>arn:aws:s3:::your-bucket-name/*</code>. The following is an example:</p><pre class="language-programlisting"><code class="lang-programlisting">{
       "Version": "2012-10-17",
       "Statement": [
         {
@@ -72,7 +78,7 @@ Cortex XSIAM needs permission to assume a role in your account.
     }
     </code></pre></div>
 
-Complete external application configuration in Cortex XSIAM
+### Complete external application configuration in Cortex XSIAM
 
 1. Go back to Cortex XSIAM and enter the instance name and an optional description.
 2. Select **IAM Role** as the connection method and paste the Role ARN (Amazon Resource Name) from the role you created.
@@ -82,6 +88,6 @@ Complete external application configuration in Cortex XSIAM
     <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>The first message is always sent immediately, and the selected rollup time applies to all subsequent data</p></div>
 5. Click **Test** to verify Cortex XSIAM can write a test object, then click **Connect**.
 
-Configure notification forwarding
+### Configure notification forwarding
 
 Follow the instructions for [Configure notification forwarding](../configure-notification-forwarding).
