@@ -1,0 +1,72 @@
+{
+  "date": "2026-08-20",
+  "sha": "bb8c644b5e7d3143d38afde811d832075e08e09f",
+  "committed_at": "2026-08-20T15:19:41+03:00",
+  "packs": [
+    {
+      "name": "AggregatedScripts",
+      "insertions": 368,
+      "deletions": 39
+    },
+    {
+      "name": "Box",
+      "insertions": 430,
+      "deletions": 32
+    },
+    {
+      "name": "CommonScripts",
+      "insertions": 13,
+      "deletions": 3
+    },
+    {
+      "name": "GoogleSheets",
+      "insertions": 20,
+      "deletions": 2
+    },
+    {
+      "name": "MicrosoftGraphUser",
+      "insertions": 16,
+      "deletions": 9
+    },
+    {
+      "name": "Slack",
+      "insertions": 206,
+      "deletions": 43
+    },
+    {
+      "name": "rasterize",
+      "insertions": 8,
+      "deletions": 2
+    }
+  ],
+  "commits": [
+    {
+      "sha": "e9e803b3db9f63355201d65f38f7b8902077f057",
+      "subject": "XSUP-71787: update ZipFile and UnzipFile docker images to latest tags (#45535)"
+    },
+    {
+      "sha": "9da509d0e839a4c2fe5a2bcb94beafe1390d9670",
+      "subject": "moved mfa enablement field to connect section (#45569)"
+    },
+    {
+      "sha": "0981ec09a00662d48dac0d4dcdbbe63e3b62a5e0",
+      "subject": "XSUP 72996 - Box Event Collector - Fix fetch-events Docker script timeout (#45163)"
+    },
+    {
+      "sha": "f16808600a5299b99dea4af096451adb1983fb7d",
+      "subject": "XSUP-71787: bump Rasterize docker image to demisto/chromium:151.0.7922.11855526 (#45549)"
+    },
+    {
+      "sha": "1f0e5f90cf66f89aade21b6e7a431b9809359b17",
+      "subject": "Migrate quarantine-file script to use platform Built in commands (#45533)"
+    },
+    {
+      "sha": "8dcfa006925b7961c4702931f7b4eccf9a045ff6",
+      "subject": "[Slack] Fix slack-get-events to fetch a date range from command args instead of last run (#45551)"
+    },
+    {
+      "sha": "bb8c644b5e7d3143d38afde811d832075e08e09f",
+      "subject": "Fix SyntaxWarning in Google Sheets (#45581)"
+    }
+  ]
+}
