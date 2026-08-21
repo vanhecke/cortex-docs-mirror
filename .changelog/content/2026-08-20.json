@@ -1,0 +1,45 @@
+{
+  "date": "2026-08-20",
+  "source": "content",
+  "sha": "4c48daa6ee83ffcdc62561db7c3705be4d8b4ec0",
+  "headline": "quarantine-file moves to platform built-in commands; Box and Slack event collectors get fetch fixes",
+  "summary_md": "- A small, tidy day: 7 packs move on 7 commits, one commit each, with no pack added or withdrawn.\n- **AggregatedScripts** (+368/-39) migrates the `quarantine-file` script to platform built-in commands (#45533).\n- Two event collectors are fixed: **Box** (+430/-32) clears a `fetch-events` Docker script timeout (#45163), and **Slack** (+206/-43) makes `slack-get-events` read a date range from its command args instead of last run (#45551).\n- The rest is upkeep — Docker image bumps in **CommonScripts** (#45535) and **rasterize** (#45549), a `SyntaxWarning` fix in **GoogleSheets** (#45581), and a field moved in **MicrosoftGraphUser** (#45569).",
+  "highlights": [
+    {
+      "title": "Box Event Collector fixes a fetch-events Docker script timeout",
+      "detail": "At +430/-32 it is the day's largest pack, carrying XSUP-72996 (#45163).",
+      "paths": ["Packs/Box"]
+    },
+    {
+      "title": "quarantine-file is rewritten onto platform built-in commands",
+      "detail": "AggregatedScripts moves +368/-39 — the only change of the day that alters how a script does its work rather than fixing or bumping it (#45533).",
+      "paths": ["Packs/AggregatedScripts"]
+    },
+    {
+      "title": "slack-get-events now takes its date range from command args, not last run",
+      "detail": "A behaviour change to the command's inputs at +206/-43, so anything driving it on the previous contract needs checking (#45551).",
+      "paths": ["Packs/Slack"]
+    },
+    {
+      "title": "An MFA enablement field moves to the connect section",
+      "detail": "MicrosoftGraphUser is the only pack moving at +16/-9, under the day's one commit subject that names no pack (#45569).",
+      "paths": ["Packs/MicrosoftGraphUser"]
+    },
+    {
+      "title": "Two Docker image bumps land under the same ticket",
+      "detail": "XSUP-71787 bumps ZipFile and UnzipFile in CommonScripts (#45535) and chromium to 151.0.7922.11855526 in rasterize (#45549).",
+      "paths": ["Packs/CommonScripts", "Packs/rasterize"]
+    }
+  ],
+  "items": {
+    "Packs/Box": "+430/-32 fixing a fetch-events Docker script timeout in the event collector (XSUP-72996, #45163).",
+    "Packs/AggregatedScripts": "+368/-39 migrating the quarantine-file script to platform built-in commands (#45533).",
+    "Packs/Slack": "+206/-43 so slack-get-events fetches a date range from command args instead of last run (#45551).",
+    "Packs/GoogleSheets": "+20/-2 fixing a SyntaxWarning (#45581).",
+    "Packs/MicrosoftGraphUser": "+16/-9 moving an MFA enablement field to the connect section (#45569).",
+    "Packs/CommonScripts": "+13/-3 updating the ZipFile and UnzipFile Docker images to their latest tags (XSUP-71787, #45535).",
+    "Packs/rasterize": "+8/-2 bumping the Rasterize Docker image to demisto/chromium:151.0.7922.11855526 (XSUP-71787, #45549)."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
