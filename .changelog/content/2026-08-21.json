@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-21",
+  "source": "content",
+  "sha": "9d27fc3c7aa47bebe74c354540db1c301b0ca7bf",
+  "headline": "A quiet day — no content packs changed",
+  "summary_md": "- Nothing moved: the snapshot records **no packs changed and no commits** for the day.\n- The head it was taken at, `bb8c644`, is dated 20 August 15:19 +03:00 — no commit landed in `demisto/content` after it during the day's window.\n- No pack was added, updated or withdrawn, so there is nothing here to act on.",
+  "highlights": [],
+  "items": {},
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
