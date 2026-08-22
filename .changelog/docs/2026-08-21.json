@@ -1,0 +1,34 @@
+{
+  "date": "2026-08-21",
+  "source": "docs",
+  "sha": "db31287356e453fc226d18611b1e9f1722f7b5c4",
+  "headline": "SaaS Security ticketing moves to Run Automation; new Slack remediation route for SaaS Posture and AI Agent issues",
+  "summary_md": "- A single page moved: **Create and monitor tickets** in Cortex Cloud SaaS Security.\n- The Jira/ServiceNow flow is rewritten — tickets now start from a right-click **Run Automation** on **Cases and Issues**, not from an issue's Overview page.\n- A new **Send issues to Slack for remediation** section routes SaaS Posture and AI Agent issues to a Slack channel.\n- Linked tickets are now read from the issue's **War Room** rather than from any issue view.\n- Remaining edits are wording: \"SSPM console\" becomes \"Cortex console\", and the Prerequisites heading is demoted to bold.",
+  "highlights": [
+    {
+      "title": "Jira and ServiceNow tickets are now created through Run Automation",
+      "detail": "The rewritten procedure right-clicks the issue under Cases and Issues, then fills a Create a Jira Ticket side panel with Description, Issue Type, Project Key and Summary — and offers to connect the Jira instance inline if the integration is not already present.",
+      "paths": ["xsiam/cloud-security/cortex-cloud-saas-security/create-and-monitor-tickets"]
+    },
+    {
+      "title": "New section: send issues to Slack for remediation",
+      "detail": "It requires outbound Slack issue notifications to be configured first, and the procedure itself is to right-click the target issue and select Create a case, which posts a notification to the linked channel.",
+      "paths": ["xsiam/cloud-security/cortex-cloud-saas-security/create-and-monitor-tickets"]
+    },
+    {
+      "title": "The page's scope widens to SaaS Posture and AI Agent issues",
+      "detail": "Both the rewritten ticket procedure and the new Slack section name SaaS Posture and AI Agent issues as the targets, where the previous text spoke only of a SaaS Security issue.",
+      "paths": ["xsiam/cloud-security/cortex-cloud-saas-security/create-and-monitor-tickets"]
+    },
+    {
+      "title": "Linked tickets are tracked from the War Room",
+      "detail": "Viewing a ticket reference now means opening the targeted issue and choosing War Room, rather than selecting the highlighted reference within any issue view.",
+      "paths": ["xsiam/cloud-security/cortex-cloud-saas-security/create-and-monitor-tickets"]
+    }
+  ],
+  "items": {
+    "xsiam/cloud-security/cortex-cloud-saas-security/create-and-monitor-tickets": "Ticket creation moves to right-click Run Automation on Cases and Issues, a Slack remediation section is added, and the scope widens to SaaS Posture and AI Agent issues."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
