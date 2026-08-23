@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-22",
+  "source": "content",
+  "sha": "acdf24aead370707e7d895d31c189ffafd862128",
+  "headline": "A second quiet day — no content packs changed",
+  "summary_md": "- Nothing moved: the snapshot records **no packs changed and no commits** for the day.\n- The head it was taken at, `1706e59`, is dated 20 August 17:16 +03:00 — two days old, and the second snapshot running to end at a 20 August head.\n- No pack was added, updated or withdrawn, so there is nothing here to act on.",
+  "highlights": [],
+  "items": {},
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
