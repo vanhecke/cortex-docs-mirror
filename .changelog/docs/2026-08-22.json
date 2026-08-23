@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-22",
+  "source": "docs",
+  "sha": "2ac06038775db365ca2800d68a134304ed20ec01",
+  "headline": "A quiet day: no documentation page changed, and the portal held at 2,713 pages",
+  "summary_md": "- The daily export ran and picked up **no changes** to any documentation page.\n- Page count held at **2,713**, the same as 2026-08-21.\n- Nothing was added, removed or renamed, and the navigation manifests are unchanged.",
+  "highlights": [],
+  "items": {},
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
