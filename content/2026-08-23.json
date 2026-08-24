@@ -1,0 +1,141 @@
+{
+  "date": "2026-08-23",
+  "sha": "92f01ea8f60f73e4b3544ec87fed0e67a0775144",
+  "committed_at": "2026-08-23T17:27:06+03:00",
+  "packs": [
+    {
+      "name": "AWS-GuardDuty",
+      "insertions": 298,
+      "deletions": 1
+    },
+    {
+      "name": "ApiModules",
+      "insertions": 1526,
+      "deletions": 24
+    },
+    {
+      "name": "CiscoNexus",
+      "insertions": 42,
+      "deletions": 1
+    },
+    {
+      "name": "CiscoSMA",
+      "insertions": 161,
+      "deletions": 1
+    },
+    {
+      "name": "Citrix",
+      "insertions": 211,
+      "deletions": 13
+    },
+    {
+      "name": "CommonScripts",
+      "insertions": 2,
+      "deletions": 1
+    },
+    {
+      "name": "Core",
+      "insertions": 16,
+      "deletions": 1
+    },
+    {
+      "name": "CortexDataLake",
+      "insertions": 728,
+      "deletions": 64
+    },
+    {
+      "name": "ForcepointDLP",
+      "insertions": 218,
+      "deletions": 1
+    },
+    {
+      "name": "GitLab",
+      "insertions": 75,
+      "deletions": 1
+    },
+    {
+      "name": "IronscalesEventCollector",
+      "insertions": 102,
+      "deletions": 1
+    },
+    {
+      "name": "ManageEngine-ADAudit",
+      "insertions": 167,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftGraphFiles",
+      "insertions": 381,
+      "deletions": 2
+    },
+    {
+      "name": "MicrosoftGraphFilesStandardConnector",
+      "insertions": 372,
+      "deletions": 1
+    },
+    {
+      "name": "PAN-OS",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Slack",
+      "insertions": 8,
+      "deletions": 2
+    },
+    {
+      "name": "SonicWallNSv",
+      "insertions": 65,
+      "deletions": 1
+    },
+    {
+      "name": "ThreatZone",
+      "insertions": 3744,
+      "deletions": 2333
+    },
+    {
+      "name": "ZscalerZPA",
+      "insertions": 215,
+      "deletions": 1
+    },
+    {
+      "name": "epo",
+      "insertions": 243,
+      "deletions": 1
+    }
+  ],
+  "commits": [
+    {
+      "sha": "88d650454e9e3ea06d9d3fc8ea28d67a7bba2591",
+      "subject": "SLS - SCM GW Auth (#44967)"
+    },
+    {
+      "sha": "102af886d0578f1d46cb7454d3b7c876ef61410e",
+      "subject": "fix(Slack): resolve GR105 duplicate ID on modeling rule version overlap (#45600)"
+    },
+    {
+      "sha": "dcd344b3253ec9565906955af63ee27ec23e5d7c",
+      "subject": " ThreatZone Integration Update  (#45598)"
+    },
+    {
+      "sha": "5293bdbb23272107cbf7f2e7842729254f21da2f",
+      "subject": "bump version Core for adding timeout field SearchIndicatorInEventsAgentix (#45515)"
+    },
+    {
+      "sha": "f93529a8122203f3f13555f18a61fb6424f7dfc6",
+      "subject": "Fix Citrix  issue (#45594)"
+    },
+    {
+      "sha": "ad5d88e1b9483f8e70e05d445d9715668f18f1fa",
+      "subject": "CRTX-271523: consolidate BC107 legacy-id modeling rules for force-merge (#45545)"
+    },
+    {
+      "sha": "55a90afefb3a7c084377479de6bf0f0bc5ebd94d",
+      "subject": "adding create tag params;release notes (#45575)"
+    },
+    {
+      "sha": "92f01ea8f60f73e4b3544ec87fed0e67a0775144",
+      "subject": "MS Graph Files new commands crtx-218926 (#45485)"
+    }
+  ]
+}
