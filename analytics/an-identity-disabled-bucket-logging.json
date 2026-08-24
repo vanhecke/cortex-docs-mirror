@@ -10,7 +10,7 @@
   "deduplication_period": "5 Days",
   "description": "An identity disabled bucket logging.",
   "detection_modules": "Cloud",
-  "detector_tags": "Data Detection & Response",
+  "detector_tags": "Data Detection & Response, Cloud Log Tampering Analytics",
   "investigative_actions": "Determine whether this activity was done on purpose. Examine additional API calls made by the identity.",
   "name": "An identity disabled bucket logging",
   "required_data": [

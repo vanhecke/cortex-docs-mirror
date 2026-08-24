@@ -10,7 +10,7 @@
   "deduplication_period": "1 Day",
   "description": "An AWS Cloudtrail Event Selector was modified. An attacker might use this technique to disable audit logs.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "Cloud Log Tampering Analytics",
   "investigative_actions": "Review the new event selector policy. Check The cloud identity activity prior/after to the event selectors policy modification.",
   "name": "Disable AWS audit logs through Event Selectors",
   "required_data": [

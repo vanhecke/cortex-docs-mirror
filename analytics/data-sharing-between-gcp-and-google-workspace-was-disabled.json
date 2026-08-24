@@ -13,7 +13,7 @@
   "attackers_goals": "Adversaries may stop audit log events from being sent to remove evidence of their presence or hinder defenses.",
   "deduplication_period": "2 Days",
   "description": "An identity has modified data sharing settings between GCP and Google Workspace.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Google Workspace",
   "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check whether Google Workspace audit log events were configured to be sent to Google Cloud. Follow further actions done by the account.",
   "name": "Data Sharing between GCP and Google Workspace was disabled",

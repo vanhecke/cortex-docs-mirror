@@ -9,7 +9,7 @@
   "attackers_goals": "An attacker may add owners to an application to authenticate as the application later on and access resources.",
   "deduplication_period": "1 Day",
   "description": "An identity was added as an owner to an Azure application.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Check if the added account is new to the organization. Check whether the account that added the new owner is supposed to perform such actions. Check for possible logins from the application modified. Follow further actions done by the application.",
   "name": "Owner added to Azure application",

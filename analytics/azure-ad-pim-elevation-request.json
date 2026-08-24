@@ -9,7 +9,7 @@
   "attackers_goals": "Getting elevated permissions to perform malicious actions.",
   "deduplication_period": "1 Day",
   "description": "An Azure AD PIM elevation request was denied/approved.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Check if the elevation is authorized. Follow further actions or suspicious logins from the elevated account.",
   "name": "Azure AD PIM elevation request",

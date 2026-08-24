@@ -10,7 +10,7 @@
   "deduplication_period": "5 Days",
   "description": "An AWS GuardDuty IP set has been created.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "Cloud Log Tampering Analytics",
   "investigative_actions": "Check which IP set has been modified and confirm the changes.",
   "name": "An AWS GuardDuty IP set was created",
   "required_data": [

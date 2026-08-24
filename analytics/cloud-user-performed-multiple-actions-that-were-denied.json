@@ -11,7 +11,7 @@
   "deduplication_period": "5 Days",
   "description": "An identity performed multiple actions that were denied, which may indicate it is being misused.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "OCI Analytics",
   "investigative_actions": "Check if the API calls were made by the identity. Check if there are additional calls executed by the identity.",
   "name": "Cloud user performed multiple actions that were denied",
   "required_data": [

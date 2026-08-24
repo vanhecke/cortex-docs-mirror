@@ -11,7 +11,7 @@
   "deduplication_period": "1 Day",
   "description": "An identity performed a suspicious activity on bucket used to store logs.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "Cloud Log Tampering Analytics",
   "investigative_actions": "Verify whether the identity attempted to access the bucket. Verify no logs were modified in the bucket.",
   "name": "Suspicious activity on logging bucket",
   "required_data": [

@@ -10,7 +10,7 @@
   "deduplication_period": "5 Days",
   "description": "A cloud identity has deleted one or more Flow Logs records.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "Cloud Log Tampering Analytics",
   "investigative_actions": "Check if the Identity intended to delete the Flow Logs record/s. Check what VPC is affected by this.",
   "name": "AWS Flow Logs deletion",
   "required_data": [

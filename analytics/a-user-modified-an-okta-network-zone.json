@@ -10,7 +10,7 @@
   "attackers_goals": "An attacker may attempt to modify an Okta network zone to weaken an organization's security controls.",
   "deduplication_period": "2 Days",
   "description": "An Okta network zone was modified by a user.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Okta Audit Analytics",
   "investigative_actions": "Follow further actions done by the account. Verify that the configuration change was expected. Look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Investigate if any other network zones have been changed or removed.",
   "name": "A user modified an Okta network zone",

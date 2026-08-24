@@ -9,7 +9,7 @@
   "attackers_goals": "An attacker may share files from a SaaS service to exfiltrate sensitive data.",
   "deduplication_period": "1 Day",
   "description": "A user shared files from within a SaaS service to an external domain.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Data Detection & Response",
   "investigative_actions": "Check for signs of account compromise, such as abnormal login activity or unusual behavior. Determine if the files are shared with users outside the organization and if the recipients are familiar. Review the files that were shared to determine if they contain sensitive data. Analyze the file types that were shared. Monitor the account for any further suspicious actions.",
   "name": "External SaaS file-sharing activity",

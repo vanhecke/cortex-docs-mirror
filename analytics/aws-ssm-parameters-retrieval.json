@@ -7,10 +7,10 @@
     "Credentials from Password Stores: Cloud Secrets Management Stores (T1555.006)"
   ],
   "attackers_goals": "Exfiltrate sensitive secrets stored in AWS SSM parameter store.",
-  "deduplication_period": "5 Days",
+  "deduplication_period": "1 Day",
   "description": "An attempt was made to retrieve parameters stored in AWS SSM.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "SSM Remote Management Analytics",
   "investigative_actions": "Investigate the purpose of the encrypted parameter and assess the sensitivity of its contents. Check if the access aligns with known workflows or automation, or if it indicates abnormal activity.",
   "name": "AWS SSM parameters retrieval",
   "required_data": [
@@ -29,19 +29,6 @@
         "Credentials from Password Stores: Cloud Secrets Management Stores (T1555.006)"
       ],
       "description": "An attempt was made to retrieve encrypted parameters stored in AWS SSM.",
-      "attackers_goals": "Exfiltrate sensitive secrets stored in AWS SSM parameter store.",
-      "investigative_actions": "Investigate the purpose of the encrypted parameter and assess the sensitivity of its contents. Check if the access aligns with known workflows or automation, or if it indicates abnormal activity."
-    },
-    {
-      "name": "Unusual AWS SSM parameters retrieval",
-      "severity": "Informational",
-      "attack_tactics": [
-        "Credential Access (TA0006)"
-      ],
-      "attack_techniques": [
-        "Credentials from Password Stores: Cloud Secrets Management Stores (T1555.006)"
-      ],
-      "description": "An attempt was made to retrieve parameters stored in AWS SSM.",
       "attackers_goals": "Exfiltrate sensitive secrets stored in AWS SSM parameter store.",
       "investigative_actions": "Investigate the purpose of the encrypted parameter and assess the sensitivity of its contents. Check if the access aligns with known workflows or automation, or if it indicates abnormal activity."
     }

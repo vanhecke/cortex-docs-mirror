@@ -1,0 +1,60 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts: Cloud Accounts (T1078.004)"
+  ],
+  "attackers_goals": "Use an account that was possibly compromised in the past to gain access to the network.",
+  "deduplication_period": "1 Day",
+  "description": "A user with no activity in the past 30 days with the target, attempted to authenticate via universal authentication.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Confirm that the activity is benign (e.g. the user returned from a long leave of absence).",
+  "name": "An inactive user attempted to authenticate",
+  "required_data": [],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Successful authentication by an inactive user from a risky IP address",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Cloud Accounts (T1078.004)"
+      ],
+      "description": "A user with no activity in the past 30 days with the target, attempted to authenticate via universal authentication.",
+      "attackers_goals": "Use an account that was possibly compromised in the past to gain access to the network.",
+      "investigative_actions": "Confirm that the activity is benign (e.g. the user returned from a long leave of absence)."
+    },
+    {
+      "name": "An inactive user attempted to authenticate from a risky IP address",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Cloud Accounts (T1078.004)"
+      ],
+      "description": "A user with no activity in the past 30 days with the target, attempted to authenticate via universal authentication.",
+      "attackers_goals": "Use an account that was possibly compromised in the past to gain access to the network.",
+      "investigative_actions": "Confirm that the activity is benign (e.g. the user returned from a long leave of absence)."
+    },
+    {
+      "name": "Successful authentication by an inactive user",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts: Cloud Accounts (T1078.004)"
+      ],
+      "description": "A user with no activity in the past 30 days with the target, attempted to authenticate via universal authentication.",
+      "attackers_goals": "Use an account that was possibly compromised in the past to gain access to the network.",
+      "investigative_actions": "Confirm that the activity is benign (e.g. the user returned from a long leave of absence)."
+    }
+  ]
+}

@@ -10,7 +10,7 @@
   "deduplication_period": "1 Day",
   "description": "A cloud identity that normally connects from a limited set of countries connected from a new country for the first time.",
   "detection_modules": "Cloud",
-  "detector_tags": "Kubernetes - API",
+  "detector_tags": "Kubernetes - API, OCI Analytics",
   "investigative_actions": "Check if the identity routed their traffic via a VPN or shared their credentials with a remote employee.",
   "name": "A cloud identity executed an API call from an unusual country",
   "required_data": [

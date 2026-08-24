@@ -11,7 +11,7 @@
   "attackers_goals": "An attacker attempts to change Active Directory configuration for persistence or defense evasion.",
   "deduplication_period": "1 Day",
   "description": "A user or application attempted to modify the federation settings of the domain.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Check what configuration has been changed. Check whether the user changing the configuration is permitted.",
   "name": "Azure domain federation settings modification attempt",

@@ -10,7 +10,7 @@
   "attackers_goals": "For purposes of maintaining persistence, an attacker could potentially register his device with various accounts that have been compromised.",
   "deduplication_period": "1 Day",
   "description": "A device was assigned as an Okta MFA device to a user.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Okta Audit Analytics",
   "investigative_actions": "Confirm that the device assignments were intentionally made by the users and are legitimate. Examine the IP address and assess its reputation. Continue monitoring the accounts for any subsequent actions that may indicate suspicious behavior.",
   "name": "Okta device assignment",

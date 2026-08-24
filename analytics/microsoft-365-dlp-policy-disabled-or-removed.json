@@ -10,7 +10,7 @@
   "attackers_goals": "An attacker is attempting to bypass Microsoft 365 Data Loss Prevention (DLP) policies.",
   "deduplication_period": "1 Day",
   "description": "A user disabled or removed a Microsoft 365 data loss prevention (DLP) policy, which may indicate DLP monitoring evasion.",
-  "detection_modules": "Identity Threat Module, Email",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection, Email",
   "detector_tags": "",
   "investigative_actions": "Follow further actions done by the account. Verify that the configuration change was expected. Look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Monitor the user's activity for any access to sensitive data or data exfiltration. Investigate if any other security policies have been changed or removed.",
   "name": "Microsoft 365 DLP policy disabled or removed",

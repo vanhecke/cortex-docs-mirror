@@ -10,7 +10,7 @@
   "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
   "deduplication_period": "1 Day",
   "description": "A user may have attempted to bypass Okta MFA.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Okta Audit Analytics",
   "investigative_actions": "Contact the user who attempted to bypass MFA and ensure the request was legitimate. Check if the user successfully authenticated after the event.",
   "name": "A user attempted to bypass Okta MFA",

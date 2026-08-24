@@ -13,7 +13,7 @@
   "attackers_goals": "An attacker's goal is to gain unauthorized access, compromise user accounts, and perform malicious actions within an organization's systems, potentially leading to data breaches, account takeovers, and the escalation of privileges.",
   "deduplication_period": "1 Day",
   "description": "A user created a new API token in Okta.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Okta Audit Analytics",
   "investigative_actions": "Review the actions taken by the user that created the token. Follow the operations made using this API token by the ID token. Contact the user who created the API token and ensure that the API token is needed.",
   "name": "Okta API Token Created",

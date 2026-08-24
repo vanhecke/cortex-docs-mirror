@@ -11,7 +11,7 @@
   "attackers_goals": "Adversaries may modify remote access settings to maintain persistent access and bypass security controls.",
   "deduplication_period": "1 Day",
   "description": "A user modified Chrome OS Remote Access configuration in Google Workspace.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Google Workspace",
   "investigative_actions": "Verify if the configuration change was authorized. Investigate the source IP address and account involved for malicious activity. Follow further actions performed by the account and Remote Access connections performed.",
   "name": "Chrome OS Remote Access policy was modified in Google Workspace",

@@ -9,7 +9,7 @@
   "attackers_goals": "An attacker can add an authentication method to an account, so they can have later access to the tenant and resources.",
   "deduplication_period": "1 Day",
   "description": "An identity attempted to add an Azure authentication method.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Check if the authentication method is legitimate in the organization. Check whether the identity is permitted to perform such actions. Follow the account for possible suspicious or unusual logins.",
   "name": "Authentication method added to an Azure account",

@@ -9,7 +9,7 @@
   "attackers_goals": "Attackers may leverage Teams applications to maintain persistent access to compromised Teams accounts.",
   "deduplication_period": "1 Day",
   "description": "A Microsoft Teams application was installed.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Microsoft Teams",
   "investigative_actions": "Confirm that the application was created by a certified and trusted entity. Evaluate the permissions requested by the application to determine if they are excessive or unusual. Determine if it is within the user's role to install this type of application. Correlate the alert with the sign-in event to get additional information on the identity performing the action. Follow further actions done by the account.",
   "name": "A Microsoft Teams application was installed",

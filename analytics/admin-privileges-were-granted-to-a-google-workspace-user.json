@@ -9,7 +9,7 @@
   "attackers_goals": "Gain access to sensitive data stored in Google Workspace. Manipulate or delete data stored in Google Workspace. Gain access to privileged features in Google Workspace.",
   "deduplication_period": "5 Days",
   "description": "Admin privileges were granted to a Google Workspace user. This user now has access to additional administrative functions and settings.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Google Workspace",
   "investigative_actions": "Check which Google Workspace user was granted the admin privileges. Check if the user is authorized to be granted such privileges. Review the audit logs to determine the actions taken by the user.",
   "name": "Admin privileges were granted to a Google Workspace user",

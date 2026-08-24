@@ -12,7 +12,7 @@
   "attackers_goals": "Leverage a compromised user account to modify a mailbox's settings to forward emails to an external recipient and collect sensitive information.",
   "deduplication_period": "1 Day",
   "description": "A user configured Exchange SMTP forwarding on a mailbox, which forwards all emails sent to that mailbox to a specified recipient.",
-  "detection_modules": "Identity Threat Module, Email",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection, Email",
   "detector_tags": "",
   "investigative_actions": "Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the forwarding domain is an unknown external domain. Investigate the IP address associated with the rule. Follow further actions done by the account.",
   "name": "Exchange user mailbox forwarding",

@@ -9,7 +9,7 @@
   "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
   "deduplication_period": "1 Day",
   "description": "An external user created a Microsoft Teams conversation with users in the organization with additional suspicious operations.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Microsoft Teams",
   "investigative_actions": "Confirm that the tenant and user are authorized to start a conversation with users in the organization. Verify whether any user was removed from the conversation, and determine the reason for their removal. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that might have been sent in the conversation. Check external domain reputation. Review past communication from the external user. Follow further actions done by the account.",
   "name": "External user created a Microsoft Teams conversation with suspicious operations",

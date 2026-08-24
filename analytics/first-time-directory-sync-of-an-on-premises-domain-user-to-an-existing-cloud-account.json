@@ -9,7 +9,7 @@
   "attackers_goals": "Attackers may leverage DirectorySync to move laterally from a compromised on-premise environment into the cloud tenant, allowing them to bypass the cloud's security boundaries and take over high-value cloud identities.",
   "deduplication_period": "1 Day",
   "description": "First-time synchronization of an on-premises domain user with an existing cloud account.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Check if the cloud account was an administrator (Global Admin, etc.) before this sync. Determine if the on-premise user was recently created or if its 'proxyAddress' attribute was recently modified. Confirm if the organization intended to transition this account from Cloud-Only to Hybrid. Verify the consistency between the on-premises 'ObjectGUID' and the newly assigned 'ImmutableID' in Azure AD.",
   "name": "First-time directory sync of an on-premises domain user to an existing cloud account",

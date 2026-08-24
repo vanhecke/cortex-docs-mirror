@@ -9,7 +9,7 @@
   "attackers_goals": "Attackers may leverage Microsoft Teams to conduct voice phishing attacks by exploiting trusted communication channels with users inside the organization.",
   "deduplication_period": "1 Day",
   "description": "An external user called a user in the organization via Microsoft Teams.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Microsoft Teams",
   "investigative_actions": "Confirm that the external tenant and external user are authorized to call users in the organization. Check external domain reputation. Follow further actions performed by the user who participated in the call. Verify if the user account was compromised or was a victim of a voice phishing campaign.",
   "name": "External user call via Microsoft Teams",

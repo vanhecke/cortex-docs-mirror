@@ -9,7 +9,7 @@
   "attackers_goals": "Adversaries may change the organizational unit the user belongs to, so they could inherit permissions for applications and resources that were inaccessible before.",
   "deduplication_period": "5 Days",
   "description": "A Google Workspace admin modified an organizational unit.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Google Workspace",
   "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Follow further actions done by the account.",
   "name": "Google Workspace organizational unit was modified",

@@ -9,7 +9,7 @@
   "attackers_goals": "An attacker tries infiltrating an Okta account to gain unauthorized access to valuable resources.",
   "deduplication_period": "1 Day",
   "description": "Okta Threat Insight Reported Threat Detected.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Okta Audit Analytics",
   "investigative_actions": "Investigate the original events that were reported as suspicious. Investigate additional alerts that are activated based on the IP address. Follow further actions done by the ip.",
   "name": "Okta Reported Threat Detected",

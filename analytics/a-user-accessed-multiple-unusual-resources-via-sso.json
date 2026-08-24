@@ -12,7 +12,7 @@
   "attackers_goals": "Unusual resources may be accessed for various purposes, including exfiltration, lateral movement, etc.",
   "deduplication_period": "1 Day",
   "description": "A user accessed multiple resources via SSO that are unusual for this user. This may be indicative of a compromised account.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Investigate the resources that were accessed to determine if they were used for legitimate purposes or malicious activity.",
   "name": "A user accessed multiple unusual resources via SSO",

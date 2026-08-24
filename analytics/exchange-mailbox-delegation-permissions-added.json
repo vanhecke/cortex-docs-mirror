@@ -9,7 +9,7 @@
   "attackers_goals": "Add delegation permissions to a mailbox for persistence reasons.",
   "deduplication_period": "1 Day",
   "description": "A user added delegation permissions to an Exchange mailbox.",
-  "detection_modules": "Identity Threat Module, Email",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection, Email",
   "detector_tags": "",
   "investigative_actions": "Look for signs that the user account and mailboxes are compromised (e.g. abnormal logins, unusual activity). Investigate the IP address associated with the activity. Follow further actions done by the account. Look for unusual email patterns from the affected mailbox (e.g. unusual email contents).",
   "name": "Exchange mailbox delegation permissions added",

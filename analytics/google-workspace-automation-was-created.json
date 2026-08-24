@@ -13,7 +13,7 @@
   "attackers_goals": "Adversaries may create automations to maintain persistence, execute malicious code, or exfiltrate data automatically.",
   "deduplication_period": "1 Day",
   "description": "Google Workspace automation was created.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Google Workspace",
   "investigative_actions": "Verify if the automation creation was authorized and expected for this user. Investigate the automation logic to determine if it is malicious. Investigate other suspicious activities performed by the user around the same timeframe.",
   "name": "Google Workspace automation was created",

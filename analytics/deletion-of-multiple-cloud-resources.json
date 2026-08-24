@@ -10,7 +10,7 @@
   "deduplication_period": "5 Days",
   "description": "An identity deleted multiple cloud resources.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "OCI Analytics",
   "investigative_actions": "Confirm the legitimacy of the suspected identity and what cloud resources have been deleted by the identity. Look for any unusual activity associated with the suspected identity and determine whether they are compromised.",
   "name": "Deletion of multiple cloud resources",
   "required_data": [

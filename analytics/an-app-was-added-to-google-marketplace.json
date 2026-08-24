@@ -9,7 +9,7 @@
   "attackers_goals": "An adversary may add a malicious application to an organization's Google Workspace domain to maintain a presence in their target's organization and steal data.",
   "deduplication_period": "5 Days",
   "description": "An app was added to the Google Workspace Marketplace.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Google Workspace",
   "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Investigate the new app that was added to Google workspace Marketplace. Follow further actions done by the account.",
   "name": "An app was added to Google Marketplace",

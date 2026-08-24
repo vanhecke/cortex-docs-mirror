@@ -9,7 +9,7 @@
   "attackers_goals": "Adversaries may manipulate accounts and groups to maintain access to victim systems.",
   "deduplication_period": "5 Days",
   "description": "A user added another user to a Google Workspace group.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Google Workspace",
   "investigative_actions": "Check if the identity intended to perform this action, or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the user was added to a sensitive group. Follow further actions done by the account.",
   "name": "A Google Workspace user was added to a group",

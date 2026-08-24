@@ -11,7 +11,7 @@
   "attackers_goals": "An attacker is attempting to evade detection.",
   "deduplication_period": "1 Day",
   "description": "A user disabled an Exchange DomainKeys Identified Mail (DKIM) signing configuration. DKIM helps ensure that emails are authorized and not spoofed.",
-  "detection_modules": "Identity Threat Module, Email",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection, Email",
   "detector_tags": "",
   "investigative_actions": "Follow further actions done by the account. Verify that the configuration change was expected. Check for a possible phishing campaign on the organization.",
   "name": "Exchange DKIM signing configuration disabled",

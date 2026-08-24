@@ -9,7 +9,7 @@
   "attackers_goals": "An attacker may download files from a SaaS service to exfiltrate sensitive data.",
   "deduplication_period": "1 Day",
   "description": "A user downloaded a large volume of files from an organizational SaaS service, either exceeding the normal file count or size for the user's typical behavior.",
-  "detection_modules": "Identity Threat Module, Email",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection, Email",
   "detector_tags": "Data Detection & Response",
   "investigative_actions": "Check for signs of account compromise, such as abnormal login activity or unusual behavior. Review the files that were downloaded to determine if they contain sensitive data. Verify if the user account that downloaded the files is authorized to access them. Analyze the file types that were downloaded. Monitor the account for any further suspicious actions.",
   "name": "Massive file downloads from SaaS service",

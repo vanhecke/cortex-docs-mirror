@@ -9,7 +9,7 @@
   "attackers_goals": "To do.",
   "deduplication_period": "2 Days",
   "description": "A Google Workspace identity performed an admin console activity for the first time.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Google Workspace",
   "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the changes that were made look suspicious. Follow further actions done by the account.",
   "name": "A Google Workspace identity performed an unusual admin console activity",

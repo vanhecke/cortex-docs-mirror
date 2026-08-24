@@ -10,7 +10,7 @@
   "deduplication_period": "5 Days",
   "description": "A compute resource was created or updated in a cloud region that has been dormant for this project.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "OCI Analytics",
   "investigative_actions": "Verify if compute resources are authorized in this region. Terminate unauthorized compute resources and disable unused regions.",
   "name": "Compute activity in dormant cloud region",
   "required_data": [

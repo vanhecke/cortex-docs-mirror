@@ -13,7 +13,7 @@
   "attackers_goals": "Bypass identity trust controls to gain persistent unauthorized access to cloud resources.",
   "deduplication_period": "1 Day",
   "description": "Detection of potential OAuth token theft via a forced 'localhost' redirect and first-party app abuse. This indicates an attacker has likely bypassed MFA to hijack a user's cloud session.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Check for successful logins to Azure CLI or PowerShell from anomalous IPs. Review sign-in logs for User-Agents associated with CLI tools or scripts. Revoke all active OAuth refresh tokens for the user immediately.",
   "name": "Possible ConsentFix - OAuth Token Theft Detected",

@@ -12,7 +12,7 @@
   "attackers_goals": "Forward all emails in the organization that match specific criteria to an external recipient to collect sensitive information.",
   "deduplication_period": "1 Day",
   "description": "A user configured an Exchange transport (mail flow) forwarding rule, which is applied to all emails that match certain conditions in the organization.",
-  "detection_modules": "Identity Threat Module, Email",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection, Email",
   "detector_tags": "",
   "investigative_actions": "Check what mailboxes are affected by the transport rule. Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the forwarding domain is an unknown external domain and look up its reputation. Investigate the IP address associated with the rule. Follow further actions done by the account. Check for a possible phishing campaign on the organization. Look for emails sent to this recipient by other users.",
   "name": "Exchange transport forwarding rule configured",

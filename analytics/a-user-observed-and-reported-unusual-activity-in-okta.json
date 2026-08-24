@@ -9,7 +9,7 @@
   "attackers_goals": "An attacker tries infiltrating an Okta account to gain unauthorized access to valuable resources.",
   "deduplication_period": "1 Day",
   "description": "A user observed and reported unusual activity in Okta.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Okta Audit Analytics",
   "investigative_actions": "Investigate the original event that was reported as suspicious. Contact the user and understand why he reported the activity as suspicious. Look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Follow further actions done by the account.",
   "name": "A user observed and reported unusual activity in Okta",

@@ -10,7 +10,7 @@
   "deduplication_period": "5 Days",
   "description": "A retention policy was set on a S3 bucket used by a CloudTrail Trail, using a S3 Lifecycle Rule.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "Cloud Log Tampering Analytics",
   "investigative_actions": "Review the new S3 bucket lifecycle policy. Check The cloud identity activity prior/after to the lifecycle policy modification.",
   "name": "AWS S3 bucket data retention policy change through S3 Lifecycle rule",
   "required_data": [

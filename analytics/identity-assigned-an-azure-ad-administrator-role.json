@@ -9,7 +9,7 @@
   "attackers_goals": "An attacker may add additional roles or permissions to an attacker controlled cloud account to maintain persistent access to a tenant.",
   "deduplication_period": "1 Day",
   "description": "An identity was assigned an Azure AD Administrator role.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Check if the added account is new to the organization. Check whether the account that added the account to the role is permitted to perform such actions. Check what can be affected by the assigned role* Follow further actions done by the account that was added to the role.",
   "name": "Identity assigned an Azure AD Administrator Role",

@@ -10,7 +10,7 @@
   "deduplication_period": "5 Days",
   "description": "Cloud identity activity detected from distant geographic regions within an short time window. This suggests unauthorized use of credentials, possibly indicating a compromised account.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "OCI Analytics",
   "investigative_actions": "Verify if the identity's credentials have been compromised. Examine the recent activity of the identity in question.",
   "name": "Impossible travel by a cloud identity",
   "required_data": [

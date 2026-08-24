@@ -12,7 +12,7 @@
   "attackers_goals": "Create an inbox rule using a compromised user account to automatically forward emails containing specific conditions to an external recipient.",
   "deduplication_period": "1 Day",
   "description": "A user configured an Exchange inbox forwarding rule, which forwards emails that meet specific conditions.",
-  "detection_modules": "Identity Threat Module, Email",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection, Email",
   "detector_tags": "",
   "investigative_actions": "Check what conditions are met in the inbox rule (e.g. specific keywords in the subject or body). Determine if any of the conditions and keywords look suspicious. Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the forwarding domain is an unknown external domain and look up its reputation. Investigate the IP address associated with the rule. Follow further actions done by the account. Check for a possible phishing campaign on the organization. Look for emails sent to this recipient by other users.",
   "name": "Exchange inbox forwarding rule configured",

@@ -13,7 +13,7 @@
   "deduplication_period": "5 Days",
   "description": "A cloud resource was modified by a newly seen IAM user.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "OCI Analytics",
   "investigative_actions": "Examine which resources were affected and how. Investigate any unusual activity originating from the identity.",
   "name": "Unusual resource modification by newly seen IAM user",
   "required_data": [

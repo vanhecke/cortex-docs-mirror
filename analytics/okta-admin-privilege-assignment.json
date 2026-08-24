@@ -9,7 +9,7 @@
   "attackers_goals": "An attacker is attempting to gain access to sensitive information or systems, while privilege escalation involves their attempt to increase control and access within the system or network.",
   "deduplication_period": "1 Day",
   "description": "A user assigned admin privileges to a new user or group.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Okta Audit Analytics",
   "investigative_actions": "Reach out to the user responsible for the alert to confirm the legitimacy of the activity. Examine the user's actions preceding and following the activation of the alert. Analyze the actions carried out by the user responsible for granting permission.",
   "name": "Okta admin privilege assignment",

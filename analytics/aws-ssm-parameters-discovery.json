@@ -12,7 +12,7 @@
   "deduplication_period": "5 Days",
   "description": "An attempt was made to list parameters stored in AWS SSM.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "SSM Remote Management Analytics",
   "investigative_actions": "Check if the secrets manager activity aligns with known workflows or automation, or if it indicates abnormal activity. Follow further actions done by the identity.",
   "name": "AWS SSM parameters discovery",
   "required_data": [

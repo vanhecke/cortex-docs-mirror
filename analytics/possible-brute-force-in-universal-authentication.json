@@ -1,0 +1,88 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Resource Development (TA0042)"
+  ],
+  "attack_techniques": [
+    "Brute Force (T1110)",
+    "Brute Force: Password Guessing (T1110.001)",
+    "Compromise Accounts: Cloud Accounts (T1586.003)"
+  ],
+  "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
+  "deduplication_period": "1 Day",
+  "description": "An abnormally high amount of authentication attempts via universal authentication were seen within a short period of time. This may indicate a brute-force attack.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Check the legitimacy of this activity and determine whether it is malicious or not. Check if the user usually logs in from this country. Check whether a successful login was made after unsuccessful attempts.",
+  "name": "Possible Brute Force in universal authentication",
+  "required_data": [],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Possible Brute Force in universal authentication on a honey user",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Brute Force (T1110)",
+        "Brute Force: Password Guessing (T1110.001)",
+        "Compromise Accounts: Cloud Accounts (T1586.003)"
+      ],
+      "description": "An abnormally high amount of authentication attempts via universal authentication were seen within a short period of time. This may indicate a brute-force attack.",
+      "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
+      "investigative_actions": "Check the legitimacy of this activity and determine whether it is malicious or not. Check if the user usually logs in from this country. Check whether a successful login was made after unsuccessful attempts."
+    },
+    {
+      "name": "Suspicious Brute Force in universal authentication",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Brute Force (T1110)",
+        "Brute Force: Password Guessing (T1110.001)",
+        "Compromise Accounts: Cloud Accounts (T1586.003)"
+      ],
+      "description": "An abnormally high amount of authentication attempts via universal authentication were seen within a short period of time. This may indicate a brute-force attack.",
+      "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
+      "investigative_actions": "Check the legitimacy of this activity and determine whether it is malicious or not. Check if the user usually logs in from this country. Check whether a successful login was made after unsuccessful attempts."
+    },
+    {
+      "name": "Brute Force in universal authentication",
+      "severity": "Low",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Brute Force (T1110)",
+        "Brute Force: Password Guessing (T1110.001)",
+        "Compromise Accounts: Cloud Accounts (T1586.003)"
+      ],
+      "description": "An abnormally high amount of authentication attempts via universal authentication were seen within a short period of time. This may indicate a brute-force attack.",
+      "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
+      "investigative_actions": "Check the legitimacy of this activity and determine whether it is malicious or not. Check if the user usually logs in from this country. Check whether a successful login was made after unsuccessful attempts."
+    },
+    {
+      "name": "Abnormal Possible Brute Force in universal authentication",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Resource Development (TA0042)"
+      ],
+      "attack_techniques": [
+        "Brute Force (T1110)",
+        "Brute Force: Password Guessing (T1110.001)",
+        "Compromise Accounts: Cloud Accounts (T1586.003)"
+      ],
+      "description": "The number of failed authentication attempts for this user significantly exceeds their historical baseline (avg + 3*stddev).",
+      "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
+      "investigative_actions": "Check the legitimacy of this activity and determine whether it is malicious or not. Check if the user usually logs in from this country. Check whether a successful login was made after unsuccessful attempts."
+    }
+  ]
+}

@@ -9,7 +9,7 @@
   "attackers_goals": "An attacker might forge a valid SAML token to impersonate other user accounts. This is used to gain persistent, unauthorized access to cloud resources, and bypassing MFA.",
   "deduplication_period": "1 Day",
   "description": "A user attempted to sign in using an invalid SAML. This might indicate a Golden SAML attack.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Active Directory Federation Services Analytics",
   "investigative_actions": "Check for recent changes to the SAML signing certificate on both the Identity Provider and the Service Provider to rule out a configuration drift or expiration issue. Check for other correlated alerts on on-premises systems that may be related to the Golden SAML attack. Look for signs that the user account is compromised (e.g. abnormal logins, unusual activity).",
   "name": "Invalid SAML Detected",

@@ -9,7 +9,7 @@
   "attackers_goals": "An attacker may add permissions to a mailbox folder for persistence reasons. For instance, an attacker may assign the Default or Anonymous user permissions. This will allow them to maintain persistent access to the mailbox folder, which may lead to exfiltration of the messages.",
   "deduplication_period": "1 Day",
   "description": "A user modified permissions to an Exchange mailbox folder.",
-  "detection_modules": "Identity Threat Module, Email",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection, Email",
   "detector_tags": "",
   "investigative_actions": "Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Investigate the IP address associated with the activity. Follow further actions done by the account. Look for unusual email patterns from the affected mailbox (e.g. unusual email contents). Check for abnormal Azure AD non-interactive logins by the user. Monitor for changes that may indicate excessively broad permissions.",
   "name": "Exchange mailbox folder permission modification",

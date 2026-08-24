@@ -10,7 +10,7 @@
   "deduplication_period": "5 Days",
   "description": "AWS SecurityHub findings were modified.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "Cloud Log Tampering Analytics",
   "investigative_actions": "Check the current AWS SecurityHub settings and verify they are configured properly.",
   "name": "AWS SecurityHub findings were modified",
   "required_data": [

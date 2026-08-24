@@ -11,7 +11,7 @@
   "attackers_goals": "An attacker is attempting to gain access to an account secured with MFA.",
   "deduplication_period": "1 Day",
   "description": "An Okta MFA factor was modified by a user, suggesting a potential compromise of the account.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Okta Audit Analytics",
   "investigative_actions": "Contact the user and ensure the operation was legitimate. Check if the user modifies more factors. If the user activates a weak factor, check for abnormal successful sign-ins from different countries and times. If the user deactivates a strong factor, check if he authenticates with unusual factors and checks for abnormal successful sign-ins from different countries and times.",
   "name": "A user modified an Okta MFA factor",

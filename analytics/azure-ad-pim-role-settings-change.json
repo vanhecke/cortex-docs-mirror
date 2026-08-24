@@ -11,7 +11,7 @@
   "attackers_goals": "An attacker can modify the PIM role settings to make it easier to acquire a privileged account.",
   "deduplication_period": "1 Hour",
   "description": "An identity changed the PIM role settings.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Check what role settings have been updated. Check whether the user changing the settings is permitted to perform such actions.",
   "name": "Azure AD PIM role settings change",

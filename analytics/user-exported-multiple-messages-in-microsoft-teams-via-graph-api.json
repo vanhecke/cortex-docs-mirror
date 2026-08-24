@@ -9,7 +9,7 @@
   "attackers_goals": "Attackers may leverage messages extraction from Microsoft Teams to collect sensitive data.",
   "deduplication_period": "1 Day",
   "description": "A user exported multiple messages in Microsoft Teams via Graph API.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Microsoft Teams",
   "investigative_actions": "Confirm that the exported messages were extracted from a certified and trusted entity. Determine if it is within the user's role to extract messages from Microsoft Teams. Follow further actions done by the account and validate that the exported conversations were not sent to an untrusted entity.",
   "name": "User exported multiple messages in Microsoft Teams via Graph API",

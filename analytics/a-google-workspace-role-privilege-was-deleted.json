@@ -9,7 +9,7 @@
   "attackers_goals": "Gain access to sensitive data stored in the workspace. Gain elevated privileges in the workspace.",
   "deduplication_period": "5 Days",
   "description": "A privilege was removed from a Google Workspace Role, This could potentially affect the access to services and data in the organization.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Google Workspace",
   "investigative_actions": "Investigate who was assigned the deleted role privilege. Verify if the role privilege was deleted intentionally.",
   "name": "A Google Workspace Role privilege was deleted",

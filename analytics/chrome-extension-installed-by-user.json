@@ -11,7 +11,7 @@
   "attackers_goals": "Adversaries may leverage browser extensions installation to gain Initial Access and Persistence, enabling them to intercept credentials and hijack active web sessions.",
   "deduplication_period": "1 Day",
   "description": "A Chrome extension was installed or updated by a Google Workspace user.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Google Workspace",
   "investigative_actions": "Review the extension installed, it's OAuth scopes, reputation and permissions. Analyze subsequent network traffic from the user's device or browser for connections to newly registered domains. Investigate the source IP and identity for previous malicious activity or anomalies.",
   "name": "Chrome Extension Installed By User",

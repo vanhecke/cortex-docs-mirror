@@ -10,7 +10,7 @@
   "attackers_goals": "Create a backdoor account for later access to Azure AD or Azure resources, or delete evidence of such an account.",
   "deduplication_period": "1 Day",
   "description": "An Azure AD account creation was performed by a user that doesn't typically create users.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Follow further actions by the initiator. Check for new resource creations by the new user. Check if the new user was added to a privileged role. Follow further actions done by the new user.",
   "name": "Azure account creation by a non-standard account",

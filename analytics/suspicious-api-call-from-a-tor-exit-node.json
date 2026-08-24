@@ -12,7 +12,7 @@
   "deduplication_period": "1 Day",
   "description": "A cloud API was called from a Tor exit node.",
   "detection_modules": "Cloud",
-  "detector_tags": "Kubernetes - API",
+  "detector_tags": "Kubernetes - API, OCI Analytics",
   "investigative_actions": "Block all web traffic to and from public Tor entry and exit nodes.",
   "name": "Suspicious API call from a Tor exit node",
   "required_data": [

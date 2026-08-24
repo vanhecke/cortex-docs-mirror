@@ -1,0 +1,73 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Initial Access (TA0001)"
+  ],
+  "attack_techniques": [
+    "Valid Accounts (T1078)"
+  ],
+  "attackers_goals": "Use an account that was possibly compromised to gain access to the network, while potentially using an anonymizing service to obfuscate their origin.",
+  "deduplication_period": "1 Day",
+  "description": "A universal authentication was flagged as suspicious based on anomalous features.",
+  "detection_modules": "Identity Analytics",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the suspicious authentication. Verify if the ASN is an approved ASN to authenticate from. Follow further actions done by the user. If the IP is associated with a tunnel operator, check whether it is an approved VPN.",
+  "name": "Successful universal authentication with suspicious features",
+  "required_data": [],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Successful universal authentication sign-in from a TOR exit node",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A successful sign-in from a TOR exit node in universal authentication.",
+      "attackers_goals": "Use an account that was possibly compromised to gain access to the network, while potentially using an anonymizing service to obfuscate their origin.",
+      "investigative_actions": "Investigate the suspicious authentication. Verify if the ASN is an approved ASN to authenticate from. Follow further actions done by the user. If the IP is associated with a tunnel operator, check whether it is an approved VPN."
+    },
+    {
+      "name": "Successful universal authentication from a suspicious tunnel operator",
+      "severity": "Low",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A successful universal authentication was made through a suspicious or rarely seen tunnel operator.",
+      "attackers_goals": "Use an account that was possibly compromised to gain access to the network, while potentially using an anonymizing service to obfuscate their origin.",
+      "investigative_actions": "Investigate the suspicious authentication. Verify if the ASN is an approved ASN to authenticate from. Follow further actions done by the user. If the IP is associated with a tunnel operator, check whether it is an approved VPN."
+    },
+    {
+      "name": "Suspicious successful universal authentication from ASN",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A successful universal authentication was made from a suspicious or previously unseen ASN.",
+      "attackers_goals": "Use an account that was possibly compromised to gain access to the network, while potentially using an anonymizing service to obfuscate their origin.",
+      "investigative_actions": "Investigate the suspicious authentication. Verify if the ASN is an approved ASN to authenticate from. Follow further actions done by the user. If the IP is associated with a tunnel operator, check whether it is an approved VPN."
+    },
+    {
+      "name": "Successful universal authentication from a new country in organization",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Initial Access (TA0001)"
+      ],
+      "attack_techniques": [
+        "Valid Accounts (T1078)"
+      ],
+      "description": "A user authenticated in universal authentication from an unusual country that no one from this organization has connected from before in universal authentication. This may indicate the account was compromised.",
+      "attackers_goals": "Use an account that was possibly compromised to gain access to the network, while potentially using an anonymizing service to obfuscate their origin.",
+      "investigative_actions": "Investigate the suspicious authentication. Verify if the ASN is an approved ASN to authenticate from. Follow further actions done by the user. If the IP is associated with a tunnel operator, check whether it is an approved VPN."
+    }
+  ]
+}

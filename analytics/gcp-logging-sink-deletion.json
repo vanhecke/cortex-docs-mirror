@@ -11,7 +11,7 @@
   "deduplication_period": "5 Days",
   "description": "A GCP logging sink entity was deleted. Logs that match the logging sink rule will not arrive at their destination. An attacker might use this technique to evade detection.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "Cloud Log Tampering Analytics",
   "investigative_actions": "Identify the logs impacted by the deletion. Review cloud identity activity before and after the deletion.",
   "name": "GCP logging sink deletion",
   "required_data": [

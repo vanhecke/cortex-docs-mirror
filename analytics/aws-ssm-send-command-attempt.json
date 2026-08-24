@@ -12,7 +12,7 @@
   "deduplication_period": "3 Days",
   "description": "An identity executed an AWS SSM Document.",
   "detection_modules": "Cloud",
-  "detector_tags": "Cloud Lateral Movement Analytics",
+  "detector_tags": "Cloud Lateral Movement Analytics, SSM Remote Management Analytics",
   "investigative_actions": "Examine the code in the SSM document, and the target objects. Validate the permissions and roles associated with the user initiating the SSM session to ensure they align with the expected level of access. Follow further actions taken by the identity or on the relevant targets.",
   "name": "AWS SSM send command attempt",
   "required_data": [

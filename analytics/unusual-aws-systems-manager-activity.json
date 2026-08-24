@@ -12,7 +12,7 @@
   "deduplication_period": "1 Day",
   "description": "A cloud identity performed an SSM operation for the first time.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "SSM Remote Management Analytics",
   "investigative_actions": "Check the identity's role designation in the organization. Verify that the identity did not perform any sensitive SSM operation that it shouldn't.",
   "name": "Unusual AWS systems manager activity",
   "required_data": [

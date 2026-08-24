@@ -10,7 +10,7 @@
   "attackers_goals": "Access sensitive data.",
   "deduplication_period": "1 Day",
   "description": "A Google Workspace identity used the security investigation tool The Google Workspace security investigation tool can be abused to access sensitive data.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Google Workspace",
   "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Determine what data was accessed using the security investigation tool.",
   "name": "A Google Workspace identity used the security investigation tool",

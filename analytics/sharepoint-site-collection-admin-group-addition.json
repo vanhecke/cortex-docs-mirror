@@ -9,7 +9,7 @@
   "attackers_goals": "Elevate permissions and establish persistence.",
   "deduplication_period": "1 Day",
   "description": "A user made an addition to the site collection administrators group in SharePoint.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Check the IP address from which the access originated. Verify the activity with the performing user. Follow further actions done by the account.",
   "name": "SharePoint Site Collection admin group addition",

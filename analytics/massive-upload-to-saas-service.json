@@ -12,7 +12,7 @@
   "attackers_goals": "An attacker may upload files to a SaaS service to stage and exfiltrate data from the organization.",
   "deduplication_period": "1 Day",
   "description": "A user uploaded a large amount of data to an organizational cloud storage. This behavior may indicate that the data is being exfiltrated or staged.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Data Detection & Response",
   "investigative_actions": "Check for signs of account compromise, such as abnormal login activity or unusual behavior. Review the files that were uploaded to determine if they contain sensitive data. Verify if the user account that uploaded the files is authorized to access them. Analyze the file types that were uploaded. Monitor the account for any further suspicious actions.",
   "name": "Massive upload to SaaS service",

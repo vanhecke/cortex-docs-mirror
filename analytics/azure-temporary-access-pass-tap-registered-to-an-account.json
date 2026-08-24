@@ -10,7 +10,7 @@
   "attackers_goals": "A TAP can allow setting of other authentication methods and can be used as an initial replacement of a multifactor authentication.",
   "deduplication_period": "1 Day",
   "description": "An identity registered an Azure Temporary Access Pass (TAP) to an account.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Check if the account that got the TAP should get it. Check whether the account that registered the TAP is supposed to perform such actions. Check if the TAP was registered to a privileged account. Follow further actions done by the initiator and the account with the TAP.",
   "name": "Azure Temporary Access Pass (TAP) registered to an account",

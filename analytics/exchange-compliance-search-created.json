@@ -9,7 +9,7 @@
   "attackers_goals": "An attacker is searching mailboxes to access sensitive information.",
   "deduplication_period": "1 Day",
   "description": "A user created an Exchange compliance search. This feature enables Administrators to search mailboxes in an organization.",
-  "detection_modules": "Identity Threat Module, Email",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection, Email",
   "detector_tags": "",
   "investigative_actions": "Follow further actions done by the account. Check to see if the search contained sensitive information. Check if any data was exfiltrated after the search. Look for suspicious search terms.",
   "name": "Exchange compliance search created",

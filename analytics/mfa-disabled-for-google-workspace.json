@@ -10,7 +10,7 @@
   "attackers_goals": "Gain access to Google Workspace accounts with disabled MFA. Exploit Google Workspace accounts with weaker security. Steal sensitive data from Google Workspace accounts.",
   "deduplication_period": "5 Days",
   "description": "An administrator has disabled Multi-Factor Authentication for Google Workspace users.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Google Workspace",
   "investigative_actions": "Check the MFA settings for the Google Workspace users. Identify the users who have MFA disabled and investigate the reason for it. Check the security log to see if there have been any suspicious activities in the account.",
   "name": "MFA Disabled for Google Workspace",

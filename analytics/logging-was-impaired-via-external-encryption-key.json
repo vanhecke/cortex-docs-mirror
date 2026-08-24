@@ -12,7 +12,7 @@
   "deduplication_period": "1 Day",
   "description": "The resource was configured with an external key This might be an attempt to disrupt log inspection.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "Cloud Log Tampering Analytics",
   "investigative_actions": "Check the identity that updated the resource configuration. Check the key used to encrypt the logs.",
   "name": "Logging was impaired via external encryption key",
   "required_data": [

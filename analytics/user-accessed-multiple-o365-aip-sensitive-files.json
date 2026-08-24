@@ -10,7 +10,7 @@
   "attackers_goals": "An attacker is attempting to collect sensitive information.",
   "deduplication_period": "1 Day",
   "description": "A user accessed multiple O365 AIP sensitive files.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "O365 DLP Analytics",
   "investigative_actions": "Look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Follow further actions done by the account. Check what sensitivity labels are detected and how suspicious they are. Examine the user's account history for suspicious behavior.",
   "name": "User accessed multiple O365 AIP sensitive files",

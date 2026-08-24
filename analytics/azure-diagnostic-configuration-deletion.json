@@ -11,7 +11,7 @@
   "deduplication_period": "3 Hours",
   "description": "An attacker might delete the Azure diagnostic settings to evade detection.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "Cloud Log Tampering Analytics",
   "investigative_actions": "Check the identity and its actions after the deletion action.",
   "name": "Azure diagnostic configuration deletion",
   "required_data": [

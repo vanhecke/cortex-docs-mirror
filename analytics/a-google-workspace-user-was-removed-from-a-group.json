@@ -9,7 +9,7 @@
   "attackers_goals": "Adversaries may interrupt the availability of services and resources by inhibiting access to users.",
   "deduplication_period": "5 Days",
   "description": "A user removed another user from a Google Workspace group.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Google Workspace",
   "investigative_actions": "Check if the identity intended to perform this action or look for signs that the user account is compromised (e.g. abnormal logins, unusual activity). Check if the user's work can be affected by this action. Follow further actions done by the account.",
   "name": "A Google Workspace user was removed from a group",

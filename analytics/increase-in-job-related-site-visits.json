@@ -9,7 +9,7 @@
   "attackers_goals": "This may be an early indicator of an insider threat.",
   "deduplication_period": "1 Day",
   "description": "A user has visited multiple job-related sites in the past day.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Investigate the domains accessed and how popular they are in the organization. Check how long the user has been part of the organization. Verify that the user is not part of a department that accesses job sites as part of daily operations.",
   "name": "Increase in Job-Related Site Visits",

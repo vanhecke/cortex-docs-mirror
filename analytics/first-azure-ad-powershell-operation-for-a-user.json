@@ -9,7 +9,7 @@
   "attackers_goals": "Achieve initial access to a company's resources.",
   "deduplication_period": "1 Day",
   "description": "A user performed an Azure AD operation using a PowerShell user-agent for the first time.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Follow the actions the user performed using PowerShell. Confirm with the user that the action was intended.",
   "name": "First Azure AD PowerShell operation for a user",

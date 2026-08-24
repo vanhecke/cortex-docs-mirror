@@ -11,7 +11,7 @@
   "deduplication_period": "5 Days",
   "description": "A GCP logging sink entity was modified. Logs that match the logging sink rule will not arrive at their destination. An attacker might use this technique to evade detection.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "Cloud Log Tampering Analytics",
   "investigative_actions": "Identify the relevant logs impacted by the modification. Review The cloud identity activity before and after the logging sink modification.",
   "name": "GCP logging sink modification",
   "required_data": [

@@ -9,7 +9,7 @@
   "attackers_goals": "Interrupt availability and access to Azure by deleting access accounts.",
   "deduplication_period": "1 Day",
   "description": "An Azure AD account deletion was performed by a user that doesn't typically delete users.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Follow further actions by the initiator. Check what services, groups and applications are affected by the deleted user being removed. Check if the deleted user had a privileged role.",
   "name": "Azure account deletion by a non-standard account",

@@ -11,7 +11,7 @@
   "deduplication_period": "5 Days",
   "description": "An Azure event hub was deleted. An attacker might use this technique to evade detection.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "Cloud Log Tampering Analytics",
   "investigative_actions": "Check what actions were taken by the identity that deleted the event hub.",
   "name": "Azure Event Hub Deletion",
   "required_data": [

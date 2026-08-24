@@ -12,7 +12,7 @@
   "deduplication_period": "5 Days",
   "description": "An identity executed a cloud API from a high-risk IP address.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "OCI Analytics",
   "investigative_actions": "Verify if the user is authorized to use anonymizing services. Review subsequent actions by the user for suspicious activity. Check for other users accessing from the same IP or tunnel operator.",
   "name": "Cloud activity from a high-risk IP address",
   "required_data": [

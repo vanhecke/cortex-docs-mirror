@@ -9,7 +9,7 @@
   "attackers_goals": "Evasion using a valid account.",
   "deduplication_period": "1 Day",
   "description": "An Azure AD user was created and deleted within a short period of time.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Check the user who created the account and verify the activity. Confirm that the account creation was not accidental.",
   "name": "Short-lived Azure AD user account",

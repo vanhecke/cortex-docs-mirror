@@ -9,7 +9,7 @@
   "attackers_goals": "Prevent an organization from warning users that they've been compromised (e.g. an internal spear-phishing campaign).",
   "deduplication_period": "1 Day",
   "description": "A user configured an Exchange transport rule that may be used to hide emails in the organization.",
-  "detection_modules": "Identity Threat Module, Email",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection, Email",
   "detector_tags": "",
   "investigative_actions": "Look for signs that the user account and mailbox are compromised (e.g. abnormal logins, unusual activity). Check if the rule contains keywords and if they look suspicious. Investigate the IP address associated with the rule. Follow further actions done by the account. Check for a possible phishing campaign on the organization.* Look for multiple instances of email hiding, which may be an indication of a larger campaign.* Check if the user regularly configures transport rules.",
   "name": "Exchange email-hiding transport rule",

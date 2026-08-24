@@ -10,7 +10,7 @@
   "deduplication_period": "5 Days",
   "description": "An Azure Suppression Rule was created.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "Cloud Log Tampering Analytics",
   "investigative_actions": "Investigate the user's activity to determine the cause of the alert.",
   "name": "An Azure Suppression Rule was created",
   "required_data": [

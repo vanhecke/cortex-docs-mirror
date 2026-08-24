@@ -9,7 +9,7 @@
   "attackers_goals": "Gain their initial foothold within the organization and explore the environment to achieve their target.",
   "deduplication_period": "1 Day",
   "description": "An operation was performed by an identity. This identity belongs to a domain that was not seen in the organization before.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Investigate the external domain name. Check the identity activity in the organization.",
   "name": "SaaS suspicious external domain user activity",

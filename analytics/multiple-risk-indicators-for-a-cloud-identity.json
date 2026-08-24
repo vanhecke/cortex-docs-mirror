@@ -11,7 +11,7 @@
   "deduplication_period": "1 Day",
   "description": "Multiple risk indicators detected for a cloud identity, combining unusual activity with activity from unusual geolocation or high-risk IP.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "OCI Analytics",
   "investigative_actions": "Review the user's recent activity for any unauthorized actions. Rotate the user's credentials immediately if confirmed compromised.",
   "name": "Multiple risk indicators for a cloud identity",
   "required_data": [

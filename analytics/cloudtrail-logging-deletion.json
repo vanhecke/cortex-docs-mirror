@@ -11,7 +11,7 @@
   "deduplication_period": "5 Days",
   "description": "CloudTrail logging trail deletion.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "Cloud Log Tampering Analytics",
   "investigative_actions": "Verify whether the identity attempted to delete the trail. Determine whether an additional trail needs to be enabled.",
   "name": "CloudTrail logging deletion",
   "required_data": [

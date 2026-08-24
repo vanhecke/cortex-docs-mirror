@@ -9,7 +9,7 @@
   "attackers_goals": "Conceal information about malicious activities, such as location and network usage.",
   "deduplication_period": "1 Day",
   "description": "A SaaS API was called from a Tor exit node.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "",
   "investigative_actions": "Block all web traffic to and from public Tor entry and exit nodes.",
   "name": "Suspicious SaaS API call from a Tor exit node",

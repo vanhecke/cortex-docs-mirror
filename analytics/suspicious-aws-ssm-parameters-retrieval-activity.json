@@ -12,7 +12,7 @@
   "deduplication_period": "5 Days",
   "description": "An identity dumped multiple AWS SSM parameters from the project. This may indicate an attacker's attempt to dump sensitive information from the cloud environment.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "SSM Remote Management Analytics",
   "investigative_actions": "Check the accessed parameters' designation. Verify that the identity did not dump any sensitive information that it shouldn't.",
   "name": "Suspicious AWS SSM parameters retrieval activity",
   "required_data": [

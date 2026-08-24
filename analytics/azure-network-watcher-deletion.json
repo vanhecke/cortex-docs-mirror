@@ -11,7 +11,7 @@
   "deduplication_period": "3 Hours",
   "description": "Azure Network Watchers are used for monitoring and diagnosing Azure resources. An attacker might use this technique to avoid security mitigations.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "Cloud Log Tampering Analytics",
   "investigative_actions": "Check which devices are monitored by the deleted Network Watcher.",
   "name": "Azure Network Watcher Deletion",
   "required_data": [

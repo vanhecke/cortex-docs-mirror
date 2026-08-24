@@ -13,7 +13,7 @@
   "deduplication_period": "5 Days",
   "description": "A cloud identity has executed an API call with an unusual user-agent.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "OCI Analytics",
   "investigative_actions": "Examine the recent actions of the user for any abnormal or unauthorized behavior. Verify if the user intentionally used a new device or tool.",
   "name": "Unusual user-agent for a cloud identity",
   "required_data": [

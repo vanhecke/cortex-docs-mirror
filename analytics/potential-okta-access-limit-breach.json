@@ -11,7 +11,7 @@
   "attackers_goals": "An adversary may attempt to use a compromised account in an unusual way to harvest as much data as possible, which could result in exceeding the access limit policy.",
   "deduplication_period": "1 Day",
   "description": "A user surpassed Okta's rate limit, leading to an access limit violation. This could suggest a potential account takeover attempt.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Okta Audit Analytics",
   "investigative_actions": "Reach out to the user responsible for the alert to confirm the legitimacy of the activity. Examine the user's actions preceding and following the activation of the alert. Investigate abnormal logins, reported suspicious activities, new processes run, and recent configuration changes for any indicators of potential compromise. Assess the reputation of the IP address along with that of the Autonomous System Number (ASN).",
   "name": "Potential Okta access limit breach",

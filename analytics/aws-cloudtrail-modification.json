@@ -11,7 +11,7 @@
   "deduplication_period": "5 Days",
   "description": "An identity updated a CloudTrail trail configuration.",
   "detection_modules": "Cloud",
-  "detector_tags": "",
+  "detector_tags": "Cloud Log Tampering Analytics",
   "investigative_actions": "Review the activity of the identity that modified the trail's configuration. Check which trail is affected by this change. Verify whether a new destination has been set for log archiving.",
   "name": "AWS CloudTrail modification",
   "required_data": [

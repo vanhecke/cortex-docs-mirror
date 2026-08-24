@@ -9,7 +9,7 @@
   "attackers_goals": "An attacker's goal is to gain unauthorized access to sensitive information or perform malicious actions on behalf of the impersonated user.",
   "deduplication_period": "1 Day",
   "description": "A user has initiated a session impersonation in Okta.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Okta Audit Analytics",
   "investigative_actions": "Ensure the user is authorized to impersonate a user session. Review any activities that occurred during the impersonation session. Look for any activities related to the impersonated user's account during and after the impersonation event.",
   "name": "Okta User Session Impersonation",

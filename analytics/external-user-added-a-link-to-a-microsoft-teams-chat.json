@@ -9,7 +9,7 @@
   "attackers_goals": "Attackers may leverage Microsoft Teams to conduct phishing attacks by exploiting trusted communication channels with users inside the organization.",
   "deduplication_period": "1 Day",
   "description": "An external user added a link to a Microsoft Teams chat.",
-  "detection_modules": "Identity Threat Module",
+  "detection_modules": "Identity Threat Module, SaaS Threat Detection",
   "detector_tags": "Microsoft Teams",
   "investigative_actions": "Confirm that the external tenant and user are authorized to share links or files with users in the organization. Verify the content of the conversation and validate that there is no phishing attempt being made. Inspect links and URLs that have been sent in the conversation. Evaluate the external domain reputation. Review past communication from the external user. Follow further actions done by the account.",
   "name": "External user added a link to a Microsoft Teams chat",
