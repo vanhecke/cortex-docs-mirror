@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-23",
+  "source": "analytics",
+  "sha": "9a03afdec84c1654fdfeb7913473a785135bdec4",
+  "headline": "Four universal authentication detectors added; 124 identity detectors gain the SaaS Threat Detection module",
+  "summary_md": "- Four new **Identity Analytics** detectors cover a newly named event class, *universal authentication*: brute force, password spray, inactive-user authentication, and successful sign-in with suspicious features.\n- **124 detectors were reassigned**, adding `SaaS Threat Detection` alongside `Identity Threat Module` — 103 identity detectors and 21 that also carry `Email`.\n- 36 cloud detectors gained a `detector_tags` grouping for the first time: Cloud Log Tampering Analytics, OCI Analytics, and SSM Remote Management Analytics.\n- One rule was renamed, one variation was withdrawn, and two deduplication periods were retuned. Nothing else changed.",
+  "highlights": [
+    {
+      "title": "Universal authentication arrives as its own detection surface",
+      "detail": "Four rules, all Identity Analytics with a 14-day activation period, hunt brute force and password spray over a 1-hour test period plus two single-event detections for inactive users and suspicious sign-in features.",
+      "paths": [
+        "analytics/possible-brute-force-in-universal-authentication",
+        "analytics/possible-password-spray-in-universal-authentication",
+        "analytics/an-inactive-user-attempted-to-authenticate",
+        "analytics/successful-universal-authentication-with-suspicious-features"
+      ]
+    },
+    {
+      "title": "124 detectors now name SaaS Threat Detection as a detection module",
+      "detail": "Every one of them kept Identity Threat Module and added SaaS Threat Detection next to it, so this widens which module each detector is listed under rather than moving any of them.",
+      "paths": [
+        "analytics/a-google-workspace-user-was-added-to-a-group",
+        "analytics/okta-api-token-created",
+        "analytics/exchange-audit-log-disabled"
+      ]
+    },
+    {
+      "title": "The Email module set was extended the same way",
+      "detail": "21 Exchange, DLP and mail-flow detectors went from `Identity Threat Module, Email` to `Identity Threat Module, SaaS Threat Detection, Email`.",
+      "paths": [
+        "analytics/exchange-inbox-forwarding-rule-configured",
+        "analytics/dlp-sensitive-data-exposed-to-external-users"
+      ]
+    },
+    {
+      "title": "Three new detector tag groupings appear across cloud detectors",
+      "detail": "19 detectors were tagged Cloud Log Tampering Analytics, 11 OCI Analytics, and 6 SSM Remote Management Analytics, in each case added to a previously empty or existing tag list.",
+      "paths": [
+        "analytics/aws-cloudtrail-has-been-stopped",
+        "analytics/compute-activity-in-dormant-cloud-region",
+        "analytics/aws-ssm-parameters-discovery"
+      ]
+    },
+    {
+      "title": "The rare internal firewall vulnerability rule was renamed to name NGFW explicitly",
+      "detail": "\"Analytics enhanced - Rare Internal Firewall Vulnerability Threat Alert\" became \"Analytics enhanced NGFW Threat Alert - …\", changing the file path as well as the rule and variation names.",
+      "paths": [
+        "analytics/analytics-enhanced-ngfw-threat-alert-rare-internal-firewall-vulnerability-threat-alert"
+      ]
+    },
+    {
+      "title": "AWS SSM parameters retrieval lost a variation and deduplicates far more often",
+      "detail": "The Informational \"Unusual AWS SSM parameters retrieval\" variation was removed outright and does not reappear elsewhere, while the deduplication period dropped from 5 Days to 1 Day.",
+      "paths": [
+        "analytics/aws-ssm-parameters-retrieval"
+      ]
+    }
+  ],
+  "items": {
+    "analytics/possible-brute-force-in-universal-authentication": "New Identity Analytics detector for an abnormal volume of universal authentication attempts in an hour, with honey-user and baseline-deviation variations up to Medium.",
+    "analytics/possible-password-spray-in-universal-authentication": "New Identity Analytics detector for password spraying via universal authentication, with variations for honey users and for a spray followed by a successful authentication.",
+    "analytics/successful-universal-authentication-with-suspicious-features": "New Identity Analytics detector for successful universal authentication flagged on anomalous features: TOR exit node, suspicious tunnel operator, unseen ASN, or new country.",
+    "analytics/an-inactive-user-attempted-to-authenticate": "New Identity Analytics detector for a user with no activity against the target in 30 days authenticating, raised to Low when the source IP is risky.",
+    "analytics/analytics-enhanced-ngfw-threat-alert-rare-internal-firewall-vulnerability-threat-alert": "Renamed from analytics-enhanced-rare-internal-firewall-vulnerability-threat-alert; the rule, its variation and its description now say NGFW Threat Alert explicitly.",
+    "analytics/aws-ssm-parameters-retrieval": "Dropped the \"Unusual AWS SSM parameters retrieval\" variation, cut deduplication from 5 Days to 1 Day, and picked up the SSM Remote Management Analytics tag.",
+    "analytics/unrecognized-internal-address-aad-mismatch": "Deduplication period narrowed from 1 Day to 1 Hour 30 Minutes; no other field changed."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
