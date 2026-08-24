@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-23",
+  "source": "content",
+  "sha": "1128620c8ab935f0129fe2d33aa994c0f547f608",
+  "headline": "ThreatZone rewritten in a 20-pack day; Microsoft Graph Files gains new commands",
+  "summary_md": "- **ThreatZone** is effectively rewritten at +3,744/-2,333 — 43% of the day's insertions and 95% of its deletions (#45598).\n- 20 packs move for 8 upstream commits, roughly 8,588 lines added against 2,452 deleted; the snapshot head `92f01ea` is same-day.\n- **Microsoft Graph Files** gains new commands and its standard-connector pack moves in step, +381 and +372 (#45485).\n- Fourteen of the 20 packs are addition-only against a single deleted line — AWS GuardDuty (+298), ePO (+243), Forcepoint DLP (+218), Zscaler ZPA (+215) and Cisco SMA (+161) among them.\n- Modeling-rule housekeeping continues under CRTX-271523: BC107 legacy-id rules are consolidated for force-merge (#45545), and a **Slack** GR105 duplicate ID is fixed (#45600).",
+  "highlights": [
+    {
+      "title": "ThreatZone integration update replaces most of the pack",
+      "detail": "At +3,744/-2,333 it is the day's only substantial rewrite; every other pack combined deletes just 119 lines (#45598).",
+      "paths": ["Packs/ThreatZone"]
+    },
+    {
+      "title": "Microsoft Graph Files gains new commands",
+      "detail": "The integration adds 381 lines and its separate standard-connector pack a near-identical 372, so both move together (#45485).",
+      "paths": ["Packs/MicrosoftGraphFiles", "Packs/MicrosoftGraphFilesStandardConnector"]
+    },
+    {
+      "title": "ApiModules takes the day's second-largest change",
+      "detail": "+1,526/-24 in the shared API module pack, which no commit subject names.",
+      "paths": ["Packs/ApiModules"]
+    },
+    {
+      "title": "CortexDataLake moves by 728 lines",
+      "detail": "The largest first-party Palo Alto pack change of the day at +728/-64, and the second-largest deletion count; no commit subject names it.",
+      "paths": ["Packs/CortexDataLake"]
+    },
+    {
+      "title": "BC107 legacy-id modeling rules are consolidated for force-merge",
+      "detail": "CRTX-271523 continues from the identity.* series of 19 August (#45545), and a companion fix clears a GR105 duplicate ID caused by a modeling-rule version overlap (#45600).",
+      "paths": ["Packs/Slack"]
+    }
+  ],
+  "items": {
+    "Packs/ThreatZone": "+3,744/-2,333 for an integration update (#45598) — 43% of the day's insertions and 95% of its deletions, and the only near-total rewrite.",
+    "Packs/ApiModules": "Gains 1,526 lines against 24 deleted, the day's second-largest change; no commit subject names the pack.",
+    "Packs/CortexDataLake": "+728/-64, the largest first-party Palo Alto pack movement of the day; no commit subject names the pack.",
+    "Packs/MicrosoftGraphFiles": "+381/-2 adding new commands to the integration (#45485).",
+    "Packs/MicrosoftGraphFilesStandardConnector": "Gains 372 lines against a single deletion, moving in step with the MicrosoftGraphFiles command additions (#45485).",
+    "Packs/AWS-GuardDuty": "Gains 298 lines against a single deletion; no commit subject names the pack.",
+    "Packs/epo": "Gains 243 lines against a single deletion; no commit subject names the pack.",
+    "Packs/ForcepointDLP": "Gains 218 lines against a single deletion; no commit subject names the pack.",
+    "Packs/ZscalerZPA": "Gains 215 lines against a single deletion; no commit subject names the pack.",
+    "Packs/Citrix": "+211/-13 for a fix to the pack (#45594) — the largest deletion count of the day outside ThreatZone and CortexDataLake.",
+    "Packs/ManageEngine-ADAudit": "Gains 167 lines against a single deletion; no commit subject names the pack.",
+    "Packs/CiscoSMA": "Gains 161 lines against a single deletion; no commit subject names the pack.",
+    "Packs/Core": "+16/-1, a version bump adding a timeout field to SearchIndicatorInEventsAgentix (#45515).",
+    "Packs/PAN-OS": "+14/-1; no commit subject names the pack.",
+    "Packs/Slack": "+8/-2 resolving a GR105 duplicate ID caused by a modeling-rule version overlap (#45600)."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
