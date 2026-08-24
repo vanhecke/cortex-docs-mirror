@@ -1,3 +1,7 @@
+---
+description: Configure Prisma Access data ingestion for Cortex XSIAM.
+---
+
 # Prisma Access
 
 You can configure collecting Prisma Browser logs using a data source or connector (onboarded after July 26, 2026):

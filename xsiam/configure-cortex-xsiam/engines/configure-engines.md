@@ -1,7 +1,5 @@
 ---
-description: >-
-  Configure Cortex XSIAM engines by editing the d1.conf file or modifying the
-  configuration in the UI (for shell installations).
+description: Configure Cortex XSIAM engines using the UI or the d1.conf configuration file.
 ---
 
 # Configure engines
@@ -22,7 +20,7 @@ A use case for modifying the engine configuration is if you want to generate eng
 
     You can also [configure the engine to use a web proxy](https://app.gitbook.com/s/TagezMGwqCDhCuxV7351/configure-cortex-xsoar/engines/configure-engines/configure-the-engine-to-use-a-web-proxy).
 
-**Modify the configuration in Cortex XSIAM (Shell installations only)**
+### **Modify the configuration in Cortex XSIAM (Shell installations only)**
 
 Ensure that the data is in JSON format. The properties that you specify override the values defined in the `d1.conf` file.
 
@@ -32,7 +30,7 @@ Ensure that the data is in JSON format. The properties that you specify override
 
     ![edit\_engine\_config.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-a948d5c32f6e39155372eb8b09f4ccf07ff50057%2F92b55138d14af42c8f85d41d95a9fc286f742b6a7bf675b7192e4dd56be47605.png?alt=media)
 
-**Common properties when editing an engine configuration**
+### **Common properties when editing an engine configuration**
 
 The following table describes the common properties when editing an engine configuration using the `d1.conf` file (located by default at **`/usr/local/demisto/`**) or in the **JSON formatted configuration** dialog box in Cortex XSIAM.
 

@@ -1,3 +1,7 @@
+---
+description: Extract data from a JSON object stored in a Cortex XSIAM list.
+---
+
 # Extract data from a JSON object
 
 Create a JSON list and use the **Set** automation to create a context key from its data.

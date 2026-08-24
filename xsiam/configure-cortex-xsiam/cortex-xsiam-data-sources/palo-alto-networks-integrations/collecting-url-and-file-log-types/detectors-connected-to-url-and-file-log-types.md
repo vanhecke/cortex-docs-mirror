@@ -1,3 +1,10 @@
+---
+description: >-
+  Review Cortex XSIAM detectors affected when URL or File log collection is
+  disabled, including impacts on cyberattack detection, investigation context,
+  and correlation rules.
+---
+
 # Detectors connected to URL and File log types
 
 If you turn off **URL and File log types collection**, some detectors are unable to detect cyber attacks or provide full context, and correlation rules are unable to detect cyber events.

@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure external applications in Cortex XSIAM to forward cases, issues, and
+  logs to email, Slack, syslog, Amazon S3, Amazon SQS, Splunk, and webhooks.
+---
+
 # Configure external applications for forwarding
 
 Cases, issues, and logs can be forwarded to third-party external services. The external service must be configured in Cortex XSIAM before you set up notification forwarding.

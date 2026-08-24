@@ -1,3 +1,7 @@
+---
+description: Manage actions that extend Cortex XSIAM Agentic Assistant capabilities.
+---
+
 # Manage actions
 
 Actions wrap diverse capabilities (such as playbooks, scripts, AI prompts, and commands) to make them accessible and executable by an agent. You can use out-of-the-box system actions or register new actions.

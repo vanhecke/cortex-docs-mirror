@@ -1,3 +1,7 @@
+---
+description: Update Cortex XSIAM Broker VM applets independently.
+---
+
 # Update Broker VM applets independently
 
 Cortex XSIAM allows you to update individual Broker VM applets independently. This enables faster deployment of hot-fixes and new features with minimal broker downtime.

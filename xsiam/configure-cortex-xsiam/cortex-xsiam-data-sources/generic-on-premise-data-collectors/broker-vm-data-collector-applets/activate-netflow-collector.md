@@ -1,3 +1,7 @@
+---
+description: Configure this collector for Cortex XSIAM.
+---
+
 # Activate NetFlow Collector
 
 To receive NetFlow flow records from an external source, you must first set up the NetFlow Collector applet on a Broker VM within your network. NetFlow versions 5, 9, and IPFIX are supported.

@@ -1,3 +1,10 @@
+---
+description: >-
+  Configure URL and File log collection for Palo Alto Networks integrations in
+  pre-3.x Cortex XSIAM to balance analytics visibility, correlation rules, and
+  ingestion costs.
+---
+
 # Collecting URL and File log types
 
 {% hint style="info" %}

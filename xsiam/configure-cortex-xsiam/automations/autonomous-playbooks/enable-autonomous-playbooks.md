@@ -1,3 +1,9 @@
+---
+description: >-
+  Enable Cortex XSIAM autonomous playbooks to automate supported response
+  workflows.
+---
+
 # Enable autonomous playbooks
 
 When the Autonomous Playbooks feature is enabled, new, fully managed incident response content is installed.

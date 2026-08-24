@@ -1,3 +1,10 @@
+---
+description: >-
+  Connect and scan cloud and third-party container registries in Cortex XSIAM to
+  identify image vulnerabilities, malware, exposed secrets, and policy
+  violations.
+---
+
 # Container Registries
 
 ### Overview

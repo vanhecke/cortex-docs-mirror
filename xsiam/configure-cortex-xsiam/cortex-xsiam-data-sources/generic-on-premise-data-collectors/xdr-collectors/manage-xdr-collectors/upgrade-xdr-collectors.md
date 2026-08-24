@@ -1,3 +1,7 @@
+---
+description: Upgrade XDR Collectors for Cortex XSIAM.
+---
+
 # Upgrade XDR Collectors
 
 After you install the Cortex XDR Collector and the XDR Collector registers with Cortex XSIAM, you can upgrade the XDR Collector software for on-premises Windows or Linux collector machine. You need to create a new installation packages and push the XDR Collector package to up to 500 collector machines from Cortex XSIAM.

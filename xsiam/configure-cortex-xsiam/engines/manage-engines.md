@@ -1,5 +1,7 @@
 ---
-description: Manage engines and load balancing groups.
+description: >-
+  Manage Cortex XSIAM engines and load-balancing groups for integrations and
+  automation.
 ---
 
 # Manage engines

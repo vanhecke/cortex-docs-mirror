@@ -1,4 +1,10 @@
-# About health issues
+---
+description: >-
+  Understand Cortex XSIAM health issues, their types, and how to view and
+  investigate them.
+---
+
+# Health issues in Cortex XSIAM
 
 {% hint style="info" %}
 For Cortex XSIAM to monitor data ingestion health and create health issues, you must enable the following settings under Configurations:
@@ -6,7 +12,7 @@ For Cortex XSIAM to monitor data ingestion health and create health issues, you 
 Cortex - Analytics: Go to Configurations → Cortex - Analytics. For more information, see [Enable the Analytics Engine and Identity Analytics](../../../onboard-cortex-xsiam/deployment-steps/cortex-xsiam-analytics/enable-the-analytics-engine-and-identity-analytics).
 {% endhint %}
 
-Cortex XSIAM provides health issues to help you monitor the health and integrity of supported Cortex XSIAM resources. Health issues provide insights into health drifts, such as failure events or status changes. The issues help you stay on top of your health related errors and ensure optimal performance in Cortex XSIAM. In addition, you can set up notifications on health issues.
+Cortex XSIAM provides health issues to help you monitor the health and integrity of supported Cortex XSIAM resources. Health issues provide insights into health drifts, such as failure events or status changes. The issues help you stay on top of your health-relatedhealth related errors and ensure optimal performance in Cortex XSIAM. In addition, you can set up notifications on health issues.
 
 Health issues are associated with the Health Domain. When setting up notification forwarding or other configurations for health issues, use the filter Issue Domain = Health.
 
@@ -14,7 +20,7 @@ To view health issues, go to Settings → Health Issues, or on the Issues page s
 
 The Health Issues page displays issues that were triggered after July 2024. To see health issues that were triggered before this date, click Legacy Health Issues.
 
-**Types of health issues**
+### **Types of health issues in Cortex XSIAM**
 
 Cortex XSIAM provides the following types of OOTB health issues:
 
@@ -23,9 +29,9 @@ Cortex XSIAM provides the following types of OOTB health issues:
 * **Correlation issues**: Triggered by correlation rules that complete with an error status
 * **Automation issues**: Triggered by system monitoring of metrics and thresholds for potential automation misconfigurations that can cause performance issues. Automation issues are processed daily to provide an aggregated status of multiple threshold crossings.
 
-Cortex XSIAM enforces the dedup logic to health issues. This logic reduces the likelihood of identical health issues from flooding the issues dataset.
+Cortex XSIAM enforces the dedup logic for health issues. This logic reduces the likelihood of identical health issues from flooding the issues dataset.
 
-**Query health issue data**
+### **Query health issue data in Cortex XSIAM**
 
 Health issues are associated with the Health domain. To query health issue data, use the following XQL:
 
@@ -33,7 +39,7 @@ Health issues are associated with the Health domain. To query health issue data,
 dataset = alerts | filter alert_domain = "DOMAIN_HEALTH"
 ```
 
-**Health issue field descriptions**
+#### **Health issue field descriptions**
 
 The following table describes the health issue fields.
 

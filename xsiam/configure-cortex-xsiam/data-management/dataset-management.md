@@ -1,7 +1,5 @@
 ---
-description: >-
-  Learn more about managing your datasets and understanding your overall data
-  storage, period-based retention.
+description: Manage Cortex XSIAM datasets, storage, and period-based retention.
 ---
 
 # Dataset management

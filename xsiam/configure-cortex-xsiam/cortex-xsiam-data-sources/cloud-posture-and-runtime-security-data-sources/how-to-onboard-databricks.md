@@ -1,5 +1,5 @@
 ---
-description: Add Databricks as a Cortex Cloud Data Security data source.
+description: Add Databricks as a Cortex XSIAM data source.
 ---
 
 # How to onboard Databricks

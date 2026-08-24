@@ -1,3 +1,7 @@
+---
+description: Review XDR Collector datasets in Cortex XSIAM.
+---
+
 # XDR Collector datasets
 
 After Cortex XSIAM begins receiving data from your XDR Collectors configuration, the app automatically creates an XQL dataset.

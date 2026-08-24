@@ -1,3 +1,7 @@
+---
+description: Deploy a Cortex XSIAM Broker VM on Amazon Web Services.
+---
+
 # Set up Broker VM on Amazon Web Services
 
 Learn how to set up your Cortex XSIAM Broker virtual machine (VM) on AWS.

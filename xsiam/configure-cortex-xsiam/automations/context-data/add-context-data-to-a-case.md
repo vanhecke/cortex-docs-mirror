@@ -1,5 +1,5 @@
 ---
-description: Add keys and values to case context data.
+description: Add keys and values to Cortex XSIAM case context data.
 ---
 
 # Add context data to a case

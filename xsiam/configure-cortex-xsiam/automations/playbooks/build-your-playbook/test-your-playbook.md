@@ -1,7 +1,7 @@
 ---
 description: >-
-  Set breakpoints, conditional breakpoints, skips, and input or output overrides
-  in the playbook debugger.
+  Test Cortex XSIAM playbooks using breakpoints, skips, and input or output
+  overrides.
 ---
 
 # Test your playbook

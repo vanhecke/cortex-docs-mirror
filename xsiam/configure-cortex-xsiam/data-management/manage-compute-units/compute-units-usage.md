@@ -1,3 +1,7 @@
+---
+description: Monitor compute unit usage in Cortex XSIAM.
+---
+
 # Compute units usage
 
 Cortex XSIAM provides a free daily quota of compute units (CU) allocated according to your license size. Queries called without enough quota will fail. To expand your investigation capabilities, you can purchase additional CU by enabling the Compute Unit add-on. After purchasing the additional CU, you can enable the add-on by selecting **Settings → Cortex XSIAM License → Addons**, hovering over the **Extended Compute Units** tile and clicking **Enable**.

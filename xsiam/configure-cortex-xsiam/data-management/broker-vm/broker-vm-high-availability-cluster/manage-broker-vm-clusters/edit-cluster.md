@@ -1,3 +1,7 @@
+---
+description: Edit configuration for a Cortex XSIAM Broker VM cluster.
+---
+
 # Edit cluster
 
 Learn how to edit a High Availability cluster.

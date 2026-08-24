@@ -1,3 +1,7 @@
+---
+description: Configure a Cortex XSIAM engine to connect directly without a proxy.
+---
+
 # Configure the engine to call the server without using a proxy
 
 In some cases, due to specific environment architecture, you may need to configure the engine to use a proxy when working with integrations, but not use a proxy when calling the Cortex XSIAM tenant.

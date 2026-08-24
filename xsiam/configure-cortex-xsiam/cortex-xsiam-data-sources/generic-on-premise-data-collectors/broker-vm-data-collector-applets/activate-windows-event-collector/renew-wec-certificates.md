@@ -1,3 +1,7 @@
+---
+description: Renew Windows Event Collector certificates for Cortex XSIAM.
+---
+
 # Renew WEC certificates
 
 Renewing your WEC certificates in Cortex XSIAM includes renewing your Windows Event Forwarding (WEF) client certificate and your WEC server certificate. You must install the WEF certificate on every Windows server, whether a Domain Controller (DC) or not, for the WEFs that are supposed to forward logs to the Windows Event Collector applet on the Broker VM.

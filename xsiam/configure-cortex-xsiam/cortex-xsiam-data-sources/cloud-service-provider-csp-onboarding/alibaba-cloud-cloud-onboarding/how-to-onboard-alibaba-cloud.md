@@ -1,3 +1,7 @@
+---
+description: Onboard Alibaba Cloud resources to Cortex XSIAM.
+---
+
 # How to onboard Alibaba Cloud
 
 {% hint style="info" %}

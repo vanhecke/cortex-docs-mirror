@@ -1,3 +1,7 @@
+---
+description: Use AlgoSec data with Cortex XSIAM.
+---
+
 # AlgoSec
 
 {% hint style="warning" %}

@@ -1,3 +1,7 @@
+---
+description: Add a Linux XDR Collector profile for Cortex XSIAM.
+---
+
 # Add an XDR Collector profile for Linux
 
 {% hint style="info" %}

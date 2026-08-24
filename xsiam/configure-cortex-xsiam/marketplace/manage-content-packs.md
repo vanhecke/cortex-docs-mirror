@@ -1,5 +1,5 @@
 ---
-description: Install, delete, update, and revert content packs.
+description: Install, update, revert, and delete Cortex XSIAM Marketplace content packs.
 ---
 
 # Manage content packs

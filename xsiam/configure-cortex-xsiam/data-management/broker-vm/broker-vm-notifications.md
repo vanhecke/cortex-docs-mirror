@@ -1,3 +1,7 @@
+---
+description: Configure notifications for Cortex XSIAM Broker VM events.
+---
+
 # Broker VM notifications
 
 Learn about the notifications that are relevant to Cortex XSIAM Broker VMs.

@@ -1,5 +1,5 @@
 ---
-description: Upgrade an engine on Cortex XSIAM or directly on the remote machine.
+description: Upgrade a Cortex XSIAM engine from the console or its remote host.
 ---
 
 # Upgrade an engine
@@ -9,11 +9,11 @@ Whenever there is a Cortex XSIAM major version change or a change in tenant-engi
 * If you installed the engine using the Shell installer, you can upgrade the engine on the **Engines** page.
 * If you didn't install the engine using the Shell installer, you need to remove the engine and do a fresh install.
 
-**Upgrade an engine (shell installations)**
+### **Upgrade an engine (Shell installations)**
 
 You can upgrade the engine on the **Engines** page if you have installed the engine using the shell installer. The engine must be connected during the upgrade.
 
-**Customize upgrade variables**
+### **Customize upgrade variables**
 
 Before upgrading, we recommend you review the upgrade variables and verify if any need to be set in the `/usr/local/demisto/upgrade.conf` file on the engine. For environments with multiple engines, the file is located at `/usr/local/demisto/<engine-name>/upgrade.conf`. In some cases, usually related to a web proxy server or a custom directory, if you do not configure the `upgrade.conf` file, the upgrade will fail.
 
@@ -30,7 +30,7 @@ The `upgrade.conf` file is available on the engine after it has been upgraded to
 | TRUST\_ANY\_CERTIFICATE                | Determines whether the connection's SSL certificate must be trusted. This variable must be empty `""` to require certificate trust. When set to `-k`, trusts any certificate. We recommend enabling this setting. Verify first that the engine host has the required CA root certificate, especially if using a proxy.                                               | -k                                                              |
 | XSOAR\_ENGINE\_AUTO\_UPGRADE\_TMP\_DIR | Specifies a directory to use for extracting upgrade files and executing the upgrade. For example, `XSOAR_ENGINE_AUTO_UPGRADE_TMP_DIR="/root/tmp/engine1"` For environments with multiple engines, each engine must use a different temporary directory. This variable must be set if you used the `--target` option in the shell installer.                          | By default, a random directory under the `/tmp` folder is used. |
 
-**Test upgrade connectivity**
+### **Test upgrade connectivity**
 
 1.  Test the upgrade connectivity by creating a mock `d1_upgrade.sh` file :
 
@@ -44,7 +44,7 @@ The `upgrade.conf` file is available on the engine after it has been upgraded to
 3. If the test is successful, the following message appears at the end of the log file, with a recent timestamp: `Validation HTTPS request returned: false`.
 4. If you find errors in the log, you may need to change the variables in the `upgrade.conf` file or to change your network configuration.
 
-How to upgrade
+### How to upgrade
 
 1. On the **Engines** page, select the checkbox for the engine that requires an upgrade.
 2.  Click **Upgrade Engine**.

@@ -1,3 +1,7 @@
+---
+description: Ingest Check Point firewall data into Cortex XSIAM.
+---
+
 # Check Point FW1 VPN1
 
 You can configure collecting Check Point FW1/VPN1 logs using a Broker VM Syslog Collector applet or with a content pack integration:

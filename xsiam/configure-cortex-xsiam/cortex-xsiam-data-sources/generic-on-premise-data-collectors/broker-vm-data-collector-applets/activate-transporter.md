@@ -1,3 +1,7 @@
+---
+description: Configure Transporter for Cortex XSIAM.
+---
+
 # Activate Transporter
 
 ## **Activate Transporter**

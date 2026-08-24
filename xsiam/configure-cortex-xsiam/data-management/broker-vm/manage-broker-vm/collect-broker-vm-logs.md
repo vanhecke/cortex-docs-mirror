@@ -1,3 +1,7 @@
+---
+description: Collect Broker VM logs for Cortex XSIAM troubleshooting.
+---
+
 # Collect Broker VM Logs
 
 Learn more about collecting logs from a Broker VM to review them as part of an investigation.

@@ -1,5 +1,5 @@
 ---
-description: Add manual and blank tasks to a playbook.
+description: Add manual and blank tasks to Cortex XSIAM playbooks.
 ---
 
 # Add manual tasks and blank tasks

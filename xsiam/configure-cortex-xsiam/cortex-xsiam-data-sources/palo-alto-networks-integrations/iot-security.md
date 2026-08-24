@@ -1,3 +1,7 @@
+---
+description: Configure IoT Security data ingestion for Cortex XSIAM.
+---
+
 # IoT Security
 
 You can configure collecting IoT Security logs and data using an integration configured in Data Sources, content pack integration (onboarded prior to July 26, 2026), or connector (onboarded after July 26, 2026):

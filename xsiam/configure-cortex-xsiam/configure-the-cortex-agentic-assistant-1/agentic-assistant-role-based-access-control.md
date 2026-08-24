@@ -1,5 +1,5 @@
 ---
-description: Configure permissions to access Cortex Agentic Assistant features.
+description: Configure Cortex XSIAM role-based access for Agentic Assistant features.
 ---
 
 # Agentic Assistant role-based access control

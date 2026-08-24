@@ -1,7 +1,7 @@
 ---
 description: >-
   Create and manage static or dynamic Cortex XDR Agent endpoint groups to target
-  security policies and actions by endpoint attributes.
+  security policies and actions by endpoint attributes for Cortex XSIAM.
 ---
 
 # Define endpoint groups

@@ -1,3 +1,7 @@
+---
+description: Manage Cortex XSIAM automation rules that trigger autonomous playbooks.
+---
+
 # Manage autonomous automation rules
 
 When the Autonomous Playbooks feature is enabled, the relevant autonomous automation rules are automatically added to Cortex XSIAM and can be viewed at **Investigation & Response** → **Automation** → **Automation Rules**.

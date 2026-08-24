@@ -1,3 +1,7 @@
+---
+description: Monitor dataset and dataset view activity in Cortex XSIAM.
+---
+
 # Monitor datasets and dataset views activity
 
 {% hint style="warning" %}

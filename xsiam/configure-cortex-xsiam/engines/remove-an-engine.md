@@ -1,7 +1,5 @@
 ---
-description: >-
-  Remove an engine by running the relevant command, depending on your operating
-  system.
+description: Remove a Cortex XSIAM engine safely from its host and tenant configuration.
 ---
 
 # Remove an engine

@@ -1,3 +1,7 @@
+---
+description: Deploy a Cortex XSIAM Broker VM on Microsoft Hyper-V.
+---
+
 # Set up Broker VM on Microsoft Hyper-V
 
 Learn how to set up your Cortex XSIAM Broker virtual machine (VM) on Microsoft Hyper-V.

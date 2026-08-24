@@ -1,5 +1,7 @@
 ---
-description: Use context data to assist with the investigation and remediation process.
+description: >-
+  Use Cortex XSIAM context data to support investigation and remediation
+  workflows.
 ---
 
 # Context data

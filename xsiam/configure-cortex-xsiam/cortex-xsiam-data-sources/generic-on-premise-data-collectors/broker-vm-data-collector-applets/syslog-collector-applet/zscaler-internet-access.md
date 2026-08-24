@@ -1,3 +1,7 @@
+---
+description: Ingest Zscaler Internet Access data into Cortex XSIAM.
+---
+
 # Zscaler Internet Access
 
 You can configure collecting Zscaler Internet Access logs using a Broker VM Syslog Collector applet or with a content pack integration:

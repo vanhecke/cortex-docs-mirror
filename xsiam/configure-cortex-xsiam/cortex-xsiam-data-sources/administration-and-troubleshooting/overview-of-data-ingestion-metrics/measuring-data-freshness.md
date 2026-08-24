@@ -1,3 +1,9 @@
+---
+description: >-
+  Understand how Cortex XSIAM measures and reports delays between log creation
+  and ingestion.
+---
+
 # Measuring data freshness
 
 freshness delay value by measuring the difference between log creation at the source (`_TIME`) and ingestion into Cortex XSIAM (`_INSERT_TIME`).

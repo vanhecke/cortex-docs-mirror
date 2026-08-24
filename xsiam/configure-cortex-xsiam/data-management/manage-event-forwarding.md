@@ -1,7 +1,5 @@
 ---
-description: >-
-  Save your ingested, parsed data in an external location by exporting your
-  event logs to a temporary GCP storage bucket.
+description: Export Cortex XSIAM event logs to a temporary GCP storage bucket.
 ---
 
 # Manage Event Forwarding

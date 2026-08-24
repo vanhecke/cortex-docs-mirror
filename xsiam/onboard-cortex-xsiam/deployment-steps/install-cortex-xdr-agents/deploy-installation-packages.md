@@ -2,7 +2,7 @@
 description: >-
   Deploy Cortex XDR agent installation packages to Windows, macOS, Linux,
   Kubernetes, and Android endpoints using manual or software distribution
-  methods.
+  methods in Cortex XSIAM.
 ---
 
 # Deploy installation packages

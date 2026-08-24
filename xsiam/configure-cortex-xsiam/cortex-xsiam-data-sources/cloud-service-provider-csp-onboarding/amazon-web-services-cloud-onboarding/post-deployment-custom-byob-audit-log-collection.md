@@ -1,3 +1,7 @@
+---
+description: Configure AWS audit log collection after Cortex XSIAM deployment.
+---
+
 # Post-deployment: Custom (BYOB) and Control Tower audit log collection
 
 If you selected **Custom (BYOB) or Custom Control Tower** audit log collection, you must configure your S3 bucket to forward event notifications to the SQS queue created by the template. The steps differ depending on your deployment method.

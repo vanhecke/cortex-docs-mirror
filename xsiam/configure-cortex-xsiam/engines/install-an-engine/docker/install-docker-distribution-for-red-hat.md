@@ -1,5 +1,7 @@
 ---
-description: Configure Docker and SELinux on Red Hat engine servers.
+description: >-
+  Install Docker and configure SELinux on Red Hat servers for Cortex XSIAM
+  engines.
 ---
 
 # Install Docker distribution for Red Hat

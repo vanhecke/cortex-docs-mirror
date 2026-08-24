@@ -1,12 +1,16 @@
+---
+description: >-
+  Build Cortex XSIAM playbooks by configuring tasks, logic, and automation
+  settings.
+---
+
 # Build your playbook
 
 Depending on your use case, you can use or customize a system playbook or develop a new playbook from scratch.
 
 Developing a new playbook from scratch enables a tailored solution for your use case, whereas customizing a system playbook can save time, reduce complexity, and be a more efficient way to meet your organization's specific security and issue response needs.
 
-{% hint style="info" %}
-### Important
-
+{% hint style="warning" %}
 The ability to create, edit, or share custom playbooks is governed by access management. If certain options are unavailable, contact your administrator. For more information, see [Manage access to playbooks and scripts](../../../onboard-cortex-xsiam/post-deployment/manage-user-roles-and-access-management).
 {% endhint %}
 

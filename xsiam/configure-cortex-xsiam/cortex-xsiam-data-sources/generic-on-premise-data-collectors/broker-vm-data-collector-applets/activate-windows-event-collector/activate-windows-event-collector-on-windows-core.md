@@ -1,3 +1,7 @@
+---
+description: Configure Windows Core event collection for Cortex XSIAM.
+---
+
 # Activate Windows Event Collector on Windows Core
 
 After you have configured and registered your Broker VM, you can activate your Windows Event Collector application on Windows Core OS (WCOS). WCOS is a stripped-down, lightweight version of Windows that can be adapted to run on a wide variety of devices with minimal work compared to the previous way explained in [Activate Windows Event Collector]().

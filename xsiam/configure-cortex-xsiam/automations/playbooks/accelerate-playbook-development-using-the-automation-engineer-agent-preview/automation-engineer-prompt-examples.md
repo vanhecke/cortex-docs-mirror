@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Automation Engineer prompt examples to generate Cortex XSIAM security
+  response playbooks for triage, enrichment, and remediation.
+---
+
 # Automation Engineer prompt examples
 
 The following table provides some use case scenarios and the corresponding prompts used to generate automated response playbooks within Cortex XSIAM.

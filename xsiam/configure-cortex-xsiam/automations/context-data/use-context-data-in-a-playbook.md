@@ -1,5 +1,5 @@
 ---
-description: Access and update issue and case context data in playbooks.
+description: Use Cortex XSIAM context data in playbooks for dynamic workflow execution.
 ---
 
 # Use context data in a playbook
@@ -38,7 +38,7 @@ In Cortex XSIAM you can use context data (from an issue or case) in playbooks, a
 
 For more information about playbooks, see [Playbooks overview](../playbooks/playbooks-overview).
 
-**Context data in sub-playbooks**
+### **Context data in sub-playbooks**
 
 By default, the context data for sub-playbooks is stored in a separate context key. Consider the following information:
 
@@ -50,7 +50,7 @@ By default, the context data for sub-playbooks is stored in a separate context k
 Generic polling does not work if a playbook’s context data is shared globally. For more information, see [Playbook polling](https://app.gitbook.com/s/1BTuP6WlLsNzo2wlKa5w/customize-cortex-xsoar/customize-and-configure-cortex-xsoar/playbooks/playbook-polling).
 {% endhint %}
 
-**Use case: Use context data in a Jira ticketing system**
+### **Use case: Use context data in a Jira ticketing system**
 
 In this use case, a Jira ticketing system is used to manage issues and reduce duplicate tickets.
 

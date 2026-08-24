@@ -1,3 +1,7 @@
+---
+description: Ingest Check Point firewall logs into Cortex XSIAM.
+---
+
 # Ingest logs from Check Point firewalls
 
 If you use Check Point FW1/VPN1 firewalls, you can still take advantage of Cortex XSIAM investigation and detection capabilities by forwarding your Check Point firewall logs to Cortex XSIAM. Check Point firewall logs can be used as the sole data source, however, you can also use Check Point firewall logs in conjunction with Palo Alto Networks firewall logs and additional data sources.

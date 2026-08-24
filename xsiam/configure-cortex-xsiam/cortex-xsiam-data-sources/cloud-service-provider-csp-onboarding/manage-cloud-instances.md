@@ -1,3 +1,7 @@
+---
+description: Manage cloud instances connected to Cortex XSIAM.
+---
+
 # Manage cloud instances
 
 1. Navigate to Settings → Data Sources & Integrations.

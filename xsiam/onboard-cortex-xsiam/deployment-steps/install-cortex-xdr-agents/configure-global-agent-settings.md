@@ -1,7 +1,7 @@
 ---
 description: >-
   Configure global Cortex XDR agent settings for uninstall passwords, content
-  bandwidth, upgrades, advanced analysis, and endpoint cleanup.
+  bandwidth, upgrades, advanced analysis, and endpoint cleanup for Cortex XSIAM.
 ---
 
 # Configure global agent settings

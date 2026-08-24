@@ -22,6 +22,12 @@ Cortex products utilize the Cloud Logging Collection Service (CLCS), a pub/sub s
 
 Once ingested, your data is stored in the `panw_ngfw_*_raw` datasets. You can query this data using Cortex Query Language (XQL).
 
+{% hint style="info" %}
+**Note**
+
+When using a multi-tenant firewall with virtual system (vsys) instances, the `_reporting_device_name` field presents the NGFW instance name, vsys\_name, and vsys\_id using the following format; `log_source_name>-<vsys_name>-<vsys_id>`.
+{% endhint %}
+
 The following log types are supported for CNGFW ingestion:
 
 | Log Type            | Dataset Name                  |

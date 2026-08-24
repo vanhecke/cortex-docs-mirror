@@ -1,10 +1,8 @@
 ---
-description: Create, manage, and schedule playbook jobs
+description: Create, manage, and schedule Cortex XSIAM playbook jobs.
 ---
 
 # Manage jobs
-
-## Manage jobs
 
 A job is an automated playbook task or set of playbook tasks that are scheduled to run at predefined intervals or under specific conditions. Jobs can be used for data enrichment, periodic reporting, threat intelligence gathering, or any repetitive operational tasks that need to be performed regularly without manual intervention. There are two types of jobs:
 

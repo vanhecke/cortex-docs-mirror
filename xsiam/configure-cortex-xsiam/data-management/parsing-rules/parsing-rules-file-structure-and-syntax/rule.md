@@ -1,3 +1,7 @@
+---
+description: Define reusable rules in Cortex XSIAM Parsing Rules.
+---
+
 # RULE
 
 {% hint style="warning" %}

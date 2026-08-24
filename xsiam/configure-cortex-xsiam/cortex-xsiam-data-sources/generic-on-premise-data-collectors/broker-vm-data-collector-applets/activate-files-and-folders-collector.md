@@ -1,3 +1,7 @@
+---
+description: Configure this collector for Cortex XSIAM.
+---
+
 # Activate Files and Folders Collector
 
 The Broker VM provides a Files and Folders Collector applet that enables you to monitor and collect logs from files and folders in a network share for a Windows or Linux directory, directly to your log repository for query and visualization purposes. The Files and Folders collector applet only starts to collect files that are more than 256 bytes and is only supported with a Network File System version 4 (NFSv4). After you activate the Files and Folders Collector applet, you can collect files as datasets (**`<Vendor>_<Product>_raw`**) by defining the following.

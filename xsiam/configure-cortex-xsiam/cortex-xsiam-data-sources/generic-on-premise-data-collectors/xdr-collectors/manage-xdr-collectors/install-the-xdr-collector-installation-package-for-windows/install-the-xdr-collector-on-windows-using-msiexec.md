@@ -1,3 +1,7 @@
+---
+description: Install an XDR Collector with Msiexec for Cortex XSIAM.
+---
+
 # Install the XDR Collector on Windows using Msiexec
 
 Msiexec provides full control over the installation process and allows you to install, modify, and perform operations on a Windows Installer from the command line interface (CLI). You can also use Msiexec to log any issues encountered during installation.

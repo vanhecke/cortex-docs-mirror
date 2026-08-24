@@ -1,3 +1,7 @@
+---
+description: Schedule XDR Collector upgrades for Cortex XSIAM.
+---
+
 # Configure XDR Collector upgrade scheduler
 
 You can configure the Cortex XDR Collector upgrade scheduler and the number of parallel upgrades.

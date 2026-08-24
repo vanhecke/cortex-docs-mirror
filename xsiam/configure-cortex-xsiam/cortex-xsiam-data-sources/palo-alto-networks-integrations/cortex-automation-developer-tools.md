@@ -1,3 +1,7 @@
+---
+description: Use Cortex Automation Developer Tools with Cortex XSIAM.
+---
+
 # Cortex Automation Developer Tools
 
 {% hint style="warning" %}

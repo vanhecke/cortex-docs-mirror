@@ -1,3 +1,7 @@
+---
+description: Use Cortex XSIAM list commands in playbooks and scripts.
+---
+
 # List commands
 
 Use the following list commands in the CLI in the War Room and Playground, scripts, and playbook tasks:

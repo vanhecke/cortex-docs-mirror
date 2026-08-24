@@ -1,3 +1,7 @@
+---
+description: Configure permissions for integrations in Cortex XSIAM.
+---
+
 # Configure integration permissions
 
 You can use role-based access control (RBAC) to restrict running commands to specific roles at the integration instance level. If you have multiple instances of the same integration, you can assign different roles (permission levels) for the same command in each instance.

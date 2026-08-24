@@ -1,3 +1,7 @@
+---
+description: Use Threat Vault data with Cortex XSIAM.
+---
+
 # Threat Vault
 
 {% hint style="warning" %}

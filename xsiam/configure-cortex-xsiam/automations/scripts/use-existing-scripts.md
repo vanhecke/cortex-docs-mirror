@@ -1,3 +1,7 @@
+---
+description: Find, review, and reuse existing Cortex XSIAM automation scripts.
+---
+
 # Use existing scripts
 
 Using or modifying an existing script enables you to quickly leverage proven functionality and save significant time and effort developing a new script from scratch.

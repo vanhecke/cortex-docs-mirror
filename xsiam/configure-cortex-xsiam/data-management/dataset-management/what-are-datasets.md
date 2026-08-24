@@ -1,3 +1,7 @@
+---
+description: Learn how Cortex XSIAM datasets store and organize your data.
+---
+
 # What are datasets?
 
 {% hint style="warning" %}

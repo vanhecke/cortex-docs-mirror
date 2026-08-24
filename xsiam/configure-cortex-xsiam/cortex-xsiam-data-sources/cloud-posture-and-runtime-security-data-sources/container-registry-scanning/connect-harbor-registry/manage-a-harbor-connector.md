@@ -1,3 +1,7 @@
+---
+description: Manage the Harbor registry connector in Cortex XSIAM.
+---
+
 # Manage a Harbor connector
 
 After successfully adding a connector, you can modify the connector settings and configure the scanning scope to control which images are scanned in the connected registry.

@@ -1,3 +1,7 @@
+---
+description: Extract a subset of data from a Cortex XSIAM JSON list.
+---
+
 # Extract a subset of the data
 
 In a playbook, you can extract subsets of context data to analyze a specific information set. This approach also applies when working with lists, such as extracting a subset of data from a JSON object. In this example, we extract server information from the list created above.

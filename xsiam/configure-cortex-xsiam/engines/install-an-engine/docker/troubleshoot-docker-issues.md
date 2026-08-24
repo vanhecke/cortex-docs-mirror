@@ -1,3 +1,9 @@
+---
+description: >-
+  Troubleshoot Docker installation, container, and runtime issues on Cortex
+  XSIAM engines.
+---
+
 # Troubleshoot Docker Issues
 
 The following provides troubleshooting solutions for Docker networking and performance issues.

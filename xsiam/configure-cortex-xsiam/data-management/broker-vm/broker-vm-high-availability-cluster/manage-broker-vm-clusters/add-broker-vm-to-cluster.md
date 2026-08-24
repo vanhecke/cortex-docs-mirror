@@ -1,3 +1,7 @@
+---
+description: Add a Broker VM to a Cortex XSIAM high availability cluster.
+---
+
 # Add Broker VM to cluster
 
 You can add standalone Broker VMs to a high availability (HA) cluster from either the Brokers tab or Clusters tab.

@@ -1,3 +1,7 @@
+---
+description: Manage the GitLab Container Registry connector in Cortex XSIAM.
+---
+
 # Manage a GitLab Container Registry connector
 
 After you add a GitLab Container Registry connector, you can modify the connector settings and configure the scanning scope to control which images are scanned in the connected registry.

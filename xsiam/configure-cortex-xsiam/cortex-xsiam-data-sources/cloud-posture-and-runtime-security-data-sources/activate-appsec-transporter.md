@@ -1,3 +1,9 @@
+---
+description: >-
+  Activate and manage the AppSec Transporter on a Cortex XSIAM Broker VM for
+  secure self-hosted VCS connectivity and code scanning.
+---
+
 # Activate AppSec Transporter
 
 {% hint style="info" %}

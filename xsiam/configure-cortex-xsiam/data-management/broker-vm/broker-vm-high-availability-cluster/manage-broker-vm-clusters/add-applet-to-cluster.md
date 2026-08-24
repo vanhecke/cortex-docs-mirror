@@ -1,3 +1,7 @@
+---
+description: Add a data collector applet to a Cortex XSIAM Broker VM cluster.
+---
+
 # Add applet to cluster
 
 You can add an applet to a high availability (HA) cluster from the Clusters tab of the Brokers VM page.

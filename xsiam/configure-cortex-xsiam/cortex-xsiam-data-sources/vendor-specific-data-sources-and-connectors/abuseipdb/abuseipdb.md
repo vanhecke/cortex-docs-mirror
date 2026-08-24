@@ -1,3 +1,7 @@
+---
+description: Use AbuseIPDB data with Cortex XSIAM.
+---
+
 # AbuseIPDB
 
 {% hint style="warning" %}

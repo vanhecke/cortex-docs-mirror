@@ -1,5 +1,5 @@
 ---
-description: Configure Okta log and configuration data ingestion.
+description: Configure Okta log and configuration data ingestion for Cortex XSIAM.
 ---
 
 # Ingest logs and data from Okta

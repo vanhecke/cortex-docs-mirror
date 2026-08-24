@@ -1,3 +1,7 @@
+---
+description: View details for a Cortex XSIAM Broker VM cluster.
+---
+
 # View cluster details
 
 Learn more about viewing the details of any particular cluster.

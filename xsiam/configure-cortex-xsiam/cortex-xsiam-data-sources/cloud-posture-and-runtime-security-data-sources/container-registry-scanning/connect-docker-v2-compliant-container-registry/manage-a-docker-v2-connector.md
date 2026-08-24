@@ -1,3 +1,7 @@
+---
+description: Manage the Docker V2-compliant registry connector in Cortex XSIAM.
+---
+
 # Manage a Docker V2 connector
 
 After you add a Docker V2 connector, you can modify the connector settings and configure the scanning scope to control which images are scanned in the connected registry.

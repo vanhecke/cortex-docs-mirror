@@ -1,3 +1,7 @@
+---
+description: Ingest Zscaler Private Access logs into Cortex XSIAM.
+---
+
 # Ingest logs from Zscaler Private Access
 
 If you use Zscaler Private Access (ZPA) in your network as an alternative to VPNs, you can forward your network logs to Cortex XSIAM for analysis. This enables you to take advantage of Cortex XSIAM anomalous behavior detection and investigation capabilities. Cortex XSIAM can use the network logs from ZPA as the sole data source, and can also use these network logs from ZPA in conjunction with Palo Alto Networks network logs.

@@ -1,3 +1,7 @@
+---
+description: Change Docker images used by Cortex XSIAM integrations and scripts.
+---
+
 # Change the Docker image in an integration or script
 
 Docker enables you to run scripts and integrations from an image in a controlled environment that isolates and safeguards the tenant. It also simplifies environment setup by packaging dependencies and configurations within an image, ensuring consistent execution across different systems. By default, Cortex XSIAM pulls images from the `Demisto` Docker image registry in GitHub, which are used in scripts and integrations as needed. Cortex XSIAM integrations and scripts have the relevant Docker image already selected. For example, the Rasterize integration uses the `demisto/python.3.3.11.9.1079` Docker image.
@@ -8,15 +12,13 @@ You may want to select a different Docker image for your integration or script. 
 You can access publicly available Docker images from the Cortex XSIAM tenant even if there is no external connection to the `Demisto` registry, for example, if due to firewall constraints, your engine cannot access the `Demisto` registry.
 {% endhint %}
 
-Change the Docker image for a script
-
 1. Edit the script.
 2.  Under ADVANCED, in the Docker image name field, click X to clear the current selection and then select a Docker image name from the dropdown menu.
 
     For more information about changing the Docker image for a script, see the Advanced tab in [Create a script](create-a-script).
 3. Save your changes.
 
-Change the Docker image for an integration
+### Change the Docker image for an integration
 
 1.  Navigate to Settings → Data Sources & Integrations, find and select your integration and edit the integration’s source.
 

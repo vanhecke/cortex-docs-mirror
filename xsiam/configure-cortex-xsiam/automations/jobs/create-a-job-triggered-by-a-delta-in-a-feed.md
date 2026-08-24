@@ -1,5 +1,5 @@
 ---
-description: Trigger a playbook when a feed changes
+description: Trigger a playbook job when a feed changes in Cortex XSIAM.
 ---
 
 # Create a job triggered by a delta in a feed

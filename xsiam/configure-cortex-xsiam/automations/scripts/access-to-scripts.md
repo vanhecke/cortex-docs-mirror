@@ -1,3 +1,7 @@
+---
+description: Control access to Cortex XSIAM scripts using roles and permissions.
+---
+
 # Access to scripts
 
 Access to scripts is managed at the object level, ensuring that custom automation code and sensitive logic are restricted to authorized users. For a complete description of how object-level access affects script visibility and execution across Cortex XSIAM, see [Manage access to playbooks and scripts](../../../onboard-cortex-xsiam/post-deployment/manage-user-roles-and-access-management/manage-access-to-objects/manage-access-to-playbooks-and-scripts).

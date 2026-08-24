@@ -1,3 +1,7 @@
+---
+description: Connect a Docker Hub registry to Cortex XSIAM for container image scanning.
+---
+
 # Connect Docker Hub registry
 
 The Docker Hub registry data source allows you to connect your public or private Docker Hub account to scan and secure container images against vulnerabilities, malware, and exposed secrets.

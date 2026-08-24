@@ -1,3 +1,7 @@
+---
+description: Configure Windows Event Collector for Cortex XSIAM.
+---
+
 # Activate Windows Event Collector
 
 After you have configured and registered your Broker VM, activate your Windows Event Collector application.

@@ -1,3 +1,7 @@
+---
+description: Install XDR Collectors for Cortex XSIAM.
+---
+
 # XDR Collectors installation resource for Windows and Linux
 
 The following table provides important information about the XDR Collectors installation for Windows and Linux.

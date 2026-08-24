@@ -1,3 +1,7 @@
+---
+description: Fetch issues from an integration instance in Cortex XSIAM.
+---
+
 # Fetch issues from an integration instance
 
 You can poll third-party integration instances for events and turn them into Cortex XSIAM issues (fetching). Many integrations support fetching, but not all support this feature. You can view each integration in the [Developer Hub](https://xsoar.pan.dev/docs/reference/index).

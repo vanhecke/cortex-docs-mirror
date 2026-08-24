@@ -1,3 +1,7 @@
+---
+description: Ingest Windows DHCP logs into Cortex XSIAM.
+---
+
 # Ingest logs from Windows DHCP using Elasticsearch Filebeat
 
 You can extend visibility into logs from Windows DHCP, and enrich network logs with Windows DHCP data by using one of the following data collectors with Elasticsearch Filebeat :

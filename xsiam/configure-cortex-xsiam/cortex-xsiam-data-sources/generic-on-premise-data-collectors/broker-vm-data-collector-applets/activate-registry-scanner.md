@@ -1,3 +1,7 @@
+---
+description: Configure Registry Scanner for Cortex XSIAM.
+---
+
 # Activate Registry Scanner
 
 The **Broker VM** provides a **Registry Scanner** applet that scans and secures your container image registries. It supports Docker V2 or JFrog self-hosted registries located on-premises or in private cloud networks.

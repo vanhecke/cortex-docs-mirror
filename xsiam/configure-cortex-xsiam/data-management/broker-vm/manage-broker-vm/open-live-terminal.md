@@ -1,3 +1,7 @@
+---
+description: Access a live terminal for a Cortex XSIAM Broker VM.
+---
+
 # Open Live Terminal
 
 Learn more about remotely connecting to a Cortex XSIAM Broker VM.

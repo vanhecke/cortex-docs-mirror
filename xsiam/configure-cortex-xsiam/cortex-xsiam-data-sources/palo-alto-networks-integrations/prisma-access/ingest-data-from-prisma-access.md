@@ -1,3 +1,7 @@
+---
+description: Ingest Prisma Access data into Cortex XSIAM.
+---
+
 # Ingest data from Prisma Access
 
 You can forward data from Prisma Access to Cortex XSIAM. When your Cortex XSIAM tenant begins receiving detection data, it begins stitching logs with other Palo Alto Networks-generated logs to form stories. Use the XQL Search to query the data.

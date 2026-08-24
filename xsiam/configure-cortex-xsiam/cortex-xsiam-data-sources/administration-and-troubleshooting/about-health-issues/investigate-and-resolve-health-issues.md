@@ -1,3 +1,9 @@
+---
+description: >-
+  Investigate and resolve ingestion, collection, correlation, and automation
+  health issues in Cortex XSIAM.
+---
+
 # Investigate and resolve health issues
 
 The following tasks explain how to investigate and resolve health issues. You can see health issues on the following pages:
@@ -5,7 +11,7 @@ The following tasks explain how to investigate and resolve health issues. You ca
 * Go to Settings → Health Issues
 * Go to Cases & Issues → Issues and change the table view to Health Domain.
 
-### **Investigate data ingestion errors**
+### **Investigate data ingestion errors in Cortex XSIAM**
 
 A data ingestion issue identifies disruption in the data ingestion pipeline. For example, a data source is not sending logs, or there is a significant drop in log collection compared to the calculated ingestion baseline.
 
@@ -20,7 +26,7 @@ A data ingestion issue identifies disruption in the data ingestion pipeline. For
 
     Depending on the type of collector in error, the relevant data collector settings page opens, filtered by data collector.
 
-### **Investigate collection errors**
+### **Investigate collection errors in Cortex XSIAM**
 
 A collection issue identifies connectivity disruption in your collection integrations, custom collectors, and Marketplace integrations.
 
@@ -45,7 +51,7 @@ A collection issue identifies connectivity disruption in your collection integra
 
     For more information about troubleshooting collector errors and setting up correlation rules to trigger additional collection issues, see [Verify collector connectivity](../verify-collector-connectivity).
 
-### **Investigate correlation errors**
+### **Investigate correlation errors in Cortex XSIAM**
 
 A correlation issue identifies errors in your correlation rules.
 
@@ -57,7 +63,7 @@ A correlation issue identifies errors in your correlation rules.
 
     Identify the correlation rule in error and take steps to resolve the error. For more information about how Cortex XSIAM identifies correlation rule errors, see [Monitor correlation rules](monitor-correlation-rules).
 
-### **Investigate automation errors**
+### **Investigate automation errors in Cortex XSIAM**
 
 Automation issues identify potential misconfigurations in automations, enabling you to take a proactive approach to fixing misconfiguration issues before they affect system performance.
 

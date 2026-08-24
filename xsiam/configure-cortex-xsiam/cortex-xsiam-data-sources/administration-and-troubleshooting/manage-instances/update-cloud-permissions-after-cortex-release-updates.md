@@ -1,3 +1,7 @@
+---
+description: Update cloud permissions after Cortex XSIAM releases.
+---
+
 # Update cloud permissions after Cortex release updates
 
 This topic provides guidance on how to manage permission updates for your cloud instances following new feature releases or bug fixes. It outlines how users are notified of required permission changes and provides step-by-step instructions for granting necessary permissions to ensure continued functionality and security.

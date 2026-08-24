@@ -1,3 +1,7 @@
+---
+description: Install an XDR Collector MSI for Cortex XSIAM.
+---
+
 # Install the XDR collector on Windows using the MSI
 
 Use the following workflow to install the XDR Collector using the MSI file.

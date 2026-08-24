@@ -1,3 +1,7 @@
+---
+description: Ingest Forcepoint DLP logs into Cortex XSIAM.
+---
+
 # Ingest logs from Forcepoint DLP
 
 If you use Forcepoint DLP to prevent data loss over endpoint channels, you can take advantage of Cortex XSIAM investigation and detection capabilities by forwarding your logs to Cortex XSIAM. This enables Cortex XSIAM to help you expand visibility into data violation by users and hosts in the organization, correlate and detect DLP incidents, and query Forcepoint DLP logs using XQL Search.

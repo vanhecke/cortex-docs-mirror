@@ -1,3 +1,7 @@
+---
+description: Add commands and scripts as playbooks tasks in Cortex XSIAM.
+---
+
 # Add commands and scripts
 
 Adding commands and scripts to playbooks enables automating repetitive tasks and executing custom actions to enhance efficiency and streamline workflow processes.

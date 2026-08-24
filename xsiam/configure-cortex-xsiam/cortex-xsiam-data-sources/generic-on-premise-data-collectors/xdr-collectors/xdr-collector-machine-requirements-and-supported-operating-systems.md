@@ -1,3 +1,7 @@
+---
+description: Review XDR Collector requirements for Cortex XSIAM.
+---
+
 # XDR Collector machine requirements and supported operating systems
 
 You can configure XDR Collectors that are dedicated for on-premise data collection on Windows and Linux machines. The following hardware and software specifications are required for the collector machines.

@@ -1,42 +1,45 @@
+---
+description: >-
+  Configure Cortex XSIAM playbook names, permissions, inputs, and output
+  settings.
+---
+
 # Configure playbook settings
 
 After selecting the playbook you want to edit or after creating a new playbook, configure playbook settings as relevant, including:
 
 * Triggers: Define the condition applied to a specific issue that will trigger the playbook to run. Leave these settings empty to use the playbook as a sub-playbook or to only run the playbook manually. For more information, see [Create an automation rule](../../create-an-automation-rule).
 * Inputs and outputs: Define and fill in input and output parameters required for the playbook to function correctly, grouping them as needed.
-*   Playbook input and output grouping: Playbook input and output fields are collected into groups. This organizes the inputs and outputs, providing clarity and context to understand which inputs are relevant to which playbook flow.<br>
+* Playbook input and output grouping: Playbook input and output fields are collected into groups. This organizes the inputs and outputs, providing clarity and context to understand which inputs are relevant to which playbook flow.<br>
 
-    **Playbook group permissions**
+### Playbook group permissions
 
-    \
-    Users with permission to edit playbooks can add, edit, and delete groups and input and output fields. Users without this permission can only view groups, inputs, and outputs.
+\
+Users with permission to edit playbooks can add, edit, and delete groups and input and output fields. Users without this permission can only view groups, inputs, and outputs.
 
-    Work with playbook input and output groups
+Work with playbook input and output groups
 
-    \
-    You can do the following with groups:
+\
+You can do the following with groups:
 
-    * Add or delete a group. Deleting a group deletes all the fields defined in the group.
-    * Change the name and/or description of the group.
-    * Change the order groups appear by dragging.
-    * Collapse and expand a group.
+* Add or delete a group. Deleting a group deletes all the fields defined in the group.
+* Change the name and/or description of the group.
+* Change the order in which groups appear by dragging.
+* Collapse and expand a group.
 
-    \
-    **Manage input or output fields within a group**
+### Manage input or output fields within a group
 
-    \
-    You can do the following with input or output fields within a group:
+\
+You can do the following with input or output fields within a group:
 
-    * Add, edit, or delete fields within a group. Input or output fields are always part of a group.
-    * Move fields between groups by dragging.
-    * Change field order within a group by dragging.<br>
+* Add, edit, or delete fields within a group. Input or output fields are always part of a group.
+* Move fields between groups by dragging.
+* Change field order within a group by dragging.<br>
 * General settings: Define roles for edit access and whether to run the playbook in Quiet Mode. In Quiet Mode, playbook tasks do not save inputs and outputs or extract indicators. Tasks are not indexed, so you cannot search for the results of specific tasks. All the information is still available in the context data, and errors and warnings are written to the War Room.
 
-**How to configure playbook settings**
+### **How to configure playbook settings in Cortex XSIAM**
 
-{% hint style="info" %}
-### NOTE
-
+{% hint style="warning" %}
 **Modifying system playbooks**: To change settings or tasks for system playbooks, you must have the **Edit Public Playbooks** permission, as these objects are public and read-only by default. If certain options are unavailable, contact your administrator. For more information, see [Manage access to playbooks and scripts](../../../../onboard-cortex-xsiam/post-deployment/manage-user-roles-and-access-management).
 {% endhint %}
 
@@ -44,9 +47,9 @@ After selecting the playbook you want to edit or after creating a new playbook, 
 
     The **Playbook Settings** pane opens, showing the playbook name, description and tags at the top. You can edit these fields by clicking the pencil icon.
 
-    The pane opens with the **Triggers** tab on the bottom.
+    The pane opens with the **Triggers** tab at the bottom.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>If the playbook has inputs and outputs, the <strong>Playbook Starts</strong> task will show back and forth arrows. Clicking them opens the <strong>Playbook Settings</strong> pane <strong>Inputs/Outputs</strong> tab.</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>If the playbook has inputs and outputs, the <strong>Playbook Starts</strong> task will show back and forth arrows. Clicking them opens the <strong>Playbook Settings</strong> pane <strong>Inputs/Outputs</strong> tab.</p></div>
 
     The playbook is enabled by default. If the playbook is disabled, it will not run on an issue.
 2.  In the **Triggers** tab, under **Automation Rules**, define the rule that will trigger the playbook.
@@ -61,12 +64,12 @@ After selecting the playbook you want to edit or after creating a new playbook, 
         For more information on Automation Rules, see [Create an automation rule](../../create-an-automation-rule).
     4. Click **Create**.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>This rule will trigger the playbook to run if no other Automation Rule triggers the playbook first. You can view and edit the order the rules run in the <strong>Automation Rules</strong> page.</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>This rule will trigger the playbook to run if no other Automation Rule triggers the playbook first. You can view and edit the order the rules run in the <strong>Automation Rules</strong> page.</p></div>
 
     **Playbooks** lists any playbooks that use this playbook as a sub-playbook.
 3.  In the **Inputs/Outputs** tab, add groups with input and output fields.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>If a playbook input is designed to accept a credential object, users with the <strong>Credentials</strong> permission set to <strong>None</strong> will be unable to select pre-saved secrets from the configuration dropdowns. For more information, see <a href="../../../../reference-and-developer-docs/role-based-access-control/configuration-permissions/credentials-permissions">Credentials permissions</a>.</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>If a playbook input is designed to accept a credential object, users with the <strong>Credentials</strong> permission set to <strong>None</strong> will be unable to select pre-saved secrets from the configuration dropdowns. For more information, see <a href="../../../../reference-and-developer-docs/role-based-access-control/configuration-permissions/credentials-permissions">Credentials permissions</a>.</p></div>
 
 <details>
 

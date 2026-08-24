@@ -1,3 +1,7 @@
+---
+description: Define reusable constants in Cortex XSIAM Parsing Rules.
+---
+
 # CONST
 
 {% hint style="warning" %}

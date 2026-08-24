@@ -1,3 +1,7 @@
+---
+description: Query Windows Event Log records for Cortex XSIAM.
+---
+
 # Query Windows Event Log records
 
 When the XDR Collector forwards Windows Event Log records to Cortex XSIAM, the records are available in Cortex Query Language (XQL) through two datasets, depending on the event's source provider. Use the correct dataset and field for your query to ensure you find the expected data.

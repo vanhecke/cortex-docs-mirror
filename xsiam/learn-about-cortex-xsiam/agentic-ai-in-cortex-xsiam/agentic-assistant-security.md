@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn about how the Agentic Assistant is built using responsible AI
-  principles.
+  Learn about how the Agentic Assistant is built using responsible AI principles
+  in Cortex XSIAM.
 ---
 
 # Agentic Assistant security

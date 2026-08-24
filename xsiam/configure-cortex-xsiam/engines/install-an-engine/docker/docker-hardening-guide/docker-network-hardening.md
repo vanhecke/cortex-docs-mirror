@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Docker network hardening for secure Cortex XSIAM engine
+  communication.
+---
+
 # Docker network hardening
 
 Docker creates its networking stack that enables containers to communicate with other networking endpoints. You can use iptables rules to restrict which networking sources the containers communicate with. By default, Docker uses a networking configuration that allows unrestricted communication for containers, so that containers can communicate with all IP addresses.

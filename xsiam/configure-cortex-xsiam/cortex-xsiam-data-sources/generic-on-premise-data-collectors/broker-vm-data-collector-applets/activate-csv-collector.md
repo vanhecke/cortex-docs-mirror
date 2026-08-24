@@ -1,3 +1,7 @@
+---
+description: Configure this collector for Cortex XSIAM.
+---
+
 # Activate CSV Collector
 
 The Broker VM provides a CSV Collector applet that enables you to monitor and collect CSV (comma-separated values) log files from a shared Windows directory directly to your log repository for query and visualization purposes. After you activate the CSV Collector applet on a Broker VM in your network, you can ingest CSV files as datasets by defining the list of folders mounted to the Broker VM and setting the list of CSV files to monitor and upload to Cortex XSIAM using a username and password.

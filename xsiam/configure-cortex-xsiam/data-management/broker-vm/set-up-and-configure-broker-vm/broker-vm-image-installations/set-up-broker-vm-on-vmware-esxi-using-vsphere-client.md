@@ -1,3 +1,7 @@
+---
+description: Deploy a Cortex XSIAM Broker VM on VMware ESXi.
+---
+
 # Set up Broker VM on VMware ESXi using vSphere Client
 
 Learn more about how to set up you Cortex XSIAM Broker VM on VMware ESXi.

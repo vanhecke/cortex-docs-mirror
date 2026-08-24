@@ -1,3 +1,7 @@
+---
+description: Connect a GitLab container registry to Cortex XSIAM for image scanning.
+---
+
 # Connect GitLab container registry
 
 Configure Cortex XSIAM to scan your GitLab Container Registry without using administrator credentials. Use a GitLab Personal Access Token (PAT) to authenticate Cortex to access the GitLab Container Registry. This allows Cortex to list all container registries or images, and secure them from vulnerabilities, malware, and secrets.

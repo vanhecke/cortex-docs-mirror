@@ -1,3 +1,7 @@
+---
+description: Inventory Alibaba Cloud resources for Cortex XSIAM onboarding.
+---
+
 # Alibaba Cloud resource inventory
 
 The onboarding process creates resources in the customer's Alibaba Cloud account using the Terraform authentication template. All resources are created at the account level.

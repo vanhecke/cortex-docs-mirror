@@ -1,3 +1,7 @@
+---
+description: Explore common integration use cases in Cortex XSIAM.
+---
+
 # Integration use cases
 
 The following categories are common use cases for Cortex XSIAM integrations. While this list is not meant to be exhaustive, it's a starting point to understand what use cases are supported by Cortex XSIAM and third-party integrations.

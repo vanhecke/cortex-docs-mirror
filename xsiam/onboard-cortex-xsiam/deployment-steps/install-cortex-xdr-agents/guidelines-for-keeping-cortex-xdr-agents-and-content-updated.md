@@ -1,7 +1,7 @@
 ---
 description: >-
   Plan phased Cortex XDR agent upgrades and content updates with rollout
-  schedules, staging content, and bandwidth controls.
+  schedules, staging content, and bandwidth controls in Cortex XSIAM.
 ---
 
 # Guidelines for keeping Cortex XDR agents and content updated

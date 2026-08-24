@@ -1,3 +1,7 @@
+---
+description: Monitor Data Model Rules activity in Cortex XSIAM.
+---
+
 # Monitor Data Model Rules activity
 
 {% hint style="warning" %}

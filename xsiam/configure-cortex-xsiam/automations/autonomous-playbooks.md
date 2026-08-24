@@ -1,8 +1,7 @@
 ---
 description: >-
-  Accelerate your incident response and reduce your team's workload with
-  Autonomous Playbooks, fully managed security automation that automatically
-  installs, updates, and maintains expert-level playbook
+  Use Cortex XSIAM autonomous playbooks for managed security automation and
+  response.
 ---
 
 # Autonomous playbooks

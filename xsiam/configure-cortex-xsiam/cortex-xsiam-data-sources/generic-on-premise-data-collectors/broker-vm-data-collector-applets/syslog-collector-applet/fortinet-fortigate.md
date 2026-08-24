@@ -1,3 +1,7 @@
+---
+description: Ingest Fortinet FortiGate data into Cortex XSIAM.
+---
+
 # Fortinet Fortigate
 
 You can configure collecting Fortinet Fortigate firewall logs using a Broker VM Syslog Collector applet or with a content pack integration:

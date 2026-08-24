@@ -1,3 +1,7 @@
+---
+description: Troubleshoot integration issues in Cortex XSIAM.
+---
+
 # Troubleshoot Integrations
 
 The **Troubleshooting Instances** dashboard provides you with insight into command execution errors. When troubleshooting integrations, we recommend the following steps:

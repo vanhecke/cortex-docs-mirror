@@ -1,5 +1,7 @@
 ---
-description: Install, manage, configure, and troubleshoot engines.
+description: >-
+  Install, configure, manage, and troubleshoot Cortex XSIAM engines for secure
+  integration and automation workloads.
 ---
 
 # Engines

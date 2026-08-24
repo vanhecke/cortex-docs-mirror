@@ -1,3 +1,7 @@
+---
+description: Understand AWS authentication for Cortex XSIAM cloud onboarding.
+---
+
 # AWS security model and authentication
 
 Cortex XSIAM implements a defense-in-depth security model built on the principle of least privilege. Every permission granted to Cortex XSIAM is scoped to a specific security capability and has a clear purpose. This section describes the security principles, authentication mechanisms, and operational safeguards that protect your AWS environment.

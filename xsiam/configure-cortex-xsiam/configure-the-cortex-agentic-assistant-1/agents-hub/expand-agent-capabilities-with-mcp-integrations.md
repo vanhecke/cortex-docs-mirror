@@ -1,3 +1,9 @@
+---
+description: >-
+  Connect MCP integrations to extend Cortex XSIAM Agentic Assistant agent
+  capabilities.
+---
+
 # Expand agent capabilities with MCP integrations
 
 Cortex Agentic Assistant supports native interaction with external environments via the Model Context Protocol (MCP). Agentic Assistant agents can use tools from third-party MCP servers to retrieve data and perform tasks in external systems. For example, an agent can open a Jira issue or check GitHub to see if security scans in a workflow are being bypassed..

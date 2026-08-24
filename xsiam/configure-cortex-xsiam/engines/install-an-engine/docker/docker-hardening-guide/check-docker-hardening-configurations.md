@@ -1,3 +1,7 @@
+---
+description: Verify Docker hardening settings for secure Cortex XSIAM engine deployments.
+---
+
 # Check Docker hardening configurations
 
 Check your Docker hardening configurations on an engine by running the **`!DockerHardeningCheck`** command in the Case/Issue War Room CLI. The results show the following:

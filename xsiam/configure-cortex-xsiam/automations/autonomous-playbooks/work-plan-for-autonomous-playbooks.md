@@ -1,3 +1,7 @@
+---
+description: Review Cortex XSIAM Work Plans for autonomous playbook execution and progress.
+---
+
 # Work Plan for autonomous playbooks
 
 To keep incident investigations highly focused, the system abstracts underlying conditions and background scripts. When you view an autonomous playbook in an issue's resolution tab, it opens a unique, curated Work Plan. This view presents only the executed key tasks and their defined outputs, ordered sequentially, ensuring you immediately see conclusions without the distraction of background tasks.

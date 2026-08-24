@@ -1,3 +1,7 @@
+---
+description: Configure Next-Generation Firewall ingestion for Cortex XSIAM.
+---
+
 # Next-Generation Firewall
 
 You can configure collecting Next-Generation Firewall logs and data using a data source, content pack integration (onboarded prior to July 26, 2026), or connector (onboarded after July 26, 2026):

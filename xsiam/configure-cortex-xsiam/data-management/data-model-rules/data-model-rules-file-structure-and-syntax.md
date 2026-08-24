@@ -1,3 +1,7 @@
+---
+description: Learn Cortex XSIAM Data Model Rules file structure and syntax.
+---
+
 # Data Model Rules file structure and syntax
 
 {% hint style="warning" %}

@@ -1,5 +1,5 @@
 ---
-description: Learn more about the Cortex Data Lake tier.
+description: Configure the Cortex Data Lake tier in Cortex XSIAM.
 ---
 
 # Configure Cortex Data Lake tier

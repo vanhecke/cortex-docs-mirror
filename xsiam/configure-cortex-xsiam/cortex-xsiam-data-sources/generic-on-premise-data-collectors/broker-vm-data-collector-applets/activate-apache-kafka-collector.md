@@ -1,3 +1,7 @@
+---
+description: Configure this collector for Cortex XSIAM.
+---
+
 # Activate Apache Kafka Collector
 
 Apache Kafka is an open-source distributed event streaming platform for high-performance data pipelines, streaming analytics and data integration. Kafka records are organized into Topics. The partitions for each Topic are spread across the bootstrap servers in the Kafka cluster. The bootstrap servers are responsible for transferring data from Producers to Consumer Groups, which enable the Kafka server to save offsets of each partition in the Topic consumed by each group.

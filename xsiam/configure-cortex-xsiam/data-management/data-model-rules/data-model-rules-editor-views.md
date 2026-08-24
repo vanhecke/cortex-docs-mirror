@@ -1,3 +1,7 @@
+---
+description: Navigate the Cortex XSIAM Data Model Rules editor.
+---
+
 # Data Model Rules editor views
 
 {% hint style="warning" %}

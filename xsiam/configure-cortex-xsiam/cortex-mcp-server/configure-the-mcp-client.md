@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure a local MCP client to connect to the Cortex XSIAM MCP Server using
+  Docker or a Poetry virtual environment.
+---
+
 # Configure the MCP client
 
 After you have downloaded and installed the Cortex MCP server, you need to configure your local MCP client to communicate with the Cortex MCP server. The instructions below use Claude Desktop, but any MCP client can be used.

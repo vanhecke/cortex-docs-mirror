@@ -1,3 +1,7 @@
+---
+description: Plan AWS security capabilities for Cortex XSIAM cloud onboarding.
+---
+
 # AWS security capabilities and deployment planning
 
 Plan your deployment by selecting the appropriate security capabilities. The onboarding process deploys all selected capabilities using a single CloudFormation template that adds specific functionality to your Cortex XSIAM integration.

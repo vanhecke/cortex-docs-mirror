@@ -1,3 +1,7 @@
+---
+description: Ingest Corelight Zeek logs into Cortex XSIAM.
+---
+
 # Ingest logs from Corelight Zeek
 
 If you use Corelight Zeek sensors for network monitoring, you can still take advantage of Cortex XSIAM investigation and detection capabilities by forwarding your network connection logs to Cortex XSIAM. This enables Cortex XSIAM to examine your network traffic to detect anomalous behavior. Cortex XSIAM can use Corelight Zeek logs as the sole data source, but can also use logs in conjunction with Palo Alto Networks or third-party firewall logs. For additional endpoint context, you can also use Cortex XSIAM to collect and alert on endpoint data.

@@ -1,18 +1,26 @@
 ---
-description: Find, duplicate, and edit prompts from the Prompts Library.
+description: Find, duplicate, and edit existing Cortex XSIAM AI prompts.
 ---
 
 # Use existing prompts
 
 Using an existing prompt allows you to quickly achieve reliable results by leveraging proven, pre-built instructions instead of starting from scratch. You can access the existing prompts from the Prompts Library, a centralized repository that helps you create, search, and edit your AI prompts. It enables turning prompts into reusable assets that can be shared across your organization and bring repeatability and control to your AI operations. The Prompts Library provides a dedicated space for organizing prompts across all your playbooks or for registering them as Actions and assigning them to Agents, and is particularly useful for managing long and complex prompts.
 
+{% stepper %}
+{% step %}
 1. Navigate to **Investigation & Response** → **Automation** → **AI Prompts** and in the **Prompts Library** search for the prompt you want to use.
    * Use free text in the search box to find an existing prompt. From the **Basic** dropdown, you can search for a prompt by **Basic** (name and tag), **Name**, or **Tag**.
    * You can search for an exact match of the prompt name by putting quotation marks around the search text. For example, searching for **`"VulnerabilityReportSummary"`** returns the prompt with that name. You can search for more than one exact match by including the logical operator "or" in between your search texts in quotation marks. For example, searching for **`"IssueSummaryAndRemediation" or "VulnerabilityReportSummary"`** returns the two prompts with those names. Wildcards are not supported in free text search.
    * You can sort the prompts in the library alphabetically, by modified date, by system, or custom, and you can filter for disabled or deprecated prompts.
-2.  Click **Edit**. If the prompt you want to use is locked, click ![three-dots.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FORBYsY4Y6C7i1fV0zajJ%2F860e6eb54bd3ae665125051cdb957ddbd3d9c026f75c4b54acce3f0d35f08d04.png?alt=media\&token=24ae450e-c7ee-4c30-95a9-72eb53db0516) and then select **Duplicate Prompt**.
+{% endstep %}
 
-    System prompts, are by default locked, which means they are not editable. To edit a system prompt, you need to make a copy.
+{% step %}
+2.  Click **Edit**. If the prompt you want to use is locked, click <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FORBYsY4Y6C7i1fV0zajJ%2F860e6eb54bd3ae665125051cdb957ddbd3d9c026f75c4b54acce3f0d35f08d04.png?alt=media&#x26;token=24ae450e-c7ee-4c30-95a9-72eb53db0516" alt="three-dots.png" data-size="line"> and then select **Duplicate Prompt**.
+
+    System prompts are, by default, locked, which means they are not editable. To edit a system prompt, you need to make a copy.
+{% endstep %}
+
+{% step %}
 3.  Edit the prompt and settings as needed.
 
     For details about prompt settings, see [Create a prompt](create-a-prompt).
@@ -96,11 +104,19 @@ Use few-shot prompting when you need the AI prompt to learn a new pattern or for
     * Risk Score: 9/10 - Very High. Widespread target, often exploited through user interaction, making it a common attack vector.
 
 </details>
+{% endstep %}
 
+{% step %}
 4.  (Recommended) Click **Optimize** to improve prompt edits using predefined system guidelines.
 
     The suggested prompt replaces the existing one. You can undo the optimization if needed.
+{% endstep %}
+
+{% step %}
 5. Save the prompt version.
+{% endstep %}
+
+{% step %}
 6. (Recommended) Click **Test** to validate your prompt.
    1.  In the Arguments section, provide values for any inputs your prompt requires. These inputs are used to simulate how the prompt will behave in a live playbook, or how the prompt as an Action for an Agent will run as part of an executed plan.
 
@@ -117,7 +133,13 @@ Use few-shot prompting when you need the AI prompt to learn a new pattern or for
        | View artifact in new tab | Opens a new tab for the artifact.                                                                                                                                                                                                              |
        | Download artifact        | Downloads the run details to a text file, including the AI task name,, the prompt name, user name and password, and the result.                                                                                                                |
        | Add tags                 | Add any relevant tags to use that help you find relevant information.                                                                                                                                                                          |
+{% endstep %}
+
+{% step %}
 7. (Optional) Click [![three-dots-dark.png](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAjCAYAAAD17ghaAAAACXBIWXMAABJ0AAASdAHeZh94AAAAB3RJTUUH6QsCDQAEL/NOOgAAApxJREFUWIXtVzFrpEAYfXPIoOIMBq1clmUk2N2vuCK/5ur7CYH8lTTpUh6Brba9zkIJi1spBkdUjOAVYWVvV129y7Ep8irRb973+ObNN59ktVq1uCC+XDL5p4APIUCZGmgYBq6ursAYg6ZpUJS3pU3ToCxLSCmRpinyPH9fAaZpwnEcUEqRJAmiKEJRFGia5o1AUaDrOjjnuL6+Rl3X2O12eHl5mSSAjB1DIQQ454iiCHEcTyK0bRuLxQJZliEMw78ToCgKPM9DVVUIwxBtO69VEEIghICqqvB9v6tWH3pN6HkepJQIgmB2cgBo2xZBEEBKCc/zRmNPBAghUFUVttvt7MTH2G63qKoKQohpAkzTBOf87N7d3D1is9lgs9ng8e5mNDYMQ3DOYZrmeQGO4yCKorNltxntnimzR2PbtkUURXAcZ1yAYRiglE5ye33oqaY+Gx/HMSilMAzj5Ft3CpbLJQC8y973YYi/qwBjDFmW/ZfkAJBlGRhjJ+87AZqmoSiKSWRzTLhHURTQNG1YgKIoow3jEHNMuEfTNN390StgDuaacAydpL3C19fXs4vuv3/D/dxEAxXuKlCWJXRdn0k7HbquoyzLYQFSSnDOJ5Hd3D5g/bTG+mmNh9tpJuScQ0o5LCBNU1iWNYnMNhmoRkE1CmZOM6FlWUjTdFhAnueo6xq2fZ5wrglt20Zd173T0h/nYrfbYbVaIUmS0fvg/u4H4q8WKGokv36OJieEYLFY4Pn5uf/78UAihAAhBEEQjBJPheu6aNt28IY96QNhGEJV1a53/wuWyyVUVR293nsbke/7YIzBdV0QQmYnJoTAdV0wxuD7/njshxxKD3E8lmdZNjiWW5b1vmP5IS72Y7JHnuezyafg4v+GnwJ+AxX2QhQiVAHvAAAAAElFTkSuQmCC)](https://docs-cortex.paloaltonetworks.com/viewer/attachment/5CAbsl8idaK8R43ZLhoTOw/thsZ_aCJgLfIxEAgkOeaiQ-5CAbsl8idaK8R43ZLhoTOw) and select Register new Action to register the prompt as an Action and make it available for Agents. For more information, see [Manage actions](../../configure-the-cortex-agentic-assistant-1/agents-hub/manage-actions).
+{% endstep %}
+
+{% step %}
 8. (Optional) Add the prompt to a playbook.
    1. Edit or create a playbook.
    2.  In the playbook editor, expand the Task Library and select AI Prompts.
@@ -129,3 +151,5 @@ Use few-shot prompting when you need the AI prompt to learn a new pattern or for
    4.  Click OK.
 
        The prompt appears in the playbook editor.
+{% endstep %}
+{% endstepper %}

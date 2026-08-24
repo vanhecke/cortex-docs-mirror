@@ -1,8 +1,7 @@
 ---
 description: >-
-  Enhance AI agent capabilities by leveraging the Knowledge Center (preview) to
-  provide agents with your business-specific source of truth and built-in Cortex
-  (system) knowledge.
+  Use knowledge sources to give Cortex XSIAM Agentic Assistant agents trusted
+  business context.
 ---
 
 # Manage knowledge sources (preview)

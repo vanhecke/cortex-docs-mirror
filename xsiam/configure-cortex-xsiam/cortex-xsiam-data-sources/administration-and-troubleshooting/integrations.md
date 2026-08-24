@@ -1,14 +1,16 @@
+---
+description: Manage and configure integrations in Cortex XSIAM.
+---
+
 # Integrations
 
 Integrations are mechanisms through which Cortex XSIAM connects and communicates with other products. These integrations can be executed through REST APIs, webhooks, and other techniques. Integrations enable you to orchestrate and automate SOC operations.
 
-**Integrations installed from a content pack**
+### **Integrations installed from a content pack**
 
 Integrations are included in content packs, which you download and install from Marketplace (go to Settings → **Configurations** → **Marketplace**). After you download and install a content pack that includes an integration, you need to configure the integration by adding an instance. You can have multiple instances of an integration, for example, to connect to different environments. Additionally, if you are an MSSP and have multiple tenants, you could configure a separate instance for each tenant.
 
 {% hint style="info" %}
-### Note
-
 * Some integrations can be downloaded directly without having to initially download a content pack from Marketplace. For more information, see Define data sources.
 * In addition to content packs that you install from Marketplace, related content packs are automatically downloaded when you adopt playbooks or edit tasks that require content items such as scripts or integrations.
 {% endhint %}
@@ -28,17 +30,17 @@ Cortex XSIAM comes out-of-the-box with integrations to help you onboard, such as
 
     Converts URLs, PDF files, and emails to an image file or PDF file. For more information, see [Rasterize](https://xsoar.pan.dev/docs/reference/integrations/rasterize).
 
-**Create an integration**
+### **Create an integration in Cortex XSIAM**
 
-You can create an integration, by adding parameters, commands, arguments, and outputs as well as writing the necessary integration code. You should have a working Cortex XSIAM tenant and programming experience with Python.
+You can create an integration by adding parameters, commands, arguments, and outputs as well as writing the necessary integration code. You should have a working Cortex XSIAM tenant and programming experience with Python.
 
 1. Navigate to the Settings → **Data Sources & Integrations** page and click **+ Add New**.
-2. In the **Add Data Source or Integrations** page click **Create Integration** and select either **Import File** or **Create from Template**.
+2. In the **Add Data Source or Integrations** page, click **Create Integration** and select either **Import File** or **Create from Template**.
 3. If you select **Import File** drag and drop or browse to and select the relevant integration file. If you select **Create from Template**, provide the integration code and settings.
 
 For more information about how to create an integration, including an example, see [Create an Integration](https://xsoar.pan.dev/docs/tutorials/tut-integration-ui).
 
-**Configure an integration**
+### **Configure an integration in Cortex XSIAM**
 
 From the **Data Sources & Integrations** page, you can perform actions on an integration such as:
 
@@ -52,7 +54,7 @@ From the **Data Sources & Integrations** page, you can perform actions on an int
 | Delete an integration instance                                                            | Although you cannot delete an integration installed from a content pack (unless a duplicate), you can delete an integration instance by either right-clicking an instance and either selecting **Delete** or by right-clicking an instance and selecting **Settings** and then deleting from the settings configuration pane.                                                                                                                                                                                        |
 | Set an integration instance to run always whenever the integration is called or on demand | For each integration instance, you have the option of setting the instance to be used only **On Demand**, when it is specified with the `using` argument in a playbook or the CLI. By default, the settings is **Always** and the integration instance is used whenever the integration is called.                                                                                                                                                                                                                   |
 
-**Use integration commands**
+### **Use integration commands in Cortex XSIAM**
 
 The command line interface (CLI) enables you to run system commands, integration commands, scripts, etc from the Cases War Room, Issues War Room, or Playground CLI. The CLI auto-complete feature allows you to find relevant commands, scripts, and arguments.
 

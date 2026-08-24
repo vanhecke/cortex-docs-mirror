@@ -1,3 +1,7 @@
+---
+description: Build agents that automate tasks in Cortex XSIAM Agentic Assistant.
+---
+
 # Build agents
 
 You can build custom agents to execute plans and assist in investigations. Custom agents have the same or fewer permissions as the user who creates them. For example, you might want to create an agent with all of your permissions to use for certain investigations, but also create a read-only agent that provides you with information, but does not execute actions on real-world systems. You can create custom agents that are private or that are shared for all users.

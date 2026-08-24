@@ -1,3 +1,7 @@
+---
+description: Configure the Syslog Collector for Cortex XSIAM.
+---
+
 # Activate Syslog Collector
 
 To receive Syslog data from an external source, you must first set up the Syslog Collector applet on a Broker VM within your network.

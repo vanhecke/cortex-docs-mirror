@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how Cortex XSIAM playbooks automate investigation, response, and
+  operational workflows.
+---
+
 # Playbooks overview
 
 Cortex XSIAM playbooks are visual canvases that allow you to automate your security response workflows. They can orchestrate actions across different products, manage case data, and interact with users to ensure a consistent and rapid response to security events.

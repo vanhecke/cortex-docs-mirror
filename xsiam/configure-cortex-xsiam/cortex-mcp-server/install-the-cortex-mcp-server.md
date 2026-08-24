@@ -1,3 +1,9 @@
+---
+description: >-
+  Install and configure the Cortex MCP Server with Docker or Poetry to
+  investigate and manage Cortex XSIAM cases from an MCP client.
+---
+
 # Install the Cortex MCP server
 
 With the Cortex MCP Server, you can use natural language in your MCP client to investigate and manage cases and issues. The MCP Server can be run within a Docker container or a Poetry virtual environment.

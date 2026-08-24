@@ -1,3 +1,9 @@
+---
+description: >-
+  Find answers to common Docker installation, configuration, and operation
+  questions for Cortex XSIAM engines.
+---
+
 # Docker FAQs
 
 <details>

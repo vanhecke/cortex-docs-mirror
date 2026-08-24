@@ -1,3 +1,7 @@
+---
+description: Ingest Windows DNS logs into Cortex XSIAM.
+---
+
 # Ingest Windows DNS debug logs using Elasticsearch Filebeat
 
 Extend Cortex XSIAM visibility into Windows DNS Debug logs using an XDR Collector Windows Filebeat profile.

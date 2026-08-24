@@ -1,3 +1,7 @@
+---
+description: Use AdminByRequest data with Cortex XSIAM.
+---
+
 # AdminByRequest
 
 {% hint style="warning" %}

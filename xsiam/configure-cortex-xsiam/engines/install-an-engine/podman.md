@@ -14,6 +14,6 @@ Engine upgrades retain the existing container management type.
 
 PowerShell integrations might require default SELinux policy configuration. Podman can affect processes that `mmap` to `/dev/zero`.
 
-#### Docker hardening guidelines
+### Docker hardening guidelines
 
 Docker hardening guidelines can be applied to Podman, except Limit Available Memory, Limit Available CPU, and Limit PIDS.

@@ -1,3 +1,7 @@
+---
+description: Review XDR Collector audit logs in Cortex XSIAM.
+---
+
 # XDR Collector audit logs
 
 Learn more about XDR Collector audit logs.

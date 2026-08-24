@@ -1,3 +1,7 @@
+---
+description: Manage the JFrog container registry connector in Cortex XSIAM.
+---
+
 # Manage a JFrog connector
 
 After you add a JFrog connector, you can modify the connector settings and configure the scanning scope to control which images are scanned in the connected registry.

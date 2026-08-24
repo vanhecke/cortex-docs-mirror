@@ -1,3 +1,7 @@
+---
+description: Configure local agent settings for Cortex XSIAM.
+---
+
 # Activate Local Agent Settings
 
 {% hint style="info" %}

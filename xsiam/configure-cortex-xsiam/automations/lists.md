@@ -1,5 +1,5 @@
 ---
-description: Use lists to store data for use in playbooks and scripts.
+description: Use Cortex XSIAM lists to store data for playbooks and scripts.
 ---
 
 # Lists

@@ -1,3 +1,7 @@
+---
+description: Ingest Zscaler Private Access data into Cortex XSIAM.
+---
+
 # Zscaler Private Access
 
 You can configure collecting Zscaler Private Access logs using a Broker VM Syslog Collector applet or with a content pack integration:

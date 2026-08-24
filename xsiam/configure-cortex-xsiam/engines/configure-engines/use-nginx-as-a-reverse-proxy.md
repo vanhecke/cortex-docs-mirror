@@ -1,3 +1,7 @@
+---
+description: Use NGINX as a reverse proxy for secure Cortex XSIAM engine communication.
+---
+
 # Use NGINX as a reverse proxy
 
 NGINX can act as a reverse proxy that sits between internal applications and external clients, forwarding client requests to the appropriate application. Using NGINX as a reverse proxy in front of the engine enables you to provide network segmentation where the proxy can be put on a public subnet (DMZ) while the engine can be on a private subnet, only accepting traffic from the proxy. Additionally, NGINX provides a number of advanced load balancing and acceleration features that you can utilize.

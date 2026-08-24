@@ -1,8 +1,14 @@
+---
+description: >-
+  Understand Cortex XSIAM playbook filter options, categories, and built-in
+  filters.
+---
+
 # Filter considerations, categories, and built-in filters
 
-You can use built-in filters to define your filter, they are grouped by category. Before defining a filter, consider the following.
+Use built-in Cortex XSIAM filters to define playbook automation conditions. Filters are grouped by category. Review the following considerations before defining a filter.
 
-**Filter considerations**
+### Cortex XSIAM playbook filter considerations
 
 * Filters try to cast the transformed value and arguments to the appropriate type. The task fails if casting fails. For example, “a” Equals {“some”: “object”} => Error
 * If the filter's left-side value expects a single item but receives a list, the filter passes if at least one item meets the requirements. For example, \[“a”, “b”, “c”] Equals “b” => true.
@@ -10,9 +16,9 @@ You can use built-in filters to define your filter, they are grouped by category
 * Some custom filters are implemented as scripts with the `filter` tag. You can find examples in the playbook automation task description.
 * Filters in conditional tasks do not iterate the items of the root. Instead, they fetch the left-side value and the right-side value and compare them.
 
-**Filter categories and built-in filters**
+### Filter categories and built-in filters
 
-When adding a filter, clicking the default **Equals (String)** field opens a search window showing the available built-in filters. They are defined by category as follows:
+When adding a playbook filter, click the default **Equals (String)** field. A search window opens with the available built-in filter operators. They are grouped by category as follows:
 
 <details>
 

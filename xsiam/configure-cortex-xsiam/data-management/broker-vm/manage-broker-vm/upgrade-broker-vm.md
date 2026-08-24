@@ -1,3 +1,7 @@
+---
+description: Upgrade a Broker VM that supports Cortex XSIAM data collection.
+---
+
 # Upgrade Broker VM
 
 Learn more about upgrading the Broker VM from the Cortex XSIAM management console.

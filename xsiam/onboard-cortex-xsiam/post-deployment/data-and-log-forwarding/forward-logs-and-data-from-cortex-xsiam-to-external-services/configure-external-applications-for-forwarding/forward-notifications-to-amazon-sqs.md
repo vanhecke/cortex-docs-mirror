@@ -1,3 +1,10 @@
+---
+description: >-
+  Configure Cortex XSIAM notification forwarding to Amazon SQS with Cortex
+  Gateway egress, an AWS SQS queue, IAM role or access keys, and queue
+  permissions.
+---
+
 # Forward notifications to Amazon SQS
 
 ### Create the SQS queue

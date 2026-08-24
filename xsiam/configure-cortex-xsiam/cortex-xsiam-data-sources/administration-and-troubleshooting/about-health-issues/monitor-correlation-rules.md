@@ -1,3 +1,9 @@
+---
+description: >-
+  Monitor correlation rule executions, audit status, errors, and related health
+  issues in Cortex XSIAM
+---
+
 # Monitor Correlation rules
 
 Cortex XSIAM audits all correlation executions in the `correlations_auditing` dataset. The dataset records the query initiation times, end times, retry attempts, failure reasons, and other useful metrics. You can use this dataset to monitor your correlation executions. Cortex XSIAM also provides OOTB health issues that are generated when a correlation rule completes with errors. For more information, see [About health issues]().
@@ -10,7 +16,7 @@ In the `correlations_auditing` dataset, audit entries are added as follows:
 
 In the dataset, the Query start time and Query end time indicate the timeframe of the data that was queried. The actual start and end times of the correlation rule execution are recorded in the \_time field for the Initiated and Completed entries.
 
-### Field descriptions for the correlations\_auditing dataset
+### Field descriptions for the correlations\_auditing dataset in Cortex XSIAM
 
 The following table describes the fields in the correlations\_auditing dataset:
 

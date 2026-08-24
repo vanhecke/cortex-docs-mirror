@@ -1,3 +1,7 @@
+---
+description: Configure this collector for Cortex XSIAM.
+---
+
 # Activate Database Collector
 
 The Broker VM provides a Database Collector applet that enables you to collect data from a client relational database directly to your log repository for query and visualization purposes. After you activate the Database Collector applet on a Broker VM in your network, you can collect records as datasets (**`<Vendor>_<Product>_raw`**) by defining the following.

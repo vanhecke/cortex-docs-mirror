@@ -1,3 +1,7 @@
+---
+description: Import a lookup dataset into Cortex XSIAM.
+---
+
 # Import a lookup dataset
 
 {% hint style="warning" %}

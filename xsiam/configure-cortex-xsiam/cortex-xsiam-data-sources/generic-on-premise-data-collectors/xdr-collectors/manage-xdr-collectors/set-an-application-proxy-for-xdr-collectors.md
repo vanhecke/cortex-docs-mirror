@@ -1,3 +1,7 @@
+---
+description: Configure an XDR Collector proxy for Cortex XSIAM.
+---
+
 # Set an application proxy for XDR Collectors
 
 You can set an application-specific proxy for a Cortex XDR Collector without affecting the communication of other applications on the collector machine.

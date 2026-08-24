@@ -1,3 +1,7 @@
+---
+description: Use Absolute data with Cortex XSIAM.
+---
+
 # Absolute
 
 {% hint style="warning" %}

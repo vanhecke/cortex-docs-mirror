@@ -1,5 +1,7 @@
 ---
-description: Understand the license tiers and capabilities available for CSP onboarding.
+description: >-
+  Understand the license tiers and capabilities available for CSP onboarding in
+  Cortex XSIAM.
 ---
 
 # Understand CSP onboarding tiers and licensing

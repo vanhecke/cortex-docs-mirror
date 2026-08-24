@@ -1,3 +1,7 @@
+---
+description: Create custom Parsing Rules for Cortex XSIAM data.
+---
+
 # Create Parsing Rules
 
 {% hint style="warning" %}

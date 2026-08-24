@@ -1,8 +1,14 @@
+---
+description: >-
+  Understand Cortex XSIAM playbook transformer options, categories, and built-in
+  transformers.
+---
+
 # Transformer considerations, categories, and built-in transformers
 
-You can use built-in transformers to define your transformer. They are grouped by category. Before defining a transformer, consider the following.
+Use built-in Cortex XSIAM transformers to define playbook data transformations. Transformers are grouped by category. Review the following considerations before defining a transformer.
 
-### Transformer considerations
+### Cortex XSIAM playbook transformer considerations
 
 * Transformers cast transformed values and arguments to the required type. Tasks fail when casting fails. For example, `{“some”: “object”}` To upper case returns `Error`.
 * Some transformers apply to each result item. For example, `a, b, c` To upper case returns `A, B, C`.
@@ -11,7 +17,7 @@ You can use built-in transformers to define your transformer. They are grouped b
 
 ### Transformer categories and built-in transformers
 
-When adding a transformer, select the default **To upper case (String)** field. A search window opens with the available built-in transformers.
+When adding a playbook transformer, select the default **To upper case (String)** field. A search window opens with the available built-in transformer operators.
 
 #### General
 

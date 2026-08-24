@@ -1,7 +1,7 @@
 ---
 description: >-
-  Search the Cortex Marketplace and find content. Search by use cases,
-  integrations, and categories.
+  Search Cortex XSIAM Marketplace content by use case, integration, and
+  category.
 ---
 
 # Cortex Marketplace

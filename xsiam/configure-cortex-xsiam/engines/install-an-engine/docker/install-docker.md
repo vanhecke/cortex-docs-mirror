@@ -1,5 +1,5 @@
 ---
-description: Install Docker and verify engine user permissions.
+description: Install Docker and verify required user permissions for Cortex XSIAM engines.
 ---
 
 # Install Docker

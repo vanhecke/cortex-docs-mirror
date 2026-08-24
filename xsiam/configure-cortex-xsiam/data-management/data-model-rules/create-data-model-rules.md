@@ -1,3 +1,7 @@
+---
+description: Create custom Data Model Rules in Cortex XSIAM.
+---
+
 # Create Data Model Rules
 
 {% hint style="warning" %}

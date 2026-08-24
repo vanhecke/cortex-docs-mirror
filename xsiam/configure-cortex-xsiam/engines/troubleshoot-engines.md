@@ -1,5 +1,7 @@
 ---
-description: Troubleshoot engines by accessing logs and viewing errors.
+description: >-
+  Troubleshoot Cortex XSIAM engine issues by reviewing logs, errors, and
+  connectivity.
 ---
 
 # Troubleshoot engines
@@ -10,7 +12,7 @@ When troubleshooting engines, access the logs from Settings â†’ Configurations â
 Ensure that pop-ups are not blocked by your browser.
 {% endhint %}
 
-**Debug engines**
+### **Debug engines**
 
 The **d1.log** field appears whenever an engine is running. The **d1.log** field contains information necessary for your customer success team to debug any engine-related issue. The field displays any error, as well as noting whether the engine is connected.
 

@@ -1,5 +1,5 @@
 ---
-description: Search and expand values in context data.
+description: Search Cortex XSIAM context data and expand stored values.
 ---
 
 # Search context data

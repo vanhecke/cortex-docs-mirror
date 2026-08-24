@@ -1,3 +1,7 @@
+---
+description: Ingest firewall Syslog data into Cortex XSIAM.
+---
+
 # Ingest Next-Generation Firewall logs using the Syslog collector
 
 Use the Syslog collector to ingest Next-Generation Firewall (NGFW) logs in CEF format. This method is useful when your firewalls are located in a different region, or bandwidth issues are encountered due to large log size. When possible, we recommend that you ingest NGFW logs using the dedicated Next-Generation Firewall data collector instead of the Syslog collector.

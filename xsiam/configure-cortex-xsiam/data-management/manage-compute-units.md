@@ -1,7 +1,5 @@
 ---
-description: >-
-  Learn more about managing and tracking your compute units usage for API, Apps,
-  and Cold Storage XQL queries.
+description: Manage Cortex XSIAM compute units for API, Apps, and Cold Storage XQL queries.
 ---
 
 # Manage compute units

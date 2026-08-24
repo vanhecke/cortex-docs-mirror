@@ -1,3 +1,7 @@
+---
+description: Create an XDR Collector package for Cortex XSIAM.
+---
+
 # Create an XDR Collector installation package
 
 To install a Cortex XDR Collector for the first time, you must first create an XDR Collector installation package. After you create and download an installation package, you can then install it directly on the collector machine, or you can use a software deployment tool of your choice to distribute the software to multiple collector machines.

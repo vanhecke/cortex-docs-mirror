@@ -1,3 +1,7 @@
+---
+description: Define rules in Cortex XSIAM Data Model Rules.
+---
+
 # RULE
 
 Rules are very similar to functions in modern programming languages. They are essentially named pieces of Cortex Query Language (XQL) syntax, and can be reused in the code in the `MODEL` sections, or in other `RULE` sections (recursively), by using `[rule:ruleName]`. A `RULE` is an optional data model syntax.

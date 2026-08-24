@@ -1,3 +1,7 @@
+---
+description: Onboard GCP with foundational configuration for Cortex XSIAM.
+---
+
 # How to onboard GCP with foundational configuration
 
 Follow the foundational configuration GCP onboarding wizard to enable audit log collection and asset discovery, and Cortex XSIAM creates a custom authentication template to be deployed in GCP.

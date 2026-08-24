@@ -1,3 +1,7 @@
+---
+description: Troubleshoot Data Model Rules in Cortex XSIAM.
+---
+
 # Troubleshooting Data Model Rules
 
 {% hint style="warning" %}

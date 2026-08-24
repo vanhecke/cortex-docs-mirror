@@ -1,5 +1,5 @@
 ---
-description: Learn more about Cortex Data Model (XDM) Rules.
+description: Learn more about Cortex XSIAM Data Model (XDM) Rules.
 ---
 
 # Data Model Rules

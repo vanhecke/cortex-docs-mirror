@@ -1,3 +1,9 @@
+---
+description: >-
+  Add tasks and automation objects from the playbook Task Library in Cortex
+  XSIAM.
+---
+
 # Add objects from the Task Library
 
 The Task Library displays tasks that call playbooks or scripts you have access to. If you do not have at least Viewer access to a playbook or script, the tasks that reference them will not appear in your library. If certain options are unavailable, contact your administrator. For more information, see [Access to playbooks and scripts](../access-to-playbooks).
@@ -15,7 +21,7 @@ The Task Library contains the following objects you can add to your playbook. Fo
 | Header              | Add section headers to organize your playbook.                                                                                                         | Section Header task                                                                                               | See [Create a section header task](add-objects-from-the-task-library/create-a-section-header).              |
 | Blank Task          | Create a new task from scratch.                                                                                                                        | <ul><li>Standard task</li><li>Conditional task</li><li>Data collection task</li><li>Section Header task</li></ul> | See [Add manual tasks and blank tasks](add-objects-from-the-task-library/add-manual-tasks-and-blank-tasks). |
 
-#### **Playbook task types**
+### **Playbook task types**
 
 Playbooks have different task types for each action you want to take. When you add an object from the Task Library, you associate it with a task type in the Task Details pane.
 
@@ -29,7 +35,7 @@ The possible task types are:
 | Data Collection | <p>Data collection tasks interact with users through a survey, for example to collect responses or escalate an issue.</p><p>All responses are collected and recorded in the issue context data, from a single user or multiple users. You can use the survey questions and answers as input for subsequent playbook tasks.</p><p>You can collect responses in custom fields, for example, a grid field.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Section Header  | <p>Use a section header task to group related tasks to organize and manage the flow of your playbook.</p><p>Section headers can also be used for time tracking between phases in a playbook. This data can be used to display in dashboards and report time trends.</p><p>For example, in a phishing playbook you would have a section for the investigative phase of the playbook such as indicator enrichment, and a section for communication tasks with the user who reported the phishing.</p><p>You can easily navigate playbooks and focus on the parts you need to work on by collapsing and expanding playbook sections. Collapsing sections provides a condensed view of the playbook flow, reducing visual clutter and enabling quick access to specific sections. Expanding sections allows you to view or edit specific parts of a playbook while keeping the rest of the playbook compact and maintaining focus on the relevant playbook details. You can also hover over a section header to highlight all tasks under the section and easily identify the section scope.</p> |
 
-#### Playbook task icons
+### Playbook task icons
 
 The different playbook tasks appear in the playbook editor with unique logos to more easily identify the task type and origin, for example, third-party integration commands, built-in scripts and tasks, and tasks requiring manual inputs.
 

@@ -1,3 +1,7 @@
+---
+description: Define XDR Collector machine groups in Cortex XSIAM.
+---
+
 # Define XDR Collector machine groups
 
 To easily apply policy rules and manage specific collector machines, you can define a collector machine group.

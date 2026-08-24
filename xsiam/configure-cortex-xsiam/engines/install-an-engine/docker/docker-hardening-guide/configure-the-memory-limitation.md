@@ -1,3 +1,7 @@
+---
+description: Configure Docker memory limits to manage resources for Cortex XSIAM engines.
+---
+
 # Configure the memory limitation
 
 We recommend limiting available memory for each container to 1 GB.

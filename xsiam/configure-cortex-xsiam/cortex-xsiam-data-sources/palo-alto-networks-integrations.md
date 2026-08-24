@@ -1,3 +1,7 @@
+---
+description: Configure Palo Alto Networks integrations for Cortex XSIAM.
+---
+
 # Palo Alto Networks integrations
 
 Cortex XSIAM supports data ingestion and orchestration from other Palo Alto Networks products. These integrations are provided through a combination of traditional data sources and unified connectors, ensuring comprehensive visibility and seamless cross-platform security operations.

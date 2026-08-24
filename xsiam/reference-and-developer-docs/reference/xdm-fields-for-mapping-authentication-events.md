@@ -146,6 +146,7 @@ Do not map a static string, list, or empty string. You must map this field from 
 
 * `XDM_CONST.OPERATION_TYPE_AUTH_LOGIN`: Login using only a password
 * `XDM_CONST.OPERATION_TYPE_AUTH_MFA`: Login that involves multi-factor authentication
+* `XDM_CONST.OPERATION_TYPE_AUDIT`: Authorization, accounting, or policy evaluation.
 
 **Data Model Rule example**: The following pseudocode is an example only, which must be modified to implement the logic in the correct syntax by the mapped data source to different event types.
 
@@ -160,6 +161,12 @@ xdm.event.operation =
  then null  else to_string(eventType)
 ```
 {% endcode %}
+
+{% hint style="info" %}
+**Note**
+
+There is no neutral member. Never blind-default to login; if the kind is genuinely unclear, leave the field unmapped. For logouts, leave this field unset to ensure logout events do not incorrectly inflate login metrics.
+{% endhint %}
 
 ### 9. xdm.event.original\_event\_type\*
 
@@ -207,7 +214,7 @@ if(eventType = "user.authentication.auth_via_AD_agent", "IDP",
 {% hint style="info" %}
 ### Note
 
-Mapping should be done per event type. The same system could be an IDP in one event and an SP in another. NEVER use a service or protocol name like "Kerberos", "SSH", or "Login" in this field. Mapping should be done per event type. The same system could be an IDP in one event and an SP in another.
+Mapping should be done per event type. The same system could be an IDP in one event and an SP in another. NEVER use a service or protocol name like "Kerberos", "SSH", or "Login" in this field.
 {% endhint %}
 
 ### 11. xdm.event.outcome\*
@@ -245,13 +252,29 @@ if(res ~= "[Ss]uccess" OR res = "sent",
 Outcome is based on a conclusive event type reflecting the true end state of the authentication `flow.Critical` for the effectiveness of detection rules. Incorrect derivation can lead to missed detections or false positives.
 {% endhint %}
 
+### 12. xdm.source.user.upn\*
+
+**Authentication Story Field**: `auth_identity`
+
+**Type**: string
+
+**Requirement**: Mandatory
+
+**Description**: Represents the user identity associated with the authentication or access event. This field must be populated using the User Principal Name (UPN) format. It cannot be left empty.
+
+Using UPN as a normalized identity format ensures consistency across diverse identity providers, such as Azure AD, Okta, and on-prem AD, and authentication flows. It plays a central role in correlating activity across logs, enriching detections, and building an accurate authentication story across systems.
+
+**Example value**: `jane.doe@company.com`
+
+**Data Model Rule implementation**: If the raw identity is a bare username, synthesize the UPN format: `if(tmp_username contains "@", tmp_username, tmp_username != null, concat(tmp_username, "@localhost"))`.
+
 ## Optional fields
 
 <details>
 
 <summary>Outcome details</summary>
 
-#### 12. xdm.event.outcome\_reason
+#### 13. xdm.event.outcome\_reason
 
 **Authentication Story Field**: `auth_outcome_reason_category`
 
@@ -305,20 +328,6 @@ xdm.event.outcome_reason = if(  get_reason ~= "UNKNOWN_USER",           
 <details>
 
 <summary>Authentication identity and context</summary>
-
-#### 13. xdm.source.user.upn\*
-
-**Authentication Story Field**: `auth_identity`
-
-**Type**: string
-
-**Requirement**: Mandatory
-
-**Description**: Represents the user identity associated with the authentication or access event. This field must be populated using the User Principal Name (UPN) format. It cannot be left empty.
-
-Using UPN as a normalized identity format ensures consistency across diverse identity providers, such as Azure AD, Okta, and on-prem AD, and authentication flows. It plays a central role in correlating activity across logs, enriching detections, and building an accurate authentication story across systems.
-
-**Example values**: `jane.doe@company.com`
 
 #### 14. xdm.event.description
 

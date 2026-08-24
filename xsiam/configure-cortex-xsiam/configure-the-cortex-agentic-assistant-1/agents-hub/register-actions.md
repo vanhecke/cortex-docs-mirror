@@ -1,3 +1,7 @@
+---
+description: Register actions for use with Cortex XSIAM Agentic Assistant agents.
+---
+
 # Register actions
 
 You can register scripts, commands, and AI prompts as actions in the **Agentic Assistant Hub**. After a script, command, or AI prompt is registered as an action, it can be added to one or more agents. The agents can then execute the action as part of plans.
@@ -20,25 +24,56 @@ If you try to register a script, command, or AI prompt that is already registere
 
 How to register an action
 
-1. Do one of the following:
-   * Click the **Agentic Assistant** icon in the upper right hand corner and expand the side panel ![expandmenuicon.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-cc266222a596087d06dbfe1b25b52ee2a5531f2a%2F8831cde7fbca80ad67ac9b3c66b235a05414231896644e75d9c710d05741d244.png?alt=media) to access the **Agentic Assistant Hub** menu item. From the **Actions** tab of the **Agentic Assistant Hub**, click **Register new action**.
-   * Within the script creation or editing screen, click ![three-dots.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FORBYsY4Y6C7i1fV0zajJ%2F860e6eb54bd3ae665125051cdb957ddbd3d9c026f75c4b54acce3f0d35f08d04.png?alt=media\&token=24ae450e-c7ee-4c30-95a9-72eb53db0516) when viewing or editing a script and select **Register as action**.
-   * Within the **AI Prompts** library, select a prompt and click the more options icon to **Register as action**.
-2. If you clicked **Register as action** from the **Scripts** or **AI Prompts** page, the name is prepopulated in the **Content chosen** field. If you clicked **Register action** from the **Agentic Assistant Hub**, select script, command, or AI prompt for the **Type of content** and select the content you want to register.
-3. Enter an action **Name**, a short description of what the action does. Example: `Extract email`.
-4. Describe the **Goal** of the action.
-5. (Optional) By default, **Mark action as sensitive to require user approval** is selected, and the agent prompts the user to approve before executing the action. If you do not want the action marked as sensitive, clear the checkbox.
-6. (Optional) Provide **Few-shot examples** to help the agent understand the context and the appropriate situations to invoke a specific action.
-7. Click **Next**.
-8.  Choose your **Action Parameters**:
+{% stepper %}
+{% step %}
+Do one of the following:
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>Mandatory arguments cannot be deselected.</p></div>
+* Click the **Agentic Assistant** icon in the upper right hand corner and expand the side panel ![expandmenuicon.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-cc266222a596087d06dbfe1b25b52ee2a5531f2a%2F8831cde7fbca80ad67ac9b3c66b235a05414231896644e75d9c710d05741d244.png?alt=media) to access the **Agentic Assistant Hub** menu item. From the **Actions** tab of the **Agentic Assistant Hub**, click **Register new action**.
+* Within the script creation or editing screen, click <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FORBYsY4Y6C7i1fV0zajJ%2F860e6eb54bd3ae665125051cdb957ddbd3d9c026f75c4b54acce3f0d35f08d04.png?alt=media&#x26;token=24ae450e-c7ee-4c30-95a9-72eb53db0516" alt="three-dots.png" data-size="line"> when viewing or editing a script and select **Register as action**.
+* Within the **AI Prompts** library, select a prompt and click the more options icon to **Register as action**.
+{% endstep %}
 
-    1. Choose which arguments and inputs to include in the action. If a content item contains descriptions of the inputs, the descriptions are prepopulated. If not, you can provide short descriptions. The descriptions help the agent understand the purpose of each input.
-    2. (Optional) Enter a default value for each input. The default value is used when the user does not specify the input.
-    3. Choose which script outputs to include in the action. If the content item contains descriptions of the outputs, the descriptions are prepopulated. If not, you can provide short descriptions. The descriptions help the agent understand the purpose of each output.
-9. **Save changes**.
+{% step %}
+If you clicked **Register as action** from the **Scripts** or **AI Prompts** page, the name is prepopulated in the **Content chosen** field. If you clicked **Register action** from the **Agentic Assistant Hub**, select script, command, or AI prompt for the **Type of content** and select the content you want to register.
+{% endstep %}
+
+{% step %}
+Enter an action **Name**, a short description of what the action does. Example: `Extract email`.
+{% endstep %}
+
+{% step %}
+Describe the **Goal** of the action.
+{% endstep %}
+
+{% step %}
+(Optional) By default, **Mark action as sensitive to require user approval** is selected, and the agent prompts the user to approve before executing the action. If you do not want the action marked as sensitive, clear the checkbox.
+{% endstep %}
+
+{% step %}
+(Optional) Provide **Few-shot examples** to help the agent understand the context and the appropriate situations to invoke a specific action.
+{% endstep %}
+
+{% step %}
+Click **Next**.
+{% endstep %}
+
+{% step %}
+Choose your **Action Parameters**:
+
+{% hint style="info" %}
+Mandatory arguments cannot be deselected.
+{% endhint %}
+
+1. Choose which arguments and inputs to include in the action. If a content item contains descriptions of the inputs, the descriptions are prepopulated. If not, you can provide short descriptions. The descriptions help the agent understand the purpose of each input.
+2. (Optional) Enter a default value for each input. The default value is used when the user does not specify the input.
+3. Choose which script outputs to include in the action. If the content item contains descriptions of the outputs, the descriptions are prepopulated. If not, you can provide short descriptions. The descriptions help the agent understand the purpose of each output.
+{% endstep %}
+
+{% step %}
+**Save changes**.
 
 {% hint style="info" %}
 The execution of system or custom actions that are based on integration commands can be restricted using [integration permissions](../../../reference-and-developer-docs/role-based-access-control/configuration-permissions/integrations-permissions).
 {% endhint %}
+{% endstep %}
+{% endstepper %}

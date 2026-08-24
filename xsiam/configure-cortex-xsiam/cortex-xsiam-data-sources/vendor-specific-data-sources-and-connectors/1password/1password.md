@@ -1,3 +1,7 @@
+---
+description: Use 1Password data with Cortex XSIAM.
+---
+
 # 1Password
 
 {% hint style="warning" %}

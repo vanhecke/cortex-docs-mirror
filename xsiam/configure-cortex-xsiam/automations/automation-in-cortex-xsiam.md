@@ -1,7 +1,7 @@
 ---
 description: >-
-  Automate response to issues, using playbooks and Quick Actions, triggered
-  automatically by automation rules or manually from an issue.
+  Automate Cortex XSIAM issue response with playbooks and Quick Actions,
+  triggered by rules or manually.
 ---
 
 # Automation in Cortex XSIAM
@@ -30,7 +30,7 @@ The **Automation Insights** dashboard provides a high level overview of your aut
 
     Quick Actions can be run automatically on issues based on automation rules, or run manually on one or more issues.
 
-**Automation rules**
+### **Automation rules in Cortex XSIAM**
 
 Automation rules enable you to run playbooks, Quick Actions, or agents automatically on issues, based on preset criteria. Automation rules follow a WHEN / IF / THEN structure. For example, WHEN an issue is created, IF the severity is critical, THEN set the case assignee to a specific analyst. For more information, see [Create an automation rule](create-an-automation-rule).
 
@@ -45,6 +45,6 @@ In addition to the Automation Rules feature, the **XDR Automation** menu item is
 * **Functional difference:** Legacy XDR Automation rules allowed for multiple independent actions to be assigned to a single trigger. In contrast, the new Automation Rules trigger a single Playbook or Quick Action per issue.
 {% endhint %}
 
-**Manually trigger automation**
+### **Manually trigger automation in Cortex XSIAM**
 
 Playbooks and Quick Actions can also be run on demand. For more information, see [Run an automation on an issue](../../detect-investigate-and-respond-to-threats/investigation-and-response/investigate-issues/run-an-automation-on-an-issue).

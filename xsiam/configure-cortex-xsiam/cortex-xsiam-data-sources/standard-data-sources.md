@@ -1,3 +1,7 @@
+---
+description: Configure standard data sources to ingest telemetry into Cortex XSIAM.
+---
+
 # Standard data sources
 
 Standard data sources are built-in ingestion mechanisms in Cortex XSIAM primarily focused on ingesting raw logs and security events. While Cortex XSIAM is introducing a unified **Connector** approach, many third-party services and file-based ingestions continue to use standard data sources for core security analysis and normalization.
@@ -26,4 +30,3 @@ In the current Vendor Catalog, you may see a choice between a connector and a st
 Standard data sources are configured by navigating to **Settings → Data Sources & Integrations → + Add New**.
 
 Select your desired vendor and look for the entry labeled as a data source or collector. The UI will launch the Data Source Onboarder to guide you through the setup steps.
-

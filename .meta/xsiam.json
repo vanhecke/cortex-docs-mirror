@@ -5790,7 +5790,7 @@
                   ]
                 },
                 {
-                  "title": "Google Cloud Platform cloud onboarding",
+                  "title": "Google Cloud Platform onboarding",
                   "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/google-cloud-platform-cloud-onboarding",
                   "type": "document",
                   "children": [
@@ -7038,7 +7038,7 @@
                   ]
                 },
                 {
-                  "title": "About health issues",
+                  "title": "Health issues in Cortex XSIAM",
                   "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/administration-and-troubleshooting/about-health-issues",
                   "type": "document",
                   "children": [
@@ -7364,13 +7364,13 @@
                           "children": []
                         },
                         {
-                          "title": "Filter and Transform data",
+                          "title": "Filter and transform Cortex XSIAM playbook data",
                           "path": "configure-cortex-xsiam/automations/playbooks/build-your-playbook/customize-your-playbook/filter-and-transform-data",
                           "type": "document",
                           "children": []
                         },
                         {
-                          "title": "Create custom filter and transformers",
+                          "title": "Create custom filters and transformers",
                           "path": "configure-cortex-xsiam/automations/playbooks/build-your-playbook/customize-your-playbook/create-custom-filter-and-transformers",
                           "type": "document",
                           "children": []
@@ -7388,13 +7388,13 @@
                           "children": []
                         },
                         {
-                          "title": "Extend context",
+                          "title": "Extend context in playbooks",
                           "path": "configure-cortex-xsiam/automations/playbooks/build-your-playbook/customize-your-playbook/extend-context",
                           "type": "document",
                           "children": []
                         },
                         {
-                          "title": "Extract Indicators",
+                          "title": "Extract indicators in playbooks",
                           "path": "configure-cortex-xsiam/automations/playbooks/build-your-playbook/customize-your-playbook/extract-indicators",
                           "type": "document",
                           "children": []

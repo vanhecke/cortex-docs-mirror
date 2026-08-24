@@ -1,3 +1,7 @@
+---
+description: Use AIOps data with Cortex XSIAM.
+---
+
 # AIOps
 
 {% hint style="warning" %}

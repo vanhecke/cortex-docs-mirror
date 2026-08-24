@@ -1,4 +1,10 @@
+---
+description: Create Cortex XSIAM scripts for custom automation and response tasks.
+---
+
 # Create a script
+
+### Create Cortex XSIAM scripts
 
 Creating custom scripts in Cortex XSIAM helps meet your organization’s specific needs to automate repetitive tasks, streamline security operations, and make case response more efficient.
 
@@ -27,12 +33,14 @@ Creating custom scripts in Cortex XSIAM helps meet your organization’s specifi
        | View artifact in new tab | Opens a new tab for the artifact.                                                                                                                                                                                                                               |
        | Download artifact        | Downloads the run details to a text file, including the AI task name,, the script name, user name and password, and the result.                                                                                                                                 |
        | Add tags                 | Add any relevant tags to use that help you find relevant information.                                                                                                                                                                                           |
-7. (Optional) Click ![three-dots-dark.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-11a463bf2b5bf9ecd6322e37719ff9691e5de3f2%2F49fda5fb33e5f524c041a0abe1ea1868806777860768af3c9ef5a3a2716a9c39.png?alt=media) and select **Register new Action** to register the script as an Action. For more information, see Manage actions.
+7. (Optional) Click <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-11a463bf2b5bf9ecd6322e37719ff9691e5de3f2%2F49fda5fb33e5f524c041a0abe1ea1868806777860768af3c9ef5a3a2716a9c39.png?alt=media" alt="three-dots-dark.png" data-size="line"> and select **Register new Action** to register the script as an Action. For more information, see Manage actions.
 
 {% hint style="info" %}
 * You can enable/disable a script in the Settings without having to duplicate the script.
-* You can view recently modified or deleted scripts by clicking the version history for all scripts ![versionhistory.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-695013593e8557789bffe0ad41eddd7c47d61ba0%2F3241a048e028b41e16e670e937251d1e832e98edeabd915cc389cb6163d20e20.png?alt=media).
+* You can view recently modified or deleted scripts by clicking the version history for all scripts <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-695013593e8557789bffe0ad41eddd7c47d61ba0%2F3241a048e028b41e16e670e937251d1e832e98edeabd915cc389cb6163d20e20.png?alt=media" alt="versionhistory.png" data-size="line">.
 {% endhint %}
+
+### Configure Cortex XSIAM script settings
 
 <details>
 
@@ -112,6 +120,8 @@ You can create, edit, or delete outputs as required. Define the outputs accordin
 You can set the commands that the script depends on directly from these settings. You still have the option to set the dependencies in the script YAML file.
 
 </details>
+
+### Edit Cortex XSIAM script code
 
 <details>
 

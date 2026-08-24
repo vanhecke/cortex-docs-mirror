@@ -1,3 +1,9 @@
+---
+description: >-
+  Modify the Cortex XSIAM container registry scanning scope for cloud accounts
+  and registries.
+---
+
 # Modify the container registry scanning scope
 
 Using the Modify Scanning Scope option, you can define conditions to automatically exclude selected scopes from scanning. These conditions can be based on the registry, repository, or tag. After you set the scope, the exclusion conditions are automatically applied to newly discovered images in the account.

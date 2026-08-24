@@ -1,3 +1,7 @@
+---
+description: Set an XDR Collector machine alias in Cortex XSIAM.
+---
+
 # Set an alias for an XDR Collector machine
 
 Configure an alias to identify one or more collector machines by a name that is different from the collector machine hostname.

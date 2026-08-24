@@ -1,3 +1,7 @@
+---
+description: Troubleshoot errors on cloud instances in Cortex XSIAM.
+---
+
 # Troubleshoot errors on cloud instances
 
 To help you to troubleshoot errors on a cloud instance, Cortex XSIAM provides the following visibility and drilldown options:

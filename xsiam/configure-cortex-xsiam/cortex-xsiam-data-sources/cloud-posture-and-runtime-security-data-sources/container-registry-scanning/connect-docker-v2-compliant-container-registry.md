@@ -1,3 +1,9 @@
+---
+description: >-
+  Connect a Docker V2-compliant registry to Cortex XSIAM for container image
+  scanning.
+---
+
 # Connect Docker V2 compliant container registry
 
 A Docker V2-compliant registry is a registry service that complies with the specifications and requirements outlined in the Docker Registry HTTP API V2. This API defines the protocol for interacting with a Docker registry, a repository where Docker images are stored and from which they can be pulled or pushed.

@@ -1,3 +1,7 @@
+---
+description: Use `parse_cef` in Cortex XSIAM Parsing Rules.
+---
+
 # parse\_cef
 
 ## Syntax
@@ -8,7 +12,7 @@ parse_cef()
 
 ## Description
 
-The `parse_cef()` function processes a CEF string and returns an object whose structure (key and\
+The `parse_cef()` function processes a CEF string and returns an object whose structure (key and\
 value pairs) is determined by the input parameters.
 
 ## Example: Parsing CEF logs during ingestion

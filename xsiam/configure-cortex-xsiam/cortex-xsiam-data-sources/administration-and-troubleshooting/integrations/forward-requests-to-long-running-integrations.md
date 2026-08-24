@@ -1,3 +1,7 @@
+---
+description: Forward requests to long-running integrations in Cortex XSIAM.
+---
+
 # Forward Requests to Long-Running Integrations
 
 Some long-running integrations provide internal data via API calls to your third-party software, such as a firewall. You can set up Cortex XSIAM to allow third-party software to access long-running integrations installed either on the Cortex XSIAM tenant or on an engine.

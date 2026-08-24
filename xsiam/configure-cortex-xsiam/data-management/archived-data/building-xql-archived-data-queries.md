@@ -1,3 +1,7 @@
+---
+description: Build XQL queries for archived data in Cortex XSIAM.
+---
+
 # Building XQL archived data queries
 
 {% hint style="warning" %}

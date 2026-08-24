@@ -1,3 +1,7 @@
+---
+description: Navigate the Cortex XSIAM Parsing Rules editor.
+---
+
 # Parsing Rules editor views
 
 {% hint style="warning" %}

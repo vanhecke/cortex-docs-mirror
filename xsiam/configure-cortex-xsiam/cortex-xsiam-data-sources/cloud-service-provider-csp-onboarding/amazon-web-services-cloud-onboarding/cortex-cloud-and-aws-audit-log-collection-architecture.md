@@ -1,3 +1,7 @@
+---
+description: Understand AWS audit log collection architecture for Cortex XSIAM.
+---
+
 # Cortex XSIAM and AWS audit log collection architecture
 
 Cortex XSIAM collects AWS CloudTrail logs for security analysis using an event-driven, cross-cloud architecture. When audit log collection is enabled, a CloudFormation stack deploys AWS resources that capture CloudTrail events and make them available for Cortex XSIAM to ingest into your dedicated single-tenant log storage (a Google Cloud Storage bucket in Cortex XSIAM's GCP backend).

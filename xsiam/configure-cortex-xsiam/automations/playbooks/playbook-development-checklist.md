@@ -1,8 +1,12 @@
+---
+description: Use this checklist to plan, build, test, and deploy Cortex XSIAM playbooks.
+---
+
 # Playbook development checkli
 
 The playbook development checklist follows the logical flow for developing a playbook.
 
-![playbook-development-flow-4.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-1aa5b99371ff8ce9441a32e3ac096a21688cc1f7%2Ffbaa7f7ce50858b2c608e5f14fd180ad0a6196d92d2d31774aa5d8bb52e9bbda.png?alt=media)
+![](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-1aa5b99371ff8ce9441a32e3ac096a21688cc1f7%2Ffbaa7f7ce50858b2c608e5f14fd180ad0a6196d92d2d31774aa5d8bb52e9bbda.png?alt=media)
 
 We recommend that you review the following steps to successfully implement your playbook.
 

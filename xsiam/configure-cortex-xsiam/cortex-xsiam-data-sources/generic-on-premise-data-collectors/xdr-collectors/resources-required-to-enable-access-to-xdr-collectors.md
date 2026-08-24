@@ -1,3 +1,7 @@
+---
+description: Review required collector access resources for Cortex XSIAM.
+---
+
 # Resources required to enable access to XDR collectors
 
 To enable access to XDR Collectors components, you must allow access to various Palo Alto Networks resources. If you use the specific Palo Alto Networks [App-IDs](https://docs.paloaltonetworks.com/pan-os/8-1/pan-os-admin/app-id) indicated in the table, you do not need to explicitly allow access to the resource. A dash (-) indicates there is no App-ID coverage for a resource.

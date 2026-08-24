@@ -1,5 +1,5 @@
 ---
-description: Add keys and values to issue context data.
+description: Add keys and values to Cortex XSIAM issue context data.
 ---
 
 # Add context data to an issue

@@ -1,3 +1,9 @@
+---
+description: >-
+  Send external alerts to Cortex XSIAM and map source fields using External
+  Issue Mapping.
+---
+
 # Ingest external alerts
 
 To ingest alerts from an external source, you configure your alert source to forward alerts (in **CEF** or **LEEF** format) to the Syslog collector. You can also ingest alerts from external sources using the Cortex XSIAM APIs.

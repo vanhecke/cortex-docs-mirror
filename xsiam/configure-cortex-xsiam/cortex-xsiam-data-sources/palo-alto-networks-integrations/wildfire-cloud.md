@@ -1,3 +1,7 @@
+---
+description: Configure WildFire Cloud data for Cortex XSIAM.
+---
+
 # WildFire Cloud
 
 {% hint style="warning" %}

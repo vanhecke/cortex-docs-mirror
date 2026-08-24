@@ -1,3 +1,7 @@
+---
+description: Uninstall an XDR Collector from Cortex XSIAM.
+---
+
 # Uninstall the XDR Collector
 
 If you want to uninstall the XDR Collector from the on-premise collector machine, you can do so from the XDR Collectors console at any time. You can uninstall the XDR Collector from an unlimited number of collector machines in a single bulk action. Uninstalling a collector machine triggers the following lifespan flow:

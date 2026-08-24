@@ -1,3 +1,7 @@
+---
+description: Learn how Broker VM securely connects data sources to Cortex XSIAM.
+---
+
 # What is the Broker VM?
 
 The Palo Alto Networks Broker VM is a secured virtual machine, integrated with Cortex XSIAM, that bridges your network and Cortex XSIAM. By setting up the Broker VM, you establish a secure connection in which you can route your endpoints, collect logs, and forward logs and files for analysis.

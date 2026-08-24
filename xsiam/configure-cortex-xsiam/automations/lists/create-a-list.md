@@ -1,3 +1,7 @@
+---
+description: Create Cortex XSIAM lists to store reusable automation data.
+---
+
 # Create a list
 
 To create a Text, Markdown, HTML, CSS, or JSON list type:

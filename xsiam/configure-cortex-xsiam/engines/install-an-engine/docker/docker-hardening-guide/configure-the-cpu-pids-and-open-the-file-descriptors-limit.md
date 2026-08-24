@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Docker CPU, PID, and file descriptor limits for Cortex XSIAM
+  engines.
+---
+
 # Configure the CPU, PIDs, and open the file descriptors limit
 
 Set the advanced parameters to configure the CPU limit, PIDs limit, and the open file descriptor limit.

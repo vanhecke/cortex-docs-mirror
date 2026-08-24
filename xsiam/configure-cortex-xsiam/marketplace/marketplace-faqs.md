@@ -1,5 +1,5 @@
 ---
-description: Frequently Asked Questions about Cortex XSIAM Marketplace Content
+description: Find answers to common Cortex XSIAM Marketplace questions.
 ---
 
 # Marketplace FAQs

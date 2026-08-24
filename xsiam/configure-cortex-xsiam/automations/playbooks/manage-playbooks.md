@@ -1,3 +1,7 @@
+---
+description: Create, organize, enable, and maintain Cortex XSIAM playbooks.
+---
+
 # Manage playbooks
 
 The **Playbooks** page is organized to help easily access and utilize playbooks specific to your use cases. It contains two main sections, key playbook details on the top and a table listing all the playbooks in your Org repository on the bottom.

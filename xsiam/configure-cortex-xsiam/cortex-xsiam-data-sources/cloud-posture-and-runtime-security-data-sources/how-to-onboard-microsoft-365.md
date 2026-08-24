@@ -1,12 +1,10 @@
 ---
-description: Add Microsoft 365 as a Cortex Cloud Data Security data source.
+description: Add Microsoft 365 as a Cortex XSIAM data source.
 ---
 
 # How to onboard Microsoft 365
 
 {% hint style="info" %}
-### Notice
-
 This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
 {% endhint %}
 

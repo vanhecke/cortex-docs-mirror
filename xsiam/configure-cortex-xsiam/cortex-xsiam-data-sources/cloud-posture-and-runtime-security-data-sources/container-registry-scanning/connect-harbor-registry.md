@@ -1,3 +1,7 @@
+---
+description: Connect a Harbor registry to Cortex XSIAM for container image scanning.
+---
+
 # Connect Harbor registry
 
 Cortex XSIAM allows you to scan and secure your container images from vulnerabilities, malware, and secrets after you authenticate and connect your Harbor registry account.

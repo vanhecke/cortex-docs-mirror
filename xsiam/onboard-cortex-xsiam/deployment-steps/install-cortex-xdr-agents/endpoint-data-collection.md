@@ -1,7 +1,7 @@
 ---
 description: >-
   Review endpoint metadata, EDR events, Windows event logs, and performance
-  metrics collected by Cortex XDR agents.
+  metrics collected by Cortex XDR agents for Cortex XSIAM.
 ---
 
 # Endpoint data collection

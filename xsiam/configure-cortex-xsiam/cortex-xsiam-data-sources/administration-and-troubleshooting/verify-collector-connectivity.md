@@ -1,10 +1,16 @@
+---
+description: >-
+  Check collector connection status, investigate errors, and track connectivity
+  changes in Cortex XSIAM.
+---
+
 # Verify collector connectivity
 
 You can verify the connectivity status of a collector instance on the Data Sources & Integrations page. Instances are grouped by integration, and the **Instances Status** column shows icons that summarize the instance statuses for the integration. Click the integration to see details for each individual instance.
 
 In addition, Cortex XSIAM creates Collection health issues if connectivity disruptions occur in your collection integrations, custom collectors, and Marketplace integrations. For more information, see [About health issues](about-health-issues).
 
-**Troubleshooting collector errors**
+### **Troubleshoot collector errors in Cortex XSIAM**
 
 {% hint style="info" %}
 ### Note

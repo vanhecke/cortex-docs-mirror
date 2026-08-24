@@ -112,6 +112,12 @@ When Cortex XSIAM begins receiving detection data, the console begins stitching 
 
 \*These datasets use the query field names as described in the [Cortex schema](https://docs.paloaltonetworks.com/cortex/cortex-data-lake/log-forwarding-schema-reference.html) documentation. For more information about the logs, see [Strata Logging Service Log Reference](https://docs.paloaltonetworks.com/strata-logging-service/log-reference).
 
+{% hint style="info" %}
+**Note**
+
+When using a multi-tenant firewall with virtual system (vsys) instances, the `_reporting_device_name` field presents the NGFW instance name, vsys\_name, and vsys\_id using the following format; `log_source_name>-<vsys_name>-<vsys_id>`.
+{% endhint %}
+
 For stitched raw data, you can query the `xdr_data` dataset or use any preset designated for stitched data, such as `network_story`. For query examples, refer to the in-app XQL Library. When relevant, Cortex XSIAM can also generate Cortex XSIAM issues (Analytics, Correlation Rules, IOC, and BIOC only) from Strata Logging Service detection data. While Correlation Rules issues are generated on non-normalized and normalized logs, Analytics, IOC, and BIOC issues are only generated on normalized logs.
 
 {% hint style="info" %}

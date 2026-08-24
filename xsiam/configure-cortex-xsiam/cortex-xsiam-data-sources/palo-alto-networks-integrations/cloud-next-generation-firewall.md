@@ -1,3 +1,7 @@
+---
+description: Configure Cloud NGFW data ingestion for Cortex XSIAM.
+---
+
 # Cloud Next-Generation Firewall
 
 You can configure collecting Cloud Next-Generation Firewall logs using a data source:

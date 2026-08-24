@@ -1,3 +1,7 @@
+---
+description: Troubleshoot parsing rule errors in Cortex XSIAM.
+---
+
 # Troubleshooting Parsing rules errors
 
 {% hint style="warning" %}

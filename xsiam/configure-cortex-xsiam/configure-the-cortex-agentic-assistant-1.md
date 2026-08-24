@@ -1,20 +1,26 @@
+---
+description: >-
+  Configure the Cortex XSIAM Agentic Assistant for AI-powered SOC
+  investigations, response, agents, actions, knowledge sources, and access.
+---
+
 # Configure the Cortex Agentic Assistant
 
-The Cortex Agentic Assistant helps SOC teams investigate and respond through AI agents. Agents turn requests into plans and execute approved actions within each user's permissions.
+The Cortex XSIAM Agentic Assistant helps SOC teams investigate, triage, and respond through AI agents. Agents turn security operations requests into plans and execute approved actions within each user's permissions.
 
-### How the components work together
+#### How the components work together
 
-An **agent** is a specialized virtual persona for a domain or workflow. It selects from its assigned **actions** to build and run a plan.
+An **agent** is a specialized virtual persona for a security operations domain or workflow. It selects from its assigned **actions** to build and run an investigation or response plan.
 
-Actions wrap capabilities such as playbooks, scripts, AI prompts, and commands. Add only the actions each agent needs.
+Actions wrap capabilities such as Cortex XSIAM playbooks, scripts, AI prompts, and commands. Add only the actions each agent needs.
 
-**Knowledge** gives agents business-specific context and Cortex product expertise. Knowledge sources and MCP integrations can extend an agent's context and capabilities.
+**Knowledge** gives AI agents business-specific context and Cortex XSIAM product expertise. Knowledge sources and MCP integrations can extend an agent's context and capabilities.
 
-**Role-based access control** defines who can use chat, manage actions, and manage agents. Agents never exceed the permissions of the user running them.
+**Role-based access control (RBAC)** defines who can use Agentic Assistant chat, manage actions, and manage agents. Agents never exceed the permissions of the user running them.
 
-### Configure your agent workforce
+### Configure your agent workforce in Cortex XSIAM
 
 1. Review [Agentic Assistant components and concepts](configure-the-cortex-agentic-assistant-1/agentic-assistant-components-and-concepts) before designing an agent.
-2. Use the [Agentic Assistant Hub](configure-the-cortex-agentic-assistant-1/agents-hub) to register actions, build agents, and assign actions.
-3. Add knowledge sources or MCP integrations when the agent needs more context or capabilities.
+2. Use the [Agentic Assistant Hub](configure-the-cortex-agentic-assistant-1/agents-hub) to register security automation actions, build AI agents, and assign actions.
+3. Add knowledge sources or MCP integrations when the AI agent needs more context or capabilities.
 4. Configure [role-based access control](configure-the-cortex-agentic-assistant-1/agentic-assistant-role-based-access-control) before giving users access.

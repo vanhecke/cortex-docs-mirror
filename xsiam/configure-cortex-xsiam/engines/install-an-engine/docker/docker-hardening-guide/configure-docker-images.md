@@ -1,3 +1,7 @@
+---
+description: Configure Docker images securely for Cortex XSIAM engine deployments.
+---
+
 # Configure Docker images
 
 You can apply more specific, fine-tunedimage-specific settings to Docker images, according to the Docker image name or the Docker image name including the image tag. To apply settings to a Docker image name, add the advanced configuration key to the engine configuration file. If you apply Docker image specific settings, they will be used instead of the general **`python.pass.extra.keys`** setting. This overrides the general memory and CPU settings, as needed.

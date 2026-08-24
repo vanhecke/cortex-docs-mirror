@@ -1,3 +1,9 @@
+---
+description: >-
+  Run Cortex XSIAM response actions quickly from issues, cases, and
+  investigations.
+---
+
 # Quick Actions
 
 Quick Actions are preset single commands that enable you to automate basic tasks such as creating tickets in third-party systems, sending Slack messages, and changing issue severity.
@@ -12,16 +18,12 @@ By default, Quick Actions run using all available integration instances that con
 When you run an automation from the **Issues** table, in some cases the system provides recommended Quick Actions, based on the context. Quick Actions may also be provided in Recommended Automation Rules.
 
 {% hint style="info" %}
-### Note
-
 Quick Actions appear as War Room entries, but do not appear in the Work Plan.
 {% endhint %}
 
-**Access attributes in the Unified Asset Inventory**
+### **Access attributes in the Unified Asset Inventory**
 
 {% hint style="info" %}
-### Notice
-
 This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
 {% endhint %}
 

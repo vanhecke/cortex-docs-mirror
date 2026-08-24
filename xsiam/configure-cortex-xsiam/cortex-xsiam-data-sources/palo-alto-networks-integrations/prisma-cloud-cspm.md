@@ -1,3 +1,7 @@
+---
+description: Configure Prisma Cloud CSPM data for Cortex XSIAM.
+---
+
 # Prisma Cloud CSPM
 
 {% hint style="warning" %}

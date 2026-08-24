@@ -1,3 +1,7 @@
+---
+description: Define field structures in Cortex XSIAM Data Model Rules.
+---
+
 # Field structure
 
 {% hint style="warning" %}

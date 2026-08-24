@@ -1,3 +1,7 @@
+---
+description: Troubleshoot integrations that run on Cortex XSIAM engines.
+---
+
 # Troubleshoot integrations running on engines
 
 The following are common errors that occur when integrations are running on an engine.

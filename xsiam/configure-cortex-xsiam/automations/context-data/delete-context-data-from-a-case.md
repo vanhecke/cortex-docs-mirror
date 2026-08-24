@@ -1,5 +1,5 @@
 ---
-description: Delete all or selected context data from a case.
+description: Delete all or selected Cortex XSIAM context data from a case.
 ---
 
 # Delete context data from a case

@@ -1,16 +1,14 @@
 ---
-description: Learn about personal and system agents in in the Agentic Assistant Hub
+description: Manage personal and system agents in the Cortex XSIAM Agentic Assistant Hub.
 ---
 
 # Agentic Assistant Hub
 
 You can interact with agents in the Agentic Assistant chat to automate case and issue investigation and response. Agents create and execute plans, which are sequences of actions (such as playbooks, scripts, and commands) designed to fulfill your requests.
 
-Actions and agents are managed in the **Agentic Assistant Hub**. You can access the Agentic Assistant Hub from the main navigation or from within the chat, by expanding the Agentic Assistant menu.
+Actions and agents are managed in the **Agentic Assistant Hub**. You can access the Agentic Assistant Hub from the main navigation or from within the chat by expanding the Agentic Assistant menu.
 
 {% hint style="info" %}
-### Note
-
 To manage agents in the Agentic Assistant Hub, you must have the proper permissions. For more information, see [Agentic Assistant role-based access control](agentic-assistant-role-based-access-control).
 {% endhint %}
 
@@ -40,4 +38,4 @@ In the **Agentic Assistant Hub**, you can do the following:
 * View system and edit custom actions.
 * Build agents and assign actions to agents.
 * Enable and disable system agents and provide specific instructions. System agents have access to system actions that are assigned to the agent.
-* Start a chat with any agent, by clicking the more options icon on the agent card and clicking **Start chat**.
+* Start a chat with any agent by clicking the more options icon on the agent card and clicking **Start chat**.

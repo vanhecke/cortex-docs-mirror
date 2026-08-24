@@ -1,3 +1,7 @@
+---
+description: Ingest legacy IoT Security data into Cortex XSIAM.
+---
+
 # Ingest alerts and assets from IoT Security (Deprecated)
 
 {% hint style="warning" %}

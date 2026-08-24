@@ -1,3 +1,9 @@
+---
+description: >-
+  Build and manage Cortex XSIAM playbooks for automated investigation and
+  response workflows.
+---
+
 # Playbooks
 
 Playbooks are a series of tasks that run in a predefined flow to save time and improve the efficiency and results of the investigation and response process. They enable you to automate many security processes, including handling investigations and managing tickets. For example, a playbook task can parse the information in an issue, whether it is an email or a PDF attachment. Playbooks also standardize workflows, ensuring consistent and efficient incident response and management.

@@ -1,3 +1,7 @@
+---
+description: Use IoT Security data with Cortex XSIAM.
+---
+
 # IoT Security
 
 {% hint style="warning" %}

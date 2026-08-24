@@ -1,3 +1,10 @@
+---
+description: >-
+  Ingest Palo Alto Networks detection data from Strata Logging Service into
+  Cortex XSIAM, migrate legacy collectors to Cortex Native Data Lake, and query
+  logs with XQL.
+---
+
 # Ingest detection data from Strata Logging Service
 
 {% hint style="warning" %}

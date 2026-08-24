@@ -1,3 +1,7 @@
+---
+description: Map authentication events for Cortex XSIAM analytics.
+---
+
 # How to map authentication events for analytics
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: Configure the Syslog Collector applet for Cortex XSIAM.
+---
+
 # Syslog Collector applet
 
 The Syslog Collector applet on a Broker VM enables you to collect Syslog data from an external source:

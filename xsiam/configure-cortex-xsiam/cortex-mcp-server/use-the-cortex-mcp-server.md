@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM MCP Server tools to investigate assets, cases, issues, and
+  endpoints, and create custom tools for security workflows.
+---
+
 # Use the Cortex MCP server
 
 The Cortex MCP server provides built-in tools to manage cases and issues and conduct investigations.

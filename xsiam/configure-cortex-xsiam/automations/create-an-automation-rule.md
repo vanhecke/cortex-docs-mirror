@@ -1,10 +1,14 @@
 ---
-description: Learn how to create an automation rule for an issue.
+description: >-
+  Create automation rules in Cortex XSIAM that trigger actions when issue
+  conditions are met.
 ---
 
 # Create an automation rule
 
-Automation rules allow users to automatically respond to events by defining trigger conditions and desired actions to perform once the condition is met. Automation rules can trigger playbooks and Quick Actions. Agentic Response, a feature that allows automation rules to trigger AI agents, is currently in preview and does not appear in your tenant by default. If you would like the Agentic Response feature enabled on your tenant, contact Customer Support.
+### Create Cortex XSIAM automation rules
+
+Cortex XSIAM automation rules allow users to automatically respond to events by defining trigger conditions and desired actions to perform once the condition is met. Automation rules can trigger playbooks and Quick Actions. Agentic Response, a feature that allows automation rules to trigger AI agents, is currently in preview and does not appear in your tenant by default. If you would like the Agentic Response feature enabled on your tenant, contact Customer Support.
 
 While per-object access determines who can see, edit, or manually trigger a playbook, any automated execution (including those triggered by automation rules, jobs, or feed-triggered actions) is performed by the system. These actions are not restricted by the organizational scope or object-level access of the user who may have triggered the case. Instead, automated workflows remain governed by the defined scope and permissions of the involved integrations.
 
@@ -44,6 +48,8 @@ If certain options are unavailable, contact your administrator. For more informa
   * **THEN**: The automation that the user wants to execute: playbook, Quick action, or agent.
 
 </details>
+
+### Manage automation rules
 
 In the **Automation Rules** page, you can create or edit an automation rule, use recommended automation rules, edit a playbook, and change the order of priority. You can also delete or disable/enable an automation rule. When you disable an automation rule, the automation does not run for the selected condition.
 

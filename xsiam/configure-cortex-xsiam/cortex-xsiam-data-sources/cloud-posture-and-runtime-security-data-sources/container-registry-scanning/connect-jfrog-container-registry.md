@@ -1,3 +1,7 @@
+---
+description: Connect a JFrog container registry to Cortex XSIAM for image scanning.
+---
+
 # Connect JFrog container registry
 
 Cortex XSIAM allows you to scan and secure your container images from vulnerabilities, malware, and secrets after you authenticate and connect your JFrog account. This process ensures robust artifact management and enhanced security.

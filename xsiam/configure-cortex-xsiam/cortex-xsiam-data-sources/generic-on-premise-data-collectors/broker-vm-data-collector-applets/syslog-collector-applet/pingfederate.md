@@ -1,3 +1,7 @@
+---
+description: Ingest PingFederate data into Cortex XSIAM.
+---
+
 # PingFederate
 
 You can configure collecting PingFederate authentication logs using a Broker VM Syslog Collector applet:

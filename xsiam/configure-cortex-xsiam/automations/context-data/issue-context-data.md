@@ -1,5 +1,5 @@
 ---
-description: View and use context data stored for an issue.
+description: View and use Cortex XSIAM context data stored for an issue.
 ---
 
 # Issue context data

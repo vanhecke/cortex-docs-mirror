@@ -1,3 +1,7 @@
+---
+description: Manage XDR Collector profiles in Cortex XSIAM.
+---
+
 # Additional XDR Collector profile management options
 
 As needed, you can return to the **XDR Collectors Profiles** page to manage your XDR Collectors profiles. To manage a specific profile, right-click anywhere in an XDR Collector profile row, and select the desired action:

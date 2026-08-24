@@ -1,3 +1,7 @@
+---
+description: Configure Panorama data ingestion for Cortex XSIAM.
+---
+
 # Panorama
 
 {% hint style="warning" %}

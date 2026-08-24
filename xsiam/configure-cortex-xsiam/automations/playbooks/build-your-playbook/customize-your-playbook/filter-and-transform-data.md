@@ -1,14 +1,18 @@
-# Filter and Transform data
+---
+description: >-
+  Filter and transform Cortex XSIAM playbook data, JSON context, and task
+  mappings for downstream automation tasks.
+---
 
-### Filter and transform data
+# Filter and transform Cortex XSIAM playbook data
 
-Use filters and transformers to manipulate data. Add them to playbook tasks or instance mappings.
+Use Cortex XSIAM filters and transformers to manipulate playbook data. Add them to playbook tasks or instance mappings for downstream security automation.
 
-Cortex XSIAM collects data from playbook tasks, command results, and fetched issues. It presents this data in JSON format. Filters and transformers manipulate this data.
+Cortex XSIAM collects data from playbook tasks, command results, and fetched issues. It presents this playbook context in JSON format. Filters and transformers extract, modify, and format this data.
 
-### Filters
+### Filter Cortex XSIAM playbook data
 
-Filters extract relevant data for use elsewhere in Cortex XSIAM. For example, an issue can contain files with different types and extensions. Filter these files by extension or type, then use them in a detonation playbook.
+Filters extract relevant data for use elsewhere in Cortex XSIAM playbooks. For example, an issue can contain files with different types and extensions. Filter these files by extension or type, then use them in a detonation playbook.
 
 You can filter as many objects as needed. Cortex XSIAM automatically calculates the context root for each filter. Change it only when necessary.
 
@@ -16,13 +20,13 @@ You can filter as many objects as needed. Cortex XSIAM automatically calculates 
 **Caution:** Changing the context data root can affect filter results. The drop-down list displays the filter root for backward compatibility.
 {% endhint %}
 
-### Transformers
+### Transform Cortex XSIAM playbook data
 
-Transformers modify or format data for further processing or presentation. For example, convert a non-Unix date to Unix format. The `count` transformer returns the number of elements.
+Transformers modify or format playbook data for further processing or presentation. For example, convert a non-Unix date to Unix format. The `count` transformer returns the number of elements.
 
 When you add multiple transformers, Cortex XSIAM applies them in displayed order. Drag and drop transformers to reorder them.
 
-### Add filters and transformers to a playbook task
+### Add filters and transformers to Cortex XSIAM playbook tasks
 
 1. Create or edit a playbook task.
 2. In the relevant field, such as inputs or outputs, click the curly brackets.

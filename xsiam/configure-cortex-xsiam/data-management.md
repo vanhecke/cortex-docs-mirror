@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM data with Analytics and Data Lake tiers, Federated Search,
+  retention settings, datasets, and data lifecycle controls.
+---
+
 # Data management
 
 {% content-ref url="data-management/optimize-data-management-in-cortex-xsiam" %}

@@ -1,5 +1,5 @@
 ---
-description: You can create content packs for submission to the Cortex Marketplace.
+description: Create and submit content packs for Cortex XSIAM Marketplace.
 ---
 
 # Content pack contributions

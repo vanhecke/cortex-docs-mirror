@@ -1,5 +1,7 @@
 ---
-description: Content updates when upgrading Cortex XSIAM versions.
+description: >-
+  Understand Cortex XSIAM Marketplace content changes during Cortex XSIAM
+  upgrades.
 ---
 
 # Content changes when upgrading Cortex XSIAM versions

@@ -1,10 +1,10 @@
+---
+description: Onboard on-premise assets to Cloud Data Security with Cortex XSIAM.
+---
+
 # How to onboard on-premise assets to Cloud Data Security
 
-## How to onboard on-premise assets to Cortex Cloud Data Security
-
 {% hint style="info" %}
-### Notice
-
 The data sources are included in Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license.
 {% endhint %}
 

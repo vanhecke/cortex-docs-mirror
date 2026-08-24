@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XSIAM to scan container registries in connected cloud
+  accounts.
+---
+
 # Configure registry scanning for cloud accounts
 
 Configuring registry scanning ensures that only verified and compliant images are deployed across your cloud environments. You can configure container registry scanning during the onboarding process for managed registries such as Amazon Elastic Container Registry (ECR), Azure Container Registry (ACR), Google Artifact Registry (GAR), and Oracle Cloud Infrastructure (OCI) Artifact Registry.

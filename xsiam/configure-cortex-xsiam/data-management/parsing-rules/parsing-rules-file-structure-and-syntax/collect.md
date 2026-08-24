@@ -1,3 +1,7 @@
+---
+description: Define COLLECT sections in Cortex XSIAM Parsing Rules.
+---
+
 # COLLECT
 
 {% hint style="warning" %}

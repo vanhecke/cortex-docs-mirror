@@ -1,3 +1,7 @@
+---
+description: Control access to Cortex XSIAM jobs using roles and permissions.
+---
+
 # Access to Jobs
 
 Access to the **Jobs** page is governed by Role-Based Access Control (RBAC).

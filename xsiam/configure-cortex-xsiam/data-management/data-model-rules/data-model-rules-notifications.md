@@ -1,3 +1,7 @@
+---
+description: Configure notifications for Cortex XSIAM Data Model Rules.
+---
+
 # Data Model Rules notifications
 
 {% hint style="warning" %}

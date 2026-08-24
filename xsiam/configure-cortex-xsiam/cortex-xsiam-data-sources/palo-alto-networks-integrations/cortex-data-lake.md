@@ -1,3 +1,7 @@
+---
+description: Configure Cortex Data Lake data for Cortex XSIAM.
+---
+
 # Cortex Data Lake
 
 {% hint style="warning" %}

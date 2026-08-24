@@ -1,14 +1,20 @@
-# Extend context
+---
+description: >-
+  Extend Cortex XSIAM playbook context with integration command responses, task
+  data, and custom context keys.
+---
 
-Integrations do not write every command response field to context. This limits context size and stores only relevant information.
+# Extend context in playbooks
 
-Extend Context saves additional data from a command's raw response. For example, a SIEM event command might write only selected event fields to context. Extend Context lets you save fields needed for your use case.
+Integrations do not write every command response field to Cortex XSIAM playbook context. This limits context size and stores only relevant automation data.
 
-Extend Context also separates outputs when a playbook runs the same command multiple times. For example, run `!ad-get-user` once for a user and again for their manager. By default, both command responses use the same context key. Extend Context writes each response to a custom context key.
+Extend Context saves additional data from an integration command's raw response. For example, a SIEM event command might write only selected event fields to context. Extend Context lets you save fields needed for your security workflow.
 
-You can extend context in a playbook task or from the command line. First run the command with `raw-response=true`. This helps identify data to add.
+Extend Context also separates outputs when a playbook runs the same command multiple times. For example, run `!ad-get-user` once for a user and again for their manager. By default, both command responses use the same context key. Extend Context writes each response to a custom playbook context key.
 
-### Filter specific keys from lists of dictionaries
+You can extend context in a Cortex XSIAM playbook task or from the command line. First run the command with `raw-response=true`. This helps identify data to add.
+
+### Filter command response keys for playbook context
 
 Use DT to select keys from a command that returns a long list of dictionaries. For example, `findIndicators` returns many indicator properties. Save only `value` and `indicator_type` to reduce context size.
 
@@ -34,7 +40,7 @@ For more information, see [Cortex XSOAR Transform Language (DT)](https://xsoar.p
 
 <details>
 
-<summary>Extend context in a playbook task</summary>
+<summary>Extend Cortex XSIAM context in a playbook task</summary>
 
 1. Go to the **Advanced** tab of the relevant playbook task, such as a Data Collection task.
 2.  In the Extend Context field, enter the name of the field in which you want the information to appear and the value you want to return. For example, using the **`!ad-get-user`** command, enter **`name="john" attributes=displayname`** to place the user's name in the **`displayName`** key.
@@ -52,7 +58,7 @@ For more information, see [Cortex XSOAR Transform Language (DT)](https://xsoar.p
 
 <details>
 
-<summary>Extend context using the CLI</summary>
+<summary>Extend Cortex XSIAM context using the CLI</summary>
 
 1.  Run the command with `extend-context`:
 

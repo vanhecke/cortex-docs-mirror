@@ -1,3 +1,7 @@
+---
+description: Harden Docker hosts and containers to secure Cortex XSIAM engine deployments.
+---
+
 # Docker hardening guide
 
 The following describes the engine settings we recommend for securely running Docker containers.

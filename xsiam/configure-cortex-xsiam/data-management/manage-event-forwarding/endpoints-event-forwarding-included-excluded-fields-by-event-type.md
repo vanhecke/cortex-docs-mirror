@@ -1,3 +1,7 @@
+---
+description: Review event forwarding fields by Cortex XSIAM event type.
+---
+
 # Endpoints Event Forwarding - included/excluded fields by event type
 
 {% hint style="warning" %}

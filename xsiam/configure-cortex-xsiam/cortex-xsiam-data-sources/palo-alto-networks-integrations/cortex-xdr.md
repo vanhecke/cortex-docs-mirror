@@ -1,3 +1,7 @@
+---
+description: Use Cortex XDR data with Cortex XSIAM.
+---
+
 # Cortex XDR
 
 {% hint style="warning" %}

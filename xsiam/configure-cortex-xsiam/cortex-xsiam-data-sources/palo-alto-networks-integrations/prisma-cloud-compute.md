@@ -1,3 +1,7 @@
+---
+description: Configure Prisma Cloud Compute data for Cortex XSIAM.
+---
+
 # Prisma Cloud Compute
 
 {% hint style="warning" %}

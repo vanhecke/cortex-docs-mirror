@@ -1,3 +1,7 @@
+---
+description: Import Broker VM configuration for Cortex XSIAM data collection.
+---
+
 # Import Broker VM Configuration
 
 Learn more about importing one Broker VM configuration to another.

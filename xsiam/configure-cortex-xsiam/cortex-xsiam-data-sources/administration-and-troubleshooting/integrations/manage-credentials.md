@@ -1,3 +1,7 @@
+---
+description: Manage integration credentials securely in Cortex XSIAM.
+---
+
 # Manage credentials
 
 Credentials simplify and compartmentalize administrative tasks, and enable you to save login information without exposing usernames, passwords, certificates, and SSH keys. You can reuse credentials across multiple systems, for example, when using the same administrator password across multiple endpoints.
@@ -42,9 +46,9 @@ How to add credentials to an integration instance
        <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>If your user role has the <strong>Credentials</strong> permission set to <strong>None</strong>, the <strong>Switch to credentials</strong> option is hidden. Instead, the message <strong>Credentials are locked by admin</strong> is displayed, and you cannot reference stored secrets. This restriction applies to both data sources and unified connectors.</p></div>
    4. **Test** and **Save & Exit** the integration instance.
 
-**Configure an external credentials vault**
+### **Configure an external credentials vault in Cortex XSIAM**
 
-Cortex XSIAM integrates with external credential vaults, which enables you to use them without hard coding or exposing the credentials. The credentials are not stored in Cortex XSIAM, but the integration fetches the credentials from the external vault when called. The credentials are passed to the relevant executed integrations as part of the integration parameters.
+Cortex XSIAM integrates with external credential vaults, which enables you to use them without hard-coding or exposing the credentials. The credentials are not stored in Cortex XSIAM, but the integration fetches the credentials from the external vault when called. The credentials are passed to the relevant executed integrations as part of the integration parameters.
 
 Sample credentials provider integrations:
 

@@ -1,3 +1,7 @@
+---
+description: Work with the raw dataset used by Cortex XSIAM Parsing Rules.
+---
+
 # Parsing Rules Raw Dataset
 
 {% hint style="warning" %}

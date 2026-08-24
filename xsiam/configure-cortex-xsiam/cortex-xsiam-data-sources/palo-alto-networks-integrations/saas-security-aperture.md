@@ -1,3 +1,7 @@
+---
+description: Configure SaaS Security data for Cortex XSIAM.
+---
+
 # SaaS Security (Aperture)
 
 {% hint style="warning" %}

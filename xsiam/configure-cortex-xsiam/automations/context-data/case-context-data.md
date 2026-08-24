@@ -1,5 +1,5 @@
 ---
-description: View and use context data stored for a case.
+description: View and use Cortex XSIAM context data stored for a case.
 ---
 
 # Case context data

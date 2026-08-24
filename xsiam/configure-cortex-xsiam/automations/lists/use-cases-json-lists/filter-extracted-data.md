@@ -1,3 +1,7 @@
+---
+description: Filter data extracted from a Cortex XSIAM JSON list.
+---
+
 # Filter extracted data
 
 Filter an extracted data subset to analyze a specific information set. This example filters `Box1` information from the list created in [Extract data from a JSON object](extract-data-from-a-json-object).
@@ -9,10 +13,9 @@ Filter an extracted data subset to analyze a specific information set. This exam
 
     In this example, retrieve the list of machines named **`Box1`** from **`Test1`** list by setting the filter **`lists.Test1.domain.servers.machine Equals Box1`**.
 
-    [![work-with-json-lists-filter-data-8-x.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/fyxMwQXDfsFwMu2b2kp6Ug-5CAbsl8idaK8R43ZLhoTOw/content?v=d8cfb68e514de1a0\&Ft-Calling-App=ft/turnkey-portal)](https://docs-cortex.paloaltonetworks.com/viewer/attachment/5CAbsl8idaK8R43ZLhoTOw/fyxMwQXDfsFwMu2b2kp6Ug-5CAbsl8idaK8R43ZLhoTOw)
+    ![work-with-json-lists-filter-data-8-x.png](https://paloaltonetworks.fluidtopics.net/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/fyxMwQXDfsFwMu2b2kp6Ug-5CAbsl8idaK8R43ZLhoTOw/content?v=d8cfb68e514de1a0\&Ft-Calling-App=ft/turnkey-portal)
 
-    <br>
-5. Click Test.
-6.  Check whether the data subset was accessed successfully by selecting the data source from an issue. You can see the results returned **`machine: Box1`**.
+    1. Click Test.
+    2.  Check whether the data subset was accessed successfully by selecting the data source from an issue. You can see the results returned **`machine: Box1`**.
 
-    [![lists-test.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/IpBjKgAl6_feyg9tRy9G4g-5CAbsl8idaK8R43ZLhoTOw/content?v=9694f128722026c1\&Ft-Calling-App=ft/turnkey-portal)](https://docs-cortex.paloaltonetworks.com/viewer/attachment/5CAbsl8idaK8R43ZLhoTOw/IpBjKgAl6_feyg9tRy9G4g-5CAbsl8idaK8R43ZLhoTOw)
+        ![lists-test.png](https://paloaltonetworks.fluidtopics.net/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/IpBjKgAl6_feyg9tRy9G4g-5CAbsl8idaK8R43ZLhoTOw/content?v=9694f128722026c1\&Ft-Calling-App=ft/turnkey-portal)

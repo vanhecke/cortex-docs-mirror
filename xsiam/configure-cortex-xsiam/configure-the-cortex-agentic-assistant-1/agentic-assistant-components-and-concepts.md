@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn about the key components and concepts, such as agents and actions in the
-  Cortex Agentic Assistant
+  Understand Cortex XSIAM Agentic Assistant components, including agents,
+  actions, and their relationships.
 ---
 
 # Agentic Assistant components and concepts

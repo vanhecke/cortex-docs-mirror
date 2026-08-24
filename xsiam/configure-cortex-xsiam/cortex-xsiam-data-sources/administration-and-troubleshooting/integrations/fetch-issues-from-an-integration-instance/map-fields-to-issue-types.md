@@ -1,3 +1,7 @@
+---
+description: Map integration fields to issue types in Cortex XSIAM.
+---
+
 # Map fields to issue types
 
 Mappers enable you to map information from incoming events to the issue fields that you have in your system. You can map to system issue fields or custom issue fields.

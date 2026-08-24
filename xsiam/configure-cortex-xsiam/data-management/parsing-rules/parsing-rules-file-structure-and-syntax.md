@@ -1,3 +1,7 @@
+---
+description: Learn Cortex XSIAM Parsing Rules file structure and XQLp syntax.
+---
+
 # Parsing Rules file structure and syntax
 
 {% hint style="warning" %}

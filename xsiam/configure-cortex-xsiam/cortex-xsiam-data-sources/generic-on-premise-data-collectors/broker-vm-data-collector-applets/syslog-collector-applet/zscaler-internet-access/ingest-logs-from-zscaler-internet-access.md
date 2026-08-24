@@ -1,3 +1,7 @@
+---
+description: Ingest Zscaler Internet Access logs into Cortex XSIAM.
+---
+
 # Ingest logs from Zscaler Internet Access
 
 If you use Zscaler Internet Access (ZIA) in your network, you can forward your firewall and network logs to Cortex XSIAM for analysis. This enables you to take advantage of Cortex XSIAM anomalous behavior detection and investigation capabilities. Cortex XSIAM can use the firewall and network logs from ZIA as the sole data source, and can also use these firewall and network logs from ZIA in conjunction with Palo Alto Networks firewall and network logs. For additional endpoint context, you can also use Cortex XSIAM to collect and alert on endpoint data.

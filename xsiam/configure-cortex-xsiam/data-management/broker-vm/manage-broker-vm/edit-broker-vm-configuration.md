@@ -1,3 +1,7 @@
+---
+description: Update Broker VM settings for Cortex XSIAM data collection.
+---
+
 # Edit Broker VM Configuration
 
 After configuring and registering your Broker VM, you can edit existing configurations and define additional settings in the Broker VMs page in the Brokers tab. When you have a high availability (HA) cluster configured, you can also edit any Broker VM nodes configurations in the Clusters tab from the Broker VMs table under the Cluster.

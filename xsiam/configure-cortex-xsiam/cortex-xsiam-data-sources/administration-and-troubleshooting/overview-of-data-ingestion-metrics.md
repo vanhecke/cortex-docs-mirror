@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how Cortex XSIAM calculates and uses metrics to monitor data ingestion
+  health.
+---
+
 # Overview of data ingestion metrics
 
 {% hint style="warning" %}
@@ -27,7 +33,7 @@ The following table describes all the fields in the `metrics_source` dataset and
 
 <details>
 
-<summary>Read more...</summary>
+<summary>Data ingestion metric fields</summary>
 
 | Field                                  | Type     | Description                                                                                                                                            |
 | -------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |

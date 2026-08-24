@@ -1,10 +1,16 @@
-# Extract Indicators
+---
+description: >-
+  Extract and enrich threat indicators from Cortex XSIAM issue fields and
+  playbook task outputs.
+---
 
-In Cortex XSIAM, the indicator extraction feature extracts indicators from issue fields and enriches them using commands and scripts.
+# Extract indicators in playbooks
+
+In Cortex XSIAM, indicator extraction finds threat indicators in issue fields and playbook task outputs. It enriches indicators with commands and scripts for security investigations and playbook automation.
 
 For more information about indicator extraction, see [Extract and enrich an indicator](../../../../../detect-investigate-and-respond-to-threats/threat-management/threat-intel-management/indicator-investigation/extract-and-enrich-an-indicator).
 
-#### How to set up indicator extraction in a playbook task
+### Configure indicator extraction in a Cortex XSIAM playbook task
 
 1. Select the playbook where you want to add indicator extraction, and click Edit.
 2. In the playbook, click a task to open the Task Details pane.
@@ -12,14 +18,14 @@ For more information about indicator extraction, see [Extract and enrich an indi
 4. For Indicator Extraction mode, select the mode you want to use (default is none).
 5. Click OK.
 
-#### Example
+### Indicator extraction playbook example
 
 The following scenario shows how indicator extraction is used in the **Process Email - Generic v2** playbook to extract and enrich a very specific group of indicators.
 
 This playbook parses the headers in the original email used in a phishing attack. It is important to parse the original email used in the phishing attack and not the email that was forwarded to ensure that you only extract the email headers from the malicious email and not the one your organization uses to report phishing attacks.
 
 1. Navigate to the **Playbooks** page and search for the **Process Email - Generic v2** playbook.
-2. Click [![three-dots.png](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAABJ0AAASdAHeZh94AAAAB3RJTUUH6QMfDSo09EJ2PQAAAIBJREFUSIntlCEOwCAMRf8WNMfpNXrWmt4IhwFNYI5NTKxmWUaf+qLJS5ufbmOMgRfY35C4yEUuOhEREBGICCJiEgXLcCkFvfeZLZg2CiHc5idsa/86L8OVxcugqmBmMDNU1SQyHTrnjJTSzBa+WYbWGmqtAIAYo0m2eOtc9G/RAX7QRNu0LuROAAAAAElFTkSuQmCC)](https://docs-cortex.paloaltonetworks.com/viewer/attachment/5CAbsl8idaK8R43ZLhoTOw/dKzvVpNLR7AFb4tlDc4XzA-5CAbsl8idaK8R43ZLhoTOw) and select either **Duplicate** (create a copy of the playbook to edit) or **Edit Playbook** (detach the playbook).
+2. Click <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAABJ0AAASdAHeZh94AAAAB3RJTUUH6QMfDSo09EJ2PQAAAIBJREFUSIntlCEOwCAMRf8WNMfpNXrWmt4IhwFNYI5NTKxmWUaf+qLJS5ufbmOMgRfY35C4yEUuOhEREBGICCJiEgXLcCkFvfeZLZg2CiHc5idsa/86L8OVxcugqmBmMDNU1SQyHTrnjJTSzBa+WYbWGmqtAIAYo0m2eOtc9G/RAX7QRNu0LuROAAAAAElFTkSuQmCC" alt="three-dots.png" data-size="line"> and select either **Duplicate** (create a copy of the playbook to edit) or **Edit Playbook** (detach the playbook).
 3.  Open the **Add original email details to context** task, and for the Script drop down, change the script from **Set** to **ParseEmailFilesV2**.
 
     Under the **Outputs** tab, you can see all of the different data that the task extracts.
@@ -29,7 +35,7 @@ This playbook parses the headers in the original email used in a phishing attack
 5. Open the **Display email information in layout - Email.Headers** task. This task receives the data from the saved attachment tasks and sets the various data points to context.
 6. Click the **Advanced** tab and set **Indicator Extraction mode** to **`None`** , because the indicators were already extracted earlier in the **Extract email artifacts and attachments** task and there is no need to extract them again.
 
-**Indicator extraction modes**
+### Indicator extraction modes
 
 Indicator extraction supports the following modes:
 
@@ -41,14 +47,14 @@ Indicator extraction supports the following modes:
     While indicator creation is asynchronous, indicator extraction and enrichment are run synchronously. Data is placed into the issue context and is available via the context for subsequent tasks.
 *   **Out of band:** Indicators are extracted in parallel (asynchronously) to other actions. The extracted data will be available within the issue, however, it is not available for immediate use in task inputs or outputs because the information is not available in real-time.
 
-    When using out of band, the extracted indicators do not appear in the context. If you want the extracted indicators to appear select inline.
+    When using out-of-band, the extracted indicators do not appear in the context. If you want the extracted indicators to appear select inline.
 * If system-wide indicator extraction is enabled, indicators are extracted according to the following rules:
   * Issue creation - inline
   * Issue field change - inline
   * Tasks - none, can be overridden on a per task basis
   * CLI - out of band, but can be overridden on a per-command basis
 
-**Troubleshoot indicator extraction**
+### Troubleshoot Cortex XSIAM indicator extraction
 
 If indicators are not extracted, check whether the indicator mode is set to none. Even if you select the relevant issue fields and the indicators to extract, if the mode is set to none, indicators do not extract.
 

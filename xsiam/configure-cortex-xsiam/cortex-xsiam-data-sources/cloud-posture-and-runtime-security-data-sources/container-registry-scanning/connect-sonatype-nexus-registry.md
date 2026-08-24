@@ -1,3 +1,9 @@
+---
+description: >-
+  Connect a Sonatype Nexus registry to Cortex XSIAM for container image
+  scanning.
+---
+
 # Connect Sonatype Nexus registry
 
 Configure Cortex XSIAM to scan your Nexus Registry. This allows Cortex to list all container registries or images, and secure them from vulnerabilities, malware, and secrets.

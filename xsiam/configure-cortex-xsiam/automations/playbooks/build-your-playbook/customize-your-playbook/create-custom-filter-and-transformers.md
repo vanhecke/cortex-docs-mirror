@@ -1,4 +1,8 @@
-# Create custom filter and transformers
+---
+description: Create custom Cortex XSIAM filters and transformers for playbook data.
+---
+
+# Create custom filters and transformers
 
 If you require a filter or transformer that is not provided out-of-the-box, you can create your own by creating a script and then adding to the operators window.
 

@@ -1,3 +1,7 @@
+---
+description: Apply collection profiles to Cortex XSIAM policies.
+---
+
 # Apply profiles to collection machine policies
 
 Enable a Cortex XDR Collector profile by mapping it to a policy. Each policy that you create must apply to one or more collector machines or collector machine groups.

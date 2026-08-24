@@ -1,3 +1,7 @@
+---
+description: Configure Palo Alto Networks Prisma for Cortex XSIAM.
+---
+
 # Palo Alto Networks Prisma
 
 {% hint style="warning" %}

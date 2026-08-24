@@ -1,5 +1,7 @@
 ---
-description: Recommended prompts to automate your SOC using the Cortex Agentic Assistant
+description: >-
+  Recommended prompts to automate your SOC using the Cortex Agentic Assistant in
+  Cortex XSIAM.
 ---
 
 # Agentic Assistant use cases

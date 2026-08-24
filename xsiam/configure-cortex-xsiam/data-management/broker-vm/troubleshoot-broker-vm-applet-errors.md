@@ -1,3 +1,7 @@
+---
+description: Troubleshoot data collector applet errors on Cortex XSIAM Broker VMs.
+---
+
 # Troubleshoot Broker VM applet errors
 
 Learn more about how to verify the Broker VM applet application, connectivity, and processing errors and troubleshoot.

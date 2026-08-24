@@ -1,5 +1,5 @@
 ---
-description: Create a time-triggered job or event-triggered job to run a playbook
+description: Create Cortex XSIAM jobs to run playbooks on schedules or events.
 ---
 
 # Jobs

@@ -1,3 +1,7 @@
+---
+description: Use Anomali data with Cortex XSIAM.
+---
+
 # Anomali
 
 {% hint style="warning" %}

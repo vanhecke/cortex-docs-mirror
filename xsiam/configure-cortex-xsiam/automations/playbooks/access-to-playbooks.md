@@ -1,3 +1,7 @@
+---
+description: Control access to Cortex XSIAM playbooks using roles and permissions.
+---
+
 # Access to playbooks
 
 Access to playbooks is managed at the object level, enforcing least-privileged access for automation logic. This ensures that sensitive workflows, such as remediation playbooks or custom playbooks, are only visible to and editable by authorized users. For a complete description of how object-level access affects playbook visibility across Cortex XSIAM, see [Manage access to playbooks and scripts](../../../onboard-cortex-xsiam/post-deployment/manage-user-roles-and-access-management).

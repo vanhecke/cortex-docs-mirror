@@ -1,3 +1,7 @@
+---
+description: Configure Enterprise DLP data for Cortex XSIAM.
+---
+
 # Enterprise DLP
 
 {% hint style="warning" %}

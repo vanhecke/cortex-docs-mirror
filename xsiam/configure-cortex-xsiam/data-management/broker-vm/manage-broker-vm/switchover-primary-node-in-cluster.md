@@ -1,3 +1,7 @@
+---
+description: Switch the primary node in a Cortex XSIAM Broker VM cluster.
+---
+
 # Switchover Primary Node in Cluster
 
 Learning more about changing the role of the current Primary node in a HA cluster.

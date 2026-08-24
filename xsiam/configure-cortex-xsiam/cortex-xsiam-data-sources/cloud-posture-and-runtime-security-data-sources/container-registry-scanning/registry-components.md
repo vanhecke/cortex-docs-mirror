@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn about the container registry components that Cortex XSIAM uses for
+  registry scanning.
+---
+
 # Registry Components
 
 To understand how container registry scanning works, it's essential to understand its core components:

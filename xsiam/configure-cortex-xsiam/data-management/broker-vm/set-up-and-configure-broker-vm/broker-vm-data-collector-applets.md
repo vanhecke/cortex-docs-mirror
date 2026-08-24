@@ -1,3 +1,7 @@
+---
+description: Configure Broker VM data collector applets for Cortex XSIAM.
+---
+
 # Broker VM data collector applets
 
 Learn more about the different Broker VM data collector applets available to configure.

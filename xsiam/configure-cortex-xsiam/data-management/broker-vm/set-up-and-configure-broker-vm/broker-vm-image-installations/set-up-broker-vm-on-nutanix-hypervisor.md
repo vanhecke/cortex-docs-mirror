@@ -1,3 +1,7 @@
+---
+description: Deploy a Cortex XSIAM Broker VM on Nutanix Hypervisor.
+---
+
 # Set up Broker VM on Nutanix Hypervisor
 
 Learn how to set up your Cortex XSIAM Broker virtual machine (VM) on Nutanix Hypervisor.

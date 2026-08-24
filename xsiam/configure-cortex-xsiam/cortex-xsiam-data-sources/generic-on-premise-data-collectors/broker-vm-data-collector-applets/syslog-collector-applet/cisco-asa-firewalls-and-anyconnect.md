@@ -1,3 +1,7 @@
+---
+description: Ingest Cisco ASA and AnyConnect data into Cortex XSIAM.
+---
+
 # Cisco ASA firewalls and AnyConnect
 
 You can configure collecting Cisco ASA firewall and AnyConnect VPN logs using a Broker VM Syslog Collector applet or with a content pack integration:

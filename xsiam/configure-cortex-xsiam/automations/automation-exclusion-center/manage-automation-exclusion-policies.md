@@ -1,5 +1,7 @@
 ---
-description: Edit policies that exclude critical assets from automated remediation.
+description: >-
+  Create and manage Cortex XSIAM policies that exclude critical assets from
+  automated remediation.
 ---
 
 # Manage automation exclusion policies

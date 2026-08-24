@@ -1,3 +1,7 @@
+---
+description: Import historical data into Cortex XSIAM cold storage.
+---
+
 # Import historical data into cold storage
 
 {% hint style="info" %}

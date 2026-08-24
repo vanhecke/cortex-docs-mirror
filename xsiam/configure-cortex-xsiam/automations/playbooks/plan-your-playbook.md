@@ -1,3 +1,9 @@
+---
+description: >-
+  Plan Cortex XSIAM playbooks that automate your investigation and response
+  workflows.
+---
+
 # Plan your playbook
 
 When defining the workflow of your playbook, consider the following:

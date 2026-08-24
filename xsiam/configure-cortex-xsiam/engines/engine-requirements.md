@@ -1,5 +1,7 @@
 ---
-description: Hardware, OS, and required URLs for engines.
+description: >-
+  Review Cortex XSIAM engine hardware, operating system, network, and required
+  URLs.
 ---
 
 # Engine requirements
@@ -10,7 +12,7 @@ You can install engines on all Linux environments. Docker/Podman needs to be ins
 The Cron package is required to install engines on a Linux machine.
 {% endhint %}
 
-**Engine hardware requirements**
+### **Engine hardware requirements**
 
 If your hard drive is partitioned, we recommend a minimum of 50 GB for the `/var` partition.
 
@@ -21,7 +23,7 @@ If your hard drive is partitioned, we recommend a minimum of 50 GB for the `/var
 | Memory           | 16 GB RAM               | 32 GB RAM          |
 | Storage          | 100 GB                  | 100 GB             |
 
-**Operating system requirements**
+### **Operating system requirements**
 
 You can deploy a Cortex XSIAM engine on the following operating systems:
 
@@ -39,7 +41,7 @@ CentOS 8.x reached End of Life (EOL) on December 31, 2021, and is no longer supp
 CentOS 7.x reached End of Life (EOL) on June 30, 2024, and is no longer supported as an operating system.
 {% endhint %}
 
-**Engine required URLs**
+### **Engine required URLs**
 
 You need to allow the following in the URLs for Cortex XSIAM engines to operate properly. The URLs are needed to pull container images from public Docker registries.
 

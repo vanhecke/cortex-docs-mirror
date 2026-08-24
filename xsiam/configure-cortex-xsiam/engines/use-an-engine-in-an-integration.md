@@ -1,7 +1,7 @@
 ---
 description: >-
-  Use an engine or a load-balancing group of engines to fetch issues and run
-  commands for an integration.
+  Use Cortex XSIAM engines and load-balancing groups to run integration commands
+  and fetch issues.
 ---
 
 # Use an engine in an integration

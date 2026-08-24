@@ -1,3 +1,7 @@
+---
+description: Deploy a Cortex XSIAM Broker VM on Microsoft Azure.
+---
+
 # Set up Broker VM on Microsoft Azure
 
 Learn how to set up your Cortex XSIAM Broker virtual machine (VM) on Microsoft Azure.

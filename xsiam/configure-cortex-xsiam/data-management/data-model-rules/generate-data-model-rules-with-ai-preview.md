@@ -1,3 +1,7 @@
+---
+description: Generate Cortex XSIAM Data Model Rules with AI.
+---
+
 # Generate data model rules with AI (preview)
 
 {% hint style="info" %}

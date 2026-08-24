@@ -1,3 +1,9 @@
+---
+description: >-
+  Create communication tasks in Cortex XSIAM playbooks for notifications and
+  collaboration.
+---
+
 # Create a communication task
 
 Communication tasks enable you to send surveys to users, both internal and external, to collect data for an issue. The collected data can be used for issue analysis, and also as input for subsequent playbook tasks. For example, you can send a scheduled survey requesting analysts to send specific issue updates or send a single (stand-alone) question survey to determine how an issue was handled.
@@ -9,7 +15,7 @@ There are two types of communication tasks:
 
 <details>
 
-<summary>About ask tasks</summary>
+<summary>Create an ask task in Cortex XSIAM</summary>
 
 An ask task is a type of conditional task that sends a single question survey, the answer to which determines how a playbook proceeds. If you send the survey to multiple users, the first answer received is used, and subsequent responses are disregarded. For more information about ask task settings, see [Create a conditional task](create-a-conditional-task).
 
@@ -23,17 +29,21 @@ For all ask conditional tasks, a link is generated for each possible answer the 
 
 In this example, the message and survey will be sent to recipients every hour for six hours, until a reply is received (it is repeated every 60 minutes, 6 times). The SLA is six hours. If the SLA is breached, the playbook will proceed according to the Yes condition.
 
-[![ask-timer.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/yeqUDjXQYR7A1CLYidWTZA-5CAbsl8idaK8R43ZLhoTOw/content?v=1a7ca3cd9c24b294\&Ft-Calling-App=ft/turnkey-portal)](https://docs-cortex.paloaltonetworks.com/viewer/attachment/5CAbsl8idaK8R43ZLhoTOw/yeqUDjXQYR7A1CLYidWTZA-5CAbsl8idaK8R43ZLhoTOw)<br>
+The SLA is six hours. If the SLA is breached, the playbook will proceed&#x20;
+
+![ask-timer.png](https://paloaltonetworks.fluidtopics.net/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/yeqUDjXQYR7A1CLYidWTZA-5CAbsl8idaK8R43ZLhoTOw/content?v=1a7ca3cd9c24b294\&Ft-Calling-App=ft/turnkey-portal)<br>
 
 In this example, a message and survey are sent by email to all users with the Analyst role. We are not including a message body because the message subject is the survey question we want recipients to answer. There are three reply options, Yes, No, and Not sure. In the playbook, we will only add conditions for the Yes and No replies. We require recipient authentication, which first involves setting up authentication.
 
-[![ask-task-example-email-8-4.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/loHWMiMUko2aguwYgiuPRQ-5CAbsl8idaK8R43ZLhoTOw/content?v=fd28f60fe02fcbad\&Ft-Calling-App=ft/turnkey-portal)](https://docs-cortex.paloaltonetworks.com/viewer/attachment/5CAbsl8idaK8R43ZLhoTOw/loHWMiMUko2aguwYgiuPRQ-5CAbsl8idaK8R43ZLhoTOw)
+We require recipient authentication, which first involves setting up authentication.
+
+![ask-task-example-email-8-4.png](https://paloaltonetworks.fluidtopics.net/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/loHWMiMUko2aguwYgiuPRQ-5CAbsl8idaK8R43ZLhoTOw/content?v=fd28f60fe02fcbad\&Ft-Calling-App=ft/turnkey-portal)
 
 </details>
 
 <details>
 
-<summary>Create a data collection task</summary>
+<summary>Create a data collection task in Cortex XSIAM</summary>
 
 The data collection task is a multi-question survey (form) that survey recipients access from a link in the message. Users do not need to log in to access the survey, which is located on a separate site.
 
@@ -79,7 +89,7 @@ How to create a Data Collection task
 
     The task is added in the playbook editor.
 
-    A user icon ( [![user\_icon.png](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH6QEcCjYkYrjRDwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAACw0lEQVQ4ja2Tz29UVRTHP+fe9+6bEehMW4hI1IRMW4YU40JDIMbEhSt3JEYXIq7cuHbBhiVhZViY8C8Q/wJNXLGAoEL9kWjCggabaqcj1A5lZvre3HePizdl5nVaY8CTvJdzc879fr/nm3NFVTWEHEKGyTugKaA8a3S6hiiEACHF+PZzge2Ecw6jwSN5538BBMjznAgU0XT/Lg0FoQJC8RPZOewHyt4qNaDpJv6vJfzaLUKvjbgp7Owp4pfOYg6+AibaE1SytK9xWNtVyfAPf6K/9AX5+h2wMWIcaI7mKebAMdzJC7i59zFJvXT14UZajF8WOMC3btO7dRHttpDqYZLmeVzzE8LGr2z/eBXfvkv685fo9iMqr32GuEMjPctfYUIYB1X0ySrpL9fQbgsAW2uQnDiPSWpEL57GNc4VndkWgwdfM/j9m6HvQwRVjOoIVH2Kby/h178f8RiH7IxoIrCVp6WwtYJfu0notcZkgSnN7rv49t2yv75H6K0PSftotlm2f2uF0FkeU8oupWFA6LZKl8KTPxisfFvknfsMVm+U6pptEdIRkQJGdq+bsaPcVpDKzHAvgZCD2MIOMU8tEROP02DGhCK2gq3PF3l8kPjVd6mevUzS/LjgOPI6L7x1heTUp8WeimAqs0j1yBiolD2V+ADR0TOIq2FmmlTfvIidXii8HH7ipkjmP8QtfIDEU9j6PLZ2vDRs+UmYGDvdJD7+Hvnf9xj8eROZ8AfQQHj8ADtzkujld5Bk+l9AAVM9TNK8QP/OFbZ/uIxmjydBbYKtz+FOfER09MxEefLxisHW56ievkR27zp+/Ts07aB5iohB3CFMfQHXOEd87G2w7j+AAojF1hpU3vicsHmffOM3wvYGEiXYWgM7s1hsxYQtCqpEe1k2wq5gZxexs4v7N42Fz7oE3y+v1HOFKv1Hy2SdVf4BnlIpDjqxOdoAAAAASUVORK5CYII=)](https://docs-cortex.paloaltonetworks.com/viewer/attachment/5CAbsl8idaK8R43ZLhoTOw/pGUex5j8fb50MJRq0seibw-5CAbsl8idaK8R43ZLhoTOw)) indicates the task requires manual inputs.
+    A user icon ( [![user\_icon.png](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH6QEcCjYkYrjRDwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAACw0lEQVQ4ja2Tz29UVRTHP+fe9+6bEehMW4hI1IRMW4YU40JDIMbEhSt3JEYXIq7cuHbBhiVhZViY8C8Q/wJNXLGAoEL9kWjCggabaqcj1A5lZvre3HePizdl5nVaY8CTvJdzc879fr/nm3NFVTWEHEKGyTugKaA8a3S6hiiEACHF+PZzge2Ecw6jwSN5538BBMjznAgU0XT/Lg0FoQJC8RPZOewHyt4qNaDpJv6vJfzaLUKvjbgp7Owp4pfOYg6+AibaE1SytK9xWNtVyfAPf6K/9AX5+h2wMWIcaI7mKebAMdzJC7i59zFJvXT14UZajF8WOMC3btO7dRHttpDqYZLmeVzzE8LGr2z/eBXfvkv685fo9iMqr32GuEMjPctfYUIYB1X0ySrpL9fQbgsAW2uQnDiPSWpEL57GNc4VndkWgwdfM/j9m6HvQwRVjOoIVH2Kby/h178f8RiH7IxoIrCVp6WwtYJfu0notcZkgSnN7rv49t2yv75H6K0PSftotlm2f2uF0FkeU8oupWFA6LZKl8KTPxisfFvknfsMVm+U6pptEdIRkQJGdq+bsaPcVpDKzHAvgZCD2MIOMU8tEROP02DGhCK2gq3PF3l8kPjVd6mevUzS/LjgOPI6L7x1heTUp8WeimAqs0j1yBiolD2V+ADR0TOIq2FmmlTfvIidXii8HH7ipkjmP8QtfIDEU9j6PLZ2vDRs+UmYGDvdJD7+Hvnf9xj8eROZ8AfQQHj8ADtzkujld5Bk+l9AAVM9TNK8QP/OFbZ/uIxmjydBbYKtz+FOfER09MxEefLxisHW56ievkR27zp+/Ts07aB5iohB3CFMfQHXOEd87G2w7j+AAojF1hpU3vicsHmffOM3wvYGEiXYWgM7s1hsxYQtCqpEe1k2wq5gZxexs4v7N42Fz7oE3y+v1HOFKv1Hy2SdVf4BnlIpDjqxOdoAAAAASUVORK5CYII=)](https://docs-cortex.paloaltonetworks.com/viewer/attachment/5CAbsl8idaK8R43ZLhoTOw/pGUex5j8fb50MJRq0seibw-5CAbsl8idaK8R43ZLhoTOw)) indicates the task requires manual input.
 7. Connect the tasks you've added in their logical order by dragging and dropping a wire from one task to another.
 8. Save the playbook.
 
@@ -89,25 +99,21 @@ How to create a Data Collection task
 
 <details>
 
-<summary>Data collection task examples</summary>
+<summary>View Cortex XSIAM data collection task examples</summary>
 
 Stand-alone question with a single-select answer
 
-In this example, we create a stand-alone question, with a single-select answer. This question is not mandatory. If we selected the First option is default checkbox, the reply option "0" is the default value in the answer field.
+In this example, we create a stand-alone question with a single-select answer. This question is not mandatory. If we select the **First option is default** checkbox, the reply option "0" is the default value in the answer field.
 
-[![data-collection-eg.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/htceTUvEISzoCM_GHAJ0wQ-5CAbsl8idaK8R43ZLhoTOw/content?v=5d88ad644d2dee03\&Ft-Calling-App=ft/turnkey-portal)](https://docs-cortex.paloaltonetworks.com/viewer/attachment/5CAbsl8idaK8R43ZLhoTOw/htceTUvEISzoCM_GHAJ0wQ-5CAbsl8idaK8R43ZLhoTOw)
+![data-collection-eg.png](https://paloaltonetworks.fluidtopics.net/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/htceTUvEISzoCM_GHAJ0wQ-5CAbsl8idaK8R43ZLhoTOw/content?v=5d88ad644d2dee03\&Ft-Calling-App=ft/turnkey-portal)
 
-Field-based using a custom field
-
-In this example, we create a question based on a custom issue field that is marked as mandatory. You can add a question based on a field. To add a field, click the Add Question based on field.
-
-[![data-collection-eg2.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/owPib8vbnfnEAwSEeUJYew-5CAbsl8idaK8R43ZLhoTOw/content?v=6c08233e427661e6\&Ft-Calling-App=ft/turnkey-portal)](https://docs-cortex.paloaltonetworks.com/viewer/attachment/5CAbsl8idaK8R43ZLhoTOw/owPib8vbnfnEAwSEeUJYew-5CAbsl8idaK8R43ZLhoTOw)
+In this example, create a question based on a custom issue field that is marked as mandatory. You can add a question based on a field. To add a field, click the **Add Question based on field**
 
 </details>
 
 <details>
 
-<summary>Configure communication task authentication</summary>
+<summary>Configure Cortex XSIAM communication task authentication</summary>
 
 When sending a form in a communication task, you can configure user authentication to ensure only authorized users gain access to the form.
 
@@ -116,7 +122,9 @@ The authorized users are usually external users not in Cortex XSIAM, and they wi
 Set up playbook communication task authentication
 
 1. Set up your SSO if it is not already configured. See [Authenticate users using SSO](../../../../../../onboard-cortex-xsiam/deployment-steps/set-up-authentication/authenticate-users-using-sso) for more details.
-2.  In the Task details of your playbook communication task, check Require users to authenticate to have your SAML or AD authenticate the recipient before allowing them access to the form.
+2.  In the Task details of your playbook communication task, check **Require users to authenticate** to have your SAML or AD authenticate the recipient before allowing them access to the form.
+
+    ![playbook-comm-task-authenticate-2.png](https://paloaltonetworks.fluidtopics.net/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/5BYS3karytnXCEKur3S59w-5CAbsl8idaK8R43ZLhoTOw/content?v=d913ac2050c4b630\&Ft-Calling-App=ft/turnkey-portal)
 
     [![playbook-comm-task-authenticate-2.png](https://docs-cortex.paloaltonetworks.com/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/5BYS3karytnXCEKur3S59w-5CAbsl8idaK8R43ZLhoTOw/content?v=d913ac2050c4b630\&Ft-Calling-App=ft/turnkey-portal)](https://docs-cortex.paloaltonetworks.com/viewer/attachment/5CAbsl8idaK8R43ZLhoTOw/5BYS3karytnXCEKur3S59w-5CAbsl8idaK8R43ZLhoTOw)
 
@@ -124,7 +132,7 @@ Set up playbook communication task authentication
 
 <details>
 
-<summary><strong>Configure NGINX as a reverse proxy to access data collection links in emails</strong></summary>
+<summary>Configure NGINX for Cortex XSIAM data collection email links</summary>
 
 If you are using NGINX as a reverse proxy with SSL termination, configure the NGINX configuration file to enable accessing data collection links in emails.
 

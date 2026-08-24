@@ -1,3 +1,7 @@
+---
+description: Configure scanning settings for supported services in Cortex XSIAM.
+---
+
 # How to configure the scanning settings for supported services
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: Plan Alibaba Cloud security capabilities for Cortex XSIAM onboarding.
+---
+
 # Alibaba security capabilities and deployment planning
 
 ## **Security capabilities and deployment planning**

@@ -1,5 +1,7 @@
 ---
-description: Install, deploy and configure Cortex XSIAM engines.
+description: >-
+  Install and configure a Cortex XSIAM engine for integration and automation
+  workloads.
 ---
 
 # Install an engine

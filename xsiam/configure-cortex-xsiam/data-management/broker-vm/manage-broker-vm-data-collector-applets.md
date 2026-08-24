@@ -1,3 +1,7 @@
+---
+description: Manage data collector applets on Cortex XSIAM Broker VMs.
+---
+
 # Manage Broker VM data collector applets
 
 Learn more about managing your Broker VM data collector applets from the Broker VMs page.

@@ -1,3 +1,7 @@
+---
+description: Use Aha data with Cortex XSIAM.
+---
+
 # Aha
 
 {% hint style="warning" %}

@@ -1,3 +1,7 @@
+---
+description: Configure this scanner for Cortex XSIAM.
+---
+
 # Activate Cortex Network Scanner
 
 The Cortex Network Scanner identifies and analyzes devices, services, and vulnerabilities in your internal network. It discovers responsive hosts within specified IP ranges, including on-premises and cloud environments. The scanner supports both non-authenticated and authenticated vulnerability scanning, with authenticated scans providing deeper insights through credential-based access. Scan results are seamlessly integrated into the inventory and vulnerability management views in Cortex XSIAM, providing a centralized view of all discovered assets, vulnerabilities, and issues.

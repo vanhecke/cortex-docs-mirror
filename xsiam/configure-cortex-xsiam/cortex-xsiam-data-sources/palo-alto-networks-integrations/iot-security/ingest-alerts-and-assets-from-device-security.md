@@ -1,3 +1,7 @@
+---
+description: Ingest Device Security alerts and assets into Cortex XSIAM.
+---
+
 # Ingest alerts and assets from Device Security
 
 The Palo Alto Networks Device Security solution discovers unmanaged devices, detects behavioral anomalies, recommends policy based on risk, and automates enforcement without the need for additional sensors or infrastructure.

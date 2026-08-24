@@ -1,3 +1,7 @@
+---
+description: Configure Attack Surface Management data for Cortex XSIAM.
+---
+
 # Cortex Attack Surface Management
 
 {% hint style="warning" %}

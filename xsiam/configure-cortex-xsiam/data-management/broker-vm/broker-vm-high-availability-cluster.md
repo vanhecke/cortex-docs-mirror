@@ -1,3 +1,7 @@
+---
+description: Configure highly available Broker VM clusters for Cortex XSIAM.
+---
+
 # Broker VM High Availability Cluster
 
 Learn more about creating Broker VMs in a High Availability Cluster

@@ -1,3 +1,7 @@
+---
+description: Use XDR Collectors to collect data for Cortex XSIAM.
+---
+
 # XDR Collectors
 
 {% hint style="info" %}

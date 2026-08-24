@@ -1,3 +1,7 @@
+---
+description: Configure Palo Alto Networks Cortex data for Cortex XSIAM.
+---
+
 # Palo Alto Networks Cortex
 
 {% hint style="warning" %}

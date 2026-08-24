@@ -1,3 +1,9 @@
+---
+description: >-
+  Create custom Cortex MCP Server tools with OpenAPI or Python to extend Cortex
+  XSIAM investigations, case management, and issue workflows.
+---
+
 # Create custom Cortex MCP server tools
 
 You can build your own tools using OpenAPI or Python to manage cases, handle issues, and conduct investigations. More detailed information can be found in the README file located in the `src/usecase` directory. Tools are based on Cortex API endpoints.

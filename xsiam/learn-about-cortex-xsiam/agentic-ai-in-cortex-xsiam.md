@@ -1,8 +1,8 @@
 ---
 description: >-
-  Use the Cortex Agentic Assistant to investigate cases, perform threat hunting,
-  and create scripts. Embed and run LLM prompts in playbooks. View AI case
-  summaries.
+  Use the Cortex Agentic Assistant in Cortex XSIAM to investigate cases, perform
+  threat hunting, and create scripts. Embed and run LLM prompts in playbooks.
+  View AI case summaries.
 ---
 
 # Agentic AI in Cortex XSIAM

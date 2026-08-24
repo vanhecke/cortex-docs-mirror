@@ -1,3 +1,7 @@
+---
+description: Download a lookup dataset as JSON from Cortex XSIAM.
+---
+
 # Download JSON file of lookup dataset
 
 {% hint style="warning" %}

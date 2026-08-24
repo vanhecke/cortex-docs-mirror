@@ -1,3 +1,7 @@
+---
+description: Create and manage lookup datasets in Cortex XSIAM.
+---
+
 # Lookup datasets
 
 {% hint style="warning" %}

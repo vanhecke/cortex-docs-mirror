@@ -1,3 +1,7 @@
+---
+description: Classify integration events for issue types in Cortex XSIAM.
+---
+
 # Classify events using a classifier for issue types
 
 When an integration fetches issues, it populates the rawJSON object in the issue object. The rawJSON object contains all of the attributes for the event. For example, source, when the event was created, the priority that was designated by the integration, etc. When classifying the event, you want to select an attribute that can determine the event type.

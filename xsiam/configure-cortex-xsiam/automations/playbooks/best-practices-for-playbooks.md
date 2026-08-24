@@ -1,3 +1,9 @@
+---
+description: >-
+  Follow Cortex XSIAM playbook best practices for reliable, maintainable
+  automation.
+---
+
 # Best practices for playbooks
 
 Use these practices to build clear, efficient, and reliable playbooks.

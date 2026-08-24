@@ -1,3 +1,7 @@
+---
+description: Configure XDR Collector profiles for Cortex XSIAM.
+---
+
 # How to configure XDR Collector profiles
 
 {% hint style="info" %}
@@ -108,4 +112,3 @@ You can configure automatic upgrades for XDR Collector releases. By default, thi
    * Launch the new policy wizard from **XDR Collectors** → **Policies** → **XDR Collectors Policies**.
 
 </details>
-

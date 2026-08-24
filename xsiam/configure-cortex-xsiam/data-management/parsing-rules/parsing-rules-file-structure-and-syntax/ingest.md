@@ -1,3 +1,7 @@
+---
+description: Define INGEST sections in Cortex XSIAM Parsing Rules.
+---
+
 # INGEST
 
 {% hint style="warning" %}

@@ -1,3 +1,7 @@
+---
+description: Manage Kubernetes Connector instances in Cortex XSIAM.
+---
+
 # Manage Kubernetes Connector instances
 
 1. Navigate to Settings → Data Sources & Integrations.

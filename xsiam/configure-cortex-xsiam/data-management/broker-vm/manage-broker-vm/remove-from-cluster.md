@@ -1,3 +1,7 @@
+---
+description: Remove a Broker VM from a Cortex XSIAM cluster.
+---
+
 # Remove from Cluster
 
 Learn more about removing a Broker VM node from a high availability cluster.

@@ -1,7 +1,5 @@
 ---
-description: >-
-  Run a script on an engine or load-balancing group to distribute the workload
-  and improve performance.
+description: Run Cortex XSIAM automation scripts on an engine or load-balancing group.
 ---
 
 # Run a script using an engine

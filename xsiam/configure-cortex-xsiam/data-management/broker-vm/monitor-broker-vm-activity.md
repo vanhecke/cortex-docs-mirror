@@ -1,3 +1,7 @@
+---
+description: Monitor Broker VM activity in Cortex XSIAM.
+---
+
 # Monitor Broker VM activity
 
 Learn more about the monitored Cortex XSIAM Broker VM activities.

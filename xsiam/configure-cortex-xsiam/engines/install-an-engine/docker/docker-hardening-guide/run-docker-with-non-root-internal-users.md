@@ -1,3 +1,9 @@
+---
+description: >-
+  Run Docker with non-root internal users to strengthen Cortex XSIAM engine
+  security.
+---
+
 # Run Docker with non-root internal users
 
 For additional security isolation, we recommend to run Docker containers as non-root internal users. This follows the principle of least privilege.

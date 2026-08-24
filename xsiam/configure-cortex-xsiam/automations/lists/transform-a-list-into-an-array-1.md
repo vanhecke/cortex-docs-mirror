@@ -1,3 +1,7 @@
+---
+description: Transform a Cortex XSIAM list into an array for automation workflows.
+---
+
 # Transform a list into an array
 
 Create a transformer to split a list into an array, add or edit a task in a playbook, or map an instance.

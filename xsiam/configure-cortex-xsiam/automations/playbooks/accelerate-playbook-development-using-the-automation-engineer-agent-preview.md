@@ -1,14 +1,18 @@
+---
+description: >-
+  Learn how to use the preview Automation Engineer agent in Cortex XSIAM to
+  create, update, and troubleshoot playbooks with natural language.
+---
+
 # Accelerate playbook development using the Automation Engineer agent (preview)
 
-You can now use the Automation Engineer agent in the Cortex Agentic Assistant to develop playbooks through an interactive, natural language experience (preview).
+Use the preview Automation Engineer agent in the Cortex XSIAM Agentic Assistant to create, update, and troubleshoot playbooks with natural language.
 
 {% hint style="info" %}
-### Note
-
 This feature is not enabled by default. To request access, contact Cortex Product Management.
 {% endhint %}
 
-Automation Engineer capabilities include:
+### Automation Engineer agent capabilities in Cortex XSIAM
 
 * Creating playbooks\
   Generate a functional playbook for your use case from a natural language prompt.\
@@ -26,14 +30,12 @@ Automation Engineer capabilities include:
   * "How do I use the AgentiX SDK to add a custom header to the outgoing email task in this workflow?"
 
 {% hint style="info" %}
-### Note
-
 The Automation Engineer agent is available with the Cortex Agentic Assistant, for users with playbook view/edit permissions and Interact with agent enabled.
 
 For more information, see [Agentic Assistant role-based access control](../../configure-the-cortex-agentic-assistant-1/agentic-assistant-role-based-access-control).
 {% endhint %}
 
-**How to use the Automation Engineer agent**
+### Use the Automation Engineer agent in Cortex XSIAM
 
 1. Navigate to **Investigation & Response** → **Automation** → **Playbooks**.
 2. Create a new playbook or open an existing one to enter the Playbook Editor.
@@ -58,14 +60,14 @@ For more information, see [Agentic Assistant role-based access control](../../co
 7. Click Use this revision to push the AI-generated logic to the Playbook Editor.\
    Revisions can only be applied while in Edit Mode. If you have unsaved manual changes, the system prompts you to confirm before overwriting them.
 
-### Track AI-assisted development
+### Track AI-assisted Cortex XSIAM playbook development
 
 To help maintain visibility into which automations were created or modified by AI:
 
 * Any playbook generated or significantly modified by the agent is automatically assigned the **AI Assisted** tag.
 * The Agentic Assistant maintains a history of your conversation and revisions, allowing you to compare versions or revert to an earlier state.
 
-### Best practices
+### Automation Engineer agent best practices
 
 You don't need a perfect prompt on the first try. Use iterative feedback to fine-tune your playbook.
 

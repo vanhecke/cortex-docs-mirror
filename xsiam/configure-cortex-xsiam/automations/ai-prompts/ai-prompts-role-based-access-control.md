@@ -1,5 +1,5 @@
 ---
-description: Manage AI prompt permissions with role-based access control.
+description: Manage Cortex XSIAM AI prompt permissions using role-based access control.
 ---
 
 # AI prompts role-based access control

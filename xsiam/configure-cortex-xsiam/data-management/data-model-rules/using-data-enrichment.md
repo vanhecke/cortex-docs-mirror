@@ -1,3 +1,7 @@
+---
+description: Use data enrichment with Cortex XSIAM Data Model Rules.
+---
+
 # Using data enrichment
 
 {% hint style="warning" %}

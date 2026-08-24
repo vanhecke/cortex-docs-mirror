@@ -1,3 +1,7 @@
+---
+description: Manage Cortex XSIAM autonomous playbooks and their automation settings.
+---
+
 # Manage autonomous playbooks
 
 While autonomous playbooks execute complex security operations, they provide a streamlined user experience. Autonomous playbooks are automatically updated and cannot be edited, duplicated, deleted, or downloaded. You can view the high-level structure of the playbook and enable or disable it.

@@ -1,3 +1,7 @@
+---
+description: Manually connect a cloud instance to Cortex XSIAM.
+---
+
 # Manually connect a cloud instance
 
 When onboarding your cloud instance using the onboarding wizard, after you download the authentication template and execute it in your cloud environment, notification is sent to Cortex Cloud and a cloud instance is created. This connection between your cloud environment and the Cortex Cloud cloud instance typically occurs automatically.

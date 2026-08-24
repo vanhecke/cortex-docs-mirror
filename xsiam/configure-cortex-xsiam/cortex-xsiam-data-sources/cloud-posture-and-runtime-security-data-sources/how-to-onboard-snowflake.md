@@ -1,5 +1,5 @@
 ---
-description: Add Snowflake as a Cortex Cloud Data Security data source.
+description: Add Snowflake as a Cortex XSIAM data source.
 ---
 
 # How to onboard Snowflake
@@ -7,8 +7,6 @@ description: Add Snowflake as a Cortex Cloud Data Security data source.
 ## How to onboard Snowflake
 
 {% hint style="info" %}
-### Notice
-
 This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
 {% endhint %}
 

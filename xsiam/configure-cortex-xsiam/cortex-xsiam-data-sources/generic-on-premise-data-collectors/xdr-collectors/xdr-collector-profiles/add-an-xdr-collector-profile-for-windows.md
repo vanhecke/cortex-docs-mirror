@@ -1,3 +1,7 @@
+---
+description: Add a Windows XDR Collector profile for Cortex XSIAM.
+---
+
 # Add an XDR Collector profile for Windows
 
 {% hint style="info" %}

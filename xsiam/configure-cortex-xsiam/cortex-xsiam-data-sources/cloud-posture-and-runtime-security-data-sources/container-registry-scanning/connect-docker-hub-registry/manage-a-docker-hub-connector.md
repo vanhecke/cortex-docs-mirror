@@ -1,3 +1,7 @@
+---
+description: Manage the Docker Hub registry connector in Cortex XSIAM.
+---
+
 # Manage a Docker Hub connector
 
 After you add a **Docker Hub** connector, you can modify the connector settings and configure the scanning scope to control which images are scanned in the connected registry.

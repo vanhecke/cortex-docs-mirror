@@ -1,3 +1,7 @@
+---
+description: Configure this collector for Cortex XSIAM.
+---
+
 # Activate FTP Collector
 
 The Broker VM provides a FTP Collector applet that enables you to monitor and collect logs from files and folders via FTP, FTPS, and SFTP directly to your log repository for query and visualization purposes. A maximum file size of 500 MB is supported. After you activate the FTP Collector applet on a Broker VM in your network, you can collect files as datasets (`<Vendor>_<Product>_raw`) by defining the following.

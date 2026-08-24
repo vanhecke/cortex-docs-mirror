@@ -1,3 +1,7 @@
+---
+description: Ingest next-generation firewall data into Cortex XSIAM.
+---
+
 # Next Generation Firewall
 
 You can configure collecting Next-Generation Firewall logs and data using an integration configured in Data Sources & Integrations or from Marketplace:

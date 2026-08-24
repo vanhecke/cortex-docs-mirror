@@ -1,3 +1,7 @@
+---
+description: Configure Network Mapper for Cortex XSIAM.
+---
+
 # Activate Network Mapper
 
 {% hint style="info" %}

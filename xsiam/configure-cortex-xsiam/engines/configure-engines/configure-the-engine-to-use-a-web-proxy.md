@@ -1,3 +1,7 @@
+---
+description: Configure a Cortex XSIAM engine to connect through a web proxy.
+---
+
 # Configure the engine to use a web proxy
 
 Proxy settings can be configured in an engine by adding them as an engine configuration.

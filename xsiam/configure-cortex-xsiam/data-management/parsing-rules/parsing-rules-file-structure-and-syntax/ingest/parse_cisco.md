@@ -1,3 +1,7 @@
+---
+description: Use `parse_cisco` in Cortex XSIAM Parsing Rules.
+---
+
 # parse\_cisco
 
 ## **Syntax**

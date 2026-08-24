@@ -1,3 +1,7 @@
+---
+description: Inventory AWS resources for Cortex XSIAM cloud onboarding.
+---
+
 # AWS resource inventory
 
 The onboarding process creates AWS resources in the onboarding account (the management account for Organization or Organizational Unit scope). The exact set of resources depends on the onboarding scope and the security capabilities selected during the process. The resources fall into three categories: base resources (created for every cloud instance), scanning resources (created based on selected capabilities), and log collection resources (created when audit log collection is enabled).

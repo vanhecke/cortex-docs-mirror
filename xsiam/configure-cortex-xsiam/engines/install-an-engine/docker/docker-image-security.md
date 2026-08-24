@@ -1,5 +1,5 @@
 ---
-description: Secure, harden, and troubleshoot Docker images and containers.
+description: Secure and harden Docker images and containers used by Cortex XSIAM engines.
 ---
 
 # Docker image security

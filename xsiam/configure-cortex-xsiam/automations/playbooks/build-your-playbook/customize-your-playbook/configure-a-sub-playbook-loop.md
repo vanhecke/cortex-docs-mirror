@@ -1,3 +1,7 @@
+---
+description: Configure Cortex XSIAM sub-playbook loops to repeat workflow tasks.
+---
+
 # Configure a sub-playbook loop
 
 Looping uses sub-playbooks to create loops within the main playbook. When running the loop, the values are calculated based on the context data for the sub-playbook and not the main playbook.
@@ -29,7 +33,7 @@ Consider the following when adding a loop:
        | Max iterations  | <p>The number of times the loop should run.</p><div data-gb-custom-block data-tag="hint" data-style="warning" class="hint hint-warning"><p>Balance the number of iterations and the interval to avoid overloading the server.</p></div> |
        | Sleep           | <p>The number of seconds to wait between iterations.</p><p>recommends that you balance between the number of iterations and the number of seconds to wait between iterations so you don't overload the server.</p>                      |
    * For each input: Runs the sub-playbook based on defined inputs. Enter the number of seconds to wait between iterations.
-   * Choose Loop automation: Select the automation from the drop-down list to define when to exit the loop. The parameters that appear are applicable to the selected automation.
+   * Choose Loop automation: Select the automation from the drop-down list to define when to exit the loop. The parameters that appear apply to the selected automation.
 6. To save the changes, click OK.
 
 #### **Example: Exit looping after running for all inputs**

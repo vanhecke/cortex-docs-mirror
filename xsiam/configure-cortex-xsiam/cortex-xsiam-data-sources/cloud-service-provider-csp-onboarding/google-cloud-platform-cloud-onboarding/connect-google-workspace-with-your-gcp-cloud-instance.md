@@ -1,3 +1,7 @@
+---
+description: Connect Google Workspace to Cortex XSIAM through your GCP instance.
+---
+
 # Connect Google Workspace with your GCP cloud instance
 
 To gain full visibility into GCP permissions and identity relationships, highlight risks, and offer proper remediation, Cortex XSIAM must ingest user, group, and group membership data from your Google Workspace. You need to create a custom role in Google Workspace, assign it specific privileges, and then assign your Cortex XSIAM service account to this newly created role.

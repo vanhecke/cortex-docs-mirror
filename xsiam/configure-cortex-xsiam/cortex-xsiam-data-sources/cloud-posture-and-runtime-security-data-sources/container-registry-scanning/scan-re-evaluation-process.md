@@ -1,3 +1,7 @@
+---
+description: Understand how Cortex XSIAM re-evaluates container registry scan results.
+---
+
 # Scan re-evaluation process
 
 After the initial scan has been completed, the scan re-evaluation process ensures that container images remain secure over time without requiring a full re-scan.

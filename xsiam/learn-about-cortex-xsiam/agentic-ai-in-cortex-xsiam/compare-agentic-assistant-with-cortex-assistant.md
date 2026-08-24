@@ -1,5 +1,7 @@
 ---
-description: Feature comparison between Cortex Agentic Assistant and Cortex Assistant.
+description: >-
+  Feature comparison between Cortex Agentic Assistant and Cortex Assistant in
+  Cortex XSIAM.
 ---
 
 # Compare Agentic Assistant with Cortex Assistant

@@ -1,3 +1,9 @@
+---
+description: >-
+  Monitor data ingestion health using metrics, custom rules, and built-in issue
+  detection in Cortex XSIAM
+---
+
 # Monitor data ingestion health (BETA)
 
 Cortex XSIAM collects granular data ingestion metrics that provide an insight into the data ingestion pipeline, and identify disruptions in data collection. With these metrics you can trace data collection from a specific source, and see a breakdown by data source attributes such as Collector Name and Final Reporting Device.
@@ -6,7 +12,7 @@ You can use these metrics in Cortex Query Language (XQL) queries to investigate 
 
 In addition, Cortex XSIAM has a built-in data ingestion monitoring and issues mechanism that monitors the availability and overall health of data ingestion in your environment, and triggers ingestion health issues if disruptions occur.
 
-#### BETA feature limitations
+#### BETA feature limitations in Cortex XSIAM
 
 The data ingestion monitoring and issue mechanism is currently a **BETA** feature. Note the following known issues and limitations:
 

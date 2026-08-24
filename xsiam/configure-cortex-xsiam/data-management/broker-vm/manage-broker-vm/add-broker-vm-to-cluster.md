@@ -1,3 +1,7 @@
+---
+description: Add a Cortex XSIAM Broker VM to a cluster.
+---
+
 # Add Broker VM to cluster
 
 Learn more about adding a Broker VM to a high availability cluster.

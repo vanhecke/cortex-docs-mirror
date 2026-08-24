@@ -1,3 +1,7 @@
+---
+description: Ingest Cisco ASA and AnyConnect logs into Cortex XSIAM.
+---
+
 # Ingest logs from Cisco ASA firewalls and AnyConnect
 
 If you use Cisco ASA firewalls or Cisco AnyConnect VPN, you can take advantage of Cortex XSIAM investigation and detection capabilities by forwarding your firewall and AnyConnect VPN logs to Cortex XSIAM. This enables Cortex XSIAM to examine your network traffic to detect anomalous behavior. Cortex XSIAM can use Cisco ASA firewall logs and AnyConnect VPN logs as the sole data source, but can also use Cisco ASA firewall logs in conjunction with Palo Alto Networks firewall logs. For additional endpoint context, you can also use Cortex XSIAM to collect and alert on endpoint data.

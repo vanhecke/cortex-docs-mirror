@@ -1,7 +1,7 @@
 ---
 description: >-
-  Automation exclusion policies prevent commands and scripts from performing
-  remediation on critical assets.
+  Protect critical Cortex XSIAM assets from automated remediation using
+  exclusion policies.
 ---
 
 # Automation Exclusion Center
@@ -19,8 +19,6 @@ When a playbook task contains a command or script that is included in an automat
 To enable an automation exclusion policy, add critical assets to a list. Each policy uses one or more lists to exclude assets from remediation. By default, all policies are enabled, but lists are empty until assets are added to the list.
 
 {% hint style="info" %}
-### Note
-
 By default, all users have read and edit permissions to lists. When creating a list of critical assets, we recommend limiting the read and edit permissions to specific roles.
 {% endhint %}
 

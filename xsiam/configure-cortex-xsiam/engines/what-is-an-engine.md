@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn what a Cortex XSIAM engine is and how it securely runs integrations and
+  automation.
+---
+
 # What is an engine?
 
 An engine is a proxy server application that is installed on a remote machine and enables communication between the remote machine and the Cortex XSIAM tenant. You can run playbooks, scripts, commands, and integrations on the remote machine, and the results are returned to the tenant.

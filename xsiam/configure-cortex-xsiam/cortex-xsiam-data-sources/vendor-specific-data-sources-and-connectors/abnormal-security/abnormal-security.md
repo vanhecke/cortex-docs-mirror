@@ -1,3 +1,7 @@
+---
+description: Use Abnormal Security data with Cortex XSIAM.
+---
+
 # Abnormal Security
 
 {% hint style="warning" %}

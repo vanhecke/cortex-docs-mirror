@@ -1,3 +1,7 @@
+---
+description: Use Claude automation and collection with Cortex XSIAM.
+---
+
 # Claude Automation and Collection
 
 {% hint style="warning" %}

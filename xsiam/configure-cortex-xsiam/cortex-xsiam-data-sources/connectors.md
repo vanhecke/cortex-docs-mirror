@@ -1,3 +1,7 @@
+---
+description: Configure connectors that collect and enrich data in Cortex XSIAM.
+---
+
 # Connectors
 
 Connectors represent the new, strategic approach for integrating third-party services and data sources into Cortex XSIAM. A connector consolidates all of a vendor's security capabilities, such as log collection, automation and remediation, and posture management, into a single, uniquely named entry with a guided configuration wizard.

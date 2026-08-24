@@ -1,3 +1,7 @@
+---
+description: Ingest PAN PSIRT advisories into Cortex XSIAM.
+---
+
 # PAN PSIRT Advisories
 
 {% hint style="warning" %}

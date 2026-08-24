@@ -1,3 +1,7 @@
+---
+description: Install an XDR Collector on Linux for Cortex XSIAM.
+---
+
 # Install the XDR Collector installation package for Linux
 
 You can install the XDR Collector using three available packages for a Linux installation: Linux RPM, Linux DEB, and Linux SH. You can install the XDR Collector package on any Linux server, including a physical or virtual machine, and as temporary sessions.

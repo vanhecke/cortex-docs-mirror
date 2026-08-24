@@ -1,3 +1,7 @@
+---
+description: Monitor Cortex XSIAM Broker VM metrics with Prometheus.
+---
+
 # Monitor Broker VM using Prometheus
 
 Learn more on monitoring the Broker VM using Prometheus.

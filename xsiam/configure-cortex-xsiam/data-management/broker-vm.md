@@ -1,3 +1,7 @@
+---
+description: Manage Broker VMs that collect and forward data to Cortex XSIAM.
+---
+
 # Broker VM
 
 Set up a Broker VM to establish a secure connection in which you can route your endpoints, and collect and forward logs and files for analysis.

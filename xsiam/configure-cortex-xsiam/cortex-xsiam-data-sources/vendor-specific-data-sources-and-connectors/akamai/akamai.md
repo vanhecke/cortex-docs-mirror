@@ -1,3 +1,7 @@
+---
+description: Use Akamai data with Cortex XSIAM.
+---
+
 # Akamai
 
 {% hint style="warning" %}

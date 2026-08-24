@@ -1,3 +1,7 @@
+---
+description: Interpret HTTP POST responses when importing Cortex XSIAM archived data.
+---
+
 # Success and failure code responses to your HTTP POST requests
 
 The following table provides the various success and failure code responses to your HTTP POST requests, which can help you troubleshoot any problems with your HTTP collector configuration.

@@ -1,3 +1,7 @@
+---
+description: Understand Alibaba Cloud authentication for Cortex XSIAM onboarding.
+---
+
 # Alibaba Cloud security model and authentication
 
 Cortex XSIAM implements a defense-in-depth security model built on the principle of least privilege. Every permission granted to Cortex XSIAM is read-only and has a clear purpose. This section describes the security principles, authentication mechanisms, and operational safeguards that protect your Alibaba Cloud environment.

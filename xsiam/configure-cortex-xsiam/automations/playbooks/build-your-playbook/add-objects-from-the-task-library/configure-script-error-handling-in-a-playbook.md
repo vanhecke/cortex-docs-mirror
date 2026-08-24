@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure script error handling in Cortex XSIAM playbooks to manage task
+  failures.
+---
+
 # Configure script error handling in a playbook
 
 You can determine how the playbook behaves if there are script errors during execution.
@@ -20,7 +26,7 @@ Use the **`GetErrorsFromEntry`** script (part of the Common Scripts Pack) to che
 
 When errors are created, they are added to co**ntext under `task.id.error`.**
 
-**How to set up error handling in your playbook**
+### **How to set up error handling in your playbook**
 
 1. In a playbook, edit a task or create a task from the Task Library.
 2.  In the Task Details pane, set the Task Type to either Standard or Conditional.

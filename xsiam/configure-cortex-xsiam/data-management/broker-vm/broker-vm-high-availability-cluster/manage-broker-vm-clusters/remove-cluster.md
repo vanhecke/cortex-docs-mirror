@@ -1,3 +1,7 @@
+---
+description: Remove a Cortex XSIAM Broker VM cluster.
+---
+
 # Remove cluster
 
 Learn more about removing a high availability cluster.

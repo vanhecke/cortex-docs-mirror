@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Broker VM configuration, capacity, updates, and clusters in Cortex
+  XSIAM.
+---
+
 # Manage Broker VM
 
 After you configure the Broker VMs, you can manage these brokers from the Cortex XSIAM management console in the Broker VMs page.

@@ -1,3 +1,7 @@
+---
+description: Change the Docker installation folder on hosts running Cortex XSIAM engines.
+---
+
 # Change the Docker Installation folder
 
 The **`/var/lib/docker/`** folder is the default Docker folder for Ubuntu, Fedora, and Deblan in a standard engine installation, used to store container images and logs.

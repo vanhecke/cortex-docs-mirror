@@ -1,5 +1,5 @@
 ---
-description: Schedule a playbook to run at a specific time
+description: Schedule a Cortex XSIAM playbook job to run at a specific time.
 ---
 
 # Create a time-triggered job
@@ -24,7 +24,7 @@ A scheduled job automatically opens an internal investigation container to run i
 
     You can configure the recurring job using a cron expression. To do so, after selecting the **Recurring** checkbox, click **Switch to Cron view** and enter the expression. For help defining the cron expression, click **Show cron examples** after switching to cron view.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>To view a human-readable description of a cron schedule for an existing job, click <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-d6f550520d22a98972bdf1be8edcdbff82082975%2F0d46ae791454ea7d03c60c4132363fd71fa07f01a5fa8a5d982972a170b121a5.png?alt=media" alt="settings-wheel.png"> and select <strong>Job Schedule</strong> from the available columns.</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>To view a human-readable description of a cron schedule for an existing job, click <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-d6f550520d22a98972bdf1be8edcdbff82082975%2F0d46ae791454ea7d03c60c4132363fd71fa07f01a5fa8a5d982972a170b121a5.png?alt=media" alt="settings-wheel.png" data-size="line"> and select <strong>Job Schedule</strong> from the available columns.</p></div>
 4. If you do not want the job to repeat, select the **date and time** for the job to run.
 5.  In the **BASIC INFORMATION**, section, add relevant time-triggered job parameters from the following:
 

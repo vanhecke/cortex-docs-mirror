@@ -1,3 +1,7 @@
+---
+description: Manage high availability Broker VM clusters in Cortex XSIAM.
+---
+
 # Manage Broker VM clusters
 
 Learn more about managing your broker VM clusters from the Clusters tab of the Broker VMs page.

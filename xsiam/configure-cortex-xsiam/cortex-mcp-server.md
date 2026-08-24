@@ -1,5 +1,5 @@
 ---
-description: "The Cortex MCP server enables you to leverage\_Cortex's powerful capabilities directly through natural language."
+description: "The Cortex MCP server enables you to leverage\_Cortex XSIAM's powerful capabilities directly through natural language."
 ---
 
 # Cortex MCP server

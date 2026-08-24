@@ -1,3 +1,7 @@
+---
+description: Set retention periods for Cortex XSIAM lookup datasets.
+---
+
 # Set time to live for lookup datasets
 
 {% hint style="warning" %}

@@ -1,3 +1,7 @@
+---
+description: Use Cortex Internals data with Cortex XSIAM.
+---
+
 # Cortex Internals
 
 {% hint style="warning" %}

@@ -1,3 +1,7 @@
+---
+description: Configure custom certificates for secure Cortex XSIAM engine communication.
+---
+
 # Configure an engine to use custom certificates
 
 You can replace the default self-signed certificate for the engine with your own certificate.

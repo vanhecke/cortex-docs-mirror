@@ -1,3 +1,7 @@
+---
+description: Update Cortex XSIAM issue fields with playbook task results.
+---
+
 # Update issue fields with playbook tasks
 
 During the investigation, you can set and update issue fields using the **setIssue** script in a playbook task.
@@ -10,4 +14,4 @@ You initially define issue fields after the planning stage, with mapping and cla
 * There are many ﬁelds already available as part of the Common Type content pack. Before creating a new issue field, check if there is an existing ﬁeld that matches your needs.
 {% endhint %}
 
-For more information, see Update issue fields
+For more information, see [update-issue-fields](../../../../../detect-investigate-and-respond-to-threats/investigation-and-response/investigate-issues/issue-investigation-actions/update-issue-fields "mention")

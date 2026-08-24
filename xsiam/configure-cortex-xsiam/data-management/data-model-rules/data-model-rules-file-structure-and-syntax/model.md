@@ -1,3 +1,7 @@
+---
+description: Define models in Cortex XSIAM Data Model Rules.
+---
+
 # MODEL
 
 A **MODEL** section is used to define the mapping between a single dataset and the data model. The **MODEL** section is mandatory per dataset. A **RULE** section is optional, and is used to help organize the **MODEL** sections.

@@ -1,3 +1,7 @@
+---
+description: Configure this data source for Cortex XSIAM.
+---
+
 # Activate DSPM Fileshare
 
 {% hint style="info" %}

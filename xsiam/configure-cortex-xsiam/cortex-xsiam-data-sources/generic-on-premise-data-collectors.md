@@ -1,3 +1,7 @@
+---
+description: Configure generic on-premise data collectors for Cortex XSIAM.
+---
+
 # Generic on-premise data collectors
 
 You can collect data from generic on-premise data collectors that are not necessarily tied to a specific vendor, but are crucial for a wide range of log sources. The following are supported:

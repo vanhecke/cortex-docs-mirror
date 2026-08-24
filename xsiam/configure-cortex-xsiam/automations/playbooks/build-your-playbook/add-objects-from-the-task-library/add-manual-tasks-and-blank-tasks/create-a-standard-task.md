@@ -1,3 +1,7 @@
+---
+description: Create standard tasks in Cortex XSIAM playbooks to run automation steps.
+---
+
 # Create a standard task
 
 Standard tasks can be manual tasks such as manual verification to prompt an analyst to verify the severity or classification of an issue before proceeding with automated actions. They can also be automated tasks such as parsing a file or enriching indicators.

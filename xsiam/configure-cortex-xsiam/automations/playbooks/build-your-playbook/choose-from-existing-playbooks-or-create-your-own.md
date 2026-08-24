@@ -1,8 +1,12 @@
+---
+description: Reuse existing Cortex XSIAM playbooks or create playbooks for new workflows.
+---
+
 # Choose from existing playbooks or create your own
 
 Open the Investigation & Response → **Automation** → **Playbooks** page to find an existing playbook, customize it, or create a playbook.
 
-#### **Find an existing playbook**
+### Find an existing playbook in Cortex XSIAM
 
 Playbooks in your Org Repository have already been adopted by your organization and are available to run. The Playbook Catalog contains all available playbooks in the Marketplace that you can adopt into your Org Repository. You can preview before adopting.
 
@@ -22,13 +26,13 @@ Playbooks in your Org Repository have already been adopted by your organization 
 
 You can use the playbook as-is or customize it as needed.
 
-#### **Edit a playbook**
+### Edit a playbook in Cortex XSIAM
 
 From the list of playbooks in your Org repository, right-click the playbook you want to edit and select **Open in Editor**. Depending on your access level, you can also duplicate, share, change the owner, disable, download, or delete the playbook.
 
 When you adopt a playbook, it is locked, and you can only make limited changes to the playbook settings from the **Playbook Starts** task.
 
-When you adopt a playbook, tasks and sub-playbooks that require configuration appear with an red triangle and an exclamation mark, enabling you to locate and configure all necessary components.
+When you adopt a playbook, tasks and sub-playbooks that require configuration appear with a red triangle and an exclamation mark, enabling you to locate and configure all necessary components.
 
 {% hint style="info" %}
 ### Note
@@ -51,7 +55,7 @@ In the **Agentic Assistant** pane, start a conversation with the Automation Engi
 * You can view recently modified or deleted playbooks by clicking version history for all playbooks ![versionhistory.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-695013593e8557789bffe0ad41eddd7c47d61ba0%2F3241a048e028b41e16e670e937251d1e832e98edeabd915cc389cb6163d20e20.png?alt=media).
 {% endhint %}
 
-#### **Create a playbook**
+### Create a playbook in Cortex XSIAM
 
 1.  In the **Playbooks** page, click **Build New Playbook**.
 
@@ -61,22 +65,14 @@ In the **Agentic Assistant** pane, start a conversation with the Automation Engi
     A blank playbook opens in the playbook editor. You can then configure the playbook settings or add AI prompts, scripts, sub-playbooks, or tasks from the **Task Library**.
 3. In the **Agentic Assistant** pane, start a conversation with the Automation Engineer agent to create the playbook (preview), or manually create it.
 
-**Collapse and expand playbook sections**
+#### **Collapse and expand playbook sections**
 
 You can easily navigate playbooks and focus on the parts you need to work on by collapsing and expanding playbook sections. Collapsing sections provides a condensed view of the playbook flow, reducing visual clutter and enabling quick access to specific sections. Expanding sections allows you to view or edit specific parts of a playbook while keeping the rest of the playbook compact and maintaining focus on the relevant playbook details. You can also hover over a section header to highlight all tasks under the section and easily identify the section scope.
 
-To collapse and expand a section, in the **Playbooks** page, after selecting a playbook from the library or creating a new playbook and adding tasks, click ![playbook-expand-collapse.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-d103249252c445e7d6e88778e574388ebb62170a%2F9599b0c5d30fadc690439560b37750d38e0427800682dfed934ffe7040e845b7.png?alt=media) on a section header.
+To collapse and expand a section, on the **Playbooks** page, after selecting a playbook from the library or creating a new playbook and adding tasks, click <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-d103249252c445e7d6e88778e574388ebb62170a%2F9599b0c5d30fadc690439560b37750d38e0427800682dfed934ffe7040e845b7.png?alt=media" alt="playbook-expand-collapse.png" data-size="line"> on a section header.
 
 When you collapse a section, you can see the number of tasks included under the section. For example:
 
 ![playbook-collapsed-num-tasks.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-02e3bc20e4b35c7bb366db6a13f4a6e3b67b17bc%2Fbf8a781cf2e7cbf3953c5167e5fe21cb37436fdfab37d9dd4327b7d635f81e09.png?alt=media)
 
-Click ![playbook-collpase-expand-all.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-e85430f3083fd6cd482c6f70fc2878beb0e81f84%2F98406b9ac8baf6eb6d5615aed9a69b6f57a9e19a71ee566e2a91f4d56bce0d37.png?alt=media) to collapse or expand the entire playbook.
-
-<details>
-
-<summary>Show me more</summary>
-
-![playbook-collapse-expand.gif](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-a9ba96e64dbd4addc4e17e07f42a6cc5009bc8f0%2F0335cb7964695ce3de7f17d1367facb7b4f97f56e8e8cad4cb54678761555e29.gif?alt=media)
-
-</details>
+Click <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-e85430f3083fd6cd482c6f70fc2878beb0e81f84%2F98406b9ac8baf6eb6d5615aed9a69b6f57a9e19a71ee566e2a91f4d56bce0d37.png?alt=media" alt="playbook-collpase-expand-all.png" data-size="line"> to collapse or expand the entire playbook.

@@ -1,3 +1,9 @@
+---
+description: >-
+  Install a Cortex XSIAM Broker VM image on supported cloud and virtual
+  platforms.
+---
+
 # Broker VM image installations
 
 Learn more about the Broker VM image types available that are compatible with your virtual machine (VM).

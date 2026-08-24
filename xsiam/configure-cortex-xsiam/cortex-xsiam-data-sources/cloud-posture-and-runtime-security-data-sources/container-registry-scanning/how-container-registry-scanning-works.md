@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how Cortex XSIAM scans container registries and evaluates container
+  image risks.
+---
+
 # How Container Registry Scanning Works
 
 The process of container registry scanning consists of three key phases: discovery, scanning, and evaluation.

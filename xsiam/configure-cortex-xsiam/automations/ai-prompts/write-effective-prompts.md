@@ -1,14 +1,16 @@
 ---
-description: Tips for creating effective AI prompts.
+description: >-
+  Learn how to write effective AI prompts for reliable Cortex XSIAM playbook
+  automation.
 ---
 
 # Write effective prompts
 
-AI prompts enhance your playbooks with the reasoning capabilities of a Large Language Model (LLM). By adding an AI prompt, you can automate complex cognitive work such as summarizing massive raw logs, normalizing disparate data types into standard formats, and performing deep-dive threat feasibility analysis. These tasks transform raw incident data into actionable intelligence in seconds.
+AI prompts enhance Cortex XSIAM playbooks with the reasoning capabilities of a Large Language Model (LLM). By adding an AI prompt, you can automate complex cognitive work such as summarizing massive raw logs, normalizing disparate data types into standard formats, and performing deep-dive threat feasibility analysis. These tasks transform raw incident data into actionable intelligence in seconds.
 
 While highly capable at processing information, an AI prompt is a focused, single-step instruction. It is designed to work with the data already available in your issue context JSON. Unlike an autonomous AI Agent, a prompt task is not self-executing; it cannot independently browse the live internet, search for external issues, or trigger outgoing actions such as sending emails. Instead, it processes and interprets data within your playbook, generating high-quality outputs that you then use to drive subsequent automated actions and decision branches.
 
-**AI prompt capabilities and limitations**
+### AI prompt capabilities and limitations
 
 Understanding what an AI prompt can and cannot do is essential for building effective automations. While the following table provides some common examples, you can use AI prompts for various other functions as well.
 
@@ -18,7 +20,7 @@ Understanding what an AI prompt can and cannot do is essential for building effe
 | Extract and normalize For example: Pull specific data (like IOCs) from raw text. | Access the internet For example: Cannot access URLs or live websites; you must provide the content.          |
 | Analyze context For example: Evaluate high-severity cases or analyze threats.    | Create logic For example: Cannot create conditional branches on its own; it requires a follow-up logic step. |
 
-**Best practices for prompt construction**
+### Best practices for prompt construction
 
 To ensure the LLM provides reliable, accurate, and cost-effective results, use these strategies:
 
@@ -26,7 +28,7 @@ To ensure the LLM provides reliable, accurate, and cost-effective results, use t
 * Use precise context keys: To save on costs and prevent errors, map inputs to specific keys (for example, `${issue.creation_date}`) instead of passing the entire issue object.
 * Use the optimizer: Click the **Optimize** button in the prompt editor to refine wording and improve consistency using research-backed logic.
 
-**Bring live data to your prompts**
+### Bring live data to your prompts
 
 Connect your prompts to live playbook data to make them dynamic and contextual by doing the following.
 
@@ -37,7 +39,7 @@ Connect your prompts to live playbook data to make them dynamic and contextual b
 An AI prompt cannot create new context keys. It can only refer to existing keys. The output key is the only key an AI prompt can create. If a variable such as `${PostKey}` is not mapped to existing context data, it cannot be used in the prompt.
 {% endhint %}
 
-**Follow up with logic**
+### Follow up with logic
 
 Because an AI prompt cannot make decisions or execute tasks autonomously, it should be followed by a logic step in a playbook.
 
@@ -47,7 +49,7 @@ The LLM's response is always returned in a text format, even if you explicitly a
 
 For example, add a conditional task or parsing script immediately after the prompt to check the AI's text output. Once the response is parsed, if the AI's verdict is Malicious, the playbook can then branch to trigger a script that blocks an indicator or escalates a ticket to Critical.
 
-**Use built-in prompts**
+### Use built-in prompts
 
 To get started quickly, you can use these out-of-the-box example prompts designed to handle common security workflows, which can be used as-is or customized to fit your specific needs.
 

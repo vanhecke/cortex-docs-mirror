@@ -1,3 +1,7 @@
+---
+description: Deploy a Cortex XSIAM Broker VM on Google Cloud Platform.
+---
+
 # Set up Broker VM on Google Cloud Platform (GCP)
 
 Learn more about how to set up your Cortex XSIAM Broker VM on Google Cloud Platform.

@@ -1,3 +1,7 @@
+---
+description: Extend default rule logic in Cortex XSIAM Parsing Rules.
+---
+
 # EXTEND
 
 {% hint style="warning" %}

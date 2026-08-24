@@ -1,5 +1,5 @@
 ---
-description: Activate the DSPM Fileshare applet on a Broker VM.
+description: Activate the DSPM Fileshare applet on a Broker VM in Cortex XSIAM.
 ---
 
 # Activate DSPM Fileshare

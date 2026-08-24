@@ -1,3 +1,7 @@
+---
+description: Increase Broker VM cache storage for Cortex XSIAM data collection.
+---
+
 # Increase Broker VM storage allocated for data caching
 
 Learn more about increasing the storage allocated for data caching in the Broker VM.

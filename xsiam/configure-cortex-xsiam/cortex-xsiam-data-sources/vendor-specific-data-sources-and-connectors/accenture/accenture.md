@@ -1,3 +1,7 @@
+---
+description: Use Accenture data with Cortex XSIAM.
+---
+
 # Accenture
 
 {% hint style="warning" %}

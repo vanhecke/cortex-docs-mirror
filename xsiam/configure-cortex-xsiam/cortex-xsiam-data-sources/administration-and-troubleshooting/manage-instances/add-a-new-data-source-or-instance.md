@@ -1,3 +1,7 @@
+---
+description: Add a data source or integration instance in Cortex XSIAM.
+---
+
 # Add a new data source or instance
 
 You can add a new data source with the Data Source Onboarder. The Onboarder installs the data source, sets up an instance, configures playbooks and scripts, and other recommended content. The Onboarder offers default (customizable) options and displays all configured content in a summary screen at the end of the process.

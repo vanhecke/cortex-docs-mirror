@@ -1,3 +1,7 @@
+---
+description: Onboard Oracle Cloud Infrastructure to Cortex XSIAM.
+---
+
 # How to onboard Oracle Cloud Infrastructure with foundational configuration
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: Configure Docker memory limits without swap support for Cortex XSIAM engines.
+---
+
 # Configure the memory limit support without swap capabilities
 
 When a container exceeds the specified amount of memory, the container starts to swap. Not all Linux distributions have the swap limit support enabled by default.

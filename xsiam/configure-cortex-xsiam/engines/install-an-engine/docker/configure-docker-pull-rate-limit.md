@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Docker image pull rate limits for reliable Cortex XSIAM engine
+  deployments.
+---
+
 # Configure Docker pull rate limit
 
 Docker enforces a [pull rate limit](https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress/) on public images. The limit is based on an IP address or as a logged-in Docker hub user. The default limit (100 pulls per 6 hours) is usually high enough for Cortex XSIAM's use of Docker images, but the rate limit may be reached if using a single IP address for a large organization (behind a NAT). If the rate limit is reached, the following error message is issued:

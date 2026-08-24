@@ -1,16 +1,22 @@
+---
+description: >-
+  Troubleshoot Cortex XSIAM playbook performance, identify slow workflow tasks,
+  and analyze execution data with XQL.
+---
+
 # Troubleshoot playbook performance
 
-You can analyze playbook metadata such as tasks input and output, the amount of storage each task input/output uses, and the type of task. This is useful when troubleshooting your custom playbook if your system has slowed down and is using high CPU usage, memory, or storage (disk space).
+Analyze Cortex XSIAM playbook metadata, including task inputs, outputs, storage use, and task types. Use this data to troubleshoot custom playbook performance, high CPU use, memory consumption, or disk usage.
 
-### Get data from XQL datasets
+### Analyze playbook performance with XQL datasets
 
-You can leverage XQL for flexible and adjustable playbook and script tracking to provide performance and execution data for debugging. The following datasets are available for querying and dashboards:
+Use XQL to track Cortex XSIAM playbook and script performance. XQL provides execution data for debugging, queries, and dashboards. The following datasets are available:
 
 * playbook\_tasks: Data about failed tasks and tasks that were retried.
 * playbook\_runs: Data about playbook runs and statuses.
 * scripts\_and\_commands\_metrics: Data about scripts and commands used in playbook tasks.
 
-### Get playbook metadata using the CLI
+### Get Cortex XSIAM playbook metadata using the CLI
 
 After an issue has been assigned to a playbook you can analyze it to see its tasks inputs/outputs storage. You can filter the data according to the KB used in each task input/output.
 
@@ -20,10 +26,10 @@ From the **Cases & Issues** → **Cases** page, in the **Case War Room** tab the
 
 To view the playbook metadata that is used in issue number 964, in the CLI type `!getInvPlaybookMetaData incidentid=”964” minSize=”0”!getInvPlaybookMetaData incidentid=”964” minSize=”0”.`
 
-### Troubleshooting Playbooks dashboard
+### Use the Troubleshooting Playbooks dashboard
 
 From the **Troubleshooting Playbooks** dashboard, you can view playbook and task errors, average playbook run time, and execution by status for manual and automated tasks. You can also pivot to the XQL view for more detailed data analysis.
 
-### Increase the execution timeout for AI prompt tasks
+### Increase the timeout for AI prompt tasks
 
 AI prompt tasks have a default execution timeout of 10 seconds. If an AI prompt task returns a **`504 Error`** with the status **`DEADLINE_EXCEEDED`**, it is likely due to the task requiring more time to process than the default setting allows. To resolve this, open the Task Details pane of the AI task and select the Advanced tab, then increase the Execution timeout (seconds) value based on the complexity of the prompt and the expected length of the LLM response. For example, for complex tasks such as generating a full vulnerability report, you many need to increase the timeout from the 10 second default to 120 seconds or higher.
