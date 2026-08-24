@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-23",
+  "source": "docs",
+  "sha": "d1ebe2291792a823ae1757968b573354ee5d821c",
+  "headline": "A 431-page metadata and structure pass across Cortex XSIAM; UPN becomes a mandatory XDM authentication field",
+  "summary_md": "- 366 of the 434 changed files touch nothing but their `description:` frontmatter — a metadata pass over almost the whole Cortex XSIAM book.\n- The XDM authentication mapping reference carries the day's only substantive change: `xdm.source.user.upn` is promoted from optional to mandatory, and a new `OPERATION_TYPE_AUDIT` constant is added.\n- Structural cleanup elsewhere: bold pseudo-headings promoted to real `###` headings in 22 files, and \"Note\"/\"Notice\" sub-headings stripped from 14 callouts.\n- Five pages moved their numbered procedures into GitBook `{% stepper %}` blocks.\n- Six pages were retitled. No page was added, removed, or moved — every one of the 434 entries is a modification.",
+  "highlights": [
+    {
+      "title": "xdm.source.user.upn is now a mandatory XDM authentication field",
+      "detail": "It moved out of the collapsed \"Authentication identity and context\" optional section into the mandatory list as field 12, pushing xdm.event.outcome_reason to 13.",
+      "paths": ["xsiam/reference-and-developer-docs/reference/xdm-fields-for-mapping-authentication-events"]
+    },
+    {
+      "title": "New XDM_CONST.OPERATION_TYPE_AUDIT constant for authorization and policy evaluation events",
+      "detail": "An accompanying note tells mappers there is no neutral member: leave the field unmapped when the kind is unclear, and unset for logouts, so logout events do not inflate login metrics.",
+      "paths": ["xsiam/reference-and-developer-docs/reference/xdm-fields-for-mapping-authentication-events"]
+    },
+    {
+      "title": "409 pages gained or rewrote a description: frontmatter line",
+      "detail": "The new descriptions consistently name the product (\"in Cortex XSIAM\") where the old ones did not, and 366 pages changed in no other way.",
+      "paths": []
+    },
+    {
+      "title": "Six pages were retitled without moving",
+      "detail": "\"About health issues\" became \"Health issues in Cortex XSIAM\", \"Extract Indicators\" became \"Extract indicators in playbooks\", and four others; the nav manifest records the new titles against unchanged paths, so no link or bookmark breaks.",
+      "paths": [".meta/xsiam"]
+    },
+    {
+      "title": "Numbered procedures converted to GitBook stepper blocks on five pages",
+      "detail": "Registering an agent action and adding an integration instance both gained per-step headings in the process, but the steps themselves are unchanged.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/configure-the-cortex-agentic-assistant-1/agents-hub/register-actions",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/administration-and-troubleshooting/integrations/add-an-integration-instance"
+      ]
+    },
+    {
+      "title": "Callout hints lost their redundant \"Note\" and \"Notice\" headings",
+      "detail": "Fourteen occurrences across nine pages, including three legacy data-gb-custom-block divs rewritten to the {% hint %} shorthand.",
+      "paths": []
+    }
+  ],
+  "items": {
+    "xsiam/reference-and-developer-docs/reference/xdm-fields-for-mapping-authentication-events": "Makes xdm.source.user.upn mandatory, adds the OPERATION_TYPE_AUDIT constant, and drops a sentence duplicated in the IDP/SP mapping note.",
+    "xsiam/configure-cortex-xsiam/configure-the-cortex-agentic-assistant-1/agents-hub/register-actions": "The nine-step action registration procedure becomes a stepper block; the inline hint about mandatory arguments survives inside step 8.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/administration-and-troubleshooting/integrations/add-an-integration-instance": "Seven steps rewritten as a stepper with a heading each, splitting on-demand instance use and command access into their own steps.",
+    "xsiam/configure-cortex-xsiam/automations/ai-prompts/create-a-prompt": "Twelve-step prompt creation procedure wrapped in a stepper; one sentence about context-path inputs is regrammared.",
+    "xsiam/configure-cortex-xsiam/automations/scripts/accelerate-script-development-using-the-automation-engineer-agent": "Folds the \"Search tips\" collapsible into the preceding hint and converts the procedure to a stepper.",
+    "xsiam/configure-cortex-xsiam/automations/playbooks/build-your-playbook/configure-playbook-settings": "Unindents the input/output grouping section out of a list item, and raises the system-playbook permission note from an info hint to a warning.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/administration-and-troubleshooting/about-health-issues": "Retitled \"Health issues in Cortex XSIAM\"; the rewrite leaves a corrupted phrase, \"health-relatedhealth related errors\", in the opening paragraph.",
+    "xsiam/configure-cortex-xsiam/configure-the-cortex-agentic-assistant-1": "Prose reworked to name Cortex XSIAM and RBAC explicitly throughout; the component model and the four configuration steps are unchanged.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/google-cloud-platform-cloud-onboarding": "Retitled from \"Google Cloud Platform cloud onboarding\" to \"Google Cloud Platform onboarding\".",
+    "xsiam/configure-cortex-xsiam/automations/playbooks/build-your-playbook/customize-your-playbook/filter-and-transform-data": "Retitled \"Filter and transform Cortex XSIAM playbook data\"; body changes are heading promotions only.",
+    "xsiam/configure-cortex-xsiam/automations/playbooks/build-your-playbook/customize-your-playbook/extract-indicators": "Retitled \"Extract indicators in playbooks\", correcting the capitalisation of the old title.",
+    "xsiam/configure-cortex-xsiam/automations/playbooks/build-your-playbook/customize-your-playbook/extend-context": "Retitled \"Extend context in playbooks\".",
+    "xsiam/configure-cortex-xsiam/engines/engine-requirements": "Hardware, operating system and required-URL sections become real headings; the requirements themselves, including the CentOS 7 EOL notice, are untouched.",
+    "xsiam/configure-cortex-xsiam/automations/quick-actions": "Gains a description and an Unified Asset Inventory heading; the Premium-licence and Cloud add-on entitlement text is unchanged.",
+    "agent-releases/cortex-xdr-agent-releases/readme": "The agent release table gains data-search=\"false\"; no release rows changed."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": true
+}
