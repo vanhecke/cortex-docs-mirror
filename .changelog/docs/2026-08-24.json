@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-24",
+  "source": "docs",
+  "sha": "df22caa17d524bca0fb167cc065adc6cbeefdb09",
+  "headline": "Editorial pass over 424 XSIAM pages: 276 gain search descriptions, two lose reference detail",
+  "summary_md": "- **276 pages** gained a `description` frontmatter block and 73 more had theirs rewritten, a metadata pass covering most of the Cortex XSIAM book.\n- Headings and prose were rewritten to name **Cortex XSIAM** explicitly, and the multi-tenant child tenant pages moved from Incidents and Alerts to **Cases and Issues**.\n- Two pages lost reference detail: the node icons table in the causality icons key, and the step-by-step rule criteria in Set up case scoring.\n- Twelve stub section pages gained child page indexes, and three pages had collapsible sections flattened into ordinary headings.\n- No page was added, removed or renamed; nine navigation titles changed, but every path stayed put.",
+  "highlights": [
+    {
+      "title": "The causality icons key lost its node icons table",
+      "detail": "Twenty-three lines of node icon rows were deleted, leaving the section heading and its one-line introduction with nothing beneath them.",
+      "paths": ["xsiam/detect-investigate-and-respond-to-threats/investigation-and-response/investigate-issues/causality-view/causality-icons-key"]
+    },
+    {
+      "title": "Set up case scoring dropped its step-by-step rule criteria",
+      "detail": "The substeps covering rule name, score, base rule, the apply-to-first-issue-only option and filter selection were replaced by the worked example alone.",
+      "paths": ["xsiam/configure-cortex-xsiam/customize-cases-and-issues/set-up-case-scoring"]
+    },
+    {
+      "title": "Child tenant management now says Cases and Issues, not Incidents and Alerts",
+      "detail": "Across three multi-tenant pages the parent tenant's viewable page list and its configurable actions were renamed, including Starred Issue Policies and Issue Exclusions.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/multi-tenant/child-tenant-management",
+        "xsiam/configure-cortex-xsiam/multi-tenant/child-tenant-management/create-and-allocate-configurations",
+        "xsiam/configure-cortex-xsiam/multi-tenant/child-tenant-management/create-a-security-managed-action"
+      ]
+    },
+    {
+      "title": "276 pages gained a search description",
+      "detail": "Pages that carried no frontmatter description now have one, and 73 existing descriptions were rewritten to name the product and the task.",
+      "paths": [
+        "xsiam/cloud-security/base-images-rule",
+        "xsiam/reference-and-developer-docs/reference",
+        "xsiam/cloud-security/overview"
+      ]
+    },
+    {
+      "title": "Device control was restructured and rebranded",
+      "detail": "The page gained capabilities, prerequisites and limitations headings, and the Cortex XDR references in its Bluetooth limitation rows became Cortex XSIAM.",
+      "paths": ["xsiam/protect-your-endpoints/endpoint-security/install-and-manage-endpoints/harden-endpoint-security/device-control"]
+    },
+    {
+      "title": "Twelve stub section pages gained child page indexes",
+      "detail": "Cloud Identity Security, Endpoint DLP and Remote repository management were one-line stubs that now list the pages beneath them.",
+      "paths": [
+        "xsiam/cloud-security/cortex-cloud-identity-security",
+        "xsiam/protect-your-endpoints/endpoint-dlp",
+        "xsiam/configure-cortex-xsiam/remote-repository-management"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/detect-investigate-and-respond-to-threats/investigation-and-response/investigate-issues/causality-view/causality-icons-key": "The node icons table was removed; the heading and its introduction now stand alone.",
+    "xsiam/configure-cortex-xsiam/customize-cases-and-issues/set-up-case-scoring": "The instructions for defining rule criteria were cut down to the example values, and the SmartScore section was retitled.",
+    "xsiam/configure-cortex-xsiam/multi-tenant/child-tenant-management": "Incidents and Alerts became Cases and Issues, and the configurable actions are now Starred Issue Policies and Issue Exclusions.",
+    "xsiam/configure-cortex-xsiam/multi-tenant/child-tenant-management/create-and-allocate-configurations": "Nine Alert and Incident references were rewritten to Issue and Case wording.",
+    "xsiam/configure-cortex-xsiam/multi-tenant/child-tenant-management/create-a-security-managed-action": "Six Alert and Incident references were rewritten to Issue and Case wording.",
+    "xsiam/protect-your-endpoints/endpoint-security/install-and-manage-endpoints/harden-endpoint-security/device-control": "Split into capabilities, prerequisites, limitations and profiles sections; the Bluetooth limitations now name Cortex XSIAM rather than Cortex XDR.",
+    "xsiam/configure-cortex-xsiam/xql-query-management": "Two collapsible blocks became ordinary headings, and a misspelled Prequisite heading was dropped.",
+    "xsiam/configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant/onboarding-checklist-for-multi-tenant-central-licensing-deployments/step-1.-activate-cortex-xsiam-main-account": "The default-encryption and BYOK collapsibles were flattened into bullets under the BYOK step.",
+    "xsiam/cloud-security/cortex-cloud-identity-security": "The stub gained a thirteen-entry index of its child pages.",
+    "xsiam/protect-your-endpoints/endpoint-dlp": "The stub gained two paragraphs on what Endpoint DLP does plus a six-entry index of its child pages.",
+    "xsiam/configure-cortex-xsiam/remote-repository-management": "The stub gained a four-entry index of its child pages.",
+    "xsiam/configure-cortex-xsiam/remote-repository-management/cortex-xsiam-development-tenant": "Rewritten throughout; the push and pull tenant roles and the list of content that cannot be pushed are restated more directly.",
+    "xsiam/cloud-security/cortex-cloud-ai-security/cortex-cloud-saas-security/onboard-a-supported-saas-application": "The SaaS app table was reflowed and its description rewritten; the list of supported applications is unchanged.",
+    "xsiam/protect-your-endpoints/endpoint-dlp/configure-dlp-end-to-end": "Section headings gained the Cortex XSIAM name and the Note headings were stripped from four inline callouts.",
+    ".meta/xsiam": "Nine navigation titles changed, including Issue fields to Manage Cortex XSIAM issue fields; no page path moved."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": true
+}
