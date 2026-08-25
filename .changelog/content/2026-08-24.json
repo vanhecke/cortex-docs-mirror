@@ -1,0 +1,47 @@
+{
+  "date": "2026-08-24",
+  "source": "content",
+  "sha": "77177c99418ac72b8a80892c5ef51f60b96ef4b5",
+  "headline": "Event Collector reliability fixes dominate; USTA deprecated in favour of USTAv4",
+  "summary_md": "- **AWS-GuardDuty** takes 70% of the day at +1,123/-110, fixing duplicate events and a fetch stall in its Event Collector (#45492).\n- **USTA** is deprecated and **USTAv4** updated in the same commit — the day's only withdrawal (#45624).\n- Nine packs move for 8 upstream commits, 1,606 lines added against 173 deleted; the snapshot head `c9f7d9d` is same-day.\n- Ingestion reliability is the theme: GuardDuty, the **Okta** Event Collector (#45584) and the **Strata Logging Service** URL fallback (#45568) are three of the four largest packs.\n- Modeling-rule housekeeping continues under CRTX-271523 with a **CiscoNexus** field-separator fix (#45626).",
+  "highlights": [
+    {
+      "title": "USTA is deprecated and USTAv4 updated in its place",
+      "detail": "One commit moves both packs — USTA +7/-1 and USTAv4 +60/-31 — and it is also the snapshot head for the day (CIAC-17755, #45624).",
+      "paths": ["Packs/USTA", "Packs/USTAv4"]
+    },
+    {
+      "title": "AWS GuardDuty Event Collector stops duplicating events and stalling",
+      "detail": "At +1,123/-110 it is both the largest change and the largest deletion count of the day, against 63 deleted lines everywhere else combined (XSUP-73410, #45492).",
+      "paths": ["Packs/AWS-GuardDuty"]
+    },
+    {
+      "title": "Strata Logging Service falls back to the migrated SLS URL",
+      "detail": "The CortexDataLake pack gains 240 lines against a single deletion so the integration can recover when the oproxy URL is unreachable (#45568).",
+      "paths": ["Packs/CortexDataLake"]
+    },
+    {
+      "title": "Okta Event Collector event fetching is made more reliable",
+      "detail": "+85/-7, the third of the day's three collector-reliability fixes (XSUP-73675, #45584).",
+      "paths": ["Packs/Okta"]
+    },
+    {
+      "title": "Unit 42 Threat Intelligence authentication is fixed under UCP mode",
+      "detail": "+36/-2 clearing an auth error that occurred specifically with UCP authentication mode selected (XSUP-75305, #45604).",
+      "paths": ["Packs/Unit42ThreatIntelligencebyPaloAltoNetworks"]
+    }
+  ],
+  "items": {
+    "Packs/AWS-GuardDuty": "+1,123/-110 fixing duplicate events and a fetch stall in the Event Collector (XSUP-73410, #45492) — 70% of the day's insertions and 64% of its deletions.",
+    "Packs/CortexDataLake": "+240/-1 adding a fallback to the migrated Strata Logging Service URL when the oproxy URL is unreachable (#45568).",
+    "Packs/Okta": "+85/-7 improving event-fetching reliability in the Okta Event Collector (XSUP-73675, #45584).",
+    "Packs/USTAv4": "+60/-31, updated in the same commit that deprecates the original USTA pack (CIAC-17755, #45624).",
+    "Packs/Core": "+40/-17; the day's one commit subject that names no pack is an error-classification change (CRTX-255682, #45540).",
+    "Packs/Unit42ThreatIntelligencebyPaloAltoNetworks": "+36/-2 fixing an authentication error under UCP authentication mode (XSUP-75305, #45604).",
+    "Packs/AWS-SecurityHub": "+8/-2 correcting the provider name in AWS Security Hub v2 (#45616).",
+    "Packs/CiscoNexus": "+7/-2 fixing the modeling rule field separator (CRTX-271523, #45626).",
+    "Packs/USTA": "+7/-1 marking the pack deprecated in favour of USTAv4 (CIAC-17755, #45624)."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
