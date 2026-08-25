@@ -1,3 +1,9 @@
+---
+description: >-
+  Explore Cortex XSIAM endpoint protection capabilities and their supported
+  platforms.
+---
+
 # Endpoint protection capabilities
 
 Each security profile provides a tailored list of protection capabilities that you can configure for the platform you select. The following table describes the protection capabilities you can customize in a security profile. The table also indicates which platforms support the protection capability (a dash (—) indicates the capability is not supported).

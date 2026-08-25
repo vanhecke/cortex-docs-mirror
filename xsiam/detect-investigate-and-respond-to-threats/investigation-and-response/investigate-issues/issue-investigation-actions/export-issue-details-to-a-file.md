@@ -1,3 +1,7 @@
+---
+description: Export Cortex XSIAM issue details to a TSV file for offline analysis.
+---
+
 # Export issue details to a file
 
 To archive, continue investigation offline, or parse issue details, you can export issues to a tab-separated values (TSV) file:

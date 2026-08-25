@@ -1,7 +1,7 @@
 ---
 description: >-
-  Create custom case domains to organize workflows, statuses, resolution
-  reasons, and access.
+  Create custom Cortex XSIAM case domains to organize case workflows, statuses,
+  resolution reasons, and access control.
 ---
 
 # Create a case domain
@@ -14,17 +14,16 @@ We recommend using the built-in domains where possible. Custom domains might not
 Smart grouping and SmartScore are not supported for custom domains.
 {% endhint %}
 
-Custom domains help you to differentiate between your work efforts. You can create tailored workflows for each domain, so that you can effectively manage and prioritize your workload.
+Create custom Cortex XSIAM case domains to separate work efforts and organize case management workflows. Each domain can use tailored statuses, resolution reasons, and access controls.
 
-### **Manage your domains**
+### Manage Cortex XSIAM case domains
 
-You can see all domains under Configurations → Object Setup → Cases → Domains. From this tab, you can edit the properties of the built-in domains and create your own custom domains.
+View all case domains under **Configurations** → **Object Setup** → **Cases** → **Domains**. You can edit built-in domain properties and create custom domains.
 
 Consider the following information:
 
 * You can't merge cases with different domains.
 * SmartScore and smart grouping are not supported for custom domains.
-*
 * For SBAC, use the Cases and Issues scoping area to define case and issue domains that enable you to control access to your domains. For more information, see [Manage user scope](../../onboard-cortex-xsiam/post-deployment/manage-user-roles-and-access-management/manage-user-scope).
 * Domains might affect custom content that is connected to cases and issues. Review your custom content to ensure it is associated with the intended domains. This includes:
   * Automation Rules
@@ -34,7 +33,7 @@ Consider the following information:
   * Scoring Rules
   * XQL that accesses the cases or issues datasets in Scheduled Queries and Widgets
 
-### **How to create a case domain**
+### Create a custom Cortex XSIAM case domain
 
 * Adding custom domains requires a View/Edit RBAC permission for Case Properties (under Object Setup).
 * Once created, a custom case domain cannot be deleted or renamed.

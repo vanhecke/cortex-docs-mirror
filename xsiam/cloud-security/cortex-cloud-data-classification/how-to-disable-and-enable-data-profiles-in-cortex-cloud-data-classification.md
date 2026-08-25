@@ -1,7 +1,11 @@
-# How to disable and enable data profiles in Cortex Cloud Data Classification
+---
+description: Enable or disable data profiles in Cortex XSIAM Data Classification.
+---
+
+# How to disable and enable data profiles in Cloud Data Classification
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on. If you have the Endpoint DLP add-on, Data Classification is automatically available.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license. If you have the Endpoint DLP add-on, Data Classification is automatically available.
 {% endhint %}
 
 ### Understand data profile statuses

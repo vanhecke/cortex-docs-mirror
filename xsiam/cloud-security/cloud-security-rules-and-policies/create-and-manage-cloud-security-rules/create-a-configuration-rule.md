@@ -1,7 +1,7 @@
 ---
 description: >-
-  Create configuration rules that identify cloud resource misconfigurations and
-  policy violations.
+  Create Cortex XSIAM configuration rules that identify cloud resource
+  misconfigurations and policy violations.
 ---
 
 # Create a configuration rule

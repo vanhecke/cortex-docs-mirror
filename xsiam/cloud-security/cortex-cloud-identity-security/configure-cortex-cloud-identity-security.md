@@ -1,7 +1,11 @@
+---
+description: Configure Cloud Identity Security settings in Cortex XSIAM.
+---
+
 # Configure Cloud Identity Security
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license.
 {% endhint %}
 
 You can configure how you want Cloud Identity Security to behave across your identities.

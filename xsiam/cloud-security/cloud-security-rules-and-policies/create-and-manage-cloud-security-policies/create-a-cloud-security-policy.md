@@ -1,7 +1,7 @@
 ---
 description: >-
-  Create a cloud security policy that applies security rules to selected cloud
-  assets.
+  Create a cloud security policy in Cortex XSIAM that applies security rules to
+  selected cloud assets.
 ---
 
 # Create a cloud security policy

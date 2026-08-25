@@ -1,10 +1,16 @@
+---
+description: >-
+  Manage Unit 42 Managed Services escalation contacts for Cortex XSIAM cases and
+  response actions requiring approval.
+---
+
 # Manage escalation contacts
 
-Maintain the list of escalation contacts that the Unit 42 Managed Services team contacts during an incident or when an action set to **Inform** requires approval.
+Maintain the list of escalation contacts that the Unit 42 Managed Services team contacts during a case or when an action set to **Inform** requires approval.
 
-Escalation contacts are sorted by creation date. During an incident, the Managed Services team attempts to contact the listed escalation contacts in the order provided. If a contact does not respond, the team proceeds to the next contact in the list.
+Escalation contacts are sorted by creation date. During a case, the Managed Services team attempts to contact the listed escalation contacts in the order provided. If a contact does not respond, the team proceeds to the next contact in the list.
 
-**Add an escalation contact**
+### **Add an escalation contact**
 
 1. Open the **Managed Services** configuration page and select the **Escalation contacts** tab.
 2.  Select **Add**. The **Add Contact** dialog opens with the **Contact Details** section and required fields.

@@ -1,3 +1,9 @@
+---
+description: >-
+  Set a Cortex XDR Critical Environment agent version for controlled endpoint
+  upgrades in Cortex XSIAM.
+---
+
 # Set a Cortex XDR agent Critical Environment version
 
 After you install the Cortex XDR agent and the agent registers with Cortex XSIAM, you can set endpoints to run with a Cortex XDR agent Critical Environment (CE) version.

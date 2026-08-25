@@ -1,3 +1,7 @@
+---
+description: You can link or unlink issues from cases in Cortex XSIAM.
+---
+
 # Link or unlink issues from a case
 
 You can link and unlink issues from cases. An issue can be assigned to more than one case, and the case domain can be different from the issue domain.

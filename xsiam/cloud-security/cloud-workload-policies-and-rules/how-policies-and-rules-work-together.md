@@ -1,3 +1,9 @@
+---
+description: >-
+  Understand how Cortex XSIAM cloud workload rules detect violations and
+  policies create issues or apply preventive actions.
+---
+
 # How policies and rules work together
 
 Cloud Workload Policies serve as enforcement mechanisms that govern the responses to the identified findings, whereas Cloud Workload Rules establish the criteria for evaluation but do not initiate any actions unless incorporated within a policy.

@@ -1,3 +1,7 @@
+---
+description: Create Cortex XSIAM featured fields to highlight important issue attributes.
+---
+
 # Create a featured field
 
 To help you to track issues involving specific hosts, users, and IP addresses, you can label specific issue attributes as featured fields. Issues that contain a matching featured field value are identified with a ![featured-alert-field-flag.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-2bd8d659933ac3b2db859d096e4d906e39bb74b8%2F51168d952b300ec2376c3ada4e1f381c8747716358f8e62a79557dcb169f0260.png?alt=media) flag in the **Name** field of the **Issues** table. After setting up featured fields, you can use them filter the **Issues** table and to create case scoring rules.

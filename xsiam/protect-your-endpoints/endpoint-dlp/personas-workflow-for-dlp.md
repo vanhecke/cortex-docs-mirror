@@ -1,8 +1,8 @@
 ---
 description: >-
-  The data security administrator and data security viewer are responsible for
-  identifying DLP requirements for creating data-in-motion rules and
-  investigating issues and cases.
+  The data security administrator and data security viewer in Cortex XSIAM are
+  responsible for identifying DLP requirements for creating data-in-motion rules
+  and investigating issues and cases.
 ---
 
 # Personas workflow for DLP

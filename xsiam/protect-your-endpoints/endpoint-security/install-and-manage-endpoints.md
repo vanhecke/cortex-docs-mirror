@@ -1,8 +1,7 @@
 ---
 description: >-
-  Learn how to set up profiles, policies and other settings for endpoint
-  protection, how to install Cortex XDR agent on endpoints, and how to manage
-  them after installation.
+  Learn how Cortex XSIAM installs, configures, hardens, and manages Cortex XDR
+  agents and endpoint protection.
 ---
 
 # Install and manage endpoints

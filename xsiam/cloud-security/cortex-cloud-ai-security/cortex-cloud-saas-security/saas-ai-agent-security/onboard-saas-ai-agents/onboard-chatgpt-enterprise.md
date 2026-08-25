@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect Box AI Agents to SaaS Agent Security to gain total visibility and
-  control over your AI ecosystem.
+  Onboard ChatGPT Enterprise to Cortex XSIAM SaaS AI Agent Security for
+  visibility and control.
 ---
 
 # Onboard ChatGPT Enterprise
@@ -12,7 +12,7 @@ description: >-
       1. Select ChatGPT > Manage Workspace > Settings and keep them handy.
    3. To fetch the Secret Key, go to the OpenAI API-Keys site and click + Create new secret key.
       1. In the Create new secret key page, enter the required details and click Create secret key.
-      2. &#x20;During key generation, ensure that the Permissions is set to All. (OpenAI will revoke it in the subsequent steps).
+      2. During key generation, ensure that the Permissions is set to All. (OpenAI will revoke it in the subsequent steps).
    4. Ensure that this key is generated in the same Organization as your ChatGPT tenant. To confirm this, select Settings on the OpenAI website and ensure the Org ID is the same as what you fetched previously.
    5. Copy the new key and keep it handy.
    6.  To enable the generated key for the Compliance API scopes, send an email to support@openai.com with the following information:
@@ -26,9 +26,9 @@ description: >-
        **Note**: Further instructions are available in the ChatGPT API Reference.
 2. After OpenAI enables the key for the Compliance API, proceed to add the ChatGPT Enterprise connector.
 3. Onboarding ChatGPT to Cortex:
-   1. Log in to Cortex.&#x20;
+   1. Log in to Cortex.
    2. Select **Settings > Data Sources and Integrations > Add New.** You can use the Search bar to find the ChatGPT connector.
-   3. Click on the ChatGPT tile and select the **Add Another Instance**.&#x20;
+   3. Click on the ChatGPT tile and select the **Add Another Instance**.
    4. On the **Capabilities** page, provide an Instance Name and select Agent Security scanning capability.
    5. On the **Connections** page, provide your Instance URL and select the Recommended authentication method, enter the following information (that you gathered in the steps above and click Complete:
       1. Organization ID

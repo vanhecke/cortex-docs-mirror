@@ -1,3 +1,7 @@
+---
+description: Clear the Cortex XSIAM agent database for endpoint troubleshooting.
+---
+
 # Clear agent database
 
 Learn how to clear the Cortex XDR agent database.

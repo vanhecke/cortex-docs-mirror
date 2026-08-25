@@ -1,16 +1,20 @@
 ---
-description: Working with datasets in Cloud Identity Security.
+description: >-
+  Use XQL in Cortex XSIAM to investigate Cloud Identity Security permissions,
+  identity risks, and access data.
 ---
 
 # Perform advanced Identity Security investigations using XQL
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license.
 {% endhint %}
 
-#### Overview
+### Overview
 
-Cloud Identity Security centralizes identity-related information into a list of datasets, providing the foundation for comprehensive security investigations. Using Cortex Query Language (XQL) , security practitioners can create custom queries to extract valuable insights from these data sources within your system. For more information, see [Get started with XQL](../../reference-and-developer-docs/cortex-agentix-xql/get-started-with-xql).
+Use Cortex Query Language (XQL) in Cortex XSIAM to investigate Cloud Identity Security permissions, access, identity risks, findings, and issues. Query identity datasets to identify security gaps and guide remediation.
+
+For more information, see [Get started with XQL](../../reference-and-developer-docs/cortex-agentix-xql/get-started-with-xql).
 
 You can use the following identity-related datasets:
 
@@ -21,23 +25,21 @@ You can use the following identity-related datasets:
 | issues                                | Contains the issues that are related to the assets in your environments. For more information, see [Issues](../../../detect-investigate-and-respond-to-threats/investigation-and-response/case-concepts/issues-findings-and-events#issues).                                                 |
 | findings                              | Contains the findings that are associated with the assets that are found in your environments. For more information, see [Findings and events](../../../detect-investigate-and-respond-to-threats/investigation-and-response/case-concepts/issues-findings-and-events#findings-and-events). |
 
-#### Investigate Cloud Identity Security
+### Investigate Cloud Identity Security in Cortex XSIAM
 
 To run queries on your Cloud Identity Security datasets:
 
-1. In Cloud, in the navigation pane on the left, click **Investigation & Response**, then under **Search**, click **XQL Search**.
+1. In Cortex XSIAM, in the navigation pane on the left, click **Investigation & Response**, then under **Search**, click **XQL Search**.
 2. On the **XQL Search** screen, under **XQL Query**, in the text box, start typing your query. Alternatively, you can search for existing queries on the **Query Library** tab.
 3. When you have finished entering your query, click **Run**. The results appear on the **Query Results** tab.
 
 {% hint style="info" %}
-### Note
-
 For more information, see [Build XQL queries](../../detect-investigate-and-respond-to-threats/investigation-and-response/build-xql-queries).
 {% endhint %}
 
-#### Examples
+### Example XQL queries for Identity Security
 
-Here are some examples of identity-related queries you can run in Cortex Cloud to investigate your identity posture:
+Use these XQL queries in Cortex XSIAM to investigate your identity security posture:
 
 <details>
 

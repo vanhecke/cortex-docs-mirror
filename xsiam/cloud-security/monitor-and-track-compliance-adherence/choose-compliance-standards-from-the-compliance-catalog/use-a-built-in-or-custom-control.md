@@ -1,7 +1,7 @@
 ---
 description: >-
   Add built-in controls or create and manage custom controls for custom
-  standards.
+  standards in Cortex XSIAM.
 ---
 
 # Use a built-in or custom control

@@ -1,6 +1,12 @@
+---
+description: >-
+  Review and prioritize Cortex XSIAM cases using status, severity, scores, and
+  saved views.
+---
+
 # Review all cases
 
-The main **Cases** page is the starting point for monitoring and managing all cases in your environment. It provides visibility into all cases and their current status, helping you track progress, investigate individual cases, and take remediation actions. Severity indicators, scores, and starred icons help you quickly identify your high-priority cases.
+The main **Cases** page is the starting point for monitoring and managing all cases in your Cortex XSIAM environment. It provides visibility into all cases and their current status, helping you track progress, investigate individual cases, and take remediation actions. Severity indicators, scores, and starred icons help you quickly identify your high-priority cases.
 
 When cases are configured with SLAs, the page helps you monitor SLA adherence and ensure cases progress in line with organizational objectives.
 

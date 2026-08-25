@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure an email address or distribution list to receive Cortex XSIAM
+  reports from Unit 42 Managed Services.
+---
+
 # Configure report forwarding
 
 Configure the email distribution list that receives Managed Services reports from the Unit 42 Managed Services team.

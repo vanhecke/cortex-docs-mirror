@@ -1,3 +1,7 @@
+---
+description: Apply Cortex XSIAM profiles to endpoints using targeted policy rules.
+---
+
 # Apply profiles to endpoints
 
 Cortex XSIAM provides out-of-the-box protection for all registered endpoints with a default security policy customized for each supported platform type. To customize your security policy, create or edit one or more security profiles, and then attach the profiles to a new or existing policy.

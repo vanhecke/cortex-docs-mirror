@@ -1,14 +1,22 @@
+---
+description: >-
+  View and filter Cortex XSIAM endpoint tags assigned by the Cortex XDR agent or
+  in Cortex XSIAM.
+---
+
 # Track your endpoint tags
 
-### From the Cortex XDR agent
+Use endpoint tags to identify, filter, and manage assigned endpoints in Cortex XSIAM.
+
+### List endpoint tags with the Cortex XDR agent
 
 1. Navigate to the Cytool folder location and open the CLI as an administrator.
 2. Cytool Argument: `cytool endpoint_tags list`.
 
-### From the Cortex XSIAM management console
+### View and filter endpoint tags in Cortex XSIAM
 
 1. Navigate to **Inventory → Endpoints → All Endpoints → Tags field**.
 
-All _Server_ and _Agent_ tags associated with the specific endpoint are displayed. Tags created in the XDR agent are displayed with a shield icon.
+All **Server** and **Agent** tags assigned to the endpoint are displayed. Tags created in the Cortex XDR agent show a shield icon.
 
-2. You can filter and search the **Tags field** to find endpoints that have endpoint tags assigned to them.
+2. Filter or search the **Tags** field to find endpoints with assigned endpoint tags.

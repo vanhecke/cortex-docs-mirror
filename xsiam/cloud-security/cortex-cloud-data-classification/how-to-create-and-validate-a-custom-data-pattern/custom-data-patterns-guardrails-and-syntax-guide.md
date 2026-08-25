@@ -1,7 +1,13 @@
+---
+description: >-
+  Follow guardrails and syntax requirements for custom data patterns in Cortex
+  XSIAM.
+---
+
 # Custom data patterns: Guardrails and syntax guide
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on. If you have the Endpoint DLP add-on, Data Classification is automatically available.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license. If you have the Endpoint DLP add-on, Data Classification is automatically available.
 {% endhint %}
 
 This guide explains the capabilities and limitations of creating custom classifiers. Understanding these guardrails will help you create effective and functional data patterns.

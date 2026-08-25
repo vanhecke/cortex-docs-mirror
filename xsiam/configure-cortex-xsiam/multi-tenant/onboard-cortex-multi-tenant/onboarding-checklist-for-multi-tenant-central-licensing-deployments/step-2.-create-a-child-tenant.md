@@ -1,6 +1,12 @@
-# Step 2. Create a child tenant
+---
+description: >-
+  Create Cortex XSIAM child tenants in Cortex Gateway and allocate licensed
+  employee, storage, and add-on resources.
+---
 
-After setting up the main account, you can create child tenants in Cortex Gateway. You can create as many child tenants as you require, subject to your license.
+# Create a child tenant
+
+Create Cortex XSIAM child tenants in Cortex Gateway after setting up the main account. Allocate licensed employee, storage, and add-on resources to each child tenant. The number of child tenants depends on your license.
 
 * The main account is labeled in Cortex Gateway, but child tenants are not labeled.
 * Cortex enables parent-child pairing between tenants located in different geographical regions. To enable this capability, contact your support team.
@@ -27,9 +33,9 @@ In Cortex Gateway, you can view all the available tenants. If you want to create
 
     If you reach your limit for child tenants, depending on your license, you may be able to create more tenants. You may be charged for additional tenants. Contact Customer Support if you are approaching your authorized limit.
 
-**Child tenant minimum allocations**
+### Child tenant minimum resource allocations
 
-The following are the minimum number of endpoints , employees and Gigabytes needed in a child tenant. You will not be able to create a child tenant with less than these minimum allocations, nor will you be able to edit your child tenant allocations to have less than these minimum allocations.
+The following are the minimum employee and storage allocations for each Cortex XSIAM child tenant. You cannot create or update a child tenant below these minimum allocations.
 
 | Multi-tenant environment | Child tenant minimum allocation |
 | ------------------------ | ------------------------------- |

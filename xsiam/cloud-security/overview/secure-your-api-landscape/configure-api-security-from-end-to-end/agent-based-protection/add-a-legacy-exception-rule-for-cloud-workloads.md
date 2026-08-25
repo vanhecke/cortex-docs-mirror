@@ -1,3 +1,9 @@
+---
+description: >-
+  Create legacy Cortex XSIAM Web and API Security exception rules for prevention
+  modules on cloud workloads.
+---
+
 # Add a legacy exception rule for cloud workloads
 
 Legacy Exception rules enable you to configure an exception to prevention and protection modules on workloads for selected profiles.

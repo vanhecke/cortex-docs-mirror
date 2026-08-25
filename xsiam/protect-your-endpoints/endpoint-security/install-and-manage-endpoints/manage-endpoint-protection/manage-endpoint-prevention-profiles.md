@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM endpoint prevention profiles and their applied protection
+  settings.
+---
+
 # Manage endpoint prevention profiles
 
 You can manage the endpoint prevention profiles of your Cortex XDR agent endpoints in various ways, including editing, duplicating, and populating endpoint prevention policy rules.

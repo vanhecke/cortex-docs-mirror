@@ -1,3 +1,9 @@
+---
+description: >-
+  Use the Case Investigation agent in Cortex XSIAM for contextual summaries and
+  investigation guidance.
+---
+
 # Agentic Assistant- Case Investigation agent
 
 The **Agentic Assistant** is a context-aware, generative intelligence tool embedded directly within the case card. It is designed to act as a side-by-side partner for security analysts, eliminating the need to pivot away from the investigation to consolidate complex data.

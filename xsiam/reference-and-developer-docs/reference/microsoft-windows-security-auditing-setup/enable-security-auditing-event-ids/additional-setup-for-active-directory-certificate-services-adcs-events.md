@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Active Directory Certificate Services (ADCS) auditing events for
+  Cortex XSIAM data collection.
+---
+
 # Additional setup for Active Directory Certificate Services (ADCS) events
 
 ADCS events with IDs 4880, 4881, 4886, 4887, 4896, 4898, 4899, 4900 require additional setup.

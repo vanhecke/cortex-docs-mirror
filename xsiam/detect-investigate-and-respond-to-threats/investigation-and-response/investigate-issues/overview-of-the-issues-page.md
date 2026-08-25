@@ -1,6 +1,10 @@
+---
+description: Review and prioritize Cortex XSIAM issues from the Issues page.
+---
+
 # Overview of the Issues page
 
-The **Issues** page consolidates all non-informational issues from your detection sources. By default, the **Issues** page displays the security issues received over the last seven days. To access the **Issues** page, go to Cases & Issues → Issues.
+The **Issues** page consolidates all non-informational issues from your detection sources in Cortex XSIAM. By default, the **Issues** page displays the security issues received over the last seven days. To access the **Issues** page, go to Cases & Issues → Issues.
 
 Each issue is linked to one or more cases. A case provides the full story of a problem by linking related issues, assets, and artifacts in one place. To make sure that you understand the full picture of how an issue fits into the bigger picture, we recommend that you start your investigation from the **Cases** page. You can see the issues linked to a case in the **Issues & Insights** tab of the selected case. Click on an issue to open the Issue card. For more information, see [Issue card](issue-card).
 

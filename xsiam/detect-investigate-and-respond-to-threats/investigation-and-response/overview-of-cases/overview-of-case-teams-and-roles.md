@@ -1,6 +1,12 @@
+---
+description: >-
+  Learn how Cortex XSIAM case teams assign roles and control sensitive case
+  access.
+---
+
 # Overview of case teams and roles
 
-You can assign individual users and entire user groups to a case team. For sensitive or high-risk cases, you can restrict access to a case so that only assigned case team members can see or take action.
+You can assign individual users and entire user groups to a case team in Cortex XSIAM. For sensitive or high-risk cases, you can restrict access to a case so that only assigned case team members can see or take action.
 
 For more information see [Assign a case team and restrict access](../analyze-and-resolve-cases/additional-case-actions/assign-a-case-team-and-restrict-access).
 
@@ -15,7 +21,7 @@ Assigning a case team is beneficial for:
 
 ## Case team roles
 
-You can assign the following roles within a case team. These roles serve as labels to indicate a team member's level of involvement and do not grant additional permissions or access.&#x20;
+You can assign the following roles within a case team. These roles serve as labels to indicate a team member's level of involvement and do not grant additional permissions or access.
 
 For the Collaborator and Watcher roles, you can assign individual users or user groups.
 
@@ -23,14 +29,14 @@ For the Collaborator and Watcher roles, you can assign individual users or user 
 
 ## Case access and visibility
 
-You can control case visibility by adjusting a case’s **General Access** settings under **Manage case team**. By default, visibility is set to **Case Scope**.&#x20;
+You can control case visibility by adjusting a case’s **General Access** settings under **Manage case team**. By default, visibility is set to **Case Scope**.
 
 ### **Case Scope (Default)**
 
 * **Organization-wide access:** Any user in the organization with the appropriate Scope-Based Access Control (SBAC) scope can view the case.
 * **Permission requirements:** Users still require the appropriate Role-Based Access Control (RBAC) permissions to view, edit, or execute playbooks and automations.
 
-### **Team Only**&#x20;
+### **Team Only**
 
 Restricts case access exclusively to assigned team members.
 
@@ -40,4 +46,3 @@ Restricts case access exclusively to assigned team members.
 * **SBAC requirements:** Team members gain full access to the case itself. However, access to underlying case data and related objects (such as issues and assets) remains strictly governed by their assigned SBAC role.
 * **RBAC requirements:** Team members must still hold the necessary RBAC permissions to view, edit, or run playbooks and automations on the case.
 * **Admin access rights:** Users with the **Instance Admin** and **Account Admin** roles cannot be scoped out of cases. They bypass both Case Scope and Team Only restrictions and will always have full access to all cases.
-

@@ -1,3 +1,9 @@
+---
+description: >-
+  Cortex XSIAM serverless function runtime security: monitor AWS function
+  activity, enforce policies, and investigate violations.
+---
+
 # Serverless function runtime security
 
 Cortex XSIAM enables runtime monitoring within a cloud environment by embedding Cortex XDR agent directly into the code of the serverless function. This allows for real-time monitoring of code execution, processes, networking, and filesystem activity, along with the enforcement of policies to permit or deny these actions. This in-depth runtime visibility enhances the overall security of your serverless functions.

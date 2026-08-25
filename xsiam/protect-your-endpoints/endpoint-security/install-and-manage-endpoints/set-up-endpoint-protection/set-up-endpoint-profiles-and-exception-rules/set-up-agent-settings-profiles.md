@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XDR agent settings profiles for endpoint communication,
+  upgrades, and protection behavior in Cortex XSIAM.
+---
+
 # Set up agent settings profiles
 
 Use agent settings profiles to customize Cortex XDR agent settings for different platforms and groups of users.

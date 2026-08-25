@@ -1,5 +1,7 @@
 ---
-description: Connect an Okta instance to detect posture risks and compliance violations.
+description: >-
+  Onboard Okta to Cortex XSIAM for SaaS security posture monitoring and
+  compliance visibility.
 ---
 
 # Onboard Okta
@@ -60,4 +62,3 @@ By adding an Okta app in Cortex, you enable SaaS Security to connect to your Okt
 7. Specify whether you want SaaS Security to connect with Read Permissions only or with Read and Write permissions. The onboarding page lists the API scopes that SaaS Security will access to complete its various scans and to perform remediation.
 8. Under **Configurations**, select a **Sync Interval**. Choose a meaningful **Tag** to distinguish between various applications in different environments.
 9. Click **Next** to complete the onboarding validation process.
-

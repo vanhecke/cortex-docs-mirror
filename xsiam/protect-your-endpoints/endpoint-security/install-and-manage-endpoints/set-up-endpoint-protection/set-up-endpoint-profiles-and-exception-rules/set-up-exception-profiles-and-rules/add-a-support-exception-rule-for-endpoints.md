@@ -1,3 +1,9 @@
+---
+description: >-
+  Add Cortex XSIAM support exception rules for endpoint troubleshooting and
+  compatibility.
+---
+
 # Add a support exception rule for endpoints
 
 You can define and manage exceptions based on files received from the customer support team. You can apply the rule across all of your endpoints or to specific profiles.

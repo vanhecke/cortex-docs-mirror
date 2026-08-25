@@ -1,7 +1,7 @@
 ---
 description: >-
   Create custom graph detection rules that identify risky relationships and
-  attack paths.
+  attack paths in Cortex XSIAM.
 ---
 
 # Create a graph rule

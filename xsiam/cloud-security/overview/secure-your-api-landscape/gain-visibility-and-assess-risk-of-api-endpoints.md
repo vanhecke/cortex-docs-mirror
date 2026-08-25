@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM to discover API endpoints, inspect traffic, assess risks, and
+  investigate API security findings.
+---
+
 # Gain visibility and assess risk of API endpoints
 
 Cortex XSIAM API endpoints provide an overview of API assets across cloud providers and data sources (for example, API Gateway and API specifications), enabling you to analyze, assess, and implement security measures to safeguard against security risks and potential vulnerabilities.

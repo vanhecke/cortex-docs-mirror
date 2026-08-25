@@ -1,3 +1,9 @@
+---
+description: >-
+  Move Cortex XDR agents between managing servers without reinstalling endpoints
+  in Cortex XSIAM.
+---
+
 # Move agents between managing servers
 
 You can move Cortex XDR agents to other Cortex XSIAM managing servers.
@@ -22,7 +28,7 @@ To register to another managing server, the Cortex XDR agent requires a distribu
 Cortex XSIAM does not support moving agents between FedRamp and commercial tenants.
 {% endhint %}
 
-### How to move Cortex XDR agents to other managing servers
+### How to move Cortex XDR agents to other managing servers in Cortex XSIAM
 
 1. Obtain an installation package ID from the target managing server.
    1. Log in to Cortex XSIAM on the target management server, then navigate to **Inventory → Endpoints → Agent Installations**.
@@ -34,9 +40,7 @@ Cortex XSIAM does not support moving agents between FedRamp and commercial tenan
 3. Change the managing server.
    1. Select one or more agents that you want to move to the target server.
    2. Right-click + Alt to open the options menu in advanced mode, and select **Endpoint Control → Change managing server**. This option is available only for an administrator in a supported Cortex XSIAM version.
-   3.  Enter the ID number of the installation package you obtained in Step 1. If you selected agents running on different operating systems, for example, Windows and Linux, you must provide an ID for each operating system. When done, click Move.
-
-
+   3. Enter the ID number of the installation package you obtained in Step 1. If you selected agents running on different operating systems, for example, Windows and Linux, you must provide an ID for each operating system. When done, click Move.
 4. Track the action.
 
 When you track the action in the Action Center, the original managing server will keep displaying In progress (Sent) status also after the action has ended successfully, since the agent no longer reports to this managing server. The new managing server will add this as a new agent registration action.

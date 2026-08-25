@@ -1,3 +1,9 @@
+---
+description: >-
+  Create issue exclusion rules for matching endpoint security issues in Cortex
+  XSIAM.
+---
+
 # Add an issue exclusion rule
 
 Through the process of triaging issues or resolving a case, you may determine that a specific issue does not indicate a threat. If you want Cortex XSIAM to exclude the display of issues that match certain criteria, you can create an issue exclusion rule.

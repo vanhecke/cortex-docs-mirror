@@ -1,3 +1,9 @@
+---
+description: >-
+  Use auditpol to enable Windows security auditing event IDs locally for Cortex
+  XSIAM data collection.
+---
+
 # Set up local machine security auditing without GPO
 
 To enable collection of event logs on a local machine without GPO, use the following command in an administrator command prompt:

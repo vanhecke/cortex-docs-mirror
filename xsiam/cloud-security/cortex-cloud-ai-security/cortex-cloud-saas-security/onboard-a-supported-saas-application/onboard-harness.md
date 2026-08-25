@@ -1,5 +1,7 @@
 ---
-description: Connect a Harness instance to detect posture risks and compliance violations.
+description: >-
+  Onboard Harness to Cortex XSIAM for SaaS security posture monitoring and
+  compliance visibility.
 ---
 
 # Onboard Harness

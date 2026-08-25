@@ -1,5 +1,7 @@
 ---
-description: Grant the correct cloud service provider permissions for Cortex XSIAM.
+description: >-
+  Cortex XSIAM cloud onboarding permissions for AWS, Azure, Google Cloud, and
+  Oracle Cloud.
 ---
 
 # Cloud service provider permissions

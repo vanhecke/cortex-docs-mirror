@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM AI-generated summaries to understand current case scope and
+  context.
+---
+
 # AI-generated case summaries
 
 To gain immediate situational awareness, Cortex XSIAM automatically builds a narrative of the case using **AI-generated titles and descriptions**. This summarized context allows you to quickly grasp the scope of a case and provides a clear starting point for your investigation.

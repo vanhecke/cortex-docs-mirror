@@ -1,12 +1,18 @@
+---
+description: >-
+  Configure Cortex XSIAM issue timer fields to track targets, risk thresholds,
+  and timeout actions with scripts.
+---
+
 # Configure issue timer fields
 
 You can create timer fields that display in the issues table and issue layouts. When you create an issue timer field, you have the option of providing a target for completion and also the option of triggering a script when the timer field has timed out (the target has passed).
 
-If you set a target for a timer field, the Risk Threshold is automatically activated and displays when the timer is considered at risk. You can customize the timeframe for the Risk Threshold. If you do not provide a target, the timer only counts up from when it was triggered.
+If you set a target for a timer field, the Risk Threshold is automatically activated and displayed when the timer is considered at risk. You can customize the timeframe for the Risk Threshold. If you do not provide a target, the timer only counts up from when it was triggered.
 
 You can start, stop, or pause a timer from the CLI, from scripts, and from playbooks.
 
-How to create a timer issue field
+### Create a timer issue field in Cortex XSIAM
 
 1. Go to Settings → Configurations → Object Setup → Issues → Fields → New Field.
 2. Select Timer as the Field Type.

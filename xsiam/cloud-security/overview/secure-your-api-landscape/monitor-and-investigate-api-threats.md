@@ -1,3 +1,9 @@
+---
+description: >-
+  Monitor, investigate, and respond to API attacks, threats, and security issues
+  in Cortex XSIAM.
+---
+
 # Monitor and investigate API threats
 
 Cortex XSIAM provides a comprehensive solution to counter API threats and attacks. It doesn't just address vulnerabilities, but actively protects against the misuse of legitimate API functions, mitigates risks from misconfigurations, and secures often-forgotten "shadow" or "zombie" APIs. By offering continuous visibility and monitoring, Cortex XSIAM ensures robust, proactive protection for all your APIs, safeguarding your organization against evolving and sophisticated threats.

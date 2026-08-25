@@ -1,6 +1,12 @@
+---
+description: >-
+  Update Cortex XSIAM case fields with CLI commands, scripts, and playbooks to
+  automate case data and investigation workflows.
+---
+
 # Update case fields
 
-Sometimes you need to update case fields based on a change in an issue. For example, after starting an investigation an analyst might want to change the name of a case, star a case, or change the status of a case.
+Update Cortex XSIAM case fields when an issue changes. Use CLI commands, scripts, or playbooks to automate case data updates during an investigation. For example, you can change a case name, star a case, or update its status.
 
 You can update the following case fields through a playbook, script, or command:
 
@@ -12,11 +18,11 @@ You can update the following case fields through a playbook, script, or command:
 * incident\_name
 * description
 
-The following sections explain how to update case fields by running a command in the CLI, and running a script, and running a playbook.
+Use the following methods to update case fields with the CLI, a script, or a playbook.
 
 <details>
 
-<summary>Use the CLI</summary>
+<summary>Update case fields with the Cortex XSIAM CLI</summary>
 
 Run the `!setParentIncidentFields` command in the issue or case War Room.
 
@@ -39,9 +45,9 @@ Examples
 
 <details>
 
-<summary>Use a script</summary>
+<summary>Update case fields with a script</summary>
 
-When a script runs in an issue, the data from the script is added to the issue context data and the issue fields. If you want to update case fields, in a Json file, add the `setParentIncidentFields` to the `demisto.executeCommand` function.
+When a script runs in an issue, its data is added to the issue context data and issue fields. To update case fields, add `setParentIncidentFields` to the `demisto.executeCommand` function in a JSON file.
 
 Example
 
@@ -57,9 +63,9 @@ Ensure that you have the required RBAC permission to write scripts.
 
 <details>
 
-<summary>Use a playbook</summary>
+<summary>Update case fields with a playbook</summary>
 
-When running a playbook, by default the data is added to the issue context data and issue fields. You can additionally add this data to case context data and case fields by configuring tasks in a playbook.
+When a playbook runs, data is added to issue context data and issue fields by default. Configure playbook tasks to also add data to case context data and case fields.
 
 The following example explains how to add tasks to a playbook that update the case fields to star a case, and add the key starred: true to the case context data.
 

@@ -1,16 +1,16 @@
 ---
 description: >-
-  Cloud Identity Security can help you address the security challenges of
-  managing identity in cloud environments.
+  Learn how Cloud Identity Security in Cortex XSIAM secures cloud identities and
+  permissions.
 ---
 
 # What is Cloud Identity Security?
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license.
 {% endhint %}
 
-Cloud Identity Security is a set of tools providing you the following necessary capabilities to improve your identity estate's security posture:
+Cloud Identity Security is a set of tools providing you with the following necessary capabilities to improve your identity estate's security posture:
 
 *   **Cloud Infrastructure Entitlement Management (CIEM):** Provides full and clear visibility into identities and permissions in your cloud environments, and helps with rightsizing permissions to achieve least privilege. The main idea behind the principle of least privilege is to make sure that only those who should have access to a cloud resource and actually must use it are granted that access. All unused and unnecessary permissions expose your organization to additional risk, and therefore these need to be eliminated. When all users and applications have been granted only the specific permissions they need, your organization has achieved least privilege access. Core CIEM capabilities also include removing unused permissions, monitoring administrators, and reducing risky permissions, such as human and non-human identities, third-party vendors, cross-account and cross-cloud access.
 
@@ -33,7 +33,7 @@ Cloud Identity Security runs a proprietary algorithm to calculate effective perm
 
 Managing access and entitlement is an essential step in reducing your cloud attack surface. This includes mitigating identity misconfigurations in order to eliminate infiltration risk, and implementing least privilege access in order to minimize lateral movement, privilege escalation, or attack impact possibilities.
 
-Cloud Identity Security can assist you with discovering your entire identity estate, fixing security gaps, and removing unused, excessive, and risky permissions to achieve the principle of least privilege. Additionally, you can use  Cloud Identity Security to ensure that your environment meets any relevant compliance standards.
+Cloud Identity Security can assist you with discovering your entire identity estate, fixing security gaps, and removing unused, excessive, and risky permissions to achieve the principle of least privilege. Additionally, you can use Cloud Identity Security to ensure that your environment meets any relevant compliance standards.
 
 Cloud Identity Security can correlate identity information with configuration data, giving you the required depth of visibility and control. For example, if you use the Amazon S3 storage service, Cloud Identity Security can discover and identify sensitive data; the Cloud Network Analyzer (CNA) module can calculate true internet exposure, and Cloud Identity Security can provide granular insights into exactly who has access to the data and make appropriate recommendations to enforce least-privilege access.
 

@@ -1,6 +1,10 @@
+---
+description: Investigate Cortex XSIAM assets and artifacts associated with a case.
+---
+
 # Associated assets and artifacts
 
-This section displays the technical entities involved in the case, such as endpoints, hosts, IP addresses, and files. Assets and artifacts are organized by class, such as User, Hash, or IP. Malicious artifacts as identified by WildFire are highlighted red.
+The Associated assets and artifacts section displays the technical entities involved in the case, such as endpoints, hosts, IP addresses, and files. Assets and artifacts are organized by class, such as User, Hash, or IP. Malicious artifacts as identified by WildFire are highlighted red.
 
 Hover over an asset or artifact to see key details about the entity. Click on an asset to see full details in the asset card.
 
@@ -12,4 +16,4 @@ To investigate further, click **Ask AI** next to an asset or artifact to open th
 If you do not have permissions to access an asset of a case (which is shown as grayed out and locked), check your scoping permissions in **Manage Users** or **Manage User Groups**.
 {% endhint %}
 
-For more information about dedicated asset and artifact views, see [Investigate artifacts and assets](../../investigate-artifacts-and-assets).
+For more information about dedicated asset and artifact views in Cortex XSIAM, see [Investigate artifacts and assets](../../investigate-artifacts-and-assets).

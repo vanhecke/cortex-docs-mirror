@@ -1,3 +1,9 @@
+---
+description: >-
+  Customize Cortex XSIAM cases and issues with configuration options for
+  scoring, integrations, layouts, and investigation workflows.
+---
+
 # Customize cases and issues
 
 ### Topics

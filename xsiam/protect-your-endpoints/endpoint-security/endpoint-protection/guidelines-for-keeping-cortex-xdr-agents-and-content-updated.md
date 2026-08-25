@@ -1,6 +1,14 @@
+---
+description: >-
+  Plan phased Cortex XDR agent and content updates to maintain endpoint
+  protection in Cortex XSIAM.
+---
+
 # Guidelines for keeping Cortex XDR agents and content updated
 
-This document covers a recommended strategy and best practices for managing agent and content updates to help reduce the risk of downtime in a production environment, while helping ensure timely delivery of security content and capabilities.
+Cortex XSIAM helps you manage Cortex XDR agent upgrades and security content updates across endpoints. Use a phased rollout to reduce production risk while delivering current endpoint protection capabilities.
+
+### Why keep agents and content updated
 
 Keeping Cortex XDR agents up-to-date is essential for protecting against evolving threats and vulnerabilities. Regular updates ensure the latest security features for malware and exploit prevention, and compatibility with the latest software environments, which helps reduce the risk of attacks. This can also help organizations meet regulatory standards while maintaining strong overall protection.
 
@@ -31,7 +39,7 @@ Cortex XSIAM can be configured to manage the deployment of agent and content upd
 
 **Global content updates:** Configure the content update cadence and bandwidth allocation within your organization. To enforce immediate protection against the latest threats, enable minor content updates. Otherwise, the content updates in your network occur only on major releases.
 
-**Guidelines for planning Cortex XDR agent upgrades**
+### Plan Cortex XDR agent upgrades
 
 Use a phased rollout plan by creating batches for deploying updates. The specifics may vary based on your organization and its structure. Start with a control group, then deploy to 10% of your organization. Subsequently, allocate the remaining upgrades in batches that best suit your organization until achieving a full 100% rollout.
 
@@ -49,7 +57,7 @@ The following is an example of a rollout plan for deploying a Cortex XDR agent u
 
 ![agentupgradeflow.gif](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-db1880af14014aac99b0130e185b562a2745b368%2F149b07ab6d178c7c5eac9210dd75d5adf1e8d7556ada05764b0531b2bac38d1d.gif?alt=media)
 
-**Guidelines for planning content updates**
+### Plan content updates
 
 Content updates consist of detection rules and operational logic, and are typically released on a weekly basis. Staging content provides a preview of the content update a week before the published GA.
 
@@ -69,11 +77,11 @@ The following is an example of a rollout plan over a period of one week for depl
 
 ![contentupgradeflow.gif](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-7ba7a069cba51c07cbe6466cb27aa090b896d4c1%2F67824809ef70f95f08baa45e4e42948389ca28749b299a365b94c52be0e1d1b8.gif?alt=media)
 
-**How to configure agent and content update settings**
+### Configure agent and content updates
 
 The following information will help you select and configure the update settings.
 
-Cortex XDR agent upgrades
+#### Cortex XDR agent upgrades
 
 Configure one or more of the settings described in this section to keep your Cortex XDR agents up-to-date.
 
@@ -152,7 +160,7 @@ Configure the Cortex XDR agent upgrade scheduler and the number of parallel upgr
 
 </details>
 
-Content updates
+#### Content updates
 
 When a new content update is available, Cortex XSIAM notifies the Cortex XDR agent. The Cortex XDR agent then randomly chooses a time within a six-hour window during which it will retrieve the content update from Cortex XSIAM. By staggering the distribution of content updates, Cortex XSIAM reduces the bandwidth load and prevents bandwidth saturation due to the high volume and size of the content updates across many endpoints. You can view the distribution of endpoints by content update version from the dashboard.
 

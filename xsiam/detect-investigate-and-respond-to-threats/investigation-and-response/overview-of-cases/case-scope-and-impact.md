@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how Cortex XSIAM uses severity, score, and domain to prioritize and
+  scope cases.
+---
+
 # Case scope and impact
 
 The prioritization and governance of cases are determined by the case **Severity**, **Score**, and **Domain**. Together, these factors define the operational urgency and the investigative boundaries of a case.

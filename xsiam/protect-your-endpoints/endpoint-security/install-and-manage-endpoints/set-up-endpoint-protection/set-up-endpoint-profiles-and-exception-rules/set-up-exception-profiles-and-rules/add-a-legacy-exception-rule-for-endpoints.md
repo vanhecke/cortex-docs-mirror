@@ -1,3 +1,9 @@
+---
+description: >-
+  Add Cortex XSIAM legacy exception rules for endpoint compatibility
+  requirements.
+---
+
 # Add a legacy exception rule for endpoints
 
 Legacy Exception rules enable you to configure an exception to prevention and protection modules on endpoints for selected profiles.

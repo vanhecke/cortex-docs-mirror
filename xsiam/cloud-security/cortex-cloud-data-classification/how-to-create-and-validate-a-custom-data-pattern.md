@@ -1,7 +1,11 @@
+---
+description: Create and validate custom data patterns in Cortex XSIAM.
+---
+
 # How to create and validate a custom data pattern
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on. If you have the Endpoint DLP add-on, Data Classification is automatically available.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license. If you have the Endpoint DLP add-on, Data Classification is automatically available.
 {% endhint %}
 
 ### Overview

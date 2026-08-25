@@ -1,3 +1,7 @@
+---
+description: Add Cortex XSIAM IOC or BIOC rule exceptions for approved endpoint activity.
+---
+
 # Add an IOC or BIOC rule exception
 
 If you want to create a rule to take action on specific behaviors but also want to exclude one or more indicators from the rule, you can create an IOC or BIOC rule exception. An indicator can include the SHA256 hash of a process, process name, process path, vendor name, user name, causality group owner (CGO) full path, or process command-line arguments. For more information about these indicators, see [What are detection rules?](../../../../../../detect-investigate-and-respond-to-threats/threat-management/detection-rules/what-are-detection-rules). For each exception, you also specify the rule scope to which the exception applies.

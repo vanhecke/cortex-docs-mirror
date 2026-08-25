@@ -1,11 +1,11 @@
 ---
-description: About the functionalities of Cloud Identity Security.
+description: Explore Cloud Identity Security functionality in Cortex XSIAM.
 ---
 
 # Cloud Identity Security functionality
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license.
 {% endhint %}
 
 The following explains the functionalities of Cloud Identity Security:

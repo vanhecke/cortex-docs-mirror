@@ -1,3 +1,9 @@
+---
+description: >-
+  Add Cortex XSIAM rules that disable injection and prevention for selected
+  processes.
+---
+
 # Add a disable injection and prevention rule
 
 You can generate a temporary exception to bypass a process from prevention modules and injections. You can specify paths, or command line, from both prevention and injection. This may be useful when you have processes that are essential to your organization and must not be terminated. Cortex XSIAM still generates issues from data collections.

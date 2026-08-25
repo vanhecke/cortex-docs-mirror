@@ -1,5 +1,5 @@
 ---
-description: Learn more about Ingesting logs and data from Okta.
+description: Ingest Okta logs and configuration data into Cortex XSIAM.
 ---
 
 # Ingest logs and data from Okta
@@ -18,8 +18,6 @@ The options available in the UI depend on your specific product license:
 </details>
 
 {% hint style="warning" %}
-### Prerequisite
-
 **Administrator privileges**: Your Okta user must have a role capable of creating API tokens, such as Read-only Administrator, Super Administrator, or Organization Administrator. For more information, see the [Okta Administrators Documentation](https://help.okta.com/en-us/Content/Topics/Security/Administrators.htm?cshid=ext_Security_Administrators).
 {% endhint %}
 

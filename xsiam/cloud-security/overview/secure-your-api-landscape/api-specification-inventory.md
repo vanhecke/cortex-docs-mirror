@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM API specification inventory to import, validate, scan, and
+  assess OpenAPI specifications.
+---
+
 # API specification inventory
 
 Cortex XSIAM offers the option to import API specifications that comply with the [OpenAPI](https://www.openapis.org/) format, including format, file structure, and data types.

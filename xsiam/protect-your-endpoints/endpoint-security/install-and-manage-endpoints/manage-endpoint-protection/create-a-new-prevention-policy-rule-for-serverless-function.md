@@ -1,3 +1,7 @@
+---
+description: Create Cortex XSIAM prevention policy rules for serverless functions.
+---
+
 # Create a new prevention policy rule for serverless function
 
 {% stepper %}
@@ -16,17 +20,11 @@ Use the filters to define criteria for the policy rule to apply, and then click 
 
 #### Select from the following function parameters:
 
-```
 * Cloud provider
-
 * Region
-
 * Runtime
-
 * Function version
-
 * Endpoint name
-```
 {% endstep %}
 
 {% step %}
@@ -35,7 +33,5 @@ Review the policy rule summary, and then click **Done**.
 {% endstepper %}
 
 {% hint style="info" %}
-**Note:**
-
 The filter is stored within the policy definition and assessed during runtime to extract the functions that match the filter criteria.
 {% endhint %}

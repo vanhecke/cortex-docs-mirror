@@ -1,7 +1,7 @@
 ---
 description: >-
   Select built-in or custom compliance standards and controls from the
-  compliance catalogs.
+  compliance catalogs in Cortex XSIAM.
 ---
 
 # Choose compliance standards from the compliance catalog

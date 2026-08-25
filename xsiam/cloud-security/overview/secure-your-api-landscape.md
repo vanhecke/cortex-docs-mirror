@@ -1,3 +1,9 @@
+---
+description: >-
+  Secure APIs in Cortex XSIAM through gateway integration, risk assessment,
+  threat monitoring, specification validation, and workload protection.
+---
+
 # Secure your API landscape
 
 Integrate Cortex Cloud with your API Gateway (AWS, Azure, GCP, Kong or F5 BIG-IP LTM) to scan traffic and analyze logs. With Cortex Cloud, use the API security features to monitor, manage, and enforce security policies across the integrated API gateways. In addition, the API specification can validate live traffic against specifications and alert on surface deviations, undocumented endpoints, or security gaps.

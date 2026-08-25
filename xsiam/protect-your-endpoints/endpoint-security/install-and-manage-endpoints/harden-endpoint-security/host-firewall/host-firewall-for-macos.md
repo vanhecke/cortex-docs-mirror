@@ -1,3 +1,7 @@
+---
+description: Configure Cortex XSIAM host firewall policies for macOS endpoints.
+---
+
 # Host firewall for macOS
 
 The Cortex XSIAM host firewall enables you to control communications on your endpoints. To use the host firewall, you set rules that allow or block the traffic on the devices and apply them to your endpoints using Cortex XSIAM host firewall policy rules. Additionally, you can configure different sets of rules based on the current location of your endpoints - within or outside your organization network. The Cortex XSIAM host firewall rules leverage the operating system firewall APIs and enforce these rules on your endpoints, but not your Windows or Mac firewall settings.

@@ -1,6 +1,16 @@
+---
+description: >-
+  Configure how Unit 42 Managed Services hunts, investigates, and responds to
+  threats in your Cortex XSIAM environment.
+---
+
 # Managed Services configuration
 
-The Managed Services configuration page in Cortex XSIAM and XDR governs how the Unit 42 Managed Services team engages with your environment when the team hunts, investigates and responds to threats on your behalf. The Managed Services page is available to Cortex XSIAM and XDR customers subscribed to Unit 42 Managed Services.
+The Managed Services configuration page in Cortex XSIAM governs how the Unit 42 Managed Services team engages with your environment when the team hunts, investigates, and responds to threats on your behalf.&#x20;
+
+{% hint style="info" %}
+The Managed Services page is available to Cortex XSIAM customers subscribed to Unit 42 Managed Services.
+{% endhint %}
 
 The Managed Services page is identifiable by the Unit42 Managed Services banner with a lock icon, displayed at the top of the page. The banner indicates that the settings govern the operations performed by the Unit 42 Managed Services team in your tenant.
 

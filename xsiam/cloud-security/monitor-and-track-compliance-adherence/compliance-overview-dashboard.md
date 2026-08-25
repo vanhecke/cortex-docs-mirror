@@ -1,7 +1,7 @@
 ---
 description: >-
-  Monitor organization-wide compliance scores, standards, failed controls, and
-  asset group performance.
+  Monitor organization-wide Cortex XSIAM compliance scores, standards, failed
+  controls, and asset group performance.
 ---
 
 # Compliance Overview Dashboard

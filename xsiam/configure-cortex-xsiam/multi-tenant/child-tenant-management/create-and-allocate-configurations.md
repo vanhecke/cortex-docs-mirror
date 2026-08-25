@@ -1,13 +1,19 @@
+---
+description: >-
+  Create and assign Cortex XSIAM security action configurations to centrally
+  manage issues, profiles, and allowlists for child tenants.
+---
+
 # Create and allocate configurations
 
 To manage security actions on behalf of your child tenant, you need to first create and allocate an action configuration.
 
 1. Navigate to each of the following Cortex XSIAM pages and follow the detailed steps:
-   * Incident Response → Incident Configuration → Alert Exclusions → **Alert Exclusions Configuration** panel
-   * Incident Response → Incident Configuration → Starred Alerts → **Starred Alerts Configuration** panel
-   * Endpoints → Policy Management → Prevention → Profiles → **Profile Configuration** panel
-   * Incident Response → Response → Action Center → Currently Applied Actions → Block List/Allow List → **Allow List/Block List** configuration panel
-2. In the corresponding Configuration panel, **+ Create New** configuration.
+   * Settings → Issue Exception and Exclusion → **All Issue Exception &** **Exclusion Rule** page.
+   * Case & Issues → Case Configuration → Starred Issues → **Starred Issues** page.
+   * Inventory → Endpoints → Policy Management → Prevention → Profiles → **Prevention Profiles** page.
+   * Investigation & Response → Response → Action Center → Applied Actions → Block List/Allow List → **Allow List/Block List** page.
+2. On the corresponding page, add the relevent configuration.
 3. Enter the configuration **Name** and **Description**.
 4.  **Create**.
 

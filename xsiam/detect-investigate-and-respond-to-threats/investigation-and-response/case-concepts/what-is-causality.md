@@ -1,6 +1,12 @@
+---
+description: >-
+  Learn how Cortex XSIAM connects activity into causality chains for faster
+  investigations.
+---
+
 # What is Causality?
 
-Causality is the idea of telling a story in a simple and coherent manner and in a proper context. With the purpose of leading security teams to actionable outcomes.
+In Cortex XSIAM, Causality is the idea of telling a story in a simple and coherent manner and in a proper context. With the purpose of leading security teams to actionable outcomes.
 
 Palo Alto Networks products, such as Next-Generation Firewall (NGFW) or the Cortex XDR Agent, can be configured to send rich and detailed data about all activities to the Strata Logging Service, not only items related to attacks. This means that millions of data points are collected about every entity every single day. Analyzing so much data as log lines is practically impossible, so Cortex XSIAM takes these data points and continuously stitches them automatically to ‘Causality Chains’. This automates the dot-connection process that an investigator would otherwise have to do manually during an investigation. This process happens constantly for all collected data points, such as processes, files, network connections, and more, regardless of prevention, detection, or alerts of any kind. With causality, when analysts decide to investigate alerts or go on a hunt, they don't need to manually connect the dots getting distracted with millions of irrelevant data points, and instead they can focus only on data related to the investigation.
 

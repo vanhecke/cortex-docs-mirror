@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect Cursor Enterprise to SaaS Agent Security to gain total visibility and
-  control over your AI ecosystem.
+  Onboard Cursor Enterprise to Cortex XSIAM SaaS AI Agent Security for
+  visibility and control.
 ---
 
 # Onboard Cursor Enterprise
@@ -10,15 +10,13 @@ Cursor Enterprise is the secure, scalable version of Cursor, an AI-powered code 
 
 **Important**: Due to Cursor Enterprise API restrictions, any discovery for Tools and Knowledge Bases is limited to the last 30 days. If you want to increase this duration, contact Technical Support.
 
-
-
 1. Create an Admin API Key in Cursor Enterprise.
    1. Go to the Cursor Enterprise dashboard and select Settings > API Keys > New API Key.
    2. Copy the generated Admin API Key and keep it handy for the onboarding steps.
 2. Onboard Cursor Enterprise to Cortex.
-   1. Log in to Cortex.&#x20;
+   1. Log in to Cortex.
    2. Select **Settings > Data Sources and Integrations > Add New**. You can use the Search bar to find the Cursor connector.
-   3. Click on the Cursor tile and select **Add Another Instance**.&#x20;
+   3. Click on the Cursor tile and select **Add Another Instance**.
    4. On the **Capabilities** page, provide an Instance Name and select Agent Security scanning capability.
    5. On the **Connections** page, provide your Instance URL and enter your API Key to initiate the authentication flow.
    6. Once AISPM validates the credentials and permissions, the onboarding process is complete.

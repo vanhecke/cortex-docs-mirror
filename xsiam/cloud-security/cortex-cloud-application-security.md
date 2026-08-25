@@ -1,6 +1,10 @@
-# Cortex Cloud Application Security
+---
+description: >-
+  Discover Cortex XSIAM Cortex Cloud Application Security for ASPM, supply chain
+  security, and code security.
+---
 
-&#x20;
+# Cortex Cloud Application Security
 
 The Cortex Cloud Application Security module provides comprehensive security for your applications throughout their entire lifecycle. It offers unified visibility and control over your application's security from development through to deployment.
 

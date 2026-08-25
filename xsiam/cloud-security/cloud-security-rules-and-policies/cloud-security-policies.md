@@ -1,5 +1,5 @@
 ---
-description: Learn about cloud security policies.
+description: Learn about cloud security policies in Cortex XSIAM.
 ---
 
 # Cloud security policies

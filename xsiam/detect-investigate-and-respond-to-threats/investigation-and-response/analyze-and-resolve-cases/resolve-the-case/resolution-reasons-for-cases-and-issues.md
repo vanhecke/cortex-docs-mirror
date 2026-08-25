@@ -1,6 +1,10 @@
+---
+description: Select resolution reasons when closing cases and issues in Cortex XSIAM.
+---
+
 # Resolution reasons for cases and issues
 
-When you resolve a case or issue, you must also specify a resolution reason. The following table describes the resolution reasons for selection.
+When you resolve a case or issue, you must also specify a resolution reason. The following table describes the resolution reasons for selection in Cortex XSIAM.
 
 {% hint style="info" %}
 ### Note

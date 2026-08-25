@@ -1,7 +1,11 @@
+---
+description: Classify cloud data by topic in Cortex XSIAM.
+---
+
 # Topic classification
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on. If you have the Endpoint DLP add-on, Data Classification is automatically available.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license. If you have the Endpoint DLP add-on, Data Classification is automatically available.
 {% endhint %}
 
 ## Overview
@@ -48,7 +52,7 @@ Each file is assigned a single, primary topic based on its content. To ensure yo
 
 To maximize efficiency and provide the most accurate risk assessment, file scanning follows a specific logic:
 
-* **Privacy:** The data never leaves the customer environment. The AI-based embedding model runs in the customer environment in same way as the data patterns are scanned.
+* **Privacy:** The data never leaves the customer environment. The AI-based embedding model runs in the customer environment in the same way as the data patterns are scanned.
 * **Pattern dependency:** A file is scanned for topics only if it has already been scanned for data patterns. Combining pattern data with business topics gives you a comprehensive view of a file's true risk level.
 * **Scanning cadence:** Files are scanned for topics at the same defined cadence of the data patterns. Because the core business topic of a file rarely changes without significant content alteration, this cadence ensures accuracy while remaining cost-effective.
 * **Rescanning:** Files are rescanned at the same defined cadence for data patterns, rendering the cost insignificant.

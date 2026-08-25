@@ -1,10 +1,16 @@
-# User issue timer field commands manually in the CLI
+---
+description: >-
+  Use Cortex XSIAM CLI commands to set, start, pause, stop, and reset issue
+  timer fields and SLA targets.
+---
+
+# Use issue timer field commands  in the CLI
 
 You can manage the timers for a specific issue by running commands manually in the CLI. By running CLI command you can to manage timers on a more granular level within specific issues when the need arises. For example, for a high severity issue you might need to decrease the response time.
 
 <details>
 
-<summary>Set timer fields</summary>
+<summary>Set timer fields in Cortex XSIAM</summary>
 
 Use the `setIssue` command to set a specific issue due date, or to set a specific timer field in an issue. If you add the `sla` parameter to the command, it sets the time for the issue's due date. If you also add the `slaField` you set the timer for the issue field.
 
@@ -28,7 +34,7 @@ When defining the values for the `slaField` use the machine name for the field, 
 
 <details>
 
-<summary>Start or stop timer fields</summary>
+<summary>Start or stop timer fields in Cortex XSIAM</summary>
 
 Run the following commands in the CLI:
 

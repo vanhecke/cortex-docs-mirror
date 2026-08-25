@@ -1,3 +1,9 @@
+---
+description: >-
+  Create Cortex XSIAM cloud workload policies for misconfiguration, malware,
+  secret, and trusted image protection.
+---
+
 # Create a cloud workload policy
 
 You can create policies to address specific types of security risks or compliance requirements.

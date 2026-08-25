@@ -1,3 +1,7 @@
+---
+description: Close Cortex XSIAM issues after completing investigation and remediation.
+---
+
 # Close an issue
 
 Once you complete your investigation, perform one of the following actions to close an issue:

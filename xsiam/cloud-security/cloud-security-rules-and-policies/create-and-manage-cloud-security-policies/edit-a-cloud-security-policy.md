@@ -1,5 +1,7 @@
 ---
-description: Edit cloud security policies to update their details, rules, and scopes.
+description: >-
+  Edit cloud security policies in Cortex XSIAM to update their details, rules,
+  and scopes.
 ---
 
 # Edit a cloud security policy

@@ -1,7 +1,7 @@
 ---
 description: >-
-  Cortex API security distributes responsibilities across SOC analysts, security
-  practitioners, and workload owners.
+  Cortex XSIAM API security responsibilities and workflows for SOC analysts,
+  security practitioners, and workload owners.
 ---
 
 # Personas workflow

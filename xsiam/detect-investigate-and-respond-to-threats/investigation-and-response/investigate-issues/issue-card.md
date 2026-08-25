@@ -1,6 +1,10 @@
+---
+description: Use the issue card to investigate and respond to issues in Cortex XSIAM.
+---
+
 # Issue card
 
-The Issue card provides a full breakdown of an issue, helping you understand the root cause and take action through relevant evidence, remediation guidance, and response options.
+The Issue card provides a full breakdown of an issue, helping you understand the root cause and take action through relevant evidence, remediation guidance, and response options in Cortex XSIAM.
 
 The issue card supports full case investigation by retaining case context. Once you have finished reviewing an issue, close the card to return to the initial case investigation.
 

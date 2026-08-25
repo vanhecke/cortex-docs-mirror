@@ -1,7 +1,7 @@
 ---
 description: >-
-  Secure your API landscape through third-party integrations and agent-based
-  protection policies.
+  Configure Cortex XSIAM API security with gateway integrations, traffic
+  collection, and agent-based protection policies.
 ---
 
 # Configure API security from end to end

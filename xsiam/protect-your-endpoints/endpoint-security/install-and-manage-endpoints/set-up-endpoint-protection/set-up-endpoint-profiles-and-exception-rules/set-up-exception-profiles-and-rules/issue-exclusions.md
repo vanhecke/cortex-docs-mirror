@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage issue exclusions to suppress selected endpoint security issues in
+  Cortex XSIAM.
+---
+
 # Issue exclusions
 
 The **Settings** → **Exception Configuration** → **Issue Exclusions** page displays the issue exclusion rules in Cortex XSIAM.

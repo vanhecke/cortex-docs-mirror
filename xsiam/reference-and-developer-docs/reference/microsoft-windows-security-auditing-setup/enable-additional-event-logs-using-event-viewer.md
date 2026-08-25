@@ -1,3 +1,9 @@
+---
+description: >-
+  Enable additional Windows Event Viewer logs, including PowerShell and Defender
+  events, for Cortex XSIAM.
+---
+
 # Enable additional event logs using Event Viewer
 
 For the following event IDs, the auditing setup is configured using the **Windows Event Viewer**. Access the **Event Viewer** through the search box in the **Start** menu.

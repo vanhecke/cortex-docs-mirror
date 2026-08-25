@@ -1,6 +1,12 @@
+---
+description: >-
+  Monitor case and issue resolution times in Cortex XSIAM against configured
+  SLAs.
+---
+
 # Monitor and track resolution times
 
-By default, the system tracks the resolution of cases and issues using built-in fields: **Resolution Timer** and **Resolution SLA**. You can use these fields to monitor deadlines at a glance or sort by SLA status. These fields are available for tracking case resolution on the **Cases** page, and issue resolution on the **Issues** page.
+By default, the system tracks the resolution of cases and issues using built-in fields: **Resolution Timer** and **Resolution SLA**. You can use these fields to monitor deadlines at a glance or sort by SLA status. These fields are available for tracking case resolution on the **Cases** page, and issue resolution on the **Issues** page in Cortex XSIAM.
 
 ### Resolution Timer
 

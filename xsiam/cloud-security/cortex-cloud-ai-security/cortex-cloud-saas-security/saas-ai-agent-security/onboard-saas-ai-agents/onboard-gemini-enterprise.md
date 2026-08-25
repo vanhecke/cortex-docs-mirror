@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect Gemini Enterprise to SaaS Agent Security to gain total visibility and
-  control over your AI ecosystem.
+  Onboard Gemini Enterprise to Cortex XSIAM SaaS AI Agent Security for
+  visibility and control.
 ---
 
 # Onboard Gemini Enterprise
@@ -9,8 +9,6 @@ description: >-
 Gemini allows employees to use pre-built agents or create their own custom agents to perform tasks, analyze data, and automate workflows by securely connecting to company data and applications like Google Workspace and Salesforce. The platform aims to shift employees from tedious tasks to high-impact work while providing central governance and security.
 
 To access your Gemini Enterprise instance, AISPM requires the following specific information during the configuration process:
-
-
 
 | Item                  | Description                                                                                                                                                                                                                                                                                                                                                                                                  |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -26,19 +24,13 @@ To access your Gemini Enterprise instance, AISPM requires the following specific
    5. Select Principals with access > View by principals > Grant access.
    6. In the Add principals section, specify the name of the principal.
    7. In the Assign roles section, select the Service Account Token Creator role and click Save.
-
-
-
 2. Onboard Platform to AISPM
-   1. Log in to Cortex.&#x20;
+   1. Log in to Cortex.
    2. Select Settings > Data Sources and Integrations > Add New. You can use the Search bar to find the Gemini Enterprise connector.
-   3. Click on the Gemini Enterprise tile and select Add Another Instance.&#x20;
-   4. On the Capabilities page, provide an Instance Name and select Agent Security scanning capability.&#x20;
+   3. Click on the Gemini Enterprise tile and select Add Another Instance.
+   4. On the Capabilities page, provide an Instance Name and select Agent Security scanning capability.
    5. On the Connections page enter the following information that you gathered in Step 1:
       1. Project ID (You can use either the project ID or the project number.)
       2. Service Account Email
    6. Once AISPM validates the credentials and permissions, the onboarding process is complete.
-
-
-
-3. Validation and Scanning: Cortex establishes the API connection and validates the credentials and permissions. Cortex  immediately begins to scan your onboarded agentic platform after a successful validation. The amount of time Cortex  takes to scan varies based on the amount of data it is required to scan. At a minimum, it takes at least one hour to scan and display data in the AISPM dashboard.
+3. Validation and Scanning: Cortex establishes the API connection and validates the credentials and permissions. Cortex immediately begins to scan your onboarded agentic platform after a successful validation. The amount of time Cortex takes to scan varies based on the amount of data it is required to scan. At a minimum, it takes at least one hour to scan and display data in the AISPM dashboard.

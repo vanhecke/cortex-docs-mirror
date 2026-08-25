@@ -1,5 +1,5 @@
 ---
-description: Browse available compliance standards.
+description: Browse available compliance standards in Cortex XSIAM.
 ---
 
 # Standards catalog

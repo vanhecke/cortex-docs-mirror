@@ -1,7 +1,7 @@
 ---
 description: >-
   Create assessment profiles to evaluate selected asset groups against
-  compliance standards.
+  compliance standards in Cortex XSIAM.
 ---
 
 # Use an assessment profile to run compliance checks on your assets

@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect a Grammarly instance to detect posture risks and compliance
-  violations.
+  Onboard Grammarly to Cortex XSIAM for SaaS security posture monitoring and
+  compliance visibility.
 ---
 
 # Onboard Grammarly
@@ -47,5 +47,5 @@ By adding a Grammarly app in Cortex, you enable SaaS Security to connect to your
 4. Under **Capabilities**, Enter a Name for your application.
 5. Select Security Posture under Default Capabilities and click Next.
 6. Under **Connections**, enter the user credentials, Okta domain, and MFA secret key for accessing your Grammarly instance.
-7. Under **Configurations**, select a Sync Interval. Choose a meaningful Tag to distinguish between various applications in different environments.&#x20;
+7. Under **Configurations**, select a Sync Interval. Choose a meaningful Tag to distinguish between various applications in different environments.
 8. Click **Nex**t to complete the onboarding validation process.

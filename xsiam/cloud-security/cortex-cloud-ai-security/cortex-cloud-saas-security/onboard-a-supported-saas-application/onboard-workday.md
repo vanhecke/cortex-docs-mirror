@@ -1,5 +1,7 @@
 ---
-description: Connect a Workday instance to detect posture risks and compliance violations.
+description: >-
+  Onboard Workday to Cortex XSIAM for SaaS security posture monitoring and
+  compliance visibility.
 ---
 
 # Onboard Workday
@@ -142,8 +144,6 @@ SaaS Security pulls data from a custom report exposed as a web service. Complete
 | Attributes that Changed | Previous Value        | Previous\_Value                   |
 | Attributes that Changed | Value                 | Value                             |
 
-
-
 4. Under Group Column Headings, add the Attributes that Changed business object.
 5. Select the Filters tab and add filters for the Task Behavior field. Add an Or condition for each of the following values (operator: exact match with the selection list, type: Value specified in this filter):
 
@@ -211,4 +211,3 @@ Note: Do not proceed until you have copied the JSON web service URL.
    1. Set the Sync Interval.
    2. (Optional) Add a Tag.
 10. Click Next to complete onboarding.
-

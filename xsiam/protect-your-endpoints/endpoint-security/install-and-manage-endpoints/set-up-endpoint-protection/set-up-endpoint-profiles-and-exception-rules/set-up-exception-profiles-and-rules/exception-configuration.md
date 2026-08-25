@@ -1,3 +1,7 @@
+---
+description: Configure endpoint exception settings and policy behavior in Cortex XSIAM.
+---
+
 # Exception configuration
 
 To allow full granularity, Cortex XSIAM enables you to create exceptions from your baseline policy. With these exceptions, you can remove specific folders or paths from evaluation, or disable specific security modules. You can configure exception rules for Cortex XSIAM protection and prevention actions in a centralized location, and apply them across multiple profiles. The exceptions can be configured from **Settings** → **Exception Configuration**.
@@ -9,9 +13,7 @@ To allow full granularity, Cortex XSIAM enables you to create exceptions from yo
 * Legacy Agent Exceptions define prevention profile exception rules for all endpoints.
 * Support Exception rules generate exceptions based on files provided by the support team.
 
-Prior to Cortex XSIAM version 1.3, Legacy Agent Exceptions and Support Exceptions were configured through their relevant profiles.
-
-Starting with version 1.3, Cortex XSIAM enables you to manage the Legacy Agent Exceptions and Support Exception configurations from a central location and easily apply them across multiple profiles in the Agent Exceptions Management page.
+Cortex XSIAM enables you to manage the Legacy Agent Exceptions and Support Exception configurations from a central location and easily apply them across multiple profiles in the Agent Exceptions Management page.
 
 To manage the Prevention profile exceptions from **Exception Configuration**, you must first migrate your existing exceptions configured via profiles. Your existing exception profiles are migrated per module.
 
@@ -23,9 +25,7 @@ Cortex XSIAM simulates the migration to enable you to review the results before 
 2. Review the **Legacy Agent Exceptions** and the **Support Exception Rules**.
 3. You can then **Activate** the new agent management page or **Cancel** to continue using the Prevention Profiles to configure individual exceptions.
 
-{% hint style="info" %}
-### Important
-
+{% hint style="warning" %}
 If you don't migrate the legacy exceptions, you can continue to create exceptions through the profiles.
 
 * [Add a new exceptions security profile](#UUID-c186ef70-75e8-5e99-1455-89030568bcea)

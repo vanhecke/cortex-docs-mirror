@@ -1,5 +1,7 @@
 ---
-description: Learn more about creating a synced ticket to remediate an issue.
+description: >-
+  Create and monitor synced remediation tickets for Cortex XSIAM SaaS Security
+  issues.
 ---
 
 # Create and monitor tickets

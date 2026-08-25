@@ -1,5 +1,7 @@
 ---
-description: Connect an Asana instance to detect posture risks and compliance violations.
+description: >-
+  Onboard Asana to Cortex XSIAM for SaaS security posture monitoring and
+  compliance visibility.
 ---
 
 # Onboard Asana
@@ -24,8 +26,6 @@ To onboard your Asana instance, complete the following actions.
 
 An Asana service account is a non-human, programmatic identity that SaaS Security uses to scan your Asana workspace. When you create a service account, Asana generates and displays a service account token that SaaS Security uses to access the Asana API. Asana displays this token only once, so copy and save the token so you can provide it during onboarding.
 
-
-
 1. Open a web browser to the [Asana website](https://asana.com) and log in as a Super Admin.
 
 **Note**: To create an Asana service account, you must use an account assigned to the Super Admin role. Service accounts are an exclusive feature for organizations on Asana's Enterprise or Enterprise+ plans.
@@ -48,8 +48,6 @@ An Asana service account is a non-human, programmatic identity that SaaS Securit
 
 By default, the lifespan for service account tokens in Asana is 10 years. To limit the attack window if the token becomes compromised, set service account tokens to expire after 90 days.
 
-
-
 1. From the left navigation pane in the Admin Console, select Apps > Service Accounts.
 2. On the App settings page, locate the Token Expiration settings.
 3. For When should service account tokens expire? setting, select 90 days.
@@ -67,5 +65,5 @@ By adding an Asana app in Cortex, you enable SaaS Security to connect to your As
 4. Under **Capabilities**, Enter a Name for your application.
 5. Select Security Posture under **Default Capabilities** and click Next.
 6. Under **Connections**, provide the Tenant ID, Client ID, and Client Secret.
-7. Under **Configurations**, select a Sync Interval. Choose a meaningful Tag to distinguish between various applications in different environments.&#x20;
+7. Under **Configurations**, select a Sync Interval. Choose a meaningful Tag to distinguish between various applications in different environments.
 8. Click **Next** to complete the onboarding validation process.

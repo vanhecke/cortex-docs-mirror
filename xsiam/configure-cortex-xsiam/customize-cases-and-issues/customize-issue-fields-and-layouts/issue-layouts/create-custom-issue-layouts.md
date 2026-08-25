@@ -1,3 +1,9 @@
+---
+description: >-
+  Create custom Cortex XSIAM issue layouts with fields, tabs, sections, and
+  action buttons to support analyst investigations.
+---
+
 # Create custom issue layouts
 
 Custom issue layouts let you choose the specific fields and buttons that are displayed for different types of issues. You can create custom issue layouts that include both custom and out-of-the-box issue fields, and add buttons with tasks that can assist and guide analysts in their investigation.
@@ -6,7 +12,7 @@ You can import a custom issue layout by clicking **Import** and uploading the JS
 
 <details>
 
-<summary>Create a custom issue layout</summary>
+<summary>Create a custom issue layout in Cortex XSIAM</summary>
 
 1. Go to **Settings** → **Configurations** → **Object Setup** → **Issues** → **Layouts** → **New Layout**.
 2. Enter a name for the layout.
@@ -49,7 +55,7 @@ You can import a custom issue layout by clicking **Import** and uploading the JS
 
 <details>
 
-<summary>Export issue layouts</summary>
+<summary>Export issue layouts in Cortex XSIAM</summary>
 
 You can export custom issue layouts and duplicates of system issue layouts
 

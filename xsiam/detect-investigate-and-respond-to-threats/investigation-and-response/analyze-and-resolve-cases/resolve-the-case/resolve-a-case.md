@@ -1,6 +1,10 @@
+---
+description: Resolve Cortex XSIAM cases manually, through playbooks, or with the API.
+---
+
 # How to resolve a case
 
-You can resolve a case in the following ways:
+In Cortex XSIAM you can resolve a case in the following ways:
 
 * Manually on the **Cases** page:
   * Click the case status and select **Resolved**.

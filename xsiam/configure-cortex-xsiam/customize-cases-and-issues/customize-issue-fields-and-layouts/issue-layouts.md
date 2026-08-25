@@ -1,11 +1,27 @@
+---
+description: >-
+  Manage Cortex XSIAM system and custom issue layouts to control Investigate
+  panel fields and issue information display.
+---
+
 # Issue layouts
 
-Cortex XSIAM includes default issue layouts. You can add additional issue layouts by installing content packs, duplicating system issue layouts, or creating new custom issue layouts. Issue layouts are applied to incoming issues based on issue layout rules.
+Manage Cortex XSIAM issue layouts to control the information displayed during issue investigation. Cortex XSIAM includes default layouts. Add layouts through content packs, duplicate system layouts, or create custom layouts. Issue layout rules apply layouts to incoming issues.
 
-Issue layouts control the information displayed in the **Investigate** panel. To see the issue layout that has been applied, in the Issue investigation panel click the **Layout Info** button ![layout-info-button.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-92320ae7f1f55c4e42fa0642cd4e26e595fb9aa0%2Fc7c43472effd8964d3a4c434540e76ba09332f7a1ed01c892bf89d3f7fac96d4.png?alt=media) in the upper right corner. Empty layout fields are hidden by default, but are shown if you select **Show empty fields**.
+### View issue layouts in the Investigate panel
 
-The default issue layouts and any layouts that are added from content packs, are locked by default and cannot be deleted, edited, or exported. To view a system layout, right-click the layout row and select **View**. If you want to edit a system layout, you can detach or duplicate the layout by right-clicking the layout row in the issue layout table and selecting **Detach** or **Duplicate**. If you detach a layout, the layout does not receive content updates until it is reattached. To reattach a system layout, right-click the layout row and select **Attach**. If you detach a layout and make changes, those changes may be overwritten if you later reattach the layout. If a layout is detached, you can edit or duplicate it, but you cannot delete or export it. If you instead duplicate the issue layout, the new duplicated layout can be edited, deleted, or exported, the same as a custom issue layout.
+Issue layouts control information displayed in the **Investigate** panel. To view the applied layout, click **Layout Info** ![layout-info-button.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-92320ae7f1f55c4e42fa0642cd4e26e595fb9aa0%2Fc7c43472effd8964d3a4c434540e76ba09332f7a1ed01c892bf89d3f7fac96d4.png?alt=media) in the upper-right corner. Empty layout fields are hidden by default. Select **Show empty fields** to display them.
 
-When viewing an issue, most issue fields can be edited inline, by users with editing permissions. After editing a field inline, click the check mark to save your change. Some system fields, such as **Source Instance**, cannot be edited.
+### Customize system and content pack issue layouts
 
-To modify an existing custom layout, go to **Settings** → **Configurations** → **Object Setup** → **Issues** → **Layouts**, right-click the layout in the layouts table, and select **Edit**, **Duplicate**, **Delete**, or **Export**.
+Default and content pack issue layouts are locked. You cannot delete, edit, or export them. To view a system layout, right-click its row and select **View**.
+
+To edit a system layout, detach or duplicate it from the issue layout table. A detached layout does not receive content updates until you reattach it. To reattach a system layout, right-click its row and select **Attach**. Reattaching can overwrite changes. Detached layouts can be edited or duplicated, but not deleted or exported. Duplicated layouts can be edited, deleted, or exported like custom issue layouts.
+
+### Edit issue fields in a layout
+
+Users with editing permissions can edit most issue fields inline. Click the check mark to save a change. Some system fields, such as **Source Instance**, cannot be edited.
+
+### Manage custom issue layouts
+
+To manage a custom issue layout, go to **Settings** → **Configurations** → **Object Setup** → **Issues** → **Layouts**. Right-click the layout in the table, then select **Edit**, **Duplicate**, **Delete**, or **Export**.

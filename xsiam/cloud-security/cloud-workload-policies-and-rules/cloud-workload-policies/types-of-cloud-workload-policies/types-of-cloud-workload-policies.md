@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XSIAM trusted image policies to evaluate image trust, prevent
+  untrusted deployments, and create security issues.
+---
+
 # Trusted image cloud workload policies
 
 Trusted image policies ensure the integrity and security of container images and VMs deployed into Kubernetes environments. This topic details the policy enforcement logic that Cortex uses to determine if an image is trusted, what action to take, and which issues to generate.

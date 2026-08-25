@@ -1,10 +1,14 @@
+---
+description: >-
+  Activate the Cortex XSIAM main account in Cortex Gateway and configure its
+  tenant name, region, subdomain, and encryption method.
+---
+
 # Step 1. Activate Cortex XSIAM (main account)
 
 To set up Cortex XSIAM multi-tenant, you need to activate the main account in Cortex Gateway. Cortex Gateway is a centralized portal for activating and managing tenants, users, roles, and user groups. After activating the tenant you can then access the tenant. You will need to repeat this task for each tenant if you have multiple tenants. The activation process includes accessing Cortex Gateway, activating the tenant, and then accessing the tenant.
 
 {% hint style="warning" %}
-### Prerequisite
-
 Before you begin, make sure you have the following:
 
 * Cortex XSIAM activation email.
@@ -21,10 +25,10 @@ Before you begin, make sure you have the following:
     You can activate Cortex XSIAM new tenants, access existing tenants, and create and manage role-based access control (RBAC) for all of your tenants.
 {% endhint %}
 
-How to activate Cortex XSIAM
+Activate Cortex XSIAM (Main Account)
 
 1. Enable and verify access to Cortex XSIAM communication servers, storage buckets, and various resources in your firewall configuration. For more information, see [Enable access to required PANW resources](../../../../onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam).
-2.  Go to [Cortex Gateway](https://cortex-gateway.paloaltonetworks.com/signin/) .
+2.  Go to [Cortex Gateway](https://cortex-gateway.paloaltonetworks.com/signin/).
 
     You can also access the link from the activation email.
 3.  Enter your username and password or multi-factor authentication (if set up) by using your Customer Support Portal account credentials to sign in.
@@ -41,32 +45,16 @@ How to activate Cortex XSIAM
    *   **Tenant Subdomain:** DNS record associated with your tenant. Enter a name that will be used to access the tenant directly using the full URL:
 
        `https://<xsiam-tenant>.xdr.<region>.paloaltonetworks.com`
-   *   (Optional) If you want to bring your own keys for encrypting your data, under **Advanced**, select **BYOK** and follow the instructions of the wizard as detailed in **Encryption Method**.
-
-       **Encryption Method**
+   *   (Optional) If you want to bring your own keys for encrypting your data, under **Advanced**, select **BYOK** and follow the instructions of the wizard in **Encryption Method:**&#x20;
 
        Cortex XSIAM enables you to select the method used to encrypt your tenant data at rest. You can select the encryption method of your tenant only when creating new tenants. Select the encryption method in **Advanced** → **Encryption Method**.
 
-<details>
-
-<summary>Default encryption (recommended)</summary>
-
-All data stored by Cortex XSIAM is encrypted at rest using a dedicated key management system. Cortex XSIAM provides strict key access controls and auditing, and encrypts user data at rest according to AES-256 encryption standards. We recommend all our customers use this default system.
-
-</details>
-
-<details>
-
-<summary>BYOK (Bring your own keys)</summary>
-
-BYOK (Bring Your Own Keys) enables you to generate your own encryption keys and securely import and manage them via Cortex Gateway to retain greater control over your tenant data and encryption. This requires [further setup](https://docs-cortex.paloaltonetworks.com/access?ft:originId=UUID-f87e1680-f4d1-fa01-c156-b1e48cf23398\&ft:sourceId=Paligo).
-
-</details>
-
-6. Select I agree to the terms and conditions of the Privacy policy.
+       * **Default encryption (recommended):** All data stored by Cortex XSIAM is encrypted at rest using a dedicated key management system. Cortex XSIAM provides strict key access controls and auditing, and encrypts user data at rest according to AES-256 encryption standards. We recommend all our customers use this default system.
+       * **BYOK (Bring your own keys):** BYOK (Bring Your Own Keys) enables you to generate your own encryption keys and securely import and manage them via Cortex Gateway to retain greater control over your tenant data and encryption. This requires [further setup](https://docs-cortex.paloaltonetworks.com/access?ft:originId=UUID-f87e1680-f4d1-fa01-c156-b1e48cf23398\&ft:sourceId=Paligo).
+6. Select I agree to the terms and conditions of the Privacy Policy.
 7.  Click Activate.
 
     The activation process can take about an hour and does not require that you remain on the activation page. Cortex XSIAM sends a notification to your email when the process is complete.
-8. After activation, from Cortex Gateway, in the Available Tenants when hovering over the activated tenant, do the following:
+8. After activation, in Cortex Gateway, in the Available Tenants, when hovering over the activated tenant, do the following:
    * Ensure that you can successfully access the tenant by clicking the Cortex XSIAM tenant name (when the tenant is active).
    * In the dialog box, view the tenant status, region, serial number, and license details.

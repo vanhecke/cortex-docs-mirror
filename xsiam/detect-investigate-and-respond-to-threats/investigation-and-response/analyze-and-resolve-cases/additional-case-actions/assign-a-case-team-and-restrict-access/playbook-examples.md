@@ -1,4 +1,12 @@
+---
+description: >-
+  See playbook example for assigning case teams and restricting access to cases
+  in Cortex XSIAM.
+---
+
 # Playbook examples
+
+The examples in this topic show how you can create playbooks in Cortex XSIAM to assign case teams and restrict access to cases.
 
 ## Assign case team and restrict case to Team only
 

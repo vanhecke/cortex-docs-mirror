@@ -1,3 +1,9 @@
+---
+description: >-
+  Enable Windows security auditing event IDs for Cortex XSIAM using GPO or local
+  machine settings.
+---
+
 # Enable security auditing event IDs
 
 You can enable security auditing events using GPO or set them up on a local server. Active Directory Certificate Services (ADCS) events require additional setup.

@@ -1,5 +1,7 @@
 ---
-description: Get started with SaaS Security.
+description: >-
+  Set up Cortex Cloud SaaS Security in Cortex XSIAM to monitor SaaS
+  applications, identities, and AI agents.
 ---
 
 # Setup SaaS Security

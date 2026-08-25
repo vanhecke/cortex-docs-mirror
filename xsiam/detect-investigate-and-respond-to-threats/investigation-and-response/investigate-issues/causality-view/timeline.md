@@ -1,3 +1,7 @@
+---
+description: Use the Cortex XSIAM timeline to trace events and issues during an attack.
+---
+
 # Timeline
 
 The Timeline provides a forensic timeline of the sequence of events, issues, and informational BIOCs, and correlation rules involved in an attack. While the causality view of an issue surfaces related events and processes that Cortex XSIAM identifies as important or interesting, the Timeline displays all related events, issues, and informational BIOCs and correlation rules over time.

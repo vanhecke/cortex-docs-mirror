@@ -1,3 +1,9 @@
+---
+description: >-
+  Review compliance standards and violated controls for Posture cases in Cortex
+  XSIAM.
+---
+
 # Compliance standards and controls
 
 {% hint style="info" %}

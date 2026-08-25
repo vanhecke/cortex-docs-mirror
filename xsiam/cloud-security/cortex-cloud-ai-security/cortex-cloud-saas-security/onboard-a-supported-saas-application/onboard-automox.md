@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect an Automox  instance to detect posture risks and compliance
-  violations.
+  Onboard Automox to Cortex XSIAM for SaaS security posture monitoring and
+  compliance visibility.
 ---
 
 # Onboard Automox
@@ -36,8 +36,6 @@ Required Permissions: The account that you use to generate the API key must have
 * Patch Policy Management: Read
 * User Management: Read
 
-
-
 2. Using the credentials of the account you identified, log in to the [Automox console](https://console.automox.com).
 3. Locate the settings menu icon (⋮) in the upper-right corner of the console and select Secrets & Keys.
 4. On the Secrets & Keys page, scroll to the API Keys section and click Add.
@@ -68,5 +66,5 @@ By adding an Automox app in Cortex, you enable SaaS Security to connect to your 
 4. Under **Capabilities**, Enter a Name for your application.
 5. Select Security Posture under Default Capabilities and click Next.
 6. Under **Connections**, provide the API key and Organization ID.
-7. Under **Configurations**, select a **Sync Interval**. Choose a meaningful **Tag** to distinguish between various applications in different environments.&#x20;
+7. Under **Configurations**, select a **Sync Interval**. Choose a meaningful **Tag** to distinguish between various applications in different environments.
 8. Click **Next** to complete the onboarding validation process.

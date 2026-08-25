@@ -1,8 +1,14 @@
+---
+description: >-
+  Learn how to use a Cortex XSIAM development tenant and remote repository to
+  test, manage, and deploy content across environments.
+---
+
 # Cortex XSIAM development tenant
 
-Set up a content management system with a development environment to create and test content before using it in a production environment.
+Use a Cortex XSIAM development tenant to create, test, and manage content before deployment to production. Remote repository synchronization lets you promote approved content updates between development and production tenants.
 
-A development tenant is a test environment where you can create and check content before using it live in a production tenant.
+A development tenant is a Cortex XSIAM test environment. It lets you validate content before using it in a production tenant.
 
 Before explaining more about development tenants, it is important to understand what content is.
 
@@ -13,33 +19,35 @@ Content includes integrations, automation scripts, playbooks, and other componen
 * System content - content packs you can download from Marketplace. Packs are groups of components that implement use cases. Content packs are created by Palo Alto Networks, technology partners, consulting companies, MSSPs, customers, and individual contributors. Depending on the use case, each content pack includes a combination of different components, such as integrations, scripts, playbooks, and widgets.
 * Custom or user-defined content - custom components you can develop to meet your business needs.
 
-### Development tenants
+### Cortex XSIAM development tenants
 
-The development tenant provides a safe environment to develop and test the functionality of content before using it in a production environment.
+The Cortex XSIAM development tenant provides a safe environment to develop and test content functionality before production deployment.
 
 {% hint style="warning" %}
 Development tenants are not intended for performance checks; they cannot access production data, and they are connected to a limited number of endpoints. As a result, all development tenants have fewer resources than the production tenant, including data ingestion capacity and performance, and compute capabilities. In a development tenant, extreme demand for resources for data ingestion or compute may affect performance and cause latency issues.
 {% endhint %}
 
-After you develop your content, if you want it to be available as part of a content update for the production tenant or additional development tenants, you must push the content from the development tenant to a remote repository.
+To make developed content available in production or other development tenants, push it to a remote repository as a content update.
 
-### Content management using a remote repository
+### Cortex XSIAM content management with a remote repository
 
-In Cortex XSIAM, you can use a content management system with a remote repository to develop and test content. You can choose which type of remote repository you want to use, either the Cortex XSIAM built-in remote repository (default), or you can add any private content repository that is Git-based, including GitHub, GitLab, and Bitbucket. In addition, on-premise repositories are also supported.
+Use Cortex XSIAM content management with a remote repository to develop and test content. Choose the built-in remote repository, which is the default, or a private Git-based repository. Supported private repositories include GitHub, GitLab, Bitbucket, and on-premise repositories.
 
-The development tenant pushes content to a remote repository, and the production tenant or additional development tenants pull content from the remote repository.
+The development tenant pushes content to the remote repository. The production tenant and additional development tenants pull content from the repository.
 
-### Push and pull content between tenants
+### Push and pull Cortex XSIAM content between tenants
 
-In a cluster of tenants that includes one production tenant and one or more development tenants, only one development tenant pushes (the push tenant). The production tenant and any other development tenants pull content from the push tenant (pull tenants).
+In a tenant cluster, only one development tenant pushes content. This is the push tenant. The production tenant and any other development tenants pull content as pull tenants.
 
-### Push and pull system content
+### Push and pull system content updates
 
-Only the development push tenant manages the system content and updates. Pull tenants cannot manage system content, meaning they cannot download, install, edit, create, or update system content; they are configured to only pull system content from the push tenant. Only the development push tenant has access to Marketplace, so system content updates from Marketplace are delivered only to the development push tenant. Pull tenants do not have Marketplace, so all system content must first be downloaded and installed on the push tenant, pushed to the remote repository, and then pulled into the pull tenants.
+Only the development push tenant manages system content and content updates. Pull tenants only pull system content from the push tenant. They cannot download, install, edit, create, or update it.
+
+Only the development push tenant can access Marketplace. Download and install Marketplace content there. Then push it to the remote repository for pull tenants.
 
 ### Push and pull custom content
 
-Not all custom content can be pushed/pulled. Content that cannot be pushed/pulled can be developed wherever you prefer - in both the development and production tenants, or copied from the development tenant into the production tenant. For example, content that cannot be pushed/pulled includes dashboards and lists, parsing rules, data modeling rules, and correlation rules.
+Not all custom content supports push and pull. Develop unsupported content in either tenant, or copy it from development to production. Unsupported content includes dashboards, lists, parsing rules, data modeling rules, and correlation rules.
 
 The following system and user-defined content types are push/pull supported:
 

@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure restrictions prevention profiles to control executable activity on
+  endpoints in Cortex XSIAM.
+---
+
 # Set up restrictions prevention profiles
 
 Restriction prevention profiles limit the locations from which executables can run on an endpoint.

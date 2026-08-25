@@ -1,3 +1,9 @@
+---
+description: >-
+  Investigate Cortex XSIAM Managed Threat Hunting threat and impact reports,
+  then collaborate directly with the hunting team.
+---
+
 # Investigate Managed Threat Hunting reports
 
 The Managed Threat Hunting team proactively scans, identifies, and analyzes your Cortex XSIAM tenant for possible threats and creates detailed threat and impact reports to help you track and manage your Cortex XSIAM data.
@@ -8,8 +14,6 @@ Cortex XSIAM displays the reports in a dedicated page that allows you to investi
 * **Dismiss**—Delete the notification from your **Notifications** list.
 
 {% hint style="info" %}
-### Note
-
 The MTH page is available for users with the Managed Threat Hunting license and have the necessary permission to view and triage alerts and incidents in Cortex XSIAM.
 {% endhint %}
 

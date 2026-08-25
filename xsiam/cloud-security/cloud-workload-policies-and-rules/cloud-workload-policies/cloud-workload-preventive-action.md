@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how Cortex XSIAM cloud workload preventive actions block Kubernetes
+  deployments and fail CI pipelines.
+---
+
 # Cloud workload preventive action
 
 Some Cloud Workload policies provide a **Prevent and Create an Issue** action that enforces compliance during deployments.

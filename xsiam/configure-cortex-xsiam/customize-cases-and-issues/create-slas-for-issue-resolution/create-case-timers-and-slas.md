@@ -1,6 +1,12 @@
+---
+description: >-
+  Create Cortex XSIAM case timers and custom SLAs to track KPIs, response-time
+  goals, case milestones, and SLA compliance.
+---
+
 # Create additional case timers and SLAs
 
-To help you to monitor and assess your key performance indicators (KPIs), you can create SLAs at the case level. Case SLAs provide the ability to track KPIs, obtain real-time insights into operational performance, and ensure alignment with established objectives.
+Create Cortex XSIAM case timers and custom SLAs to monitor key performance indicators (KPIs). Case SLAs track response-time goals, provide operational insights, and support established objectives.
 
 {% hint style="info" %}
 **Tip**
@@ -10,14 +16,14 @@ You don't need to build a resolution SLAs and timers from scratch. The following
 * **Resolution Timer:** Works automatically out-of-the-box to measure elapsed case duration.
 * **Resolution SLA:** Pre-positioned in the system, but requires you to configure your specific time goals to begin tracking compliance.
 
-For more information, see [Create SLAs for case and issue resolution]().
+For more information, see [](<> "mention").
 {% endhint %}
 
-In addition to the default **Resolution Timer** and **Resolution SLA** fields, you can create additional timer and SLA fields to measure separate milestones, such as initial response times, or to enforce unique targets for specific customer tiers.
+In addition to the default **Resolution Timer** and **Resolution SLA** fields, create timer and SLA fields for separate milestones. For example, track initial response times or enforce targets for specific customer tiers.
 
 All active case SLAs are displayed in the case header.
 
-Case SLAs are based on case timer fields. When a case matches the defined criteria, the timer starts running. If the timer field is linked to an SLA, the progress of the case is tracked in relation to the SLA. Note that the timer field counts forward, and the SLA field counts backwards.
+Case SLAs are based on case timer fields. When a case matches defined criteria, the timer starts. When linked to an SLA, the timer tracks case progress against the SLA goal. The timer field counts up, and the SLA field counts down.
 
 {% hint style="warning" %}
 ### Prerequisite
@@ -27,7 +33,7 @@ Before you can create a case SLA, you must first create a timer field. A timer f
 
 <details>
 
-<summary>Create a case timer</summary>
+<summary>Create a Cortex XSIAM case timer</summary>
 
 Take the following steps to create a case timer field:
 
@@ -59,7 +65,7 @@ The following timer measures the amount of time a security case is waiting in **
 
 <details>
 
-<summary>Create a case SLA field</summary>
+<summary>Create a custom case SLA field</summary>
 
 Take the following steps to create a case SLA. You can set up multiple goals for an SLA.
 
@@ -96,20 +102,20 @@ The second SLA goal applies to security cases with a severity level of **High**.
 
 <details>
 
-<summary>Display case timer and SLA fields in the Cases page</summary>
+<summary>Display case timer and SLA fields</summary>
 
 After creating new timer and SLA fields, you can add them to the **Cases** table layout and view them in the **Cases** detailed view:
 
 * In the **Cases** table view, add the timer and SLA fields to the **Layout** tab in the **Table Setting Menu**.
 *   In the **Cases** detailed view, use the **Sort By** field to filter the cases list by the SLA field. Details of the SLA are shown in the list.
 
-    In addition, you can create a custom case layout with a new tab displaying SLA fields. For more information, see [Case layouts](../customize-case-fields-and-layouts/case-layouts).
+    In addition, create a custom case layout with a tab displaying SLA fields. For more information, see [case-layouts](../customize-case-fields-and-layouts/case-layouts "mention").
 
 </details>
 
 <details>
 
-<summary>Example of SLA and timer fields</summary>
+<summary>Example case timer and SLA fields</summary>
 
 This example is based on the fields created in the previous procedures:
 
@@ -129,7 +135,7 @@ This example is based on the fields created in the previous procedures:
 
 <details>
 
-<summary>Additional considerations</summary>
+<summary>Case timer and SLA considerations</summary>
 
 Consider the following information when working with timer and SLA fields:
 

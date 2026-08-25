@@ -1,3 +1,9 @@
+---
+description: >-
+  Use the Cortex XSIAM Cloud Workload Rules page to view, filter, and manage
+  built-in and custom rules.
+---
+
 # Cloud Workload Rules page
 
 The **Cloud Workload Rules** page allows users to manage rules. Users can create, edit, filter, and manage rules.
@@ -7,7 +13,7 @@ The **Cloud Workload Rules** page allows users to manage rules. Users can create
 
 Keep the following caveats in mind when working with Rules:
 
-* Instance Administrators can view all facets of Rules without restrictions, even when Scope-Based Access Control (SBAC) roles are in effect.&#x20;
+* Instance Administrators can view all facets of Rules without restrictions, even when Scope-Based Access Control (SBAC) roles are in effect.
 * If you’ve been assigned a custom role with View/Edit permissions limited by SBAC, you may not be able to view specific Rules.
 * You can further narrow your search in a Rules table by using SBAC to limit the scope of the findings, issues, and case counts.
 {% endhint %}

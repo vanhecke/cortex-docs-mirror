@@ -1,3 +1,9 @@
+---
+description: >-
+  Retrieve Cortex XSIAM issue data, related files, and packet captures for
+  analysis.
+---
+
 # Retrieve additional issue details
 
 To help you with issue analysis, Cortex XSIAM can provide related files and memory content analysis.

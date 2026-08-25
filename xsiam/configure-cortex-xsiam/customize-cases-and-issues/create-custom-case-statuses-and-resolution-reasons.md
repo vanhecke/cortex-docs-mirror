@@ -1,28 +1,30 @@
 ---
 description: >-
-  Create custom case and issue statuses and resolution reasons for your
-  workflow.
+  Learn how to create custom case and issue statuses and resolution reasons in
+  Cortex XSIAM.
 ---
 
 # Create custom case statuses and resolution reasons
 
+### Before you begin
+
 {% hint style="info" %}
-Before you create a custom status, please review the built-in options. For more information, see [Resolution reasons for cases and issues](../../detect-investigate-and-respond-to-threats/investigation-and-response/analyze-and-resolve-cases/resolve-the-case/resolution-reasons-for-cases-and-issues).
+Before you create a custom status, review the built-in options. For more information, see [Resolution reasons for cases and issues](../../detect-investigate-and-respond-to-threats/investigation-and-response/analyze-and-resolve-cases/resolve-the-case/resolution-reasons-for-cases-and-issues).
 
 We recommend using the built-in statuses and resolution reasons where possible. Custom statuses and resolution reasons might not be supported by all content, and status syncing can take time.
 
 In addition, custom statuses affect Cortex XSIAM’s ability to learn, correctly identify, and score future cases.
 {% endhint %}
 
-You can create custom cases statuses and custom resolution reasons that are tailored to your workflow. Custom case statuses and resolution reasons apply to case and issue statuses, and can also be used in playbooks.
+Create custom case statuses and resolution reasons that match your workflow. These settings apply to cases and issues. You can also use them in playbooks.
 
-Adding custom ,case statuses and resolution reasons requires a **View/Edit** RBAC permission for **Case Properties** (under **Configurations** → **Object Setup**).
+Creating custom case statuses and resolution reasons requires the **View/Edit** RBAC permission for **Case Properties** under **Configurations** → **Object Setup**.
 
 {% hint style="info" %}
 After creation, custom statuses and resolution reasons cannot be deleted or modified.
 {% endhint %}
 
-How to create custom case statuses
+### Create custom case statuses
 
 1.  Go to **Configurations** → **Object Setup** → **Cases** → **Properties**.
 

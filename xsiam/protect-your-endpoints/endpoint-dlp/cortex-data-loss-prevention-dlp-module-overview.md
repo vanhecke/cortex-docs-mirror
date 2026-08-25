@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn about Cortex Data Loss Prevention (DLP) module, which provides a
-  solution to prevent sensitive data exfiltration.
+  Learn about the Cortex Data Loss Prevention (DLP) module in Cortex XSIAM,
+  which provides a solution to prevent sensitive data exfiltration.
 ---
 
 # Cortex Data Loss Prevention (DLP) module overview
@@ -9,7 +9,7 @@ description: >-
 {% hint style="warning" %}
 ### Prerequisite
 
-* Endpoint DLP add-on license
+* Endpoint DLP add-on
 * Cortex agent 9.1 and above for Windows and macOS
 {% endhint %}
 

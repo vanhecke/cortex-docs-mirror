@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XSIAM Managed Services settings for Unit 42 threat response,
+  report delivery, action permissions, and escalation contacts.
+---
+
 # Managed Services configuration in Cortex
 
 {% content-ref url="managed-services-configuration-in-cortex/managed-services-configuration" %}

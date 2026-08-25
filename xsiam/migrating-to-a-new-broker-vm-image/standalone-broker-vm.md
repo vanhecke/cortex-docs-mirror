@@ -1,5 +1,7 @@
 ---
-description: Learn more about migrating a standalone broker VM image.
+description: >-
+  Migrate a standalone Broker VM to the latest Cortex XSIAM broker image,
+  including configuration import and log-source updates.
 ---
 
 # Standalone Broker VM

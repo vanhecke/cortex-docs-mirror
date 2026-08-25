@@ -1,3 +1,7 @@
+---
+description: Use the Cortex XSIAM War Room to investigate issues and run response actions.
+---
+
 # Use the War Room in an investigation
 
 ## Use the War Room in an investigation
@@ -100,9 +104,7 @@ The following common arguments are available for every script run from the CLI.
 
 <summary>Access attributes in the Unified Asset Inventory</summary>
 
-{% hint style="info" %}
-**License type:** This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
-{% endhint %}
+\{% hint style="info" %\} **License type:** This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on. \{% endhint %\}
 
 Commands you run in the War Room can automatically populate parameters such as region, account id, and tags, based on asset data. Commands can reference UIA attributes for the relevant asset(s) in the issue context and use those attributes as input. The issue must contain the relevant `Asset ID`.
 

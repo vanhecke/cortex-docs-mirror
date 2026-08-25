@@ -1,10 +1,14 @@
+---
+description: Learn how Unified Human Identities correlate accounts in Cortex XSIAM.
+---
+
 # Unified Human Identities
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license.
 {% endhint %}
 
-#### Overview
+### Overview
 
 The Unified Human Identities (UHI) feature addresses identity fragmentation by automatically correlating disparate digital accounts into a single virtual asset. Modern enterprise environments manage identity across on-premises directories, cloud Identity Providers (IdPs), SaaS applications, and cloud platforms. Within these systems, individuals often accumulate multiple digital accounts, creating a visibility gap where risk is analyzed at the account level rather than the human level.
 
@@ -32,7 +36,7 @@ Cortex Identity Security creates and maintains Unified Human Identity assets aut
   * Cloud platforms
   * SaaS applications
 
-#### Human Identities Inventory
+### Human Identities Inventory
 
 The Human Identities Inventory provides a centralized location to audit and manage the individuals in your organization.
 
@@ -53,7 +57,7 @@ The top of the inventory provides a real-time summary of identity health:
 * **Administrative Status:** A count of individuals who hold administrative privileges across any connected system.
 * **Activity Tracking:** An overview of inactive identities who have not accessed their accounts within a specified timeframe.
 
-#### Individual Identity Details Panel
+### Individual Identity Details Panel
 
 You can click an individual in the identity inventory list to open a detailed profile panel that consolidates information typically scattered across multiple consoles.
 
@@ -62,7 +66,7 @@ You can click an individual in the identity inventory list to open a detailed pr
 * **Identity insights:** Behavioral and posture-based analytics highlighting specific security risks or anomalies associated with the person’s combined footprint.
 * **Correlated accounts:** Lists every specific account, including cloud roles, directory profiles, and SaaS logins, that has been correlated to a specific Unified Human Identity.
 
-#### Operational Use Cases
+### Operational Use Cases
 
 * **Detection of Privilege Creep:** Identifies individuals who have accumulated excessive permissions across unrelated platforms, and who may be invisible when viewing accounts in isolation.
 * **Incident Investigation:** Responders can search by name or email to view all associated system access, reducing the manual effort required to cross-reference logs from different providers.

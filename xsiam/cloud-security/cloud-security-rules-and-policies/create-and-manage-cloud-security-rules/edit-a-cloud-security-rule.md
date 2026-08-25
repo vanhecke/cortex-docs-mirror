@@ -1,5 +1,7 @@
 ---
-description: Edit cloud security rules and understand how changes affect related issues.
+description: >-
+  Edit cloud security rules in Cortex XSIAM and understand how changes affect
+  related issues.
 ---
 
 # Edit a cloud security rule

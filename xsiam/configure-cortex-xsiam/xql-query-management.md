@@ -1,18 +1,16 @@
 ---
-description: Administrators can set controls on running XQL queries.
+description: >-
+  Configure Cortex XSIAM XQL query limits, timeouts, and visibility controls to
+  protect tenant performance and query privacy.
 ---
 
 # XQL query management
 
 You can find **Query Management** options under **Settings** → **Configurations** → **General** → **Query Management**. These options enable administrators to set controls on running queries.
 
-<details>
-
-<summary>Set query limits</summary>
+### Set query limits in Cortex XSIAM
 
 {% hint style="warning" %}
-### Prequisite
-
 Setting query limits requires **View/Edit** permissions for **Configurations** → **Query Management**.
 {% endhint %}
 
@@ -51,7 +49,7 @@ Administrators can set query limits that control user-generated XQL queries with
 
     <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>To ensure optimal system performance, all queries (user-generated and otherwise) adhere to a default timeout limit of 60 minutes that is defined by Palo Alto and takes priority over the administrator-defined value. Therefore, regardless of the value specified in this field, queries will be stopped after 60 minutes.</p><p>You can override the default timeout limit by including the <code>config max_runtime_minutes</code> stage in your query to increase the query timeout value, up to the administrator-defined value.</p></div>
 
-How to set a query limit
+### Set a query limit
 
 1. Go to **Settings** → **Configurations** → **General** → **Query Management**.
 2. Under **Query Limits** select **Enabled**.
@@ -68,11 +66,7 @@ How to set a query limit
 6. Click **Save**.
 7. Changes to the query limit settings are recorded in the **Management Audit Logs**.
 
-</details>
-
-<details>
-
-<summary>Restrict query visibility</summary>
+### Restrict query visibility in Cortex XSIAM
 
 Administrators can restrict non-admin users and API keys to viewing and managing only their own query history, which enhances tenant privacy and reduces operational noise. By limiting access to users' own search activities, you can secure sensitive investigations and ensure that API usage adheres to strict visibility controls.
 
@@ -82,7 +76,7 @@ The following areas in the **Query Builder** are affected when you restrict quer
 * **Active Queries** tab: Users and API keys view and manage any query they initiated, regardless of the source, including dashboards and widgets, allowing them to cancel operations they triggered.
 * **Scheduled Queries** tab: Users see only the queries they personally scheduled.
 
-**Query restriction use cases**
+#### **Query restriction use cases**
 
 Restricting the access of users and APIs to only their own queries addresses specific operational and security needs:
 
@@ -94,7 +88,7 @@ Restricting the access of users and APIs to only their own queries addresses spe
 Query visibility is subject to Role-Based Access Control (RBAC); users can't see queries for datasets they do not have permission to access.
 {% endhint %}
 
-How to enable query visibility restrictions
+### Enable query visibility restrictions in Cortex XSIAM
 
 1. Go to **Settings** → **Configurations** → **General** → **Query Management**.
 2. Under **Enforce query privacy for non-admins**,
@@ -103,5 +97,3 @@ How to enable query visibility restrictions
 3. Click **Save**.
 
 Changes to the query visibility settings are recorded in the **Management Audit Logs**.
-
-</details>

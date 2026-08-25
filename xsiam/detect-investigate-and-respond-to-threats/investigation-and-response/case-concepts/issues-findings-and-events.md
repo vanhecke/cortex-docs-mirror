@@ -1,6 +1,12 @@
+---
+description: >-
+  Understand how Cortex XSIAM connects issues, findings, and events to support
+  case investigations.
+---
+
 # Issues, findings, and events
 
-Understand how issues, findings, and events are related to cases.
+Understand how issues, findings, and events are related to cases in Cortex XSIAM.
 
 ### **Issues**
 

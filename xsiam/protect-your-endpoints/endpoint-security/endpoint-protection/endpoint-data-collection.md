@@ -1,3 +1,9 @@
+---
+description: >-
+  Understand endpoint data that Cortex XSIAM collects through the Cortex XDR
+  agent.
+---
+
 # Endpoint data collection
 
 When the Cortex XDR agent generates an issue on endpoint activity, a minimum set of metadata about the endpoint is sent to the server.

@@ -1,5 +1,7 @@
 ---
-description: Create identity rules to detect excessive or unused cloud permissions.
+description: >-
+  Create Cortex XSIAM identity rules to detect excessive or unused cloud
+  permissions.
 ---
 
 # Create an identity rule

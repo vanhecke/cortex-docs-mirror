@@ -1,13 +1,11 @@
 ---
-description: >-
-  Use Cloud Identity Security to achieve the principle of least privilege
-  access.
+description: Use Cloud Identity Security in Cortex XSIAM to achieve least privilege access.
 ---
 
 # Achieve the principle of least privilege access
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license.
 {% endhint %}
 
 #### Overview

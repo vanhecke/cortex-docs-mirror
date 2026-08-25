@@ -1,3 +1,9 @@
+---
+description: >-
+  Validate LDAP server Event ID 1644 collection in Windows Event Viewer for
+  Cortex XSIAM.
+---
+
 # Validate log collection for LDAP Server events
 
 View the LDAP Server Events logs.

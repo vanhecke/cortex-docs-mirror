@@ -1,3 +1,9 @@
+---
+description: >-
+  Harden endpoint security with Cortex XSIAM controls for devices, firewalls,
+  encryption, and vulnerabilities.
+---
+
 # Harden endpoint security
 
 You can extend the security on your endpoints beyond the Cortex XDR agent built-in prevention capabilities to provide increased network security coverage within your organization. By leveraging existing mechanisms and added capabilities, the Cortex XDR agent can enforce additional protections on your endpoints to provide a comprehensive security posture.

@@ -1,3 +1,7 @@
+---
+description: Monitor Cortex XSIAM agent operational status across managed endpoints.
+---
+
 # Monitor agent operational status
 
 In Cortex XSIAM, you have full visibility into the Cortex XDR agent operational status on the endpoint, which indicates whether the agent is protecting according to its predefined security policies and profiles. By observing the operational status on the endpoint, you can identify when the agent may suffer from a technical issue or misconfiguration that interferes with the agent’s protection capabilities or interaction with Cortex XDR and other applications. The Cortex XDR agent reports the operational status as follows:

@@ -1,3 +1,9 @@
+---
+description: >-
+  Follow this checklist to activate parent tenants, create child tenants, and
+  configure user access for centrally licensed Cortex XSIAM deployments.
+---
+
 # Onboarding checklist for multi-tenant central licensing deployments
 
 We recommend that you review the following steps to successfully deploy and onboard Cortex XSIAM with central licensing management. For MSSP multi-tenant environments with customer-owned licenses, see [Onboarding checklist for multi-tenant customer-owned license deployments](onboarding-checklist-for-multi-tenant-customer-owned-license-deployments).

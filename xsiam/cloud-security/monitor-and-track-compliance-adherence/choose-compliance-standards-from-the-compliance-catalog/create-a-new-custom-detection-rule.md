@@ -1,7 +1,7 @@
 ---
 description: >-
-  Create custom detection rules to enforce compliance requirements and security
-  best practices.
+  Create custom Cortex XSIAM detection rules to enforce compliance requirements
+  and security best practices.
 ---
 
 # Create a new custom detection rule

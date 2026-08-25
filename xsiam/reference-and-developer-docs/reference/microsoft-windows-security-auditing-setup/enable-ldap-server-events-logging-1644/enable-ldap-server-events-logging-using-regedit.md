@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure LDAP server Event ID 1644 logging through Registry Editor for Cortex
+  XSIAM.
+---
+
 # Enable LDAP server events logging using RegEdit
 
 Make the following changes on all LDAP servers in the domain for which you want to configure auditing.

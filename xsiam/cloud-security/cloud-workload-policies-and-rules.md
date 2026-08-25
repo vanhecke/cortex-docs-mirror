@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM cloud workload policies and rules to detect security
+  violations, create issues, and prevent misconfigurations.
+---
+
 # Cloud workload policies and rules
 
 Cloud Workload Policies and Rules help organizations maintain security compliance, prevent misconfigurations, and reduce risks across cloud environments.

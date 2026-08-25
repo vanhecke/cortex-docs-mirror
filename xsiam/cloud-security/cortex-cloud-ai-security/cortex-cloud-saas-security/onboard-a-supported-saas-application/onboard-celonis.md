@@ -1,5 +1,7 @@
 ---
-description: Connect a Celonis instance to detect posture risks and compliance violations.
+description: >-
+  Onboard Celonis to Cortex XSIAM for SaaS security posture monitoring and
+  compliance visibility.
 ---
 
 # Onboard Celonis
@@ -31,8 +33,6 @@ The URL for your team domain appears in the address bar of your browser and has 
 
 **Note**: Before you continue to the next step, make note of your team domain URL. You will provide this information to SaaS Security during the onboarding process.
 
-
-
 2. Generate an API key for your team domain.
    1. Log in to your Celonis team domain as an administrator. The API key inherits the access permissions of the administrator account that generates the key. The account must have Admin access to your team domain.
    2. Select Profile menu > Edit Profile.
@@ -53,5 +53,5 @@ By adding a Celonis app in Cortex, you enable SaaS Security to connect to your C
 4. Under **Capabilities**, Enter a Name for your application.
 5. Select Security Posture under Default Capabilities and click Next.
 6. Under **Connections**, provide the API key and Team Domain.
-7. Under **Configurations**, select a **Sync Interval**. Choose a meaningful **Tag** to distinguish between various applications in different environments.&#x20;
+7. Under **Configurations**, select a **Sync Interval**. Choose a meaningful **Tag** to distinguish between various applications in different environments.
 8. Click **Next** to complete the onboarding validation process.

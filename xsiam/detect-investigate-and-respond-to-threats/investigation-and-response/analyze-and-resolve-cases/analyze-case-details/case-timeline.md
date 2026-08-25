@@ -1,6 +1,12 @@
+---
+description: >-
+  Use the case timeline to track events, actions, and investigation evidence in
+  Cortex XSIAM.
+---
+
 # Case timeline
 
-Access the case timeline to see a chronological record of security events and analyst actions.
+Access the case timeline to see a chronological record of security events and analyst actions in Cortex XSIAM.
 
 ### **Overview of the timeline**
 

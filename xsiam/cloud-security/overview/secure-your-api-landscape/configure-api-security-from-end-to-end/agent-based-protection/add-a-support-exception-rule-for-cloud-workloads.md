@@ -1,3 +1,9 @@
+---
+description: >-
+  Import Cortex XSIAM support exception rules for Web and API Security
+  protection on cloud workloads.
+---
+
 # Add a support exception rule for cloud workloads
 
 You can define and manage exceptions based on files received from the customer support team. You can apply the rule across all of your workloads or to specific profiles.

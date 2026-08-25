@@ -1,5 +1,5 @@
 ---
-description: Learn about out-of-the-box and custom cloud security rules.
+description: Learn about out-of-the-box and custom cloud security rules in Cortex XSIAM.
 ---
 
 # Cloud security rules

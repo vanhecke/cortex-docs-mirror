@@ -1,3 +1,9 @@
+---
+description: >-
+  Add custom or system widgets to Cortex XSIAM issue layouts with
+  dynamic-section scripts and layout rules.
+---
+
 # Add a custom widget to an issue layout
 
 You can add a custom or system widget to a custom issue layout by uploading an auto script and using it in a **General Purpose Dynamic Section** in your layout.

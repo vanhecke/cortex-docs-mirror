@@ -1,8 +1,7 @@
 ---
 description: >-
-  In a multi-tenant central licensing management environment, you can
-  dynamically edit child tenant allocations, add child tenants, and delete child
-  tenants with the license pool automatically updated.
+  Dynamically allocate Cortex XSIAM licenses, endpoints, employees, and storage
+  across child tenants in centrally managed multi-tenant deployments.
 ---
 
 # Dynamic license allocation
@@ -11,7 +10,7 @@ In a multi-tenant environment with central licensing management, in Cortex Gatew
 
 <details>
 
-<summary>Edit tenant allocations</summary>
+<summary>Edit tenant allocations in Cortex XSIAM</summary>
 
 You can edit the child tenant allocations by increasing or decreasing the amount of endpoints, employees, and GBs allocated to the tenant. The total available count for the multi-tenant environment is updated accordingly.
 
@@ -28,7 +27,7 @@ Changing the tenant's allocations might result in a short downtime of your tenan
 
 <details>
 
-<summary>Add a child tenant</summary>
+<summary>Add a child tenant in Cortex XSIAM</summary>
 
 When you have enough license allocations available in your multi-tenant central licensing environment, you can add a child tenant to the main account in Cortex Gateway.
 
@@ -55,7 +54,7 @@ When you have enough license allocations available in your multi-tenant central 
 
 <details>
 
-<summary>Delete a child tenant</summary>
+<summary>Delete a child tenant in Cortex XSIAM</summary>
 
 Deleting a child tenant deletes all of its data and content permanently. The child tenant's license allocations are returned to the total available in the multi-tenant environment and can be allocated to other child tenants.
 

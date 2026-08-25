@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how Cortex XSIAM default and custom case layouts control tabs and case
+  information display.
+---
+
 # Case layouts
 
 Cortex XSIAM includes default case layouts. The default case layouts and any layouts that are added from content packs, are locked by default and cannot be deleted, edited, exported or duplicated.

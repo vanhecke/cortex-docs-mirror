@@ -1,3 +1,7 @@
+---
+description: Use Cortex XSIAM Unified Case View to manage cases across child tenants.
+---
+
 # Unified case view
 
 {% hint style="info" %}
@@ -16,7 +20,7 @@ Requires an MSSP license.
 * To take actions on a child tenant from a parent tenant, you must have the appropriate permissions for both tenants. If you do not have the correct permissions, you can view cases in read-only mode.
 {% endhint %}
 
-For MSSP and multi-tenant administrators, the **Unified Case View** provides a central location to view and perform actions on child tenants across your distributed environment. You can see a consolidated view of all cases, easily visualize and triage the cases in your environment, and collaborate with child users.
+For MSSP and multi-tenant administrators, the **Unified Case View** provides a central location to view and perform actions on child tenants across your distributed environment in Cortex XSIAM. You can see a consolidated view of all cases, easily visualize and triage the cases in your environment, and collaborate with child users.
 
 You can access the **Unified Case View** from **Cases & Issues** → **Cases**.
 

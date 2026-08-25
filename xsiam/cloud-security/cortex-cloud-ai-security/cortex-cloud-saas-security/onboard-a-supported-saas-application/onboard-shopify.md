@@ -1,5 +1,7 @@
 ---
-description: Connect a Shopify instance to detect posture risks and compliance violations.
+description: >-
+  Onboard Shopify to Cortex XSIAM for SaaS security posture monitoring and
+  compliance visibility.
 ---
 
 # Onboard Shopify

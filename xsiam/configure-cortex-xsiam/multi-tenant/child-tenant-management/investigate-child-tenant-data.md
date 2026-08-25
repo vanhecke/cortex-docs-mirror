@@ -1,3 +1,9 @@
+---
+description: >-
+  Investigate Cortex XSIAM child tenant data, including cases and issues, from a
+  multi-tenant parent environment.
+---
+
 # Investigate child tenant data
 
 With Cortex XSIAM multi-tenancy, you can investigate the Cortex XSIAM child tenant data.
@@ -8,5 +14,5 @@ By default, Cortex XSIAM displays data for your tenant. To display data for your
 
 Some common tasks that you might perform include:
 
-* Investigate incidents on a child tenant.
-* Investigate alerts on a child tenant.
+* Investigate cases on a child tenant.
+* Investigate issues on a child tenant.

@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how Cortex XSIAM tracks case SLAs, timers, and severity-based response
+  targets.
+---
+
 # SLAs and tracking
 
 {% hint style="info" %}

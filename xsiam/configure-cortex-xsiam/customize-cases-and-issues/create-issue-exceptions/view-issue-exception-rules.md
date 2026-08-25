@@ -1,10 +1,16 @@
-# View issue Exception Rules
+---
+description: >-
+  View Cortex XSIAM issue exception rules, approval status, affected issues,
+  expiration dates, and workflow details.
+---
 
-View important details about issue exception rules, such as the status of a rule and how many issues are impacted by a rule, on the All Exception Rules page.
+# View issue exception rules
 
-To view the All Exception Rules page, navigate to Settings → Exceptions Configuration → Exception Rules.
+View Cortex XSIAM issue exception rules on the **All Exception Rules** page. Review rule status, affected issues, approvers, expiration dates, and approval workflow details.
 
-## **All Exception Rules field descriptions**
+To open the **All Exception Rules** page, go to **Settings** → **Exceptions Configuration** → **Exception Rules**.
+
+### All Exception Rules field descriptions
 
 The table below describes each field in the All Exception Rules table.
 
@@ -17,7 +23,7 @@ The table below describes each field in the All Exception Rules table.
 | Exception ID           | Unique ID for the exception rule.                                                                                                                                                                                                                                                                                                                                                        |
 | Expiration Date        | Date the exception expires. This is the Exception End Date that was specified when the exception rule was created.                                                                                                                                                                                                                                                                       |
 | External Exception ID  | Optional reference provided when the rule was created.                                                                                                                                                                                                                                                                                                                                   |
-| Impacted Issues        | ?Number of issues impacted by the exception request.                                                                                                                                                                                                                                                                                                                                     |
+| Impacted Issues        | Number of issues impacted by the exception request.                                                                                                                                                                                                                                                                                                                                      |
 | Justification          | Description of the business justification for this exception.                                                                                                                                                                                                                                                                                                                            |
 | Justification Category | High-level category of the business justification.                                                                                                                                                                                                                                                                                                                                       |
 | Name                   | Name of the rule.                                                                                                                                                                                                                                                                                                                                                                        |
@@ -26,9 +32,9 @@ The table below describes each field in the All Exception Rules table.
 | Rule                   | The issue ID or other issue identifiers used to define which issues the exception applies to.                                                                                                                                                                                                                                                                                            |
 | Status                 | The current workflow status for the rule. Refer to the Exception Rule status descriptions table for a description of each status.                                                                                                                                                                                                                                                        |
 
-## **Exception rule status descriptions**
+### Issue exception rule status descriptions
 
-The following table describes the status field values for exception rules.
+The following table describes issue exception rule status values.
 
 | Status           | Description                                                                                                                                                  |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |

@@ -1,5 +1,5 @@
 ---
-description: Delete custom cloud security rules that are no longer needed.
+description: Delete custom cloud security rules in Cortex XSIAM that are no longer needed.
 ---
 
 # Delete a custom cloud security rule

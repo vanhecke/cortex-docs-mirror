@@ -1,5 +1,7 @@
 ---
-description: Duplicate an existing cloud security policy and tailor it to your needs.
+description: >-
+  Duplicate an existing cloud security policy in Cortex XSIAM and tailor it to
+  your needs.
 ---
 
 # Use an existing policy to create a new one

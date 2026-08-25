@@ -1,3 +1,7 @@
+---
+description: Add global Cortex XSIAM endpoint policy exceptions for selected endpoints.
+---
+
 # Add a global endpoint policy exception
 
 Learn how to define and manage global endpoint policy exceptions in Cortex XSIAM.

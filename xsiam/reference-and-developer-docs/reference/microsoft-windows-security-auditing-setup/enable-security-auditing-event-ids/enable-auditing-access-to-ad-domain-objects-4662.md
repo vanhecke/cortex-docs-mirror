@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Active Directory domain object auditing for Windows Event ID 4662 in
+  Cortex XSIAM.
+---
+
 # Enable auditing access to AD domain objects - 4662
 
 1. Log in to a Domain Controller as a domain admin.

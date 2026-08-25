@@ -1,3 +1,7 @@
+---
+description: View the Cortex XSIAM BIOC or IOC rule that generated an issue.
+---
+
 # View generating BIOC or IOC rule
 
 You can easily view and edit the BIOC and IOC rules that generated issues directly from the **Issues** table:

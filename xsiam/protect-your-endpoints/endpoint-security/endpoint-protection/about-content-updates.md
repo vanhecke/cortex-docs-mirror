@@ -1,10 +1,14 @@
+---
+description: >-
+  Learn how content updates deliver current endpoint protections and detection
+  logic in Cortex XSIAM.
+---
+
 # About content updates
 
 To increase security coverage and quickly resolve any issues in policy, Palo Alto Networks can seamlessly deliver software packages for Cortex XSIAM called content updates. Content updates can contain changes or updates to any of the following:
 
 {% hint style="info" %}
-### Note
-
 Cortex XSIAM delivers the content update to the agent in parts and not as a single file, allowing the agent to retrieve only the updates and additions it needs.
 {% endhint %}
 

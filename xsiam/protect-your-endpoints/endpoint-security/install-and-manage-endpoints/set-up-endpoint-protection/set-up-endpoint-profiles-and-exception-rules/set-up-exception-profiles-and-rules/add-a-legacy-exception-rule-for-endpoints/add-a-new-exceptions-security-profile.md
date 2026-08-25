@@ -1,3 +1,7 @@
+---
+description: Create Cortex XSIAM exceptions security profiles for legacy endpoint policies.
+---
+
 # Add a new exceptions security profile
 
 You can configure exceptions that apply to specific groups of endpoints or you can add a global endpoint policy exception.

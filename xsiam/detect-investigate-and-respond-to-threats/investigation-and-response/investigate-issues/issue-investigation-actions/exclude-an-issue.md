@@ -1,3 +1,7 @@
+---
+description: Exclude Cortex XSIAM issues that do not indicate a security threat.
+---
+
 # Exclude an issue
 
 During the process of triaging and investigating issues, you might determine that an issue does not indicate threat. You can choose to exclude the issue, which hides the issue, excludes it from cases, and excludes it from search query results.

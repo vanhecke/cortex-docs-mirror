@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect a SAP Ariba instance to detect posture risks and compliance
-  violations.
+  Onboard SAP Ariba to Cortex XSIAM for SaaS security posture monitoring and
+  compliance visibility.
 ---
 
 # Onboard SAP Ariba

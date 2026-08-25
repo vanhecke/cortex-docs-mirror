@@ -1,3 +1,7 @@
+---
+description: Upgrade Cortex XDR agents with Cortex XSIAM to maintain endpoint protection.
+---
+
 # Upgrade Cortex XDR agents
 
 You can upgrade the Cortex XDR agent software by using the appropriate method for the endpoint operating system.

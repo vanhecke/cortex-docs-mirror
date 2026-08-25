@@ -1,5 +1,7 @@
 ---
-description: Understand how Managed Threat Hunting can help your organization.
+description: >-
+  Learn about Cortex XSIAM Managed Threat Hunting, a 24/7 security service from
+  Palo Alto Networks threat researchers and Unit 42 experts.
 ---
 
 # About managed threat hunting

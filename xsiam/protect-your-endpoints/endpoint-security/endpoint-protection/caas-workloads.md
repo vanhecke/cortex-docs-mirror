@@ -1,3 +1,7 @@
+---
+description: Deploy the Cortex XSIAM container-embedded agent to protect CaaS workloads.
+---
+
 # CaaS Workloads
 
 Deploy the Cortex XDR container-embedded agent on Container as a Service (CaaS) environments to extend runtime security and vulnerability scanning to containerized workloads. The container-embedded Cortex XDR agent provides malware prevention, exploit protection, vulnerability assessment, and altered binary execution restriction for containers running on managed container services.
@@ -11,10 +15,10 @@ This topic explains the process of how to embed the Cortex XDR agent in your doc
 {% hint style="info" %}
 ### Notice
 
-This feature requires the Cortex Cloud Runtime Security add-on. Every 10 container-embedded agents will consume a single Cortex Runtime Security license.
+This feature requires a Cloud Runtime Security or Cortex XSIAM Premium license. Every 10 container-embedded agents will consume a single Cortex Runtime Security license.
 {% endhint %}
 
-**CaaS container-embedded agent installer**
+### **CaaS container-embedded agent installer**
 
 The following managed container services are supported. See the prerequisites tables below for the requirements for each container service.
 

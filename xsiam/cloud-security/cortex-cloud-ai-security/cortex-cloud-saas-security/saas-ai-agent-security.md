@@ -1,7 +1,7 @@
 ---
 description: >-
-  SaaS AI Agent Security helps you secure AI agents deployed across enterprise
-  SaaS environments.
+  Use Cortex XSIAM SaaS AI Agent Security to discover, monitor, and secure
+  enterprise SaaS AI agents.
 ---
 
 # SaaS AI Agent Security
@@ -9,14 +9,14 @@ description: >-
 Cortex's AISPM feature surfaces SaaS AI Agent data to help you tackle the unique challenges of securing AI agents deployed across enterprise SaaS environments. It provides your security teams with comprehensive visibility, proactive threat detection, and automated enforcement mechanisms specifically tailored for agentic platforms.
 
 {% hint style="info" %}
-Note: SaaS AI Agent Security is currently in Beta with limited availability. Contact your Customer Service Representative to activate AI Agent Security in your environment.&#x20;
+Note: SaaS AI Agent Security is currently in Beta with limited availability. Contact your Customer Service Representative to activate AI Agent Security in your environment.
 {% endhint %}
 
 #### Core Capabilities
 
 AISPM helps protect the autonomous workflows in your cloud environment with following key functionality:
 
-* Visibility & Discovery—Provides a unified inventory and visibility into deployed agents, mitigating against  "shadow AI" risks.
+* Visibility & Discovery—Provides a unified inventory and visibility into deployed agents, mitigating against "shadow AI" risks.
 * Addresses Security Posture Risks—Issues such as authentication misconfigurations, insecure actions and workflows (e.g., agents forwarding corporate emails to personal addresses).
 * Identifies misconfigured privileges where agents may inherit excessive permissions, allowing unintended access or actions.
 * Exposes Threats such as vulnerabilities that may lead to injection attacks via System Prompts, Tools or Skills.

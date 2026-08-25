@@ -1,3 +1,9 @@
+---
+description: >-
+  Create Cortex XDR agent installation packages for endpoint deployment in
+  Cortex XSIAM.
+---
+
 # Create an agent installation package
 
 To install the Cortex XDR agent on the endpoint for the first time, create an agent installation package. Review [Where can I install the Cortex XDR agent](https://app.gitbook.com/s/fZ8QSMnkjnXpuOeuRcam/) for supported versions and operating systems.

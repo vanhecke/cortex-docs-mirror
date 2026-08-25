@@ -1,6 +1,8 @@
-# Restart agent
+---
+description: Restart Cortex XDR agents from Cortex XSIAM for endpoint troubleshooting.
+---
 
-### Learn how to restart the agent on the endpoint.
+# Restart agent
 
 You can restart an agent from the Cortex XSIAM tenant.
 

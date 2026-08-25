@@ -1,3 +1,7 @@
+---
+description: Learn how Cortex XSIAM scores cases using rules, SmartScore, and manual input.
+---
+
 # Case scoring
 
 A case score is a numeric value that indicates the urgency of a case. Scoring can help you to streamline the process of prioritizing and investigating your cases, and help you to identify the cases that require immediate attention.

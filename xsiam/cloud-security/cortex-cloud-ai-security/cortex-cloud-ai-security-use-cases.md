@@ -1,5 +1,7 @@
 ---
-description: Learn about use cases that are relevant for Cortex Cloud AI Security.
+description: >-
+  Explore Cortex Cloud AI Security use cases in Cortex XSIAM for discovering,
+  assessing, and securing AI systems.
 ---
 
 # Cortex Cloud AI Security use cases

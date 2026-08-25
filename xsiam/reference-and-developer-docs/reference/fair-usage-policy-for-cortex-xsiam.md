@@ -1,3 +1,9 @@
+---
+description: >-
+  Understand the Cortex XSIAM Fair Usage Policy for data ingestion, connected
+  sources, and API usage.
+---
+
 # Fair Usage policy for Cortex XSIAM
 
 To ensure the reliability, efficiency, and availability of Cortex XSIAM for all the users, we expect our customers to use it fairly, reasonably, and in a manner that does not adversely impact the product’s overall system performance. Cortex XSIAM offers various features for connecting external resources to Cortex XSIAM, including without limitation, frequency and/or volume of data ingestion, number of connected data sources, and API usages. Overuse or misuse of these features may adversely affect the reliability, efficiency, and/or availability of Cortex XSIAM.

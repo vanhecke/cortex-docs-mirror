@@ -1,7 +1,7 @@
 ---
 description: >-
-  Create AI rules to detect risks and misconfigurations across your AI
-  ecosystem.
+  Create Cortex XSIAM AI rules to detect risks and misconfigurations across your
+  AI ecosystem.
 ---
 
 # Create an AI rule

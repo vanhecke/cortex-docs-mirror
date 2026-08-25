@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XSIAM Web and API Security profiles to detect, report, or
+  block threats on Linux workloads.
+---
+
 # Set up Web and API Security profiles
 
 {% hint style="info" %}

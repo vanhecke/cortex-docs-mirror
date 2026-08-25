@@ -1,3 +1,9 @@
+---
+description: >-
+  Cortex XSIAM scans AWS, GCP, and Azure serverless functions for
+  vulnerabilities, malware, and exposed secrets.
+---
+
 # Serverless function posture security
 
 Cloud serverless function scanning capabilities provide comprehensive visibility into the security posture of your serverless functions across your code and CI/CD environments, without the need to install agents or disrupt your workload operations. By integrating scanning functionality directly into your serverless functions, Cortex Cloud automatically detects vulnerabilities, malware, and exposed secrets early in the development process, enabling proactive risk detection and mitigation before production.

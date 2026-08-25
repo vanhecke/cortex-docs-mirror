@@ -1,5 +1,7 @@
 ---
-description: Enable or disable cloud security rules to control when they evaluate assets.
+description: >-
+  Enable or disable cloud security rules in Cortex XSIAM to control when they
+  evaluate assets.
 ---
 
 # Enable or disable a rule

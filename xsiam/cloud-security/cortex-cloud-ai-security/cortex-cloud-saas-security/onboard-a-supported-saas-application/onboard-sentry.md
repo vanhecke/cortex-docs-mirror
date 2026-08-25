@@ -1,5 +1,7 @@
 ---
-description: Connect a Sentry instance to detect posture risks and compliance violations.
+description: >-
+  Onboard Sentry to Cortex XSIAM for SaaS security posture monitoring and
+  compliance visibility.
 ---
 
 # Onboard Sentry

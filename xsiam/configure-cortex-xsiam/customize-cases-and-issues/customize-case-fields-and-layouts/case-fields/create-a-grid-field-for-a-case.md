@@ -1,6 +1,12 @@
+---
+description: >-
+  Create a grid case field in Cortex XSIAM to capture and organize structured,
+  tabular investigation data.
+---
+
 # Create a grid field for a case
 
-Grid fields enable you to view and edit tables in a custom case layout.
+In Cortex XSIAM, grid case fields enable you to view and edit tables in a custom case layout.
 
 1. Select **Settings** → **Configurations** → **Object Setup** → **Cases** → **Fields** → **New Field**.
 2. In the **New Case Field** window **Field Type** field drop down list, select **Grid (table)**.

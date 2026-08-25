@@ -1,9 +1,13 @@
+---
+description: >-
+  Learn how Cortex Data Loss Prevention in Cortex XSIAM inspects archive files
+  and applies data-in-motion rules to protect sensitive data.
+---
+
 # Archive file classification
 
 {% hint style="info" %}
-**Note**:
-
-Available from Cortex agent 9.3.
+Available from Cortex XDR Agent 9.3.
 {% endhint %}
 
 Archive file classification allows Cortex Data Loss Prevention (DLP) to inspect the contents of archive files (even if compressed). By applying your data-in-motion rules to the files inside, DLP ensures sensitive data remains protected even when packaged in an archive.
@@ -21,7 +25,7 @@ Archive file classification supports common archive formats that vary between op
 {% hint style="info" %}
 **Note**:
 
-Archive inspection is subject to standard file size constraints. The total archive size must remain within the maximum supported file size detailed in the Agent side limitations.
+Archive inspection is subject to standard file size constraints. The total archive size must remain within the maximum supported file size detailed in the Agent-side limitations.
 {% endhint %}
 
 ### **Partial classification**

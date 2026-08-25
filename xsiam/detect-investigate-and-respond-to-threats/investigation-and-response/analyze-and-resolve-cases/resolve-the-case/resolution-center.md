@@ -1,6 +1,12 @@
+---
+description: >-
+  Use Cortex XSIAM Resolution Center to manage remediation tasks and resolve
+  cases.
+---
+
 # Resolution Center
 
-The **Resolution Center** is the primary workspace for managing and resolving cases. With a focused, action-oriented flow, you can focus on resolving the entire case rather than investigating isolated issues. By removing fragmented navigation, this workspace allows you to work without context switching, enabling you to open and run playbooks within the case context and quickly review the status of all tasks for all issues in the case.
+In Cortex XSIAM, the **Resolution Center** is the primary workspace for managing and resolving cases. With a focused, action-oriented flow, you can focus on resolving the entire case rather than investigating isolated issues. By removing fragmented navigation, this workspace allows you to work without context switching, enabling you to open and run playbooks within the case context and quickly review the status of all tasks for all issues in the case.
 
 The **Resolution Center** guides you toward resolution by answering the question, **What should I do next?** You can track your progress using four specialized tabs:
 

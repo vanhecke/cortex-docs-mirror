@@ -1,3 +1,9 @@
+---
+description: >-
+  Ingest Azure API Management traffic into Cortex XSIAM for API security
+  analysis, risk assessment, and threat detection.
+---
+
 # Ingest Azure APIM
 
 Integrate Azure APIM with Cortex XSIAM to start scanning its APIs for potential threats and vulnerabilities.

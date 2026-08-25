@@ -1,5 +1,7 @@
 ---
-description: Create configurable grid fields for displaying and editing tabular issue data.
+description: >-
+  Create interactive Cortex XSIAM grid fields for custom issue layouts with
+  configurable tables, columns, and editable rows.
 ---
 
 # Create a grid field for an issue

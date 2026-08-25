@@ -1,6 +1,12 @@
+---
+description: >-
+  Run automations on issues to accelerate investigation and remediation in
+  Cortex XSIAM.
+---
+
 # Run an automation on an issue
 
-You can automate issue investigation and remediation by running a playbook or Quick Action on one or more issues. Automations can help to improve efficiency by automating and standardizing your workflows, promoting consistent and effective case response and management. For example, automations can automatically remediate a case by interacting with a third-party integration or open tickets in a ticketing system such as Jira.
+You can automate issue investigation and remediation in Cortex XSIAM by running a playbook or Quick Action on one or more issues. Automations can help to improve efficiency by automating and standardizing your workflows, promoting consistent and effective case response and management. For example, automations can automatically remediate a case by interacting with a third-party integration or open tickets in a ticketing system such as Jira.
 
 You can view the playbook that is running on an issue or the playbooks that have already run in the **Work Plan** for an issue. You can view Quick Actions in the **War Room** for an issue.
 

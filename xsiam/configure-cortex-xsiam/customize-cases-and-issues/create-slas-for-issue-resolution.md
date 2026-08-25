@@ -1,29 +1,31 @@
 ---
-description: Create SLA rules to set and track issue-resolution timers and time goals.
+description: >-
+  Create Cortex XSIAM resolution SLA rules to set, track, and report case and
+  issue resolution time goals and timers.
 ---
 
 # Create SLAs for case and issue resolution
 
-Service Level Agreements (SLAs) are formal contracts or agreements that define the expected level of service between service providers and clients or between internal teams. You can configure case and issue resolution SLAs, which are time-based goals for resolution, and timers to track how long it actually takes to resolve your cases and issues.
+Create Cortex XSIAM resolution SLAs to set time-based goals for case and issue resolution. Service Level Agreements (SLAs) define expected service levels between teams or service providers. Resolution timers track the time required to resolve cases and issues.
 
-### Why use SLAs for case and issue resolution?
+### Why use Cortex XSIAM resolution SLAs?
 
-SLAs provide analyst teams with a defined structure to guide the prioritization remediation efforts. Key drivers for using SLAs include:
+Resolution SLAs give analyst teams a framework for prioritizing remediation. Key benefits include:
 
 * **Meet compliance requirements:** Regulatory frameworks, such as PCI or HIPAA, mandate timely issue resolution. For example, PCI may require critical issues be fixed within a month, while HIPAA sets a 15-day limit for critical findings.
 * **Manage risk for critical assets:** Organizations set SLAs based on the sensitivity and criticality of assets. For example, a hospital would prioritize fixing issues impacting patient medical records or payment systems over non-essential displays.
 * **Report and measure remediation efforts**: SLAs allow leadership to track the effectiveness of security programs and report progress toward the goal of zero SLA violations.
 
-### Create a Resolution SLA rule
+### Create a Cortex XSIAM resolution SLA rule
 
-To configure a Resolution SLA for cases or issues, create an SLA rule that defines:
+To configure a resolution SLA for cases or issues, create an SLA rule that defines:
 
 * A time-based goal.
 * The specific cases or issues the goal applies to.
 
 Once created, the SLA rule is automatically applied to all matching existing and future cases or issues.
 
-#### How to create a Resolution SLA rule
+#### Create a resolution SLA rule
 
 1. Select **Settings** → **Configurations** → **Object Setup** → **Cases** or **Issues**.
 2. Select the **SLA Rules** tab.
@@ -44,28 +46,28 @@ Once created, the SLA rule is automatically applied to all matching existing and
 
     By default new SLA rules are added to the bottom of the list. To move a rule up or down in the list, click and hold the arrows in the **Name** column and drag the rule to the desired position in the list.
 
-### Reorder Resolution SLA rules
+### Reorder Cortex XSIAM resolution SLA rules
 
-The order of SLA rules in the SLA Rules table is important. SLA rules operate on a stop-on-first-match basis. In other words, the first SLA rule that matches an issue will be the SLA used for that issue. When you reorder rules, existing issues that match a new higher-priority rule will be updated to use the new SLA.
+SLA rule order is important. Rules use a stop-on-first-match evaluation. The first rule matching an issue determines its SLA. When you reorder rules, existing issues matching a higher-priority rule use the new SLA.
 
 1. Navigate to **Settings** → **Configurations** → **Object Setup** → **Cases** or **Issues** and select the **SLA Rules** tab.
 2. Change the order of the SLA rules by dragging the table rows into place. To drag a table row, click and hold an arrow in the **Name** column and drag the row to the desired position in the table.
 
-### Monitor the status of Resolution SLAs
+### Monitor Cortex XSIAM resolution SLA status
 
-You can view the following Resolution SLA fields on the **Cases** and **Issues** pages, so you can filter and sort issues based on these values:
+Use the following resolution SLA fields on the **Cases** and **Issues** pages to filter and sort issues:
 
 * **Resolution SLA**: Indicates the amount of time left to meet the SLA deadline. Also indicates the amount of time past the SLA deadline for issues that are overdue.
 * **Resolution Timer**: Indicates how long it took to resolve the issue. The timer starts when the issue status is New, and stops when the issue status is changed to Resolved.
 
-#### How to monitor the status of case Resolution SLAs
+#### Monitor case resolution SLA status
 
-You can monitor the status of case Resolution SLAs in the case header for a specific case, or in the cases table as explained below.
+Monitor case resolution SLA status in a case header or the cases table.
 
 {% hint style="info" %}
 **Tip**
 
-The case header shows all active SLAs for a case. In addition to the built-in Resolution SLA, you can create additional SLAs to measure separate milestones. For more information, see [Create additional case timers and SLAs](create-slas-for-issue-resolution/create-case-timers-and-slas).
+The case header shows all active SLAs. In addition to the built-in resolution SLA, you can create SLAs for separate milestones. For more information, see [create-case-timers-and-slas](create-slas-for-issue-resolution/create-case-timers-and-slas "mention").
 {% endhint %}
 
 1. Navigate to **Cases & Issues → Cases**, click **Display** and select **Table**.
@@ -73,7 +75,7 @@ The case header shows all active SLAs for a case. In addition to the built-in Re
    These filters support filtering of whole days only, for example **Resolution SLA > 1** filters for cases that have a Resolution SLA of greater than one day.
 3. Filter on **Resolution SLA < 0** or **Resolution Timer < 0** to find cases that have exceeded the SLA.
 
-#### How to monitor the status of issue Resolution SLAs
+#### Monitor issue resolution SLA status
 
 1. Navigate to **Cases & Issues** → **Issues**.
 2.  Filter on **Resolution SLA > 0** or **Resolution Timer > 0** to find issues that are within the SLA.
@@ -83,4 +85,4 @@ The case header shows all active SLAs for a case. In addition to the built-in Re
 
 You can also view the issue resolution SLA widgets on the **Vulnerability Management** dashboard.
 
-Resolution SLA and resolution timer are filterable XQL fields. The resolution SLA and resolution timer XQL schemas also include derived fields, so you can build queries, correlation rules, and dashboards that track whether issues are resolved within their defined SLA goals.
+Resolution SLA and resolution timer are filterable XQL fields. Their XQL schemas include derived fields. Use them to build queries, correlation rules, and dashboards that track SLA compliance.

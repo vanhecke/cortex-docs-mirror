@@ -1,10 +1,16 @@
+---
+description: >-
+  Assess and update Cortex XSIAM case severity and scores to prioritize
+  response.
+---
+
 # Assess case severity and score
 
 You can review the severity and score assigned to the case, and update them if necessary.
 
 ### Review case severity
 
-The severity value indicates the urgency of a case. Possible values are **Critical**, **High**, **Medium**, and **Low**. Click on the assigned severity to change the value.
+In Cortex XSIAM the severity value indicates the urgency of a case. Possible values are **Critical**, **High**, **Medium**, and **Low**. Click on the assigned severity to change the value.
 
 ### Review the case score
 

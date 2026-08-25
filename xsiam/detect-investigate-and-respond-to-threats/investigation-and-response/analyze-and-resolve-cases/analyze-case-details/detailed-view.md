@@ -1,6 +1,12 @@
+---
+description: >-
+  Use the Detailed View for table-based case investigation and analysis in
+  Cortex XSIAM.
+---
+
 # Detailed View
 
-The **Detailed View** in the case card provides a table-based format and custom layouts, ensuring full backward compatibility. You can switch between the **Overview** and the **Detailed View** based on your workflow preferences.
+The **Detailed View** in the case card provides a table-based format and custom layouts, ensuring full backward compatibility. You can switch between the **Overview** and the **Detailed View** based on your workflow preferences in Cortex XSIAM.
 
 The **Detailed View** supports deep inspection and manual analysis while maintaining access to the same underlying case data. It includes the following tabs:
 

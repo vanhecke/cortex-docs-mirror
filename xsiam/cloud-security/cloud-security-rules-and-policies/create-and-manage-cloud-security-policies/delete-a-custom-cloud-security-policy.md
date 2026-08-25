@@ -1,5 +1,7 @@
 ---
-description: Remove custom cloud security policies that are no longer needed.
+description: >-
+  Remove custom cloud security policies in Cortex XSIAM that are no longer
+  needed.
 ---
 
 # Delete a custom cloud security policy

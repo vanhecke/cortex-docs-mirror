@@ -1,10 +1,16 @@
+---
+description: >-
+  Configure Unit 42 Managed Services response permissions in Cortex XSIAM for
+  server and workstation endpoint actions.
+---
+
 # Configure actions permissions
 
-Define how the Unit 42 Managed Services team operates within your environment by setting a permission level for each response action on each asset type.
+Configure how Unit 42 Managed Services performs Cortex XSIAM endpoint response actions. Set a permission level for each action and asset type.
 
-The actions permissions matrix on the General tab governs eight response actions. Each action is configured independently for the Server asset type and the Workstation asset type, so stricter control scan be applied to higher-criticality assets.
+The response permissions matrix on the **General** tab governs eight endpoint response actions. Configure each action separately for **Server** and **Workstation** assets. This enables stricter control for higher-criticality assets.
 
-**Permission levels**
+### Cortex XSIAM response permission levels
 
 There are three permission levels to choose from:
 
@@ -20,7 +26,7 @@ There are three permission levels to choose from:
 When a permission level is set to **Inform**, configure at least one entry on the Escalation contacts tab so the Unit 42 Managed Services team can request approval before performing the action.
 {% endhint %}
 
-**Response actions**
+### Managed Services endpoint response actions
 
 Set the permission level for each of the response actions for **Server** and **Workstation**.
 

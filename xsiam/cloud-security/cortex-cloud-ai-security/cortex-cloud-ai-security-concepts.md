@@ -1,5 +1,7 @@
 ---
-description: Basic concepts of Cloud AI Security.
+description: >-
+  Learn Cortex Cloud AI Security concepts in Cortex XSIAM, including AI assets,
+  risks, and findings.
 ---
 
 # Cortex Cloud AI Security concepts
@@ -39,8 +41,6 @@ Amazon Web Services (AWS) EC2 instances with GPU acceleration running Llama2 by 
 <summary>Plugin</summary>
 
 A plugin is an auxiliary but highly capable model or tool that acts as a helper to the primary AI model. Plugins extend the functionality of the main model by providing specialized capabilities, such as accessing inference datasets, performing specific computations, or interfacing with other services. This approach, known as retrieval-augmented generation (RAG), enhances the primary model's ability to generate more accurate and contextually relevant outputs. For more information, see [Inference datasets](#UUID-6e61b890-1b68-9f51-20e6-135d5465d8ee_section-idm234761053923993) and [Retrieval-Augmented Generation](#UUID-6e61b890-1b68-9f51-20e6-135d5465d8ee_section-idm234761105802593).
-
-
 
 A weather plugin integrated with an AI chatbot that allows the chatbot to fetch and provide real-time weather updates based on user queries. Another example is a language translation plugin that helps the main model translate text between different languages.
 

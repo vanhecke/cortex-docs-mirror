@@ -1,16 +1,16 @@
 ---
 description: >-
-  Learn how to explore permissions in Cloud Identity Security using the Simple
-  and Advanced access tables.
+  Explore permissions with the Simple and Advanced access tables in Cortex
+  XSIAM.
 ---
 
 # Explore permissions using the simple and advanced access tables
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license.
 {% endhint %}
 
-#### Overview
+### Overview
 
 Analyzing an identity's permissions can be complex due to the numerous ways permissions are granted, including various granters, policy types, wildcards, and explicit resource access.
 
@@ -28,7 +28,7 @@ Open an access table
 4. To display the advanced view of the table, click the **Advanced view** toggle.
 5. To go back to the simple table display, click the **Advanced view** toggle again.
 
-#### Access table granularities
+### Access table granularities
 
 Cloud Identity Security offers two access views: the Simple access table and the Advanced access table.
 
@@ -51,7 +51,7 @@ The Advanced access table offers a deeper, more granular view of permissions, in
   * Cross-account access
   * Sensitive data related to the permission
 
-#### Exploring an identity's permissions
+### Exploring an identity's permissions
 
 When exploring an identity, its **Access** tab lists all the permissions that the identity holds.
 
@@ -61,7 +61,7 @@ When exploring an identity, its **Access** tab lists all the permissions that th
   * Hovering over an access line exposes a redirection button.
   * Clicking the **Advanced** toggle button displays the Advanced access table, where you can analyze the granting policies, view the last used time for the permission, and check for associated sensitive data, unused permissions, or excessive permissions.
 
-#### Exploring a destination asset's permissions
+### Exploring a destination asset's permissions
 
 When exploring a destination asset, such as a specific Amazon S3 bucket or database, the focus shifts to who can access it.
 

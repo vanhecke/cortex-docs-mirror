@@ -1,14 +1,18 @@
 ---
-description: Create rules that automatically star matching issues and their linked cases.
+description: >-
+  Create Cortex XSIAM starring rules to automatically prioritize matching issues
+  and their linked cases.
 ---
 
 # Create a starring configuration
 
-You can proactively star issues and the cases to which they are linked by creating a starring configuration:
+Create a Cortex XSIAM starring configuration to automatically flag priority issues and linked cases. Define issue-based criteria to focus investigations on the most relevant cases.
+
+### Create an issue and case starring rule
 
 1. Select Cases & Issues → Case Configuration → **Starred Issues**.
 2. Select **Add Starring Configuration**.
-3. Under **Configuration Name**, enter a name to identify your starring configuration.
+3. Under **Configuration Name**, enter a name for the issue and case starring rule.
 4. (Optional) Under **Comment**, enter a descriptive comment.
 5.  In the issue table, use the filters to define the issue attributes you want to include in the match criteria. For example, you can select issues with High severity, issues by category, or issues associated with certain assets or asset providers.
 
@@ -17,9 +21,9 @@ You can proactively star issues and the cases to which they are linked by creati
 
 <details>
 
-<summary>Scope-Based Access Control considerations</summary>
+<summary>Scope-Based Access Control for starring configurations</summary>
 
-Case starring supports Scope-Based Access Control (SBAC). The following parameters are considered when editing a starring configuration:
+Case starring supports Scope-Based Access Control (SBAC). The following parameters apply when you edit a starring configuration:
 
 * If **Scope-Based Access Control (SBAC)** is enabled and the **Endpoint Scoping Mode** is set to restrictive mode, you can edit a configuration if you are scoped to all tags in the configuration.
 * If **Scope-Based Access Control (SBAC)** is enabled and the **Endpoint Scoping Mode** is set to permissive mode, you can edit a configuration if you are scoped to at least one tag listed in the configuration.

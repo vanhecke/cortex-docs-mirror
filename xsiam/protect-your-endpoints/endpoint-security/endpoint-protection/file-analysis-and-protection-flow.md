@@ -1,8 +1,14 @@
+---
+description: >-
+  Understand Cortex XSIAM file analysis and the Cortex XDR agent exploit and
+  malware protection flow.
+---
+
 # File analysis and protection flow
 
-The Cortex XDR agent utilizes advanced multi-method protection and prevention techniques to protect your endpoints from both known and unknown malware and software exploits.
+The Cortex XDR agent uses multi-method endpoint protection to prevent known and unknown malware and software exploits. Cortex XSIAM analyzes files, applies prevention policies, and reports endpoint security events.
 
-**Exploit protection for protected processes**
+### Exploit protection for protected processes
 
 In a typical attack scenario, an attacker attempts to gain control of a system by first corrupting or bypassing memory allocation or handlers. Using memory-corruption techniques, such as buffer overflows and heap corruption, a hacker can trigger a bug in the software or exploit a vulnerability in a process. The attacker must then manipulate a program to run code provided or specified by the attacker while evading detection. If the attacker gains access to the operating system, the attacker can then upload malware, such as Trojan horses (programs that contain malicious executable files), or can otherwise use the system to their advantage. The Cortex XDR agent prevents such exploit attempts by employing roadblocks—or traps—at each stage of an exploitation attempt.
 
@@ -14,29 +20,27 @@ In addition to automatically protecting processes from such attacks, the Cortex 
 
 The default endpoint security policy protects the most vulnerable and most commonly used applications but you can also add other third-party and proprietary applications to the list of protected processes.
 
-**Malware Protection**
+### Malware protection flow
 
 The Cortex XDR agent provides malware protection in a series of four evaluation phases:
 
 ![cortex-xsiam-malware-evaluation-protection-flow.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-cfb14aecbd7e676fd995df29a5ccc5d95d6b5cb0%2Ff286dfa081567853bdeeafd45112962d1cf11235cfdd317114cea669b2f85d7c.png?alt=media)
 
-**Phase 1: Evaluation of child process protection policy**
+#### Phase 1: Child process protection policy
 
 When a user attempts to run an executable, the operating system attempts to run the executable as a process. If the process tries to launch any child processes, the Cortex XDR agent first evaluates the child process protection policy. If the parent process is a known targeted process that attempts to launch a restricted child process, the Cortex XDR agent blocks the child processes from running and reports the security event to Cortex XSIAM. For example, if a user tries to open a Microsoft Word document (using the winword.exe process) and the document has a macro that tries to run a blocked child process (such as WScript), the Cortex XDR agent blocks the child process and reports the event to Cortex XSIAM. If the parent process does not try to launch any child processes or tries to launch a child process that is not restricted, the Cortex XDR agent next moves to Phase 2: Evaluation of the restriction policy.
 
-**Phase 2: Evaluation of the restriction policy**
+#### Phase 2: Restriction policy
 
 The Cortex XDR agent verifies that the executable file does not violate any restriction rules. For example, you might have a restriction rule that blocks executable files launched from network locations. If a restriction rule applies to an executable file, the Cortex XDR agent blocks the file from executing and reports the security event to Cortex XSIAM and, depending on the configuration of each restriction rule, the Cortex XDR agent can also notify the user about the prevention event.
 
 If no restriction rules apply to an executable file, the Cortex XDR agent next moves to Phase 3: Hash verdict determination.
 
-**Phase 3: Hash verdict determination**
+#### Phase 3: Hash verdict determination
 
 The Cortex XDR agent calculates a unique hash using the SHA-256 algorithm for every file that attempts to run on the endpoint. Depending on the features that you enable, the Cortex XDR agent performs additional analysis to determine whether an unknown file is malicious or benign. The Cortex XDR agent can also submit unknown files to Cortex XSIAM for in-depth analysis by WildFire.
 
 {% hint style="info" %}
-### Note
-
 To enhance performance and efficiency, hash verdict requests from the Cortex XDR agent will be routed to the WildFire service with the lowest latency. File uploads for analysis will strictly adhere to the designated Cortex XSIAM and WildFire regions, ensuring data remains within the appropriate geographical boundaries.
 {% endhint %}
 
@@ -72,7 +76,7 @@ To determine a verdict for a file, the Cortex XDR agent evaluates the file in th
 
     Local analysis is enabled by default in a Malware Security profile. Because local analysis always returns a verdict for an unknown file, if you enable the Cortex XDR agent to **Block files with unknown verdict**, the agent only blocks unknown files if a local analysis error occurs or local analysis is disabled. To change the default settings (not recommended), see [Set up malware prevention profiles](../install-and-manage-endpoints/set-up-endpoint-protection/set-up-endpoint-profiles-and-exception-rules/set-up-malware-prevention-profiles).
 
-**Phase 4: Evaluation of malware security policy**
+#### Phase 4: Malware security policy
 
 If the prior evaluation phases do not identify a file as malware, the Cortex XDR agent observes the behavior of the file and applies additional malware protection rules. If a file exhibits malicious behavior, such as encryption-based activity common with ransomware, the Cortex XDR agent blocks the file and reports the security event to the Cortex XSIAM.
 

@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Customer Support Portal access and Cortex Gateway roles for manual
+  parent-child tenant pairing in Cortex XSIAM.
+---
+
 # Step 2. Define access configuations and role permissions
 
 To set up manual pairing in a customer-owned license multi-tenant deployment, after the parent and child Cortex XSIAM tenants are activated, you must define correct access configuration in the Customer Support Portal (CSP) and role permissions in Cortex Gateway.

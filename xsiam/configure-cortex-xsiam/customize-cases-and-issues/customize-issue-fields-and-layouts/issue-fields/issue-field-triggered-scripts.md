@@ -1,16 +1,22 @@
+---
+description: >-
+  Configure Cortex XSIAM field-change-triggered scripts to automate issue
+  updates, validations, notifications, and workflows.
+---
+
 # Issue field-triggered scripts
 
-ssue fields can be assigned scripts that run when the field changes. This enables you to automate workflows during an issue lifecycle. These scripts can perform any action, such as dynamically changing the field value or notifying the responder when an issue severity has been changed. Field-triggered scripts can include conditions that must be met for the script to run, such as the field having a certain value.
+Configure Cortex XSIAM issue fields to run scripts when field values change. Field-change-triggered scripts automate issue workflows throughout the issue lifecycle. Use them to update field values, validate changes, or notify responders when issue severity changes. Scripts can include conditions, such as a required field value.
 
-Scripts can be created in Python, PowerShell, or JavaScript on the Scripts page. To use a script with a field trigger, you need to add the field-change-triggered tag to the script. You can then add the script in the Attributes tab when you edit or create an issue field. If you did not add the tag when creating the script, it cannot be selected until you add the tag.
+Create issue automation scripts in Python, PowerShell, or JavaScript on the **Scripts** page. To use a script as a field trigger, add the `field-change-triggered` tag. Then add it from the **Attributes** tab when you create or edit an issue field. Scripts without this tag cannot be selected.
 
-When a script is associated with an issue field, changes to that field are saved only after the triggered script finishes running. This allows you, for example, to perform verifications such as checking that a specific field has been filled out before allowing a user to resolve an issue.
+When a script is associated with an issue field, Cortex XSIAM saves field changes after the triggered script finishes. This lets you verify conditions, such as whether a field is completed, before a user resolves an issue.
 
-If you perform a bulk update and change the same field across multiple issues at the same time, and that field has a field-triggered script assigned, the script runs in each issue.
+During a bulk update, a field-triggered script runs in every issue where its assigned field changes.
 
-An issue field-triggered script can modify multiple issue fields. Note that if field A changes and a script is triggered and changes field B, and field B is also assigned a field-triggered script, the script for field B is not triggered.
+An issue field-triggered script can modify multiple fields. If a script triggered by field A changes field B, Cortex XSIAM does not trigger a script assigned to field B.
 
-Cortex XSIAM comes out-of-the-box with the emailFieldTriggered script, which sends an email to the issue owner when the selected field is triggered. You can also create your own custom scripts.
+Cortex XSIAM includes the `emailFieldTriggered` script. It emails the issue owner when the selected field changes. You can also create custom issue automation scripts.
 
 {% hint style="warning" %}
 This feature assumes fair and intended usage of field-triggered scripts. In cases of excessive or abusive usage, execution may be restricted or disabled. If script execution is restricted or disabled, fields are still updated, but without the results of the assigned script.
@@ -20,7 +26,7 @@ This feature assumes fair and intended usage of field-triggered scripts. In case
 
 <summary>Issue field-triggered script arguments</summary>
 
-ssue field-triggered scripts have the following triggered field information available as arguments (args):
+Issue field-triggered scripts provide the following changed-field information as arguments (`args`):
 
 | Argument          | Description                                                                                                           |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------- |
@@ -50,9 +56,9 @@ Fields that can hold a list, such as multi-select custom fields, return the delt
 
 <details>
 
-<summary>Add an issue field triggered script to an issue field</summary>
+<summary>Assign a triggered script to an issue field</summary>
 
-After creating an issue field-triggered script in the Scripts page in Python, PowerShell, or JavaScript, you can then associate it with an issue field.
+After you create an issue field-triggered script in Python, PowerShell, or JavaScript, associate it with an issue field.
 
 1. Go to Settings → Configurations → Object Setup → Issues → Fields.
 2. Right-click the issue field and select Edit.
@@ -66,7 +72,7 @@ After creating an issue field-triggered script in the Scripts page in Python, Po
 
 <details>
 
-<summary>Field-change-triggered with single select or multi-select types</summary>
+<summary>Use field-change-triggered scripts with select fields</summary>
 
 1.  Create and save a single select or multi-select script in the Scripts page.
 
@@ -114,7 +120,7 @@ After creating an issue field-triggered script in the Scripts page in Python, Po
 
 <details>
 
-<summary>Use scripts with a grid field</summary>
+<summary>Use triggered scripts with a grid field</summary>
 
 You can use scripts to manipulate and populate data in a grid field. In this example, analysts add comments to issues they work on during their shifts. The script automatically populates a column of the grid, logging the timestamp of each comment.
 

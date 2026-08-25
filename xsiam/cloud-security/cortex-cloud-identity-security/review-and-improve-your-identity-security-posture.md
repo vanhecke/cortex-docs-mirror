@@ -1,13 +1,13 @@
 ---
 description: >-
-  Learn how to review and improve your Identity Security posture with the
-  provided use case examples.
+  Learn how to review and improve your Identity Security posture in Cortex
+  XSIAM.
 ---
 
 # Review and improve your Identity Security posture
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license.
 {% endhint %}
 
 Cloud Identity Security provides tools to monitor and manage identity permissions across Cloud and IdPs, maintaining an inventory of human and machine identities and identifying security risks such as inactive accounts, excessive permissions, and role-chaining configurations. To improve your security posture, Cloud Identity Security offers remediation workflows to remove unused permissions and mitigate identified risks.

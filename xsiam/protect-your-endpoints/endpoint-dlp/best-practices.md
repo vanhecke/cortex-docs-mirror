@@ -1,3 +1,9 @@
+---
+description: >-
+  Apply Cortex XSIAM Endpoint DLP best practices to design effective
+  data-in-motion rules.
+---
+
 # Best Practices
 
 The following guidelines are best practices for creating a DLP workflow to optimize DLP design and performance. Whether you are starting or building a new rule, we recommend reviewing these recommendations carefully so your DLP plan has a clear, logical flow and runs correctly and efficiently.

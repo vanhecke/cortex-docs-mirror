@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn more about the Cortex Data Model (XDM) fields to map for authentication
-  events.
+  Map authentication events to Cortex XSIAM XDM fields for normalized identity
+  data and authentication stories.
 ---
 
 # XDM fields for mapping authentication events

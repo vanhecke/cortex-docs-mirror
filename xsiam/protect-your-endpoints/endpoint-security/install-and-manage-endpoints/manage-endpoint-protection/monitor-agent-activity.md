@@ -1,3 +1,7 @@
+---
+description: Monitor Cortex XSIAM agent activity and endpoint events.
+---
+
 # Monitor agent activity
 
 The Cortex XDR agent logs entries for events that are monitored by the Cortex XDR agent and hourly reports the logs back to Cortex XDR. Cortex XDR stores the logs for 365 days. To view the Cortex XDR agent logs, select Settings → Agent Audit Logs.

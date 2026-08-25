@@ -1,10 +1,14 @@
+---
+description: >-
+  Configure identity profiles for endpoint-related identity protection settings
+  in Cortex XSIAM.
+---
+
 # Set up Identity profiles
 
 Configure the Identity Profile to unify AD-SPM, Conditional Access, and LDAP Protection controls in one centralized hub.
 
 {% hint style="warning" %}
-### Notice
-
 Requires the ITDR add-on.
 {% endhint %}
 
@@ -13,7 +17,7 @@ The Identity Profile centralizes identity security policies for Domain Controlle
 {% hint style="info" %}
 ### Note
 
-Identity Profile requires Cortex XSIAM 3.6, Cortex XDR 5.1, or Cortex Cloud Runtime 2.1 or later. It also requires Cortex XDR agent 9.1 or later. It is unavailable for Cortex XSIAM 2.x and Cortex XDR 3.x tenants.
+Identity Profile requires Cortex XSIAM 3.6 or later and Cortex XDR agent 9.1 or later.&#x20;
 
 Policies can contain an Identity Profile in mixed-agent environments. Agents earlier than version 9.1 ignore these settings.
 {% endhint %}

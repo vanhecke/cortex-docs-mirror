@@ -1,3 +1,7 @@
+---
+description: Investigate Cortex XSIAM issues using Response and Remediation playbooks.
+---
+
 # Investigate an issue using Cortex Response and Remediation playbooks
 
 Issues help you to monitor and control the security of your system framework by alerting you to security risks in your framework. Cortex XSIAM generates issues from the following:

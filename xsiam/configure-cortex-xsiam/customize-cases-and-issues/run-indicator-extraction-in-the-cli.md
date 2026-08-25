@@ -1,6 +1,14 @@
+---
+description: >-
+  Use Cortex XSIAM War Room CLI commands to extract, enrich, and run reputation
+  checks on indicators.
+---
+
 # Run indicator extraction in the CLI
 
-In the issue War Room CLI you can run the following commands at the issue level to extract and enrich indicators:
+Use Cortex XSIAM issue War Room CLI commands to extract indicators, enrich existing indicators, and run reputation checks. The following commands run at the issue level:
+
+### Extract indicators in the War Room CLI
 
 *   **`!extractIndicators`**
 
@@ -17,6 +25,9 @@ In the issue War Room CLI you can run the following commands at the issue level 
     * File path
 
     For example, type **`!extractIndicators text="some text 1.1.1.1 something" Auto extract=inline`**. The entry text contains the text of the indicators, which is extracted and enriched. You can also extract indicators by adding the auto-extract parameter with the script and the mode for which you are setting it up. For example, **`!ReadFile entryId=826@101 auto-extract=inline`**. Usually, when using the CLI, you want to disable indicator extraction. For example, if you return internal/private data to the War Room, and you do not want it to be extracted and enriched in third-party services, add auto-extract=none to your CLI command.
+
+### Enrich indicators in the War Room CLI
+
 *   **`!enrichIndicators`**
 
     The **`!enrichIndicators`** command is usually used when you want to batch enrich indicators. This command works on existing indicators only (it does not create them on its own). When running the command, the relevant enrichment command is triggered (such as **`!ip`**), which is based on the indicator type that is found. The data is saved to context and to the indicator.
@@ -25,7 +36,7 @@ In the issue War Room CLI you can run the following commands at the issue level 
 Triggering enrichment on a substantial amount of indicators can take time (since it's activating all enrichment integrations per indicator) and can result in performance degradation.
 {% endhint %}
 
-*   Reputation commands (such as **`!ip`**)
+### Run indicator reputation commands
 
-    This command can work on existing and non-existing indicators. If extraction is on, the data is saved both to the indicator and the issue’s context. If not, then just to the context because the mapping flow is always triggered in enrichment commands. The default configuration is set to none in playbook tasks for extraction.\
-    The indicator does not need to exist to run the reputation command, as the command uses a third-party threat intel integration, such as Unit 42 Intelligence, IPinfo, etc. You can also click the Enrich indicator button in the indicator layout.
+* Reputation commands, such as **`!ip`**, can work on existing and non-existing indicators. If extraction is on, data is saved to the indicator and issue context. Otherwise, it is saved only to context because enrichment commands always trigger the mapping flow. Playbook tasks use `none` as the default extraction configuration.\
+  The indicator does not need to exist to run the reputation command, as the command uses a third-party threat intel integration, such as Unit 42 Intelligence, IPinfo, etc. You can also click the Enrich indicator button in the indicator layout.

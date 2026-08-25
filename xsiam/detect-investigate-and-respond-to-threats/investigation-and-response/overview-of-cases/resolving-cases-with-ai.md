@@ -1,3 +1,9 @@
+---
+description: >-
+  Use AI in Cortex XSIAM to prioritize, investigate, and resolve security cases
+  faster.
+---
+
 # Resolving cases with AI
 
 To simplify and accelerate case resolution, Cortex XSIAM integrates advanced generative intelligence directly into the case management lifecycle. By leveraging built-in machine learning and intelligent grouping logic, Cortex XSIAM shifts the focus from resolving isolated issues to a holistic approach that resolves the case as a whole:
@@ -7,7 +13,7 @@ To simplify and accelerate case resolution, Cortex XSIAM integrates advanced gen
 * **AI summarization:** Agentic AI is integrated in the case resolution process to automatically summarize context, help you investigate entities, and suggest remediation actions.
 * **Guided resolution:** The Resolution Center guides you to resolution with actionable tasks that are designed to remediate the entire case as a single entity, significantly accelerating the path to resolution.
 
-**Agentic AI**
+### **Agentic AI**
 
 Cortex XSIAM leverages Agentic AI to collaborate on investigations and actively accelerate the entire resolution lifecycle.
 

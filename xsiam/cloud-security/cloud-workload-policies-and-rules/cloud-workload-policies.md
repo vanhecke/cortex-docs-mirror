@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XSIAM cloud workload policies to detect violations, create
+  issues, and prevent risks across SDLC stages.
+---
+
 # Cloud workload policies
 
 Cloud Workload Policies help you prevent and manage security violations in your cloud runtime instances. They enable you to apply detection logic to specific asset groups at the desired SDLC stage, and define what action needs to be taken if the conditions are met.

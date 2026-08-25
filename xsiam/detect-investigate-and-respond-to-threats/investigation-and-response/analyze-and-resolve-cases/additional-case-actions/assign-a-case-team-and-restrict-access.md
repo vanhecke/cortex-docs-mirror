@@ -1,6 +1,12 @@
+---
+description: >-
+  Assign case teams and restrict access to sensitive investigations in Cortex
+  XSIAM.
+---
+
 # Assign a case team and restrict access
 
-You can assign individual users and entire user groups to specific roles within a case team. For sensitive or high-risk cases, you can also restrict access to a case so that only assigned case team members can see or take action.
+In Cortex XSIAM you can assign individual users and entire user groups to specific roles within a case team. For sensitive or high-risk cases, you can also restrict access to a case so that only assigned case team members can see or take action.
 
 For more information about the different team roles, see [Overview of case teams and roles](../../overview-of-cases/overview-of-case-teams-and-roles).
 
@@ -74,4 +80,3 @@ Before restricting access or assigning teams, keep the following rules in mind:
 * **Team management:** When case access is restricted to **Team Only**, only assigned team members have permission to add new team members to the case. For more information see [Overview of case teams and roles](../../overview-of-cases/overview-of-case-teams-and-roles).
 * **Automatic reversion:** If a case has no assigned team members, the scope automatically reverts to **Case Scope**.
 * **Audit trail:** Any changes made to the case assignee or the case team are permanently recorded in the **Case Timeline**.
-

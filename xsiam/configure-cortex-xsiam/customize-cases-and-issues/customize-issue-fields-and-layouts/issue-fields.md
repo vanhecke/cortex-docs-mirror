@@ -1,16 +1,28 @@
-# Issue fields
+---
+description: >-
+  Manage Cortex XSIAM system and custom issue fields for mapping, correlation
+  rules, issue layouts, and investigations.
+---
 
-Cortex XSIAM includes out-of-the-box issue fields, issue fields from installed content packs, and user defined custom issue fields. You can use issue fields for mapping, correlation rules, and custom issue layouts.
+# Manage Cortex XSIAM issue fields
 
-All system and custom issue fields are available in the Issues table. New custom fields are hidden by default. To show custom issue fields in the Issues table, click the three dot vertical ellipses and select the column(s) from the list.
+Use Cortex XSIAM issue fields to support field mapping, correlation rules, custom issue layouts, and investigations. Cortex XSIAM includes system issue fields, content pack fields, and user-defined custom issue fields.
 
-For Grid fields, HTML fields, and Markdown fields, if the field contains data the Issues table shows Data Available instead of the values. To view the data, open the issue and click Investigate to see the full issue layout. For multi-select fields, the first value is shown in the Issues table and the number of additional values is stated, but the additional values are not shown. For example, if a multi-select field holds the values x, y, and z, the Issues table shows x + 2 More.
+### View custom issue fields in the Issues table
 
-Cortex XSIAM stores both the original value of the field and the current value of the field, if different. Any changes made between the original value and the current value are not stored. For example, if the original value of the field was x, the value was then changed to m, and then changed to y, only the x and y values are stored. To view the original value and the current value of changed fields, hover over the updated issue fields icon [![alert\_fields\_history.png](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAaCAMAAABrajdMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABFUExURfn5+e3t7eDg4KKiokxMTDMzMz8/P5aWlqOjo2VlZbu7u319fa6ursfHx1dXV9TU1EtLS3BwcImJiWRkZHFxcVhYWMjIyKzzBG8AAAAJcEhZcwAAFiQAABYkAZsVxhQAAAC2SURBVChTrZDBEoMgDEQTMFCVYBXt/39qF4y23pxp3wGSJbMs0I+ws+KC70RCtAZDjx4MNIZEpLk3mcYcwaQBJo75idOGaNvmBUuJlEprT73UOegqrf3okUTEU8qtPfXUcdvzkUg0Ic9KZasXr3k/rrpTQLxIt8l4yNC1Bo2RWXUwEYgOpTLDZjrCAPi8DHeGBKIRARvxqlsB7s0jxw7f8cneCuCDFUCDuYPw9S68xuzxGf+E6A3bkgf6R9uaLQAAAABJRU5ErkJggg==)](https://docs-cortex.paloaltonetworks.com/viewer/attachment/5CAbsl8idaK8R43ZLhoTOw/YWcHWCzd1u_y4BZz71i__w-5CAbsl8idaK8R43ZLhoTOw) on the right side of the row in the Issues table. To revert all of the fields in an issue to their original values, click Restore all fields to their original values in the updated issue fields box. Restoring all fields to their original values also restores the original values in the issue context data. Once you restore fields to their original values, this action can not be undone.
+All system and custom issue fields are available in the **Issues** table. New custom fields are hidden by default. To show them, click the three-dot vertical ellipses and select the required columns.
 
-Custom issue fields can be exported and imported. To export a single custom issue field, right-click on the field in the fields table, and select Export. To export all custom issue fields in a single JSON file, click the Export All button above the fields table. System issue fields cannot be exported or imported.
+For Grid, HTML, and Markdown fields containing data, the Issues table shows **Data Available** instead of values. Open the issue and click **Investigate** to view the full issue layout. For multi-select fields, the table shows the first value and the number of additional values. For example, if a field holds `x`, `y`, and `z`, it shows `x + 2 More`.
 
-After a custom issue field is created, it can be edited, deleted, or exported by right-clicking on the row. The field name and field type cannot be changed after the field is created. System fields cannot be edited, deleted, or exported.
+### Review issue field history
+
+Cortex XSIAM stores the original and current values when they differ. It does not store intermediate values. For example, if a value changes from `x` to `m` to `y`, Cortex XSIAM stores only `x` and `y`. To compare field values, hover over the updated issue fields icon <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAaCAMAAABrajdMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABFUExURfn5+e3t7eDg4KKiokxMTDMzMz8/P5aWlqOjo2VlZbu7u319fa6ursfHx1dXV9TU1EtLS3BwcImJiWRkZHFxcVhYWMjIyKzzBG8AAAAJcEhZcwAAFiQAABYkAZsVxhQAAAC2SURBVChTrZDBEoMgDEQTMFCVYBXt/39qF4y23pxp3wGSJbMs0I+ws+KC70RCtAZDjx4MNIZEpLk3mcYcwaQBJo75idOGaNvmBUuJlEprT73UOegqrf3okUTEU8qtPfXUcdvzkUg0Ic9KZasXr3k/rrpTQLxIt8l4yNC1Bo2RWXUwEYgOpTLDZjrCAPi8DHeGBKIRARvxqlsB7s0jxw7f8cneCuCDFUCDuYPw9S68xuzxGf+E6A3bkgf6R9uaLQAAAABJRU5ErkJggg==" alt="alert_fields_history.png" data-size="line"> on the right side of an issue row. To revert all fields to their original values, click **Restore all fields to their original values**. This also restores original values in issue context data. You cannot undo this action.
+
+### Import and export custom issue fields
+
+Import and export custom issue fields. To export one field, right-click it in the fields table and select **Export**. To export all custom fields as one JSON file, click **Export All** above the table. You cannot import or export system issue fields.
+
+After you create a custom issue field, right-click its row to edit, delete, or export it. You cannot change the field name or field type. You cannot edit, delete, or export system fields.
 
 {% hint style="warning" %}
 Deleting an issue field or uninstalling a content pack containing an issue field may affect detection and other capabilities based on the deleted field. For example, correlation, layouts, case scoring, starring rules, and playbook triggers.

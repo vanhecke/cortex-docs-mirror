@@ -1,3 +1,9 @@
+---
+description: >-
+  Investigate Cortex DLP issues in Cortex XSIAM triggered by data-in-motion rule
+  violations and sensitive data exfiltration attempts.
+---
+
 # Cortex DLP threat detection and issues
 
 The Cortex DLP module prevents sensitive data exfiltration. If instances of data-in-motion rules have been violated, a DLP issue is generated. To view the DLP Issues, go to **Data Security** → **Data Security Issues** → **Threats**. The **Detection Method** is set to DLP.
@@ -34,9 +40,9 @@ From the three-dot menu, you can open the issue in a new tab, copy the issue URL
 
 Some other important actions:
 
-* **Retrieve File**: From the asset card, click ![Image\_20-01-2026\_at\_10\_16.jpeg](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-9534f1ee31f1a8751a0fb0f662578180bf73e338%2F97c719ce63b9056ce450d5238a1768931c58170d844ae516aa0147e042afa5aa.jpg?alt=media) to obtain a copy of the file that triggered the security alert.\
+* **Retrieve File**: From the asset card, click <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-9534f1ee31f1a8751a0fb0f662578180bf73e338%2F97c719ce63b9056ce450d5238a1768931c58170d844ae516aa0147e042afa5aa.jpg?alt=media" alt="Image_20-01-2026_at_10_16.jpeg" data-size="line"> to obtain a copy of the file that triggered the security alert.\
   **Note**: Files remain available for retrieval until they are deleted.
-* Click ![Image\_22-01-2026\_at\_16\_43.jpeg](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-0a65872034d34d225ad43942a3f8674ba4ac4203%2F2fb16d6f22f1891d6b64f8385088a354388308e42bb3e8c94fccb2b07cac373e.jpg?alt=media) to open the related rule that triggered the issue.
+* Click <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-0a65872034d34d225ad43942a3f8674ba4ac4203%2F2fb16d6f22f1891d6b64f8385088a354388308e42bb3e8c94fccb2b07cac373e.jpg?alt=media" alt="Image_22-01-2026_at_16_43.jpeg" data-size="line"> to open the related rule that triggered the issue.
 
 At the top of the card, you can view information about the issue, including the severity, detection tags, category, and detection method. In the tabs, you can see more information about the cause of the issue, take any required actions, and view remediation suggestions.
 

@@ -1,3 +1,9 @@
+---
+description: >-
+  Set up Cortex XSIAM Managed Threat Hunting by approving tenant pairing and
+  configuring notification emails for threat reports and inquiries.
+---
+
 # Set up Managed Threat Hunting
 
 To get started with Managed Threat Hunting:

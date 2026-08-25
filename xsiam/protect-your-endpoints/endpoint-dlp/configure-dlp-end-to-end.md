@@ -1,3 +1,9 @@
+---
+description: >-
+  Set up Cortex Data Loss Prevention in Cortex XSIAM, including endpoint
+  settings, browser extensions, applications, and data-in-motion rules.
+---
+
 # Configure DLP end-to-end
 
 This section describes how to get up and running with Cortex DLP, including how to define Endpoint DLP settings, add applications and application groups, and define data-in-motion rules.
@@ -72,7 +78,7 @@ See [Cortex DLP threat detection and issues](cortex-dlp-threat-detection-and-iss
 {% endstep %}
 {% endstepper %}
 
-### Configure endpoint DLP settings
+### Configure endpoint DLP settings in Cortex XSIAM
 
 Configure the endpoint DLP settings to manage your organization's DLP policies.
 
@@ -84,7 +90,7 @@ Configure the endpoint DLP settings to manage your organization's DLP policies.
        * **Allow file movement (fail-open)**: Allows the file transfer, preventing service interruption.
        *   **Block file movement (fail-close)**: Blocks the file transfer.
 
-           <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>When a fail-close action occurs, the system creates a <strong>Data movement blocked by Endpoint DLP fail-close action</strong> issue.</p></div>
+           <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>When a fail-close action occurs, the system creates a <strong>Data movement blocked by Endpoint DLP fail-close action</strong> issue.</p></div>
    2.  **Auto disablement of rule threshold**
 
        This setting refers to rule suppression. When the number of hits exceeds the set number, the rule is disabled.
@@ -99,15 +105,15 @@ Configure the endpoint DLP settings to manage your organization's DLP policies.
        After installation, the agent communicates with the extension to activate endpoint DLP.
    *   **Forced activation (by XDR)**: This option installs a missing browser extension automatically. The endpoint must be associated with a domain.
 
-       <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><ul><li>The agent does not force-install the extension if MDM already manages it on the endpoint.</li><li>The XDR agent force-installs the extension on managed and unmanaged browsers. If a browser later becomes organization-managed, redeploy the extension through the central management console.</li></ul></div>
+       <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><ul><li>The agent does not force-install the extension if MDM already manages it on the endpoint.</li><li>The XDR agent force-installs the extension on managed and unmanaged browsers. If a browser later becomes organization-managed, redeploy the extension through the central management console.</li></ul></div>
    *   **Disable**: The extension is disabled.
 
-       <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>With MDM, the extension is user-managed. Cortex does not remove an installed MDM extension. It only disables communication with the DLP extension.</p></div>
+       <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>With MDM, the extension is user-managed. Cortex does not remove an installed MDM extension. It only disables communication with the DLP extension.</p></div>
 4.  In the **End User Dialog** section, add the default pop-up message for these events:
 
     *   **Enable User Interaction**
 
-        <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>You can specify the end-user message per rule.</p></div>
+        <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>You can specify the end-user message per rule.</p></div>
     * **Reporting Mismatch (FP)**
     * **Rule Override**
 
@@ -118,7 +124,7 @@ Configure the endpoint DLP settings to manage your organization's DLP policies.
     * In the **Admin Email Link** field, enter the default admin email to include in the body.
     * In the **Dialog Main Button Label**, enter the text for the button that closes the window.
 
-### Install DLP browser extension on your endpoint
+### Install the DLP browser extension on your endpoint
 
 To activate DLP, you must install the CDSx browser extension on your endpoint. This extension works with the DLP agent to monitor and enforce security policies on web-based activities.
 
@@ -128,7 +134,7 @@ To activate DLP, you must install the CDSx browser extension on your endpoint. T
 Extensions are not enabled in `Incognito` or `InPrivate` modes in Chrome and Edge. It is recommended to disable these modes in the organization.
 {% endhint %}
 
-#### Enabling the extension in Cortex
+#### Enabling the extension in Cortex XSIAM
 
 1. Navigate to **Modules** → **Data Security** → **Endpoint Data-in-Motion Rules** → **Endpoint DLP Settings**.
 2. For **Cortex Data Security Extension (Web DLP Channel)**, select the browser extension activation mode. See [Configure endpoint DLP settings](#configure-endpoint-dlp-settings) for more information.
@@ -288,7 +294,7 @@ The following steps describe how to create a new configuration profile in JAMF t
 
 </details>
 
-### Create endpoint applications
+### Create endpoint applications in Cortex XSIAM
 
 An effective data loss prevention (DLP) system allows an organization to define specific applications as sensitive. This enables the system to monitor and control the transmission of critical information, preventing its unauthorized release.
 
@@ -300,7 +306,7 @@ The user can only create a Custom Web Application.
 
 #### Endpoint application type:
 
-After creating the application, you can select them from the application groups.
+After creating the application, you can select it from the application groups.
 
 * **Predefined local applications**: The following apps and services are supported.
   * **FTP, SFTP and FTPS apps**:
@@ -335,7 +341,7 @@ Example:
 
 </details>
 
-### Create endpoint application groups
+### Create endpoint application groups in Cortex XSIAM
 
 Data-in-motion rules require defining both a source and a destination, which can be specified using your predefined endpoint application groups.
 
@@ -351,7 +357,7 @@ Choose the relevant application group type.
 
     For example: AI chatbots.
 
-### Create data-in-motion rules
+### Create data-in-motion rules in Cortex XSIAM
 
 You can create data-in-motion policies to identify, control, and protect sensitive information as it moves across networks, between systems, or to devices.
 
@@ -400,9 +406,9 @@ To create a data-in-motion rule:
 6. Click **Next** to create the rule.
 7. From the **Data-In-Motion Rules** table, click **Save** or move the rule down to change its priority, then click **Save**.
 
-#### Rule priority
+#### Rule priority in Cortex XSIAM
 
-Cortex processes these rules sequentially from top to bottom. To ensure the correct outcome, place **Allow** rules above **Block** rules.
+Cortex XSIAM processes these rules sequentially from top to bottom. To ensure the correct outcome, place **Allow** rules above **Block** rules.
 
 As soon as a first match is found for a data movement event, that rule's action is applied, and no other rules are evaluated for that specific event. Each matched event creates an **Issue**, and the total number of issues appears as **Hits** in the rules table.
 

@@ -1,3 +1,7 @@
+---
+description: Investigate SaaS-related issues in Cortex XSIAM with the SaaS causality view..
+---
+
 # SaaS causality view
 
 The SaaS causality view provides a powerful way to analyze and investigate software-as-a-service (SaaS) related issues for audit stories, such as Office 365 audit logs and normalized logs, by highlighting the most relevant events and issues associated with a SaaS-related issue. To help you identify and investigate SaaS-specific data associated with SaaS-related issues and SaaS audit logs, Cortex XSIAM displays a SaaS causality view, which enables you to swiftly investigate a SaaS issue by displaying the series of events and artifacts that are shared with the issue.

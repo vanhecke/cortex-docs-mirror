@@ -1,10 +1,16 @@
+---
+description: >-
+  Learn how Cortex XSIAM automatically groups related issues and artifacts into
+  unified cases.
+---
+
 # Case grouping
 
 Case grouping is a Precision AI™-powered capability that eliminates alert fatigue by automatically consolidating related issues and artifacts into a single unified case. Case grouping links issues that originate from the same attack flow or involve the same entity to reveal the full scope of a case. This approach replaces manual correlation with automated context, allowing you to focus on resolving complete problems rather than triaging isolated events.
 
 ### **Grouping methodologies**
 
-The key grouping methodologies of case grouping are:
+The key grouping methodologies of case grouping in Cortex XSIAM are:
 
 * **Artifact association:** Groups issues that share core artifacts (for example, SHA256, HostName, UserName).
 * **Exact match detection:** Groups similar detections for the same entities.

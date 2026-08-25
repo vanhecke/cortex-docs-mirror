@@ -1,3 +1,9 @@
+---
+description: >-
+  Create Cortex XSIAM custom cloud workload detection rules using agentless,
+  Kubernetes, or XDR Agent scanners.
+---
+
 # Create a new custom detection rule
 
 Creating Custom Detection Rules give you the flexibility to define and enforce security best practices tailored to your organization's objectives, as well as regulatory requirements not already covered by the compliance standards in our catalog.

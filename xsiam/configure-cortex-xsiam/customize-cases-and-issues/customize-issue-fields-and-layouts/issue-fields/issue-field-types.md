@@ -1,3 +1,9 @@
+---
+description: >-
+  Explore Cortex XSIAM custom issue field types, including text, selection,
+  date, grid, HTML, Markdown, timer, and URL fields.
+---
+
 # Issue field types
 
 You can create the following types of issue fields.

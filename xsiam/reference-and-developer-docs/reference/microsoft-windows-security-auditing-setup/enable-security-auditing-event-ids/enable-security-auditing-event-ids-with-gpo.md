@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Group Policy to enable Windows security auditing event IDs for Cortex
+  XSIAM data collection.
+---
+
 # Enable security auditing event IDs with GPO
 
 Use the Group Policy Management Editor to configure security auditing policies across domain controllers or other target machines.

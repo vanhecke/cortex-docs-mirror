@@ -1,14 +1,14 @@
 ---
 description: >-
-  Create attack path rules that identify breach paths to high-value cloud
-  assets.
+  Create Cortex XSIAM attack path rules that identify breach paths to high-value
+  cloud assets.
 ---
 
 # Create an attack path rule
 
 Attack path rules identify critical risks arising from combinations of individual risk signals—such as overly permissive identities, network exposures, and exploitable vulnerabilities—that together form a potential breach path to high-value assets.
 
-Legacy attack path rules are based on discovering combinations and findings. We recommend using [Graph rules](create-a-graph-rule) for analyzing relationships between entities to identify risky combinations and attack paths.&#x20;
+Legacy attack path rules are based on discovering combinations and findings. We recommend using [Graph rules](create-a-graph-rule) for analyzing relationships between entities to identify risky combinations and attack paths.
 
 Perform these steps to create a custom attack path rule:
 

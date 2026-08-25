@@ -1,5 +1,5 @@
 ---
-description: Enable or disable custom and default cloud security policies.
+description: Enable or disable custom and default cloud security policies in Cortex XSIAM.
 ---
 
 # Enable or disable a policy

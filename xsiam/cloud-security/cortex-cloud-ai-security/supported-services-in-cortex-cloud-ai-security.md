@@ -1,7 +1,7 @@
 ---
 description: >-
-  A list of platforms and services that are compatible with Cortex Cloud AI
-  Security.
+  Review platforms and services supported by Cortex Cloud AI Security in Cortex
+  XSIAM.
 ---
 
 # Supported services in Cortex Cloud AI Security

@@ -1,7 +1,7 @@
 ---
 description: >-
-  Create time-bound exceptions that pause issue SLA timers during approved
-  remediation delays.
+  Create Cortex XSIAM issue exception rules to defer remediation, pause SLA
+  timers, and manage risk acceptance approvals.
 ---
 
 # Create issue exceptions
@@ -9,7 +9,7 @@ description: >-
 {% hint style="warning" %}
 ### Prerequisites
 
-* To create issue exception rules, delete or disable exception rules, and view the **All Exception Rules** page you must have at least **View** permissions for the following roles under **Exception Configurations**:&#x20;
+* To create issue exception rules, delete or disable exception rules, and view the **All Exception Rules** page you must have at least **View** permissions for the following roles under **Exception Configurations**:
   * **Exception Management Admin**
   * **Exception Approver Admin**
 * You must have **Exception Approver Admin** permission to add or delete issue exception approvers and to turn off and on approver functionality.
@@ -31,7 +31,7 @@ An issue exception is a formal, documented, and time-bound decision to defer the
 
 An issue _exception_ is a temporary acceptance of a known, real vulnerability due to a business or technical constraint. An _exclusion_ is permanent acceptance of an issue with no intention of ever resolving it.
 
-### Issue exception approval workflow
+### Issue exception approval workflow in Cortex XSIAM
 
 To maintain strict security governance, the issue exceptions rely on a structured, automated approval workflow. When an exception rule is created, an exception rule request is sent to an authorized approver via email. The approver has up to seven days to evaluate the risk, review any compensating controls, and formally approve or reject the request.
 
@@ -41,7 +41,7 @@ If an approver does not approve or reject an exception rule request within seven
 
 Every step of the approval process, from the initial request to the final decision, is recorded in the system's audit logs to ensure full compliance and accountability.
 
-### Issue exception behavior
+### Issue exception behavior in Cortex XSIAM
 
 * **Issue Status**: When an exception rule is approved, the underlying status of the impacted issues do not change, for example, an excepted issue in the New state will stay in the New state. The system identifies excepted issues in the Issues list in the Excepted field, so you can easily filter for Excepted = YES to find excepted issues.
 * **Issue creation:** Issue exceptions do not prevent new issues from being created. New issues that match exception rules will have service-level agreement (SLA) timers paused and will indicate Excepted = Yes in the Issues list.

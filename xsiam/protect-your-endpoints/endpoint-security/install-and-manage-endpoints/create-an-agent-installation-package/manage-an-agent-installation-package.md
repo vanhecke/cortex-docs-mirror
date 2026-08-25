@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XDR agent installation packages and their deployment settings in
+  Cortex XSIAM.
+---
+
 # Manage an agent installation package
 
 You can manage agent installation packages on the Agent Installations page. To manage a specific package, right-click the agent version, and select the desired action:

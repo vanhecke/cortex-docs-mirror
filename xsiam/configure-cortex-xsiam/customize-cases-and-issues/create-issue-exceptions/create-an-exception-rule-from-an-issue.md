@@ -1,3 +1,9 @@
+---
+description: >-
+  Create a Cortex XSIAM issue exception rule from a specific issue to pause its
+  SLA timer and request approver review.
+---
+
 # Create an exception rule from an issue
 
 You can create an issue exception directly from an issue on the Issues page. This will result in an issue exception rule for a specific issue ID.

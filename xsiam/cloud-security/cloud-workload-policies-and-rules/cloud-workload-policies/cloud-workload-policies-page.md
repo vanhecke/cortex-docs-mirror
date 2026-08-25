@@ -1,3 +1,9 @@
+---
+description: >-
+  Use the Cortex XSIAM Cloud Workload Policies page to view, filter, configure,
+  and manage workload security policies.
+---
+
 # Cloud Workload Policies page
 
 The **Cloud Workload Policies** page allows users to manage policies that define security and compliance actions for cloud workloads. Users can create, edit, filter, and manage policies through a structured table and widget panel.

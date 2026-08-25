@@ -1,7 +1,7 @@
 ---
 description: >-
-  Evaluate and track asset compliance against industry standards and
-  organizational policies.
+  Evaluate and track Cortex XSIAM asset compliance against industry standards
+  and organizational policies.
 ---
 
 # Monitor and track compliance adherence
@@ -11,12 +11,10 @@ Determine asset vulnerabilities and risk by checking whether assets adhere to in
 You can view all compliance-related details in the tenant under **Posture Management → Compliance**.
 
 {% hint style="info" %}
-**NOTE**
-
-This feature requires Cortex XSIAM Premium or any other XSIAM license with the Cloud Runtime Security or Cloud Posture Security add-on.
+This feature requires Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license.
 {% endhint %}
 
-## Cortex compliance flow
+## Cortex XSIAM compliance flow
 
 Cortex compliance workflow for evaluating your overall compliance posture for various compliance standards.
 

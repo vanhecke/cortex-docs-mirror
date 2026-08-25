@@ -1,6 +1,12 @@
+---
+description: >-
+  Use notes and comments to coordinate case investigations and responses in
+  Cortex XSIAM.
+---
+
 # Collaborative notes and comments
 
-Located within the **Resolution Center**, the **Notepad** and **Comments** panels enable team-wide communication and documentation. This workspace ensures all analysts stay aligned by maintaining a continuous record of the investigation.
+Located within the **Resolution Center**, the **Notepad** and **Comments** panels enable team-wide communication and documentation. This workspace ensures all analysts stay aligned by maintaining a continuous record of the investigation in Cortex XSIAM.
 
 Capabilities include:
 

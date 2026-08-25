@@ -1,3 +1,9 @@
+---
+description: >-
+  Update Cortex XSIAM issue fields and statuses through commands, scripts, or
+  playbooks.
+---
+
 # Update issue fields
 
 You can update issue fields by running the `setIssue` and `setIssueStatus` commands in the CLI, in a script, or a playbook task.

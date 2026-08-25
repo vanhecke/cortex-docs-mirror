@@ -1,7 +1,5 @@
 ---
-description: >-
-  Use built-in standards or create and edit custom standards for your
-  organization.
+description: Use built-in standards or create and edit custom standards in Cortex XSIAM.
 ---
 
 # Use a built-in or custom standard

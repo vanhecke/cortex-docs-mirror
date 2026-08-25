@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Kong API gateway traffic ingestion into Cortex XSIAM for API
+  security analysis and threat detection.
+---
+
 # Ingest Kong
 
 Integrate Kong with Cortex Cloud to start scanning its APIs for potential threats and vulnerabilities.

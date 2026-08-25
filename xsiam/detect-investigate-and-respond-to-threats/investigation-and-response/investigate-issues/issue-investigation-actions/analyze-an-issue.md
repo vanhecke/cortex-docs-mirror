@@ -1,3 +1,7 @@
+---
+description: Analyze Cortex XSIAM issues using issue cards and causality views.
+---
+
 # Analyze an issue
 
 To help you understand the full context of an issue, Cortex XSIAM provides the issue card and the causality view to help you to quickly make a thorough analysis of the issue.

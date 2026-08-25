@@ -1,3 +1,9 @@
+---
+description: >-
+  Create custom Cortex XSIAM issue fields and layouts, then use layout rules to
+  display them for matching issues.
+---
+
 # Customize issue fields and layouts
 
 You can create custom issue fields and custom issue layouts. Custom issue layouts can include both out-of-the-box and custom issue fields. Issue layouts are applied to issues according to layout rules.<br>

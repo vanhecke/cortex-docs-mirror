@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Apigee Proxy traffic ingestion into Cortex XSIAM for API security
+  analysis and threat detection.
+---
+
 # Ingest Apigee Proxy
 
 Integrate Apigee Proxy with Cortex Cloud to begin scanning the APIs for potential threats and vulnerabilities.

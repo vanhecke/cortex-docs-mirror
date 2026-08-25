@@ -1,5 +1,7 @@
 ---
-description: Learn more about how to onboard specific AI Agents.
+description: >-
+  Onboard supported SaaS AI agents to Cortex XSIAM for AI agent security
+  visibility and control.
 ---
 
 # Onboard SaaS AI Agents

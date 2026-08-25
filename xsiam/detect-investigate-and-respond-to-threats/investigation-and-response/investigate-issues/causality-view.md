@@ -1,3 +1,9 @@
+---
+description: >-
+  Investigate event chains behind issues in Cortex XSIAM with the causality
+  view.
+---
+
 # Causality view
 
 The causality view provides an interactive visualization of a Causality Instance (CI) associated with an issue. On this view you can see the causality (cause and effect) of events of the entire process execution chain that led up to the issue. By automating the dot-connection process, Cortex XSIAM helps you to streamline your investigations by providing immediate, actionable insights into security issues and the related processes in the causality chain.

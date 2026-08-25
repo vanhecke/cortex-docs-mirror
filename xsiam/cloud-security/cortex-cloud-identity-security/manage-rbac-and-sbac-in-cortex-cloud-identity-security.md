@@ -1,14 +1,14 @@
 ---
-description: Working with RBAC and SBAC in Cloud Identity Security.
+description: Manage RBAC and SBAC for Cloud Identity Security in Cortex XSIAM.
 ---
 
 # Manage RBAC and SBAC in Cloud Identity Security
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license.
 {% endhint %}
 
-#### Grant role-based access control (RBAC) to a user
+#### Grant role-based access control (RBAC) to a user in Cortex XSIAM
 
 Role-based access control (RBAC) helps manage access to Cloud components and Cortex Query Language (XQL) datasets, so that users, based on their roles, are granted the minimal access required to accomplish their tasks.
 

@@ -1,6 +1,10 @@
+---
+description: Use the Cortex XSIAM Work Plan to manage issue playbook tasks.
+---
+
 # Use the Work Plan in an investigation
 
-The Work Plan is a visual representation of the running playbook assigned to the issue. Playbooks enable you to automate many security processes, such as managing your investigations and handling tickets. Work Plans enable you to monitor and manage a playbook workflow, and add new tasks to tailor the playbook to a specific investigation.
+In Cortex XSIAM the Work Plan is a visual representation of the running playbook assigned to the issue. Playbooks enable you to automate many security processes, such as managing your investigations and handling tickets. Work Plans enable you to monitor and manage a playbook workflow, and add new tasks to tailor the playbook to a specific investigation.
 
 In an investigation, when you open the **Work Plan** tab you can see the playbook, the playbook name, and navigation tools.
 

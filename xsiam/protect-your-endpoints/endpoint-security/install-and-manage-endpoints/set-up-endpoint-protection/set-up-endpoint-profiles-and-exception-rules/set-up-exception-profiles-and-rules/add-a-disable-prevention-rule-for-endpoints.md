@@ -1,3 +1,7 @@
+---
+description: Add Cortex XSIAM rules that disable prevention on selected endpoints.
+---
+
 # Add a disable prevention rule for endpoints
 
 You can create granular exceptions to prevention actions defined for your endpoints. In your disable prevention rules, you can specify hash types, file/folder paths, signers, certificate thumbprint, command line, or processes to exclude from the prevention actions triggered by specific security modules. These rules may be useful when you have processes that are essential to your organization, and must not be terminated. To cover all your endpoints, you can configure different exception rules per platform. Cortex XSIAM still generates issues from the disabled rules.

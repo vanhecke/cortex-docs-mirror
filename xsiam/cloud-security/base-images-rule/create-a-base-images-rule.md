@@ -1,3 +1,9 @@
+---
+description: >-
+  Create and manage Cortex XSIAM base image rules for scanned registry images,
+  including filters, previews, and rule updates.
+---
+
 # Create a base image rule
 
 Before creating a rule, ensure:

@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM base image rules to map container image lineage, trace
+  vulnerabilities, and manage approved foundational images.
+---
+
 # Base image rules
 
 A **Base Images** rule defines which registry images your organization considers foundational base images and maps derived images to them. This association provides image lineage visibility, helping you trace vulnerabilities to their source and apply remediation at the base image level.

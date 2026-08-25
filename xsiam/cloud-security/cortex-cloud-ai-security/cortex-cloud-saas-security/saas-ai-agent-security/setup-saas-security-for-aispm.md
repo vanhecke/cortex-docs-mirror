@@ -1,5 +1,7 @@
 ---
-description: Get started with SaaS Agent Security.
+description: >-
+  Set up Cortex XSIAM SaaS AI Agent Security to discover and secure SaaS AI
+  agents.
 ---
 
 # Setup SaaS Security for AISPM

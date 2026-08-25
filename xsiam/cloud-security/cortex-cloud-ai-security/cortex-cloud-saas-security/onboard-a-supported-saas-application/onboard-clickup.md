@@ -1,5 +1,7 @@
 ---
-description: Connect a ClickUp instance to detect posture risks and compliance violations.
+description: >-
+  Onboard ClickUp to Cortex XSIAM for SaaS security posture monitoring and
+  compliance visibility.
 ---
 
 # Onboard ClickUp
@@ -49,5 +51,5 @@ By adding a ClickUp app in Cortex, you enable SaaS Security to connect to your C
 4. Under **Capabilities**, Enter a Name for your application.
 5. Select Security Posture under Default Capabilities and click Next.
 6. Under **Connections**, enter the administrator login credentials and, optionally, the MFA secret key.
-7. Under **Configurations**, select a **Sync Interval**. Choose a meaningful **Tag** to distinguish between various applications in different environments.&#x20;
+7. Under **Configurations**, select a **Sync Interval**. Choose a meaningful **Tag** to distinguish between various applications in different environments.
 8. Click **Next** to complete the onboarding validation process.

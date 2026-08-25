@@ -1,11 +1,13 @@
 ---
-description: Configuration information for enabling inactive human identity logs on Azure.
+description: >-
+  Enable Azure inactive human identity logs for Cloud Identity Security in
+  Cortex XSIAM.
 ---
 
 # Enable inactive human identity logs on Azure in Cloud Identity Security
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license.
 {% endhint %}
 
 To enable inactive human identity logs on the Microsoft Azure platform in Cloud Identity Security, you must first configure diagnostic settings for the **SignInLog** log types. These log types provide information regarding how long human identities have been signed in.

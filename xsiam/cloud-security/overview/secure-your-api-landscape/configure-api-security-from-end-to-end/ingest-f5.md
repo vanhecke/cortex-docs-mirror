@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure F5 BIG-IP LTM traffic ingestion into Cortex XSIAM for API security
+  analysis and threat detection.
+---
+
 # Ingest F5
 
 Integrate F5 with Cortex XSIAM to start scanning its APIs for potential threats and vulnerabilities.

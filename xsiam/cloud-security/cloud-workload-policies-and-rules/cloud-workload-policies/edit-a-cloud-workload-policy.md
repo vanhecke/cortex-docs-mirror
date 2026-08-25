@@ -1,3 +1,9 @@
+---
+description: >-
+  Edit a Cortex XSIAM cloud workload policy to update its configuration and
+  security enforcement settings.
+---
+
 # Edit a cloud workload policy
 
 1. Navigate to **Posture Management** → **Rules & Policies** → **Policies** → **Cloud Workload**.

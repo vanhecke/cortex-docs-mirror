@@ -1,14 +1,14 @@
 ---
-description: Learn how to create a custom detection rule in Cloud Identity Security.
+description: Create custom Cloud Identity Security detection rules in Cortex XSIAM.
 ---
 
 # Create a custom detection rule in Cloud Identity Security
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license.
 {% endhint %}
 
-Cloud Identity Security comes with a comprehensive set of out-of-the-box detection rules, helping you to detect, prioritize, and remediate Identity Security gaps in your environment. This set of rules is written and maintained by a team of Identity Security experts, aimed to look for the most common and severe Identity Security use cases. In order to provide a complete solution and be able to create issues for any required use case, Cloud Identity Security allows you to create custom detection rules, which allow you to customize the identity and permissions scenarios you are looking for and trying to avoid and remediate. You can create a custom detection rule and attach it to a policy in order to raise issues from the rule.
+Cloud Identity Security comes with a comprehensive set of out-of-the-box detection rules, helping you to detect, prioritize, and remediate Identity Security gaps in your environment. This set of rules is written and maintained by a team of Identity Security experts, aimed at looking for the most common and severe Identity Security use cases. In order to provide a complete solution and be able to create issues for any required use case, Cloud Identity Security allows you to create custom detection rules, which allow you to customize the identity and permissions scenarios you are looking for and trying to avoid and remediate. You can create a custom detection rule and attach it to a policy in order to raise issues from the rule.
 
 Identity and permissions are based on relations entities have with one another, therefore the rule builder is based on defining a logic for entities, their attributes, and the relations they have with other entities.
 
@@ -26,7 +26,7 @@ Each rule consists of choosing an asset that has certain permissions while filte
 
 Each custom rule creates issues for one pillar only: the source, the granter, or the destination of the permissions. Each issue must be assigned to a single asset. Since a permission can involve multiple related assets (source, granter, or destination), the system determines which of these three pillars is correlated with the entity that you choose first.
 
-Create a custom identity detection rule
+### Create a custom identity detection rule in Cortex XSIAM
 
 1. From the navigation pane on the left, go to **Posture Management** → **Rules & Policies** → **Rules** → **Cloud Security**.
 2. On the **Cloud Posture Security Rules** screen, click **Create Rule** → **Identity**.

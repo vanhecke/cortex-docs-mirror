@@ -1,3 +1,9 @@
+---
+description: >-
+  View Cortex XSIAM endpoint prevention profiles and their configured protection
+  settings.
+---
+
 # View information about your endpoint prevention profiles
 
 The following table displays the fields that are available on the **Prevention Profiles** page, in alphabetical order. The table includes both default fields and additional fields that are available in the column manager. To view this page, go to **Inventory → Endpoints → Policy Management → Prevention → Profiles**.

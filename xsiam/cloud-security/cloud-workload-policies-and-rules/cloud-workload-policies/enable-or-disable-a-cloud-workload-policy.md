@@ -1,3 +1,9 @@
+---
+description: >-
+  Enable or disable a Cortex XSIAM cloud workload policy to control its
+  evaluation and enforcement.
+---
+
 # Enable or disable a cloud workload policy
 
 1. Navigate to **Posture Management** → **Rules & Policies** → **Policies** → **Cloud Workload**.

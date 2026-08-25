@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how Cortex XSIAM stars important cases manually or through automated
+  configurations.
+---
+
 # Case starring
 
 To help you focus on the most important cases, you can star a case. Starring enables you to narrow down the scope of cases on the **Cases** page. Cortex XSIAM identifies starred cases with a purple star.

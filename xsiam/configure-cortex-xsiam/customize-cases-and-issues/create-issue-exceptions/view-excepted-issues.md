@@ -1,3 +1,9 @@
+---
+description: >-
+  View Cortex XSIAM excepted issues by filtering the Issues page and tracking
+  each exception's remaining period.
+---
+
 # View excepted issues
 
 You can view excepted issues by sorting or filtering the Issues page.

@@ -1,7 +1,7 @@
 ---
 description: >-
-  A basic overview of the Cortex Cloud AI Security overview page, assets
-  inventory, risks, and benefits.
+  Learn how Cortex Cloud AI Security in Cortex XSIAM discovers AI assets,
+  assesses risks, and supports remediation.
 ---
 
 # What is Cortex Cloud AI Security?

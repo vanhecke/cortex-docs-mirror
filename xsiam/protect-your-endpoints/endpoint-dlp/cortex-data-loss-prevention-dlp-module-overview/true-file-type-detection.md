@@ -1,6 +1,12 @@
+---
+description: >-
+  Learn how Cortex Data Loss Prevention in Cortex XSIAM identifies true file
+  types to enforce data-in-motion policies and prevent file-extension evasion.
+---
+
 # True-file type detection
 
-When Cortex Data Loss Prevention (DLP) scans a file, true file-type detection identifies the file based on its actual internal format rather than relying on its file extension.&#x20;
+When Cortex Data Loss Prevention (DLP) scans a file, true file-type detection identifies the file based on its actual internal format rather than relying on its file extension.
 
 This ensures consistent policy enforcement and prevents users from intentionally bypassing DLP rules by masking files.
 
@@ -10,4 +16,3 @@ This ensures consistent policy enforcement and prevents users from intentionally
 {% hint style="info" %}
 Supported file scans on Windows and macOS
 {% endhint %}
-

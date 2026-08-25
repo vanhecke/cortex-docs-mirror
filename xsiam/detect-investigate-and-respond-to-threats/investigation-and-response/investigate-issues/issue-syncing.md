@@ -1,6 +1,10 @@
+---
+description: Sync Cortex XSIAM issues with external tickets to coordinate remediation.
+---
+
 # Issue syncing
 
-You can set up integrations that mirror Cortex issues with external applications, such as Atlassian Jira or ServiceNow. When mirroring issues (also referred to as issue syncing), you can make changes in an external application that will be reflected in the platform, and vice versa. If an issue is mirrored with an external application, you have the following options:
+You can set up integrations that mirror Cortex XSIAM issues with external applications, such as Atlassian Jira or ServiceNow. When mirroring issues (also referred to as issue syncing), you can make changes in an external application that will be reflected in the platform, and vice versa. If an issue is mirrored with an external application, you have the following options:
 
 * **Link the ticket to the issue:** If an issue is linked to a ticket, the ticket number is displayed in the **Overview** section of the issue card. You see details about the status of the ticket by clicking on the ticket number.
 * **Sync changes between the issue and the ticket:** If an issue is synced to a ticket, changes are synchronized in an outbound, inbound, or bi-directional flow.
@@ -55,10 +59,10 @@ You can manually sync existing issues with external applications.
 5. Under **Sync Configuration**, the following options are displayed, depending on your selection:
    * **Link to issue:** select this option if you want the issue to be linked to the created ticket. You must check this option if you want to sync the issue with the ticket.
    * **Sync Direction:** select the syncing configuration:
-     * **Inbound:** Sync changes from the external ticket with the Cortex issue.
-     * **Outbound:** Sync changes from the Cortex issue with the external ticket.
+     * **Inbound:** Sync changes from the external ticket with the Cortex XSIAM issue.
+     * **Outbound:** Sync changes from the Cortex XSIAM issue with the external ticket.
      * **Bi-directional:** Sync changes in both directions.
-     * **None:** Do not sync changes between the Cortex issue with the external ticket. If you select this option, the tickets are still linked, but changes are not synced. You can update this option at any time to start syncing.
+     * **None:** Do not sync changes between the Cortex XSIAM issue with the external ticket. If you select this option, the tickets are still linked, but changes are not synced. You can update this option at any time to start syncing.
 6.  Define the inbound and/or outbound sync profiles.
 
     Depending on the selected option, select sync profiles that define field mapping between the issue and the external ticket. You can use the default sync profiles or you can create custom profiles. For more information about sync profiles, see [Create a sync profile](../../../configure-cortex-xsiam/customize-cases-and-issues/create-a-sync-profile).
@@ -100,10 +104,10 @@ You can set up automation rules that create external tickets when certain issues
    3. Under **Sync Configuration**, the following options are displayed, depending on your selection:
       * **Link to issue:** select this option if you want the issue to be linked to the created ticket. You must check this option if you want to sync the issue with the ticket.
       * **Sync Direction:** select the syncing configuration:
-        * **Inbound:** Sync changes from the external ticket with the Cortex issue.
-        * **Outbound:** Sync changes from the Cortex issue with the external ticket.
+        * **Inbound:** Sync changes from the external ticket with the Cortex XSIAM issue.
+        * **Outbound:** Sync changes from the Cortex XSIAM issue with the external ticket.
         * **Bi-directional:** Sync changes in both directions.
-        * **None:** Do not sync changes between the Cortex issue with the external ticket. If you select this option, the tickets are still linked, but changes are not synced. You can update this option at any time to start syncing.
+        * **None:** Do not sync changes between the Cortex XSIAM issue with the external ticket. If you select this option, the tickets are still linked, but changes are not synced. You can update this option at any time to start syncing.
       *   Define the inbound and/or outbound sync profiles.
 
           Depending on the selected option, select sync profiles that define field mapping between the issue and the external ticket. You can use the default sync profiles or you can create custom profiles. For more information about sync profiles, see [Create a sync profile](../../../configure-cortex-xsiam/customize-cases-and-issues/create-a-sync-profile).

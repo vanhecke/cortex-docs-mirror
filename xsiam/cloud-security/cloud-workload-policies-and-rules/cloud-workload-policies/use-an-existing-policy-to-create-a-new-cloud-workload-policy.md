@@ -1,3 +1,9 @@
+---
+description: >-
+  Duplicate an existing Cortex XSIAM cloud workload policy to reuse and modify
+  its conditions, scope, and actions.
+---
+
 # Use an existing policy to create a new cloud workload policy
 
 1. Navigate to **Posture Management** → **Rules & Policies** → **Policies** → **Cloud Workload**.

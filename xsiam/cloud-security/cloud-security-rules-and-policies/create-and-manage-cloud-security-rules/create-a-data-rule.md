@@ -1,5 +1,7 @@
 ---
-description: Create data rules to detect data risks, malware, and classification issues.
+description: >-
+  Create Cortex XSIAM data rules to detect data risks, malware, and
+  classification issues.
 ---
 
 # Create a data rule

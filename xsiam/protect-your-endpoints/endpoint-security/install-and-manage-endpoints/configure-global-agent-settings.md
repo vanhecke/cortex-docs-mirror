@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure global Cortex XDR agent settings for endpoints across your Cortex
+  XSIAM environment.
+---
+
 # Configure global agent settings
 
 In addition to the customizable Agent Settings Profiles for each Operating System and different endpoint targets, you can configure global Agent Configurations that apply to all the endpoints in your network.

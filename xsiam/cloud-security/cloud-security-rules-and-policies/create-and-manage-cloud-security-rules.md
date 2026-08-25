@@ -1,7 +1,7 @@
 ---
 description: >-
   Create and manage custom cloud security rules for detecting cloud security
-  risks.
+  risks in Cortex XSIAM.
 ---
 
 # Create and manage cloud security rules

@@ -1,3 +1,7 @@
+---
+description: Query Cortex XSIAM case and issue data with Cortex Query Language.
+---
+
 # Query case and issue data
 
 Cortex XSIAM uses Cortex Query Language (XQL) as the primary language for searching, analyzing, and transforming security data. XQL allows for highly efficient querying across vast amounts of security telemetry, such as:

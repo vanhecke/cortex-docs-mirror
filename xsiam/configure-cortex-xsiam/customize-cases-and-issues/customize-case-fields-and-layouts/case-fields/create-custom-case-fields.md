@@ -1,6 +1,12 @@
+---
+description: >-
+  Create custom case fields in Cortex XSIAM to capture investigation details,
+  standardize case data, and support SOC workflows.
+---
+
 # Create custom case fields
 
-Create case fields so you add them to custom case layouts.
+Create custom case fields in Cortex XSIAM to add them to custom case layouts.
 
 You can create custom case fields to:
 
@@ -9,7 +15,7 @@ You can create custom case fields to:
 * Create correlation rules that generate issues from XQL queries and map the output of the queries to custom case fields.
 * Design custom case layouts that include custom case fields.
 
-How to create a new custom case field:
+### Create a new custom case field in Cortex XSIAM:
 
 1. Select **Settings** → **Configurations** → **Object Setup** → **Cases** → **Fields** → **New Field**.
 2.  Choose a field type and enter a field name. You can add an optional tooltip to provide users with information about the field.

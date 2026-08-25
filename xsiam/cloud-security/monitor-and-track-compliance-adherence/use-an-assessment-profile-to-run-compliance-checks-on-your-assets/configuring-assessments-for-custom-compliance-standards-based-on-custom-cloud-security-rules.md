@@ -1,7 +1,7 @@
 ---
 description: >-
-  Configure policies and assessments for custom standards that use custom cloud
-  security rules.
+  Configure Cortex XSIAM policies and assessments for custom standards that use
+  custom cloud security rules.
 ---
 
 # Configuring assessments for custom compliance standards based on custom cloud security rules

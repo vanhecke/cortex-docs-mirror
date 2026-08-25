@@ -1,3 +1,9 @@
+---
+description: >-
+  Delete a Cortex XSIAM cloud workload policy that is no longer needed for
+  workload security.
+---
+
 # Delete a cloud workload policy
 
 1. Navigate to **Posture Management** → **Rules & Policies** → **Policies** → **Cloud Workload**.

@@ -1,14 +1,14 @@
+---
+description: >-
+  Use Cortex XSIAM File Integrity Monitoring to detect changes to endpoint files
+  and folders.
+---
+
 # File Integrity Monitoring (FIM)
 
 File Integrity Monitoring (FIM) serves as a security control designed to detect unauthorized or anomalous modifications to files and folders in the file system. Any change, such as, a new file being created or an existing file being modified, will trigger an event that is sent to the Cortex Platform.
 
 Cortex XDR agent integrates FIM capabilities directly into its endpoint detection and response engine, enhancing the fidelity and actionable intelligence derived from file events. This also allows seamless deployment of FIM capabilities over workstations and servers with the XDR agent installed.
-
-{% hint style="info" %}
-### Notice
-
-File Integrity Monitoring usage requires a dedicated FIM add-on or the Cloud Runtime Security add-on, with XDR Pro capabilities enabled.
-{% endhint %}
 
 File Integrity Monitoring requires a Cortex XDR agent with version 8.9.0 and above. FIM capabilities can be enabled on the following platforms and environments. See [Where can I install the Cortex XDR agent?](https://app.gitbook.com/s/fZ8QSMnkjnXpuOeuRcam/) for full platform options.
 
@@ -35,8 +35,6 @@ After defining the general settings of the group, set up FIM rules in the Rules 
 Once created, a FIM rule group must be assigned to a specific File Integrity Monitoring extension profile. See [Apply File Integrity Monitoring profiles to your endpoint policies](#apply-file-integrity-monitoring-profiles-to-your-endpoint-policies).
 
 {% hint style="info" %}
-### Note
-
 It is recommended to create a policy that targets only the necessary files and folders.
 {% endhint %}
 

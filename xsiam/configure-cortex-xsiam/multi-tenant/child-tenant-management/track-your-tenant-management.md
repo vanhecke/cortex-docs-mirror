@@ -1,3 +1,9 @@
+---
+description: >-
+  Track Cortex XSIAM child tenant connection status, pairing, synchronization,
+  and centrally managed security configurations.
+---
+
 # Track your tenant management
 
 To view child tenant details, in Cortex XSIAM, select Settings → Configurations → **Tenant Management**.

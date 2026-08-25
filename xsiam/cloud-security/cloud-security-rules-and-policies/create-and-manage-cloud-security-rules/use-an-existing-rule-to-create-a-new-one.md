@@ -1,5 +1,7 @@
 ---
-description: Duplicate an existing cloud security rule and customize it for your needs.
+description: >-
+  Duplicate an existing cloud security rule in Cortex XSIAM and customize it for
+  your needs.
 ---
 
 # Use an existing rule to create a new one

@@ -1,22 +1,24 @@
 ---
 description: >-
-  Scenarios that occur when managing content with a remote repository in Cortex
-  XSIAM.
+  Troubleshoot Cortex XSIAM remote repository issues, including non-empty
+  branches and switching between built-in and private repositories.
 ---
 
 # Remote repository troubleshooting
 
-**Pointing to a non-empty branch when enabling a tenant**
+Use this guide to resolve common Cortex XSIAM remote repository configuration issues. These issues include non-empty Git branches and repository type changes.
 
-If you configure a tenant to use a remote repository, you have two options:
+### Resolve non-empty branch errors when enabling a tenant
+
+When you configure a Cortex XSIAM tenant to use a remote repository, choose one of these options:
 
 * Overwrite all content in the tenant with content from the repository.
-*   Overwrite all content in the remote repository with content from the tenant.&#x20;
+* Overwrite all content in the remote repository with content from the tenant.
 
-    To overwrite the remote repository with content from the tenant, you must use an empty branch. If the branch is not empty, you will get an error message prompting you to select an empty branch. Alternatively, you can select the first option and overwrite all content in the tenant with the content from the remote repository.
+To overwrite the remote repository with tenant content, use an empty branch. A non-empty branch produces an error that prompts you to select an empty branch. Alternatively, overwrite tenant content with content from the remote repository.
 
-**Switching between remote repository types**
+### Switch between built-in and private remote repositories
 
-If you switch between built-in and private remote repository types, you get a warning that switching between repository types may result in the loss of all version history.
+Switching between built-in and private remote repository types can remove version history. Cortex XSIAM displays a warning before you make the change.
 
-To keep your content history, select Existing content on your tenant to overwrite all content in the remote repository with content from your tenant.
+To retain content history, select **Existing content on your tenant**. This overwrites remote repository content with tenant content.

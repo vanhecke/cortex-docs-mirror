@@ -1,6 +1,12 @@
+---
+description: >-
+  Review the case issue feed in Cortex XSIAM to trace case activity
+  chronologically.
+---
+
 # Issue feed
 
-The issue feed provides a chronological visualization of the case lifecycle, highlighting key case information from initial detection to the most recent activity. Key features include:
+In Cortex XSIAM, the issue feed provides a chronological visualization of the case lifecycle, highlighting key case information from initial detection to the most recent activity. Key features include:
 
 * **Issue count:** See the total number of issues linked to the case.
 * **High level details:** Review issue details in the timeline, or click an issue to open the full issue card. When an issue is resolved, the issue status and title is dimmed.

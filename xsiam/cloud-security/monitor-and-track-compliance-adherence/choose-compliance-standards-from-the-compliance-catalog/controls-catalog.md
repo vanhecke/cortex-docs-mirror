@@ -1,5 +1,7 @@
 ---
-description: Browse, filter, and review built-in and custom compliance controls.
+description: >-
+  Browse, filter, and review built-in and custom compliance controls in Cortex
+  XSIAM.
 ---
 
 # Controls catalog

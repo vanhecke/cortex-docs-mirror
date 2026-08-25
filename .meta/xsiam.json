@@ -8068,7 +8068,7 @@
               "type": "document",
               "children": [
                 {
-                  "title": "Issue fields",
+                  "title": "Manage Cortex XSIAM issue fields",
                   "path": "configure-cortex-xsiam/customize-cases-and-issues/customize-issue-fields-and-layouts/issue-fields",
                   "type": "document",
                   "children": [
@@ -8091,7 +8091,7 @@
                       "children": []
                     },
                     {
-                      "title": "Issue timer fields",
+                      "title": "Configure issue timer fields",
                       "path": "configure-cortex-xsiam/customize-cases-and-issues/customize-issue-fields-and-layouts/issue-fields/issue-timer-fields",
                       "type": "document",
                       "children": []
@@ -8121,7 +8121,7 @@
                       "children": []
                     },
                     {
-                      "title": "User issue timer field commands manually in the CLI",
+                      "title": "Use issue timer field commands  in the CLI",
                       "path": "configure-cortex-xsiam/customize-cases-and-issues/customize-issue-fields-and-layouts/issue-fields/user-issue-timer-field-commands-manually-in-the-cli",
                       "type": "document",
                       "children": []
@@ -8146,7 +8146,7 @@
                       "children": []
                     },
                     {
-                      "title": "Create rules for issue layouts",
+                      "title": "Create issue layout rules",
                       "path": "configure-cortex-xsiam/customize-cases-and-issues/customize-issue-fields-and-layouts/issue-layouts/create-rules-for-issue-layouts",
                       "type": "document",
                       "children": []
@@ -8199,7 +8199,7 @@
                   "children": []
                 },
                 {
-                  "title": "View issue Exception Rules",
+                  "title": "View issue exception rules",
                   "path": "configure-cortex-xsiam/customize-cases-and-issues/create-issue-exceptions/view-issue-exception-rules",
                   "type": "document",
                   "children": []
@@ -8285,7 +8285,7 @@
                       "children": []
                     },
                     {
-                      "title": "Step 2. Create a child tenant",
+                      "title": "Create a child tenant",
                       "path": "configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant/onboarding-checklist-for-multi-tenant-central-licensing-deployments/step-2.-create-a-child-tenant",
                       "type": "document",
                       "children": []
@@ -11663,7 +11663,7 @@
           ]
         },
         {
-          "title": "Cortex Cloud Data Classification",
+          "title": "Cloud Data Classification",
           "path": "cloud-security/cortex-cloud-data-classification",
           "type": "document",
           "children": [
@@ -11693,13 +11693,13 @@
               "children": []
             },
             {
-              "title": "How to disable and enable data profiles in Cortex Cloud Data Classification",
+              "title": "How to disable and enable data profiles in Cloud Data Classification",
               "path": "cloud-security/cortex-cloud-data-classification/how-to-disable-and-enable-data-profiles-in-cortex-cloud-data-classification",
               "type": "document",
               "children": []
             },
             {
-              "title": "How to report a false positive in Cortex Cloud Data Classification",
+              "title": "How to report a false positive in  Cloud Data Classification",
               "path": "cloud-security/cortex-cloud-data-classification/how-to-report-a-false-positive-in-cortex-cloud-data-classification",
               "type": "document",
               "children": []

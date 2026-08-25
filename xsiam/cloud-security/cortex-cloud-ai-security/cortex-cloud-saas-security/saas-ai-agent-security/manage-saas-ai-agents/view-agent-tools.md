@@ -1,7 +1,7 @@
 ---
 description: >-
-  SaaS Agent Tools go beyond traditional scans that  focus on an inventory of
-  previously vendor vetted, underlying tools.
+  Use Cortex XSIAM SaaS AI Agent Security to view tools connected to discovered
+  AI agents.
 ---
 
 # View Agent Tools
@@ -13,7 +13,7 @@ An Agent Tool is a specific instance of a tool being utilized by a specific agen
 1. Metadata Aliases: Custom names and descriptions provided by the agent author Configuration Settings: How the tool is pointed at specific data stores or environments
 2. Authentication/Identity: Whether the tool executes using a System Credential, a specific Service Account, or prompts the User on-the-fly.
 
-The SaaS Agent Tool page and dashboard focuses exclusively on posture risks introduced by the misconfiguration of the Agent Tool Wrapper layer.&#x20;
+The SaaS Agent Tool page and dashboard focuses exclusively on posture risks introduced by the misconfiguration of the Agent Tool Wrapper layer.
 
 <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FEFjdVlNgadB1hh9hGVo3%2Funknown.png?alt=media&#x26;token=ac5762a3-f0a9-4cc6-ad51-8968247b3c00" alt="" height="361" width="624">
 

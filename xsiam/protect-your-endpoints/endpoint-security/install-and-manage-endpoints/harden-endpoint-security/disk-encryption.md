@@ -1,3 +1,7 @@
+---
+description: Manage Cortex XSIAM disk encryption settings to protect endpoint data.
+---
+
 # Disk encryption
 
 Cortex XSIAM provides full visibility into encrypted Windows and Mac endpoints that were encrypted using BitLocker and FileVault, respectively. Additionally, you can apply Cortex XSIAM Disk Encryption rule on the endpoints by creating disk encryption rules and policies that leverage BitLocker and FileVault capabilities.

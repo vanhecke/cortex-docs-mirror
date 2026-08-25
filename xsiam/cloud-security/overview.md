@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM Web and API Security (WAAS) to discover, assess, monitor, and
+  protect APIs and web workloads.
+---
+
 # Web and API Security (WAAS)
 
 {% hint style="info" %}

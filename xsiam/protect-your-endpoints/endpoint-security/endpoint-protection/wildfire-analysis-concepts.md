@@ -1,14 +1,20 @@
+---
+description: >-
+  Learn how Cortex XSIAM and WildFire analyze unknown files, assign malware
+  verdicts, and protect endpoints.
+---
+
 # WildFire analysis concepts
 
-**WildFire analysis concepts**
+Cortex XSIAM uses WildFire analysis to inspect unknown files and return security verdicts. The Cortex XDR agent uses these verdicts to prevent malware and protect endpoints.
 
-**File forwarding**
+### File forwarding to WildFire
 
 Cortex XSIAM sends unknown samples for in-depth analysis to WildFire. WildFire accepts up to 1,000,000 sample uploads per day and up to 1,000,000 verdict queries per day from each Cortex XSIAM tenant. The daily limit resets at 23:59:00 UTC. Uploads that exceed the sample limit are queued for analysis after the limit resets. WildFire also limits sample sizes to 300 MB. For more information, see the [WildFire documentation](https://docs.paloaltonetworks.com/wildfire.html).
 
 For samples that the Cortex XDR agent reports, the agent first checks its local cache of hashes to determine if it has an existing verdict for that sample. If the Cortex XDR agent does not have a local verdict, the Cortex XDR agent queries Cortex XSIAM to determine if WildFire has previously analyzed the sample. If the sample is identified as malware, it is blocked. If the sample remains unknown after comparing it against existing WildFire signatures, Cortex XSIAM forwards the sample for WildFire analysis.
 
-**File type analysis**
+### File type analysis
 
 The Cortex XDR agent analyzes files based on the type of file, regardless of the file’s extension. For deep inspection and analysis, you can also configure your Cortex XSIAM to forward samples to WildFire. A sample can be:
 
@@ -30,7 +36,7 @@ The Cortex XDR agent analyzes files based on the type of file, regardless of the
 
 For information on file-examination settings, see [Set up malware prevention profiles](https://app.gitbook.com/s/FOhYBYLdbwpnbJgr6uaX/cortex-xdr-3.x-documentation/endpoint-security/install-and-manage-endpoints/set-up-endpoint-protection/set-up-endpoint-profiles-and-exception-rules/set-up-malware-prevention-profiles).
 
-**Verdicts**
+### WildFire verdicts
 
 WildFire delivers verdicts to identify samples it analyzes as safe, malicious, or unwanted (grayware is considered obtrusive but not malicious):
 
@@ -54,7 +60,7 @@ When WildFire is not available, or integration is disabled, the Cortex XDR agent
   * **Trusted**: The sample is signed by a trusted signer.
   * **Not Trusted**: The sample is not signed by a trusted signer.
 
-**Local verdict cache**
+### Local verdict cache
 
 The Cortex XDR agent stores hashes and the corresponding verdicts for all files that attempt to run on the endpoint in its local cache. The local cache scales in size to accommodate the number of unique executable files opened on the endpoint. On Windows endpoints, the cache is stored in the `C:\ProgramData\Cyvera\LocalSystem` folder on the endpoint. When service protection is enabled (see [Set up agent settings profiles](https://app.gitbook.com/s/FOhYBYLdbwpnbJgr6uaX/cortex-xdr-3.x-documentation/endpoint-security/install-and-manage-endpoints/set-up-endpoint-protection/set-up-endpoint-profiles-and-exception-rules/set-up-agent-settings-profiles)), the local cache is accessible only by the Cortex XDR agent and cannot be changed.
 

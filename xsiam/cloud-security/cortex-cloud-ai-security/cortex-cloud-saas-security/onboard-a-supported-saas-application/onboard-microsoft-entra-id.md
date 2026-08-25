@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect a Microsoft Entra ID instance to detect posture risks and compliance
-  violations.
+  Onboard Microsoft Entra ID to Cortex XSIAM for SaaS security posture
+  monitoring and compliance visibility.
 ---
 
 # Onboard Microsoft Entra ID

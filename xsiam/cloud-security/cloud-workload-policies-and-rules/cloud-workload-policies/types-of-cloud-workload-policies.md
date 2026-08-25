@@ -1,3 +1,9 @@
+---
+description: >-
+  Explore Cortex XSIAM cloud workload policy types for misconfigurations,
+  malware, secrets, and trusted images.
+---
+
 # Types of cloud workload policies
 
 * **Misconfiguration policies:** Enables you to assess various workloads for misconfigurations against relevant security standards and your organization’s security guidelines. You can include both predefined and custom rules in these policies to either prevent violations or create issues for violations.

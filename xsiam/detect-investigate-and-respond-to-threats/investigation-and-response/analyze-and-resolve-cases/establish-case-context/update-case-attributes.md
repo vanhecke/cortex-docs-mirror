@@ -1,3 +1,9 @@
+---
+description: >-
+  In Cortex XSIAM you can update case titles, descriptions, assignments, and
+  starred status.
+---
+
 # Update case attributes
 
 When you start reviewing a case, you can update the case title and description, assign the case, and star a case.
@@ -10,7 +16,7 @@ You can assign or reassign a case by clicking on the assigned field.
 
 If the case contains unassigned issues, or the issues are not assigned to the case assignee, a dialog opens with options for assigning the issues.
 
-In addition, you can assign case team members as Collaborators or Watchers. For more information,see [ Overview of case teams and roles](../../overview-of-cases/overview-of-case-teams-and-roles).
+In addition, you can assign case team members as Collaborators or Watchers. For more information,see [Overview of case teams and roles](../../overview-of-cases/overview-of-case-teams-and-roles).
 
 </details>
 

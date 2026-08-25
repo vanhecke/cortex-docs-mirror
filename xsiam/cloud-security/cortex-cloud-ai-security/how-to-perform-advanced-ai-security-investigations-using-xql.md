@@ -1,5 +1,7 @@
 ---
-description: Working with datasets in Cortex Cloud AI Security.
+description: >-
+  Use XQL in Cortex XSIAM to investigate Cortex Cloud AI Security datasets and
+  findings.
 ---
 
 # How to perform advanced AI Security investigations using XQL

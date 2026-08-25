@@ -1,5 +1,7 @@
 ---
-description: Connect a Jamf Pro instance to detect posture risks and compliance violations.
+description: >-
+  Onboard Jamf Pro to Cortex XSIAM for SaaS security posture monitoring and
+  compliance visibility.
 ---
 
 # Onboard Jamf Pro
@@ -82,4 +84,3 @@ By adding a Jamf Pro app in Cortex, you enable SaaS Security to connect to your 
 6. Under **Connections**, enter your instance URL and the application credentials (Client ID and Client Secret).
 7. Under **Configurations**, select a **Sync Interval**. Choose a meaningful **Tag** to distinguish between various applications in different environments.
 8. Click **Next** to complete the onboarding validation process.
-

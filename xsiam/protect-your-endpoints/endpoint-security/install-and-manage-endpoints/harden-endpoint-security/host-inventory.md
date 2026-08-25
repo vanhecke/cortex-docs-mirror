@@ -1,17 +1,29 @@
+---
+description: >-
+  Use Cortex XSIAM Host Inventory to review endpoint hardware, software,
+  services, and security details.
+---
+
 # Host Inventory
 
-With Host Inventory (Host Insights), you gain full visibility and inventory into the business and IT operational data on all your endpoints. By reviewing the inventory for all your hosts in a single place, you can quickly identify IT and security issues that exist in your network, such as identifying a suspicious service or autorun that was added to an endpoint.
+Cortex XSIAM Host Inventory, also called Host Insights, provides endpoint asset inventory and operational visibility. Review hardware, software, services, and autoruns across endpoints to identify IT and security issues, such as suspicious services or new autoruns.
+
+### Host Inventory data collection
 
 The Cortex XDR agent scans the endpoint every 24 hours for any updates and displays the data found over the last 30 days. Alternatively, you can rescan the endpoint to retrieve the most updated data. It can take Cortex XSIAM up to 6 hours to collect initial data from all endpoints in your network.
 
-The following are prerequisites to enable Host Inventory for your Cortex XSIAM instance:
+### Host Inventory prerequisites
+
+The following requirements apply when enabling Host Inventory:
 
 | Requirement           | Description                                                                                                                                                                              |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Supported Platforms   | Windows, Mac, and Linux.                                                                                                                                                                 |
 | Setup and Permissions | Ensure [Host Inventory Data Collection](../set-up-endpoint-protection/set-up-endpoint-profiles-and-exception-rules/set-up-agent-settings-profiles) is enabled for your Cortex XDR agent. |
 
-The Cortex XSIAM Host Inventory includes the following entities and information, according to the operating system running on the endpoint:
+### Host Inventory entities
+
+Cortex XSIAM Host Inventory includes the following endpoint entities by operating system:
 
 | Entity             | Windows | Mac | Linux |
 | ------------------ | ------- | --- | ----- |
@@ -34,7 +46,7 @@ For each entity, Cortex XSIAM lists all the details about the entity, and the de
 
 Alternatively, to better understand the overall presence of each entity on the total number of endpoints, you can switch to an aggregated view (click [![aggregate-icon.png](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAYAAABCIB6VAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH5AgTCQcBBErdWgAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAA/klEQVQ4je3UMUvDQBjG8f8lhpoQ1FiK7SAUBx1cFDc/d1e/QQdBcRCqSGlV1LQJ5PTSu5yD4CLaq6YI4rPey4/juZcT1lrLEuItA/2HvwdLpeuHr+5zTs5GXI4zZ1jMW7fT6ydupxJtKgLfo51EHHSbc+EvbyyVJnsuOew28YTgeG8LqbRbLdYhuSxtr3/jMvoep46VNvieQM2Myzjg+HjTQhE2VpgUql54nEo6ScQolfXAlbWcD1M24wa7nXWMqRjc5U7wp+vWHzyQyZL2RsT+dgK8dX0xnJDLkjgMONppLQ4/5i/EYcBq4H84K5RGqhmttXBx+Kf5/U/o78OvBhLAkK/LDoAAAAAASUVORK5CYII=)](https://docs-cortex.paloaltonetworks.com/viewer/attachment/GD6sG6FlxDWxAn13_eZuUQ/TjEGU11aaCZ~ijV80JrVYQ-GD6sG6FlxDWxAn13_eZuUQ)) and group the data by the main entity. You can also sort and filter according to the number of affected endpoints. For example, in the Services aggregated view, you can sort by the number of affected endpoints to identify the least commonly deployed service in your network. To get a closer view of all endpoints, right-click and select View affected endpoints.
 
-**View Host Inventory**
+### View Host Inventory
 
 To view the Host inventory, go to Inventory → Endpoints → Host Inventory. You can export the tables and respective asset views to a tab-separated values (TSV) file.
 

@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM agent-based Web and API Security profiles to monitor or block
+  threats on Linux workloads.
+---
+
 # Agent-based protection
 
 {% hint style="info" %}

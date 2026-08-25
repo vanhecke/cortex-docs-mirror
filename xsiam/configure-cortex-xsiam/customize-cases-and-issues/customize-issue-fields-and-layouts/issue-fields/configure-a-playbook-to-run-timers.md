@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XSIAM playbooks to start, pause, and stop issue timers for
+  response-time tracking and automated workflows.
+---
+
 # Configure a playbook to run timers
 
 Within a playbook, you can set a timer to start, pause, or stop at a specific section header or task. For example, you can create a timer called Pending user response and have it start in a playbook when an email is sent to a user. If the user does not respond within the target timeframe, then you can automatically send an additional reminder to the user or run a different task.

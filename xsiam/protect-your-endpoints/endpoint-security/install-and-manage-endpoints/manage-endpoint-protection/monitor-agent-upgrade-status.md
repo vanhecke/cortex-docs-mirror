@@ -1,3 +1,7 @@
+---
+description: Monitor Cortex XSIAM agent upgrade status across your endpoint fleet.
+---
+
 # Monitor agent upgrade status
 
 From Cortex XSIAM, you have full visibility into the Cortex XDR agent upgrade status on the endpoint. You can monitor the Cortex XDR agent statuses in **Inventory → Endpoints → All Endpoints**. If the upgrade status fields are missing, add them. Cortex XDR agents report upgrade statuses as follows:

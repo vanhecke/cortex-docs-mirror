@@ -1,3 +1,9 @@
+---
+description: >-
+  Use the Resolution tab to see all resolution actions to remediate and close
+  issues in Cortex XSIAM.
+---
+
 # Resolution actions
 
 The **Resolution** tab provides a consolidated view of all remediation actions, including recommended playbooks, and pending, in progress, and completed actions.

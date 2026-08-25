@@ -1,3 +1,7 @@
+---
+description: Delete Cortex XDR agents from Cortex XSIAM when endpoints are decommissioned.
+---
+
 # Delete Cortex XDR agents
 
 If you have an endpoint that you no longer want to track through Cortex XSIAM, for example, if the endpoint disconnected from Cortex XSIAM, or an endpoint where the Cortex XDR agent was uninstalled, you can delete the endpoint from the Cortex XSIAM tenant views.

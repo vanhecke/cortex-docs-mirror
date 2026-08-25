@@ -1,3 +1,7 @@
+---
+description: Manage Cortex XSIAM agent tokens for endpoint installation and registration.
+---
+
 # Manage agent tokens
 
 You can now run some of the agent functions that require administrative passwords using a unique token shared between Cortex XSIAM and Cortex XDR agent.

@@ -1,8 +1,7 @@
 ---
 description: >-
-  This dashboard aggregates and presents security data from all four core SaaS
-  Security pillars including: SSPM (Posture), SaaS Identity Security, SaaS Data
-  Security, and SaaS Agent Security.
+  Use the Cortex XSIAM SaaS Security Overview to monitor posture, identity,
+  data, and AI agent security.
 ---
 
 # SaaS Security Overview
@@ -17,14 +16,12 @@ The SaaS Overview dashboard provides unified visibility into your multi-SaaS sec
 
 Review the descriptions below for a detailed breakdown of interactive widgets:
 
-
-
 1. The application inventory header bar displays high-level statistics for monitored applications and assets along with state sync indicators. This high-level indicator provides you with a comprehensive view of all your SaaS applications and impacted assets.
 2. The central interactive visual graph maps security domains to aggregated issues and severity classifications. This helps you gauge the overall health of your security operations and ensure that your team is maintaining a positive burn-down rate of vulnerabilities.
-3. Domain Security Nodes: Hover over or click a domain node to highlight tracked vulnerability data, such as Agents with Sensitive Data, and view domain-specific asset inventories.&#x20;
+3. Domain Security Nodes: Hover over or click a domain node to highlight tracked vulnerability data, such as Agents with Sensitive Data, and view domain-specific asset inventories.
 4. Summarizes Findings into two operational buckets:
 
-* Active Threat Issues&#x20;
+* Active Threat Issues
 * Posture Issues
 
 <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FMOPqXOoD9uQ2WpgPWu6P%2Funknown.png?alt=media&#x26;token=ee8a72ef-832d-46b6-8134-3cba0859924e" alt="" height="392" width="624">

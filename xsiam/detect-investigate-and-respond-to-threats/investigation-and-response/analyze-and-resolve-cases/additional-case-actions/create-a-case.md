@@ -1,3 +1,7 @@
+---
+description: Create Cortex XSIAM cases manually and link or create associated issues.
+---
+
 # Create a case
 
 {% hint style="info" %}
@@ -6,7 +10,7 @@
 To create a case manually, you must have View/Edit permission for **Cases and Issues** selected under **Settings** → **Configurations** → **Access Management** → **Roles** → **Components** → **Cases & Issues**.
 {% endhint %}
 
-You can create a case directly from the **Cases** page.
+In Cortex XSIAM, you can create a case directly from the **Cases** page.
 
 1. On the **Cases** page click **New Case**.
 2.  Under **Case Details**, specify the case domain, name, severity, and (Optional) assignee and description.

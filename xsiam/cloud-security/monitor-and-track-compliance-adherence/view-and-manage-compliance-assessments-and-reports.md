@@ -1,7 +1,7 @@
 ---
 description: >-
-  Review assessment results and generate or schedule downloadable compliance
-  reports.
+  Review Cortex XSIAM assessment results and generate or schedule downloadable
+  compliance reports.
 ---
 
 # View and manage compliance assessments and reports

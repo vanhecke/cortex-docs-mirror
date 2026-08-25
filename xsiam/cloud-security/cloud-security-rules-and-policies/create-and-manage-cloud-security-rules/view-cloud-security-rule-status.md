@@ -1,5 +1,5 @@
 ---
-description: View, filter, and sort the status of cloud security rules.
+description: View, filter, and sort the status of cloud security rules in Cortex XSIAM.
 ---
 
 # View cloud security rule status

@@ -1,5 +1,7 @@
 ---
-description: Learn more about migrating a broker VM High Availability (HA) cluster node.
+description: >-
+  Migrate a Broker VM high-availability cluster node to the latest Cortex XSIAM
+  broker image, including cluster and load-balancer updates.
 ---
 
 # Broker VM high availability cluster node

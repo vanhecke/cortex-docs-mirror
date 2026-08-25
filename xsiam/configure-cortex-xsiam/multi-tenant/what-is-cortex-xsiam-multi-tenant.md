@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn about Cortex multi-tenant deployments that provide data segregation
-  while enabling you to manage multiple tenants from a single console.
+  Learn how Cortex XSIAM multi-tenant deployments isolate child tenant data
+  while centralizing licensing, administration, and alert visibility.
 ---
 
 # What is Cortex XSIAM multi-tenant?
@@ -12,7 +12,7 @@ Multi-tenancy enables you to manage multiple tenants from a single console. For 
 
 In the main account, you can see all alerts across all child tenants.
 
-**Multi-tenant architecture**
+### **Multi-tenant architecture in Cortex XSIAM**
 
 Multi-tenancy architecture is based on the platform's ability to run separate instances (process and data) of Cortex XSIAM, linking each child tenant to a main tenant. Each deployment consists of a main account and child tenants. All child tenants are associated with the main tenant. While tenant alerts can be searched from the main tenant, no data is stored on the main tenant.
 

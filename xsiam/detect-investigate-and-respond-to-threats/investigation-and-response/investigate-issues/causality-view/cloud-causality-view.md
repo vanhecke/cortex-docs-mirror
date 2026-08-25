@@ -1,3 +1,9 @@
+---
+description: >-
+  Investigate cloud identities and resources in Cortex XSIAM with the cloud
+  causality view.
+---
+
 # Cloud causality view
 
 On the cloud causality view you can analyze and respond to Cortex XSIAM issues and cloud audit logs. On this view you can see the causality (cause and effect) of events of the entire process execution chain that led up to the issue. The cloud causality view presents the event identity and /or IP address and the actions performed by the identity on the cloud resource. On each node in the CI chain, Cortex XSIAM provides information to help you understand what happened around the event.

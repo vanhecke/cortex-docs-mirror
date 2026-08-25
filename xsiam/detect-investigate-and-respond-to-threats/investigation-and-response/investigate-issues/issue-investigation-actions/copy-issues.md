@@ -1,3 +1,7 @@
+---
+description: Copy Cortex XSIAM issue details, rows, or URLs for sharing and analysis.
+---
+
 # Copy issues
 
 You can copy issue text into memory and paste it into an email. This is helpful if you need to share or discuss a specific issue with someone. If you copy a field value, you can also paste it into a search or begin a query.

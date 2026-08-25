@@ -1,3 +1,7 @@
+---
+description: Uninstall Cortex XDR agents from endpoints through Cortex XSIAM.
+---
+
 # Uninstall the Cortex XDR agent
 
 Uninstall Cortex XDR agent from one or more endpoints at any time using the Action Center, or one-by-one using the All Endpoints page.
@@ -20,9 +24,7 @@ If you want to uninstall the Cortex XDR agent from the endpoint, you can do so f
 
 {% stepper %}
 {% step %}
-Log in to Cortex XSIAM.
-
-Go to **Investigation & Response → ResponseAction Center**.
+Go to **Investigation & Response → Response → Action Center**.
 {% endstep %}
 
 {% step %}
@@ -62,8 +64,6 @@ To track the status of the uninstallation, return to the **Action Center**.
 
 {% stepper %}
 {% step %}
-Log in to Cortex XSIAM.
-
 Go to **Inventory → Endpoints → All Endpoints**.
 {% endstep %}
 

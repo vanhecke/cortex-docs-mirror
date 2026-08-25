@@ -1,3 +1,9 @@
+---
+description: >-
+  Apply Cortex XSIAM Web and API Security profiles through prevention policies
+  for selected workloads and workload groups.
+---
+
 # Apply Web and API Security profiles to workloads
 
 {% hint style="info" %}

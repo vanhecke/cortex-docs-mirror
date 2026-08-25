@@ -1,5 +1,7 @@
 ---
-description: View, export, and manage historical compliance assessment reports.
+description: >-
+  View, export, and manage historical Cortex XSIAM compliance assessment
+  reports.
 ---
 
 # Review reports

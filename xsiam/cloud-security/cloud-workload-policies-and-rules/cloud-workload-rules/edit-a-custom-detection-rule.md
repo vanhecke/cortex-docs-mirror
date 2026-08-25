@@ -1,3 +1,9 @@
+---
+description: >-
+  Edit a Cortex XSIAM custom cloud workload detection rule to update its
+  security and compliance checks.
+---
+
 # Edit a custom detection rule
 
 1. Navigate to **Posture Management** → **Rules & Policies** → **Rules** → **Cloud Workload**.

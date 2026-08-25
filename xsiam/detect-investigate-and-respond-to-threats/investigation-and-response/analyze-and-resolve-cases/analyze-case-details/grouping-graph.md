@@ -1,6 +1,10 @@
+---
+description: Use the Cortex XSIAM grouping graph to understand linked issues and artifacts.
+---
+
 # Grouping graph
 
-The **Grouping Graph** is a visual representation of the logic used to group issues in a case. It provides transparency into why specific issues are linked, illustrating the relationships between data points and the underlying decision-making process of the analysis engine.
+The Cortex XSIAM **Grouping Graph** is a visual representation of the logic used to group issues in a case. It provides transparency into why specific issues are linked, illustrating the relationships between data points and the underlying decision-making process of the analysis engine.
 
 By revealing these connections, the graph offers key insights into the case narrative, visualizes the overall scope, and identifies common artifacts for investigation.
 

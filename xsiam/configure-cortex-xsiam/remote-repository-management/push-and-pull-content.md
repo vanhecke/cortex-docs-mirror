@@ -1,18 +1,21 @@
 ---
-description: Learn more about synchronizing content across different environments.
+description: >-
+  Push and pull Cortex XSIAM content through a remote repository to synchronize
+  playbooks, scripts, and integrations between development and production
+  tenants.
 ---
 
 # Push and pull content
 
-The remote repository allows you to synchronize content, such as playbooks and scripts, across different environments. This ensures that automation logic and integrations developed and tested in a development tenant can be deployed consistently to a production tenant.
+Use a Cortex XSIAM remote repository to push and pull content between development and production tenants. Synchronize playbooks, scripts, automation logic, and integrations after testing them in a development environment.
 
 <details>
 
-<summary>Push content from the development tenant</summary>
+<summary>Push Cortex XSIAM content from a development tenant</summary>
 
-When content you develop is ready for production, you push the content update from the development tenant to the remote repository.
+When developed content is ready for production, push the content update from the development tenant to the remote repository.
 
-### Push content considerations
+### Cortex XSIAM content push considerations
 
 * **Push**
   * **Role-level requirements**: The ability to push playbooks and scripts to a remote repository is governed by a specific set of RBAC permissions. Your role must have **Scripts** and **Playbooks** enabled (under **Investigation & Response** → **Automations** with **Edit Public** selected for both) and **Cases and Issues** (under **Cases & Issues**) set to **View/Edit**.
@@ -25,11 +28,11 @@ For more information, see [Manage access to playbooks and scripts](../../onboard
 * **Manual export**: Do not manually export content from the development tenant to import to the production tenant. Use only the procedures outlined in the documentation to ensure that your content is properly updated in the production tenant.
 * **Version compatibility**: We do not recommend pushing content from a development tenant to a production tenant if they have different versions. This helps avoid compatibility conflicts, versioning errors, and unintended behavior in the production environment.
 
-### Development and production environments in different deployment phases
+### Deploy content across different Cortex XSIAM versions
 
-Separating your development and production environments into different deployment phases enables testing an upgrade version in the development environment before upgrading the production environment. Since new features available in the upgrade version may not function in the pre-upgrade environment, Cortex XSIAM provides warning messages and visual indicators to alert users about incompatible items between development and production environments, and collapsible release notes in the list of changes.
+Separating development and production environments into deployment phases lets you test an upgrade version before production deployment. New features might not work in a pre-upgrade environment. Cortex XSIAM displays warnings, visual indicators, and collapsible release notes for incompatible items.
 
-### How to push content from the development tenant
+### Push content from a Cortex XSIAM development tenant
 
 On each page you can decide whether to include or exclude items, which prevents them from being pushed to production, on a temporary or permanent basis. You can only exclude individual content items, not content packs.
 
@@ -51,11 +54,11 @@ On each page you can decide whether to include or exclude items, which prevents 
 
 <details>
 
-<summary>Pull content into the production tenant</summary>
+<summary>Pull Cortex XSIAM content into a production tenant</summary>
 
-After you push content from the development tenant, the navigation bar in the production tenant will notify **Remote Repository Content Available**. In case of conflicts, you have the choice whether to keep local content or delete and replace.
+After you push content from the development tenant, the production tenant displays **Remote Repository Content Available**. For content conflicts, choose whether to keep local content or replace it.
 
-### Pull content considerations
+### Cortex XSIAM content pull considerations
 
 When pulling content from a remote repository, Cortex XSIAM handles ownership differently depending on whether the content is new or already exists in the environment:
 
@@ -87,7 +90,7 @@ When pulling playbooks or scripts from a remote repository into a production ten
 * **Public**: Visible to all authorized users.
 {% endhint %}
 
-### How to pull content into a production tenant
+### Pull content into a Cortex XSIAM production tenant
 
 1. If you click **Remote Repository Content Available** in the navigation bar, the **Content update available** window opens with a list of content available for installation, including content packs and content items.
 2. Click **Check for new content** or **Install content**.

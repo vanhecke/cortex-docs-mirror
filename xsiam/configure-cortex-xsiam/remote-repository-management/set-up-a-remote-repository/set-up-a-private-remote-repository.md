@@ -1,10 +1,14 @@
 ---
-description: Set up the private remote repository feature.
+description: >-
+  Set up a private Git remote repository in Cortex XSIAM to synchronize content
+  between development and production tenants.
 ---
 
 # Set up a Private Remote Repository
 
-Before you begin, verify that you have network connectivity from Cortex XSIAM to the private remote repository. All communication goes through Cortex XSIAM, so it must have access to the remote repository. If direct access from Cortex XSIAM is not enabled you can use engines with access to the repository.
+Set up a private Git remote repository in Cortex XSIAM to manage and synchronize content across development and production tenants. Configure connectivity through Cortex XSIAM or an engine with repository access.
+
+Before you begin, verify network connectivity from Cortex XSIAM to the private remote repository. All communication goes through Cortex XSIAM. If direct access is unavailable, use an engine that can access the repository.
 
 {% hint style="info" %}
 **TIP**
@@ -12,15 +16,15 @@ Before you begin, verify that you have network connectivity from Cortex XSIAM to
 Due to security concerns, there is a closed allow list of approved URLs for private repositories. If you want to use a URL that is excluded from the allow list, use an engine (engine groups are not supported).
 {% endhint %}
 
-The following are typical scenarios for setting up a private remote repository for the production and one or more development tenants.
+Use the following scenarios to configure a private remote repository for a production tenant and one or more development tenants.
 
 {% hint style="info" %}
 Once enabled, the development push tenant has a red banner on the top left showing DEV.
 {% endhint %}
 
-### New development tenant and new or existing production tenant
+### Set up a private repository for a new development tenant
 
-In this scenario, the production tenant is first activated as a standalone (by default), and the built-in remote repository is then enabled in the production tenant (as a pull tenant). Once enabled, the first development tenant becomes the push tenant and any additional tenants become pull tenants.
+In this scenario, activate the production tenant as standalone first. Then enable the private remote repository in the production pull tenant. The first development tenant becomes the push tenant. Any additional development tenants become pull tenants.
 
 Perform the following procedures in the order listed below.
 
@@ -50,7 +54,7 @@ You can't add an engine that has been added to a Load-Balancing Group.
 
 <details>
 
-<summary>Task 2. Activate a new development tenant in Cortex Gateway for a private remote repository</summary>
+<summary>Task 2. Activate a Cortex XSIAM development tenant in Cortex Gateway</summary>
 
 1. In Cortex Gateway , locate the Cortex XSIAM production tenant where you enabled the private repository in Task 1.
 2. Hover over the Cortex XSIAM tenant and click **Activate Dev Tenant**.
@@ -68,13 +72,13 @@ You can't add an engine that has been added to a Load-Balancing Group.
 
 <details>
 
-<summary>Task 3. Enable the private remote repository in the development tenants</summary>
+<summary>Task 3. Configure the private Git repository in development tenants</summary>
 
-The first development tenant automatically becomes the push tenant. For more details about push and pull tenants, see [Cortex XSIAM development tenant](../cortex-xsiam-development-tenant).
+The first development tenant automatically becomes the push tenant. For details about Cortex XSIAM push and pull tenants, see [cortex-xsiam-development-tenant](../cortex-xsiam-development-tenant "mention").
 
 1. In the development tenant, go to **Settings** → **Configurations** → **General** → **Remote Repository Settings** and toggle the **Content repository** slider to enable the remote repository. When set to **On**, the sync direction for the first development tenant is **Push**. The sync direction for any additional development tenants is **Pull**.
 2. In the **Repository type** field, select **Private**.
-3. Define the GitHub settings using HTTPS or SSH.
+3. Define the private Git repository settings using HTTPS or SSH.
    1. Select the active branch on which you will be working.\
       You can either use the same branch as for the pull tenant (production or additional development tenant), or a different branch. If using a different branch, you need to define a manual or automatic merge between branches which is done outside Cortex XSIAM.
    2. In the **Advanced** section, the engine is set by default. You can change the engine by selecting from the list of available engines.
@@ -91,9 +95,9 @@ The first development tenant automatically becomes the push tenant. For more det
 
 </details>
 
-### Existing development and production tenants
+### Set up a private repository for existing tenants
 
-In this scenario, the production and development tenants were managed in parallel with different sets of content. Since they were already activated in Cortex Gateway, their remote repository settings can only be changed within the tenants.
+In this scenario, production and development tenants were managed separately with different content. Because they are already activated in Cortex Gateway, update their remote repository settings within each tenant.
 
 {% hint style="info" %}
 The first tenant that is enabled pushes its content to the remote repository first. For example, these instructions describe enabling the production tenant first, so the remote repository will initially contain production tenant content. You can enable a development tenant first if you want the remote repository to initially contain the content from the development tenant.
@@ -125,11 +129,11 @@ Perform the following procedures in the order listed below.
 
 <summary>Task 2. Enable the private remote repository in the development tenants.</summary>
 
-Once enabled, the first development tenant automatically becomes the push tenant. For more details about push and pull tenants, see [Cortex XSIAM development tenant](../cortex-xsiam-development-tenant).
+Once enabled, the first development tenant automatically becomes the push tenant. For details about Cortex XSIAM push and pull tenants, see [cortex-xsiam-development-tenant](../cortex-xsiam-development-tenant "mention").
 
 1. In the development tenant, go to **Settings** → **Configurations** → **General** → **Remote Repository Settings** and toggle the **Content repository** slider to enable the remote repository. When set to **On**, the sync direction for the first development tenant is **Push**. The sync direction for any additional development tenants is **Pull**.
 2. In the Repository type field, select **Private**.
-3. Define the GitHub settings using HTTPS or SSH.
+3. Define the private Git repository settings using HTTPS or SSH.
    1. Select the active branch on which you will be working.
    2. In the **Advanced** section, add any engines you want to connect.
 

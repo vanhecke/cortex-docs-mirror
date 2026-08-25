@@ -1,25 +1,27 @@
 ---
-description: Track issue response times and SLAs with configurable timer fields.
+description: >-
+  Configure Cortex XSIAM issue timer fields to track response times, SLAs, risk
+  thresholds, and timeout automation.
 ---
 
-# Issue timer fields
+# Configure issue timer fields
 
-By default, timer fields are disabled in Cortex XSIAM. To enable timer fields, go to Settings → Configurations → General → Server Settings → Issues and Enable Timer Field.
+Configure Cortex XSIAM issue timer fields to track issue response times, service-level agreements (SLAs), and timeout targets. Timer fields are disabled by default. To enable them, go to **Settings** → **Configurations** → **General** → **Server Settings** → **Issues**, then enable **Timer Field**.
 
-Timer issue fields provide you with the ability to track reaction time and help you measure issue-level metrics. Timers can measure multiple aspects of an issue. You can, for example, have a timer track how long since the first playbook ran, and have another timer track how long you've been waiting for a user's response. Timers display in the issues table and in issue layouts.
+Timer fields track reaction times and issue-level metrics. Use separate timers for different stages. For example, track time since the first playbook ran or time waiting for a user response. Timers appear in the **Issues** table and issue layouts.
 
-Timer fields can be started, stopped, or paused in a playbook, script, or manually in the CLI.
+Start, stop, or pause timer fields with a playbook, script, or the CLI.
 
-Timer fields count up from when a specific action or task began and also (optionally) count down from a target. The Risk Threshold tells you when a timer is considered at risk and you can customize the time period for the Risk Threshold.
+Timer fields count up from the start of an action or task. They can also count down to a target. Configure a risk threshold to identify timers at risk.
 
-Timer fields always show the total duration while they are still running. If they are at risk, they show the at risk status. After a timer field has timed out (passed the target), the timer shows both the total duration and how long past the target.
+Running timers show their total duration. At-risk timers show an at-risk status. Timed-out fields show the total duration and the time past the target.
 
-Timer fields do not automatically trigger actions when timers time out. You can configure a script to run when a timer times out.
+Timer fields do not trigger actions automatically when they time out. Configure a timer script to run when a timeout occurs.
 
-### Scripts
+### Automate issue timer timeouts with scripts
 
-You can run scripts to act on timeouts, such as sending an email when a timeout occurs. You can also make specific changes to an issue field or a parent case issue, such as changing the case owner. Cortex XSIAM includes out-of-the-box scripts or you can create your own scripts. Scripts must have the `SLA` tag to be used for timer fields. For more information, see [Automate changes to issue fields using timer scripts](automate-changes-to-issue-fields-using-timer-scripts).
+Use scripts to act on timeouts, such as sending an email. Scripts can also change an issue field or parent case, such as its owner. Cortex XSIAM includes out-of-the-box scripts, or you can create your own. Scripts must use the `SLA` tag to work with timer fields. For more information, see [automate-changes-to-issue-fields-using-timer-scripts](automate-changes-to-issue-fields-using-timer-scripts "mention").
 
-### Using the CLI
+### Manage issue timers with the CLI
 
-If you want to set or change timers for an issue you can use the `setIssue` command in the CLI. You can also use commands such as `startTimer`, `stopTimer`, and `pauseTimer`. For more information, see [Use issue timer field commands manually in the CLI](user-issue-timer-field-commands-manually-in-the-cli).
+Use the `setIssue` command in the CLI to set or change issue timers. You can also use commands such as `startTimer`, `stopTimer`, and `pauseTimer`. For more information, see [user-issue-timer-field-commands-manually-in-the-cli](user-issue-timer-field-commands-manually-in-the-cli "mention").

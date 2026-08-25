@@ -1,7 +1,7 @@
 ---
 description: >-
   Learn how cloud security rules and policies detect threats and
-  misconfigurations across your environment.
+  misconfigurations across your Cortex XSIAM environment.
 ---
 
 # Cloud security rules and policies

@@ -1,10 +1,12 @@
 ---
-description: View, manage, import, and export system, content pack, and custom case fields.
+description: >-
+  Manage system, content pack, and custom case fields in Cortex XSIAM. View,
+  import, export, and maintain case field configurations.
 ---
 
 # Case fields
 
-Cortex XSIAM includes out-of-the-box case fields, case fields from installed content packs, and user defined custom case fields. Case fields can be used for custom case layouts, and for display in the **Cases** table.
+Cortex XSIAM includes out-of-the-box case fields, fields from installed content packs, and user-defined custom fields. Use case fields in custom case layouts and the **Cases** table.
 
 Custom case fields can be exported and imported. To export a single custom case field, right-click on the field in the fields table, and select **Export**. To export all custom case fields in a single JSON file, click the **Export All** button above the fields table. System case fields cannot be exported or imported.
 

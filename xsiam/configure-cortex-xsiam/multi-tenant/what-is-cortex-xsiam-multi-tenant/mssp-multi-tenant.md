@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM MSSP multi-tenant environments with centralized or
+  customer-owned licensing for client security operations.
+---
+
 # MSSP multi-tenant
 
 Cortex XSIAM supports pairing multiple Cortex XSIAM environments with a single main account enabling MSSPs to easily manage security on behalf of their clients.

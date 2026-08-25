@@ -1,6 +1,12 @@
+---
+description: >-
+  Merge related Cortex XSIAM cases to consolidate investigations, teams, and
+  response efforts.
+---
+
 # Merge a case
 
-If you find related cases that belong together, you can merge them into a single case to streamline your workflow and consolidate your team's efforts.
+In Cortex XSIAM, if you find related cases that belong together, you can merge them into a single case to streamline your workflow and consolidate your team's efforts.
 
 ### Key definitions
 
@@ -33,7 +39,7 @@ The target case's assignee always takes priority:
 
 Unlike assignees, team members are never overwritten or deleted. Instead, they are combined:
 
-* **Merged teams:** The contributors and watchers from both the source case and the target case are pooled together into the final target case, ensuring no one loses visibility.&#x20;
+* **Merged teams:** The contributors and watchers from both the source case and the target case are pooled together into the final target case, ensuring no one loses visibility.
 
 #### Case scoring
 

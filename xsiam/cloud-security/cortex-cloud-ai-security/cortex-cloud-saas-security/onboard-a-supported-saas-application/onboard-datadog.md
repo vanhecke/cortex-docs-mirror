@@ -1,5 +1,7 @@
 ---
-description: Connect a Datadog instance to detect posture risks and compliance violations.
+description: >-
+  Onboard Datadog to Cortex XSIAM for SaaS security posture monitoring and
+  compliance visibility.
 ---
 
 # Onboard Datadog

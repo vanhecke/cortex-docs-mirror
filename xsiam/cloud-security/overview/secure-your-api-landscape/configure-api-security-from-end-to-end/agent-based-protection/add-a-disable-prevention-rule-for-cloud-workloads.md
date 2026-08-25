@@ -1,3 +1,9 @@
+---
+description: >-
+  Create Cortex XSIAM Web and API Security rules that disable selected
+  prevention actions for cloud workloads.
+---
+
 # Add a disable prevention rule for cloud workloads
 
 You can create granular exceptions to prevention actions defined for your workloads. These exception rules may be useful when you have processes that are essential to your organization, and must not be terminated. To cover all your workloads, you can configure different exception rules per platform. Cortex Cloud still generates issues from the disabled rules.

@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure LDAP server Event ID 1644 logging through Group Policy for Cortex
+  XSIAM.
+---
+
 # Enable LDAP server events logging using GPO
 
 1. On a domain controller or a system with Remote Server Administration Tools (RSAT) installed, open the **Group Policy Management Console** (GPMC).

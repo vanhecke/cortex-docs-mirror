@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM timer scripts with SLA tags to automate issue field updates,
+  notifications, and actions after timer timeouts.
+---
+
 # Automate changes to issue fields using timer scripts
 
 Scripts in Cortex XSIAM enable you to automate processes. You can create scripts that perform specific actions when a timer field times out. Scripts used with timers must have the SLA tag.

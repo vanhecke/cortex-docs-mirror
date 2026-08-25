@@ -1,29 +1,30 @@
 ---
 description: >-
-  Use a remote repository in Cortex XSIAM to enable centralized version control
-  and streamlined collaboration across multiple environments.
+  Set up a Cortex XSIAM remote repository for Git-based content management,
+  version control, and synchronization across development and production
+  tenants.
 ---
 
 # Set up a remote repository
 
-When you set up a remote repository, you can use the Cortex XSIAM built-in remote repository, add any private remote repository that is Git-based, or use an on-prem repository.
+Set up a Cortex XSIAM remote repository to manage, version, and synchronize content across development and production tenants. Use the built-in repository, a private Git-based repository, or an on-premise repository.
 
-### Considerations
+### Cortex XSIAM remote repository considerations
 
-* When you activate a tenant and enable the content repository in Cortex Gateway, Cortex XSIAM by default uses the the built-in repository. The built-in remote repository requires fewer configurations than using a private remote repository and cannot be accessed directly. If you want to use a private remote repository, you need to configure it when you enable the remote repository in the tenant.
-* When activating a new development tenant in Cortex Gateway for remote repository (adding it to a cluster), all tenants already in the cluster need to be activated and enabled for push/pull.
-* After the remote repository is enabled in the production tenant as a pull tenant, by default, the first activated development tenant is set to push content to the remote repository. When you add additional development tenants, they are automatically set to pull content from the remote repository.
+* When you activate a tenant and enable the content repository in Cortex Gateway, Cortex XSIAM uses the built-in repository by default. The built-in remote repository requires less configuration than a private remote repository. You cannot access it directly. Configure a private repository when you enable the remote repository in the tenant.
+* When activating a development tenant for a remote repository in Cortex Gateway, all existing cluster tenants must be activated and enabled for push and pull.
+* After you enable a remote repository in a production pull tenant, the first activated development tenant pushes content by default. Additional development tenants pull content from the remote repository by default.
 * If the content repository option is disabled for the production or development tenant (under **Settings** → **Configurations** → **General** → **Remote Repository Settings**, toggle the Content repository slider to off), the tenant becomes standalone and does not push or pull content. If you disable the remote repository feature, content on the tenant is not deleted. If you enable the remote repository feature again and the remote repository contains content, you need to choose which content to keep, either the content on the tenant or the content on the remote repository. We recommend backing up any content that you want to keep before enabling again.
 * When enabling a remote repository in a tenant:
   * If the relevant repository branch is empty, it inherits the content of the tenant.
   * If the relevant branch is not empty, you can select which content to keep, either the existing content on your tenant or the existing content on the specified repository. If you want to keep the content on the tenant, you need to first disable the remote repository in the other tenants in the cluster (making them standalone). If even one tenant has remote repository enabled, you can only keep the existing content on the specified repository.
-* For a simple one-branch deployment, we recommend using the built-in repository. If you want to use multiple branches, or if you need access to the content repository outside the Cortex XSIAM platform (for example to implement some scanners) you must use a private repository. If you want to use a private remote repository with one or more branches, you need to enable the remote repository in each tenant and then set up the different branches you want to use in each tenant.
+* For a simple single-branch deployment, use the built-in repository. Use a private Git repository for multiple branches or access outside Cortex XSIAM, such as scanner integration. To use a private remote repository with one or more branches, enable it in each tenant. Then configure the required branch in each tenant.
 * Activation may take some time. You should receive notification by email that the production or development tenant has completed the activation process.
 * Once the activation completes, you can only change content repository settings within the tenant.
 
-### Before you begin
+### Before you set up a remote repository
 
 * If you are changing your remote repository settings, back up existing content to your local computer by navigating to **Settings** → **Configurations** → **General** → **Server Settings** → **Custom Content** and click **Export all custom content**.
-* You must have Instance Administrator or Account Admin permission to set up a remote repository.
+* You must have Instance Administrator or Account Admin permission to set up a Cortex XSIAM remote repository.
 
 ***

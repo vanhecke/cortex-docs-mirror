@@ -1,3 +1,7 @@
+---
+description: Cortex XSIAM uses issue deduplication to reduce duplicate security events.
+---
+
 # Issue deduplication
 
 To optimize issue management and reduce noise, Cortex XSIAM employs a deduplication (dedup) mechanism for specific agent-based issues.

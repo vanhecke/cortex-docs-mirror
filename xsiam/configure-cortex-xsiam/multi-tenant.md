@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM multi-tenant deployments, including child tenants,
+  licensing, data isolation, and centralized security operations.
+---
+
 # Multi-Tenant
 
 {% content-ref url="multi-tenant/what-is-cortex-xsiam-multi-tenant" %}

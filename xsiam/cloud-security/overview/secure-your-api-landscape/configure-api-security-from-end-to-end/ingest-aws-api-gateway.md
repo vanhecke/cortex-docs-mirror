@@ -1,3 +1,9 @@
+---
+description: >-
+  Ingest AWS API Gateway logs into Cortex XSIAM for API traffic analysis, threat
+  detection, and risk assessment.
+---
+
 # Ingest AWS API Gateway
 
 Integrate AWS API Gateway with Cortex XSIAM to begin scanning the APIs for potential threats and vulnerabilities.

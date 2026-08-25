@@ -1,7 +1,7 @@
 ---
 description: >-
-  Create approval-based rules that temporarily pause SLA timers for selected
-  issues.
+  Create Cortex XSIAM issue exception rules with approvers, expiration dates,
+  SLA timer pauses, and issue filter criteria.
 ---
 
 # Create issue exception rules

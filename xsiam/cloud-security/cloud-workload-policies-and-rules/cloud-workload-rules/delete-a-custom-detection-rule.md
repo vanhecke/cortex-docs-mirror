@@ -1,3 +1,9 @@
+---
+description: >-
+  Delete a Cortex XSIAM custom cloud workload detection rule that is no longer
+  required.
+---
+
 # Delete a custom detection rule
 
 1. Navigate to **Posture Management** → **Rules & Policies** → **Rules** → **Cloud Workload**.

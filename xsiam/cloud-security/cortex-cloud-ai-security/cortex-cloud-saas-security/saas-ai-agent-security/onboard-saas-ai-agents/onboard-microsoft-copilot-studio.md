@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect Microsoft Copilot Studio to SaaS Agent Security to gain total
-  visibility and control over your AI ecosystem.
+  Onboard Microsoft Copilot Studio to Cortex XSIAM SaaS AI Agent Security for
+  visibility and control.
 ---
 
 # Onboard Microsoft Copilot Studio
@@ -13,9 +13,7 @@ description: >-
 * Power Platform Permissions: Ensure you have a System Administrator or Power Platform Administrator role to add app users to the relevant environment.
 * Environment Settings: Ensure you disable Administration mode in the Power Platform Admin Center.
 
-
-
-1. Configure Permissions in Microsoft Azure.&#x20;
+1. Configure Permissions in Microsoft Azure.
 
 Create an app registration in your Microsoft Azure Portal to grant Palo Alto Networks® secure, read-only access to your Microsoft Copilot Studio environment.
 
@@ -57,9 +55,9 @@ Create an app registration in your Microsoft Azure Portal to grant Palo Alto Net
       3. Directory (Tenant) ID: Displayed in the app Overview tab in the Microsoft Azure Portal.
       4. Client Secret Value: The secret value you securely stored in Step 3.
 6. Onboard Microsoft Copilot Studio to AISPM. Establish the API connection between the Palo Alto Networks platform and your Microsoft Copilot Studio environment using the gathered credentials.
-   1. Log in to Cortex.&#x20;
+   1. Log in to Cortex.
    2. Select **Settings > Data Sources and Integrations > Add New**. You can use the Search bar to find the Microsoft Copilot Studio connector.
-   3. Click on the Microsoft Copilot Studio tile and select **Add Another Instance**.&#x20;
+   3. Click on the Microsoft Copilot Studio tile and select **Add Another Instance**.
       1. On the **Capabilities** page, provide an Instance Name and select Agent Security scanning capability.
    4. On the **Connections** page, provide your Instance URL and select an authentication method. Input the following:
       1. Tenant ID

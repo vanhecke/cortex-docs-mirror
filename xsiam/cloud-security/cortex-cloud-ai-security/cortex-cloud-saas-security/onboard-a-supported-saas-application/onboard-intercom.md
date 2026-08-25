@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect an Intercom instance to detect posture risks and compliance
-  violations.
+  Onboard Intercom to Cortex XSIAM for SaaS security posture monitoring and
+  compliance visibility.
 ---
 
 # Onboard Intercom

@@ -1,6 +1,12 @@
+---
+description: >-
+  To analyze a case in Cortex XSIAM you can review details about case
+  relationships, evidence, issues, assets, tactics, and timelines.
+---
+
 # Analyze case details
 
-Once you have established the initial context, you can use the case **Overview** and **Timeline** to deconstruct the case and understand how its underlying components are connected, and review the full scope of activity.
+Once you have established the initial context of a case, you can use the case **Overview** and **Timeline** to deconstruct the case and understand how its underlying components are connected, and review the full scope of activity.
 
 *   **Overview**
 

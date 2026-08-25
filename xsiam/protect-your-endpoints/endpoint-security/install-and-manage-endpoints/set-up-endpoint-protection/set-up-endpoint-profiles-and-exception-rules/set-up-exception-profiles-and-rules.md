@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure exception profiles and rules for trusted or unsupported activity in
+  Cortex XSIAM.
+---
+
 # Set up exception profiles and rules
 
 Exception profiles override the security policy in scenarios such as:

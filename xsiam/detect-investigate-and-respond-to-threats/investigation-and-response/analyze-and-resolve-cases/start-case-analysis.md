@@ -1,3 +1,9 @@
+---
+description: >-
+  Start Cortex XSIAM case analysis from the Cases page, a unified workspace for
+  investigation and response.
+---
+
 # Start case analysis
 
 {% hint style="info" %}

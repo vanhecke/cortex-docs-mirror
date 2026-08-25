@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect a Monday.com instance to detect posture risks and compliance
-  violations.
+  Onboard Monday.com to Cortex XSIAM for SaaS security posture monitoring and
+  compliance visibility.
 ---
 
 # Onboard Monday.com
@@ -71,4 +71,3 @@ By adding a monday.com app in Cortex, you enable SaaS Security to connect to you
 6. Under **Connections**, enter the administrator login credentials, your account domain, and, optionally, the MFA secret key.
 7. Under **Configurations**, select a **Sync Interval**. Choose a meaningful **Tag** to distinguish between various applications in different environments.
 8. Click **Next** to complete the onboarding validation process.
-

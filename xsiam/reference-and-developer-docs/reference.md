@@ -1,3 +1,9 @@
+---
+description: >-
+  Cortex XSIAM reference material: cloud permissions, Windows auditing, XDM
+  mapping, scanner licenses, and fair usage.
+---
+
 # Reference
 
 {% content-ref url="reference/cloud-service-provider-permissions" %}

@@ -1,3 +1,9 @@
+---
+description: >-
+  Define endpoint groups to organize endpoints and target policies in Cortex
+  XSIAM.
+---
+
 # Define endpoint groups
 
 You can define an endpoint group and then apply policy rules and manage specific endpoints. If you set up Cloud Identity Engine, you can also leverage your Active Directory user, group, and computer details to define endpoint groups.

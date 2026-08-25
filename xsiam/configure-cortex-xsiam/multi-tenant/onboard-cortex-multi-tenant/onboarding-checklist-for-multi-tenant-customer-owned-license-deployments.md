@@ -1,3 +1,9 @@
+---
+description: >-
+  Follow this checklist to activate, configure access for, and pair Cortex XSIAM
+  tenants using customer-owned licenses.
+---
+
 # Onboarding checklist for multi-tenant customer-owned license deployments
 
 We recommend that you review the following steps to successfully deploy and onboard Cortex XSIAM with customer-owned licenses. For MSSP multi-tenant environments with central licensing management, see [Onboarding checklist for multi-tenant central licensing deployments](onboarding-checklist-for-multi-tenant-central-licensing-deployments).

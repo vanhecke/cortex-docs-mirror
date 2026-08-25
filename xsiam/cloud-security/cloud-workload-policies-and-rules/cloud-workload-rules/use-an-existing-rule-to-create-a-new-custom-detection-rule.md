@@ -1,3 +1,9 @@
+---
+description: >-
+  Duplicate an existing Cortex XSIAM cloud workload rule to create and customize
+  a new detection rule.
+---
+
 # Use an existing rule to create a new custom detection rule
 
 1. Navigate to **Posture Management** → **Rules & Policies** → **Rules** → **Cloud Workload**.

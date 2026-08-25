@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect a PagerDuty instance to detect posture risks and compliance
-  violations.
+  Onboard PagerDuty to Cortex XSIAM for SaaS security posture monitoring and
+  compliance visibility.
 ---
 
 # Onboard PagerDuty

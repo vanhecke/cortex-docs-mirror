@@ -1,12 +1,12 @@
 ---
 description: >-
-  Investigate cloud attacks faster with entity context directly in the Cloud
-  causality view.
+  Investigate cloud audit log issues in Cortex XSIAM with the cloud causality
+  view.
 ---
 
 # Cloud causality view for audit log issues
 
-The Cloud causality view presents entity context directly within issues, enabling security analysts to triage and scope cloud incidents in a single location. It displays the following context for a cloud audit log issue:
+The Cloud causality view presents entity context directly within Cortex XSIAM issues, enabling security analysts to triage and scope cloud incidents in a single location. It displays the following context for a cloud audit log issue:
 
 * Caller IP and network intelligence: The network origin, scope, and reputation of the action.
 * Identity information: The acting identity profile, authentication behavior, and access privileges.
@@ -14,7 +14,7 @@ The Cloud causality view presents entity context directly within issues, enablin
 
 In this context, you can see who acted, how the identity was authenticated, what the identity accessed, and where the action originated, without switching tools.
 
-The Cloud causality view shows cloud audit log issues as a source-to-destination graph, linking the identity or caller IP that initiated an action to the affected cloud asset. Cortex Cloud surfaces this context directly in the UAI by consolidating provider audit logs (Amazon Web Services CloudTrail, Microsoft Azure Activity Logs, and Google Cloud Platform Audit Logs).
+The Cloud causality view shows cloud audit log issues as a source-to-destination graph, linking the identity or caller IP that initiated an action to the affected cloud asset. Cortex XSIAM surfaces this context directly in the UAI by consolidating provider audit logs (Amazon Web Services CloudTrail, Microsoft Azure Activity Logs, and Google Cloud Platform Audit Logs).
 
 The Cloud causality view presents cloud context for investigation and does not modify cloud provider configuration. From a case, drill down to a cloud audit log issue to open the Cloud causality view for that issue.
 

@@ -1,8 +1,18 @@
+---
+description: >-
+  Configure Cortex XSIAM host firewall policies to control inbound and outbound
+  network traffic on Windows endpoints.
+---
+
 # Host firewall for Windows
 
-Enforce the Cortex XSIAM host firewall policy in your organization to control communications on your endpoints and gain visibility into your network connections. The host firewall policy consists of unique rule groups that are enforced hierarchically and can be reused across all host firewall profiles. The Cortex XSIAM host firewall rules are integrated with the Windows Security Center and leverage the operating system firewall APIs to enforce these rules on your endpoints, but not your operating system firewall settings. Once you deploy the host firewall, use the Host Firewall Events table to track the enforcement events in your organization.
+Cortex XSIAM host firewall policies control inbound and outbound network communications on Windows endpoints. Reusable rule groups support hierarchical policy enforcement across host firewall profiles. Host firewall rules integrate with Windows Security Center and use Windows firewall APIs without changing operating system firewall settings.
 
-To configure the Cortex XSIAM host firewall in your network, follow this high-level workflow:
+Use the Host Firewall Events table to monitor enforcement events and network connections.
+
+### Host firewall setup workflow
+
+To configure the Cortex XSIAM host firewall, follow this workflow:
 
 * Ensure you meet the host firewall [requirements and prerequisites]().
 * **Create rules within rule groups:** Create host firewall rule groups that you can reuse across all host firewall profiles. Add rules to each group and prioritize the rules from top to bottom to create an enforcement hierarchy.

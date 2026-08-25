@@ -1,16 +1,22 @@
+---
+description: >-
+  Create custom Cortex XSIAM case layouts with case fields, tabs, sections, and
+  action buttons for different case types.
+---
+
 # Create custom layouts
 
-Custom case layouts let you choose the specific fields and buttons that are displayed for different types of cases. You can create custom case layouts that include both custom and out-of-the-box case fields.
+Create custom Cortex XSIAM case layouts to control the fields, tabs, sections, and action buttons shown for different case types. Layouts can include custom and out-of-the-box case fields.
 
-Tabs that were created can be renamed, hid, duplicated, or deleted. To make these changes, hover over the tab name, click the settings button, and select the relevant option. You can drag and drop tabs to change the order they appear. By default, empty fields within the tab are hidden in the case layout. To show empty fields, hover over the tab name, click the settings button, and select **Show empty fields**.
+Custom tabs can be renamed, hidden, duplicated, or deleted. Hover over a tab name, click the settings button, and select an option. Drag and drop tabs to change their order. Empty fields are hidden by default. To show them, select **Show empty fields** from the tab settings.
 
-You cannot edit the **Overview**, **Key Assets & Artifacts**, **Issues & Insights**, **Timeline**, **War Room**, and **Executions** tabs in the case layout. Select **Hide Tab** to hide the tab, rather than deleting the tab as you may want to use the tab again for future use.
+You cannot edit the **Overview**, **Key Assets & Artifacts**, **Issues & Insights**, **Timeline**, **War Room**, and **Executions** system tabs. Select **Hide Tab** to hide a system tab without deleting it.
 
-Custom case layouts and duplicates of system case layouts, can be exported. To export a single case layout, right-click on the layout in the layouts table, and select **Export**. To export all custom case layouts and duplicates of system case layouts in a single JSON file, click the **Export All** button above the layouts table.
+Export custom case layouts and duplicated system layouts. To export one case layout, right-click it in the layouts table and select **Export**. To export all custom layouts and duplicated system layouts as one JSON file, click **Export All** above the table.
 
-You can import a custom case layout by clicking **Import** and uploading the JSON file.
+Import a custom case layout by clicking **Import** and uploading its JSON file.
 
-#### How to create a custom case layout
+### Create a custom Cortex XSIAM case layout
 
 1. Select **Settings** → **Configurations** → **Object Setup** → **Cases** → **Layouts** → **New Layout**.
 2. Enter a name for the layout.

@@ -1,6 +1,10 @@
+---
+description: Explore Response and Remediation playbook use cases in Cortex XSIAM.
+---
+
 # Example use cases
 
-The following are examples of Cortex Response and Remediation use cases.
+The following are examples of Cortex Response and Remediation use cases in Cortex XSIAM.
 
 ### **SSO password spray**
 

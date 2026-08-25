@@ -1,16 +1,22 @@
-# Cortex Cloud Data Classification
+---
+description: >-
+  Manage data patterns, profiles, OCR, and masked sample collection for cloud
+  data classification in Cortex XSIAM.
+---
+
+# Cloud Data Classification
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on. If you have the Endpoint DLP add-on, Data Classification is automatically available.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license. If you have the Endpoint DLP add-on, Data Classification is automatically available.
 {% endhint %}
 
-### What is Cortex Cloud Data Classification?
+### What is Cloud Data Classification?
 
-To access Data Classification management, click **Settings** → **Configurations** → **Data Classification** .
+To access Data Classification management, click **Settings** → **Configurations** → **Data Classification**.
 
 The main screens of Data Classification management are:
 
-* **Data Patterns:** Types of data that are discoverable on a data object, such as credit card numbers, social security numbers (SSNs), and email addresses. Cortex Cloud Data Classification provides a complete list of hundreds of out-of-the-box patterns. Scroll to the right to see more information about each pattern (description, region and state location, whether enabled). You can disable the data patterns that are not relevant for you. For more information, see [How to disable and enable data patterns in Data Classification](cortex-cloud-data-classification/how-to-disable-and-enable-data-patterns-in-data-classification).
+* **Data Patterns:** Types of data that are discoverable on a data object, such as credit card numbers, Social Security numbers (SSNs), and email addresses. Cortex Cloud Data Classification provides a complete list of hundreds of out-of-the-box patterns. Scroll to the right to see more information about each pattern (description, region and state location, whether enabled). You can disable the data patterns that are not relevant for you. For more information, see [How to disable and enable data patterns in Data Classification](cortex-cloud-data-classification/how-to-disable-and-enable-data-patterns-in-data-classification).
 * **Data Profiles:** A data profile defines a data-related business case and is applied to a data object such as a file or field. Six major data profiles are included out-of-the-box:
   * **Developer Secrets**: Sensitive pieces of information, such as API keys, passwords, tokens, and other credentials, that are used to authenticate and access various resources, services, and APIs. These secrets play a crucial role in securing applications and systems by validating the identity and permissions of users or applications.
   * **Financial**: A collection of information and data related to an individual or an organization's financial status, transactions, investments, assets, liabilities, income, expenses, and other financial activities. This profile includes details such as bank account information, credit card details, investment portfolios, income statements, tax returns, and any other financial records that provide a comprehensive view of a person or entity's financial health and behavior.

@@ -1,6 +1,12 @@
+---
+description: >-
+  Use Response and Remediation playbooks to automate incident workflows in
+  Cortex XSIAM.
+---
+
 # Cortex Response and Remediation content pack
 
-The Cortex Response and Remediation content pack delivers a powerful collection of automated playbooks designed to streamline incident response and remediation processes, built to support an Autonomous SOC vision.
+The Cortex Response and Remediation content pack delivers a powerful collection of automated playbooks designed to streamline incident response and remediation processes, built to support an Autonomous SOC vision in Cortex XSIAM.
 
 The playbooks in this pack are tightly coupled to Issues, leveraging detector logic to provide highly accurate and context-aware responses. This ensures seamless integration with Cortex XSIAM, enabling SOC teams to focus on high-priority threats while automating repetitive tasks.
 

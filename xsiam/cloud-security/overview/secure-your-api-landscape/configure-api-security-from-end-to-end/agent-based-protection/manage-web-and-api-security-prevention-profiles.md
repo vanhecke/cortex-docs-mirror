@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM Web and API Security prevention profiles, including policy
+  usage, editing, exporting, and deletion.
+---
+
 # Manage Web and API Security prevention profiles
 
 After you create and customize your Web and API Security prevention profiles, you can manage them from the **Prevention Profiles** page as needed.

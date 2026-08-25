@@ -1,3 +1,9 @@
+---
+description: >-
+  Create Cortex XSIAM custom cloud workload rules for organization-specific
+  security, compliance, and misconfiguration checks.
+---
+
 # Custom (user-defined) rules
 
 Custom Rules or Custom Detection Rules allow you to define and implement tailored security and compliance checks within cloud workloads. These rules enable organizations to detect specific conditions, vulnerabilities, or misconfigurations that might not be covered by built-in system rules.

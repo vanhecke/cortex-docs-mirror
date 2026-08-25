@@ -1,3 +1,9 @@
+---
+description: >-
+  Find a container asset's base image in Cortex XSIAM to inspect registry image
+  details and upstream or downstream lineage.
+---
+
 # Find the base image for an asset
 
 Container image assets include **Base Image** details that identify the foundational registry image they are derived from. If an asset is a base image, a **Base Image** property is displayed in the asset side panel.
