@@ -1,0 +1,86 @@
+{
+  "date": "2026-08-24",
+  "sha": "c9f7d9d4442e0067460f85e5575a07d96fbefbd6",
+  "committed_at": "2026-08-24T18:44:09+03:00",
+  "packs": [
+    {
+      "name": "AWS-GuardDuty",
+      "insertions": 1123,
+      "deletions": 110
+    },
+    {
+      "name": "AWS-SecurityHub",
+      "insertions": 8,
+      "deletions": 2
+    },
+    {
+      "name": "CiscoNexus",
+      "insertions": 7,
+      "deletions": 2
+    },
+    {
+      "name": "Core",
+      "insertions": 40,
+      "deletions": 17
+    },
+    {
+      "name": "CortexDataLake",
+      "insertions": 240,
+      "deletions": 1
+    },
+    {
+      "name": "Okta",
+      "insertions": 85,
+      "deletions": 7
+    },
+    {
+      "name": "USTA",
+      "insertions": 7,
+      "deletions": 1
+    },
+    {
+      "name": "USTAv4",
+      "insertions": 60,
+      "deletions": 31
+    },
+    {
+      "name": "Unit42ThreatIntelligencebyPaloAltoNetworks",
+      "insertions": 36,
+      "deletions": 2
+    }
+  ],
+  "commits": [
+    {
+      "sha": "11a49703c2caf34d4fe174efc87c2b5ffb361f4f",
+      "subject": "Strata Logging Service (CortexDataLake): Fall back to migrated SLS URL when oproxy URL is unreachable (#45568)"
+    },
+    {
+      "sha": "3959862e34cb07f71223131b0839785aca3fd4d3",
+      "subject": "Xsup 73675 - Okta Event Collector: improve event fetching reliability (#45584)"
+    },
+    {
+      "sha": "85c2deede91df878503a167a011b946e3ed0ef4b",
+      "subject": "XSUP-73410 - AWS-GuardDuty: fix duplicate events and fetch stall in Event Collector (#45492)"
+    },
+    {
+      "sha": "d2053c799e181b7d96681e60ffa1fd3799c8274d",
+      "subject": "Fix/xsup 75305/Auth error in unit 42 with ucp authentication mode (#45604)"
+    },
+    {
+      "sha": "d3deffa7bb6ade06f10e210edfd6354eaa24d3e2",
+      "subject": "HY/CRTX-255682/ErrorClassification (#45540)"
+    },
+    {
+      "sha": "0b67c116016cee63c7ed4b10611db756fb62d360",
+      "subject": "Fix aws security hub v2 provider name (#45616)"
+    },
+    {
+      "sha": "244d278ff933cc155476dd1cc4150df594e2837a",
+      "subject": "CRTX-271523 - CiscoNexus modeling rule field separator (#45626)"
+    },
+    {
+      "sha": "c9f7d9d4442e0067460f85e5575a07d96fbefbd6",
+      "subject": "CIAC-17755: Deprecating USTA & updating USTAv4 (#45624)"
+    }
+  ]
+}
