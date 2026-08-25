@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-24",
+  "source": "analytics",
+  "sha": "70f830a64f2fbcab9624dbb4acaae3a711526da6",
+  "headline": "A quiet day after the identity overhaul: no rule changed, and the reference holds at 1,300 detectors",
+  "summary_md": "- **Nothing changed.** The export ran and touched no rule file — nothing added, withdrawn or edited.\n- The reference stands at **1,300 detectors**, the count it reached when yesterday's four universal authentication rules landed.",
+  "highlights": [],
+  "items": {},
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
