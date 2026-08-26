@@ -1,0 +1,279 @@
+{
+  "date": "2026-08-25",
+  "sha": "1ca757bc7a3cc1fc884605d618ea09c5c9c2219b",
+  "committed_at": "2026-08-25T22:08:02+03:00",
+  "packs": [
+    {
+      "name": "ANYRUN",
+      "insertions": 195,
+      "deletions": 72
+    },
+    {
+      "name": "AWS",
+      "insertions": 647,
+      "deletions": 161
+    },
+    {
+      "name": "Absolute",
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "name": "Akamai_SIEM",
+      "insertions": 12,
+      "deletions": 0
+    },
+    {
+      "name": "AnthropicClaude",
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "name": "ApiModules",
+      "insertions": 270,
+      "deletions": 5
+    },
+    {
+      "name": "AtlassianConfluenceCloud",
+      "insertions": 44,
+      "deletions": 9
+    },
+    {
+      "name": "BrandefenseDRPS",
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "name": "Core",
+      "insertions": 68,
+      "deletions": 0
+    },
+    {
+      "name": "CortexXDR",
+      "insertions": 17,
+      "deletions": 5
+    },
+    {
+      "name": "CrowdStrikeFalcon",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "CybelAngel",
+      "insertions": 28,
+      "deletions": 1
+    },
+    {
+      "name": "Doppel",
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "name": "Elasticsearch",
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "name": "ExabeamSecurityOperationsPlatform",
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "name": "GitHub",
+      "insertions": 152,
+      "deletions": 25
+    },
+    {
+      "name": "GoogleDrive",
+      "insertions": 18,
+      "deletions": 3
+    },
+    {
+      "name": "GoogleDriveStandardConnector",
+      "insertions": 17,
+      "deletions": 3
+    },
+    {
+      "name": "GoogleThreatIntelligence",
+      "insertions": 27,
+      "deletions": 1
+    },
+    {
+      "name": "HashiCorpTerraform",
+      "insertions": 28,
+      "deletions": 1
+    },
+    {
+      "name": "HelloWorld",
+      "insertions": 65,
+      "deletions": 2
+    },
+    {
+      "name": "MicrosoftGraphMail",
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "name": "MicrosoftGraphSecurity",
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "name": "NetQuestOMX",
+      "insertions": 28,
+      "deletions": 1
+    },
+    {
+      "name": "Netcraft_V2",
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "name": "Netskope",
+      "insertions": 332,
+      "deletions": 13
+    },
+    {
+      "name": "Okta",
+      "insertions": 453,
+      "deletions": 1
+    },
+    {
+      "name": "OpenAI",
+      "insertions": 197,
+      "deletions": 16
+    },
+    {
+      "name": "PAN-OS",
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "name": "Rapid7_Nexpose",
+      "insertions": 21,
+      "deletions": 2
+    },
+    {
+      "name": "Reco",
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "name": "Salesforce",
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "name": "ServiceNow",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "SpecterOpsBloodHoundEnterprise",
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "name": "SplunkPy",
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "name": "Tenable_io",
+      "insertions": 14,
+      "deletions": 0
+    },
+    {
+      "name": "Tenable_sc",
+      "insertions": 29,
+      "deletions": 1
+    },
+    {
+      "name": "ThreatConnect",
+      "insertions": 175,
+      "deletions": 1
+    },
+    {
+      "name": "ThreatMon",
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "name": "ThreatMonThreatFeed",
+      "insertions": 12,
+      "deletions": 0
+    },
+    {
+      "name": "ThreatZone",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "qualys",
+      "insertions": 29,
+      "deletions": 1
+    }
+  ],
+  "commits": [
+    {
+      "sha": "6b916f13769accb551dfc9147699b89ce9fe2ef1",
+      "subject": "CIAC-17723 | fix(OpenAI): send Bearer scheme on Compliance API auth header (#45633)"
+    },
+    {
+      "sha": "093cdc69090a2df2a2d2250aafe77fa39658acde",
+      "subject": "CRTX-265696: Test in AWS that the yml and py files match (#45344)"
+    },
+    {
+      "sha": "c16e53616c45ac9009acd8338bc92bd2694b78de",
+      "subject": "[ANY.RUN pack update] Fix minor bugs, add a new root_url parameter for Sandbox, and update the SDK version (#45561)"
+    },
+    {
+      "sha": "3d6442d4c8bb5040b4e294805f6111dc533cf882",
+      "subject": "Tz resolve xsup 75189 (#45615)"
+    },
+    {
+      "sha": "5dfad1392ad14d86c443cc59886a3d020ebd4041",
+      "subject": "GitHub - Improve Request Handling (#45578)"
+    },
+    {
+      "sha": "329a3dab32fc900ebfcfd53dd09247c11a36a3de",
+      "subject": "XSUP 75257 - Add sanitize_large_ints function to handle large ThreatConnect object IDs (#45638)"
+    },
+    {
+      "sha": "baae14e34bb196cb73af0bd1d3ae49c38e7ce9d8",
+      "subject": "CIAC-17779: Align asset fetch parameters with supportedModules rules (#45634)"
+    },
+    {
+      "sha": "29e7b15db0c196a792f7c322ef7208838f674271",
+      "subject": "Update threatzone-sdk Docker (#45645)"
+    },
+    {
+      "sha": "555d602e2c4ad7276069676150662608883c9996",
+      "subject": "Atlassian Confluence Cloud: return generic-file-get content as Markdown (#45603)"
+    },
+    {
+      "sha": "4960d8ce1d80c24ee93d3c0eb9e052453971cfcf",
+      "subject": "HY/XSUP-75154/ServiceNowAddComment (#45605)"
+    },
+    {
+      "sha": "d3053c48b01732e1258f68b31e620953b574a23e",
+      "subject": "CRTX-271527: add identity.* to modeling rules (PR 1 of 7) (#45463)"
+    },
+    {
+      "sha": "4144fc927e2bb0651a32be9553c37a814c5f1837",
+      "subject": "Fix netskope issue (#45550)"
+    },
+    {
+      "sha": "9f6da6997d340c58cec2a912e20115ba35168d30",
+      "subject": "Add License Requirements section to readme (#45591)"
+    },
+    {
+      "sha": "1ca757bc7a3cc1fc884605d618ea09c5c9c2219b",
+      "subject": "adding capability to upload content in google drive (#45641)"
+    },
+    {
+      "sha": "73b05fb4319a6fba86598417daf0a2cf52d20911",
+      "subject": "Update docker (#45588)"
+    }
+  ]
+}
