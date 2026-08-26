@@ -1,10 +1,12 @@
 ---
-description: The dashboard captures key metrics to help you remediate SaaS assets at risk
+description: >-
+  Use SaaS Security Checks in Cortex XSIAM to identify at-risk assets and
+  prioritize remediation.
 ---
 
 # SaaS Security Checks
 
-SaaS Security Checks provides security telemetry for posture misconfigurations, vulnerabilities, and compliance in one unified view. This consolidated dashboard provides a queryable, prioritized view of your attack surface, accelerating automated triage, incident response, and compliance auditing.&#x20;
+SaaS Security Checks provides security telemetry for posture misconfigurations, vulnerabilities, and compliance in one unified view. This consolidated dashboard provides a queryable, prioritized view of your attack surface, accelerating automated triage, incident response, and compliance auditing.
 
 <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FsTN50fsPyBbITq1HaqvK%2Funknown.png?alt=media&#x26;token=d3ff0626-c7d7-4232-8aec-c948bb6f5f3c" alt="" height="429" width="624">
 

@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect Service Now to SaaS Agent Security to gain total visibility and
-  control over your AI ecosystem.
+  Connect ServiceNow in Cortex XSIAM SaaS Agent Security for visibility and
+  control across your AI ecosystem.
 ---
 
 # Onboard Service Now
@@ -37,8 +37,6 @@ To secure access to your ServiceNow data and successfully onboard to Cortex, you
     4. (Optional) Specify a Description. Click Submit.
 
     Note: Keep the authentication scope name handy, as it is required when configuring the REST API Auth Scope and OAuth 2.0 integration.
-
-
 3. Create the Application Registry (OAuth Client)\
    Standard Release Instructions:
    1. Log in to ServiceNow as an administrator.
@@ -54,13 +52,13 @@ To secure access to your ServiceNow data and successfully onboard to Cortex, you
    11. Specify your OAuth Scope that you created in Step 2.
    12. Click Submit.
 4. Onboard ServiceNow Platform to Cortex.
-   1. Log in to Cortex.&#x20;
+   1. Log in to Cortex.
    2. Select **Settings > Data Sources and Integrations > Add New**. You can use the Search bar to find the ServiceNow connector.
-   3. Click on the ServiceNow tile and select Add Another Instance.&#x20;
+   3. Click on the ServiceNow tile and select Add Another Instance.
    4. On the **Capabilities** page, provide an Instance Name and select Agent Security scanning capability.
    5. On the **Connections** page, provide your Instance URL and select an authentication method. Enter the information you gathered (Client ID, Client Secret, etc.) during Step 1 in the corresponding fields.
    6. Once AISPM validates the credentials and permissions, the onboarding process is complete.
 
-#### &#x20;Troubleshooting
+#### Troubleshooting
 
 If you see errors after onboarding, this is likely due to incomplete permissions. Return to the application registry creation procedure and verify that the assigned role possesses a read-only ACL rule for every single required table. Also, ensure that this role is correctly assigned to the service user you created.

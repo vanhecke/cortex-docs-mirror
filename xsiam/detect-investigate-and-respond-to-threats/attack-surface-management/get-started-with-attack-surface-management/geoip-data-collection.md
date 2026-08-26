@@ -1,7 +1,7 @@
 ---
 description: >-
-  Use GeoIP data to validate network distribution, identify location-based
-  compliance risks, and route remediation efforts.
+  ASM in Cortex XSIAM uses GeoIP data to validate network distribution, identify
+  location-based compliance risks, and route remediation efforts.
 ---
 
 # GeoIP data collection

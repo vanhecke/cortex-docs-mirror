@@ -84,7 +84,7 @@ Poetry
 {% endstep %}
 {% endstepper %}
 
-### **Use the CLI**
+### **Use Cortex MCP Server CLI commands**
 
 From the CLI, you can run three commands.
 

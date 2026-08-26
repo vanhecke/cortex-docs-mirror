@@ -1,3 +1,9 @@
+---
+description: >-
+  Create serverless function policies with rules and cloud account scopes in
+  Cortex XSIAM.
+---
+
 # Create serverless function policies
 
 The following procedure describes how to create policies for serverless functions.

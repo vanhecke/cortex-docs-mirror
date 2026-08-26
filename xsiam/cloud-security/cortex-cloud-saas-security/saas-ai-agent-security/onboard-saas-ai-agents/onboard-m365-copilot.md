@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect M365 Copilot to SaaS Agent Security to gain total visibility and
-  control over your AI ecosystem.
+  Connect M365 Copilot in Cortex XSIAM SaaS Agent Security for visibility and
+  control across your AI ecosystem.
 ---
 
 # Onboard M365 Copilot
@@ -15,15 +15,13 @@ Microsoft 365 Copilot is an AI-powered assistant integrated into Word, Excel, Po
 **Note**: M365 Copilot is a Microsoft-native product, not a feature developed or managed by Palo Alto Networks.
 
 * To manage Microsoft 365 Copilot agents and settings, your account must be assigned a specific administrative role. You can verify your current access level by viewing the agent list. While a Global Administrator has full control over the entire organization, Microsoft recommends using the AI Administrator role. This is a dedicated persona designed specifically for managing Copilot features and agent governance without granting unnecessary access to other parts of your system. If you only need to monitor the environment, the Global Reader role provides "view-only" access, allowing you to see agent status and availability without the ability to make changes or upload new packages. Consult your internal IT team to ensure one of these roles is assigned to your account and you list agents via the URL mentioned above.
-* In the Setting tab, select Active for assignment type and Permanently assigned for assignment duration. Add a justification for your settings and Assign.&#x20;
-
-
+* In the Setting tab, select Active for assignment type and Permanently assigned for assignment duration. Add a justification for your settings and Assign.
 
 1. Configure OATH Token Authentication Methods in Microsoft
 
 To ensure a standardized login experience and support automated data extraction, configure Microsoft Entra ID to use Open Authentication (OATH) Time-based One-Time Password (TOTP) methods for the dedicated administrative account.
 
-Note: To avoid a misconfiguration, ensure that you complete the following steps EXACTLY in the sequence provided. Deviating from this order can lead to authentication errors or service disruption.&#x20;
+Note: To avoid a misconfiguration, ensure that you complete the following steps EXACTLY in the sequence provided. Deviating from this order can lead to authentication errors or service disruption.
 
 **Part A: Extract the Secret Key**
 
@@ -61,9 +59,9 @@ Prerequisite: Ensure you have the Microsoft Authenticator app installed on your 
 
 2\. Onboard M365 Copilot to AISPM
 
-1. Log in to Cortex.&#x20;
+1. Log in to Cortex.
 2. Select **Settings > Data Sources and Integrations > Add New**. You can use the Search bar to find the Microsoft 365 Copilot connector.
-3. Click on the Microsoft 365 Copilot tile and select Add Another Instance.&#x20;
+3. Click on the Microsoft 365 Copilot tile and select Add Another Instance.
 4. On the **Capabilities** page, provide an Instance Name and select Agent Security scanning capability.
 5. On the **Connections** page, provide your Instance URL.
 6. Under Authentication, the CREDENTIALS authentication method is selected by default. Click Next.

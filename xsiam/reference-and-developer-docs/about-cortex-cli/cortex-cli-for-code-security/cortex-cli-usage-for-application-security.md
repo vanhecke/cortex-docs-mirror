@@ -14,7 +14,7 @@ The command structure includes global flags which are used for authentication, a
 
 *   **Global flags**: These flags are part of the initial `cortexcli` command and are necessary to authenticate and connect to Cortex Cloud
 
-    * `--api-base-url`: (Required = true). The public facing API URL. Refer to [Connect Cortex CLI](../connect-cortex-cli) for more information
+    * `--api-base-url`: (Required = true). The public facing API URL. Refer to [Connect Cortex CLI](../connect-cortex-cli) and the [Cortex Cloud API reference](https://cortex-docs.paloaltonetworks.com/cortex-cloud-api) for more information
     * `--api-key`: (Required = true). The Cortex Cloud API key generated when onboarding the CLI as a data source. Refer to [Connect Cortex CLI](../connect-cortex-cli) for more information
     * `--api-key-id`: (Required = true). The Cortex Cloud API key ID generated when onboarding the CLI as a data source
 

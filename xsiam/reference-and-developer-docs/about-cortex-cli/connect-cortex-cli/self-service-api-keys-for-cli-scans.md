@@ -1,6 +1,6 @@
 # Self-service API keys for CLI scans
 
-This self-service model allows developers to programmatically generate task-specific keys for CLI and IDE scans via the Public API. By using a Primary API key as a master credential, developers can provision restricted-access keys, such as `read-only` for local scans, without requiring administrative permissions in the UI. This approach maintains tenant security by ensuring all scans follow the principle of least privilege.
+This self-service model uses a Primary API key as its master credential. It lets developers programmatically generate task-specific CLI and IDE keys through the Public API. Developers can provision restricted-access keys, such as `read-only` keys for local scans, without administrative UI permissions. This keeps each scan within the principle of least privilege.
 
 ## Prerequisite
 

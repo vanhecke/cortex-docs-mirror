@@ -1,5 +1,7 @@
 ---
-description: Connect a Wrike instance to detect posture risks and compliance violations.
+description: >-
+  Connect a Wrike instance in Cortex XSIAM to detect posture risks and
+  compliance violations.
 ---
 
 # Onboard Wrike
@@ -34,8 +36,6 @@ Before creating your OAuth 2.0 integration app in Wrike, retrieve the redirect U
 5. Click Next.
 6. On the **Connections** tab, the Redirect URL value is displayed.
 7. Copy the redirect URL and save it to a text file.
-
-
 
 **Note**: Do not complete the onboarding flow yet. Return to the Add Data Source page and proceed to create the OAuth app in Wrike.
 

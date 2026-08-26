@@ -1,3 +1,9 @@
+---
+description: >-
+  Cortex XSIAM ASM uses attack surface rules to identify risks, generate
+  findings, and manage severity.
+---
+
 # Attack surface rules
 
 An _attack surface rule_ is a definition managed by Cortex XSIAM that identifies risks on a customer's attack surface. Attack Surface Rules match on ASM global scan results to detect exposed or misconfigured customer-owned assets. When an attack surface rule is enabled, Cortex XSIAM will generate findings as well as issues for observations that match that rule.

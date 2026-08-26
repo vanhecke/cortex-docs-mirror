@@ -1,6 +1,6 @@
 ---
 description: >-
-  Explore Cortex Cloud AI Security in Cortex XSIAM for AI asset discovery, risk
+  Explore Cloud AI Security in Cortex XSIAM for AI asset discovery, risk
   detection, and security investigations.
 ---
 

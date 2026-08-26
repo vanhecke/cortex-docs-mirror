@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect an Office 365 instance to detect posture risks and compliance
-  violations.
+  Connect an Office 365 instance in Cortex XSIAM to detect posture risks and
+  compliance violations.
 ---
 
 # Onboard Office 365

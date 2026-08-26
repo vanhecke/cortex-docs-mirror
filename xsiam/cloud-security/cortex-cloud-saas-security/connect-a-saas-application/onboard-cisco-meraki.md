@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect a Cisco Meraki instance to detect posture risks and compliance
-  violations.
+  Connect a Cisco Meraki instance in Cortex XSIAM to detect posture risks and
+  compliance violations.
 ---
 
 # Onboard Cisco Meraki
@@ -53,5 +53,5 @@ By adding a Cisco Meraki app in Cortex, you enable SaaS Security to connect to y
 4. Under **Capabilities**, Enter a Name for your application.
 5. Select Security Posture under Default Capabilities and click Next.
 6. Under **Connections**, provide your API key.
-7. Under **Configurations**, select a **Sync Interval**. Choose a meaningful **Tag** to distinguish between various applications in different environments.&#x20;
+7. Under **Configurations**, select a **Sync Interval**. Choose a meaningful **Tag** to distinguish between various applications in different environments.
 8. Click **Next** to complete the onboarding validation process.

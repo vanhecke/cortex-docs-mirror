@@ -14,7 +14,7 @@ Integrate Cloud Workload Protection (CWP) scans for secrets, vulnerabilities and
 
 The `cortexcli image scan` command allows you to perform CWP scans on container images. By default, `cortexcli` scans images directly from your local Docker daemon's repository. You can also specify an image archive file to scan instead.
 
-### **Prerequisite**
+### Prerequisite
 
 Before you begin, ensure you have `sudo` privileges to execute the image scan.
 
@@ -44,7 +44,7 @@ The image scan accepts the following arguments:
 {% hint style="info" %}
 ### Note
 
-For available CWP commands, refer to [Cloud Workload Protection command line reference](#cloud-workload-protection-command-line-reference).
+For available CWP commands, refer to [Cloud Workload Protection command line reference](cortex-cli-for-cloud-workload-protection/cloud-workload-protection-command-line-reference).
 {% endhint %}
 
 EXAMPLE
@@ -53,20 +53,20 @@ EXAMPLE
 ./cortexcli --api-base-url https://api.cortex.example.com --api-key your-api-key --api-key-id 1 image scan docker.io/library/nginx:latest
 ```
 
-EXAMPLE with custom Docker socket path
+EXAMPLE
 
 ```programlisting
 ./cortexcli --api-base-url https://api.cortex.example.com --api-key your-api-key --api-key-id 1 image scan --docker-host unix:///var/snap/docker/common/run/docker.sock my-custom-image:latest
 ```
 
-By default, Cortex XSIAM looks for the Docker socket at `unix:///var/run/docker.sock`.
+By default, Cortex Cloud looks for the Docker socket at `unix:///var/run/docker.sock`.
 
 `--docker-host <path>` specifies the path to the Docker socket. Use this flag if your Docker socket is located elsewhere, for example `unix:///var/snap/docker/common/run/docker.sock`.
 
 ### Scan from an image archive file
 
 {% hint style="warning" %}
-### Preerquisite
+### Danger
 
 Before you begin, ensure you have sudo privileges to execute the image scan.
 {% endhint %}
@@ -96,9 +96,7 @@ This example demonstrates how to create an image archive from your Docker or Pod
 
 You can generate a Software Bill of Materials (SBOM) for your container images using the Cortex CLI and and save the output to a specified file. This functionality enables you to store the SBOM for further analysis, auditing, and compliance.
 
-By default, this will retrieve the SBOM for an image from your local Docker daemon.
-
-### Export from local Docker daemon
+### Export SBOM from local Docker daemon
 
 To export an SBOM for an image from your local Docker daemon:
 
@@ -124,7 +122,7 @@ EXAMPLE
 ./cortexcli --api-base-url https://api.cortex.example.com --api-key your-api-key --api-key-id 1 image sbom docker.io/library/alpine:latest
 ```
 
-### Export from an image archive file
+### Export from an image archive
 
 To export an SBOM from an image archive file, use the `--archive` flag:
 
@@ -140,23 +138,3 @@ To export an SBOM from an image archive file, use the `--archive` flag:
 
 * **Docker socket not reachable**: If you encounter errors indicating the Docker socket cannot be reached, ensure the Docker daemon is running and verify the path to your Docker socket. If it's not in the default location (`unix:///var/run/docker.sock`), use the `--docker-host` flag to specify the correct path
 * **Image not found**: If you attempt to scan an image directly from the Docker daemon and receive an error that the image does not exist, confirm that the image is indeed present in your local Docker repository by running `docker images`. The CLI will not pull images
-
-This reference guide documents the Cloud Workload Protection commands and flags for the Cortex CLI, including the structure of base commands and subcommands. Refer to [Cortex CLI common command line reference guide](cortex-cli-common-command-line-reference-guide) for Cortex CLI commands common to all supported modules.
-
-<details>
-
-<summary>Read more...</summary>
-
-| Command                | Description                                                                                        |
-| ---------------------- | -------------------------------------------------------------------------------------------------- |
-| --image scan           | Scans a container image archive                                                                    |
-| --ci-pipeline-id value | The CI pipeline identifier                                                                         |
-| --ci-build-id value    | The CI build identifier                                                                            |
-| --timeout value        | Timeout (in seconds) after which the scan will be terminated if it has not completed (default: 60) |
-| --output-format value  | Output format options: `human-readable`, `json` (default: human-readable)                          |
-| --archive-format value | The image archive format options: `docker-archive`, `oci-archive` (default: docker-archive)        |
-| --name value           | The name assigned to the image                                                                     |
-| --docker-host \<path>  | Specifies the path to the Docker socket                                                            |
-| --archive              | Specifies that the image scan should use an archive file                                           |
-
-</details>

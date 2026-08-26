@@ -6,7 +6,7 @@ By default, Cortex CLI pre-commit hooks:
 
 * **Scan staged files only**: The scan performs a quick and efficient check by only analyzing the changes you are about to commit, rather than the entire codebase
 * **Scan for secrets only**: Pre-commit hooks support secrets scans only
-* **Do not upload results to the platform**: All scan results are kept local to your machine, ensuring your data remains private.
+* **Do not upload results to the platform**: All scan results are kept local to your machine, ensuring your data remains private
 
 ## Command flag reference
 

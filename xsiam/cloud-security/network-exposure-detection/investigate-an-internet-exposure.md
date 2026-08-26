@@ -1,5 +1,7 @@
 ---
-description: Investigate internet-exposed assets through Issues and Graph Search.
+description: >-
+  Investigate internet-exposed cloud assets in Cortex XSIAM using Issues and
+  Graph Search to prioritize and remediate risk.
 ---
 
 # Investigate an internet exposure

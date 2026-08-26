@@ -1,7 +1,7 @@
 ---
 description: >-
-  Discover Cortex XSIAM Cortex Cloud Application Security for ASPM, supply chain
-  security, and code security.
+  Discover Cortex XSIAM Application Security for ASPM, supply chain security,
+  and code security.
 ---
 
 # Cortex Cloud Application Security
@@ -25,12 +25,12 @@ While some features are included by default, others require a dedicated add-on p
 You must have at least one of the following active base licenses to access the Application Security module:
 
 * Cloud Posture Security or Cloud Runtime Security
-* XSIAM Premium
+* Cortex XSIAM Premium
 
 ### Module components
 
 * Application Security Posture Management (ASPM): Included with base license
 * Supply Chain Security: Included with base license
-* Code security: Requires a separate **Application Security Add-on** purchase in addition to your existing Cloud (Posture or Runtime) or XSIAM Premium base license
+* Code security: Requires a separate **Application Security Add-on** purchase in addition to your existing Cloud (Posture or Runtime) or Cortex XSIAM Premium base license
 
 For more information, see [Cortex Cloud Application Security](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/8Z0RLJ1BFF5TQL8VtUeK/)

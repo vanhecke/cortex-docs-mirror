@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect a Redis Labs instance to detect posture risks and compliance
-  violations.
+  Connect a Redis Labs instance in Cortex XSIAM to detect posture risks and
+  compliance violations.
 ---
 
 # Onboard Redis Labs
@@ -75,7 +75,7 @@ By adding a Redis Labs app in Cortex, you enable SaaS Security to connect to you
 7. Under **Configurations**, select a Sync Interval. Choose a meaningful Tag to distinguish between various applications in different environments.
 8. Click **Next** to complete the onboarding validation process.
 
-#### &#x20;Onboard a Redis Labs App to SaaS Security
+#### Onboard a Redis Labs App to SaaS Security
 
 Connect a Redis Labs instance to SaaS Security to detect posture risks.
 

@@ -1,3 +1,9 @@
+---
+description: >-
+  Create serverless function network exposure rules to find internet access in
+  Cortex XSIAM.
+---
+
 # Create a network exposure rule for serverless functions
 
 Network Exposure rules allow you to monitor and control the network accessibility of your serverless functions, identifying configurations that might expose them to unwanted external traffic.

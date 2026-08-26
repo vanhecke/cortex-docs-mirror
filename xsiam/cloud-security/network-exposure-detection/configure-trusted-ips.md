@@ -1,7 +1,7 @@
 ---
 description: >-
-  Configure trusted public IP ranges excluded from CNA internet exposure
-  evaluations.
+  Configure trusted public IP ranges in Cortex XSIAM to exclude approved
+  addresses from Cloud Network Analyzer internet exposure evaluations.
 ---
 
 # Configure trusted IPs

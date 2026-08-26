@@ -1,5 +1,7 @@
 ---
-description: Connect Cisco Duo instance to detect posture risks and compliance violations.
+description: >-
+  Connect a Cisco Duo instance in Cortex XSIAM to detect posture risks and
+  compliance violations.
 ---
 
 # Onboard Cisco Duo
@@ -26,8 +28,6 @@ To onboard your Cisco Duo instance, complete the following actions.
 ### Step 1: Create the Admin API Application
 
 Creating an Admin API application establishes a secure identity for SaaS Security within your Cisco Duo account. This identity enables Cisco Duo to recognize SaaS Security and authorize its API requests. You control SaaS Security' level of access by selecting specific permissions during the application setup.
-
-
 
 1. Identify the Cisco Duo account that you will use to create the Admin API application. Required Permissions: To create an Admin API application, you must use an account assigned to the Owner role.
 2. Open a web browser to the [Cisco Duo Admin Login](https://admin.duosecurity.com) page and log in to the Owner account you identified.
@@ -64,5 +64,5 @@ By adding a Cisco Duo app in Cortex, you enable SaaS Security to connect to your
 4. Under **Capabilities**, Enter a Name for your application.
 5. Select Security Posture under Default Capabilities and click Next.
 6. Under **Connections**, provide the Integration Key, Secret Key, and API Hostname.
-7. Under **Configurations**, select a Sync Interval. Choose a meaningful Tag to distinguish between various applications in different environments.&#x20;
+7. Under **Configurations**, select a Sync Interval. Choose a meaningful Tag to distinguish between various applications in different environments.
 8. Click **Next** to complete the onboarding validation process.

@@ -1,6 +1,6 @@
 # Cloud Workload Protection command line reference
 
-This reference guide documents the Cloud Workload Protection commands and flags for the Cortex CLI, including the structure of base commands and subcommands. Refer to [Cortex CLI common command line reference guide](../cortex-cli-common-command-line-reference-guide) for Cortex CLI commands common to all supported modules.
+Use these Cloud Workload Protection-specific commands and flags to run scans with the Cortex CLI. Refer to [Cortex CLI common command line reference guide](../cortex-cli-common-command-line-reference-guide) for common flags that apply across all supported modules and global flags shared with Application Security.
 
 | Command                  | Description                                                                                        |
 | ------------------------ | -------------------------------------------------------------------------------------------------- |

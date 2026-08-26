@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn about detecting workloads with unrestricted outbound internet access
-  based on security configurations.
+  Learn how to detect cloud workloads with unrestricted outbound internet access
+  in Cortex XSIAM and identify responsible security controls.
 ---
 
 # Outbound exposure detection

@@ -1,5 +1,7 @@
 ---
-description: Connect a Slack instance to detect posture risks and compliance violations.
+description: >-
+  Connect a Slack instance in Cortex XSIAM to detect posture risks and
+  compliance violations.
 ---
 
 # Onboard Slack Enterprise
@@ -12,8 +14,6 @@ Onboarding consists of two tasks:
 
 1. Create an org-wide app and generate a User OAuth Token
 2. Connect SaaS Security to your Slack Enterprise instance
-
-
 
 ***
 

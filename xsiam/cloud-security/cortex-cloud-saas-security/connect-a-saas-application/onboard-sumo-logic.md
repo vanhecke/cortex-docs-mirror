@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect a Sumo Logic instance to detect posture risks and compliance
-  violations.
+  Connect a Sumo Logic instance in Cortex XSIAM to detect posture risks and
+  compliance violations.
 ---
 
 # Onboard Sumo Logic

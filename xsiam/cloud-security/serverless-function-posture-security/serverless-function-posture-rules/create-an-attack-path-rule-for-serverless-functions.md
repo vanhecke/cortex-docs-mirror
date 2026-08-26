@@ -1,3 +1,9 @@
+---
+description: >-
+  Create serverless function attack path rules to identify connected risks in
+  Cortex XSIAM.
+---
+
 # Create an attack path rule for serverless functions
 
 Attack Path policies for serverless functions identify critical risks arising from interconnected weaknesses across your serverless architecture (such as correlating findings across functions, triggers, and permissions), to expose complex attack paths revealing complex attack paths beyond individual findings.

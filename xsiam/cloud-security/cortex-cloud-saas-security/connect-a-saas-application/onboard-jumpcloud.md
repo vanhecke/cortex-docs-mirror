@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect a JumpCloud instance to detect posture risks and compliance
-  violations.
+  Connect a JumpCloud instance in Cortex XSIAM to detect posture risks and
+  compliance violations.
 ---
 
 # Onboard JumpCloud

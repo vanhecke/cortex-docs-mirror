@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect a Couchbase instance to detect posture risks and compliance
-  violations.
+  Connect a Couchbase instance in Cortex XSIAM to detect posture risks and
+  compliance violations.
 ---
 
 # Onboard Couchbase
@@ -54,5 +54,5 @@ By adding a Couchbase app in Cortex, you enable SaaS Security to connect to your
 4. Under **Capabilities**, Enter a Name for your application.
 5. Select Security Posture under Default Capabilities and click Next.
 6. Under **Connections**, enter the API secret in the API key field
-7. Under **Configurations**, select a **Sync Interval**. Choose a meaningful **Tag** to distinguish between various applications in different environments.&#x20;
+7. Under **Configurations**, select a **Sync Interval**. Choose a meaningful **Tag** to distinguish between various applications in different environments.
 8. Click **Next** to complete the onboarding validation process.

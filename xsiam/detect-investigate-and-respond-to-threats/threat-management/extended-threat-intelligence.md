@@ -22,7 +22,7 @@ XTI offers the following core capabilities:
 * **Threat-aware automation and response:** Utilize built-in commands in playbooks to automate TI triage, enrichment, and response.
 * **Accessible TI with AgentiX:** Natural language assistance for TI search and explanations powered by AgentiX.
 
-## What license do I need to use XTI?
+## What Cortex XSIAM license do I need to use XTI?
 
 To use XTI, you must have one of the following:
 
@@ -31,7 +31,7 @@ To use XTI, you must have one of the following:
 
 If you have the correct license, you can access Cortex XTI by navigating to **Threat Management → Threat Intelligence**.
 
-## Permissions required for XTI
+## Permissions required for XTI in Cortex XSIAM
 
 XTI requires **View** or **View/Edit** RBAC permissions for **Threat Intelligence** in the **Threat Management** component tab.
 

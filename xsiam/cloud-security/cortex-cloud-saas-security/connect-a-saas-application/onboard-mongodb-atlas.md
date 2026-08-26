@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect a MongoDB Atlas instance to detect posture risks and compliance
-  violations.
+  Connect a MongoDB Atlas instance in Cortex XSIAM to detect posture risks and
+  compliance violations.
 ---
 
 # Onboard MongoDB Atlas

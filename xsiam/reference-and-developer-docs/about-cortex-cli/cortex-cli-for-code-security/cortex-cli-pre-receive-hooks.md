@@ -1,8 +1,17 @@
+---
+description: >-
+  Integrate the Application Security secrets scanner as a pre-receive hook into
+  your workflows to scan for errors before code is accepted into your
+  repository.
+---
+
 # Cortex CLI pre-receive hooks
 
-Integrate the Application Security secrets scanner as pre-receive hook into your workflows installing the Cortex CLI. The hook runs on the remote server before changes are pushed, allowing you to enforce checks before code is accepted into version control.
+Integrate the Cortex Cloud Application Security secrets scanner as pre-receive hook into your workflows installing the Cortex CLI. The hook runs on the remote server before changes are pushed, allowing you to enforce checks before code is accepted into version control.
 
-**Supported version control systems**: Pre-receive hooks are supported for GitHub Enterprise, GitLab self-managed, and Bitbucket Data Center. To setup pre-receive hook on these platforms refer to [Setup on third-party platforms](#setup-on-third-party-platforms) below.
+## Supported version control systems
+
+Pre-receive hooks are supported for GitHub Enterprise, GitLab self-managed, and Bitbucket Data Center. To setup pre-receive hook on these platforms refer to [Setup on third-party platforms](#setup-on-third-party-platforms) below.
 
 ## Pre-receive hook workflow setup
 
@@ -19,15 +28,15 @@ Integrate the Application Security secrets scanner as pre-receive hook into your
 Before you begin, ensure you have:
 
 * **Administrator** access to the VCS server and console
-* A valid license for Application Security
-* The **Cortex XSIAM CLI binary** or Docker image installed on the server (requires `GLIBC (GNU C library) version 2.35` or greater). Refer to [Connect Cortex CLI](../connect-cortex-cli) for information about onboarding the CLI
-* **Cortex XSIAM API credentials** (API Key ID and API Key) and your API base URL. For more information on creating API keys, refer to [Create a new API key](https://app.gitbook.com/s/1ZrobAtcwfCDWAJAWeuj/create-a-new-api-key)
-* **Git** is installed on your machine. For installation instructions, refer to the [official Git website](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+* A valid license for Cortex Cloud Application Security
+* The **Cortex Cloud CLI binary** or Docker image installed on the server (requires `GLIBC (GNU C library) version 2.35` or greater). Refer to [Connect Cortex CLI](../connect-cortex-cli) for information about onboarding the CLI
+* **Cortex Cloud API credentials** (API Key ID and API Key) and your API base URL. For more information on creating API keys, refer to [Create a new API key](https://app.gitbook.com/s/1ZrobAtcwfCDWAJAWeuj/create-a-new-api-key)
+* **Git** installed on your machine. For installation instructions, refer to the [official Git website](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 {% endhint %}
 
 ### Configure credentials
 
-It is recommended to configure credentials for the Application Security Cortex CLI using a configuration file, instead of embedding them directly in the hook script.
+It is recommended to configure credentials for the Cortex Cloud Application Security Cortex CLI using a configuration file, instead of embedding them directly in the hook script.
 
 1.  Create a directory:
 
@@ -51,7 +60,7 @@ To set up the Cortex CLI as a pre-receive hook on supported third-party platform
 
 #### Reference script
 
-Use the script below as a reference to extend or modify your existing pre-receive hooks in your VCS provider.
+Use the script below as reference to extend or modify your existing pre-receive hooks in your VCS provider.
 
 ```programlisting
 #!/usr/bin/env bash

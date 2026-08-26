@@ -6,13 +6,13 @@ The Code Security CLI supports the following scan types:
 
 * **Secrets**: Identifies exposed sensitive secrets within your codebase
 * **Infrastructure-as-Code** (IaC): Analyzes infrastructure configuration files to detect potential security misconfigurations
-* **Software Composition Analysis** (SCA): Performs vulnerability detection in third-party dependencies, assesses their license compliance and their package operational risk
+* **Software Composition Analysis** (SCA): Performs vulnerability detection in third-party dependencies, detects malicious packages, assesses their license compliance and their package operational risk
 
 In addition, the Code Security CLI serves as the integration mechanism for security scanning within supported CI tools such as Jenkins, GitHub Actions, and others. This is achieved by adding a code snippet containing the CLI command into the configuration files of your CI tool when integrating the CI tool with Cortex Cloud. It acts as a wrapper, enabling security scanning within your pipelines, and direct upload of results to the platform.
 
 ## Code Security CLI scan behavior and output
 
-* Scans generate assets (see [Code Security assets](../../detect-investigate-and-respond-to-threats/asset-management/asset-classes/code-and-ci-cd-assets), [issues](../../detect-investigate-and-respond-to-threats/asset-management/asset-classes/code-and-ci-cd-assets), and [findings](../../detect-investigate-and-respond-to-threats/asset-management/asset-classes/code-and-ci-cd-assets)
+* Scans generate assets (see [Code and CI/CD assets](../../detect-investigate-and-respond-to-threats/asset-management/asset-classes/code-and-ci-cd-assets), [issues](../../detect-investigate-and-respond-to-threats/asset-management/asset-classes/code-and-ci-cd-assets), and [findings](../../detect-investigate-and-respond-to-threats/asset-management/asset-classes/code-and-ci-cd-assets)
 * If one scanner (such as Secrets) fails, the other scanners will continue to run and produce results
 * Scan failures trigger an error message indicating the scanner that failed
 *   The Code Security CLI provides these output modes for management and viewing of scan results:
@@ -43,9 +43,9 @@ To authenticate the Code Security CLI, choose one of the following methods:
 
     The following flags are required to authenticate the Code Security CLI:
 
-    * `--api-base-url`: \[$CORTEX\_API\_BASE\_URL]
-    * `--api-key`: \[$CORTEX\_API\_KEY]
-    * `--auth-id`. \[$CORTEX\_AUTH\_ID]
+    * `--api-base-url` \[`$CORTEX_API_BASE_URL`]
+    * `--api-key` \[`$CORTEX_API_KEY`]
+    * `--api-key-id` \[`$CORTEX_API_KEY_ID`]
 
     For more information about these flags, refer to [Cortex CLI common command line reference guide](cortex-cli-common-command-line-reference-guide).
 * **Using a `cortex.env` file**: Place your authentication details in a `cortex.env` file. You can download this file from the UI
@@ -58,7 +58,7 @@ To authenticate the Code Security CLI, choose one of the following methods:
     * Check the installed version with `node -v`
     * Download Node.js from the official [Node.js](https://nodejs.org/) site.
   * On Linux systems, install **GLIBC** (GNU C Library) version 2.35 or later. This does not apply when using the CLI container image
-* **Permissions**: Ensure you have the required user permissions. Refer to [Cortex CLI]()
+* **Permissions**: Ensure you have the required user permissions. Refer to [About Cortex CLI]()
 * **Onboard and install the Cortex CLI**: Refer to [Connect Cortex CLI](connect-cortex-cli)
 
 ## Configure proxy for the Code Security CLI

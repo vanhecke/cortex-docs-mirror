@@ -1,3 +1,7 @@
+---
+description: Manage, edit, and clone serverless function security rules in Cortex XSIAM.
+---
+
 # Manage serverless function rules
 
 Serverless function rules are designed to detect security threats within your serverless function environment that can potentially introduce vulnerabilities to its security. Serverless function rules identify and flag issues based on predefined criteria, ensuring that potential threats are proactively detected and addressed to enhance the overall security posture of your serverless functions. There are three categories or types of serverless function rules:

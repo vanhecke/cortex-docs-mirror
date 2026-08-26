@@ -1,16 +1,16 @@
 ---
 description: >-
-  Learn how Cortex Cloud AI Security in Cortex XSIAM discovers AI assets,
-  assesses risks, and supports remediation.
+  Learn how Cloud AI Security in Cortex XSIAM discovers AI assets, assesses
+  risks, and supports remediation.
 ---
 
 # What is Cortex Cloud AI Security?
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license.
 {% endhint %}
 
-Cortex Cloud AI Security provides:
+Cloud AI Security provides:
 
 * **Comprehensive Visibility:** Obtains a full picture of AI components, including models, agents, data flows, and infrastructure across all cloud environments. This broad visibility ensures that every AI asset is accounted for and continuously monitored, reducing blind spots in the AI ecosystem.
 * **Full supply chain protection:** Maps the dependencies between data, models, and cloud resources to remediate risks such as poisoned datasets or unsanctioned models. Maintains the integrity of your AI bill of materials (AI-BOM).
@@ -20,13 +20,13 @@ Cortex Cloud AI Security provides:
 * **Governance and control:** Implements comprehensive guardrails and controls for AI models both during development and in production. Ensures that AI assets operate within defined security parameters, reducing the likelihood of security breaches and data leaks.
 * **Compliance assurance:** Regularly tests AI systems against emerging AI regulations and industry standards, such as the OWASP _Top 10 for Large Language Models (LLMs)_. Gets clear guidelines on corrective actions needed to achieve full compliance and ensures that AI assets align with both current and future regulations.
 
-These benefits ensure that using Cortex Cloud AI Security can maintain a robust security posture across your AI environment, proactively manage risks, and align with compliance and internal security policies.
+These benefits help you maintain a robust security posture across your AI environment, proactively manage risks, and align with compliance and internal security policies.
 
-#### Cortex Cloud AI Security overview dashboard
+#### Cloud AI Security overview dashboard
 
-The Cortex Cloud AI Security overview dashboard serves as the central hub for information on the AI ecosystem within the organization. It provides a comprehensive overview of AI security posture and is designed to help users quickly access relevant information. The layout and organization of the dashboard are tailored to guide you in understanding the AI environment and determining the next steps to take for effective AI governance.
+The Cloud AI Security overview dashboard serves as the central hub for information on the AI ecosystem within the organization. It provides a comprehensive overview of AI security posture and is designed to help users quickly access relevant information. The layout and organization of the dashboard are tailored to guide you in understanding the AI environment and determining the next steps to take for effective AI governance.
 
-The following image shows the Cortex Cloud AI Security dashboard:
+The following image shows the Cloud AI Security dashboard:
 
 ![what\_is\_AI\_security\_2.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FWx12D2gjD6oKUhN6Y2Z3%2F703655b66477646f7bd5f49da85eee053e3395c8f31aa768a557998b0bf0b729.png?alt=media\&token=eddee0dd-b090-4a5a-b707-0de3926c8c2d)
 
@@ -34,11 +34,11 @@ The following image shows the Cortex Cloud AI Security dashboard:
 
 You can view all AI assets in your environment, regardless of deployment mode or cloud provider. Connected assets are discovered, contextualized, and presented with detailed information. You can dive deeper into the asset context as required.
 
-Cortex Cloud AI Security provides visibility into how sensitive data is being utilized and potentially impacted by AI systems. By identifying the AI assets that interact with sensitive data, the platform helps ensure that appropriate protection protocols are applied where most needed, thereby enhancing overall data security and reducing the risk of data breaches and leakage.
+Cloud AI Security provides visibility into how sensitive data is being utilized and potentially impacted by AI systems. By identifying the AI assets that interact with sensitive data, the platform helps ensure that appropriate protection protocols are applied where most needed, thereby enhancing overall data security and reducing the risk of data breaches and leakage.
 
 #### AI security issues
 
-Cortex Cloud AI Security provides risk assessment for the supported AI assets, with risk rules created by the research team. These risk rules are designed to detect misconfigurations and security flaws in AI assets and send alerts about them. In addition to the provided default risk rules, Cortex Cloud AI Security also supports custom risk rule creation, so you can codify and integrate internal policies into the Cortex Cloud AI Security risk engine, streamlining your remediation efforts.
+Cloud AI Security provides risk assessment for the supported AI assets, with risk rules created by the research team. These risk rules are designed to detect misconfigurations and security flaws in AI assets and send alerts about them. In addition to the provided default risk rules, Cloud AI Security also supports custom risk rule creation, so you can codify and integrate internal policies into the Cortex Cloud AI Security risk engine, streamlining your remediation efforts.
 
 When insecure models and deployments are used, several types of attacks can occur, such as the following:
 

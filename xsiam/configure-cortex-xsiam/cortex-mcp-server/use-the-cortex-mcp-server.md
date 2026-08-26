@@ -21,7 +21,7 @@ When you run the `update` command in the Cortex MCP server, new or updated tools
 
 You also have the flexibility to create and customize your own tools to fit specific use cases and workflows. For more information, see [Create custom Cortex MCP server tools](create-custom-cortex-mcp-server-tools).
 
-**Use case examples**
+### **Cortex MCP Server use case examples**
 
 {% hint style="info" %}
 The built-in tools retrieve information, but do not write to the tenant. You can create your own tools that include write actions. The examples below include both.

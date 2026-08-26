@@ -1,5 +1,7 @@
 ---
-description: Connect a YouTrack instance to detect posture risks and compliance violations.
+description: >-
+  Connect a YouTrack instance in Cortex XSIAM to detect posture risks and
+  compliance violations.
 ---
 
 # Onboard YouTrack

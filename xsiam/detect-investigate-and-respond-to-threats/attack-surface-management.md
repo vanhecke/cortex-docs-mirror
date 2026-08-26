@@ -1,7 +1,7 @@
 ---
 description: >-
   Learn how to discover, monitor, and remediate external asset exposures with
-  attack surface management.
+  Cortex XSIAM attack surface management.
 ---
 
 # Attack surface management

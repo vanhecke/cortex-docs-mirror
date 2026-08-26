@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn how CNA detects publicly reachable cloud assets and validates exposure
-  through external network scanning.
+  Learn how to detect publicly exposed cloud assets in Cortex XSIAM and validate
+  internet exposure through external network scanning.
 ---
 
 # Internet exposure detection

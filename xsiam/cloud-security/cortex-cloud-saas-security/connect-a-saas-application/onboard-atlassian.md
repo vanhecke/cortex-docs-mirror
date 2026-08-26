@@ -1,5 +1,7 @@
 ---
-description: Connect an Atlassian instance to detect posture and compliance risks.
+description: >-
+  Connect an Atlassian instance in Cortex XSIAM to detect posture and compliance
+  risks.
 ---
 
 # Onboard Atlassian
@@ -63,5 +65,5 @@ By adding an Atlassian app in Cortex, you enable SaaS Security to connect to you
 5. Select Security Posture under **Default Capabilities**.
 6. Click **Next**.
 7. On the **Connections** page, enter the login email address of the Atlassian administrator who created the API token, and the API key.
-8. On the **Configurations** page, select a **Sync Interval**. Choose a meaningful **Tag** to distinguish between various applications in different environments.&#x20;
+8. On the **Configurations** page, select a **Sync Interval**. Choose a meaningful **Tag** to distinguish between various applications in different environments.
 9. Click **Next** to complete the onboarding validation process.

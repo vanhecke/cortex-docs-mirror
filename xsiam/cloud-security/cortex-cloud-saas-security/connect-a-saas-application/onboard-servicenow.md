@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect a ServiceNow instance to detect posture risks and compliance
-  violations.
+  Connect a ServiceNow instance in Cortex XSIAM to detect posture risks and
+  compliance violations.
 ---
 
 # Onboard ServiceNow
@@ -23,8 +23,6 @@ The onboarding process requires the following credentials:
 #### Step 1 — Get the redirect URL from Cortex
 
 Before registering your OAuth 2.0 application in ServiceNow, retrieve the redirect URL that SaaS Security requires.
-
-
 
 1. Log in to [Cortex](https://cortex.paloaltonetworks.com).
 2. Select **Settings > Data Sources and Integrations > Add New** and click the ServiceNow tile.
@@ -90,8 +88,6 @@ SaaS Security must be able to access the following ServiceNow tables via the RES
 sys\_plugins, sys\_properties, sys\_scope, sys\_user, sys\_user\_has\_role, sys\_user\_role, oauth\_entity, oauth\_credential, v\_plugin, sys\_db\_object, pwd\_reset\_request
 
 For each table:
-
-
 
 1. Navigate to System Definition > Tables.
 2. Locate the table record and click its name to open it.

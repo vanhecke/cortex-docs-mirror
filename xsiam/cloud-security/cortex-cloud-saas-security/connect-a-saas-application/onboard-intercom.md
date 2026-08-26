@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect an Intercom instance to detect posture risks and compliance
-  violations.
+  Connect an Intercom instance in Cortex XSIAM to detect posture risks and
+  compliance violations.
 ---
 
 # Onboard Intercom

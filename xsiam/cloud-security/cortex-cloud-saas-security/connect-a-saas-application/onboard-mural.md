@@ -1,5 +1,7 @@
 ---
-description: Connect a Mural instance to detect posture risks and compliance violations.
+description: >-
+  Connect a Mural instance in Cortex XSIAM to detect posture risks and
+  compliance violations.
 ---
 
 # Onboard Mural

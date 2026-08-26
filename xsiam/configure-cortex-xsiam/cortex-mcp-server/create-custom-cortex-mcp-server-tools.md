@@ -12,7 +12,7 @@ To view the Cortex XSIAM API documentation, see [Cortex XSIAM APIs](https://app.
 
 Any new or updated components provided by Cortex are automatically downloaded into the builtin\_components folder. During each update, the folder is fully replaced and all existing contents are recreated. Do not add custom tools to this directory, as it is managed entirely by Cortex and is overwritten at every update.
 
-### **OpenAPI**
+### **Create custom Cortex MCP server tools with OpenAPI**
 
 You can create an OpenAPI specification for a specific API endpoint.
 
@@ -21,7 +21,7 @@ You can create an OpenAPI specification for a specific API endpoint.
 3. After you define the OpenAPI specification, the Cortex MCP server collects it automatically, and it is ready for use.
 4. Test your new MCP component by running the Cortex MCP server and writing a prompt that uses your new component.
 
-### **Python**
+### **Create custom Cortex MCP server tools with Python**
 
 We recommend using Python for more complex MCP components that require custom logic. MCP components in Python are defined in a module.
 

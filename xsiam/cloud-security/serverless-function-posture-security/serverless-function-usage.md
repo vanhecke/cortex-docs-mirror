@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage serverless function assets, vulnerabilities, findings, and scan health
+  in Cortex XSIAM.
+---
+
 # Serverless function usage
 
 Serverless functions is integrated as a feature across various sections of your tenant. Refer to the following sections for specific usage instructions within each context:

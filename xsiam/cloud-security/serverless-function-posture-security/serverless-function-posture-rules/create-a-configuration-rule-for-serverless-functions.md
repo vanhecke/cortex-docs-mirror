@@ -1,3 +1,9 @@
+---
+description: >-
+  Create serverless function configuration rules to detect misconfigurations in
+  Cortex XSIAM.
+---
+
 # Create a configuration rule for serverless functions
 
 Config rules for serverless functions identify security misconfigurations within the settings and deployment infrastructure of your individual serverless resources.

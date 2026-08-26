@@ -25,10 +25,10 @@ Place global flags before the module name. Place module flags after `scan`.
   * `image` — Cloud Workload Protection (CWP). See [Cortex CLI for Cloud Workload Protection](cortex-cli-for-cloud-workload-protection).
   * `code` — Cortex Cloud Application Security. See [Cortex CLI for Code Security](cortex-cli-for-code-security).
 * **Module flags** — Apply to the selected command.
-  * [Common command-line flags](cortex-cli-common-command-line-reference-guide)
-  * [CWP command-line flags](cortex-cli-for-cloud-workload-protection/cloud-workload-protection-command-line-reference)
-  * [API Security command-line flags](cortex-cli-for-api-security/cortex-cli-api-security-command-line-reference-guide)
-  * [Cortex Cloud Application Security command-line flags](cortex-cli-for-code-security/cortex-cli-application-security-command-line-reference)
+  * [Cortex CLI common command line reference guide](cortex-cli-common-command-line-reference-guide)
+  * [Cloud Workload Protection command line reference](cortex-cli-for-cloud-workload-protection/cloud-workload-protection-command-line-reference)
+  * [Cortex CLI API Security command line reference guide](cortex-cli-for-api-security/cortex-cli-api-security-command-line-reference-guide)
+  * [Cortex CLI Cortex Cloud Application Security command line reference](cortex-cli-for-code-security/cortex-cli-application-security-command-line-reference)
 
 ### Examples
 

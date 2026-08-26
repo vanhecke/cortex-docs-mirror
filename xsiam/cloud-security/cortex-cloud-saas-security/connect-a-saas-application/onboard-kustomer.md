@@ -1,5 +1,7 @@
 ---
-description: Connect a Kustomer instance to detect posture risks and compliance violations.
+description: >-
+  Connect a Kustomer instance in Cortex XSIAM to detect posture risks and
+  compliance violations.
 ---
 
 # Onboard Kustomer
@@ -38,7 +40,7 @@ As you complete the following steps, make note of the values of the items descri
        2. In the Roles field, specify org.permission. Required permissions: The key must be configured with the org.permission role.
        3. Specify an expiration date for the key.
     4. Click Create. Kustomer generates and displays your new key.
-    5. Copy the API key and paste it into a text file.&#x20;
+    5. Copy the API key and paste it into a text file.
 
     **Note**: Do not continue to the next step unless you have copied the API key. You must provide this key to SaaS Security during the onboarding process.
 4. Identify the region (United States or European Union) where your organization instance was deployed. Because API calls are region-specific, you must provide this information to SaaS Security during the onboarding process.

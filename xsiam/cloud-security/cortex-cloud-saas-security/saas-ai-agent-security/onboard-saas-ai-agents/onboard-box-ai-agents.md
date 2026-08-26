@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect Box AI Agents to SaaS Agent Security to gain total visibility and
-  control over your AI ecosystem.
+  Connect Box AI Agents in Cortex XSIAM SaaS Agent Security for visibility and
+  control across your AI ecosystem.
 ---
 
 # Onboard Box AI Agents
@@ -17,7 +17,7 @@ description: >-
 
 1. Create and Configure a Custom Box App
    1. Sign in to your Box instance.
-   2. From the left navigation pane, select Dev Console > Create Platform App > Custom App.&#x20;
+   2. From the left navigation pane, select Dev Console > Create Platform App > Custom App.
    3. On the Custom App page, enter the following information:
       1. Give a suitable App Name.
       2. Give a suitable Description (optional).
@@ -43,10 +43,10 @@ description: >-
 
     **Note**: Ensure you repeat the authorization process again if you modify any settings during configuration.
 4. Onboard Box AI Agents to Cortex:
-   1. Log in to Cortex.&#x20;
+   1. Log in to Cortex.
    2. Select **Settings > Data Sources and Integrations > Add New**. You can use the Search bar to find the Box connector.
-   3. You may find multiple Box tiles, select the Box titled **Box integration for SaaS Data** and **Posture Security for Box**. Click on the tile and select the Add Another Instance.&#x20;
-   4. On the **Capabilities** page, provide an Instance Name and select the Agent Security scanning capability.&#x20;
+   3. You may find multiple Box tiles, select the Box titled **Box integration for SaaS Data** and **Posture Security for Box**. Click on the tile and select the Add Another Instance.
+   4. On the **Capabilities** page, provide an Instance Name and select the Agent Security scanning capability.
    5. On the **Connections** page, provide your Instance URL and select the Recommended authentication method. Provide your Client ID and Client Secret for the authentication flow.
    6. Once Cortex validates the credentials and permissions, the onboarding process is complete.
 5. **Validation and Scanning**: Cortex validates the credentials and permissions. After the validation is successful, you will see a confirmation message. Scanning begins immediately after a successful validation. The amount of time Cortex takes to scan varies based on the amount of scan data. At a minimum, it takes at least one hour to scan and display data in the Cortex dashboard.

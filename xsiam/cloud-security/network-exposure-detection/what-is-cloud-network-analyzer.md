@@ -1,7 +1,7 @@
 ---
 description: >-
-  Understand how CNA identifies internet, outbound, and lateral exposure across
-  cloud accounts.
+  Learn how Cloud Network Analyzer in Cortex XSIAM identifies internet,
+  outbound, and lateral exposure risks across cloud accounts.
 ---
 
 # What is Cloud Network Analyzer?

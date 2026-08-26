@@ -1,7 +1,7 @@
 ---
 description: >-
-  Create and manage serverless function policies to detect threats and drive
-  remediation.
+  Create and manage serverless function posture policies to detect threats and
+  drive remediation in Cortex XSIAM.
 ---
 
 # Serverless function posture policies

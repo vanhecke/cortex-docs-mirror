@@ -1,5 +1,7 @@
 ---
-description: Connect a MuleSoft instance to detect posture risks and compliance violations.
+description: >-
+  Connect a MuleSoft instance in Cortex XSIAM to detect posture risks and
+  compliance violations.
 ---
 
 # Onboard MuleSoft
@@ -33,8 +35,6 @@ Required Permissions: To create the Connected App, you must use an Anypoint Plat
 ### Step 2: Log In to the Anypoint Platform
 
 Open a web browser to the [MuleSoft Anypoint Platform login page](https://anypoint.mulesoft.com/login/) and log in to the Organization Administrator account you identified.
-
-
 
 ***
 

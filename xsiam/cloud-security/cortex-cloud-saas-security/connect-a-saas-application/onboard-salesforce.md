@@ -1,7 +1,7 @@
 ---
 description: >-
-  Connect a Salesforce instance to detect posture risks and compliance
-  violations.
+  Connect a Salesforce instance in Cortex XSIAM to detect posture risks and
+  compliance violations.
 ---
 
 # Onboard Salesforce
@@ -61,8 +61,6 @@ Additional Permissions for Write Access (third-party plugin scans and automated 
 | Configuration Remediation | API Enabled, View Health Check, Download AppExchange Packages |
 | Third-Party Plugins       | API Enabled, Download AppExchange Packages                    |
 
-
-
 To grant permissions to the user account, add the permissions to a permission set and assign the permission set to the Salesforce user account:
 
 1. From the setup home page, select Users > Permission Sets.
@@ -94,8 +92,6 @@ By adding a Salesforce app in Cortex, you enable SaaS Security to connect to you
 9. Click Connect with Salesforce. SaaS Security redirects you to the Salesforce login page.
 10. Log in to the Salesforce account. Salesforce displays a consent form that details the access permissions that SaaS Security requires.
 11. Review the consent form and allow the requested permissions. SaaS Security connects to your Salesforce instance and displays whether it was able to access the required API scopes.
-
-
 
 ***
 

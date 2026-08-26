@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage serverless function policies, scopes, and response actions in Cortex
+  XSIAM.
+---
+
 # Manage serverless function policies
 
 Serverless function policies define how a system should respond to serverless function threats. They include conditions that trigger the policy, the scope of its application, and the actions to be taken when these conditions are met. When policies detect a threat, they generate issues for remediation.

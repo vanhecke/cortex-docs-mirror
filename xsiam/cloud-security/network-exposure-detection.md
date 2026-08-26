@@ -1,7 +1,7 @@
 ---
 description: >-
-  Identify, prioritize, and remediate internet, outbound, and lateral network
-  exposure risks in public cloud environments.
+  Discover how to identify, prioritize, and remediate internet, outbound, and
+  lateral network exposure risks in Cortex XSIAM.
 ---
 
 # Network exposure detection

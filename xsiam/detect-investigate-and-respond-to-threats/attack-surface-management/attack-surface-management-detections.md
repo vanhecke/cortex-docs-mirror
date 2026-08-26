@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn about Cortex XSIAM Attack Surface Management detections, findings, and
+  issues.
+---
+
 # Attack Surface Management detections
 
 The Attack Surface Management module creates findings and issues based on the types of detections described in the following sections:

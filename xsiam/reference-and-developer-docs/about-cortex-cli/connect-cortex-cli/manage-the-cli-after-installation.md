@@ -38,6 +38,16 @@ Manage Cortex CLI with a package manager or download script. Use either method i
     ```programlisting
     scoop hold cortexcli
     ```
+*   **Allow upgrades again**
+
+    ```programlisting
+    scoop unhold cortexcli
+    ```
+*   **Uninstall the CLI**
+
+    ```programlisting
+    scoop uninstall cortexcli
+    ```
 
 ## Automate binary downloads
 

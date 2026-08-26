@@ -1,3 +1,7 @@
+---
+description: Create attack path, configuration, and network exposure rules in Cortex XSIAM.
+---
+
 # Create serverless function rules
 
 You can create custom rules for serverless functions to suit your requirements. The following types of rules are supported:

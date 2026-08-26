@@ -1,13 +1,13 @@
 ---
 description: >-
-  Learn Cortex Cloud AI Security concepts in Cortex XSIAM, including AI assets,
-  risks, and findings.
+  Learn Cloud AI Security concepts in Cortex XSIAM, including AI assets, risks,
+  and findings.
 ---
 
 # Cortex Cloud AI Security concepts
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license.
 {% endhint %}
 
 #### Introduction to AI applications

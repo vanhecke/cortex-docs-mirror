@@ -1,18 +1,18 @@
 ---
 description: >-
-  Use XQL in Cortex XSIAM to investigate Cortex Cloud AI Security datasets and
+  Use XQL in Cortex XSIAM to investigate Cloud AI Security datasets and
   findings.
 ---
 
 # How to perform advanced AI Security investigations using XQL
 
 {% hint style="info" %}
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
+Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license.
 {% endhint %}
 
 #### Overview
 
-Cortex Cloud AI Security centralizes information about your AI ecosystem into a list of datasets, providing the foundation for comprehensive security investigations. Using Cortex Query Language (XQL) , security practitioners can create custom queries to extract valuable insights from these data sources within their appliance. For more information, see [Get started with XQL](../../reference-and-developer-docs/cortex-agentix-xql/get-started-with-xql).
+Cloud AI Security centralizes information about your AI ecosystem into a list of datasets, providing the foundation for comprehensive security investigations. Using Cortex Query Language (XQL) , security practitioners can create custom queries to extract valuable insights from these data sources within their appliance. For more information, see [Get started with XQL](../../reference-and-developer-docs/cortex-agentix-xql/get-started-with-xql).
 
 You can use the following AI-related datasets:
 
@@ -21,11 +21,11 @@ You can use the following AI-related datasets:
 | asset\_inventory                    | Provides a normalized, structured inventory of all digital assets across your AI environment, including detailed metadata for each asset, such as type, cloud provider, region, and security configurations. The dataset also maps relationships between assets, enabling the identification of complex AI and cloud dependencies for a comprehensive AI security posture. |
 | classification\_mgmt\_data\_profile | Provides administrative insights into the data classification policies and profiles configured within the Cortex Cloud Data Classification service.This dataset is primarily used for monitoring and managing the data classification rules in the Cortex Cloud environment.                                                                                               |
 | findings                            | Contains the findings that are associated with the assets that are found in your environments. For more information, see [Findings and events](../../../detect-investigate-and-respond-to-threats/investigation-and-response/case-concepts/issues-findings-and-events#findings-and-events).                                                                                |
-| issues                              | Consolidates all AI security vulnerabilities, misconfigurations, and threats detected by Cortex Cloud AI Security. Each entry includes detailed context, such as the affected asset ID, a risk score, a description of the issue, and suggested remediation steps. This dataset provides a unified, actionable view of all security risks for your organization.           |
+| issues                              | Consolidates all AI security vulnerabilities, misconfigurations, and threats detected by Cloud AI Security. Each entry includes detailed context, such as the affected asset ID, a risk score, a description of the issue, and suggested remediation steps. This dataset provides a unified, actionable view of all security risks for your organization.                  |
 
-#### Investigate Cortex Cloud AI Security
+#### Investigate Cloud AI Security in Cortex XSIAM
 
-To run queries on your Cortex Cloud AI Security datasets:
+To run queries on your Cloud AI Security datasets:
 
 1. In Cortex Cloud, in the navigation pane on the left, click **Investigation & Response**, then under **Search**, click **Query Builder**.
 2. Click **XQL**.

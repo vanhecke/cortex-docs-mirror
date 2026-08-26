@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn about workloads with unrestricted lateral access and the controls
-  causing that exposure.
+  Learn how to identify cloud workloads with unrestricted lateral access in
+  Cortex XSIAM and the controls creating east-west exposure.
 ---
 
 # East-west exposure detection

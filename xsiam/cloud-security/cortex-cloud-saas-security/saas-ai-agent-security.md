@@ -1,7 +1,7 @@
 ---
 description: >-
-  SaaS AI Agent Security helps you secure AI agents deployed across enterprise
-  SaaS environments.
+  Use SaaS AI Agent Security in Cortex XSIAM to secure enterprise SaaS AI
+  agents.
 ---
 
 # SaaS AI Agent Security
@@ -27,13 +27,13 @@ AISPM helps protect the autonomous workflows in your cloud environment with foll
 
 AISPM is designed to onboard and secure a wide array of modern enterprise AI agent platforms, including:
 
-* [Atlassian Rovo](../cortex-cloud-ai-security/cortex-cloud-saas-security/saas-ai-agent-security/onboard-saas-ai-agents/onboard-atlassian-rovo)
-* [Box AI Agents](../cortex-cloud-ai-security/cortex-cloud-saas-security/saas-ai-agent-security/onboard-saas-ai-agents/onboard-box-ai-agents)
-* [ChatGPT Enterprise](../cortex-cloud-ai-security/cortex-cloud-saas-security/saas-ai-agent-security/onboard-saas-ai-agents/onboard-chatgpt-enterprise)
-* [Cursor Enterprise](../cortex-cloud-ai-security/cortex-cloud-saas-security/saas-ai-agent-security/onboard-saas-ai-agents/onboard-cursor-enterprise)
-* [Gemini Enterprise](../cortex-cloud-ai-security/cortex-cloud-saas-security/saas-ai-agent-security/onboard-saas-ai-agents/onboard-gemini-enterprise)
-* [Microsoft 365 Copilot](../cortex-cloud-ai-security/cortex-cloud-saas-security/saas-ai-agent-security/onboard-saas-ai-agents/onboard-m365-copilot) and [Copilot Studio](../cortex-cloud-ai-security/cortex-cloud-saas-security/saas-ai-agent-security/onboard-saas-ai-agents/onboard-microsoft-copilot-studio)
-* [ServiceNow AI Platform](../cortex-cloud-ai-security/cortex-cloud-saas-security/saas-ai-agent-security/onboard-saas-ai-agents/onboard-service-now)
+* [Atlassian Rovo](broken-reference)
+* [Box AI Agents](broken-reference)
+* [ChatGPT Enterprise](broken-reference)
+* [Cursor Enterprise](broken-reference)
+* [Gemini Enterprise](broken-reference)
+* [Microsoft 365 Copilot](broken-reference) and [Copilot Studio](broken-reference)
+* [ServiceNow AI Platform](broken-reference)
 
 AISPM provides a comprehensive view of all SaaS agents, their configurations, and security postures, offering end-to-end auditability and high-level dashboards for governance across your organization.
 

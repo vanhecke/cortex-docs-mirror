@@ -1,6 +1,6 @@
 # Cortex CLI API Security command line reference guide
 
-This reference guide describes the dedicated API Security commands and flags, including the structure of base commands and subcommands. Refer to [Cortex CLI common command line reference guide](../cortex-cli-common-command-line-reference-guide) for Cortex CLI commands common to all supported modules.
+Use these API Security-specific commands and flags to run scans with the Cortex CLI. Refer to [Cortex CLI common command line reference guide](../cortex-cli-common-command-line-reference-guide) for common flags that apply across all supported modules.
 
 | Value                        | Description                                                                                                                  |
 | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |

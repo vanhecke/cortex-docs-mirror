@@ -1,7 +1,7 @@
 ---
 description: >-
-  This page consolidates application security posture data across all onboarded
-  instances
+  Use Provider Instances Security Check in Cortex XSIAM to assess security
+  posture across application instances.
 ---
 
 # Provider Instances Security Check
@@ -14,14 +14,14 @@ The **Provider Instances** page provides a high-level aggregation of tenant secu
 This page consolidates SaaS application security posture data across all onboarded instances:
 
 * Overall Security Check Score: Displays the global average posture score across all integrated instances. Applications are further categorized into three security score-based buckets:
-* Up to 50% (Red): Severe posture gaps &#x20;
-* Between 50%–75% (Yellow): Moderate posture alignment&#x20;
-* Over 75% (Green): High posture alignment &#x20;
+* Up to 50% (Red): Severe posture gaps
+* Between 50%–75% (Yellow): Moderate posture alignment
+* Over 75% (Green): High posture alignment
 * Providers (Distribution Tiles): Lists onboarded SaaS Applications with active instance count for each provider.
 
 **Instance Inventory List**
 
-The table displays granular telemetry for each active SaaS application.&#x20;
+The table displays granular telemetry for each active SaaS application.
 
 Provider Instances: The unique, user-defined identifier/name for the specific SaaS tenant. These are hyperlinked to route administrators to the deep-dive configuration and issues page for that specific instance.
 

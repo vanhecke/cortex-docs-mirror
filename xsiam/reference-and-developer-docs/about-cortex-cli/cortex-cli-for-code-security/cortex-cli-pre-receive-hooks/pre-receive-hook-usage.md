@@ -6,7 +6,7 @@ By default, Cortex CLI pre-receive hooks:
 
 * **Only scans code changes**: It analyzes the code difference included in the pushed commits, not the entire repository
 * **Scans for secrets only**: The analysis is focused on detecting sensitive information
-* **Does not upload results to Cortex XSIAM**: All scan results are kept local to your machine (on the server)
+* **Does not upload results to Cortex Cloud**: All scan results are kept local to your machine (on the server)
 
 ## Understanding the script variables
 
@@ -24,15 +24,15 @@ Use the following flags with the pre-receive command to customize scanner behavi
 $ cortexcli code pre-receive [options]
 ```
 
-| Command / Variable                                                                                      | Description                                                                                                                     |
-| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| <p><code>--ignore-existing-secrets</code></p><p><code>[$CORTEX_CODE_IGNORE_EXISTING_SECRETS]</code></p> | Ignores secrets that already exist in the periodic scan (default: false)                                                        |
-| <p><code>--validate-secrets</code></p><p><code>[$CORTEX_CODE_VALIDATE_SECRETS]</code></p>               | Checks if the secrets are valid (default: false)                                                                                |
-| <p><code>--skip-path</code></p><p><code>[$CORTEX_CODE_SKIP_PATH]</code></p>                             | Specifies a file or directory path to skip during the scan                                                                      |
-| <p><code>--compact</code></p><p><code>[$CORTEX_CODE_COMPACT]</code></p>                                 | Prevents the display of code blocks in the output (default: false)                                                              |
-| <p><code>--summary-position</code></p><p><code>[$CORTEX_CODE_SUMMARY_POSITION]</code></p>               | Determines whether the summary appears on top (before the check results) or on bottom (after the check results). (default: top) |
-| <p><code>--no-fail-on-crash</code></p><p><code>[$CORTEX_CODE_NO_FAIL_ON_CRASH]</code></p>               | Returns exit code `0` instead of `2` in case of a failure in the integration with the platform (default: false)                 |
-| `--help, -h`                                                                                            | Displays a help message with available options                                                                                  |
+| Command                     | Description                                                                                                                                                       |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `--ignore-existing-secrets` | Ignores secrets that already exist in the periodic scan (default: false) `[$CORTEX_CODE_IGNORE_EXISTING_SECRETS]`                                                 |
+| `--validate-secrets`        | Checks if the secrets are valid (default: false) `[$CORTEX_CODE_VALIDATE_SECRETS]`                                                                                |
+| `--skip-path`               | Specifies a file or directory path to skip during the scan `[$CORTEX_CODE_SKIP_PATH]`                                                                             |
+| `--compact`                 | Prevents the display of code blocks in the output (default: false) `[$CORTEX_CODE_COMPACT]`                                                                       |
+| `--summary-position`        | Determines whether the summary appears on top (before the check results) or on bottom (after the check results). (default: top) `[$CORTEX_CODE_SUMMARY_POSITION]` |
+| `--no-fail-on-crash`        | Returns exit code `0` instead of `2` in case of a failure in the integration with the platform (default: false) `[$CORTEX_CODE_NO_FAIL_ON_CRASH]`                 |
+| `--help, -h`                | Displays a help message with available options                                                                                                                    |
 
 ## Breakglass: Bypassing the hook
 

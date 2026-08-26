@@ -2,28 +2,20 @@
 
 Connect Cortex CLI to scan supported Cortex Cloud modules and gain insights into your security posture, enabling you to identify, analyze and address potential risks.
 
-## Installation workflows
-
-You can choose from three main installation workflows:
-
-* [Package Manager](#workflow-1-install-through-a-package-manager): The most efficient developer workflow, utilizing Homebrew for macOS/Linux and Scoop for Windows
-* [Manual download](#workflow-2-manual-download-any-os): Directly download the binaries for any operating system
-* [UI-based installation](#workflow-3-ui-based-installation): Onboard and download the CLI directly from your tenant
-
-## Prerequisites
+## Prerequisites and requirements
 
 ### System requirements
 
-#### macOS
-
+{% tabs %}
+{% tab title="macOS" %}
 On Intel Core i7 Macs, such as Sequoia, install `vectorscan`:
 
 ```bash
 brew install vectorscan
 ```
+{% endtab %}
 
-#### Linux
-
+{% tab title="Linux" %}
 * **RHEL 8.10 and Red Hat UBI 9:** Install `patchelf` and `zstd`.
 * **Ubuntu 20:** Install `prefetch`.
 *   **Ubuntu linux-amd64:** Install `libhyperscan5`.
@@ -31,31 +23,28 @@ brew install vectorscan
     ```bash
     sudo apt install libhyperscan5
     ```
+{% endtab %}
 
-**AppSec Module support**
-
-The AppSec Module supports these Linux environments:
-
-* **RHEL 10:** Kernel `6.12`, glibc `2.39`
-* **Debian 12:** Kernel `6.1.27`, glibc `2.36`
-* **Ubuntu 18.04:** Kernel `4.15`, glibc `2.27`
-* **Ubuntu 20.04:** Kernel `5.4`, glibc `2.31`
-* **Ubuntu 22.04:** Kernel `5.15`, glibc `2.35`
-* **Ubuntu 24.04:** Kernel `6.8`, glibc `2.39`
-
-#### Windows
-
+{% tab title="Windows" %}
 Windows supports AMD64 and ARM64 architectures.
 
 **Cortex Cloud IDE extension**
 
 If you run terminal actions from a Cortex Cloud IDE extension, use Command Prompt. PowerShell is unsupported for these actions.
+{% endtab %}
+{% endtabs %}
 
 ### Utility requirements for cURL-based downloads
 
 Install both `curl` and `jq`. Install `jq` for your platform:
 
 {% tabs %}
+{% tab title="macOS" %}
+```bash
+brew install jq
+```
+{% endtab %}
+
 {% tab title="Ubuntu or Debian" %}
 ```bash
 sudo apt-get install jq
@@ -65,12 +54,6 @@ sudo apt-get install jq
 {% tab title="Red Hat, CentOS, or Fedora" %}
 ```bash
 sudo yum install jq
-```
-{% endtab %}
-
-{% tab title="macOS" %}
-```bash
-brew install jq
 ```
 {% endtab %}
 
@@ -92,7 +75,57 @@ choco install jq
 
 For permission details, see [Cortex CLI]().
 
-### SCA suppression requirements
+Configure how the CLI uses your API key in [Authenticate credentials](connect-cortex-cli/authenticate-credentials).
+
+Generate API keys in the UI, or use the self-service workflow to create role-restricted CLI and IDE keys through the Public API. The self-service workflow uses a Primary API key. See [Self-service API keys for CLI scans](connect-cortex-cli/self-service-api-keys-for-cli-scans).
+
+## Installation workflows
+
+You can choose from three main installation workflows:
+
+* [Package manager](installation-workflows#install-through-a-package-manager): The recommended developer workflow. Use Homebrew on macOS or Linux, or Scoop on Windows
+* [Manual download](installation-workflows#manual-download): Download binaries directly for any operating system
+* [UI-based installation](installation-workflows#ui-based-installation): Download and authenticate the CLI from your tenant
+
+## Post-installation configuration
+
+After installation, you can upgrade, pin, uninstall, or update Cortex CLI through automated downloads. Refer to [manage the CLI](connect-cortex-cli/manage-the-cli-after-installation) for more information.
+
+## Module-specific requirements
+
+### AppSec module support
+
+#### Supported Linux environments
+
+The AppSec module supports these Linux environments:
+
+* **RHEL 10:** Kernel `6.12`, glibc `2.39`
+* **Debian 12:** Kernel `6.1.27`, glibc `2.36`
+* **Ubuntu 18.04:** Kernel `4.15`, glibc `2.27`
+* **Ubuntu 20.04:** Kernel `5.4`, glibc `2.31`
+* **Ubuntu 22.04:** Kernel `5.15`, glibc `2.35`
+* **Ubuntu 24.04:** Kernel `6.8`, glibc `2.39`
+
+#### SCA requirements
+
+**Runtime requirements**
+
+Install these runtime layers on the host running Cortex Unified CLI:
+
+* **Layer 1 (the baseline):** `Node.js v22+` is enforced. It is required to boot the SCA engine.
+* **Layer 2 (per-ecosystem toolchain):** Install the native language runtime or package manager for the code being scanned. Without the matching toolchain, the SCA engine cannot resolve dependencies.
+
+| Scanned project type | Additional toolchain needed locally, beyond Node v22 |
+| -------------------- | ---------------------------------------------------- |
+| Java (Maven)         | JDK and `mvn`                                        |
+| Java (Gradle)        | JDK and `gradle`                                     |
+| .NET                 | .NET SDK (`dotnet`)                                  |
+| Python               | Python and `pip` or `pipenv`                         |
+| Ruby                 | Ruby and `bundler`                                   |
+| Go                   | Go toolchain                                         |
+| JavaScript/Node      | `npm` or `yarn` (covered by Node v22)                |
+
+**Suppression requirements**
 
 These practices are required for SCA vulnerability suppression:
 
@@ -105,237 +138,6 @@ For example, when the working directory is `Users/test/<repo_name>`, use:
 ```bash
 --repo-id <repo_owner_name>/<repo_name>
 ```
-
-## Workflow 1: Install through a package manager
-
-Using a package manager is the recommended method for installing the Cortex CLI. Use `Homebrew` (for macOS and Linux) or `Scoop` (for Windows).
-
-### Homebrew for macOS and Linux
-
-Supported on macOS (Apple Silicon & Intel) and Linux (x86\_64 & arm64).
-
-Requires [Homebrew](https://brew.sh/).
-
-#### Standard installation
-
-```programlisting
-brew tap paloaltonetworks/cortexcli
-brew install cortexcli
-cortexcli --version
-```
-
-#### Pin a specific version (optional)
-
-If your workflow requires a specific version, use one of these methods.
-
-**Pin a release line**
-
-For example, stay on the `0.18.x` release line.
-
-This locks the CLI to a minor version. Security patches continue automatically.
-
-```programlisting
-brew install cortexcli@0.18
-# keg-only — add to PATH if needed:
-echo 'export PATH="$(brew --prefix cortexcli@0.18)/bin:$PATH"' >> ~/.zprofile
-```
-
-**Pin an exact version**
-
-For example, install exactly `0.18.0`.
-
-This locks the CLI to one build. It prevents automatic updates.
-
-### Scoop for Windows
-
-Supported on Windows x64.
-
-Requires [Scoop](https://scoop.sh/).
-
-#### Standard installation
-
-```programlisting
-scoop bucket add cortexcli https://github.com/PaloAltoNetworks/homebrew-cortexcli
-scoop install cortexcli
-cortexcli --version
-```
-
-#### Install a specific version (optional)
-
-If your workflow requires a specific version, use:
-
-```programlisting
-scoop install cortexcli@0.18.0
-```
-
-## Workflow 2: Manual download (any OS)
-
-You can manually download the binaries for macOS, Linux, or Windows.
-
-Download the archive from the [releases page](https://github.com/PaloAltoNetworks/homebrew-cortexcli/releases). Verify it against `SHA256SUMS`, then extract it.
-
-| Step              | macOS / Linux                                             | Windows                                                                                  |
-| ----------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| **Download**      | Download the `.tar.gz` archive for your architecture      | Download the `.zip` archive                                                              |
-| **Extract**       | The executable is named `cortexcli`                       | The executable is named `cortexcli.exe`                                                  |
-| **Add to `PATH`** | Move `cortexcli` to a directory such as `/usr/local/bin/` | Move `cortexcli.exe` to a dedicated folder. Add that folder to **Environment Variables** |
-
-## Workflow 3: UI-based installation
-
-Install the CLI directly from your Cortex tenant. The UI generates a tenant-specific command that downloads and authenticates the binary.
-
-{% stepper %}
-{% step %}
-### Generate the installation command
-
-1. Navigate to **Settings** → **Data Sources** → **+ Data Source**.
-2. Search for **Cortex CLI**.
-3. Select **Connect** or **Connect Another Instance** on the Cortex CLI card.
-4. In **Configure**, select your operating system. Then click **Next**.
-5. In **Authenticate**, generate an API key.
-   * Select **With upload results permissions** to create a **CLI View/Edit** role.
-   * Otherwise, the key receives a **CLI Read Only** role with **CLI View** permissions.
-
-{% hint style="info" %}
-The Cortex CLI requires an API key with the `Standard` security level.
-{% endhint %}
-
-6. Save the generated **API Key ID** and **API key**.
-7. Copy the command from **Retrieve your API key**.
-
-{% hint style="info" %}
-On macOS ARM64, unpack the download to access the executable.
-{% endhint %}
-
-8. Verify the key appears in the API Keys inventory.
-{% endstep %}
-
-{% step %}
-### Download the CLI
-
-Before you run the command, replace any placeholders with your credentials:
-
-1. Replace `${API_KEY}` with the saved API key.
-2. If needed, copy the API URL from **Settings** → **Configurations** → **API Keys**.
-3. Paste the completed command into your terminal. Then press Enter.
-
-The generated command follows this syntax:
-
-```programlisting
-curl -k -u $CORTEX_API_ID::$CORTEX_API_KEY --output ./cortexcli $CORTEX_FQDN/api/v2/remote-li/{version}/{platform}/artifacts
-```
-
-This securely connects to your specific Cortex tenant (`$CORTEX_FQDN`) and downloads the `cortexcli` application directly to your current folder.
-{% endstep %}
-
-{% step %}
-### Make the CLI executable
-
-On macOS and Linux, allow the downloaded binary to run:
-
-```programlisting
-chmod +x cortexcli
-```
-{% endstep %}
-
-{% step %}
-### Verify the installation
-
-Run the command that matches the binary location:
-
-{% tabs %}
-{% tab title="On your PATH" %}
-```programlisting
-cortexcli -v
-```
-{% endtab %}
-
-{% tab title="Current directory" %}
-```programlisting
-./cortexcli -v
-```
-{% endtab %}
-{% endtabs %}
-
-If the terminal displays a version, return to Cortex Cloud and click **Done**.
-{% endstep %}
-{% endstepper %}
-
-## Manage the CLI after installation
-
-After installation, manage the CLI with a package manager or download script. Use either method in CI/CD pipelines or local end-user environments.
-
-### Package managers
-
-#### macOS and Linux
-
-*   **Upgrade to the latest version**
-
-    ```programlisting
-    brew upgrade cortexcli
-    ```
-*   **Pin the installed version**
-
-    ```programlisting
-    brew pin cortexcli
-    ```
-*   **Uninstall the CLI**
-
-    ```programlisting
-    brew uninstall cortexcli
-    ```
-
-#### Windows
-
-*   **Upgrade to the latest version**
-
-    ```programlisting
-    scoop update cortexcli
-    ```
-*   **Prevent upgrades**
-
-    ```programlisting
-    scoop hold cortexcli  
-    ```
-*   **Allow upgrades again**
-
-    ```programlisting
-    scoop unhold cortexcli     
-    ```
-*   **Uninstall the CLI**
-
-    ```programlisting
-    scoop uninstall cortexcli
-    ```
-
-### Automate binary downloads
-
-Use this script for a manual installation. It downloads the latest release for your operating system and architecture. Replace your existing binary with the downloaded file. On macOS and Linux, make it executable with `chmod +x`.
-
-```programlisting
-crtx_resp=$(curl --fail "<CORTEX_API_URL>/public_api/v1/unified-cli/releases/download-link?os=<OS>&architecture=<ARCH>" \
-  -H "x-xdr-auth-id: <AUTH_ID>" \
-  -H "Authorization: ${CORTEX_API_KEY}") \
-  && crtx_url=$(echo $crtx_resp | jq -r ".signed_url") \
-  && crtx_file=$(echo $crtx_resp | jq -r ".file_name") \
-  && curl -o $crtx_file $crtx_url
-```
-
-#### Replace the placeholders
-
-* `CORTEX_API_KEY`: Your API key
-* `<CORTEX_API_URL>`: Your tenant API base URL
-* `<AUTH_ID>`: Your API key ID value
-* `<OS>`: Your operating system — `linux`, `darwin`, or `windows`
-* `<ARCH>`: Your system architecture — such as `amd64` or `arm64`
-
-#### How the script works
-
-The script:
-
-1. Requests a signed download link from Cortex Cloud for the latest release matching your OS and architecture.
-2. Uses `jq` to extract the signed URL and binary filename.
-3. Downloads the binary from the signed URL.
 
 ## Troubleshooting
 
@@ -374,3 +176,10 @@ The package-managed binary should be at one of these locations:
 * **Windows installer:** Uninstall it in **Settings** → **Apps** → **Installed apps**.
 
 Open a new terminal. Then run `cortexcli --version` again.
+
+## Learn more
+
+* [Installation workflows](connect-cortex-cli/installation-workflows)
+* [Manage the CLI after installation](connect-cortex-cli/manage-the-cli-after-installation)
+* [Authenticate credentials](connect-cortex-cli/authenticate-credentials)
+* [Self-service API keys for CLI scans](connect-cortex-cli/self-service-api-keys-for-cli-scans)
