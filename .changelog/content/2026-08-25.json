@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-25",
+  "source": "content",
+  "sha": "99e8cabd5dc6e6bfa703e80a92a771fbf81d4eb3",
+  "headline": "A broad 42-pack day of additions: AWS, Okta, Netskope and ApiModules lead",
+  "summary_md": "- 42 packs move for 15 upstream commits — 3,077 lines added against 328 deleted, so a day of new material rather than rewrites.\n- **AWS** (+647/-161), **Okta** (+453/-1), **Netskope** (+332/-13) and **ApiModules** (+270/-5) are over half the day's insertions between them.\n- Three integration fixes land on auth and request handling: **OpenAI**, **ThreatConnect** and **GitHub**.\n- Fifteen packs each gained an identical 10-line block, matching the day's \"Add License Requirements section to readme\" commit (#45591).\n- Modeling-rule work continues: `identity.*` fields are added as the first of seven planned PRs (CRTX-271527, #45463).",
+  "highlights": [
+    {
+      "title": "identity.* fields are added to modeling rules, first of seven PRs",
+      "detail": "CRTX-271527 (#45463) is explicitly labelled \"PR 1 of 7\", so this ingestion-mapping work will span further days; the snapshot does not say which pack carried it.",
+      "paths": []
+    },
+    {
+      "title": "OpenAI now sends a Bearer scheme on the Compliance API auth header",
+      "detail": "CIAC-17723 (#45633) moves the pack +197/-16 — a change to how the integration authenticates, not just what it sends.",
+      "paths": ["Packs/OpenAI"]
+    },
+    {
+      "title": "ANY.RUN Sandbox gains a root_url parameter and an updated SDK",
+      "detail": "The pack update also fixes minor bugs, and at +195/-72 it has the day's second-highest deletion count, so existing code was replaced rather than extended (#45561).",
+      "paths": ["Packs/ANYRUN"]
+    },
+    {
+      "title": "Google Drive gains the capability to upload content",
+      "detail": "#45641 moves both the Google Drive pack (+18/-3) and its standard connector (+17/-3), and is the snapshot head for the day.",
+      "paths": ["Packs/GoogleDrive", "Packs/GoogleDriveStandardConnector"]
+    },
+    {
+      "title": "ThreatConnect adds sanitize_large_ints for large object IDs",
+      "detail": "XSUP-75257 (#45638) gains 175 lines against a single deletion to handle ThreatConnect object IDs the integration was mishandling.",
+      "paths": ["Packs/ThreatConnect"]
+    },
+    {
+      "title": "Atlassian Confluence Cloud returns generic-file-get content as Markdown",
+      "detail": "#45603 (+44/-9) changes the output format of that command's result.",
+      "paths": ["Packs/AtlassianConfluenceCloud"]
+    }
+  ],
+  "items": {
+    "Packs/AWS": "+647/-161, the day's largest pack change and largest deletion count, on a test that the yml and py files match (CRTX-265696, #45344).",
+    "Packs/Okta": "+453/-1, the day's largest near-pure addition; the snapshot names no commit for it.",
+    "Packs/Netskope": "+332/-13 on \"Fix netskope issue\" (#45550).",
+    "Packs/ApiModules": "+270/-5 to the shared API module code, with no commit subject naming it.",
+    "Packs/OpenAI": "+197/-16 sending a Bearer scheme on the Compliance API auth header (CIAC-17723, #45633).",
+    "Packs/ANYRUN": "+195/-72 fixing minor bugs, adding a root_url parameter for Sandbox and updating the SDK version (#45561).",
+    "Packs/ThreatConnect": "+175/-1 adding a sanitize_large_ints function for large ThreatConnect object IDs (XSUP-75257, #45638).",
+    "Packs/GitHub": "+152/-25 improving request handling (#45578).",
+    "Packs/Core": "+68/-0, unattributed in the day's commit subjects.",
+    "Packs/HelloWorld": "+65/-2 to the reference pack, unattributed in the day's commit subjects.",
+    "Packs/AtlassianConfluenceCloud": "+44/-9 returning generic-file-get content as Markdown (#45603).",
+    "Packs/GoogleDrive": "+18/-3 adding the capability to upload content to Google Drive (#45641).",
+    "Packs/GoogleDriveStandardConnector": "+17/-3, moved by the same Google Drive upload commit (#45641).",
+    "Packs/ServiceNow": "+14/-1 on an add-comment change (XSUP-75154, #45605).",
+    "Packs/ThreatZone": "+9/-2 across two commits: an XSUP-75189 resolution (#45615) and a threatzone-sdk Docker bump (#45645)."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
