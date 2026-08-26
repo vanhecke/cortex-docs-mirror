@@ -1,0 +1,64 @@
+{
+  "date": "2026-08-25",
+  "source": "docs",
+  "sha": "124f702bf6086663ed2e1dada5469329f4213de9",
+  "headline": "The duplicate SaaS Security tree was deleted — 64 pages gone and its app connection links left broken",
+  "summary_md": "- **64 pages were deleted**: the entire SaaS Security sub-book nested under Cloud AI Security, a duplicate of the surviving top-level tree. The Cortex XSIAM book drops from 2,283 to 2,219 pages.\n- Five SaaS Security index pages now point at `broken-reference` instead of the deleted copies — including the SaaS app connection table, where roughly forty per-app onboarding links are dead.\n- Cloud security gained an **Attack Path (Legacy)** rule type: the rule table entry and the page title were both relabelled.\n- The Cortex CLI docs were restructured: `connect-cortex-cli` dropped its inline install instructions for links to existing subpages, and new SCA runtime requirements (Node.js v22+ plus a per-ecosystem toolchain) were documented.\n- \"Cortex Cloud AI Security\" became \"Cloud AI Security\" throughout, and every AI Security licence hint was condensed to name the same three entitlements in one line.",
+  "highlights": [
+    {
+      "title": "The SaaS Security sub-book under Cloud AI Security was deleted — 64 pages",
+      "detail": "Every page under cortex-cloud-ai-security/cortex-cloud-saas-security was removed, including all 38 per-app onboarding pages and the SaaS AI agent security section; the equivalent pages under cloud-security/cortex-cloud-saas-security survive.",
+      "paths": [
+        "xsiam/cloud-security/cortex-cloud-ai-security/cortex-cloud-saas-security",
+        "xsiam/cloud-security/cortex-cloud-saas-security"
+      ]
+    },
+    {
+      "title": "The SaaS app connection table's per-app links are now broken-reference",
+      "detail": "Roughly forty rows that pointed at the deleted onboarding pages were rewritten to broken-reference, even though the surviving connect-a-saas-application subpages exist and were left in place.",
+      "paths": ["xsiam/cloud-security/cortex-cloud-saas-security/connect-a-saas-application"]
+    },
+    {
+      "title": "Attack path rules were relabelled Attack Path (Legacy)",
+      "detail": "The cloud security rule type table and the page title both changed, and the navigation manifest carries the new title.",
+      "paths": [
+        "xsiam/cloud-security/cloud-security-rules-and-policies/create-and-manage-cloud-security-rules",
+        "xsiam/cloud-security/cloud-security-rules-and-policies/create-and-manage-cloud-security-rules/create-an-attack-path-rule"
+      ]
+    },
+    {
+      "title": "SCA scans now document a Node.js v22+ baseline and a per-ecosystem toolchain",
+      "detail": "A new module-specific requirements section states Node.js v22+ is enforced to boot the SCA engine, plus a table of native toolchains needed per project type — JDK with mvn or gradle, .NET SDK, Python with pip or pipenv, Ruby with bundler, and the Go toolchain.",
+      "paths": ["xsiam/reference-and-developer-docs/about-cortex-cli/connect-cortex-cli"]
+    },
+    {
+      "title": "The Code Security CLI authentication flag was corrected to --api-key-id",
+      "detail": "The documented third required flag changed from --auth-id / $CORTEX_AUTH_ID to --api-key-id / $CORTEX_API_KEY_ID, matching the common reference guide.",
+      "paths": ["xsiam/reference-and-developer-docs/about-cortex-cli/cortex-cli-for-code-security"]
+    },
+    {
+      "title": "A new --ignore-existing-secrets flag was added to the AppSec CLI reference",
+      "detail": "In CI/CD scans it reports only newly introduced secrets, filtering findings whose fingerprints already exist in the Cortex Cloud backlog; three log and version flags also gained documented environment variables.",
+      "paths": ["xsiam/reference-and-developer-docs/about-cortex-cli/cortex-cli-for-code-security/cortex-cli-application-security-command-line-reference"]
+    }
+  ],
+  "items": {
+    "xsiam/cloud-security/cortex-cloud-saas-security/connect-a-saas-application": "Every per-app onboarding link in the SaaS app connection table became broken-reference; the inline instructions for Nintex, Ping, Pipedrive, Qualtrics, Splunk and VMware are untouched.",
+    "xsiam/cloud-security/cloud-security-rules-and-policies/create-and-manage-cloud-security-rules": "The Attack path rule type was renamed Attack Path (Legacy) in the rule types table.",
+    "xsiam/cloud-security/cloud-security-rules-and-policies/create-and-manage-cloud-security-rules/create-an-attack-path-rule": "Retitled Create an attack path (legacy) rule; the path and the procedure are unchanged.",
+    "xsiam/reference-and-developer-docs/about-cortex-cli/connect-cortex-cli": "Inline install, manage and download-script instructions were cut in favour of links to the existing subpages, and SCA runtime and suppression requirements were added.",
+    "xsiam/reference-and-developer-docs/about-cortex-cli/cortex-cli-for-code-security/cortex-cli-application-security-command-line-reference": "Gained --ignore-existing-secrets, a How to retrieve the repository ID section, and worked --repo-id examples for GitHub Actions and GitLab CI.",
+    "xsiam/reference-and-developer-docs/about-cortex-cli/cortex-cli-for-code-security": "The authentication flag list now names --api-key-id / $CORTEX_API_KEY_ID instead of --auth-id, and SCA is described as also detecting malicious packages.",
+    "xsiam/reference-and-developer-docs/about-cortex-cli/cortex-cli-common-command-line-reference-guide": "--log-level, --version and --log gained environment variables ($MIN_LOG_LEVEL, $CORTEX_CLI_VERSION, $LOG_FILE), and the module references were listed in a callout.",
+    "xsiam/reference-and-developer-docs/about-cortex-cli/cortex-cli-for-cloud-workload-protection": "A duplicated CWP command table was removed from the end of the page and the reference link now points at the CWP subpage rather than a same-page anchor.",
+    "xsiam/reference-and-developer-docs/about-cortex-cli/cortex-cli-for-code-security/cortex-cli-pre-receive-hooks/pre-receive-hook-usage": "The pre-receive flag table was reflowed so environment variables sit inside the description column rather than beside the flag.",
+    "xsiam/cloud-security/cortex-cloud-ai-security/what-is-cortex-cloud-ai-security": "Cortex Cloud AI Security became Cloud AI Security throughout, and the licence hint was condensed to name Cloud Posture Security, Cloud Runtime Security or Cortex XSIAM Premium.",
+    "xsiam/cloud-security/cortex-cloud-saas-security/setup-saas-security": "Links to the deleted SaaS Security copies were replaced with broken-reference.",
+    "xsiam/cloud-security/cortex-cloud-saas-security/saas-ai-agent-security/onboard-saas-ai-agents": "The index of supported AI agent platforms now links to broken-reference for every entry.",
+    "agent/cortex-xdr-agent-for-windows/troubleshooting-resources-for-windows/cytool-for-windows": "The Cytool options table gained full command output examples for imageprep, info, policy compare, protect, scan and startup.",
+    "agent/cortex-xdr-agent-for-macos/troubleshooting-resources-for-mac/cytool-for-mac": "The Cytool options table gained the full usage listing plus output examples for dump, enum, opswat, runtime, startup and wakeup.",
+    "xsiam/configure-cortex-xsiam/cortex-mcp-server/create-custom-cortex-mcp-server-tools": "The OpenAPI and Python headings were expanded to name the task, as were the CLI and use case headings on the sibling MCP server pages."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": true
+}
