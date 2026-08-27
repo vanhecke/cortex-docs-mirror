@@ -1,8 +1,12 @@
+---
+description: Configure Cortex XSIAM Federated Search connections for external data sources.
+---
+
 # Federated Search configuration
 
 Before you run federated searches, you must first create an external dataset to run the query.
 
-To define a new external dataset, go to Settings → Configurations → Data Management → Dataset management → External Datasets and click Add External Dataset. You can also access the wizard through the Query builder page Investigation & Response → Search → Query Builder → Federated Search.
+To define a new external dataset, go to **Settings → Configurations → Data Management → Dataset management → External Datasets** and click Add External Dataset. You can also access the wizard through the Query builder page **Investigation & Response → Search → Query Builder → Federated Search**.
 
 1. Prerequisites: Perform preliminary steps on your remote storage, such as creating a policy and attaching it to a role.
 2.  Connection setup and dataset definition:

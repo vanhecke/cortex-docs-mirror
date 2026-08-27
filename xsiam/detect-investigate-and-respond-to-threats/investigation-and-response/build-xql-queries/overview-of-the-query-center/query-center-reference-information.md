@@ -1,6 +1,10 @@
+---
+description: Reference Cortex XSIAM Query Center fields, statuses, and query details.
+---
+
 # Query Center reference information
 
-The table below lists the common fields in the Query Center, where the options differ for an XQL query versus a Graph Search query.
+The table below lists the common fields in the Cortex XSIAM Query Center, where the options differ for an XQL query versus a Graph Search query.
 
 {% hint style="info" %}
 ### Note

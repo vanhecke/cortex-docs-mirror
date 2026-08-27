@@ -1,5 +1,7 @@
 ---
-description: Interact with Cortex Agentic Assistant agents to build and run XQL queries.
+description: >-
+  Interact with Cortex Agentic Assistant agents to build and run XQL queries in
+  Cortex XSIAM.
 ---
 
 # Create and run XQL queries with Agentic Assistant chat

@@ -1,5 +1,5 @@
 ---
-description: Create a list and add it to your content pack.
+description: Cortex XSIAM steps for creating and packaging lists.
 ---
 
 # Lists

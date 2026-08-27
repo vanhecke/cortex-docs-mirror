@@ -1,3 +1,9 @@
+---
+description: >-
+  Track Cortex XSIAM triage collection and ingestion status for endpoint
+  artifacts.
+---
+
 # Triage status
 
 You can drill down to the **Actions** table from the status link of the triage to view the search the status of all the artifacts for the triage.

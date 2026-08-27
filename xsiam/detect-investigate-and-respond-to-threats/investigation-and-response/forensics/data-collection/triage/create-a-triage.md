@@ -1,8 +1,16 @@
+---
+description: >-
+  Create Cortex XSIAM triage collections for detailed online and offline
+  endpoint evidence gathering.
+---
+
 # Create a triage
 
 Use triage collections when a certain activity, group of activities, or the actions of a specific user on that endpoint have been identified, and additional information is required. The triage functionality collects detailed system information, including a full file listing for all of the connected drives, full event logs, and registry hives, to provide you with a complete, holistic picture of an endpoint.
 
 Triage supports data collection from both online and offline hosts, on both Windows and macOS platforms.
+
+### How to create a triage collection in Cortex XSIAM
 
 1. In the **Triage Collection Name** field, enter a name that will be easy to find in the collections table.
 2. Select the **Platform** either Windows, macOS or Linux.

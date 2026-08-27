@@ -173,4 +173,3 @@ To set up a JAMF profile step-by-step, use the following workflow. The figures g
 12. Create a new policy and install the package.
     * JAMF [Package Deployment](https://learn.jamf.com/bundle/jamf-pro-documentation-current/page/Package_Deployment.html) instructions.
     * JAMF [Policy Management](https://learn.jamf.com/bundle/jamf-pro-documentation-current/page/Policy_Management.html) instructions.
-

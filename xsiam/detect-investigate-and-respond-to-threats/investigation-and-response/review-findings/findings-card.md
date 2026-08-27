@@ -1,3 +1,7 @@
+---
+description: View selected finding details and investigation context in Cortex XSIAM.
+---
+
 # Findings card
 
 The Findings card displays information about the selected finding. On this card you can see the following information.

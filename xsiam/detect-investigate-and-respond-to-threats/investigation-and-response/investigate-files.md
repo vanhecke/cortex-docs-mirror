@@ -1,3 +1,9 @@
+---
+description: >-
+  Investigate files, manage execution, and review analysis results in Cortex
+  XSIAM.
+---
+
 # Investigate files
 
 You can take actions to manage and investigate files, including:

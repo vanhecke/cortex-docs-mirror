@@ -6,9 +6,15 @@ description: Add AI Prompt tasks to Cortex XSIAM playbooks for AI-assisted autom
 
 AI prompt tasks enable automated interaction with the Cortex XSIAM built-in Large Language Model (LLM) as a single step in a playbook. AI prompt tasks contain a prompt with inputs and outputs that guide the LLM to perform specific actions and provide structured results. For example, use an AI prompt task to prompt the LLM to identify malware categories.
 
-You can add the same AI prompt task more than once to a playbook. Each instance saves its settings locally.
+You can add the same AI Prompt task more than once to a playbook. Each instance saves its settings locally.
 
 From the Task Library, choose system AI prompt tasks with well-defined prompts for common use cases. Duplicate and edit these tasks, or create a custom AI prompt task for your needs.
+
+{% hint style="info" %}
+### Tip
+
+For guidance on structuring your prompts, see [Write effective prompts](../../../ai-prompts/write-effective-prompts).
+{% endhint %}
 
 ### System AI prompt tasks in the Task Library
 

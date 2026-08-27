@@ -1,5 +1,5 @@
 ---
-description: "Integrations are stored in\_the Integrations directory and contain a specific set of files."
+description: Cortex XSIAM integration directory structure and required files.
 ---
 
 # Integration directory structure

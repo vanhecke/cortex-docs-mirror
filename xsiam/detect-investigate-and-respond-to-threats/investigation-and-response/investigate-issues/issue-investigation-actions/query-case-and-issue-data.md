@@ -1,5 +1,5 @@
 ---
-description: Query Cortex XSIAM case and issue data with Cortex Query Language.
+description: Query case and issue data with Cortex Query Language in Cortex XSIAM.
 ---
 
 # Query case and issue data

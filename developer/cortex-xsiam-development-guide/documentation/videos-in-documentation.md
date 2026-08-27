@@ -1,8 +1,12 @@
+---
+description: Cortex XSIAM guidance for adding videos to documentation.
+---
+
 # Videos in documentation
 
 A video can provide a strong addition to the documentation either as a demo video or tutorial. The preferred video format is MP4.
 
-#### Videos stored in GitHub
+### Store documentation videos in the content-assets repository
 
 Because of their size and to keep the main content repository small, large media files are stored in a separate repository.
 
@@ -21,12 +25,12 @@ Include the video using the HTML `<video>` tag, such as:
 ```
 
 {% hint style="info" %}
-### Note
+**Note**
 
 GitHub markdown preview does not display the video (it shows the `browser not supported` message). The xsoar.pan.dev site does display the video properly. You can see [an example](https://xsoar.pan.dev/docs/reference/integrations/json-feed#demo-video) video in the JSON Feed integration documentation.
 {% endhint %}
 
-#### Large files (over 50MB)
+### Add documentation videos larger than 50 MB with Git LFS
 
 For files larger than 50MB, we require using [git-lfs](https://git-lfs.com/) to add these files to the content repo. See the [GIT LFS Tutorial](https://github.com/git-lfs/git-lfs/wiki/Tutorial) at the GithHub site for more details.
 
@@ -42,7 +46,7 @@ To add a large file:
 8. Commit and push using: `git commit` and `git push`.
 9. Open a pull request.
 
-#### Videos via external hosting (YouTube)
+### Embed externally hosted documentation videos from YouTube
 
 You can also embed videos from external services such as YouTube via an iframe. From the external service choose to share the video and choose the **Embed** option. Then choose to **Copy** the embed snippet.
 

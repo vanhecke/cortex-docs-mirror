@@ -1,3 +1,7 @@
+---
+description: Create legacy process queries to investigate process activity in Cortex XSIAM.
+---
+
 # Create process query
 
 From the **Query Builder** you can investigate connections between processes, child processes, and endpoints.

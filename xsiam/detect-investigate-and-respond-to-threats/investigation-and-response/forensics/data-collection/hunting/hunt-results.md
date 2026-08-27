@@ -1,6 +1,12 @@
+---
+description: >-
+  Analyze Cortex XSIAM hunt results across collected endpoint forensic
+  artifacts.
+---
+
 # Hunt results
 
-The hunt results page consolidates information collected by the Cortex XDR agent enabling you to investigate and take action on your endpoints.
+The hunt results page consolidates information collected by the Cortex XDR agent enabling you to investigate and take action on your endpoints with Cortex XSIAM.
 
 ### Review process execution search results
 

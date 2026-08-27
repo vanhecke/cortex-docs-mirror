@@ -1,3 +1,9 @@
+---
+description: >-
+  Set up a Docker-based Cortex XSIAM content development environment with Visual
+  Studio Code and Dev Containers.
+---
+
 # Set up a containerized development environment
 
 You can set up a fully functional [development environment in a Docker container](https://code.visualstudio.com/docs/remote/containers). The containerized development environment includes all the necessary tools and dependencies needed to develop content in the [demisto/content](https://github.com/demisto/content) repository.

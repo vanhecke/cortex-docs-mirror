@@ -1,5 +1,5 @@
 ---
-description: Check the integration you created works.
+description: Cortex XSIAM steps for testing a sample integration.
 ---
 
 # Test the integration
@@ -14,7 +14,7 @@ description: Check the integration you created works.
     ![](https://4088726609-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FurXrv6qkJRLbdhMdvPIU%2Fuploads%2Fgit-blob-73cf62bcb0d821177cd6ced9ef68423e69ea9239%2F5857aca762a5f4a7d52fd1060c2d305660b147b330262945c56722c7e0339638.png?alt=media)
 3.  Click **Save & Exit**.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>If you have an integration open in two different tabs, you may encounter an error where your changes aren’t saved. In this case, take a screenshot of your changes, close both tabs, and then reopen one tab. Enter your changes again and save.</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>If you have an integration open in two different tabs, you may encounter an error where your changes aren’t saved. In this case, take a screenshot of your changes, close both tabs, and then reopen one tab. Enter your changes again and save.</p></div>
 4.  To test the integration, create a new incident. At the CLI, enter `!yoda-speak-translate` and any English string for the argument, for example "Hello, my name is John Smith. We are learning about integrations."
 
     ![xsiam-yoda-speak-cli.png](https://4088726609-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FurXrv6qkJRLbdhMdvPIU%2Fuploads%2Fgit-blob-9b5fecfe5a9b5bde555f9ffff0411c22786196a1%2F29c2c2194e2fb622d191eaac2f629d9f7eb925aa261c113916457b1f896b51a5.png?alt=media)
@@ -26,7 +26,7 @@ description: Check the integration you created works.
 
     In this example, `YodaSpeak` is the root for `The Force`. If the translation changes the next time we run the command, the translation field will be updated.
 
-**Include the integration script in a playbook**
+### Add the sample integration to a playbook
 
 You can see the power of integrations when you include them in a playbook. We will create a playbook that translates the `Details` field in an incident into Yoda Speak and then prints it to the War Room.
 

@@ -1,3 +1,7 @@
+---
+description: Import file hash exceptions into allow and block lists in Cortex XSIAM.
+---
+
 # Import file hash exceptions
 
 The **Action Center** displays information on files that are quarantined, or included in the allow list and block list. To import hashes from the Endpoint Security Manager or from external feeds, take the following steps:

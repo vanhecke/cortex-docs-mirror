@@ -1,3 +1,7 @@
+---
+description: Use Cortex XSIAM to find and remove malicious files across managed endpoints.
+---
+
 # Search and destroy malicious files
 
 To take immediate action on known and suspected malicious files, you can search and destroy the files. After identifying the presence of a malicious file, you can immediately destroy the file from any or all endpoints on which the file exists.

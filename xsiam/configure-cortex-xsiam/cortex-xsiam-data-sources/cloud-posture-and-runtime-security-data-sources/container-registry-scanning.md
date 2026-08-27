@@ -7,9 +7,13 @@ description: >-
 
 # Container Registries
 
+{% hint style="info" %}
+**License type**: This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM product that has the Cloud Posture Security or the Cloud Runtime Security add-on.
+{% endhint %}
+
 ### Overview
 
-#### Container Registries Data Sources
+#### Container Registries
 
 Container Registries are a category of Runtime Security data sources (also known as connectors) in Cortex XSIAM that enable integration with container image repositories across cloud and third-party environments. These data sources provide visibility into container images stored in registries and allow Runtime Security to assess the security posture of containerized applications.
 
@@ -26,19 +30,15 @@ Container Registry data sources support both managed cloud registries and third-
 
 After a registry is onboarded, scanning runs automatically at regular intervals, eliminating the need for manual image assessment and providing continuous visibility into container security risks.
 
-{% hint style="info" %}
-**License type**: This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM product that has the Cloud Runtime Security add-on.
-{% endhint %}
-
 #### Supported container registry integrations
 
 * **Managed Cloud Registries**: The container registry scanner automatically detects and scans container registries and images within your onboarded cloud accounts. Supported registries include Amazon Elastic Container Registry (ECR), Azure Container Registry (ACR), Google Artifact Registry (GAR), and Oracle Cloud Infrastructure (OCI) Artifact Registry. For more details, see [configure registry scanning for cloud accounts](container-registry-scanning/configure-registry-scanning-for-cloud-accounts).
 * **Third-Party Integrations**: The container registry scanner supports agentless scanning of container images by direct integration with various third-party registries, independent of the cloud account onboarding process. These integrations include a streamlined, user-friendly connector configuration experience for the following:
-  * [Docker Hub](container-registry-scanning/connect-docker-hub-registry)
-  * [Docker V2 compliant registries](container-registry-scanning/connect-docker-v2-compliant-container-registry)
-  * [GitLab Container Registry](container-registry-scanning/connect-gitlab-container-registry)
-  * [Harbor Registry](container-registry-scanning/connect-harbor-registry)
-  * [JFrog Container Registry](container-registry-scanning/connect-jfrog-container-registry)
-  * [Sonatype Nexus Repository Manager](container-registry-scanning/connect-sonatype-nexus-registry)
+  * [Docker Hub](../vendor-specific-data-sources-and-connectors/docker/connect-docker-hub-registry)
+  * [Docker V2 compliant registries](../vendor-specific-data-sources-and-connectors/docker/connect-docker-v2-compliant-container-registry)
+  * [GitLab Container Registry](../vendor-specific-data-sources-and-connectors/gitlab/connect-gitlab-container-registry)
+  * [Harbor Registry](../vendor-specific-data-sources-and-connectors/harbor/connect-harbor-registry)
+  * [JFrog Container Registry](../vendor-specific-data-sources-and-connectors/jfrog/connect-jfrog-container-registry)
+  * [Sonatype Nexus Repository Manager](../vendor-specific-data-sources-and-connectors/sonatype-nexus/connect-sonatype-nexus-registry)
 
 After you onboard your container registries, Runtime Security ensures that all containers and images are scanned at regular intervals and that you are notified about any deviation from your security policies and best practices.

@@ -1,5 +1,5 @@
 ---
-description: Learn about integration and script components, developing, and testing.
+description: Cortex XSIAM guidance for developing and testing integrations and scripts.
 ---
 
 # Integrations and scripts

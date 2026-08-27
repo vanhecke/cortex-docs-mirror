@@ -1,7 +1,5 @@
 ---
-description: >-
-  Integrate Application Security secrets scanner as pre-commit hooks into your
-  workflows to scan for errors on your machine before local commits.
+description: Use Cortex CLI pre-commit hooks to scan code before commits in Cortex XSIAM.
 ---
 
 # Cortex CLI pre-commit hooks

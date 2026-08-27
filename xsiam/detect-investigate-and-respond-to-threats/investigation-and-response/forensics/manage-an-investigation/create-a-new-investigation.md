@@ -1,3 +1,9 @@
+---
+description: >-
+  Create forensic investigations to organize collections, evidence, alerts, and
+  user access with Cortex XSIAM.
+---
+
 # Create a new investigation
 
 Create a forensics investigation that includes all the relevant forensics data. This includes adding collections (hunts and triages), exporting the data collections, managing alerts and evaluating key assets & artifacts.

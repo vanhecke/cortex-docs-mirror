@@ -1,5 +1,5 @@
 ---
-description: Enable chatting with an Agentic Assistant agent from Slack.
+description: Enable chatting in Cortex XSIAM with an Agentic Assistant agent from Slack.
 ---
 
 # Chat with the Agentic Assistant from Slack

@@ -1,7 +1,5 @@
 ---
-description: >-
-  Install Cortex CLI using a package manager, manual download, or the Cortex
-  Cloud interface.
+description: Install Cortex CLI for security scans in Cortex XSIAM.
 ---
 
 # Installation workflows

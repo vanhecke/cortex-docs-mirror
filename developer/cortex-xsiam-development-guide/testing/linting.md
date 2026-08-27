@@ -1,7 +1,5 @@
 ---
-description: >-
-  Run linters to catch common programming errors, stylistic errors, and possible
-  security issues
+description: Cortex XSIAM guidance for linting content and finding code issues.
 ---
 
 # Linting
@@ -11,7 +9,7 @@ As part of the build process, we run linters to catch common programming errors,
 All linters are run via the [pre-commit](https://app.gitbook.com/s/nozw5MT5S8KZD2eF8roV/demisto-sdk-guide/demisto-sdk-commands/pre-commit) command.
 
 {% hint style="info" %}
-### Note
+**Note**
 
 This script is also used to run pytest. See: [Unit Testing](unit-testing)
 {% endhint %}
@@ -56,7 +54,7 @@ merge-pytest-reports.....................................................Passed
 coverage-pytest-analyze..................................................Passed
 ```
 
-**Flake8**
+### Flake8
 
 [Flake8](https://flake8.pycqa.org/en/latest/) is a basic linter. It can be run without having all the dependencies available and will catch common errors. We also use this linter to enforce the standard python pep8 formatting style. On rare occasions you may encounter a need to disable an error/warning returned from this linter. To disable, add an inline comment on the line where you want to disable the error:
 
@@ -72,7 +70,7 @@ example = lambda: 'example'  # noqa: E731
 
 When adding an inline comment always also include the error code you are disabling for. If there are other errors on the same line they will be reported. For more information, see [In-line Ignoring Errors](https://flake8.pycqa.org/en/latest/user/violations.html#in-line-ignoring-errors).
 
-**Pylint**
+### Pylint
 
 [Pylint](https://pypi.org/project/pylint/) is similar to flake8 but is able to catch additional errors. We run this linter with error reporting only. It requires access to dependent modules and thus we run it within a Docker image similar with all dependencies (similar to how we run pytest unit tests). On rare occasions you may encounter a need to disable an error/warning returned from this linter. Disable by adding an inline comment on the line where you want to disable the error:
 
@@ -100,7 +98,7 @@ else:
 ```
 
 {% hint style="info" %}
-### Note
+**Note**
 
 Pylint can take both the error name and error code when doing inline comment disables. We recommend using the name, which is clearer to understand.
 {% endhint %}
@@ -117,7 +115,7 @@ ignored-classes=<Class Name List>
 
 For an example of ignored-classes, see [here](https://github.com/demisto/content/blob/fe2bd5cddc6e521e08ef65fcd456a4214f8c4d93/Integrations/Gmail/.pylintrc).
 
-**mypy**
+### mypy
 
 [mypy](https://mypy-lang.org/) uses type annotations to check code for common errors. It contains type information for many popular libraries (via typeshed project). Additionally, it allows you to define type annotations for your own functions and data structures. Type annotations are fully supported as a language feature in Python 3.6 and above. In earlier versions, type annotations are provided via the use of comments.
 
@@ -136,7 +134,7 @@ a = b  # type: ignore[assignment]
 ```
 
 {% hint style="info" %}
-### Note
+**Note**
 
 Mypy introduced the ignore\[\<error-name>] syntax in version 0.730. See [Error code docs](https://mypy.readthedocs.io/en/latest/error_codes.html). You might also see in the code ignores such as `type: ignore` without the `error-name`. This is usually from older code written before the support for `error-name` ignores. We do not recommend using this ignore style as it ignores all errors and increases the risk of ignoring unexpected serious errors.
 {% endhint %}
@@ -154,20 +152,20 @@ my_list: list[str] = []
 ```
 
 {% hint style="info" %}
-### Note
+**Note**
 
 When using type besides `list`, `dict`, `str`, `int`, `tuple`, you need to import the type from the `typing` module.
 {% endhint %}
 
 Read more about [mypy](https://mypy.readthedocs.io/en/latest/index.html).
 
-**Bandit**
+### Bandit
 
 [Bandit](https://github.com/PyCQA/bandit) is a tool designed to find common security issues in Python code.
 
 We run bandit with a confidence level of HIGH. In the rare case that it reports a false positive, you can exclude the code by adding a comment: `# nosec`. For more information, see: [https://github.com/PyCQA/bandit#exclusions](https://github.com/PyCQA/bandit#exclusions).
 
-**XSOAR linter**
+### XSOAR linter
 
 This is a custom linter, based on pylint, whose main purpose is to catch errors regarding Cortex XSIAM code standards. The linter is activated using the pylint load plugins ability. We run this linter only with custom Cortex XSIAM error and warning messages (all other messages are disabled). On rare occasions, you may encounter a scenario in which you need to disable an error or warning message from being returned by the XSOAR linter. To do this add an inline comment, as shown below, on the line where you want to disable the error:
 
@@ -193,7 +191,7 @@ else:
 ```
 
 {% hint style="info" %}
-### Note
+**Note**
 
 Pylint can take both the error name and error code when using an inline comment disable message. We recommend using the error name instead of the error code, as it is easier to understand.
 {% endhint %}

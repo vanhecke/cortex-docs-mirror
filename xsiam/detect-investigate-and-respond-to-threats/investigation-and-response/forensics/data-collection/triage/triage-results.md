@@ -1,3 +1,7 @@
+---
+description: Review Cortex XSIAM triage alerts, artifacts, and endpoint forensic timelines.
+---
+
 # Triage results
 
 The Triage collection results page provides an overview of the different types of triage collections initiated on an endpoint.

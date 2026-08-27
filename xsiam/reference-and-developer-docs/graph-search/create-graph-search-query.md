@@ -1,5 +1,7 @@
 ---
-description: Learn how to create Graph Search queries in Cortex XSIAM.
+description: >-
+  Create Graph Search queries to investigate assets and findings in Cortex
+  XSIAM.
 ---
 
 # Create Graph Search query

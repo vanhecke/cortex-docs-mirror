@@ -8,13 +8,13 @@ description: >-
 
 You can integrate with [third-party credential vaults](https://app.gitbook.com/s/AEIjuYE3RXcIfmuQnBbm/) for Cortex XSIAM to use when authenticating with integrations. This topic provides an example of a vault integration.
 
-**Requirements**
+### Credential vault integration requirements
 
 To fetch credentials to the Cortex XSIAM credentials store, the vault integration needs to retrieve credential objects in the format of a username and password `(key:value)`.
 
-**Implementation**
+### Implement credential fetching
 
-**`isFetchCredentials` Parameter**
+#### Configure the `isFetchCredentials` parameter
 
 For this example we look at the **HashiCorp Vault** integration. The integration contains a Boolean parameter called `isFetchCredentials`. When this parameter is set to `true`, Cortex XSIAM fetches credentials from the vault integration.
 
@@ -24,7 +24,7 @@ When you configure an instance of this integration, the parameter appears:
 
 ![](https://4088726609-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FurXrv6qkJRLbdhMdvPIU%2Fuploads%2Fgit-blob-8970387f62521b2146a3d69065a0563b1fc4e886%2F08e2f962890f957e33f8abdcccc2a93b28caa32e2b41543bc0f522ab3c1993cf.png?alt=media)
 
-**`fetch-credentials` command**
+#### Implement the `fetch-credentials` command
 
 When Cortex XSIAM fetches credentials from vault integrations, it calls a command called `fetch-credentials`. This is where you implement the credentials retrieving logic:
 
@@ -68,7 +68,7 @@ demisto.credentials(credentials)
 
 With the `fetch_credentials` command, you can either fetch all credentials or fetch a specific set of credentials.
 
-**Fetch all credentials**
+#### Fetch all vault credentials
 
 To have all relevant credentials from a vault integration visible and usable in other integrations, the `fetch-credentials` command needs to support the logic of pulling multiple credentials. We recommend creating a dedicated parameter in the vault integration which allows the user to specify which credentials should be pulled. For our example, we name this parameter `credential_names`:
 
@@ -87,7 +87,7 @@ You can now see the credentials in the Cortex XSIAM credentials store, found at 
 
 These credentials cannot be edited or deleted, they reflect exactly what's in the vault. You can stop fetching credentials by clearing the **Fetch Credentials** checkbox in the integration settings.
 
-**Fetch a specific set of credentials**
+#### Fetch specific vault credentials
 
 A user might choose to configure another integration using a set of credentials fetched by a vault integration:
 
@@ -108,7 +108,7 @@ demisto.credentials(credentials)
 ```
 
 {% hint style="info" %}
-### Important
+**Important**
 
 When working with a specific credentials name (the identifier key), always return a list containing up to one set of credentials. It is important to catch errors that are part of this flow, and instead of raising them, return an empty list. If no list or a list with more than one element is returned, the credentials tab will fail to load.
 {% endhint %}
@@ -135,7 +135,7 @@ else:
 demisto.credentials(credentials)
 ```
 
-**Troubleshooting**
+### Troubleshoot credential fetching
 
 * If there is an error during the process, you can debug your code by adding a test command that calls the `fetch_credentials` function. Send a credentials list in the right format and as a valid JSON.
 * To save API calls every time a credential is used, Cortex XSIAM uses a short time caching mechanism for fetched credentials. This can cause issues when you are trying to debug fetching a specific set of credentials.

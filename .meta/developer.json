@@ -343,7 +343,7 @@
           "children": []
         },
         {
-          "title": "Alerts",
+          "title": "Issues",
           "path": "cortex-xsiam-development-guide/alerts",
           "type": "document",
           "children": []

@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn more about the Cortex Query Language features to query for raw network
-  and endpoint data.
+  Learn about XQL language features for querying network and endpoint data in
+  Cortex XSIAM.
 ---
 
 # XQL language features

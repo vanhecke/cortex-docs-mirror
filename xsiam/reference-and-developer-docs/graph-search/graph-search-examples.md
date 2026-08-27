@@ -1,5 +1,5 @@
 ---
-description: Learn how to build Graph Search queries by working through a few examples.
+description: Explore Graph Search query examples for investigations in Cortex XSIAM.
 ---
 
 # Graph Search examples

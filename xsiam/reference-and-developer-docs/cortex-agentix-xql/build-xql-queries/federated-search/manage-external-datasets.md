@@ -1,3 +1,7 @@
+---
+description: Manage external datasets used by Federated Search in Cortex XSIAM.
+---
+
 # Manage external datasets
 
 Manage external datasets created for federates searches in **Settings → Configurations → Data Management → Dataset management → External Datasets**.

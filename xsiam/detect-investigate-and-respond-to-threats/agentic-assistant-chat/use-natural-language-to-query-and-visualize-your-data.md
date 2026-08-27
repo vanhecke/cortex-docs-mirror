@@ -1,7 +1,7 @@
 ---
 description: >-
   Prompt Cortex Agentic Assistant agents to create graphs and charts from its
-  findings.
+  findings in Cortex XSIAM.
 ---
 
 # Use natural language to query and visualize your data

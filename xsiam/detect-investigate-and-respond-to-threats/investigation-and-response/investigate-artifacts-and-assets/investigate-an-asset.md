@@ -1,3 +1,7 @@
+---
+description: Investigate the assets associated with an issue in Cortex XSIAM.
+---
+
 # Investigate an asset
 
 Drilldown on an asset on the **Asset View**. On this view you can investigate host assets, view host insights, and see a list of cases related to a host.
@@ -6,7 +10,7 @@ Drilldown on an asset on the **Asset View**. On this view you can investigate ho
 The Asset view is available for hosts with a Cortex XDR agent installed.
 {% endhint %}
 
-### How to investigate an asset
+### How to investigate an asset in Cortex XSIAM
 
 1.  Open the **Asset View**.
 

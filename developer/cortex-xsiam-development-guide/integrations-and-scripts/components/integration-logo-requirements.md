@@ -1,7 +1,5 @@
 ---
-description: >-
-  Requirements for applying a logo to an integration, including size,
-  dimensions, and background.
+description: Cortex XSIAM integration logo requirements for size and background.
 ---
 
 # Integration Logo Requirements

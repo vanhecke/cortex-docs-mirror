@@ -1,3 +1,7 @@
+---
+description: Visualize XQL query results as graphs for faster analysis with Cortex XSIAM.
+---
+
 # Graph query results
 
 To help you better understand your Cortex Query Language (XQL) query results and share your insights with others, Cortex XSIAM enables you to generate graphs and outputs of your query data directly from query results page.

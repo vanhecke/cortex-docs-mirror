@@ -1,8 +1,14 @@
+---
+description: >-
+  Steps for setting up a GitHub Codespaces development environment in Cortex
+  XSIAM.
+---
+
 # Set up a GitHub Codespace environment
 
 This topic provides step-by-step instructions for setting up a personal Codespace for developing Cortex XSIAM content.
 
-**What are GitHub Codespaces?**
+### **What are GitHub Codespaces?**
 
 [GitHub Codespaces](https://github.com/features/codespaces) are cloud-based development environments provided by GitHub that allow you to set up remote environments with preinstalled and preconfigured tools and dependencies using a dev container.
 
@@ -12,7 +18,7 @@ Your Codespace environment is hosted on GitHub's servers (attached to your GitHu
 
 GitHub offers a free quota for Codespaces (which is higher for GitHub Pro users) that you can utilize for developing Cortex XSIAM content.
 
-The quota is calculated based on the number of hours your Codespace is actively running. You can see the free quota plan and options for additional paid usage after you reach your quota, in the [GitHub documentation](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
+The quota is calculated based on the number of hours your Codespace is actively running. You can see the free quota plan and options for additional paid usage after you reach your quot, in the [GitHub documentation](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
 
 You will receive an automated email notification when you have used 75%, 90%, and 100% of your free quota. You can find information about your Codespaces quota usage in the GitHub settings under **Billing and plans**. For more information, see the GitHub article [Viewing your GitHub Codespaces usage](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/viewing-your-github-codespaces-usage).
 
@@ -22,7 +28,7 @@ You will receive an automated email notification when you have used 75%, 90%, an
 Codespaces generated from the content repository (or a fork of it) are configured to have four cores by default.
 {% endhint %}
 
-**Create a new Codespace**
+### **Create a new Codespace**
 
 1. Log in to your GitHub account. If you do not have a GitHub account, you must create one before you can create a Codespace.
 2. Enter the [content repository](https://github.com/demisto/content).
@@ -44,7 +50,7 @@ Codespaces generated from the content repository (or a fork of it) are configure
 
     This may take a few minutes to complete.
 
-**Configure an IDE**
+### **Configure an IDE**
 
 <details>
 

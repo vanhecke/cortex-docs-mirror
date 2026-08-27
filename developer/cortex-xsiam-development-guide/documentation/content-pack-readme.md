@@ -1,8 +1,12 @@
+---
+description: Cortex XSIAM guidance for writing content pack README files.
+---
+
 # Content Pack README
 
 For larger packs that provide at least one end-to-end use case you should create a detailed README file for the pack that is displayed in the **Details** tab of the pack in the Marketplace. The README.md file should be markdown formatted and placed in the **`Packs`** root directory. The file should contain a more detailed overview of the pack compared to the **Description** section. You can add any information you see fit to include about the pack. We recommend providing an overview of what the pack does and how to start working with the pack.
 
-#### README structure
+### Structure a Cortex XSIAM content pack README
 
 If the pack is a beta pack, add the following at the beginning of the pack README file:
 
@@ -20,7 +24,7 @@ Each pack README should contain:
 
 ![xsiam-content-pack-readme.png](https://4088726609-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FurXrv6qkJRLbdhMdvPIU%2Fuploads%2Fgit-blob-2e530aee2efd3d27549e22ece2e0d14bef362f85%2F964fc876542f218bd8961a15a9b2fd7131ab40cb1c77d5042abcc5d9e4c8642b.png?alt=media)
 
-#### Cortex XSIAM pack README structure
+### Use the Cortex XSIAM content pack README template
 
 ```programlisting
 # Product Name
@@ -87,13 +91,13 @@ How the README fie is displayed:
 
 ![](https://4088726609-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FurXrv6qkJRLbdhMdvPIU%2Fuploads%2Fgit-blob-b4aad9c8aef2bf5286b2f1bb6a999fb080fe7717%2Ff96f7d4aee17dc93ba496ef7366232396e46e5a40ba6ff568cd487f0eee84316.png?alt=media)
 
-#### Images and Videos
+### Add images and videos to content pack READMEs
 
-**Images**
+#### Add images to a content pack README
 
 Images can provide a useful addition to the pack README.md to help users get a quick understanding of the pack. Images in a content pack README can be included only as absolute URLs.
 
-**Videos**
+#### Embed YouTube videos in a content pack README
 
 You can add an image placeholder which links to an external video.
 

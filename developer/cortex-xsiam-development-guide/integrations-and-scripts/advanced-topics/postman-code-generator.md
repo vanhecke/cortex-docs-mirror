@@ -1,5 +1,5 @@
 ---
-description: "Use the\_demisto-sdk postman-codegen\_command to generate an integration (YAML file) from a Postman Collection v2.1."
+description: Cortex XSIAM guidance for generating integrations from Postman collections.
 ---
 
 # Postman code generator

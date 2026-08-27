@@ -20,6 +20,8 @@ The AI application ecosystem comprises several critical components that work tog
 
 The model is the core component of the AI ecosystem. It is the trained machine learning model that takes input data, processes it, and produces output. In the context of large language models (LLMs), this involves understanding and generating human-like text based on the given input.
 
+Example
+
 OpenAI GPT-4 model, which can generate coherent and contextually relevant text, answer questions, and perform various other natural language processing tasks.
 
 </details>
@@ -30,7 +32,11 @@ OpenAI GPT-4 model, which can generate coherent and contextually relevant text, 
 
 The model endpoint is the interface through which applications interact with the AI model. It acts as an access point for sending inputs to the model and receiving outputs. The endpoint is responsible for managing requests, routing them to the appropriate model instance, and returning the results to the application.
 
+Example
+
 A Microsoft Azure OpenAI deployment using OpenAI GPT-4, which you can use to integrate natural language processing capabilities into your applications by sending text prompts and receiving generated text in response.
+
+Example
 
 Amazon Web Services (AWS) EC2 instances with GPU acceleration running Llama2 by Meta, which supports an application that communicates with the EC2 instance.
 
@@ -42,6 +48,8 @@ Amazon Web Services (AWS) EC2 instances with GPU acceleration running Llama2 by 
 
 A plugin is an auxiliary but highly capable model or tool that acts as a helper to the primary AI model. Plugins extend the functionality of the main model by providing specialized capabilities, such as accessing inference datasets, performing specific computations, or interfacing with other services. This approach, known as retrieval-augmented generation (RAG), enhances the primary model's ability to generate more accurate and contextually relevant outputs. For more information, see [Inference datasets](#UUID-6e61b890-1b68-9f51-20e6-135d5465d8ee_section-idm234761053923993) and [Retrieval-Augmented Generation](#UUID-6e61b890-1b68-9f51-20e6-135d5465d8ee_section-idm234761105802593).
 
+Example
+
 A weather plugin integrated with an AI chatbot that allows the chatbot to fetch and provide real-time weather updates based on user queries. Another example is a language translation plugin that helps the main model translate text between different languages.
 
 </details>
@@ -52,6 +60,8 @@ A weather plugin integrated with an AI chatbot that allows the chatbot to fetch 
 
 Training is a fundamental stage in the AI development process where the model learns to perform its tasks by processing large amounts of data. During this phase, the model is exposed to various examples and adjusts its internal parameters to minimize errors in predictions or classifications. The dataset is an integral part of the process, with the insights learned by the model influenced by the training data.
 
+Example
+
 Training a model like GPT-4 involves using vast text corpora from various sources to help the model understand language patterns, context, and nuances, enabling it to generate coherent and contextually relevant text.
 
 </details>
@@ -61,6 +71,8 @@ Training a model like GPT-4 involves using vast text corpora from various source
 <summary>Inference datasets</summary>
 
 Inference datasets are specialized collections of data used during the inference phase of AI models, which is the stage where the model makes predictions or generates outputs based on new input data. Unlike training datasets, which are used to teach the model how to understand and process information, inference datasets help improve the model's performance by providing realistic, real-world data inputs for better contextual answering.
+
+Example
 
 When building a chatbot for customers to learn more about their spending habits, financial institutions use customer transactions as inference data to provide contextually accurate answers.
 

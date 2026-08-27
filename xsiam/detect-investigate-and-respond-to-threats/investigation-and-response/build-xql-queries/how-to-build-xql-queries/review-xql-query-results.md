@@ -1,3 +1,7 @@
+---
+description: Review and analyze XQL query results in the Cortex XSIAM Query Builder.
+---
+
 # Review XQL query results
 
 Review the following topics:
@@ -13,7 +17,7 @@ The results of a Cortex Query Language (XQL) query are displayed in the **Query 
 It's also possible to graph the results displayed. For more information, see [Graph query results](graph-query-results).
 {% endhint %}
 
-**Real-time query results**
+### **Real-time query results**
 
 Cortex XSIAM displays partial results for queries run in the Query Builder as they are received, subject to the limitations below. In a long-running query, viewing the initial findings enables you to refine, validate, or stop the query.
 

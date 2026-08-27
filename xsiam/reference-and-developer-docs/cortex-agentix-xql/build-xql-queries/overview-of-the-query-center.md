@@ -1,7 +1,5 @@
 ---
-description: >-
-  View information about the In Progress and Completed queries that that were
-  run on the tenant.
+description: View in-progress and completed queries in Query Center in Cortex XSIAM.
 ---
 
 # Overview of the Query Center

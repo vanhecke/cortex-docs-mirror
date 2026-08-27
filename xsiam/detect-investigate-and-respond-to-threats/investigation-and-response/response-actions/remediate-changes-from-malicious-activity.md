@@ -1,3 +1,7 @@
+---
+description: Use Cortex XSIAM to remediate endpoint changes caused by malicious activity.
+---
+
 # Remediate changes from malicious activity
 
 When investigating cases and causality chains you might need to restore and revert changes made to your endpoints as result of a malicious activity. To avoid manually searching for the affected files and registry keys on your endpoints, you can request remediation suggestions.
@@ -10,7 +14,7 @@ To initiate remediation suggestions, you must have the following system requirem
 * Agent version 7.2 or above on Windows endpoints.
 {% endhint %}
 
-### How to initiate remediation suggestions
+### How to initiate remediation suggestions in Cortex XSIAM
 
 1.  You can initiate a remediation suggestions analysis from the following places:
 
@@ -19,14 +23,14 @@ To initiate remediation suggestions, you must have the following system requirem
         <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>Endpoints that are part of the <strong>Case</strong> view and do not meet the required criteria are excluded from the remediation analysis.</p></div>
     * In the **Causality View**:
       * Right-click any process node involved in the causality chain and select **Remediation Suggestion**.
-      * Select Actions → **Remediation Suggestions**.
+      * Select **Actions →** **Remediation Suggestions**.
 
     Analysis can take a few minutes. You can minimize the analysis pop-up if desired while navigating to other pages.
 2. Review the remediation suggestion summary and details.
 3. Select one or more rows, right-click and select **Remediate**.
 4.  Track your remediation process.
 
-    Go to **Investigation & Response+Response → Action Center →** **All Actions** and locate your remediation process in the **Action Type** field. Right-click **Additional data** to open the **Detailed Results** window.
+    Go to **Investigation & Response → Response → Action Center →** **All Actions** and locate your remediation process in the **Action Type** field. Right-click **Additional data** to open the **Detailed Results** window.
 
 <details>
 

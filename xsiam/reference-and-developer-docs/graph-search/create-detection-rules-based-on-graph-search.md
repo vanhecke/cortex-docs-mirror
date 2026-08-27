@@ -1,3 +1,7 @@
+---
+description: Create detection rules from Graph Search queries in Cortex XSIAM.
+---
+
 # Create detection rules based on graph search
 
 {% hint style="success" %}

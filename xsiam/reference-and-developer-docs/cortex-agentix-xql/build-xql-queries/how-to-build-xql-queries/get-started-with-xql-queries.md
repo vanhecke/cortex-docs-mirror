@@ -1,3 +1,7 @@
+---
+description: Get started with building XQL queries in Cortex XSIAM.
+---
+
 # Get started with XQL queries
 
 Before you begin running XQL queries, consider the following information:

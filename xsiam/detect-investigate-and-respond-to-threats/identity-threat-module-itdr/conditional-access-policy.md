@@ -101,7 +101,7 @@ Define a new rule to control access based on contextual conditions. Your entire 
 8. Review the rule summary generated from the selected conditions. You can go back and edit rule details.
 9. Click **Create**.
 
-The new Conditional Access Policy rule appears in the rule list on the **Conditional Access Policy** page.&#x20;
+The new Conditional Access Policy rule appears in the rule list on the **Conditional Access Policy** page.
 
 Adjust the rule priority to control the evaluation order relative to other rules and click **Save**.\
 If you activate the rule, the system begins evaluating authentication attempts against the rule conditions immediately.\

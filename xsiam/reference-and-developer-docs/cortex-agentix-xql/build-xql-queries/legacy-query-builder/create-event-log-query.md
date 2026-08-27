@@ -1,3 +1,7 @@
+---
+description: Create legacy event log queries in Cortex XSIAM.
+---
+
 # Create event log query
 
 From the **Query Builder** you can search Windows and Linux event log attributes and investigate event logs across endpoints with a Cortex XDR agent installed.

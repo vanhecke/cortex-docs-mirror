@@ -1,5 +1,5 @@
 ---
-description: Development environments and tools to help develop various content items.
+description: Cortex XSIAM development environments and tools for content authors.
 ---
 
 # Content development environments

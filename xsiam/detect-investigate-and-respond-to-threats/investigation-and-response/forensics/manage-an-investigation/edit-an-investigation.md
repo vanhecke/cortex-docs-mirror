@@ -1,3 +1,9 @@
+---
+description: >-
+  Update a Cortex XSIAM forensic investigation's name, description, and user
+  permissions.
+---
+
 # Edit an investigation
 
 From the list of active investigations, you can edit the name, description or update the user permissions for the investigation.

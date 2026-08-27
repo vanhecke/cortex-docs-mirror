@@ -1,3 +1,7 @@
+---
+description: Review assets and findings supported by Graph Search in Cortex XSIAM.
+---
+
 # Supported assets and findings
 
 {% hint style="info" %}

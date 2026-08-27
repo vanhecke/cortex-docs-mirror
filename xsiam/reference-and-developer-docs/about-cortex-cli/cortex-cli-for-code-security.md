@@ -1,3 +1,7 @@
+---
+description: Use Cortex CLI to scan application code and repositories in Cortex XSIAM.
+---
+
 # Cortex CLI for Code Security
 
 Cortex CLI for Code Security scans allow developers and security teams to integrate security checks directly into their application development workflows.

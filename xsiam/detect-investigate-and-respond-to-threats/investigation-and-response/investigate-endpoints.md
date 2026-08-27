@@ -1,7 +1,9 @@
 ---
-description: You can investigate and take actions on your endpoints in the Action Center.
+description: >-
+  Investigate and take actions on your endpoints in the Cortex XSIAM Action
+  Center.
 ---
 
 # Investigate endpoints
 
-You can investigate and take actions on your endpoints in the **Action Center**.
+In Cortex XSIAM you can investigate and take actions on your endpoints in the **Action Center**.

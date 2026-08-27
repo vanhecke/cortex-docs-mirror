@@ -1,7 +1,5 @@
 ---
-description: >-
-  The context map stores results from integration commands and scripts and is
-  used to pass data between playbook tasks.
+description: Cortex XSIAM context maps and outputs for integrations and playbooks.
 ---
 
 # Context and outputs
@@ -12,9 +10,11 @@ The main use of the context is to pass data between playbook tasks. One task sto
 
 For example, the **ThreatStream** integration includes the `threatstream-analysis-report` command, which returns the report of a file or URL that was submitted to the sandbox.
 
+### Cortex XSIAM integration context and outputs
+
 <details>
 
-<summary>Response from the Rest API</summary>
+<summary>REST API response example</summary>
 
 ```programlisting
 {
@@ -47,7 +47,7 @@ For example, the **ThreatStream** integration includes the `threatstream-analysi
 
 <details>
 
-<summary>Integration YAML</summary>
+<summary>Integration YAML command outputs</summary>
 
 In the integration YAML file, the command outputs are defined `BrandName.Object.PropertyName`.
 
@@ -57,7 +57,7 @@ For each output entry, there are three fields:
 * Description - Short description of what this context entry represents.
 * Type - The type of value that is located at the path. Enables Cortex XSIAM to format the data correctly.
 
-**Outputs**
+#### YAML output definitions
 
 ```programlisting
 outputs:
@@ -87,7 +87,7 @@ outputs:
   type: String
 ```
 
-**In the code**
+#### Return command outputs in code
 
 ```programlisting
 report_id = '413336'
@@ -126,26 +126,26 @@ return_results(command_result)
 ```
 
 {% hint style="info" %}
-### Note
+**Note**
 
 * The code must match the context path outputs specified in the YAML file.
-* You can output the API response as is to the context as a raw value, under the brand name key. You do not need to modify the API response and map it to human-readable keys.&#x20;
+* You can output the API response as is to the context as a raw value, under the brand name key. You do not need to modify the API response and map it to human-readable keys.
 * Avoid using dot and space characters in the context path keys.
 {% endhint %}
 
 </details>
 
-**Context Use Cases**
+### Integration context output use cases
 
 {% hint style="info" %}
-### Important
+**Important**
 
 When setting `integration_name` with the vendor value, it must match the name of the integration as defined in the YAML file.
 {% endhint %}
 
 <details>
 
-<summary>Return data (common case)</summary>
+<summary>Return integration command data</summary>
 
 ```programlisting
 alerts = [
@@ -171,7 +171,7 @@ return_results(results)
 
 <details>
 
-<summary>YAML definition</summary>
+<summary>YAML output definition</summary>
 
 ```programlisting
 outputs:
@@ -187,7 +187,7 @@ outputs:
 
 <details>
 
-<summary>Markdown</summary>
+<summary>Markdown command output</summary>
 
 Results
 
@@ -200,7 +200,7 @@ Results
 
 <details>
 
-<summary>Context data - as stored in the incident context data</summary>
+<summary>Incident context data</summary>
 
 ```programlisting
 {
@@ -223,7 +223,7 @@ Results
 
 <details>
 
-<summary>Return results with custom markdown</summary>
+<summary>Return results with custom Markdown</summary>
 
 ```programlisting
 alerts = [
@@ -253,7 +253,7 @@ return_results(results)
 
 <details>
 
-<summary>Markdown results</summary>
+<summary>Custom Markdown results</summary>
 
 This it the Header
 
@@ -268,10 +268,10 @@ Table Title
 
 <details>
 
-<summary>Return data that has multiple unique identifier fields</summary>
+<summary>Return data with multiple unique identifier fields</summary>
 
 {% hint style="info" %}
-### Note
+**Note**
 
 Key fields are used to determine whether the data is [updated or added as new](#UUID-9188567d-fe91-d5af-35ef-a049afb484a0_para-idm133368125374762).
 {% endhint %}
@@ -300,10 +300,10 @@ return_results(results)
 
 <details>
 
-<summary>Return file</summary>
+<summary>Return a potentially malicious file</summary>
 
 {% hint style="info" %}
-### Note
+**Note**
 
 Potentially malicious file - e.g. email attachment
 {% endhint %}
@@ -353,10 +353,10 @@ outputs:
 
 <details>
 
-<summary>Return info file</summary>
+<summary>Return an informational file</summary>
 
 {% hint style="info" %}
-### Note
+**Note**
 
 Non-malicious files - e.g. reports
 {% endhint %}
@@ -391,7 +391,7 @@ outputs:
 
 <details>
 
-<summary>Return IP reputation</summary>
+<summary>Return IP reputation results</summary>
 
 For an integration usage example of how the code implements the indicator reputation command, see [AutofocusV2](https://github.com/demisto/content/blob/master/Packs/AutoFocus/Integrations/AutofocusV2/AutofocusV2.py#L1381) integration.
 
@@ -511,7 +511,7 @@ Results
 
 <details>
 
-<summary>Return domain reputation</summary>
+<summary>Return domain reputation results</summary>
 
 For an integration usage example of how the code implements the indicator reputation command, see [AutofocusV2](https://github.com/demisto/content/blob/master/Packs/AutoFocus/Integrations/AutofocusV2/AutofocusV2.py#L1381) integration.
 
@@ -789,7 +789,7 @@ Context data - as stored in the incident context data:
 
 <details>
 
-<summary>Return URL reputation</summary>
+<summary>Return URL reputation results</summary>
 
 For an integration usage example of how the code implements the indicator reputation command, see [AutofocusV2](https://github.com/demisto/content/blob/master/Packs/AutoFocus/Integrations/AutofocusV2/AutofocusV2.py#L1381) integration.
 
@@ -913,7 +913,7 @@ Context data - as stored in the incident context data:
 
 <details>
 
-<summary>Return file/hash reputation</summary>
+<summary>Return file hash reputation results</summary>
 
 For an integration usage example of how the code implements the indicator reputation command, see [AutoFocus v2](https://github.com/demisto/content/blob/master/Packs/AutoFocus/Integrations/AutofocusV2/AutofocusV2.py#L1381) integration or [Crowd Strike Malquery](https://github.com/demisto/content/blob/master/Packs/CrowdStrikeMalquery/Integrations/CrowdStrikeMalquery/CrowdStrikeMalquery.py#L292).
 
@@ -1075,7 +1075,7 @@ Context data - as stored in the incident context data:
 
 <details>
 
-<summary>Return CVE reputation</summary>
+<summary>Return CVE reputation results</summary>
 
 For an integration usage example of how the code implements the indicator reputation command, see [CVE Search v2](https://github.com/demisto/content/blob/master/Packs/CVESearch/Integrations/CVESearchV2/CVESearchV2.py#L136).
 
@@ -1170,7 +1170,7 @@ Context data - as stored in the incident context data:
 
 <details>
 
-<summary>Return custom indicators</summary>
+<summary>Return custom indicator results</summary>
 
 For more information, see [CustomIndicatorDemo](https://xsoar.pan.dev/docs/reference/integrations/custom-indicator-demo#this-integration-is-part-of-the-developer-tools-pack). For a usage example of the `CustomIndicator` helper class, see [CustomIndicatorDemo;](https://github.com/demisto/content/blob/2ae363a31f9ead0fce09d3c8b36bc02b7b21d89c/Packs/DeveloperTools/Integrations/CustomIndicatorDemo/CustomIndicatorDemo.py#L60).
 
@@ -1265,7 +1265,7 @@ YAML definition
 
 <details>
 
-<summary>Return multiple indicators</summary>
+<summary>Return multiple indicator results</summary>
 
 For an integration usage example of how the code implements the indicator reputation command, see [MispV3](https://github.com/demisto/content/blob/b5342c522d44aec8f31f4ee0fc8ad269ac970903/Packs/MISP/Integrations/MISPV3/MISPV3.py#L578). In case you need to return multiple indicators (i.e. IPs) in the same call, you should return a list of `CommandResults`, as shown in the following example.
 

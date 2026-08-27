@@ -1,7 +1,5 @@
 ---
-description: >-
-  Store objects in the database per integration instance using the
-  integrationContext command to store data between integration command runs.
+description: Cortex XSIAM integration cache storage between command runs.
 ---
 
 # Integration cache
@@ -11,21 +9,21 @@ In some cases, you might need to store data between integration command runs. A 
 To store objects in the database per integration instance, Cortex XSIAM uses the cached object `integrationContext`.
 
 {% hint style="info" %}
-### Note
+**Note**
 
 The `integrationContext` object cannot be retrieved or set in the `test-module` command.
 {% endhint %}
 
-**Implementation**
+### Implement integration caching
 
 The `integrationContext` supports two methods, `getter` and `setter`. Both methods are provided by the demisto class that have wrappers in the `CommonServerPython` script. If no object is stored, the method returns an empty dictionary.
 
 * The `get_integration_context()` method is the getter of the cached object, which returns a key-value dictionary.
 * The `set_integration_context()` method is the setter of the cached object. This method takes as argument the object to store. Its keys and values must be strings. Note that this method overrides the existing object which is stored. In order to update a stored object, get it, make the requested changes, and then set it.
 
-**Examples**
+### Integration cache examples
 
-**General Usage**
+#### General integration cache usage
 
 ```programlisting
 integration_context: Dict = get_integration_context()
@@ -43,7 +41,7 @@ demisto.results(integration_context['token'])
 >>> "NEW-TOKEN"
 ```
 
-**Storing token with expiration time**
+#### Cache an access token with expiration
 
 ```programlisting
 integration_context = get_integration_context()

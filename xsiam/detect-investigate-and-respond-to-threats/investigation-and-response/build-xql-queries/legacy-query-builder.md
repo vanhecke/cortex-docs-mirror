@@ -1,5 +1,5 @@
 ---
-description: Learn more about the entities in the Legacy Query Builder.
+description: Use the Cortex XSIAM Legacy Query Builder to query security data entities.
 ---
 
 # Legacy Query Builder

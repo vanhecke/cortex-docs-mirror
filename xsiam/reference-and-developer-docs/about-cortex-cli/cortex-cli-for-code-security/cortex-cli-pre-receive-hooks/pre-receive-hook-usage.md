@@ -1,3 +1,7 @@
+---
+description: Run Cortex CLI pre-receive hooks for code security checks in Cortex XSIAM.
+---
+
 # Pre-receive hook usage
 
 The hook executes a script on every git push.

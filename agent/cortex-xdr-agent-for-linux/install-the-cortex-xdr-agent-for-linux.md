@@ -161,8 +161,6 @@ To install a Cortex XDR agent:
     5. Verify the key was loaded by running the command **`mokutil --list-enrolled`** and locating the key with the `Palo Alto Networks` issuer.
 6. See the [Use the Cortex XDR agent for Linux](use-the-cortex-xdr-agent-for-linux) section for a list of available options and functions. Enter the **`cytool`** command without any arguments or with **`-h`** or **`--help`** for a full list of available functions.
 
-
-
 ### Cortex XDR Public key
 
 {% file src="https://517755450-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FuBmMrMEHkk0xAv8axZos%2Fuploads%2FrBgwHcfe1UKQ8LLUxqbG%2Fcortex-xdr-agent-public-key.zip?alt=media&token=8a9fd5db-492d-4a15-a862-92dba55f0462" %}

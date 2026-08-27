@@ -1,3 +1,7 @@
+---
+description: Edit and run XQL queries from Query Center in Cortex XSIAM.
+---
+
 # Edit and run queries in Query Center
 
 From the **Query Center** you can take action on the **Completed** and **In Progress** queries that are running on your tenant.

@@ -1,3 +1,7 @@
+---
+description: Review Cortex XSIAM Action Center fields, statuses, and action details.
+---
+
 # Action Center reference information
 
 The following table describes both the default and additional optional fields that you can view from the **All Actions** tab of the **Action Center** and lists the fields in alphabetical order.

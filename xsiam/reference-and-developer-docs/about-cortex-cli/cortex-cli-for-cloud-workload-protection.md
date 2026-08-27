@@ -1,3 +1,7 @@
+---
+description: Use Cortex CLI for Cloud Workload Protection scans in Cortex XSIAM.
+---
+
 # Cortex CLI for Cloud Workload Protection
 
 Integrate Cloud Workload Protection (CWP) scans for secrets, vulnerabilities and malware during your continuous integration (CI) process. By leveraging Software Bill of Materials (SBOM) analysis, you can identify and remediate vulnerabilities before images are pushed to the registry, shifting security left and reducing risk in your cloud environments.

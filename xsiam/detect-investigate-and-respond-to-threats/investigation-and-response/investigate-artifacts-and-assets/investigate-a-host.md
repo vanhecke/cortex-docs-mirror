@@ -1,3 +1,7 @@
+---
+description: Investigate host activity, risk scores, and related issues in Cortex XSIAM.
+---
+
 # Investigate a host
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: Create self-service API keys for Cortex CLI scans in Cortex XSIAM.
+---
+
 # Self-service API keys for CLI scans
 
 This self-service model uses a Primary API key as its master credential. It lets developers programmatically generate task-specific CLI and IDE keys through the Public API. Developers can provision restricted-access keys, such as `read-only` keys for local scans, without administrative UI permissions. This keeps each scan within the principle of least privilege.

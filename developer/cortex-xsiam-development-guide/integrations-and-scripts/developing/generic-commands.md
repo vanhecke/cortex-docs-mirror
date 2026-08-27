@@ -1,7 +1,5 @@
 ---
-description: >-
-  Commands generalized across similar integrations to enable combining data from
-  various sources or running integrations in parallel.
+description: Cortex XSIAM generic commands for consistent integration workflows.
 ---
 
 # Generic commands
@@ -12,7 +10,7 @@ For example, reputation commands such as `!file` can gather reputation from mult
 
 These commands can be used on all integrations or with the `using` parameter on specific integration instances.
 
-**Generic reputation commands**
+### Cortex XSIAM generic reputation commands
 
 Cortex XSIAM supports many integrations with reputation providers, for example, VirusTotal, AlienVault OTX, and MISP. Every integration that returns a reputation about an indicator must implement the generic reputation commands and calculate a [DBot Score](reputation-and-dbot-score).
 
@@ -24,7 +22,7 @@ The following are available generic reputation commands.
 
 <details>
 
-<summary>file</summary>
+<summary>File reputation command</summary>
 
 Runs reputation on files.
 
@@ -41,7 +39,7 @@ Runs reputation on files.
 
 <details>
 
-<summary>ip</summary>
+<summary>IP reputation command</summary>
 
 Runs reputation on IPs.
 
@@ -58,7 +56,7 @@ Runs reputation on IPs.
 
 <details>
 
-<summary>url</summary>
+<summary>URL reputation command</summary>
 
 Runs reputation on URLs.
 
@@ -75,7 +73,7 @@ Runs reputation on URLs.
 
 <details>
 
-<summary>domain</summary>
+<summary>Domain reputation command</summary>
 
 Runs reputation on domains.
 
@@ -92,7 +90,7 @@ Runs reputation on domains.
 
 <details>
 
-<summary>email</summary>
+<summary>Email reputation command</summary>
 
 Runs reputation on emails.
 
@@ -109,7 +107,7 @@ Runs reputation on emails.
 
 <details>
 
-<summary>cve</summary>
+<summary>CVE reputation command</summary>
 
 Runs reputation on CVEs.
 
@@ -124,13 +122,13 @@ Runs reputation on CVEs.
 
 </details>
 
-**Generic endpoint command**
+### Cortex XSIAM generic endpoint command
 
 Cortex XSIAM supports many integrations with endpoint providers, for example, GuardiCoreV2.
 
 The following is the generic endpoint command.
 
-**endpoint**
+#### Endpoint command
 
 Returns information about an endpoint.
 

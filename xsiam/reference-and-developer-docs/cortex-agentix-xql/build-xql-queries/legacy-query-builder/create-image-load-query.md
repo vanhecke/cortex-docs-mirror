@@ -1,3 +1,7 @@
+---
+description: Create legacy image load queries in Cortex XSIAM.
+---
+
 # Create image load query
 
 From the Query Builder, you can investigate connections between image load activity, acting processes, and endpoints.

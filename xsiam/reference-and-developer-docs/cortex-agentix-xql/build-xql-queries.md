@@ -1,7 +1,5 @@
 ---
-description: >-
-  Learn more about how to build Cortex Query Language (XQL) queries using the
-  Query Builder.
+description: Build XQL queries with Query Builder in Cortex XSIAM.
 ---
 
 # Build XQL queries

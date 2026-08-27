@@ -50,7 +50,7 @@ How to activate Cortex XSIAM
        Cortex XSIAM enables you to select the method used to encrypt your tenant data at rest. You can select the encryption method of your tenant only when creating new tenants. Select the encryption method in Advanced → Encryption Method.
 
        * **Default encryption (recommended):** All data stored by Cortex XSIAM is encrypted at rest using a dedicated key management system. Cortex XSIAM provides strict key access controls and auditing, and encrypts user data at rest according to AES-256 encryption standards. We recommend all our customers use this default system.
-       * **BYOK (Bring your own keys):** BYOK (Bring Your Own Keys) enables you to generate your own encryption keys and securely import and manage them via Cortex Gateway to retain greater control over your tenant data and encryption.&#x20;
+       * **BYOK (Bring your own keys):** BYOK (Bring Your Own Keys) enables you to generate your own encryption keys and securely import and manage them via Cortex Gateway to retain greater control over your tenant data and encryption.
 6. Select I agree to the terms and conditions of the Privacy Policy.
 7.  Click Activate.
 

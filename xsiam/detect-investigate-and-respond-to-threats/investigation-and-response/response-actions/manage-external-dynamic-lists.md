@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage external dynamic lists to share indicators with network security
+  products with Cortex XSIAM.
+---
+
 # Manage external dynamic lists
 
 An External Dynamic List (EDL) is a hosted text file. In Cortex XSIAM, you can configure an EDL to share a list of Cortex XSIAM indicators with other products in your network, such as a firewall. For example, your Palo Alto Networks firewall can add IP addresses and domain data from the EDL to block or allow lists.

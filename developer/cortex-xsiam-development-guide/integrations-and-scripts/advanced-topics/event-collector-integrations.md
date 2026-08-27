@@ -8,7 +8,7 @@ description: >-
 
 Event collector integrations enable fetching events and logs from external products, for example from OKTA and [Jira](https://github.com/demisto/content/tree/master/Packs/Jira/Integrations/JiraEventCollector). They are developed the same as other integrations, with a few extra configuration parameters and APIs.
 
-### Create an event collector integration
+### Create a Cortex XSIAM event collector integration
 
 To create an event collector integration use the `demisto-sdk init --xsiam` command. This creates a new content pack with all necessary Cortex XSIAM content items. The event collector integration can be found at `Packs/Integrations/${VENDOR_NAME}EventCollector`.
 
@@ -16,7 +16,7 @@ To create an event collector integration use the `demisto-sdk init --xsiam` comm
 
 Event collector integration names (`id`, `name`, and `display` fields) should end with `EventCollector` so users can easily understand what the integration is used for.
 
-### Required keys
+### Required event collector YAML keys
 
 Use the `demisto-sdk init --xsiam` command to automatically generate the necessary integration YAML configuration keys for an event collector. If you create the YAML manually, verify the following keys are set:
 
@@ -24,7 +24,7 @@ Use the `demisto-sdk init --xsiam` command to automatically generate the necessa
 * Must have the `fromversion: 6.8.0` field.
 * The `marketplaces` key set with the `-marketplacev2` value. This ensures that the event collector is only available for installation on Cortex XSIAM.
 
-Example
+#### Event collector YAML example
 
 ```programlisting
 script:
@@ -34,7 +34,7 @@ marketplaces:
 - marketplacev2
 ```
 
-### Collect section parameters
+### Configure Collect section parameters
 
 For event collector integration instance settings, the event collector related parameters should be organized in one section by adding the `Collect` key to each relevant parameter in the integration YAML file:
 
@@ -71,7 +71,7 @@ In the integration instance modal, it looks like this:
 
 ![](https://4088726609-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FurXrv6qkJRLbdhMdvPIU%2Fuploads%2Fgit-blob-0677e25bcc350ea40bcd7ad712e34e45860fd81d%2F7eaa7da2d6e33d3e04199a5227e56fe17c31ba7cb1af7fe02557558495070095.png?alt=media)
 
-### Commands
+### Event collector integration commands
 
 Every event collector integration supports at least three commands:
 
@@ -83,7 +83,7 @@ Every event collector integration supports at least three commands:
 
     In the `Packs/Integrations/${VENDOR_NAME}EventCollector/${VENDOR_NAME}EventCollector.yml` file under the `script.commands` path, the SDK by default provides a `hello-world-get-events` command. This command is used primarily for debugging to retrieve the events that the `fetch-events` command would run. It includes an optional argument, `should_push_events` , that has the same functionality as `fetch-events` when set to `true`.
 
-### API command `send_events_to_xsiam`
+### Send events with `send_events_to_xsiam`
 
 Call the `send_events_to_xsiam()` function from `CommonServerPython` when the `fetch-events` command is executed.
 
@@ -124,7 +124,7 @@ def main():
 ```
 
 {% hint style="info" %}
-### Important
+**Important**
 
 * The `send_events_to_xsiam()` function should only be used with a system integration. For custom data ingestion needs, use the [HTTP Log Collector](https://docs-cortex.paloaltonetworks.com/r/Cortex-XSIAM/Cortex-XSIAM-3.x-Documentation/Set-up-an-HTTP-log-collector-to-receive-logs) or contact support to request an official integration.
 * Always pass events to the `send_events_to_xsiam()` function, even if no events were fetched, because the `send_events_to_xsiam()` function also updates the UI for the number of events fetched, which could also be 0. Empty data will not be sent to the database.
@@ -133,7 +133,7 @@ def main():
 
 For more info on the `send_events_to_xsiam()` function, see the [API reference](https://xsoar.pan.dev/docs/reference/api/common-server-python#send_events_to_xsiam).
 
-### Events with multiple types
+### Send event data with multiple types
 
 If within `fetch-events` different API endpoints are called, then events may consist of multiple types with different structures. In this case, call `send_events_to_xsiam()` with an aggregated list of events from both endpoints. For example, for `detections: List[Dict[str, Any]]` and `audits: List[Dict[str, Any]]`, send them as:
 
@@ -144,13 +144,13 @@ send_events_to_xsiam(events=audits + detections, vendor='MyVendor', product='MyP
 
 For more details, see [https://xsoar.pan.dev/docs/reference/api/common-server-python#send\_events\_to\_xsiam](https://xsoar.pan.dev/docs/reference/api/common-server-python#send_events_to_xsiam).
 
-### First run
+### Configure the first event collection run
 
 When an integration runs for the first time, the last run time is not in the integration context. To set up the first run properly, use an `if` statement with a time that is specified in the integration settings.
 
 It is best practice to specify in the integration settings how far back in time to fetch events for the first run.
 
-### Queries and Parameters
+### Configure event queries and parameters
 
 Queries and parameters are configurable parameters in the integration settings that enable filtering events. For example, to import only certain event types into Cortex XSIAM, you need to query the API for only that specific event type.
 
@@ -170,7 +170,7 @@ The following example uses the `First Run` `if` statement and `query`.
     events = query_events(query, start_time)
 ```
 
-### Create parsing rules
+### Create event collector parsing rules
 
 When developing an event collector integration, you can implement [parsing rules](https://app.gitbook.com/s/FOhYBYLdbwpnbJgr6uaX/cortex-xdr-3.x-documentation/data-management/parsing-rules/create-parsing-rules) in the event collector code.
 
@@ -206,7 +206,7 @@ To ensure the parsing rule has been applied and is working as expected, run an [
 dataset = "MyVendor_MyProduct_raw" | fields  _time,  created
 ```
 
-### See event data in the UI
+### View collected event data in Cortex XSIAM
 
 After events are received by Cortex XSIAM, they are stored in a dataset in the structure of \<vendor>\_\<product>\_raw. If it's the first time fetching events, this dataset will be created. For more information about dataset management, see [Dataset management](https://app.gitbook.com/s/FOhYBYLdbwpnbJgr6uaX/cortex-xdr-3.x-documentation/data-management/dataset-management).
 

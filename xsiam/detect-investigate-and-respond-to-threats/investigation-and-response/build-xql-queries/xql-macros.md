@@ -1,3 +1,7 @@
+---
+description: Use XQL macros to reuse query logic and simplify searches in Cortex XSIAM .
+---
+
 # XQL macros
 
 XQL macros are reusable XQL code snippets stored in the Macro Library that enable modular query design. Unlike full saved queries which are complete and executable queries, macros are code fragments designed to be inserted into other queries at specific points in the pipeline. The macro pre-processor resolves all macro calls by performing text substitution before the query is compiled and executed.

@@ -1,5 +1,5 @@
 ---
-description: "Considerations for defining your integration so it functions correctly, is properly\_documented,\_and works well with other related content."
+description: Cortex XSIAM guidance for designing reliable, documented integrations.
 ---
 
 # Integration design

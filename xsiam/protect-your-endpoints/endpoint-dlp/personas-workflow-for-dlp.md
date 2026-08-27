@@ -13,8 +13,6 @@ The workflow outlines the responsibilities of the data security administrator an
 
 <summary>Data security administrator</summary>
 
-
-
 The data security administrator views and manages all data security information, including objects and data patterns.
 
 They are responsible for creating and managing [data-in-motion rules](../configure-dlp-end-to-end#create-data-in-motion-rules) and identifying and investigating DLP-type threats and attacks within an organization.

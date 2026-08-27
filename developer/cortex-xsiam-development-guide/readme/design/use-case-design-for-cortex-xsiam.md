@@ -1,7 +1,7 @@
 ---
 description: >-
-  Define your use case, how to improve your incident workflow and decrease the
-  time and resources required for investigation.
+  Cortex XSIAM guidance for designing efficient incident investigation
+  workflows.
 ---
 
 # Use Case Design for Cortex XSIAM

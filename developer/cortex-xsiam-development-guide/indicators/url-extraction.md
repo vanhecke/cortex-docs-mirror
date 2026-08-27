@@ -1,21 +1,19 @@
 ---
-description: >-
-  Extract a URL indicator from text that is recognized from a regular expression
-  and then formatted with a formatting script.
+description: Cortex XSIAM guidance for extracting URL indicators from text.
 ---
 
 # URL extraction
 
 The Cortex XSIAM URL indicator type is built using regular expression and a formatting script. The following describes the URL extraction components and what output you should expect when extracting URL indicators.
 
-#### URL extraction components
+### Cortex XSIAM URL indicator extraction components
 
 There are two components when extracting URL indicators:
 
 * Regular expression
 * Formatting script
 
-**Regular expression**
+#### URL indicator regular expression
 
 From a given text, a URL regular expression tries to catch a valid URL based on the following characteristics:
 
@@ -30,7 +28,7 @@ From a given text, a URL regular expression tries to catch a valid URL based on 
 * Escaped and unescaped URLs
 * URL with or without query parameters
 
-**Formatting script**
+#### Format extracted URL indicators
 
 After extracting the URL using regular expression, a `FormatURL` formatting script iterates on each given URL and does the following:
 
@@ -59,7 +57,7 @@ After extracting the URL using regular expression, a `FormatURL` formatting scri
     `hxxp → http` becomes `hxxps → https`
 6. Returns the formatted URL.
 
-#### Common URL structures
+### Supported URL indicator structures
 
 The following are the most common supported URL structures:
 

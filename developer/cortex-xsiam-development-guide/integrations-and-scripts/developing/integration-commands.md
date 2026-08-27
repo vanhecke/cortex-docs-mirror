@@ -1,7 +1,5 @@
 ---
-description: >-
-  Integration commands used in playbooks and in the CLI. Command design,
-  arguments, and outputs.
+description: Cortex XSIAM integration command design, arguments, and outputs.
 ---
 
 # Integration commands
@@ -21,14 +19,14 @@ Customers typically use a combination of both methods. They use commands to auto
 
 It is important to understand how arguments and outputs work in Cortex XSIAM and to understand design best practices.
 
-### Command design
+### Cortex XSIAM integration command design
 
 Commands should ideally run a single API call to your product. This simplifies the handling of conditions where some calls fail and others succeed. Whenever possible such logic should be implemented in playbooks rather than in integrations.
 
 Verify that commands run quickly and are non-blocking. A command should never take more than 2 to 3 seconds to run and return the information, or it can have significant performance impacts in Cortex XSIAM.
 
 {% hint style="info" %}
-### Important
+**Important**
 
 Do not use sleep() in your code. If you have commands that need to run for longer periods of time, there are two options:
 
@@ -41,7 +39,7 @@ Do not use sleep() in your code. If you have commands that need to run for longe
 
 In some cases you want to build commands that perform generic well-known actions that are common across several use cases. For example, reputation commands that return enrichment and reputation information about indicators, such as IPs. For those scenarios, we have standardized ways to define command names, inputs and outputs that make interoperability easier. For more information, see [Generic commands](generic-commands) and [DBotScore](reputation-and-dbot-score).
 
-### Command arguments
+### Cortex XSIAM integration command arguments
 
 Arguments are the inputs of your integration commands. They can be mandatory or optional, and can have default and predefined values. For more information, see the commands section of the [Metadata YAML file](../components/integration-metadata-yaml-file) documentation.
 
@@ -55,7 +53,7 @@ Another important design rule is to avoid having the SOC analyst waste time and 
 
 For example, imagine that you are designing a command that modifies an existing firewall policy. For simplicity, assume you have only two arguments: the ID of the policy and the action (allow or deny). The latter argument is obvious: depending on what the user wants to do, they will set the value to allow or deny (you can set predefined values so the user can only choose between these two options). But what about the ID of the policy? It may not be something that they know. They may know the policy name, but you don't want them to switch context and log in to a different console to find the ID that corresponds to the name. In this case, design your integration to include a command that returns a list of all policies and shows their IDs, or allows the user to retrieve the ID from the name, so that the user doesn't have to switch consoles.
 
-### Command outputs
+### Cortex XSIAM integration command outputs
 
 Every automation script and integration command returns several types of outputs:
 
@@ -84,7 +82,7 @@ If you are returning files, it's important to understand the difference between 
 * `Files` are potentially malicious files (i.e. attachments from potential phishing emails) that should be treated as such. They are automatically enriched (by checking their reputation against configured threat intel sources) and detonated in sandboxes. For more information, see the **File** section of the [Mandatory context standards](../context-standards#UUID-57b3a4f0-fd98-9b0f-af6e-aa954c13889d) topic.
 * `InfoFiles` are not malicious by definitions. They can be reports, CSVs, and other artifacts that your API returns. They are not automatically enriched and detonated. For more information, see the **InfoFile** section of the [Mandatory context standards](../context-standards#UUID-57b3a4f0-fd98-9b0f-af6e-aa954c13889d) topic.
 
-### Built-in filter and commands
+### Built-in Cortex XSIAM filters and commands
 
 Use the following built-in elements to facilitate your investigation and response.
 
@@ -107,7 +105,7 @@ When building a script, you can fetch entries from an incident. If you do not sp
 | fromTime        | Return entries from this time and forward.                                                                                                                                                                     |
 | parentID        | The ID of the parent entry.                                                                                                                                                                                    |
 
-**Example: Grab all entries that have been marked as a note**
+#### Get entries marked as notes
 
 ```programlisting
 res = demisto.executeCommand("getEntries", {"filter": {"categories": ["notes"]}})

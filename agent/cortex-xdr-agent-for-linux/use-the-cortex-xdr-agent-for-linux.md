@@ -155,10 +155,10 @@ After you install Cortex XDR agent for Linux, the agent operates transparently i
     -rw-r--r-- 1 ubuntu root 25824 Jan  2 18:10 /home/ubuntu/traps/cytool/security_events.db_18.10.04.427_02.01.2018.json
     ```
 
-    To add records to the database, use the **`cytoolpersist import [`**_**`<database_name>`**_**`|`**_**`<database_path>`**_**`]`` `**_**`<input_filename>`**_ command where _**`<input_filename>`**_ is a JSON file.
+    To add records to the database, use the **`cytoolpersist import [`**_**`<database_name>`**_**`|`**_**`<database_path>`**_**` ]`` `` `**_**`<input_filename>`**_ command where _**`<input_filename>`**_ is a JSON file.
 5.  Collect logs.
 
-    Use the **`cytool log set_level`` `**_**`<log_level>`**_**` ``[`**_**`<process_name>`**_**` ``|all]`** command to change the log level of an agent component where:
+    Use the **` cytool log set_level`` `` `**_**`<log_level>`**_**` `` ``[ `**_**`<process_name>`**_**` `` ``|all] `** command to change the log level of an agent component where:
 
     * _**`<log_level>`**_ is an integer value corresponding to the log level:
       * 1—Fatal

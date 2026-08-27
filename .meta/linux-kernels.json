@@ -2,7 +2,7 @@
   "book": "linux-kernels",
   "title": "Linux Kernel Versions",
   "section": "linux-kernel-versions",
-  "page_count": 100,
+  "page_count": 102,
   "tree": [
     {
       "title": "Linux Kernel Versions",
@@ -603,6 +603,12 @@
               "path": "ubuntu/x86_64/24",
               "type": "document",
               "children": []
+            },
+            {
+              "title": "Ubuntu 26 [x86_64]",
+              "path": "ubuntu/x86_64/26",
+              "type": "document",
+              "children": []
             }
           ]
         },
@@ -632,6 +638,12 @@
             {
               "title": "Ubuntu 24 [aarch64]",
               "path": "ubuntu/aarch64/24",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "Ubuntu 26 [aarch64]",
+              "path": "ubuntu/aarch64/26",
               "type": "document",
               "children": []
             }

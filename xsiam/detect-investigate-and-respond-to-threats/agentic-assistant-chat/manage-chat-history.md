@@ -1,5 +1,7 @@
 ---
-description: Manage and navigate your past chats with the Cortex Agentic Assistant.
+description: >-
+  Manage and navigate your past chats with the Cortex Agentic Assistant in
+  Cortex XSIAM.
 ---
 
 # Manage chat history

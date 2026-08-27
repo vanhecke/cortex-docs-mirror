@@ -1,8 +1,5 @@
 ---
-description: >-
-  To retrieve missing incidents, configure how far back in time (in minutes) to
-  get incidents that were created a while ago but indexed a few minutes ago. In
-  addition, store the fields to be used by the
+description: Cortex XSIAM guidance for retrieving missing incidents with generic lookback.
 ---
 
 # Fetch missing incidents with generic lookback methods
@@ -14,7 +11,7 @@ The most common scenarios are:
 * Indexing issues in the product: For example, if incident A was created before incident B and only B was indexed, `fetch-incidents` fetches only B and not A. If A was indexed after the fetch was called, the next fetch fetches only from the created time of B.
 * An update in the incident information: Some implementations of `fetch-incidents` use a query filter to fetch only specific incidents. If initially an incident did not match the query (meaning, it was not fetched) but at some point was updated so that it now matches the query, `fetch-incidents` does not pull the updated incident because the time to fetch it already passed.
 
-**Solution**
+### Configure the `look_back` parameter
 
 The `look_back` parameter enables configuring how far back in time (in minutes) `fetch-incidents` will look to get the incidents that were created a while ago but indexed a few minutes ago. In addition, the `LastRun` object stores the following fields to be used by the lookback methods:
 
@@ -22,17 +19,17 @@ The `look_back` parameter enables configuring how far back in time (in minutes) 
 * `limit` - The maximum number of incidents retrieved in the next fetch. If the current fetch run has the same `start_time` as the last fetch (determined in `get_fetch_run_time_range()`), this field is increased by the limit instance parameter value, and then incidents retrieved in the last fetch are filtered out.
 * `found_incident_ids` - The IDs of incidents fetched in previous runs. Used for filtering duplicates in the next runs.
 
-**Lookback methods**
+### Generic incident lookback methods
 
 Lookback is implemented using the following generic methods. For more information about lookback generic methods, see [CommonServerPython](https://xsoar.pan.dev/docs/reference/api/common-server-python).
 
 * `get_fetch_run_time_range()` - Using the last run object and other parameters, this method calculates and retrieves the time range in which to fetch. If the `look_back` parameter is defined, then the start time will always be greater than or equal to `now - look_back`.
 *   `filter_incidents_by_duplicates_and_limit()` - After getting the incidents using the third-party API call, you need to filter out the duplicate incidents. From the example above, after incident A is indexed the next fetch gets incidents A and B, but B must be filtered out since it was already fetched.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>If after filtering duplicates you have more incidents than the limit, <code>fetch-incidents</code> will get only up to the limit number of incidents.</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>If after filtering duplicates you have more incidents than the limit, <code>fetch-incidents</code> will get only up to the limit number of incidents.</p></div>
 * `update_last_run_object()` - Updates the existing last run object. The function updates the found IDs from the `get_found_incident_ids` function and also updates the new time and limit from the `create_updated_last_run_object` function and returns the updated last run object.
 
-**Helper methods**
+### Incident lookback helper methods
 
 The following helpers are used in the above lookback methods, and should not be used when implementing `fetch-incidents` in the integration.
 
@@ -41,7 +38,7 @@ The following helpers are used in the above lookback methods, and should not be 
 * `get_found_incident_ids()` - Returns a list of the new fetched incident IDs. This is saved in the last run object and used to filter duplicates in the next `fetch-incidents` call.
 * `create_updated_last_run_object()` - Creates a new last run object with a new time and limit for the next fetch.
 
-**Example fetch with lookback**
+### Fetch incidents with lookback example
 
 ```programlisting
 def fetch_incidents(params: dict):
@@ -77,7 +74,7 @@ def fetch_incidents(params: dict):
     demisto.setLastRun(last_run)
 ```
 
-**Notes**
+### Incident lookback notes
 
 * Fetching incidents is flexible and you can use the various functions according to your needs.
 * You can also use the generic methods for regular `fetch-incidents` without lookback.

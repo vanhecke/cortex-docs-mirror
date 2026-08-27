@@ -1,10 +1,10 @@
 ---
-description: Learn how to manage your scheduled and recurring queries.
+description: Create and manage scheduled queries for recurring analysis in Cortex XSIAM.
 ---
 
 # Manage scheduled queries
 
-The **Scheduled Queries** page displays information about your scheduled and recurring queries. From this page, you can edit scheduled query parameters, view previous executions, disable, and remove scheduled queries. Right-click a query to see the available options.
+The **Scheduled Queries** page displays information about your scheduled and recurring queries in Cortex XSIAM. From this page, you can edit scheduled query parameters, view previous executions, disable, and remove scheduled queries. Right-click a query to see the available options.
 
 <details>
 

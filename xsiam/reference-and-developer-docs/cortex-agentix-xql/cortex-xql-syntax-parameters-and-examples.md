@@ -1,5 +1,7 @@
 ---
-description: Comprehensive syntax rules and structural requirements for XQL queries
+description: >-
+  Comprehensive syntax rules and structural requirements for XQL queries in
+  Cortex XSIAM.
 ---
 
 # Cortex XQL syntax, parameters, and examples

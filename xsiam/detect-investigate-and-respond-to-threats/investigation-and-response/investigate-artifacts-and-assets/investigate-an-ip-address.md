@@ -1,3 +1,9 @@
+---
+description: >-
+  Investigate IP address activity, threat intelligence, and related cases in
+  Cortex XSIAM.
+---
+
 # Investigate an IP address
 
 Drill down on an IP address on the **IP View**. On this view, you can investigate and take actions on IP addresses, and see detailed information about an IP address over a defined 24-hour or 7-day time frame. In addition, to help you determine whether an IP address is malicious, the **IP View** displays an interactive visual representation of the collected activity for a specific IP address.

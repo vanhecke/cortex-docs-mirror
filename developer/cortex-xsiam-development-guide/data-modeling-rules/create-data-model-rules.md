@@ -6,11 +6,11 @@ description: >-
 
 # Create data model rules
 
-To create a local data model rule in the Cortex XSIAM UI, see [Data modeling rules](). Follow the steps in this topic if you want to contribute the rule you created.
+To create a local data model rule in the Cortex XSIAM UI, see [Data modeling rules](). Follow the steps in this topic to contribute the rule you created.
 
-Once events are ingested in the data set, create data model rules in the repository and then map the ingested raw events to Cortex XSIAM system fields.
+Once events are ingested in the dataset, create data model rules in the repository and then map the ingested raw events to Cortex XSIAM system fields.
 
-#### Create data model rules in the content repository
+### Create data model rules in the content repository
 
 Create a new directory named `Packs/MyVendorMyProduct/ModelingRules/MyVendorMyProduct_1_3` inside your content pack. Create the following files within this directory:
 
@@ -54,7 +54,7 @@ Create a new directory named `Packs/MyVendorMyProduct/ModelingRules/MyVendorMyPr
     }
     ```
 
-#### Map event to data model rules
+### Map event data to data model rules
 
 The next step is to map the data set of raw events to relevant data model rules. See [Data modeling rules]() in the Cortex XSIAM documentation for instructions for creating data model rules.
 
@@ -137,6 +137,6 @@ ALTER  
 * See the [XQL Functions Reference](https://app.gitbook.com/s/AEIjuYE3RXcIfmuQnBbm/) for more information about other functions.
 {% endhint %}
 
-If at any time the query or the parsing is incorrect, the editor notifies you of the error.
+If the query or the parsing is incorrect, the editor notifies you of the error.
 
 After writing the rules, you can test them to verify they are mapped correctly.

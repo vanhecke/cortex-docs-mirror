@@ -1,3 +1,9 @@
+---
+description: >-
+  Create legacy network connection queries to investigate endpoint traffic in
+  Cortex XSIAM.
+---
+
 # Create network connections query
 
 From the Query Builder, you can investigate network events stitched across endpoints and the Palo Alto Networks Next-Generation Firewall logs.

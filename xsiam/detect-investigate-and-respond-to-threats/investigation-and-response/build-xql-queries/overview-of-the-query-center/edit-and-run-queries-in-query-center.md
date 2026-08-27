@@ -1,6 +1,10 @@
+---
+description: Edit and run Cortex XSIAM queries from Query Center.
+---
+
 # Edit and run queries in Query Center
 
-From the **Query Center** you can take action on the **Completed** and **In Progress** queries that are running on your tenant.
+From the **Query Center** in Cortex XSIAM you can take action on the **Completed** and **In Progress** queries that are running on your tenant.
 
 Right-click a query to see the available options, where some of the options differ depending on the type of query you've selected. The pivot (right-click) options described below are some of the ones that may require further explanation.
 

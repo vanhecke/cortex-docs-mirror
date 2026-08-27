@@ -1,7 +1,5 @@
 ---
-description: >-
-  Use Query Builder templates to query your data sets without using the Cortex
-  Query Language.
+description: Use Query Builder templates to query data without writing XQL in Cortex XSIAM.
 ---
 
 # Query Builder templates

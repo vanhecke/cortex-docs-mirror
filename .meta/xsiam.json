@@ -2,7 +2,7 @@
   "book": "xsiam",
   "title": "Cortex XSIAM Documentation",
   "section": "cortex-xsiam",
-  "page_count": 2219,
+  "page_count": 2223,
   "tree": [
     {
       "title": "Learn about Cortex XSIAM",
@@ -2471,6 +2471,39 @@
                   ]
                 },
                 {
+                  "title": "Docker",
+                  "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/docker",
+                  "type": "document",
+                  "children": [
+                    {
+                      "title": "Connect Docker Hub registry",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/docker/connect-docker-hub-registry",
+                      "type": "document",
+                      "children": [
+                        {
+                          "title": "Manage a Docker Hub connector",
+                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/docker/connect-docker-hub-registry/manage-a-docker-hub-connector",
+                          "type": "document",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Connect Docker V2 compliant container registry",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/docker/connect-docker-v2-compliant-container-registry",
+                      "type": "document",
+                      "children": [
+                        {
+                          "title": "Manage a Docker V2 connector",
+                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/docker/connect-docker-v2-compliant-container-registry/manage-a-docker-v2-connector",
+                          "type": "document",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
                   "title": "DocuSign",
                   "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/docusign",
                   "type": "document",
@@ -2928,6 +2961,19 @@
                   "type": "document",
                   "children": [
                     {
+                      "title": "Connect GitLab container registry",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/gitlab/connect-gitlab-container-registry",
+                      "type": "document",
+                      "children": [
+                        {
+                          "title": "Manage a GitLab Container Registry connector",
+                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/gitlab/connect-gitlab-container-registry/manage-a-gitlab-container-registry-connector",
+                          "type": "document",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
                       "title": "GitLab Automation and Collection",
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/gitlab/gitlab-automation-and-collection",
                       "type": "document",
@@ -3098,6 +3144,26 @@
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/halcyon/halcyon",
                       "type": "document",
                       "children": []
+                    }
+                  ]
+                },
+                {
+                  "title": "Harbor",
+                  "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/harbor",
+                  "type": "document",
+                  "children": [
+                    {
+                      "title": "Connect Harbor registry",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/harbor/connect-harbor-registry",
+                      "type": "document",
+                      "children": [
+                        {
+                          "title": "Manage a Harbor connector",
+                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/harbor/connect-harbor-registry/manage-a-harbor-connector",
+                          "type": "document",
+                          "children": []
+                        }
+                      ]
                     }
                   ]
                 },
@@ -3376,6 +3442,26 @@
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/jamf/jamf-pro",
                       "type": "document",
                       "children": []
+                    }
+                  ]
+                },
+                {
+                  "title": "JFrog",
+                  "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/jfrog",
+                  "type": "document",
+                  "children": [
+                    {
+                      "title": "Connect JFrog container registry",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/jfrog/connect-jfrog-container-registry",
+                      "type": "document",
+                      "children": [
+                        {
+                          "title": "Manage a JFrog connector",
+                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/jfrog/connect-jfrog-container-registry/manage-a-jfrog-connector",
+                          "type": "document",
+                          "children": []
+                        }
+                      ]
                     }
                   ]
                 },
@@ -5016,6 +5102,26 @@
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/solarwinds/solarwinds",
                       "type": "document",
                       "children": []
+                    }
+                  ]
+                },
+                {
+                  "title": "Sonatype Nexus",
+                  "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/sonatype-nexus",
+                  "type": "document",
+                  "children": [
+                    {
+                      "title": "Connect Sonatype Nexus registry",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/sonatype-nexus/connect-sonatype-nexus-registry",
+                      "type": "document",
+                      "children": [
+                        {
+                          "title": "Manage a Sonatype connector",
+                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/sonatype-nexus/connect-sonatype-nexus-registry/manage-a-sonatype-connector",
+                          "type": "document",
+                          "children": []
+                        }
+                      ]
                     }
                   ]
                 },
@@ -6800,84 +6906,6 @@
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/container-registry-scanning/scan-re-evaluation-process",
                       "type": "document",
                       "children": []
-                    },
-                    {
-                      "title": "Connect Docker Hub registry",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-docker-hub-registry",
-                      "type": "document",
-                      "children": [
-                        {
-                          "title": "Manage a Docker Hub connector",
-                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-docker-hub-registry/manage-a-docker-hub-connector",
-                          "type": "document",
-                          "children": []
-                        }
-                      ]
-                    },
-                    {
-                      "title": "Connect Docker V2 compliant container registry",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-docker-v2-compliant-container-registry",
-                      "type": "document",
-                      "children": [
-                        {
-                          "title": "Manage a Docker V2 connector",
-                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-docker-v2-compliant-container-registry/manage-a-docker-v2-connector",
-                          "type": "document",
-                          "children": []
-                        }
-                      ]
-                    },
-                    {
-                      "title": "Connect GitLab container registry",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-gitlab-container-registry",
-                      "type": "document",
-                      "children": [
-                        {
-                          "title": "Manage a GitLab Container Registry connector",
-                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-gitlab-container-registry/manage-a-gitlab-container-registry-connector",
-                          "type": "document",
-                          "children": []
-                        }
-                      ]
-                    },
-                    {
-                      "title": "Connect Harbor registry",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-harbor-registry",
-                      "type": "document",
-                      "children": [
-                        {
-                          "title": "Manage a Harbor connector",
-                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-harbor-registry/manage-a-harbor-connector",
-                          "type": "document",
-                          "children": []
-                        }
-                      ]
-                    },
-                    {
-                      "title": "Connect JFrog container registry",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-jfrog-container-registry",
-                      "type": "document",
-                      "children": [
-                        {
-                          "title": "Manage a JFrog connector",
-                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-jfrog-container-registry/manage-a-jfrog-connector",
-                          "type": "document",
-                          "children": []
-                        }
-                      ]
-                    },
-                    {
-                      "title": "Connect Sonatype Nexus registry",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-sonatype-nexus-registry",
-                      "type": "document",
-                      "children": [
-                        {
-                          "title": "Manage a Sonatype connector",
-                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-sonatype-nexus-registry/manage-a-sonatype-connector",
-                          "type": "document",
-                          "children": []
-                        }
-                      ]
                     }
                   ]
                 }

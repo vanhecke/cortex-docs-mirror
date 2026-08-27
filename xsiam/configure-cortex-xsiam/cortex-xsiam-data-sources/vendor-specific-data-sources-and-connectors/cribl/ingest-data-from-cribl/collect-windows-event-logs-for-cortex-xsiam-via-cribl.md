@@ -88,8 +88,6 @@ Cribl Edge collects Windows Event Logs directly from the endpoint where it is in
     | `Application`                          | Windows Application events                                |
     | `Microsoft-Windows-Sysmon/Operational` | Sysmon events (requires Sysmon installed on the endpoint) |
 
-
-
 #### Task 3. Configure Optional Settings
 
 Expand the Optional Settings section and set the following:
@@ -103,8 +101,6 @@ Expand the Optional Settings section and set the following:
 
 Save the source configuration and deploy to the Edge node.
 
-<br>
-
-<br>
-
+\
+\
 <br>

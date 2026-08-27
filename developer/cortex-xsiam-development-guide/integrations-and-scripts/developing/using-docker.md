@@ -1,22 +1,22 @@
 ---
-description: Use Docker to run Python scripts and integrations in a controlled environment.
+description: Cortex XSIAM guidance for running integrations and scripts with Docker.
 ---
 
 # Using Docker
 
 Docker is a tool used by developers to package together dependencies into an image. Docker enables you to run Python scripts and integrations in a controlled environment, isolated from the server. By packaging libraries and dependencies together, a consistent environment is maintained. You are not required to run **pip install** to install all the required packages to use your integration. They are part of an image and the image contains all of the libraries you need. See the [Docker site](https://docs.docker.com/) for more information.
 
-### Script/integration configuration
+### Configure Docker for Cortex XSIAM scripts and integrations
 
 When creating a script within the Cortex XSIAM IDE, you can specify the Docker image to use, within the script settings. If you don't specify a Docker image, a default Docker image using Python 3.9 is used.
 
 The selected Docker image is configured in the script/integration YAML file under the `dockerimage` key. See [Integration metadata YAML file](../components/integration-metadata-yaml-file).
 
-### Updating Docker images automatically via pull request
+### Automatically update Docker images with pull requests
 
 Every integration/script that utilizes either `demisto/python` or `demisto/python3` Docker images is updated automatically whenever a newer tag is available. This happens via an automatic recurring job that updates the Docker image of the content item by a pull request in the content Git repository. The pack is then distributed in Marketplace.
 
-### Enabling/disabling Docker image automatic update
+### Enable or disable Docker image updates
 
 If your integration/script does not use either `demisto/python` or `demisto/python3` Docker images, you can still update it automatically by adding the `autoUpdateDockerImagekey` to the YAML file. For example, the following will update the integration `MyIntegration` docker image:
 
@@ -42,12 +42,12 @@ autoUpdateDockerImage: false
 Palo Alto Networks maintains a large repository of Docker images. All Docker images are available via [DockerHub under the Demisto organization](https://hub.docker.com/u/demisto/). The Docker image creation process is managed via [Dockerfiles repository](https://github.com/demisto/dockerfiles). Before trying to create a new Docker image, check if there is one available already. You can search [https://github.com/demisto/dockerfiles-info/blob/master/used\_packages.csv](https://github.com/demisto/dockerfiles-info/blob/master/used_packages.csv) which is updated nightly with image metadata and the `os/python` packages used in the images. To create a custom Docker image to use in your integration or script, follow the [Contributing](https://github.com/demisto/dockerfiles?tab=readme-ov-file#contributing) section.
 
 {% hint style="info" %}
-### Important
+**Important**
 
 For security reasons, we cannot accept images which are not part of the Docker hub Palo Alto Networks organization.
 {% endhint %}
 
-### Package requirements
+### Docker package requirements
 
 Considerations when choosing a package to be used in an integration:
 
@@ -56,16 +56,16 @@ Considerations when choosing a package to be used in an integration:
 
 You must perform due diligence on packages you choose to use. This includes verifying the package name is correct. For example, in the past, [scans of PyPI](https://bertusk.medium.com/detecting-cyber-attacks-in-the-python-package-index-pypi-61ab2b585c67) resulted in the detection of 11 "typo-squatted" packages which were found to be malicious.
 
-### Licensing
+### Docker image licensing
 
 The Cortex XSIAM content repository is produced with an MIT (Massachusetts Institute of Technology) license, which means that we use only packages that have a license compatible with the MIT license. As a rule, we only use `permissive` licenses. For a complete list of OSS licenses and their types see: [https://en.wikipedia.org/wiki/Comparison\_of\_free\_and\_open-source\_software\_licenses](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses).
 
 {% hint style="info" %}
-### Note
+**Note**
 
 Other licenses may be permitted with specific approval.
 {% endhint %}
 
-### Add files to the dockerfiles repository
+### Add Dockerfiles to the Dockerfiles repository
 
 In most cases, if your integration is for public release, you need to push Docker files into the `dockerfiles` repository [located here](https://github.com/demisto/dockerfiles). Pushing into this repository adds the image (after an approval process) to the Docker hub Palo Alto Networks organization. See the [README.md](https://github.com/demisto/dockerfiles/blob/master/README.md) for details.

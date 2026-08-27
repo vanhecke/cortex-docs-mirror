@@ -1,3 +1,7 @@
+---
+description: Create and manage XQL macros for reusable query logic in Cortex XSIAM.
+---
+
 # Manage your macros
 
 Save and manage your XQL macros in the Macro Library under **Investigations & Response -> XQL Search**. You can create, edit, share, and delete macros using the same workflows available for saved queries.
@@ -52,4 +56,3 @@ Delete: You can only delete queries that you own.
 
 * Macro names must be unique within the Macro Library.
 * All macro modifications (create, edit, delete, access changes) are logged in the management audit log.
-

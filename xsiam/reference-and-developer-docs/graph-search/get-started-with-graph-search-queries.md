@@ -1,5 +1,5 @@
 ---
-description: Learn more about how to get started before building a Graph Search query.
+description: Get started with building Graph Search queries in Cortex XSIAM.
 ---
 
 # Get started with Graph Search queries

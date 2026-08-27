@@ -1,5 +1,5 @@
 ---
-description: Design best practices for building an integration.
+description: Cortex XSIAM best practices for designing integrations.
 ---
 
 # Design best practices

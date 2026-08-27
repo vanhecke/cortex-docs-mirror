@@ -1,3 +1,9 @@
+---
+description: >-
+  Reference Cortex CLI commands for Cloud Workload Protection scans in Cortex
+  XSIAM.
+---
+
 # Cloud Workload Protection command line reference
 
 Use these Cloud Workload Protection-specific commands and flags to run scans with the Cortex CLI. Refer to [Cortex CLI common command line reference guide](../cortex-cli-common-command-line-reference-guide) for common flags that apply across all supported modules and global flags shared with Application Security.

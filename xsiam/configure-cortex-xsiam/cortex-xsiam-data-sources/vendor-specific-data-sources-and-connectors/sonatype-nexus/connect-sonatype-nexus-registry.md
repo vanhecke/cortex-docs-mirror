@@ -8,6 +8,10 @@ description: >-
 
 Configure Cortex XSIAM to scan your Nexus Registry. This allows Cortex to list all container registries or images, and secure them from vulnerabilities, malware, and secrets.
 
+{% hint style="info" %}
+**License type**: This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM product that has the Cloud Posture Security or the Cloud Runtime Security add-on.
+{% endhint %}
+
 ### How to connect Nexus registry
 
 Follow the wizard to use the Sonatype Nexus registry connector in Cortex XSIAM.

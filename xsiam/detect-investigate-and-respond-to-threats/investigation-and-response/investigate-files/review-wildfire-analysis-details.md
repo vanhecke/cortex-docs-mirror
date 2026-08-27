@@ -1,3 +1,7 @@
+---
+description: Review WildFire verdicts and file analysis reports in Cortex XSIAM.
+---
+
 # Review WildFire analysis details
 
 For each file, Cortex XSIAM receives a file verdict and the WildFire Analysis Report. This report contains detailed sample information and behavior analysis in different sandbox environments, leading to the WildFire verdict. You can use the report to assess whether the file poses a real threat on an endpoint. The details in the WildFire analysis report for each event vary depending on the file type and the behavior of the file.

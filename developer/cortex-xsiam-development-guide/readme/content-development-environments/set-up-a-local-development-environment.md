@@ -1,5 +1,7 @@
 ---
-description: How to set up an external dev environment to contribute a full integration.
+description: >-
+  Steps for setting up a local integration development environment in Cortex
+  XSIAM.
 ---
 
 # Set up a local development environment

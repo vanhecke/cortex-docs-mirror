@@ -1,3 +1,7 @@
+---
+description: View, restore, and delete quarantined endpoint files in Cortex XSIAM.
+---
+
 # Manage quarantined files
 
 When the agent detects malware on an endpoint, you can take additional precautions to quarantine the file. When the agent quarantines malware, it moves the file from the location on a local or removable drive to a local quarantine folder where it encrypts and isolates the file as a locked file. This prevents the file from attempting to run again from the same path or causing any harm to your endpoints. The file remains stored locally in this repository until explicitly restored or deleted, or until storage rotation occurs.
@@ -14,7 +18,7 @@ To evaluate whether an executable file is considered malicious, the agent calcul
 * macOS: `/Library/Application Support/PaloAltoNetworks/Traps/quarantine/` (or `.../Cortex XDR/quarantine/`) \[Comment: Added macOS path from Text 2]
 * Linux: `/opt/traps/quarantine/` (or `/var/log/traps/quarantine/`)
 
-### How to quarantine a file
+### How to quarantine a file in Cortex XSIAM
 
 You can quarantine a file in the following ways:
 

@@ -1,13 +1,12 @@
 ---
 description: >-
-  Cortex Assistant is designed to streamline processes by simplifying case
-  triaging, investigation, and remediation. It enables you to seamlessly uncover
-  new insights on hashes, hosts, and more. You can
+  Use Cortex Assistant in Cortex XSIAM to triage, investigate, and remediate
+  security cases.
 ---
 
 # Cortex Assistant
 
-Cortex Assistant is an innovative tool specifically developed to streamline various processes, including case triaging, investigation, and remediation. By utilizing Cortex Assistant, you can uncover valuable insights on a wide range of entities such as hashes, hosts, and more. Its primary objective is to simplify these tasks, allowing for a more efficient workflow and enhanced productivity.
+Cortex Assistant is an innovative tool specifically developed to streamline various processes, including case triaging, investigation, and remediation in Cortex XSIAM. By utilizing Cortex Assistant, you can uncover valuable insights on a wide range of entities such as hashes, hosts, and more. Its primary objective is to simplify these tasks, allowing for a more efficient workflow and enhanced productivity.
 
 {% hint style="info" %}
 ### Note

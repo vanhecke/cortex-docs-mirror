@@ -27,9 +27,7 @@ As your IOC and BIOC rules generate issues, Cortex XSIAM displays the total # OF
     Cortex XSIAM populates a query using the criteria of the BIOC rule.
 3. Add or change the query criteria as required.
 4. (Optional) Test your query to see the sample results.
-5.  If you are satisfied with the query, save it.
-
-
+5. If you are satisfied with the query, save it.
 
 </details>
 

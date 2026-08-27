@@ -1,5 +1,7 @@
 ---
-description: Chat with the Cortex Agentic Assistant using natural language prompts.
+description: >-
+  Chat with the Cortex Agentic Assistant in Cortex XSIAM using natural language
+  prompts.
 ---
 
 # Agentic Assistant chat

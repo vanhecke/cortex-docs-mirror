@@ -1,9 +1,15 @@
+---
+description: >-
+  Close, reopen, or permanently delete Cortex XSIAM forensic investigations and
+  their collections.
+---
+
 # Close an investigation
 
 From the list of ongoing investigations, you can close an investigation. You might want to close an investigation if resolved, or if you want to cancel the investigation.
 
 {% hint style="info" %}
-When you close an investigation, Palo Alto Networks has a grace period of 24 hours before deleting any collections associated with the investigation. During this timeframe, you have the option to cancel the close investigation action.
+When you close an investigation, Cortex XSIAM has a grace period of 24 hours before deleting any collections associated with the investigation. During this timeframe, you have the option to cancel the close investigation action.
 {% endhint %}
 
 1. From the **Forensic Investigations** table, right-click an investigation and select **Close**.

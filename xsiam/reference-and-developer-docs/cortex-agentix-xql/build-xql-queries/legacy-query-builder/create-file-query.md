@@ -1,3 +1,7 @@
+---
+description: Create legacy file queries in Cortex XSIAM.
+---
+
 # Create file query
 
 From the **Query Builder** you can investigate connections between file activity and endpoints. The Query Builder searches your logs and endpoint data for the file activity that you specify. To search for files on endpoints instead of file-related activity, build an XQL query. For more information, see [How to build XQL queries](../how-to-build-xql-queries).

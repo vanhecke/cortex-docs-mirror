@@ -1,7 +1,5 @@
 ---
-description: >-
-  Cortex XSIAM provides as part of the Query Library a personal library for
-  saving and managing your own queries.
+description: Save and manage personal XQL queries in the Query Library in Cortex XSIAM.
 ---
 
 # Manage your personal query library

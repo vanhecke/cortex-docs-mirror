@@ -6,6 +6,10 @@ description: Connect a GitLab container registry to Cortex XSIAM for image scann
 
 Configure Cortex XSIAM to scan your GitLab Container Registry without using administrator credentials. Use a GitLab Personal Access Token (PAT) to authenticate Cortex to access the GitLab Container Registry. This allows Cortex to list all container registries or images, and secure them from vulnerabilities, malware, and secrets.
 
+{% hint style="info" %}
+**License type**: This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM product that has the Cloud Posture Security or the Cloud Runtime Security add-on.
+{% endhint %}
+
 ### How to connect GitLab registry
 
 Follow the wizard to connect the GitLab Container Registry connector in Cortex XSIAM.
@@ -194,7 +198,9 @@ Ensure one of the following is configured:
 8.  **Next Steps**.
 
     * After the scan is complete, you can view the scanned images on the **Container Images Inventory** page. For more details, see [Container Images assets](../../../../detect-investigate-and-respond-to-threats/asset-management/asset-classes/compute-assets/container-image-assets).
-    * If you have selected the **Scan with Broker VM** option, then a **Registry Scanner applet** is created on the selected **Broker VM** or **Cluster**. For details, see [Verify Registry Scanner connection](../../../generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-registry-scanner#verify-registry-scanner-connection).
+    *   If you have selected the **Scan with Broker VM** option, then a **Registry Scanner applet** is created on the selected **Broker VM** or **Cluster**. For details, see [Verify Registry Scanner connection](../../../generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-registry-scanner#verify-registry-scanner-connection).&#x20;
+
+        <figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FWVVeI7SbPxjm09uZY3nb%2Fbroker-vm-registry-applet.png?alt=media&#x26;token=ec3461c1-9b6e-4602-89ef-84516d57be19" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="https://docs-cortex.paloaltonetworks.com/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/9MOUg1Tldqzugfj2ajn4tw-5CAbsl8idaK8R43ZLhoTOw/content?v=dd91287b8369b7dc&#x26;Ft-Calling-App=ft/turnkey-portal" alt=""><figcaption></figcaption></figure>
 

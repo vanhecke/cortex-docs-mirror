@@ -1,3 +1,7 @@
+---
+description: Run Cortex CLI pre-commit hooks for code security checks in Cortex XSIAM.
+---
+
 # Pre-commit hook usage
 
 You can run secrets checks on your code, customize its behavior using supported flags, and suppress detected secrets when required.

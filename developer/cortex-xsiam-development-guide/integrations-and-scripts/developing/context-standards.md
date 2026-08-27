@@ -1,12 +1,10 @@
 ---
-description: >-
-  How incident data is structured when it is extracted into the incident Context
-  tree of objects.
+description: Cortex XSIAM standards for structuring incident context data.
 ---
 
 # Context standards
 
-Cortex XSIAM organizes incident data in a tree of objects called the incident context. Any integration commands or scripts that run add data into the context at a predefined location. This also applies to commands that run within playbook execution.&#x20;
+Cortex XSIAM organizes incident data in a tree of objects called the incident context. Any integration commands or scripts that run add data into the context at a predefined location. This also applies to commands that run within playbook execution.
 
 The context stores the results from every integration command and every automation script that runs. It is a JSON storage for each incident. Whether you run an integration command from the CLI or from a playbook task, the output result is stored into the JSON context in the incident or the playground. For example, a command like `!whois query="cnn.com"` returns the data and store the results into the context.
 
@@ -30,7 +28,7 @@ The structure should be:
 
 Some standard objects are [mandatory](#UUID-57b3a4f0-fd98-9b0f-af6e-aa954c13889d) and enforced in the code, and some are [recommended](#UUID-eeb80244-d0a7-99b5-4ab6-2cdd8abedb2b).
 
-**Mandatory Context Standards**
+### Mandatory Cortex XSIAM context standards
 
 There are standard context schema used for the system indicators and the DBot Score object. You do not need to manually output this in your code, instead, use the builtin classes as described in [context use cases](../context-and-outputs#UUID-9188567d-fe91-d5af-35ef-a049afb484a0_section-idm4610907117195233680815701264).
 
@@ -1422,7 +1420,7 @@ outputs:
 
 </details>
 
-**Recommended context standards**
+### Recommended Cortex XSIAM context standards
 
 The following are examples of how each entity should be formed in the entry context.
 

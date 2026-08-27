@@ -4,7 +4,7 @@ description: Close Cortex XSIAM issues after completing investigation and remedi
 
 # Close an issue
 
-Once you complete your investigation, perform one of the following actions to close an issue:
+Once you complete your investigation, perform one of the following actions to close a Cortex XSIAM issue:
 
 * **Manually close an issue:** Right-click an issue and select **Change Status** → Resolved and select a resolution reason.
 * **Automatically close an issue:** Run the `closeInvestigation` command in the CLI, in a script, or a playbook task. You can configure this command to run as part of a flow when automating issue investigation.

@@ -1,8 +1,7 @@
 ---
 description: >-
-  Learn about integration and script directory structure, metadata YAML file,
-  parameter types, integration description file, integration logo standards, and
-  README file.
+  Cortex XSIAM integration and script components, metadata, and file
+  requirements.
 ---
 
 # Components

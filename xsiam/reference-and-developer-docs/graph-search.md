@@ -1,5 +1,5 @@
 ---
-description: Learn more about Graph Search in Cortex XSIAM.
+description: Explore Graph Search for cloud assets and findings in Cortex XSIAM.
 ---
 
 # Graph Search

@@ -10,7 +10,7 @@ You can contribute content to the Cortex XSIAM Marketplace by contributing throu
 
 A review phase begins with the opening of the GitHub pull request containing your changes or new content.
 
-#### Cortex XSIAM content team commitments
+### Cortex XSIAM content team commitments
 
 Once your PR is open, the content team commits to the following time frames:
 
@@ -20,7 +20,7 @@ Once your PR is open, the content team commits to the following time frames:
 4. Once your PR is approved and merged by your reviewer, an internal PR including your changes is opened within an hour. The internal PR allows us to run our internal validity and security checks on your final code. The internal PR is merged within three business days. If during the internal PR phase we discover issues related to the code changes made in the contribution, the contributor may be asked to help resolve them.
 5. Once the internal PR is merged, your changes are published in the Marketplace within three business days.
 
-#### Contributor commitments
+### Contributor commitments
 
 The content team requires contributors to:
 

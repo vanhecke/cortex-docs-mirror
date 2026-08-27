@@ -1,3 +1,7 @@
+---
+description: Query external data sources with Federated Search in Cortex XSIAM.
+---
+
 # Query using Federated Search
 
 To query using Federated search, navigate to **Incident Response → Investigation → Query Builder** and select **XQL**.

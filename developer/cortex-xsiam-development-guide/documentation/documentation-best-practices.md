@@ -1,18 +1,22 @@
+---
+description: Cortex XSIAM documentation best practices for content authors.
+---
+
 # Documentation best practices
 
 This article describes the desired documentation standards in Cortex XSIAM content entities, and contains examples that can be useful when writing documentation.
 
 {% hint style="info" %}
-### Note
+**Note**
 
 If you are writing documents for Cortex XSOAR and Cortex XSIAM that contains similar content, you can use special formatted strings that enable you to filter the correct entity. For more information, see [Cortex XSOAR and Cortex XSIAM Formatting](#cortex-xsoar-and-cortex-xsiam-formatting).
 {% endhint %}
 
 <details>
 
-<summary>Entities Description Field</summary>
+<summary>Write descriptions for Cortex XSIAM content entities</summary>
 
-#### For playbook and scripts, use the following guideline:
+### Write playbook and script descriptions
 
 * Should start with the verb that describes what the entity does.
 * There is limited space for descriptions, do not use unnecessary words.
@@ -28,7 +32,7 @@ Additional examples of concise descriptions:
 * Enables you to get all of the corresponding file hashes for a file even if there is only one hash type available.
 * Uses generic polling to get saved question results.
 
-#### For integrations:
+### Write integration descriptions
 
 The description should summarize all of the currently supported endpoints into a sentence that users can easily understand.
 
@@ -41,7 +45,7 @@ For example:
 
 <details>
 
-<summary>Fetch Incidents/Indicators section</summary>
+<summary>Document incident and indicator fetching settings</summary>
 
 Common parameters for this section are:
 
@@ -60,7 +64,7 @@ For example: `All incidents created in the minute prior to the configuration of 
 
 <details>
 
-<summary>Common integration parameters</summary>
+<summary>Configure common Cortex XSIAM integration parameters</summary>
 
 The most commonly used integration parameters:
 
@@ -77,7 +81,7 @@ The most commonly used integration parameters:
 
 <details>
 
-<summary>Parameters found in all integrations</summary>
+<summary>Document default Cortex XSIAM integration parameters</summary>
 
 | Parameter                                          | Notes                                                                                                                                                                                                                                                                                                                                                                                               |
 | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -88,7 +92,7 @@ The most commonly used integration parameters:
 
 <details>
 
-<summary>Common command arguments</summary>
+<summary>Document common Cortex XSIAM command arguments</summary>
 
 | Argument type                 | Description template                                                 | Example                                                                                                                                   |
 | ----------------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -102,7 +106,7 @@ The most commonly used integration parameters:
 
 <details>
 
-<summary>Outputs</summary>
+<summary>Document Cortex XSIAM command outputs</summary>
 
 Try to be as specific as possible explaining what the output does.
 
@@ -126,7 +130,7 @@ A good description: `True if the version of the element exists.`
 
 <details>
 
-<summary>Cortex XSOAR and Cortex XSIAM formatting</summary>
+<summary>Use Cortex XSOAR and Cortex XSIAM conditional formatting</summary>
 
 Rather than creating separate documents, you can add the following format to the release notes, Description.md or README.md documents:
 

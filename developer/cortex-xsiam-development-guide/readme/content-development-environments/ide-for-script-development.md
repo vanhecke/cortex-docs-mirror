@@ -1,12 +1,15 @@
 ---
-description: Cortex XSIAM UI development environment for content development.
+description: >-
+  Use the Cortex XSIAM built-in IDE to create and edit automation scripts,
+  access Script Helper functions, configure script settings, and use editor
+  keyboard shortcuts.
 ---
 
 # IDE for script development
 
-Cortex XSIAM offers a built-in IDE platform for script development in the UI under **Incident Response** → **Automation** → **Scripts**.
+Use the Cortex XSIAM built-in IDE to create and edit automation scripts. Open the script editor from **Incident Response** → **Automation** → **Scripts**.
 
-It is important to familiarize yourself with the Cortex XSIAM IDE as it may work differently than other IDEs. For example, the Cortex XSIAM IDE has no interpreter and Visual Studio Code does.
+The Cortex XSIAM IDE differs from other development environments. For example, it has no interpreter, whereas Visual Studio Code does.
 
 {% hint style="info" %}
 ### Note
@@ -14,11 +17,11 @@ It is important to familiarize yourself with the Cortex XSIAM IDE as it may work
 For more complex development needs, we recommend instead using the [Visual Studio Code extension](visual-studio-code-extension). It simplifies third-party integration and script development by enabling users to author Python content for Cortex XSIAM directly in Visual Studio Code. This is also the most efficient way to develop Python [Unit Tests](../../testing/unit-testing).
 {% endhint %}
 
-**Script Helper**
+### Script Helper for Cortex XSIAM script development
 
-The script helper contains commonly used functions to facilitate script development.
+Script Helper provides commonly used functions for Cortex XSIAM automation script development.
 
-To access the script helper, in Cortex XSIAM under **Incident Response** → **Automation** → **Scripts** → **Script Helper**.
+To access the script helper, go to Cortex XSIAM under **Incident Response** → **Automation** → **Scripts** → **Script Helper**.
 
 A list of the common server functions appears.
 

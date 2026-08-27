@@ -1,5 +1,5 @@
 ---
-description: Answer some frequently asked questions relating to Graph Search.
+description: Find answers to common Graph Search questions in Cortex XSIAM.
 ---
 
 # FAQ on Graph Search

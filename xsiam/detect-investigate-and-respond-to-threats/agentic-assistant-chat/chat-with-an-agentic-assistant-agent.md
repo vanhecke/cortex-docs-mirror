@@ -1,5 +1,5 @@
 ---
-description: Tips for chatting with the Cortex Agentic Assistant
+description: Tips for chatting with the Cortex Agentic Assistant in Cortex XSIAM.
 ---
 
 # Chat with an Agentic Assistant agent

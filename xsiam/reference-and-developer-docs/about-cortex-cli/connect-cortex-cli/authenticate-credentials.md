@@ -1,7 +1,5 @@
 ---
-description: >-
-  Configure Cortex CLI credentials using a file, environment variables, or
-  command-line flags.
+description: Configure Cortex CLI credentials for secure scans in Cortex XSIAM.
 ---
 
 # Authenticate credentials

@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex Assistant capabilities to investigate and respond to threats in
+  Cortex XSIAM.
+---
+
 # Cortex Assistant capabilities
 
 ### **Entity investigation**

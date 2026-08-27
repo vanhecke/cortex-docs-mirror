@@ -1,3 +1,7 @@
+---
+description: Understand expected XQL field query results in Cortex XSIAM.
+---
+
 # Expected results when querying fields
 
 The following are returned when querying fields:

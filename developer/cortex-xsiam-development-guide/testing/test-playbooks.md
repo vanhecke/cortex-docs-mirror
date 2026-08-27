@@ -1,5 +1,7 @@
 ---
-description: Create test playbooks to check integration commands and scripts.
+description: >-
+  Cortex XSIAM steps for testing integration commands and scripts with
+  playbooks.
 ---
 
 # Test playbooks

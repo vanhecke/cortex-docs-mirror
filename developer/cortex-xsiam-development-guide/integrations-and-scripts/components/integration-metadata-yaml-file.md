@@ -1,12 +1,12 @@
 ---
-description: The YAML file includes all the metadata for integrations and scripts.
+description: Cortex XSIAM integration and script metadata YAML file reference.
 ---
 
 # Integration metadata YAML file
 
 All the metadata of your integration is included in the YAML file. It is a key value set for your integration. When pushing content for public release, your YAML file must follow certain structural requirements to work properly. Scripts also have a metadata YAML file that follows a similar structure.
 
-**Common fields**
+### Cortex XSIAM integration YAML common fields
 
 The `commonfields` section contains information the Cortex XSIAM server uses to identify your integration.
 
@@ -23,7 +23,7 @@ This section contains the following information.
 | id      | A unique identifier for your integration.                          |
 | version | Setting the value to -1 locks the integration from being modified. |
 
-**Basic information**
+### Basic integration metadata
 
 This section contains integration metadata.
 
@@ -49,7 +49,7 @@ It includes the following parameters:
 | description         | A brief description of what your integration does.                                                                                                                         |
 | detaileddescription | More details about how your integration works..                                                                                                                            |
 
-**Integration settings configuration**
+### Integration settings configuration
 
 The `configuration` section specifies the integration settings configuration requirements that are necessary for the integration to operate.
 
@@ -81,7 +81,7 @@ It includes the following parameters.
 | advanced       | Whether to expose the configuration under the advanced settings. Possible values are true or false.                                                                                                                                                                                                                                                                                                                                     |
 | section        | Which section the configuration setting will be under. Possible values are Collect or Connect.                                                                                                                                                                                                                                                                                                                                          |
 
-**Hiding integration settings parameters**
+#### Hide integration settings parameters
 
 To hide integration parameters from the UI in all Marketplaces, set the optional **`hidden`** field to true.
 
@@ -93,7 +93,7 @@ To hide the parameter in specific content Marketplace versions, provide a list o
 * `marketplacev2` - Cortex XSIARM
 * `xpanse` - Cortex XPANSE
 
-**Configurations sections**
+#### Integration configuration sections
 
 An integration's configuration display is divided into the following sections to help users easily find parameters.
 
@@ -109,7 +109,7 @@ Parameters required to connect to the product
 * API key
 * Other mandatory parameters
 
-**Advanced connect parameters**
+**Advanced Connect parameters**
 
 Additional connect parameters
 
@@ -131,7 +131,7 @@ Parameters required to collect information from the product
 * Source reliability
 * Traffic light protocol color
 
-**Advanced Collect Parameters**
+**Advanced Collect parameters**
 
 Additional collect parameters
 
@@ -146,7 +146,7 @@ Additional collect parameters
 
 This section contains parameters that do not belong to the **Connect** or **Collect** sections, such as **Advanced Thresholds** and **Advanced Queries**.
 
-**Usage**
+#### Add configuration sections to an integration YAML file
 
 To add sections to your integrations:
 
@@ -200,7 +200,7 @@ configuration:
   advanced: true
 ```
 
-**Example**
+#### Configuration sections example
 
 In the following example, you can see the advanced parameters remain hidden until the user expands the **Advanced Settings** section.
 
@@ -208,7 +208,7 @@ In the following example, you can see the advanced parameters remain hidden unti
 
 ![](https://4088726609-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FurXrv6qkJRLbdhMdvPIU%2Fuploads%2Fgit-blob-d2e93d3ea5b3083ed67fbf4e3912f581df1e66da%2F36cb5cf5de12180ab9f8662658da0968a7086fc94e22abf3f4687e5e63195042.png?alt=media)
 
-**Script**
+### Integration script configuration
 
 The `script` section is where the code resides.
 
@@ -235,7 +235,7 @@ It includes the following parameters.
 | subtype     | When using Python, specifying subtype field is required. Use python3.                                                                                                                                                                                                                                                                                                                                                                                                 |
 | dockerimage | <p>When using Python, dockerimage should be specified. If dockerimage is not specified a default python3 image is used.</p><p>You can also specify any publicly available image found in <a href="https://hub.docker.com/u/demisto">DockerHub demisto account</a>.</p><p>If you need to need to generate a custom image with your own Python packages installed, see <a href="https://github.com/demisto/dockerfiles">https://github.com/demisto/dockerfiles</a>.</p> |
 
-**Commands**
+### Integration command configuration
 
 The `command` section tells Cortex XSIAM what arguments are required for your command as well as what the outputs are.
 
@@ -262,7 +262,7 @@ The `command` section tells Cortex XSIAM what arguments are required for your co
 
 It includes the following parameters.
 
-**Command**
+#### Command fields
 
 | Name        | Description                                   | Standard           |
 | ----------- | --------------------------------------------- | ------------------ |
@@ -270,7 +270,7 @@ It includes the following parameters.
 | description | A description for the command.                |                    |
 | runonce     | Boolean. Whether the command runs repeatedly. |                    |
 
-**Command arguments**
+#### Command argument fields
 
 | Name        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Standard       |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
@@ -283,7 +283,7 @@ It includes the following parameters.
 | description | A description of the argument.                                                                                                                                                                                                                                                                                                                                                                                                                                            |                |
 | type        | The type of the argument. For example `keyValue` is a valid argument type. If used, the argument received by your code is a python dictionary.                                                                                                                                                                                                                                                                                                                            |                |
 
-**Command outputs**
+#### Command output fields
 
 | Name        | Description                                     | Standard                                                       |
 | ----------- | ----------------------------------------------- | -------------------------------------------------------------- |
@@ -291,7 +291,7 @@ It includes the following parameters.
 | description | Description of the context item.                |                                                                |
 | type        | The type the context item will be formatted as. | Available options are: Unknown, String, Number, Date, Boolean. |
 
-**Version and tests**
+### Integration version compatibility and tests
 
 The last section of the YAML file provides Cortex XSIAM with information regarding what version is supported and tests.
 
@@ -308,7 +308,7 @@ It includes the following parameters.
 | fromversion | Indicates the server version that is supported with the integration. If the server version is below the `fromversion`, the integration will not display in the **Settings** area.                                                                                                                                                                                                                                                                                                                                                                                                        |
 | tests       | <p>Instructs the Cortex XSIAM build which test to run to verify that the integration is working.</p><p>To run all of the tests, set <code>tests</code> to <code>Run all tests</code>.</p><p>To not run any tests (not recommended), set <code>tests</code> to <code>No test - &#x3C;reason></code> .</p><div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>Both the automatic and the manual mechanisms run in parallel and do not override each other, and will not cause the same test to run more than once.</p></div> |
 
-**Entry types**
+### War Room entry types
 
 | ID    | Name             | Details                                                                                  |
 | ----- | ---------------- | ---------------------------------------------------------------------------------------- |

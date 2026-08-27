@@ -1,7 +1,5 @@
 ---
-description: >-
-  Methods for testing code, including linting, unit testing, playbook testing
-  and debugging.
+description: Cortex XSIAM methods for linting, testing, and debugging content.
 ---
 
 # Testing

@@ -1,6 +1,10 @@
+---
+description: Review scheduled query settings, statuses, and run details in Cortex XSIAM .
+---
+
 # Scheduled Queries reference information
 
-The table below lists the common fields in the **Scheduled Queries** page.
+The table below lists the common fields in the **Scheduled Queries** page in Cortex XSIAM.
 
 {% hint style="info" %}
 ### Note

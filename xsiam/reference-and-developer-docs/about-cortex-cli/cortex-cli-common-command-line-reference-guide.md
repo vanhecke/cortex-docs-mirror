@@ -1,3 +1,7 @@
+---
+description: Reference common Cortex CLI commands for security scans in Cortex XSIAM.
+---
+
 # Cortex CLI common command line reference guide
 
 Use these command-line flags to manage Cortex Cloud Application Security (AppSec), Cloud Workload Protection (CWP), and API Security through the Cortex CLI. [Common flags](#common-flags) apply to all supported modules. [Global flags](#global-flags) are shared across AppSec and CWP and must appear before the command. When a flag appears in both categories, it works the same way but requires different placement.

@@ -1,3 +1,7 @@
+---
+description: Explore Query Builder features for creating XQL queries in Cortex XSIAM.
+---
+
 # Useful XQL user interface features
 
 The user interface contains several useful features for querying data and viewing results:

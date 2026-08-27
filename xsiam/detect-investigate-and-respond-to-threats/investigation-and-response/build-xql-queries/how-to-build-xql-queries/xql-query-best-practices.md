@@ -1,3 +1,9 @@
+---
+description: >-
+  Review XQL query best practices for efficient, accurate results when creating
+  queries in Cortex XSIAM.
+---
+
 # XQL Query best practices
 
 Cortex XSIAM includes built-in mechanisms for mitigating long-running queries. These include default limits for allowed issues and returned rows. XDM queries search only specified mapped datasets. The following suggestions help streamline your queries:

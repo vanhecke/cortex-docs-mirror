@@ -1,3 +1,7 @@
+---
+description: Create and run XQL queries with Query Builder in Cortex XSIAM.
+---
+
 # Create XQL query
 
 Review the following topics:
@@ -87,8 +91,6 @@ While the query is running, you can navigate away from the page. A notification 
         ```
     2. Press **Enter**, and then type the pipe character (**`|`**). Select a command, and complete the command using the suggested options.
     3.  Continue adding stages until your query is complete.
-
-
 
         ```programlisting
         dataset = xdr_data 

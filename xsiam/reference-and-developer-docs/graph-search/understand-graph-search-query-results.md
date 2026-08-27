@@ -1,5 +1,5 @@
 ---
-description: Learn more about the Graph Search query results.
+description: Understand and analyze Graph Search query results in Cortex XSIAM.
 ---
 
 # Understand Graph Search query results

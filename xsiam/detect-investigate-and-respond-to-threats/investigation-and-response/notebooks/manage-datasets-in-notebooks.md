@@ -1,3 +1,9 @@
+---
+description: >-
+  Create and manage Cortex XSIAM Notebook datasets for queries, rules, and
+  access control.
+---
+
 # Manage datasets in Notebooks
 
 Create, edit, and delete datasets directly in Notebooks and use them in rules.

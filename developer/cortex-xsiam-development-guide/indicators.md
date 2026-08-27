@@ -1,7 +1,5 @@
 ---
-description: >-
-  Learn about indicator fields, relationships, and URL and domain indicator
-  extraction.
+description: Cortex XSIAM guidance for indicators, relationships, and extraction.
 ---
 
 # Indicators

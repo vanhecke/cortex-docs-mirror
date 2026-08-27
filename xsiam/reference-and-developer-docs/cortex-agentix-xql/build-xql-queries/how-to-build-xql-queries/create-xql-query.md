@@ -1,3 +1,7 @@
+---
+description: Create and run XQL queries with Query Builder in Cortex XSIAM.
+---
+
 # Create XQL query
 
 Review the following topics:

@@ -1,12 +1,14 @@
 ---
-description: Review findings for an asset to gain insights into an asset’s posture status.
+description: >-
+  Review findings for an asset to gain insights into an asset’s posture status
+  in Cortex XSIAM.
 ---
 
 # Review findings
 
-Findings provide knowledge about an asset by leveraging the data we collect from various sources. This process helps build a more accurate and comprehensive understanding of the asset’s current state, including its configuration, behavior, and context within the environment. Additionally, findings provide visibility into potential exposures and vulnerabilities, contributing to a clearer assessment of the asset’s risk level. By continuously analyzing and updating findings, we can maintain an up-to-date view of the asset’s security posture and support more informed decision-making for detection, prioritization, and remediation efforts. For more information, see [Issues, findings, and events](case-concepts/issues-findings-and-events).
+In Cortex XSIAM findings provide knowledge about an asset by leveraging the data we collect from various sources. This process helps build a more accurate and comprehensive understanding of the asset’s current state, including its configuration, behavior, and context within the environment. Additionally, findings provide visibility into potential exposures and vulnerabilities, contributing to a clearer assessment of the asset’s risk level. By continuously analyzing and updating findings, we can maintain an up-to-date view of the asset’s security posture and support more informed decision-making for detection, prioritization, and remediation efforts. For more information, see [Issues, findings, and events](case-concepts/issues-findings-and-events).
 
-Click on a finding from any location in the UI to open the findings card. To view all findings, go to **Issues**+**Findings table**. You can also see findings for a specific asset by opening the asset card.
+Click on a finding from any location in the UI to open the findings card. To view all findings, go to **Issues** → **Findings table**. You can also see findings for a specific asset by opening the asset card.
 
 <details>
 

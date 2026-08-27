@@ -1,3 +1,9 @@
+---
+description: >-
+  Collect endpoint memory images in Cortex XSIAM for forensic investigation and
+  analysis.
+---
+
 # Collect a memory image
 
 {% hint style="info" %}

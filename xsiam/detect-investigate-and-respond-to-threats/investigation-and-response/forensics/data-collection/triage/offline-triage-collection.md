@@ -1,3 +1,9 @@
+---
+description: >-
+  Collect Cortex XSIAM forensic evidence from offline endpoints without an
+  installed agent.
+---
+
 # Offline triage collection
 
 The Forensics add-on provides a triage collection option for endpoints with no network connection or no Cortex XDR agent currently installed.

@@ -1,7 +1,5 @@
 ---
-description: >-
-  Learn how to filter for empty values in the results table in Cortex Query
-  Language.
+description: Learn how to filter empty values in XQL results in Cortex XSIAM.
 ---
 
 # How to filter for empty values in the results table

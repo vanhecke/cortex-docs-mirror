@@ -1,5 +1,5 @@
 ---
-description: Test data model rules to verify they work as expected.
+description: Cortex XSIAM steps for testing data model rules.
 ---
 
 # Test Data Model Rules
@@ -11,7 +11,7 @@ There are two ways to test the modeling rules:
 * Use an [XQL query](https://app.gitbook.com/s/AEIjuYE3RXcIfmuQnBbm/detect-investigate-and-respond-to-threats/investigation-and-response/build-xql-queries/how-to-build-xql-queries/create-xql-query) in the Cortex XSIAM UI.
 * Create a data model test configuration and execute the test using `demisto-sdk`.
 
-**Example JSON and data modeling rules**
+### **Example JSON and data modeling rules**
 
 Use the sample JSON and data model rules as described in [Create data model rules]().
 

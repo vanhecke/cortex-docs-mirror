@@ -29,7 +29,7 @@ For all ask conditional tasks, a link is generated for each possible answer the 
 
 In this example, the message and survey will be sent to recipients every hour for six hours, until a reply is received (it is repeated every 60 minutes, 6 times). The SLA is six hours. If the SLA is breached, the playbook will proceed according to the Yes condition.
 
-The SLA is six hours. If the SLA is breached, the playbook will proceed&#x20;
+The SLA is six hours. If the SLA is breached, the playbook will proceed
 
 ![ask-timer.png](https://paloaltonetworks.fluidtopics.net/api/khub/maps/5CAbsl8idaK8R43ZLhoTOw/resources/yeqUDjXQYR7A1CLYidWTZA-5CAbsl8idaK8R43ZLhoTOw/content?v=1a7ca3cd9c24b294\&Ft-Calling-App=ft/turnkey-portal)<br>
 

@@ -1,7 +1,5 @@
 ---
-description: >-
-  Learn more about how to use Graph Search to search assets, findings, and their
-  contextual data.
+description: Learn how Graph Search connects assets, findings, and context in Cortex XSIAM.
 ---
 
 # What is Graph Search?

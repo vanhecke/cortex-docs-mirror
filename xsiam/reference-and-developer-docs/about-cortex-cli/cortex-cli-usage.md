@@ -1,3 +1,7 @@
+---
+description: Run Cortex CLI commands for security scans in Cortex XSIAM.
+---
+
 # Cortex CLI usage
 
 ### Run a Cortex CLI scan

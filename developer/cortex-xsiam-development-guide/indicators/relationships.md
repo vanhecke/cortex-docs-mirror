@@ -1,7 +1,5 @@
 ---
-description: >-
-  Use the create_relationships parameter in an integration to create
-  relationships between indicators as part of enrichment.
+description: Cortex XSIAM guidance for creating indicator relationships during enrichment.
 ---
 
 # Relationships

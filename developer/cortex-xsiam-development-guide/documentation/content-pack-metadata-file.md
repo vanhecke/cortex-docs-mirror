@@ -1,8 +1,5 @@
 ---
-description: >-
-  Information about the pack_metadata.json used to display a description of the
-  content pack in the Marketplace, and apply tags, use cases and categories to a
-  content pack.
+description: Cortex XSIAM content pack metadata file reference for Marketplace publishing.
 ---
 
 # Content pack metadata file
@@ -23,11 +20,11 @@ When displayed in Marketplace, content packs contain the following documentation
 * **Videos**: Displayed in the main display area and in the middle of the **Details** tab.
 * **README**: The content pack README file, if it exists, is displayed in the main display area and in the bottom of the **Details** tab.
 
-#### Pack description
+### Write a Marketplace content pack description
 
 The pack description is the first information users see when they go to your content pack. It's important to give a detailed, thorough description of what the pack contains, use cases, and overall benefits of the pack. The pack description is maintained in the pack\_metadata.json file under the description field. Packs should always contain a description, even if a README file is provided with more details. This enables users to get a short overview of the pack when browsing the Marketplace.
 
-**General description guidelines**
+#### Content pack description guidelines
 
 * Short and to the point
 * Convey gain/benefit for the user
@@ -50,7 +47,7 @@ Example sentences:
 * "Eliminate \_\_\_\_ by improving your\_\_. Rich with layouts and playbooks, this content pack is right for \_\_\_\_"
 * "Get smarter. This pack utilizes \_ and \_\_\_for when \_ is heavily needed"
 
-#### Pack Videos
+### Add Marketplace videos to a content pack
 
 For larger packs that provide at least one end-to-end use case, you are encouraged to create a short video or a few videos for the pack that are displayed in the **Details** tab of the pack in Marketplace. The videos files should be hosted on YouTube, and they should contain a more detailed overview of the pack compared to the **Description** section.
 
@@ -66,27 +63,27 @@ Add the video link to the pack\_metadata.json file. For example, for the Malware
     ],
 ```
 
-#### Pack keywords, tags, use cases, and categories
+### Configure content pack keywords, tags, use cases, and categories
 
 To classify packs and make them easier to find, you can use the following pack metadata elements in the pack metadata file.
 
 ![xsiam-pack-metadata.png](https://4088726609-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FurXrv6qkJRLbdhMdvPIU%2Fuploads%2Fgit-blob-8dd8a02e7a768aa935267bd18c4895fb384dcd47%2F40945d73038cc833dccf5b1c5831eec406c98c004632b96f1d88f793e70fe523.png?alt=media)
 
-**Use cases**
+#### Choose approved content pack use cases
 
 The use case must be one or more of the [approved use cases.](https://github.com/demisto/content/blob/master/Config/approved_usecases.json)
 
-**Tags**
+#### Add approved content pack tags
 
 Tags make it easier to find packs using filters or the search bar, and are visible on the screen to help understand what the pack is and its benefit to users.
 
 Tags must be from the[list of approved tags](https://github.com/demisto/content/blob/master/Config/approved_tags.json).
 
-**Categories**
+#### Select a content pack category
 
 The high level field/subject the pack relates to. Your pack should fall into one of the [approved existing categories](https://github.com/demisto/content/blob/master/Config/approved_categories.json).
 
-**Keywords**
+#### Add searchable content pack keywords
 
 Keywords operate like tags to assist in searching for packs, but they aren't displayed in the UI. You can add keywords as needed.
 

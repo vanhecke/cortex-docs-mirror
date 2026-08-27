@@ -1,6 +1,10 @@
+---
+description: Run free-text queries with Query Builder templates in Cortex XSIAM.
+---
+
 # Run a free text query
 
-You can use the **Free text** template to query your datasets for free-text strings without building a Cortex Query Language (XQL) query. The template queries all of the raw datasets that are stored in your tenant and returns up to 1,000 results.
+You can use the **Free text** template to query your datasets for free-text strings without building a Cortex Query Language (XQL) query in Cortex XSIAM. The template queries all of the raw datasets that are stored in your tenant and returns up to 1,000 results.
 
 {% hint style="info" %}
 ### Note

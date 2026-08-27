@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM forensic investigations to organize endpoint hunt and triage
+  collections.
+---
+
 # Forensic investigations
 
 Investigations are comprised of one or more data collections from endpoints within an environment. Grouping the collections within a single location enables you to focus on the endpoints relevant to your investigation. When searching for data, you can select two types of collections:

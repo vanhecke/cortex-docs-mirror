@@ -1,3 +1,7 @@
+---
+description: Query external data sources with Federated Search in Cortex XSIAM.
+---
+
 # Query using Federated Search
 
 To query using Federated search, navigate to **Incident Response → Investigation → Query Builder** and select **XQL**.
@@ -13,8 +17,6 @@ The following aren't available in Federated Search and remain exclusive to fully
 
 * Complex, cross-source analytical functions, for example correlations, widgets, dashboards, and APIs
 * `search`, `target` and `view` XQL stages
-
-
 {% endhint %}
 
 {% hint style="success" %}
@@ -22,4 +24,3 @@ The following aren't available in Federated Search and remain exclusive to fully
 \
 If there is a type mismatch between the schema and the data in the field, the query fails and Cortex XSIAM displays an error message. In this case, you must delete the external dataset, re-onboard it and make the required changes to the field type accordingly
 {% endhint %}
-

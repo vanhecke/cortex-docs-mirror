@@ -1,10 +1,10 @@
 ---
-description: View the Cortex XSIAM BIOC or IOC rule that generated an issue.
+description: View the BIOC or IOC rule that generated a Cortex XSIAM issue.
 ---
 
 # View generating BIOC or IOC rule
 
-You can easily view and edit the BIOC and IOC rules that generated issues directly from the **Issues** table:
+You can easily view and edit the BIOC and IOC rules that generated issues directly from the **Issues** table in Cortex XSIAM:
 
 1. From the **Issues** page, locate issues with **Detection methods**: **XDR BIOC** and **XDR IOC**.
 2.  Right-click the row, and select Manage Issue → **View generating rule**.

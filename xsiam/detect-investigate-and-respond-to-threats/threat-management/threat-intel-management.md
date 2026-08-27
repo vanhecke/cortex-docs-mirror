@@ -14,4 +14,3 @@ Enhance your investigation with Threat Intel Management (TIM), which utilizes Un
 * [Indicator configuration](threat-intel-management/indicator-configuration)
 * [Indicator management](threat-intel-management/indicator-management)
 * [Indicator investigation](threat-intel-management/indicator-investigation)
-

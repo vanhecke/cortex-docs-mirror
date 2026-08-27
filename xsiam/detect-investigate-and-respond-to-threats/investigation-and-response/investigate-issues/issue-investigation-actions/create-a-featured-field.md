@@ -1,5 +1,7 @@
 ---
-description: Create Cortex XSIAM featured fields to highlight important issue attributes.
+description: >-
+  Create featured fields to highlight important issue attributes in Cortex
+  XSIAM.
 ---
 
 # Create a featured field
@@ -10,9 +12,9 @@ To help you to track issues involving specific hosts, users, and IP addresses, y
 Featured Active Directory values are displayed in the **User** and **Host** fields accordingly.
 {% endhint %}
 
-### How to create a featured field
+### How to create a featured field in Cortex XSIAM
 
-1. Go to Cases & Issues → Case Configuration → **Featured Fields** and select a type of featured field.
+1. Go to **Cases & Issues → Case Configuration →** **Featured Fields** and select a type of featured field.
 2. Click **Add featured \<field-type>** and select one of the following options:
    *   **Create New**
 

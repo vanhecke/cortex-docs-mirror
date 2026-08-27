@@ -1,5 +1,5 @@
 ---
-description: Load custom Cortex checks and optionally verify their signatures.
+description: Load and verify custom Cortex checks with Cortex CLI in Cortex XSIAM.
 ---
 
 # Custom Cortex checks and signature verification

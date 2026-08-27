@@ -1,3 +1,7 @@
+---
+description: Reference scheduled query settings and run details in Cortex XSIAM.
+---
+
 # Scheduled Queries reference information
 
 The table below lists the common fields in the **Scheduled Queries** page.

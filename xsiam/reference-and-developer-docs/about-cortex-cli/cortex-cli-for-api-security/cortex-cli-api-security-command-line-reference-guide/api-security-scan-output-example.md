@@ -1,5 +1,5 @@
 ---
-description: Example API Security scan report output.
+description: Review Cortex CLI API Security scan report output in Cortex XSIAM.
 ---
 
 # API Security scan output example

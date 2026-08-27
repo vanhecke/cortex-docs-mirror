@@ -1,7 +1,5 @@
 ---
-description: >-
-  Plan out the content items you want to create for your own use or content
-  packs that can be contributed to Marketplace.
+description: Cortex XSIAM design guidance for content and Marketplace packs.
 ---
 
 # Design
@@ -10,7 +8,7 @@ Cortex XSIAM provides out-of-the-box content that contain most of the functional
 
 Content packs include one or more content items, and facilitate integrating various data sources by packaging together predefined configurations such as parsers, rules, and dashboards, improving the accuracy and efficiency of security threat identification and analysis. All content contributed to Marketplace must be within a content pack.
 
-Before you begin to create content packs for contribution, you need to understand your goals, and review the design guidelines. Careful attention to the design process ensures that you achieve your desired use case and that the different components of your content pack function correctly together.&#x20;
+Before you begin to create content packs for contribution, you need to understand your goals, and review the design guidelines. Careful attention to the design process ensures that you achieve your desired use case and that the different components of your content pack function correctly together.
 
 During the design process, we recommend the following stages:
 

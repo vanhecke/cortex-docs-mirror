@@ -1,10 +1,10 @@
 ---
-description: Create Cortex XSIAM profile exceptions for relevant XDR agent issues.
+description: Create profile exceptions in Cortex XSIAM for relevant XDR agent issues.
 ---
 
 # Create profile exceptions
 
-For Cortex XDR agent related issues, you can create profile exceptions for Window processes, BTP, and JAVA deserialization issues directly from the **Issues** table.
+For Cortex XDR agent related issues, you can create profile exceptions for Window processes, BTP, and JAVA deserialization issues directly from the **Issues** table in Cortex XSIAM.
 
 1. Identify an **XDR Agent** issue which has a category of **Exploit**, right-click and select **Manage Issue** → **Create issue exception**.
 2. Select an **Exception Scope**:

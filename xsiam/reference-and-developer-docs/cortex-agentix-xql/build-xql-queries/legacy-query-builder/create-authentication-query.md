@@ -1,3 +1,7 @@
+---
+description: Create legacy authentication queries in Cortex XSIAM.
+---
+
 # Create authentication query
 
 From the Query Builder, you can investigate authentication activity across all ingested authentication logs and data.

@@ -49,7 +49,7 @@ The speed and overall performance of using asset groups depend on the amount of 
 The data processing and filtering required for grouping and scoping can increase system latency if the rule count or filtering complexity is high. To ensure optimal performance, we recommend the following:
 
 * Use short filters and simple comparison operators in your asset group definitions to keep complexity low.
-* Minimize the number of asset groups each asset belongs to. While a higher number of groups shouldn't significantly impact performance, incorrectly leveraging them for scoping at a very large scale can have a negative impact.&#x20;
+* Minimize the number of asset groups each asset belongs to. While a higher number of groups shouldn't significantly impact performance, incorrectly leveraging them for scoping at a very large scale can have a negative impact.
 * Moderate the total number of asset groups, as an excessively high asset group count can increase latency.
 
 .

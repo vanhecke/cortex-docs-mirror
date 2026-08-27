@@ -1,3 +1,7 @@
+---
+description: Run Cortex CLI Code Security scans for applications in Cortex XSIAM.
+---
+
 # Cortex CLI usage for Cortex Cloud Application Security
 
 ## Run Cortex Cloud Application Security scans

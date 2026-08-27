@@ -1,10 +1,14 @@
 ---
-description: FAQs for Cortex XSIAM development.
+description: >-
+  Cortex XSIAM development FAQs covering IDEs, tools, languages, operating
+  systems, licensing, and CLA troubleshooting.
 ---
 
 # Frequently asked questions
 
-#### Which IDE should I use?
+<details>
+
+<summary>Which IDE should I use?</summary>
 
 When it comes to an external IDE, you have multiple options. .
 
@@ -26,7 +30,11 @@ IDEs are used only for writing integrations and scripts, everything else (for ex
 Once the resource is developed in the Cortex XSIAM UI, you can download it using `demisto-sdk download -i "$NAME_OF_RESOURCE"` or export it from the UI.
 {% endhint %}
 
-#### Which software development tools should I use?
+</details>
+
+<details>
+
+<summary>Which software development tools should I use?</summary>
 
 While the basics of writing code and changing configuration options can be done in the Cortex XSIAM UI, for complex solutions and supported contributions you'll probably need a combination of both the Cortex XSIAM UI and other tools. See [Content development environments](content-development-environments) for more information.
 
@@ -44,7 +52,11 @@ We recommend using the Cortex XSIAM UI when:
 * Working on the properties of your integration/script (parameters, commands, arguments, and outputs) in the [YAML](../integrations-and-scripts/components/integration-metadata-yaml-file) file - this can also be done using [Visual Studio Code extension](content-development-environments/visual-studio-code-extension).
 * Testing the user experience for what you developed.
 
-#### What programming languages do you support for integrations and scripts?
+</details>
+
+<details>
+
+<summary>What programming languages do you support for integrations and scripts?</summary>
 
 *   Python
 
@@ -53,17 +65,29 @@ We recommend using the Cortex XSIAM UI when:
 
     Cortex XSIAM supports PowerShell integrations and scripts.
 
-#### Which operating systems are supported for development?
+</details>
+
+<details>
+
+<summary>Which operating systems are supported for development?</summary>
 
 The recommended OS for development is either macOS or Linux, as Bash and Docker are used in some validation/testing flows.
 
 For Windows, you can either work with a Linux VM or use [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install).
 
-#### Licensing
+</details>
+
+<details>
+
+<summary>What license applies to the Cortex XSIAM content repository?</summary>
 
 The Cortex XSIAM content repository has an [MIT License](https://github.com/demisto/content/blob/master/LICENSE).
 
-#### Why is CLA is pending even though I signed the agreement?
+</details>
+
+<details>
+
+<summary>Why is my CLA pending after I signed the agreement?</summary>
 
 The CLA should be signed by all branch committers. The CLA bot will let you know the committers who have not yet signed the agreement by marking them with a red X.
 
@@ -91,3 +115,5 @@ Don't forget to close the old PR and delete the old branch.
 {% endhint %}
 
 You can find information about troubleshooting commits in the GitHub docs site [Troubleshooting Guide](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/troubleshooting-commits/why-are-my-commits-linked-to-the-wrong-user).
+
+</details>

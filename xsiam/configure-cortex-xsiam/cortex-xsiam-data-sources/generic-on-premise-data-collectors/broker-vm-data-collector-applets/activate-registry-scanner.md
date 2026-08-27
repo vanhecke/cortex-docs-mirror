@@ -24,12 +24,12 @@ After the registry scanner is initialized, perform the following steps to verify
 ### Prerequisite:
 
 * To initialize registry scanning on your Broker VM, you must first add the necessary data connectors. For details, see:
-  * [Connect Docker Hub registry](../../cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-docker-hub-registry)
-  * [Connect Docker V2 compliant container registry](../../cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-docker-v2-compliant-container-registry)
-  * [Connect GitLab container registry](../../cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-gitlab-container-registry)
-  * [Connect Harbor registry](../../cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-harbor-registry)
-  * [Connect JFrog container registry](../../cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-jfrog-container-registry)
-  * [Connect Sonatype Nexus registry](../../cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-sonatype-nexus-registry)
+  * [Connect Docker Hub registry](broken-reference)
+  * [Connect Docker V2 compliant container registry](broken-reference)
+  * [Connect GitLab container registry](broken-reference)
+  * [Connect Harbor registry](broken-reference)
+  * [Connect JFrog container registry](broken-reference)
+  * [Connect Sonatype Nexus registry](broken-reference)
 * When sizing your Broker VM, consider the following recommendations:
   *   **Disk Size:** Calculate the required disk space by multiplying the average container image size in your environment by 10. This factor accounts for simultaneous operations with a buffer.
 
@@ -55,9 +55,9 @@ After the registry scanner is initialized, perform the following steps to verify
         If the **Registry Scanner** app is not listed in the drop-down menu when you click **+Add**, it means that the registry scanning was not configured for that **Broker VM**. You must first add the data connectors.
     * **Resources**: Shows the percentage of **CPU**, **Memory**, and **Disk** resources used by the app.
 5. To manage the Registry Scanner applet, see:
-   * [Manage a Docker Hub connector](../../cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-docker-hub-registry/manage-a-docker-hub-connector)
-   * [Manage a Docker V2 connector](../../cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-docker-v2-compliant-container-registry/manage-a-docker-v2-connector)
-   * [Manage a Gitlab Container Registry connector](../../cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-gitlab-container-registry/manage-a-gitlab-container-registry-connector)
-   * [Manage a Harbor connector](../../cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-harbor-registry/manage-a-harbor-connector)
-   * [Manage a JFrog connector](../../cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-jfrog-container-registry/manage-a-jfrog-connector)
-   * [Manage a Sonatype connector](../../cloud-posture-and-runtime-security-data-sources/container-registry-scanning/connect-sonatype-nexus-registry/manage-a-sonatype-connector)
+   * [Manage a Docker Hub connector](broken-reference)
+   * [Manage a Docker V2 connector](broken-reference)
+   * [Manage a Gitlab Container Registry connector](broken-reference)
+   * [Manage a Harbor connector](broken-reference)
+   * [Manage a JFrog connector](broken-reference)
+   * [Manage a Sonatype connector](broken-reference)

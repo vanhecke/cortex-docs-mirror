@@ -39,7 +39,7 @@ Cortex XSIAM unifies endpoint, network, cloud, identity, and third-party securit
 You can extend Cortex XSIAM with capabilities such as:
 
 * ITDR (Identity Threat Detection and Response) for domain controller protection
-* Threat Intelligence Platform (TIP)&#x20;
+* Threat Intelligence Platform (TIP)
 * Attack Surface Management (ASM)
 * Email Advanced Security
 * Exposure Management

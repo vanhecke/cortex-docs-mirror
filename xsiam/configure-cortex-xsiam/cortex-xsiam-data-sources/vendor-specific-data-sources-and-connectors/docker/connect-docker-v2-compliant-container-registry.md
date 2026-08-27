@@ -8,7 +8,13 @@ description: >-
 
 A Docker V2-compliant registry is a registry service that complies with the specifications and requirements outlined in the Docker Registry HTTP API V2. This API defines the protocol for interacting with a Docker registry, a repository where Docker images are stored and from which they can be pulled or pushed.
 
-To scan public and private repositories on Docker Hub, use the [Docker Hub](connect-docker-hub-registry) registry connector.
+{% hint style="info" %}
+**Note**: To scan public and private repositories on Docker Hub, use the [Docker Hub](connect-docker-hub-registry) registry connector.
+{% endhint %}
+
+{% hint style="info" %}
+**License type**: This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM product that has the Cloud Posture Security or the Cloud Runtime Security add-on.
+{% endhint %}
 
 ### How to connect Docker V2
 

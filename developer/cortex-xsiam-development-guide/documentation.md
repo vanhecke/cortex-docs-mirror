@@ -1,7 +1,5 @@
 ---
-description: >-
-  Content documentation best practices for content pack metadata files, release
-  notes, README files, and documentation contributions.
+description: Cortex XSIAM documentation best practices for content packs and contributions.
 ---
 
 # Documentation

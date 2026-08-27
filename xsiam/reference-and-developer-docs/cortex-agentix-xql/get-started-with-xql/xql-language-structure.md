@@ -1,5 +1,5 @@
 ---
-description: Learn more about the Cortex Query Language structure when creating a query.
+description: Learn about XQL language structure for creating queries in Cortex XSIAM.
 ---
 
 # XQL Language Structure

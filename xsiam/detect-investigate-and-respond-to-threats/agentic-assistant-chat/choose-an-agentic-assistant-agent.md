@@ -1,5 +1,5 @@
 ---
-description: Choose a system or custom agent for your chat.
+description: Choose a system or custom agent for your chat in Cortex XSIAM.
 ---
 
 # Choose an Agentic Assistant agent

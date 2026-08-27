@@ -1,7 +1,7 @@
 ---
 description: >-
-  The Cortex CLI is a unified command-line tool integrating Cloud Workload
-  Protection, API Security, and Code Security scans into a single executable.
+  Use Cortex CLI to run Code, API, and Cloud Workload Protection scans in Cortex
+  XSIAM.
 ---
 
 # About Cortex CLI

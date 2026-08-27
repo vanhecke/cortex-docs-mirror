@@ -133,7 +133,7 @@ Data streams into the `vendor_product_raw` dataset in Cortex XSIAM. It should ma
    1. Select the **Routes** tab, and click **Add Route**.
    2. Configure the following:
       * **Route name**: Enter a distinct name for the route.
-      * **Filter**: Enter or select a filter using the format `__inputId=='data_source'` so the the pipeline can route the data from the data source.  These filters are usually specific to the environment and is how Cribl Stream is configured.
+      * **Filter**: Enter or select a filter using the format `__inputId=='data_source'` so the the pipeline can route the data from the data source. These filters are usually specific to the environment and is how Cribl Stream is configured.
       * **Pipeline**: Enter the name of the pipeline that you created above for the new generic data source, such as **GenericDataSource** as created above.
       * **Description** (optional): Enter a description for this route.
    3. On the blue line of the new route, click the ellipse menu, and select **Group Actions** → **Create Group**.

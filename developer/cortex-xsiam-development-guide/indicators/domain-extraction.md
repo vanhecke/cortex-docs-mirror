@@ -1,21 +1,19 @@
 ---
-description: >-
-  Extract a domain indicator from text that is recognized from a regular
-  expression and then formatted with a formatting script.
+description: Cortex XSIAM guidance for extracting domain indicators from text.
 ---
 
 # Domain extraction
 
 The Cortex XSIAM domain indicator type is built using regular expression and a formatting script. The following describes the domain extraction components and what output you should expect when extracting indicators of type domain.
 
-#### Domain extraction components
+### Cortex XSIAM domain indicator extraction components
 
 There are two components when extracting domain indicators:
 
 * Regular expression
 * Formatting script
 
-#### Regular expression
+#### Domain indicator regular expression
 
 When text is given, a domain regular expression will try to catch a valid domain based on the following characteristics:
 
@@ -28,7 +26,7 @@ The regular expression can extract domains from one of the following:
 * URL
 * Email address
 
-#### Formatting script
+#### Format extracted domain indicators
 
 After extracting the domain using a regular expression, an `ExtractDomainAndFQDNFromUrlAndEmail` formatting script iterates on each given domain and does the following:
 
@@ -42,7 +40,7 @@ After extracting the domain using a regular expression, an `ExtractDomainAndFQDN
     Excludes ‘.zip’ Top-Level-Domain by default.
 3. Returns the formatted domain.
 
-#### Common domain structures
+### Supported domain indicator structures
 
 * `example.com`
 * `www.example.com`

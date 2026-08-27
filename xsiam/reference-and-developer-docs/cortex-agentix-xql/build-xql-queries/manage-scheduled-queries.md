@@ -1,5 +1,5 @@
 ---
-description: Learn how to manage your scheduled and recurring queries.
+description: Manage scheduled and recurring XQL queries in Cortex XSIAM.
 ---
 
 # Manage scheduled queries

@@ -1,5 +1,5 @@
 ---
-description: Copy Cortex XSIAM issue details, rows, or URLs for sharing and analysis.
+description: Copy issue details, rows, or URLs for sharing and analysis in Cortex XSIAM.
 ---
 
 # Copy issues

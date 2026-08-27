@@ -1,5 +1,5 @@
 ---
-description: Reference schema for API Security scan reports.
+description: Reference the API Security scan report schema for Cortex CLI in Cortex XSIAM.
 ---
 
 # API Security scan report schema

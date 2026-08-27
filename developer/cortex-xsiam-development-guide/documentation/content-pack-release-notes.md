@@ -1,7 +1,5 @@
 ---
-description: >-
-  Best practices for naming, writing, and generating content pack release notes.
-  Troubleshooting for release notes files.
+description: Cortex XSIAM best practices for content pack release notes.
 ---
 
 # Content pack release notes
@@ -15,7 +13,7 @@ demisto-sdk update-release-notes -i Packs/PACK_NAME -u [major|minor|revision]
 ```
 
 {% hint style="info" %}
-### Note
+**Note**
 
 Changes that have not been committed are not detected automatically by the `update-release-notes` command.
 {% endhint %}
@@ -37,11 +35,11 @@ demisto-sdk update-release-notes -i [Changed pack path]
 
 For more information regarding the `update-release-notes` command in the demisto-sdk, please refer to the [command documentation](https://app.gitbook.com/s/nozw5MT5S8KZD2eF8roV/demisto-sdk-guide/demisto-sdk-commands/update-release-notes).
 
-#### Naming
+### Locate generated content pack release notes
 
 The release notes file is generated for you and is found in the `ReleaseNotes` folder within each pack. If this folder does not already exist, it is created for you. Do not change the names of the files that are automatically generated, as this can cause potential issues later in the development process.
 
-#### Format
+### Format content pack release notes
 
 After running the `demisto-sdk update-release-notes` command, the release notes file contains a section for each entity changed in the pack as well as a placeholder (`%%UPDATE_RN%%`). This placeholder should be replaced with a line describing what was changed for that specific entity.
 
@@ -64,7 +62,7 @@ For example, if changes are detected in the Cortex XDR pack for the items `Incid
   - %%UPDATE_RN%%
 ```
 
-#### MD formatting
+### Use Markdown formatting in release notes
 
 For single line RNs, follow this format:
 
@@ -108,7 +106,7 @@ For multiline RNs with nested content, follow this format:
   - Release note 2 here.
 ```
 
-#### Examples and best practices
+### Write effective content pack release notes
 
 Log the following in the corresponding release notes file:
 
@@ -119,7 +117,7 @@ Log the following in the corresponding release notes file:
 * Updated outputs
 * Bug fixes
 
-General guidelines
+#### Content pack release note writing guidelines
 
 * Release notes should be simple, informative, and clearly written. Consider the impact of changes on the user and what they need to know about this version. A poorly written release note with inadequate information can lead to a Customer Support ticket. For example, instead of writing `Added a timeout parameter`, we recommend adding additional detail explaining the new parameter, such as `Added a timeout parameter, that enables you to define the amount of time (in minutes) that the integration tries to execute commands before it throws an error`.
 * Single line release notes do not need a bullet point.
@@ -143,59 +141,70 @@ General guidelines
 
     Release notes that do not start with one of these prefixes will generate an error when running `demisto-sdk doc-review`: `Line is not using one of our templates, consider changing it to fit our standard`.
 
-Entity styling
+#### Format content entity names in release notes
 
 * Command names should be wrapped with three stars - \*\*\*command\_name\*\*\*
 * Content pack names, integrations, scripts, playbooks, and other content entities (incident fields, dashboards, etc.) should be wrapped with two stars - \*\*entity\_name\*\*
 * Parameters, arguments, functions, and outputs names should be wrapped with one star - \*parameter\_name\*
 
-Examples
+#### Content pack release note examples
 
-*   Enhancement Example
+**Enhancement release note example**
 
-    ```programlisting
-    - **MISP V2**  
-    You can now filter an event by attribute data fields.
+````
+```programlisting
+- **MISP V2**  
+You can now filter an event by attribute data fields.
 
-    - **WhatIsMyBrowser**  
-    Added support for the *extend-context* argument in the ***ua-parse*** command.
+- **WhatIsMyBrowser**  
+Added support for the *extend-context* argument in the ***ua-parse*** command.
 
-    - **Microsoft Graph Mail**   
-    Added 3 commands:
-        - ***msgraph-mail-list-folders***
-        - ***msgraph-mail-list-child-folders***
-        - ***msgraph-mail-create-folder***
-    ```
-*   Bug Fix Example
+- **Microsoft Graph Mail**   
+Added 3 commands:
+    - ***msgraph-mail-list-folders***
+    - ***msgraph-mail-list-child-folders***
+    - ***msgraph-mail-create-folder***
+```
+````
 
-    ```programlisting
-    - **Slack v2**  
-        - Fixed an issue where mirrored investigations contained mismatched user names.
-        - Added the **reporter** and **reporter email** labels to incidents that are created by direct messages.
+**Bug fix release note example**
 
-    - **CrowdStrike Falcon**  
-    Fixed an issue with ***fetch incidents***, which caused incident duplication.
+````
+```programlisting
+- **Slack v2**  
+    - Fixed an issue where mirrored investigations contained mismatched user names.
+    - Added the **reporter** and **reporter email** labels to incidents that are created by direct messages.
 
-    - **IBM QRadar**  
-    Fixed an issue in which the ***qradar-delete-reference-set-value*** command failed to delete reference sets with the "\" character in their names.
+- **CrowdStrike Falcon**  
+Fixed an issue with ***fetch incidents***, which caused incident duplication.
 
-    - **GitHub**  
-    Improved implementation of the default value for the *fetch_time* parameter.
-    ```
-*   Docker Update Example
+- **IBM QRadar**  
+Fixed an issue in which the ***qradar-delete-reference-set-value*** command failed to delete reference sets with the "\" character in their names.
 
-    ```programlisting
-    - Updated the Docker image to: *demisto/python3:3.9.1.15759*.
-    ```
-*   General Changes
+- **GitHub**  
+Improved implementation of the default value for the *fetch_time* parameter.
+```
+````
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>Use this type only if the change has no clear or visible impact on the user.</p></div>
+**Docker update release note example**
 
-    ```programlisting
-    - Documentation and metadata improvements.
-    ```
+````
+```programlisting
+- Updated the Docker image to: *demisto/python3:3.9.1.15759*.
+```
+````
 
-#### Excluding items
+**General change release note example**
+
+````
+<div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>Use this type only if the change has no clear or visible impact on the user.</p></div>
+
+```programlisting
+- Documentation and metadata improvements.
+```
+````
+
+### Exclude items from generated release notes
 
 Release notes must contain all changed items included in the generated file. Validation fails if detected items are removed from the generated release notes file.
 
@@ -209,11 +218,11 @@ However, you may encounter a scenario where certain changes are not necessary to
 -->
 ```
 
-#### demisto-sdk doc-review
+### Validate release notes with `demisto-sdk doc-review`
 
 demisto-sdk includes the [doc-review](https://app.gitbook.com/s/nozw5MT5S8KZD2eF8roV/demisto-sdk-guide/demisto-sdk-commands/doc-review) command to assist with the documentation review process. The `doc-review` command checks the spelling of the release notes and provides guidance if you are not using one of our standardized templates. Example usage: `demisto-sdk doc-review -i Packs/Base/ReleaseNotes/1_11_10.md`.
 
-#### Breaking changes version
+### Create release notes for breaking changes
 
 In some cases, a new version is introduced which breaks backward compatibility. You can mark a new version as a breaking changes version. Marking a version as a breaking changes version provides the user with an alert before installation.
 
@@ -237,20 +246,20 @@ The configuration JSON file is generated with the following fields:
     }
     ```
 
-#### Common troubleshooting tips
+### Troubleshoot content pack release notes
 
-**I excluded an item from the release notes file, but it doesn't pass validation.**
+#### Excluded item fails release note validation
 
 Remove the `%%UPDATE_RN%%` from the generated file and leave the other generated items intact.
 
-**When I run the `update-release-notes` command, it does not find any of my changes.**
+#### `update-release-notes` does not find changes
 
 First check you have committed your files. Then verify that the type of file you changed requires a release notes entry. TestPlaybooks, Images, READMEs, and TestData do not require release notes.
 
-**I ran the command and filled out the release notes correctly, but it still fails validation.**
+#### Completed release notes fail validation
 
 On rare occasions, it's possible that the pack you are working on has already had the version updated. To resolve this, delete the generated release notes Markdown (.md) file and restore the `currentVersion` in the `pack_metadata.json` file to its original version. Next, pull from the master branch. Lastly, run the `update-release-notes` command again.
 
-**I added a new pack. Do I need release notes?**
+#### Release notes for new content packs
 
 The build process automatically creates the initial release notes. You do not need to generate release notes for new content packs.

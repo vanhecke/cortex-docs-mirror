@@ -1,7 +1,5 @@
 ---
-description: >-
-  Use the out of the box installed Common Playbooks content back for common
-  tasks that are part of many analyst workflows.
+description: Cortex XSIAM generic playbooks for common analyst workflows.
 ---
 
 # Generic playbooks

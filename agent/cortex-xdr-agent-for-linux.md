@@ -17,8 +17,6 @@ The protection capabilities and features that the Cortex XDR agent for Linux pro
 
     This mode allows you to leverage the protection provided by Cortex XDR agent on Linux distributions running Kernel 5.0 and above without loading a kernel module. The Palo Alto Networks [Compatibility Matrix](https://app.gitbook.com/s/fZ8QSMnkjnXpuOeuRcam/) provides more information about supported Linux distribution versions.
 
-    &#x20;
-
     To operate in user mode, make sure of the following:
 
     * In the Agent Profile, configure the **Agent Operation Mode** as **User Space**.

@@ -1,3 +1,7 @@
+---
+description: Create legacy registry queries in Cortex XSIAM.
+---
+
 # Create registry query
 
 From the Query Builder you can investigate connections between registry activity, processes, and endpoints.

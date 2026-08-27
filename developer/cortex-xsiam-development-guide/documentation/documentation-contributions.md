@@ -1,12 +1,12 @@
 ---
-description: Edit an xsoar.pan.dev doc page or report an issue.
+description: Cortex XSIAM steps for contributing documentation or reporting issues.
 ---
 
 # Documentation Contributions
 
 Our developer docs and reference content docs are open source and hosted on GitHub. The editing experience is integrated via GitHub directly into the pan.dev doc site to make it easy to contribute and suggest improvements.
 
-#### Edit an Existing Document
+### Edit Cortex XSIAM documentation with a GitHub pull request
 
 To fix small errors and omissions in existing documents we recommend editing the document directly via a pull request (PR). While you can create an issue to report the error, it is often faster and easier to edit the document with the suggested fix via a pull request.
 
@@ -14,12 +14,12 @@ Create a pull request to fix a documentation error
 
 1.  Most pages include the ![edit-this-page.png](https://4088726609-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FurXrv6qkJRLbdhMdvPIU%2Fuploads%2Fgit-blob-7c6187d94f36d099838ab92dc1ae22c3aa683fa8%2Fc7239f9f82e6d39c76deea3f8504625fe0de161c34f49fc44e7625368a109498.png?alt=media) option at the bottom of the page.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>If the <strong>Edit this page</strong> option is not available, it means the page is not open for public contribution. You can still report an issue, but you can not create a pull request with edits.</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>If the <strong>Edit this page</strong> option is not available, it means the page is not open for public contribution. You can still report an issue, but you can not create a pull request with edits.</p></div>
 2.  Once the **Edit this page** link is clicked, a new GitHub window opens. The window contains the page in markdown view with an option to edit the page. Click the pencil icon to start editing the page.
 
     ![](https://4088726609-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FurXrv6qkJRLbdhMdvPIU%2Fuploads%2Fgit-blob-96c0037cdff918a2e6867e908eefdf4a8236a237%2F1ae12ae78884a9d19679983f9df1e40c29d530a760d058862602703a70551308.png?alt=media)
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>If the pencil icon is grayed out, you need to log in to your GitHub account or if necessary create an account.</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>If the pencil icon is grayed out, you need to log in to your GitHub account or if necessary create an account.</p></div>
 3. Edit the page with your changes. Use the **Preview changes** tab to check the formatting of your changes.
 4.  Once editing is completed, scroll to the bottom of the page. Enter a title and description for your proposed change and click **Propose changes**.
 
@@ -32,7 +32,7 @@ Create a pull request to fix a documentation error
     ![](https://4088726609-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FurXrv6qkJRLbdhMdvPIU%2Fuploads%2Fgit-blob-797e03381ba44639ddf4496a35cdcc8e65d08972%2F01cbc64538ec4e3297ad0ff2477f9a936f403594aeba55e414d6c727c860ecef.png?alt=media)
 7. You've created a pull request. A team member will review and merge your PR. If you've made larger changes, you may get feedback or questions via the comments on the PR.
 
-#### Reporting a Documentation Issue
+### Report a Cortex XSIAM documentation issue on GitHub
 
 If you've found an issue with one of our docs and you are not sure how to fix it via a pull request or the edit option is not available, report an issue. Reporting issues helps improve the documentation.
 

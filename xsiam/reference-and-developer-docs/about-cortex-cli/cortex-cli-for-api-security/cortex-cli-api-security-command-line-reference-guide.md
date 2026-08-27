@@ -1,3 +1,7 @@
+---
+description: Reference Cortex CLI commands for API Security scans in Cortex XSIAM.
+---
+
 # Cortex CLI API Security command line reference guide
 
 Use these API Security-specific commands and flags to run scans with the Cortex CLI. Refer to [Cortex CLI common command line reference guide](../cortex-cli-common-command-line-reference-guide) for common flags that apply across all supported modules.

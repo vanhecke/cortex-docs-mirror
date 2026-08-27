@@ -1,6 +1,6 @@
 # Get started with ITDR
 
-To deploy and configure the Identity Threat Detection and Response module features, follow the steps below. &#x20;
+To deploy and configure the Identity Threat Detection and Response module features, follow the steps below.
 
 1. Activate the ITDR add-on license from **Settings -> Cortex XSIAM License**. This activates the identity analytics features automatically.
 2. Activate and onboard the [Cloud Identity Engine](https://docs.paloaltonetworks.com/identity/activation-and-onboarding/get-started-with-the-cloud-identity-engine).
@@ -9,7 +9,7 @@ To deploy and configure the Identity Threat Detection and Response module featur
 
 ## Set up Identity Profiles
 
-The Identity Profile centralizes identity security policies for Domain Controllers. It supports consistent security controls across your environment. This Windows-only profile must be mapped to policies for Domain Controller endpoints.
+The Identity Profile centralizes identity security policies for Domain Controllers. It supports consistent security controls across your environment. After configuration, the profile must be mapped to policies for Domain Controller endpoints.
 
 {% hint style="info" %}
 ### Note
@@ -17,6 +17,8 @@ The Identity Profile centralizes identity security policies for Domain Controlle
 Identity Profile requires Cortex XSIAM 3.5, Cortex XDR 5.1, or Cortex Cloud Runtime 2.1 or later. It also requires Cortex XDR agent 9.1 or later. It is unavailable for Cortex XSIAM 2.x and Cortex XDR 3.x tenants.
 
 Policies can contain an Identity Profile in mixed-agent environments. Agents earlier than version 9.1 ignore these settings.
+
+Identity Profile is available in Windows endpoints.
 {% endhint %}
 
 To customize settings for specific agents, create an Identity Profile and assign it to policy rules for Domain Controller endpoints.
@@ -29,7 +31,7 @@ To customize settings for specific agents, create an Identity Profile and assign
    3. Click **Next**.
    4. Enter a unique **Profile Name**. Use only letters, numbers, or spaces. Names must contain 30 characters or fewer.
    5. Add a **Description** with the profile's purpose or business reason. For example, include a case ID or help desk ticket link.
-2.  Use the toggle to enable or disable **AD-SPM**. \
+2.  Use the toggle to enable or disable **AD-SPM**.\
     Use **Active Directory Security Posture Management** to monitor Active Directory for risky account configurations, weak or compromised passwords, unused accounts, and excessive privileges. Use Weak Password to identify weak passwords used in Active Directory and define the scan frequency.
 
     When enabled, both **Weak Password** and **AD-SPM** are both enabled.
@@ -53,4 +55,3 @@ To customize settings for specific agents, create an Identity Profile and assign
 ### What to do next
 
 Apply the new profile by adding it to a policy rule. You can also define other profiles first. Policy rules let you select the endpoints that receive the policy.
-

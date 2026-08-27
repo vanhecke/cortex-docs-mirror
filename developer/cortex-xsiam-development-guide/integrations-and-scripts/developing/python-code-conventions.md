@@ -8,9 +8,11 @@ All new integrations and scripts should be written in Python 3.
 
 Follow these Python code conventions for consistency and best practices.
 
+### Python integration and script code conventions
+
 <details>
 
-<summary>Imports</summary>
+<summary>Python imports</summary>
 
 Define imports and disable insecure warning at the top of the file.
 
@@ -41,7 +43,7 @@ DATE_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
 ```
 
 {% hint style="info" %}
-### Important
+**Important**
 
 Do NOT name constants as follows:
 
@@ -55,7 +57,7 @@ url = demisto.params().get("url")
 
 <details>
 
-<summary>main Function</summary>
+<summary>Python main function</summary>
 
 Define the `main` function as follows:
 
@@ -91,7 +93,7 @@ def main():
 
 <details>
 
-<summary>Client class</summary>
+<summary>Integration Client class</summary>
 
 Follow these best practices for defining the Client class.
 
@@ -144,7 +146,7 @@ class Client(BaseClient):
         )
 ```
 
-**Example - Client instance using an API Key**
+#### Client instance using an API key
 
 ```programlisting
 api_key = demisto.params().get('apikey')
@@ -169,7 +171,7 @@ client = Client(
 )
 ```
 
-**Example - Client instance using basic authentication**
+#### Client instance using basic authentication
 
 ```programlisting
 username = demisto.params().get('credentials', {}).get('identifier')
@@ -191,7 +193,7 @@ client = Client(
 )
 ```
 
-**HTTP call retries**
+#### HTTP call retries
 
 `sleep` can cause performance issues so do not use it in the code. Instead, use the retry mechanism implemented in the BaseClient with the `_http_request` function `retries` and `backoff_factor` arguments.
 
@@ -199,7 +201,7 @@ client = Client(
 
 <details>
 
-<summary>Command functions</summary>
+<summary>Integration command functions</summary>
 
 Follow these best practices for defining the command functions.
 
@@ -290,7 +292,7 @@ For more details on these two command argument properties, see [Integration meta
 
 <details>
 
-<summary>test-module</summary>
+<summary>Integration test-module command</summary>
 
 The `test-module` executes when users click the **Test** button in the integration instance settings page.
 
@@ -326,7 +328,7 @@ def test_module(client):
 
 <details>
 
-<summary>fetch-events</summary>
+<summary>Fetch-events integration command</summary>
 
 The `fetch-events` function initiates a fetch events request to specific external product endpoint(s) using the relevant chosen parameters, and sends the fetched events to the Cortex XSIAM dataset. If the integration instance setting is configured to `Fetch events`, then this command is executed at the specified `Events Fetch Interval`. By default, it runs every minute to retrieve and import events into Cortex XSIAM.
 
@@ -355,7 +357,7 @@ def get_events(client, alert_status, args):
 
 <details>
 
-<summary>Parsing rules</summary>
+<summary>Event collector parsing rules</summary>
 
 When developing an event collector, set the Parsing Rules within the collector code. The most common parsing rule is the `_time` system property which indicates the event time from the remote system. For example, if we use the following events as an example:
 
@@ -402,7 +404,7 @@ fields
 
 <details>
 
-<summary>Exceptions and errors</summary>
+<summary>Python exceptions and errors</summary>
 
 Follow these best practices for defining exceptions and errors.
 
@@ -429,7 +431,7 @@ Follow these best practices for defining exceptions and errors.
 
 <details>
 
-<summary>Unit tests</summary>
+<summary>Integration command unit tests</summary>
 
 Every integration command must be covered with a [unit test](../../testing/unit-testing).
 
@@ -437,7 +439,7 @@ Every integration command must be covered with a [unit test](../../testing/unit-
 
 <details>
 
-<summary>Variable naming</summary>
+<summary>Python variable naming</summary>
 
 When naming variables, use [Snake case](https://en.wikipedia.org/wiki/Snake_case), not Pascal case or camel case.
 
@@ -445,13 +447,13 @@ When naming variables, use [Snake case](https://en.wikipedia.org/wiki/Snake_case
 
 <details>
 
-<summary>Outputs</summary>
+<summary>Integration command outputs</summary>
 
 See [Context and outputs](context-and-outputs).
 
 Follow [Context Standards](context-standards) when naming indicator outputs
 
-**Linking Context**
+#### Link integration command context
 
 Linking context together prevents a command from overwriting existing data or from creating duplicate entries in the context.
 
@@ -472,7 +474,7 @@ In this example, `val.URL && val.URL == obj.URL` links the results retrieved fro
 
 <details>
 
-<summary>Logging</summary>
+<summary>Integration logging</summary>
 
 You can pass information to the logs to assist future debugging.
 
@@ -494,7 +496,7 @@ def get_ip(ip):
 ```
 
 {% hint style="info" %}
-### Important
+**Important**
 
 Do not print sensitive data to the log. When an integration is ready to be used as part of a public release (meaning you are done debugging it), always remove print statements that are not absolutely necessary.
 {% endhint %}
@@ -503,7 +505,7 @@ Do not print sensitive data to the log. When an integration is ready to be used 
 
 <details>
 
-<summary>Dates</summary>
+<summary>Date and time formats</summary>
 
 Cortex XSIAM does not use epoch time for customer facing results (for example context and human readable). If the API you are working with requires the time format to be in epoch, then convert the date string into epoch as needed. Where possible, use the human readable format of the date `%Y-%m-%dT%H:%M:%S`.
 
@@ -515,7 +517,7 @@ print(formatted_time)
 ```
 
 {% hint style="info" %}
-### Note
+**Note**
 
 If the response returned is in epoch, best practice is to convert it to `%Y-%m-%dT%H:%M:%S`.
 {% endhint %}
@@ -532,12 +534,12 @@ When working on a command that supports pagination (usually has API parameters l
 * `page size`
 * `limit`
 
-**Use cases**
+#### Pagination use cases
 
 * Manual Pagination: The user wants to control the pagination by using the `page` and `page size` arguments, usually as part of a wrapper script for the command. The command passes the `page` and `page size` values on to the API request. If the limit argument is also provided, it is redundant and should be ignored.
 * Automatic Pagination: Useful when the user prefers to work with the total number of results returned from the playbook task rather than implementing a wrapper script that works with pages. In this case, the `limit` argument aggregates results by iterating over the necessary pages from the first page until collecting all the needed results. This implies a pagination loop mechanism is implemented behind the scenes. For example, if the limit value received is 250 and the maximal page size enforced by the API is 100, the command performs 3 API calls (pages 1,2, and 3) to collect the 250 requested results. Note that when a potentially large number of results may be returned and the user wants to perform filters and/or transformers on them, we still recommend creating a wrapper script for the command for better performance.
 
-**Recommendations**
+#### Pagination recommendations
 
 * Page Tokens - If an API supports page tokens, instead of the more common 'limit' and 'offset'/'skip' as query parameters:
   * The arguments that are implemented are: `limit`, `page_size` , and `next_token`.
@@ -563,11 +565,11 @@ When working on a command that supports pagination (usually has API parameters l
 
 <details>
 
-<summary>Credentials</summary>
+<summary>Integration credentials</summary>
 
 When working on integrations that require user credentials (such as username/password and API token/key) best practice is to use the `credentials` parameter type.
 
-**Using username and password**
+#### Username and password credentials
 
 *   In the UI:
 
@@ -598,7 +600,7 @@ When working on integrations that require user credentials (such as username/pas
         }
     ```
 
-**Using an API token/key**
+#### API token or key credentials
 
 *   In the UI:
 
@@ -617,7 +619,7 @@ Using the `credentials` parameter type is recommended (even when working with AP
 
 </details>
 
-**Common Server Functions**
+### Cortex XSIAM CommonServerPython helper functions
 
 Check the script helper for common predefined functions to facilitate script development. The following are some examples.
 
@@ -665,7 +667,7 @@ The Context Path shows:
 If the integration has a reliability it should be noted, but it defaults to `None` when not provided.
 
 {% hint style="info" %}
-### Note
+**Note**
 
 * If the indicator type is `CustomIndicator`, you need to provide the `context_prefix` argument.
 * If the indicator type is `Cryptocurrency`, you need to provide the `address_type` argument.
@@ -699,7 +701,7 @@ In the War Room, tables appear as follows:
 
 ![xsiam-war-room-table.png](https://4088726609-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FurXrv6qkJRLbdhMdvPIU%2Fuploads%2Fgit-blob-645506174f3d3afe752c007a54d8c2fd5cdb1bb2%2F2bd8762b96cdc82ee5b8b33944186d2355204ffc86cba2a6769e96a2c75feafc.png?alt=media)
 
-**Add table headers**
+#### Add table headers
 
 Use `headerTransform` to convert existing keys into formatted headers.
 
@@ -738,7 +740,7 @@ The resulting table is:
 
 ![xsiam-table-metadata.png](https://4088726609-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FurXrv6qkJRLbdhMdvPIU%2Fuploads%2Fgit-blob-70b2dd6ea110f03794d9164f6b9d55c28fd3e8f7%2F2a0226580eeabc4b4b29ed30cd094a1c6cd163dfb29036233fdaca600d28ccd2.png?alt=media)
 
-**Format date fields**
+#### Format date fields
 
 Use the `date_fields` argument (list) of date fields to format date values to human-readable output.
 
@@ -804,7 +806,7 @@ For example, this code snippet generates the following table:
 
 ![xsiam-format-table.png](https://4088726609-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FurXrv6qkJRLbdhMdvPIU%2Fuploads%2Fgit-blob-fc14991b71989984ecdfd5c2dd7e3c7a29b67997%2Facaea2276d7be039e87079e76f468f8eab208396d986b8f1d9227f0e64ced20b.png?alt=media)
 
-**Transform JSON data to a table**
+#### Transform JSON data into a table
 
 Use the `is_auto_json_transform` argument (bool), to auto-transform a complex JSON.
 
@@ -905,11 +907,11 @@ After the command is executed, the arguments are displayed in the War Room as pa
 
 When `IndicatorTimeline` data is returned in an entry, the timeline section of the indicator whose value was noted in the timeline data will be updated and is viewable in the indicator's view page in Cortex XSIAM.
 
-**What value should be used for the 'Category' field of a timeline data object?**
+#### Choose a category for timeline data
 
 Any Cortex XSIAM integration command or script that returns timeline data may include the `Category` value. If not given, when returning timeline data from a Cortex XSIAM integration or script, the value will be `Integration Update` or `Automation Update` accordingly.
 
-**When should a timeline object be included in an entry returned to the War Room?**
+#### Include timeline data in War Room entries
 
 A timeline object should be included when a command operates on an indicator. For example, if the command returns a DBotScore or entities as described in context standards documentation to the entry context. A common case is reputation commands, such as `!ip`, `!url`, and `!file`. When implementing these commands in integrations, timeline data should be included in the returned entry.
 
@@ -978,7 +980,7 @@ This object returns outputs. It represents an entry in the War Room. A string re
 | relationships         | List               | A list of `EntityRelationship` objects representing all the relationships of the indicator.                                                                                                 |
 | scheduled\_command    | ScheduledCommand   | Manages the way the command result should be polled.                                                                                                                                        |
 
-**Example**
+#### CommandResults example
 
 ```screen
 results = CommandResults(

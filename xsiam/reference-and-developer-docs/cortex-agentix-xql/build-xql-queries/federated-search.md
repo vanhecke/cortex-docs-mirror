@@ -1,3 +1,7 @@
+---
+description: Use Federated Search to query external data sources in Cortex XSIAM.
+---
+
 # Federated Search
 
 Federated Search is a query mechanism designed to provide unified access to distributed data sources without requiring pre-ingestion or centralization. This capability enables you to query data in place, significantly reducing the complexity and operational costs associated with the ingestion process and long-term data retention.

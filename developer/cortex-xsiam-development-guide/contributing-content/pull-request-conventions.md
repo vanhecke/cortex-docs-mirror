@@ -1,5 +1,5 @@
 ---
-description: Pull request best practices. A description of the pull request build process.
+description: Cortex XSIAM pull request conventions and build process guidance.
 ---
 
 # Pull request conventions
@@ -10,7 +10,7 @@ We recommend you check the PR updates often. If you think the process has stalle
 
 We value your contributions. By following our best practices for pull requests, you can help expedite the contribution process.
 
-#### Pull request best practices
+### Pull request best practices
 
 Use the following guidelines when working on changes requested by our reviewers.
 
@@ -50,7 +50,7 @@ Use the following guidelines when working on changes requested by our reviewers.
     git commit -m "squash from $COMMIT_HASH into one"
     ```
 
-#### The build process
+### The build process
 
 The commit hooks of the repository automatically run several commands locally on your system, such as [demisto-sdk validate](https://app.gitbook.com/s/nozw5MT5S8KZD2eF8roV/demisto-sdk-guide/demisto-sdk-commands/validate), that verify your content is valid before you commit and push the changes to your pull request.
 

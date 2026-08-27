@@ -1,7 +1,5 @@
 # Cisco ASA firewalls and AnyConnect\`
 
-
-
 You can configure collecting Cisco ASA firewall and AnyConnect VPN logs using a Broker VM Syslog Collector applet, content pack integration (onboarded prior to July 26, 2026), or connector (onboarded after July 26, 2026):
 
 | Collection Method                                                                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |

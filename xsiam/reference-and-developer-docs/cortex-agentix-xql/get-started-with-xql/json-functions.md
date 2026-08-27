@@ -1,7 +1,5 @@
 ---
-description: >-
-  Learn more about how Cortex XSIAM treats JSON functions in the Cortex Query
-  Language.
+description: Learn how to use JSON functions in XQL in Cortex XSIAM.
 ---
 
 # JSON functions

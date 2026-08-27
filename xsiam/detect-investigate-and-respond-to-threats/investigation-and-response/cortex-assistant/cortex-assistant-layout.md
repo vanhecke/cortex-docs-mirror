@@ -1,3 +1,9 @@
+---
+description: >-
+  Navigate the Cortex Assistant layout to investigate security data in Cortex
+  XSIAM.
+---
+
 # Cortex Assistant layout
 
 Cortex Assistant consists of the following primary components:

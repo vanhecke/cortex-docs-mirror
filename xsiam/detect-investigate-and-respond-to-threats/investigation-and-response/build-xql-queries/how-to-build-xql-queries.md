@@ -1,3 +1,7 @@
+---
+description: Build XQL queries using Query Builder tools and workflows in Cortex XSIAM.
+---
+
 # How to build XQL queries
 
 The Cortex Query Language (XQL) enables you to query data ingested into Cortex XSIAM for rigorous endpoint and network event analysis. To help you create an eﬀective XQL query with the proper syntax, the query ﬁeld in the user interface provides suggestions and deﬁnitions as you type.

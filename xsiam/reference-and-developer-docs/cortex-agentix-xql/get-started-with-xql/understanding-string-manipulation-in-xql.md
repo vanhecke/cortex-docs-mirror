@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn more about string manipulation in Cortex Query Language (XQL) using
-  double and triple quotes.
+  Learn how to manipulate strings in XQL using double and triple quotes in
+  Cortex XSIAM.
 ---
 
 # Understanding string manipulation in XQL

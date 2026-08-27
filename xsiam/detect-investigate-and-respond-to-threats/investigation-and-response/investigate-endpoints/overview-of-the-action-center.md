@@ -1,3 +1,9 @@
+---
+description: >-
+  Track investigation, response, and maintenance actions on protected endpoints
+  in the Cortex XSIAM Action Center.
+---
+
 # Overview of the Action Center
 
 The **Action Center** is a central location from which you can track the progress of all investigation, response, and maintenance actions performed on your Cortex XSIAM protected endpoints. To access the **Action Center**, go to **Investigation & Response → Response** → **Action Center**.

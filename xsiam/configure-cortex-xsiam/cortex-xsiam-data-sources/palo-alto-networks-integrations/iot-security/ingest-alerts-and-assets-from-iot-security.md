@@ -12,7 +12,7 @@ Legacy IoT Security data collectors will be discontinued in the near future. We 
 
 The Palo Alto Networks IoT Security (Deprecated) solution discovers unmanaged devices, detects behavioral anomalies, recommends policy based on risk, and automates enforcement without the need for additional sensors or infrastructure. The Cortex XSIAM IoT Security (Deprecated) integration enables you to ingest alerts and device information from your IoT Security (Deprecated) instance.
 
-### Data Collection Behavior&#x20;
+### Data Collection Behavior
 
 * **Issues and alerts**: Cortex XSIAM displays IoT Security (Deprecated) alerts in the Cortex XSIAM Issues table and groups them into cases. These issues are updated every **15 minutes**. IoT security alerts that were resolved before the integration was established are not added to the table.
 * **Assets and device activities**: Device activities detected by IoT Security (Deprecated) are populated in the Cortex XSIAM Assets table. These activities are updated every **5 minutes**.
@@ -20,7 +20,7 @@ The Palo Alto Networks IoT Security (Deprecated) solution discovers unmanaged de
   * `panw_iot_security_alerts_raw` (for alerts/issues)
   * `panw_iot_security_devices_raw` (for assets/device activities)
 
-### Prerequisites&#x20;
+### Prerequisites
 
 Before you configure the IoT Security (Deprecated) data collector, generate an access key and a key ID for the integration.
 
@@ -29,9 +29,9 @@ Before you configure the IoT Security (Deprecated) data collector, generate an a
 3. In the **User Role & Access** section, **Create** an API Access Key.
 4. Download and save the access key and key ID in a secure location.
 
-For more information about the PAN IoT Security  API, see [Get Started with the IoT Security API](https://docs.paloaltonetworks.com/iot/iot-security-api-reference/iot-security-api-overview/get-started-with-the-iot-security-api) (Deprecated).
+For more information about the PAN IoT Security API, see [Get Started with the IoT Security API](https://docs.paloaltonetworks.com/iot/iot-security-api-reference/iot-security-api-overview/get-started-with-the-iot-security-api) (Deprecated).
 
-### Configure the IoT Security Collector (Deprecated)&#x20;
+### Configure the IoT Security Collector (Deprecated)
 
 1. Navigate to **Settings** > **Data Sources & Integrations**.
 2. On the **Data Sources & Integrations** page, click **+ Add New**, search for **IoT Security** **(Deprecated)**, then hover over it and click **Add**.
@@ -44,9 +44,9 @@ For more information about the PAN IoT Security  API, see [Get Started with the 
 4. Click **Test** to validate access, and then click **Enable**.\
    When events start to come in, a green checkmark appears underneath the **IoT Security (Deprecated)** data collector configuration with the data and time that the data was last synced.
 
-### Managing the Collector&#x20;
+### Managing the Collector
 
-You can continue to manage your existing configuration by selecting the integration in your settings to:&#x20;
+You can continue to manage your existing configuration by selecting the integration in your settings to:
 
 * **Edit** the collector settings.
 * **Disable** data collection temporarily.
@@ -55,5 +55,5 @@ You can continue to manage your existing configuration by selecting the integrat
 {% hint style="info" %}
 **Note**
 
-If you disable or delete this legacy collector, you will need to follow the migration path to deploy the **Device Security** data collector to maintain continuous asset and alert monitoring.&#x20;
+If you disable or delete this legacy collector, you will need to follow the migration path to deploy the **Device Security** data collector to maintain continuous asset and alert monitoring.
 {% endhint %}

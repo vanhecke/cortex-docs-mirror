@@ -1,6 +1,10 @@
+---
+description: Investigate SHA256 file and process hashes in Cortex XSIAM.
+---
+
 # Investigate a file and process hash
 
-Drilldown on a file or process hash on the Hash View. On this view you can investigate and take actions on SHA256 hash processes and files, and see information about a specific SHA256 hash over a defined 24-hour or 7-day time frame. In addition, you can drill down on each of the process executions, file operations, cases, actions, and threat intelligence reports relating to the hash.
+Drilldown on a file or process hash on the Hash View in Cortex XSIAM. On this view you can investigate and take actions on SHA256 hash processes and files, and see information about a specific SHA256 hash over a defined 24-hour or 7-day time frame. In addition, you can drill down on each of the process executions, file operations, cases, actions, and threat intelligence reports relating to the hash.
 
 ### How to investigate a file or process hash
 

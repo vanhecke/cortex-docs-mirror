@@ -1,14 +1,12 @@
 ---
-description: >-
-  Use long running containers to make integrations long running. Develop long
-  running integrations in Python.
+description: Cortex XSIAM guidance for long-running integration containers.
 ---
 
 # Long Running Containers
 
 You can use long running containers to run specific processes in an integration indefinitely. To use long running containers, the integration must be written in Python.
 
-**Enable the longRunning property**
+### Enable the `longRunning` integration property
 
 To make an integration long running, to enable the `longRunning` property:
 
@@ -20,7 +18,7 @@ When you select the checkbox, the server launches a long running container each 
 
 ![](https://4088726609-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FurXrv6qkJRLbdhMdvPIU%2Fuploads%2Fgit-blob-842ea5e1d5ab5248f22aba3a97fbaab646695abf%2Feddb7ee808a8b8c90fa868e0dd983de4e8e7526518c7b3433675c509060348ae.png?alt=media)
 
-**Integrations that are long running by default**
+### Integrations that run continuously by default
 
 Some integrations are long running by default. These integrations do not include the **Long running integration** checkbox. Example of such integrations include:
 
@@ -34,11 +32,11 @@ For these integrations, the long-running behavior is inherent and cannot be modi
 
 These integrations can operate in **Single engine** mode or **No engine** mode. When using single engine mode, select your engine in the integration configuration and specify the port number for the **Listen Port**. When using no engine mode, select **No engine** in the integration configuration. The server automatically assigns a port for the instance.
 
-**Implementation**
+### Implement a long-running integration command
 
 When the container runs, it calls a dedicated command in the integration, similar to `fetch-incidents`. The command is called `long-running-execution`. To use a long running container, you need to implement `long-running-execution` in your integration code. For the code to run code forever, it must never stop executing. For example, you can use a never ending loop (`while True`).
 
-**Interaction with the server**
+### Interact with the Cortex XSIAM server
 
 Since the long running container does not run within a scope of an incident, it has no standard place to output results to. Instead there are dedicated functions to interact with the server:
 
@@ -52,17 +50,17 @@ Since the long running container does not run within a scope of an incident, it 
 * `mirrorInvestigation` - For chat based integrations, mirrors a provided Cortex XSIAM investigation to the corresponding chat module.
 * `directMessage` - For chat based integrations, handles free text sent from a user to the chat module and processes it in the server.
 
-**Manage container states**
+### Manage long-running container states
 
-One of the most important and useful aspects of the long running process is the integration context: `demisto.setIntegrationContext(context)` `demisto.getIntegrationContext()`  You can use the integration context to store information and manage the state of the container per integration instance. This context is stored in a format of a dict of `{'key': 'value'}`, where the value must be a string. To store complex objects as values, parse them to JSON.
+One of the most important and useful aspects of the long running process is the integration context: `demisto.setIntegrationContext(context)` `demisto.getIntegrationContext()` You can use the integration context to store information and manage the state of the container per integration instance. This context is stored in a format of a dict of `{'key': 'value'}`, where the value must be a string. To store complex objects as values, parse them to JSON.
 
 Use logging to notify and report different states inside the long running process: `demisto.info(str)` and `demisto.error(str)`. These will show up in the server log.
 
-**Troubleshooting**
+### Troubleshoot long-running containers
 
 Use `updateModuleHealth`, `info` and `error` to report errors and debug. It's also important to segregate the logic into functions so you can unit test them.
 
-**Best practices**
+### Long-running container best practices
 
 * Do not use `sys.exit()`, use `return_error` instead.
 * Always catch exceptions and log them.
@@ -70,6 +68,6 @@ Use `updateModuleHealth`, `info` and `error` to report errors and debug. It's al
 
 To run multiple processes in parallel, you can use async code. For example, view the **Slack v2** and **Microsoft Teams** integrations.
 
-**Invoke HTTP integrations via Cortex XSIAMserver's route handling**
+### Invoke long-running HTTP integrations
 
 For details, see [Invoking long running HTTP integrations via server's HTTPS endpoint](https://xsoar.pan.dev/docs/reference/articles/long-running-invoke).

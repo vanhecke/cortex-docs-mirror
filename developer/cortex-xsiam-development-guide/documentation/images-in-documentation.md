@@ -1,3 +1,7 @@
+---
+description: Cortex XSIAM guidance for adding images to documentation.
+---
+
 # Images in documentation
 
 There are two types of images in documentation markdown files:
@@ -5,7 +9,7 @@ There are two types of images in documentation markdown files:
 * Images that appear in integration/script/playbook README files. These images only appear in [https://xsoar.pan.dev/](https://xsoar.pan.dev/). They do not appear in the product UI.
 * Images that appear in pack README files and integration description files. These images appear in both [https://xsoar.pan.dev/](https://xsoar.pan.dev/) and in the product UI.
 
-#### Relative URLs
+### Use relative image URLs in content entity READMEs
 
 When creating markdown README documents for playbooks, integrations, or scripts that appear in [https://xsoar.pan.dev/](https://xsoar.pan.dev/) only, you can use relative or absolute URLs. Relative URLs can NOT be used for content pack READMEs and integration description file images. For content pack READMEs and integration description file images, see the Absolute URLs section below.
 
@@ -22,7 +26,7 @@ Examples of documentation using relative URLs:
 * [Google Calendar](https://github.com/demisto/content/blob/master/Packs/GoogleCalendar/Integrations/GoogleCalendar/README.md)
 * [G Suite Admin](https://github.com/demisto/content/blob/master/Packs/GSuiteAdmin/Integrations/GSuiteAdmin/README.md)
 
-#### Absolute URLs
+### Use absolute image URLs in content pack documentation
 
 When creating markdown README documents for playbooks, integrations, or scripts that appear in [https://xsoar.pan.dev/](https://xsoar.pan.dev/) only, you can use relative or absolute URLs. When creating markdown files for content pack READMEs and integration description file images, you can only use absolute URLs.
 
@@ -48,7 +52,7 @@ To obtain an absolute URL to an image from GitHub:
     * [URL after redirection](https://raw.githubusercontent.com/demisto/content/master/Packs/AutoFocus/doc_files/AutoFocusPolling.png) (also valid)
 
 {% hint style="info" %}
-### Note
+**Note**
 
 To keep the main content repository small, images are limited to 2 MB. For larger images, follow the instructions for [Videos](videos-in-documentation) about how to store large media files in the [content-assets](https://github.com/demisto/content-assets) repository.
 {% endhint %}

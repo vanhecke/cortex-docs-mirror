@@ -1,3 +1,7 @@
+---
+description: Review and analyze XQL query results in Cortex XSIAM.
+---
+
 # Review XQL query results
 
 Review the following topics:

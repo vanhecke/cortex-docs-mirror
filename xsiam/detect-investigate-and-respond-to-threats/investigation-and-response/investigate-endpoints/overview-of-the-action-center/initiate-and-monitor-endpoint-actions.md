@@ -1,3 +1,7 @@
+---
+description: Initiate endpoint actions and monitor their progress in Cortex XSIAM.
+---
+
 # Initiate and monitor endpoint actions
 
 In the **Action Center** you can initiate and monitor actions on your endpoints. In addition, you can initiate endpoint actions when viewing details about an endpoint on the **All Endpoints** page.

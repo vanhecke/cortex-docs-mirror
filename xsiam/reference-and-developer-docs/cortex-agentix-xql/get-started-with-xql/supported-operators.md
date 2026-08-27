@@ -1,7 +1,5 @@
 ---
-description: >-
-  Cortex Query Language supports specific comparison, boolean, and set operators
-  in Cortex XSIAM.
+description: Learn about XQL comparison, boolean, and set operators in Cortex XSIAM.
 ---
 
 # Supported operators

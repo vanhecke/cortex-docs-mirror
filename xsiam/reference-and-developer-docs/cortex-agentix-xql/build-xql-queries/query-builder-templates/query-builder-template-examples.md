@@ -1,3 +1,7 @@
+---
+description: Explore Query Builder template examples for data queries in Cortex XSIAM.
+---
+
 # Query Builder template examples
 
 The following examples can help familiarize you with running queries.

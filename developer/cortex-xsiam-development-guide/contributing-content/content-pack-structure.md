@@ -10,7 +10,7 @@ For example, the Cortex XDR pack can be seen in the content repository [Packs/Co
 
 To generate a new pack, use [demisto-sdk init --pack](https://app.gitbook.com/s/nozw5MT5S8KZD2eF8roV/demisto-sdk-guide/demisto-sdk-commands/init)
 
-#### Directories
+### Directories
 
 The directories within the pack represent all the possible content entities. Each pack is located in the Content repo under **`Packs/<Pack Name>`**.
 
@@ -36,17 +36,17 @@ The directories within the pack represent all the possible content entities. Eac
 - XSIAMDashboards
 ```
 
-#### Pack files
+### Content pack files
 
 The pack directory contains multiple configuration files used for metadata and documentation.
 
 {% hint style="info" %}
-### Note
+**Note**
 
 All ofthe following files are created using the `demisto-sdk init --pack` command, and some of them need to be manually populated.
 {% endhint %}
 
-**pack\_metadata.json**
+### `pack_metadata.json`
 
 This file contains all the relevant metadata about the pack.
 
@@ -158,7 +158,7 @@ The following fields are populated in the pack metadata.
 
 </details>
 
-#### Content pack versioning
+### Content pack versioning
 
 Pack versions have the format MAJOR.MINOR.REVISION:
 
@@ -168,21 +168,21 @@ Pack versions have the format MAJOR.MINOR.REVISION:
 
 `Major` when you make incompatible API changes or revamp the pack by adding significant new backward compatible functionality.
 
-#### README.md
+### `README.md`
 
 This file contains a general explanation for the pack. You can add any information relevant for the pack. For more details see the [Content Pack README](../documentation/content-pack-readme).
 
-#### .secrets-ignore
+### `.secrets-ignore`
 
 This file is used while running [demisto-sdk secrets](https://app.gitbook.com/s/nozw5MT5S8KZD2eF8roV/demisto-sdk-guide/demisto-sdk-commands/secrets) as an allow list of approved words for the PR.
 
 {% hint style="info" %}
-### Note
+**Note**
 
 We use `demisto-sdk secrets` as part of our pre-commit hook to check that possible secrets in the PR aren't exposed to a public repository.
 {% endhint %}
 
-#### .pack-ignore
+### `.pack-ignore`
 
 This file allows ignoring linter errors while lint checking and ignoring tests in the test collection.
 
@@ -217,7 +217,7 @@ integration-id-1
 script-id-1
 ```
 
-#### Author\_image.png
+### `Author_image.png`
 
 You can add an author image (logo of the contributing company) which is displayed on the Marketplace page for the content pack, under the the PUBLISHER section. The image should be saved in the root directory of the content pack, for example `content/packs/MyPackName`, and be named `Author_image.png`). Make sure to use this exact file name for the image to appear. The image size should be up to 4 KB and dimensions of 120x50 pixels.
 
@@ -230,7 +230,7 @@ For Partners, this image is mandatory and is validated as part of the build proc
 
 If the file `Author_image.png` does not exist, the name of the author is displayed in the PUBLISHER section instead.
 
-#### CONTRIBUTORS.json
+### `CONTRIBUTORS.json`
 
 If you are contributing to an existing pack, you can add a CONTRIBUTORS.json file to the root of the pack if one does not already exist. The file should contain a list of strings including your name.
 

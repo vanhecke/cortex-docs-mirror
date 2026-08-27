@@ -1,3 +1,9 @@
+---
+description: >-
+  Export Cortex XSIAM forensic collection data for retention or offline
+  analysis.
+---
+
 # Export
 
 You can export the data collection for long-term retention or offline analysis.

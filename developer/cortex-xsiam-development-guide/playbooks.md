@@ -1,5 +1,5 @@
 ---
-description: "Create playbooks in the UI with the Playbook Editor to automate complex workflows in\_Cortex XSIAM without requiring complicated coding. Add the playbook to a content pack."
+description: "Create playbooks with the Playbook Editor to automate complex workflows in\_Cortex XSIAM without requiring complicated coding. Add the playbook to a content pack."
 ---
 
 # Playbooks
@@ -12,11 +12,11 @@ After the playbook is complete, it can be downloaded and added to a content pack
 
 Playbooks can be triggered by:
 
-*   Alerts
+*   Issues
 
-    Playbooks can run on incoming alerts automatically per alert type. Consider whether you need to create a new alert type as part of your content pack.
+    Playbooks can run automatically for incoming issues by issue type. Consider whether your content pack needs a new issue type.
 
-    You can add a playbook trigger to run a specific playbook for an alert with specific characteristics. For example, you can set a condition for a specific playbook to run based on the alert source, severity, or MITRE TTP. For more information, see Playbook triggers.
+    Add a trigger to run a playbook for an issue with specific characteristics. For example, set a condition based on the issue source, severity, or MITRE TTP. For more information, see Playbook triggers.
 *   Indicator queries
 
     TIM playbooks can run based on indicator queries. Determine what indicator query (for example, all IP indicators retrieved from a particular feed) should be used.

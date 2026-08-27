@@ -1,3 +1,9 @@
+---
+description: >-
+  Control access to Cortex XSIAM forensic investigations with RBAC and
+  scope-based permissions.
+---
+
 # User permissions
 
 By default, investigation permissions utilize the role-based access control (RBAC) settings configured in the system. Users must have a role with the Forensic permissions set to **View** in order to view forensic investigations. In order to create investigations or collections, a user must have a role where the Forensics permissions is set to **View/Edit**. Without either role, a user cannot interact with the forensics interface.

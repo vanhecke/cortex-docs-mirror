@@ -15,7 +15,7 @@ Cortex XSIAM continuously analyzes your users and automatically classifies them 
 * ​Asset role visualization in the Incident view and the User view as background information for risk assessment.
 * ​Analysis of User peer groups for score trend comparison over selected timelines.
 
-​To access the management page, navigate to **Inventory → Assets → Configurations → Asset Roles**. The asset roles configuration page displays the asset roles, their type, the number of assets that are associated with each asset role, and the last modification date.&#x20;
+​To access the management page, navigate to **Inventory → Assets → Configurations → Asset Roles**. The asset roles configuration page displays the asset roles, their type, the number of assets that are associated with each asset role, and the last modification date.
 
 ### Edit user asset roles
 
@@ -37,8 +37,6 @@ When editing an asset role, there are two primary lists:​
 * ​**Manually Add Users:** Click **Add User** to manually assign a role. To add users one by one, click **Add New** and type the usernames using the exact `Netbios\samAccount` format. To add users in bulk, click **Import from File** and upload a structured CSV file.
 * **​Delete vs. Exclude**: If you right-click and select **Delete User** on a manually added user, the user is removed from the included list. If the system automatically detects the user acting in that role in the future, they appear in the Included User list again. To permanently prevent them from being associated with the role, you must use the **Exclude** action.
 * **Edit user name:** To change the name of a user, right-click the user name and **Edit User**.
-
-
 
 ## Honey user
 

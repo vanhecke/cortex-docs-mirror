@@ -1,14 +1,12 @@
 ---
-description: >-
-  Format indicator data for DBot to ingest information about indicators to
-  determine if they are malicious.
+description: Cortex XSIAM guidance for indicator reputation and DBot scores.
 ---
 
 # Reputation and DBot score
 
 DBot is the Cortex XSIAM machine learning bot, which ingests information about indicators to determine if they are malicious. Since DBot requires a very specific dataset, you must format the data as follows. As described in [Generic reputation commands](../generic-commands#UUID-67e7ba5f-4f74-45fc-8f2f-1aab4ef77100), when developing an integration that implements a generic reputation command, it is necessary also to create a corresponding DBot score object.
 
-**Context format**
+### DBot score context format
 
 ```programlisting
 "DBotScore": {
@@ -31,11 +29,11 @@ The DBot score must be at the root level of the context and contain all the foll
 | Reliability | The reliability of the source providing the intelligence data. See Reliability Level below.                        | Yes       |
 | Message     | Optional message to show an API response. For example, `Not found`.                                                | Optional  |
 
-**Reliability level**
+### DBot score reliability level
 
-When merging indicators, the reliability of an intelligence data source influences the reputation of an indicator and the values assigned to indicator fields. An integration that outputs a DBotScore object and defines each indicator's reliability should allow the user to manually configure the default reliability for the created indicator's DBot Score. This is done by implementing a `Source Reliability` parameter (named `integration_reliability`) in the YAML file. This parameters is later used to determine the reliability level when creating the DBotScore object. &#x20;
+When merging indicators, the reliability of an intelligence data source influences the reputation of an indicator and the values assigned to indicator fields. An integration that outputs a DBotScore object and defines each indicator's reliability should allow the user to manually configure the default reliability for the created indicator's DBot Score. This is done by implementing a `Source Reliability` parameter (named `integration_reliability`) in the YAML file. This parameters is later used to determine the reliability level when creating the DBotScore object.
 
-**Example of implementing a reliability parameter in an integration YAML file**
+#### Add a reliability parameter to integration YAML
 
 ```programlisting
 - name: integration_reliability
@@ -55,12 +53,12 @@ When merging indicators, the reliability of an intelligence data source influenc
 ```
 
 {% hint style="info" %}
-### Note
+**Note**
 
 The values are case sensitive.
 {% endhint %}
 
-**Score values**
+### DBot score values
 
 DBot uses an integer to represent the reputation of an indicator.
 
@@ -71,14 +69,14 @@ DBot uses an integer to represent the reputation of an indicator.
 | 2      | Suspicious |
 | 3      | Malicious  |
 
-**Unknown**
+#### Unknown DBot score
 
 An unknown score can be interpreted in the following ways:
 
 * The vendor returns an `Unknown` score for the indicator.
 * The vendor returns nothing on the indicator.
 
-**Malicious**
+#### Malicious DBot score
 
 If the DBot score is returned as a `3` or `Malicious`, you need to add to the context that a malicious indicator was found. To do this, add an additional key to the `URL`, `IP`, or `File` context called `Malicious` as follows:
 
@@ -131,7 +129,7 @@ Malicious has two key values: `Vendor` and `Description`. The vendor is the enti
 ```
 
 {% hint style="info" %}
-### Note
+**Note**
 
 It is not possible to use the Cortex XSIAM Transformers (DT) within the DBot score context. For example, using the following in your DBot context, will not work:
 

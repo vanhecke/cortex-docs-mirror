@@ -1,7 +1,5 @@
 ---
-description: >-
-  Generate a YAML file from Python code that includes special syntax. Currently
-  for integrations only.
+description: Cortex XSIAM guidance for generating integration YAML from Python.
 ---
 
 # Generate YAML from Python

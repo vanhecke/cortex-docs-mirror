@@ -1,5 +1,5 @@
 ---
-description: Determine which content items to create based on your use case design.
+description: Cortex XSIAM guidance for defining your content development scope.
 ---
 
 # Development scope

@@ -1,3 +1,7 @@
+---
+description: Investigate user activity, risk scores, and identity insights in Cortex XSIAM.
+---
+
 # Investigate a user
 
 Drill down on a user in the User Risk View or the User View. In this view Cortex XSIAM aggregates all of the data collected for a user, displays the information in graphs and tables, and provides further drilldown options for easy investigation. Cortex XSIAM uses Identity Analytics to aggregate information on a user and displays insights about the user.

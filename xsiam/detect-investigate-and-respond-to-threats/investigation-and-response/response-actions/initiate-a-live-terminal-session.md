@@ -1,6 +1,12 @@
+---
+description: >-
+  Start a Live Terminal session to investigate and manage remote endpoints in
+  Cortex XSIAM.
+---
+
 # Initiate a Live Terminal session
 
-To investigate and respond to security events on endpoints, you can use the Live Terminal to initiate a remote connection to an endpoint. The remote connection is facilitated by the Cortex XDR agent by using a remote procedure call. With the Live Terminal you can manage remote endpoints, and perform investigation and response actions on endpoints. Actions include:
+To investigate and respond to security events on endpoints, you can use the Live Terminal to initiate a remote connection to an endpoint from Cortex XSIAM. The remote connection is facilitated by the Cortex XDR agent by using a remote procedure call. With the Live Terminal you can manage remote endpoints, and perform investigation and response actions on endpoints. Actions include:
 
 * Navigating and managing files in the file system.
 * Managing active processes.
@@ -28,8 +34,6 @@ You can run PowerShell 5.0 or a later release on Live Terminal of Windows.
 3.  When you are finished, **Disconnect** the Live Terminal session.
 
     After you terminate the Live Terminal session, you can save a session report that logs all actions from the Live Terminal session. The report is available for download as a text file report when you close the live terminal session.
-
-
 
     The following example displays a sample session report:
 

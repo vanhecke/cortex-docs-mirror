@@ -1,3 +1,7 @@
+---
+description: Create an XQL query from a Query Builder template in Cortex XSIAM.
+---
+
 # Create a query from a template
 
 You can use the Query Builder templates to create effective queries without using the Cortex Query Language (XQL).

@@ -1,3 +1,7 @@
+---
+description: Retrieve investigation files from endpoints and download them in Cortex XSIAM.
+---
+
 # Retrieve files from an endpoint
 
 During an investigation, you can retrieve files from one or more endpoints by initiating a files retrieval request. For each file retrieval request, Cortex XSIAM supports up to:

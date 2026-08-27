@@ -1,6 +1,6 @@
 # Prevent malicious LDAP queries
 
-Active Directory (AD) routinely processes millions of legitimate queries from users and services. Threat actors frequently exploit this open architecture during the reconnaissance phase of an attack to map the network, identify privileged users, and discover attack paths without triggering standard security alarms. &#x20;
+Active Directory (AD) routinely processes millions of legitimate queries from users and services. Threat actors frequently exploit this open architecture during the reconnaissance phase of an attack to map the network, identify privileged users, and discover attack paths without triggering standard security alarms.
 
 To accurately distinguish between legitimate administrative queries and malicious reconnaissance, ITDR analyzes the context of LDAP traffic in real time. Instead of viewing a single query in isolation, ITDR evaluates it in context to reveal malicious intent.
 
@@ -20,4 +20,4 @@ Implementing this protection provides you with two primary advantages:
 * Real-Time prevention: Stops attacks proactively during the reconnaissance phase. By blocking the LDAP queries, the system blinds the attacker and forces them to operate without a map of your environment.
 * Enriched analytics: Every blocked query is fed back into the Cortex ITDR analytics engine. This data generates detailed issues within Cortex XSIAM, giving you actionable intelligence on exactly which tool was being used and who the attacker was targeting.
 
-To enable LDAP protection, toggle the **LDAP protection** setting in the Identity profile of the agent. To  configure the Identity profile, see [Set up Identity Profiles](../get-started-with-itdr#set-up-identity-profiles).
+To enable LDAP protection, toggle the **LDAP protection** setting in the Identity profile of the agent. To configure the Identity profile, see [Set up Identity Profiles](../get-started-with-itdr#set-up-identity-profiles).

@@ -1,3 +1,7 @@
+---
+description: Schedule Cortex XSIAM Notebook jobs to automate recurring data enrichment.
+---
+
 # Notebooks scheduler
 
 Ensure automatic data enrichment by scheduling Notebook jobs to run immediately or on a schedule.

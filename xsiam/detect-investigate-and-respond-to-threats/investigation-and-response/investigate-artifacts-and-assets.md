@@ -1,7 +1,7 @@
 ---
 description: >-
-  You can investigate specific artifacts and assets on dedicated views related
-  to IP address, Network Assets, and File and Process Hash information.
+  Investigate IP addresses, assets, hosts, users, and file hashes in Cortex
+  XSIAM.
 ---
 
 # Investigate artifacts and assets

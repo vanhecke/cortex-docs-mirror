@@ -8,7 +8,7 @@ description: >-
 
 Cortex XSIAM Transform Language (commonly referred to as DT) is used for various context related functions in Cortex XSIAM. DT is a query language for JSON objects, similar to JSONQuery.
 
-**Context Example**
+### Transform Language context example
 
 The following sample context data shows the various ways DT can access, aggregate, and mutate data.
 
@@ -101,7 +101,7 @@ The following sample context data shows the various ways DT can access, aggregat
 }
 ```
 
-**Nested Values**
+### Access nested context values with DT
 
 DT can access keys from nested dictionaries as well as dictionaries.
 
@@ -119,12 +119,12 @@ Access the key values using the following DT statements:
 | `${IP.Hostname}`                 | google-public-dns-a.google.com |
 | `${IP.RecordedFuture.FirstSeen}` | 2010-04-27T12:46:51.000Z       |
 
-**Dealing with arrays**
+### Access context arrays with DT
 
 Access array values as you access any other dictionary (or JSON) key in dot notation, with an index.
 
 {% hint style="info" %}
-### Note
+**Note**
 
 Indices start with 0, not 1.
 {% endhint %}
@@ -141,7 +141,7 @@ Under "URLScan", there is an array called "Certificates". If you want to access 
 
 If you want to retrieve a range of results, you can use **`[0:9]`** where "0" is the beginning of the array and "9" is the 9th position in the array.
 
-**Selectors**
+### Filter context data with DT selectors
 
 DT also allows for conditions within the statement itself and uses JavaScript to select the context items. This is a way to bind results together by embedding a selection into the DT string.
 
@@ -183,7 +183,7 @@ demisto.results({
 
 The code snippet `'URL(val.Data &amp;&amp; val.Data == obj.Data)'` will look for entries in the context whose name found under "Data" are the same. If it finds a match, it will update the existing context, If it does not, it will create a new entry in the context because it views the entry as "unique" to the existing values.
 
-**Mutators**
+### Transform context data with DT mutators
 
 Since DT is JavaScript based, it can also mutate a result if your integration needs a different result format. A classic use case for this is joining a server address obtained from another integration to an endpoint found by your integration to create a URL which may be used by your integration at a later time.
 

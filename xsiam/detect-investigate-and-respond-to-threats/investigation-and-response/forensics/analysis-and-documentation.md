@@ -1,3 +1,9 @@
+---
+description: >-
+  Analyze Cortex XSIAM forensic evidence through issues, timelines, and key
+  assets.
+---
+
 # Analysis and documentation
 
 ### Analysis and documentation

@@ -4,7 +4,7 @@
 **License type:** Available with the ITDR add on
 {% endhint %}
 
-The User Risk View aggregates all of the data collected for a user, displays the information in graphs and tables, and provides further drilldown options for easy investigation.&#x20;
+The User Risk View aggregates all of the data collected for a user, displays the information in graphs and tables, and provides further drilldown options for easy investigation.
 
 You can take the following actions to investigate a user:
 
@@ -19,7 +19,7 @@ You can take the following actions to investigate a user:
    You can also see a list of all users under **Inventory → Assets → Asset Scores**.
 2.  Select the timeframe to view the user's details.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note:</strong> <br>Cortex XSIAM normalizes and displays case and issue times in your time zone. If you're in a half-hour time zone, the activity in the Issues &#x26; Insights Heatmap is displayed in the whole-hour time slot preceding it. For example, if you're in a UTC +4.5 time zone, the time displayed for the activity will be UTC +4.5, however, the visualization in the Issues &#x26; Insights Heatmap will be in the UTC +4 slot.</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note:</strong><br>Cortex XSIAM normalizes and displays case and issue times in your time zone. If you're in a half-hour time zone, the activity in the Issues &#x26; Insights Heatmap is displayed in the whole-hour time slot preceding it. For example, if you're in a UTC +4.5 time zone, the time displayed for the activity will be UTC +4.5, however, the visualization in the Issues &#x26; Insights Heatmap will be in the UTC +4 slot.</p></div>
 3. Investigate the user.
 
 #### **User Risk view**
@@ -84,4 +84,3 @@ Investigate user activities in detail.
   *   **SaaS Logs**: User's SAAS Log activity during the selected timeframe or on the day selected in the **Score Trend** graph. You can see details of the SaaS logs that were ingested into the platform in the context of the user.
 
       To further investigate SaaS log activity for the user, click **View In XQL** to link to a prefilled query in the Query Builder. Using Cortex Query Language you can refine your search.
-

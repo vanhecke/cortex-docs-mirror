@@ -1,3 +1,7 @@
+---
+description: Cortex XSIAM guidance for developing feed integrations.
+---
+
 # Feed Integrations
 
 Feed integrations allow fetching indicators from feeds, such as TAXII and Office 365.
@@ -6,11 +10,11 @@ An example feed integration can be seen [here](https://github.com/demisto/conten
 
 While feed integrations are developed the same as other integrations, they include several extra configuration parameters and APIs.
 
-**Naming convention**
+### Feed integration naming convention
 
 Feed integration names (id, name and display fields) should end with the word `Feed`. This consistent naming convention ensures that users can easily understand what the integration is used for.
 
-**Required parameters**
+### Required feed integration parameters
 
 Every feed integration should have the following parameters in the integration YAML file:
 
@@ -77,7 +81,7 @@ Every feed integration should have the following parameters in the integration Y
 
 The `defaultvalue` of the `feedReputation`, `feedReliability`, `feedExpirationPolicy`, and `feedFetchInterval` parameters should be set according to the qualities associated with the feed source for which you are developing a feed integration.
 
-**Incremental feeds**
+### Configure incremental feed integrations
 
 Incremental feeds pull only new or modified indicators that have been sent from the third party vendor. As the determination if the indicator is new or modified happens on the third-party vendor's side, and only indicators that are new or modified are sent to Cortex XSIAM, all indicators coming from these feeds are labeled new or modified.
 
@@ -102,7 +106,7 @@ Code example of incremental feeds:
 * [AutoFocus Feed](https://github.com/demisto/content/blob/master/Packs/AutoFocus/Integrations/FeedAutofocus/FeedAutofocus.py)
 * [DHS Feed v2](https://github.com/demisto/content/blob/master/Packs/FeedDHS/Integrations/DHSFeedV2/DHSFeedV2.py)
 
-**Commands**
+### Feed integration commands
 
 Every feed integration has a minimum of three commands:
 
@@ -110,7 +114,7 @@ Every feed integration has a minimum of three commands:
 * `<product-prefix>-get-indicators` - Where \<product-prefix> is replaced by the name of the Product or Vendor source providing the feed. For example, if you were developing a feed integration for Microsoft Intune, this command might be called msintune-get-indicators. This command should fetch a limited number of indicators from the feed source and display them in the War Room.
 * `fetch-indicators` - this command will initiate a request to the feed endpoint, format the data fetched from the endpoint to conform to Cortex XSIAM's expected input format, and create new indicators. If the integration instance is configured to fetch indicators, then this is the command that will be executed at the specified feed fetch Interval.
 
-**API command: demisto.createIndicators()**
+### Create indicators with `demisto.createIndicators()`
 
 Use the `demisto.createIndicators()` function when the `fetch-indicators` command is executed. Here is an example from an existing feed integration:
 
@@ -143,7 +147,7 @@ def main():
 
 The `batch` function is imported from `CommonServerPython`. We see that indicators are returned from calling `fetch_indicators_command` and are passed to `demisto.createIndicators` in batches.
 
-**Indicator objects**
+### Feed indicator objects
 
 Indicator Objects are passed to `demisto.createIndicators`. An example:
 
@@ -208,7 +212,7 @@ The object key and values:
         If the relationship is not attached to an indicator, create a dummy indicator with the value `$$DummyIndicator$$` and add the relationships key with the list after running `to_indicator`.
 
 {% hint style="info" %}
-### Note
+**Note**
 
 In indicators of type "File", if you have multiple hash types for the same file (i.e., MD5, SHA256, etc.), you can use the corresponding `"fields"` to associate all hashes to the same object. The supported fields are: `md5`, `sha1`, `sha256`, `sha512`, `ssdeep`. You can use any of the aforementioned hash types as the indicator value for an indicator of type "File".
 {% endhint %}

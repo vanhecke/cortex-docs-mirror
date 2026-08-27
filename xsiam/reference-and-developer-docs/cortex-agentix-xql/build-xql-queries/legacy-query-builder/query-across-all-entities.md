@@ -1,3 +1,7 @@
+---
+description: Create legacy queries across security data entities in Cortex XSIAM.
+---
+
 # Query across all entities
 
 From the **Query Builder** you can perform a simple search for hosts and processes across all file events, network events, registry events, process events, event logs for Windows, and system authentication logs for Linux.

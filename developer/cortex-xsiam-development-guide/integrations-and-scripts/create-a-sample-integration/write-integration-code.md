@@ -1,5 +1,5 @@
 ---
-description: Write integration code for a sample integration.
+description: Cortex XSIAM steps for writing sample integration code.
 ---
 
 # Write integration code
@@ -7,14 +7,14 @@ description: Write integration code for a sample integration.
 Once we've finished adding our parameters, command, argument, and outputs, we can write the integration code.
 
 {% hint style="info" %}
-### Note
+**Note**
 
 The sample code uses standard Python error handling mechanisms, such as `try`. For more information about errors and exceptions in Python, see the [Python documentation](https://docs.python.org/3/tutorial/errors.html). In our integration code, we raise exceptions when errors occur. The convention is to have a main try/except block on `main()` that catches errors and calls `return_error`.
 
 The `return_error` function ensures that playbooks calling these functions will fail and stop, alerting the user to a problem. In integrations and scripts, we refrain from calling `return_error` in other places in the code.
 {% endhint %}
 
-**Import**
+### Import Python libraries for the integration
 
 To begin, we have the option to import Python libraries, so that their commands are available for our integration. Every integration runs inside a Docker image, and our standard Docker image includes most of the common packages, such as JSON and collections. In our Yoda Speak integration, we don’t need to import any libraries, as it only uses the `BaseClient` class, implicitly imported from CommonServerPython.
 
@@ -29,7 +29,7 @@ When working in Visual Studio Code, we recommend importing the following at the 
 
 If you want to use Python libraries that are not included in the standard Cortex XSIAM Docker image, you can create a customized Docker image.
 
-**Define the prefix for the output context keys**
+### Define the output context key prefix
 
 Set the term Phrase as a prefix for the output context keys.
 
@@ -37,7 +37,7 @@ Set the term Phrase as a prefix for the output context keys.
 TRANSLATE_OUTPUT_PREFIX = 'Phrase'
 ```
 
-**Disable secure warnings**
+### Disable insecure request warnings
 
 Next we prevent Python from raising a warning when accessing resources insecurely.
 
@@ -48,7 +48,7 @@ requests.packages.urllib3.disable_warnings()  # pylint: disable=no-member
 
 Since we created the insecure parameter that allows the integration to ignore TLS/SSL certificate validation errors, we also need to disable the warning.
 
-**Create the class client**
+### Create the integration API client
 
 ```programlisting
 class Client(BaseClient):
@@ -70,7 +70,7 @@ In this example, when using the [Yoda Speak API](https://funtranslations.com/api
 
 The number of methods our Client class has usually matches the number of commands in our integration. The Yoda Speak integration only has the translation command, so our Client object should have a matching method to the API request which returns its result.
 
-**Create the test\_module**
+### Implement the `test_module` command
 
 ```programlisting
 def test_module(client: Client) -> str:
@@ -104,7 +104,7 @@ The `test_module` function is run whenever the **Test** integration button is cl
 * The request is not successful and the problem is related to authorization: `Authorization Error: make sure API Key is correctly set`.
 * The request is not successful for any other reason: The error text is displayed.
 
-**Create the translate\_command**
+### Implement the translation command
 
 ```programlisting
 def translate_command(client: Client, text: str) -> CommandResults:
@@ -138,9 +138,9 @@ The `translate_command` function uses the client that is provided as an argument
    * `outputs_key_field`: Since we can run the translation command multiple times, and possibly receive different results for the same string of text, the system needs to know where to update or append each result. In this example we tell the system that `Phrase.Original` is the key that represents the original text we translated, so that the next time the command is run on the same string of text, the translated values will update.
    *   `readable_output`: This is what users see in the War Room when calling the command, so it should be formatted. We can use the `tableToMarkdown` function (from CSP) to turn the JSON into a user-friendly table. We provide `tableToMarkdown` with both the JSON values and a title for the table.
 
-       <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Tip</h3><p>The Script Helper provides an easy way to insert common functions into your code. If you click the Script Helper button and search for the <code>tableToMarkdown</code> command, you have the option to insert it directly into the code with placeholders for its <code>name</code> (title) and <code>t</code> (JSON) arguments.</p></div>
+       <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Tip</strong></p><p>The Script Helper provides an easy way to insert common functions into your code. If you click the Script Helper button and search for the <code>tableToMarkdown</code> command, you have the option to insert it directly into the code with placeholders for its <code>name</code> (title) and <code>t</code> (JSON) arguments.</p></div>
 
-**Create the Main function**
+### Implement the integration `main` function
 
 Everything actually runs within `main`. We pull in the integration parameters, arguments, and the translate command. The parameters are assigned to variables. Notice that the parameters are the same ones we set up in the integration settings earlier.
 
@@ -173,7 +173,7 @@ There are two possible commands that can be passed to the main function in our i
 
 1.  `test-module`: If the command name is `test-module`, it means the user has clicked the integration **Test** button while setting up or editing an integration instance.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>We did not explicitly create a command called <code>test-module</code>. It is a built-in command.</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>We did not explicitly create a command called <code>test-module</code>. It is a built-in command.</p></div>
 
     When returning `ok`, the user is shown a green `Success` message. If any value other than `ok` is returned, an error is displayed. Make sure you return errors that help the user understand what to change in the integration settings in order to fix connection issues.
 2. `yoda-speak-translate`: This is the primary command for our integration and lets us translate strings of text.
@@ -192,7 +192,7 @@ else:
 
 There is also an `else` option. This returns an error if someone tries to run a command that was created in the YAML file but does not exist in the Python (PY) file. For example, if you added a command `yoda-interpret` in the integration settings, but did not add it to this file, and then tried to run that command, you would see `Yoda-interpret is not implemented`.
 
-**Log errors**
+### Log and return integration errors
 
 ```programlisting
 # Log exceptions and return errors
@@ -205,7 +205,7 @@ except Exception as e:
 
 If any errors occur during the execution of our code, show those errors to the user and also return an error.
 
-**Start at Main**
+### Run the integration `main` function
 
 ```programlisting
 if __name__ in ('__main__', '__builtin__', 'builtins'):

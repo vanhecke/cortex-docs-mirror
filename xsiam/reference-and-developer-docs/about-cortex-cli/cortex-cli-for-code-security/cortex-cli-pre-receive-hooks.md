@@ -1,8 +1,7 @@
 ---
 description: >-
-  Integrate the Application Security secrets scanner as a pre-receive hook into
-  your workflows to scan for errors before code is accepted into your
-  repository.
+  Use Cortex CLI pre-receive hooks to scan code before acceptance in Cortex
+  XSIAM.
 ---
 
 # Cortex CLI pre-receive hooks

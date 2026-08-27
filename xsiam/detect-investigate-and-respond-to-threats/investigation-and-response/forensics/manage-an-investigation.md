@@ -1,6 +1,12 @@
+---
+description: >-
+  Manage Cortex XSIAM forensic investigations, collections, alerts, evidence,
+  exports, and access controls.
+---
+
 # Manage an investigation
 
-Forensic investigations streamlines your case response, data collection, threat hunting and analysis of your endpoint. By using the Forensic Investigation, you can find the source and scope of the attack and to determine what, if any, data was accessed. It provides a single location for grouping, tracking, and analyzing all forensic data collections.
+Forensic investigations streamlines your case response, data collection, threat hunting and analysis of your endpoint in Cortex XSIAM. By using the Forensic Investigation, you can find the source and scope of the attack and to determine what, if any, data was accessed. It provides a single location for grouping, tracking, and analyzing all forensic data collections.
 
 Forensic Investigations enables you to do the following:
 

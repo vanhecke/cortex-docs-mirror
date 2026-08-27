@@ -1,3 +1,7 @@
+---
+description: Create legacy network queries in Cortex XSIAM.
+---
+
 # Create network query
 
 From the Query Builder, you can investigate connections between network activity, acting processes, and endpoints.

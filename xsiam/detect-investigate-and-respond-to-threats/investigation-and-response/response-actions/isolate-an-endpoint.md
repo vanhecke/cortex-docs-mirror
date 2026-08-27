@@ -1,3 +1,9 @@
+---
+description: >-
+  Isolate compromised endpoints to contain threats and protect your network with
+  Cortex XSIAM.
+---
+
 # Isolate an endpoint
 
 When you isolate an endpoint, you halt all network access on the endpoint except for traffic to Cortex XSIAM. This can prevent a compromised endpoint from communicating with other endpoints, thereby reducing an attacker’s mobility on your network. After the agent receives the instruction to isolate the endpoint and carries out the action, Cortex XSIAM shows an **Isolated** status. To ensure an endpoint remains in isolation, agent upgrades are not available for isolated endpoints.
@@ -15,7 +21,7 @@ Network isolation is supported for endpoints that meet the following requirement
 
 <table><thead><tr><th width="121">Operating System</th><th>Prerequisites</th></tr></thead><tbody><tr><td>Windows</td><td><ul><li>Agent 6.0 or later.</li><li>(VDI) Network isolation allow list in the agent settings profile is configured to ensure VDI sessions remain uninterrupted. For more information, see Set up agent settings profiles.</li></ul></td></tr><tr><td>Mac</td><td><ul><li>Agent 7.3 or later.</li><li>MacOS 10.15.4 or later.</li><li>Cortex XSIAM Network extension is enabled on the endpoint.</li></ul><p>Network isolation on Mac endpoints does not terminate active connections that were initiated before the agent was installed on the endpoint.</p></td></tr><tr><td>Linux</td><td><ul><li>iptables and ip6tables.</li><li>Agent 7.7 or later.</li><li><p>Linux kernel with the following enabled:</p><ul><li>CONFIG_NETFILTER</li><li>CONFIG_IP_NF_IPTABLES</li><li>CONFIG_IP_NF_MATCH_OWNER</li></ul></li><li>Network isolation allow list configured in the agent settings profile.</li></ul><p>Network isolation on Linux endpoints is based on the defined IP addresses and ports.</p></td></tr><tr><td>iOS</td><td>Supported by Cortex XDR agent for iOS 9.1 or later. This feature is only available on supervised iOS devices where the Network Shield is enabled.</td></tr></tbody></table>
 
-### How to isolate an endpoint
+### How to isolate an endpoint in Cortex XSIAM
 
 1.  Go to Investigation & Response → Response → Action Center → **New Action** and select **Isolate**.
 

@@ -1,3 +1,7 @@
+---
+description: Translate searches and query logic into XQL with Cortex XSIAM .
+---
+
 # Translate to XQL
 
 To help you easily convert your existing Splunk queries to the Cortex Query Language (XQL) syntax, Cortex XSIAM includes a toggle called **Translate to XQL** in the query ﬁeld in the user interface. When building your XQL query and this option is selected, both a **SPL query** field and **XQL query** field are displayed, so you can easily add a Splunk query, which is converted to XQL in the XQL query field. This option is disabled by default, so only the **XQL query** field is displayed.

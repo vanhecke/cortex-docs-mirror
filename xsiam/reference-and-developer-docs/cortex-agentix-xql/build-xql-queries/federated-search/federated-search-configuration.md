@@ -1,3 +1,7 @@
+---
+description: Configure Federated Search connections for external data in Cortex XSIAM.
+---
+
 # Federated Search configuration
 
 Before you run federated searches, you must first create an external dataset to run the query.
@@ -130,11 +134,9 @@ When you create, delete, or update an external dataset, the action is recorded i
    The auto-discovery relies on sampling and may not capture less common event types or fields that appear infrequently within the dataset. As a result, some fields visible in broader searches may not be included in the initially detected schema. This process also conducts validations to catch as many field type mismatches as possible, though due to the high volume of data involved, it cannot detect all mismatches.\
    \
    The auto-discovery process is meant to accelerate onboarding by generating a baseline schema, however you can still refine the schema as needed.
-6. <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong>:</p><p>We highly recommend that you don't change the auto-detected schema. However, if the auto-detected schema is incorrect, you can add, edit, or delete fields.</p></div>
-   * Missing fields: For json files and csv files, even if there are missing fields in the detected schema, your query will run successfully. For parquet files, the full schema is always deduced. If there's a partial schema and you add new fields to the actual data, the query will also run correctly.
-   * Field type mismatch: If a type mismatch is detected during onboarding, Cortex XSIAM displays an error message with the specific field name and allows you to change the field type by deleting the field and re-adding it with its proper type. If the type mismatch is found while running a query, the query fails and Cortex XSIAM displays an error message. In this case, you must delete the external dataset, re-onboard it and make the required changes to the field type accordingly.
-   * You can't delete the ds field, which is used for Hive partitioning.
-   * After you save the schema, you can't delete any fields you added during setup.
+6.  <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong>:</p><p>We highly recommend that you don't change the auto-detected schema. However, if the auto-detected schema is incorrect, you can add, edit, or delete fields.</p></div>
+
+    \* Missing fields: For json files and csv files, even if there are missing fields in the detected schema, your query will run successfully. For parquet files, the full schema is always deduced. If there's a partial schema and you add new fields to the actual data, the query will also run correctly. \* Field type mismatch: If a type mismatch is detected during onboarding, Cortex XSIAM displays an error message with the specific field name and allows you to change the field type by deleting the field and re-adding it with its proper type. If the type mismatch is found while running a query, the query fails and Cortex XSIAM displays an error message. In this case, you must delete the external dataset, re-onboard it and make the required changes to the field type accordingly. \* You can't delete the ds field, which is used for Hive partitioning. \* After you save the schema, you can't delete any fields you added during setup.
 7. Review all the details. You can go back to change any details you want, save the query and return to the external datasets table, or save and start a query in the XQL query page. Saving and starting a query may take some time.
 
 {% hint style="info" %}

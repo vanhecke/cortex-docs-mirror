@@ -1,3 +1,7 @@
+---
+description: Retrieve endpoint support logs and forensic data through Cortex XSIAM.
+---
+
 # Retrieve support logs from an endpoint
 
 When you need to investigate or share additional forensic data, you can initiate a request to retrieve all the support logs and issue data dump files from an endpoint. After Cortex XSIAM receives the logs, you can download the log files or generate a secured link to access them on the Cortex XSIAM server.

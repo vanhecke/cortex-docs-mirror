@@ -1,3 +1,7 @@
+---
+description: Review Query Builder template considerations in Cortex XSIAM.
+---
+
 # Considerations for using Query Builder templates
 
 The following sections provide information and considerations for using Query Builder templates.

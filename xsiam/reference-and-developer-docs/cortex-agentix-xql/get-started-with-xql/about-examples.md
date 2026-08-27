@@ -1,5 +1,5 @@
 ---
-description: Learn more about the Cortex Query Language (XQL) examples provided.
+description: Explore XQL query examples in Cortex XSIAM.
 ---
 
 # About examples

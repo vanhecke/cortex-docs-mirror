@@ -44,4 +44,3 @@ Cortex enables parent-child pairing between tenants located in different geograp
     After pairing has been approved, in the child tenant’s Cortex XSIAM app, when navigating to a page managed by a parent configuration, the child user is notified by a flag who is managing their security.
 
     In the child tenant, pages that you manage appear with a read-only banner. Child tenant users cannot perform any actions from these pages, but can view the configurations you create on their behalf.
-

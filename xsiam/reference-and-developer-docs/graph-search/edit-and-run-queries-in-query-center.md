@@ -1,7 +1,5 @@
 ---
-description: >-
-  Learn more about viewing the results of a query, modifying a query, and
-  rerunning queries from Query Center.
+description: Edit, rerun, and review Graph Search queries in Query Center in Cortex XSIAM.
 ---
 
 # Edit and run queries in Query Center

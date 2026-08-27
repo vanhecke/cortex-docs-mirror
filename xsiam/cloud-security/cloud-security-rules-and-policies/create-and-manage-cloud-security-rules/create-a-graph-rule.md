@@ -45,4 +45,3 @@ To create a graph detection rule, navigate to **Posture Management → Rules & P
 5. In the **Summary** page, review the rule and click **Save**.
 
 After the rule is synchronized and enabled, the Graph Engine evaluates it during the next scheduled cycle. An issue is created for each graph path that matches the rule conditions.
-

@@ -1,7 +1,5 @@
 ---
-description: >-
-  Learn more about building Graph Search queries using the built-in query
-  interface.
+description: Build Graph Search queries with the query interface in Cortex XSIAM.
 ---
 
 # How to build Graph Search queries?

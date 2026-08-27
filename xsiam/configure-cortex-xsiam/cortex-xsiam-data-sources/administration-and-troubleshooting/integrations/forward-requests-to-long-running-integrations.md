@@ -6,6 +6,13 @@ description: Forward requests to long-running integrations in Cortex XSIAM.
 
 Some long-running integrations provide internal data via API calls to your third-party software, such as a firewall. You can set up Cortex XSIAM to allow third-party software to access long-running integrations installed either on the Cortex XSIAM tenant or on an engine.
 
+{% hint style="warning" %}
+* Avoid sending high volumes of small, individual payload requests in rapid succession. Excessively high request frequencies can exhaust connection pools, leading to HTTP `500`/`502` errors across the tenant. The rate limit is 600 requests per minute.
+* When running on the tenant, you can only use long-running integrations provided by Cortex XSIAM, you cannot create custom ones. Custom long-running integrations are supported only on engines at this time.
+* Configuring custom certificates or private API Keys in the long-running integration instance is supported only on engines, not on the Cortex XSIAM tenant.
+* If you have configured a range of **Approved IP Ranges** under **Allowed Sessions** on the **Security Settings** page, any incoming communication must be from approved IP addresses.
+{% endhint %}
+
 Long-running integrations provide internal data via API calls such as:
 
 | Integration                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | See More                                                                                                                                                       |
@@ -21,14 +28,6 @@ Long-running integrations provide internal data via API calls such as:
 | Simple API Proxy                  | Provides a simple API proxy to restrict privileges or minimize the number of credentials issued at the API.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | [Simple API Proxy](https://cortex.marketplace.pan.dev/marketplace/details/SimpleAPIProxy/)                                                                     |
 | Syslog v2                         | Opens cases automatically from Syslog clients.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | [Syslog v2](https://xsoar.pan.dev/docs/reference/integrations/syslog-v2)                                                                                       |
 | Web File Repository               | Make your environment ready for testing purposes for your playbooks or automations to download files from a web server.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | [Web File Repository](https://xsoar.pan.dev/docs/reference/integrations/web-file-repository#context-output)                                                    |
-
-{% hint style="info" %}
-### Note
-
-* When running on the tenant, you can only use long-running integrations provided by Cortex XSIAM, you cannot create custom ones. Custom long-running integrations are supported only on engines at this time.
-* Configuring custom certificates or private API Keys in the long-running integration instance is supported only on engines, not on the Cortex XSIAM tenant.
-* If you have configured a range of **Approved IP Ranges** under **Allowed Sessions** on the **Security Settings** page, any incoming communication must be from approved IP addresses.
-{% endhint %}
 
 <details>
 

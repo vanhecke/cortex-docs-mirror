@@ -1,3 +1,7 @@
+---
+description: Get started with Query Builder templates for guided queries in Cortex XSIAM.
+---
+
 # Get started with Query Builder templates
 
 Before you start running queries with Query Builder templates, consider the following information:

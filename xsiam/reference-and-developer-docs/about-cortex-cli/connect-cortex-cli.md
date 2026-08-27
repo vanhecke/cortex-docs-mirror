@@ -1,3 +1,7 @@
+---
+description: Connect Cortex CLI to configure scans and authentication in Cortex XSIAM.
+---
+
 # Connect Cortex CLI
 
 Connect Cortex CLI to scan supported Cortex Cloud modules and gain insights into your security posture, enabling you to identify, analyze and address potential risks.

@@ -1,10 +1,12 @@
 ---
-description: Naming conventions for integrations, commands, arguments, and outputs.
+description: Cortex XSIAM naming conventions for integrations, commands, and outputs.
 ---
 
 # General naming conventions
 
 When naming integrations, commands, arguments and outputs, use the following conventions:
+
+### Cortex XSIAM naming conventions
 
 *   Integration parameters
 

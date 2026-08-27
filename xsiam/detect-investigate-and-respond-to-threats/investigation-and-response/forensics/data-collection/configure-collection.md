@@ -1,8 +1,14 @@
+---
+description: >-
+  Configure Cortex XSIAM hunt and triage artifact collection criteria and
+  filters.
+---
+
 # Configure collection
 
 On the configuration page, select the relevant categories and artifacts for collection.
 
-**Configuration for collection**
+### **Configuration for collection**
 
 {% hint style="info" %}
 ### Note

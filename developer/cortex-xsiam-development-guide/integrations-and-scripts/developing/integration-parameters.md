@@ -1,14 +1,16 @@
 ---
-description: Integration parameter types that are configurable in integration instances.
+description: Cortex XSIAM configurable integration parameter types.
 ---
 
 # Integration Parameters
 
 Each integration has parameters that are configured by the customers when they configure an instance on their Cortex XSIAM system. Integration parameters should be named using [snake\_case](https://en.wikipedia.org/wiki/Snake_case).
 
+### Cortex XSIAM integration parameter guidance
+
 <details>
 
-<summary>Supported Parameter Types</summary>
+<summary>Supported integration parameter types</summary>
 
 * Short text (type 0)
 * Encrypted (type 4)
@@ -22,7 +24,7 @@ Each integration has parameters that are configured by the customers when they c
 
 <details>
 
-<summary>Connection and Authentication Parameters</summary>
+<summary>Connection and authentication parameters</summary>
 
 These parameters determine how Cortex XSIAM connects to the third-party API.
 
@@ -34,7 +36,7 @@ These parameters determine how Cortex XSIAM connects to the third-party API.
     In most cases, credentials are needed to authenticate to the API you want to interact with. Many times this is in the form of an API key, a secure and unique identifier that is stored in Cortex XSIAM and used somewhere in your code (i.e. to populate HTTP headers) to craft the requests. Sometimes APIs use different authentication parameters: credentials, tokens, client\_id and client\_secret combination, and so on. Capture all the required parameters that allow a machine-to-machine authentication between Cortex XSIAM and your API.
 
 {% hint style="info" %}
-### Note
+**Note**
 
 If you are using authentication mechanisms based on short-lived access tokens such as JSON Web Tokens (JWT) and long-lived refresh tokens, read more about the [Integration cache](../advanced-topics/integration-cache).
 {% endhint %}
@@ -50,7 +52,7 @@ If you are using authentication mechanisms based on short-lived access tokens su
 
 <details>
 
-<summary>Event collector parameters</summary>
+<summary>Event collector integration parameters</summary>
 
 If your integration fetches events, you should define what type of entities in the third-party product you are connecting to and are retrieving. Every product has its own nomenclature: they might be called Alerts, Incidents, etc. For the purposes of this topic, we assume they are called Alerts in the third-party product, and they are mapped 1:1 to Cortex XSIAM alerts.
 
@@ -79,7 +81,7 @@ There are additional required parameters for integrations that fetch incidents. 
 
 <details>
 
-<summary>Other parameters</summary>
+<summary>Additional integration parameters</summary>
 
 Your product is unique, and so are the parameters you might need to add to the integration. Besides connectivity and fetch parameters, you can add more parameters as you see fit. In general, add parameters whenever you want the users to specify settings that are common across several integration commands.
 

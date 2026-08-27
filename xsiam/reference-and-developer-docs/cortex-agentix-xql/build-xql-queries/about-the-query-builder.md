@@ -1,7 +1,7 @@
 ---
 description: >-
-  The Query Builder facilitates threat detection, case expansion, and data
-  analytics for suspected threats.
+  Learn how Query Builder supports threat detection and data analysis in Cortex
+  XSIAM.
 ---
 
 # About the Query Builder

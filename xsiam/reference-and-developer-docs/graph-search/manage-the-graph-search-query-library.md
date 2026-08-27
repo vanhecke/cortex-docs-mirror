@@ -1,7 +1,5 @@
 ---
-description: >-
-  Learn more about the Cortex XSIAM Graph Search Query Library to manage your
-  queries.
+description: Manage saved Graph Search queries in the Query Library in Cortex XSIAM.
 ---
 
 # Manage the Graph Search Query Library

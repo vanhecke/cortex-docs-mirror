@@ -45,7 +45,7 @@ Activate Cortex XSIAM (Main Account)
    *   **Tenant Subdomain:** DNS record associated with your tenant. Enter a name that will be used to access the tenant directly using the full URL:
 
        `https://<xsiam-tenant>.xdr.<region>.paloaltonetworks.com`
-   *   (Optional) If you want to bring your own keys for encrypting your data, under **Advanced**, select **BYOK** and follow the instructions of the wizard in **Encryption Method:**&#x20;
+   *   (Optional) If you want to bring your own keys for encrypting your data, under **Advanced**, select **BYOK** and follow the instructions of the wizard in **Encryption Method:**
 
        Cortex XSIAM enables you to select the method used to encrypt your tenant data at rest. You can select the encryption method of your tenant only when creating new tenants. Select the encryption method in **Advanced** → **Encryption Method**.
 

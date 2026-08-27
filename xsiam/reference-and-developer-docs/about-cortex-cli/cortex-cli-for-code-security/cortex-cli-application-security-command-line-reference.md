@@ -1,3 +1,7 @@
+---
+description: Reference Cortex CLI commands for Application Security scans in Cortex XSIAM.
+---
+
 # Cortex CLI Cortex Cloud Application Security command line reference
 
 Use these command-line flags to configure Cortex Cloud Application Security scans. They are scoped to the `code scan` command and define what to scan and how results are reported. Their environment variables use the `CORTEX_CODE_` prefix. The Application Security CLI also accepts flags that apply across modules, including authentication, TLS, proxy, logging, upload behavior, and exit-code policy.

@@ -1,3 +1,9 @@
+---
+description: >-
+  Run agent scripts to investigate, manage, and remediate endpoints from Cortex
+  XSIAM.
+---
+
 # Run agent scripts on an endpoint
 
 For enhanced endpoint remediation and endpoint management, you can run Python 3.7 scripts on your endpoints directly from Cortex XSIAM. For commonly used actions, Cortex XSIAM provides out-of-the-box scripts. You can also write and upload your own Python scripts and code snippets into Cortex XSIAM for custom actions. Cortex XSIAM enables you to manage, run, and track the script execution on the endpoints, and store and display the execution results per endpoint.

@@ -1,5 +1,5 @@
 ---
-description: Enable Agentic Assistant and access the chat interface.
+description: Enable Agentic Assistant and access the chat interface in Cortex XSIAM.
 ---
 
 # Get started with Agentic Assistant chat

@@ -1,3 +1,7 @@
+---
+description: View, manage, and take actions on endpoints in Cortex XSIAM.
+---
+
 # Manage endpoints
 
 The All Endpoints page provides a central location from which you can view and manage the endpoints on which the agent is installed. To access the All Endpoints page, go to **Inventory → Endpoints → All Endpoints**.

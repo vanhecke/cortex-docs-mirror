@@ -1,3 +1,7 @@
+---
+description: Use Cortex CLI for API Security scans in Cortex XSIAM.
+---
+
 # Cortex CLI for API Security
 
 API Security testing is implemented in Cortex Cloud through the Cortex CLI.

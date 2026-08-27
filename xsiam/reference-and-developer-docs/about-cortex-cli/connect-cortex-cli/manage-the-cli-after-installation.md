@@ -1,5 +1,7 @@
 ---
-description: Upgrade, pin, uninstall, or update Cortex CLI through automated downloads.
+description: >-
+  Manage Cortex CLI installations and updates for security scans in Cortex
+  XSIAM.
 ---
 
 # Manage the CLI after installation
