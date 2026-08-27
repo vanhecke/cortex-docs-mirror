@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-26",
+  "source": "docs",
+  "sha": "792fb9b502766c4e3f42596e7c958dcd731be8ee",
+  "headline": "Container registry scanning regrouped by vendor; Identity Profile version floor drops to XSIAM 3.5",
+  "summary_md": "- Registry scanning is now licensed by **either** the Cloud Posture Security or the Cloud Runtime Security add-on, where before only Cloud Runtime Security qualified.\n- Twelve container registry pages moved out of Cloud Posture and Runtime Security data sources into per-vendor folders under Vendor-specific data sources and connectors.\n- **Identity Profile** now names Cortex XSIAM 3.5, Cortex XDR 5.1 or Cortex Cloud Runtime 2.1 instead of a flat XSIAM 3.6 floor, and is explicitly unavailable on XSIAM 2.x and XDR 3.x.\n- Ubuntu 26 gains supported-kernel pages on x86_64 and aarch64 at agent 9.1.0, alongside newly certified kernels across AlmaLinux, Rocky, RHEL, Oracle, Amazon Linux and Ubuntu.\n- Most of the day's 448 files are an editorial pass: 182 XSIAM pages and most of the 75 Development Guide pages had descriptions and headings rewritten without changing meaning.",
+  "highlights": [
+    {
+      "title": "Container registry scanning is now included with the Cloud Posture Security add-on as well",
+      "detail": "The License type note gained \"the Cloud Posture Security or\" before \"the Cloud Runtime Security add-on\", widening which products cover the feature.",
+      "paths": ["xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/container-registry-scanning"]
+    },
+    {
+      "title": "The six registry connectors moved to per-vendor folders, breaking their old URLs",
+      "detail": "Docker Hub, Docker V2, GitLab, Harbor, JFrog and Sonatype Nexus and their manage- subpages left container-registry-scanning/ for vendor-specific-data-sources-and-connectors/<vendor>/.",
+      "paths": ["xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/docker/connect-docker-hub-registry"]
+    },
+    {
+      "title": "Identity Profile prerequisites were restated across three products",
+      "detail": "\"Cortex XSIAM 3.6 or later\" became \"Cortex XSIAM 3.5, Cortex XDR 5.1, or Cortex Cloud Runtime 2.1 or later\", still requiring agent 9.1 and the ITDR add-on.",
+      "paths": ["xsiam/protect-your-endpoints/endpoint-security/install-and-manage-endpoints/set-up-endpoint-protection/set-up-endpoint-profiles-and-exception-rules/set-up-identity-profiles"]
+    },
+    {
+      "title": "Ubuntu 26 is now a supported kernel platform",
+      "detail": "New x86_64 and aarch64 pages list 7.0.0-14-generic onward at a 9.1.0 minimum agent version, taking the Linux Kernel Versions book from 100 to 102 pages.",
+      "paths": ["linux-kernels/ubuntu/x86_64/26", "linux-kernels/ubuntu/aarch64/26"]
+    },
+    {
+      "title": "The Development Guide's Alerts page is now Issues",
+      "detail": "Alert fields, layouts, layout rules and mappers were all restated as issue equivalents; the page keeps its alerts.md path, so only the title and body moved.",
+      "paths": ["developer/cortex-xsiam-development-guide/alerts"]
+    },
+    {
+      "title": "The Broker VM registry scanner page now links to broken-reference six times",
+      "detail": "Its links to the six connector pages were replaced with the literal placeholder broken-reference rather than repointed at the new vendor paths.",
+      "paths": ["xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-registry-scanner"]
+    }
+  ],
+  "items": {
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/container-registry-scanning": "Licence note now covers the Cloud Posture Security add-on too, and the connector list points into the new vendor folders.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-registry-scanner": "All six connector links became the placeholder broken-reference when the targets moved.",
+    "xsiam/protect-your-endpoints/endpoint-security/install-and-manage-endpoints/set-up-endpoint-protection/set-up-endpoint-profiles-and-exception-rules/set-up-identity-profiles": "Version floor restated as XSIAM 3.5 / XDR 5.1 / Cloud Runtime 2.1, excluded on XSIAM 2.x and XDR 3.x, prerequisites now a bulleted hint.",
+    "xsiam/detect-investigate-and-respond-to-threats/identity-threat-module-itdr/get-started-with-itdr": "Identity Profile described as available on Windows endpoints rather than as a Windows-only profile.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/docker": "New page, a title-only stub that parents the two Docker connector pages in the navigation.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/harbor": "New title-only stub parenting the Harbor registry connector page.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/jfrog": "New title-only stub parenting the JFrog container registry connector page.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/sonatype-nexus": "New title-only stub parenting the Sonatype Nexus registry connector page.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/docker/connect-docker-v2-compliant-container-registry": "The pointer to the Docker Hub connector for public and private repositories is now formatted as a Note hint.",
+    "developer/cortex-xsiam-development-guide/alerts": "Retitled from Alerts to Issues, with alert fields, layouts, layout rules and mappers restated as issue equivalents.",
+    "linux-kernels/ubuntu/x86_64/26": "New page listing Ubuntu 26 x86_64 kernels from 7.0.0-14-generic, minimum agent 9.1.0.",
+    "linux-kernels/ubuntu/aarch64/26": "New page listing Ubuntu 26 aarch64 kernels from 7.0.0-14-generic, minimum agent 9.1.0.",
+    "linux-kernels/oracle-linux/x86_64/9": "Adds 43 certified el9_2, el9_4 and el9_6 kernels at content 2390-40333 and 2400-40648.",
+    "linux-kernels/red-hat-enterprise-linux-rhel/x86_64/10": "Adds 26 el10_0 and el10_2 kernels, minimum agent 8.7.1.",
+    "linux-kernels/amazon-linux-2023/x86_64/2023": "Two kernels added (6.1.180-225.360 and 6.12.100-125.179); the rest of the table diff is column reflow."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": true
+}
