@@ -1,0 +1,54 @@
+{
+  "date": "2026-08-26",
+  "source": "content",
+  "sha": "9ad476cdea562d11e271e1a9993076d094da02ea",
+  "headline": "A narrow 11-pack day: QRadar rewritten, Microsoft Entra ID nearly doubles in additions",
+  "summary_md": "- Only 11 packs move for 5 upstream commits — +2,128/-239 — a quarter of the previous day's pack count.\n- **QRadar** (+1,080/-184) and **MicrosoftEntraID** (+774/-1) are 87% of the day's insertions between them; everything else is small.\n- QRadar carries nearly all the day's deletions, so that pack was rewritten rather than extended; Entra ID is near-pure addition.\n- Two Slack commits land together: telemetry-failure list messages and an `auth_target` mapping for event 102.\n- The `identity.*` modeling-rule work continues at PR 2 of 7 (CRTX-271527, #45464), a day after PR 1.",
+  "highlights": [
+    {
+      "title": "QRadar is the day's dominant change at +1,080/-184",
+      "detail": "The pack holds 76% of the day's deletions against 51% of its insertions, so existing code was replaced; the commit subject is only \"Qradar\" (#45622) and says no more.",
+      "paths": ["Packs/QRadar"]
+    },
+    {
+      "title": "Microsoft Entra ID gains 774 lines against a single deletion",
+      "detail": "The day's largest near-pure addition, and the snapshot names no commit subject for it.",
+      "paths": ["Packs/MicrosoftEntraID"]
+    },
+    {
+      "title": "identity.* fields reach modeling rules PR 2 of 7",
+      "detail": "CRTX-271527 (#45464) continues the seven-part ingestion-mapping series that opened the day before; the snapshot does not say which pack carried it.",
+      "paths": []
+    },
+    {
+      "title": "Slack moves twice — telemetry failure messages and an event 102 auth_target mapping",
+      "detail": "CRTX-275112 (#45629) and CRTX-274913 (#45648) together account for the pack's +40/-15.",
+      "paths": ["Packs/Slack"]
+    },
+    {
+      "title": "Four unrelated packs move by an identical +9/-2",
+      "detail": "Active Directory Query, Core, Filters And Transformers and Smokescreen IllusionBLACK change by the same amount, the signature of one shared edit applied across packs.",
+      "paths": ["Packs/Active_Directory_Query", "Packs/Core", "Packs/FiltersAndTransformers", "Packs/Smokescreen_IllusionBLACK"]
+    },
+    {
+      "title": "A script migration is the day's snapshot head",
+      "detail": "CRTX-265664 (#45511) is the newest commit in the day's window; CommonScripts (+69/-11) and Base (+14/-3) are the largest of the remaining pack moves.",
+      "paths": ["Packs/CommonScripts", "Packs/Base"]
+    }
+  ],
+  "items": {
+    "Packs/QRadar": "+1,080/-184, the day's largest pack change and the source of most of its deletions (#45622).",
+    "Packs/MicrosoftEntraID": "+774/-1, the day's largest near-pure addition; unattributed in the day's commit subjects.",
+    "Packs/CommonScripts": "+69/-11, unattributed by subject on a day whose head commit is a script migration (#45511).",
+    "Packs/CloudIncidentResponse": "+59/-16, the third-highest deletion count of the day and unattributed in the commit subjects.",
+    "Packs/Tableau": "+56/-1, near-pure addition with no commit subject naming it.",
+    "Packs/Slack": "+40/-15 across two commits: telemetry failure list messages (CRTX-275112, #45629) and an auth_target mapping for event 102 (CRTX-274913, #45648).",
+    "Packs/Base": "+14/-3, unattributed in the day's commit subjects.",
+    "Packs/Active_Directory_Query": "+9/-2, one of four packs moving by an identical amount.",
+    "Packs/Core": "+9/-2, one of four packs moving by an identical amount.",
+    "Packs/FiltersAndTransformers": "+9/-2, one of four packs moving by an identical amount.",
+    "Packs/Smokescreen_IllusionBLACK": "+9/-2, one of four packs moving by an identical amount."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
