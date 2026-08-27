@@ -1,0 +1,84 @@
+{
+  "date": "2026-08-26",
+  "sha": "b9eb38537b1b73ffc577b7291efce015ac3f9fed",
+  "committed_at": "2026-08-26T16:28:59+03:00",
+  "packs": [
+    {
+      "name": "Active_Directory_Query",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "Base",
+      "insertions": 14,
+      "deletions": 3
+    },
+    {
+      "name": "CloudIncidentResponse",
+      "insertions": 59,
+      "deletions": 16
+    },
+    {
+      "name": "CommonScripts",
+      "insertions": 69,
+      "deletions": 11
+    },
+    {
+      "name": "Core",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "FiltersAndTransformers",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "MicrosoftEntraID",
+      "insertions": 774,
+      "deletions": 1
+    },
+    {
+      "name": "QRadar",
+      "insertions": 1080,
+      "deletions": 184
+    },
+    {
+      "name": "Slack",
+      "insertions": 40,
+      "deletions": 15
+    },
+    {
+      "name": "Smokescreen_IllusionBLACK",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "Tableau",
+      "insertions": 56,
+      "deletions": 1
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b43b63c73b8d64b82bc54bf13b677bf09738a62c",
+      "subject": "CRTX-271527: add identity.* to modeling rules (PR 2 of 7) (#45464)"
+    },
+    {
+      "sha": "33163371cb3f9067ab0f6f9ea535ffb847037063",
+      "subject": "HY/CRTX-275112/TelematryFailuresSlackListMessages (#45629)"
+    },
+    {
+      "sha": "c7704b4e403fb05c311b9130f4661fd6c9b3322b",
+      "subject": "CRTX-274913 - Slack map auth_target for event 102 (#45648)"
+    },
+    {
+      "sha": "ed3d4a919ef11b02fa1b1f38278c1d7736bf5426",
+      "subject": "Qradar (#45622)"
+    },
+    {
+      "sha": "b9eb38537b1b73ffc577b7291efce015ac3f9fed",
+      "subject": "Crtx 265664 migrate script (#45511)"
+    }
+  ]
+}
