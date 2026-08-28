@@ -1,0 +1,75 @@
+{
+  "date": "2026-08-27",
+  "source": "content",
+  "sha": "a4fbff4043aed6e70c3f475298846b6ea3a9923a",
+  "headline": "A 222-pack metadata sweep: supportedModules lands on existing fetch-incidents params",
+  "summary_md": "- 222 packs move for 7 upstream commits (+10,921/-6,078). No pack was added or removed.\n- Two of those commits are phases 1 and 2 of one `supportedModules` sweep over existing Fetch Incidents parameters (CIAC-17795) — the only change large enough to explain a pack count this high.\n- The day is mostly metadata: 196 of the 222 packs delete 3 lines or fewer, and 179 change 30 lines or fewer in total.\n- Two thirds of the 16,999 changed lines sit in seven packs whose insertions and deletions nearly cancel — **IronPort**, **Gem**, **DatadogCloudSIEM**, **DataBee**, **Sysdig**, **DigitalShadows** and **Orca**.\n- The remaining five commits are product fixes: `xdr-xql-generic-query` arguments, Intune timestamp parsing, Netskope network-event mapping, and two KeyError fixes.",
+  "highlights": [
+    {
+      "title": "xdr-xql-generic-query gains source_id and source_name arguments",
+      "detail": "CRTX-269392 (#45513); CortexXDR (+37/-25) and Core (+45/-25) both move by near-identical amounts, the signature of the paired XDR and XSIAM copies of one command.",
+      "paths": [
+        "Packs/CortexXDR",
+        "Packs/Core"
+      ]
+    },
+    {
+      "title": "supportedModules is updated on existing Fetch Incidents parameters in two phases",
+      "detail": "CIAC-17795 lands as #45667 and #45670 on the same day; the snapshot does not name the packs each phase touched, but nothing else on the day could move 222 of them.",
+      "paths": []
+    },
+    {
+      "title": "Seven packs are rewritten near line-for-line and gain almost nothing",
+      "detail": "IronPort (+1,863/-1,850) leads; Gem, DatadogCloudSIEM, DataBee, Sysdig, DigitalShadows and Orca repeat the shape, together 66% of the day's churn for a net of a few dozen lines.",
+      "paths": [
+        "Packs/IronPort",
+        "Packs/Gem",
+        "Packs/DatadogCloudSIEM",
+        "Packs/DataBee",
+        "Packs/Sysdig",
+        "Packs/DigitalShadows",
+        "Packs/Orca"
+      ]
+    },
+    {
+      "title": "Netskope maps xdm.observer.action to action for network events",
+      "detail": "XSUP-75725 (#45677) changes what the pack writes into the XDM observer field for network events; the pack moves +40/-5.",
+      "paths": [
+        "Packs/Netskope"
+      ]
+    },
+    {
+      "title": "The Intune parsing rule stops requiring fractional seconds in timestamps",
+      "detail": "XSUP-74549 (#45654); MicrosoftIntune moves +10/-3, consistent with a single parsing-rule edit.",
+      "paths": [
+        "Packs/MicrosoftIntune"
+      ]
+    },
+    {
+      "title": "Two KeyError fixes: Jira Service Management and HealthCheckCommonIndicators",
+      "detail": "XSUP-75105 (#45582) and #45354 (#45676) land together; HealthCheck is the day's largest addition outside the rewritten packs at +149/-5.",
+      "paths": [
+        "Packs/AtlassianJiraServiceManagement",
+        "Packs/HealthCheck"
+      ]
+    }
+  ],
+  "items": {
+    "Packs/CortexXDR": "+37/-25. Carries CRTX-269392, adding source_id and source_name arguments to xdr-xql-generic-query.",
+    "Packs/Core": "+45/-25. Moves with CortexXDR by a matching amount — the XSIAM-side copy of the same xdr-xql-generic-query change.",
+    "Packs/Netskope": "+40/-5. XSUP-75725 maps xdm.observer.action to action for network events.",
+    "Packs/MicrosoftIntune": "+10/-3. XSUP-74549 lets the parsing rule handle timestamps that carry no fractional seconds.",
+    "Packs/AtlassianJiraServiceManagement": "+40/-2. XSUP-75105 fixes a KeyError in the integration.",
+    "Packs/HealthCheck": "+149/-5. Fixes a KeyError in the HealthCheckCommonIndicators script, and the day's biggest addition outside the seven rewrites.",
+    "Packs/ApiModules": "+142/-3. The second-largest near-pure addition of the day; no commit subject in the snapshot names it.",
+    "Packs/IronPort": "+1,863/-1,850. The day's largest change and a near line-for-line rewrite — 22% of all churn for 13 net lines.",
+    "Packs/Gem": "+1,039/-1,026. Rewritten on the same shape as IronPort, 13 lines to the good.",
+    "Packs/DatadogCloudSIEM": "+946/-922. Third of the seven rewritten packs; insertions and deletions again nearly cancel.",
+    "Packs/DataBee": "+668/-651. Rewritten rather than extended.",
+    "Packs/Sysdig": "+536/-511. Rewritten rather than extended.",
+    "Packs/DigitalShadows": "+435/-410. Rewritten rather than extended.",
+    "Packs/Orca": "+223/-198. The smallest of the seven near line-for-line rewrites."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
