@@ -1,0 +1,1147 @@
+{
+  "date": "2026-08-27",
+  "sha": "d00420cfd5b204bc1df79ca2eed258fdc587cf8d",
+  "committed_at": "2026-08-27T22:05:41+03:00",
+  "packs": [
+    {
+      "name": "AMP",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "AWS-AccessAnalyzer",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "AWS-SQS",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "AWS-SecurityHub",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "ActiveMQ",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Aella_StarLight",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "AgariPhishingDefense",
+      "insertions": 41,
+      "deletions": 1
+    },
+    {
+      "name": "AlienVault_USM_Anywhere",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "AlphaSOC_Network_Behavior_Analytics",
+      "insertions": 25,
+      "deletions": 1
+    },
+    {
+      "name": "ApiModules",
+      "insertions": 142,
+      "deletions": 3
+    },
+    {
+      "name": "ArcSightLogger",
+      "insertions": 28,
+      "deletions": 1
+    },
+    {
+      "name": "Armis",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "AtlassianJiraServiceManagement",
+      "insertions": 40,
+      "deletions": 2
+    },
+    {
+      "name": "AttivoBotsink",
+      "insertions": 24,
+      "deletions": 1
+    },
+    {
+      "name": "AwakeSecurity",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "AzureDevOps",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "AzureStorageQueue",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "BastilleNetworks",
+      "insertions": 29,
+      "deletions": 1
+    },
+    {
+      "name": "BluelivThreatCompass",
+      "insertions": 29,
+      "deletions": 1
+    },
+    {
+      "name": "BmcHelixRemedyForce",
+      "insertions": 37,
+      "deletions": 1
+    },
+    {
+      "name": "BmcITSM",
+      "insertions": 23,
+      "deletions": 8
+    },
+    {
+      "name": "Bonusly",
+      "insertions": 28,
+      "deletions": 1
+    },
+    {
+      "name": "Box",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "CTM360-CyberBlindspot",
+      "insertions": 25,
+      "deletions": 1
+    },
+    {
+      "name": "CarbonBlackDefense",
+      "insertions": 64,
+      "deletions": 17
+    },
+    {
+      "name": "CarbonBlackProtect",
+      "insertions": 20,
+      "deletions": 5
+    },
+    {
+      "name": "Carbon_Black_Enterprise_Response",
+      "insertions": 28,
+      "deletions": 2
+    },
+    {
+      "name": "CheckPointDome9",
+      "insertions": 30,
+      "deletions": 1
+    },
+    {
+      "name": "Cherwell",
+      "insertions": 29,
+      "deletions": 1
+    },
+    {
+      "name": "CiscoSMA",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "Claroty",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "ClarotyXDome",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Code42",
+      "insertions": 21,
+      "deletions": 6
+    },
+    {
+      "name": "CofenseTriage",
+      "insertions": 27,
+      "deletions": 3
+    },
+    {
+      "name": "Cognni",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "ConcentricAI",
+      "insertions": 28,
+      "deletions": 1
+    },
+    {
+      "name": "Coralogix",
+      "insertions": 31,
+      "deletions": 1
+    },
+    {
+      "name": "Core",
+      "insertions": 45,
+      "deletions": 25
+    },
+    {
+      "name": "CortexXDR",
+      "insertions": 37,
+      "deletions": 25
+    },
+    {
+      "name": "CounterCraft",
+      "insertions": 24,
+      "deletions": 1
+    },
+    {
+      "name": "CounterTack",
+      "insertions": 16,
+      "deletions": 3
+    },
+    {
+      "name": "CovalenceManagedSecurity",
+      "insertions": 16,
+      "deletions": 3
+    },
+    {
+      "name": "Cryptosim",
+      "insertions": 25,
+      "deletions": 1
+    },
+    {
+      "name": "CyberArkPAS",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Cybereason",
+      "insertions": 23,
+      "deletions": 1
+    },
+    {
+      "name": "Cyberint",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Cyberpion",
+      "insertions": 53,
+      "deletions": 26
+    },
+    {
+      "name": "Cyberwatch",
+      "insertions": 20,
+      "deletions": 7
+    },
+    {
+      "name": "CybleEventsV2",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Cylance_Protect",
+      "insertions": 18,
+      "deletions": 2
+    },
+    {
+      "name": "Cymulate",
+      "insertions": 61,
+      "deletions": 16
+    },
+    {
+      "name": "CyrenInboxSecurity",
+      "insertions": 31,
+      "deletions": 8
+    },
+    {
+      "name": "Darkmon",
+      "insertions": 27,
+      "deletions": 2
+    },
+    {
+      "name": "Darktrace",
+      "insertions": 25,
+      "deletions": 1
+    },
+    {
+      "name": "DataBee",
+      "insertions": 668,
+      "deletions": 651
+    },
+    {
+      "name": "DatadogCloudSIEM",
+      "insertions": 946,
+      "deletions": 922
+    },
+    {
+      "name": "DeCYFIR",
+      "insertions": 17,
+      "deletions": 5
+    },
+    {
+      "name": "DeepInstinct",
+      "insertions": 22,
+      "deletions": 1
+    },
+    {
+      "name": "DeveloperTools",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "DigitalGuardian",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "DigitalShadows",
+      "insertions": 435,
+      "deletions": 410
+    },
+    {
+      "name": "Digital_Defense_FrontlineVM",
+      "insertions": 24,
+      "deletions": 1
+    },
+    {
+      "name": "DomainTools_Iris",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Edgescan",
+      "insertions": 28,
+      "deletions": 1
+    },
+    {
+      "name": "Exabeam",
+      "insertions": 16,
+      "deletions": 3
+    },
+    {
+      "name": "ExtraHop",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "FeedIntel471",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "FidelisElevateNetwork",
+      "insertions": 24,
+      "deletions": 1
+    },
+    {
+      "name": "FidelisEndpoint",
+      "insertions": 25,
+      "deletions": 1
+    },
+    {
+      "name": "FireEyeCM",
+      "insertions": 17,
+      "deletions": 1
+    },
+    {
+      "name": "FireEyeEX",
+      "insertions": 30,
+      "deletions": 2
+    },
+    {
+      "name": "FireEyeHX",
+      "insertions": 19,
+      "deletions": 1
+    },
+    {
+      "name": "FireEyeHelix",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "FireEyeNX",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "ForescoutEyeInspect",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "FortiSIEM",
+      "insertions": 34,
+      "deletions": 1
+    },
+    {
+      "name": "FreshDesk",
+      "insertions": 27,
+      "deletions": 1
+    },
+    {
+      "name": "FreshworksFreshservice",
+      "insertions": 19,
+      "deletions": 1
+    },
+    {
+      "name": "GSuiteSecurityAlertCenter",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Gamma",
+      "insertions": 15,
+      "deletions": 1
+    },
+    {
+      "name": "Gatewatcher-AionIQ",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Gem",
+      "insertions": 1039,
+      "deletions": 1026
+    },
+    {
+      "name": "GenericSQL",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "Gmail",
+      "insertions": 23,
+      "deletions": 1
+    },
+    {
+      "name": "GmailSingleUser",
+      "insertions": 23,
+      "deletions": 1
+    },
+    {
+      "name": "GoogleBigQuery",
+      "insertions": 17,
+      "deletions": 4
+    },
+    {
+      "name": "GoogleChronicleBackstory",
+      "insertions": 58,
+      "deletions": 33
+    },
+    {
+      "name": "GoogleCloudSCC",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "GooglePubSub",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "GoogleThreatIntelligence",
+      "insertions": 25,
+      "deletions": 1
+    },
+    {
+      "name": "Grafana",
+      "insertions": 29,
+      "deletions": 1
+    },
+    {
+      "name": "GravityZone",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Graylog",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "GroupIB_ThreatIntelligenceAttribution",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "GuardiCore",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Gurucul",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "HackerOne",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "HealthCheck",
+      "insertions": 149,
+      "deletions": 5
+    },
+    {
+      "name": "HelloWorld",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "Humio",
+      "insertions": 28,
+      "deletions": 1
+    },
+    {
+      "name": "IBMResilientSystems",
+      "insertions": 17,
+      "deletions": 1
+    },
+    {
+      "name": "ICEBRG",
+      "insertions": 24,
+      "deletions": 1
+    },
+    {
+      "name": "IdentityRecordedFuture",
+      "insertions": 16,
+      "deletions": 3
+    },
+    {
+      "name": "IllusiveNetworks",
+      "insertions": 23,
+      "deletions": 1
+    },
+    {
+      "name": "Indeni",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "Infinipoint",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "Infocyte",
+      "insertions": 25,
+      "deletions": 1
+    },
+    {
+      "name": "IntSight",
+      "insertions": 34,
+      "deletions": 1
+    },
+    {
+      "name": "IronDefense",
+      "insertions": 40,
+      "deletions": 1
+    },
+    {
+      "name": "IronPort",
+      "insertions": 1863,
+      "deletions": 1850
+    },
+    {
+      "name": "Ironscales",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "IvantiHeat",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "JSONSampleIncidentGenerator",
+      "insertions": 25,
+      "deletions": 2
+    },
+    {
+      "name": "Jira",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "Kafka",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Lacework",
+      "insertions": 25,
+      "deletions": 1
+    },
+    {
+      "name": "LogsignSiem",
+      "insertions": 29,
+      "deletions": 1
+    },
+    {
+      "name": "Logzio",
+      "insertions": 28,
+      "deletions": 1
+    },
+    {
+      "name": "Lokpath_Keylight",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "MailListener",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Malwarebytes",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "MandiantAdvantageAttackSurfaceManagement",
+      "insertions": 29,
+      "deletions": 1
+    },
+    {
+      "name": "McAfee_ESM",
+      "insertions": 30,
+      "deletions": 1
+    },
+    {
+      "name": "MicroFocusSMAX",
+      "insertions": 29,
+      "deletions": 1
+    },
+    {
+      "name": "Microsoft365Defender",
+      "insertions": 19,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftCloudAppSecurity",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftDefenderAdvancedThreatProtection",
+      "insertions": 28,
+      "deletions": 3
+    },
+    {
+      "name": "MicrosoftExchangeOnPremise",
+      "insertions": 23,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftExchangeOnline",
+      "insertions": 19,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftGraphIdentityandAccess",
+      "insertions": 19,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftGraphMail",
+      "insertions": 23,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftIntune",
+      "insertions": 10,
+      "deletions": 3
+    },
+    {
+      "name": "MicrosoftManagementActivity",
+      "insertions": 23,
+      "deletions": 1
+    },
+    {
+      "name": "Mimecast",
+      "insertions": 19,
+      "deletions": 1
+    },
+    {
+      "name": "MinervaLabsAntiEvasionPlatform",
+      "insertions": 23,
+      "deletions": 1
+    },
+    {
+      "name": "MobileIronUEM",
+      "insertions": 47,
+      "deletions": 1
+    },
+    {
+      "name": "NTT_Cyber_Threat_Sensor",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "Neosec",
+      "insertions": 32,
+      "deletions": 1
+    },
+    {
+      "name": "NetscoutArborSightline",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Netskope",
+      "insertions": 40,
+      "deletions": 5
+    },
+    {
+      "name": "Okta",
+      "insertions": 19,
+      "deletions": 1
+    },
+    {
+      "name": "OnboardingIntegration",
+      "insertions": 21,
+      "deletions": 1
+    },
+    {
+      "name": "OpsGenie",
+      "insertions": 30,
+      "deletions": 1
+    },
+    {
+      "name": "Orca",
+      "insertions": 223,
+      "deletions": 198
+    },
+    {
+      "name": "Packetsled",
+      "insertions": 23,
+      "deletions": 1
+    },
+    {
+      "name": "PagerDuty",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "PaloAltoNetworks_IoT",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Palo_Alto_Networks_Enterprise_DLP",
+      "insertions": 20,
+      "deletions": 2
+    },
+    {
+      "name": "Panorays",
+      "insertions": 27,
+      "deletions": 2
+    },
+    {
+      "name": "PerceptionPoint",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "Perch",
+      "insertions": 27,
+      "deletions": 1
+    },
+    {
+      "name": "PhishLabs",
+      "insertions": 48,
+      "deletions": 1
+    },
+    {
+      "name": "PrismaCloud",
+      "insertions": 27,
+      "deletions": 2
+    },
+    {
+      "name": "PrismaCloudCompute",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "PrismaSaasSecurity",
+      "insertions": 19,
+      "deletions": 1
+    },
+    {
+      "name": "ProofpointCloudThreatResponse",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "ProofpointTAP",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "ProofpointThreatResponse",
+      "insertions": 24,
+      "deletions": 5
+    },
+    {
+      "name": "ProtectWise",
+      "insertions": 40,
+      "deletions": 1
+    },
+    {
+      "name": "QSS",
+      "insertions": 28,
+      "deletions": 1
+    },
+    {
+      "name": "QualysFIM",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "QuestKace",
+      "insertions": 28,
+      "deletions": 1
+    },
+    {
+      "name": "RTIR",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Rapid7_InsightIDR",
+      "insertions": 16,
+      "deletions": 1
+    },
+    {
+      "name": "RecordedFutureASI",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "RedCanary",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "RsaNetwitnessSecurityAnalytics",
+      "insertions": 23,
+      "deletions": 1
+    },
+    {
+      "name": "SCADAfence_CNM",
+      "insertions": 16,
+      "deletions": 3
+    },
+    {
+      "name": "SOCRadar",
+      "insertions": 36,
+      "deletions": 1
+    },
+    {
+      "name": "SailPointIdentityIQ",
+      "insertions": 21,
+      "deletions": 2
+    },
+    {
+      "name": "SecureWorks",
+      "insertions": 28,
+      "deletions": 1
+    },
+    {
+      "name": "Securonix",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Sepio",
+      "insertions": 27,
+      "deletions": 1
+    },
+    {
+      "name": "ServiceDeskPlus",
+      "insertions": 30,
+      "deletions": 17
+    },
+    {
+      "name": "ServiceNow",
+      "insertions": 17,
+      "deletions": 2
+    },
+    {
+      "name": "SignalSciences",
+      "insertions": 24,
+      "deletions": 1
+    },
+    {
+      "name": "SkyhighSecurity",
+      "insertions": 16,
+      "deletions": 3
+    },
+    {
+      "name": "Smokescreen_IllusionBLACK",
+      "insertions": 25,
+      "deletions": 1
+    },
+    {
+      "name": "Snowflake",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "SolarWinds",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "SophosCentral",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "SplunkPy",
+      "insertions": 16,
+      "deletions": 1
+    },
+    {
+      "name": "Stamus",
+      "insertions": 24,
+      "deletions": 2
+    },
+    {
+      "name": "Stealthwatch_Cloud",
+      "insertions": 23,
+      "deletions": 1
+    },
+    {
+      "name": "SumoLogic",
+      "insertions": 23,
+      "deletions": 1
+    },
+    {
+      "name": "SymantecEDR",
+      "insertions": 34,
+      "deletions": 1
+    },
+    {
+      "name": "SymantecEmailSecurity",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "SymantecMSS",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "SysAid",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Sysdig",
+      "insertions": 536,
+      "deletions": 511
+    },
+    {
+      "name": "TaniumThreatResponse",
+      "insertions": 25,
+      "deletions": 1
+    },
+    {
+      "name": "ThinkstCanary",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Traceable",
+      "insertions": 39,
+      "deletions": 1
+    },
+    {
+      "name": "Trello",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "TrendMicroCAS",
+      "insertions": 15,
+      "deletions": 2
+    },
+    {
+      "name": "Tripwire",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "TrustwaveFusion",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "Twinwave",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "UnifiVideoNVR",
+      "insertions": 26,
+      "deletions": 1
+    },
+    {
+      "name": "Uptycs",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "VaronisDataSecurityPlatform",
+      "insertions": 28,
+      "deletions": 1
+    },
+    {
+      "name": "VaronisSaaS",
+      "insertions": 17,
+      "deletions": 4
+    },
+    {
+      "name": "VectraRUX",
+      "insertions": 27,
+      "deletions": 2
+    },
+    {
+      "name": "VectraXDR",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Vectra_AI",
+      "insertions": 16,
+      "deletions": 3
+    },
+    {
+      "name": "Verodin",
+      "insertions": 24,
+      "deletions": 1
+    },
+    {
+      "name": "VirusTotal",
+      "insertions": 39,
+      "deletions": 2
+    },
+    {
+      "name": "WootCloud",
+      "insertions": 25,
+      "deletions": 1
+    },
+    {
+      "name": "Workday",
+      "insertions": 44,
+      "deletions": 1
+    },
+    {
+      "name": "XMCO",
+      "insertions": 15,
+      "deletions": 1
+    },
+    {
+      "name": "XMCyber",
+      "insertions": 28,
+      "deletions": 1
+    },
+    {
+      "name": "XMatters",
+      "insertions": 32,
+      "deletions": 1
+    },
+    {
+      "name": "XSOARmirroring",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "Zendesk",
+      "insertions": 19,
+      "deletions": 1
+    },
+    {
+      "name": "ZeroFox",
+      "insertions": 70,
+      "deletions": 56
+    },
+    {
+      "name": "ZeroTrustAnalyticsPlatform",
+      "insertions": 33,
+      "deletions": 1
+    },
+    {
+      "name": "Zimperium",
+      "insertions": 25,
+      "deletions": 1
+    },
+    {
+      "name": "ctf01",
+      "insertions": 20,
+      "deletions": 1
+    },
+    {
+      "name": "knowbe4Phisher",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "mcafeeDam",
+      "insertions": 24,
+      "deletions": 1
+    },
+    {
+      "name": "mnemonicMDR",
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "name": "sampleSiem",
+      "insertions": 18,
+      "deletions": 1
+    }
+  ],
+  "commits": [
+    {
+      "sha": "1dc52e5130fdaf7716202e7fa9165b539d39d083",
+      "subject": "CRTX-269392: add source_id and source_name args to xdr-xql-generic-query (#45513)"
+    },
+    {
+      "sha": "a13488d4af938a4383ab7eb1d63b0947f8dbd496",
+      "subject": "XSUP-74549 - Intune parsing rule handle timestamps without fractional seconds (#45654)"
+    },
+    {
+      "sha": "11d5ab4f8d8e2dbe3783de1723a0edf4dfe0dcb6",
+      "subject": "CIAC-17795: Update supportedModules on existing Fetch Incidents params (Phase 1) (#45667)"
+    },
+    {
+      "sha": "8aca38df743617d230363b067bdc6a0028a2070f",
+      "subject": "XSUP-75725 - Netskope map xdm.observer.action to action for network events (#45677)"
+    },
+    {
+      "sha": "9a08a92bcbaa04cf35772dfed4d9ccb990382368",
+      "subject": "CIAC-17795: Update supportedModules on existing Fetch Incidents params (Phase 2) (#45670)"
+    },
+    {
+      "sha": "464aa5dffe56328374b09bf5de5d4b89ac6d1811",
+      "subject": "HY/XSUP-75105/JiraServiceManagemntKeyError (#45582)"
+    },
+    {
+      "sha": "d00420cfd5b204bc1df79ca2eed258fdc587cf8d",
+      "subject": "Fix HealthCheckCommonIndicators script t handle KeyError- #45354 (#45676)"
+    }
+  ]
+}
