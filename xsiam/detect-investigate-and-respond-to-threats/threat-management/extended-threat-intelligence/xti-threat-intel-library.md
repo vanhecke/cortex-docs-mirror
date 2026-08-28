@@ -1,7 +1,7 @@
 ---
 description: >-
-  Research curated threat actors, malware families, vulnerabilities, and reports
-  from Unit 42.
+  Explore the Cortex XSIAM XTI Threat Intel Library for Unit 42 threat actors,
+  malware families, vulnerabilities, and reports.
 ---
 
 # XTI Threat Intel Library

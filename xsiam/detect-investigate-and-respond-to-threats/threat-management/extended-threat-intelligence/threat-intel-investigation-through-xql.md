@@ -1,7 +1,7 @@
 ---
 description: >-
-  Query XTI indicators, threat objects, and their relationships using Cortex
-  Query Language.
+  Use Cortex XSIAM XQL to query XTI indicators, threat objects, and
+  relationships for threat intelligence investigations.
 ---
 
 # Threat intel investigation through XQL

@@ -1,3 +1,7 @@
+---
+description: Configure the Cribl data source and connector for Cortex XSIAM.
+---
+
 # Cribl
 
 You can configure collecting Cribl data using a standard data source or connector (onboarded after July 26, 2026):

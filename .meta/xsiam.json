@@ -2,7 +2,7 @@
   "book": "xsiam",
   "title": "Cortex XSIAM Documentation",
   "section": "cortex-xsiam",
-  "page_count": 2223,
+  "page_count": 2218,
   "tree": [
     {
       "title": "Learn about Cortex XSIAM",
@@ -6240,6 +6240,12 @@
                       "children": []
                     },
                     {
+                      "title": "Activate DSPM Database",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-dspm-database",
+                      "type": "document",
+                      "children": []
+                    },
+                    {
                       "title": "Activate DSPM Fileshare",
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-dspm-fileshare",
                       "type": "document",
@@ -6829,43 +6835,6 @@
               "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources",
               "type": "document",
               "children": [
-                {
-                  "title": "How to onboard on-premise assets to Cloud Data Security",
-                  "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/how-to-onboard-on-premise-assets-to-cloud-data-security",
-                  "type": "document",
-                  "children": [
-                    {
-                      "title": "Activate DSPM Fileshare",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/how-to-onboard-on-premise-assets-to-cloud-data-security/activate-dspm-fileshare",
-                      "type": "document",
-                      "children": []
-                    }
-                  ]
-                },
-                {
-                  "title": "How to onboard Databricks",
-                  "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/how-to-onboard-databricks",
-                  "type": "document",
-                  "children": []
-                },
-                {
-                  "title": "How to onboard Microsoft 365",
-                  "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/how-to-onboard-microsoft-365",
-                  "type": "document",
-                  "children": []
-                },
-                {
-                  "title": "Ingest logs and data from Okta",
-                  "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/ingest-logs-and-data-from-okta",
-                  "type": "document",
-                  "children": []
-                },
-                {
-                  "title": "How to onboard Snowflake",
-                  "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/how-to-onboard-snowflake",
-                  "type": "document",
-                  "children": []
-                },
                 {
                   "title": "Activate AppSec Transporter",
                   "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/activate-appsec-transporter",

@@ -1,3 +1,9 @@
+---
+description: Configure the CounterTrack connector for Cortex XSIAM.
+---
+
 # CounterTack
 
-Connector documentation for CounterTack.
+Here are the articles in this section:
+
+* [countertack](countertack/countertack "mention")

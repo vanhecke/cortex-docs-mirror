@@ -1,7 +1,7 @@
 ---
 description: >-
-  Investigate, manage, and enrich threat indicators, including domains, IP
-  addresses, URLs, and file hashes.
+  Investigate, manage, and enrich threat indicators in Cortex XSIAM, including
+  domains, IP addresses, URLs, and file hashes.
 ---
 
 # XTI Indicators

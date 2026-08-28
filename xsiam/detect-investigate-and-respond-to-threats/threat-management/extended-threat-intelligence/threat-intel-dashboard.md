@@ -1,7 +1,7 @@
 ---
 description: >-
-  Visualize threat intelligence data to monitor distribution, ingestion health,
-  and emerging trends.
+  Use the Cortex XSIAM Threat Intel Dashboard to monitor intelligence
+  distribution, ingestion health, and emerging threats.
 ---
 
 # Threat Intel Dashboard

@@ -1,5 +1,7 @@
 ---
-description: Use the Threat Intel Agent to list, enrich, and update XTI indicators.
+description: >-
+  Use the Cortex XSIAM Threat Intel Agent to list, enrich, and update Extended
+  Threat Intelligence indicators.
 ---
 
 # Using XTI with Threat Intel Agent

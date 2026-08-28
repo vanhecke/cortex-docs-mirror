@@ -1,7 +1,7 @@
 ---
 description: >-
-  Analyze indicator intelligence and Behavioral Threat Analysis (BTA) findings
-  in cases and issues.
+  Use Cortex XSIAM threat intelligence context to analyze indicators and
+  Behavioral Threat Analysis findings in cases and issues.
 ---
 
 # Threat intel context in cases and issues

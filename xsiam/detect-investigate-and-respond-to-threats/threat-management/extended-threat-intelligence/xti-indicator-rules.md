@@ -1,7 +1,7 @@
 ---
 description: >-
-  Create rules that detect known threat indicators and generate issues from
-  matching data.
+  Create Cortex XSIAM XTI indicator rules to detect known threat indicators and
+  generate issues from matching data.
 ---
 
 # XTI indicator rules

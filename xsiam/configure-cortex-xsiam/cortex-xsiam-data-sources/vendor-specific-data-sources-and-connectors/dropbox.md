@@ -1,3 +1,7 @@
+---
+description: Configure the Dropbox data source and connector for Cortex XSIAM.
+---
+
 # Dropbox
 
 You can configure collecting Dropbox logs and data using a standard data source, content pack integration (onboarded prior to July 26, 2026), or connector (onboarded after July 26, 2026):

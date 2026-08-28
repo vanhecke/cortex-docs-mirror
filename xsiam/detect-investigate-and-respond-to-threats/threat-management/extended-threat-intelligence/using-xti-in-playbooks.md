@@ -1,7 +1,7 @@
 ---
 description: >-
-  Automate XTI indicator triage, enrichment, and response with supported
-  playbook commands.
+  Use Cortex XSIAM playbooks to automate XTI indicator triage, enrichment, and
+  response with supported commands.
 ---
 
 # Using XTI in playbooks

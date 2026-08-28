@@ -1,7 +1,7 @@
 ---
 description: >-
-  Research threats, investigate indicators, and apply intelligence across Cortex
-  XSIAM workflows.
+  Explore Extended Threat Intelligence in Cortex XSIAM to research threats,
+  investigate indicators, and strengthen security workflows.
 ---
 
 # Extended Threat Intelligence

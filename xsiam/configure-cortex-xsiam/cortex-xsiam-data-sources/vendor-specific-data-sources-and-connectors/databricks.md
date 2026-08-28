@@ -1,3 +1,7 @@
+---
+description: Configure the Databricks data source and connector for Cortex XSIAM.
+---
+
 # Databricks
 
 You can configure collecting Databricks logs using a Cloud Posture and Runtime Security data source or connector:

@@ -19,3 +19,15 @@ Cloud Posture Management and Cloud Runtime Security have their own data sources 
 * **Discovery engine**: Performs regular scans and uses Event Assisted Ingestion (EAI) to track near-real-time changes to cloud assets and VMs.
 * **Serverless function security**: Provides agentless scanning for vulnerabilities in serverless code and pipelines for AWS Lambda, GCP, and Azure functions.
 * **Cloud data security (DSPM)**: Discovers and classifies sensitive data across managed storage, such as S3 and Cloud SQL, and self-managed databases.
+
+The following Cloud Posture and Runtime Security data sources are supported:
+
+* [AppSec Transporter applet](generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-transporter)
+* [Databricks](vendor-specific-data-sources-and-connectors/databricks/how-to-onboard-databricks)
+* [DSPM Database applet](generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-dspm-database)
+* [DSPM Fileshare applet](generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-dspm-database)
+* [Microsoft 365](vendor-specific-data-sources-and-connectors/microsoft/microsoft-365-posture/how-to-onboard-microsoft-365)
+* [Okta](vendor-specific-data-sources-and-connectors/okta/ingest-logs-and-data-from-okta)
+* [Registry Scanner applet](generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-registry-scanner)
+* [Snowflake](vendor-specific-data-sources-and-connectors/snowflake/how-to-onboard-snowflake)
+* [AppSec Transporter](generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-transporter)
