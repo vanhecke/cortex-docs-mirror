@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-27",
+  "source": "docs",
+  "sha": "6c205c8c11bf291151b01d9b5504d45f8ecd4660",
+  "headline": "Cloud posture onboarding pages retire into the vendor tree; new DSPM Database applet page",
+  "summary_md": "- A new **Activate DSPM Database** page documents a Broker VM applet that connects to on-premise PostgreSQL and MySQL databases to classify content and report risk.\n- Six onboarding pages under **Cloud Posture and Runtime Security data sources** were deleted; that section now has no child pages and its parent links out to the vendor-tree copies instead.\n- **Activate Registry Scanner** turned twelve `broken-reference` placeholders into working links, while two other pages regressed the other way.\n- All 86 vendor landing pages gained a \"Here are the articles in this section\" index, and their descriptions now say \"connector\" where they said \"integration\".\n- Nine Extended Threat Intelligence pages changed their description frontmatter only — no body text moved.",
+  "highlights": [
+    {
+      "title": "New page: Activate DSPM Database, a Broker VM applet for on-premise databases",
+      "detail": "It connects to PostgreSQL and MySQL instances over an optional SSL connection, classifies their content on a configurable cadence, and registers each connection as an asset under All Assets → Data → Databases with Provider = On Premise.",
+      "paths": ["xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-dspm-database"]
+    },
+    {
+      "title": "Six cloud posture onboarding pages deleted as duplicates of the vendor tree",
+      "detail": "The Databricks, Microsoft 365, Snowflake and Okta onboarding copies under Cloud Posture and Runtime Security were removed and the equivalent pages under the vendor-specific tree are now the only ones, so bookmarks to the old paths break.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/how-to-onboard-databricks",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/how-to-onboard-microsoft-365",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/how-to-onboard-snowflake",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/ingest-logs-and-data-from-okta",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/how-to-onboard-on-premise-assets-to-cloud-data-security"
+      ]
+    },
+    {
+      "title": "Registry Scanner prerequisites now point at the registry connector pages",
+      "detail": "Twelve links that read `broken-reference` — six prerequisites and six \"manage a connector\" links — resolve to the Docker Hub, Docker V2, GitLab, Harbor, JFrog and Sonatype Nexus pages, and the licence note now admits Cloud Posture Security alongside Cloud Runtime Security.",
+      "paths": ["xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-registry-scanner"]
+    },
+    {
+      "title": "DSPM Fileshare activation rewritten around the Clusters tab",
+      "detail": "The applet can now be added from either the Brokers or the Clusters tab, and the eleven-step connection walkthrough collapses into two rows added to the settings table for Classification and scan cadence.",
+      "paths": ["xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-dspm-fileshare"]
+    },
+    {
+      "title": "Two links regressed to broken-reference, and the new source list has three defects",
+      "detail": "Microsoft 365 (Posture) and Connect Docker Hub registry both lost a working link, while the new supported-sources list points DSPM Fileshare at the DSPM Database page and lists AppSec Transporter twice.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-365-posture",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-dspm-database": "New page: the DSPM Database applet audits on-premise PostgreSQL and MySQL, with a connection table, a scan cadence, and an inventory entry under All Assets → Data → Databases.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-dspm-fileshare": "Adds an overview of what the applet does, folds Classification and scan cadence into the settings table, and drops the eleven-step connection walkthrough.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-registry-scanner": "Twelve broken-reference links now resolve to the Docker, GitLab, Harbor, JFrog and Sonatype Nexus registry pages; the licence note adds Cloud Posture Security.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources": "Gains a list of supported sources, but the DSPM Fileshare entry links to the DSPM Database page and AppSec Transporter is listed twice.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/how-to-onboard-databricks": "Deleted; the copy under the Databricks vendor page is now the only one.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/how-to-onboard-microsoft-365": "Deleted; the copy under Microsoft 365 (Posture) in the vendor tree is now the only one.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/how-to-onboard-snowflake": "Deleted; the copy under the Snowflake vendor page is now the only one.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/ingest-logs-and-data-from-okta": "Deleted; the copy under the Okta vendor page is now the only one.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/how-to-onboard-on-premise-assets-to-cloud-data-security": "Deleted, along with its Activate DSPM Fileshare child; the two Broker VM applet pages cover on-premise data security instead.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/how-to-onboard-on-premise-assets-to-cloud-data-security/activate-dspm-fileshare": "Deleted; the Broker VM applet page of the same name is now canonical.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-365-posture": "Its link to the Cloud Posture onboarding instructions became a broken-reference when that copy was deleted.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/docker/connect-docker-hub-registry": "The cross-book link to Verify Registry Scanner connection became a broken-reference.",
+    "README": "The Cortex XSIAM Documentation page count falls from 2,223 to 2,218 — six pages deleted, one added."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
