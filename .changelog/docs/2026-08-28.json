@@ -1,0 +1,39 @@
+{
+  "date": "2026-08-28",
+  "source": "docs",
+  "sha": "3bc90c8ee2c5e8cb1372c5bdc8ea4939334e5492",
+  "headline": "Onboard Aha.io deleted and rewritten onto the Aha! connector page; 12 SaaS app links un-broken",
+  "summary_md": "- **Onboard Aha.io** was deleted from Cortex Cloud SaaS Security and its instructions rewritten onto the **Aha!** vendor connector page — a bookmark break.\n- The SaaS app connection table swapped `broken-reference` for real links on its first twelve rows, Aha.io through Coveo.\n- The relocated text drops the SaaS Security / SSPM framing for Cortex and the data connector configuration wizard.\n- The XSIAM book is one page smaller, 2,218 to 2,217.",
+  "highlights": [
+    {
+      "title": "Onboard Aha.io is gone; its setup steps now live on the Aha! data connector page",
+      "detail": "The page under Connect a SaaS Application was deleted outright and its 55 lines reappear, reworded, as a Prerequisites section on the vendor connector page — the same instructions at a different URL.",
+      "paths": [
+        "xsiam/cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-aha.io",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/aha/aha"
+      ]
+    },
+    {
+      "title": "Twelve entries in the SaaS app connection table stopped pointing at broken-reference",
+      "detail": "Aha.io now targets the vendor connector page while Asana, Atlassian, Automox, BusinessMap, Celonis, Cisco Duo, Cisco Meraki, Clickup, Contentful, Couchbase and Coveo target their sibling onboarding pages; Databricks onward are still broken-reference.",
+      "paths": [
+        "xsiam/cloud-security/cortex-cloud-saas-security/connect-a-saas-application"
+      ]
+    },
+    {
+      "title": "The Aha! prerequisites name Tenant ID, Client ID and Client Secret as the connection inputs",
+      "detail": "The new Configure Aha! section routes the reader to the data connector configuration wizard and lists those three values, alongside the existing Okta subdomain and Okta or Azure 2FA secret requirements.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/aha/aha"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-aha.io": "Deleted; the onboarding instructions it carried were moved to the Aha! vendor connector page.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/aha/aha": "Gains a Prerequisites section on Okta or Azure MFA secrets and admin roles, plus a Configure Aha! step naming Tenant ID, Client ID and Client Secret.",
+    "xsiam/cloud-security/cortex-cloud-saas-security/connect-a-saas-application": "Twelve rows from Aha.io to Coveo now link to real onboarding pages rather than broken-reference; the rows from Databricks onward are unchanged.",
+    ".meta/xsiam": "Navigation drops the Onboard Aha.io node, taking the Cortex XSIAM Documentation book from 2,218 pages to 2,217."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
