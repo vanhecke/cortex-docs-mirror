@@ -2,7 +2,7 @@
   "book": "xsiam",
   "title": "Cortex XSIAM Documentation",
   "section": "cortex-xsiam",
-  "page_count": 2218,
+  "page_count": 2217,
   "tree": [
     {
       "title": "Learn about Cortex XSIAM",
@@ -11859,12 +11859,6 @@
               "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application",
               "type": "document",
               "children": [
-                {
-                  "title": "Onboard Aha.io",
-                  "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-aha.io",
-                  "type": "document",
-                  "children": []
-                },
                 {
                   "title": "Onboard Asana",
                   "path": "cloud-security/cortex-cloud-saas-security/connect-a-saas-application/onboard-asana",
