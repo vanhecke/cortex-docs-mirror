@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-28",
+  "source": "content",
+  "sha": "b84d8fa98c801a8883a200fd0a425cae9650ec14",
+  "headline": "Two Microsoft fetch fixes: Sentinel's fetch limit and Graph Security's first-fetch timestamp",
+  "summary_md": "- A two-pack day for two upstream commits (+245/-159). No pack was added or removed.\n- Both fixes land on incident fetching in a Microsoft integration, so both bear on how much gets ingested rather than on what the integration can do.\n- **AzureSentinel** (+197/-151) carries the fetch-limit fix and is near line-for-line — insertions and deletions largely cancel.\n- **MicrosoftGraphSecurity** (+48/-8) corrects fetch-incidents filtering on the first fetch timestamp.",
+  "highlights": [
+    {
+      "title": "Microsoft Sentinel's fetch limit is fixed",
+      "detail": "#45673 is the day's larger change at +197/-151; the balance of insertions against deletions is that of a rewritten block rather than added capability.",
+      "paths": [
+        "Packs/AzureSentinel"
+      ]
+    },
+    {
+      "title": "Graph Security fetch-incidents filtering on the first fetch timestamp is corrected",
+      "detail": "#45675 moves MicrosoftGraphSecurity +48/-8, an addition-weighted change consistent with new filtering logic rather than a replacement.",
+      "paths": [
+        "Packs/MicrosoftGraphSecurity"
+      ]
+    }
+  ],
+  "items": {
+    "Packs/AzureSentinel": "+197/-151. Fixes the Microsoft Sentinel fetch limit (#45673), and the day's larger of two changes.",
+    "Packs/MicrosoftGraphSecurity": "+48/-8. Fixes fetch-incidents filtering on the first fetch timestamp (#45675)."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
