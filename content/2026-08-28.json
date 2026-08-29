@@ -1,0 +1,27 @@
+{
+  "date": "2026-08-28",
+  "sha": "ea2ba94326f8db33337b9c0240b29a2226acc819",
+  "committed_at": "2026-08-28T21:46:18+03:00",
+  "packs": [
+    {
+      "name": "AzureSentinel",
+      "insertions": 197,
+      "deletions": 151
+    },
+    {
+      "name": "MicrosoftGraphSecurity",
+      "insertions": 48,
+      "deletions": 8
+    }
+  ],
+  "commits": [
+    {
+      "sha": "45eec7ce0846989bdd0feb99ede34ae7d83bcb83",
+      "subject": "Fixed filtering in fetch-incidents in the Graph Security (first fetch timestamp) (#45675)"
+    },
+    {
+      "sha": "ea2ba94326f8db33337b9c0240b29a2226acc819",
+      "subject": "Fixed Microsoft Sentinel fetch limit (#45673)"
+    }
+  ]
+}
