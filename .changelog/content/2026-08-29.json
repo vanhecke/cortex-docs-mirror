@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-29",
+  "source": "content",
+  "sha": "eec660b357c45698223de3a2ef31bf3a1db65488",
+  "headline": "A single-pack day: Qualys defaults LAST_VM_AUTH_SCAN_DATETIME when the field is missing",
+  "summary_md": "- One pack moves for one upstream commit (+78/-1) — the quietest content day of the past fortnight.\n- **qualys** supplies a default for `LAST_VM_AUTH_SCAN_DATETIME` when the field is absent (#45681).\n- 78 insertions against a single deletion: handling was added, not rewritten.\n- No pack was added or removed.",
+  "highlights": [
+    {
+      "title": "Qualys no longer depends on LAST_VM_AUTH_SCAN_DATETIME being present",
+      "detail": "#45681 is the day's only change, and its single deletion against 78 insertions marks it as new handling for the absent-field case rather than a replacement of existing logic.",
+      "paths": [
+        "Packs/qualys"
+      ]
+    }
+  ],
+  "items": {
+    "Packs/qualys": "+78/-1, the day's only pack change: defaults LAST_VM_AUTH_SCAN_DATETIME when the field is missing (#45681)."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
