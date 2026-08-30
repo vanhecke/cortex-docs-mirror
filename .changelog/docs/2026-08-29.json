@@ -1,0 +1,68 @@
+{
+  "date": "2026-08-29",
+  "source": "docs",
+  "sha": "5795186adad9095264fc979453397a92efaff551",
+  "headline": "AWS audit log role renamed to cortex-logs-ingestion-access-*; manual deployment method added for AWS, GCP and Azure",
+  "summary_md": "- The AWS audit log reader role is renamed from **CloudTrailReadRole** / **CortexLogsReadRole** to `cortex-logs-ingestion-access-*`, including in the cross-account KMS key policy example.\n- A new **Deployment Method** advanced setting offers Infrastructure as Code (recommended) or Manual onboarding on AWS, Google Cloud Platform and Microsoft Azure.\n- Custom (BYOB) audit log collection is rebuilt around SNS: the Cortex-created SQS queue subscribes to your SNS topic, so S3 event notifications now target the topic rather than the queue.\n- Two new BYOB constraints are documented — the Control Tower log bucket must use **Bucket owner enforced** object ownership, and its objects may be encrypted under at most one customer-managed KMS key.",
+  "highlights": [
+    {
+      "title": "The AWS audit log reader role is renamed to `cortex-logs-ingestion-access-*`",
+      "detail": "It replaces both CloudTrailReadRole and CortexLogsReadRole in the capability-to-role table, the onboarding steps and the cross-account KMS key policy example customers paste into their own key.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/aws-security-model-and-authentication",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/grant-cross-account-kms-key-access-for-control-tower-byob-log-collection",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/how-to-onboard-amazon-web-services"
+      ]
+    },
+    {
+      "title": "Cloud onboarding gains a Deployment Method choice of Infrastructure as Code or Manual",
+      "detail": "The same advanced setting is added to all three CSP onboarding pages, with Manual offered for organizations whose policies require provisioning resources and permissions by hand.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/how-to-onboard-amazon-web-services",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/google-cloud-platform-cloud-onboarding/how-to-onboard-google-cloud-platform",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/microsoft-azure-cloud-onboarding/how-to-onboard-microsoft-azure"
+      ]
+    },
+    {
+      "title": "BYOB post-deployment steps now route notifications through SNS instead of straight to SQS",
+      "detail": "The old instruction to point an `s3:ObjectCreated:*` notification at the SQS queue ARN is replaced by two routes: a CloudTrail trail already publishing to the topic needs no extra configuration, otherwise the S3 notification targets the `CloudTrailSnsArn` topic.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/post-deployment-custom-byob-audit-log-collection"
+      ]
+    },
+    {
+      "title": "Control Tower BYOB buckets must set Object Ownership to Bucket owner enforced",
+      "detail": "A new requirement section states that with ACLs enabled the logging account may not own the delivered objects, leaving Cortex XSIAM unable to read them even with correct IAM permissions.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/cortex-cloud-and-aws-audit-log-collection-architecture"
+      ]
+    },
+    {
+      "title": "Only one customer-managed KMS key per bucket is supported",
+      "detail": "A new warning notes the template accepts a single `CloudTrailKmsArn` and grants `kms:Decrypt` on that key alone, so objects encrypted under per-account keys will fail to decrypt.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/cortex-cloud-and-aws-audit-log-collection-architecture"
+      ]
+    },
+    {
+      "title": "Custom (BYOB) does not require an organization CloudTrail trail",
+      "detail": "A new FAQ states any trail scope is supported provided every trail delivers to the single named S3 bucket, its notifications reach the single named SNS topic, the stack is in the same region, and at most one customer-managed key is used.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/aws-security-capabilities-and-deployment-planning"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/aws-security-capabilities-and-deployment-planning": "Renames the S3 reader role to cortex-logs-ingestion-access-* and adds a FAQ confirming Custom (BYOB) accepts any CloudTrail trail scope.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/aws-security-model-and-authentication": "The audit log collection row of the capability-to-role table now names cortex-logs-ingestion-access-* instead of CloudTrailReadRole.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/grant-cross-account-kms-key-access-for-control-tower-byob-log-collection": "The key policy snippet and the value to look up in the stack Outputs tab both switch to the new role name.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/cortex-cloud-and-aws-audit-log-collection-architecture": "Adds the Bucket owner enforced object ownership requirement for Control Tower BYOB and a warning that only one customer-managed KMS key per bucket is supported.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/post-deployment-custom-byob-audit-log-collection": "Rewrites the CloudFormation and Terraform steps and the troubleshooting entry around SNS-mediated delivery to the SQS queue.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/how-to-onboard-amazon-web-services": "Adds the Deployment Method setting, renames the Custom - Control Tower option to Custom Control Tower, and updates the created IAM role name.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/google-cloud-platform-cloud-onboarding/how-to-onboard-google-cloud-platform": "Adds the Deployment Method advanced setting with Infrastructure as Code and Manual options.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/microsoft-azure-cloud-onboarding/how-to-onboard-microsoft-azure": "Adds the Deployment Method advanced setting with Infrastructure as Code and Manual options.",
+    "xsiam/configure-cortex-xsiam/multi-tenant/onboard-cortex-multi-tenant/onboarding-checklist-for-multi-tenant-central-licensing-deployments/step-2.-create-a-child-tenant": "The Child Units Allocation row now links to an in-page minimum resource allocations anchor rather than the external docs site."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
