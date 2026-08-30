@@ -40,6 +40,9 @@ After completing the prerequisites, follow these instructions to onboard your Go
 *   Click Show advanced settings to define the following advanced settings:
 
     * **Instance Name:** Enter a unique instance name or leave it empty to be automatically populated. The automatic naming convention is ``GCP- or `GCP-`<organizationID>``. Cortex XSIAM does not prevent you from reusing instance names, but it is best practice to use a unique name for every cloud instance.
+    * **Deployment Method:** Select whether you want to onboard with a Cortex-generated IaC template or to perform a manual deployment:
+      * **Infrastructure as Code:** (Recommended) Automatically provisions all required cloud resources and permissions using an IaC template.
+      * **Manual:** Select this option if your organization requires manual provisioning to meet internal security and compliance policies. If you choose to onboard manually, follow the [manual onboarding instructions](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/0gvymnCiCbsv2coOZcc7/).
     * **Scope Modifications:** Use these settings to fine-tune your GCP scope. You can modify the scope by including or excluding specific regions. Additionally, if you selected an organization or folder as the scope, you can modify the scope by including or excluding specific folders or projects. For more details, see [Apply region or account filters](..).
     * **Additional Security Capabilities:** Choose which security capabilities you want to benefit from. Some security capabilities are enabled by default and can be modified. Adding security capability typically requires additional cloud provider permissions. For detailed information on the permissions required, see [Cloud service provider permissions](../cloud-service-provider-permissions).
       * **Data security posture management:** An agentless data security scanner that discovers, classifies, protects, and governs sensitive data.

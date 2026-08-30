@@ -4,7 +4,10 @@ description: Configure AWS audit log collection after Cortex XSIAM deployment.
 
 # Post-deployment: Custom (BYOB) and Control Tower audit log collection
 
-If you selected **Custom (BYOB) or Custom Control Tower** audit log collection, you must configure your S3 bucket to forward event notifications to the SQS queue created by the template. The steps differ depending on your deployment method.
+If you selected **Custom (BYOB)** or **Custom Control Tower** audit log collection, link your existing CloudTrail notification pipeline to the SQS queue created by the template. The SQS queue receives messages by subscribing to the SNS topic, which acts as the intermediary. You can route these notifications using either of the following methods:
+
+* **CloudTrail → SNS**: (Recommended) If your CloudTrail trail is already configured to publish delivery notifications to an SNS topic, the Cortex-created SQS queue subscribes to that topic automatically via the SNS subscription resource in the template. No additional S3 configuration is needed.
+* **S3 → SNS**: If your S3 bucket is not yet connected to an SNS topic, configure an S3 event notification on the bucket to send `s3:ObjectCreated:*` events to the SNS topic named in the `CloudTrailSnsArn` parameter. The SNS topic then fans out to the SQS queue.
 
 {% tabs %}
 {% tab title="CloudFormation Custom (BYOB)" %}
@@ -13,11 +16,9 @@ The CloudFormation stack creates the SQS queue in your account. You must manuall
 1. In the AWS CloudFormation console, open the stack and select the **Outputs** tab.
 2. Note the `sqs_url` output value.
 3. Derive the SQS queue ARN from the URL (format: `arn:aws:sqs:<region>:<account-id>:<queue-name>`), or retrieve it from the AWS SQS console.
-4. In the AWS Management Console, navigate to your S3 bucket.
-5. Under **Properties → Event notifications**, add a notification:
-   * **Event types:** `s3:ObjectCreated:*`
-   * **Destination:** SQS queue. Enter the ARN from step 3.
-6. Save the notification configuration.
+4. Confirm which notification route applies to your setup:
+   * If your CloudTrail trail already publishes to the SNS topic you provided as `CloudTrailSnsArn`: No additional configuration is needed. The template's SNS subscription connects the topic to the SQS queue automatically.
+   * If your S3 bucket does not yet send notifications to the SNS topic: In the AWS Management Console, navigate to your S3 bucket. Under **Properties → Event notifications**, add a notification with event type `s3:ObjectCreated:*` and destination set to the SNS topic ARN you provided as `CloudTrailSnsArn`. Save the notification configuration.
 {% endtab %}
 
 {% tab title="CloudFormation Control Tower" %}
@@ -41,11 +42,9 @@ The Terraform template creates the SQS queue in your account. You must manually 
 
 1. In the `terraform apply` output, note the `sqs_url` value.
 2. Derive the SQS queue ARN from the URL (format: `arn:aws:sqs:<region>:<account-id>:<queue-name>`), or retrieve it from the AWS SQS console.
-3. In the [AWS Management Console](#first-tab), navigate to your S3 bucket.
-4. Under **Properties → Event notifications**, add a notification:
-   * **Event types:** `s3:ObjectCreated:*`
-   * **Destination:** SQS queue. Enter the ARN from step 2.
-5. Save the notification configuration.
+3. Confirm which notification route applies to your setup:
+   * If your CloudTrail trail already publishes to the SNS topic you provided as `cloud_trail_sns_arn`: No additional configuration is needed.
+   * If your S3 bucket does not yet send notifications to the SNS topic: In the AWS Management Console, navigate to your S3 bucket. Under **Properties → Event notifications**, add a notification with event type `s3:ObjectCreated:*` and destination set to the SNS topic ARN you provided as `cloud_trail_sns_arn`. Save the notification configuration.
 {% endtab %}
 {% endtabs %}
 
@@ -53,7 +52,7 @@ The Terraform template creates the SQS queue in your account. You must manually 
 
 Use this section to diagnose issues with custom (BYOB) audit log collection after deploying the authentication template. The most common causes of failure are:
 
-* **S3 event notifications not configured or misconfigured**: For Terraform and standard CloudFormation deployments, you must manually configure your S3 bucket to forward `s3:ObjectCreated:*` events to the SQS queue created by the template. If this step is skipped or the wrong SQS ARN is used, logs will not reach Cortex XSIAM.
+* **S3 event notifications not configured or misconfigured**: For Terraform and standard CloudFormation deployments, you must ensure your CloudTrail trail publishes delivery notifications to the SNS topic you provided, or configure your S3 bucket to send `s3:ObjectCreated:*` events to that SNS topic. The SNS topic fans out to the SQS queue created by the template. If neither route is configured, or the wrong SNS topic ARN is used, logs will not reach Cortex XSIAM.
 * **Cross-region resources**: The S3 bucket, SNS topic, SQS queue, and authentication template deployment must all be in the same AWS region. Cross-region configurations are not supported.
 * **KMS key policy not updated:** (Only relevant for Custom Control Tower audit log collection) If your S3 bucket is encrypted with a customer-managed KMS key, you must manually update the KMS key policy to allow the Cortex log-collector IAM role to call `kms:Decrypt`. This cannot be done automatically by the template.
 * **Instance remains in Pending state**: This indicates the template deployed successfully but the notification to Cortex XSIAM did not complete. You can connect the instance manually from the Cortex XSIAM pending instances panel. See [Manually connect a cloud instance](../manually-connect-a-cloud-instance) for more details.
@@ -62,7 +61,7 @@ Select the tab for your deployment method for specific troubleshooting steps.
 
 {% tabs %}
 {% tab title="CloudFormation Custom (BYOB)" %}
-<table><thead><tr><th width="204.37109375">Symptom</th><th width="215.3203125">Likely cause</th><th>Resolution</th></tr></thead><tbody><tr><td>Stack creation fails with IAM permission errors</td><td>AWS credentials lack required CloudFormation or IAM permissions</td><td>Ensure your AWS credentials have permissions to create CloudFormation stacks, IAM roles, SQS queues, and the resources required by your selected capabilities.</td></tr><tr><td><code>CloudTrailSnsArn</code> parameter rejected</td><td>SNS ARN format is incorrect</td><td>The ARN must match <code>arn:(aws|aws-us-gov):sns:&#x3C;region>:&#x3C;account-id>:&#x3C;topic-name></code>.</td></tr><tr><td><code>CloudTrailKmsArn</code> parameter rejected</td><td>KMS ARN format is incorrect</td><td>The ARN must match <code>arn:(aws|aws-us-gov):kms:&#x3C;region>:&#x3C;account-id>:key/&#x3C;uuid></code>. Leave the field empty if no KMS key is used.</td></tr><tr><td>Instance remains in Pending state after stack creation</td><td>Lambda notification to Cortex XSIAM failed</td><td>Check the Lambda function logs in CloudWatch for errors. If the notification failed, connect the instance manually: select the pending instance, click <strong>Connect manually</strong>, and provide the <code>CortexPlatformRole</code> ARN and External ID shown in the CloudFormation stack Outputs tab.</td></tr><tr><td>Logs not appearing in Cortex XSIAM after stack creation</td><td>S3 event notification not configured, or configured with wrong SQS ARN</td><td>Confirm you have configured the S3 bucket event notification to send <code>s3:ObjectCreated:*</code> events to the SQS queue. Retrieve the correct SQS ARN from the <code>sqs_url</code> value in the CloudFormation stack Outputs tab. Ensure the S3 bucket, SNS topic, and CloudFormation stack are all in the same AWS region.</td></tr><tr><td>KMS decryption errors in Cortex XSIAM</td><td>KMS key policy does not allow the <code>CortexLogsReadRole</code> to call <code>kms:Decrypt</code></td><td>Update the KMS key policy to allow <code>kms:Decrypt</code> for the <code>CortexLogsReadRole-*</code> IAM role created by the stack. This must be done manually after the stack is deployed.</td></tr></tbody></table>
+<table><thead><tr><th width="204.37109375">Symptom</th><th width="215.3203125">Likely cause</th><th>Resolution</th></tr></thead><tbody><tr><td>Stack creation fails with IAM permission errors</td><td>AWS credentials lack required CloudFormation or IAM permissions</td><td>Ensure your AWS credentials have permissions to create CloudFormation stacks, IAM roles, SQS queues, and the resources required by your selected capabilities.</td></tr><tr><td><code>CloudTrailSnsArn</code> parameter rejected</td><td>SNS ARN format is incorrect</td><td>The ARN must match <code>arn:(aws|aws-us-gov):sns:&#x3C;region>:&#x3C;account-id>:&#x3C;topic-name></code>.</td></tr><tr><td><code>CloudTrailKmsArn</code> parameter rejected</td><td>KMS ARN format is incorrect</td><td>The ARN must match <code>arn:(aws|aws-us-gov):kms:&#x3C;region>:&#x3C;account-id>:key/&#x3C;uuid></code>. Leave the field empty if no KMS key is used.</td></tr><tr><td>Instance remains in Pending state after stack creation</td><td>Lambda notification to Cortex XSIAM failed</td><td>Check the Lambda function logs in CloudWatch for errors. If the notification failed, connect the instance manually: select the pending instance, click <strong>Connect manually</strong>, and provide the <code>CortexPlatformRole</code> ARN and External ID shown in the CloudFormation stack Outputs tab.</td></tr><tr><td>Logs not appearing in Cortex XSIAM after stack creation</td><td>Notification pipeline not connected: CloudTrail is not publishing to the SNS topic, or the S3 bucket is not sending event notifications to the SNS topic</td><td>Confirm that either your CloudTrail trail is configured to publish delivery notifications to the SNS topic ARN you provided as <code>CloudTrailSnsArn</code>, or your S3 bucket has an event notification configured to send <code>s3:ObjectCreated:*</code> events to that SNS topic. The SNS topic fans out to the SQS queue. Ensure the S3 bucket, SNS topic, and CloudFormation stack are all in the same AWS region.</td></tr><tr><td>KMS decryption errors in Cortex XSIAM</td><td>KMS key policy does not allow the <code>CortexLogsReadRole</code> to call <code>kms:Decrypt</code></td><td>Update the KMS key policy to allow <code>kms:Decrypt</code> for the <code>CortexLogsReadRole-*</code> IAM role created by the stack. This must be done manually after the stack is deployed.</td></tr></tbody></table>
 
 <br>
 {% endtab %}

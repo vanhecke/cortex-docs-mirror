@@ -12,9 +12,23 @@ Discovery is a mandatory capability that is deployed automatically when you onbo
 
 ## Logging capabilities
 
-The Audit Logs capability collects AWS CloudTrail logs for security analysis and event-driven Asset Inventory. Across all collection modes, Cortex XSIAM provisions the `CloudTrailReadRole` IAM role to grant Cortex XSIAM read access to the target Amazon S3 bucket. Three collection modes are available depending on your AWS scope:
+The Audit Logs capability collects AWS CloudTrail logs for security analysis and event-driven Asset Inventory. Across all collection modes, Cortex XSIAM provisions the `cortex-logs-ingestion-access-*` IAM role to grant Cortex XSIAM read access to the target Amazon S3 bucket. (For custom Control Tower deployments, this is the name specified in the `CloudTrailReadRoleName` parameter, which defaults to `cortex-logs-ingestion-access-*` and is editable.) Three collection modes are available depending on your AWS scope:
 
 * Custom (BYOB) audit log collection: Designed for single-account setups or standard organizations where all resources reside in a single AWS account. Use your existing S3 bucket and CloudTrail trail. Cortex XSIAM provisions the notification pipeline (SQS queue and SNS topic) and connects to your bucket to ingest logs.
+
+{% hint style="info" %}
+#### **Does Custom (BYOB) require an organization CloudTrail trail?**
+
+No. Custom (BYOB) collection does not create or manage a CloudTrail trail because you bring your own. Cortex XSIAM has no requirement on the trail's scope: an organization trail, a multi-region trail, or multiple independent regional or per-account trails are all supported, provided that:
+
+* Every trail you want ingested delivers its log files to the single S3 bucket you name in `CloudTrailLogsBucket`.
+* That bucket's notification pipeline (either via CloudTrail's native SNS delivery notification or via an S3 event notification) sends new-object events to the single SNS topic you name in `CloudTrailSnsArn`.
+* The stack is deployed in the same region as that SNS topic and bucket.
+* All objects in that bucket are encrypted with at most one customer-managed KMS key (the one you supply as `CloudTrailKmsArn`), or with SSE-S3 / no encryption.
+
+A common pattern for organization-scope connectors is to set up an organizational trail that delivers logs from all member accounts to a single central S3 bucket. For account-scope or organizational unit-scope connectors, per-account trails in each member account delivering to a central bucket are also supported. If your organization uses AWS Control Tower, use Custom Control Tower (BYOB) instead.
+{% endhint %}
+
 * Custom Control Tower (BYOB) audit log collection: Designed for AWS organizations governed by AWS Control Tower. Because Control Tower centralizes log storage by placing the S3 bucket in a dedicated logging account and the SNS topic in a dedicated Audit account, this deployment uses a multi-account architecture:
   * IAM role deployment: Provisioned in the log archive account.
   * SQS queue deployment: Provisioned in the account holding the SNS topic to enable local event subscription and message queuing.
@@ -22,11 +36,11 @@ The Audit Logs capability collects AWS CloudTrail logs for security analysis and
 
 In all modes, the supporting infrastructure is deployed in a single AWS region - the region where you launch onboarding. The CloudTrail trail itself is multi-region and captures events from all AWS regions. For Custom (BYOB) mode, regional coverage matches your existing trail's configuration. For full details on deployment modes, ingestion flow, and data security, see Audit Log Collection Architecture.
 
-| Collection mode             | Resources created                                                                                                                                                | Purpose                                                                                                                                                                                                                                                  |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Custom (BYOB)               | SQS Queue, SNS Subscription, SQS Queue Policy                                                                                                                    | <p>Connect to a customer-managed S3 bucket and CloudTrail trail.</p><p>Event notifications flow through customer-owned SQS/SNS resources.</p>                                                                                                            |
-| Custom Control Tower (BYOB) | SQS Queue, SNS Subscription, SQS Queue Policy, IAM Role (`cortex-logs-ingestion-access-<resource>-<suffix>`, deployed into the Log Archive account via StackSet) | Connect to the centralized S3 bucket managed by AWS Control Tower in the logging account. The IAM role is deployed cross-account into the logging account; the SQS queue is created in the management account where the Control Tower SNS topic resides. |
-| Automated                   | S3 Bucket, S3 Bucket Policy, KMS Key, CloudTrail Trail, SNS Topic, SNS Topic Policy, SNS Subscription, SQS Queue, SQS Queue Policy, Lambda Function              | Cortex XSIAM provisions the S3 bucket, CloudTrail trail, and encryption key, then collects CloudTrail logs automatically.                                                                                                                                |
+| Collection mode             | Resources created                                                                                                                                   | Purpose                                                                                                                                                                                                                                                  |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Custom (BYOB)               | SQS Queue, SNS Subscription, SQS Queue Policy                                                                                                       | <p>Connect to a customer-managed S3 bucket and CloudTrail trail.</p><p>Event notifications flow through customer-owned SQS/SNS resources.</p>                                                                                                            |
+| Custom Control Tower (BYOB) | SQS Queue, SNS Subscription, SQS Queue Policy, IAM Role (`cortex-logs-ingestion-access-*`, deployed into the Log Archive account via StackSet)      | Connect to the centralized S3 bucket managed by AWS Control Tower in the logging account. The IAM role is deployed cross-account into the logging account; the SQS queue is created in the management account where the Control Tower SNS topic resides. |
+| Automated                   | S3 Bucket, S3 Bucket Policy, KMS Key, CloudTrail Trail, SNS Topic, SNS Topic Policy, SNS Subscription, SQS Queue, SQS Queue Policy, Lambda Function | Cortex XSIAM provisions the S3 bucket, CloudTrail trail, and encryption key, then collects CloudTrail logs automatically.                                                                                                                                |
 
 ## Scanning capabilities
 
