@@ -1,0 +1,18 @@
+{
+  "date": "2026-08-29",
+  "sha": "2c87a93953870e17a0c8deb4b32c8a0f91fc3c9e",
+  "committed_at": "2026-08-29T15:06:17+03:00",
+  "packs": [
+    {
+      "name": "qualys",
+      "insertions": 78,
+      "deletions": 1
+    }
+  ],
+  "commits": [
+    {
+      "sha": "2c87a93953870e17a0c8deb4b32c8a0f91fc3c9e",
+      "subject": "Qualys: default LAST_VM_AUTH_SCAN_DATETIME when missing (#45681)"
+    }
+  ]
+}
