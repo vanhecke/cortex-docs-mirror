@@ -1,0 +1,37 @@
+{
+  "date": "2026-08-30",
+  "source": "content",
+  "sha": "797a6f0517239c78667f70400cbd30880441ae80",
+  "headline": "AggregatedScripts gains a block-domain aggregate command; Exchange on-prem adds a credentials fallback",
+  "summary_md": "- Three packs move across four upstream commits, +3,106/-53 — nearly all of it in one pack.\n- **AggregatedScripts** takes +2,955 against a single deletion, alongside a commit adding the aggregate command `block-domain` (#45619).\n- **MicrosoftExchangeOnPremise** takes +116/-17, alongside a `fallback to creds` commit and its `revert`.\n- **Palo_Alto_Networks_Enterprise_DLP** changes 35 lines for 35, a like-for-like replacement with no net growth. The day's remaining commit is a support fix, XSUP-74481 (#45567).",
+  "highlights": [
+    {
+      "title": "A block-domain aggregate command lands in AggregatedScripts",
+      "detail": "#45619 is the day's only aggregate-command commit and AggregatedScripts is the only pack large enough to hold it: +2,955 insertions against one deletion, so this is new surface rather than a rewrite of an existing command.",
+      "paths": [
+        "Packs/AggregatedScripts"
+      ]
+    },
+    {
+      "title": "Exchange on-premise credential handling was changed, then partly walked back",
+      "detail": "The day carries both a `fallback to creds` commit and a bare `revert`, and MicrosoftExchangeOnPremise is the only pack whose 116 insertions against 17 deletions fit a change that was applied and then adjusted.",
+      "paths": [
+        "Packs/MicrosoftExchangeOnPremise"
+      ]
+    },
+    {
+      "title": "Enterprise DLP changes 35 lines for 35",
+      "detail": "An exactly symmetric diff with no net growth — a replacement in place, not added capability.",
+      "paths": [
+        "Packs/Palo_Alto_Networks_Enterprise_DLP"
+      ]
+    }
+  ],
+  "items": {
+    "Packs/AggregatedScripts": "+2,955/-1, 95% of the day's churn: the aggregate command block-domain (#45619).",
+    "Packs/MicrosoftExchangeOnPremise": "+116/-17, tied to the day's `fallback to creds` commit and the `revert` that follows it.",
+    "Packs/Palo_Alto_Networks_Enterprise_DLP": "35 insertions for 35 deletions, a replacement in place with no net growth."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
