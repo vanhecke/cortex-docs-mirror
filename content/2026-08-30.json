@@ -1,0 +1,40 @@
+{
+  "date": "2026-08-30",
+  "sha": "59adaa4fb758e9835736ce5d269f3bd14dd9c334",
+  "committed_at": "2026-08-30T22:39:06+03:00",
+  "packs": [
+    {
+      "name": "AggregatedScripts",
+      "insertions": 2955,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftExchangeOnPremise",
+      "insertions": 116,
+      "deletions": 17
+    },
+    {
+      "name": "Palo_Alto_Networks_Enterprise_DLP",
+      "insertions": 35,
+      "deletions": 35
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d2b748af120282b18102368eba5903dc5d6f6021",
+      "subject": "fallback to creds"
+    },
+    {
+      "sha": "528bcea808d14987474f2b31bd62cbbe159e5d2a",
+      "subject": "revert"
+    },
+    {
+      "sha": "dd2c92d0ffc1663eff65234a7a60fc4d444d8436",
+      "subject": "Aggregate command block-domain (#45619)"
+    },
+    {
+      "sha": "59adaa4fb758e9835736ce5d269f3bd14dd9c334",
+      "subject": "Resolve XSUP-74481 (#45567)"
+    }
+  ]
+}
