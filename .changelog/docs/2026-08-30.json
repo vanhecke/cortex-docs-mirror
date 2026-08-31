@@ -1,0 +1,73 @@
+{
+  "date": "2026-08-30",
+  "source": "docs",
+  "sha": "00c756fddbbe8d5f858c3ef65be6abdc874fdf60",
+  "headline": "New Microsoft 365 connector supersedes the legacy one; Cortex Data Security moves out of Cloud Security",
+  "summary_md": "- A new **Microsoft 365** connector page lands with full setup steps; the old page is renamed **Microsoft365 (legacy)** and gets a migration guide.\n- **Cortex Data Security** moves from Cloud Security into its own section, and its licence hint now names a Data Security licence or add-on.\n- A **2,000-field limit per dataset** is documented, together with a new `fields` stage for the `INGEST` section of a parsing rule to work around it.\n- Four SaaS connectors — Microsoft 365, Microsoft Teams, Google Workspace and Anthropic Claude — replace \"follow the configuration wizard\" with prerequisites, API scopes and task-by-task setup.\n- Most of the 477 files are a metadata sweep: 409 pages gained a front-matter `description` and 130 section landing pages swapped link tables for bullet lists.",
+  "highlights": [
+    {
+      "title": "The Microsoft 365 connector is replaced, not revised",
+      "detail": "The old page is deleted and rewritten as Microsoft 365 (new) with 124 lines of setup; the previous connector is renamed Microsoft365 (legacy) and carries a warning pointing at the new one.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft-365-new",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft365-legacy"
+      ]
+    },
+    {
+      "title": "Migrating off the legacy Microsoft365 connector clears its inventory for about 24 hours",
+      "detail": "The new migration page says you must remove the old connector first, which clears discovered Microsoft 365 assets from the Data Security inventory, and that the initial re-sync can take days to weeks.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft365-legacy/migrate-to-new-microsoft-365-connector"
+      ]
+    },
+    {
+      "title": "Cortex Data Security is now its own section and its licensing line changed",
+      "detail": "The page moved from cloud-security/ to data-security/, and \"Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license\" became \"Requires a Data Security, Cloud Runtime Security, or Cortex XSIAM Premium license, or the Data Security add-on\".",
+      "paths": [
+        "xsiam/data-security/cortex-data-security",
+        "xsiam/cloud-security/cortex-data-security"
+      ]
+    },
+    {
+      "title": "Datasets are capped at 2,000 fields, and a new parsing-rule stage exists to stay under it",
+      "detail": "Past the cap Cortex XSIAM stops parsing and saves the raw log; a new `fields` stage in the `INGEST` section lets a parsing rule pick which fields to keep so automatic parsing resumes.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/data-management/dataset-management/what-are-datasets",
+        "xsiam/configure-cortex-xsiam/data-management/parsing-rules/parsing-rules-file-structure-and-syntax/ingest/fields"
+      ]
+    },
+    {
+      "title": "Enhanced Application Logs and Cortex Audit Logs are documented as non-billable ingestion",
+      "detail": "A new section on the Data Ingestion dashboard page states both are still ingested and analyzed but excluded from the licensed daily quota, and the reference adds Daily Quota Consumption and Top Data Sources widgets.",
+      "paths": [
+        "xsiam/detect-investigate-and-respond-to-threats/monitor-dashboards-and-reports/dashboard-reference/system-dashboards/data-ingestion"
+      ]
+    },
+    {
+      "title": "Cortex XDR agent 9.0 and 9.0.1 are archived as end of life",
+      "detail": "Both were added to the past-releases archive with an EOL date of August 23, 2026.",
+      "paths": [
+        "agent-releases/cortex-xdr-agent-releases/cortex-xdr-agent-past-releases-archive"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft-365-new": "New page: full setup for the Microsoft 365 connector covering OneDrive, SharePoint, Teams and Entra ID, with per-capability licence requirements.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft365-legacy": "Renamed from microsoft365 and retitled Microsoft365 (legacy); it now recommends the new connector and links the migration page.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft365-legacy/migrate-to-new-microsoft-365-connector": "New page: remove the legacy connector, wait ~24 hours for cleanup, then install the new one and monitor the initial ingestion.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft-365": "Deleted; its content is superseded by the new Microsoft 365 page.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft-365-new/create-a-microsoft-entra-id": "New page listing the exact Microsoft Graph application permissions per capability, split across Data Security, Identity Posture and Automation.",
+    "xsiam/data-security/cortex-data-security": "Added here, and now names DSPM, DLP, DDR and DAG as its four capabilities and covers on-prem shares, DBaaS and code repositories, not just cloud.",
+    "xsiam/cloud-security/cortex-data-security": "Deleted from Cloud Security; the page now lives under Data Security.",
+    "xsiam/configure-cortex-xsiam/data-management/parsing-rules/parsing-rules-file-structure-and-syntax/ingest/fields": "New page documenting the `fields` stage for the `INGEST` section, used to select which fields a parsing rule saves into a dataset.",
+    "xsiam/configure-cortex-xsiam/data-management/dataset-management/what-are-datasets": "Documents the 2,000-field dataset limit and the fallback to raw logs; also drops the claim that Data Management RBAC is shared with Parsing Rules and Event Forwarding.",
+    "xsiam/detect-investigate-and-respond-to-threats/monitor-dashboards-and-reports/dashboard-reference/system-dashboards/data-ingestion": "Adds a non-billable ingestion section naming EAL and Cortex Audit Logs, and documents the Daily Quota Consumption and Top Data Sources widgets.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/google/google-workspace/google-workspace-connector": "Gains a full procedure: enable the Drive and Admin SDK APIs, create a service account JSON key, and authorize the listed domain-wide delegation scopes.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/anthropic/claude": "Gains a full procedure requiring Primary Owner access and a Compliance API key with four named scopes, including `delete:compliance_user_data`.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-teams": "Gains a full procedure and now shares the Microsoft Entra ID app registration created for the new Microsoft 365 connector.",
+    "agent-releases/cortex-xdr-agent-releases/cortex-xdr-agent-past-releases-archive": "Cortex XDR agent 9.0 and 9.0.1 were added to the archive, both EOL August 23, 2026.",
+    "xsiam/configure-cortex-xsiam/data-management/dataset-management/lookup-datasets/import-a-lookup-dataset": "Moved under a lookup-datasets/ parent along with the download-JSON and time-to-live pages; content is unchanged but the three URLs shifted."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": true
+}
