@@ -1,3 +1,9 @@
+---
+description: >-
+  Review Cortex XSIAM Advanced Email Security security controls and compliance
+  considerations.
+---
+
 # Advanced Email Security module security and compliance
 
 The Cortex Regional Machine Learning (ML) Processing and Data Residency Policy ensures that all data processing within your Cortex XSIAM tenant, including GenAI-powered features, remains in the region you selected. This guarantees that data is not transferred across regional boundaries without your explicit approval. The policy is enforced by ensuring that the physical location of our ML and GenAI compute resources, not just data storage, is confined to your chosen region, providing a transparent and unified approach to compliance.

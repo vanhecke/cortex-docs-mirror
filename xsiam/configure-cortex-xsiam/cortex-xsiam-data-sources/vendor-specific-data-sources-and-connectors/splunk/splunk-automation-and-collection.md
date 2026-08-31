@@ -1,3 +1,7 @@
+---
+description: Configure Splunk automation and collection for Cortex XSIAM.
+---
+
 # Splunk Automation and Collection
 
 {% hint style="warning" %}

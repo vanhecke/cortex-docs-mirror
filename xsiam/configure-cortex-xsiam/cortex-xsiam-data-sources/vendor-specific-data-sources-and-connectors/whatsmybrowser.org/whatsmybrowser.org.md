@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure the WhatsMyBrowser.org connector for Cortex XSIAM user-agent
+  parsing.
+---
+
 # WhatsMyBrowser.org
 
 {% hint style="warning" %}

@@ -1,3 +1,7 @@
+---
+description: View VCS organization assets in Cortex XSIAM.
+---
+
 # VCS organization assets
 
 Cortex XSIAM discovers and inventories every Version Control System (VCS) organization connected through active VCS integrations. Each VCS organization appears in the unified asset inventory as the top-level governance boundary for the software supply chain, carrying its identity metadata, VCS provider, repository count, CI/CD instance associations, aggregated security health, and organizational context.

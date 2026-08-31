@@ -1,3 +1,7 @@
+---
+description: Collect BeyondTrust Privilege Management Cloud data with Cortex XSIAM.
+---
+
 # Ingest logs from BeyondTrust Privilege Management Cloud
 
 If you use BeyondTrust Privilege Management Cloud, you can take advantage of Cortex XSIAM investigation and detection capabilities by forwarding your logs to Cortex XSIAM. This enables Cortex XSIAM to help you expand visibility into computer, activity, and authorization requests in the organization, correlate and detect access violations, and query BeyondTrust Endpoint Privilege Management logs using XQL Search.

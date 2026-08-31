@@ -1,7 +1,7 @@
 ---
 description: >-
-  Deploy and manage network scans to discover assets, assess vulnerabilities,
-  and investigate issues.
+  Deploy Cortex XSIAM Network Scanner to discover assets, assess
+  vulnerabilities, and investigate issues.
 ---
 
 # Cortex Network Scanner

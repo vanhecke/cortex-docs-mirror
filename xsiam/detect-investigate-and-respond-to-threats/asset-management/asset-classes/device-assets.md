@@ -1,3 +1,7 @@
+---
+description: View and investigate device assets in Cortex XSIAM.
+---
+
 # Device assets
 
 Navigate to **Inventory** → **All Assets** → **Device** → **General Devices** to view your inventory of physical and virtual endpoints, such as PCs, laptops, servers, and mobile devices, that are protected by an installed Cortex XDR agent.

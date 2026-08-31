@@ -10,7 +10,7 @@ description: Use 1Password data with Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM license.
+This connector is available with any active Cortex XSIAM license.
 
 1Password is a password manager used for storing and managing your account credentials, financial information, documents, and other sensitive data. This connector fetches events about actions performed by 1Password users within a specific account, access and modifications to items in shared vaults, and user sign-in attempts.
 

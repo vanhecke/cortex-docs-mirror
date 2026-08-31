@@ -1,3 +1,7 @@
+---
+description: Configure ServiceNow automation and collection for Cortex XSIAM.
+---
+
 # ServiceNow Automation and Collection
 
 {% hint style="warning" %}

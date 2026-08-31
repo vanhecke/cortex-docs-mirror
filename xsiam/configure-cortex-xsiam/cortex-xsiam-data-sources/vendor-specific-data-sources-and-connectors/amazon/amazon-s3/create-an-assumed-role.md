@@ -1,3 +1,7 @@
+---
+description: Learn more about creating an assumed role in Cortex XSIAM.
+---
+
 # Create an assumed role
 
 If you do not designate a separate AWS IAM user to provide access to Cortex XSIAM to your logs and to perform API operations, you can create an assumed role in AWS to delegate permissions to a Cortex XSIAM AWS service. This role grants Cortex XSIAM access to your logs. For more information, see [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html).

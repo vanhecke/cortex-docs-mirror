@@ -1,3 +1,7 @@
+---
+description: Configure Trellix Database Security data collection for Cortex XSIAM.
+---
+
 # Trellix Database Security
 
 {% hint style="warning" %}

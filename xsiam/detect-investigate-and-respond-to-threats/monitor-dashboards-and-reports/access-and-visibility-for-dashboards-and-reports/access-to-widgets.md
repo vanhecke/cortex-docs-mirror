@@ -1,3 +1,7 @@
+---
+description: Manage Cortex XSIAM access to dashboard widgets and the data they display.
+---
+
 # Access to widgets
 
 Widget sharing is different to dashboards and reports. When creating custom widgets you can set their access level to **Public** or **Restricted**. Consider the following information:

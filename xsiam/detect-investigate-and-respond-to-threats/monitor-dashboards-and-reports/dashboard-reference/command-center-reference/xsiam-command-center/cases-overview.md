@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM Cases Overview to monitor case status, priorities, and
+  investigation workload.
+---
+
 # Cases Overview
 
 The **Cases Overview** provides a breakdown of your cases, including MITRE ATT\&CK tactic details, automation suggestions, and top resolving assignees. You can click different elements on the dashboard to link to dedicated pages for further investigation.

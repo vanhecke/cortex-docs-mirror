@@ -1,3 +1,7 @@
+---
+description: View and investigate network assets in Cortex XSIAM.
+---
+
 # Network assets
 
 Navigate to **Inventory > All Assets > Network** to access dedicated views for your network infrastructure. You can view **All Network Assets**, or filter by specific categories including **Load Balancers**, **Network Interfaces**, **Security Groups**, and **Subnets**. This section provides comprehensive visibility into the network infrastructure and security boundaries configured within your cloud and on-premise environments.

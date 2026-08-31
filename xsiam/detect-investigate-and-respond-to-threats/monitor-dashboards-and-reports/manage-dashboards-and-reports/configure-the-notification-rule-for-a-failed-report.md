@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XSIAM notifications for failed report generation and
+  delivery.
+---
+
 # Configure the notification rule for a failed report
 
 You can receive an email or send a notification to a syslog server if a report fails to run due to a timeout or fails to upload to the GCP bucket.

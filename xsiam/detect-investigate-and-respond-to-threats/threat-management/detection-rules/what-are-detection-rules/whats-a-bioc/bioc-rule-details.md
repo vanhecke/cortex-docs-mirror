@@ -1,3 +1,7 @@
+---
+description: Review Cortex XSIAM BIOC rule fields, conditions, and detection behavior.
+---
+
 # BIOC rule details
 
 Manage your behavioral indicator of compromise (BIOC) rules in **Threat Management** → **Detection Rules** → **BIOC**.

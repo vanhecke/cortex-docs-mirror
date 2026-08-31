@@ -1,3 +1,7 @@
+---
+description: Configure the Zendesk connector for Cortex XSIAM.
+---
+
 # Zendesk
 
 {% hint style="warning" %}

@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM Mailbox Inventory to view and investigate protected email
+  mailboxes.
+---
+
 # Mailbox Inventory
 
 {% hint style="info" %}

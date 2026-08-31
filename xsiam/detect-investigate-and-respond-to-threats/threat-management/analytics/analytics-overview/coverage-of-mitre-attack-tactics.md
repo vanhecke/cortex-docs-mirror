@@ -1,3 +1,9 @@
+---
+description: >-
+  Review Cortex XSIAM Analytics coverage of MITRE ATT&CK tactics to understand
+  detection visibility.
+---
+
 # Coverage of MITRE Attack tactics
 
 Network attacks follow predictable patterns. If you interfere with any portion of this pattern, you can neutralize the attack. The adversarial behaviors making up these patterns are collected in a universally accessible, continuously updated knowledge base called the [MITRE ATT\&CK™ knowledge base of tactics](https://attack.mitre.org/).

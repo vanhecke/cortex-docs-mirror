@@ -1,3 +1,7 @@
+---
+description: Configure the SysAid connector in Cortex XSIAM.
+---
+
 # SysAid
 
 {% hint style="warning" %}

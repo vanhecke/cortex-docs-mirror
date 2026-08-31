@@ -1,3 +1,7 @@
+---
+description: Configure VulnDB vulnerability intelligence in Cortex XSIAM.
+---
+
 # VulnDB
 
 {% hint style="warning" %}

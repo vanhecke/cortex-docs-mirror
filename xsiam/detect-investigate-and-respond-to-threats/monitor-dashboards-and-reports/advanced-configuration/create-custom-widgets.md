@@ -1,3 +1,9 @@
+---
+description: >-
+  Create custom Cortex XSIAM dashboard widgets using AI, XQL, scripts, and
+  parameters.
+---
+
 # Create custom widgets
 
 Custom widgets let you personalize the data visualizations rendered across your security dashboards and compliance reports, tailoring information to your specific workflows.

@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XSIAM dashboard drilldowns to investigate data from widget
+  visualizations.
+---
+
 # Configure drilldowns
 
 Enable users to dive deeper into data by configuring dashboard drilldowns on individual widgets. Clicking a configured widget can trigger contextual changes, or seamlessly link users to:

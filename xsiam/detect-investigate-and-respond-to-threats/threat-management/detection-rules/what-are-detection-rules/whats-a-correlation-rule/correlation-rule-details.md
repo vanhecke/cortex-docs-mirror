@@ -1,3 +1,9 @@
+---
+description: >-
+  Review Cortex XSIAM correlation rule settings, query logic, and issue
+  generation.
+---
+
 # Correlation rule details
 
 If you are assigned a role that enables Investigation → **Rules** privileges, you can manage all user-defined Correlation Rules from **Threat Management** → **Detection Rules** → **Correlations**.

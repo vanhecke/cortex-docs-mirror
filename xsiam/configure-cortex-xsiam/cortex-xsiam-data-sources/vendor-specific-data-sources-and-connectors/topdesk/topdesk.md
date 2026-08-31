@@ -1,3 +1,7 @@
+---
+description: Configure the TOPdesk connector in Cortex XSIAM.
+---
+
 # TOPdesk
 
 {% hint style="warning" %}

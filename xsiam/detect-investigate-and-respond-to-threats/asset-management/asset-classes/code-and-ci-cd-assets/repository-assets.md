@@ -1,3 +1,7 @@
+---
+description: View repository assets in Cortex XSIAM.
+---
+
 # Repository assets
 
 Cortex XSIAM discovers and inventories every repository connected through a Version Control System (VCS) integration; GitHub, GitLab, Bitbucket, or Azure DevOps. Each onboarded repository appears in the unified asset inventory as the source-of-truth for the software supply chain, carrying its identity metadata, ownership context, business criticality, security health, and downstream deployment lineage.

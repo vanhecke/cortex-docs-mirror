@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM Dynamic View to monitor changing security data and
+  operational insights.
+---
+
 # Dynamic View
 
 The **Dynamic View** provides an overview of Cortex XSIAM activity in real-time. You can see the data sources that are sending data to Cortex XSIAM, data sources with connection errors, playbooks being triggered, and the issues and cases being created.

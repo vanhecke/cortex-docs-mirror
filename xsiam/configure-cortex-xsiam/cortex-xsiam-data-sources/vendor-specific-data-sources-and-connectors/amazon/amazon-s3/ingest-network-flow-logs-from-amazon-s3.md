@@ -1,3 +1,7 @@
+---
+description: Collect network flow logs from Amazon S3 in Cortex XSIAM.
+---
+
 # Ingest network flow logs from Amazon S3
 
 You can forward network flow logs to Cortex XSIAM from Amazon Simple Storage Service (Amazon S3).

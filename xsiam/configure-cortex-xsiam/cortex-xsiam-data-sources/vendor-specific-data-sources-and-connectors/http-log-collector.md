@@ -1,3 +1,7 @@
+---
+description: Configure the HTTP log collector data source for Cortex XSIAM.
+---
+
 # HTTP log collector
 
 You can configure collecting any vendor logs over HTTP with a Custom - HTTP based Collector in a Raw, JSON, CEF, or LEEF format.

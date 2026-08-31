@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM Cloud Security Operations to monitor cloud risks, findings,
+  and remediation progress.
+---
+
 # Cloud Security Operations
 
 {% hint style="info" %}

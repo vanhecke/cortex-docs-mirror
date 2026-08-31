@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XSIAM dashboard and report visibility settings for the
+  appropriate audience.
+---
+
 # Visibility settings
 
 Dashboards and reports can have the following visibility settings:

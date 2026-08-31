@@ -1,3 +1,7 @@
+---
+description: Use BitSight data with Cortex XSIAM.
+---
+
 # BitSight
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM license.
+This connector is available with any active Cortex XSIAM license.
 
 Bitsight for Security Performance Management (SPM) enables security leaders to use an external view of security performance to measure, monitor, manage, and report on their cybersecurity program performance over time. The Bitsight Security Rating provides a trusted metric that reflects the organization's cybersecurity program performance over time. Take action on Bitsight findings in your security program and leverage issue management workflows to pinpoint and control the sources of infections in your company infrastructure, going from awareness to rapid remediation.
 

@@ -1,3 +1,7 @@
+---
+description: Collect Kong data with Cortex XSIAM.
+---
+
 # Ingest Kong
 
 Integrate Kong with Cortex XSIAM to start scanning its APIs for potential threats and vulnerabilities.

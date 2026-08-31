@@ -1,3 +1,7 @@
+---
+description: Configure the Sophos connector in Cortex XSIAM.
+---
+
 # Sophos
 
 {% hint style="warning" %}

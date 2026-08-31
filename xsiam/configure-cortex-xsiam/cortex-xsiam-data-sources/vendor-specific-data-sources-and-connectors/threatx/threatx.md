@@ -1,3 +1,7 @@
+---
+description: Configure the ThreatX connector in Cortex XSIAM.
+---
+
 # ThreatX
 
 {% hint style="warning" %}

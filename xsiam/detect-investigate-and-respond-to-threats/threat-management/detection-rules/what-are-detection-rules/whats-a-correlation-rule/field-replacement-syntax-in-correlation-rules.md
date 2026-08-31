@@ -1,3 +1,7 @@
+---
+description: Use Cortex XSIAM field replacement syntax in correlation rule queries.
+---
+
 # Field replacement syntax in correlation rules
 
 When creating correlation rules, it's possible to use predefined values for different fields in the editor, such as **Alert Name**, **Alert Description**, and **Drill-Down Query**. These predefined values follow a certain syntax and are dependent on the Cortex Query Language (XQL) query for the correlation rule that you build in the **XQL Search** and **Drill-Down Query** areas in the editor. For example, if you define the **Alert Name** to be something, such as `Alerts based on $agent_name`, the XQL query defining the correlation rule must have the `agent_name` field defined in the logic of the query; otherwise, this field won't be replaced.

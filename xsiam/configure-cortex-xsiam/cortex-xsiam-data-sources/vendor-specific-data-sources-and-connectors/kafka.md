@@ -1,3 +1,7 @@
+---
+description: Configure the Kafka data source and connector for Cortex XSIAM.
+---
+
 # Kafka
 
 You can configure collecting Kafka data using a Broker VM Kafka Collector applet applet or connector (onboarded after July 26, 2026):

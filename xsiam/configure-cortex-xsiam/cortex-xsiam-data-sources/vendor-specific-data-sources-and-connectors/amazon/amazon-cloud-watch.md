@@ -1,3 +1,7 @@
+---
+description: Use Amazon Cloud Watch data with Cortex XSIAM.
+---
+
 # Amazon Cloud Watch
 
 You can configure collecting Amazon CloudWatch logs and data using a standard data source, content pack integration (onboarded prior to July 26, 2026), or connector (onboarded after July 26, 2026):

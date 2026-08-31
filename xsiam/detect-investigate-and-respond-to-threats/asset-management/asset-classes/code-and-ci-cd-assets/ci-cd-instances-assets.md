@@ -1,3 +1,7 @@
+---
+description: View CI/CD instance assets in Cortex XSIAM.
+---
+
 # CI/CD instances assets
 
 Cortex XSIAM discovers and inventories every CI/CD platform instance connected through active CI/CD integrations. Each CI/CD instance, whether a Jenkins server, GitHub Actions organization, GitLab CI group, Azure DevOps organization, or CircleCI organization, appears in the unified asset inventory as the platform-level entity that hosts and executes CI/CD pipelinesthe platform-level entity that hosts and executes CI/CD pipelines, carrying its identity metadata, CI/CD provider, platform version, instance URL, associated pipelines, and aggregated security health.

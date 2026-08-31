@@ -1,3 +1,9 @@
+---
+description: >-
+  Share Cortex XSIAM custom dashboards and report templates with users and
+  teams.
+---
+
 # Share custom dashboards and report templates
 
 **Note:** Sharing of custom dashboards, report templates, and widgets must be enabled by your administrator. For more information, see [Manage access to objects](../../../onboard-cortex-xsiam/post-deployment/manage-user-roles-and-access-management/manage-access-to-objects).

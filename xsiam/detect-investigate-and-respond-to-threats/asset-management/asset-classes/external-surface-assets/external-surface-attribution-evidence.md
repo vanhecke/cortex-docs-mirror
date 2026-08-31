@@ -1,3 +1,7 @@
+---
+description: Review external surface attribution evidence in Cortex XSIAM.
+---
+
 # External Surface attribution evidence
 
 Cortex XSIAM provides attribution information about each asset in your External Surface inventory, so you know at-a-glance why we believe an asset belongs to your organization.

@@ -1,3 +1,7 @@
+---
+description: Configure the Tor Exit Adress connector in Cortex XSIAM.
+---
+
 # Tor Exit Adress
 
 {% hint style="warning" %}

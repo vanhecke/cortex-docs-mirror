@@ -7,12 +7,12 @@ description: Learn how Cortex XSIAM datasets store and organize your data.
 {% hint style="warning" %}
 ### Prerequisite
 
-Dataset Management requires **View/Edit** RBAC permissions for **Data Management** (under **Configurations** → **Data Management**), which are the same permissions required for Parsing Rules, Data Model Rules, and Event Forwarding.
+Dataset Management requires **View/Edit** RBAC permissions for **Data Management** (under **Configurations** → **Data Management**).
 {% endhint %}
 
 Cortex XSIAM runs every Cortex Query Language (XQL) query against a dataset. A dataset is a collection of column:value sets. If you do not specify a dataset in your query, Cortex XSIAM runs the query against the default datasets configured, which is by default `xdr_data` for a dataset query. The `xdr_data` dataset contains all of the endpoint and network data that Cortex XSIAM collects. For a Cortex Data Model (XDM) query, unless specific datasets are specified, a query will run against all mapped datasets. You can always change the default datasets using the set to default option. You can also upload datasets as a CSV, TSV, or JSON file that contains the data you are interested in querying. These uploaded datasets are called lookup datasets.
 
-It's also possible to create dataset views, which provide a virtual representation of data from one or more datasets, based on the Cortex Query Language (XQL) query defined. Dataset views enhance data efficiency and security. For example, by segregating data for specific user needs or access privileges through the Role-based access control (RBAC) settings.
+It's also possible to create dataset views, which provide a virtual representation of data from one or more datasets, based on the Cortex Query Language (XQL) query defined. Dataset views enhance data efficiency and security. For example, by segregating data for specific user needs or access privileges through the Role-based access control (RBAC) settings. For more information, see [Dataset views](..#dataset-views).
 
 To query other datasets, you have the following options:
 
@@ -87,9 +87,19 @@ Cortex Query Language (XQL) supports using different languages for dataset and f
     * Default: Data is collected as a one-time snapshot and does not update.
     * Scheduled: If you specify a collection interval, the value represents the number of hours between updates, such as an interval of 24 equals once per day.
     * Minimum: The shortest allowable interval is 12 hours.
-* Query against a dataset by selecting it with the `dataset` command when you create an XQL query. For more information, see Create XQL query.
+* Query against a dataset by selecting it with the `dataset` command when you create an XQL query. For more information, see [Create XQL query](../../../detect-investigate-and-respond-to-threats/investigation-and-response/build-xql-queries/how-to-build-xql-queries/create-xql-query).
 * After your query runs, you can always save your query results as a dataset. You can use the `target` stage command to save query results as a dataset.
 * Schema changes to datasets may not be reflected in the autocomplete suggestions and deﬁnitions as you type in real time the XQL query and can appear with a slight delay.
+
+</details>
+
+<details>
+
+<summary>Dataset field limits</summary>
+
+Cortex XSIAM enforces a **2,000-field limit** for every dataset. This limit ensures optimal performance and efficiency when processing and querying logs.
+
+If a dataset reaches this limit, Cortex XSIAM stops parsing and falls back to saving the raw log. To resume automatic parsing when datasets grow unexpectedly, you can add a parsing rule with a `fields` stage in the `INGEST` section. This allows you to explicitly select the specific fields you need for ingestion, even if the total number of potential fields exceeds the 2,000-limit. For more information, see [fields](../parsing-rules/parsing-rules-file-structure-and-syntax/ingest/fields).
 
 </details>
 
@@ -107,7 +117,7 @@ For more information on tasks specific to lookup datasets, see [Lookup datasets]
 
 **View Schema**
 
-Select View Schema to view the schema information for every field found in the dataset or dataset view result set in the Schema tab after running the query in XQL. Each system field in the schema is written with an underscore (`_`) before the name of the field in the FIELD NAME column in the table.
+Select **View Schema** to view the schema information for every field found in the dataset or dataset view result set in the **Schema** tab after running the query in XQL. Each system field in the schema is written with an underscore (`_`) before the name of the field in the **FIELD NAME** column in the table.
 
 {% hint style="info" %}
 Schema changes to datasets may not be reflected in the autocomplete suggestions and deﬁnitions as you type in real time the XQL query and can appear with a slight delay.
@@ -115,10 +125,10 @@ Schema changes to datasets may not be reflected in the autocomplete suggestions 
 
 **Set as default**
 
-Select Set as default to query the dataset without having to specify it in your queries in XQL by typing `dataset = <name of dataset>`. Once configured, the DEFAULT QUERY TARGET column entry for this dataset is set to Yes in the Datasets table. By default, this option is not available when right-clicking the `xdr_data` dataset as this dataset is the only dataset configured as the DEFAULT QUERY TARGET as it contains all of the endpoint and network data that Cortex XSIAM collects. Once you Set as default another dataset, you can always remove it by right-clicking the dataset and selecting Remove from defaults. When setting multiple default datasets, your query does not need to mention any of the dataset names, and Cortex XSIAM queries the default datasets using a `join`. This option is only relevant for datasets.
+Select **Set as default** to query the dataset without having to specify it in your queries in XQL by typing `dataset = <name of dataset>`. Once configured, the **DEFAULT QUERY TARGET** column entry for this dataset is set to **Yes** in the **Datasets** table. By default, this option is not available when right-clicking the `xdr_data` dataset as this dataset is the only dataset configured as the **DEFAULT QUERY TARGET** as it contains all of the endpoint and network data that Cortex XSIAM collects. Once you **Set as default** another dataset, you can always remove it by right-clicking the dataset and selecting **Remove from defaults**. When setting multiple default datasets, your query does not need to mention any of the dataset names, and Cortex XSIAM queries the default datasets using a `join`. This option is only relevant for datasets.
 
 **Copy text to clipboard**
 
-Select Copy text to clipboard to copy the name of the dataset or dataset view to your clipboard.
+Select **Copy text to clipboard** to copy the name of the dataset or dataset view to your clipboard.
 
 </details>

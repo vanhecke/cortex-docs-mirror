@@ -1,3 +1,7 @@
+---
+description: Use AI to create Cortex XSIAM dashboard widgets from natural language prompts.
+---
+
 # Create widgets using AI
 
 Use natural language prompts to request visual insights by instructing the **Agentic Assistant** to display its findings as charts or graphs. This makes it easy to visualize data for threat hunting, business intelligence, or investigations without writing XQL queries or manually creating data visualization.

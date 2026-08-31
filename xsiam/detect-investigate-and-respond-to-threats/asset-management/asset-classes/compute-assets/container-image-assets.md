@@ -1,3 +1,7 @@
+---
+description: View and investigate container image assets in Cortex XSIAM.
+---
+
 # Container image assets
 
 Container Images are fundamental, immutable assets that package applications and their dependencies for consistent deployment across cloud environments. Each image is uniquely identified by a SHA256 digest, ensuring content verifiability throughout its lifecycle across build, deploy, and run stages. You can assign multiple names and tags to a single container image, allowing you to reference the same image in various contexts and versions within container registries.

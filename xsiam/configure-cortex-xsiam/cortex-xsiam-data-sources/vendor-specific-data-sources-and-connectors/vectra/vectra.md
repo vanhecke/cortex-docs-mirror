@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure the Vectra connector for Cortex XSIAM to collect detections and
+  audits.
+---
+
 # Vectra
 
 {% hint style="warning" %}

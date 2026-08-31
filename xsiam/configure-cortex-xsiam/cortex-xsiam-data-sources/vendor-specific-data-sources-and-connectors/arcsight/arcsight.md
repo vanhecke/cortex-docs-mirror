@@ -1,3 +1,7 @@
+---
+description: Use ArcSight data with Cortex XSIAM.
+---
+
 # ArcSight
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 ArcSight is a security information and event management (SIEM) solution. ArcSight ESM collects and analyzes security log data from across the enterprise to surface signs of compromise, attacks, and other malicious activity, and generates cases for security teams. ArcSight Logger delivers universal log management that unifies searching, reporting, alerting, and analysis across any type of enterprise machine data.
 

@@ -1,3 +1,7 @@
+---
+description: Configure the GitLab data source and connectors for Cortex XSIAM.
+---
+
 # GitLab
 
 You can configure collecting GitLab logs and data using a standard data source or connectors:

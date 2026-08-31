@@ -1,3 +1,7 @@
+---
+description: Collect Azure APIM data with
+---
+
 # Ingest Azure APIM
 
 Integrate Azure APIM with Cortex XSIAM to start scanning its APIs for potential threats and vulnerabilities.

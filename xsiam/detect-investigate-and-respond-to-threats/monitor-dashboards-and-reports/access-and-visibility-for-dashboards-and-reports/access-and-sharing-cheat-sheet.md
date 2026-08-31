@@ -1,3 +1,9 @@
+---
+description: >-
+  Use this Cortex XSIAM reference to manage dashboard and report access and
+  sharing.
+---
+
 # Access and sharing cheat sheet
 
 For detailed information on managing access to Dashboards and reports see [Manage access to objects](../../../onboard-cortex-xsiam/post-deployment/manage-user-roles-and-access-management/manage-access-to-objects).

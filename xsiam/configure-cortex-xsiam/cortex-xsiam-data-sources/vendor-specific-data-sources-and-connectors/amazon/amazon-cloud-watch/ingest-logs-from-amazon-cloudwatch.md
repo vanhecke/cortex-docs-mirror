@@ -1,3 +1,7 @@
+---
+description: Ingest logs from Amazon CloudWatch in Cortex XSIAM.
+---
+
 # Ingest logs from Amazon CloudWatch
 
 You can forward generic and Elastic Kubernetes Service (EKS) logs to Cortex XSIAM from Amazon CloudWatch. When forwarding EKS logs, the following log types are included:

@@ -1,3 +1,7 @@
+---
+description: Configure the Sublime Security connector in Cortex XSIAM.
+---
+
 # Sublime Security
 
 {% hint style="warning" %}

@@ -1,3 +1,9 @@
+---
+description: >-
+  Use the Cortex XSIAM CDR Command Center to monitor cloud detection and
+  response operations.
+---
+
 # Cloud Detection and Response (CDR) Command Center
 
 The Cloud Detection and Respond (CDR) Command Center dashboard provides a dynamic overview of your cloud-based security operations. It includes details about your cloud assets and projects, related cases, risks, and vulnerabilities. From the dashboard, you can drill down to dedicated views for further investigation into your platform.

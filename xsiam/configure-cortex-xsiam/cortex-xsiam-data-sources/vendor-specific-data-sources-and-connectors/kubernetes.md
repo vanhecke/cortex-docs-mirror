@@ -1,3 +1,7 @@
+---
+description: Configure the Kubernetes data source for Cortex XSIAM.
+---
+
 # Kubernetes
 
 You can configure collecting Kubernetes data using a standard data source with the Onboard Kubernetes wizard:

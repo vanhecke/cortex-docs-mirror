@@ -1,3 +1,9 @@
+---
+description: >-
+  Collect prompt logs in Cortex XSIAM to support AI Detection & Response
+  monitoring and investigations.
+---
+
 # Collect prompt logs
 
 Cortex XSIAM collects prompt logs from your cloud accounts using existing data collectors. Currently, AWS and Azure are supported by Cortex XSIAM for prompt log collection. At this time, GCP does not have a storage solution for AI prompts that allows Cortex XSIAM to ingest them.

@@ -1,3 +1,7 @@
+---
+description: Configure Trellix Email Security data collection for Cortex XSIAM.
+---
+
 # Trellix Email Security
 
 {% hint style="warning" %}

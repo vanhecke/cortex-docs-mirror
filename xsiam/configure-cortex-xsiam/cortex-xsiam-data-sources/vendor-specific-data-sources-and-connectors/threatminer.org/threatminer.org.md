@@ -1,3 +1,7 @@
+---
+description: Configure the ThreatMiner.org connector in Cortex XSIAM.
+---
+
 # ThreatMiner.org
 
 {% hint style="warning" %}

@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how Cortex XSIAM Advanced Email Security detects, investigates, and
+  remediates email threats.
+---
+
 # Cortex Advanced Email Security module overview
 
 {% hint style="warning" %}

@@ -1,3 +1,7 @@
+---
+description: Create Cortex XSIAM IOC rules to generate issues from known threat indicators.
+---
+
 # Create an IOC rule
 
 Create new indicator of compromise (IOC) rules and optionally define rule expiration for all IOC rules. You can create an IOC rule either by configuring a single one or by uploading a file that contains multiple IOCs.

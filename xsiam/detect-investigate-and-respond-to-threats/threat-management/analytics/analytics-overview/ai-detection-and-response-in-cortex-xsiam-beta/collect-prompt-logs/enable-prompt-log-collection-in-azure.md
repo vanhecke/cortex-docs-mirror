@@ -1,3 +1,9 @@
+---
+description: >-
+  Enable Azure prompt log collection in Cortex XSIAM for AI Detection & Response
+  monitoring.
+---
+
 # Enable prompt log collection in Azure
 
 The following steps are necessary to enable prompt log collection in Microsoft Azure:

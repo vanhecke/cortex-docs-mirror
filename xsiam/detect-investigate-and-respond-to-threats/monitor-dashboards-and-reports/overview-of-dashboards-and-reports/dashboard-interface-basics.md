@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn the Cortex XSIAM dashboard interface, including navigation, widgets,
+  filters, and available actions.
+---
+
 # Dashboard interface basics
 
 You can access your dashboards from **Dashboards & Reports > Dashboards**, which opens your default dashboard. To switch dashboards, click the current title to open the dashboard menu and select a different one.

@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM ITDR AD-SPM to improve Active Directory posture and reduce
+  identity attack risks.
+---
+
 # Improve Active Directory posture with AD-SPM
 
 {% hint style="success" %}

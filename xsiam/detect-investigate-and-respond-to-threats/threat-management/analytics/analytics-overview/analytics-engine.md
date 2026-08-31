@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how the Cortex XSIAM Analytics engine analyzes data to detect anomalous
+  behavior and generate issues.
+---
+
 # Analytics engine
 
 Cortex XSIAM uses its Analytics Engine to examine logs and data retrieved from your sensors on the Cortex XSIAM tenants to build an activity baseline, and recognize abnormal activity when it occurs. The Analytics engine accesses your logs as they are streamed to the Cortex XSIAM tenant, including any firewall data, and analyzes the information as soon as it arrives. Cortex XSIAM triggers an Analytics issue when the Analytics Engine determines an anomaly.

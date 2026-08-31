@@ -1,7 +1,7 @@
 ---
 description: >-
-  Understand the Cortex XSIAM Fair Usage Policy for data ingestion, connected
-  sources, and API usage.
+  Understand the Fair Usage Policy for data ingestion, connected sources, and
+  API usage for Cortex XSIAM.
 ---
 
 # Fair Usage policy for Cortex XSIAM

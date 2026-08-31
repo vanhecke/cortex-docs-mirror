@@ -1,3 +1,9 @@
+---
+description: >-
+  Troubleshoot scheduled Cortex XSIAM correlation rule server errors and failed
+  executions.
+---
+
 # Troubleshoot server errors in scheduled correlation rules
 
 When you encounter any server errors in scheduled correlation rules, there are some steps you can perform to address the issues depending on the type of error. Follow the steps below to help troubleshoot the issue.

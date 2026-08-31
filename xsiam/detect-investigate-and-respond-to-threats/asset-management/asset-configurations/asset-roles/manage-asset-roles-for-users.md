@@ -1,3 +1,7 @@
+---
+description: Manage user asset roles in Cortex XSIAM.
+---
+
 # Manage Asset Roles for Users
 
 {% hint style="info" %}

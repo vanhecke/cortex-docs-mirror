@@ -1,3 +1,7 @@
+---
+description: Configure the Tenable connector in Cortex XSIAM.
+---
+
 # Tenable
 
 {% hint style="warning" %}

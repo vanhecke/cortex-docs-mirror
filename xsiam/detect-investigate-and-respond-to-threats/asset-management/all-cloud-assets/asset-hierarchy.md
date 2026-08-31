@@ -1,3 +1,7 @@
+---
+description: Explore asset relationships and hierarchy views in Cortex XSIAM.
+---
+
 # Asset hierarchy
 
 The asset inventory displays the full cloud hierarchy path for assets across Amazon Web Services, Google Cloud Platform, Microsoft Azure, and Oracle Cloud Infrastructure, allowing you to use **Hierarchy Path** to filter, sort, search, or build asset groups and enforce Scope-Based Access Control (SBAC).

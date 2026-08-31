@@ -1,5 +1,5 @@
 ---
-description: Learn about the All Cloud Assets page to view and assess your cloud footprint.
+description: View and assess cloud assets and your cloud footprint in Cortex XSIAM.
 ---
 
 # All cloud assets

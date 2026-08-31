@@ -1,3 +1,7 @@
+---
+description: Configure SentinelOne DeepVisibility data ingestion for Cortex XSIAM.
+---
+
 # SentinelOne DeepVisibility
 
 You can configure collecting SentinelOne DeepVisibility raw EDR event data using a Standard Collector, content pack integration (onboarded prior to July 26, 2026), or connector (onboarded after July 26, 2026):

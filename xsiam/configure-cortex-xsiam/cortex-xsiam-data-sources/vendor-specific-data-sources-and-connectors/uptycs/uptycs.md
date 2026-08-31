@@ -1,3 +1,7 @@
+---
+description: Configure Uptycs event and security alert collection for Cortex XSIAM.
+---
+
 # Uptycs
 
 {% hint style="warning" %}

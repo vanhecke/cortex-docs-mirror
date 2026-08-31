@@ -1,3 +1,7 @@
+---
+description: Use BeyondTrust data with Cortex XSIAM.
+---
+
 # BeyondTrust
 
 {% hint style="warning" %}

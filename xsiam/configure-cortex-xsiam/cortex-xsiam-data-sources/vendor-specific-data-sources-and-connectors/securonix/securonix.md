@@ -1,3 +1,7 @@
+---
+description: Configure the Securonix connector in Cortex XSIAM.
+---
+
 # Securonix
 
 {% hint style="warning" %}

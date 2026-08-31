@@ -1,3 +1,7 @@
+---
+description: Use Cortex XSIAM Dashboard Manager to organize, find, and manage dashboards.
+---
+
 # Dashboard Manager
 
 The **Dashboard Manager** is your central hub for organizing and managing your dashboards. It lists every dashboard you have access to, including system dashboards, Command Centers, and custom dashboards created by you or shared with you.

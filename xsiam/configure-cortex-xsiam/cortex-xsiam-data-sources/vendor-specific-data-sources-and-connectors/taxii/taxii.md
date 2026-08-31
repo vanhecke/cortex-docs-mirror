@@ -1,3 +1,7 @@
+---
+description: Configure the TAXII connector in Cortex XSIAM.
+---
+
 # TAXII
 
 {% hint style="warning" %}

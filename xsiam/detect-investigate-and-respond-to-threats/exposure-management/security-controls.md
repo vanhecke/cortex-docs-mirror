@@ -1,7 +1,7 @@
 ---
 description: >-
-  Detect, create, and manage security controls to assess compensating-control
-  effectiveness and residual risk.
+  Use Cortex XSIAM security controls to assess compensating-control
+  effectiveness and residual exposure risk.
 ---
 
 # Security controls

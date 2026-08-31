@@ -1,3 +1,7 @@
+---
+description: Configure Zscaler Private Access (ZPA) log collection in Cortex XSIAM.
+---
+
 # Zscaler Private Access
 
 You can configure collecting Zscaler Private Access logs using a Broker VM Syslog Collector applet or with a content pack integration (onboarded after July 26, 2026):
@@ -7,6 +11,3 @@ You can configure collecting Zscaler Private Access logs using a Broker VM Syslo
 | Syslog Collector applet overview                                              | If you use Zscaler Private Access (ZPA) in your network as an alternative to VPNs, you can forward your network logs to Cortex XSIAM from Zscaler Private Access using the Broker VM Syslog Collector applet in a LEEF format.                                                                                                                                                                                                   |
 | Link to Syslog Collector applet instructions                                  | [Ingest logs from Zscaler Private Access](../../generic-on-premise-data-collectors/broker-vm-data-collector-applets/syslog-collector-applet/zscaler-private-access/ingest-logs-from-zscaler-private-access)                                                                                                                                                                                                                      |
 | Link to content pack/integration instructions (onboarded after July 26, 2026) | The [ZscalerZPA](https://cortex.marketplace.pan.dev/marketplace/details/ZscalerZPA) content pack provides data modeling capabilities for event logs ingested from the Zscaler Private Access (ZPA) service, which enables secure access to internal applications and services. It includes the **`Zscaler Private Access Modeling Rule`**. Event collection relies on configuring the generic Syslog Collector on the Broker VM. |
-
-
-

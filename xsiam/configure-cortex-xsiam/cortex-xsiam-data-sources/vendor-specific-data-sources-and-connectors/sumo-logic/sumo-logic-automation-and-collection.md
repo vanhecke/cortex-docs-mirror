@@ -1,3 +1,7 @@
+---
+description: Configure Sumo Logic automation and collection for Cortex XSIAM.
+---
+
 # Sumo Logic Automation and Collection
 
 {% hint style="warning" %}

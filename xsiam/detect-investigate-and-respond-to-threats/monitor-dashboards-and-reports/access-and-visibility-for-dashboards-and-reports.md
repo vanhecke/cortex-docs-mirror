@@ -1,3 +1,9 @@
+---
+description: >-
+  Control Cortex XSIAM dashboard and report access, visibility, ownership, and
+  sharing.
+---
+
 # Access and visibility for dashboards and reports
 
 Access to all dashboard and report data is strictly controlled through Role-Based Access Control (RBAC) and Scope-Based Access Control (SBAC). These permissions determine the objects and data a user can see, and dictate how data behaves when elements are copied or shared across different users:

@@ -1,3 +1,7 @@
+---
+description: Monitor Cortex XSIAM correlation rule runs, errors, and detection health.
+---
+
 # Monitor correlation rules
 
 Cortex XSIAM audits all correlation rule executions in the `correlations_auditing` dataset. The dataset records the query initiation times, end times, retry attempts, failure reasons, and other useful metrics. You can use this dataset to monitor your correlation executions. Cortex XSIAM also provides OOTB health issues that are generated when a correlation rule completes with errors. For more information, see [About health issues](../../../../../configure-cortex-xsiam/cortex-xsiam-data-sources/administration-and-troubleshooting/about-health-issues).

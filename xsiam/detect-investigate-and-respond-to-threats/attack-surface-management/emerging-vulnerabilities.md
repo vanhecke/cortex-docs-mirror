@@ -1,7 +1,8 @@
 ---
 description: >-
   Identify external exposures linked to emerging vulnerabilities, zero-day
-  exploits, and global threat events on the Emerging Vulnerabilities page.
+  exploits, and global threat events on the Emerging Vulnerabilities page in
+  Cortex XSIAM.
 ---
 
 # Emerging Vulnerabilities

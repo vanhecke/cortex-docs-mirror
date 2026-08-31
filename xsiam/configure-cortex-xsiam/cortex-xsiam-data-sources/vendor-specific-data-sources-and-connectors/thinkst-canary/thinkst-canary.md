@@ -1,3 +1,7 @@
+---
+description: Configure the Thinkst Canary connector in Cortex XSIAM.
+---
+
 # Thinkst Canary
 
 {% hint style="warning" %}

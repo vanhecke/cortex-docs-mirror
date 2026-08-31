@@ -1,3 +1,7 @@
+---
+description: Configure the TheHive connector in Cortex XSIAM.
+---
+
 # TheHive
 
 {% hint style="warning" %}

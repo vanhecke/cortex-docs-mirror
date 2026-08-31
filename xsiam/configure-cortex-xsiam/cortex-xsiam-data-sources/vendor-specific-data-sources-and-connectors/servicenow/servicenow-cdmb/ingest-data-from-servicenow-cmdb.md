@@ -1,3 +1,7 @@
+---
+description: Ingest ServiceNow CMDB data into Cortex XSIAM.
+---
+
 # Ingest data from ServiceNow CMDB
 
 To receive data from the ServiceNow CMDB database, you must first configure data collection from ServiceNow CMDB. ServiceNow CMDB is a logical representations of assets, services, and the relationships between them that comprise the infrastructure of an organization. It is built as a series of connected tables that contain all the assets and business services controlled by a company and its configurations. You can configure the Collection Integration settings in Cortex XSIAM for the ServiceNow CMDB database, which includes selecting the specific tables containing the data that you want to collect, in the ServiceNow CMDB Collector. You can select from the list of default tables and also specify custom tables. By default, the ServiceNow CMDB Collector is configured to collect data from the following tables, which you can always change depending on your system requirements.

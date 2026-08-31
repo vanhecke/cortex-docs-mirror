@@ -1,4 +1,8 @@
-# VMware Automation and Colection
+---
+description: Configure VMware automation and collection capabilities for Cortex XSIAM.
+---
+
+# VMware Automation and Collection
 
 {% hint style="warning" %}
 **Important**

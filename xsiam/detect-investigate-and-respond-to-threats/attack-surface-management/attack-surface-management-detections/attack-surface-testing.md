@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM Attack Surface Testing to validate external asset exposure
+  and detection coverage.
+---
+
 # Attack Surface Testing
 
 {% hint style="info" %}

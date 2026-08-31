@@ -1,3 +1,9 @@
+---
+description: >-
+  Create a Cortex XSIAM report template from scratch for repeatable security
+  reporting.
+---
+
 # Create a report template from scratch
 
 You can use report templates to standardize and automate your data delivery—allowing you to generate one-time or recurring reports on a schedule and seamlessly distribute them to different user groups or mailing lists.

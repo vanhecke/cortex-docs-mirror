@@ -1,3 +1,9 @@
+---
+description: >-
+  Investigate user risk in Cortex XSIAM ITDR to assess identity threats and
+  guide response actions.
+---
+
 # Investigate user risk
 
 {% hint style="success" %}

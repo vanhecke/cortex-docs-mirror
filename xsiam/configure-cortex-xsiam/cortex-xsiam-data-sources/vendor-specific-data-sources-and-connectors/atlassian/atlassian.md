@@ -1,3 +1,7 @@
+---
+description: Use Atlassian data with Cortex XSIAM.
+---
+
 # Atlassian
 
 Secure configurations, monitor identity risks, and manage agent security across your Atlassian environment (including Rovo).

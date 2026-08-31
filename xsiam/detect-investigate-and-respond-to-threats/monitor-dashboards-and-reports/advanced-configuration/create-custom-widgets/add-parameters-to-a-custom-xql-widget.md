@@ -1,3 +1,9 @@
+---
+description: >-
+  Add parameters to Cortex XSIAM custom XQL widgets for interactive dashboard
+  filtering.
+---
+
 # Add parameters to a custom XQL widget
 
 If you want to use filters and drilldowns on your dashboard, one or more widgets on the dashboard must contain parameters. For more information about filters and drilldowns, see [Configure global filters](../configure-global-filters) and [Configure drilldowns](../configure-drilldowns).

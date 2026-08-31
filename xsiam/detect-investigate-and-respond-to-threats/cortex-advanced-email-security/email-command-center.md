@@ -1,7 +1,7 @@
 ---
 description: >-
-  View a dynamic overview of your email security status in the Email Command
-  Center.
+  Use the Cortex XSIAM Email Command Center to monitor email security status and
+  threat activity.
 ---
 
 # Email Command Center

@@ -1,3 +1,7 @@
+---
+description: Learn how Cortex XSIAM Discovery Engine identifies and discovers cloud assets.
+---
+
 # Discovery Engine
 
 The Discovery Engine is an essential component of Cortex XSIAM's security posture management. The Discovery Engine scans your onboarded cloud accounts and discovers your assets, services and resources. The discovered assets are added to the Unified Asset Inventory. Once these assets are identified, they can be scanned for misconfigurations and vulnerabilities, ensuring the security of your cloud environments. The cloud service provider (CSP) permissions that are required for the Discovery Engine are available [here](../../../configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions).

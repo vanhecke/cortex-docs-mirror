@@ -1,3 +1,7 @@
+---
+description: Collect AWS API Gateway data with Cortex XSIAM.
+---
+
 # Ingest AWS API Gateway
 
 Integrate AWS API Gateway with Cortex XSIAM to begin scanning the APIs for potential threats and vulnerabilities.

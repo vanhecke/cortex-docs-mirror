@@ -1,3 +1,7 @@
+---
+description: Collect generic logs from Amazon S3 in Cortex XSIAM.
+---
+
 # Ingest generic logs from Amazon S3
 
 You can forward generic logs for the relevant service to Cortex XSIAM from Amazon S3.

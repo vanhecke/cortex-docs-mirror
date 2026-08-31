@@ -1,3 +1,7 @@
+---
+description: View and investigate domain assets in Cortex XSIAM.
+---
+
 # Domain assets
 
 The External Surface inventory includes all domains that Cortex XSIAM has attributed to your organization and whether each domain has a recent resolution. Root domains and subdomains are displayed as separate entries in the inventory. However, if an organization owns a wildcard DNS entry, all subdomains of that wildcard that resolve to the same IP address are grouped under that one wildcard domain asset entry. If there are more than 1,000 subdomains, subdomains are collapsed under the parent domain.

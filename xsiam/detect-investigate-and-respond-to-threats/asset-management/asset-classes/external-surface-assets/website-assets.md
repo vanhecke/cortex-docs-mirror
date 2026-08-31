@@ -1,3 +1,7 @@
+---
+description: View and investigate website assets in Cortex XSIAM.
+---
+
 # Website assets
 
 Cortex XSIAM websites data extends Attack Surface Management (ASM) protection by identifying insecure websites, web components, and technologies running on your managed and unmanaged web assets. Cortex XSIAM scans your public-facing websites, creating a continuously updated inventory of your web assets, including the server software and other technologies powering your web applications.

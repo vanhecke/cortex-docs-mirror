@@ -1,3 +1,7 @@
+---
+description: Configure the Zimperium connector for Cortex XSIAM.
+---
+
 # Zimperium
 
 {% hint style="warning" %}

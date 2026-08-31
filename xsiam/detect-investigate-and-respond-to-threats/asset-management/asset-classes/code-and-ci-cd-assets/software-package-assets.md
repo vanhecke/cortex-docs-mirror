@@ -1,3 +1,7 @@
+---
+description: View software package assets in Cortex XSIAM.
+---
+
 # Software package assets
 
 Cortex XSIAM discovers and inventories every open-source and third-party software package declared in dependency manifest files across onboarded repositories. Each package detected through Software Composition Analysis (SCA) scanning appears in the unified asset inventory as a governed component of the software supply chain, carrying its identity metadata, version, license type, dependency classification, operational risk rating, and associated CVE vulnerabilities.

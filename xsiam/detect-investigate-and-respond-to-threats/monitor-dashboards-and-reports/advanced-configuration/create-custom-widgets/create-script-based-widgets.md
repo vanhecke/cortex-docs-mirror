@@ -1,3 +1,9 @@
+---
+description: >-
+  Create Cortex XSIAM script-based widgets to display custom dashboard data and
+  insights.
+---
+
 # Create script-based widgets
 
 You can use scripts in custom widgets to create dynamic widgets for more complex calculations and to present data from third-party systems. For examples of creating widgets using scripts, see [Script-based widget examples](#script-based-widget-examples).

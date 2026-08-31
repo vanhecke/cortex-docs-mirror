@@ -1,8 +1,5 @@
 ---
-description: >-
-  Accelerating remediation: Automated fix suggestions and manual remediation
-  guidance enable developers to resolve code weaknesses directly in the source
-  repository without context-switching to external
+description: Explore Cortex XSIAM asset classes and the resources each class represents.
 ---
 
 # Asset classes

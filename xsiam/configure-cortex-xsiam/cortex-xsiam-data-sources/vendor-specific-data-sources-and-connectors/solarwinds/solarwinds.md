@@ -1,3 +1,7 @@
+---
+description: Configure the SolarWinds connector in Cortex XSIAM.
+---
+
 # SolarWinds
 
 {% hint style="warning" %}

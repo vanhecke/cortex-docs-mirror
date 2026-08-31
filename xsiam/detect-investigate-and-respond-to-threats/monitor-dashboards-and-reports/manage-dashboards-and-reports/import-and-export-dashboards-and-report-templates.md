@@ -1,3 +1,9 @@
+---
+description: >-
+  Import and export Cortex XSIAM dashboards and report templates for reuse
+  across environments.
+---
+
 # Import and export dashboards and report templates
 
 Administrators can export and import dashboards and report templates as JSON files. This allows you to quickly share configurations, back up content, or migrate settings between different environments. The system supports both single and bulk operations.

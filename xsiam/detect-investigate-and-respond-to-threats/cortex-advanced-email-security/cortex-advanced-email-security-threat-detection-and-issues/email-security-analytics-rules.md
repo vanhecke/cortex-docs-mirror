@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XSIAM Email Security Analytics Rules to detect suspicious
+  email activity and create issues.
+---
+
 # Email Security Analytics Rules
 
 The Email Security Analytics Rules page offers a consolidated view of all Analytics BIOC and XSIAM Analytics rules used in the Cortex Advanced Email Security module to keep your email domains secure. You can see every Analytics rule that could generate an email security issue and take action to customize the rules for your organization.

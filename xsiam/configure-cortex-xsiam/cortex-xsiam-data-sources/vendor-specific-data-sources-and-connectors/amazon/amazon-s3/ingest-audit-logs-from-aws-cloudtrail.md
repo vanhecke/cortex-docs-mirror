@@ -1,3 +1,7 @@
+---
+description: Collect audit logs from AWS CloudTrail in Cortex XSIAM.
+---
+
 # Ingest audit logs from AWS CloudTrail
 
 You can forward audit logs for the relative service to Cortex XSIAM from AWS CloudTrail.

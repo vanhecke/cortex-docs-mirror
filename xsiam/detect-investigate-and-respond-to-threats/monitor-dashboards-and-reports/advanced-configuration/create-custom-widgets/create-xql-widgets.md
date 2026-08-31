@@ -1,3 +1,7 @@
+---
+description: Create Cortex XSIAM XQL widgets to visualize query results on dashboards.
+---
+
 # Create XQL widgets
 
 Custom XQL widgets allow you to build charts based on specific Cortex Query Language (XQL) queries. To create an XQL widget, from the **Widget Library** click **Create widget > XQL widget**.

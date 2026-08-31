@@ -1,3 +1,7 @@
+---
+description: Configure the Telegram connector in Cortex XSIAM.
+---
+
 # Telegram
 
 {% hint style="warning" %}

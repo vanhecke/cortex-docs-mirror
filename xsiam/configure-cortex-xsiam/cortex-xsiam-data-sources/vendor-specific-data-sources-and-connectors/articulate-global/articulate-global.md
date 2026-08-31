@@ -1,3 +1,7 @@
+---
+description: Use Articulate Global data with Cortex XSIAM.
+---
+
 # Articulate Global
 
 The capability and sub-capability listed for this connector are available with any active Cortex XSIAM or Cortex Cloud Posture Security license.

@@ -10,7 +10,7 @@ description: Use AlienVault data with Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Integrate with AlienVault to fetch threat intelligence indicators, query Indicators of Compromise in AlienVault OTX, and search and monitor alarms and events from AlienVault USM Anywhere. Includes the AlienVault OTX TAXII feed and the open-source AlienVault Reputation Data feed.
 

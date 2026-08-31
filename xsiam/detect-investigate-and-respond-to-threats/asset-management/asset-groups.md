@@ -1,7 +1,7 @@
 ---
 description: >-
-  Group assets based on shared attributes to address them collectively, simplify
-  filtering, and enable strict access control boundaries.
+  Create and manage asset groups in Cortex XSIAM for filtering and access
+  control.
 ---
 
 # Asset groups

@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how Cortex XSIAM BIOC rules detect suspicious endpoint and network
+  behavior.
+---
+
 # What's a BIOC?
 
 Behavioral indicators of compromise (BIOCs) enable you to alert and respond to behaviors—tactics, techniques, and procedures. Instead of hashes and other traditional indicators of compromise, BIOC rules detect behavior related to processes, registry, files, and network activity.

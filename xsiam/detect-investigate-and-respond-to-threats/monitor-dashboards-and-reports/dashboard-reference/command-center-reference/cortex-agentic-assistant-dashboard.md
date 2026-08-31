@@ -1,3 +1,9 @@
+---
+description: >-
+  Use the Cortex XSIAM Agentic Assistant dashboard to monitor AI-assisted
+  security operations.
+---
+
 # Cortex Agentic Assistant dashboard
 
 {% hint style="warning" %}

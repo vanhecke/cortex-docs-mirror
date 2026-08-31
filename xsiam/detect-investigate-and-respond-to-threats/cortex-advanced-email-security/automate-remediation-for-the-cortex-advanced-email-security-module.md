@@ -1,3 +1,9 @@
+---
+description: >-
+  Automate Cortex XSIAM Advanced Email Security remediation workflows for
+  detected email threats.
+---
+
 # Automate remediation for the Cortex Advanced Email Security module
 
 The lightweight, real-time response engine inside the Advanced Email Security module executes automatic policy-driven actions to quickly respond to email threats before they manifest. Build your policy from the rules you configure by customizing the out-of-the-box templates.

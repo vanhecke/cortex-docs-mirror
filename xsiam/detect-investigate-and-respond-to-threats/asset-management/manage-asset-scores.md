@@ -1,8 +1,5 @@
 ---
-description: >-
-  View and investigate User Scores and Host Scores using the Risk Scores page to
-  identify high-risk assets and detect compromised accounts or malicious
-  activities.
+description: View and investigate user and host risk scores in Cortex XSIAM.
 ---
 
 # Manage Risk Scores

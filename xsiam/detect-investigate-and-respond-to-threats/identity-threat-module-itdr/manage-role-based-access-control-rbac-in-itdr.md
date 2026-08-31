@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage role-based access control in Cortex XSIAM ITDR to control access to
+  identity security capabilities.
+---
+
 # Manage role based access control (RBAC) in ITDR
 
 {% hint style="success" %}

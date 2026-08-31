@@ -1,3 +1,7 @@
+---
+description: Configure Workday automation and data collection for Cortex XSIAM.
+---
+
 # Workday Automation and Collection
 
 {% hint style="warning" %}

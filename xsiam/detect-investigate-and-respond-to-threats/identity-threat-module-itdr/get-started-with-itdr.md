@@ -1,3 +1,9 @@
+---
+description: >-
+  Get started with Cortex XSIAM Identity Threat Detection and Response to
+  protect identities and investigate threats.
+---
+
 # Get started with ITDR
 
 To deploy and configure the Identity Threat Detection and Response module features, follow the steps below.

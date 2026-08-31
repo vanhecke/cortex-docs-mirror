@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM Digital Risk Protection to identify external threats,
+  exposure, and brand-related risks.
+---
+
 # Digital Risk Protection
 
 Organizations face significant challenges in safeguarding their brand and digital assets from threats such as credential theft and brand impersonation. Using our comprehensive asset inventory, along with embedded intelligence and automation, Cortex XSIAM Digital Risk Protection discovers and helps you mitigate the following risks:

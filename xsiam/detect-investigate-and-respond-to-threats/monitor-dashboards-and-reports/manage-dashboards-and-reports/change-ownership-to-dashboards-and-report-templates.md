@@ -1,3 +1,9 @@
+---
+description: >-
+  Change Cortex XSIAM dashboard and report template ownership to maintain access
+  and accountability.
+---
+
 # Change ownership to dashboards and report templates
 
 Only administrators can change the ownership of a custom dashboard or report template.

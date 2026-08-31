@@ -1,5 +1,7 @@
 ---
-description: High level deployment workflow
+description: >-
+  Get started with Cortex XSIAM Advanced Email Security using the deployment
+  workflow and setup requirements.
 ---
 
 # Getting started with the Cortex Advanced Email Security module

@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex Command Center in Cortex XSIAM to monitor operational security
+  insights and priorities.
+---
+
 # Cortex Command Center
 
 The Cortex Command Center is a unified view for complete asset visibility, providing full organizational visibility across your cloud and enterprise environments. By combining cloud security data with SOC insights, the Cortex Command Center offers a detailed view of cloud and enterprise assets, including asset risk levels and active threats to assets.

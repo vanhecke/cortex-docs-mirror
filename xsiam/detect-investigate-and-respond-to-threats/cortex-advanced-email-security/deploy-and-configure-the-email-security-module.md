@@ -1,3 +1,9 @@
+---
+description: >-
+  Deploy and configure Cortex XSIAM Advanced Email Security to protect your
+  email environment.
+---
+
 # Deploy and configure the Email Security module
 
 To start using the Cortex Advanced Email Security module, configure the Microsoft O365 integration and then configure the module.

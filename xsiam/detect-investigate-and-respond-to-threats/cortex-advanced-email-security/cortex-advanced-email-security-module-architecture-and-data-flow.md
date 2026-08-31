@@ -1,3 +1,9 @@
+---
+description: >-
+  Understand Cortex XSIAM Advanced Email Security architecture, integrations,
+  and email threat data flow.
+---
+
 # Cortex Advanced Email Security module architecture and data flow
 
 The Cortex Advanced Email Security module is composed of several logical components, deployed in a cloud-native architecture. These components work together to ingest, analyze, and respond to email-borne threats.

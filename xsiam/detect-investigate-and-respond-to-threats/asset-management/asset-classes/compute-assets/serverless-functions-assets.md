@@ -1,3 +1,7 @@
+---
+description: View and investigate serverless function assets in Cortex XSIAM.
+---
+
 # Serverless functions assets
 
 The **Serverless Functions** asset inventory provides a centralized view of all serverless functions and their details across your environments. The platform enables efficient tracking and management of your serverless function resource, ensuring compliance with security and governance standards. You can directly access serverless function issues and findings within the inventory, allowing you to prioritize and remediate them without having to navigate to a separate remediation section.

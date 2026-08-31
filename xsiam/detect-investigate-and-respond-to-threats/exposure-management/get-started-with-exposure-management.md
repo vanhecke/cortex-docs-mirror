@@ -1,6 +1,6 @@
 ---
 description: >-
-  Set up Exposure Management by configuring scanners, integrations, policies,
+  Set up Cortex XSIAM Exposure Management with scanners, integrations, policies,
   security controls, and automation.
 ---
 

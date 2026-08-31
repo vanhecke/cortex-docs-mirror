@@ -1,7 +1,7 @@
 ---
 description: >-
-  Ingest assets and vulnerabilities into Cortex Exposure Management from Palo
-  Alto Networks sensors and third-party applications.
+  Ingest assets and vulnerabilities from third-party applications into Cortex
+  XSIAM Exposure Management.
 ---
 
 # Ingest assets and vulnerabilities from third-party applications

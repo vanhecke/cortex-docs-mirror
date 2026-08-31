@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex Cloud Consumption in Cortex XSIAM to monitor cloud security usage
+  and consumption.
+---
+
 # Cortex Cloud Consumption
 
 The Cloud Consumption Dashboard provides centralized visibility, historical tracking, and granular, account-level auditing for your cloud infrastructure resources. It tracks workload consumption across all connected cloud accounts and providers, breaking the data down by asset type. To simplify multi-cloud deployment tracking, the dashboard normalizes diverse cloud resources into a single, predictable currency called a workload unit.

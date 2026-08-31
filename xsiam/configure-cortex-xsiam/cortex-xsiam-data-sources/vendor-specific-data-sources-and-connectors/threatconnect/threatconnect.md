@@ -1,3 +1,7 @@
+---
+description: Configure the ThreatConnect connector in Cortex XSIAM.
+---
+
 # ThreatConnect
 
 {% hint style="warning" %}

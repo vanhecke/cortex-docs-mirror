@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure the Saviynt Enterprise Identity Cloud audit log collector for Cortex
+  XSIAM.
+---
+
 # Saviynt
 
 {% hint style="warning" %}

@@ -1,3 +1,7 @@
+---
+description: Configure Trellix Endpoint (HX) data collection for Cortex XSIAM.
+---
+
 # Trellix Endpoint (HX)
 
 {% hint style="warning" %}

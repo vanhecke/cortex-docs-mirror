@@ -1,3 +1,7 @@
+---
+description: Use Amazon S3 data in Cortex XSIAM.
+---
+
 # Amazon S3
 
 You can configure collecting Amazon S3 logs using a standard using a standard data source, content pack integration (onboarded prior to July 26, 2026), or connector (onboarded after July 26, 2026):

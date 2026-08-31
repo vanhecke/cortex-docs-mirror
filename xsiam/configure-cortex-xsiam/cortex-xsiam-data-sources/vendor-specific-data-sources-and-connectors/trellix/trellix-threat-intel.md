@@ -1,3 +1,7 @@
+---
+description: Configure Trellix Threat Intel data collection for Cortex XSIAM.
+---
+
 # Trellix Threat Intel
 
 {% hint style="warning" %}

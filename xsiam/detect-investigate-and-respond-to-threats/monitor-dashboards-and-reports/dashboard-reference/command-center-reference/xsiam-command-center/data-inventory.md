@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM Data Inventory to monitor data sources, coverage, and
+  security telemetry.
+---
+
 # Data Inventory
 
 The **Data Inventory** provides a dynamic view of the data sources that are ingesting data into Cortex XSIAM. You can see breakdowns of data ingestion by data source, ingestion rates, trends, and prevented events.

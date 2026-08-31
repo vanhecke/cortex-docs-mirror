@@ -1,7 +1,5 @@
 ---
-description: >-
-  View asset roles and the number of assets that are associated with each role.
-  Learn how to manage asset roles for users and endpoints.
+description: View and manage user and endpoint asset roles in Cortex XSIAM.
 ---
 
 # Asset Roles

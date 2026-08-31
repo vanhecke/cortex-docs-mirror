@@ -1,3 +1,9 @@
+---
+description: >-
+  Create Cortex XSIAM reports to present and share security data with
+  stakeholders.
+---
+
 # Create reports
 
 You can create report templates using existing dashboards, or create custom reports from scratch with widgets from the **Widget Library**.

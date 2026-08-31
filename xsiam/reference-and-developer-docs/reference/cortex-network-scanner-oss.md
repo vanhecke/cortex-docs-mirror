@@ -1,7 +1,7 @@
 ---
 description: >-
-  Review third-party open-source software licenses used by Cortex XSIAM Cortex
-  Network Scanner.
+  Review third-party open-source software licenses used by the Cortex Network
+  Scanner for Cortex XSIAM.
 ---
 
 # Cortex Network Scanner OSS

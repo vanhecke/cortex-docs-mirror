@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XSIAM to collect prompt logs from AWS for AI Detection &
+  Response.
+---
+
 # Prompt log collection in AWS
 
 Amazon Bedrock allows you to save prompt logs to Amazon S3 or Amazon CloudWatch. For details on how to configure invocation logging using CloudWatch Logs or Amazon S3, see the AWS documentation: [Model invocation logging](https://docs.aws.amazon.com/bedrock/latest/userguide/model-invocation-logging.html).

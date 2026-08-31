@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Azure diagnostic settings for Cortex XSIAM prompt log collection and
+  AI Detection & Response.
+---
+
 # Configure diagnostic settings
 
 1. In your Azure API Management instance, navigate to **APIs** → **Select an API**.

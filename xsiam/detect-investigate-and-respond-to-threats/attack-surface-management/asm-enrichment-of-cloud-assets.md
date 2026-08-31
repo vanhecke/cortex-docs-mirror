@@ -1,7 +1,7 @@
 ---
 description: >-
-  ASM enrichment of cloud assets provides visibility into all the assets in your
-  cloud infrastructure that are exposed to the internet.
+  ASM enrichment of cloud assets in Cortex XSIAM provides visibility into all
+  the assets in your cloud infrastructure that are exposed to the internet.
 ---
 
 # ASM enrichment of cloud assets

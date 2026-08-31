@@ -1,3 +1,7 @@
+---
+description: View compute assets across your environment in Cortex XSIAM.
+---
+
 # Compute assets
 
 The Compute Inventory provides a detailed overview of your compute resources, including virtual machines, containers, serverless functions, Kubernetes clusters, general devices, and other compute assets across your environment.

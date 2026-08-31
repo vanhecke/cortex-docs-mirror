@@ -1,5 +1,5 @@
 ---
-description: Learn about the All Assets page, under Asset Inventory.
+description: View and manage all discovered assets in Cortex XSIAM Asset Inventory.
 ---
 
 # All assets

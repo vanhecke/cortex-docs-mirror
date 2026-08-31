@@ -2,7 +2,7 @@
   "book": "xsiam",
   "title": "Cortex XSIAM Documentation",
   "section": "cortex-xsiam",
-  "page_count": 2217,
+  "page_count": 2220,
   "tree": [
     {
       "title": "Learn about Cortex XSIAM",
@@ -875,25 +875,26 @@
                   "title": "Lookup datasets",
                   "path": "configure-cortex-xsiam/data-management/dataset-management/lookup-datasets",
                   "type": "document",
-                  "children": []
-                },
-                {
-                  "title": "Import a lookup dataset",
-                  "path": "configure-cortex-xsiam/data-management/dataset-management/import-a-lookup-dataset",
-                  "type": "document",
-                  "children": []
-                },
-                {
-                  "title": "Download JSON file of lookup dataset",
-                  "path": "configure-cortex-xsiam/data-management/dataset-management/download-json-file-of-lookup-dataset",
-                  "type": "document",
-                  "children": []
-                },
-                {
-                  "title": "Set time to live for lookup datasets",
-                  "path": "configure-cortex-xsiam/data-management/dataset-management/set-time-to-live-for-lookup-datasets",
-                  "type": "document",
-                  "children": []
+                  "children": [
+                    {
+                      "title": "Import a lookup dataset",
+                      "path": "configure-cortex-xsiam/data-management/dataset-management/lookup-datasets/import-a-lookup-dataset",
+                      "type": "document",
+                      "children": []
+                    },
+                    {
+                      "title": "Download JSON file of lookup dataset",
+                      "path": "configure-cortex-xsiam/data-management/dataset-management/lookup-datasets/download-json-file-of-lookup-dataset",
+                      "type": "document",
+                      "children": []
+                    },
+                    {
+                      "title": "Set time to live for lookup datasets",
+                      "path": "configure-cortex-xsiam/data-management/dataset-management/lookup-datasets/set-time-to-live-for-lookup-datasets",
+                      "type": "document",
+                      "children": []
+                    }
+                  ]
                 },
                 {
                   "title": "Monitor datasets and dataset views activity",
@@ -949,6 +950,12 @@
                       "path": "configure-cortex-xsiam/data-management/parsing-rules/parsing-rules-file-structure-and-syntax/ingest",
                       "type": "document",
                       "children": [
+                        {
+                          "title": "fields",
+                          "path": "configure-cortex-xsiam/data-management/parsing-rules/parsing-rules-file-structure-and-syntax/ingest/fields",
+                          "type": "document",
+                          "children": []
+                        },
                         {
                           "title": "parse_cef",
                           "path": "configure-cortex-xsiam/data-management/parsing-rules/parsing-rules-file-structure-and-syntax/ingest/parse_cef",
@@ -3901,16 +3908,30 @@
                           "children": []
                         },
                         {
-                          "title": "Microsoft 365",
-                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft-365",
+                          "title": "Microsoft 365 (new)",
+                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft-365-new",
                           "type": "document",
-                          "children": []
+                          "children": [
+                            {
+                              "title": "Create a Microsoft Entra ID",
+                              "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft-365-new/create-a-microsoft-entra-id",
+                              "type": "document",
+                              "children": []
+                            }
+                          ]
                         },
                         {
-                          "title": "Microsoft365",
-                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft365",
+                          "title": "Microsoft365 (legacy)",
+                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft365-legacy",
                           "type": "document",
-                          "children": []
+                          "children": [
+                            {
+                              "title": "Migrate to new Microsoft 365 connector",
+                              "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft365-legacy/migrate-to-new-microsoft-365-connector",
+                              "type": "document",
+                              "children": []
+                            }
+                          ]
                         },
                         {
                           "title": "Microsoft 365 Copilot",
@@ -5542,8 +5563,8 @@
                   "type": "document",
                   "children": [
                     {
-                      "title": "VMware Automation and Colection",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/vmware/vmware-automation-and-colection",
+                      "title": "VMware Automation and Collection",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/vmware/vmware-automation-and-collection",
                       "type": "document",
                       "children": []
                     },
@@ -11710,12 +11731,6 @@
           ]
         },
         {
-          "title": "Cortex Data Security",
-          "path": "cloud-security/cortex-data-security",
-          "type": "document",
-          "children": []
-        },
-        {
           "title": "Cloud Identity Security",
           "path": "cloud-security/cortex-cloud-identity-security",
           "type": "document",
@@ -12629,6 +12644,19 @@
               "children": []
             }
           ]
+        }
+      ]
+    },
+    {
+      "title": "Data Security",
+      "path": "data-security",
+      "type": "group",
+      "children": [
+        {
+          "title": "Cortex Data Security",
+          "path": "data-security/cortex-data-security",
+          "type": "document",
+          "children": []
         }
       ]
     },

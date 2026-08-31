@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM Identity Threat Detection and Response to detect,
+  investigate, and respond to identity threats.
+---
+
 # Identity Threat Detection and Response (ITDR)
 
 The Identity Threat Detection and Response (ITDR) add-on delivers comprehensive identity analytics and proactive posture management capabilities to secure organizational environments against identity-based threats. By integrating automated asset classification, behavior-based detection rules, and dynamic access policies, ITDR enables you to continuously monitor risk exposure, uncover anomalous activity, and enforce directory protections.

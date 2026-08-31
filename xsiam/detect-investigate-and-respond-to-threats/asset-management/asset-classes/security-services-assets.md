@@ -1,3 +1,7 @@
+---
+description: View managed security service assets in Cortex XSIAM.
+---
+
 # Security services assets
 
 Navigate to **Inventory > All Assets > Security Services > All Security Services Assets** to access a complete, centralized overview of the security services being actively managed within your organization.

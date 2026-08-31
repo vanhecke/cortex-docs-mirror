@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how Cortex XSIAM Analytics issues and BIOCs identify anomalous activity
+  for investigation.
+---
+
 # Analytics issues and Analytics BIOCs
 
 The Cortex XSIAM Analytics engine generates an issue when it detects suspicious activity, composed of multiple events, that deviates from the behavior baseline it establishes over time. To ensure the Analytics detectors generates issues efficiently and do not overcrowd your Issues table, Cortex XSIAM automatically disables issues from detectors that reach 5000 or more matches over a 24 hour period.

@@ -1,3 +1,7 @@
+---
+description: View external surface assets discovered by Cortex XSIAM.
+---
+
 # External Surface assets
 
 The **External Surface** inventory provides a searchable, filterable view of the internet-facing assets that Cortex XSIAM has discovered and attributed to your organization, including certificates, domains, services, and websites. Navigate to **Inventory** → **All Assets** → **External Surface** to access the **All External Surface Assets** view, or specific categories including **Services**, **Websites**, **Domains**, and **Certificates**.

@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM correlation rules, including rule settings, status, and
+  configuration.
+---
+
 # Manage correlation rules
 
 View and manage your correlation rules in **Threat Management → Detection Rules → Correlations**. To manage a Correlation Rule, right-click the Correlation Rule and select an action.

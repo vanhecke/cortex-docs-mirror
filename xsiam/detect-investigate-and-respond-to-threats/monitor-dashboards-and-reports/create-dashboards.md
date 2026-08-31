@@ -1,3 +1,9 @@
+---
+description: >-
+  Create Cortex XSIAM dashboards to monitor security data, trends, and
+  operational outcomes.
+---
+
 # Create dashboards
 
 You can create fully customized dashboards—start from a blank canvas or choose an existing template.

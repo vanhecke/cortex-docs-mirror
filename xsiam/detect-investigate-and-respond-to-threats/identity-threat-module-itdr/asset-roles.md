@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage user asset roles in Cortex XSIAM ITDR to classify identities and
+  strengthen identity risk analysis.
+---
+
 # Manage user asset roles
 
 {% hint style="success" %}

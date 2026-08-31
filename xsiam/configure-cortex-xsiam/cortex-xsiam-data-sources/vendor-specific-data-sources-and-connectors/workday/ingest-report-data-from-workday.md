@@ -1,3 +1,7 @@
+---
+description: Ingest Workday report data into Cortex XSIAM.
+---
+
 # Ingest report data from Workday
 
 To receive Workday report data, you must first configure data collection from Workday using a Workday custom report to ingest the appropriate data. This is configured by setting up a Workday Collector in Cortex XSIAM and configuring report data collection via this Workday custom report that you set up.

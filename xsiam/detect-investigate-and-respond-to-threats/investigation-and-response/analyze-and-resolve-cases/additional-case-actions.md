@@ -8,4 +8,9 @@ description: >-
 
 ***
 
-The pages in this section describe addition actions you can take on Cortex XSIAM cases.
+The pages in this section describe additional actions you can take on Cortex XSIAM cases.
+
+* [create-a-case](additional-case-actions/create-a-case "mention")
+* [merge-a-case](additional-case-actions/merge-a-case "mention")
+* [assign-a-case-team-and-restrict-access](additional-case-actions/assign-a-case-team-and-restrict-access "mention")
+* [unified-case-view](additional-case-actions/unified-case-view "mention")

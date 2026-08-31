@@ -1,7 +1,7 @@
 ---
 description: >-
-  Assess, prioritize, and remediate organizational exposures with unified
-  vulnerability data and automated workflows.
+  Learn how Cortex XSIAM Exposure Management unifies exposure data,
+  prioritization, and remediation workflows.
 ---
 
 # Learn about Exposure Management

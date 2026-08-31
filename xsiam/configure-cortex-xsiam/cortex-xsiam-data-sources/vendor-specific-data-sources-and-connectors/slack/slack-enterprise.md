@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Slack Enterprise identity and SaaS posture monitoring for Cortex
+  XSIAM.
+---
+
 # Slack Enterprise
 
 Secure configurations and monitor identity risks in Slack Enterprise.

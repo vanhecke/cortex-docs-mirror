@@ -1,3 +1,7 @@
+---
+description: Configure the Zero Networks connector for Cortex XSIAM.
+---
+
 # Zero Networks
 
 {% hint style="warning" %}

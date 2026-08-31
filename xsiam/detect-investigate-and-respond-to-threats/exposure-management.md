@@ -1,3 +1,9 @@
+---
+description: >-
+  Assess, prioritize, and remediate organizational exposures with Cortex XSIAM
+  Exposure Management.
+---
+
 # Exposure management
 
 {% content-ref url="exposure-management/exposure-management" %}

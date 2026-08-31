@@ -1,5 +1,7 @@
 ---
-description: Configure, monitor, and respond to email security threats.
+description: >-
+  Configure, monitor, and respond to email security threats with Cortex XSIAM
+  Advanced Email Security.
 ---
 
 # Cortex Advanced Email Security

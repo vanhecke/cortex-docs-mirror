@@ -1,3 +1,7 @@
+---
+description: Configure the SMB connector for Cortex XSIAM file and directory management.
+---
+
 # SMB
 
 {% hint style="warning" %}

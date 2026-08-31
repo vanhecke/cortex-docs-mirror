@@ -1,3 +1,7 @@
+---
+description: Manage endpoint asset roles in Cortex XSIAM.
+---
+
 # Manage Asset Roles for Endpoints
 
 {% hint style="info" %}

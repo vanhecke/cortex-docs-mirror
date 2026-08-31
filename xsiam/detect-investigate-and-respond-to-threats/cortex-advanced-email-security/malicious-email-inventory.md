@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM Malicious Email Inventory to investigate and manage detected
+  malicious messages.
+---
+
 # Malicious Email Inventory
 
 {% hint style="info" %}

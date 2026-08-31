@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM to identify externally inferred CVEs affecting
+  internet-facing assets and prioritize remediation.
+---
+
 # Externally inferred CVEs
 
 Cortex XSIAM identifies externally inferred CVEs by comparing the product name and version of an active service, if identifiable, with CVEs for those products in the National Vulnerability Database (NVD). We categorize externally inferred CVE matches as high or medium confidence based on the version information that is available on the service and from NVD.

@@ -1,3 +1,7 @@
+---
+description: Use BeyondTrust Privilege Management Cloud data with Cortex XSIAM.
+---
+
 # BeyondTrust Privilege Management Cloud
 
 You can configure collecting BeyondTrust Privilege Management Cloud logs using a standard data source or connector (onboarded after July 26, 2026):

@@ -1,3 +1,7 @@
+---
+description: Use AppSentinels data with Cortex XSIAM.
+---
+
 # AppSentinels
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM license.
+This connector is available with any active Cortex XSIAM license.
 
 AppSentinels.ai is an application security platform for collecting, analyzing, and managing security events and audit logs to provide comprehensive application protection. It tracks user activities, security events, and administrative operations, enabling organizations to maintain an audit trail for compliance and security monitoring.
 

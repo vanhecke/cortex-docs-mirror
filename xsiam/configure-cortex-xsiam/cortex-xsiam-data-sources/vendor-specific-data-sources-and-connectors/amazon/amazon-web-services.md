@@ -1,3 +1,7 @@
+---
+description: Use Amazon Web Services in Cortex XSIAM.
+---
+
 # Amazon Web Services
 
 You can onboard your Amazon Web Services (AWS) environment using Cloud Service Provider (CSP) or configure collecting Amazon Web Services logs using a connector (onboarded after July 26, 2026):

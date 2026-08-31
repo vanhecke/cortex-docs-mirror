@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM Identity Analytics to identify anomalous user and
+  identity-related behavior.
+---
+
 # Identity Analytics
 
 Cortex XSIAM enables you to investigate suspicious user activity information using Identity Analytics. When enabled, Identity Analytics aggregates and displays user profile information, activity, and issues associated with a user-based Analytics type issue and Analytics BIOC rule.

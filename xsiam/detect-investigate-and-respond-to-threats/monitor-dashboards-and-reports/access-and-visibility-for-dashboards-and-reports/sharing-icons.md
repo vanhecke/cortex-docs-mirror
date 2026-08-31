@@ -1,3 +1,9 @@
+---
+description: >-
+  Understand Cortex XSIAM sharing icons and their dashboard and report
+  visibility meanings.
+---
+
 # Sharing icons
 
 Icons in the **Source** column in the **Dashboard Manager** and **Report Templates** pages indicate access levels, dashboard origins, and user sharing states:

@@ -1,3 +1,7 @@
+---
+description: Collect network Route 53 logs from Amazon S3 in Cortex XSIAM.
+---
+
 # Ingest network Route 53 logs from Amazon S3
 
 You can forward network AWS Route 53 DNS logs to Cortex XSIAM from Amazon Simple Storage Service (Amazon S3).

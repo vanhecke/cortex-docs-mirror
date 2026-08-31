@@ -1,3 +1,7 @@
+---
+description: Configure the SentinelOne connector for Cortex XSIAM.
+---
+
 # SentinelOne
 
 {% hint style="warning" %}

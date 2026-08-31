@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM Global BIOC rules for consistent detections across
+  endpoints.
+---
+
 # Manage Global BIOC Rules
 
 **Manage Global BIOC Rules**

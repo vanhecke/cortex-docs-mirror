@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM ITDR to detect and prevent malicious LDAP queries that target
+  Active Directory.
+---
+
 # Prevent malicious LDAP queries
 
 Active Directory (AD) routinely processes millions of legitimate queries from users and services. Threat actors frequently exploit this open architecture during the reconnaissance phase of an attack to map the network, identify privileged users, and discover attack paths without triggering standard security alarms.

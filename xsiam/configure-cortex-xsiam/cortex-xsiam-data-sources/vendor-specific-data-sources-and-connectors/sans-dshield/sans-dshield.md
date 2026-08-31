@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure the SANS DShield connector in Cortex XSIAM to fetch attack subnet
+  feeds.
+---
+
 # SANS DShield
 
 {% hint style="warning" %}

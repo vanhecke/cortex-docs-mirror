@@ -1,3 +1,7 @@
+---
+description: Collect F5 data with Cortex XSIAM.
+---
+
 # Ingest F5
 
 Integrate F5 with Cortex XSIAM to start scanning its APIs for potential threats and vulnerabilities.

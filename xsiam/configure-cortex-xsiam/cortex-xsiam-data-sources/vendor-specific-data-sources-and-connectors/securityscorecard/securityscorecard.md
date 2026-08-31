@@ -1,3 +1,7 @@
+---
+description: Configure the SecurityScorecard connector in Cortex XSIAM.
+---
+
 # SecurityScorecard
 
 {% hint style="warning" %}

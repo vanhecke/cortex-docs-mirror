@@ -1,3 +1,7 @@
+---
+description: Configure the Thales connector in Cortex XSIAM.
+---
+
 # Thales
 
 {% hint style="warning" %}

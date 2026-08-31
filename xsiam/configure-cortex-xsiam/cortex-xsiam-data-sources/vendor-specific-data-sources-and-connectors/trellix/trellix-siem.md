@@ -1,3 +1,7 @@
+---
+description: Configure Trellix SIEM data collection for Cortex XSIAM.
+---
+
 # Trellix SIEM
 
 {% hint style="warning" %}

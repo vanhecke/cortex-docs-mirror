@@ -4,18 +4,18 @@ description: Use `parse_cef` in Cortex XSIAM Parsing Rules.
 
 # parse\_cef
 
-## Syntax
+### Syntax
 
 ```
 parse_cef()
 ```
 
-## Description
+### Description
 
 The `parse_cef()` function processes a CEF string and returns an object whose structure (key and\
 value pairs) is determined by the input parameters.
 
-## Example: Parsing CEF logs during ingestion
+### Example: Parsing CEF logs during ingestion
 
 The following example demonstrates how to use the `parse_cef` function within a parsing rule to process raw logs and store the resulting object in a specific dataset. This logic is configured in the `INGEST` section to execute as data is written to Cortex XSIAM.
 
@@ -26,14 +26,14 @@ alter raw ="<14>Oct  2 10:06:18 PAN-PROD-APPSVC-EU-W4-FW01 CEF:0|Palo Alto Netwo
 | fields parsed;
 ```
 
-### Explanation of the rule components:
+#### Explanation of the rule components:
 
 * `INGEST` section: Defines the `vendor`, `product`, and the `target_dataset` where the parsed logs will be stored.
 * `alter raw`: In this rule context, this defines the source string to be parsed (simulating the `_raw_log` input).
 * `parse_cef(raw)`: Processes the CEF string into a structured object containing key-value pairs.
 * Semicolon (`;`): Required at the end of the rule to ensure proper compilation.
 
-## Output results
+### Output results
 
 The following JSON represents the structured object stored in the parsed field of the `test_parse_cef_raw` dataset after the rule is applied:<br>
 

@@ -1,3 +1,7 @@
+---
+description: View CI/CD pipeline assets in Cortex XSIAM.
+---
+
 # CI/CD pipeline assets
 
 Cortex XSIAM discovers and inventories every CI/CD pipeline associated with onboarded repositories and connected CI/CD integrations. Each pipeline detected through CI/CD scanning — whether a GitHub Actions workflow, GitLab CI pipeline, Jenkins pipeline, Azure Pipeline, Bitbucket Pipeline, or CircleCI pipeline, appears in the unified asset inventory as the governed bridge between source code and production deploymentsthe governed bridge between source code and production deployments, carrying its identity metadata, CI/CD provider, parent repository, CI/CD instance association, build activity, security health, and downstream deployment lineage.

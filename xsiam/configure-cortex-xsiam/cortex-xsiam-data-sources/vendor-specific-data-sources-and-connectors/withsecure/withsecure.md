@@ -1,3 +1,7 @@
+---
+description: Configure the WithSecure Endpoint Protection connector in Cortex XSIAM.
+---
+
 # WithSecure
 
 {% hint style="warning" %}

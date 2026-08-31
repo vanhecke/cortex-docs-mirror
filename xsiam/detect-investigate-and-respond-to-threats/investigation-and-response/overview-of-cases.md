@@ -1,10 +1,28 @@
 ---
-description: Understand how cases work in Cortex XSIAM.
+description: >-
+  Learn how cases group security issues, support investigations, and track
+  responses through resolution in Cortex XSIAM.
 ---
 
 # Overview of cases
 
 Understand how cases work in Cortex XSIAM.
+
+Cases group related security issues, evidence, assets, and response actions.
+
+Use them to prioritize investigations, assign ownership, and track resolution.
+
+Cortex XSIAM - cases preserve context throughout the incident lifecycle.
+
+### Explore case concepts
+
+* [what-are-cases](overview-of-cases/what-are-cases "mention")
+* [resolving-cases-with-ai](overview-of-cases/resolving-cases-with-ai "mention")
+* [case-lifecycle](overview-of-cases/case-lifecycle "mention")
+* [case-thresholds](overview-of-cases/case-thresholds "mention")
+* [case-scope-and-impact](overview-of-cases/case-scope-and-impact "mention")
+* [case-and-issue-domains](overview-of-cases/case-and-issue-domains "mention")
+* [overview-of-case-teams-and-roles](overview-of-cases/overview-of-case-teams-and-roles "mention")
 
 {% hint style="warning" %}
 ### Prerequisite

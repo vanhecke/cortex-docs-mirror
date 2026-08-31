@@ -1,3 +1,9 @@
+---
+description: >-
+  View and manage Cortex XSIAM Analytics rules that detect anomalous behavior
+  and generate issues.
+---
+
 # View and manage Analytics rules
 
 The Analytics Rules page offers a consolidated view of all Analytics BIOC and XDR Analytics rules, which are crucial to your organization's security posture. Designed to provide complete transparency, this centralized hub enables EDR experts and SOC analysts to gain a comprehensive understanding of every Analytics rule that could generate an issue and take action accordingly. For more information, see [Analytics issues and Analytics BIOCs](analytics-issues-and-analytics-biocs).

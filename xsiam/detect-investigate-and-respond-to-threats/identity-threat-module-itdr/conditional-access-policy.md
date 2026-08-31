@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex XSIAM ITDR Conditional Access Policies to enforce dynamic access
+  control and reduce identity risk.
+---
+
 # Enforce dynamic access control with CAP
 
 {% hint style="success" %}

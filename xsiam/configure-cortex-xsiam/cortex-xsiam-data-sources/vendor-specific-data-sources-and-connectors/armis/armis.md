@@ -1,3 +1,7 @@
+---
+description: Use Armis data with Cortex XSIAM.
+---
+
 # Armis
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM license.
+This connector is available with any active Cortex XSIAM license.
 
 Agentless and passive security platform that sees, identifies, and classifies every device, tracks behavior, identifies threats, and takes action automatically to protect critical information and systems. Collects alerts, devices, and activities from Armis resources.
 

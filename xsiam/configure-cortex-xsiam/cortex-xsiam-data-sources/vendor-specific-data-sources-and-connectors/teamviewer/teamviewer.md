@@ -1,3 +1,7 @@
+---
+description: Configure the TeamViewer connector in Cortex XSIAM.
+---
+
 # TeamViewer
 
 {% hint style="warning" %}

@@ -1,3 +1,9 @@
+---
+description: >-
+  Use the XSIAM Command Center to monitor Cortex XSIAM security operations and
+  key metrics.
+---
+
 # XSIAM Command Center
 
 The **XSIAM Command Center** dashboard provides a dynamic overview of your security operations processes, and supports drilldowns to additional dashboards and dedicated pages. The dashboard gives a visualization of the current status of your tenant and its activity during the selected time frame. Click on any element to drill down to dashboards or pages displaying data that is filtered by your selection.

@@ -1,3 +1,7 @@
+---
+description: Use BloodHound Enterprise data with Cortex XSIAM.
+---
+
 # BloodHound Enterprise
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM license.
+This connector is available with any active Cortex XSIAM license.
 
 BloodHound Enterprise is a cyber security tool for identifying, analyzing, and mitigating attack paths within Active Directory environments. It maps potential attack paths, highlights excessive permissions or misconfigurations, and provides actionable recommendations to reduce vulnerabilities. Use this connector to fetch audit logs from BloodHound Enterprise as events in Cortex XSIAM.
 

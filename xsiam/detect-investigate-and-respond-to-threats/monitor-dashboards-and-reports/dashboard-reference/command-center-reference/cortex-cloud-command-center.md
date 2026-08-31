@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Cortex Cloud Command Center in Cortex XSIAM to monitor cloud security
+  operations and insights.
+---
+
 # Cortex Cloud Command Center
 
 Cortex Cloud Command Center serves as your centralized landing experience designed to provide immediate visibility into your security posture and current environmental status. It presents a high-level summary of your account health, asset distribution, and assets at risk to help you get a snapshot of your compliance and vulnerability posture. Through a unified view of your security domains, you can monitor open threat cases and posture issues sorted by severity and impact. This interface provides direct pathways to your inventory searches, operational dashboards, graphs, and compliance reports while highlighting top-priority issues.

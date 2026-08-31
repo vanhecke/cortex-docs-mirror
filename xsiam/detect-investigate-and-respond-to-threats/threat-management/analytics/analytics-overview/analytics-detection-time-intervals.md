@@ -1,3 +1,9 @@
+---
+description: >-
+  Understand Cortex XSIAM Analytics detection time intervals and their effect on
+  anomaly identification.
+---
+
 # Analytics detection time intervals
 
 The Cortex XSIAM Analytics Engine retrieves logs from the Cortex XSIAM tenant to create a baseline so that it can generate issues when abnormal activity occurs. This analysis is highly sophisticated and performed on more than a thousand dimensions of data. Internally, Cortex XSIAM organizes its analytics activity into algorithms called detectors. Each detector is responsible for generating an issue when suspicious behavior is detected.

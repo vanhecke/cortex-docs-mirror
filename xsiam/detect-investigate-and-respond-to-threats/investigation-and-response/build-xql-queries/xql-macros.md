@@ -1,5 +1,5 @@
 ---
-description: Use XQL macros to reuse query logic and simplify searches in Cortex XSIAM .
+description: Use XQL macros to reuse query logic and simplify searches in Cortex XSIAM.
 ---
 
 # XQL macros

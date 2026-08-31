@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure the Versa Networks connector for Cortex XSIAM, including Versa
+  Director.
+---
+
 # Versa Networks
 
 {% hint style="warning" %}

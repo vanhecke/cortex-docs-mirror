@@ -1,3 +1,9 @@
+---
+description: >-
+  Reference Cortex XSIAM Command Center dashboards for security operations
+  visibility and monitoring.
+---
+
 # Command Center reference
 
 The platform provides a collection of pre-configured Command Centers designed to give you comprehensive visibility across your enterprise's security architecture.

@@ -1,3 +1,7 @@
+---
+description: View and investigate virtual machine image assets in Cortex XSIAM.
+---
+
 # VM images assets
 
 Cortex VM image scanning is an agentless scanning feature that enables you to inspect the risks and vulnerabilities of a cloud workload without installing an agent or affecting the execution of your workload.

@@ -1,3 +1,7 @@
+---
+description: Configure X Automation and Remediation for Cortex XSIAM.
+---
+
 # X Automation and Remediation
 
 {% hint style="warning" %}

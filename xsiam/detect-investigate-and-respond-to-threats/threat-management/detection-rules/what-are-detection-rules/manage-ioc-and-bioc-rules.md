@@ -1,3 +1,7 @@
+---
+description: Manage Cortex XSIAM IOC and BIOC rules to maintain threat detections.
+---
+
 # Manage IOC and BIOC rules
 
 After you create an indicator rule, you can take the following actions:

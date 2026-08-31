@@ -60,7 +60,7 @@ Cortex XSIAM needs permission to assume a role in your account.
     ```
 2.  Create and attach a policy granting permissions.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>The policy must allow <code>s3:PutObject</code> and <code>s3:ListBucket</code>. Verify the resource matches your exact bucket name, formatted as <code>arn:aws:s3:::your-bucket-name/*</code>. The following is an example:</p><pre class="language-programlisting"><code class="lang-programlisting">{
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>The policy must allow <code>s3:PutObject</code> and <code>s3:ListBuckets</code>. Verify the resource matches your exact bucket name, formatted as <code>arn:aws:s3:::your-bucket-name/*</code>. The following is an example:</p><pre class="language-programlisting"><code class="lang-programlisting">{
       "Version": "2012-10-17",
       "Statement": [
         {
@@ -68,7 +68,7 @@ Cortex XSIAM needs permission to assume a role in your account.
           "Effect": "Allow",
           "Action": [
             "s3:PutObject",
-            "s3:ListBucket"
+            "s3:ListBuckets"
           ],
           "Resource": [
             "arn:aws:s3:::&#x3C;your-bucket-name>/*"

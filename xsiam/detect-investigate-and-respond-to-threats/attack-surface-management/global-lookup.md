@@ -1,3 +1,9 @@
+---
+description: >-
+  Query and enrich global internet scan data for IP addresses, domains, and
+  certificate hashes in Cortex XSIAM.
+---
+
 # Global Lookup
 
 Global Lookup allows you to query global internet scan data for certificate hashes, IP addresses, and domains. This internet data is enriched with registration information, geolocation, related certificates, observed services, ASNs, and passive DNS records. Global Lookup is not limited to your own attack surface, offering clear insights into indicator ownership and accelerating the analysis of potentially malicious indicators.

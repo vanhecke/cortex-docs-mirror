@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Skyhigh Security and Secure Web Gateway capabilities for Cortex
+  XSIAM.
+---
+
 # Skyhigh Security
 
 {% hint style="warning" %}

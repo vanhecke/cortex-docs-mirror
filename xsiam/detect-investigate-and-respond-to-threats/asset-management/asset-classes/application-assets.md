@@ -1,3 +1,7 @@
+---
+description: View and investigate application assets in Cortex XSIAM.
+---
+
 # Application assets
 
 The **Business Application** asset inventory provides visibility into all business applications and their interconnected assets generated throughout your software development lifecycle (SDLC), serving as a centralized repository for business application inventory management. Additionally, the interface details the risks detected in your business applications, allowing you to prioritize, manage, and mitigate potential threats based on business criticality.

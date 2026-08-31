@@ -1,3 +1,7 @@
+---
+description: Configure application criteria for asset management in Cortex XSIAM.
+---
+
 # Application criteria
 
 You can define and group assets into applications using two primary methods:

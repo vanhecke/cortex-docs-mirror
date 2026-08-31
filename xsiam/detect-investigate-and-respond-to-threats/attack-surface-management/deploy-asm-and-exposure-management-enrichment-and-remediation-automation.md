@@ -1,6 +1,6 @@
 ---
 description: >-
-  Enable the Cortex Exposure Management playbooks to automate ASM and
+  Enable the Exposure Management playbooks in Cortex XSIAM to automate ASM and
   vulnerability issue enrichment and remediation.
 ---
 

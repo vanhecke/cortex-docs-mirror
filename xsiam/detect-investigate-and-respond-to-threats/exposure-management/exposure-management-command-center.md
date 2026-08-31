@@ -1,7 +1,7 @@
 ---
 description: >-
-  Monitor vulnerability findings, prioritize cases, and track remediation across
-  your environment.
+  Use Cortex XSIAM Exposure Management Command Center to prioritize findings and
+  track remediation.
 ---
 
 # Exposure Management Command Center

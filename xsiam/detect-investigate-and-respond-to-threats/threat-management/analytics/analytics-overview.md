@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how Cortex XSIAM Analytics establishes behavioral baselines, identifies
+  anomalies, and creates issues for investigation.
+---
+
 # Analytics overview
 
 Analytics uses the Analytics engine, sensors, and rules to keep your network safe.

@@ -1,3 +1,7 @@
+---
+description: View and investigate data assets in Cortex XSIAM.
+---
+
 # Data assets
 
 The data assets inventory provides a centralized repository for all data assets within your environment. Powered by theData Security (DSPM) module, it provides continuous visibility into where sensitive data resides, how it is used, and its exposure risk.

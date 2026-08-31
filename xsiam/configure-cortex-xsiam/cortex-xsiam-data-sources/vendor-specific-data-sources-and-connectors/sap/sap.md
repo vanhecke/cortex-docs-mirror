@@ -1,3 +1,7 @@
+---
+description: Configure the SAP connector for Cortex XSIAM, including BTP, C4C, and IAM.
+---
+
 # SAP
 
 {% hint style="warning" %}

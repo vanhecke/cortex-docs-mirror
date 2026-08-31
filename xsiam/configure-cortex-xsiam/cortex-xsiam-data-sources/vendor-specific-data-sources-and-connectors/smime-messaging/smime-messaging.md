@@ -1,3 +1,7 @@
+---
+description: Configure the SMIME Messaging secure email integration for Cortex XSIAM.
+---
+
 # SMIME Messaging
 
 {% hint style="warning" %}

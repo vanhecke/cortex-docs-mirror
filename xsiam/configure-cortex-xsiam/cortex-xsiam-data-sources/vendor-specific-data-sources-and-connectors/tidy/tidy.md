@@ -1,3 +1,7 @@
+---
+description: Configure the Tidy connector in Cortex XSIAM.
+---
+
 # Tidy
 
 {% hint style="warning" %}

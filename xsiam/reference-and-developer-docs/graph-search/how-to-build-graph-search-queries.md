@@ -5,9 +5,7 @@ description: Build Graph Search queries with the query interface in Cortex XSIAM
 # How to build Graph Search queries?
 
 {% hint style="info" %}
-### Notice
-
-This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
+This feature is included with a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license.
 {% endhint %}
 
 {% hint style="warning" %}

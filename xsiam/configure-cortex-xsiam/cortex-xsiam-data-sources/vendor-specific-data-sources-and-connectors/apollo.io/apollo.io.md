@@ -1,3 +1,7 @@
+---
+description: Use Apollo.io data with Cortex XSIAM.
+---
+
 # Apollo.io
 
 The capabilities and sub-capabilities listed for this connector are available with any active Cortex XSIAM or Cortex Cloud Posture Security license.

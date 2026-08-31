@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure the SAP Ariba connector for Cortex XSIAM security posture monitoring
+  and remediation.
+---
+
 # SAP Ariba
 
 The capabilities and sub-capabilities listed for this connector are available with any active Cortex XSIAM or Cortex Cloud Posture Security license.

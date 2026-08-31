@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure the Zoom connector for Cortex XSIAM, including users, meetings,
+  logs, and feeds.
+---
+
 # Zoom
 
 {% hint style="warning" %}

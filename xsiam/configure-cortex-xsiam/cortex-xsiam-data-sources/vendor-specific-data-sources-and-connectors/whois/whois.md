@@ -1,3 +1,7 @@
+---
+description: Configure Whois domain enrichment in Cortex XSIAM.
+---
+
 # Whois
 
 {% hint style="warning" %}

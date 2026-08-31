@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XSIAM Email Remediation Response Rules to automate responses
+  to email threats.
+---
+
 # Email Remediation Response Rules
 
 View all remediation rules that apply to email threats, create new rules and modify them to customize them to your needs.

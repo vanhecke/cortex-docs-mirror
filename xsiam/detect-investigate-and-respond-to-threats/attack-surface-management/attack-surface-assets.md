@@ -1,7 +1,7 @@
 ---
 description: >-
-  The assets discovered in an attack surface management scan are called External
-  Surface assets.
+  Manage Cortex XSIAM attack surface assets and submit CSV requests to add or
+  remove them.
 ---
 
 # Attack surface assets

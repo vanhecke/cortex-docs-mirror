@@ -1,3 +1,7 @@
+---
+description: Ingest SentinelOne DeepVisibility raw EDR events into Cortex XSIAM.
+---
+
 # Ingest raw EDR events from SentinelOne DeepVisibility
 
 Cortex XSIAM enables ingestion of raw EDR event data from SentinelOne DeepVisibility, streamed via Cloud Funnel to Amazon S3. In addition to all standard SIEM capabilities, this integration unlocks some advanced Cortex XSIAM features, enabling comprehensive analysis of data from all sources, enhanced detection and response, and deeper visibility into SentinelOne data.
@@ -196,51 +200,48 @@ For **IAM access key**:
     4.  Click the copy icon next to the Access key ID and Secret access key keys, where you must click Show secret access key to see the secret key, and save a copy of them somewhere safe before closing the window. You will need to provide these keys when you edit the Access policy of the SQS queue, and when setting the AWS Client ID and AWS Client Secret in Cortex XSIAM. If you forget to record the keys and close the window, you will need to generate new keys and repeat this process.
 
         For more information, see [Managing access keys for IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html).
-4.  Update the Access policy of your Amazon SQS queue:
+4. Update the Access policy of your Amazon SQS queue:
+   1. In the [Amazon SQS Console](https://console.aws.amazon.com/sqs/), select the SQS queue that you created when you configured an Amazon Simple Queue Service (SQS).
+   2. Select the Access policy tab, and click Edit to edit the Access policy code in the editor window, to enable the IAM user to perform operations on the Amazon SQS with the permissions `SQS:ChangeMessageVisibility`, `SQS:DeleteMessage`, and `SQS:ReceiveMessage`. Use this sample code as a guide for defining the `“Sid”: “__receiver_statement”` with the following definitions.
+      * `“aws:SourceArn”`: Specify the ARN of the AWS IAM user. You can retrieve the User ARN from the Security credentials tab, which you accessed when you configured access keys for the AWS API user.
+      *   `“Resource”`: Keep the automatically generated ARN for the SQS queue that is set in the code, which uses the format `“arn:sns:Region:account-id:topic-name”`.
 
-    1. In the [Amazon SQS Console](https://console.aws.amazon.com/sqs/), select the SQS queue that you created when you configured an Amazon Simple Queue Service (SQS).
-    2. Select the Access policy tab, and click Edit to edit the Access policy code in the editor window, to enable the IAM user to perform operations on the Amazon SQS with the permissions `SQS:ChangeMessageVisibility`, `SQS:DeleteMessage`, and `SQS:ReceiveMessage`. Use this sample code as a guide for defining the `“Sid”: “__receiver_statement”` with the following definitions.
-       * `“aws:SourceArn”`: Specify the ARN of the AWS IAM user. You can retrieve the User ARN from the Security credentials tab, which you accessed when you configured access keys for the AWS API user.
-       *   `“Resource”`: Keep the automatically generated ARN for the SQS queue that is set in the code, which uses the format `“arn:sns:Region:account-id:topic-name”`.
+          For more information on granting permissions to publish messages to an SQS queue, see [Granting permissions to publish event notification messages to a destination](https://docs.aws.amazon.com/AmazonS3/latest/userguide/grant-destinations-permissions-to-s3.html).
 
-           For more information on granting permissions to publish messages to an SQS queue, see [Granting permissions to publish event notification messages to a destination](https://docs.aws.amazon.com/AmazonS3/latest/userguide/grant-destinations-permissions-to-s3.html).
-
-           ```
-           {
-             "Version": "2012-10-17",
-             "Statement": [
-               {
-                 "Effect": "Allow",
-                 "Principal": {
-                   "Service": "s3.amazonaws.com"
-                 },
-                 "Action": "SQS:SendMessage",
-                 "Resource": "[Leave automatically generated ARN for the SQS queue defined by AWS]",
-                 "Condition": {
-                   "ArnLike": {
-                     "aws:SourceArn": "[ARN of your Amazon S3 bucket]"
-                   }
-                 }
-               },
+          ```
+          {
+            "Version": "2012-10-17",
+            "Statement": [
               {
-                 "Sid": "__receiver_statement",
-                 "Effect": "Allow",
-                 "Principal": {
-                   "AWS": "[Add the ARN for the AWS IAM user]"
-                 },
-                 "Action": [
-                   "SQS:ChangeMessageVisibility",
-                   "SQS:DeleteMessage",
-                   "SQS:ReceiveMessage"
-                 ],
-                 "Resource": "[Leave automatically generated ARN for the SQS queue defined by AWS]"
-               }
-             ]
-           }
-           ```
-    3. Click Save.
-
-
+                "Effect": "Allow",
+                "Principal": {
+                  "Service": "s3.amazonaws.com"
+                },
+                "Action": "SQS:SendMessage",
+                "Resource": "[Leave automatically generated ARN for the SQS queue defined by AWS]",
+                "Condition": {
+                  "ArnLike": {
+                    "aws:SourceArn": "[ARN of your Amazon S3 bucket]"
+                  }
+                }
+              },
+             {
+                "Sid": "__receiver_statement",
+                "Effect": "Allow",
+                "Principal": {
+                  "AWS": "[Add the ARN for the AWS IAM user]"
+                },
+                "Action": [
+                  "SQS:ChangeMessageVisibility",
+                  "SQS:DeleteMessage",
+                  "SQS:ReceiveMessage"
+                ],
+                "Resource": "[Leave automatically generated ARN for the SQS queue defined by AWS]"
+              }
+            ]
+          }
+          ```
+   3. Click Save.
 
 ### **Task 2: Configure SentinelOne DeepVisibility**
 

@@ -1,3 +1,9 @@
+---
+description: >-
+  Explore the Cortex XSIAM Widget Library to find visualizations for dashboards
+  and security monitoring.
+---
+
 # Widget Library
 
 The **Widget Library** is a centralized, shared repository for managing dashboard and report components. You can access the **Widget Library** as part of the dashboard and report builders, or from **Dashboards & Reports > Dashboard Manager > Widget Library.**

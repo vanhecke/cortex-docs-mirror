@@ -1,3 +1,7 @@
+---
+description: View infrastructure-as-code resource assets in Cortex XSIAM.
+---
+
 # IaC resources assets
 
 Cortex XSIAM discovers and inventories every Infrastructure-as-code (IaC) resource defined within your onboarded repositories. Each discovered resource appears in the unified asset inventory as a governed entity, allowing security teams to manage the security posture of cloud infrastructure before it is deployed to production.

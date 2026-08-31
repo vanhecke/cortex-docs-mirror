@@ -1,3 +1,7 @@
+---
+description: Query asset inventory data with XQL in Cortex XSIAM.
+---
+
 # Query the asset inventory via XQL
 
 While the asset inventory provides extensive filtering capabilities, you may need to perform complex, programmatic searches across your environment. The entire asset inventory is available to be queried via XQL using the `asset_inventory` dataset.

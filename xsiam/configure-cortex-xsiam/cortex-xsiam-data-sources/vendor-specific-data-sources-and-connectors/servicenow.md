@@ -1,3 +1,11 @@
+---
+description: Configure the ServiceNow data sources for Cortex XSIAM.
+---
+
 # ServiceNow
 
-ServiceNow data sources.
+Here are the articles in this section:
+
+* [servicenow-cdmb](servicenow/servicenow-cdmb "mention")
+* [servicenow-automation-and-collection](servicenow/servicenow-automation-and-collection "mention")
+* [servicenow](servicenow/servicenow "mention")

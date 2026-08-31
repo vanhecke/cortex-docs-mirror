@@ -1,3 +1,7 @@
+---
+description: Configure the Shodan connector in Cortex XSIAM.
+---
+
 # Shodan
 
 {% hint style="warning" %}

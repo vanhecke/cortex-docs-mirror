@@ -1,3 +1,7 @@
+---
+description: Review Cortex XSIAM IOC rule fields, conditions, and detection behavior.
+---
+
 # IOC rule details
 
 In the **Threat Management** → **Detection Rules** → **IOC** page, you can view all configured or uploaded indicators of compromise (IOCs). To view the number of IOC rules, filter by one or more fields in the IOC rules table. You can also manage or clone existing rules.

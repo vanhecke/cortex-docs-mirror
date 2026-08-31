@@ -1,3 +1,7 @@
+---
+description: View and investigate AI assets in Cortex XSIAM.
+---
+
 # AI assets
 
 Cortex XSIAM provides a comprehensive overview of the AI assets within an organization, designed to ensure AI security by offering tools to review and prioritize AI risks effectively.

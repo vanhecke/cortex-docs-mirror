@@ -1,3 +1,9 @@
+---
+description: >-
+  Create Cortex XSIAM BIOC rules to detect suspicious behavior and generate
+  issues.
+---
+
 # Create a BIOC rule
 
 When you identify a threat and its characteristics, you can configure rules for behavioral indicators of compromise (BIOCs) for this threat.

@@ -1,3 +1,7 @@
+---
+description: Configure Trellix Sandbox data collection for Cortex XSIAM.
+---
+
 # Trellix Sandbox
 
 {% hint style="warning" %}

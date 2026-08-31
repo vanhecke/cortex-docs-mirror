@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XSIAM global dashboard filters to refine data across multiple
+  widgets.
+---
+
 # Configure global filters
 
 Define global filters on your dashboards to enable users to alter the scope of the data by selecting from predefined or dynamic values. You can define filters using free text, single-select, or multi-select input values. Once configured, these filters are accessible to anyone viewing the dashboard.

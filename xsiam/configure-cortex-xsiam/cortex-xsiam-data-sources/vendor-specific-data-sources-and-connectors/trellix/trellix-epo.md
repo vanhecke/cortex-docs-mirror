@@ -1,3 +1,7 @@
+---
+description: Configure Trellix ePO data collection for Cortex XSIAM.
+---
+
 # Trellix ePO
 
 {% hint style="warning" %}

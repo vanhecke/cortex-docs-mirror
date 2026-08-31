@@ -1,3 +1,7 @@
+---
+description: Onboard Snowflake as a data source in Cortex XSIAM.
+---
+
 # How to onboard Snowflake
 
 {% hint style="info" %}

@@ -1,3 +1,7 @@
+---
+description: Use API data in Cortex XSIAM.
+---
+
 # API Security
 
 You can configure retrieving and collecting API data for further analysis by Cortex's comprehensive API Security capabilities using the following standard data sources:

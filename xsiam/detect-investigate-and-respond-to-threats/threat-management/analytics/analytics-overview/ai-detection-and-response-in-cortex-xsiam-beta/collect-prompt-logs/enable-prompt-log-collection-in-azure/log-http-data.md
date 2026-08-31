@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Cortex XSIAM to collect HTTP data for AI Detection & Response
+  monitoring and investigation.
+---
+
 # Log HTTP data
 
 Configure logging request and response payloads in Azure API Management.

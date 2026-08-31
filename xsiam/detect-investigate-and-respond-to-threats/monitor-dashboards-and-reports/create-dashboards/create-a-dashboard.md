@@ -1,3 +1,9 @@
+---
+description: >-
+  Create a Cortex XSIAM dashboard with widgets, filters, and layouts for focused
+  monitoring.
+---
+
 # Create a dashboard
 
 Use the following high-level workflow to create and distribute a dashboard, guiding you from initial setup through layout design and distribution.

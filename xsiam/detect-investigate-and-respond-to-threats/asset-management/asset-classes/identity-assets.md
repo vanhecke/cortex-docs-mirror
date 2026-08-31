@@ -1,3 +1,7 @@
+---
+description: View and investigate identity assets in Cortex XSIAM.
+---
+
 # Identity assets
 
 Powered by the Identity Security module, the Identity Asset Inventory helps you discover your entire cloud identity estate. It analyzes your environment to determine exactly what actions identities can take and which resources they can access, providing the context needed to trigger security detection rules.

@@ -1,3 +1,7 @@
+---
+description: Configure and manage honey users in Cortex XSIAM.
+---
+
 # Honey user
 
 {% hint style="warning" %}

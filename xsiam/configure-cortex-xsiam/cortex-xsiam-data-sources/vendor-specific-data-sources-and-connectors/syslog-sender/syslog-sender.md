@@ -1,3 +1,7 @@
+---
+description: Configure the Syslog Sender connector in Cortex XSIAM.
+---
+
 # Syslog Sender
 
 {% hint style="warning" %}

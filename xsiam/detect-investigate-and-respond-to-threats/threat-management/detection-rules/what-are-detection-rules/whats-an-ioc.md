@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how Cortex XSIAM IOC rules detect known malicious or suspicious
+  artifacts.
+---
+
 # What's an IOC?
 
 Indicators of compromise (IOCs) enable Cortex XSIAM to generate issues about known malicious objects on endpoints across the organization. You can load collections of IOCs from threat-intelligence sources into Cortex XSIAM or define them individually.

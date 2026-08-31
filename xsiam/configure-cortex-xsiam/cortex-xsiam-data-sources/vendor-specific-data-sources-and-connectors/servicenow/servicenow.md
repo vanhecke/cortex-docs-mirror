@@ -1,3 +1,7 @@
+---
+description: Configure the ServiceNow connector for Cortex XSIAM.
+---
+
 # ServiceNow
 
 Secure configurations, monitor identity risks, and manage agent security across your ServiceNow environment.

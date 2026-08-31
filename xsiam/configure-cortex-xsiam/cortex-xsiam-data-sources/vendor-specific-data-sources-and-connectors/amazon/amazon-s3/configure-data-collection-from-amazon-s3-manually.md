@@ -1,3 +1,7 @@
+---
+description: Collect data from Amazon S3 manually in Cortex XSIAM.
+---
+
 # Configure data collection from Amazon S3 manually
 
 There are various reasons why you may need to configure data collection from Amazon S3 manually, as opposed to using the CloudFormation Script provided in Cortex XSIAM. For example, if your organization does not use CloudFormation scripts, you will need to follow the instructions below, which explain at a high-level how to perform these steps manually with a link to the relevant topic in the Amazon S3 documentation with the detailed steps to follow.

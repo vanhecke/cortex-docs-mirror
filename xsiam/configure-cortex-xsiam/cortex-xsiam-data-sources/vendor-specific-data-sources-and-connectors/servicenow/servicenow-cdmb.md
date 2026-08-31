@@ -1,6 +1,10 @@
+---
+description: Configure ServiceNow CMDB data collection for Cortex XSIAM.
+---
+
 # ServiceNow CDMB
 
-You can configure collecting data from the ServiceNow CMDB database using a Standard Collector  or connector (onboarded after July 26, 2026):
+You can configure collecting data from the ServiceNow CMDB database using a Standard Collector or connector (onboarded after July 26, 2026):
 
 | Collection Method                                 | Description                                                                                           |
 | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |

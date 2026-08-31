@@ -1,3 +1,9 @@
+---
+description: >-
+  Duplicate Cortex XSIAM dashboards and reports to reuse existing visualizations
+  and templates.
+---
+
 # Duplicate dashboards and reports
 
 When you duplicate a dashboard or report, you'll be asked whether you want to duplicate any private **Restricted** widgets you don't own:

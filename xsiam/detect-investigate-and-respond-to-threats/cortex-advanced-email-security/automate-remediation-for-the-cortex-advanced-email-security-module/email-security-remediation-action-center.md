@@ -1,3 +1,9 @@
+---
+description: >-
+  Use the Cortex XSIAM Email Security Remediation Action Center to track and
+  manage response actions.
+---
+
 # Email Security Remediation Action Center
 
 The **Email Remediation Action Center** in the Advanced Email Security module presents an overall view of all the automatic actions taken against email threats. Use the Remediation Action Center to audit the remediation activities and to measure the effectiveness of your policy.

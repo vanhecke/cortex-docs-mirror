@@ -1,3 +1,9 @@
+---
+description: >-
+  Explore Cortex XSIAM dashboard types and choose the right view for your
+  security operations.
+---
+
 # Dashboard types
 
 The platform provides the following categories of dashboards to suit different operational needs. You can access all dashboards from the main dashboard menu.

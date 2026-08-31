@@ -1,3 +1,9 @@
+---
+description: >-
+  Create Cortex XSIAM correlation rules using XQL to detect patterns across data
+  sources.
+---
+
 # Create a correlation rule
 
 {% hint style="info" %}

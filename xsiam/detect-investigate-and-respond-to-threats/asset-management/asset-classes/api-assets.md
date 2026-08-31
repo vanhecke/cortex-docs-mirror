@@ -1,3 +1,7 @@
+---
+description: View and investigate API assets in Cortex XSIAM.
+---
+
 # API assets
 
 The API asset inventory provides an overview of API assets across cloud providers and data sources, enabling you to analyze, assess, and implement security measures to safeguard against risks.

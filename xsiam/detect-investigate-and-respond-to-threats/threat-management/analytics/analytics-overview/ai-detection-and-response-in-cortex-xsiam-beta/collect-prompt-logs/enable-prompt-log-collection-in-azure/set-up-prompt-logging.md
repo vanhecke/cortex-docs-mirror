@@ -1,3 +1,9 @@
+---
+description: >-
+  Set up prompt logging in Cortex XSIAM to collect AI interaction data for
+  security monitoring.
+---
+
 # Set up prompt logging
 
 1. In the Azure portal, [create a new Azure API Management instance](https://learn.microsoft.com/en-us/azure/api-management/get-started-create-service-instance).

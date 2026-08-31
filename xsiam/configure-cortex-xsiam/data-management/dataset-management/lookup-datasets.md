@@ -31,7 +31,7 @@ Lookup tables support low-frequency changes of up to 1200 modifications per day.
 
 You can import or create a lookup dataset, and then reference the values for a certain key, run queries, and take action. Lookup datasets are created by any of the following methods:
 
-* Manual upload from a CSV, TSV, or JSON file to Cortex XSIAM from the **Dataset Management** page. For more information, see [Import a lookup dataset](import-a-lookup-dataset).
+* Manual upload from a CSV, TSV, or JSON file to Cortex XSIAM from the **Dataset Management** page. For more information, see [Import a lookup dataset](lookup-datasets/import-a-lookup-dataset).
 * Automatic upload by the Files and Folders Collector.
 *   Query results are saved to a lookup dataset. If saved using the **`target`** stage, the **Type** can be either **User** or **Lookup**. For more information, see the `target` stage.
 

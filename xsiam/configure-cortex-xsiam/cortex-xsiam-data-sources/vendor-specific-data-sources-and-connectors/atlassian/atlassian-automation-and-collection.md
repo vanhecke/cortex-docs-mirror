@@ -1,3 +1,7 @@
+---
+description: Use Atlassian Automation and Collection data with Cortex XSIAM.
+---
+
 # Atlassian Automation and Collection
 
 {% hint style="warning" %}

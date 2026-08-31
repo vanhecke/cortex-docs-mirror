@@ -1,7 +1,5 @@
 ---
-description: >-
-  Learn about the core concepts, features, and lifecycle of assets within the
-  Asset Inventory.
+description: Learn asset inventory concepts, features, and lifecycles in Cortex XSIAM.
 ---
 
 # Asset inventory overview

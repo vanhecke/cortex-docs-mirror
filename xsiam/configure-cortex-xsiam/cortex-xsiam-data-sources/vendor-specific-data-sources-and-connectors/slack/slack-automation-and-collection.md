@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure Slack automation, notifications, and audit log collection for Cortex
+  XSIAM.
+---
+
 # Slack Automation and Collection
 
 {% hint style="warning" %}

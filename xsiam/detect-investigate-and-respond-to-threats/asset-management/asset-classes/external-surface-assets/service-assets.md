@@ -1,3 +1,7 @@
+---
+description: View and investigate service assets in Cortex XSIAM.
+---
+
 # Service assets
 
 A service can be any internet-facing device or software that communicates on a domain:port or IP:port pair that responds to scanners on an application-level protocol over the public internet.

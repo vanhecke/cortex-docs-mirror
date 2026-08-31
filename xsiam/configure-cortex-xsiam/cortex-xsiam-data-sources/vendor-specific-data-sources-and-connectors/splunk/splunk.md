@@ -1,3 +1,7 @@
+---
+description: Configure the Splunk connector in Cortex XSIAM.
+---
+
 # Splunk
 
 {% hint style="info" %}

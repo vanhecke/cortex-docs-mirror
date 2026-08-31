@@ -1,3 +1,7 @@
+---
+description: Configure the Tanium connector in Cortex XSIAM.
+---
+
 # Tanium
 
 {% hint style="warning" %}

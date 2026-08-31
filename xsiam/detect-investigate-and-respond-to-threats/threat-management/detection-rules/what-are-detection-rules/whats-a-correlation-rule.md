@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how Cortex XSIAM correlation rules detect relationships across events
+  and data sources.
+---
+
 # What's a correlation rule?
 
 Correlation rules help you analyze correlations of multiple events from multiple sources by using the Cortex Query Language (XQL) based engine for creating scheduled rules. Issues are then generated based on these correlation rules with a defined time frame and set schedule, including every X minutes, once a day, once a week, or a custom time.

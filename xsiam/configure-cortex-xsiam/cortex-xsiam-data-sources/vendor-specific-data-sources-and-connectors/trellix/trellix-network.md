@@ -1,3 +1,7 @@
+---
+description: Configure Trellix Network data collection for Cortex XSIAM.
+---
+
 # Trellix Network
 
 {% hint style="warning" %}

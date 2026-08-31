@@ -1,3 +1,9 @@
+---
+description: >-
+  Explore Cortex XSIAM Analytics sensors that collect telemetry for behavioral
+  baselines and anomaly detection.
+---
+
 # Analytics sensors
 
 To detect anomalous behavior, Cortex XSIAM can analyze logs and data from a variety of sensors.

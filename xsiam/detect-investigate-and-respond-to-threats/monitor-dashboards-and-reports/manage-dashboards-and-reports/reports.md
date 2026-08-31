@@ -1,3 +1,9 @@
+---
+description: >-
+  Manage Cortex XSIAM reports and report templates for security operations and
+  stakeholder communication.
+---
+
 # Reports
 
 The **Reports** page is your central hub for organizing and managing your reports. It is split into two tabs, allowing you to quickly browse your report history or configure report templates:

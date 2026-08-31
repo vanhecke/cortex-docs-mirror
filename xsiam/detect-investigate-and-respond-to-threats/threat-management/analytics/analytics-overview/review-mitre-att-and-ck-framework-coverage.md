@@ -1,3 +1,9 @@
+---
+description: >-
+  Review Cortex XSIAM Analytics coverage across the MITRE ATT&CK framework,
+  tactics, and techniques.
+---
+
 # Review MITRE ATT\&CK framework coverage
 
 You can see a comprehensive overview of the Cortex XSIAM content and capabilities in context with the MITRE ATT\&CK framework on the MITRE ATT\&CK Framework Coverage dashboard. Access the dashboard from the drop-down menu in the dashboard header.

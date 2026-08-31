@@ -15,7 +15,7 @@ Configure Cortex XSIAM to scan your GitLab Container Registry without using admi
 Follow the wizard to connect the GitLab Container Registry connector in Cortex XSIAM.
 
 1. Navigate to **Settings → Data Sources & Integrations**.
-2. On the **Add Data Sources** **or Integrations** page, click **+ Add New**, search for **GitLab Container Registry**, then hover over it and click **Add.**
+2. On the **Data Sources** **& Integrations** page, click **+ Add New**, search for **GitLab Container Registry**, then hover over it and click **Add.**
 3. The **Instance Name** is automatically populated. You can change it to a more meaningful name.
 4. Choose the **Scan Mode**, and then follow the steps provided for that mode to configure the connection.
 

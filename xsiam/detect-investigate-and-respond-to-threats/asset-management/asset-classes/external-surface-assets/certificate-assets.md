@@ -1,3 +1,7 @@
+---
+description: View and investigate certificate assets in Cortex XSIAM.
+---
+
 # Certificate assets
 
 Certificates (also known as digital or public key certificates) are used when establishing encrypted communication channels to identify and authenticate a trusted party. Certificates are typically used for SSL/TLS, HTTPS, FTPS, SSH, and VPN connections. The most common use of certificates is for HTTPS-based websites, which enable a web browser to validate that an HTTPS web server is an authentic website.

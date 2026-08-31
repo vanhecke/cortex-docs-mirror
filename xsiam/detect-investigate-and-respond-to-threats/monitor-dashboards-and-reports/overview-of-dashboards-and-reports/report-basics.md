@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn Cortex XSIAM report concepts, including report templates, scheduling,
+  and data presentation.
+---
+
 # Report basics
 
 Reports provide a static snapshot of system metrics and security analytics captured at a specific point in time. They format complex data into downloadable, structured files for distribution, operational auditing, and compliance.

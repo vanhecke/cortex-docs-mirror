@@ -1,3 +1,7 @@
+---
+description: Collect Apigee Proxy data with Cortex XSIAM.
+---
+
 # Ingest Apigee Proxy
 
 Integrate Apigee Proxy with Cortex XSIAM to begin scanning the APIs for potential threats and vulnerabilities.

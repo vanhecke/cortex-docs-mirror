@@ -1,3 +1,7 @@
+---
+description: Configure Snowflake automation and collection in Cortex XSIAM.
+---
+
 # Snowflake Automation and Collection
 
 {% hint style="warning" %}
