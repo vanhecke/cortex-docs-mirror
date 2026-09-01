@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-31",
+  "source": "content",
+  "sha": "a44cf7c7d9125d9f6335e42d13171f62f9e01296",
+  "headline": "Google SecOps 6.0.0 rewrites the Chronicle pack; a SaaS Claude connector splits into its own pack",
+  "summary_md": "- **GoogleChronicleBackstory** added 27,773 lines against 12 removed for \"Google SecOps Release 6.0.0\" — nine tenths of the day's churn on its own.\n- **AnthropicClaudeStandardConnector** arrives as a new 306-line pack while **AnthropicClaude** drops 1,821 lines, the two halves of a SaaS connector split.\n- **ApiModules** grew by 2,307 lines, the day's second-largest change.\n- Integration fixes landed in **Mimecast**, **Doppel**, **Reco** and **Akamai_WAF**; **SpyCloudEnterpriseProtection** gained a new data type.\n- 17 packs moved in total, from 12 upstream commits.",
+  "highlights": [
+    {
+      "title": "Google SecOps Release 6.0.0",
+      "detail": "GoogleChronicleBackstory gained 27,773 lines and lost only 12, so this is a wholesale addition rather than a rewrite of what was there.",
+      "paths": ["Packs/GoogleChronicleBackstory"]
+    },
+    {
+      "title": "The Claude integration splits into a separate SaaS connector pack",
+      "detail": "AnthropicClaudeStandardConnector is new at 306 lines while AnthropicClaude sheds 1,821 against 70 added, under the subject \"saas claude connector\".",
+      "paths": ["Packs/AnthropicClaudeStandardConnector", "Packs/AnthropicClaude"]
+    },
+    {
+      "title": "Mimecast v2 migrates a command",
+      "detail": "Mimecast churned hardest of any pack after the two above — 977 lines added against 730 removed — for a single command migration.",
+      "paths": ["Packs/Mimecast"]
+    },
+    {
+      "title": "Doppel 1.1.0 fixes mirroring in both directions",
+      "detail": "The pack added 1,765 lines and removed 265 to fix incoming and outgoing mirroring and add per-product entity content.",
+      "paths": ["Packs/Doppel"]
+    },
+    {
+      "title": "SpyCloud Enterprise Protection adds an Access Data type",
+      "detail": "578 lines added against 12 removed — a new data type rather than a fix to an existing one.",
+      "paths": ["Packs/SpyCloudEnterpriseProtection"]
+    },
+    {
+      "title": "Reco stops fetch-incidents skipping alerts during bursts",
+      "detail": "A 118-line fix to alert loss under load, which silently drops incidents rather than failing visibly.",
+      "paths": ["Packs/Reco"]
+    }
+  ],
+  "items": {
+    "Packs/GoogleChronicleBackstory": "Google SecOps Release 6.0.0: 27,773 lines added against 12 removed.",
+    "Packs/ApiModules": "Grew by 2,307 lines against 7 removed, the day's second-largest pack change.",
+    "Packs/AnthropicClaude": "Lost 1,821 lines and gained 70 as the SaaS connector moved out into its own pack.",
+    "Packs/AnthropicClaudeStandardConnector": "New pack, 306 lines, added under the subject \"saas claude connector\".",
+    "Packs/Doppel": "Version 1.1.0 fixes incoming and outgoing mirroring and adds per-product entity content (+1,765/-265).",
+    "Packs/Mimecast": "Mimecast v2 migrates a command; 977 lines added, 730 removed.",
+    "Packs/SpyCloudEnterpriseProtection": "Adds an Access Data type (+578/-12).",
+    "Packs/CheckPointHEC": "Gained 316 lines against 38 removed; the day's one unclaimed subject changes fetch to key restore requests off the last fetched request.",
+    "Packs/Akamai_WAF": "akamai-get-client-list now handles paginated responses (+128/-11).",
+    "Packs/Reco": "Fixes fetch-incidents skipping alerts during bursts (+118/-14).",
+    "Packs/Core": "xdr-retrieve-file gains different separator options (+23/-1).",
+    "Packs/CortexXDR": "Twelve lines added for the Cortex update-issue action migration.",
+    "Packs/Base": "Gained 35 lines against 6 removed."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
