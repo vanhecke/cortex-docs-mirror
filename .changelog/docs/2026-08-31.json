@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-31",
+  "source": "docs",
+  "sha": "d6f15f2f2b295c94a9081b928e2598dca373bfc2",
+  "headline": "Amazon S3 ingestion adds an sqs:GetQueueAttributes prerequisite; 195 licence notes reworded to \"connector\"",
+  "summary_md": "- **Amazon S3 collection gained a prerequisite**: `GetQueueAttributes` was added to the minimum SQS permissions on all six S3 pages, in the prose and in the sample IAM and queue access policies.\n- **195 licence notes changed \"This sub-capability is available…\" to \"This connector is available…\"** — a noun swap only; not one entitlement list gained or lost a product.\n- **347 pages gained `description` front matter**, and 59 vendor landing pages that were bare headings now list the articles beneath them.\n- Everything sits in the Cortex XSIAM data sources and connectors section; 420 files changed, all modifications — nothing added, deleted or renamed.",
+  "highlights": [
+    {
+      "title": "Amazon S3 ingestion now documents sqs:GetQueueAttributes as a minimum permission",
+      "detail": "The permission was added to the prerequisite list, to the IAM assumed-role policy, and to the SQS access-policy sample, so a tightly-scoped existing policy no longer matches what the docs require.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/amazon/amazon-s3/configure-data-collection-from-amazon-s3-manually",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/amazon/amazon-s3/create-an-assumed-role",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/amazon/amazon-s3/ingest-audit-logs-from-aws-cloudtrail"
+      ]
+    },
+    {
+      "title": "\"Sub-capability\" became \"connector\" in every licensing note",
+      "detail": "195 pages swapped the noun; the licence lists behind it are identical before and after, so no data source changed which products entitle it.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/bluecat-address-manager/bluecat-address-manager"
+      ]
+    },
+    {
+      "title": "59 vendor landing pages now list their child articles",
+      "detail": "Pages that held only a heading gained a \"Here are the articles in this section\" index — Microsoft alone picked up 21 links, making its sub-pages reachable without the sidebar.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft"
+      ]
+    },
+    {
+      "title": "347 pages gained YAML description front matter",
+      "detail": "A one-line description block was prepended across the section, which is metadata rather than a change to any documented procedure.",
+      "paths": []
+    },
+    {
+      "title": "The Cisco ASA page title lost a stray backtick",
+      "detail": "\"Cisco ASA firewalls and AnyConnect`\" became \"Cisco ASA firewalls and AnyConnect\", and the XSIAM navigation manifest was updated to match.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/cisco/cisco-asa-firewalls-and-anyconnect"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/amazon/amazon-s3/configure-data-collection-from-amazon-s3-manually": "Adds GetQueueAttributes to the minimum SQS permissions for manual S3 collection.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/amazon/amazon-s3/create-an-assumed-role": "The assumed-role IAM policy sample now grants sqs:GetQueueAttributes alongside DeleteMessage and ChangeMessageVisibility.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/amazon/amazon-s3/ingest-audit-logs-from-aws-cloudtrail": "CloudTrail ingestion adds GetQueueAttributes to both the prerequisites and the SQS access-policy __receiver_statement sample.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/amazon/amazon-s3/ingest-generic-logs-from-amazon-s3": "Generic S3 log ingestion adds GetQueueAttributes to the prerequisites and the queue access-policy sample.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/amazon/amazon-s3/ingest-network-flow-logs-from-amazon-s3": "VPC flow log ingestion adds GetQueueAttributes to the minimum SQS permissions.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/amazon/amazon-s3/ingest-network-route-53-logs-from-amazon-s3": "Route 53 log ingestion adds GetQueueAttributes to the minimum SQS permissions.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/cisco/cisco-asa-firewalls-and-anyconnect": "Page title corrected from \"Cisco ASA firewalls and AnyConnect`\"; the XSIAM navigation manifest changed with it.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft": "The Microsoft landing page, previously a bare heading, now indexes all 21 Microsoft and Azure data source pages.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/opentext": "OpenText landing page gained an index of its child articles.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/pagerduty": "PagerDuty landing page gained an index of its child articles.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/salesforce": "Gained front matter; the collection-method table was reflowed with no change to its content."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": true
+}
