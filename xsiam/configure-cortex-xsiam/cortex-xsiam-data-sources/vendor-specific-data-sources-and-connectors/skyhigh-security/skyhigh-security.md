@@ -1,7 +1,5 @@
 ---
-description: >-
-  Configure Skyhigh Security and Secure Web Gateway capabilities for Cortex
-  XSIAM.
+description: Use Skyhigh Security and Secure Web Gateway data in Cortex XSIAM.
 ---
 
 # Skyhigh Security
@@ -12,7 +10,7 @@ description: >-
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Skyhigh Security is a cloud-based, multi-tenant service that enables Cloud Discovery and Risk Monitoring, Cloud Usage Analytics, and Cloud Access and Control. Skyhigh Secure Web Gateway (SWG) is a cloud-native web security solution that provides layered protection from threats and data loss with integrated RBI, CASB, and DLP capabilities, and lets you manage its block and allow lists.
 

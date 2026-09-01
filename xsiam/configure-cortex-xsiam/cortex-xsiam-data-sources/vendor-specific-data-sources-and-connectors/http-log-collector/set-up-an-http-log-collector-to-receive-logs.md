@@ -1,3 +1,7 @@
+---
+description: Collect HTTP log data in Cortex XSIAM.
+---
+
 # Set up an HTTP log collector to receive logs
 
 In addition to logs from supported vendors, you can set up a custom HTTP log collector to receive logs in Raw, JSON, CEF, or LEEF format. The HTTP Log Collector can ingest up to 80,000 events per sec.

@@ -1,5 +1,5 @@
 ---
-description: Configure the TeamViewer connector in Cortex XSIAM.
+description: Use TeamViewer data in Cortex XSIAM.
 ---
 
 # TeamViewer

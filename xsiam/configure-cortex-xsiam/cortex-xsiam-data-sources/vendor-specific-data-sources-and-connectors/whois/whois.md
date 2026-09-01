@@ -1,5 +1,5 @@
 ---
-description: Configure Whois domain enrichment in Cortex XSIAM.
+description: Use Whois domain enrichment data in Cortex XSIAM.
 ---
 
 # Whois
@@ -10,7 +10,7 @@ description: Configure Whois domain enrichment in Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Whois is an open source tool and protocol for querying details about a domain, including the registrant that owns the domain name, the registrar who registered it, the creation date, and other domain metadata. Use the Whois integration to get enriched data for domains and IPs.
 

@@ -1,3 +1,7 @@
+---
+description: Use Azure Network Watcher data with Cortex XSIAM.
+---
+
 # Azure Network Watcher
 
 You can configure collecting Azure Network Watcher logs using a standard data source:

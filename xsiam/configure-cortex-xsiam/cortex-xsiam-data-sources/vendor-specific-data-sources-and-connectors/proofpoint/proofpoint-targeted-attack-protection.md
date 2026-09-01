@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure the Proofpoint Targeted Attack Protection connector for Cortex
+  XSIAM.
+---
+
 # Proofpoint Targeted Attack Protection
 
 You can configure collecting Proofpoint Targeted Attack Protection (TAP) logs using a Standard Collector, content pack integration (onboarded prior to July 26, 2026), or connector (onboarded after July 26, 2026):

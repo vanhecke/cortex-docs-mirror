@@ -1,5 +1,5 @@
 ---
-description: Configure the Sophos connector in Cortex XSIAM.
+description: Use Sophos data in Cortex XSIAM.
 ---
 
 # Sophos
@@ -10,7 +10,7 @@ description: Configure the Sophos connector in Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Sophos Central is a cloud-based management platform for Sophos' cybersecurity solutions, providing centralized control and real-time visibility over endpoint, mobile, email, web, and firewall protection from a single interface. Sophos Firewall is an on-premise firewall that lets you manage your firewall, respond to threats, and monitor what's happening on your network.
 

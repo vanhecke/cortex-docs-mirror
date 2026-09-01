@@ -1,3 +1,7 @@
+---
+description: Use Google Services data with Cortex XSIAM.
+---
+
 # Google Services
 
 {% hint style="warning" %}

@@ -1,3 +1,7 @@
+---
+description: Use PacketSled data to investigate network data in Cortex XSIAM.
+---
+
 # PacketSled
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Access the PacketSled playbook and command query to enumerate sensors, enumerate hosts that have issues, and retrieve metadata, files, and full packet capture (PCAP) artifacts from the PacketSled API for an investigation, based on the perspective of a user or a host.
 

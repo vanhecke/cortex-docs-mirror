@@ -1,3 +1,7 @@
+---
+description: Configure Okta automation and collection for Cortex XSIAM.
+---
+
 # Okta Automation and Collection
 
 {% hint style="warning" %}

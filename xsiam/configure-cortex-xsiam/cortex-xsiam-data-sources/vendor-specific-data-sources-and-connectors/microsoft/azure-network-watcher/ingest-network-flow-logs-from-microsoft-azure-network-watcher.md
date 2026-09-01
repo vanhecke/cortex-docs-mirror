@@ -1,3 +1,7 @@
+---
+description: Collect Microsoft Azure Network Watcher data with Cortex XSIAM.
+---
+
 # Ingest network flow logs from Microsoft Azure Network Watcher
 
 To receive network security group (NSG) or Virtual network (VNet) flow logs from Azure Network Watcher, you must configure data collection from Microsoft Azure Network Watcher using an Azure Function provided by Cortex XSIAM. This Azure Function requires a token that is generated when you configure your Azure Network Watcher Collector in Cortex XSIAM. After you have configured the Cortex XSIAM collector and successfully deployed the Azure Function to your Azure account, Cortex XSIAM will start receiving and ingesting network flow logs from Azure Network Watcher.

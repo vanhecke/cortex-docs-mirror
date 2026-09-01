@@ -1,3 +1,7 @@
+---
+description: Use CyberArk data with Cortex XSIAM.
+---
+
 # CyberArk
 
 {% hint style="warning" %}

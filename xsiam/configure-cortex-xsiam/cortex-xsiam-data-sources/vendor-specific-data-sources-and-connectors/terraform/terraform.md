@@ -1,5 +1,5 @@
 ---
-description: Configure the Terraform connector in Cortex XSIAM.
+description: Use Terraform data in Cortex XSIAM.
 ---
 
 # Terraform

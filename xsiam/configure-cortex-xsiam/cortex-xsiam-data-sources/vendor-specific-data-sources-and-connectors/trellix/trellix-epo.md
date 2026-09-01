@@ -1,5 +1,5 @@
 ---
-description: Configure Trellix ePO data collection for Cortex XSIAM.
+description: Use Trellix ePO data in Cortex XSIAM.
 ---
 
 # Trellix ePO
@@ -10,7 +10,7 @@ description: Configure Trellix ePO data collection for Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Integrate with Trellix (McAfee) ePolicy Orchestrator products. Enhance protection from network edge to endpoint with McAfee Advanced Threat Defense, run queries and receive alarms from McAfee ESM, get file reputations and the systems that reference files from McAfee Threat Intelligence Exchange (TIE), and manage McAfee ePO.
 

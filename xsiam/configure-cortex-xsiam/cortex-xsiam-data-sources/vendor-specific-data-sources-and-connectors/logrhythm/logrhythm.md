@@ -1,3 +1,7 @@
+---
+description: Use LogRhythm data with Cortex XSIAM.
+---
+
 # LogRhythm
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Integrate with LogRhythm using its REST API to deliver security operations across your enterprise IT environment. Execute queries on logs, get host information, add new hosts and update host status, and query and update alarms. Retrieve case summaries, create new cases, or update the properties of a case; manage tags and lists; and fetch cases and alarms as issues.
 

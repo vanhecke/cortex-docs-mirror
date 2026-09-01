@@ -1,3 +1,7 @@
+---
+description: Use Forcepoint DLP data with Cortex XSIAM.
+---
+
 # Forcepoint DLP
 
 You can configure collecting Corelight Zeek logs using a Broker VM Syslog Collector applet, content pack integration (onboarded prior to July 26, 2026), or connector (onboarded after July 26, 2026):

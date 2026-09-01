@@ -1,3 +1,7 @@
+---
+description: Use Fortra data with Cortex XSIAM.
+---
+
 # Fortra
 
 {% hint style="warning" %}

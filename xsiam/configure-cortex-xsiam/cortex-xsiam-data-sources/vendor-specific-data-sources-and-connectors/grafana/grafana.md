@@ -1,3 +1,7 @@
+---
+description: Use Grafana data with Cortex XSIAM.
+---
+
 # Grafana
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Grafana alerting service. Manage alerts and monitoring data from Grafana Labs: fetch alerts, get/pause/unpause alerts, manage users, teams, and organizations, list dashboards, and create annotations.
 

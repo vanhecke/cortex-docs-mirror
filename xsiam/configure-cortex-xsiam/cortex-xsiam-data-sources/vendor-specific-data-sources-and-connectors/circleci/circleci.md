@@ -1,3 +1,7 @@
+---
+description: Use CircleCI data with Cortex XSIAM.
+---
+
 # CircleCI
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Gets the details of the CircleCI workflows, including the details of the last runs and the jobs, and retrieves the artifacts of the jobs. This integration was integrated and tested with version v2 of CircleCI.
 

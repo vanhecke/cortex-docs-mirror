@@ -1,5 +1,5 @@
 ---
-description: Configure the ThreatConnect connector in Cortex XSIAM.
+description: Use ThreatConnect data in Cortex XSIAM.
 ---
 
 # ThreatConnect
@@ -10,7 +10,7 @@ description: Configure the ThreatConnect connector in Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 ThreatConnect is an intelligence-driven security operations solution with intelligence, automation, analytics, and workflows. It fetches threat intelligence indicators from ThreatConnect (filterable by indicator owner) and fetches issues using the ThreatConnect v3 REST API.
 

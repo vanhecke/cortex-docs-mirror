@@ -1,3 +1,7 @@
+---
+description: Use Freshworks data with Cortex XSIAM.
+---
+
 # Freshworks
 
 {% hint style="warning" %}

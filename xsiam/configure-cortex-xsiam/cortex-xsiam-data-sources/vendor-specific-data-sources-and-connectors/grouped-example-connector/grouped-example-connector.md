@@ -1,3 +1,7 @@
+---
+description: Use Grouped Example Connector data with Cortex XSIAM.
+---
+
 # Grouped Example Connector
 
 {% hint style="warning" %}

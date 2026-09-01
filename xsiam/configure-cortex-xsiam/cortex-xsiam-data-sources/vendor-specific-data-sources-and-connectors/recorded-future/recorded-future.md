@@ -1,3 +1,7 @@
+---
+description: Use Recorded Future threat intelligence data in Cortex XSIAM.
+---
+
 # Recorded Future
 
 {% hint style="warning" %}

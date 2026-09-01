@@ -1,3 +1,7 @@
+---
+description: Use PhishLabs IOC, DRP, and EIR data in Cortex XSIAM.
+---
+
 # PhishLabs
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 PhishLabs (Fortra) provides 24/7 detection and rapid mitigation of email-based and digital risks. The IOC feed retrieves malicious indicators from the PhishLabs global feed and email-based issues from the user feed. [Digital Risk Protection (DRP)](https://www.phishlabs.com/digital-risk-protection/) delivers proactive detection and mitigation of digital risks across email, domain, social media, mobile, dark, deep, and open web vectors. PhishLabs EIR protects against threats that reach employee inboxes past your email security stack.
 

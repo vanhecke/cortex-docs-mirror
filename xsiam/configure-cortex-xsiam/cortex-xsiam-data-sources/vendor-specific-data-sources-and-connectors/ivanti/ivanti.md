@@ -1,3 +1,7 @@
+---
+description: Use Ivanti data with Cortex XSIAM.
+---
+
 # Ivanti
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Integrate with Ivanti IT service management products. Cherwell is a cloud-based IT service management solution where you can create, read, update, and delete business objects, together with attachments and relations operations. Ivanti Heat is the Ivanti Heat service manager.
 

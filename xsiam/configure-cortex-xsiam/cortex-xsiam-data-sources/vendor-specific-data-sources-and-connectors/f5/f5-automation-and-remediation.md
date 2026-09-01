@@ -1,3 +1,7 @@
+---
+description: Use F5 Automation and Remediation data with Cortex XSIAM.
+---
+
 # F5 Automation and Remediation
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Automate and remediate across F5 products. Use F5 Application Security Manager (ASM/WAF) to read information and manage web application firewall policies, F5 Firewall to manage firewall rules, and F5 Silverline to retrieve alerts and read/update threat-intelligence IP lists (allowlists and denylists).
 

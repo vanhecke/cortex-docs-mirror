@@ -1,3 +1,7 @@
+---
+description: Use iManage data with Cortex XSIAM.
+---
+
 # iManage
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM license.
+This connector is available with any active Cortex XSIAM license.
 
 iManage Threat Manager uses machine learning and user behavior analytics to detect unusual user behavior, prevent data loss, and ensure compliance, protecting privileged information against internal and external threat actors. Fetch and manage security alerts from iManage Threat Manager.
 

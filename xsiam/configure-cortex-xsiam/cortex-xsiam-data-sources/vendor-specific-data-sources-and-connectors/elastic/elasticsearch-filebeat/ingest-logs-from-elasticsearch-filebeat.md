@@ -1,3 +1,7 @@
+---
+description: Collect Elasticsearch Filebeat data with Cortex XSIAM.
+---
+
 # Ingest logs from Elasticsearch Filebeat
 
 If you want to ingest logs about file activity on your endpoints and servers and do not use the Cortex XDR agent, you can install Elasticsearch Filebeat as a system logger and then forward those logs to Cortex XSIAM. To facilitate log ingestion, Cortex XSIAM supports the same protocols that Filebeat and Elasticsearch use to communicate. Cortex XSIAM supports using Filebeat up to version 8.2 with the Filebeat data collector. Cortex XSIAM also supports logs in single line format or multiline format. For more information on handling messages that span multiple lines of text in Elasticsearch Filebeat, see [Manage Multiline Messages](https://www.elastic.co/guide/en/beats/filebeat/current/multiline-examples.html).

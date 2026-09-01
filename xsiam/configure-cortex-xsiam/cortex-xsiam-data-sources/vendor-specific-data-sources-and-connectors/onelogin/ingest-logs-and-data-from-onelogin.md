@@ -1,3 +1,7 @@
+---
+description: Configure OneLogin log and directory data collection for Cortex XSIAM.
+---
+
 # Ingest logs and data from OneLogin
 
 Cortex XSIAM can ingest different types of data from OneLogin accounts using the OneLogin data collector.

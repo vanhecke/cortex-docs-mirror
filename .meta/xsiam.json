@@ -1995,7 +1995,7 @@
                   "type": "document",
                   "children": [
                     {
-                      "title": "Cisco ASA firewalls and AnyConnect`",
+                      "title": "Cisco ASA firewalls and AnyConnect",
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/cisco/cisco-asa-firewalls-and-anyconnect",
                       "type": "document",
                       "children": []

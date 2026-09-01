@@ -1,3 +1,7 @@
+---
+description: Use Microsoft Azure data with Cortex XSIAM.
+---
+
 # Microsoft Azure
 
 Follow a wizard to onboard your Microsoft Azure environment. The Azure onboarding wizard is designed to facilitate the seamless setup of Azure data into Cortex XSIAM.

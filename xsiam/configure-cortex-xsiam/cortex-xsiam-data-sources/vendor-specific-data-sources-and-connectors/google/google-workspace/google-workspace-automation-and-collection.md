@@ -1,3 +1,7 @@
+---
+description: Use Google Workspace Automation and Collection data with Cortex XSIAM.
+---
+
 # Google Workspace Automation and Collection
 
 {% hint style="warning" %}

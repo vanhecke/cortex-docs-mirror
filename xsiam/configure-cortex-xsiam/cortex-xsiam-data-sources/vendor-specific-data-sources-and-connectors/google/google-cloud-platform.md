@@ -1,3 +1,7 @@
+---
+description: Use Google Cloud Platform data with Cortex XSIAM.
+---
+
 # Google Cloud Platform
 
 You can configure collecting Google Cloud Platform (GCP) logs using a standard data source, Cloud Service Provider (CSP) onboarding data source, content pack integration (onboarded prior to July 26, 2026), or connector (onboarded after July 26, 2026):

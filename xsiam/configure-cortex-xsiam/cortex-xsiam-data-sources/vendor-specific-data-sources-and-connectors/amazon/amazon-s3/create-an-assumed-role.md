@@ -44,7 +44,8 @@ When creating the S3 bucket and SQS, follow any other relevant instructions prov
                     "Action": [
                        "sqs:ReceiveMessage",
                        "sqs:DeleteMessage",
-                       "sqs:ChangeMessageVisibility"
+                       "sqs:ChangeMessageVisibility",
+                       "sqs:GetQueueAttributes"
                    ],
                    "Resource": "<sqs-arn>"
                }

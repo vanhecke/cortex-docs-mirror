@@ -1,3 +1,7 @@
+---
+description: Use Crowdstrike APIs data with Cortex XSIAM.
+---
+
 # Crowdstrike APIs
 
 You can configure collecting CrowdStrike API real-time alerts and logs using a standard collector:

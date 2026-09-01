@@ -1,3 +1,7 @@
+---
+description: Collect Windows DHCP data using Elasticsearch Filebeat with Cortex XSIAM.
+---
+
 # Ingest logs from Windows DHCP using Elasticsearch Filebeat
 
 You can configure Cortex XSIAM to receive Windows DHCP logs using Elasticsearch Filebeat with the following data collectors.

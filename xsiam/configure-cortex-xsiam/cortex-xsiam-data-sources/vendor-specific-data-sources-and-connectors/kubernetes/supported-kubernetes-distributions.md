@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn more about the supported Kubernetes platform versions for the Kubernetes
+  connector.
+---
+
 # Supported Kubernetes distributions
 
 The following are the supported Kubernetes platform versions for the Kubernetes connector (Posture Management). The table shows the latest version that is supported. We support n-3 versions of each supported Kubernetes environment.

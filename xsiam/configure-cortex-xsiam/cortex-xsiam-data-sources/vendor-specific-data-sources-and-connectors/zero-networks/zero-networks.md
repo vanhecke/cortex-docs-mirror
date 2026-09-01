@@ -1,5 +1,5 @@
 ---
-description: Configure the Zero Networks connector for Cortex XSIAM.
+description: Use Zero Networks data in Cortex XSIAM.
 ---
 
 # Zero Networks
@@ -10,7 +10,7 @@ description: Configure the Zero Networks connector for Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM license.
+This connector is available with any active Cortex XSIAM license.
 
 Zero Networks Segment is a security platform that automatically enforces zero trust policies across an organization's network. It dynamically segments and controls access to network resources, ensuring that only authorized users and devices can communicate, thereby reducing the attack surface and mitigating potential threats.
 

@@ -1,3 +1,7 @@
+---
+description: Learn more about migrating to a new Microsoft 365 connector.
+---
+
 # Migrate to new Microsoft 365 connector
 
 Migrate from the legacy **Microsoft365** connector to the new **Microsoft 365** connector to take advantage of improved performance, enhanced remediation capabilities, and unified Microsoft 365 configuration.

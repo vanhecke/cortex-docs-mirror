@@ -1,3 +1,7 @@
+---
+description: Learn more on disabling or deleting Cribl integrations in Cortex XSIAM.
+---
+
 # Disable or delete Cribl integration
 
 Use the Disable and Delete options with extreme caution.

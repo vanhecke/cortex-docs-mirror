@@ -1,3 +1,7 @@
+---
+description: Use Check Point FW1/VPN1 data with Cortex XSIAM.
+---
+
 # Check Point FW1/VPN1
 
 You can configure collecting Check Point FW1/VPN1 logs using a Broker VM Syslog Collector applet, content pack integration (onboarded prior to July 26, 2026), or connector (onboarded after July 26, 2026):

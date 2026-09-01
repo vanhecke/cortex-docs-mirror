@@ -1,3 +1,7 @@
+---
+description: Use Red Hat Ansible automation in Cortex XSIAM.
+---
+
 # Red Hat Ansible
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Red Hat Ansible is an IT automation tool for configuring systems, deploying software, and orchestrating advanced IT tasks. This connector groups Ansible-powered integrations that manage a wide range of targets directly from Cortex — Linux and Windows hosts, Cisco IOS/NXOS network devices, Kubernetes, VMware, DNS records, certificates (ACME/OpenSSL), public clouds (Azure, Alibaba Cloud, Hetzner Cloud), and Ansible Automation Platform. The Ansible engine is self-contained and pre-configured, exposing Ansible modules as commands so you can use them without needing to know Ansible.
 

@@ -1,3 +1,7 @@
+---
+description: Use Microsoft Security Automation and Collection data with Cortex XSIAM.
+---
+
 # Microsoft Security Automation and Collection
 
 {% hint style="warning" %}

@@ -1,5 +1,5 @@
 ---
-description: Configure the Sentry connector in Cortex XSIAM.
+description: Use Sentry data in Cortex XSIAM.
 ---
 
 # Sentry

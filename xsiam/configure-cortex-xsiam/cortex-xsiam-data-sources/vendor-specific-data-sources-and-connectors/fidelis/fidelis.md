@@ -1,3 +1,7 @@
+---
+description: Use Fidelis data with Cortex XSIAM.
+---
+
 # Fidelis
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Fidelis Endpoint provides advanced endpoint detection and response (EDR) across Windows, Mac and Linux OSes for faster threat remediation. Fidelis Elevate Network automates detection and response to network threats and data leakage in your organization. Supported version - 9.2.
 

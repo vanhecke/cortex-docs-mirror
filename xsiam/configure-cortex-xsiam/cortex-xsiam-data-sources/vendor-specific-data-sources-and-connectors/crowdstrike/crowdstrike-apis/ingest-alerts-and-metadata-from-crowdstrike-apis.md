@@ -1,3 +1,7 @@
+---
+description: Collect Crowdstrike APIs data with Cortex XSIAM.
+---
+
 # Ingest alerts and metadata from Crowdstrike APIs
 
 {% hint style="info" %}

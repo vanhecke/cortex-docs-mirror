@@ -1,5 +1,5 @@
 ---
-description: Configure the SysAid connector in Cortex XSIAM.
+description: Use SysAid data in Cortex XSIAM.
 ---
 
 # SysAid
@@ -10,7 +10,7 @@ description: Configure the SysAid connector in Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 SysAid is a robust IT management system designed to meet all of the needs of an IT department. Fetch service records, list and search assets and users, and list, search, update, close, create, and delete service records.
 

@@ -1,3 +1,7 @@
+---
+description: Use Google Workspace data with Cortex XSIAM.
+---
+
 # Google Workspace
 
 You can configure collecting Google Workspace logs and data using a Standard Collector, content pack integration (onboarded prior to July 26, 2026), or connectors:

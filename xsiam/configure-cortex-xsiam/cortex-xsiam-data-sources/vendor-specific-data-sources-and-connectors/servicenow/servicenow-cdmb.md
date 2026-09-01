@@ -1,5 +1,5 @@
 ---
-description: Configure ServiceNow CMDB data collection for Cortex XSIAM.
+description: Use ServiceNow CMDB data in Cortex XSIAM.
 ---
 
 # ServiceNow CDMB

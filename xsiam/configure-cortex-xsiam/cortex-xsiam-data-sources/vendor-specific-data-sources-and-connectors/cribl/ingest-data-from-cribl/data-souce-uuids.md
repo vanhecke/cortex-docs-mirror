@@ -1,3 +1,7 @@
+---
+description: View the Cribl catalog for the supported collectors.
+---
+
 # Data souce UUIDs
 
 This table lists the Cribl catalog for the the specific collectors supported. If a dedicated collector does not exist, use the generic UUID collector.

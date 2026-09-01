@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn more about adding Microsoft 365 as a third-party data source in Cortex
+  Cloud Data Security.
+---
+
 # How to onboard Microsoft 365
 
 {% hint style="info" %}

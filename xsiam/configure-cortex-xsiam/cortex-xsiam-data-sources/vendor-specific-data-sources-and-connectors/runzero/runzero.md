@@ -1,4 +1,10 @@
+---
+description: Use runZero data in Cortex XSIAM.
+---
+
 # runZero
+
+
 
 {% hint style="warning" %}
 **Important**
@@ -6,7 +12,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM license.
+This connector is available with any active Cortex XSIAM license.
 
 RunZero is a network discovery and asset inventory platform that uncovers every network in use and identifies every device connected, without credentials. Use this connector to collect events automatically from RunZero.
 

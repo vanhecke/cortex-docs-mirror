@@ -1,3 +1,7 @@
+---
+description: Collect dropbox data in Cortex XSIAM.
+---
+
 # Ingest logs and data from Dropbox
 
 Cortex XSIAM can ingest different types of data from Dropbox Business accounts using the Dropbox data collector. To receive logs and data from Dropbox Business accounts via the Dropbox Business API, you must configure the Collection Integrations settings in Cortex XSIAM based on your Dropbox Business Account credentials. After you set up data collection, Cortex XSIAM begins receiving new logs and data from the source.

@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn more about the changes, additions, known issues, and fixes for each
+  version of the Kubernetes connector.
+---
+
 # What's new in Kubernetes connector
 
 This topic describes the changes, additions, known issues, and fixes for each version of the Kubernetes Connector. If Auto Upgrade is enabled in your Kubernetes Connector, you will automatically enjoy the latest released features without having to manually upgrade to the new version.

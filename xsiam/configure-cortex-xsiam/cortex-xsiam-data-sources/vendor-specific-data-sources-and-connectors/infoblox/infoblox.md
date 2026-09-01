@@ -1,3 +1,7 @@
+---
+description: Use Infoblox data with Cortex XSIAM.
+---
+
 # Infoblox
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM license.
+This connector is available with any active Cortex XSIAM license.
 
 Infoblox BloxOne Threat Defense is a hybrid cybersecurity solution that leverages DNS as the first line of defense to detect and block cyber threats. This connector collects Threat Defense events, sharing threat intelligence, automated indicator enrichment, and DNS-based security controls.
 

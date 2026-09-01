@@ -1,3 +1,7 @@
+---
+description: Learn more on collecting Windows Event Logs for Cortex XSIAM using Cribl.
+---
+
 # Collect Windows Event Logs for Cortex XSIAM via Cribl
 
 There are two primary methods for streaming Windows Event Logs to Cortex XSIAM using Cribl. The choice depends on whether you prefer a centralized, agentless architecture or a distributed, agent-based approach.

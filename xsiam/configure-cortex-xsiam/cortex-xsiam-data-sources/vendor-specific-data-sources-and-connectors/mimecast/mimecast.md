@@ -1,3 +1,7 @@
+---
+description: Use Mimecast data with Cortex XSIAM.
+---
+
 # Mimecast
 
 {% hint style="warning" %}

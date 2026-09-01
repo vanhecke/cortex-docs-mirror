@@ -1,3 +1,7 @@
+---
+description: Use Salesforce data in Cortex XSIAM.
+---
+
 # Salesforce connector
 
 Cortex XSIAM provides different methods for connecting to your Salesforce instance. Your choice depends on whether you need to ingest security event logs for monitoring, use the guided wizard setup for integrated services, or deploy specific legacy content packs for niche workflows.

@@ -1,3 +1,7 @@
+---
+description: Collect CrowdStrike Falcon Data Replicator data with Cortex XSIAM.
+---
+
 # Ingest raw EDR events from CrowdStrike Falcon Data Replicator
 
 Cortex XSIAM enables ingestion of raw EDR event data from CrowdStrike Falcon Data Replicator (FDR), streamed to Amazon S3. In addition to all standard SIEM capabilities, this integration unlocks some advanced Cortex XSIAM features, enabling comprehensive analysis of data from all sources, enhanced detection and response, and deeper visibility into CrowdStrike FDR data.

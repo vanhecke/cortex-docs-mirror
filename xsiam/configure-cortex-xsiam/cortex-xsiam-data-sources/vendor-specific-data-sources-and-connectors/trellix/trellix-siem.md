@@ -1,5 +1,5 @@
 ---
-description: Configure Trellix SIEM data collection for Cortex XSIAM.
+description: Use Trellix SIEM data in Cortex XSIAM.
 ---
 
 # Trellix SIEM
@@ -10,7 +10,7 @@ description: Configure Trellix SIEM data collection for Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Connect to McAfee Active Response (MAR) to capture and monitor events, files, host flows, process objects, context, and system state changes that may be indicators of attack (IoAs) or attack components lying dormant.
 

@@ -1,3 +1,7 @@
+---
+description: Use Crowdstrike Falcom Data Replicator data with Cortex XSIAM.
+---
+
 # CrowdStrike Falcon Data Replicator
 
 You can configure collecting raw EDR event data from CrowdStrike Falcon Data Replicator (FDR) using a standard data source, content pack integration (onboarded prior to July 26, 2026), or connector (onboarded after July 26, 2026):

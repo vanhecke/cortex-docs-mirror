@@ -1,3 +1,7 @@
+---
+description: Use LOLBAS data with Cortex XSIAM.
+---
+
 # LOLBAS
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM, Cortex XDR, or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM, Cortex XDR, or Cortex AgentiX license.
 
 Import Living Off The Land Binaries, Scripts and Libraries (LOLBAS) into the Threat Intelligence Management (TIM) module for security investigations and threat hunting activities. "Living off the land binaries" describes malware or hacking techniques that abuse legitimate tools and processes already present on a system to blend in with normal activity and avoid detection. The LOLBAS project documents binaries, scripts, and libraries that can be used for these techniques.
 

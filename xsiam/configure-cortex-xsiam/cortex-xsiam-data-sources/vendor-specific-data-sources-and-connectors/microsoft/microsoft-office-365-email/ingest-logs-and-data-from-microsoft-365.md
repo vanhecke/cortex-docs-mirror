@@ -1,3 +1,7 @@
+---
+description: Collect Microsoft 365 data with Cortex XSIAM.
+---
+
 # Ingest logs and data from Microsoft 365
 
 The Microsoft 365 email collector fetches email metadata through Microsoft Graph API, using an authorized app. A compliance mailbox is not required.

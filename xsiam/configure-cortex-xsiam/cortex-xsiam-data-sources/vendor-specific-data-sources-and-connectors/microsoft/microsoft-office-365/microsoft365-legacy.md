@@ -1,3 +1,7 @@
+---
+description: Use Microsoft365 data with Cortex XSIAM.
+---
+
 # Microsoft365 (legacy)
 
 {% hint style="warning" %}

@@ -1,3 +1,7 @@
+---
+description: Ingest logs from Proofpoint Targeted Attack Protection in Cortex XSIAM.
+---
+
 # Ingest logs from Proofpoint Targeted Attack Protection
 
 To receive logs from Proofpoint Targeted Attack Protection (TAP), you must first configure TAP service credentials in the TAP dashboard, and then the Collection Integrations settings in Cortex XSIAM based on your Proofpoint TAP configuration. After you set up data collection, Cortex XSIAM begins receiving new logs and data from the source.

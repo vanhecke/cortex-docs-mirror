@@ -1,3 +1,7 @@
+---
+description: Use OpenText Vertica data in Cortex XSIAM.
+---
+
 # OpenText Vertica
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Connect to an OpenText Vertica database to run SQL queries against your data. This integration was integrated and tested with Vertica v4.1.
 

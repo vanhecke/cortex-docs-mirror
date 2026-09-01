@@ -1,3 +1,7 @@
+---
+description: Use Microsoft 365 (Posture) data with Cortex XSIAM.
+---
+
 # Microsoft 365 (Posture)
 
 You can configure collecting Microsoft 365 (Posture) logs using a Cloud Posture and Runtime Security data source or connector:

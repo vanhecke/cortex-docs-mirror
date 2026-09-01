@@ -1,3 +1,7 @@
+---
+description: Use Rapid7 InsightIDR, InsightVM, and AppSec data in Cortex XSIAM.
+---
+
 # Rapid7
 
 {% hint style="warning" %}

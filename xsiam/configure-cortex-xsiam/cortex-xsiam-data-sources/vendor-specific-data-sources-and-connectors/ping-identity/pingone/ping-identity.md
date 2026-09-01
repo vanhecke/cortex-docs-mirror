@@ -1,3 +1,7 @@
+---
+description: Use the Ping Identity data in Cortex XSIAM.
+---
+
 # Ping Identity
 
 The capabilities and sub-capabilities listed for this connector are available with any active Cortex XSIAM or Cortex Cloud Posture Security license.

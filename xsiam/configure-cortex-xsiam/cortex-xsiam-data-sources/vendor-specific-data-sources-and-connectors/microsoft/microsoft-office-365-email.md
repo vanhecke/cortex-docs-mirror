@@ -1,3 +1,7 @@
+---
+description: Use Microsoft Office 365 (email) data with Cortex XSIAM.
+---
+
 # Microsoft Office 365 (email)
 
 You can configure collecting Microsoft Office 365 email metadata using a Standard Collector:

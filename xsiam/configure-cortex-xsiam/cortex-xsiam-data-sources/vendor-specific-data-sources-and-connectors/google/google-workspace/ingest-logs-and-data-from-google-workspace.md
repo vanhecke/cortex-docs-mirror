@@ -1,3 +1,7 @@
+---
+description: Collect Google Workspace data with Cortex XSIAM.
+---
+
 # Ingest logs and data from Google Workspace
 
 Cortex XSIAM can ingest various types of data from Google Workspace. Most data is collected as audit events from various Google reports using the Google Workspace data collector.

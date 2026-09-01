@@ -1,3 +1,7 @@
+---
+description: Learn more about creating a Microsoft Entra ID.
+---
+
 # Create a Microsoft Entra ID
 
 To integrate Microsoft 365 services with Cortex Cloud for Data Security and Posture Management, you must create a **Microsoft Entra ID service principal** (formerly Azure AD). The service principal requires specific Microsoft Graph API permissions based on the capabilities you plan to enable.

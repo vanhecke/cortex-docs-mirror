@@ -1,3 +1,7 @@
+---
+description: Use ReliaQuest GreyMatter DRP data in Cortex XSIAM.
+---
+
 # ReliaQuest
 
 {% hint style="warning" %}

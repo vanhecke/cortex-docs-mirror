@@ -1,3 +1,7 @@
+---
+description: Use CrowdStrike data with Cortex XSIAM.
+---
+
 # CrowdStrike
 
 {% hint style="warning" %}

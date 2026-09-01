@@ -1,3 +1,9 @@
+---
+description: >-
+  Use Qualys vulnerability, compliance, and file integrity monitoring data in
+  Cortex XSIAM.
+---
+
 # Qualys
 
 {% hint style="warning" %}

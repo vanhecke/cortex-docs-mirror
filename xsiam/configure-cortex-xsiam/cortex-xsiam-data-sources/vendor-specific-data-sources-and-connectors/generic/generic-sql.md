@@ -1,3 +1,7 @@
+---
+description: Use Generic SQL data with Cortex XSIAM.
+---
+
 # Generic SQL
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM, Cortex Cloud Posture Security, Cortex Cloud, Cortex Cloud Runtime Security, Cortex XDR, or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM, Cortex Cloud Posture Security, Cortex Cloud, Cortex Cloud Runtime Security, Cortex XDR, or Cortex AgentiX license.
 
 Generic SQL integration for the databases MySQL, PostgreSQL, Microsoft SQL Server, Oracle, Teradata, and Trino. Run SQL queries against your database and fetch issues from it.
 

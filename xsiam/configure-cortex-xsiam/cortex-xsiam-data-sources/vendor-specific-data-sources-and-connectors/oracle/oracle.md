@@ -1,3 +1,7 @@
+---
+description: Use Oracle data in Cortex XSIAM.
+---
+
 # Oracle
 
 {% hint style="warning" %}

@@ -1,5 +1,5 @@
 ---
-description: Configure the Zimperium connector for Cortex XSIAM.
+description: Use Zimperium data in Cortex XSIAM.
 ---
 
 # Zimperium
@@ -10,7 +10,7 @@ description: Configure the Zimperium connector for Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Zimperium is a mobile security platform that generates alerts based on anomalous or unauthorized activities detected on a user's mobile device. Fetch and investigate mobile security alerts, and query for events, devices, and users.
 

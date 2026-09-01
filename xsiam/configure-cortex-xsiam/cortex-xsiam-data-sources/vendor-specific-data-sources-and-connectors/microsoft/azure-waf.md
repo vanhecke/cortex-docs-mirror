@@ -1,3 +1,7 @@
+---
+description: Use Azure WAF data with Cortex XSIAM.
+---
+
 # Azure WAF
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Azure Web Application Firewall (WAF) provides centralized protection of your web applications from common web exploits and vulnerabilities, such as SQL injection and cross-site scripting. It operates as an application-level firewall and integrates with Azure services like Azure Application Gateway, Azure Front Door, and Azure CDN. This connector lets you control policies configured in the Azure Firewall management platform — add, delete, or update policies, and get details of a specific policy or a list of policies.
 

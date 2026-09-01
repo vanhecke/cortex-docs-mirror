@@ -1,3 +1,7 @@
+---
+description: Collect Fortinet Fortigate data with Cortex XSIAM.
+---
+
 # Fortinet Fortigate
 
 You can configure collecting Fortinet Fortigate firewall logs using a Broker VM Syslog Collector applet, content pack integration (onboarded prior to July 26, 2026), or connector (onboarded after July 26, 2026):

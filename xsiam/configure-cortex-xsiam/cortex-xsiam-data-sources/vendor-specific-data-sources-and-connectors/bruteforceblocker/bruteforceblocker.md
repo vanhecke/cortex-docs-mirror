@@ -1,3 +1,7 @@
+---
+description: Use BruteForceBlocker data with Cortex XSIAM.
+---
+
 # BruteForceBlocker
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 BruteForceBlocker is a Perl script that works with pf – the firewall developed by the OpenBSD team, and is also available on FreeBSD from version 5.2. From BruteForceBlocker version 1.2 it is also possible to report blocked IP addresses to the project site and share your information with other users.
 

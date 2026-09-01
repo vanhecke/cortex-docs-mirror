@@ -1,3 +1,7 @@
+---
+description: Use Monday data with Cortex XSIAM.
+---
+
 # Monday
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM, Cortex Cloud, or Cortex Cloud Runtime Security license.
+This connector is available with any active Cortex XSIAM, Cortex Cloud, or Cortex Cloud Runtime Security license.
 
 Monday.com is a work operating system that powers teams to run projects and workflows with confidence. Collect activity logs and audit logs from Monday.com for threat detection and compliance monitoring in Cortex XSIAM.
 

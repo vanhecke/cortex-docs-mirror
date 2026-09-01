@@ -1,3 +1,7 @@
+---
+description: Configure the OneLogin data sources for Cortex XSIAM.
+---
+
 # OneLogin
 
 You can configure collecting OneLogin logs and data using a Standard Collector, content pack integration (onboarded prior to July 26, 2026), or connector (onboarded after July 26, 2026):

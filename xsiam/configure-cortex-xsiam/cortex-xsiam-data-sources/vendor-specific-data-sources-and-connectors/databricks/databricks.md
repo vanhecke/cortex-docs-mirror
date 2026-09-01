@@ -1,3 +1,7 @@
+---
+description: Use Databricks data with Cortex XSIAM.
+---
+
 # Databricks
 
 Secure configurations and monitor identity risks across your Databricks environment.

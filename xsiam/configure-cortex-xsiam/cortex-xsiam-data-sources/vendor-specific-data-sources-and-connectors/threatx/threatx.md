@@ -1,5 +1,5 @@
 ---
-description: Configure the ThreatX connector in Cortex XSIAM.
+description: Use ThreatX data in Cortex XSIAM.
 ---
 
 # ThreatX
@@ -10,7 +10,7 @@ description: Configure the ThreatX connector in Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Use the ThreatX integration to enrich intel and automate enforcement actions on the ThreatX Next Gen WAF. Add and remove CIDR ranges and IP addresses to block lists or the allow list, gather Entity metadata for intel enrichment and DBot scoring, and set Entity notes for SOC integration or further automation.
 

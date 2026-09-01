@@ -1,5 +1,5 @@
 ---
-description: Configure the Shodan connector in Cortex XSIAM.
+description: Use Shodan data in Cortex XSIAM.
 ---
 
 # Shodan
@@ -10,7 +10,7 @@ description: Configure the Shodan connector in Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Shodan is a search engine for Internet-connected devices. Unlike traditional search engines that index websites, Shodan indexes information about devices connected to the internet, such as servers, routers, webcams, and other IoT devices.
 

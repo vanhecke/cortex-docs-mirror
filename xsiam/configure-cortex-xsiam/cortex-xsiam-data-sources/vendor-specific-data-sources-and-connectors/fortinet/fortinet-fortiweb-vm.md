@@ -1,3 +1,7 @@
+---
+description: Use Fortinet FortiWeb VM data with Cortex XSIAM.
+---
+
 # Fortinet FortiWeb VM
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Fortinet FortiWeb VM lets you manage web application firewall (WAF) policies and block cookies, URLs, and host names, performing controlled changes on hosted web applications.
 

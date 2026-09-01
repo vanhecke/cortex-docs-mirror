@@ -1,5 +1,5 @@
 ---
-description: Configure Trellix Email Security (ETP) data collection for Cortex XSIAM.
+description: Use Trellix Email Security (ETP) data in Cortex XSIAM.
 ---
 
 # Trellix Email Security (ETP)

@@ -1,3 +1,7 @@
+---
+description: Use Okta data in Cortex XSIAM.
+---
+
 # Okta connector
 
 Secure identity configurations, monitor identity risks, and respond to threats across your Okta environment.

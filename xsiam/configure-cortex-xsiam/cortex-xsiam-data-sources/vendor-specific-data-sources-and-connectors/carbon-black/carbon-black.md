@@ -1,3 +1,7 @@
+---
+description: Use Carbon Black data with Cortex XSIAM.
+---
+
 # Carbon Black
 
 {% hint style="warning" %}

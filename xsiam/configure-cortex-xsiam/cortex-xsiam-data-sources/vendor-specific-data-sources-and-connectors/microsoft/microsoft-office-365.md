@@ -1,3 +1,7 @@
+---
+description: Use Microsoft Office 365 data with Cortex XSIAM.
+---
+
 # Microsoft Office 365
 
 You can configure collecting Microsoft Office 365 logs and data using a Standard Collector, content pack integration (onboarded prior to July 26, 2026), or connectors:

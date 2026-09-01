@@ -1,3 +1,7 @@
+---
+description: Use Gemini Enterprise data with Cortex XSIAM.
+---
+
 # Gemini Enterprise
 
 The capabilities and sub-capabilities listed for this connector are available with any active Cortex Cloud Posture Security license.

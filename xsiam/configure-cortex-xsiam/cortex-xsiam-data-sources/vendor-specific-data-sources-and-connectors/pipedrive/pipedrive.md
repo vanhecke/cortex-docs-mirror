@@ -1,3 +1,7 @@
+---
+description: Use Pipedrive security posture monitoring in Cortex XSIAM.
+---
+
 # Pipedrive
 
 The capabilities and sub-capabilities listed for this connector are available with any active Cortex XSIAM or Cortex Cloud Posture Security license.

@@ -1,3 +1,7 @@
+---
+description: Use Plainview identity lifecycle management data in Cortex XSIAM.
+---
+
 # Plainview
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM, Cortex XDR, or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM, Cortex XDR, or Cortex AgentiX license.
 
 Integrate with Clarizen's Identity Access Management (IAM) service to execute CRUD operations in the employee lifecycle processes. Create, update, get, and disable users in Clarizen from Cortex. For more information, refer to the [Identity Lifecycle Management article](https://xsoar.pan.dev/docs/reference/articles/identity-lifecycle-management).
 

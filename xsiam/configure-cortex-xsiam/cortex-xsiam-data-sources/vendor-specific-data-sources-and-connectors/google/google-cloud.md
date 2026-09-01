@@ -1,3 +1,7 @@
+---
+description: Use Google Cloud data with Cortex XSIAM.
+---
+
 # Google Cloud
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Integrate with Google Cloud Platform services to manage identity and access, compute, storage, key management, resource management, logging, messaging, and analytics. This connector groups the GCP-IAM, Google BigQuery, Google Cloud Compute, Google Cloud Functions, Google Cloud Storage, Google Key Management Service, Google Resource Manager, Google Vision AI, Google Cloud Logging, Google Cloud Translate, Google Kubernetes Engine, Google Cloud Pub/Sub, and Looker integrations.
 

@@ -1,3 +1,7 @@
+---
+description: Collect Databricks data in Cortex XSIAM.
+---
+
 # How to onboard Databricks
 
 {% hint style="info" %}

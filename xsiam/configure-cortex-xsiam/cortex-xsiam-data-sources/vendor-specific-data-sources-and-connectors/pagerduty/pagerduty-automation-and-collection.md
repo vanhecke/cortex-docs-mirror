@@ -1,3 +1,7 @@
+---
+description: Configure PagerDuty automation and collection for Cortex XSIAM.
+---
+
 # PagerDuty Automation and Collection
 
 {% hint style="warning" %}

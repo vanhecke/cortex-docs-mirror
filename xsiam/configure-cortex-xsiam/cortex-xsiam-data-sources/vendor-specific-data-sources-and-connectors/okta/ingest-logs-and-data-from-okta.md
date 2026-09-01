@@ -1,3 +1,7 @@
+---
+description: Configure Okta log and data collection for Cortex XSIAM.
+---
+
 # Ingest logs and data from Okta
 
 ### Product availability and licensing

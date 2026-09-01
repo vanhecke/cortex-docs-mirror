@@ -1,3 +1,7 @@
+---
+description: Use Cisco Security data with Cortex XSIAM.
+---
+
 # Cisco Security
 
 {% hint style="warning" %}

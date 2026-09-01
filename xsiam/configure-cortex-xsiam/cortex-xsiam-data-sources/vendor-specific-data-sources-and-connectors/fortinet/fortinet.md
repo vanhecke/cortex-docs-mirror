@@ -1,3 +1,7 @@
+---
+description: Use Fortinet data with Cortex XSIAM.
+---
+
 # Fortinet
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Integrate with Fortinet products. FortiManager is a single console central management system that manages Fortinet devices. Use FortiSIEM to fetch and update issues, search events, and manage watchlists and resource lists. FortiSandbox is an advanced security tool that combines proactive mitigation, enhanced threat detection, and in-depth reporting to counter advanced threats. FortiMail is a comprehensive email security solution offering advanced threat protection, data loss prevention, encryption, and email authentication.
 

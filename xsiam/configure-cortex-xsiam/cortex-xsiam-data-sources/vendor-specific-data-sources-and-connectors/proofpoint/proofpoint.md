@@ -1,3 +1,7 @@
+---
+description: Use Proofpoint data in Cortex XSIAM.
+---
+
 # Proofpoint
 
 {% hint style="warning" %}

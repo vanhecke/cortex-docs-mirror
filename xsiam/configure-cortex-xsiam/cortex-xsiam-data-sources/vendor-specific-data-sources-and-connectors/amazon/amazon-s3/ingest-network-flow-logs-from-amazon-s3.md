@@ -28,7 +28,7 @@ Be sure you do the following tasks before you begin configuring data collection 
 
 * Ensure that you have the proper permissions to run AWS CloudFormation with the script provided in Cortex XSIAM. You need at a minimum the following permissions in AWS for an Amazon S3 bucket and Amazon Simple Queue Service (SQS):
   * **Amazon S3 bucket**: `GetObject`
-  * **SQS**: `ChangeMessageVisibility`, `ReceiveMessage`, and `DeleteMessage`.
+  * **SQS**: `ChangeMessageVisibility`, `ReceiveMessage`, `GetQueueAttributes`, and `DeleteMessage`.
 * Ensure that you can access your Amazon Virtual Private Cloud (VPC) and have the necessary permissions to create flow logs.
 * Determine how you want to provide access to Cortex XSIAM to your logs and perform API operations. You have the following options:
   * Use Workload Federated Identity to allow Cortex XSIAM's dedicated log collector service account to assume an IAM role in your AWS environment using a short-lived OIDC token, without storing any long-lived credentials. This is the Workload Federated Identity option in the Amazon S3 collection configuration and is the recommended option when available.

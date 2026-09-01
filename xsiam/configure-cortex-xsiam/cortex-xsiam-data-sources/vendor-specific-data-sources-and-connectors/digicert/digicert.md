@@ -1,3 +1,7 @@
+---
+description: Use digicert data with Cortex XSIAM.
+---
+
 # digicert
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM license.
+This connector is available with any active Cortex XSIAM license.
 
 Vercara UltraDNS is a cloud-based DNS management platform that provides DNS services and configuration management capabilities. This connector collects DNS configuration audit logs from Vercara UltraDNS, tracking DNS record changes and user activities for security and compliance. For more information, visit https://vercara.digicert.com/resources/ultradns.
 

@@ -1,3 +1,7 @@
+---
+description: Use Google Workspace with Cortex XSIAM.
+---
+
 # Google Workspace connector
 
 Secure sensitive data, monitor identity risks, and ensure compliance across your Google Workspace environment.

@@ -1,3 +1,7 @@
+---
+description: Use IBM Security data with Cortex XSIAM.
+---
+
 # IBM Security
 
 {% hint style="warning" %}

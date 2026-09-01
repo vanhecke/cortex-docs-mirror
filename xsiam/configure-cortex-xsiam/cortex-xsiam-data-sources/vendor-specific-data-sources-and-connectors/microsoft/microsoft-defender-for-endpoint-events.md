@@ -1,3 +1,7 @@
+---
+description: Use Microsoft Defender for Endpoint Events data with Cortex XSIAM.
+---
+
 # Microsoft Defender for Endpoint Events
 
 You can configure collecting Microsoft Defender for Endpoints raw EDR event data using a Standard Collector or with a content pack integration (onboarded prior to July 26, 2026):

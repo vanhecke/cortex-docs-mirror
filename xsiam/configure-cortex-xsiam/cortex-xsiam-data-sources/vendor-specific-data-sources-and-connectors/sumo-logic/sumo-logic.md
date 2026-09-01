@@ -1,5 +1,5 @@
 ---
-description: Configure the Sumo Logic connector in Cortex XSIAM.
+description: Use Sumo Logic data in Cortex XSIAM.
 ---
 
 # Sumo Logic

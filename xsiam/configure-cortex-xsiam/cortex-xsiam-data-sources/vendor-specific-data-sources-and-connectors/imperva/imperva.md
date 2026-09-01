@@ -1,3 +1,7 @@
+---
+description: Use Imperva data with Cortex XSIAM.
+---
+
 # Imperva
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Integrate with Imperva security products. Imperva Skyfence is a Cloud Access Security Broker (CASB) that provides visibility and control over cloud apps. Imperva WAF (SecureSphere) protects web applications from cyber attacks. Imperva Incapsula (Cloud WAF) manages sites and IPs.
 

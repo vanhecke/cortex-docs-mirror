@@ -1,3 +1,7 @@
+---
+description: Use Retarus Secure Email Gateway data in Cortex XSIAM.
+---
+
 # Retarus
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Retarus Secure Email Gateway is a fully managed cloud service that provides comprehensive, multi-layered security for organizations. It filters all inbound and outbound traffic to defend against threats like malware, ransomware, and phishing using advanced sandboxing technology.
 

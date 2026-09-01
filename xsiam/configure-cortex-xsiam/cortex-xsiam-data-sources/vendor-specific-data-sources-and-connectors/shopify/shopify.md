@@ -1,5 +1,5 @@
 ---
-description: Configure Shopify SaaS posture monitoring for Cortex XSIAM.
+description: Use Shopify SaaS posture monitoring data for Cortex XSIAM.
 ---
 
 # Shopify

@@ -1,3 +1,7 @@
+---
+description: Use ElasticSearch data with Cortex XSIAM.
+---
+
 # ElasticSearch
 
 {% hint style="warning" %}

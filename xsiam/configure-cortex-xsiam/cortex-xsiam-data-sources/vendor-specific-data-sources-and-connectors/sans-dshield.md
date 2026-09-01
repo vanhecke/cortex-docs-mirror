@@ -1,5 +1,5 @@
 ---
-description: Configure the SANS DShield connector for Cortex XSIAM
+description: Configure the SANS DShield connector for Cortex XSIAM.
 ---
 
 # SANS DShield

@@ -1,3 +1,7 @@
+---
+description: Use OpenLDAP authentication for Cortex XSIAM.
+---
+
 # OpenLDAP
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Use your OpenLDAP or Active Directory user authentication settings to log in to Cortex XSOAR. Users log in with their OpenLDAP or Active Directory username and password, and their permissions are set according to the groups and mapping defined in AD Roles Mapping. For connecting to the LDAP server with a TLS connection, it is recommended to use this integration instead of the Active Directory Authentication server integration.
 

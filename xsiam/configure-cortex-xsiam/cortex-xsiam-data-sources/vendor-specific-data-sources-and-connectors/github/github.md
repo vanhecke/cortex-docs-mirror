@@ -1,3 +1,7 @@
+---
+description: Use GitHub data with Cortex XSIAM.
+---
+
 # GitHub
 
 {% hint style="warning" %}

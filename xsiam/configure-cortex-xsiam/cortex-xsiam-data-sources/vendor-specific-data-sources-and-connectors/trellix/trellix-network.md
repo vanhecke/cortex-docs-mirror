@@ -1,5 +1,5 @@
 ---
-description: Configure Trellix Network data collection for Cortex XSIAM.
+description: Use Trellix Network data in Cortex XSIAM.
 ---
 
 # Trellix Network
@@ -10,7 +10,7 @@ description: Configure Trellix Network data collection for Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Trellix Network (formerly FireEye) network security. FireEye Central Management (CM Series) is the threat intelligence hub that shares intelligence across the FireEye ecosystem to detect and prevent cyber attacks. FireEye Helix provides next-generation SIEM, orchestration, and threat intelligence for alert management, search, analysis, investigation, and reporting. McAfee Network Security Manager gives real-time visibility and control over McAfee intrusion prevention systems deployed across your network. FireEye (AX Series) submits malware objects and URLs for analysis.
 

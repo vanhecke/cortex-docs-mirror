@@ -1,3 +1,7 @@
+---
+description: Use Cloudflate with Cortex XSIAM.
+---
+
 # Cloudflare
 
 {% hint style="warning" %}

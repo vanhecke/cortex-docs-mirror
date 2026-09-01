@@ -1,3 +1,7 @@
+---
+description: Use Broadcom data with Cortex XSIAM.
+---
+
 # Broadcom
 
 {% hint style="warning" %}

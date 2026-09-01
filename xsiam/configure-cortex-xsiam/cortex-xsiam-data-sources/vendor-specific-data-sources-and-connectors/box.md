@@ -1,3 +1,7 @@
+---
+description: Configure the Box data source and connectors for Cortex XSIAM.
+---
+
 # Box
 
 You can configure collecting Box logs and data using a standard data source, content pack integration (onboarded prior to July 26, 2026), or connectors:

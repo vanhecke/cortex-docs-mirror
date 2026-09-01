@@ -1,3 +1,7 @@
+---
+description: Use Cursor data with Cortex XSIAM.
+---
+
 # Cursor
 
 The capabilities and sub-capabilities listed for this connector are available with any active Cortex Cloud Posture Security license.

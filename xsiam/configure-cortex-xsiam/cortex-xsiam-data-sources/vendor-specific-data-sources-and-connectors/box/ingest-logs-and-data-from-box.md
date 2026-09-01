@@ -1,3 +1,7 @@
+---
+description: Collect Box data from Cortex XSIAM.
+---
+
 # Ingest logs and data from Box
 
 Cortex XSIAM can ingest different types of data from Box enterprise accounts using the Box data collector. To receive logs and data from Box enterprise accounts via the Box REST APIs, you must configure the Collection Integrations settings in Cortex XSIAM based on your Box enterprise account credentials. After you set up data collection, Cortex XSIAM begins receiving new logs and data from the source.

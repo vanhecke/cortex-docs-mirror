@@ -1,5 +1,5 @@
 ---
-description: Configure Trellix Email Security data collection for Cortex XSIAM.
+description: use Trellix Email Security data in Cortex XSIAM.
 ---
 
 # Trellix Email Security
@@ -10,7 +10,7 @@ description: Configure Trellix Email Security data collection for Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Integrate with Trellix (FireEye) email and network security products. FireEye Email Security (EX) protects against breaches caused by advanced email attacks, and FireEye Network Security (NX) detects and stops advanced, targeted, and other evasive attacks hiding in internet traffic.
 

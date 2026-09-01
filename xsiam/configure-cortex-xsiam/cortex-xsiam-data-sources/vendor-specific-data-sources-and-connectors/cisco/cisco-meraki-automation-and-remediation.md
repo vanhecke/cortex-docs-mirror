@@ -1,3 +1,7 @@
+---
+description: Use Cisco Meraki Automation and Remediation data with Cortex XSIAM.
+---
+
 # Cisco Meraki Automation and Remediation
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Cisco Meraki is a cloud-managed IT platform that simplifies networking, security, communications, and endpoint management through a centralized web interface. This connector runs automated actions and remediation against organizations, networks, devices, and their licenses via the Meraki Dashboard API.
 

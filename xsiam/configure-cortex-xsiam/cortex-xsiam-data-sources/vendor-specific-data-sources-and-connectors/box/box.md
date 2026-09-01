@@ -1,3 +1,7 @@
+---
+description: Use Box data with Cortex XSIAM.
+---
+
 # Box
 
 The capabilities and sub-capabilities listed for this connector are available with any active Cortex Cloud Posture Security license.

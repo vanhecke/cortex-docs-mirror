@@ -1,3 +1,7 @@
+---
+description: Collect Cribl data with Cortex XSIAM.
+---
+
 # Ingest data from Cribl
 
 The Cribl data collector is a standard, out-of-the-box integration that ingests data collected by Cribl from multiple sources and streams it to Cortex XSIAM. This integration ensures that all downstream capabilities, including advanced analytics, are fully available within the platform.

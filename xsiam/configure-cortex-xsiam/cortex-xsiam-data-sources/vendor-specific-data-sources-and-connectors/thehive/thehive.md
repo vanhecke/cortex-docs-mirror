@@ -1,5 +1,5 @@
 ---
-description: Configure the TheHive connector in Cortex XSIAM.
+description: Use TheHive data in Cortex XSIAM.
 ---
 
 # TheHive
@@ -10,7 +10,7 @@ description: Configure the TheHive connector in Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 TheHive Project is an open source and free Security Issue Response Platform designed to make life easier for SOCs, CSIRTs, CERTs and any information security practitioner dealing with security issues that need to be investigated and acted upon swiftly.
 

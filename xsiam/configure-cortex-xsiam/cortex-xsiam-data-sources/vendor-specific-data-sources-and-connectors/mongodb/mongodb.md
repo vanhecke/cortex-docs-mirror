@@ -1,3 +1,7 @@
+---
+description: Use MongoDB data with Cortex XSIAM.
+---
+
 # MongoDB
 
 {% hint style="warning" %}

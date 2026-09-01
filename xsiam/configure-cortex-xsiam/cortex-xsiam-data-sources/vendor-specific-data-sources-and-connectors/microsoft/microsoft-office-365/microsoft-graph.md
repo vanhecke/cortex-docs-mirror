@@ -1,3 +1,7 @@
+---
+description: Use Microsoft Graph data with Cortex XSIAM.
+---
+
 # Microsoft Graph
 
 {% hint style="warning" %}

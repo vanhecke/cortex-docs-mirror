@@ -1,5 +1,5 @@
 ---
-description: Configure the Tenable connector in Cortex XSIAM.
+description: Use Tenable data in Cortex XSIAM.
 ---
 
 # Tenable

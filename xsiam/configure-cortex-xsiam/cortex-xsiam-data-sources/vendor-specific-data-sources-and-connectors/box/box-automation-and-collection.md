@@ -1,3 +1,7 @@
+---
+description: Use BMC Automation and Collection data with Cortex XSIAM.
+---
+
 # Box Automation and Collection
 
 {% hint style="warning" %}

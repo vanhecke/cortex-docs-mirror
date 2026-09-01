@@ -1,5 +1,5 @@
 ---
-description: Configure Uptycs event and security alert collection for Cortex XSIAM.
+description: Use Uptycs event and security alert data in Cortex XSIAM.
 ---
 
 # Uptycs
@@ -10,7 +10,7 @@ description: Configure Uptycs event and security alert collection for Cortex XSI
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM license.
+This connector is available with any active Cortex XSIAM license.
 
 Uptycs is a cloud-native security analytics platform that provides unified visibility across endpoints, cloud workloads, and containers. Use this connector to collect events and security alerts from the Uptycs platform for centralized monitoring and case response.
 

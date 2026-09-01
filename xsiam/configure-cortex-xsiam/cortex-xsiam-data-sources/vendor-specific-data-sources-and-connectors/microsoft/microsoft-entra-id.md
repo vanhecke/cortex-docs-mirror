@@ -1,3 +1,7 @@
+---
+description: Use Microsoft Entra ID data with Cortex XSIAM.
+---
+
 # Microsoft Entra ID
 
 Monitor identity risks and secure identity configurations across your Microsoft Entra ID environment.

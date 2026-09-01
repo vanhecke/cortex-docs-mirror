@@ -1,7 +1,7 @@
 ---
 description: >-
-  Configure the TrendAI connector for Cortex XSIAM, including Trend Micro
-  endpoint, cloud, email, and XDR integrations.
+  Use TrendAI data in Cortex XSIAM, including Trend Micro endpoint, cloud,
+  email, and XDR integrations.
 ---
 
 # TrendAI

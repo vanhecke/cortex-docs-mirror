@@ -1,3 +1,7 @@
+---
+description: Use Corelight Zeek data with Cortex XSIAM.
+---
+
 # Corelight Zeek
 
 You can configure collecting Corelight Zeek logs using a Broker VM Syslog Collector applet or content pack integration (onboarded prior to July 26, 2026):

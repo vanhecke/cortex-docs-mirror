@@ -1,7 +1,5 @@
 ---
-description: >-
-  Connect a Sonatype Nexus registry to Cortex XSIAM for container image
-  scanning.
+description: Use Sonatype Nexus registry data in Cortex XSIAM for container image scanning.
 ---
 
 # Connect Sonatype Nexus registry

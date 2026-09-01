@@ -1,3 +1,7 @@
+---
+description: Use Windows DHCP data using Elasticsearch Filebeat with Cortex XSIAM.
+---
+
 # Windows DHCP via Elasticsearch Filebeat
 
 You can configure collecting Windows DHCP logs using a Standard Collector or content pack integration (onboarded prior to July 26, 2026):

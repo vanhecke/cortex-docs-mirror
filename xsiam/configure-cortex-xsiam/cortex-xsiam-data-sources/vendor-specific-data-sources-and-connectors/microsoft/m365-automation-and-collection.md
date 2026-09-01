@@ -1,3 +1,7 @@
+---
+description: Use M365 Automation and Collection data with Cortex XSIAM.
+---
+
 # M365 Automation and Collection
 
 {% hint style="warning" %}

@@ -1,5 +1,5 @@
 ---
-description: Configure the Thales connector in Cortex XSIAM.
+description: Use Thales data in Cortex XSIAM.
 ---
 
 # Thales
@@ -10,7 +10,7 @@ description: Configure the Thales connector in Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM license.
+This connector is available with any active Cortex XSIAM license.
 
 SafeNet Trusted Access prevents data breaches, helps with compliance with regulations, and supports migration to the cloud in a simple and secure fashion. Retrieve access, authentication, and audit logs and store them for investigation and response.
 

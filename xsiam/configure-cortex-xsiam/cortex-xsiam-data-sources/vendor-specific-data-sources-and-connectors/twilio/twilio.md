@@ -1,7 +1,7 @@
 ---
 description: >-
-  Configure the Twilio connector for Cortex XSIAM to send SMS notifications and
-  collect SendGrid email activity.
+  Use Twilio data in Cortex XSIAM to send SMS notifications and collect SendGrid
+  email activity.
 ---
 
 # Twilio

@@ -31,7 +31,7 @@ Perform the following tasks before you begin configuring data collection from Am
   * For best performance, we recommend limiting each file size to up to 50 MB (compressed).
 * Ensure that you have at a minimum the following permissions in AWS for an Amazon S3 bucket and Amazon Simple Queue Service (SQS).
   * **Amazon S3 bucket**: `GetObject`
-  * **SQS**: `ChangeMessageVisibility`, `ReceiveMessage`, and `DeleteMessage`.
+  * **SQS**: `ChangeMessageVisibility`, `ReceiveMessage`, `GetQueueAttributes`, and `DeleteMessage`.
 * Determine how you want to provide access to Cortex XSIAM to your logs and perform API operations. You have the following options:
   * Use Workload Federated Identity to allow Cortex XSIAM's dedicated log collector service account to assume an IAM role in your AWS environment using a short-lived OIDC token, without storing any long-lived credentials. This is the Workload Federated Identity option in the Amazon S3 collection configuration and is the recommended option when available.
   * Designate an AWS IAM user, where you will need to know the Account ID for the user and have the relevant permissions to create an access key/id for the relevant IAM user.
@@ -118,7 +118,7 @@ Configure Cortex XSIAM to receive generic logs from Amazon S3:
     <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note:</strong> Skip this step if you are using an Assumed Role or Workload Federated Identity for Cortex XSIAM.</p></div>
 
     1. In the [Amazon SQS Console](https://console.aws.amazon.com/sqs/), select the SQS queue that you created when you configured an Amazon Simple Queue Service (SQS).
-    2. Select the Access policy tab, and edit the Access policy code in the editor window to enable the IAM user to perform operations on the Amazon SQS with permissions to `SQS:ChangeMessageVisibility`, `SQS:DeleteMessage`, and `SQS:ReceiveMessage`. Use this sample code as a guide for defining the `“Sid”: “__receiver_statement”` with the following definitions.
+    2. Select the Access policy tab, and edit the Access policy code in the editor window to enable the IAM user to perform operations on the Amazon SQS with permissions to `SQS:ChangeMessageVisibility`, `SQS:DeleteMessage`, `SQS:ReceiveMessage`, and `SQS:GetQueueAttributes`. Use this sample code as a guide for defining the `“Sid”: “__receiver_statement”` with the following definitions.
        * `“aws:SourceArn”`: Specify the ARN of the AWS IAM user. You can retrieve the User ARN from the Security credentials tab, which you accessed when you configured access keys for the AWS API user.
        *   `“Resource”`: Leave the automatically generated ARN for the SQS queue that is set in the code, which uses the format `“arn:sns:Region:account-id:topic-name”`.
 
@@ -150,7 +150,8 @@ Configure Cortex XSIAM to receive generic logs from Amazon S3:
                  "Action": [
                    "SQS:ChangeMessageVisibility",
                    "SQS:DeleteMessage",
-                   "SQS:ReceiveMessage"
+                   "SQS:ReceiveMessage",
+                   "sqs:GetQueueAttributes"
                  ],
                  "Resource": "[Leave automatically generated ARN for the SQS queue defined by AWS]"
                }

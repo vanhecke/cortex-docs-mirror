@@ -1,3 +1,7 @@
+---
+description: Use GitLab Automation and Collection data with Cortex XSIAM.
+---
+
 # GitLab Automation and Collection
 
 {% hint style="warning" %}

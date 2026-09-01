@@ -1,3 +1,7 @@
+---
+description: Use Microsoft 365 data with Cortex XSIAM.
+---
+
 # Microsoft 365 (new)
 
 Secure sensitive data, monitor configurations, and track identity risks across your Microsoft 365 environment, including OneDrive, SharePoint, Teams, and Entra ID.

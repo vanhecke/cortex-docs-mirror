@@ -1,3 +1,7 @@
+---
+description: Use Elasticsearch Filebeat data with Cortex XSIAM.
+---
+
 # Elasticsearch Filebeat
 
 {% hint style="info" %}

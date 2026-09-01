@@ -1,3 +1,7 @@
+---
+description: Use Gigamon data with Cortex XSIAM.
+---
+
 # Gigamon
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 ICEBRG is a network security product used in conjunction with Cortex XSOAR to get events and reports produced in ICEBRG for queries. Top use cases include searching events by query and getting reports by UUID.
 

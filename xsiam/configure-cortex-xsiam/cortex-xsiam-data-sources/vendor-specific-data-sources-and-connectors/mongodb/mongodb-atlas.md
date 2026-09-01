@@ -1,3 +1,7 @@
+---
+description: Use MongoDB Atlas data with Cortex XSIAM.
+---
+
 # MongoDB Atlas
 
 The capabilities and sub-capabilities listed for this connector are available with any active Cortex XSIAM, Cortex Cloud Posture Security, Cortex Cloud Runtime Security, or Cortex Data Security license.

@@ -1,3 +1,7 @@
+---
+description: Use Cisco DUO Automation and Collection data with Cortex XSIAM.
+---
+
 # Cisco DUO Automation and Collection
 
 {% hint style="warning" %}

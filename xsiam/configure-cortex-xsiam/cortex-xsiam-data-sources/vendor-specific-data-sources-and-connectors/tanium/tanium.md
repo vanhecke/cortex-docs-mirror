@@ -1,5 +1,5 @@
 ---
-description: Configure the Tanium connector in Cortex XSIAM.
+description: Use Tanium data in Cortex XSIAM.
 ---
 
 # Tanium
@@ -10,7 +10,7 @@ description: Configure the Tanium connector in Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Integrate with Tanium to hunt, detect, investigate, and remediate threats and vulnerabilities across your endpoints. Manage questions, actions, saved questions, packages, and sensor information through the Tanium REST API, and manage endpoint processes, evidence, alerts, files, snapshots, and connections with Tanium Threat Response.
 

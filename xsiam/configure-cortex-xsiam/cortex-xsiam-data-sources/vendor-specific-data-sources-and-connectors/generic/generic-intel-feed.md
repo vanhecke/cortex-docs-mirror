@@ -1,3 +1,7 @@
+---
+description: Use Generic Intel Feed data with Cortex XSIAM.
+---
+
 # Generic Intel Feed
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Fetch threat intelligence indicators from generic CSV, JSON, plain text, RSS, and public DNS feeds, with extensive configuration options to support a wide variety of feed formats. Also provides the Generic Export Indicators Service to expose a list of indicators from the system as an outbound feed (EDL) for consumption by external products.
 

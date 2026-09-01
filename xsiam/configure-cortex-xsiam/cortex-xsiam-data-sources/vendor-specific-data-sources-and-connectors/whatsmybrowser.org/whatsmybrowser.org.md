@@ -1,7 +1,5 @@
 ---
-description: >-
-  Configure the WhatsMyBrowser.org connector for Cortex XSIAM user-agent
-  parsing.
+description: Use WhatsMyBrowser.org data in Cortex XSIAM user-agent parsing.
 ---
 
 # WhatsMyBrowser.org
@@ -12,7 +10,7 @@ description: >-
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 The User Agent Parse API from WhatIsMyBrowser lets you send a User Agent String and receive a detailed response describing as much as possible about the string. WhatIsMyBrowser parses user agent strings and gives insight into known user agents, including whether a user agent string is known to be malicious.
 

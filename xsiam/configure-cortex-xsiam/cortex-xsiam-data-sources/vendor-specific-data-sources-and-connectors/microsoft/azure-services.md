@@ -1,3 +1,7 @@
+---
+description: Use Azure Services data with Cortex XSIAM.
+---
+
 # Azure Services
 
 {% hint style="warning" %}

@@ -1,5 +1,5 @@
 ---
-description: Configure the Syslog Sender connector in Cortex XSIAM.
+description: Use Syslog Sender data in Cortex XSIAM.
 ---
 
 # Syslog Sender
@@ -10,7 +10,7 @@ description: Configure the Syslog Sender connector in Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Use the Syslog Sender integration to send messages in RFC 5424 message format and mirror investigation War Room entries to Syslog.
 

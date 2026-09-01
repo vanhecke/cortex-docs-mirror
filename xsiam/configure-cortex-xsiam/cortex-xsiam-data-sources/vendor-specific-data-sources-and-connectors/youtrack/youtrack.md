@@ -1,5 +1,5 @@
 ---
-description: Configure the YouTrack connector for Cortex XSIAM.
+description: Use YouTrack data for Cortex XSIAM.
 ---
 
 # YouTrack

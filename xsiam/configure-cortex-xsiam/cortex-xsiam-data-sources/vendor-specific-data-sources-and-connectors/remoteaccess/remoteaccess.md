@@ -1,3 +1,7 @@
+---
+description: Use RemoteAccess commands and file transfers for Cortex XSIAM.
+---
+
 # RemoteAccess
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Access and run commands on a terminal in a remote location over SSH. Transfer files between the platform and a remote machine, and execute commands on the remote machine.
 

@@ -1,3 +1,7 @@
+---
+description: Use Azure Event Hub data with Cortex XSIAM.
+---
+
 # Azure Event Hub
 
 You can configure collecting Azure Event Hub logs using a standard data source or content pack (onboarded prior to July 26, 2026):

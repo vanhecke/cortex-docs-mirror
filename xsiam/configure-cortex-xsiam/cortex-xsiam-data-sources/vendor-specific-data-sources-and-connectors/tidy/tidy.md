@@ -1,5 +1,5 @@
 ---
-description: Configure the Tidy connector in Cortex XSIAM.
+description: Use Tidy data in Cortex XSIAM.
 ---
 
 # Tidy
@@ -10,7 +10,7 @@ description: Configure the Tidy connector in Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Tidy reduces the on-boarding process for new recruits to a matter of minutes. It uses Ansible to connect to a new recruit's laptop over SSH and execute predefined commands, letting you build role-based playbooks that install languages, programs, and tools and configure the machine for onboarding.
 

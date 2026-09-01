@@ -1,3 +1,7 @@
+---
+description: Use Microsoft Teams data with Cortex XSIAM.
+---
+
 # Microsoft Teams
 
 This connector includes the following capabilities and sub-capabilities (if applicable):

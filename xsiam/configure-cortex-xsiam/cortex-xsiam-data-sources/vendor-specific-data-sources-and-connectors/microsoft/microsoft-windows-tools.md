@@ -1,3 +1,7 @@
+---
+description: Use Microsoft Windows Tools data with Cortex XSIAM.
+---
+
 # Microsoft Windows Tools
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Connect to Windows hosts to run scripts and commands remotely for tasks such as acquiring forensic data, gathering information, and remediating hosts. Uses PowerShell Remoting (built on the Windows Management Framework and Windows Remote Management) and the pywinrm library to create remote sessions and execute processes or PowerShell scripts.
 

@@ -1,3 +1,7 @@
+---
+description: Configure PingOne data sources for Cortex XSIAM.
+---
+
 # PingOne
 
 You can configure collecting PingOne authentication logs and data using a standard collector, content pack integration (onboarded prior to July 26, 2026), or connector:

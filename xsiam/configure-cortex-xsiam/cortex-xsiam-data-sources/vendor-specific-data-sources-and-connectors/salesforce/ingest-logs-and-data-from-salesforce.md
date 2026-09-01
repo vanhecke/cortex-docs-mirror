@@ -1,3 +1,7 @@
+---
+description: Ingest Salesforce logs and data into Cortex XSIAM.
+---
+
 # Ingest logs and data from Salesforce
 
 Cortex XSIAM supports the collection of Salesforce near-real-time (NRT) events, Setup Audit Trail, Content Metadata, Accounts, event log files, and snapshots. This integration improves threat detection accuracy and eliminates duplicate alerts by ensuring critical multi-event alerts are captured in near-real-time rather than relying on hourly or daily log files.
@@ -169,8 +173,6 @@ You can edit and test an existing collector instance after a successful initial 
 
 If a “connected application” for Cortex XSIAM data collection already exists, you are not required to migrate to an “External Client App”, but since Connected Applications are deprecated by Salesforce, it is recommended to migrate.
 {% endhint %}
-
-
 
 </details>
 

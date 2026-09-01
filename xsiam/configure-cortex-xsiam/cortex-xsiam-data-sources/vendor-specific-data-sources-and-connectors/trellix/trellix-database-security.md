@@ -1,5 +1,5 @@
 ---
-description: Configure Trellix Database Security data collection for Cortex XSIAM.
+description: Use Trellix Database Security data in Cortex XSIAM.
 ---
 
 # Trellix Database Security
@@ -10,7 +10,7 @@ description: Configure Trellix Database Security data collection for Cortex XSIA
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Use the McAfee Database Activity Monitoring (DAM) integration to fetch Alerts (issues) and query Alerts. This integration was integrated and developed with version 4.6.x of McAfee DAM.
 

@@ -1,3 +1,7 @@
+---
+description: Use Kubernetes data with Cortex XSIAM.
+---
+
 # Onboard the Kubernetes connector
 
 {% hint style="info" %}

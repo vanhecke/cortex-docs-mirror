@@ -1,3 +1,7 @@
+---
+description: Collect Microsoft Azure Event Hub data with Cortex XSIAM.
+---
+
 # Ingest logs from Microsoft Azure Event Hub
 
 Cortex XSIAM can ingest different types of data from **Microsoft Azure Event Hub** using the Microsoft Azure Event Hub data collector. To receive logs from Azure Event Hub, you must configure the settings in Cortex XSIAM based on your Microsoft Azure Event Hub configuration. After you set up data collection, Cortex XSIAM begins receiving new logs and data from the source.

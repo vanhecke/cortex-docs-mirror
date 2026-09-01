@@ -1,5 +1,5 @@
 ---
-description: Configure X Automation and Remediation for Cortex XSIAM.
+description: Use X automation and remediation in Cortex XSIAM.
 ---
 
 # X Automation and Remediation
@@ -10,7 +10,7 @@ description: Configure X Automation and Remediation for Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 The Twitter (X) integration enables cybersecurity researchers and SOC teams to harness Twitter to enhance their security operations, providing access to searching recent Tweets (within the last 7 days) and user information using the Twitter v2 API. Teams can automate searching to detect potential threats, gather intelligence on cyber attacks, monitor brand reputation, track threat actors, and detect fraudulent accounts impersonating their company.
 

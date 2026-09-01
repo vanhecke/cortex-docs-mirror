@@ -1,7 +1,7 @@
 ---
 description: >-
-  Configure the Zscaler connector in Cortex XSIAM for ZIA log collection and
-  security management.
+  Use Zscaler data in Cortex XSIAM for ZIA log collection and security
+  management.
 ---
 
 # Zscaler

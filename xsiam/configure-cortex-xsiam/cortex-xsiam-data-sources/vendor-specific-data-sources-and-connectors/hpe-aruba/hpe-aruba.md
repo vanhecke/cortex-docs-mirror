@@ -1,3 +1,7 @@
+---
+description: Use HPE Aruba data with Cortex XSIAM.
+---
+
 # HPE Aruba
 
 {% hint style="warning" %}

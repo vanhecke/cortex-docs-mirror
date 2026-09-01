@@ -1,5 +1,5 @@
 ---
-description: Configure Trellix Endpoint (HX) data collection for Cortex XSIAM.
+description: Use Trellix Endpoint (HX) data in Cortex XSIAM.
 ---
 
 # Trellix Endpoint (HX)

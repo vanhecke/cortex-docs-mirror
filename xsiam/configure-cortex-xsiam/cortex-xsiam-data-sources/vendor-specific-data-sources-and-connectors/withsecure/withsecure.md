@@ -1,5 +1,5 @@
 ---
-description: Configure the WithSecure Endpoint Protection connector in Cortex XSIAM.
+description: Use WithSecure Endpoint Protection data in Cortex XSIAM.
 ---
 
 # WithSecure
@@ -10,7 +10,7 @@ description: Configure the WithSecure Endpoint Protection connector in Cortex XS
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM license.
+This connector is available with any active Cortex XSIAM license.
 
 WithSecure Endpoint Protection is a cloud-based platform that provides effective endpoint protection against ransomware and advanced attacks.
 

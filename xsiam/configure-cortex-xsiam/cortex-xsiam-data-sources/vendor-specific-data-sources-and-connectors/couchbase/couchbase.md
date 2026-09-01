@@ -1,3 +1,7 @@
+---
+description: Use Couchbase data with Cortex XSIAM.
+---
+
 # Couchbase
 
 This connector includes the following capabilities and sub-capabilities, if applicable:

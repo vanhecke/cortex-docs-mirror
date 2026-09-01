@@ -1,5 +1,5 @@
 ---
-description: Configure the Telegram connector in Cortex XSIAM.
+description: Use Telegram data in Cortex XSIAM.
 ---
 
 # Telegram
@@ -10,7 +10,7 @@ description: Configure the Telegram connector in Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Integrate with Telegram to run automation and remediation commands. This is a beta connector, which lets you implement and test pre-release software; it might contain bugs and receive non-backward compatible updates during the beta phase.
 

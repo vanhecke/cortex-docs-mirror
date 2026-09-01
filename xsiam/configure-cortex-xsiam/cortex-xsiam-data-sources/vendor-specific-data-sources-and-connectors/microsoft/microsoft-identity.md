@@ -1,3 +1,7 @@
+---
+description: Use Microsoft Identity data with Cortex XSIAM.
+---
+
 # Microsoft Identity
 
 {% hint style="warning" %}

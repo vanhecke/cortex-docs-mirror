@@ -1,3 +1,7 @@
+---
+description: Use Microsoft 365 Copilot data with Cortex XSIAM.
+---
+
 # Microsoft 365 Copilot
 
 The capabilities and sub-capabilities listed for this connector are available with any active Cortex Cloud Posture Security license.

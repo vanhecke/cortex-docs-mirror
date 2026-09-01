@@ -1,3 +1,7 @@
+---
+description: Use IBM Storage Scale data with Cortex XSIAM.
+---
+
 # IBM Storage Scale
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM license.
+This connector is available with any active Cortex XSIAM license.
 
 IBM Storage Scale (formerly IBM Spectrum Scale, originally GPFS) is a high-performance, software-defined parallel file system for managing massive amounts of unstructured data across storage types, locations, and cloud environments. This connector collects Command Line Interface (CLI) audit log records from the IBM Storage Scale API, using a concurrent fetching mechanism to efficiently ingest large volumes of data from enterprise-level storage environments.
 

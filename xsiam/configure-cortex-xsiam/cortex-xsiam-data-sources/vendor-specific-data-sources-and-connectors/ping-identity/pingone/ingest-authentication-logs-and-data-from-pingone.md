@@ -1,3 +1,7 @@
+---
+description: Ingest PingOne authentication logs and data into Cortex XSIAM.
+---
+
 # Ingest authentication logs and data from PingOne
 
 To receive authentication logs and data from PingOne for Enterprise, you must first set up a Poll subscription in PingOne and then configure the Collection Integrations settings in Cortex XSIAM. After you set up collection integration, Cortex XSIAM immediately begins receiving new authentication logs and data from the source. These logs and data are then searchable in Cortex XSIAM.

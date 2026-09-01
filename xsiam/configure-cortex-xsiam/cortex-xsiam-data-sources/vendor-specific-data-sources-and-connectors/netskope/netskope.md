@@ -1,3 +1,7 @@
+---
+description: Use Netskope data with Cortex XSIAM.
+---
+
 # Netskope
 
 {% hint style="warning" %}

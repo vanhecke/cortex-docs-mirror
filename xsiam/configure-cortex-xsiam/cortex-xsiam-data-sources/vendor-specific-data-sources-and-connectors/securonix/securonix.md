@@ -1,5 +1,5 @@
 ---
-description: Configure the Securonix connector in Cortex XSIAM.
+description: Use Securonix data in Cortex XSIAM.
 ---
 
 # Securonix
@@ -10,7 +10,7 @@ description: Configure the Securonix connector in Cortex XSIAM.
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 A threat intelligence platform that collects and interprets intelligence data from open sources and manages indicator scoring, types, and attributes.
 

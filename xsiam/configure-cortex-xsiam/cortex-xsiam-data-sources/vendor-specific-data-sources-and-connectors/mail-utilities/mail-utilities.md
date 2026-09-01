@@ -1,3 +1,7 @@
+---
+description: Use Mail Utilities data with Cortex XSIAM.
+---
+
 # Mail Utilities
 
 {% hint style="warning" %}

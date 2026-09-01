@@ -1,3 +1,7 @@
+---
+description: Use Jamf data with Cortex XSIAM.
+---
+
 # Jamf
 
 {% hint style="warning" %}

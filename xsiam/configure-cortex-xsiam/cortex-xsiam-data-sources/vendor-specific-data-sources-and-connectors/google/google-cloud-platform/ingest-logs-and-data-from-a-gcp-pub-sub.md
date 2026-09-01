@@ -1,3 +1,7 @@
+---
+description: Collect GCP Pub/Sub data with Cortex XSIAM.
+---
+
 # Ingest logs and data from a GCP Pub/Sub
 
 If you use the Pub/Sub messaging service from Global Cloud Platform (GCP), you can send logs and data from your GCP instance to Cortex XSIAM. Data from GCP is then searchable in Cortex XSIAM to provide additional information and context to your investigations using the GCP Cortex Query Language (XQL) dataset, which is dependent on the type of GCP logs collected. For example queries, refer to the in-app XQL Library. You can configure a Google Cloud Platform collector to receive generic, flow, audit, or Google Cloud DNS logs. When configuring generic logs, you can receive logs in a Raw, JSON, CEF, LEEF, Cisco, or Corelight format.

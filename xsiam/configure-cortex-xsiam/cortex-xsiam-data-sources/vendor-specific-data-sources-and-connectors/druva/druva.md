@@ -1,3 +1,7 @@
+---
+description: Use Druva data with Cortex XSIAM.
+---
+
 # Druva
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM license.
+This connector is available with any active Cortex XSIAM license.
 
 The Druva Cloud Platform integration empowers you to automate ransomware issue response playbooks and orchestrate recovery actions across both your primary and backup environments. This event collector is applicable to customers using the Realize Ransomware Recovery module with inSync and Phoenix on Druva Public Cloud.
 

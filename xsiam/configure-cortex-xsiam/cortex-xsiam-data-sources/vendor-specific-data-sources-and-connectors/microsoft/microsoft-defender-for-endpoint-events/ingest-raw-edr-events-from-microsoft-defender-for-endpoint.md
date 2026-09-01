@@ -1,3 +1,9 @@
+---
+description: >-
+  Collect EDR events from Microsoft Defender for Endpoint data with Cortex
+  XSIAM.
+---
+
 # Ingest raw EDR events from Microsoft Defender for Endpoint
 
 Cortex XSIAM enables ingestion of raw EDR event data from Microsoft Defender for Endpoint Events, streamed to Azure Event Hubs. In addition to all standard SIEM capabilities, this integration unlocks some advanced Cortex XSIAM features, enabling comprehensive analysis of data from all sources, enhanced detection and response, and deeper visibility into Microsoft Defender for Endpoint data.

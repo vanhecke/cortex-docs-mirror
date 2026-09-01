@@ -1,3 +1,7 @@
+---
+description: Use Exabeam data with Cortex XSIAM.
+---
+
 # Exabeam
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Integrate with Exabeam products. The Exabeam Security Management Platform provides end-to-end detection, User Event Behavioral Analytics (UEBA), and SOAR. Exabeam Data Lake provides a searchable log management system for log collection, storage, processing, and presentation, and the Exabeam Security Operations Platform offers a centralized and scalable platform for log management.
 

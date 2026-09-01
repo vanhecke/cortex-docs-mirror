@@ -1,3 +1,7 @@
+---
+description: Use ExtraHop data with Cortex XSIAM.
+---
+
 # ExtraHop
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM license.
+This connector is available with any active Cortex XSIAM license.
 
 ExtraHop Reveal(x) 360 is a cloud-based network detection and response platform that provides complete visibility of network communications at enterprise scale, with real-time threat detections backed by machine learning and guided investigation workflows. It monitors network traffic using behavioral analytics to identify and respond to security threats in hybrid and multi-cloud environments.
 

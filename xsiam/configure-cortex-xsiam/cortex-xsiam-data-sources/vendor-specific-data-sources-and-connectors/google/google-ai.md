@@ -1,3 +1,7 @@
+---
+description: Use Google AI data with Cortex XSIAM.
+---
+
 # Google AI
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 The Google Gemini connector provides access to Google's advanced large language models for AI-powered chat conversations, text analysis, and natural language processing within Cortex XSOAR / XSIAM. It supports two authentication modes: Google AI Studio (API key) and Google Cloud Vertex AI (service account), and multiple Gemini models.
 

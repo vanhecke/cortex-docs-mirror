@@ -1,3 +1,7 @@
+---
+description: Use Mattermost data with Cortex XSIAM.
+---
+
 # Mattermost
 
 {% hint style="warning" %}
@@ -6,7 +10,7 @@
 This connector is only available for tenants that onboarded after July 26, 2026. For tenants that onboarded before this date, use Marketplace to access the standalone integration. For more information, see [Marketplace](../../../marketplace).
 {% endhint %}
 
-This sub-capability is available with any active Cortex XSIAM or Cortex AgentiX license.
+This connector is available with any active Cortex XSIAM or Cortex AgentiX license.
 
 Mattermost is an open-source, self-hostable online chat service with file sharing, search, and integrations, designed as an internal chat for organizations and companies. This connector integrates with Mattermost to send messages and notifications, and to mirror investigations.
 

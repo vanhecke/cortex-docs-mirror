@@ -1,3 +1,7 @@
+---
+description: Configure Oracle Cloud Infrastructure data sources for Cortex XSIAM.
+---
+
 # Oracle Cloud Infrastructure
 
 Follow a wizard to onboard your Oracle Cloud Infrastructure (OCI) environment. The OCI onboarding wizard is designed to facilitate the seamless setup of OCI data into Cortex XSIAM.

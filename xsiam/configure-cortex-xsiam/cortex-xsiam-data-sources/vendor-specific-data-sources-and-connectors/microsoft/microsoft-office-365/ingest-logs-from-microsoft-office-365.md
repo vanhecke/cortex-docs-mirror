@@ -1,3 +1,7 @@
+---
+description: Collect Microsoft Office 365 data with Cortex XSIAM.
+---
+
 # Ingest logs from Microsoft Office 365
 
 {% hint style="warning" %}

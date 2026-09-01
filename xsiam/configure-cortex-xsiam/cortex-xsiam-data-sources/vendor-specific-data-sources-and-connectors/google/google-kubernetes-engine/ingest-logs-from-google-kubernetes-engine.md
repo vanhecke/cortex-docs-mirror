@@ -1,3 +1,7 @@
+---
+description: Collect Google Kuberbetes Engine data with Cortex XSIAM.
+---
+
 # Ingest logs from Google Kubernetes Engine
 
 Instead of forwarding Google Kubernetes Engine (GKE) logs directly to Google StackDrive, Cortex XSIAM can ingest container logs from GKE using Elasticsearch Filebeat. To receive logs, you must install Filebeat on your containers and enable Data Collection settings for Filebeat.

@@ -24,7 +24,7 @@ Be sure you do the following tasks before you begin configuring data collection 
 
 * Ensure that you have at a minimum the following permissions in AWS for an Amazon S3 bucket and Amazon Simple Queue Service (SQS).
   * **Amazon S3 bucket**: `GetObject`
-  * **SQS**: `ChangeMessageVisibility`, `ReceiveMessage`, and `DeleteMessage`.
+  * **SQS**: `ChangeMessageVisibility`, `ReceiveMessage`, `GetQueueAttributes`, and `DeleteMessage`.
 *   Create a dedicated Amazon S3 bucket for collecting network flow logs with the default settings. For more information, see [Creating a bucket using the Amazon S3 Console](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html).
 
     <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>It is your responsibility to define a retention policy for your Amazon S3 bucket by creating a Lifecycle rule in the Management tab. We recommend setting the retention policy to at least 7 days to ensure that the data can be retrieved under all circumstances.</p></div>

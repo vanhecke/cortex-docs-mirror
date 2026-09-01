@@ -1,3 +1,7 @@
+---
+description: Use Forcepoint data with Cortex XSIAM.
+---
+
 # Forcepoint
 
 {% hint style="warning" %}
