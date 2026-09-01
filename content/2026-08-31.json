@@ -1,0 +1,142 @@
+{
+  "date": "2026-08-31",
+  "sha": "607363adfa42f9fc74798ad1bdea2916a283387f",
+  "committed_at": "2026-08-31T22:28:58+03:00",
+  "packs": [
+    {
+      "name": "Akamai_WAF",
+      "insertions": 128,
+      "deletions": 11
+    },
+    {
+      "name": "AnthropicClaude",
+      "insertions": 70,
+      "deletions": 1821
+    },
+    {
+      "name": "AnthropicClaudeStandardConnector",
+      "insertions": 306,
+      "deletions": 0
+    },
+    {
+      "name": "ApiModules",
+      "insertions": 2307,
+      "deletions": 7
+    },
+    {
+      "name": "Base",
+      "insertions": 35,
+      "deletions": 6
+    },
+    {
+      "name": "Campaign",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "CheckPointHEC",
+      "insertions": 316,
+      "deletions": 38
+    },
+    {
+      "name": "Core",
+      "insertions": 23,
+      "deletions": 1
+    },
+    {
+      "name": "CortexXDR",
+      "insertions": 12,
+      "deletions": 1
+    },
+    {
+      "name": "Doppel",
+      "insertions": 1765,
+      "deletions": 265
+    },
+    {
+      "name": "GoogleChronicleBackstory",
+      "insertions": 27773,
+      "deletions": 12
+    },
+    {
+      "name": "Mimecast",
+      "insertions": 977,
+      "deletions": 730
+    },
+    {
+      "name": "Phishing",
+      "insertions": 14,
+      "deletions": 3
+    },
+    {
+      "name": "Reco",
+      "insertions": 118,
+      "deletions": 14
+    },
+    {
+      "name": "Slack",
+      "insertions": 7,
+      "deletions": 1
+    },
+    {
+      "name": "SpyCloudEnterpriseProtection",
+      "insertions": 578,
+      "deletions": 12
+    },
+    {
+      "name": "ctf01",
+      "insertions": 7,
+      "deletions": 1
+    }
+  ],
+  "commits": [
+    {
+      "sha": "915f994bc952f1152c27c37b67be03a618bb3690",
+      "subject": "Fetch restore request based on last fetched request (#45635) (#45696)"
+    },
+    {
+      "sha": "a980f9058607fdbab4ac47266b444313f523645d",
+      "subject": "Reco: fix fetch-incidents skipping alerts during bursts (#45577) (#45695)"
+    },
+    {
+      "sha": "aed32c6c2cd86d48f0de9b276514f7cac1571493",
+      "subject": "cortex update issue action migration (#45652)"
+    },
+    {
+      "sha": "b8dbf640b5352a3fa6bd0fc8442a58451272acc0",
+      "subject": "Mimecast v2 - Migrate Command (#45292)"
+    },
+    {
+      "sha": "066c53a37c7d8eb45bf49bbfe2113673b4407519",
+      "subject": "XSUP-75663: Enhance akamai-get-client-list command to handle paginated responses (#45692)"
+    },
+    {
+      "sha": "13633867e4a6b739558a306566adbefad63a7331",
+      "subject": "Core xdr-retrieve-file different separator options (#45106)"
+    },
+    {
+      "sha": "64f756479665d544b7a914ed7e7d74d5918daf45",
+      "subject": "Doppel: fix incoming/outgoing mirroring and add per-product entity content (1.1.0) (#45683)"
+    },
+    {
+      "sha": "8ea5e99e078339a7936b263f884cda8fc43e515f",
+      "subject": "Jmizrahi/crtx 258756/saas claude connector (#45637)"
+    },
+    {
+      "sha": "375faade6a91f69037a093fecf2e1c4953754889",
+      "subject": "CRTX-276725: Guard against duplicate agent selection in Cortex Agentic Assistant (#45672)"
+    },
+    {
+      "sha": "4054c6aba2876bc2784c2ae445be82963b6be0e2",
+      "subject": "Google SecOps Release 6.0.0 (#45704)"
+    },
+    {
+      "sha": "d00fbc627444251fdb41b5b497e327ed77bdd611",
+      "subject": "Update SpyCloud Enterprise Protection pack - add Access Data type (#45699)"
+    },
+    {
+      "sha": "607363adfa42f9fc74798ad1bdea2916a283387f",
+      "subject": "sklearn: fail build when NLTK data download fails (#45701)"
+    }
+  ]
+}
