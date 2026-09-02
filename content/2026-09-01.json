@@ -1,0 +1,199 @@
+{
+  "date": "2026-09-01",
+  "sha": "d15ac3d73505565e005dca6e8ca4ab9686b8e1fb",
+  "committed_at": "2026-09-01T19:46:25+03:00",
+  "packs": [
+    {
+      "name": "AzureKubernetesServices",
+      "insertions": 517,
+      "deletions": 1
+    },
+    {
+      "name": "BeyondTrust_Password_Safe",
+      "insertions": 180,
+      "deletions": 1
+    },
+    {
+      "name": "CiscoAppDynamics",
+      "insertions": 70,
+      "deletions": 1
+    },
+    {
+      "name": "CiscoSpark",
+      "insertions": 98,
+      "deletions": 1
+    },
+    {
+      "name": "Cisco_Wireless_LAN_Controller",
+      "insertions": 471,
+      "deletions": 1
+    },
+    {
+      "name": "CohesityHelios",
+      "insertions": 143,
+      "deletions": 1
+    },
+    {
+      "name": "CyberArk_Privileged_Threat_Analytics",
+      "insertions": 109,
+      "deletions": 1
+    },
+    {
+      "name": "FireEyeETP",
+      "insertions": 128,
+      "deletions": 1
+    },
+    {
+      "name": "Flashpoint",
+      "insertions": 1629,
+      "deletions": 60
+    },
+    {
+      "name": "FortiManager",
+      "insertions": 81,
+      "deletions": 1
+    },
+    {
+      "name": "Fortimail",
+      "insertions": 231,
+      "deletions": 1
+    },
+    {
+      "name": "GoogleCloudSCC",
+      "insertions": 102,
+      "deletions": 1
+    },
+    {
+      "name": "IBMGuardium",
+      "insertions": 256,
+      "deletions": 1
+    },
+    {
+      "name": "Incapsula",
+      "insertions": 228,
+      "deletions": 1
+    },
+    {
+      "name": "IvantiPulseSecureVTM",
+      "insertions": 157,
+      "deletions": 1
+    },
+    {
+      "name": "MailListener_-_POP3",
+      "insertions": 89,
+      "deletions": 3
+    },
+    {
+      "name": "MicrosoftCloudAppSecurity",
+      "insertions": 160,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftManagementActivity",
+      "insertions": 45,
+      "deletions": 3
+    },
+    {
+      "name": "OktaAuth0",
+      "insertions": 135,
+      "deletions": 1
+    },
+    {
+      "name": "ProofpointEmailSecurity",
+      "insertions": 165,
+      "deletions": 1
+    },
+    {
+      "name": "SafeNet_Trusted_Access",
+      "insertions": 73,
+      "deletions": 1
+    },
+    {
+      "name": "SecureAuthIdentityPlatform",
+      "insertions": 146,
+      "deletions": 1
+    },
+    {
+      "name": "SentinelOne",
+      "insertions": 279,
+      "deletions": 1
+    },
+    {
+      "name": "Squid",
+      "insertions": 50,
+      "deletions": 1
+    },
+    {
+      "name": "SymantecEndpointSecurity",
+      "insertions": 133,
+      "deletions": 1
+    },
+    {
+      "name": "TeamViewer",
+      "insertions": 91,
+      "deletions": 1
+    },
+    {
+      "name": "Trellix_ePO",
+      "insertions": 101,
+      "deletions": 1
+    },
+    {
+      "name": "TrendMicroEmailSecurity",
+      "insertions": 176,
+      "deletions": 1
+    },
+    {
+      "name": "XSOARmirroring",
+      "insertions": 41,
+      "deletions": 4
+    },
+    {
+      "name": "iManageThreatManager",
+      "insertions": 93,
+      "deletions": 1
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d307c15fc06469dd4b6250a19f9e3101953a69fe",
+      "subject": "CRTX-271525: add identity.* to modeling rules (PR 2 of 7) (#45450)"
+    },
+    {
+      "sha": "9dfc5380c51292720c667568237ec2bf58d2e95e",
+      "subject": "CRTX-271525: add identity.* to modeling rules (PR 3 of 7) (#45451)"
+    },
+    {
+      "sha": "e5790700dba3700f24f30c9ec0fc0072e5a4e111",
+      "subject": "CRTX-271527: add identity.* to modeling rules (PR 4 of 7) (#45466)"
+    },
+    {
+      "sha": "c7bac1f9d7ca489b7f21ddb276f25f2256dde2c5",
+      "subject": "XSUP-75797 - MailListener Pop3 fetch error (Date format) (#45693)"
+    },
+    {
+      "sha": "ecb270064a123924316f8801d7d7526c99cc1a9c",
+      "subject": "Flashpoint Release 2.2.4 (#45698)"
+    },
+    {
+      "sha": "8e3562d43668f0d6cb23bf55109ffaad958e69e9",
+      "subject": "Re-enable get-modified-remote-data command (#44530)"
+    },
+    {
+      "sha": "bb980011cf68937c75ce61d5e43a8e3dceb970b2",
+      "subject": "CRTX-271525: add identity.* to modeling rules (PR 4 of 7) (#45452)"
+    },
+    {
+      "sha": "b5ba5ab288f58856a26510959930485a2fab90a1",
+      "subject": "CRTX-271525: add identity.* to modeling rules (PR 5 of 7) (#45453)"
+    },
+    {
+      "sha": "19d6e09b24266a57b239d443e3a4de0e3cdbf217",
+      "subject": "Fixed the reset command to run before getting the refresh token (#45731)"
+    },
+    {
+      "sha": "d15ac3d73505565e005dca6e8ca4ab9686b8e1fb",
+      "subject": "CRTX-271525: add identity.* to modeling rules (PR 6 of 7) (#45454)"
+    }
+  ]
+}
