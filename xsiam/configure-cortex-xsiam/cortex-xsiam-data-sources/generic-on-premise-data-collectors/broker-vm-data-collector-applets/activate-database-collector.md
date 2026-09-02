@@ -1,5 +1,5 @@
 ---
-description: Configure this collector for Cortex XSIAM.
+description: Configure the Database Collector applet for Cortex XSIAM.
 ---
 
 # Activate Database Collector

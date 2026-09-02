@@ -1,5 +1,5 @@
 ---
-description: Configure the PagerDuty data sources for Cortex XSIAM.
+description: Configure the PagerDuty connectors for Cortex XSIAM.
 ---
 
 # PagerDuty

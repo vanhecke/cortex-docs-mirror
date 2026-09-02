@@ -1,5 +1,5 @@
 ---
-description: Configure this collector for Cortex XSIAM.
+description: Configure the FTP Collector applet for Cortex XSIAM.
 ---
 
 # Activate FTP Collector

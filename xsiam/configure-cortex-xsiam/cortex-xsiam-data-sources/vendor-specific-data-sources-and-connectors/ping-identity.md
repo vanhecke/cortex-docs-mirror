@@ -1,5 +1,5 @@
 ---
-description: Configure the Ping Identity data sources for Cortex XSIAM.
+description: Configure the Ping Identity data sources and connector for Cortex XSIAM.
 ---
 
 # Ping Identity

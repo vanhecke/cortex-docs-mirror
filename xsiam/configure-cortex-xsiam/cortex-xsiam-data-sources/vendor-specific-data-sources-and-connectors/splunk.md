@@ -1,5 +1,5 @@
 ---
-description: Configure the Splunk data sources for Cortex XSIAM.
+description: Configure the Splunk connectors for Cortex XSIAM.
 ---
 
 # Splunk

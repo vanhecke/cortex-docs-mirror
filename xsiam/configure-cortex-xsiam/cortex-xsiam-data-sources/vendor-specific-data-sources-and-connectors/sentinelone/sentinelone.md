@@ -1,5 +1,5 @@
 ---
-description: Use SentinelOne data inCortex XSIAM.
+description: Use SentinelOne data in Cortex XSIAM.
 ---
 
 # SentinelOne

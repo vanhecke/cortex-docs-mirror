@@ -1,5 +1,5 @@
 ---
-description: Configure the Proofpoint data sources for Cortex XSIAM.
+description: Configure the Proofpoint data source and connector for Cortex XSIAM.
 ---
 
 # Proofpoint

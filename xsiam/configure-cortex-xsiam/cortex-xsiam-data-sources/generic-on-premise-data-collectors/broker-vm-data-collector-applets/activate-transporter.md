@@ -1,5 +1,5 @@
 ---
-description: Configure Transporter for Cortex XSIAM.
+description: Configure Transporter applet for Cortex XSIAM.
 ---
 
 # Activate Transporter

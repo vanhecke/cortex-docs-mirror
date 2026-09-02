@@ -1,5 +1,5 @@
 ---
-description: Configure the SAP data sources for Cortex XSIAM.
+description: Configure the SAP connectors for Cortex XSIAM.
 ---
 
 # SAP

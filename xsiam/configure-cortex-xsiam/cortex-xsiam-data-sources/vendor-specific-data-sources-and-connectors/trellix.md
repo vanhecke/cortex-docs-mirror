@@ -1,5 +1,5 @@
 ---
-description: Configure the Trellix data sources for Cortex XSIAM.
+description: Configure the Trellix connectors for Cortex XSIAM.
 ---
 
 # Trellix

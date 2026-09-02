@@ -2,7 +2,7 @@
   "book": "xsiam",
   "title": "Cortex XSIAM Documentation",
   "section": "cortex-xsiam",
-  "page_count": 2220,
+  "page_count": 2221,
   "tree": [
     {
       "title": "Learn about Cortex XSIAM",
@@ -2937,19 +2937,6 @@
                   ]
                 },
                 {
-                  "title": "GitHub",
-                  "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/github",
-                  "type": "document",
-                  "children": [
-                    {
-                      "title": "GitHub",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/github/github",
-                      "type": "document",
-                      "children": []
-                    }
-                  ]
-                },
-                {
                   "title": "GitGuardian",
                   "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/gitguardian",
                   "type": "document",
@@ -2957,6 +2944,19 @@
                     {
                       "title": "GitGuardian",
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/gitguardian/gitguardian",
+                      "type": "document",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "title": "GitHub",
+                  "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/github",
+                  "type": "document",
+                  "children": [
+                    {
+                      "title": "GitHub",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/github/github",
                       "type": "document",
                       "children": []
                     }
@@ -4085,6 +4085,12 @@
                   "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/mongodb",
                   "type": "document",
                   "children": [
+                    {
+                      "title": "How to onboard MongoDB Atlas (Posture)",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/mongodb/how-to-onboard-mongodb-atlas",
+                      "type": "document",
+                      "children": []
+                    },
                     {
                       "title": "MongoDB",
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/mongodb/mongodb",
@@ -10738,107 +10744,106 @@
                   "title": "Analytics overview",
                   "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview",
                   "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Analytics engine",
+                  "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-engine",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Analytics sensors",
+                  "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-sensors",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Coverage of MITRE Attack tactics",
+                  "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/coverage-of-mitre-attack-tactics",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Review MITRE ATT&CK framework coverage",
+                  "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/review-mitre-att-and-ck-framework-coverage",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Analytics detection time intervals",
+                  "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-detection-time-intervals",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Analytics issues and Analytics BIOCs",
+                  "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-issues-and-analytics-biocs",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "Identity Analytics",
+                  "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/identity-analytics",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "View and manage Analytics rules",
+                  "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/view-and-manage-analytics-rules",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "AI Detection & Response in Cortex XSIAM",
+                  "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/ai-detection-and-response-in-cortex-xsiam-beta",
+                  "type": "document",
                   "children": [
                     {
-                      "title": "Analytics engine",
-                      "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview/analytics-engine",
+                      "title": "Data sources and supported services",
+                      "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/ai-detection-and-response-in-cortex-xsiam-beta/data-sources-and-supported-services",
                       "type": "document",
                       "children": []
                     },
                     {
-                      "title": "Analytics sensors",
-                      "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview/analytics-sensors",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
-                      "title": "Coverage of MITRE Attack tactics",
-                      "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview/coverage-of-mitre-attack-tactics",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
-                      "title": "Review MITRE ATT&CK framework coverage",
-                      "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview/review-mitre-att-and-ck-framework-coverage",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
-                      "title": "Analytics detection time intervals",
-                      "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview/analytics-detection-time-intervals",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
-                      "title": "Analytics issues and Analytics BIOCs",
-                      "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview/analytics-issues-and-analytics-biocs",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
-                      "title": "View and manage Analytics rules",
-                      "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview/view-and-manage-analytics-rules",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
-                      "title": "Identity Analytics",
-                      "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview/identity-analytics",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
-                      "title": "AI Detection & Response in Cortex XSIAM",
-                      "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview/ai-detection-and-response-in-cortex-xsiam-beta",
+                      "title": "Collect prompt logs",
+                      "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/ai-detection-and-response-in-cortex-xsiam-beta/collect-prompt-logs",
                       "type": "document",
                       "children": [
                         {
-                          "title": "Data sources and supported services",
-                          "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview/ai-detection-and-response-in-cortex-xsiam-beta/data-sources-and-supported-services",
+                          "title": "Prompt log collection in AWS",
+                          "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/ai-detection-and-response-in-cortex-xsiam-beta/collect-prompt-logs/prompt-log-collection-in-aws",
                           "type": "document",
                           "children": []
                         },
                         {
-                          "title": "Collect prompt logs",
-                          "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview/ai-detection-and-response-in-cortex-xsiam-beta/collect-prompt-logs",
+                          "title": "Enable prompt log collection in Azure",
+                          "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/ai-detection-and-response-in-cortex-xsiam-beta/collect-prompt-logs/enable-prompt-log-collection-in-azure",
                           "type": "document",
                           "children": [
                             {
-                              "title": "Prompt log collection in AWS",
-                              "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview/ai-detection-and-response-in-cortex-xsiam-beta/collect-prompt-logs/prompt-log-collection-in-aws",
+                              "title": "Configure the Azure Event Hub collection in Cortex XSIAM",
+                              "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/ai-detection-and-response-in-cortex-xsiam-beta/collect-prompt-logs/enable-prompt-log-collection-in-azure/configure-the-azure-event-hub-collection-in-cortex-xsiam",
                               "type": "document",
                               "children": []
                             },
                             {
-                              "title": "Enable prompt log collection in Azure",
-                              "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview/ai-detection-and-response-in-cortex-xsiam-beta/collect-prompt-logs/enable-prompt-log-collection-in-azure",
+                              "title": "Set up prompt logging",
+                              "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/ai-detection-and-response-in-cortex-xsiam-beta/collect-prompt-logs/enable-prompt-log-collection-in-azure/set-up-prompt-logging",
                               "type": "document",
-                              "children": [
-                                {
-                                  "title": "Configure the Azure Event Hub collection in Cortex XSIAM",
-                                  "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview/ai-detection-and-response-in-cortex-xsiam-beta/collect-prompt-logs/enable-prompt-log-collection-in-azure/configure-the-azure-event-hub-collection-in-cortex-xsiam",
-                                  "type": "document",
-                                  "children": []
-                                },
-                                {
-                                  "title": "Set up prompt logging",
-                                  "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview/ai-detection-and-response-in-cortex-xsiam-beta/collect-prompt-logs/enable-prompt-log-collection-in-azure/set-up-prompt-logging",
-                                  "type": "document",
-                                  "children": []
-                                },
-                                {
-                                  "title": "Log HTTP data",
-                                  "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview/ai-detection-and-response-in-cortex-xsiam-beta/collect-prompt-logs/enable-prompt-log-collection-in-azure/log-http-data",
-                                  "type": "document",
-                                  "children": []
-                                },
-                                {
-                                  "title": "Configure diagnostic settings",
-                                  "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/analytics-overview/ai-detection-and-response-in-cortex-xsiam-beta/collect-prompt-logs/enable-prompt-log-collection-in-azure/configure-diagnostic-settings",
-                                  "type": "document",
-                                  "children": []
-                                }
-                              ]
+                              "children": []
+                            },
+                            {
+                              "title": "Log HTTP data",
+                              "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/ai-detection-and-response-in-cortex-xsiam-beta/collect-prompt-logs/enable-prompt-log-collection-in-azure/log-http-data",
+                              "type": "document",
+                              "children": []
+                            },
+                            {
+                              "title": "Configure diagnostic settings",
+                              "path": "detect-investigate-and-respond-to-threats/threat-management/analytics/ai-detection-and-response-in-cortex-xsiam-beta/collect-prompt-logs/enable-prompt-log-collection-in-azure/configure-diagnostic-settings",
+                              "type": "document",
+                              "children": []
                             }
                           ]
                         }

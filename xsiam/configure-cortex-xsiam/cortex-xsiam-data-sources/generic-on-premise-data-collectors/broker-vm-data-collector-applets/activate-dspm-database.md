@@ -1,3 +1,7 @@
+---
+description: Configure the DSPM Database applet for Cortex XSIAM.
+---
+
 # Activate DSPM Database
 
 {% hint style="info" %}

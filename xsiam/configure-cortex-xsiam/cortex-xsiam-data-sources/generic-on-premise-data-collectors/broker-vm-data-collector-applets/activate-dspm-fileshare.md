@@ -1,5 +1,5 @@
 ---
-description: Configure this data source for Cortex XSIAM.
+description: Configure the DSPM Fileshare applet for Cortex XSIAM.
 ---
 
 # Activate DSPM Fileshare

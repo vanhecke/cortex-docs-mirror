@@ -11,7 +11,8 @@ To deploy and configure the Identity Threat Detection and Response module featur
 1. Activate the ITDR add-on license from **Settings -> Cortex XSIAM License**. This activates the identity analytics features automatically.
 2. Activate and onboard the [Cloud Identity Engine](https://docs.paloaltonetworks.com/identity/activation-and-onboarding/get-started-with-the-cloud-identity-engine).
 3. Set up the dedicated Identity permissions and roles in **Settings -> Configurations -> Access Management -> Roles -> Identity Security**. For more information, see [RBAC in ITDR](manage-role-based-access-control-rbac-in-itdr).
-4. Configure Identity Profiles to unify AD-SPM, Conditional Access, and LDAP Protection controls in one centralized hub.
+4. Set up the [CyberArk ISP integration](https://xsoar.pan.dev/docs/reference/integrations/cyber-ark-isp) which collects the audit events for the analytics detectors.
+5. Configure Identity Profiles to unify AD-SPM, Conditional Access, and LDAP Protection controls in one centralized hub.
 
 ## Set up Identity Profiles
 

@@ -1,5 +1,5 @@
 ---
-description: Configure the Okta data sources for Cortex XSIAM.
+description: Configure the Okta data source and connectors for Cortex XSIAM.
 ---
 
 # Okta

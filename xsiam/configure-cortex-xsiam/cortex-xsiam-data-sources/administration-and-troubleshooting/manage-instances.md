@@ -1,5 +1,5 @@
 ---
-description: Manage data source and integration instances in Cortex XSIAM.
+description: Manage data source and connector instances in Cortex XSIAM.
 ---
 
 # Manage instances

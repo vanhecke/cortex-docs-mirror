@@ -1,5 +1,5 @@
 ---
-description: Configure the Oracle data sources for Cortex XSIAM.
+description: Configure the Oracle data source and connector for Cortex XSIAM.
 ---
 
 # Oracle

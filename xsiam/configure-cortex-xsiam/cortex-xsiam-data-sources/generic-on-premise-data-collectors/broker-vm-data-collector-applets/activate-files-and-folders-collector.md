@@ -1,5 +1,5 @@
 ---
-description: Configure this collector for Cortex XSIAM.
+description: Configure the Files and Folders Collector applet for Cortex XSIAM.
 ---
 
 # Activate Files and Folders Collector

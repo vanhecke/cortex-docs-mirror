@@ -1,5 +1,5 @@
 ---
-description: Add a data source or integration instance in Cortex XSIAM.
+description: Add a data source or connector instance in Cortex XSIAM.
 ---
 
 # Add a new data source or instance

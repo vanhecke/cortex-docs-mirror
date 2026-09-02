@@ -1,5 +1,5 @@
 ---
-description: Configure local agent settings for Cortex XSIAM.
+description: Configure the Local Agent Settings applet for Cortex XSIAM.
 ---
 
 # Activate Local Agent Settings

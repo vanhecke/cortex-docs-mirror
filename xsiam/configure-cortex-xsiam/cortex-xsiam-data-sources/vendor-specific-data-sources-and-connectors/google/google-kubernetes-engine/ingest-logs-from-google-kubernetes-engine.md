@@ -1,5 +1,5 @@
 ---
-description: Collect Google Kuberbetes Engine data with Cortex XSIAM.
+description: Collect Google Kubernetes Engine data with Cortex XSIAM.
 ---
 
 # Ingest logs from Google Kubernetes Engine

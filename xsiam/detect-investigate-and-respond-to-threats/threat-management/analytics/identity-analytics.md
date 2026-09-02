@@ -16,3 +16,4 @@ To enable Identity Analytics, you must first:
 * Activate Cortex XSIAM Analytics
 
 After configuring your Cloud Identity Engine instance and Cortex XSIAM Analytics, select **Settings (**<img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-815034b52feae75eb9d9eda9624f792871a6285b%2F0c18f4123ddc2dd785e1bb5b02b1bb604d2bf5730d312da4aa43ee3a67c77aca.png?alt=media" alt="403822_spr.png" data-size="line">**)** → **Configurations** → **Cortex XSIAM - Analytics**, and in the **Featured in Analytics** section, **Enable** Identity Analytics.
+

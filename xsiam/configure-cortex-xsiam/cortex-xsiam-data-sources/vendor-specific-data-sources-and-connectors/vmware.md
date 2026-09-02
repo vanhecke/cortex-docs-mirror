@@ -1,5 +1,5 @@
 ---
-description: Configure the VMware data sources for Cortex XSIAM.
+description: Configure the VMware connectors for Cortex XSIAM.
 ---
 
 # VMware

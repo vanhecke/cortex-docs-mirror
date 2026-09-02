@@ -1,3 +1,7 @@
+---
+description: Use AWS Automation and Collection in Cortex XSIAM.
+---
+
 # AWS Automation and Collection
 
 {% hint style="warning" %}

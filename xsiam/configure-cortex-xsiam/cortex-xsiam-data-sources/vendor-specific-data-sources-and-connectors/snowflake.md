@@ -1,5 +1,5 @@
 ---
-description: Configure the Snowflake data sources for Cortex XSIAM.
+description: Configure the Snowflake data source and connector for Cortex XSIAM.
 ---
 
 # Snowflake

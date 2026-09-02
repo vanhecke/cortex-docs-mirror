@@ -1,5 +1,5 @@
 ---
-description: Configure the Zscaler data sources for Cortex XSIAM.
+description: Configure the Zscaler data sources and connector for Cortex XSIAM.
 ---
 
 # Zscaler

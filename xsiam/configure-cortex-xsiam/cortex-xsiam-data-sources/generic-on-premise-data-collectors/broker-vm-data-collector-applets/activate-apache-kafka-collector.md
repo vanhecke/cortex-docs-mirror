@@ -1,5 +1,5 @@
 ---
-description: Configure this collector for Cortex XSIAM.
+description: Configure the Apache Kafka Collector applet for Cortex XSIAM.
 ---
 
 # Activate Apache Kafka Collector

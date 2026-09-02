@@ -1,5 +1,5 @@
 ---
-description: Configure the ServiceNow data sources for Cortex XSIAM.
+description: Configure the ServiceNow data source and connectors for Cortex XSIAM.
 ---
 
 # ServiceNow

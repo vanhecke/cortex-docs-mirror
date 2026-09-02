@@ -1,5 +1,5 @@
 ---
-description: Configure the Slack data sources for Cortex XSIAM.
+description: Configure the Slack connectors for Cortex XSIAM.
 ---
 
 # Slack

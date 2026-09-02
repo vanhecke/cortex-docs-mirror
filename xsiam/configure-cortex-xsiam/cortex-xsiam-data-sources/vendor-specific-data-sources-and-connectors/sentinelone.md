@@ -1,5 +1,5 @@
 ---
-description: Configure the SentinelOne data sources for Cortex XSIAM.
+description: Configure the SentinelOne data source and connector for Cortex XSIAM.
 ---
 
 # SentinelOne

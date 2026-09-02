@@ -1,5 +1,5 @@
 ---
-description: Collect Azure APIM data with
+description: Collect Azure APIM data with Cortex XSIAM.
 ---
 
 # Ingest Azure APIM

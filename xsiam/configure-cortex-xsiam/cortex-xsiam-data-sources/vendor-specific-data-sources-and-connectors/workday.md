@@ -1,5 +1,5 @@
 ---
-description: Configure the Workday data sources in Cortex XSIAM.
+description: Configure the Workday data source and connectors in Cortex XSIAM.
 ---
 
 # Workday

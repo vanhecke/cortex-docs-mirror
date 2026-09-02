@@ -1,5 +1,5 @@
 ---
-description: Configure Workday automation and data collection for Cortex XSIAM.
+description: Configure Workday automation and collection data for Cortex XSIAM.
 ---
 
 # Workday Automation and Collection

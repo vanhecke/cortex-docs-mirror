@@ -1,5 +1,5 @@
 ---
-description: Configure Network Mapper for Cortex XSIAM.
+description: Configure the Network Mapper applet for Cortex XSIAM.
 ---
 
 # Activate Network Mapper

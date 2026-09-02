@@ -1,10 +1,14 @@
----
-description: Monitor compute unit usage in Cortex XSIAM.
----
-
 # Compute units usage
 
-Cortex XSIAM provides a free daily quota of compute units (CU) allocated according to your license size. Queries called without enough quota will fail. To expand your investigation capabilities, you can purchase additional CU by enabling the Compute Unit add-on. After purchasing the additional CU, you can enable the add-on by selecting **Settings → Cortex XSIAM License → Addons**, hovering over the **Extended Compute Units** tile and clicking **Enable**.
+Cortex XSIAM provides a free daily quota of compute units (CU) allocated according to your license size. Queries called without enough quota will fail.&#x20;
+
+{% hint style="info" %}
+### Important
+
+Compute units consumption currently applies only to XQL queries. Agentic and LLM information is shown only for informational purposes and does not consume compute units.
+{% endhint %}
+
+To expand your investigation capabilities, you can purchase additional CU by enabling the Compute Unit add-on. After purchasing the additional CU, you can enable the add-on by selecting **Settings → Cortex XSIAM License → Addons**, hovering over the **Extended Compute Units** tile and clicking **Enable**.
 
 \
 The Compute Unit add-on provides an additional 1 compute unit per day for a year, in addition to your free annual quota. For example, if you have allocated 1,825 free annual CU, with the add-on, you will have a total of 2,190 annual compute units. The Compute Unit add-on is calculated on an annual basis, starting from the procurement of your add-on license. The minimum purchase amount is 50 compute units.
@@ -71,6 +75,10 @@ In the **Compute Units Usage** table, you can filter all the requests that were 
 * **Trigger Type:** The type of source of the query or prompt. For example, automation rule or playbook.
 * **Billable:** Whether the query was deducted from your compute units. Requests that are non-billable are displayed for informational purposes and do not affect your daily limit or compute units balance.
 * **Tenant:** Appears only in a Managed Security tenant. Displays which tenant executed the query.
+
+{% hint style="info" %}
+**NOTE:** For Managed Security tenants, select a tenant from the MSSP Tenant Selection drop-down menu to display information for that tenant.
+{% endhint %}
 
 ### Investigate the XQL API results.
 

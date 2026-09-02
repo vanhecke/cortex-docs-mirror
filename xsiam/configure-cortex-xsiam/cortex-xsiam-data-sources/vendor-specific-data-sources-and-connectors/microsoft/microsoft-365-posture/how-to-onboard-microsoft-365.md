@@ -1,7 +1,7 @@
 ---
 description: >-
   Learn more about adding Microsoft 365 as a third-party data source in Cortex
-  Cloud Data Security.
+  XSIAM.
 ---
 
 # How to onboard Microsoft 365
@@ -10,7 +10,7 @@ description: >-
 This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM license that has the Cloud Posture Security or Cloud Runtime Security add-on.
 {% endhint %}
 
-You can add Microsoft 365 as a third-party data source in Cortex Cloud Data Security.
+You can add Microsoft 365 as a third-party data source in Cortex XSIAM.
 
 * You have generated a Globally Unique Identifier (GUID), also known as a Universally Unique Identifier (UUID). You will need this ID for the tenant you want to use for the Microsoft 365 instance.
 * In order to use Microsoft 365, you must be registered with Microsoft Azure.

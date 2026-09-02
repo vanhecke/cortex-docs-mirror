@@ -1,5 +1,5 @@
 ---
-description: Configure the OpenText data sources for Cortex XSIAM.
+description: Configure the OpenText connectors for Cortex XSIAM.
 ---
 
 # OpenText

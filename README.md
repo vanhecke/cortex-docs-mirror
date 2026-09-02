@@ -15,7 +15,7 @@ records each book's navigation tree and the section it came from.
 
 | Book | Section | Pages |
 | ---- | ------- | ----- |
-| [Cortex XSIAM Documentation](xsiam/) | `cortex-xsiam` | 2220 |
+| [Cortex XSIAM Documentation](xsiam/) | `cortex-xsiam` | 2221 |
 | [Cortex XQL Command Reference](xql/) | `xql-command-reference-guide` | 184 |
 | [Cortex XQL Schema Reference](xql-schema/) | `xql-schema-reference` | 10 |
 | [Cortex XDR Agent Administrator Guide](agent/) | `cortex-xdr-agent/9.3` | 35 |

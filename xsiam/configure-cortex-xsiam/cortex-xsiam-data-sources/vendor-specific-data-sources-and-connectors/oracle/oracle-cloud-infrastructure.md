@@ -1,5 +1,5 @@
 ---
-description: Configure Oracle Cloud Infrastructure data sources for Cortex XSIAM.
+description: Configure Oracle Cloud Infrastructure data source for Cortex XSIAM.
 ---
 
 # Oracle Cloud Infrastructure

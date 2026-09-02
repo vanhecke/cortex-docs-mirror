@@ -1,5 +1,5 @@
 ---
-description: Configure the OneLogin data sources for Cortex XSIAM.
+description: Configure the OneLogin data source and connector for Cortex XSIAM.
 ---
 
 # OneLogin

@@ -1,5 +1,5 @@
 ---
-description: Configure the Salesforce data sources for Cortex XSIAM.
+description: Configure the Salesforce data source and connector for Cortex XSIAM.
 ---
 
 # Salesforce

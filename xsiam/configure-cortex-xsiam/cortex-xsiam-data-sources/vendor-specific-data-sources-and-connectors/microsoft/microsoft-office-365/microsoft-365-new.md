@@ -1,5 +1,5 @@
 ---
-description: Use Microsoft 365 data with Cortex XSIAM.
+description: Use Microsoft 365 (new) data with Cortex XSIAM.
 ---
 
 # Microsoft 365 (new)

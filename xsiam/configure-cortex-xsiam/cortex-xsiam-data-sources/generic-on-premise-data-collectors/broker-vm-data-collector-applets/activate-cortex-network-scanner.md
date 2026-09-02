@@ -1,5 +1,5 @@
 ---
-description: Configure this scanner for Cortex XSIAM.
+description: Configure the Cortex Network Scanner applet for Cortex XSIAM.
 ---
 
 # Activate Cortex Network Scanner
