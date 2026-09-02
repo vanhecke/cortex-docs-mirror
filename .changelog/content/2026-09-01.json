@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-01",
+  "source": "content",
+  "sha": "d43fa68c602f545240a62a37349895742031b575",
+  "headline": "An identity.* modeling-rule sweep touches 26 packs; Flashpoint 2.2.4 is the day's one real release",
+  "summary_md": "- Six of the day's ten upstream commits are the same sweep — CRTX-271525 and CRTX-271527, \"add identity.* to modeling rules\", PRs 2 through 6 of 7.\n- 26 of the 30 packs that moved added lines against **exactly one deletion each**, the shape of that sweep: new modeling-rule content plus a version bump.\n- **Flashpoint** 2.2.4 is the exception and the largest change, +1,629/-60.\n- Three genuine fixes landed: **MailListener - POP3** date parsing, **XSOARmirroring** re-enabling `get-modified-remote-data`, and a reset/refresh-token ordering fix.\n- 30 packs in total, 6,177 lines added against 96 removed.",
+  "highlights": [
+    {
+      "title": "identity.* is being added to modeling rules across the catalog, five PRs at a time",
+      "detail": "PRs 2 through 6 of a series of 7 landed on one day under CRTX-271525 and CRTX-271527, which accounts for 26 of the 30 packs and all but one of the day's large additions.",
+      "paths": ["Packs/AzureKubernetesServices", "Packs/Cisco_Wireless_LAN_Controller", "Packs/SentinelOne"]
+    },
+    {
+      "title": "Flashpoint Release 2.2.4",
+      "detail": "The day's biggest pack change at +1,629/-60, and the only one removing more than four lines, so the only pack whose existing content was reworked rather than extended.",
+      "paths": ["Packs/Flashpoint"]
+    },
+    {
+      "title": "MailListener POP3 no longer fails to fetch on a date format",
+      "detail": "XSUP-75797, a support-raised fetch error, fixed in 89 lines against 3 removed.",
+      "paths": ["Packs/MailListener_-_POP3"]
+    },
+    {
+      "title": "XSOAR mirroring re-enables get-modified-remote-data",
+      "detail": "A command that had been turned off is switched back on (+41/-4), which changes how mirrored incidents refresh.",
+      "paths": ["Packs/XSOARmirroring"]
+    },
+    {
+      "title": "A reset command now runs before the refresh token is fetched",
+      "detail": "The day's one unclaimed subject, and MicrosoftManagementActivity is the only remaining pack with more than one deletion (+45/-3).",
+      "paths": ["Packs/MicrosoftManagementActivity"]
+    }
+  ],
+  "items": {
+    "Packs/Flashpoint": "Release 2.2.4, the day's largest change and the only substantial rework (+1,629/-60).",
+    "Packs/MailListener_-_POP3": "Fixes the XSUP-75797 POP3 fetch error caused by a date format (+89/-3).",
+    "Packs/XSOARmirroring": "Re-enables the get-modified-remote-data command (+41/-4).",
+    "Packs/MicrosoftManagementActivity": "Reorders the reset command to run before the refresh token is obtained (+45/-3).",
+    "Packs/AzureKubernetesServices": "Largest pack of the identity.* modeling-rule sweep at +517/-1.",
+    "Packs/Cisco_Wireless_LAN_Controller": "identity.* modeling-rule additions, +471/-1.",
+    "Packs/SentinelOne": "identity.* modeling-rule additions, +279/-1.",
+    "Packs/IBMGuardium": "identity.* modeling-rule additions, +256/-1.",
+    "Packs/Fortimail": "identity.* modeling-rule additions, +231/-1.",
+    "Packs/Incapsula": "identity.* modeling-rule additions, +228/-1.",
+    "Packs/BeyondTrust_Password_Safe": "identity.* modeling-rule additions, +180/-1.",
+    "Packs/TrendMicroEmailSecurity": "identity.* modeling-rule additions, +176/-1.",
+    "Packs/ProofpointEmailSecurity": "identity.* modeling-rule additions, +165/-1.",
+    "Packs/MicrosoftCloudAppSecurity": "identity.* modeling-rule additions, +160/-1.",
+    "Packs/IvantiPulseSecureVTM": "identity.* modeling-rule additions, +157/-1."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
