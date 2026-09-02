@@ -1,0 +1,68 @@
+{
+  "date": "2026-09-01",
+  "source": "docs",
+  "sha": "8bc660eefb418d4adc620098490cd50ae84c4905",
+  "headline": "MongoDB Atlas (Posture) onboarding added; the Cloud Posture source list grows to about 100 connectors",
+  "summary_md": "- A new **MongoDB Atlas (Posture)** onboarding page lands, and the Cloud Posture and Runtime Security source list expands from 9 entries to roughly 100.\n- Twelve **Analytics** pages move out of *Analytics overview* to sit directly under *Analytics*, breaking existing links to the old paths.\n- **ITDR** deployment gains a required CyberArk ISP step, and compute units are now documented as consumed by XQL queries only.\n- 27 Linux kernel support pages gain 96 kernel builds between them, with none withdrawn.\n- Around 30 data source pages get description-only rewording from \"data sources\" to \"data source and connectors\", plus a handful of typo fixes.",
+  "highlights": [
+    {
+      "title": "MongoDB Atlas (Posture) is documented as a Cloud Posture data source",
+      "detail": "The new page covers the organization ID and service account client credentials, the generated script to run in the MongoDB CLI, and a regional IP allowlist for accounts behind network policies.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/mongodb/how-to-onboard-mongodb-atlas"
+      ]
+    },
+    {
+      "title": "The Cloud Posture and Runtime Security source list jumps from 9 entries to about 100",
+      "detail": "It now names AI and SaaS connectors — Claude, ChatGPT Enterprise, Microsoft 365 Copilot, Copilot Studio, Gemini Enterprise, Cursor and Generic MCP among them — alongside container registries and SIEM connectors.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources"
+      ]
+    },
+    {
+      "title": "Twelve Analytics pages moved up a level, out of Analytics overview",
+      "detail": "Analytics engine, sensors, MITRE coverage, Identity Analytics and the whole AI Detection & Response subtree now hang off Analytics directly, so links and bookmarks to the analytics-overview paths break.",
+      "paths": [
+        "xsiam/detect-investigate-and-respond-to-threats/threat-management/analytics",
+        "xsiam/detect-investigate-and-respond-to-threats/threat-management/analytics/ai-detection-and-response-in-cortex-xsiam-beta"
+      ]
+    },
+    {
+      "title": "ITDR deployment now requires the CyberArk ISP integration",
+      "detail": "It is inserted as step 4 of the checklist, and is what collects the audit events the analytics detectors run on.",
+      "paths": [
+        "xsiam/detect-investigate-and-respond-to-threats/identity-threat-module-itdr/get-started-with-itdr"
+      ]
+    },
+    {
+      "title": "Compute units are consumed by XQL queries only",
+      "detail": "A new note states that agentic and LLM information on the usage page is shown for information and does not draw down the quota.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/data-management/manage-compute-units/compute-units-usage"
+      ]
+    },
+    {
+      "title": "96 kernel builds added across 27 Linux support pages, none withdrawn",
+      "detail": "Amazon Linux 2023, RHEL, AlmaLinux, Rocky, Oracle Linux, Debian 13, SLES 16, CentOS Stream 9 and Ubuntu 18 through 26 all gained rows; every kernel change in the day was an addition.",
+      "paths": [
+        "linux-kernels/amazon-linux-2023/x86_64/2023",
+        "linux-kernels/red-hat-enterprise-linux-rhel/x86_64/9",
+        "linux-kernels/ubuntu/x86_64/26"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/mongodb/how-to-onboard-mongodb-atlas": "New page: onboarding MongoDB Atlas (Posture) with an organization ID and service account credentials, plus an IP allowlist step for network-protected accounts.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources": "The supported list grows from 9 entries to roughly 100 and is retitled \"data sources and connectors\".",
+    "xsiam/detect-investigate-and-respond-to-threats/identity-threat-module-itdr/get-started-with-itdr": "Adds a step: set up the CyberArk ISP integration, which collects the audit events for the analytics detectors.",
+    "xsiam/configure-cortex-xsiam/data-management/manage-compute-units/compute-units-usage": "States that compute unit consumption currently applies only to XQL queries, and adds an MSSP tenant selection note to the usage table.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/microsoft-azure-cloud-onboarding/how-to-onboard-microsoft-azure": "Warns that scanning private serverless functions requires downloading and re-running the Terraform template to apply the extra permissions.",
+    "xsiam/onboard-cortex-xsiam/post-deployment/data-and-log-forwarding/forward-logs-and-data-from-cortex-xsiam-to-external-services/configure-external-applications-for-forwarding/forward-notifications-to-amazon-sqs": "Adds a note to use the default AWS SQS message queue depth of 256 KB or higher.",
+    "xsiam/detect-investigate-and-respond-to-threats/threat-management/analytics": "Every link in the Explore analytics list drops the analytics-overview segment after the twelve child pages moved up a level.",
+    "xsiam/detect-investigate-and-respond-to-threats/threat-management/analytics/ai-detection-and-response-in-cortex-xsiam-beta": "Moved out of Analytics overview along with its prompt-log collection subtree; the relative links inside were repointed one level shallower.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-365-posture/how-to-onboard-microsoft-365": "Now says Microsoft 365 is added as a third-party data source in Cortex XSIAM rather than in Cortex Cloud Data Security.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/mongodb": "The section index gains the new MongoDB Atlas (Posture) entry."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
