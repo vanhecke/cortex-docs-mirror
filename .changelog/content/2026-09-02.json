@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-02",
+  "source": "content",
+  "sha": "733d0bcdd9c373ef4487d6a48ff440026f93effb",
+  "headline": "Microsoft Teams moves to a new standard-connector pack; the identity.* modeling-rule sweep finishes",
+  "summary_md": "- **MicrosoftGraphTeams** loses 732 lines against 12 added while a new **MicrosoftGraphTeamsStandardConnector** pack appears at +287/-0 — the day's one structural move.\n- The `identity.*` modeling-rule series ends: PR 7 of 7 lands for both CRTX-271525 and CRTX-271527, alongside PRs 3, 5 and 6.\n- 25 of the 37 packs added lines against **exactly one deletion each**, that sweep's signature shape.\n- Five substantive fixes landed — **Bitbucket** authentication, **Microsoft Defender for Cloud Apps** watermarking, **Elasticsearch** Kibana URL, **Zscaler** 401 handling, and an **Enterprise DLP** argument.\n- 37 packs, 6,365 lines added against 1,599 removed, from 15 upstream commits.",
+  "highlights": [
+    {
+      "title": "The Microsoft Teams integration is re-homed into a standard-connector pack",
+      "detail": "MicrosoftGraphTeams is the only pack losing substantially more than it gains (+12/-732) on the same day a new MicrosoftGraphTeamsStandardConnector pack is added with no deletions at all, so existing Teams content moves rather than changes.",
+      "paths": ["Packs/MicrosoftGraphTeams", "Packs/MicrosoftGraphTeamsStandardConnector"]
+    },
+    {
+      "title": "Bitbucket gains new authentication methods in a near-total rewrite",
+      "detail": "At +569/-597 it is the only pack that removed roughly as much as it added, so the existing auth path was replaced rather than extended.",
+      "paths": ["Packs/Bitbucket"]
+    },
+    {
+      "title": "Microsoft Defender for Cloud Apps fixes a stalled event-type watermark",
+      "detail": "XSUP-72224, a support-raised collector bug where the fetch watermark stopped advancing, plus a now-configurable fetch limit (+511/-33).",
+      "paths": ["Packs/MicrosoftCloudAppSecurity"]
+    },
+    {
+      "title": "ApiModules is the day's largest single change at +1,418",
+      "detail": "It carries one deletion, the additive shape of the modeling-rule sweep, but no commit subject names it.",
+      "paths": ["Packs/ApiModules"]
+    },
+    {
+      "title": "The identity.* modeling-rule series reaches PR 7 of 7",
+      "detail": "Both CRTX-271525 and CRTX-271527 land their final part today after PRs 2 through 6 landed on 1 September, closing a sweep that has touched packs across two days.",
+      "paths": ["Packs/Absolute", "Packs/HuaweiFW", "Packs/Kiteworks"]
+    },
+    {
+      "title": "Phishing reworks a reported-email deletion path",
+      "detail": "At +333/-169 it is the day's second-largest rework, and the commit list carries a migration of SecurityAndComplianceV2 off the DeleteReportedEmail script to Microsoft Graph Security eDiscovery.",
+      "paths": ["Packs/Phishing"]
+    }
+  ],
+  "items": {
+    "Packs/MicrosoftGraphTeams": "Loses 732 lines against 12 added as Teams content moves to a standard-connector pack.",
+    "Packs/MicrosoftGraphTeamsStandardConnector": "New pack, +287/-0, added as the msgraphteams standard connector.",
+    "Packs/Bitbucket": "New authentication methods, replacing most of the pack (+569/-597).",
+    "Packs/ApiModules": "The day's largest pack change at +1,418/-1; no commit subject names it.",
+    "Packs/MicrosoftCloudAppSecurity": "Fixes the XSUP-72224 stalled event-type watermark and makes the fetch limit configurable (+511/-33).",
+    "Packs/Phishing": "Reworked at +333/-169, against a SecurityAndComplianceV2 migration to Microsoft Graph Security eDiscovery.",
+    "Packs/Elasticsearch": "Adds a Kibana Server URL parameter, XSUP-76053 (+103/-23).",
+    "Packs/Palo_Alto_Networks_Enterprise_DLP": "Adds a service_name argument to pan-dlp-get-report (+105/-9).",
+    "Packs/OSQuery": "Updates the OSQueryBasicQuery script (+83/-8).",
+    "Packs/Zscaler": "ZscalerZIdentity now handles an HTTP 401 response (+64/-3).",
+    "Packs/Unit42ThreatIntelligencebyPaloAltoNetworks": "Updates the feed's outbound requests documentation (+15/-1).",
+    "Packs/OpenAI": "Largest of the one-deletion additive packs after ApiModules, +372/-1.",
+    "Packs/Kiteworks": "Additive change in the sweep's shape, +334/-1.",
+    "Packs/HuaweiFW": "Additive change in the sweep's shape, +237/-1.",
+    "Packs/ForcepointEmailSecurity": "Additive change in the sweep's shape, +209/-1."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
