@@ -1,0 +1,254 @@
+{
+  "date": "2026-09-02",
+  "sha": "6f6bfca1fa1214585d7b0cf48ad7056c4042ae85",
+  "committed_at": "2026-09-02T23:15:05+03:00",
+  "packs": [
+    {
+      "name": "Absolute",
+      "insertions": 133,
+      "deletions": 1
+    },
+    {
+      "name": "Akamai_SIEM",
+      "insertions": 112,
+      "deletions": 1
+    },
+    {
+      "name": "ApiModules",
+      "insertions": 1418,
+      "deletions": 1
+    },
+    {
+      "name": "Armis",
+      "insertions": 2,
+      "deletions": 1
+    },
+    {
+      "name": "AzureEventsHub",
+      "insertions": 189,
+      "deletions": 1
+    },
+    {
+      "name": "Bitbucket",
+      "insertions": 569,
+      "deletions": 597
+    },
+    {
+      "name": "Celonis",
+      "insertions": 83,
+      "deletions": 1
+    },
+    {
+      "name": "Code42",
+      "insertions": 270,
+      "deletions": 1
+    },
+    {
+      "name": "CommunityCommonScripts",
+      "insertions": 2,
+      "deletions": 1
+    },
+    {
+      "name": "DeprecatedContent",
+      "insertions": 1,
+      "deletions": 0
+    },
+    {
+      "name": "DevSecOps",
+      "insertions": 2,
+      "deletions": 1
+    },
+    {
+      "name": "Doppel",
+      "insertions": 1,
+      "deletions": 0
+    },
+    {
+      "name": "Elasticsearch",
+      "insertions": 103,
+      "deletions": 23
+    },
+    {
+      "name": "F5LTM",
+      "insertions": 68,
+      "deletions": 1
+    },
+    {
+      "name": "ForcepointEmailSecurity",
+      "insertions": 209,
+      "deletions": 1
+    },
+    {
+      "name": "GoogleChronicleBackstory",
+      "insertions": 2,
+      "deletions": 1
+    },
+    {
+      "name": "HashiCorp-Vault",
+      "insertions": 87,
+      "deletions": 1
+    },
+    {
+      "name": "HelloWorld",
+      "insertions": 52,
+      "deletions": 1
+    },
+    {
+      "name": "HuaweiFW",
+      "insertions": 237,
+      "deletions": 1
+    },
+    {
+      "name": "IvantiConnectSecure",
+      "insertions": 163,
+      "deletions": 1
+    },
+    {
+      "name": "Jira",
+      "insertions": 73,
+      "deletions": 1
+    },
+    {
+      "name": "Kiteworks",
+      "insertions": 334,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftCloudAppSecurity",
+      "insertions": 511,
+      "deletions": 33
+    },
+    {
+      "name": "MicrosoftGraphTeams",
+      "insertions": 12,
+      "deletions": 732
+    },
+    {
+      "name": "MicrosoftGraphTeamsStandardConnector",
+      "insertions": 287,
+      "deletions": 0
+    },
+    {
+      "name": "MicrosoftIntune",
+      "insertions": 124,
+      "deletions": 1
+    },
+    {
+      "name": "OSQuery",
+      "insertions": 83,
+      "deletions": 8
+    },
+    {
+      "name": "OpenAI",
+      "insertions": 372,
+      "deletions": 1
+    },
+    {
+      "name": "Palo_Alto_Networks_Enterprise_DLP",
+      "insertions": 105,
+      "deletions": 9
+    },
+    {
+      "name": "Phishing",
+      "insertions": 333,
+      "deletions": 169
+    },
+    {
+      "name": "RunZero",
+      "insertions": 76,
+      "deletions": 1
+    },
+    {
+      "name": "Unit42ThreatIntelligencebyPaloAltoNetworks",
+      "insertions": 15,
+      "deletions": 1
+    },
+    {
+      "name": "VMWareNSX",
+      "insertions": 61,
+      "deletions": 1
+    },
+    {
+      "name": "Whois",
+      "insertions": 1,
+      "deletions": 0
+    },
+    {
+      "name": "ZeroNetworksSegment",
+      "insertions": 160,
+      "deletions": 1
+    },
+    {
+      "name": "Zscaler",
+      "insertions": 64,
+      "deletions": 3
+    },
+    {
+      "name": "jamf",
+      "insertions": 51,
+      "deletions": 1
+    }
+  ],
+  "commits": [
+    {
+      "sha": "ffdc406d4c49fadcee47ac00fc468d7392bcc44d",
+      "subject": "fix (#45734)"
+    },
+    {
+      "sha": "b7a66c9f1531d8162245cdb6eae64de518d5a7dd",
+      "subject": "CRTX-271525: add identity.* to modeling rules (PR 7 of 7) (#45455)"
+    },
+    {
+      "sha": "0eb3f72c70676628199dfd258998129ff986392a",
+      "subject": "ZscalerZIdentity - Handle 401 (#45739)"
+    },
+    {
+      "sha": "54ee0e7e9785862788ca2aeb755a8f9bef085849",
+      "subject": "CRTX-271527: add identity.* to modeling rules (PR 3 of 7) (#45465)"
+    },
+    {
+      "sha": "5026b2ef8b5ae9e48073ceb85c8afed7c34a06b8",
+      "subject": "CRTX-271527: add identity.* to modeling rules (PR 5 of 7) (#45467)"
+    },
+    {
+      "sha": "11ca3a6932530de69a48662a31f8c5c2c6f104d5",
+      "subject": "CRTX-271527: add identity.* to modeling rules (PR 6 of 7) (#45468)"
+    },
+    {
+      "sha": "3590f150bfc68b975341ae4be57ea35d287efa6e",
+      "subject": "CRTX-271527: add identity.* to modeling rules (PR 7 of 7) (#45469)"
+    },
+    {
+      "sha": "c0d0efa47c336dea08c6a60dd6b4f6fba745ce92",
+      "subject": "[XSUP-72224] Microsoft Defender for Cloud Apps Event Collector - Fix stalled event-type watermark & make fetch limit configurable (#45741)"
+    },
+    {
+      "sha": "a393a93d2845dcca47c070f22d3521fa42806d1d",
+      "subject": "Update OSQueryBasicQuery script (#45726)"
+    },
+    {
+      "sha": "becc2315c4fa1d3a231926a18fa8d5332986f362",
+      "subject": "Migrate SecurityAndComplianceV2 from `DeleteReportedEmail` script to Microsoft Graph Security eDiscovery (#45651)"
+    },
+    {
+      "sha": "d1a2596be6cbb44b080be13d28877ce63cfa9644",
+      "subject": "add msgraphteams standard connector (#45706)"
+    },
+    {
+      "sha": "2be1504934fe45f52cea981a93ba994458afa333",
+      "subject": "Fix/XSUP-76053/Add Kibana Server URL parameter (#45717)"
+    },
+    {
+      "sha": "d912d9c7352caa74f8ed685b218f7ffb932b1cd5",
+      "subject": "Update Unit42 Feed outbound requests documentation (#45752)"
+    },
+    {
+      "sha": "6eaa2f778d7b2fe7394cff7584554964e149bccd",
+      "subject": "Bitbucket - New Authentication Methods (#45477)"
+    },
+    {
+      "sha": "6f6bfca1fa1214585d7b0cf48ad7056c4042ae85",
+      "subject": "Palo Alto Networks Enterprise DLP: add service_name argument to pan-dlp-get-report (#45758)"
+    }
+  ]
+}
