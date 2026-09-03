@@ -18,11 +18,11 @@ You can create a new control that is tailored to your own business needs, standa
 
 1. In the **Controls** catalog, click **+ Create Control**.
 2. Define control metadata, including:
+   * A single category
+   * A single sub category (optional)
    * Control name
    * Description (optional)
-   * Category
-   * Sub category (optional)
-   * A single custom standard to associate the control with
+   * One or more custom standards to associate the control with
 3. Click **Create**.
 4. Assign a custom detection rule to the control as follows.
 
@@ -65,11 +65,11 @@ You can edit a copy of a built-in control or edit an existing custom control. Yo
 1. In the **Controls** catalog, click [![cortex-cloud-compliance-three-dots.png](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAgCAYAAADNLCKpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADhSURBVEhL7ZQ9CoNAFIQnKW0Ua29hb2thoxewFew8gmcQPICVnSfRyiNYCza2Jk8GkgdZSAIhQvLBssMswz7e/py2K3iTM+e3+Idf5IDhtm0RBAHiOMYwDHQ1xnBd11jXFdM0oWkauhpj2HVdKsC2bSqN8W5LqbKjBIuigOM4XLnxvYfxmbLliKTTQhRFKMty1/cYy57nmQpYloVKYwzneQ7LsuB5HtI0pas54DckV1O63XUdnQdI2Y/IsmzzfX8fVVXR1Rh37vueChjHkUpjDCdJQgWEYUilOWC3n+H3wsAFdcOHmDnAN1gAAAAASUVORK5CYII=)](https://docs-cortex.paloaltonetworks.com/viewer/attachment/5CAbsl8idaK8R43ZLhoTOw/tDvVprS3kGLl_Hnh6mxouw-5CAbsl8idaK8R43ZLhoTOw) on the built-in control you want to edit and click **Save as new**.\
    To edit a custom control, click [![cortex-cloud-compliance-three-dots.png](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAgCAYAAADNLCKpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADhSURBVEhL7ZQ9CoNAFIQnKW0Ua29hb2thoxewFew8gmcQPICVnSfRyiNYCza2Jk8GkgdZSAIhQvLBssMswz7e/py2K3iTM+e3+Idf5IDhtm0RBAHiOMYwDHQ1xnBd11jXFdM0oWkauhpj2HVdKsC2bSqN8W5LqbKjBIuigOM4XLnxvYfxmbLliKTTQhRFKMty1/cYy57nmQpYloVKYwzneQ7LsuB5HtI0pas54DckV1O63XUdnQdI2Y/IsmzzfX8fVVXR1Rh37vueChjHkUpjDCdJQgWEYUilOWC3n+H3wsAFdcOHmDnAN1gAAAAASUVORK5CYII=)](https://docs-cortex.paloaltonetworks.com/viewer/attachment/5CAbsl8idaK8R43ZLhoTOw/tDvVprS3kGLl_Hnh6mxouw-5CAbsl8idaK8R43ZLhoTOw) on the custom control and click **Edit**.
 2. Click **Next**.
-3. Define control metadata, including:
-   * Control name
-   * Description
-   * Category
-   * Sub category
-   * A single custom standard to associate the control with
+3. Edit control metadata, including:
+   * Category: You can reassign the control to a different existing category or create a new category.
+   * Sub category (optional): You can reassign the control to a different existing sub category or create a new sub category.
+   * Control name: You can update the control name.
+   * Description (optional): You can update the control description.
+   * Select custom standards: You can modify the list of custom standards with which the control should be associated.
 4. Click **Save**.
 5. If the control does not already contain a rule, assign a custom detection rule to the control.

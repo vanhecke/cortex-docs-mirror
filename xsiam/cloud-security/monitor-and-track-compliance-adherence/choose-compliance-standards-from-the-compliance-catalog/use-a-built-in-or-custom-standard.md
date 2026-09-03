@@ -34,13 +34,9 @@ To organize controls within a custom compliance standard, you establish categori
    2. **Description** (optional)
    3. **Labels** (optional)
 3. Click **Next.**
-4. Under **Categories & Controls**:
-   1. Select **+Add Category** to create a new category. You must create at least one category. A category serves as a container for organizing controls within the specific standard.
-   2. (Optional) Select **+Add Subcategory** to add a new sub-category using. A sub-category serves as an optional sub-container for organizing controls within the specific category.
-   3. Select **+Add Control** to define controls within the category (and sub-category if selected). Next, enter **Control Name** and an optional **Description**. Repeat this step for each control. You can define up to 600 controls per standard.
-   4. Add additional categories and sub-categories and then add controls to them. When done, click **Next**.
-5. Review the summary of your changes.
-6. Click **Create**.
+4. Under **Select Controls**, you can do one of the following:&#x20;
+   1. Select the controls that you would like to add to the standard and click **Create**.&#x20;
+   2. You can use the option to **Create and Assign New Controls** if you would like to save the standard and then create new controls and assign them to the standard. &#x20;
 
 ## Edit a custom standard
 
@@ -52,11 +48,9 @@ You can edit an existing custom standard.
    2. **Description** (optional)
    3. **Labels** (optional)
 3. Click **Next**.
-4. Under **Categories & Controls**:
-   1. Update or define new categories, sub-categories, and controls as needed.
-   2. When done, click **Next**.
-5. Review the summary of your changes and
-6. Click **Save**.
+4. Under **Select Controls**, you can do one of the following:&#x20;
+   1. Select the controls that you would like to add to the standard and click **Save**.&#x20;
+   2. You can use the option to **Save and Assign New Controls** if you would like to save the standard and then create new controls and assign them to the standard. &#x20;
 
 ## Delete a custom standard
 

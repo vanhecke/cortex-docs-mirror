@@ -85,9 +85,6 @@ Follow the steps to configure the policy.
          <!-- Save the request body and headers to be sent to Cortex. This should always be placed at the very beginning of the inbound element. -->
                 <set-variable name="requestBody" value="@((context.Request?.Body?.As<string>(preserveContent: true)) ?? string.Empty)" />
                 <set-variable name="requestHeaders" value="@(JsonConvert.SerializeObject(context.Request.Headers))" />
-                <!-- End of setting variables for sending to Cortex --><!-- Save the request body and headers to be sent to Cortex. This should always be placed at the very beginning of the inbound element. -->
-                <set-variable name="requestBody" value="@((context.Request?.Body?.As<string>(preserveContent: true)) ?? string.Empty)" />
-                <set-variable name="requestHeaders" value="@(JsonConvert.SerializeObject(context.Request.Headers))" />
                 <!-- End of setting variables for sending to Cortex -->
         ```
 

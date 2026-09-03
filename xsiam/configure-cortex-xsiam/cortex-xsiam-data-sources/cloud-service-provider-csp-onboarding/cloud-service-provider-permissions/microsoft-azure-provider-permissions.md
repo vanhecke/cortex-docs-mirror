@@ -178,7 +178,7 @@ Custom Azure RBAC role with the read-like posture-assessment actions Cortex need
 | Microsoft.Compute/galleries/images/read                                                                             | Read gallery images in order to create disks for image scanning. Cortex uses this to inventory VM images and identify those requiring security assessment and vulnerability scanning as part of agentless disk scanning operations.                                                                                                                                                                                                                                                                                       |
 | Microsoft.Compute/galleries/read                                                                                    | Read galleries. Cortex uses this for comprehensive asset discovery and security posture assessment across the Azure environment.                                                                                                                                                                                                                                                                                                                                                                                          |
 | Microsoft.Compute/hostGroups/read                                                                                   | Read host groups. Cortex uses this for comprehensive asset discovery and security posture assessment across the Azure environment.                                                                                                                                                                                                                                                                                                                                                                                        |
-| Microsoft.Compute/snapshots/read                                                                                    | Read snapshot metadata across the tenant to manage ADS scan snapshot lifecycle                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Microsoft.Compute/snapshots/read                                                                                    | Read snapshot metadata to manage ADS scan snapshot lifecycle                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Microsoft.Compute/virtualMachineScaleSets/networkInterfaces/read                                                    | Read network interfaces of VM scale sets. Cortex uses this for comprehensive asset discovery and security posture assessment across the Azure environment.                                                                                                                                                                                                                                                                                                                                                                |
 | Microsoft.Compute/virtualMachineScaleSets/publicIPAddresses/read                                                    | Read public IP addresses of VM scale sets. Cortex uses this for comprehensive asset discovery and security posture assessment across the Azure environment.                                                                                                                                                                                                                                                                                                                                                               |
 | Microsoft.Compute/virtualMachineScaleSets/read                                                                      | Read virtual machine scale sets. Cortex uses this for comprehensive asset discovery and security posture assessment across the Azure environment.                                                                                                                                                                                                                                                                                                                                                                         |
@@ -536,115 +536,75 @@ Microsoft built-in Azure RBAC role granting read, write, and delete access to bl
 
 The Agentless Disk Scanning (ADS) permissions enable Cortex to securely analyze virtual machine workloads and storage resources without installing software agents. These permissions grant the necessary access to create temporary snapshots, manage disk copies, and inventory VM metadata, allowing Cortex to perform deep vulnerability scanning while keeping production environments completely untouched.
 
-**ADS Disk Role: `ADSConnectorDiskRole-{suffix}`**
+ADS access is split into three roles so that the permissions which create and destroy resources are confined to a resource group Cortex owns, while the permissions that reach across your estate are kept as narrow as possible.
 
-Custom Azure RBAC role granting read, write, and delete access to managed disks.
+* The `ADSScannedAssetsRole` and `ADSOutpostRole` roles apply across the onboarded subscription or management group, and neither can delete anything.&#x20;
+* The `ADSEphemeralResourcesRole` role holds every permission that writes or deletes a disk, snapshot, or gallery image, and is confined to the Cortex-created resource group. Because that role is scoped to that resource group alone, Cortex cannot delete a disk, snapshot, or image anywhere else in your environment.
 
-|                  |                                                                                                                                                    |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Created when     | ADS capability enabled.                                                                                                                            |
-| Assigned to      | Cortex Service Principal.                                                                                                                          |
-| Assignment scope | Matches the onboarded scope.                                                                                                                       |
-| Used by          | Cortex ADS scanner during a scan run, to materialize a snapshot as a temporary disk, attach it to a scanner instance, and remove it on completion. |
+#### ADS Scanned Assets Role: `ADSScannedAssetsRole-{suffix}`
 
-**`ADSConnectorDiskRole` permissions:**
+Custom Azure RBAC role granting read access to compute inventory, the ability to create snapshots, and time-limited read access to the contents of a managed disk.
 
-| Permission                     | Description                                                                                                                                                                                                                                                     |
-| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft.Compute/disks/delete | Delete disks after scanning has finished. This action is critical for remediation and resource hygiene, preventing data exfiltration and reducing the attack surface. It ensures that temporary disks used during analysis do not remain as dangling resources. |
-| Microsoft.Compute/disks/read   | Retrieve disk metadata. This is used to identify disk properties and states, such as detecting dangling disks. It ensures accurate inventory and assessment of storage resources within the environment.                                                        |
-| Microsoft.Compute/disks/write  | Create a disk from a snapshot before attaching it to a workload. This permission is essential for dynamic scanning and analysis without affecting the live environment. It allows the creation of a temporary disk copy to be analyzed securely by the scanner. |
+| Created when     | ADS capability enabled.                                                                                                                                                                                                                                     |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Assigned to      | Cortex Service Principal.                                                                                                                                                                                                                                   |
+| Assignment scope | Matches the onboarded scope.                                                                                                                                                                                                                                |
+| Used by          | <p>Cortex ADS during discovery and at the start of a scan run, to: </p><ul><li>Identify which virtual machines and images are in scope.</li><li>Create a snapshot of a target disk.</li><li>Obtain temporary read access to that disk's contents.</li></ul> |
 
-**ADS Gallery Image Read Role: ADSConnectorGalleryImageRole-{suffix}**
+**`ADSScannedAssetsRole-{suffix}` permissions:**
 
-Custom Azure RBAC role granting read access to Azure Compute Gallery images and to Compute images. Read-only.
+| Permission                                       | Description                                                                                                                                                                                                                                                                                                                                                  |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Microsoft.Compute/virtualMachines/read           | Enable reading VM configurations. Cortex uses this to inventory virtual machines and identify those requiring security scanning.                                                                                                                                                                                                                             |
+| Microsoft.Compute/images/read                    | Read managed images in order to create disks for image scanning. Cortex uses this to inventory managed VM images and identify those requiring security assessment and vulnerability scanning as part of agentless disk scanning operations.                                                                                                                  |
+| Microsoft.Compute/galleries/images/read          | Read gallery images in order to create disks for image scanning. Cortex uses this to inventory VM images and identify those requiring security assessment and vulnerability scanning as part of agentless disk scanning operations.                                                                                                                          |
+| Microsoft.Compute/galleries/images/versions/read | Read gallery image version details within Cortex-managed resource groups. Cortex uses this to track the status of temporary image versions created during image scanning operations.                                                                                                                                                                         |
+| Microsoft.Compute/snapshots/write                | Create a snapshot of a target disk. Cortex uses this to make a temporary, read-only copy of your disk so the scanner can analyze the copy securely without touching your live environment. Snapshots are always written into the Cortex-created resource group.                                                                                              |
+| Microsoft.Compute/disks/beginGetAccess/action    | Issue a time-limited SAS URL that begins to grant read access to the contents of a managed disk. This is how the scanner reads disk data to assess it for vulnerabilities, so it is a data-access grant rather than a metadata read. The access is time-limited and read-only, and Cortex can delete or modify resources only within its own resource group. |
 
-|                  |                                                                            |
-| ---------------- | -------------------------------------------------------------------------- |
-| Created when     | ADS capability enabled.                                                    |
-| Assigned to      | Cortex Service Principal.                                                  |
-| Assignment scope | Matches the onboarded scope.                                               |
-| Used by          | Cortex ADS scanner to identify VM images that are candidates for scanning. |
+#### ADS Outpost Role: `ADSOutpostRole-{suffix}`
 
-**`ADSConnectorGalleryImageRole-{suffix}` permissions:**
+Custom Azure RBAC role granting read access to snapshots.
 
-| Permission                                    | Description                                                                                                                                                                                                                         |
-| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft.Compute/disks/beginGetAccess/action | Begin get access on disks (action). Cortex uses this for security assessment and operational visibility across the Azure environment.                                                                                               |
-| Microsoft.Compute/galleries/images/read       | Read gallery images in order to create disks for image scanning. Cortex uses this to inventory VM images and identify those requiring security assessment and vulnerability scanning as part of agentless disk scanning operations. |
+{% hint style="info" %}
+**Note**: With Terraform subscription onboarding, this role is created as `ADSOutpost-{suffix}`, without "Role" in the name. Terraform management group onboarding and both ARM onboarding paths create it as `ADSOutpostRole-{suffix}`.
+{% endhint %}
 
-**ADS Snapshot Write Role: `ADSConnectorSnapshotRole-{suffix}`**
-
-Custom Azure RBAC role granting create and delete access to disk snapshots.
-
-|                  |                                                                                                                          |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Created when     | ADS capability enabled.                                                                                                  |
-| Assigned to      | Cortex Service Principal.                                                                                                |
-| Assignment scope | The Cortex-created resource group.                                                                                       |
-| Used by          | Cortex ADS scanner at the start of a scan run, to snapshot the customer VM disk, and at the end, to delete the snapshot. |
-
-**`ADSConnectorSnapshotRole-{suffix}` permissions:**
-
-| Permission                         | Description                                                                                                                                                                                                                                                             |
-| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft.Compute/snapshots/delete | Delete snapshots after scanning has finished. This action is critical for remediation and resource hygiene, preventing data exfiltration and reducing the attack surface. It ensures that temporary snapshots used during analysis do not remain as dangling resources. |
-| Microsoft.Compute/snapshots/write  | Create a snapshot of a disk. This permission is essential for dynamic scanning and analysis without affecting the live environment. It allows the creation of a temporary disk copy to be analyzed securely by the scanner.                                             |
-
-**ADS VM Role: `ADSConnectorVMRole-{suffix}`**
-
-Custom Azure RBAC role granting read access to virtual machine metadata. Read-only.
-
-|                  |                                                                                         |
-| ---------------- | --------------------------------------------------------------------------------------- |
-| Created when     | ADS capability enabled.                                                                 |
-| Assigned to      | Cortex Service Principal.                                                               |
-| Assignment scope | Matches the onboarded scope.                                                            |
-| Used by          | Cortex ADS scanner, on each scan cycle, to enumerate VMs and identify scanning targets. |
-
-**`ADSConnectorVMRole-{suffix}` permissions:**
-
-| Permission                             | Description                                                                                                                      |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft.Compute/virtualMachines/read | Enable reading VM configurations. Cortex uses this to inventory virtual machines and identify those requiring security scanning. |
-
-**ADS Gallery Image Write Role: `ADSGalleryImagesRole-{suffix}`**
-
-Custom Azure RBAC role granting create and delete access to Azure Compute Gallery image versions.
-
-|                  |                                                                                                                                        |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Created when     | ADS capability enabled.                                                                                                                |
-| Assigned to      | Cortex Service Principal.                                                                                                              |
-| Assignment scope | The Cortex-created resource group.                                                                                                     |
-| Used by          | Cortex ADS scanner during a scan run, to publish and later remove the Compute Gallery image version used to boot the scanner instance. |
-
-**`ADSGalleryImagesRole-{suffix}` permissions:**
-
-| Permission                                         | Description                                                                                                                                                                                                                                        |
-| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsoft.Compute/galleries/images/delete          | Delete temporary gallery images within Cortex-managed resource groups. Cortex uses this to clean up temporary gallery images created during legacy image scanning, ensuring no stale resources remain after analysis is complete.                  |
-| Microsoft.Compute/galleries/images/versions/delete | Delete temporary gallery image versions after legacy image scanning completes. Cortex uses this to clean up temporary image versions created during the scanning process, ensuring no orphaned resources remain in Cortex-managed resource groups. |
-| Microsoft.Compute/galleries/images/versions/read   | Read gallery image version details within Cortex-managed resource groups. Cortex uses this to track the status of temporary image versions created during legacy image scanning operations.                                                        |
-| Microsoft.Compute/galleries/images/versions/write  | Create temporary gallery image versions within Cortex-managed resource groups. Cortex uses this during legacy image scanning to create temporary image versions that facilitate the scanning process.                                              |
-| Microsoft.Compute/galleries/images/write           | Create temporary gallery images within Cortex-managed resource groups. Cortex uses this during legacy image scanning to create temporary gallery images that facilitate the scanning process.                                                      |
-
-**ADS Snapshot Read Role: `ADSOutpostRole-{suffix}`**
-
-Custom Azure RBAC role granting read access to disk snapshot metadata. Read-only.
-
-|                  |                                                                                    |
-| ---------------- | ---------------------------------------------------------------------------------- |
-| Created when     | ADS capability enabled.                                                            |
-| Assigned to      | Cortex Service Principal.                                                          |
-| Assignment scope | Matches the onboarded scope.                                                       |
-| Used by          | Cortex ADS scanner to inspect existing disk snapshots and track scanning progress. |
+| Created when     | ADS capability enabled.                                  |
+| ---------------- | -------------------------------------------------------- |
+| Assigned to      | Cortex Service Principal.                                |
+| Assignment scope | Matches the onboarded scope.                             |
+| Used by          | Cortex ADS, to read snapshot metadata during a scan run. |
 
 **`ADSOutpostRole-{suffix}` permissions:**
 
-| Permission                       | Description                                                                    |
-| -------------------------------- | ------------------------------------------------------------------------------ |
-| Microsoft.Compute/snapshots/read | Read snapshot metadata across the tenant to manage ADS scan snapshot lifecycle |
+| Permission                       | Description                                                                     |
+| -------------------------------- | ------------------------------------------------------------------------------- |
+| Microsoft.Compute/snapshots/read | Read snapshot metadata across the tenant to manage ADS scan snapshot lifecycle. |
+
+#### ADS Ephemeral Resources Role: `ADSEphemeralResourcesRole-{suffix}`
+
+Custom Azure RBAC role granting read, write, and delete access to the temporary disks, snapshots, and gallery images that a scan creates and removes.
+
+| Field            | Value                                                                                                                                                                                                                                                                                               |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Created when     | ADS capability enabled.                                                                                                                                                                                                                                                                             |
+| Assigned to      | Cortex Service Principal.                                                                                                                                                                                                                                                                           |
+| Assignment scope | The Cortex-created resource group only. This is narrower than the onboarded scope.                                                                                                                                                                                                                  |
+| Used by          | <p>Cortex ADS during a scan run, to:</p><p></p><ul><li>Copy a snapshot into a gallery image version. </li><li>Materialize that image as a temporary disk which is attached to a scanner instance at launch.</li><li>Delete the temporary disk, snapshot, and image version on completion.</li></ul> |
+
+**`ADSEphemeralResourcesRole-{suffix}`** **permissions:**
+
+| Permission                                         | Description                                                                                                                                                                                                                                                             |
+| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Microsoft.Compute/disks/read                       | Retrieve disk metadata. This is used to identify disk properties and states, such as detecting dangling disks. It ensures accurate inventory and assessment of storage resources within the environment.                                                                |
+| Microsoft.Compute/disks/write                      | Create the temporary disk that a scanner instance reads during a scan. This permission is essential for dynamic scanning and analysis without affecting the live environment. It allows the creation of a temporary disk copy to be analyzed securely by the scanner.   |
+| Microsoft.Compute/disks/delete                     | Delete disks after scanning has finished. This action is critical for remediation and resource hygiene, preventing data exfiltration and reducing the attack surface. It ensures that temporary disks used during analysis do not remain as dangling resources.         |
+| Microsoft.Compute/snapshots/delete                 | Delete snapshots after scanning has finished. This action is critical for remediation and resource hygiene, preventing data exfiltration and reducing the attack surface. It ensures that temporary snapshots used during analysis do not remain as dangling resources. |
+| Microsoft.Compute/galleries/images/write           | Create temporary gallery image versions within Cortex-managed resource groups. Cortex uses this during legacy image scanning to create temporary image versions that facilitate the scanning process.                                                                   |
+| Microsoft.Compute/galleries/images/delete          | Delete temporary gallery images within Cortex-managed resource groups. Cortex uses this to clean up temporary gallery images created during legacy image scanning, ensuring no stale resources remain after analysis is complete.                                       |
+| Microsoft.Compute/galleries/images/versions/write  | Create temporary gallery image versions within Cortex-managed resource groups. Cortex uses this during legacy image scanning to create temporary image versions that facilitate the scanning process.                                                                   |
+| Microsoft.Compute/galleries/images/versions/delete | Delete temporary gallery image versions after legacy image scanning completes. Cortex uses this to clean up temporary image versions created during the scanning process, ensuring no orphaned resources remain in Cortex-managed resource groups.                      |
 
 ### Serverless Scan
 
