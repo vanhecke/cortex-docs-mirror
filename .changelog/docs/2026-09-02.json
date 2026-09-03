@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-02",
+  "source": "docs",
+  "sha": "c17648f190e8d21a0427a5945026977660ea33ee",
+  "headline": "Azure agentless disk scanning drops from six custom RBAC roles to three; compliance authoring reworked",
+  "summary_md": "- **Microsoft Azure provider permissions** replaces the six ADS custom RBAC roles with three, confining every write and delete to the Cortex-created resource group.\n- Three **compliance catalog** pages rewrite custom standard authoring: categories and controls are no longer built inside the standard wizard, and a control may now belong to more than one custom standard.\n- The **Azure APIM** ingestion page drops a duplicated inbound policy snippet.\n- The **Threat Management** landing page gains a link to an Extended Threat Intelligence section.\n- A quiet day otherwise: six pages changed, nothing added or removed.",
+  "highlights": [
+    {
+      "title": "Agentless Disk Scanning is re-split into three Azure roles, with writes and deletes confined to one resource group",
+      "detail": "ADSScannedAssetsRole, ADSOutpostRole and ADSEphemeralResourcesRole replace ADSConnectorDiskRole, ADSConnectorGalleryImageRole, ADSConnectorSnapshotRole, ADSConnectorVMRole and ADSGalleryImagesRole; only the ephemeral role can delete, and it is scoped to the Cortex-created resource group rather than the onboarded scope.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions/microsoft-azure-provider-permissions"
+      ]
+    },
+    {
+      "title": "Terraform subscription onboarding names the outpost role without \"Role\"",
+      "detail": "A new note states that Terraform subscription onboarding creates it as ADSOutpost-{suffix}, while Terraform management group onboarding and both ARM paths create ADSOutpostRole-{suffix}.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions/microsoft-azure-provider-permissions"
+      ]
+    },
+    {
+      "title": "Custom standards no longer build their own categories and controls",
+      "detail": "The Categories & Controls step becomes Select Controls, picking from existing controls or deferring via Create and Assign New Controls; the documented ceiling of 600 controls per standard goes with it.",
+      "paths": [
+        "xsiam/cloud-security/monitor-and-track-compliance-adherence/choose-compliance-standards-from-the-compliance-catalog/use-a-built-in-or-custom-standard"
+      ]
+    },
+    {
+      "title": "A control can now be associated with more than one custom standard",
+      "detail": "Both the create and edit metadata lists change from \"a single custom standard\" to one or more, and category and sub-category move to the top of the create form.",
+      "paths": [
+        "xsiam/cloud-security/monitor-and-track-compliance-adherence/choose-compliance-standards-from-the-compliance-catalog/use-a-built-in-or-custom-control"
+      ]
+    },
+    {
+      "title": "The Azure APIM inbound policy snippet was duplicated",
+      "detail": "Three lines setting requestBody and requestHeaders appeared twice in the copy-paste block; the first copy is removed.",
+      "paths": [
+        "xsiam/cloud-security/overview/secure-your-api-landscape/configure-api-security-from-end-to-end/ingest-azure-apim"
+      ]
+    },
+    {
+      "title": "Threat Management links to an Extended Threat Intelligence section",
+      "detail": "A content reference to threat-management/extended-threat-intelligence is inserted between Analytics and Threat Intel Management.",
+      "paths": [
+        "xsiam/detect-investigate-and-respond-to-threats/threat-management"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions/microsoft-azure-provider-permissions": "ADSScannedAssetsRole, ADSOutpostRole and ADSEphemeralResourcesRole replace the six ADSConnector-era roles; every write and delete is now scoped to the Cortex-created resource group.",
+    "xsiam/cloud-security/monitor-and-track-compliance-adherence/choose-compliance-standards-from-the-compliance-catalog/use-a-built-in-or-custom-standard": "Creating or editing a custom standard now ends in a Select Controls step; the inline Add Category, Add Subcategory and Add Control flow and the 600-control limit are gone.",
+    "xsiam/cloud-security/monitor-and-track-compliance-adherence/choose-compliance-standards-from-the-compliance-catalog/use-a-built-in-or-custom-control": "A control can be associated with one or more custom standards rather than a single one, and the edit step now documents reassigning or creating categories and sub-categories.",
+    "xsiam/cloud-security/monitor-and-track-compliance-adherence/choose-compliance-standards-from-the-compliance-catalog": "Drops the RBAC and Pod security example and now states that controls are grouped into categories and sub-categories rather than that they can be.",
+    "xsiam/cloud-security/overview/secure-your-api-landscape/configure-api-security-from-end-to-end/ingest-azure-apim": "Removes a duplicated copy of the inbound policy snippet that set requestBody and requestHeaders twice.",
+    "xsiam/detect-investigate-and-respond-to-threats/threat-management": "Gains a content reference to a new Extended Threat Intelligence section alongside Analytics and Threat Intel Management."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
