@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-03",
+  "source": "content",
+  "sha": "871246c2a2cf420ffcfc82d23434239fc4a2a07c",
+  "headline": "Veeam App v2.0.0 lands; GitHub Feed CIDR truncation and XDR Collector _time parsing fixed",
+  "summary_md": "- **Veeam** shipped a v2.0.0 app, 15,708 insertions against 2,302 deletions — larger than the other seven packs of the day combined.\n- Two ingestion-correctness fixes worth acting on: **FeedGitHub** was truncating CIDR prefix lengths, and **LinuxEventsCollection** was setting `_time` wrongly for XDR Collector logs.\n- **CyberArkEPM** moved to a version-less EPM API and fixed set names containing commas.\n- The rest is fetch reliability and parsing repair in **CybleEventsV2**, **MailListener** and **HealthCheck**.",
+  "highlights": [
+    {
+      "title": "Veeam App v2.0.0",
+      "detail": "A major-version release and by far the day's largest change at 15,708 insertions and 2,302 deletions.",
+      "paths": ["Packs/Veeam"]
+    },
+    {
+      "title": "GitHub Feed was truncating CIDR prefix lengths",
+      "detail": "A feed emitting truncated CIDRs produces indicators covering the wrong address range, so any ranges ingested before this fix are suspect.",
+      "paths": ["Packs/FeedGitHub"]
+    },
+    {
+      "title": "XDR Collector logs had the wrong _time, with a collection-time fallback added",
+      "detail": "Event timestamps for Linux collection are corrected and now fall back to collection time when the log's own timestamp cannot be parsed.",
+      "paths": ["Packs/LinuxEventsCollection"]
+    },
+    {
+      "title": "CyberArk EPM switched to the version-less EPM API",
+      "detail": "The integration no longer pins an EPM API version, and set names containing commas are parsed correctly.",
+      "paths": ["Packs/CyberArkEPM"]
+    }
+  ],
+  "items": {
+    "Packs/Veeam": "Veeam App v2.0.0, a major-version release of 15,708 insertions and 2,302 deletions.",
+    "Packs/CyberArkEPM": "Uses the version-less EPM API and fixes handling of set names that contain commas (XSUP-74944).",
+    "Packs/CybleEventsV2": "Fetch reliability and incident submission reworked, 652 insertions against 151 deletions.",
+    "Packs/HealthCheck": "Updated for both v6 and v8, rewriting roughly as much as it adds (646 insertions, 543 deletions).",
+    "Packs/MailListener": "Fixes a date parsing issue in Mail Listener v2 (XSUP-76251).",
+    "Packs/FeedGitHub": "Fixes truncated CIDR prefix lengths in the emitted feed indicators.",
+    "Packs/DuoAdminApi": "A small pydantic bug fix, 22 insertions against 19 deletions.",
+    "Packs/LinuxEventsCollection": "Fixes _time for XDR Collector logs and adds a collection-time fallback (XSUP-74923)."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
