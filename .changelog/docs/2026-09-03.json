@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-03",
+  "source": "docs",
+  "sha": "9b71a42cbebde74a5f6ebdf30f57fe0c5c3d6576",
+  "headline": "Tenant users now need a CSP role first; connector consolidation covers only Palo Alto Networks integrations",
+  "summary_md": "- **Manage user access** gains a prerequisite: a user must hold the **Cortex User** role in the Customer Support Portal before they appear in a tenant's **Users** list.\n- Five data source pages narrow the unified connector story to Palo Alto Networks managed integrations — partner-managed and community-contributed packs stay standalone.\n- **Retrieve support file password** was rewritten around the two ways a Tech Support File is produced.\n- Compliance standard cloning changed: copies are suffixed `_copy` rather than prefixed \"Copy of \", and the flow gains a **Select Controls** step.\n- The rest is Cortex Cloud → Cortex XSIAM wording fixes, two retitled pages and whitespace.",
+  "highlights": [
+    {
+      "title": "Users must hold the Cortex User role in the CSP before they appear in a tenant",
+      "detail": "A new prerequisite says an administrator assigns the role on the Edit User screen in the Manage User Console of the Customer Support Portal, and that this controls both the user's visibility and their access.",
+      "paths": ["xsiam/onboard-cortex-xsiam/post-deployment/manage-user-roles-and-access-management/manage-user-access"]
+    },
+    {
+      "title": "Connector consolidation applies only to Palo Alto Networks managed integrations",
+      "detail": "Four data source pages now add that partner-managed and community-contributed Marketplace integrations remain outside the unified connector framework and are always managed as standalone packs.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/connectors",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/what-are-cortex-xsiam-data-sources",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/complete-data-source-catalog"
+      ]
+    },
+    {
+      "title": "Retrieve support file password is rewritten around how the TSF was produced",
+      "detail": "The procedure now splits by whether the archive came from the Action Center or from cytool log collect on the endpoint, and names the metadata file that carries the encrypted token as _CRYPTO-INFO.",
+      "paths": ["xsiam/protect-your-endpoints/endpoint-security/install-and-manage-endpoints/manage-endpoint-protection/retrieve-support-file-password"]
+    },
+    {
+      "title": "Cloned compliance standards are suffixed _copy instead of prefixed \"Copy of \"",
+      "detail": "The clone flow also gains a Select Controls step and ends on Create rather than Clone, while the create and edit flows lose the option to save and assign new controls afterwards.",
+      "paths": ["xsiam/cloud-security/monitor-and-track-compliance-adherence/choose-compliance-standards-from-the-compliance-catalog/use-a-built-in-or-custom-standard"]
+    },
+    {
+      "title": "The \"Data collection may require an add-on\" notice was removed",
+      "detail": "That licensing hint was deleted outright from the Palo Alto Networks integrations page, with nothing put in its place.",
+      "paths": ["xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations"]
+    },
+    {
+      "title": "Two pages were retitled without moving",
+      "detail": "\"Complete data source and connector catalog\" became \"What is the data source and connector catalog?\" and the cloud permissions page now names Cortex XSIAM, but both paths are unchanged so existing links still resolve.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/complete-data-source-catalog",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/update-cloud-permissions-after-cortex-release-updates"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/onboard-cortex-xsiam/post-deployment/manage-user-roles-and-access-management/manage-user-access": "Replaces a bare topic list with the Cortex User role prerequisite in the CSP, plus new SSO-only access and access-revocation rules.",
+    "xsiam/protect-your-endpoints/endpoint-security/install-and-manage-endpoints/manage-endpoint-protection/retrieve-support-file-password": "Rewritten into a locate-the-token step and separate Action Center and endpoint procedures; names the _CRYPTO-INFO metadata file.",
+    "xsiam/cloud-security/monitor-and-track-compliance-adherence/choose-compliance-standards-from-the-compliance-catalog/use-a-built-in-or-custom-standard": "Clone naming changes to a _copy suffix, a Select Controls step is added, and the \"assign new controls\" follow-up option is dropped.",
+    "xsiam/cloud-security/monitor-and-track-compliance-adherence/choose-compliance-standards-from-the-compliance-catalog/use-a-built-in-or-custom-control": "Control metadata fields are bolded, and assigning a detection rule moves out of the numbered edit steps into a trailing note.",
+    "xsiam/cloud-security/monitor-and-track-compliance-adherence/choose-compliance-standards-from-the-compliance-catalog/standards-catalog": "Swaps the standards list screenshot and drops the enumeration of its columns and the Table to Card View display note.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/connectors": "Adds that partner-managed and community-contributed integrations stay outside the unified connector framework as standalone integrations.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors": "The Marketplace reference note is rewritten: the vendor list covers Palo Alto Networks managed connectors, not every Marketplace content pack.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/what-are-cortex-xsiam-data-sources": "Scopes the hidden-from-catalog integrations to Palo Alto Networks managed ones and drops \"legacy\" from the standalone implementation note.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/complete-data-source-catalog": "Retitled \"What is the data source and connector catalog?\"; the new-tenant note now scopes hidden integrations to Palo Alto Networks managed ones.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/palo-alto-networks-integrations": "Removes the \"Data collection may require an add-on\" notice from the top of the page.",
+    "xsiam/detect-investigate-and-respond-to-threats/agentic-assistant-chat/choose-an-agentic-assistant-agent": "Expands the Help Center agent entry to troubleshooting across the Cortex suite, diagnosing tenant security, health and workflows.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/update-cloud-permissions-after-cortex-release-updates": "Title and description now name Cortex XSIAM rather than Cortex generally; the path is unchanged.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/edit-your-onboarded-csp-configuration": "Says Cortex XSIAM rather than Cortex Cloud, and corrects \"take affect\" to \"take effect\".",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/pending-cloud-instances": "Opens with Cortex XSIAM instead of Cortex Cloud.",
+    "xsiam/onboard-cortex-xsiam/deployment-steps/activate-cortex-xsiam/enable-access-to-required-panw-resources": "The FQDN, IP address and App-ID table's leading \"Egress\" label cell is now empty."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
