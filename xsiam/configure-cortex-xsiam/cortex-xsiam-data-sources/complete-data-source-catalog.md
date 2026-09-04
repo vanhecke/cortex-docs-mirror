@@ -4,7 +4,7 @@ description: >-
   Cortex XSIAM.
 ---
 
-# Complete data source and connector catalog
+# What is the data source and connector catalog?
 
 The complete data source catalog is a conceptual grouping that is comprised of all configuration points available for data ingestion across Cortex XSIAM. It represents the aggregate of every integration method, from unified vendor connectors and cloud onboarding wizards to generic on-premise collectors and specialized Marketplace integrations.
 
@@ -34,7 +34,7 @@ Flexible collectors for logs and data from local environments not tied to a spec
 
 Packages that offer rich security content, often including a collection integration for data ingestion alongside automation components.
 
-* **New Tenants**: For tenants onboarded after July 26, 2026, standalone Marketplace integrations that have been consolidated into unified connectors are hidden from the catalog. Instead, these services are managed as sub-capabilities within the relevant vendor connector on the **Data Sources & Integrations** page to ensure a streamlined experience.
+* **New Tenants**: For tenants onboarded after July 26, 2026, standalone Marketplace integrations managed by Palo Alto Networks that have been consolidated into unified connectors are hidden from the catalog. These integrations are managed as sub-capabilities within the relevant vendor connector on the **Data Sources & Integrations** page. Partner and community-contributed integrations remain visible and available as standalone packs in the [Marketplace](../marketplace) catalog.
 * **Existing Tenants**: Continue to use Marketplace integrations for services not yet migrated to the connector framework for your account. These are installed from **Settings → Configurations → Marketplace** and configured using the Data Source Onboarder on the **Data Sources & Integrations** page.
 
 ### Palo Alto Networks integrations

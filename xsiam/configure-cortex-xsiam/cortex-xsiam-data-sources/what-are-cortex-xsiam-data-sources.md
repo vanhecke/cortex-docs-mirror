@@ -12,7 +12,7 @@ Data sources and connectors are the foundational mechanisms used to ingest secur
 
 The ingestion methods and configuration options available to you in the UI depend on your tenant onboarding date:
 
-* **New tenants (onboarded after July 26, 2026)**: You will primarily interact with the strategic Connector experience. Standalone Marketplace integrations that have been consolidated into connectors are hidden from the catalog to ensure a unified configuration flow.
+* **New tenants (onboarded after July 26, 2026)**: You will primarily interact with the strategic Connector experience. Standalone Marketplace integrations managed by Palo Alto Networks that have been consolidated into connectors are hidden from the catalog to ensure a unified configuration flow. Partner and community-contributed integrations remain available as standalone packs.
 * **Existing tenants (onboarded before July 26, 2026)**: You will continue to see both standalone Marketplace integrations and unified Connectors. Refer to the specific documentation for each vendor to determine the supported configuration method for your account.
 
 ### **Clarifying terminology: Data sources and connectors**
@@ -26,7 +26,7 @@ In the current intermediate state, it is important to understand how these terms
   * **Broker VM applets**: Specialized applications running on the Broker VM that function as collectors, such as the Syslog Collector.
   *   **Marketplace (integrations)**: Content packs that include collection integrations. These are often referred to as data sources in the UI, as integrations that fetch data are configured through the Data Source Onboarder on the **Data Sources & Integrations** page.
 
-      <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>This legacy implementation is primarily available to existing customers; new customers (onboarded after July 26, 2026) will use the new Connectors framework for these services (see <a href="#customer-availability-by-tenant-type">Customer availability by tenant type</a> above).</p></div>
+      <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>This implementation is primarily available to existing customers; new customers (onboarded after July 26, 2026) will use the new Connectors framework for Palo Alto Networks managed integrations (see <a href="#customer-availability-by-tenant-type">Customer availability by tenant type</a> above). Partner and community-contributed integrations remain available via the <a href="../marketplace">Marketplace</a>.</p></div>
 * **Connectors**: The new, unified mechanism for data ingestion. For supported vendors, a Connector groups multiple security capabilities, such as logs, automation, and posture into a single, uniquely named entry with a guided configuration wizard.
 
 While specific components like Data Collectors, Broker VM applets, and Connectors are named explicitly when discussing their unique configuration workflows, they all fall under the foundational goal of ingesting data into Cortex XSIAM.
@@ -42,7 +42,7 @@ Cortex XSIAM enables you to collect data across a vast and varied enterprise lan
 * **Cloud Service Provider (CSP) Onboarding**: These are specialized wizards for integrating cloud environments, such as AWS, Azure, GCP, and OCI, enabling streamlined setup for asset discovery, posture/runtime security, and log collection.
 *   **Marketplace content packs**: These packages offer specialized security functionality by bundling both a collection integration (for data ingestion) and automation components, such as playbooks and correlation rules.
 
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>Standalone Marketplace integrations are primarily used by existing customers (onboarded before July 26, 2026). New customers will find these services consolidated within the new Connector framework.</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>Standalone Marketplace integrations managed by Palo Alto Networks are primarily used by existing customers (onboarded before July 26, 2026). New customers will find these integrations consolidated within the new Connector framework, while partner and community integrations continue to be available as standalone <a href="../marketplace">Marketplace</a> content packs.</p></div>
 * **Palo Alto Networks Integrations**: Cortex XSIAM provides both standard data sources and new unified connectors for Palo Alto Networks products to ensure deep telemetry ingestion and seamless cross-platform orchestration.
 * **Cloud Posture and Runtime Security data sources**: These data sources provide agentless visibility and real-time control over cloud risks by using cloud-native APIs to monitor misconfigurations, scan container registries, and secure serverless functions or sensitive data across multi-cloud environments.
 

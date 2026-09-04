@@ -12,7 +12,7 @@ description: >-
 Log in to your AWS Management Console and create a new **Standard SQS queue**.
 
 {% hint style="info" %}
-NOTE: Use the default AWS SQS message queue depth (256KB) or higher when creating or editing a standard SQS queue.&#x20;
+NOTE: Use the default AWS SQS message queue depth (256KB) or higher when creating or editing a standard SQS queue.
 {% endhint %}
 
 ### Configure egress in Cortex Gateway

@@ -124,4 +124,3 @@ The following Cloud Posture and Runtime Security data sources and connectors are
 * [Zendesk](vendor-specific-data-sources-and-connectors/zendesk/zendesk)
 * [Zscaler](vendor-specific-data-sources-and-connectors/zscaler/zscaler)
 * [AppSec Transporter](generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-transporter)
-

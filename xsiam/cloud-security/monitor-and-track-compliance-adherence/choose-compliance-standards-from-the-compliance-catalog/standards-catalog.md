@@ -6,21 +6,7 @@ description: Browse available compliance standards in Cortex XSIAM.
 
 The **Standards Catalog** page displays a list of the available standards:
 
-<figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FPwoXrI6LHrIaPift3SN5%2Fcompliance-standards-list.png?alt=media&#x26;token=4b053d17-3c28-4076-95de-acb4ea6878eb" alt="This screenshot from Cortex UI shows the list of compliance standards."><figcaption></figcaption></figure>
-
-This includes information such as:
-
-* Name
-* Version
-* Description
-* Created By
-* Controls
-* Profiles
-* Labels
-* Is Custom
-* ID
-
-You can click the **Display** option to switch from **Table** to **Card View**.
+<figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FBE4ZrFLV12XR33QA4cPS%2FScreenshot%202026-09-03%20at%201.26.02%E2%80%AFPM.png?alt=media&#x26;token=434f018c-0122-4ca2-b7b6-7295a3b5c596" alt=""><figcaption></figcaption></figure>
 
 Click on a specific standard to open the standard overview side panel with detailed information about the standard:
 

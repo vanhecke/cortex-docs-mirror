@@ -1142,7 +1142,7 @@
               "children": []
             },
             {
-              "title": "Complete data source and connector catalog",
+              "title": "What is the data source and connector catalog?",
               "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/complete-data-source-catalog",
               "type": "document",
               "children": []
@@ -6188,7 +6188,7 @@
                   "children": []
                 },
                 {
-                  "title": "Update cloud permissions after Cortex release updates",
+                  "title": "Update cloud permissions after Cortex XSIAM release updates",
                   "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/update-cloud-permissions-after-cortex-release-updates",
                   "type": "document",
                   "children": []

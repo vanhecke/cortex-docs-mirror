@@ -9,18 +9,22 @@ description: >-
 {% hint style="warning" %}
 ### Prerequisite
 
-Managing users, roles, scopes, user groups, authentication settings in Cortex XSIAM Access Management requires **View/Edit** RBAC permissions for **Access Management** (under **Configurations**). Account Admin and Instance Administrator roles are granted this permission by default. For more information, see _Predefined user roles_ in [Set up users and roles](../../deployment-steps/set-up-users-and-roles).
+* Managing users, roles, scopes, user groups, authentication settings in Cortex XSIAM Access Management requires **View/Edit** RBAC permissions for **Access Management** (under **Configurations**). Account Admin and Instance Administrator roles are granted this permission by default. For more information, see _Predefined user roles_ in [Set up users and roles](../../deployment-steps/set-up-users-and-roles).
+* To make users visible in the **Users** list within the Cortex tenant, an administrator must first assign them the **Cortex User** role on the **Edit User** screen in the **Manage User Console** of the Customer Support Portal (CSP). This role assignment in the CSP controls both the user's visibility in the tenant and their ability to authenticate via the CSP. For more information, see [Cortex Gateway Administrator Guide](https://app.gitbook.com/s/nG6FTSH3MviWTK9yhAIg/cortex-gateway-admin-guide).
 {% endhint %}
 
-Review the following topics:
+### Role and permission management
 
-* Set up users and roles
-* User group management
-* Assign user roles and groups
-* Manage user roles and access management
-* Manage user scope
+While the CSP controls initial visibility and access, you must update the specific permissions associated with each role within the tenant itself or via the **Roles** tab in the **Cortex Gateway**.
 
-Manage access permissions for Cortex XSIAM users.
+The following applies to user access and retention:
+
+* SSO-only access: To allow a user to appear in the tenant while restricting them to SSO login only, assign them the **Cortex User** role in the CSP, but do not assign them a direct role or a default role in the Cortex Gateway or the tenant.
+* Access revocation:  If no role is assigned to a user (either directly or through a user group) in the Cortex Gateway or the tenant, the user cannot access the tenant. The user is subsequently revoked in the Cortex Gateway, and their information is no longer saved.
+
+### Manage users in the Cortex XSIAM tenant
+
+Once users are visible in the tenant, perform the following tasks in Cortex XSIAM to edit permissions, import multiple users, view permissions, or manage user status.
 
 <details>
 

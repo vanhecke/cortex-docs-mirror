@@ -1,7 +1,7 @@
 ---
 description: >-
   You can troubleshoot errors on cloud instances by drilling down on an instance
-  from the Data Sources & Integrations page.
+  from the Data Sources & Integrations page in Cortex XSIAM.
 ---
 
 # Troubleshoot errors on cloud instances

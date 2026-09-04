@@ -4,7 +4,7 @@ description: Review pending cloud instances in Cortex XSIAM.
 
 # Pending cloud instances
 
-In Cortex Cloud, a pending cloud instance refers to a cloud instance created after Cortex Cloud generates an authentication template, but before that template has been fully executed within the Cloud Service Provider (CSP) environment.
+In Cortex XSIAM, a pending cloud instance refers to a cloud instance created after Cortex Cloud generates an authentication template, but before that template has been fully executed within the Cloud Service Provider (CSP) environment.
 
 A pending cloud instance is created each time you complete the onboarding wizard for a new CSP and click **Save**. You can view all cloud instances, including those in a pending state, by navigating to **Cloud Instances**. Ensure you remove any default filters that might exclude instances with a "pending" status.
 

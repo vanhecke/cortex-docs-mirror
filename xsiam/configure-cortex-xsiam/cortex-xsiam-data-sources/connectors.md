@@ -38,7 +38,7 @@ When using a unified connector, you follow a guided wizard within Cortex XSIAM.
 
 #### Legacy Marketplace implementation
 
-For integrations not yet available as a unified connector for your tenant, you will continue to use the legacy implementation. These do not feature a configuration wizard and require following the setup instructions on the [Cortex Developer Docs for Marketplace (PAN DEV)](https://cortex.marketplace.pan.dev/marketplace/) site for all configuration steps. For more information, see [Marketplace](../marketplace).
+For integrations that are not yet available as a unified connector for your tenant, you will continue to use the legacy implementation. Additionally, partner-managed and community-contributed integrations remain outside the unified connector framework and must be managed as standalone integrations via Marketplace. These do not feature a configuration wizard and require following the setup instructions on the [Cortex Developer Docs for Marketplace (PAN DEV)](https://cortex.marketplace.pan.dev/marketplace/) site for all configuration steps. For more information, see [Marketplace](../marketplace).
 
 ### Connectivity and capabilities
 

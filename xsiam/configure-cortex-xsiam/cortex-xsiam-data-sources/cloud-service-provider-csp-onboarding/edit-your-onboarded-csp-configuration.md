@@ -4,7 +4,7 @@ description: Update onboarded cloud configurations in Cortex XSIAM.
 
 # Edit your onboarded CSP configuration
 
-In order to make changes to your onboarded CSP configuration, you first modify the cloud instance settings in Cortex Cloud and download an updated authentication template. After uploading the updated template to the CSP environment, you execute the template and then the changes take affect.
+In order to make changes to your onboarded CSP configuration, you first modify the cloud instance settings in Cortex XSIAM and download an updated authentication template. After uploading the updated template to the CSP environment, you execute the template and then the changes take effect.
 
 1. Navigate to **Settings → Data Sources & Integrations**.
 2. Identify the Cloud Service Provider you want to update and click **View Details**.

@@ -16,11 +16,10 @@ To reuse and modify a built-in standard, clone the built-in industry standard:
 
 1. In the **Standards** catalog, right-click on the custom standard you want to edit (or select <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FY4XEarbH6eoofHx6zLlS%2Freusable-menu.png?alt=media&#x26;token=bae02a0f-56cb-4d38-acb0-9cbc5b21b741" alt="" data-size="line"> next to it) and then select **Save as new**.
 2. Define compliance standard metadata, including:
-   1. **Name**: By default, the original built-in standard name is used with “Copy of “ is prepended. You can update it if needed.
+   1. **Name**: By default, the original built-in standard name is used with “\_copy“ is appended. You can update it if needed.
    2. **Description**: You can update the description if needed.
-3. Click **Clone**.
-
-You can edit categories and controls after cloning the standard.
+   3. **Select Controls**: You can select or deselect controls as needed.&#x20;
+3. Click **Create**.
 
 ## Create a custom standard
 
@@ -34,9 +33,8 @@ To organize controls within a custom compliance standard, you establish categori
    2. **Description** (optional)
    3. **Labels** (optional)
 3. Click **Next.**
-4. Under **Select Controls**, you can do one of the following:&#x20;
-   1. Select the controls that you would like to add to the standard and click **Create**.&#x20;
-   2. You can use the option to **Create and Assign New Controls** if you would like to save the standard and then create new controls and assign them to the standard. &#x20;
+4. Under **Select Controls**, you select the controls that you would like to add to the standard.
+5. Click **Create**.&#x20;
 
 ## Edit a custom standard
 
@@ -48,13 +46,14 @@ You can edit an existing custom standard.
    2. **Description** (optional)
    3. **Labels** (optional)
 3. Click **Next**.
-4. Under **Select Controls**, you can do one of the following:&#x20;
-   1. Select the controls that you would like to add to the standard and click **Save**.&#x20;
-   2. You can use the option to **Save and Assign New Controls** if you would like to save the standard and then create new controls and assign them to the standard. &#x20;
+4. Under **Select Controls**, you can do one of the following, select the controls that you would like to add to the standard.&#x20;
+5. Click **Save**.&#x20;
 
 ## Delete a custom standard
 
-To delete an existing custom standard and all the categories, subcategories, and controls associated with it, perform the following steps.
+​To delete an existing custom standard and all the categories, subcategories, and controls associated with it, perform the following steps.
+
+
 
 1. In the **Standards** catalog, right-click on the custom standard (or select <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FY4XEarbH6eoofHx6zLlS%2Freusable-menu.png?alt=media&#x26;token=bae02a0f-56cb-4d38-acb0-9cbc5b21b741" alt="" data-size="line"> next to it ) and then select **Delete**.
 2. Click **Delete**.
