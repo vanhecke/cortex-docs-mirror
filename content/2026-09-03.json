@@ -1,0 +1,81 @@
+{
+  "date": "2026-09-03",
+  "sha": "61e517ae49cef61e248791e4c65d06cdeff67ad8",
+  "committed_at": "2026-09-03T18:50:19+03:00",
+  "packs": [
+    {
+      "name": "CyberArkEPM",
+      "insertions": 1149,
+      "deletions": 120
+    },
+    {
+      "name": "CybleEventsV2",
+      "insertions": 652,
+      "deletions": 151
+    },
+    {
+      "name": "DuoAdminApi",
+      "insertions": 22,
+      "deletions": 19
+    },
+    {
+      "name": "FeedGitHub",
+      "insertions": 92,
+      "deletions": 4
+    },
+    {
+      "name": "HealthCheck",
+      "insertions": 646,
+      "deletions": 543
+    },
+    {
+      "name": "LinuxEventsCollection",
+      "insertions": 15,
+      "deletions": 2
+    },
+    {
+      "name": "MailListener",
+      "insertions": 109,
+      "deletions": 13
+    },
+    {
+      "name": "Veeam",
+      "insertions": 15708,
+      "deletions": 2302
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f474ba60e838725777c245297a60e4b09cfa63d6",
+      "subject": "fix(CybleEventsV2): improve fetch reliability and incident submission (#45760)"
+    },
+    {
+      "sha": "df3045a88409a5158af97c7272d408cca92a3d1c",
+      "subject": "fix(cyberark-epm): use version-less EPM API, fix comma set names (XSUP-74944)"
+    },
+    {
+      "sha": "3e340b357c439e5328c6aa0842274349be07887d",
+      "subject": "Fix date parsing issue / Mail-Listener-v2 XSUP-76251 (#45766)"
+    },
+    {
+      "sha": "7a2c9fe455a4e64578f00e1fe8d5e050714daf54",
+      "subject": "XSUP-74923 - fix _time for XDR Collector logs and add collection-time fallback (#45682)"
+    },
+    {
+      "sha": "124e94438a364ae85fc28b8c5689940d25b9332a",
+      "subject": "Veeam App v2.0.0 (#45761)"
+    },
+    {
+      "sha": "2170d56b80daaf3003b11562034d662c103b2b53",
+      "subject": "Fix truncated CIDR prefix lengths in GitHub Feed (#45753)"
+    },
+    {
+      "sha": "7a7ff83cf3807e5fd6dcb4809356cbfeeaa876dc",
+      "subject": "pydentic bug fix (#45718)"
+    },
+    {
+      "sha": "61e517ae49cef61e248791e4c65d06cdeff67ad8",
+      "subject": "Healthcheck update for v6 and v8 (#45746) (#45773)"
+    }
+  ]
+}
