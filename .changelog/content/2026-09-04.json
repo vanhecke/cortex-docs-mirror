@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-04",
+  "source": "content",
+  "sha": "cc52e7189427421b7336dbd5ef34490724bb8095",
+  "headline": "A quiet day — no content packs changed",
+  "summary_md": "- Nothing moved: the snapshot records **no packs changed and no commits** for the day.\n- It was taken at the same head as the day before, `61e517a` of 3 September 18:50 +03:00, so no commit landed in `demisto/content` during the window.\n- No pack was added, updated or withdrawn, so there is nothing here to act on.",
+  "highlights": [],
+  "items": {},
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
