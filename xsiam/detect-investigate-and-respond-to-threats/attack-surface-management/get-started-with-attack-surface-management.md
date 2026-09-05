@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn about Cortex XSIAM Attack Surface Management capabilities for finding,
-  prioritizing, and remediating external asset exposures.
+  Learn about Cortex XSIAM Attack Surface Management (ASM) capabilities for
+  finding, prioritizing, and remediating external asset exposures.
 ---
 
 # Learn about Attack Surface Management

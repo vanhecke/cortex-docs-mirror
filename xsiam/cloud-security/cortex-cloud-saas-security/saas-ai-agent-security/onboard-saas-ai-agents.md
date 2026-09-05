@@ -8,13 +8,13 @@ As you increasingly integrate AI agents—software powered by Large Language Mod
 
 Onboard your new and existing SaaS-based agent platforms to establish a secure, compliant cloud environment. Select a specific SaaS AI Agent to onboard:
 
-* [Atlassian Rovo](broken-reference)
-* [Box AI Agents](broken-reference)
-* [ChatGPT Enterprise](broken-reference)
-* [Cursor Enterprise](broken-reference)
-* [Gemini Enterprise](broken-reference)
-* [Microsoft 365 Copilot](broken-reference)
-* [Microsoft Copilot Studio](broken-reference)
-* [ServiceNow AI Platform](broken-reference)
+* [Atlassian Rovo](onboard-saas-ai-agents/onboard-atlassian-rovo)
+* [Box AI Agents](onboard-saas-ai-agents/onboard-box-ai-agents)
+* [ChatGPT Enterprise](onboard-saas-ai-agents/onboard-chatgpt-enterprise)
+* [Cursor Enterprise](onboard-saas-ai-agents/onboard-cursor-enterprise)
+* [Gemini Enterprise](onboard-saas-ai-agents/onboard-gemini-enterprise)
+* [Microsoft 365 Copilot](onboard-saas-ai-agents/onboard-m365-copilot)
+* [Microsoft Copilot Studio](onboard-saas-ai-agents/onboard-microsoft-copilot-studio)
+* [ServiceNow AI Platform](onboard-saas-ai-agents/onboard-service-now)
 
 <br>

@@ -8,8 +8,6 @@ You can forward audit logs for the relative service to Cortex XSIAM from AWS Clo
 
 To receive audit logs from Amazon Simple Storage Service (Amazon S3) via AWS CloudTrail, you must first configure data collection from Amazon S3. You can then configure the Data Sources & Integrations settings in Cortex XSIAM for Amazon S3. After you set up collection integration, Cortex XSIAM begins receiving new logs and data from the source.
 
-We do not recommend ingestion of data from an AWS commercial environment into a FedRAMP-certified Cortex XSIAM tenant. However, if you must do so, contact Customer Support for assistance.
-
 {% hint style="info" %}
 **Note**
 
