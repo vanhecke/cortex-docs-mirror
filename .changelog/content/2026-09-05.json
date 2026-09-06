@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-05",
+  "source": "content",
+  "sha": "1e1a0ede0b579423df61788087d68562d607b2da",
+  "headline": "A second quiet day — no content packs changed",
+  "summary_md": "- Nothing moved: the snapshot records **no packs changed and no commits** for the day.\n- It was taken at `61e517a` of 3 September 18:50 +03:00 — the same head as 3 and 4 September, so `demisto/content` has now been still for two consecutive windows.\n- No pack was added, updated or withdrawn, so there is nothing here to act on.",
+  "highlights": [],
+  "items": {},
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
