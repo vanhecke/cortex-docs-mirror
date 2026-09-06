@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-05",
+  "source": "docs",
+  "sha": "bfc5898302723fa36840bc281c6934f933bff8fb",
+  "headline": "Asset groups gain a documented ceiling of just under 2,000 per tenant",
+  "summary_md": "- **Asset groups** picks up an Important hint stating there is a limit of just under 2000 asset groups.\n- That is the day's only documentation change: one page, one added note, nothing removed, renamed or reordered.\n- No navigation manifest or book page counts moved.",
+  "highlights": [
+    {
+      "title": "A limit of just under 2,000 asset groups is now stated in the docs",
+      "detail": "An Important hint added above the dynamic and static asset groups section says there is a limit of just under 2000 asset groups; the page gives no other detail about how the ceiling behaves.",
+      "paths": ["xsiam/detect-investigate-and-respond-to-threats/asset-management/asset-groups"]
+    }
+  ],
+  "items": {
+    "xsiam/detect-investigate-and-respond-to-threats/asset-management/asset-groups": "Adds an Important hint that there is a limit of just under 2000 asset groups, placed after the Access Management scoping note."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
