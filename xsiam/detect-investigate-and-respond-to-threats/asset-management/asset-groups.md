@@ -16,6 +16,12 @@ When creating or editing a dynamic asset group, you can enable the **Show only f
 If an asset group uses fields outside of this supported list, it cannot be used for scoping in Access Management.
 {% endhint %}
 
+{% hint style="info" %}
+### Important
+
+There is a limit of just under 2000 asset groups.
+{% endhint %}
+
 ### **Dynamic and static asset groups**
 
 You can choose between two types of asset groups. Dynamic groups use filters, such as provider or realm, to group current and future assets that meet the defined criteria, while static groups require you to manually select individual assets to include in the group.
