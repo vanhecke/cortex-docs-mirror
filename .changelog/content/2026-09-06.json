@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-06",
+  "source": "content",
+  "sha": "7ebb21d44b9ec479e8518c8448eb6bd1b4805f29",
+  "headline": "Two new packs — Prisma AIRS and RelayShield — and an identity.* force-merge across the catalog",
+  "summary_md": "- Two packs are new: **Prisma AIRS** (36,593 insertions) and **RelayShield** (1,098), neither with any deletions.\n- **Panorays** gained a triage playbook v2, **ServiceNow** took a pack enhancement that rewrote ~250 lines, and **SekoiaXDR** added commands for SOL queries.\n- A force-merge adds `identity.*` to packs (CRTX-271525); 13 of the day's 25 packs moved with the same additions-and-one-deletion shape.\n- Integration fixes land in Cortex XDR, EWS v2, Cisco ThousandEyes, Prisma Cloud v2 and Splunk.\n- The Qualys `LAST_VM_AUTH_SCAN` default from #45681 was reverted, leaving Qualys the only pack that net shrank.",
+  "highlights": [
+    {
+      "title": "Prisma AIRS arrives as a new content pack",
+      "detail": "At 36,593 insertions and no deletions it is over five times the size of every other pack change on the day put together.",
+      "paths": ["Packs/PaloAltoNetworks_Prisma_AIRs"]
+    },
+    {
+      "title": "RelayShield added as a new content pack",
+      "detail": "1,098 insertions with no deletions, a fresh integration rather than a rework of an existing one.",
+      "paths": ["Packs/RelayShield"]
+    },
+    {
+      "title": "Cortex XDR now rejects a command delimiter in scheduled sync arguments",
+      "detail": "An input-validation fix tracked as CRTX-252628, touching 88 lines of the pack.",
+      "paths": ["Packs/CortexXDR"]
+    },
+    {
+      "title": "Panorays gains a triage playbook v2",
+      "detail": "1,116 insertions against 47 deletions, so the new playbook is added beside the existing content rather than replacing it.",
+      "paths": ["Packs/Panorays"]
+    },
+    {
+      "title": "The Qualys LAST_VM_AUTH_SCAN default change was reverted",
+      "detail": "PR #45681 was backed out, and Qualys is the only pack on the day whose deletions (72) outnumber its insertions (7).",
+      "paths": ["Packs/qualys"]
+    },
+    {
+      "title": "ServiceNow takes a pack enhancement",
+      "detail": "351 insertions against 249 deletions under CRTX-208419 — proportionally the heaviest rewrite of an existing pack.",
+      "paths": ["Packs/ServiceNow"]
+    }
+  ],
+  "items": {
+    "Packs/PaloAltoNetworks_Prisma_AIRs": "New pack, 36,593 insertions and no deletions — the day's dominant change by an order of magnitude.",
+    "Packs/RelayShield": "New pack added in #45742: 1,098 insertions, no deletions.",
+    "Packs/Panorays": "Adds a triage playbook v2 (#45749); 1,116 insertions against 47 deletions.",
+    "Packs/SekoiaXDR": "Adds commands for issuing SOL queries (#45643, re-landed as #45791); 573 insertions.",
+    "Packs/ServiceNow": "Pack enhancement under CRTX-208419 that rewrites roughly 250 lines alongside 351 new ones.",
+    "Packs/CortexXDR": "Scheduled sync arguments now reject a command delimiter (CRTX-252628).",
+    "Packs/qualys": "Reverts the LAST_VM_AUTH_SCAN default introduced in #45681; the only pack that net shrank.",
+    "Packs/MicrosoftExchangeOnPremise": "Fixes an NTLM authentication MD4 error in EWS v2 (XSUP-76118) in 9 lines.",
+    "Packs/CiscoThousandEyes": "Fixes the fetch-events mechanism (XSUP-74825); 101 insertions, 5 deletions.",
+    "Packs/PrismaCloud": "Prisma Cloud v2 adds a limit when fetching incidents (XSUP-75268).",
+    "Packs/SplunkPy": "Drilldown search parsing no longer mishandles unescaped backslashes (XSUP-75731).",
+    "Packs/PcapAnalysis": "Test fix (#45785) plus the PyPDF stderr change (XSUP-71381); 106 insertions, 74 deletions.",
+    "Packs/CommonScripts": "86 insertions and 41 deletions, including the ip command's handling of IPv6 addresses (#45784).",
+    "Packs/Netskope": "631 insertions with a single deletion, the largest of the packs carried by the identity.* force-merge shape.",
+    "Packs/ApiModules": "540 insertions with a single deletion, the shared modules moving with the same bulk change."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
