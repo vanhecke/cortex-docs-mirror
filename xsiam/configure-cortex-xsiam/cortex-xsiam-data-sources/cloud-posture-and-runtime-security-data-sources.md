@@ -47,7 +47,7 @@ The following Cloud Posture and Runtime Security data sources and connectors are
 * [Cribl](vendor-specific-data-sources-and-connectors/cribl/cribl-connector)
 * [Cursor](vendor-specific-data-sources-and-connectors/cursor/cursor)
 * [CyberArk](vendor-specific-data-sources-and-connectors/cyberark/cyberark)
-* [Databricks](vendor-specific-data-sources-and-connectors/databricks/how-to-onboard-databricks)
+* [Databricks](vendor-specific-data-sources-and-connectors/databricks)
 * [DataDog](vendor-specific-data-sources-and-connectors/datadog/datadog)
 * [Docker Hub registry](vendor-specific-data-sources-and-connectors/docker/connect-docker-hub-registry)
 * [Docker V2-compliant registry](vendor-specific-data-sources-and-connectors/docker/connect-docker-hub-registry)

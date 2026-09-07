@@ -28,7 +28,7 @@ Before onboarding Alibaba Cloud to Cortex XSIAM, ensure the user or role perform
 
 #### Required permissions for onboarding Alibaba Cloud account scope
 
-Use the following template to create a custom policy with the permissions required for onboarding an Alibaba Cloud account to Cortex Cloud. The custom policy can be created in Alibaba Cloud RAM Console at **Permissions → Policies → Create Policy → Script** and attach the policy to the RAM user or role that will run the Terraform apply.
+Use the following template to create a custom policy with the permissions required for onboarding an Alibaba Cloud account to Cortex XSIAM. The custom policy can be created in Alibaba Cloud RAM Console at **Permissions → Policies → Create Policy → Script** and attach the policy to the RAM user or role that will run the Terraform apply.
 
 ```json
 {
@@ -86,7 +86,7 @@ Before you begin, obtain the Cortex XSIAM Project ID of your tenant by clicking 
 5. In **Issuer URL**, enter the GCP IdP URL: `https://accounts.google.com`.
 6. In **Client ID**, enter: `alibaba-cortex-wif-<accountID>` where `<accountID>` corresponds to the Cortex XSIAM Project ID.
 7. In **Fingerprint**, click **Auto-add** to automatically retrieve and add the signing certificate fingerprint for `accounts.google.com`.
-8. (cn-hongkong accounts only) In **Fingerprint**, click **Add** and enter the following SHA1 fingerprint: `932bed339aa69212c89375b79304b475490b89a0`.
+8. (**cn-hongkong** and **eu-central-1** accounts only) In **Fingerprint**, click **Add** and enter the following SHA1 fingerprint: `932bed339aa69212c89375b79304b475490b89a0`.
 9. Click **Add Fingerprint**.
 10. Save the changes.
 

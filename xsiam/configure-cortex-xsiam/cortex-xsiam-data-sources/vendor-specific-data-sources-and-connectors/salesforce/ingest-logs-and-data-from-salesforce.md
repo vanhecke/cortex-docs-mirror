@@ -152,11 +152,10 @@ Configure the OAuth 2.0 application to call the Salesforce API using `client_id`
 4.  Click **Enable**.
 
     A popup which redirects you to your Salesforce instance appears, to get OAuth 2.0 authorization credentials and access.
-5.  Click **OK**.
 
-    In Salesforce, a new tab appears.
-6. Enter your **username** and **password**, and **Log In**.
-7.  When you are asked to allow access, select **Allow**.
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>Click <strong>OK</strong>.</p><p>In Salesforce, a new tab appears.</p></div>
+5. Enter your **username** and **password**, and **Log In**.
+6.  When you are asked to allow access, select **Allow**.
 
     A Salesforce data collection instance is created, and an authorization token is created and returned to Cortex XSIAM. Data collection begins.
 

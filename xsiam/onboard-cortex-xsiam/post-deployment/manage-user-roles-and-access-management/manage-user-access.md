@@ -20,7 +20,7 @@ While the CSP controls initial visibility and access, you must update the specif
 The following applies to user access and retention:
 
 * SSO-only access: To allow a user to appear in the tenant while restricting them to SSO login only, assign them the **Cortex User** role in the CSP, but do not assign them a direct role or a default role in the Cortex Gateway or the tenant.
-* Access revocation:  If no role is assigned to a user (either directly or through a user group) in the Cortex Gateway or the tenant, the user cannot access the tenant. The user is subsequently revoked in the Cortex Gateway, and their information is no longer saved.
+* Access revocation: If no role is assigned to a user (either directly or through a user group) in the Cortex Gateway or the tenant, the user cannot access the tenant. The user is subsequently revoked in the Cortex Gateway, and their information is no longer saved.
 
 ### Manage users in the Cortex XSIAM tenant
 
@@ -164,3 +164,11 @@ You cannot remove a user who has an Account Admin role.
 3. Click **Remove**.
 
 </details>
+
+For more details, see the following topics:
+
+* [Set up users, groups, and roles](../../deployment-steps/set-up-users-and-roles)
+* [Manage Cortex XSIAM user groups](../../deployment-steps/set-up-users-and-roles/user-group-management)
+* [Assign user roles and groups](../../deployment-steps/set-up-users-and-roles/assign-user-roles-and-groups)
+* [Manage user roles and access management]()
+* [Manage user scope](manage-user-scope)

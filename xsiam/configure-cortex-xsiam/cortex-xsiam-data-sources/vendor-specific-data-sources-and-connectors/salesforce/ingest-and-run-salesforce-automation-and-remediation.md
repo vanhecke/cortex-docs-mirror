@@ -72,9 +72,12 @@ Salesforce is deprecating "Connected Apps"; it is recommended to use an External
 1. In Salesforce, on the Setup page, search for App Manager and click New External Client App.
 2. Provide a name (such as `panw_cortex_integration`), and your email address (used to retrieve the Consumer Key and Consumer Secret).
 3. Under API (enable OAuth settings), select Enable OAuth.
-4. Enter the following Callback URLs on separate lines (replacing `{tenant external URL}` with your tenant name):
-   * `https://login.salesforce.com/services/oauth2/callback`
-   * `https://{tenant external URL}.paloaltonetworks.com/configuration/data-sources`
+4.  Enter the following Callback URLs on separate lines (replacing `{tenant external URL}` with your tenant name):
+
+    * `https://{your-salesforce-domain}.my.salesforce.com/services/oauth2/callback`
+    * `https://{tenant external URL}.paloaltonetworks.com/configuration/data-sources`
+
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>Do not use the generic <code>login.salesforce.com</code> address if your organization uses a custom Salesforce domain or a sandbox. You must replace <code>{your-salesforce-domain}</code> with your specific Salesforce instance name (for example, <code>acme-inc.my.salesforce.com</code>) to ensure proper authentication redirection.</p></div>
 5. Select these OAuth Scopes:
    * `Access and manage your Chatter data (chatter_api)`
    * `Manage user data via APIs (api)`

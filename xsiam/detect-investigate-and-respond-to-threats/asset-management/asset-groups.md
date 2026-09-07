@@ -16,12 +16,6 @@ When creating or editing a dynamic asset group, you can enable the **Show only f
 If an asset group uses fields outside of this supported list, it cannot be used for scoping in Access Management.
 {% endhint %}
 
-{% hint style="info" %}
-### Important
-
-There is a limit of just under 2000 asset groups.
-{% endhint %}
-
 ### **Dynamic and static asset groups**
 
 You can choose between two types of asset groups. Dynamic groups use filters, such as provider or realm, to group current and future assets that meet the defined criteria, while static groups require you to manually select individual assets to include in the group.
@@ -56,7 +50,7 @@ The data processing and filtering required for grouping and scoping can increase
 
 * Use short filters and simple comparison operators in your asset group definitions to keep complexity low.
 * Minimize the number of asset groups each asset belongs to. While a higher number of groups shouldn't significantly impact performance, incorrectly leveraging them for scoping at a very large scale can have a negative impact.
-* Moderate the total number of asset groups, as an excessively high asset group count can increase latency.
+* Moderate the total number of asset groups, as an excessively high asset group count can increase latency. There is a limit of just under 2000 asset groups.
 
 .
 

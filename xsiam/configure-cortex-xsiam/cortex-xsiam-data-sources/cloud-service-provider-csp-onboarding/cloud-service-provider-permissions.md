@@ -12,6 +12,7 @@ Review the permissions required for each cloud service provider:
 * [Microsoft Azure](cloud-service-provider-permissions/microsoft-azure-provider-permissions)
 * [Google Cloud Platform (GCP)](cloud-service-provider-permissions/google-cloud-platform-gcp-provider-permissions)
 * [Oracle Cloud Infrastructure (OCI)](cloud-service-provider-permissions/oracle-cloud-infrastructure-oci-provider-permissions)
+* [Alibaba Cloud](cloud-service-provider-permissions/alibaba-cloud-provider-permissions)
 
 ## About automation permission scopes for unified Cortex platform cloud content packs
 

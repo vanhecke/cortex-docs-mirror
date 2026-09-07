@@ -2,7 +2,7 @@
   "book": "xsiam",
   "title": "Cortex XSIAM Documentation",
   "section": "cortex-xsiam",
-  "page_count": 2221,
+  "page_count": 2222,
   "tree": [
     {
       "title": "Learn about Cortex XSIAM",
@@ -1121,7 +1121,7 @@
               "type": "document",
               "children": [
                 {
-                  "title": "Compute units usage",
+                  "title": "Manage compute unit usage",
                   "path": "configure-cortex-xsiam/data-management/manage-compute-units/compute-units-usage",
                   "type": "document",
                   "children": []
@@ -6225,6 +6225,12 @@
                     {
                       "title": "Oracle Cloud Infrastructure (OCI) provider permissions",
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions/oracle-cloud-infrastructure-oci-provider-permissions",
+                      "type": "document",
+                      "children": []
+                    },
+                    {
+                      "title": "Alibaba Cloud provider permissions",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions/alibaba-cloud-provider-permissions",
                       "type": "document",
                       "children": []
                     }

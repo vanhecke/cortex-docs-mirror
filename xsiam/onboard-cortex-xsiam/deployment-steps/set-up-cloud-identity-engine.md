@@ -14,7 +14,7 @@ The authentication component of the Cloud Identity Engine allows you to configur
 
 Keep in mind the following guidelines:
 
-* Cloud Identity Engine is an optional service.
+* Cloud Identity Engine is an optional service. However, it is required to activate Identity Analytics detection rules.
 * Cloud Identity Engine must be activated in the same region as Cortex XSIAM.
 * You can use Active Directory information in policy configuration and endpoint management.
 * Cortex XSIAM supports on-premises Active Directory and Microsoft Entra.

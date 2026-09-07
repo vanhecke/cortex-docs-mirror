@@ -16,7 +16,7 @@ In order to make changes to your onboarded CSP configuration, you first modify t
 {% hint style="warning" %}
 #### Important
 
-When using Terraform authentication templates, you must execute the updated Terraform template from the same folder where the original Terraform template was executed.
+When using Terraform authentication templates, you must execute the updated Terraform template from the same folder where the original Terraform template was executed. Terraform stores its state file in that folder, which is how it identifies existing cloud resources and updates them in place rather than creating new ones. For more information, see [Introduction to Terraform for Cloud Service Provider (CSP) Onboarding](introduction-to-terraform-for-cloud-service-provider-csp-onboarding).
 {% endhint %}
 
 5. On the **Cloud Instances** page, a notification appears stating that there are pending changes for the cloud instance you updated. These changes are not applied until you execute the updated template in the CSP environment.\

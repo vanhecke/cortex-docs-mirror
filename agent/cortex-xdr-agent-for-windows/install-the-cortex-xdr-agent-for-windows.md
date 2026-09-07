@@ -95,7 +95,7 @@ The Cortex XDR agent does not support proxy communication in environments where 
 
     The argument format is **`proxy_list="<proxy>:<port>"`**
 
-    1.  You can assign up to five different proxies per agent. For each proxy, enter the IP address and port number. You can also configure the proxy by entering the FQDN and port number. When you enter the FQDN, you can use both lowercase and uppercase letters. Avoid using special characters or spaces.
+    1.  You can assign up to 10 different proxies per agent. For each proxy, enter the IP address and port number. You can also configure the proxy by entering the FQDN and port number. When you enter the FQDN, you can use both lowercase and uppercase letters. Avoid using special characters or spaces.
 
         For example:
 
