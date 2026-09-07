@@ -1,0 +1,194 @@
+{
+  "date": "2026-09-06",
+  "sha": "012d226d70f31427b2f0f7c0997f1a06f42a41c1",
+  "committed_at": "2026-09-06T22:35:36+03:00",
+  "packs": [
+    {
+      "name": "ApiModules",
+      "insertions": 540,
+      "deletions": 1
+    },
+    {
+      "name": "AzureSecurityCenter",
+      "insertions": 343,
+      "deletions": 1
+    },
+    {
+      "name": "CiscoASA",
+      "insertions": 86,
+      "deletions": 1
+    },
+    {
+      "name": "CiscoThousandEyes",
+      "insertions": 101,
+      "deletions": 5
+    },
+    {
+      "name": "CommonScripts",
+      "insertions": 86,
+      "deletions": 41
+    },
+    {
+      "name": "CortexXDR",
+      "insertions": 88,
+      "deletions": 4
+    },
+    {
+      "name": "InfobloxBloxOne",
+      "insertions": 142,
+      "deletions": 1
+    },
+    {
+      "name": "MISP",
+      "insertions": 83,
+      "deletions": 7
+    },
+    {
+      "name": "ManageEngine-ADManager",
+      "insertions": 90,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftExchangeOnPremise",
+      "insertions": 9,
+      "deletions": 2
+    },
+    {
+      "name": "MySQLEnterprise",
+      "insertions": 44,
+      "deletions": 1
+    },
+    {
+      "name": "NGINXWebServer",
+      "insertions": 78,
+      "deletions": 1
+    },
+    {
+      "name": "NetBox",
+      "insertions": 95,
+      "deletions": 1
+    },
+    {
+      "name": "Netskope",
+      "insertions": 631,
+      "deletions": 1
+    },
+    {
+      "name": "OracleCloudInfrastructure",
+      "insertions": 77,
+      "deletions": 1
+    },
+    {
+      "name": "Orca",
+      "insertions": 343,
+      "deletions": 1
+    },
+    {
+      "name": "PaloAltoNetworks_Prisma_AIRs",
+      "insertions": 36593,
+      "deletions": 0
+    },
+    {
+      "name": "Panorays",
+      "insertions": 1116,
+      "deletions": 47
+    },
+    {
+      "name": "PcapAnalysis",
+      "insertions": 106,
+      "deletions": 74
+    },
+    {
+      "name": "PrismaCloud",
+      "insertions": 172,
+      "deletions": 5
+    },
+    {
+      "name": "RelayShield",
+      "insertions": 1098,
+      "deletions": 0
+    },
+    {
+      "name": "SekoiaXDR",
+      "insertions": 573,
+      "deletions": 7
+    },
+    {
+      "name": "ServiceNow",
+      "insertions": 351,
+      "deletions": 249
+    },
+    {
+      "name": "SplunkPy",
+      "insertions": 275,
+      "deletions": 1
+    },
+    {
+      "name": "qualys",
+      "insertions": 7,
+      "deletions": 72
+    }
+  ],
+  "commits": [
+    {
+      "sha": "a5729e86e56abed60f0bde7458728da046c6fa37",
+      "subject": "XSUP-75731: Fix drilldown search parsing for unescaped backslashes (#45744)"
+    },
+    {
+      "sha": "88b64d8364108b31e4d728dafcb0f2b61ea866bf",
+      "subject": "Revert 45681 - Qualys LAST_VM_AUTH_SCAN default (#45783)"
+    },
+    {
+      "sha": "05e76dce500d52205e7a86666cfff7c71be6c057",
+      "subject": "Fix/XSUP-71381/PyPDF stderr issue (#45775)"
+    },
+    {
+      "sha": "862e23ed4297454c0fdce167f77d472f66bbcc5f",
+      "subject": "fix(CortexXDR): reject command delimiter in scheduled sync arguments (CRTX-252628) (#45733)"
+    },
+    {
+      "sha": "9c7b685885484bf48ab0b73eef2f37b20d50dd59",
+      "subject": "XSUP-76118: Fix NTLM authentication MD4 error in EWS v2 (#45759)"
+    },
+    {
+      "sha": "4934f47e6d0c69909d348e48054ece6dade55f12",
+      "subject": "CRTX-271525: add identity.* to packs - force merge (#45710)"
+    },
+    {
+      "sha": "4eb453ead715a28443e2a1ee15fe79cd3138eb1d",
+      "subject": "Add Panorays triage playbook v2 (#45749)"
+    },
+    {
+      "sha": "04a546cf7042a522a9766542faef68bc3f34c5e7",
+      "subject": "Fix / XSUP-74825 / Cisco ThousandEyes fetch-events mechanism (#45750)"
+    },
+    {
+      "sha": "b509e2b4e9b94fa2921d57eb5bd0fdea8615eca8",
+      "subject": "Add RelayShield content pack (#45742)"
+    },
+    {
+      "sha": "bbfc94f8843becb86ed9452deefe5e5078fa424a",
+      "subject": "pcap test fix (#45785)"
+    },
+    {
+      "sha": "c0abd2abce74d3fddcf07659916b2e294d919def",
+      "subject": "[CRTX-208419] ServiceNow content pack enhancement (#45627)"
+    },
+    {
+      "sha": "7971f2a6f20c60a0c847bb522163e2a43206c387",
+      "subject": "Epartington prisma airs initial pack (#45772)"
+    },
+    {
+      "sha": "d2e75d3c9228dda843371dc7be81c77cb1433322",
+      "subject": "SekoiaXDR - add commands to make SOL queries (#45643) (#45791)"
+    },
+    {
+      "sha": "214cbdf73b9654fe61163fe0ebe11593f991ec4d",
+      "subject": "Fix/XSUP-75268/Prisma cloud v2 added limit in fetch incidents (#45599)"
+    },
+    {
+      "sha": "012d226d70f31427b2f0f7c0997f1a06f42a41c1",
+      "subject": "Updated ip command to handle ipv6 addresses (#45784)"
+    }
+  ]
+}
