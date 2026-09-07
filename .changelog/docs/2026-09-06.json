@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-06",
+  "source": "docs",
+  "sha": "fdf2b96d60df0ad7f61d24210cc4f296f2c56a0c",
+  "headline": "New Alibaba Cloud permissions reference; Salesforce OAuth callback URL replaced; agent proxy limit doubled",
+  "summary_md": "- **Alibaba Cloud** onboarding gains its own permissions reference — the day's only new page — taking the XSIAM book to 2,222 pages.\n- Two changes a live deployment would act on: the Windows agent's proxy ceiling and the Salesforce OAuth callback URL.\n- **Cloud Identity Engine** is now stated to be required for Identity Analytics detection rules, having read as purely optional.\n- CSP onboarding picked up Terraform state-file guidance in two places, one of them a new troubleshooting step.\n- The remainder is rewording: the compute units page was retitled and restyled, and the asset group limit moved out of its callout.",
+  "highlights": [
+    {
+      "title": "Alibaba Cloud provider permissions now has a dedicated page",
+      "detail": "It lists every read-only RAM action Cortex XSIAM requests, all under one mandatory Base/Discovery Engine role, and states that Agentless Disk Scanning, DSPM, Audit Logs, Registry Scanning, Serverless Scanning and Automations are not supported for Alibaba Cloud.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions/alibaba-cloud-provider-permissions"
+      ]
+    },
+    {
+      "title": "The Salesforce OAuth callback URL is no longer login.salesforce.com",
+      "detail": "It becomes your own \"{your-salesforce-domain}.my.salesforce.com\" address, with a new note that the generic host must not be used for a custom Salesforce domain or a sandbox.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/salesforce/ingest-and-run-salesforce-automation-and-remediation"
+      ]
+    },
+    {
+      "title": "The Cortex XDR agent for Windows accepts 10 proxies per agent, up from five",
+      "detail": "The proxy_list install argument's stated ceiling doubled; the format and the rest of the guidance are unchanged.",
+      "paths": [
+        "agent/cortex-xdr-agent-for-windows/install-the-cortex-xdr-agent-for-windows"
+      ]
+    },
+    {
+      "title": "Cloud Identity Engine is required to activate Identity Analytics detection rules",
+      "detail": "The guideline that called it an optional service now carries that qualification in the same bullet.",
+      "paths": [
+        "xsiam/onboard-cortex-xsiam/deployment-steps/set-up-cloud-identity-engine"
+      ]
+    },
+    {
+      "title": "The limit of just under 2,000 asset groups lost its callout box",
+      "detail": "The same figure survives as a clause on an existing performance bullet, so the number is unchanged but far less prominent.",
+      "paths": [
+        "xsiam/detect-investigate-and-respond-to-threats/asset-management/asset-groups"
+      ]
+    },
+    {
+      "title": "Applying a pending Terraform update is now documented as a troubleshooting step",
+      "detail": "A new step tells you to run the downloaded template from the original local deployment folder when an \"Update available\" notification appears, and the edit page explains that the state file there is why.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/troubleshoot-errors-on-cloud-instances",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/edit-your-onboarded-csp-configuration"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions/alibaba-cloud-provider-permissions": "New page: the read-only RAM permissions Cortex XSIAM requests when onboarding an Alibaba Cloud account, at account scope via a Terraform connector template.",
+    "agent/cortex-xdr-agent-for-windows/install-the-cortex-xdr-agent-for-windows": "The proxy_list install argument now accepts up to 10 different proxies per agent, raised from five.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/salesforce/ingest-and-run-salesforce-automation-and-remediation": "The External Client App callback URL changes to your own my.salesforce.com domain, with a note against using login.salesforce.com on a custom domain or sandbox.",
+    "xsiam/onboard-cortex-xsiam/deployment-steps/set-up-cloud-identity-engine": "Cloud Identity Engine remains optional, but the same bullet now says it is required to activate Identity Analytics detection rules.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/alibaba-cloud-cloud-onboarding/prerequisites-for-onboarding-alibaba-cloud": "The extra SHA1 fingerprint step now covers eu-central-1 as well as cn-hongkong accounts, and a stray \"Cortex Cloud\" reference becomes Cortex XSIAM.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions": "Alibaba Cloud joins AWS, Azure, GCP and OCI in the per-provider permissions index.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/troubleshoot-errors-on-cloud-instances": "A new step 6 covers applying a pending Terraform update from the original deployment folder; the cloud_health_auditing step shifts to 7.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/edit-your-onboarded-csp-configuration": "The warning about rerunning Terraform from the original folder now explains why: the state file there is how existing resources are updated in place.",
+    "xsiam/detect-investigate-and-respond-to-threats/asset-management/asset-groups": "The callout stating a limit of just under 2000 asset groups is deleted, the figure reappearing as a clause on a performance bullet.",
+    "xsiam/configure-cortex-xsiam/data-management/manage-compute-units/compute-units-usage": "Retitled \"Manage compute unit usage\"; headings reworded, a description added, and the XQL-only caveat restyled from an info hint to a warning.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources": "The Databricks entry now links to the connector's section root rather than its \"how to onboard\" page.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/salesforce/ingest-logs-and-data-from-salesforce": "The \"Click OK\" step becomes a note and the remaining authorization steps renumber; the procedure itself is unchanged.",
+    "xsiam/onboard-cortex-xsiam/post-deployment/manage-user-roles-and-access-management/manage-user-access": "Gains a \"For more details\" list of five related topics, one of which (\"Manage user roles and access management\") has an empty link target.",
+    ".meta/xsiam": "Navigation manifest: the XSIAM book grows to 2,222 pages for the new Alibaba permissions topic, and the compute units entry is retitled."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
