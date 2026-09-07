@@ -1,0 +1,76 @@
+{
+  "date": "2026-09-06",
+  "source": "analytics",
+  "sha": "af01a9efa71584d9482380e98f970e68aae13b41",
+  "headline": "Defense Evasion becomes Stealth across 271 rules; 12 new detectors, including Git token theft by a JS runtime",
+  "summary_md": "- An ATT&CK re-map touched almost every rule: **Defense Evasion (TA0005)** is now **Stealth**, a new **Defense Impairment (TA0112)** tactic appears, and the **Impair Defenses (T1562)** subtree splits into **Disable or Modify Tools (T1685)**, **Disable or Modify System Firewall (T1686)** and **Downgrade Attack (T1689)**.\n- **12 detectors were added**: three AWS, three Exchange mailbox-access, two macOS AppleScript, plus Git token theft, early-startup persistence, an uncommon-command detector and one re-published rule.\n- One rule changed path: `uncommon-user-management-via-net-exe` was deleted and re-published as `uncommon-user-management-via-net-command`, gaining five variations.\n- Variations arrived where there were none — the AI causality-combination rule went from an empty list to 46 entries.\n- Of the 288 modified rules, 271 changed nothing but their tactic and technique labels.",
+  "highlights": [
+    {
+      "title": "Defense Evasion (TA0005) is renamed Stealth, and a Defense Impairment (TA0112) tactic is added",
+      "detail": "271 modified rules lost the Defense Evasion label and 89 also moved off an Impair Defenses (T1562) technique, so most of this day's 302-file diff is relabelling rather than detection logic.",
+      "paths": [
+        "analytics/iptables-configuration-command-was-executed",
+        "analytics/data-sharing-between-gcp-and-google-workspace-was-disabled"
+      ]
+    },
+    {
+      "title": "A new detector names the Mini Shai Hulud campaign",
+      "detail": "\"JS runtime attempted to read Git authentication tokens\" flags a .js file running `gh auth token`, with a High-severity variation when the runtime itself is uncommon.",
+      "paths": [
+        "analytics/js-runtime-attempted-to-read-git-authentication-tokens"
+      ]
+    },
+    {
+      "title": "Uncommon user management via net.exe was withdrawn and re-published as net command",
+      "detail": "The only deletion of the day: the rule moved to a new path, dropped \".exe\" from its name and description, and gained five variations covering renamed LOLBINs, web server processes, untrusted CGO and RMM tools.",
+      "paths": [
+        "analytics/uncommon-user-management-via-net-exe",
+        "analytics/uncommon-user-management-via-net-command"
+      ]
+    },
+    {
+      "title": "Three new Exchange mailbox-access detectors ship under the Identity Threat Module",
+      "detail": "They cover one caller IP reading a single mailbox repeatedly, one IP reaching many users' mail, and one user's mailbox accessed from rotating IPs inside a single /16 subnet.",
+      "paths": [
+        "analytics/multiple-mail-items-were-accessed-in-a-short-period-of-time",
+        "analytics/single-ip-accessed-mail-items-of-multiple-users",
+        "analytics/user-mail-items-accessed-from-multiple-ips-in-the-same-subnet"
+      ]
+    },
+    {
+      "title": "Three new AWS detectors cover log tampering and data destruction",
+      "detail": "Route53 DNS Resolver query logging deletion, KMS key policy changes, and mass deletion of versioned S3 objects — the last tagged for ransomware-style purging of recoverable versions.",
+      "paths": [
+        "analytics/aws-route53-dns-resolver-query-logging-configuration-deletion",
+        "analytics/kms-key-policy-was-changed",
+        "analytics/mass-deletion-of-versioned-s3-objects"
+      ]
+    },
+    {
+      "title": "The AI causality-combination rule gained 46 variations",
+      "detail": "Its variations list was previously empty; each new entry names a specific combination of alerts seen under one causality chain, mostly at High severity under Execution (TA0002).",
+      "paths": [
+        "analytics/ai-determined-combination-of-risky-alerts-under-the-same-causality"
+      ]
+    }
+  ],
+  "items": {
+    "analytics/js-runtime-attempted-to-read-git-authentication-tokens": "New Medium detector for a .js file reading Git personal access tokens via `gh auth token`, attributed to the Mini Shai Hulud campaign.",
+    "analytics/uncommon-user-management-via-net-command": "Replaces the net.exe rule at a new path, with five new variations for renamed LOLBINs, web server processes, untrusted CGO and RMM tools.",
+    "analytics/uncommon-user-management-via-net-exe": "Deleted; re-published as uncommon-user-management-via-net-command, so links to this path no longer resolve.",
+    "analytics/single-ip-accessed-mail-items-of-multiple-users": "New detector for one caller IP reading mail across multiple mailboxes, described as harvesting from a shared VPS or AiTM box.",
+    "analytics/user-mail-items-accessed-from-multiple-ips-in-the-same-subnet": "New detector for a mailbox reached from rotating IPs in one /16, aimed at VPS abuse that evades per-IP velocity controls.",
+    "analytics/multiple-mail-items-were-accessed-in-a-short-period-of-time": "New detector for a single caller IP reading one mailbox an unusually high number of times in a short window.",
+    "analytics/mass-deletion-of-versioned-s3-objects": "New detector for high-frequency deletion of S3 object versions, with variations for production accounts and buckets holding sensitive data.",
+    "analytics/aws-route53-dns-resolver-query-logging-configuration-deletion": "New Cloud detector for deletion of Route53 DNS Resolver query logging, escalating when the identity is not an admin.",
+    "analytics/kms-key-policy-was-changed": "New Cloud detector for AWS KMS key policy modification, tagged Data Detection & Response.",
+    "analytics/uncommon-applescript-with-a-potential-defense-evasion-command-was-executed-via-the-command-line": "New macOS detector for AppleScript modifying system configuration or bypassing security controls.",
+    "analytics/uncommon-applescript-with-a-potential-discovery-command-was-executed-via-the-command-line": "New macOS detector for AppleScript run from the command line carrying a system information discovery command.",
+    "analytics/execution-of-an-uncommon-process-with-a-local-domain-user-sid-at-early-startup-by-a-system-binary": "New Low detector for boot-time execution under a local or domain user SID, tagged Generic Persistence Analytics.",
+    "analytics/uncommon-command-was-executed-on-a-device": "New Informational detector for uncommon commands on a device, with a variation for uncommon sensitive commands.",
+    "analytics/ai-determined-combination-of-risky-alerts-under-the-same-causality": "Gained 46 variations, each naming a specific alert combination under one causality chain; the list was previously empty.",
+    "analytics/unusual-cloud-instance-metadata-service-imds-access": "Gained a variation for IMDS requests made by a lightweight JavaScript runtime executing a script."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": true
+}
