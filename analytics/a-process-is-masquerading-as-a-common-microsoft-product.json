@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Masquerading (T1036)"
@@ -23,7 +23,7 @@
       "name": "An unsigned actor executed masqueraded process which was downloaded from unexpected source",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Masquerading (T1036)"
@@ -36,7 +36,7 @@
       "name": "An unsigned and rare actor executing masqueraded process with uncommon characteristics",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Masquerading (T1036)"
@@ -49,7 +49,7 @@
       "name": "A process that was executed by remote causality actor is masquerading as a common Microsoft product",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Masquerading (T1036)"
@@ -62,7 +62,7 @@
       "name": "A process is masquerading as a common Microsoft Lolbin",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Masquerading (T1036)"
@@ -75,7 +75,7 @@
       "name": "A process running from a commonly abused directory is masquerading as a common Microsoft product",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Masquerading (T1036)"

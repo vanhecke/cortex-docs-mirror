@@ -1,10 +1,10 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+    "Disable or Modify Tools: Disable or Modify Cloud Log (T1685.002)"
   ],
   "attackers_goals": "Avoiding detection of their activities by limiting the amount of data collected. This action may be preliminary to resource deletion or data exhilaration from the resource. Setting the stage for further attacks, like a Ransomware Attack.",
   "deduplication_period": "1 Day",
@@ -24,10 +24,10 @@
       "name": "Cloud resource logging was disabled - failed attempt",
       "severity": "Informational",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+        "Disable or Modify Tools: Disable or Modify Cloud Log (T1685.002)"
       ],
       "description": "A failed attempt to disable cloud resource logging.",
       "attackers_goals": "Avoiding detection of their activities by limiting the amount of data collected. This action may be preliminary to resource deletion or data exhilaration from the resource. Setting the stage for further attacks, like a Ransomware Attack.",
@@ -37,10 +37,10 @@
       "name": "Cloud resource logging was disabled on an Azure DB/storage resource",
       "severity": "Informational",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+        "Disable or Modify Tools: Disable or Modify Cloud Log (T1685.002)"
       ],
       "description": "Cloud resource logging was disabled on a DB/storage resource.",
       "attackers_goals": "Avoiding detection of their activities by limiting the amount of data collected. This action may be preliminary to resource deletion or data exhilaration from the resource. Setting the stage for further attacks, like a Ransomware Attack.",
@@ -50,10 +50,10 @@
       "name": "Cloud resource logging was disabled on a GCP DB/storage resource",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+        "Disable or Modify Tools: Disable or Modify Cloud Log (T1685.002)"
       ],
       "description": "Cloud resource logging was disabled on a DB/storage resource.",
       "attackers_goals": "Avoiding detection of their activities by limiting the amount of data collected. This action may be preliminary to resource deletion or data exhilaration from the resource. Setting the stage for further attacks, like a Ransomware Attack.",

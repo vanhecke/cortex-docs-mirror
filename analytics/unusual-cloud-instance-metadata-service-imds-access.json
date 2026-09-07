@@ -20,6 +20,19 @@
   "test_period": "N/A (single event)",
   "variations": [
     {
+      "name": "Unusual cloud Instance Metadata Service (IMDS) access from a lightweight JavaScript runtime executing a script",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Credential Access (TA0006)"
+      ],
+      "attack_techniques": [
+        "Unsecured Credentials: Cloud Instance Metadata API (T1552.005)"
+      ],
+      "description": "A request to cloud Instance Metadata Service (IMDS) was made by an unusual process. This process does not usually access the Instance Metadata Service. An attacker may extract cloud compute tokens to gain access to a cloud environment.",
+      "attackers_goals": "Extract sensitive cloud compute tokens to access restricted cloud resources.",
+      "investigative_actions": "Determine whether a web service was involved and if it was exploited to execute this technique. Identify any additional commands that were executed. Review the permissions assigned to the target machine to identify which resources may be affected. Examine related compute activity in the cloud audit logs."
+    },
+    {
       "name": "Unusual cloud Instance Metadata Service (IMDS) access from an unusual known Windows web service",
       "severity": "Medium",
       "attack_tactics": [

@@ -1,10 +1,10 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
-    "Impersonation (T1656)"
+    "Social Engineering: Impersonation (T1684.001)"
   ],
   "attackers_goals": "Disguise the email's origin by spoofing the received header to appear as a trusted sender, impersonating a trusted source, aims to mislead recipients into disclosing private data or performing unsafe acts.",
   "deduplication_period": "1 Day",
@@ -23,10 +23,10 @@
       "name": "Unusual sender IP subnet associated with infrastructure or tunneling services",
       "severity": "Informational",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
-        "Impersonation (T1656)"
+        "Social Engineering: Impersonation (T1684.001)"
       ],
       "description": "This IP address has not been observed in correlation with the sender's fully qualified domain name within the last 30 days.",
       "attackers_goals": "Disguise the email's origin by spoofing the received header to appear as a trusted sender, impersonating a trusted source, aims to mislead recipients into disclosing private data or performing unsafe acts.",
@@ -36,10 +36,10 @@
       "name": "Unusual sender IP subnet associated with internal sender",
       "severity": "Informational",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
-        "Impersonation (T1656)"
+        "Social Engineering: Impersonation (T1684.001)"
       ],
       "description": "This IP address has not been observed in correlation with the sender's fully qualified domain name within the last 30 days.",
       "attackers_goals": "Disguise the email's origin by spoofing the received header to appear as a trusted sender, impersonating a trusted source, aims to mislead recipients into disclosing private data or performing unsafe acts.",

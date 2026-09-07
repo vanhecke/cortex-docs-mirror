@@ -2,7 +2,7 @@
   "activation_period": "14 Days",
   "attack_tactics": [
     "Exfiltration (TA0010)",
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
     "Transfer Data to Cloud Account (T1537)",
@@ -26,7 +26,7 @@
       "severity": "Informational",
       "attack_tactics": [
         "Exfiltration (TA0010)",
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Transfer Data to Cloud Account (T1537)",

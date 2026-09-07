@@ -1,9 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
+    "Masquerading (T1036)",
     "Modify Cloud Compute Infrastructure: Create Cloud Instance (T1578.002)"
   ],
   "attackers_goals": "Create a new cloud instance to evade detection or leverage it for further malicious activity.",
@@ -25,9 +27,11 @@
       "name": "EC2 instance creation with admin profile, public IP address and external security group",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
+        "Masquerading (T1036)",
         "Modify Cloud Compute Infrastructure: Create Cloud Instance (T1578.002)"
       ],
       "description": "An attempt was made to create a cloud compute instance.",
@@ -38,9 +42,11 @@
       "name": "EC2 instance creation with admin profile and public IP address",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
+        "Masquerading (T1036)",
         "Modify Cloud Compute Infrastructure: Create Cloud Instance (T1578.002)"
       ],
       "description": "An attempt was made to create a cloud compute instance.",

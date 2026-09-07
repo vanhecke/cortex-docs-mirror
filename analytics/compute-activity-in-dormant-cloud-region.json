@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Unused/Unsupported Cloud Regions (T1535)"
@@ -25,7 +25,7 @@
       "name": "Compute activity in dormant cloud region from a non-VPN IP address",
       "severity": "Informational",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Unused/Unsupported Cloud Regions (T1535)"
@@ -38,7 +38,7 @@
       "name": "A cloud compute instance was created in a dormant region",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Unused/Unsupported Cloud Regions (T1535)"
@@ -51,7 +51,7 @@
       "name": "Compute activity in dormant cloud region by a compromised AWS access key",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Unused/Unsupported Cloud Regions (T1535)"

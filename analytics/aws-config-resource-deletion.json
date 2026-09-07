@@ -1,10 +1,10 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses (T1562)"
+    "Disable or Modify Tools (T1685)"
   ],
   "attackers_goals": "An attacker may modify Config configuration to evade detection.",
   "deduplication_period": "1 Day",

@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Privilege Escalation (TA0004)"
   ],
   "attack_techniques": [
     "Abuse Elevation Control Mechanism: Bypass User Account Control (T1548.002)"
@@ -23,7 +23,7 @@
       "name": "Tampering with the Windows User Account Controls (UAC) configuration by a remote host",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Privilege Escalation (TA0004)"
       ],
       "attack_techniques": [
         "Abuse Elevation Control Mechanism: Bypass User Account Control (T1548.002)"
@@ -36,7 +36,7 @@
       "name": "Tampering with the Windows User Account Controls (UAC) configuration",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Privilege Escalation (TA0004)"
       ],
       "attack_techniques": [
         "Abuse Elevation Control Mechanism: Bypass User Account Control (T1548.002)"
@@ -49,7 +49,7 @@
       "name": "Tampering with the Windows User Account Controls (UAC) configuration",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Privilege Escalation (TA0004)"
       ],
       "attack_techniques": [
         "Abuse Elevation Control Mechanism: Bypass User Account Control (T1548.002)"

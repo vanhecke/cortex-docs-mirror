@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "System Binary Proxy Execution: Msiexec (T1218.007)"
@@ -20,10 +20,23 @@
   "test_period": "N/A (single event)",
   "variations": [
     {
+      "name": "Msiexec execution of an executable from an uncommon remote location by an RMM tool",
+      "severity": "High",
+      "attack_tactics": [
+        "Stealth (TA0005)"
+      ],
+      "attack_techniques": [
+        "System Binary Proxy Execution: Msiexec (T1218.007)"
+      ],
+      "description": "Msiexec is the command-line utility for the Windows Installer. Adversaries may abuse msiexec.exe to proxy execution of malicious payloads from remote locations. This process was executed by a Remote Monitoring & Management tool.",
+      "attackers_goals": "Evading security controls and executing arbitrary files from the web.",
+      "investigative_actions": "Monitor the command-line arguments of msiexec.exe, For example, the command line - msiexec /i http://some_domain.com/www/executable.msi can be legitimate or malicious. Validate the following criteria, if none of them are correct, follow incident response procedures: Check execution of msiexec and the IP/Domain that used. Is the URL that is encoded in the command line trusted. Is executed DLL or MSI file known as legitimate. Is the initiating process legitimate and the user running it knows of its use."
+    },
+    {
       "name": "Msiexec execution of an executable from an uncommon remote location with a specific port",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "System Binary Proxy Execution: Msiexec (T1218.007)"
@@ -36,7 +49,7 @@
       "name": "Msiexec execution of an executable from an uncommon remote location without properties",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "System Binary Proxy Execution: Msiexec (T1218.007)"

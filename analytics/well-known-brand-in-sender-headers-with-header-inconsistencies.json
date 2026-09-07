@@ -1,10 +1,10 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
-    "Impersonation (T1656)"
+    "Social Engineering: Impersonation (T1684.001)"
   ],
   "attackers_goals": "Impersonate known legitimate brands or other technological entities to trick recipients into disclosing information or executing malicious code unwillingly.",
   "deduplication_period": "1 Day",

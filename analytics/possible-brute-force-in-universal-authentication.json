@@ -21,7 +21,7 @@
   "test_period": "1 Hour",
   "variations": [
     {
-      "name": "Possible Brute Force in universal authentication on a honey user",
+      "name": "Brute Force in universal authentication involving a honey user",
       "severity": "Medium",
       "attack_tactics": [
         "Credential Access (TA0006)",
@@ -69,7 +69,7 @@
       "investigative_actions": "Check the legitimacy of this activity and determine whether it is malicious or not. Check if the user usually logs in from this country. Check whether a successful login was made after unsuccessful attempts."
     },
     {
-      "name": "Abnormal Possible Brute Force in universal authentication",
+      "name": "Abnormal Brute Force in universal authentication",
       "severity": "Informational",
       "attack_tactics": [
         "Credential Access (TA0006)",

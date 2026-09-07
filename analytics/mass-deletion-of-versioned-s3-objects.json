@@ -1,0 +1,66 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Impact (TA0040)"
+  ],
+  "attack_techniques": [
+    "Inhibit System Recovery (T1490)",
+    "Data Destruction (T1485)"
+  ],
+  "attackers_goals": "Adversaries may delete data to prevent the recovery of a corrupted system. They may also aim to interrupt availability to resources.",
+  "deduplication_period": "1 Day",
+  "description": "An identity deleted multiple S3 object versions at a high frequency, considerably more than usual. This may indicate an attempt to permanently purge historical versions to prevent data recovery, common in ransomware or malicious data destruction attacks.",
+  "detection_modules": "Cloud",
+  "detector_tags": "",
+  "investigative_actions": "Identify the deleted objects and their containing bucket. Investigate the identity performed the deletion and recent related activity.",
+  "name": "Mass deletion of versioned S3 objects",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Mass deletion of versioned S3 objects from a production account",
+      "severity": "Low",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Inhibit System Recovery (T1490)",
+        "Data Destruction (T1485)"
+      ],
+      "description": "An identity deleted multiple S3 object versions from a production account at a high frequency, considerably more than usual. This may indicate an attempt to permanently purge historical versions to prevent data recovery, common in ransomware or malicious data destruction attacks.",
+      "attackers_goals": "Adversaries may delete data to prevent the recovery of a corrupted system. They may also aim to interrupt availability to resources.",
+      "investigative_actions": "Identify the deleted objects and their containing bucket. Investigate the identity performed the deletion and recent related activity."
+    },
+    {
+      "name": "Mass deletion of versioned S3 objects from a bucket containing sensitive data",
+      "severity": "Low",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Inhibit System Recovery (T1490)",
+        "Data Destruction (T1485)"
+      ],
+      "description": "An identity deleted multiple S3 object versions from a bucket containing sensitive data, at a high frequency, considerably more than usual. This may indicate an attempt to permanently purge historical versions to prevent data recovery, common in ransomware or malicious data destruction attacks.",
+      "attackers_goals": "Adversaries may delete data to prevent the recovery of a corrupted system. They may also aim to interrupt availability to resources.",
+      "investigative_actions": "Identify the deleted objects and their containing bucket. Investigate the identity performed the deletion and recent related activity."
+    },
+    {
+      "name": "Mass deletion of versioned S3 objects deviating from the identity baseline",
+      "severity": "Informational",
+      "attack_tactics": [
+        "Impact (TA0040)"
+      ],
+      "attack_techniques": [
+        "Inhibit System Recovery (T1490)",
+        "Data Destruction (T1485)"
+      ],
+      "description": "An identity deleted multiple S3 object versions at a high frequency, considerably more than usual for that identity. This may indicate an attempt to permanently purge historical versions to prevent data recovery, common in ransomware or malicious data destruction attacks.",
+      "attackers_goals": "Adversaries may delete data to prevent the recovery of a corrupted system. They may also aim to interrupt availability to resources.",
+      "investigative_actions": "Identify the deleted objects and their containing bucket. Investigate the identity performed the deletion and recent related activity."
+    }
+  ]
+}

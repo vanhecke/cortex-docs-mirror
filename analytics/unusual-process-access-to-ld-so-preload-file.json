@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Persistence (TA0003)"
+    "Execution (TA0002)"
   ],
   "attack_techniques": [
     "Hijack Execution Flow: Dynamic Linker Hijacking (T1574.006)"

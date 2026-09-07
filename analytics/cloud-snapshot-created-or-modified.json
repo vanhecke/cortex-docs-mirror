@@ -2,8 +2,8 @@
   "activation_period": "14 Days",
   "attack_tactics": [
     "Exfiltration (TA0010)",
-    "Defense Evasion (TA0005)",
-    "Collection (TA0009)"
+    "Collection (TA0009)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
     "Transfer Data to Cloud Account (T1537)",
@@ -30,8 +30,8 @@
       "severity": "Low",
       "attack_tactics": [
         "Exfiltration (TA0010)",
-        "Defense Evasion (TA0005)",
-        "Collection (TA0009)"
+        "Collection (TA0009)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Transfer Data to Cloud Account (T1537)",
@@ -47,8 +47,8 @@
       "severity": "Low",
       "attack_tactics": [
         "Exfiltration (TA0010)",
-        "Defense Evasion (TA0005)",
-        "Collection (TA0009)"
+        "Collection (TA0009)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Transfer Data to Cloud Account (T1537)",
@@ -64,8 +64,8 @@
       "severity": "Low",
       "attack_tactics": [
         "Exfiltration (TA0010)",
-        "Defense Evasion (TA0005)",
-        "Collection (TA0009)"
+        "Collection (TA0009)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Transfer Data to Cloud Account (T1537)",

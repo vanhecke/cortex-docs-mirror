@@ -1,10 +1,10 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses (T1562)",
+    "Disable or Modify Tools (T1685)",
     "Domain or Tenant Policy Modification: Trust Modification (T1484.002)"
   ],
   "attackers_goals": "An adversary may add a trusted domain to collect and exfiltrate data from their target's organization with less restrictive security controls.",
@@ -24,10 +24,10 @@
       "name": "A domain was added to the trusted domains list by a non Google Workspace administrative user",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses (T1562)",
+        "Disable or Modify Tools (T1685)",
         "Domain or Tenant Policy Modification: Trust Modification (T1484.002)"
       ],
       "description": "A domain was added to the Google Workspace trusted domains list.",
@@ -38,10 +38,10 @@
       "name": "A domain was added to the trusted domains list from an unusual ASN",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses (T1562)",
+        "Disable or Modify Tools (T1685)",
         "Domain or Tenant Policy Modification: Trust Modification (T1484.002)"
       ],
       "description": "A domain was added to the Google Workspace trusted domains list.",

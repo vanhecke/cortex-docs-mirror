@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
     "Domain or Tenant Policy Modification (T1484)"

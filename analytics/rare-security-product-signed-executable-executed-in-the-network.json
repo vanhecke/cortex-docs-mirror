@@ -1,10 +1,10 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
-    "Exploitation for Defense Evasion (T1211)"
+    "Exploitation for Stealth (T1211)"
   ],
   "attackers_goals": "Adversaries may exploit the application vulnerability to bypass security features.",
   "deduplication_period": "1 Day",

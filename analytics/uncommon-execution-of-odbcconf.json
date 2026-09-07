@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "System Binary Proxy Execution: Odbcconf (T1218.008)"
@@ -23,7 +23,7 @@
       "name": "Uncommon execution of ODBCConf to load dll directly",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "System Binary Proxy Execution: Odbcconf (T1218.008)"

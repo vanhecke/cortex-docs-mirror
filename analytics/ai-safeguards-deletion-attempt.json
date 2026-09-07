@@ -1,10 +1,10 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses (T1562)"
+    "Disable or Modify Tools (T1685)"
   ],
   "attackers_goals": "Evade model's restrictions and potentially accessing sensitive data or banned topics.",
   "deduplication_period": "5 Days",
@@ -24,10 +24,10 @@
       "name": "AI safeguards were successfully deleted",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses (T1562)"
+        "Disable or Modify Tools (T1685)"
       ],
       "description": "A cloud identity deleted AI safeguards. MITRE ATLAS Technique: AML.T0015 - Evade ML Model.",
       "attackers_goals": "Evade model's restrictions and potentially accessing sensitive data or banned topics.",

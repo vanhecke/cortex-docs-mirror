@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
+    "Stealth (TA0005)",
     "Privilege Escalation (TA0004)"
   ],
   "attack_techniques": [
@@ -25,7 +25,7 @@
       "name": "Suspicious Azure AD PIM role settings change",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Privilege Escalation (TA0004)"
       ],
       "attack_techniques": [

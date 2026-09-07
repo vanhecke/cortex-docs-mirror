@@ -37,7 +37,7 @@
       "severity": "Medium",
       "attack_tactics": [
         "Command and Control (TA0011)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Application Layer Protocol (T1071)",
@@ -97,9 +97,9 @@
       "name": "Uncommon macOS process communication to a rare external host related to LOTTunnels",
       "severity": "Low",
       "attack_tactics": [
-        "Command and Control (TA0011)",
         "Exfiltration (TA0010)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)",
+        "Command and Control (TA0011)"
       ],
       "attack_techniques": [
         "Application Layer Protocol (T1071)",
@@ -116,7 +116,7 @@
       "severity": "Low",
       "attack_tactics": [
         "Command and Control (TA0011)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Application Layer Protocol (T1071)",
@@ -148,17 +148,17 @@
       "name": "Uncommon macOS process communication to a rare external host while using a CLI utility to download and change permission",
       "severity": "Low",
       "attack_tactics": [
-        "Command and Control (TA0011)",
         "Exfiltration (TA0010)",
         "Execution (TA0002)",
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)",
+        "Command and Control (TA0011)"
       ],
       "attack_techniques": [
         "Application Layer Protocol (T1071)",
         "Exfiltration Over C2 Channel (T1041)",
         "Command and Scripting Interpreter (T1059)",
         "File and Directory Permissions Modification (T1222)",
-        "File and Directory Permissions Modification: Linux and Mac File and Directory Permissions Modification (T1222.002)",
+        "File and Directory Permissions Modification: Linux and Mac Permissions (T1222.002)",
         "Ingress Tool Transfer (T1105)"
       ],
       "description": "An uncommon process is connecting to an external host that is rarely accessed within the organization. This connection pattern is consistent with malicious activity such as command and control execution, malware download and so on.",
@@ -171,7 +171,8 @@
       "attack_tactics": [
         "Command and Control (TA0011)",
         "Exfiltration (TA0010)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Application Layer Protocol (T1071)",
@@ -189,7 +190,7 @@
       "attack_tactics": [
         "Command and Control (TA0011)",
         "Exfiltration (TA0010)",
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Collection (TA0009)"
       ],
       "attack_techniques": [
@@ -208,9 +209,9 @@
       "name": "Uncommon macOS process communication to a rare external host while using a CLI utility and downloading a script",
       "severity": "Low",
       "attack_tactics": [
-        "Command and Control (TA0011)",
         "Exfiltration (TA0010)",
-        "Execution (TA0002)"
+        "Execution (TA0002)",
+        "Command and Control (TA0011)"
       ],
       "attack_techniques": [
         "Application Layer Protocol (T1071)",

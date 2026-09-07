@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Indicator Removal: Clear Mailbox Data (T1070.008)"
@@ -23,7 +23,7 @@
       "name": "Sensitive Exchange sent messages moved to deleted items from unusual source",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Indicator Removal: Clear Mailbox Data (T1070.008)"

@@ -1,12 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
-    "Execution (TA0002)"
+    "Execution (TA0002)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses (T1562)",
-    "Impair Defenses: Disable or Modify Tools (T1562.001)",
+    "Disable or Modify Tools (T1685)",
     "Command and Scripting Interpreter: Cloud API (T1059.009)"
   ],
   "attackers_goals": "Blind defenders by removing alerts that watch for suspicious cloud activity. Avoid detection of subsequent operations such as data exfiltration, lateral movement, or persistence.",
@@ -26,12 +25,11 @@
       "name": "Unusual Azure Monitor alert rule deletion",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
-        "Execution (TA0002)"
+        "Execution (TA0002)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses (T1562)",
-        "Impair Defenses: Disable or Modify Tools (T1562.001)",
+        "Disable or Modify Tools (T1685)",
         "Command and Scripting Interpreter: Cloud API (T1059.009)"
       ],
       "description": "An Azure Monitor alert rule was deleted. Azure Monitor alert rules watch telemetry from cloud resources and fire when suspicious or anomalous activity occurs. Adversaries may delete these rules to blind defenders and avoid detection of follow-on malicious activity.",
@@ -42,12 +40,11 @@
       "name": "Azure Monitor alert rule deleted by compute workload",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
-        "Execution (TA0002)"
+        "Execution (TA0002)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses (T1562)",
-        "Impair Defenses: Disable or Modify Tools (T1562.001)",
+        "Disable or Modify Tools (T1685)",
         "Command and Scripting Interpreter: Cloud API (T1059.009)"
       ],
       "description": "An Azure Monitor alert rule was deleted. Azure Monitor alert rules watch telemetry from cloud resources and fire when suspicious or anomalous activity occurs. Adversaries may delete these rules to blind defenders and avoid detection of follow-on malicious activity.",

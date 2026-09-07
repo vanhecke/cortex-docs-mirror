@@ -5,7 +5,7 @@
   ],
   "attack_techniques": [
     "Forced Authentication (T1187)",
-    "Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay (T1557.001)"
+    "Adversary-in-the-Middle: Name Resolution Poisoning and SMB Relay (T1557.001)"
   ],
   "attackers_goals": "An attacker can abuse the Encrypting File System Remote Protocol to coerce authentication from a DC. This authentication can later be used for obtaining a DC certificate for DCSync.",
   "deduplication_period": "1 Day",
@@ -28,7 +28,7 @@
       ],
       "attack_techniques": [
         "Forced Authentication (T1187)",
-        "Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay (T1557.001)"
+        "Adversary-in-the-Middle: Name Resolution Poisoning and SMB Relay (T1557.001)"
       ],
       "description": "An unusual Encrypting File System Remote call (EFSRPC) was made to a domain controller.",
       "attackers_goals": "An attacker can abuse the Encrypting File System Remote Protocol to coerce authentication from a DC. This authentication can later be used for obtaining a DC certificate for DCSync.",
@@ -42,7 +42,7 @@
       ],
       "attack_techniques": [
         "Forced Authentication (T1187)",
-        "Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay (T1557.001)"
+        "Adversary-in-the-Middle: Name Resolution Poisoning and SMB Relay (T1557.001)"
       ],
       "description": "An abnormal EfsRpcFileKeyInfo Encrypting File System Remote call (EFSRPC) was made to a domain controller for the first time.",
       "attackers_goals": "An attacker can abuse the Encrypting File System Remote Protocol to coerce authentication from a DC. This authentication can later be used for obtaining a DC certificate for DCSync.",
@@ -56,7 +56,7 @@
       ],
       "attack_techniques": [
         "Forced Authentication (T1187)",
-        "Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay (T1557.001)"
+        "Adversary-in-the-Middle: Name Resolution Poisoning and SMB Relay (T1557.001)"
       ],
       "description": "An abnormal EfsRpcFileKeyInfo Encrypting File System Remote call (EFSRPC) was made to a domain controller.",
       "attackers_goals": "An attacker can abuse the Encrypting File System Remote Protocol to coerce authentication from a DC. This authentication can later be used for obtaining a DC certificate for DCSync.",

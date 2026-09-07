@@ -1,8 +1,8 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
-    "Collection (TA0009)"
+    "Collection (TA0009)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
     "Modify Cloud Compute Infrastructure (T1578)",
@@ -25,8 +25,8 @@
       "name": "Cloud compute volume creation attempt using Cloud Formation or Terraform",
       "severity": "Informational",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
-        "Collection (TA0009)"
+        "Collection (TA0009)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Modify Cloud Compute Infrastructure (T1578)",

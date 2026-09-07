@@ -1,11 +1,10 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Persistence (TA0003)",
-    "Privilege Escalation (TA0004)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Hijack Execution Flow (T1574)"
+    "Modify Authentication Process (T1556)"
   ],
   "attackers_goals": "Attackers may inject malicious code into the AD FS server and manipulate the IdentityServer adapters to gain persistence.",
   "deduplication_period": "1 Day",
@@ -24,11 +23,10 @@
       "name": "Suspicious DLL was added to the AD FS Global Assembly Cache path",
       "severity": "Low",
       "attack_tactics": [
-        "Persistence (TA0003)",
-        "Privilege Escalation (TA0004)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Hijack Execution Flow (T1574)"
+        "Modify Authentication Process (T1556)"
       ],
       "description": "A new and unknown DLL was created within the Active Directory Federation Services (AD FS) Global Assembly Cache (GAC). Attackers may manipulate IdentityServer adapters to achieve persistence or execute malicious code within the AD FS environment.",
       "attackers_goals": "Attackers may inject malicious code into the AD FS server and manipulate the IdentityServer adapters to gain persistence.",

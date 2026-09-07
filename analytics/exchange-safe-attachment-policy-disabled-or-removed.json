@@ -1,11 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
-    "Initial Access (TA0001)"
+    "Initial Access (TA0001)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses: Disable or Modify Tools (T1562.001)",
+    "Disable or Modify Tools (T1685)",
     "Phishing: Spearphishing Attachment (T1566.001)"
   ],
   "attackers_goals": "An attacker may attempt to disable the Safe Attachment policy to evade detection.",

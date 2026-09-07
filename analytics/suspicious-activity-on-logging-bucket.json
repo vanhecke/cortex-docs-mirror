@@ -1,11 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses (T1562)",
-    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+    "Disable or Modify Tools (T1685)",
+    "Disable or Modify Tools: Disable or Modify Cloud Log (T1685.002)"
   ],
   "attackers_goals": "Evade detection by tampering the logs.",
   "deduplication_period": "1 Day",
@@ -24,11 +24,11 @@
       "name": "Suspicious deletion on CloudTrail logging bucket",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses (T1562)",
-        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+        "Disable or Modify Tools (T1685)",
+        "Disable or Modify Tools: Disable or Modify Cloud Log (T1685.002)"
       ],
       "description": "An identity performed a suspicious activity on bucket used to store CloudTrail logs.",
       "attackers_goals": "Evade detection by tampering the logs.",
@@ -38,11 +38,11 @@
       "name": "Suspicious deletion on S3 access logs bucket",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses (T1562)",
-        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+        "Disable or Modify Tools (T1685)",
+        "Disable or Modify Tools: Disable or Modify Cloud Log (T1685.002)"
       ],
       "description": "An identity performed a suspicious activity on an S3 bucket used to store access logs.",
       "attackers_goals": "Evade detection by tampering the logs.",

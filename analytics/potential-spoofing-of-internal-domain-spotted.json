@@ -2,11 +2,11 @@
   "activation_period": "14 Days",
   "attack_tactics": [
     "Initial Access (TA0001)",
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Phishing (T1566)",
-    "Impersonation (T1656)"
+    "Social Engineering: Impersonation (T1684.001)"
   ],
   "attackers_goals": "Get credentials for internal systems. Executing financial transfers from the company to the attacker's account. Extracting information outside the company. Encrypting critical information and demanding a ransom.",
   "deduplication_period": "1 Hour 30 Minutes",

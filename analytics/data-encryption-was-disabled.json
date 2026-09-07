@@ -1,11 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
     "Weaken Encryption (T1600)",
-    "Impair Defenses (T1562)"
+    "Disable or Modify Tools (T1685)"
   ],
   "attackers_goals": "An attacker is trying to access sensitive data in plaintext. An attacker might try to exfiltrate plaintext data to an endpoint controlled by the attacker and avoid detection. An attacker can re-encrypt the data with a key that is available only to the attacker.",
   "deduplication_period": "1 Day",

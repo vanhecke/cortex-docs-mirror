@@ -1,11 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
-    "Initial Access (TA0001)"
+    "Initial Access (TA0001)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses: Disable or Modify Tools (T1562.001)",
+    "Disable or Modify Tools (T1685)",
     "Phishing: Spearphishing Link (T1566.002)"
   ],
   "attackers_goals": "An attacker is attempting to bypass security measures associated with hyperlinks in email messages.",

@@ -95,13 +95,13 @@
       "attack_tactics": [
         "Execution (TA0002)",
         "Lateral Movement (TA0008)",
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Command and Scripting Interpreter: Unix Shell (T1059.004)",
         "Command and Scripting Interpreter (T1059)",
         "Remote Services (T1021)",
-        "Impair Defenses (T1562)"
+        "Disable or Modify Tools (T1685)"
       ],
       "description": "An unusual process execution of a shell command on Linux from a remote source. This action may indicate possible exploitation or shell command execution via a backdoor.",
       "attackers_goals": "An attacker may attempt to execute a malicious shell command on the system.",
@@ -279,7 +279,7 @@
       "attack_tactics": [
         "Execution (TA0002)",
         "Lateral Movement (TA0008)",
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Command and Scripting Interpreter: Unix Shell (T1059.004)",

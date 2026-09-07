@@ -1,8 +1,8 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
-    "Credential Access (TA0006)"
+    "Credential Access (TA0006)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
     "OS Credential Dumping: DCSync (T1003.006)",
@@ -26,8 +26,8 @@
       "name": "Possible DCSync by an unusual user",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
-        "Credential Access (TA0006)"
+        "Credential Access (TA0006)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "OS Credential Dumping: DCSync (T1003.006)",

@@ -2,7 +2,7 @@
   "activation_period": "14 Days",
   "attack_tactics": [
     "Initial Access (TA0001)",
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Phishing: Spearphishing Attachment (T1566.001)",
@@ -26,7 +26,7 @@
       "severity": "High",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Phishing: Spearphishing Attachment (T1566.001)",
@@ -42,7 +42,7 @@
       "severity": "High",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Phishing: Spearphishing Attachment (T1566.001)",
@@ -57,7 +57,7 @@
       "severity": "Medium",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Phishing: Spearphishing Attachment (T1566.001)",
@@ -72,7 +72,7 @@
       "severity": "Medium",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Phishing: Spearphishing Attachment (T1566.001)",
@@ -87,7 +87,7 @@
       "severity": "Medium",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Phishing: Spearphishing Attachment (T1566.001)",

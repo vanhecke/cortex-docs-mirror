@@ -2,11 +2,11 @@
   "activation_period": "14 Days",
   "attack_tactics": [
     "Lateral Movement (TA0008)",
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
     "Remote Services (T1021)",
-    "Impair Defenses: Downgrade Attack (T1562.010)"
+    "Downgrade Attack (T1689)"
   ],
   "attackers_goals": "Attackers may attempt to move laterally over the network by exploiting problems in a lower version of SSH.",
   "deduplication_period": "1 Day",
@@ -26,11 +26,11 @@
       "severity": "Low",
       "attack_tactics": [
         "Lateral Movement (TA0008)",
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Remote Services (T1021)",
-        "Impair Defenses: Downgrade Attack (T1562.010)"
+        "Downgrade Attack (T1689)"
       ],
       "description": "The endpoint asked for an ssh downgrade, ssh downgrade may enable attackers to perform attacks such as data decryption, man in the middle, session hijack, replay attack and more. With a lower version than the source host used in the past.",
       "attackers_goals": "Attackers may attempt to move laterally over the network by exploiting problems in a lower version of SSH.",
@@ -41,11 +41,11 @@
       "severity": "Low",
       "attack_tactics": [
         "Lateral Movement (TA0008)",
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Remote Services (T1021)",
-        "Impair Defenses: Downgrade Attack (T1562.010)"
+        "Downgrade Attack (T1689)"
       ],
       "description": "The endpoint asked for an ssh downgrade, ssh downgrade may enable attackers to perform attacks such as data decryption, man in the middle, session hijack, replay attack and more. With a lower version than the remote host used in the past.",
       "attackers_goals": "Attackers may attempt to move laterally over the network by exploiting problems in a lower version of SSH.",

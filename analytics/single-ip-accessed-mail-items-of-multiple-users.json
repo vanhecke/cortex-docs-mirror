@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Email Collection: Remote Email Collection (T1114.002)"
+  ],
+  "attackers_goals": "An adversary may use a single IP address to access mail items across multiple user accounts, which can aid in the centralized collection and bulk exfiltration of organizational email data.",
+  "deduplication_period": "1 Day",
+  "description": "A single caller IP accessed Exchange mail items belonging to multiple distinct users within a short time window. This pattern indicates mailbox harvesting from a shared attacker vantage point (VPS or AiTM box).",
+  "detection_modules": "Identity Threat Module, Email",
+  "detector_tags": "Extortion",
+  "investigative_actions": "Pivot on the caller IP across all SaaS audit logs and review every session originated from it. For each impacted user, look for fresh OAuth grants, new inbox rules, MFA enrolment changes and anomalous logins. Check the IP reputation in SPUR/threat-intel and revoke active sessions for the affected users.",
+  "name": "Single IP accessed mail items of multiple users",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Single IP accessed mail items of multiple users with suspicious characteristics",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Email Collection: Remote Email Collection (T1114.002)"
+      ],
+      "description": "A single caller IP accessed Exchange mail items belonging to multiple distinct users within a short window, and the IP address contributed additional suspicious characteristics (e.g., unmanaged or risky caller IP, anomalous country or ASN for these users).",
+      "attackers_goals": "An adversary may use a single IP address to access mail items across multiple user accounts, which can aid in the centralized collection and bulk exfiltration of organizational email data.",
+      "investigative_actions": "Pivot on the caller IP across all SaaS audit logs and review every session originated from it. For each impacted user, look for fresh OAuth grants, new inbox rules, MFA enrolment changes and anomalous logins. Check the IP reputation in SPUR/threat-intel and revoke active sessions for the affected users."
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Persistence (TA0003)",
-    "Lateral Movement (TA0008)"
+    "Lateral Movement (TA0008)",
+    "Execution (TA0002)"
   ],
   "attack_techniques": [
     "Hijack Execution Flow: Services File Permissions Weakness (T1574.010)",

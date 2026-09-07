@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Defense Impairment (TA0112)"
+  ],
+  "attack_techniques": [
+    "Disable or Modify Tools: Disable or Modify Cloud Log (T1685.002)"
+  ],
+  "attackers_goals": "Evade detection while performing DNS traffic or tunneling.",
+  "deduplication_period": "1 Day",
+  "description": "An AWS identity has deleted Route53 DNS Resolver query logging configuration.",
+  "detection_modules": "Cloud",
+  "detector_tags": "Cloud Log Tampering Analytics",
+  "investigative_actions": "Check if there were any network attempts that fit the deleted rule. Check The cloud identity activity prior/after to the configuration deletion.",
+  "name": "AWS Route53 DNS Resolver query logging configuration deletion",
+  "required_data": [
+    "AWS Audit Log"
+  ],
+  "severity": "Low",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Successful AWS Route53 DNS Resolver query logging configuration deletion by a non-admin identity",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Defense Impairment (TA0112)"
+      ],
+      "attack_techniques": [
+        "Disable or Modify Tools: Disable or Modify Cloud Log (T1685.002)"
+      ],
+      "description": "An AWS identity has deleted Route53 DNS Resolver query logging configuration.",
+      "attackers_goals": "Evade detection while performing DNS traffic or tunneling.",
+      "investigative_actions": "Check if there were any network attempts that fit the deleted rule. Check The cloud identity activity prior/after to the configuration deletion."
+    }
+  ]
+}

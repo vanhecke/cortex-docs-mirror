@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
+    "Stealth (TA0005)",
     "Command and Control (TA0011)"
   ],
   "attack_techniques": [
@@ -25,7 +25,7 @@
       "name": "Globally uncommon root-domain port combination from an injected thread in a signed process",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Command and Control (TA0011)"
       ],
       "attack_techniques": [
@@ -41,7 +41,7 @@
       "name": "Globally uncommon root-domain port combination from a signed process",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Command and Control (TA0011)"
       ],
       "attack_techniques": [
@@ -56,7 +56,7 @@
       "name": "Globally uncommon root-domain port combination from a signed process",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Command and Control (TA0011)"
       ],
       "attack_techniques": [
@@ -71,7 +71,7 @@
       "name": "Globally uncommon root-domain port combination from a signed process",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Command and Control (TA0011)"
       ],
       "attack_techniques": [

@@ -2,8 +2,8 @@
   "activation_period": "14 Days",
   "attack_tactics": [
     "Persistence (TA0003)",
-    "Defense Evasion (TA0005)",
-    "Credential Access (TA0006)"
+    "Credential Access (TA0006)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
     "Modify Authentication Process: Pluggable Authentication Modules (T1556.003)"
@@ -26,8 +26,8 @@
       "severity": "Informational",
       "attack_tactics": [
         "Persistence (TA0003)",
-        "Defense Evasion (TA0005)",
-        "Credential Access (TA0006)"
+        "Credential Access (TA0006)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Modify Authentication Process: Pluggable Authentication Modules (T1556.003)"

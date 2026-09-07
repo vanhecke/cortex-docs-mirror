@@ -3,13 +3,13 @@
   "attack_tactics": [
     "Execution (TA0002)",
     "Persistence (TA0003)",
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
     "Cloud Administration Command (T1651)",
     "Command and Scripting Interpreter: Cloud API (T1059.009)",
     "Account Manipulation (T1098)",
-    "Impair Defenses: Disable or Modify Tools (T1562.001)"
+    "Disable or Modify Tools (T1685)"
   ],
   "attackers_goals": "Execute arbitrary code on VMs without network access (CustomScriptExtension). Gain persistent access by resetting local admin passwords (VMAccessExtension). Disable antimalware to deploy malware undetected (IaaSAntimalware deletion).",
   "deduplication_period": "1 Day",
@@ -30,13 +30,13 @@
       "attack_tactics": [
         "Execution (TA0002)",
         "Persistence (TA0003)",
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Cloud Administration Command (T1651)",
         "Command and Scripting Interpreter: Cloud API (T1059.009)",
         "Account Manipulation (T1098)",
-        "Impair Defenses: Disable or Modify Tools (T1562.001)"
+        "Disable or Modify Tools (T1685)"
       ],
       "description": "A suspicious Azure VM extension operation was detected. Attackers can use CustomScriptExtension to execute arbitrary scripts on VMs, VMAccessExtension to reset local passwords for persistence, or delete the IaaSAntimalware extension to disable antimalware protection and evade detection.",
       "attackers_goals": "Execute arbitrary code on VMs without network access (CustomScriptExtension). Gain persistent access by resetting local admin passwords (VMAccessExtension). Disable antimalware to deploy malware undetected (IaaSAntimalware deletion).",

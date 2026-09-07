@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Obfuscated Files or Information (T1027)"
@@ -23,7 +23,7 @@
       "name": "Globally uncommon high entropy module was loaded by process which was executed by a scheduled task",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Obfuscated Files or Information (T1027)"

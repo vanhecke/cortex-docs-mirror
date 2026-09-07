@@ -1,11 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses (T1562)",
-    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+    "Disable or Modify Tools (T1685)",
+    "Disable or Modify Tools: Disable or Modify Cloud Log (T1685.002)"
   ],
   "attackers_goals": "Evade detection by limiting collected data.",
   "deduplication_period": "5 Days",
@@ -24,11 +24,11 @@
       "name": "Successful CloudTrail logging deletion by a non-admin identity",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses (T1562)",
-        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+        "Disable or Modify Tools (T1685)",
+        "Disable or Modify Tools: Disable or Modify Cloud Log (T1685.002)"
       ],
       "description": "CloudTrail logging trail deletion.",
       "attackers_goals": "Evade detection by limiting collected data.",
@@ -38,11 +38,11 @@
       "name": "Successful CloudTrail logging deletion by an unusual identity",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses (T1562)",
-        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+        "Disable or Modify Tools (T1685)",
+        "Disable or Modify Tools: Disable or Modify Cloud Log (T1685.002)"
       ],
       "description": "CloudTrail logging trail deletion.",
       "attackers_goals": "Evade detection by limiting collected data.",

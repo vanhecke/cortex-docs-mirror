@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "System Binary Proxy Execution (T1218)"
@@ -23,7 +23,7 @@
       "name": "Execution of unsigned dllhost from a non-typical path with empty command line",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Masquerading: Masquerade Task or Service (T1036.004)"
@@ -36,7 +36,7 @@
       "name": "Globally uncommon execution of dllhost.exe with an empty command line",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "System Binary Proxy Execution (T1218)"

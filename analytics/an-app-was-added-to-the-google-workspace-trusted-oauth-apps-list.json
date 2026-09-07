@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
     "Modify Authentication Process (T1556)"
@@ -23,7 +23,7 @@
       "name": "An unusual app was added to the Google Workspace trusted OAuth apps list",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Modify Authentication Process (T1556)"
@@ -36,7 +36,7 @@
       "name": "An app was added to the Google Workspace trusted OAuth apps list by a non-administrative identity",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Modify Authentication Process (T1556)"

@@ -1,9 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)",
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
+    "Disable or Modify Tools (T1685)",
     "Indicator Removal (T1070)"
   ],
   "attackers_goals": "Bypass security measures implemented by AWS SecurityHub.",

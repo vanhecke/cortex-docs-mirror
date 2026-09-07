@@ -19,5 +19,58 @@
   ],
   "severity": "Informational",
   "test_period": "3 Hours",
-  "variations": []
+  "variations": [
+    {
+      "name": "Multiple elevated severity alerts associated with a single RDP connection",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)"
+      ],
+      "description": "RDP-related alerts include at least one medium or higher severity alert.",
+      "attackers_goals": "Adversaries may use RDP for initial access or lateral movement within a network.",
+      "investigative_actions": "Investigate the source and destination of the RDP communication. Check if this communication is legitimate and expected. Analyze the user and process that initiated the RDP connection."
+    },
+    {
+      "name": "Multiple alerts associated with a single RDP connection - high risk-processes",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)"
+      ],
+      "description": "RDP-related alerts involve high-risk processes (service management, offensive tools, or script execution).",
+      "attackers_goals": "Adversaries may use RDP for initial access or lateral movement within a network.",
+      "investigative_actions": "Investigate the source and destination of the RDP communication. Check if this communication is legitimate and expected. Analyze the user and process that initiated the RDP connection."
+    },
+    {
+      "name": "Diverse alerts associated with a single RDP connection",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)"
+      ],
+      "description": "RDP-related alerts show diverse post-connection activity across multiple attack stages.",
+      "attackers_goals": "Adversaries may use RDP for initial access or lateral movement within a network.",
+      "investigative_actions": "Investigate the source and destination of the RDP communication. Check if this communication is legitimate and expected. Analyze the user and process that initiated the RDP connection."
+    },
+    {
+      "name": "Pre-connection activity alongside abnormal RDP connection",
+      "severity": "Low",
+      "attack_tactics": [
+        "Lateral Movement (TA0008)"
+      ],
+      "attack_techniques": [
+        "Remote Services: Remote Desktop Protocol (T1021.001)"
+      ],
+      "description": "Suspicious activity was detected before an abnormal RDP session was established.",
+      "attackers_goals": "Adversaries may use RDP for initial access or lateral movement within a network.",
+      "investigative_actions": "Investigate the source and destination of the RDP communication. Check if this communication is legitimate and expected. Analyze the user and process that initiated the RDP connection."
+    }
+  ]
 }

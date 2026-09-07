@@ -101,7 +101,7 @@
       "severity": "Low",
       "attack_tactics": [
         "Persistence (TA0003)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Create or Modify System Process (T1543)",
@@ -117,7 +117,7 @@
       "severity": "Low",
       "attack_tactics": [
         "Persistence (TA0003)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Create or Modify System Process (T1543)",
@@ -133,7 +133,7 @@
       "severity": "Low",
       "attack_tactics": [
         "Persistence (TA0003)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Create or Modify System Process (T1543)",
@@ -149,7 +149,7 @@
       "severity": "Low",
       "attack_tactics": [
         "Persistence (TA0003)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Create or Modify System Process (T1543)",

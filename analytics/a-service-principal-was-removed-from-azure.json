@@ -1,9 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
+    "Masquerading (T1036)",
     "Modify Cloud Compute Infrastructure: Delete Cloud Instance (T1578.003)"
   ],
   "attackers_goals": "Evade defensive measures by deleting a possibly malicious service principal.",

@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "System Binary Proxy Execution: Mshta (T1218.005)"
@@ -23,7 +23,7 @@
       "name": "Mshta.exe spawns from a browser process that executes a script from a URL",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "System Binary Proxy Execution: Mshta (T1218.005)"

@@ -50,7 +50,7 @@
       "severity": "Medium",
       "attack_tactics": [
         "Command and Control (TA0011)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Application Layer Protocol: Web Protocols (T1071.001)",

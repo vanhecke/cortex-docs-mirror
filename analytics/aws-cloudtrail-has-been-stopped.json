@@ -1,11 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses (T1562)",
-    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+    "Disable or Modify Tools (T1685)",
+    "Disable or Modify Tools: Disable or Modify Cloud Log (T1685.002)"
   ],
   "attackers_goals": "Evade detection by limiting collected data.",
   "deduplication_period": "5 Days",
@@ -24,11 +24,11 @@
       "name": "AWS CloudTrail has been stopped",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses (T1562)",
-        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+        "Disable or Modify Tools (T1685)",
+        "Disable or Modify Tools: Disable or Modify Cloud Log (T1685.002)"
       ],
       "description": "A cloud trail logging has been stopped, which indicates that AWS API calls are not recorded in that trail.",
       "attackers_goals": "Evade detection by limiting collected data.",
@@ -38,11 +38,11 @@
       "name": "AWS CloudTrail has been stopped",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses (T1562)",
-        "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+        "Disable or Modify Tools (T1685)",
+        "Disable or Modify Tools: Disable or Modify Cloud Log (T1685.002)"
       ],
       "description": "A cloud trail logging has been stopped, which indicates that AWS API calls are not recorded in that trail.",
       "attackers_goals": "Evade detection by limiting collected data.",

@@ -1,9 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Persistence (TA0003)",
-    "Privilege Escalation (TA0004)",
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Hijack Execution Flow: DLL (T1574.001)"
@@ -25,9 +23,7 @@
       "name": "DLL Side-Loading of module bearing an invalid Microsoft signature",
       "severity": "High",
       "attack_tactics": [
-        "Persistence (TA0003)",
-        "Privilege Escalation (TA0004)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Hijack Execution Flow: DLL (T1574.001)"
@@ -40,9 +36,7 @@
       "name": "Unsigned DLL Side-Loading to a signed microsoft process by a rare causality actor",
       "severity": "Medium",
       "attack_tactics": [
-        "Persistence (TA0003)",
-        "Privilege Escalation (TA0004)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Hijack Execution Flow: DLL (T1574.001)"
@@ -55,9 +49,7 @@
       "name": "Unsigned DLL Side-Loading to a signed microsoft process",
       "severity": "Low",
       "attack_tactics": [
-        "Persistence (TA0003)",
-        "Privilege Escalation (TA0004)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Hijack Execution Flow: DLL (T1574.001)"
@@ -70,9 +62,7 @@
       "name": "Unsigned DLL Side-Loading - DLL downloaded from an uncommon source",
       "severity": "Low",
       "attack_tactics": [
-        "Persistence (TA0003)",
-        "Privilege Escalation (TA0004)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Hijack Execution Flow: DLL (T1574.001)"
@@ -85,9 +75,7 @@
       "name": "Unsigned high entropy DLL Side-Loading by untrusted causality actor",
       "severity": "Low",
       "attack_tactics": [
-        "Persistence (TA0003)",
-        "Privilege Escalation (TA0004)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Hijack Execution Flow: DLL (T1574.001)"
@@ -100,9 +88,7 @@
       "name": "Unsigned DLL Side-Loading which was executed by a scheduled task",
       "severity": "Low",
       "attack_tactics": [
-        "Persistence (TA0003)",
-        "Privilege Escalation (TA0004)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Hijack Execution Flow: DLL (T1574.001)"

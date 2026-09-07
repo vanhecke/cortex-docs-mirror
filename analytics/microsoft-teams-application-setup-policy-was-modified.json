@@ -1,11 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
-    "Persistence (TA0003)"
+    "Persistence (TA0003)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses (T1562)",
+    "Disable or Modify Tools (T1685)",
     "Cloud Application Integration (T1671)"
   ],
   "attackers_goals": "Attackers may modify the application setup policy to maintain persistent access to compromised Teams accounts and conversations.",
@@ -25,11 +25,11 @@
       "name": "A user changed the Microsoft Teams application setup policy for the first time",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
-        "Persistence (TA0003)"
+        "Persistence (TA0003)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses (T1562)",
+        "Disable or Modify Tools (T1685)",
         "Cloud Application Integration (T1671)"
       ],
       "description": "Microsoft Teams the application setup policy, which is responsible for application management, was modified.",

@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Process Injection (T1055)"
@@ -23,7 +23,7 @@
       "name": "Signed process that got injected performed an unpopular and suspicious dll injection",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Process Injection (T1055)"
@@ -36,7 +36,7 @@
       "name": "Signed process that got injected performed an unpopular and suspicious dll injection",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Process Injection (T1055)"
@@ -49,7 +49,7 @@
       "name": "Signed process that got injected performed an unpopular dll injection",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Process Injection (T1055)"
@@ -62,7 +62,7 @@
       "name": "Signed process performed an unpopular DLL injection",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Process Injection (T1055)"

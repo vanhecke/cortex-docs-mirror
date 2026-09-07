@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
     "Modify Cloud Compute Infrastructure: Delete Cloud Instance (T1578.003)"
@@ -25,7 +25,7 @@
       "name": "Cloud instance deletion attempt using Cloud Formation or Terraform",
       "severity": "Informational",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Modify Cloud Compute Infrastructure: Delete Cloud Instance (T1578.003)"

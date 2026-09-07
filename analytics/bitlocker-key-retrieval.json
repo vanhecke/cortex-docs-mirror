@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Privilege Escalation (TA0004)"
   ],
   "attack_techniques": [
     "Abuse Elevation Control Mechanism (T1548)"

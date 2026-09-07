@@ -1,0 +1,42 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Credential Access (TA0006)",
+    "Execution (TA0002)"
+  ],
+  "attack_techniques": [
+    "Command and Scripting Interpreter (T1059)",
+    "Command and Scripting Interpreter: JavaScript (T1059.007)",
+    "Unsecured Credentials (T1552)"
+  ],
+  "attackers_goals": "Steal Git personal authentication tokens to gain access to developer accounts and their associated repositories, enabling supply chain attacks.",
+  "deduplication_period": "1 Day",
+  "description": "A JavaScript runtime was used to execute a .js file that attempted to read Git personal authentication tokens via the 'gh auth token' command. This behavior is associated with the Mini Shai Hulud campaign, where attackers use lightweight JS engines to execute malicious package code and steal developer credentials.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Investigate the .js file executed by the JS runtime and determine if it is part of a legitimate package. Check if the Git authentication tokens were successfully exfiltrated. Review the package that triggered the execution for known malicious indicators. Check for other signs of the Mini Shai Hulud campaign on the host.",
+  "name": "JS runtime attempted to read Git authentication tokens",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Medium",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon JS runtime attempted to read Git authentication tokens",
+      "severity": "High",
+      "attack_tactics": [
+        "Credential Access (TA0006)",
+        "Execution (TA0002)"
+      ],
+      "attack_techniques": [
+        "Command and Scripting Interpreter (T1059)",
+        "Command and Scripting Interpreter: JavaScript (T1059.007)",
+        "Unsecured Credentials (T1552)"
+      ],
+      "description": "A JavaScript runtime was used to execute a .js file that attempted to read Git personal authentication tokens via the 'gh auth token' command. This behavior is associated with the Mini Shai Hulud campaign, where attackers use lightweight JS engines to execute malicious package code and steal developer credentials.",
+      "attackers_goals": "Steal Git personal authentication tokens to gain access to developer accounts and their associated repositories, enabling supply chain attacks.",
+      "investigative_actions": "Investigate the .js file executed by the JS runtime and determine if it is part of a legitimate package. Check if the Git authentication tokens were successfully exfiltrated. Review the package that triggered the execution for known malicious indicators. Check for other signs of the Mini Shai Hulud campaign on the host."
+    }
+  ]
+}

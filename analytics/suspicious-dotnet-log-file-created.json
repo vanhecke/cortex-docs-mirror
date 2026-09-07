@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Reflective Code Loading (T1620)",
@@ -24,7 +24,7 @@
       "name": "DotNet log file created by svchost from 'Absolute software Corp' causality",
       "severity": "Informational",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Reflective Code Loading (T1620)",
@@ -38,7 +38,7 @@
       "name": "Suspicious DotNet log file created from an injected thread",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Reflective Code Loading (T1620)",
@@ -52,7 +52,7 @@
       "name": "Suspicious DotNet log file created",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Reflective Code Loading (T1620)",

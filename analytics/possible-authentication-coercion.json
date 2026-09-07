@@ -5,7 +5,7 @@
   ],
   "attack_techniques": [
     "Forced Authentication (T1187)",
-    "Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay (T1557.001)"
+    "Adversary-in-the-Middle: Name Resolution Poisoning and SMB Relay (T1557.001)"
   ],
   "attackers_goals": "An attacker can abuse Remote Procedure Calls to coerce authentication from servers.",
   "deduplication_period": "1 Day",
@@ -28,7 +28,7 @@
       ],
       "attack_techniques": [
         "Forced Authentication (T1187)",
-        "Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay (T1557.001)"
+        "Adversary-in-the-Middle: Name Resolution Poisoning and SMB Relay (T1557.001)"
       ],
       "description": "An unusual Remote Procedure Call (RPC) was made towards a sensitive server, to potentially cause authentication coercion.",
       "attackers_goals": "An attacker can abuse Remote Procedure Calls to coerce authentication from servers.",
@@ -42,7 +42,7 @@
       ],
       "attack_techniques": [
         "Forced Authentication (T1187)",
-        "Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay (T1557.001)"
+        "Adversary-in-the-Middle: Name Resolution Poisoning and SMB Relay (T1557.001)"
       ],
       "description": "An unusual Remote Procedure Call (RPC) was made towards a sensitive server, to potentially cause authentication coercion.",
       "attackers_goals": "An attacker can abuse Remote Procedure Calls to coerce authentication from servers.",

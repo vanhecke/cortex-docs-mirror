@@ -2,7 +2,7 @@
   "activation_period": "14 Days",
   "attack_tactics": [
     "Credential Access (TA0006)",
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
     "OS Credential Dumping: DCSync (T1003.006)",
@@ -27,7 +27,7 @@
       "severity": "High",
       "attack_tactics": [
         "Credential Access (TA0006)",
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "OS Credential Dumping: DCSync (T1003.006)",
@@ -42,7 +42,7 @@
       "severity": "Medium",
       "attack_tactics": [
         "Credential Access (TA0006)",
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "OS Credential Dumping: DCSync (T1003.006)",
@@ -57,7 +57,7 @@
       "severity": "Medium",
       "attack_tactics": [
         "Credential Access (TA0006)",
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "OS Credential Dumping: DCSync (T1003.006)",
@@ -72,7 +72,7 @@
       "severity": "Medium",
       "attack_tactics": [
         "Credential Access (TA0006)",
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "OS Credential Dumping: DCSync (T1003.006)",
@@ -87,7 +87,7 @@
       "severity": "Low",
       "attack_tactics": [
         "Credential Access (TA0006)",
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "OS Credential Dumping: DCSync (T1003.006)",

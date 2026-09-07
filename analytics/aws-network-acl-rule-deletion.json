@@ -1,10 +1,10 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses (T1562)"
+    "Disable or Modify Tools (T1685)"
   ],
   "attackers_goals": "Deleting an ingress rule may allow an attacker to gain persistence in the cloud environment. Deleting an egress rule may enable data exfiltration.",
   "deduplication_period": "5 Days",

@@ -1,8 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Persistence (TA0003)",
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Hijack Execution Flow (T1574)"
@@ -24,8 +23,7 @@
       "name": "Suspicious Modification of the AD FS IdentityServer configuration file",
       "severity": "Low",
       "attack_tactics": [
-        "Persistence (TA0003)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Hijack Execution Flow (T1574)"

@@ -1,8 +1,8 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
-    "Lateral Movement (TA0008)"
+    "Lateral Movement (TA0008)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
     "Modify Cloud Compute Infrastructure (T1578)",
@@ -26,8 +26,8 @@
       "name": "Unusual Azure route table creation or modification",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
-        "Lateral Movement (TA0008)"
+        "Lateral Movement (TA0008)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Modify Cloud Compute Infrastructure (T1578)",

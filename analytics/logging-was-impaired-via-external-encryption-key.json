@@ -2,11 +2,11 @@
   "activation_period": "14 Days",
   "attack_tactics": [
     "Impact (TA0040)",
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
     "Data Manipulation (T1565)",
-    "Impair Defenses (T1562)"
+    "Disable or Modify Tools (T1685)"
   ],
   "attackers_goals": "Modifying the key used to encrypt the logs to remain undetected.",
   "deduplication_period": "1 Day",

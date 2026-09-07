@@ -1,0 +1,36 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)"
+  ],
+  "attack_techniques": [
+    "Email Collection: Remote Email Collection (T1114.002)"
+  ],
+  "attackers_goals": "An adversary may rapidly access multiple mail items within a short period of time, which can aid in the bulk exfiltration of sensitive email content from a compromised mailbox.",
+  "deduplication_period": "1 Day",
+  "description": "A single caller IP read mail items from a single mailbox an unusually high number of times within a short time window.",
+  "detection_modules": "Identity Threat Module, Email",
+  "detector_tags": "Extortion",
+  "investigative_actions": "Review the sessions originated from the caller IP address. Inspect the user for fresh OAuth grants, new inbox rules, MFA enrolment changes and anomalous logins. Check the IP reputation and revoke active sessions for the user.",
+  "name": "Multiple mail items were accessed in a short period of time",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "Multiple mail items were accessed in a short period of time with anomalous properties",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)"
+      ],
+      "attack_techniques": [
+        "Email Collection: Remote Email Collection (T1114.002)"
+      ],
+      "description": "A single caller IP read mail items from a single mailbox at an unusually high rate, and the IP address contributed additional anomaly signals (e.g., unmanaged or risky caller IP, anomalous country or ASN for this user).",
+      "attackers_goals": "An adversary may rapidly access multiple mail items within a short period of time, which can aid in the bulk exfiltration of sensitive email content from a compromised mailbox.",
+      "investigative_actions": "Review the sessions originated from the caller IP address. Inspect the user for fresh OAuth grants, new inbox rules, MFA enrolment changes and anomalous logins. Check the IP reputation and revoke active sessions for the user."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "activation_period": "14 Days",
   "attack_tactics": [
     "Persistence (TA0003)",
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Scheduled Task/Job: Scheduled Task (T1053.005)",
@@ -26,7 +26,7 @@
       "severity": "Low",
       "attack_tactics": [
         "Persistence (TA0003)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Scheduled Task/Job: Scheduled Task (T1053.005)",

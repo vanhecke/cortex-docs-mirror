@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Rootkit (T1014)"
@@ -23,7 +23,7 @@
       "name": "Uncommon driver loaded by a Web server process",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Rootkit (T1014)"
@@ -36,7 +36,7 @@
       "name": "Globally rare and unsigned driver loaded",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Rootkit (T1014)"
@@ -49,7 +49,7 @@
       "name": "Uncommon driver with a globally rare vendor loaded as a service",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Rootkit (T1014)"

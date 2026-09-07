@@ -1,0 +1,100 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Discovery (TA0007)",
+    "Persistence (TA0003)"
+  ],
+  "attack_techniques": [
+    "Account Discovery (T1087)",
+    "Create Account (T1136)"
+  ],
+  "attackers_goals": "Attackers may attempt to use the command to discover or add local and domain user accounts. The created accounts are to gain additional access to endpoints within your network.",
+  "deduplication_period": "1 Day",
+  "description": "The net command is used to add, delete, and otherwise manage the users on a computer. Adversaries may attempt to use the command to discover or add local and domain user accounts.",
+  "detection_modules": "",
+  "detector_tags": "",
+  "investigative_actions": "Check whether the command line executed is benign or normal for the host and/or user performing it. Check whether the user from the command line is an administrator or other sensitive account.",
+  "name": "Uncommon user management via net command",
+  "required_data": [
+    "XDR Agent"
+  ],
+  "severity": "Informational",
+  "test_period": "N/A (single event)",
+  "variations": [
+    {
+      "name": "Uncommon user management via net command by a renamed lolbin",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Discovery (T1087)",
+        "Create Account (T1136)"
+      ],
+      "description": "The net command is used to add, delete, and otherwise manage the users on a computer. Adversaries may attempt to use the command to discover or add local and domain user accounts. The actor process's PE original file name identifies it as a known lolbin, but its on-disk file name differs, indicating the lolbin was renamed - a technique malware and malicious actors often use to evade detection.",
+      "attackers_goals": "Attackers may attempt to use the command to discover or add local and domain user accounts. The created accounts are to gain additional access to endpoints within your network.",
+      "investigative_actions": "Check whether the command line executed is benign or normal for the host and/or user performing it. Check whether the user from the command line is an administrator or other sensitive account."
+    },
+    {
+      "name": "Uncommon user management via net command by a web server process or CGO",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Discovery (T1087)",
+        "Create Account (T1136)"
+      ],
+      "description": "The net command is used to add, delete, and otherwise manage the users on a computer. Adversaries may attempt to use the command to discover or add local and domain user accounts. When executed from a web server, it might be executed from an installed Webshell.",
+      "attackers_goals": "Attackers may attempt to use the command to discover or add local and domain user accounts. The created accounts are to gain additional access to endpoints within your network.",
+      "investigative_actions": "Check whether the command line executed is benign or normal for the host and/or user performing it. Check whether the user from the command line is an administrator or other sensitive account."
+    },
+    {
+      "name": "Uncommon user management via net command by an untrusted CGO",
+      "severity": "Medium",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Discovery (T1087)",
+        "Create Account (T1136)"
+      ],
+      "description": "The net command is used to add, delete, and otherwise manage the users on a computer by an untrusted CGO. Adversaries may attempt to use the command to discover or add local and domain user accounts.",
+      "attackers_goals": "Attackers may attempt to use the command to discover or add local and domain user accounts. The created accounts are to gain additional access to endpoints within your network.",
+      "investigative_actions": "Check whether the command line executed is benign or normal for the host and/or user performing it. Check whether the user from the command line is an administrator or other sensitive account."
+    },
+    {
+      "name": "Uncommon user management via net command by an untrusted actor process",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Discovery (T1087)",
+        "Create Account (T1136)"
+      ],
+      "description": "The net command is used to add, delete, and otherwise manage the users on a computer by an untrusted actor process. Adversaries may attempt to use the command to discover or add local and domain user accounts.",
+      "attackers_goals": "Attackers may attempt to use the command to discover or add local and domain user accounts. The created accounts are to gain additional access to endpoints within your network.",
+      "investigative_actions": "Check whether the command line executed is benign or normal for the host and/or user performing it. Check whether the user from the command line is an administrator or other sensitive account."
+    },
+    {
+      "name": "Uncommon user management via net command by a remote management tool (RMM)",
+      "severity": "Low",
+      "attack_tactics": [
+        "Discovery (TA0007)",
+        "Persistence (TA0003)"
+      ],
+      "attack_techniques": [
+        "Account Discovery (T1087)",
+        "Create Account (T1136)"
+      ],
+      "description": "The net command is used to add, delete, and otherwise manage the users on a computer by a remote management tool (RMM). Adversaries may attempt to use the command to discover or add local and domain user accounts.",
+      "attackers_goals": "Attackers may attempt to use the command to discover or add local and domain user accounts. The created accounts are to gain additional access to endpoints within your network.",
+      "investigative_actions": "Check whether the command line executed is benign or normal for the host and/or user performing it. Check whether the user from the command line is an administrator or other sensitive account."
+    }
+  ]
+}

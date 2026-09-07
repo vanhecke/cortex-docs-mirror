@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
+    "Stealth (TA0005)",
     "Privilege Escalation (TA0004)"
   ],
   "attack_techniques": [
@@ -24,7 +24,7 @@
       "name": "Azure Temporary Access Pass (TAP) registered to a privileged account",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Privilege Escalation (TA0004)"
       ],
       "attack_techniques": [
@@ -38,7 +38,7 @@
       "name": "Abnormal Azure Temporary Access Pass (TAP) account registration",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Privilege Escalation (TA0004)"
       ],
       "attack_techniques": [

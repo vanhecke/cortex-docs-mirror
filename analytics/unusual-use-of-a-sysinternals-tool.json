@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Obfuscated Files or Information (T1027)"
@@ -23,7 +23,7 @@
       "name": "Unusual use of a 'SysInternals' tool by a process with an invalid or non-standard signature",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Obfuscated Files or Information (T1027)"
@@ -36,7 +36,7 @@
       "name": "Unusual use of a 'SysInternals' tool that can be used for offensive operations",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Obfuscated Files or Information (T1027)"
@@ -49,7 +49,7 @@
       "name": "A registry key related to SysInternals was modified by a known registry editor",
       "severity": "Informational",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Obfuscated Files or Information (T1027)"

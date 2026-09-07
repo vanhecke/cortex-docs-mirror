@@ -1,11 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses (T1562)",
-    "Impair Defenses: Disable or Modify Cloud Firewall (T1562.007)"
+    "Disable or Modify Tools (T1685)",
+    "Disable or Modify System Firewall: Cloud Firewall (T1686.001)"
   ],
   "attackers_goals": "An attacker may attempt to modify an Okta network zone to weaken an organization's security controls.",
   "deduplication_period": "2 Days",
@@ -24,11 +24,11 @@
       "name": "The user has made an unusual modification to the Okta Network zone",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses (T1562)",
-        "Impair Defenses: Disable or Modify Cloud Firewall (T1562.007)"
+        "Disable or Modify Tools (T1685)",
+        "Disable or Modify System Firewall: Cloud Firewall (T1686.001)"
       ],
       "description": "An atypical modification to the Okta Network zone has been performed by the user.",
       "attackers_goals": "An attacker may attempt to modify an Okta network zone to weaken an organization's security controls.",
@@ -38,11 +38,11 @@
       "name": "A user modified an Okta network zone with suspicious characteristics",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses (T1562)",
-        "Impair Defenses: Disable or Modify Cloud Firewall (T1562.007)"
+        "Disable or Modify Tools (T1685)",
+        "Disable or Modify System Firewall: Cloud Firewall (T1686.001)"
       ],
       "description": "An Okta network zone was modified by a user with suspicious characteristics.",
       "attackers_goals": "An attacker may attempt to modify an Okta network zone to weaken an organization's security controls.",

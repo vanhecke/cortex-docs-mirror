@@ -1,11 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
-    "Lateral Movement (TA0008)"
+    "Lateral Movement (TA0008)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses (T1562)",
+    "Disable or Modify Tools (T1685)",
     "Remote Services (T1021)"
   ],
   "attackers_goals": "Adversaries may modify remote access settings to maintain persistent access and bypass security controls.",
@@ -25,11 +25,11 @@
       "name": "Suspicious Chrome OS Remote Access policy was modified in Google Workspace",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
-        "Lateral Movement (TA0008)"
+        "Lateral Movement (TA0008)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses (T1562)",
+        "Disable or Modify Tools (T1685)",
         "Remote Services (T1021)"
       ],
       "description": "A user modified Chrome OS Remote Access configuration in Google Workspace. This is the first time the user performs this operation in the last 30 days.",

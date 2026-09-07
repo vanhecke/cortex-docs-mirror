@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "System Binary Proxy Execution: Msiexec (T1218.007)"
@@ -23,7 +23,7 @@
       "name": "Suspicious msiexec execution on an internet-facing endpoint",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "System Binary Proxy Execution: Msiexec (T1218.007)"

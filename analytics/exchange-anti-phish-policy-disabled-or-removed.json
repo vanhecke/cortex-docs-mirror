@@ -1,11 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
-    "Initial Access (TA0001)"
+    "Initial Access (TA0001)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses: Disable or Modify Tools (T1562.001)",
+    "Disable or Modify Tools (T1685)",
     "Phishing (T1566)"
   ],
   "attackers_goals": "An attacker is attempting to evade detection.",
@@ -25,11 +25,11 @@
       "name": "Recently configured Exchange anti-phish policy disabled or removed",
       "severity": "Informational",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
-        "Initial Access (TA0001)"
+        "Initial Access (TA0001)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses: Disable or Modify Tools (T1562.001)",
+        "Disable or Modify Tools (T1685)",
         "Phishing (T1566)"
       ],
       "description": "A user disabled or removed an Exchange anti-phish policy, which may indicate evasion of a possible phishing campaign.",

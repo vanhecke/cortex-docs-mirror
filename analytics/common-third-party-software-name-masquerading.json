@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Masquerading (T1036)"
@@ -23,7 +23,7 @@
       "name": "Common third-party software name masquerading which was downloaded from an unexpected source",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Masquerading (T1036)"
@@ -36,7 +36,7 @@
       "name": "Common third-party software name masquerading with uncommon characteristics by actor with uncommon characteristics",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Masquerading (T1036)"

@@ -1,7 +1,8 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
     "Modify Registry (T1112)",

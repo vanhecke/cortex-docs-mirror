@@ -1,10 +1,10 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Abuse Elevation Control Mechanism (T1548)"
+    "Modify Authentication Process: Conditional Access Policies (T1556.009)"
   ],
   "attackers_goals": "An attacker attempts to change Active Directory configuration for persistence or defense evasion. Without a Conditional Access policy, an attacker would be able to access the tenant without possible blockage for later access.",
   "deduplication_period": "1 Day",

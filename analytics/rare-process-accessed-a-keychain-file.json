@@ -39,7 +39,7 @@
       "severity": "Medium",
       "attack_tactics": [
         "Credential Access (TA0006)",
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Credentials from Password Stores: Keychain (T1555.001)",

@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
+    "Stealth (TA0005)",
     "Persistence (TA0003)"
   ],
   "attack_techniques": [
@@ -27,7 +27,7 @@
       "name": "Masquerading as a default local account for the first time",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Persistence (TA0003)"
       ],
       "attack_techniques": [
@@ -43,7 +43,7 @@
       "name": "Potential masquerading as a power user account",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Persistence (TA0003)"
       ],
       "attack_techniques": [
@@ -59,7 +59,7 @@
       "name": "Masquerading as a default Administrator account",
       "severity": "Informational",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Persistence (TA0003)"
       ],
       "attack_techniques": [

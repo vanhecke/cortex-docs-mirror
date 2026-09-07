@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Persistence (TA0003)"
+    "Execution (TA0002)"
   ],
   "attack_techniques": [
     "Hijack Execution Flow: DLL (T1574.001)"
@@ -23,7 +23,7 @@
       "name": "Phantom DLL Loading was used to load a DLL into a process after it was extracted from an internet-downloaded archive",
       "severity": "High",
       "attack_tactics": [
-        "Persistence (TA0003)"
+        "Execution (TA0002)"
       ],
       "attack_techniques": [
         "Hijack Execution Flow: DLL (T1574.001)"
@@ -36,7 +36,7 @@
       "name": "Phantom DLL Loading was used to load a DLL into a process after it was downloaded from an uncommon source",
       "severity": "High",
       "attack_tactics": [
-        "Persistence (TA0003)"
+        "Execution (TA0002)"
       ],
       "attack_techniques": [
         "Hijack Execution Flow: DLL (T1574.001)"

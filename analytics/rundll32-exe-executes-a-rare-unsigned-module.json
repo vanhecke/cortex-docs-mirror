@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "System Binary Proxy Execution: Rundll32 (T1218.011)"
@@ -23,7 +23,7 @@
       "name": "Rundll32.exe executes a rare unsigned module with very high entropy",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "System Binary Proxy Execution: Rundll32 (T1218.011)"
@@ -36,7 +36,7 @@
       "name": "Rundll32.exe executes a rare unsigned module with suspicious characteristics",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "System Binary Proxy Execution: Rundll32 (T1218.011)"

@@ -1,10 +1,10 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses (T1562)"
+    "Disable or Modify Tools (T1685)"
   ],
   "attackers_goals": "To impair defense, this may assist data exfiltration.",
   "deduplication_period": "1 Day",
@@ -23,10 +23,10 @@
       "name": "Successful AWS web ACL deletion by a non-admin identity",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses (T1562)"
+        "Disable or Modify Tools (T1685)"
       ],
       "description": "Web ACL defines a collection of rules to use to inspect and control web requests. A Web ACL has been deleted.",
       "attackers_goals": "To impair defense, this may assist data exfiltration.",

@@ -1,10 +1,10 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses: Disable or Modify Cloud Logs (T1562.008)"
+    "Disable or Modify Tools: Disable or Modify Cloud Log (T1685.002)"
   ],
   "attackers_goals": "Avoid detection by disabling cloud logging capabilities.",
   "deduplication_period": "5 Days",

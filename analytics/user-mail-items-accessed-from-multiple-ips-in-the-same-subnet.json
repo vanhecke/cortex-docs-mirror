@@ -1,0 +1,40 @@
+{
+  "activation_period": "14 Days",
+  "attack_tactics": [
+    "Collection (TA0009)",
+    "Command and Control (TA0011)"
+  ],
+  "attack_techniques": [
+    "Email Collection: Remote Email Collection (T1114.002)",
+    "Proxy: Multi-hop Proxy (T1090.003)"
+  ],
+  "attackers_goals": "An adversary may access user mail items from multiple IP addresses within the same subnet, which can aid in evading per-IP rate limits and avoiding detection while maintaining persistent access to a compromised mailbox.",
+  "deduplication_period": "1 Day",
+  "description": "A user's Exchange mailbox was accessed from multiple distinct caller IPs that all reside in the same /16 subnet within a short time window. This pattern is characteristic of VPS abuse and IP rotation designed to evade per-IP velocity controls.",
+  "detection_modules": "Identity Threat Module",
+  "detector_tags": "Extortion",
+  "investigative_actions": "Enumerate every caller IP in the subnet that accessed the user's mailbox in the past 24h and check their SPUR/threat-intel reputation. Inspect the user's sessions: look for new OAuth grants, new inbox rules, MFA changes and revoke active sessions. Correlate the subnet/ASN with other tenant users to determine the scope.",
+  "name": "User mail items accessed from multiple IPs in the same subnet",
+  "required_data": [
+    "Office 365 Audit"
+  ],
+  "severity": "Informational",
+  "test_period": "1 Hour",
+  "variations": [
+    {
+      "name": "User mail items accessed from rotating IPs in same subnet with anomalous properties",
+      "severity": "Low",
+      "attack_tactics": [
+        "Collection (TA0009)",
+        "Command and Control (TA0011)"
+      ],
+      "attack_techniques": [
+        "Email Collection: Remote Email Collection (T1114.002)",
+        "Proxy: Multi-hop Proxy (T1090.003)"
+      ],
+      "description": "A user's mailbox was accessed from multiple rotating IPs in the same /16 subnet, and at least one IP address contributed additional anomaly signals (e.g., unmanaged or risky caller IP, anomalous country or ASN for this user).",
+      "attackers_goals": "An adversary may access user mail items from multiple IP addresses within the same subnet, which can aid in evading per-IP rate limits and avoiding detection while maintaining persistent access to a compromised mailbox.",
+      "investigative_actions": "Enumerate every caller IP in the subnet that accessed the user's mailbox in the past 24h and check their SPUR/threat-intel reputation. Inspect the user's sessions: look for new OAuth grants, new inbox rules, MFA changes and revoke active sessions. Correlate the subnet/ASN with other tenant users to determine the scope."
+    }
+  ]
+}

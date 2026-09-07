@@ -2,12 +2,12 @@
   "activation_period": "14 Days",
   "attack_tactics": [
     "Initial Access (TA0001)",
-    "Defense Evasion (TA0005)",
+    "Stealth (TA0005)",
     "Execution (TA0002)"
   ],
   "attack_techniques": [
     "Phishing (T1566)",
-    "Impersonation (T1656)",
+    "Social Engineering: Impersonation (T1684.001)",
     "User Execution (T1204)"
   ],
   "attackers_goals": "Achieve financial gain, distribute malware, or phish for sensitive information through mass unsolicited emails.",
@@ -28,12 +28,12 @@
       "severity": "Informational",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Execution (TA0002)"
       ],
       "attack_techniques": [
         "Phishing (T1566)",
-        "Impersonation (T1656)",
+        "Social Engineering: Impersonation (T1684.001)",
         "User Execution (T1204)"
       ],
       "description": "This email has been classified by X-Forefront-Antispam-Report as containing malware, indicating a high likelihood that it includes malicious content.",
@@ -45,12 +45,12 @@
       "severity": "Informational",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Execution (TA0002)"
       ],
       "attack_techniques": [
         "Phishing (T1566)",
-        "Impersonation (T1656)",
+        "Social Engineering: Impersonation (T1684.001)",
         "User Execution (T1204)"
       ],
       "description": "This email has been classified by X-Forefront-Antispam-Report as containing malware, indicating a high likelihood that it includes malicious content.",
@@ -62,12 +62,12 @@
       "severity": "Informational",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Execution (TA0002)"
       ],
       "attack_techniques": [
         "Phishing (T1566)",
-        "Impersonation (T1656)",
+        "Social Engineering: Impersonation (T1684.001)",
         "User Execution (T1204)"
       ],
       "description": "X-Forefront-Antispam-Report has automatically flagged certain attachment types as malware based on file type (without deeper content analysis). This email includes such attachments.",
@@ -79,12 +79,12 @@
       "severity": "Informational",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Execution (TA0002)"
       ],
       "attack_techniques": [
         "Phishing (T1566)",
-        "Impersonation (T1656)",
+        "Social Engineering: Impersonation (T1684.001)",
         "User Execution (T1204)"
       ],
       "description": "X-Forefront-Antispam-Report has classified this email as a phishing attempt in its anti-spam headers, indicating a high likelihood that it is designed to deceive the recipient into disclosing sensitive information.",
@@ -96,12 +96,12 @@
       "severity": "Informational",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Execution (TA0002)"
       ],
       "attack_techniques": [
         "Phishing (T1566)",
-        "Impersonation (T1656)",
+        "Social Engineering: Impersonation (T1684.001)",
         "User Execution (T1204)"
       ],
       "description": "X-Forefront-Antispam-Report has identified this email as a phishing attempt with high confidence in its anti-spam headers, suggesting a significant risk of deceptive intent aimed at stealing sensitive information.",
@@ -113,12 +113,12 @@
       "severity": "Informational",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Execution (TA0002)"
       ],
       "attack_techniques": [
         "Phishing (T1566)",
-        "Impersonation (T1656)",
+        "Social Engineering: Impersonation (T1684.001)",
         "User Execution (T1204)"
       ],
       "description": "X-Forefront-Antispam-Report has categorized this email as an attempt to mimic or impersonate internal organizational communication, suggesting a potential internal compromise or impersonation attempt.",
@@ -130,12 +130,12 @@
       "severity": "Informational",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Execution (TA0002)"
       ],
       "attack_techniques": [
         "Phishing (T1566)",
-        "Impersonation (T1656)",
+        "Social Engineering: Impersonation (T1684.001)",
         "User Execution (T1204)"
       ],
       "description": "X-Forefront-Antispam-Report has classified this email as spam with high confidence in its anti-spam headers, indicating it is likely unsolicited and potentially harmful.",
@@ -147,12 +147,12 @@
       "severity": "Informational",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Execution (TA0002)"
       ],
       "attack_techniques": [
         "Phishing (T1566)",
-        "Impersonation (T1656)",
+        "Social Engineering: Impersonation (T1684.001)",
         "User Execution (T1204)"
       ],
       "description": "X-Forefront-Antispam-Report has classified this email as spam in its anti-spam headers, indicating it is likely unsolicited and potentially harmful.",
@@ -164,12 +164,12 @@
       "severity": "Informational",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Execution (TA0002)"
       ],
       "attack_techniques": [
         "Phishing (T1566)",
-        "Impersonation (T1656)",
+        "Social Engineering: Impersonation (T1684.001)",
         "User Execution (T1204)"
       ],
       "description": "X-Forefront-Antispam-Report has categorized this email as a bulk message in its anti-spam headers, indicating it is part of mass communication that may be unsolicited or irrelevant to the recipient.",
@@ -181,12 +181,12 @@
       "severity": "Informational",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Execution (TA0002)"
       ],
       "attack_techniques": [
         "Phishing (T1566)",
-        "Impersonation (T1656)",
+        "Social Engineering: Impersonation (T1684.001)",
         "User Execution (T1204)"
       ],
       "description": "X-Forefront-Antispam-Report has classified this email as spam originating from within the organization in its anti-spam headers, indicating a potential internal security issue, such as a compromised account or misconfigured system sending unsolicited messages.",
@@ -198,12 +198,12 @@
       "severity": "Informational",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Execution (TA0002)"
       ],
       "attack_techniques": [
         "Phishing (T1566)",
-        "Impersonation (T1656)",
+        "Social Engineering: Impersonation (T1684.001)",
         "User Execution (T1204)"
       ],
       "description": "This email has been classified by X-Forefront-Antispam-Report as spoofing the sender's identity in its anti-spam headers, indicating a high likelihood that the sender's identity has been forged to appear as a trusted source.",
@@ -215,12 +215,12 @@
       "severity": "Informational",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Execution (TA0002)"
       ],
       "attack_techniques": [
         "Phishing (T1566)",
-        "Impersonation (T1656)",
+        "Social Engineering: Impersonation (T1684.001)",
         "User Execution (T1204)"
       ],
       "description": "X-Forefront-Antispam-Report has categorized this email as impersonating a specific user within the organization in its anti-spam headers, suggesting a targeted attempt to deceive recipients by mimicking a trusted internal user.",
@@ -232,12 +232,12 @@
       "severity": "Informational",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Execution (TA0002)"
       ],
       "attack_techniques": [
         "Phishing (T1566)",
-        "Impersonation (T1656)",
+        "Social Engineering: Impersonation (T1684.001)",
         "User Execution (T1204)"
       ],
       "description": "This email has been identified by X-Forefront-Antispam-Report as an attempt to impersonate the organization's domain in its anti-spam headers, indicating a deceptive effort to make the email appear as if it originates from the organization's legitimate domain.",
@@ -249,12 +249,12 @@
       "severity": "Informational",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Execution (TA0002)"
       ],
       "attack_techniques": [
         "Phishing (T1566)",
-        "Impersonation (T1656)",
+        "Social Engineering: Impersonation (T1684.001)",
         "User Execution (T1204)"
       ],
       "description": "X-Forefront-Antispam-Report has categorized this email as using advanced impersonation techniques in its anti-spam headers, indicating the use of sophisticated methods where the sender mimics typical communication patterns to appear credible.",
@@ -266,12 +266,12 @@
       "severity": "Informational",
       "attack_tactics": [
         "Initial Access (TA0001)",
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Execution (TA0002)"
       ],
       "attack_techniques": [
         "Phishing (T1566)",
-        "Impersonation (T1656)",
+        "Social Engineering: Impersonation (T1684.001)",
         "User Execution (T1204)"
       ],
       "description": "X-Forefront-Antispam-Report has categorized this email as impersonating a well-known brand in its anti-spam headers, indicating the use of sophisticated methods where the sender mimics typical communication made by legitimate brands to appear credible.",

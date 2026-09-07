@@ -1,10 +1,10 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
-    "Impersonation (T1656)"
+    "Social Engineering: Impersonation (T1684.001)"
   ],
   "attackers_goals": "Impersonate internal users or familiar individuals and trick them into clicking on malicious links or attachments.",
   "deduplication_period": "1 Day",
@@ -23,10 +23,10 @@
       "name": "Known domain DKIM deviation",
       "severity": "Informational",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
-        "Impersonation (T1656)"
+        "Social Engineering: Impersonation (T1684.001)"
       ],
       "description": "An email was sent from a commonly seen domain in the organization, that has historically passed DKIM checks, but returned a suspicious DKIM result of fail This deviation may indicate an attempt to spoof or impersonate a legitimate external sender. Such sudden DKIM outcome from a previously trusted external domain warrants further investigation.",
       "attackers_goals": "Impersonate internal users or familiar individuals and trick them into clicking on malicious links or attachments.",
@@ -36,10 +36,10 @@
       "name": "Lack DKIM signature from typically signing domains",
       "severity": "Informational",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
-        "Impersonation (T1656)"
+        "Social Engineering: Impersonation (T1684.001)"
       ],
       "description": "An email was sent from a domain that has historically passed DKIM checks, but returned a suspicious DKIM result of none A none DKIM result implies on an unsigned email, which is atypical for domains with previous signed messages. This deviation may indicate an attempt to spoof or impersonate a legitimate external sender. Such sudden DKIM outcome from a previously trusted external domain warrants further investigation.",
       "attackers_goals": "Impersonate internal users or familiar individuals and trick them into clicking on malicious links or attachments.",
@@ -49,10 +49,10 @@
       "name": "DKIM results lacking sender correlation",
       "severity": "Informational",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
-        "Impersonation (T1656)"
+        "Social Engineering: Impersonation (T1684.001)"
       ],
       "description": "The email's authentication results have no indication of proper signing from the email's sender This deviation may indicate an attempt to spoof or impersonate a legitimate external sender.",
       "attackers_goals": "Impersonate internal users or familiar individuals and trick them into clicking on malicious links or attachments.",
@@ -62,10 +62,10 @@
       "name": "Known domain suspicious DKIM result",
       "severity": "Informational",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
-        "Impersonation (T1656)"
+        "Social Engineering: Impersonation (T1684.001)"
       ],
       "description": "An email was sent from a commonly seen domain that had no other suspicious DKIM outcomes for the past 30 days. This may indicate an attempt to spoof or impersonate a legitimate external sender.",
       "attackers_goals": "Impersonate internal users or familiar individuals and trick them into clicking on malicious links or attachments.",

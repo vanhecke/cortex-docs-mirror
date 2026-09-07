@@ -1,10 +1,10 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses: Disable or Modify Cloud Firewall (T1562.007)"
+    "Disable or Modify System Firewall: Cloud Firewall (T1686.001)"
   ],
   "attackers_goals": "Access restricted resources.",
   "deduplication_period": "3 Hours",

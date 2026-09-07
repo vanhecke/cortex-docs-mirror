@@ -1,11 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
-    "Exfiltration (TA0010)"
+    "Exfiltration (TA0010)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses (T1562)",
+    "Disable or Modify Tools (T1685)",
     "Exfiltration Over Alternative Protocol (T1048)"
   ],
   "attackers_goals": "Attackers may modify the external communication policy to enable data exfiltration or to hide their activities.",
@@ -25,11 +25,11 @@
       "name": "Microsoft Teams external communication policy was modified by an unusual user",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
-        "Exfiltration (TA0010)"
+        "Exfiltration (TA0010)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses (T1562)",
+        "Disable or Modify Tools (T1685)",
         "Exfiltration Over Alternative Protocol (T1048)"
       ],
       "description": "Microsoft Teams external communication policy was modified.",

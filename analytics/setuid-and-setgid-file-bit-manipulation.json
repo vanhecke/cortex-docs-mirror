@@ -1,8 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Privilege Escalation (TA0004)",
-    "Defense Evasion (TA0005)"
+    "Privilege Escalation (TA0004)"
   ],
   "attack_techniques": [
     "Abuse Elevation Control Mechanism: Setuid and Setgid (T1548.001)"
@@ -24,8 +23,7 @@
       "name": "Setuid and Setgid file bit manipulation in a Kubernetes pod",
       "severity": "Low",
       "attack_tactics": [
-        "Privilege Escalation (TA0004)",
-        "Defense Evasion (TA0005)"
+        "Privilege Escalation (TA0004)"
       ],
       "attack_techniques": [
         "Abuse Elevation Control Mechanism: Setuid and Setgid (T1548.001)"

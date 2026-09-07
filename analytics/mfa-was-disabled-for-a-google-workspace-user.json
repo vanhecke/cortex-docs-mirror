@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
     "Modify Authentication Process: Multi-Factor Authentication (T1556.006)"
@@ -23,7 +23,7 @@
       "name": "MFA was disabled for a Google Workspace administrative user",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Modify Authentication Process: Multi-Factor Authentication (T1556.006)"
@@ -36,7 +36,7 @@
       "name": "MFA was disabled for a Google Workspace user by a different account for the first time",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Modify Authentication Process: Multi-Factor Authentication (T1556.006)"

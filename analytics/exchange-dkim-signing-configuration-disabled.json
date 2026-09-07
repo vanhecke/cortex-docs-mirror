@@ -1,11 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
-    "Initial Access (TA0001)"
+    "Initial Access (TA0001)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses: Disable or Modify Tools (T1562.001)",
+    "Disable or Modify Tools (T1685)",
     "Phishing (T1566)"
   ],
   "attackers_goals": "An attacker is attempting to evade detection.",
@@ -25,11 +25,11 @@
       "name": "A recently configured Exchange DKIM signing configuration was disabled",
       "severity": "Informational",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
-        "Initial Access (TA0001)"
+        "Initial Access (TA0001)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses: Disable or Modify Tools (T1562.001)",
+        "Disable or Modify Tools (T1685)",
         "Phishing (T1566)"
       ],
       "description": "A user disabled an Exchange DomainKeys Identified Mail (DKIM) signing configuration. DKIM helps ensure that emails are authorized and not spoofed.",

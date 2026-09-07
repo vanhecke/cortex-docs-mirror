@@ -1,11 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
-    "Impact (TA0040)"
+    "Impact (TA0040)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses (T1562)",
+    "Disable or Modify Tools (T1685)",
     "Service Stop (T1489)"
   ],
   "attackers_goals": "Stop business services.",

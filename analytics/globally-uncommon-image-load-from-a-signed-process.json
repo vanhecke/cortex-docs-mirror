@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "System Binary Proxy Execution (T1218)",
@@ -24,7 +24,7 @@
       "name": "Globally uncommon image load from a signed process from a known vendor",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "System Binary Proxy Execution (T1218)",
@@ -38,7 +38,7 @@
       "name": "Globally uncommon unsigned image side loaded to a signed process",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "System Binary Proxy Execution (T1218)",
@@ -52,7 +52,7 @@
       "name": "Globally uncommon and very rare image load from a signed process",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "System Binary Proxy Execution (T1218)",
@@ -66,7 +66,7 @@
       "name": "Globally uncommon image load from an injected thread in a signed process",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "System Binary Proxy Execution (T1218)",
@@ -81,7 +81,7 @@
       "name": "Globally uncommon DLL was downloaded from an uncommon source and loaded by a signed process",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "System Binary Proxy Execution (T1218)",

@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Masquerading (T1036)"
@@ -23,7 +23,7 @@
       "name": "Rare executable moved to Windows system folder by rare causality actor",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Masquerading (T1036)"
@@ -36,7 +36,7 @@
       "name": "Executable moved to Windows system folder by remote causality and a rare actor",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Masquerading (T1036)"
@@ -49,7 +49,7 @@
       "name": "Rare executable moved to Windows system folder by rare actor",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Masquerading (T1036)"
@@ -62,7 +62,7 @@
       "name": "Executable moved to Windows system folder by rare and unsigned actor",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Masquerading (T1036)"

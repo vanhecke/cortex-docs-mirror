@@ -1,10 +1,10 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Domain or Tenant Policy Modification (T1484)"
+    "Modify Authentication Process: Conditional Access Policies (T1556.009)"
   ],
   "attackers_goals": "Bypass authentication controls.",
   "deduplication_period": "5 Days",

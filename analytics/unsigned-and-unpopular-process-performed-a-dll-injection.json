@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Process Injection (T1055)"
@@ -23,7 +23,7 @@
       "name": "Unsigned and unpopular process performed process hollowing DLL injection",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Process Injection (T1055)"
@@ -36,7 +36,7 @@
       "name": "Unsigned and unpopular process performed queue APC DLL injection",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Process Injection (T1055)"
@@ -49,7 +49,7 @@
       "name": "Unsigned and unpopular process performed a DLL injection to a sensitive process",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Process Injection (T1055)"
@@ -62,7 +62,7 @@
       "name": "Unsigned and unpopular process performed a DLL injection to a commonly abused process",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Process Injection (T1055)"
@@ -75,7 +75,7 @@
       "name": "Unsigned and unpopular process performed a DLL injection to a security vendor signed process",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Process Injection (T1055)"

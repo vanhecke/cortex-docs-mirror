@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
     "Subvert Trust Controls: Code Signing (T1553.002)"
@@ -23,7 +23,7 @@
       "name": "Rare signature signed forensic tool remotely executed in the network",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Subvert Trust Controls: Code Signing (T1553.002)"
@@ -36,7 +36,7 @@
       "name": "Rare signature signed forensic tool executed in the network",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Subvert Trust Controls: Code Signing (T1553.002)"
@@ -49,7 +49,7 @@
       "name": "Rare signature signed executable extracted from an internet-downloaded archive and executed in the network",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Subvert Trust Controls: Code Signing (T1553.002)"
@@ -62,7 +62,7 @@
       "name": "Rare signature signed executable downloaded from an uncommon source and executed in the network",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
         "Subvert Trust Controls: Code Signing (T1553.002)"

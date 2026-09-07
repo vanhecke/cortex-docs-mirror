@@ -1,10 +1,10 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses: Disable or Modify System Firewall (T1562.004)"
+    "Disable or Modify System Firewall (T1686)"
   ],
   "attackers_goals": "An attacker may turn the firewall off to exfiltrate data and communicate with C2 servers.",
   "deduplication_period": "1 Day",

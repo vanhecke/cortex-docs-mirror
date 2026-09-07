@@ -4,7 +4,7 @@
     "Initial Access (TA0001)",
     "Persistence (TA0003)",
     "Privilege Escalation (TA0004)",
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Valid Accounts: Cloud Accounts (T1078.004)"
@@ -31,7 +31,7 @@
         "Initial Access (TA0001)",
         "Persistence (TA0003)",
         "Privilege Escalation (TA0004)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Valid Accounts: Cloud Accounts (T1078.004)"

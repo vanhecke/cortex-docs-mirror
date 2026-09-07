@@ -1,11 +1,11 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
-    "Command and Control (TA0011)"
+    "Command and Control (TA0011)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Impair Defenses: Disable or Modify System Firewall (T1562.004)",
+    "Disable or Modify System Firewall (T1686)",
     "Proxy: Internal Proxy (T1090.001)"
   ],
   "attackers_goals": "Adding or deleting netsh forwarding rules as a proxy and to avoid possible detection.",
@@ -25,11 +25,11 @@
       "name": "Unusual Netsh PortProxy rule by non-netsh process",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
-        "Command and Control (TA0011)"
+        "Command and Control (TA0011)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses: Disable or Modify System Firewall (T1562.004)",
+        "Disable or Modify System Firewall (T1686)",
         "Proxy: Internal Proxy (T1090.001)"
       ],
       "description": "Attackers may use Netsh PortProxy rules as part of malicious actions performed in an organizational network (e.g., for tunneling).",
@@ -40,11 +40,11 @@
       "name": "Unusual Netsh PortProxy rule by an unsigned causality actor",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
-        "Command and Control (TA0011)"
+        "Command and Control (TA0011)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Impair Defenses: Disable or Modify System Firewall (T1562.004)",
+        "Disable or Modify System Firewall (T1686)",
         "Proxy: Internal Proxy (T1090.001)"
       ],
       "description": "Attackers may use Netsh PortProxy rules as part of malicious actions performed in an organizational network (e.g., for tunneling).",

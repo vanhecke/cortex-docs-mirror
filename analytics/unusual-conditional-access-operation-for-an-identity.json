@@ -1,10 +1,10 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Abuse Elevation Control Mechanism (T1548)"
+    "Modify Authentication Process: Conditional Access Policies (T1556.009)"
   ],
   "attackers_goals": "An attacker attempts to change Active Directory configuration for persistence or defense evasion. With a modified Conditional Access policy, an attacker might be able to access the tenant without possible blockage for later access.",
   "deduplication_period": "1 Day",
@@ -23,10 +23,10 @@
       "name": "Suspicious Conditional Access operation for an identity",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Abuse Elevation Control Mechanism (T1548)"
+        "Modify Authentication Process: Conditional Access Policies (T1556.009)"
       ],
       "description": "An identity that doesn't usually modify Azure AD Conditional Access policies successfully modified a policy.",
       "attackers_goals": "An attacker attempts to change Active Directory configuration for persistence or defense evasion. With a modified Conditional Access policy, an attacker might be able to access the tenant without possible blockage for later access.",

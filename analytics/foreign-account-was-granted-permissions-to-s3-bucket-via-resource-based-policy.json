@@ -20,7 +20,7 @@
   "test_period": "N/A (single event)",
   "variations": [
     {
-      "name": "Foreign account was granted permissions to S3 bucket containing sensitive information via resource-based policy",
+      "name": "Foreign account was granted permissions to S3 bucket via resource-based policy with suspicious indicators",
       "severity": "Low",
       "attack_tactics": [
         "Exfiltration (TA0010)"

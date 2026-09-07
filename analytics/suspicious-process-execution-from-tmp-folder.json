@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Hide Artifacts: Hidden Files and Directories (T1564.001)"
@@ -23,7 +23,7 @@
       "name": "A web server process executed an unpopular application from the tmp folder",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Hide Artifacts: Hidden Files and Directories (T1564.001)"
@@ -36,7 +36,7 @@
       "name": "Suspicious cron job task execution of a binary from the tmp folder",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Hide Artifacts: Hidden Files and Directories (T1564.001)"
@@ -49,7 +49,7 @@
       "name": "Suspicious interactive execution of a binary from the tmp folder",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Hide Artifacts: Hidden Files and Directories (T1564.001)"
@@ -62,7 +62,7 @@
       "name": "Suspicious process execution from tmp folder in a Kubernetes pod",
       "severity": "Informational",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Hide Artifacts: Hidden Files and Directories (T1564.001)"

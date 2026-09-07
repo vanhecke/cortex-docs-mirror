@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
+    "Stealth (TA0005)",
     "Persistence (TA0003)"
   ],
   "attack_techniques": [
@@ -26,7 +26,7 @@
       "name": "Globally uncommon suspicious injection from a signed process",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Persistence (TA0003)"
       ],
       "attack_techniques": [
@@ -42,7 +42,7 @@
       "name": "Globally uncommon injection from a signed process which was executed by a scheduled task",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Persistence (TA0003)"
       ],
       "attack_techniques": [
@@ -58,7 +58,7 @@
       "name": "Globally uncommon injection from a signed process",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Persistence (TA0003)"
       ],
       "attack_techniques": [

@@ -23,7 +23,7 @@
       "name": "MSBuild process connected to a rare external host",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Command and Control (TA0011)"
       ],
       "attack_techniques": [
@@ -38,7 +38,7 @@
       "name": "MSBuild process connected to a rare external host",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Trusted Developer Utilities Proxy Execution: MSBuild (T1127.001)"

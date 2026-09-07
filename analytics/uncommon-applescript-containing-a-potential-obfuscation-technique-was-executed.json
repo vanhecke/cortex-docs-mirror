@@ -2,7 +2,7 @@
   "activation_period": "14 Days",
   "attack_tactics": [
     "Execution (TA0002)",
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Command and Scripting Interpreter: AppleScript (T1059.002)",
@@ -26,7 +26,7 @@
       "severity": "Medium",
       "attack_tactics": [
         "Execution (TA0002)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Command and Scripting Interpreter: AppleScript (T1059.002)",
@@ -41,7 +41,7 @@
       "severity": "High",
       "attack_tactics": [
         "Execution (TA0002)",
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Command and Scripting Interpreter: AppleScript (T1059.002)",

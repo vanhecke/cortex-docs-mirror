@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Obfuscated Files or Information (T1027)"
@@ -23,7 +23,7 @@
       "name": "Globally uncommon high entropy process was executed by a web server process or CGO",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Initial Access (TA0001)",
         "Persistence (TA0003)"
       ],
@@ -40,7 +40,7 @@
       "name": "Globally uncommon high entropy process was extracted from an internet-downloaded archive and executed",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Obfuscated Files or Information (T1027)"
@@ -53,7 +53,7 @@
       "name": "Globally uncommon high entropy process was downloaded from an uncommon source and executed",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Obfuscated Files or Information (T1027)"

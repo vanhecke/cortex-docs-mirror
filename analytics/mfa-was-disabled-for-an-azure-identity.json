@@ -2,11 +2,11 @@
   "activation_period": "14 Days",
   "attack_tactics": [
     "Credential Access (TA0006)",
-    "Defense Evasion (TA0005)",
-    "Persistence (TA0003)"
+    "Persistence (TA0003)",
+    "Defense Impairment (TA0112)"
   ],
   "attack_techniques": [
-    "Modify Authentication Process (T1556)"
+    "Modify Authentication Process: Multi-Factor Authentication (T1556.006)"
   ],
   "attackers_goals": "This allows the attacker to connect using this account without the need for the additional layer of authentication.",
   "deduplication_period": "1 Hour",
@@ -26,11 +26,11 @@
       "severity": "Medium",
       "attack_tactics": [
         "Credential Access (TA0006)",
-        "Defense Evasion (TA0005)",
-        "Persistence (TA0003)"
+        "Persistence (TA0003)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Modify Authentication Process (T1556)"
+        "Modify Authentication Process: Multi-Factor Authentication (T1556.006)"
       ],
       "description": "MFA was disabled for the user.",
       "attackers_goals": "This allows the attacker to connect using this account without the need for the additional layer of authentication.",
@@ -41,11 +41,11 @@
       "severity": "Informational",
       "attack_tactics": [
         "Credential Access (TA0006)",
-        "Defense Evasion (TA0005)",
-        "Persistence (TA0003)"
+        "Persistence (TA0003)",
+        "Defense Impairment (TA0112)"
       ],
       "attack_techniques": [
-        "Modify Authentication Process (T1556)"
+        "Modify Authentication Process: Multi-Factor Authentication (T1556.006)"
       ],
       "description": "MFA was disabled for the user.",
       "attackers_goals": "This allows the attacker to connect using this account without the need for the additional layer of authentication.",

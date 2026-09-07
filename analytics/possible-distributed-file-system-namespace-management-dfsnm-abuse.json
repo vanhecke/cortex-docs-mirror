@@ -5,7 +5,7 @@
   ],
   "attack_techniques": [
     "Forced Authentication (T1187)",
-    "Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay (T1557.001)"
+    "Adversary-in-the-Middle: Name Resolution Poisoning and SMB Relay (T1557.001)"
   ],
   "attackers_goals": "An attacker can abuse the Distributed File System Namespace Management protocol to coerce an authentication from a DC. This authentication can later be used for obtaining a DC certificate for DCSync.",
   "deduplication_period": "1 Day",

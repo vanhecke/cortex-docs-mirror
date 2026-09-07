@@ -5,7 +5,7 @@
     "Lateral Movement (TA0008)"
   ],
   "attack_techniques": [
-    "Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay (T1557.001)",
+    "Adversary-in-the-Middle: Name Resolution Poisoning and SMB Relay (T1557.001)",
     "Use Alternate Authentication Material: Pass the Hash (T1550.002)"
   ],
   "attackers_goals": "An attacker may coerce the SCCM site server to authenticate to a malicious host and relay it to escalate privileges and move laterally across site systems.",
@@ -29,7 +29,7 @@
         "Lateral Movement (TA0008)"
       ],
       "attack_techniques": [
-        "Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay (T1557.001)",
+        "Adversary-in-the-Middle: Name Resolution Poisoning and SMB Relay (T1557.001)",
         "Use Alternate Authentication Material: Pass the Hash (T1550.002)"
       ],
       "description": "Multiple NTLM authentications were made to the same Microsoft Configuration Manager site server and user from different IPs using a vulnerable NTLM package in a short period of time. This might indicate a potential NTLM Relay attack.",

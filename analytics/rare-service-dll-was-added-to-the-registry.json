@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)",
+    "Stealth (TA0005)",
     "Persistence (TA0003)"
   ],
   "attack_techniques": [
@@ -25,7 +25,7 @@
       "name": "Rare service DLL was added to the registry from an injected thread",
       "severity": "Medium",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Persistence (TA0003)"
       ],
       "attack_techniques": [
@@ -40,7 +40,7 @@
       "name": "Rare service DLL was added to the registry from a rare unsigned actor process",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)",
+        "Stealth (TA0005)",
         "Persistence (TA0003)"
       ],
       "attack_techniques": [

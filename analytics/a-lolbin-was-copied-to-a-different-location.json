@@ -1,7 +1,7 @@
 {
   "activation_period": "14 Days",
   "attack_tactics": [
-    "Defense Evasion (TA0005)"
+    "Stealth (TA0005)"
   ],
   "attack_techniques": [
     "Masquerading: Rename Legitimate Utilities (T1036.003)"
@@ -23,7 +23,7 @@
       "name": "A LOLBIN was copied to a different location using a rare command line",
       "severity": "High",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Masquerading: Rename Legitimate Utilities (T1036.003)"
@@ -36,7 +36,7 @@
       "name": "A LOLBIN was copied to a different location using a rare command line via a commonly used method",
       "severity": "Low",
       "attack_tactics": [
-        "Defense Evasion (TA0005)"
+        "Stealth (TA0005)"
       ],
       "attack_techniques": [
         "Masquerading: Rename Legitimate Utilities (T1036.003)"
