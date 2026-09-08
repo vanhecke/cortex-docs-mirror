@@ -2,7 +2,7 @@
 description: Use this checklist to plan, build, test, and deploy Cortex XSIAM playbooks.
 ---
 
-# Playbook development checkli
+# Playbook development checklist
 
 The playbook development checklist follows the logical flow for developing a playbook.
 

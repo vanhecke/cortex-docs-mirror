@@ -8,7 +8,7 @@ Content packs are created by Palo Alto Networks, technology partners, consulting
 
 You can view Marketplace content packs from within Cortex XSIAM (go to Settings → **Configurations** → **Marketplace**) or at [Cortex Developer Docs Marketplace](https://cortex.marketplace.pan.dev/marketplace/).
 
-### **Pre-installed content packs in Cortex XSIAM**
+### Pre-installed Cortex XSIAM Marketplace content packs
 
 Cortex XSIAM comes with a number of pre-installed content packs that cover many common uses cases. Pre-installed content packs include, but are not limited to:
 

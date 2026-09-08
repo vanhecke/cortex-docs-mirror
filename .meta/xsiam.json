@@ -610,7 +610,7 @@
       "type": "group",
       "children": [
         {
-          "title": "Learn how to configure Cortex XSIAM",
+          "title": "Configure Cortex XSIAM",
           "path": "configure-cortex-xsiam/configure-cortex-xsiam",
           "type": "document",
           "children": []
@@ -7286,7 +7286,7 @@
                   "children": []
                 },
                 {
-                  "title": "Playbook development checkli",
+                  "title": "Playbook development checklist",
                   "path": "configure-cortex-xsiam/automations/playbooks/playbook-development-checklist",
                   "type": "document",
                   "children": []

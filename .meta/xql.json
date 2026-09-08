@@ -2,7 +2,7 @@
   "book": "xql",
   "title": "Cortex XQL Command Reference",
   "section": "xql-command-reference-guide",
-  "page_count": 184,
+  "page_count": 186,
   "tree": [
     {
       "title": "Cortex XQL Command Reference",
@@ -441,6 +441,12 @@
               "children": []
             },
             {
+              "title": "is_sla_breached",
+              "path": "readme/functions/is_sla_breached",
+              "type": "document",
+              "children": []
+            },
+            {
               "title": "json_extract",
               "path": "readme/functions/json_extract",
               "type": "document",
@@ -761,6 +767,12 @@
             {
               "title": "sin",
               "path": "readme/functions/sin",
+              "type": "document",
+              "children": []
+            },
+            {
+              "title": "sla_time_remaining",
+              "path": "readme/functions/sla_time_remaining",
               "type": "document",
               "children": []
             },

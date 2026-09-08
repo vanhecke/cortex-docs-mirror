@@ -95,4 +95,4 @@ Only tenants in the EU and US regions have the model selector. Using the model s
 
 **SG, JP, IN, and UK regions**
 
-Tenants in the SG, JP, IN, and UK regions have Gemini 3.5 Flash.
+Tenants in the SG, JP, IN, UK, CA, and DE regions have Gemini 3.5 Flash.

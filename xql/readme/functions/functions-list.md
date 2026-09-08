@@ -70,6 +70,7 @@ The following table lists all available XQL functions:
 | [`is_ipv6`](is_ipv6)                                                                   | Check if a value is a valid IPv6 address                                                                       |
 | [`is_known_private_ipv4`](is_known_private_ipv4)                                       | Check if an IPv4 address is a known private address                                                            |
 | [`is_known_private_ipv6`](is_known_private_ipv6)                                       | Check if an IPv6 address is a known private address                                                            |
+| [`is_sla_breached`](is_sla_breached)                                                   | Return whether an SLA has breached its goal                                                                    |
 | [`json_extract`](json_extract)                                                         | Extract a value from a JSON string                                                                             |
 | [`json_extract_array`](json_extract_array)                                             | Extract an array from a JSON string                                                                            |
 | [`json_extract_scalar`](json_extract_scalar)                                           | Extract a scalar value from a JSON string                                                                      |
@@ -124,6 +125,7 @@ The following table lists all available XQL functions:
 | [`sha512`](sha512)                                                                     | Calculate the SHA-512 hash of a string                                                                         |
 | [`sign`](sign)                                                                         | Determine the sign of a numeric value (-1, 0, or 1)                                                            |
 | [`sin`](sin)                                                                           | Calculate the sine of a numeric value specified in radians                                                     |
+| [`sla_time_remaining`](sla_time_remaining)                                             | Return the seconds remaining until an SLA breaches                                                             |
 | [`split`](split)                                                                       | Split a string into an array                                                                                   |
 | [`sqrt`](sqrt)                                                                         | Calculate the square root of a numeric value                                                                   |
 | [`stddev_population` (with comp stage)](stddev_population_with_comp_stage)             | Compute the population standard deviation of a numeric field within the comp stage                             |

@@ -8,11 +8,11 @@ description: >-
 
 Cortex XSIAM playbooks are visual canvases that allow you to automate your security response workflows. They can orchestrate actions across different products, manage case data, and interact with users to ensure a consistent and rapid response to security events.
 
-**One-stop playbook development**
+### Cortex XSIAM playbook development
 
-Before you start building your playbook, go to the **Playbooks** page and review the Org playbook list, which are playbooks that are currently used in your organization. On the **Playbook Catalog** page, you can find available out-of the-box playbooks that are not in use in your organization which you can adopt and use. If an existing playbook does not meet your use case, you can develop a playbook from scratch. Whether editing an existing playbook or creating a new one, you can manage the entire automation development flow in the playbook editor, including creating and editing tasks, configuring automation rules to trigger your playbooks, and setting up all relevant integrations.
+Before you start building your playbook, go to the **Playbooks** page and review the Org playbook list, which includes playbooks that are currently used in your organization. On the **Playbook Catalog** page, you can find available out-of-the-box playbooks that are not in use in your organization which you can adopt and use. If an existing playbook does not meet your use case, you can develop a playbook from scratch. Whether editing an existing playbook or creating a new one, you can manage the entire automation development flow in the playbook editor, including creating and editing tasks, configuring automation rules to trigger your playbooks, and setting up all relevant integrations.
 
-**Task Library**
+### Cortex XSIAM playbook task library
 
 The **Task Library** in the playbook editor contains the following objects you can add to your playbook. For example, you can create new tasks from scripts, repurpose existing tasks, and use existing playbooks as sub-playbooks.
 
@@ -27,7 +27,7 @@ Playbook tasks display unique logos to more easily identify task type and origin
 | **Header**             | Add section headers to organize your playbook.                                                     | See [Create a section header](build-your-playbook/add-objects-from-the-task-library/create-a-section-header).                   |
 | **Blank Task**         | Create a new task from scratch.                                                                    | See [Add manual tasks and blank tasks](build-your-playbook/add-objects-from-the-task-library/add-manual-tasks-and-blank-tasks). |
 
-**Post-development playbook testing**
+### Test Cortex XSIAM playbooks after development
 
 After developing the playbook (including setting automation rules to trigger the playbook), run the debugger to initially test the playbook.
 

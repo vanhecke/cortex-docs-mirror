@@ -5,8 +5,6 @@ description: Navigate the Cortex XSIAM Data Model Rules editor.
 # Data Model Rules editor views
 
 {% hint style="warning" %}
-### Prerequisite
-
 Data Model Rules requires **View/Edit** RBAC permissions for **Data Management** (under **Configurations** → **Data Management**), which are the same permissions required for Dataset Management, Parsing Rules, and Event Forwarding.
 {% endhint %}
 

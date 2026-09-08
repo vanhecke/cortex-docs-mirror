@@ -9,11 +9,9 @@ description: >-
 Playbooks are a series of tasks that run in a predefined flow to save time and improve the efficiency and results of the investigation and response process. They enable you to automate many security processes, including handling investigations and managing tickets. For example, a playbook task can parse the information in an issue, whether it is an email or a PDF attachment. Playbooks also standardize workflows, ensuring consistent and efficient incident response and management.
 
 {% hint style="warning" %}
-### Prerequisite
-
 To work with playbooks, an administrator must configure their user role with specific RBAC permissions.
 
-* Permissions must be enabled in the following order:
+Permissions must be enabled in the following order:
 
 1. **Scripts**: This component (under **Investigation & Response** → **Automations**) must be set to **Enabled** first. It is the foundational permission for all automation; if **Scripts** are not enabled, you cannot configure **Playbooks** or **Cases and Issues**. Role-level permissions determine your ability to create new scripts or edit those marked as **Public**.
 2. **Playbooks**: This component (under **Investigation & Response** → **Automations**) must be set to **Enabled**. Role-level permissions determine your ability to create new playbooks or edit those marked as **Public**. Specific access to individual custom playbooks and scripts is managed at the object level. For detailed information on the access model, see [Access to playbooks](playbooks/access-to-playbooks).
