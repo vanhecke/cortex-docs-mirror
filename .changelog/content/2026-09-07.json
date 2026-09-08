@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-07",
+  "source": "content",
+  "sha": "06ef21a01f1d5e247936e24cd1f5b5e67aaaa2a6",
+  "headline": "identity.* modeling-rule migration sweeps 90 packs; new Databricks and Akamai Prolexic collectors",
+  "summary_md": "- The **identity.\\*** modeling-rule migration lands across nine tracked PRs (CRTX-271521 and CRTX-271524, parts 2 through 7), which is what puts 90 packs on the board in one day.\n- 78 of those packs are pure additions over a single changed line — the migration adds fields, it does not rewrite the rules already there.\n- Two brand-new packs arrive: a **Databricks** integration pack (13,081 lines) and an **Akamai Prolexic** event collector (1,820 lines).\n- Larger reworks land in **CrowdStrike Falcon** (asset fetching), **GCP** (command alignment) and **ServiceNow v2**.\n- A separate commit covers legacy packs the identity.\\* migration could only land by force-merge.",
+  "highlights": [
+    {
+      "title": "identity.* fields added to modeling rules across the estate",
+      "detail": "CRTX-271521 and CRTX-271524 ship as numbered parts of seven, and account for the long tail of packs that gained roughly 50–400 lines against one deletion.",
+      "paths": ["Packs/Salesforce", "Packs/CyberArkIdentity", "Packs/cisco-ise", "Packs/OktaASA"]
+    },
+    {
+      "title": "New Databricks integration pack",
+      "detail": "The single largest change of the day at 13,081 insertions and no deletions, landing as a new pack rather than an extension of an existing one.",
+      "paths": ["Packs/Databricks"]
+    },
+    {
+      "title": "New Akamai Prolexic event collector",
+      "detail": "CIAC-16080 adds a collector for Akamai's DDoS mitigation service — 1,820 insertions, also entirely new.",
+      "paths": ["Packs/AkamaiProlexic"]
+    },
+    {
+      "title": "CrowdStrike Falcon asset fetching reworked",
+      "detail": "3,403 insertions against 902 deletions, the day's only large two-way rewrite, described upstream as fetch-assets improvements.",
+      "paths": ["Packs/CrowdStrikeFalcon"]
+    },
+    {
+      "title": "GCP commands realigned",
+      "detail": "CRTX-270723 replaces 431 lines with 1,252, the shape of a command surface being renamed or restructured rather than extended.",
+      "paths": ["Packs/GCP"]
+    },
+    {
+      "title": "Legacy packs needed a force-merge to take the migration",
+      "detail": "CRTX-271527 and CRTX-271522 are called out separately as legacy packs requiring force-merge, so those packs' rules were overwritten rather than merged.",
+      "paths": []
+    }
+  ],
+  "items": {
+    "Packs/Databricks": "New integration pack, 13,081 insertions and no deletions.",
+    "Packs/AkamaiProlexic": "New Akamai Prolexic event collector (CIAC-16080).",
+    "Packs/CrowdStrikeFalcon": "Asset fetching reworked: 3,403 insertions against 902 deletions.",
+    "Packs/GCP": "Command alignment (CRTX-270723) rewrites 431 lines into 1,252.",
+    "Packs/ServiceNow": "ServiceNow v2 fix (CRTX-208419), 744 insertions against 252 deletions.",
+    "Packs/Zscaler": "Modeling rule field mapping corrected for Zscaler Internet Access (CRTX-267799).",
+    "Packs/CiscoASA": "Modeling rule modified — a seven-line change.",
+    "Packs/VMwareVCenter": "vcsa-audit pid mapping fixed to use to_integer (CRTX-276239).",
+    "Packs/EDL": "Test-module no longer fails with a port-in-use error when re-run (XSUP-74935).",
+    "Packs/Palo_Alto_Networks_Enterprise_DLP": "Uses the client-credentials flow when that flow is selected (XSUP-75518).",
+    "Packs/Palo_Alto_Networks_WildFire": "Fix for behaviour with an empty API key (XSUP-75894).",
+    "Packs/HashiCorp-Vault": "Gains a new command.",
+    "Packs/ProofpointCloudThreatResponse": "Disposition filter fixed (XSUP-76432).",
+    "Packs/MicrosoftExchangeOnline": "O365 fix, 129 insertions against 30 deletions.",
+    "Packs/MailSenderNew": "The \"(New)\" text is removed from the Mail Sender integration name (CIAC-17814)."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
