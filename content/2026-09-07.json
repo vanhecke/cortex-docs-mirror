@@ -1,0 +1,563 @@
+{
+  "date": "2026-09-07",
+  "sha": "1f6a297d5dec1a3d639227173580104300f1ce90",
+  "committed_at": "2026-09-07T23:56:52+03:00",
+  "packs": [
+    {
+      "name": "AWS-CloudTrail",
+      "insertions": 176,
+      "deletions": 1
+    },
+    {
+      "name": "AdminByRequest",
+      "insertions": 144,
+      "deletions": 1
+    },
+    {
+      "name": "AkamaiProlexic",
+      "insertions": 1820,
+      "deletions": 0
+    },
+    {
+      "name": "AppSentinelsAi",
+      "insertions": 82,
+      "deletions": 1
+    },
+    {
+      "name": "AtlassianConfluenceCloud",
+      "insertions": 103,
+      "deletions": 1
+    },
+    {
+      "name": "AzureAppService",
+      "insertions": 411,
+      "deletions": 1
+    },
+    {
+      "name": "Base",
+      "insertions": 111,
+      "deletions": 4
+    },
+    {
+      "name": "Bitbucket",
+      "insertions": 62,
+      "deletions": 1
+    },
+    {
+      "name": "BitwardenPasswordManager",
+      "insertions": 61,
+      "deletions": 1
+    },
+    {
+      "name": "BrocadeSwitch",
+      "insertions": 118,
+      "deletions": 1
+    },
+    {
+      "name": "CiscoASA",
+      "insertions": 7,
+      "deletions": 2
+    },
+    {
+      "name": "CiscoThousandEyes",
+      "insertions": 111,
+      "deletions": 1
+    },
+    {
+      "name": "CiscoUCM",
+      "insertions": 70,
+      "deletions": 2
+    },
+    {
+      "name": "Claroty",
+      "insertions": 336,
+      "deletions": 1
+    },
+    {
+      "name": "CloudflareZeroTrust",
+      "insertions": 160,
+      "deletions": 1
+    },
+    {
+      "name": "CrowdStrikeFalcon",
+      "insertions": 3403,
+      "deletions": 902
+    },
+    {
+      "name": "CyberArkIdentity",
+      "insertions": 420,
+      "deletions": 1
+    },
+    {
+      "name": "CyberArkPAS",
+      "insertions": 384,
+      "deletions": 1
+    },
+    {
+      "name": "Databricks",
+      "insertions": 13081,
+      "deletions": 0
+    },
+    {
+      "name": "DellEMCUnity",
+      "insertions": 96,
+      "deletions": 1
+    },
+    {
+      "name": "DeveloperTools",
+      "insertions": 2,
+      "deletions": 1
+    },
+    {
+      "name": "DigitalGuardian",
+      "insertions": 82,
+      "deletions": 1
+    },
+    {
+      "name": "Docusign",
+      "insertions": 212,
+      "deletions": 1
+    },
+    {
+      "name": "Dropbox",
+      "insertions": 87,
+      "deletions": 1
+    },
+    {
+      "name": "EDL",
+      "insertions": 231,
+      "deletions": 31
+    },
+    {
+      "name": "Exabeam",
+      "insertions": 117,
+      "deletions": 1
+    },
+    {
+      "name": "F5APM",
+      "insertions": 190,
+      "deletions": 1
+    },
+    {
+      "name": "Forcepoint",
+      "insertions": 144,
+      "deletions": 1
+    },
+    {
+      "name": "ForeScoutCounterACT",
+      "insertions": 101,
+      "deletions": 1
+    },
+    {
+      "name": "GCP",
+      "insertions": 1252,
+      "deletions": 431
+    },
+    {
+      "name": "GenetecSecurityCenter",
+      "insertions": 146,
+      "deletions": 1
+    },
+    {
+      "name": "GitHub",
+      "insertions": 66,
+      "deletions": 1
+    },
+    {
+      "name": "GoogleApigee",
+      "insertions": 60,
+      "deletions": 1
+    },
+    {
+      "name": "GoogleChrome",
+      "insertions": 76,
+      "deletions": 1
+    },
+    {
+      "name": "GoogleCloudLogging",
+      "insertions": 369,
+      "deletions": 1
+    },
+    {
+      "name": "HPEArubaClearPass",
+      "insertions": 100,
+      "deletions": 1
+    },
+    {
+      "name": "HPESwitch",
+      "insertions": 485,
+      "deletions": 1
+    },
+    {
+      "name": "HashiCorp-Vault",
+      "insertions": 170,
+      "deletions": 4
+    },
+    {
+      "name": "IBMSecurityVerify",
+      "insertions": 231,
+      "deletions": 1
+    },
+    {
+      "name": "IBMStorageScale",
+      "insertions": 154,
+      "deletions": 1
+    },
+    {
+      "name": "IBM_AIX",
+      "insertions": 109,
+      "deletions": 1
+    },
+    {
+      "name": "Imperva_WAF",
+      "insertions": 108,
+      "deletions": 1
+    },
+    {
+      "name": "JiraDataCenter",
+      "insertions": 58,
+      "deletions": 2
+    },
+    {
+      "name": "KnowBe4_KMSAT",
+      "insertions": 69,
+      "deletions": 1
+    },
+    {
+      "name": "LenelS2NetBox",
+      "insertions": 106,
+      "deletions": 1
+    },
+    {
+      "name": "LookoutMobileEndpointSecurity",
+      "insertions": 135,
+      "deletions": 1
+    },
+    {
+      "name": "MailSenderNew",
+      "insertions": 10,
+      "deletions": 4
+    },
+    {
+      "name": "MenloSecurity",
+      "insertions": 268,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftADFS",
+      "insertions": 215,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftDNS",
+      "insertions": 174,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftDefenderAdvancedThreatProtection",
+      "insertions": 114,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftDefenderforIdentity",
+      "insertions": 82,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftECM",
+      "insertions": 77,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftExchangeOnline",
+      "insertions": 129,
+      "deletions": 30
+    },
+    {
+      "name": "MicrosoftIISWebServer",
+      "insertions": 123,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftNPS",
+      "insertions": 46,
+      "deletions": 1
+    },
+    {
+      "name": "MicrosoftWindowsSysmon",
+      "insertions": 237,
+      "deletions": 1
+    },
+    {
+      "name": "Mimecast",
+      "insertions": 161,
+      "deletions": 2
+    },
+    {
+      "name": "MongoDBAtlas",
+      "insertions": 197,
+      "deletions": 1
+    },
+    {
+      "name": "OktaASA",
+      "insertions": 184,
+      "deletions": 1
+    },
+    {
+      "name": "OneLogin",
+      "insertions": 115,
+      "deletions": 1
+    },
+    {
+      "name": "OnePassword",
+      "insertions": 143,
+      "deletions": 1
+    },
+    {
+      "name": "Palo_Alto_Networks_Enterprise_DLP",
+      "insertions": 82,
+      "deletions": 9
+    },
+    {
+      "name": "Palo_Alto_Networks_WildFire",
+      "insertions": 157,
+      "deletions": 3
+    },
+    {
+      "name": "Portnox",
+      "insertions": 148,
+      "deletions": 1
+    },
+    {
+      "name": "PrismaCloudCompute",
+      "insertions": 206,
+      "deletions": 2
+    },
+    {
+      "name": "PrismaSaasSecurity",
+      "insertions": 104,
+      "deletions": 1
+    },
+    {
+      "name": "ProofpointCloudThreatResponse",
+      "insertions": 66,
+      "deletions": 2
+    },
+    {
+      "name": "ProofpointIsolation",
+      "insertions": 93,
+      "deletions": 1
+    },
+    {
+      "name": "ProofpointObserveIT",
+      "insertions": 113,
+      "deletions": 1
+    },
+    {
+      "name": "RSASecureID",
+      "insertions": 84,
+      "deletions": 1
+    },
+    {
+      "name": "SailPointIdentityNow",
+      "insertions": 121,
+      "deletions": 1
+    },
+    {
+      "name": "Salesforce",
+      "insertions": 1258,
+      "deletions": 1
+    },
+    {
+      "name": "SaviyntEIC",
+      "insertions": 65,
+      "deletions": 1
+    },
+    {
+      "name": "SemperisDSP",
+      "insertions": 75,
+      "deletions": 1
+    },
+    {
+      "name": "ServiceNow",
+      "insertions": 744,
+      "deletions": 252
+    },
+    {
+      "name": "Siemens_SiPass",
+      "insertions": 43,
+      "deletions": 1
+    },
+    {
+      "name": "TaniumThreatResponse",
+      "insertions": 49,
+      "deletions": 2
+    },
+    {
+      "name": "TrendMicroInterScanWebSecurity",
+      "insertions": 110,
+      "deletions": 1
+    },
+    {
+      "name": "TrendMicroTippingPoint",
+      "insertions": 135,
+      "deletions": 1
+    },
+    {
+      "name": "TrendMicroVisionOne",
+      "insertions": 656,
+      "deletions": 1
+    },
+    {
+      "name": "VMwareVCenter",
+      "insertions": 9,
+      "deletions": 4
+    },
+    {
+      "name": "Vectra_AI",
+      "insertions": 158,
+      "deletions": 1
+    },
+    {
+      "name": "Veeam",
+      "insertions": 13,
+      "deletions": 1
+    },
+    {
+      "name": "WatchguardFirebox",
+      "insertions": 129,
+      "deletions": 1
+    },
+    {
+      "name": "WithSecure",
+      "insertions": 109,
+      "deletions": 1
+    },
+    {
+      "name": "Zoom",
+      "insertions": 86,
+      "deletions": 1
+    },
+    {
+      "name": "Zscaler",
+      "insertions": 18,
+      "deletions": 7
+    },
+    {
+      "name": "cisco-ise",
+      "insertions": 420,
+      "deletions": 1
+    },
+    {
+      "name": "qualys",
+      "insertions": 235,
+      "deletions": 1
+    }
+  ],
+  "commits": [
+    {
+      "sha": "556e5d15b45f6468fc49388b07b0735ac4dddc5e",
+      "subject": "Fix / XSUP-76432 / Proofpoint disposition filter (#45792)"
+    },
+    {
+      "sha": "7b2e2b5f2bd3d87464b4150a213b173f9b42ce25",
+      "subject": "no UCP auth when passthrough (#45757)"
+    },
+    {
+      "sha": "373b04ca66047245b6b1916e62f8e69b8d57af80",
+      "subject": "CRTX-270723: GCP Command Alignment (#45534)"
+    },
+    {
+      "sha": "3c20d1c0abf219857a2e0a66a0d3ff29d4922c81",
+      "subject": "XSUP-74935: Fix EDL test-module port-in-use error on re-run (#45644)"
+    },
+    {
+      "sha": "cda50a5c3f778e15ec309f3ab6a8d2033ad23774",
+      "subject": "CIAC-16080: Add Akamai Prolexic Event Collector (#44059)"
+    },
+    {
+      "sha": "c34a45941b0fc0865243739a433240987c4ac98b",
+      "subject": "CRTX-267799: Zscaler Internet Access modeling rule field mapping (#45788)"
+    },
+    {
+      "sha": "dcc07bcbbddb2199d5842cc820089e7d3ec81954",
+      "subject": "New: Databricks Integration Pack (#45790)"
+    },
+    {
+      "sha": "f0304e2da572bcaa263f2409443d5c25b1a73872",
+      "subject": "CRTX-276239 - fix vCenter vcsa-audit pid mapping using to_integer (#45714)"
+    },
+    {
+      "sha": "c0ce9ad4bb73f41b5dd3b7b76cfb67e544caf059",
+      "subject": "CRTX-271527 / CRTX-271522 - identity.* migration: legacy packs requiring force-merge (#45743)"
+    },
+    {
+      "sha": "6bc0cccf5affb5b78b93d201528cacffcef56529",
+      "subject": "CIAC-17814: remove (New) text from Mail Sender integration (#45771)"
+    },
+    {
+      "sha": "1287819264423b6204129540b104ed1e2d5095ba",
+      "subject": "XSUP-75518: DLP - Use client-credentials flow when Client Credentials flow is selected (#45787)"
+    },
+    {
+      "sha": "c6d32270f0b6374edf71b134a85c3433aaf76d5b",
+      "subject": "feat: Support new license types. (#45799) (#45800)"
+    },
+    {
+      "sha": "b8ed091c3e1d2c6b222615ce2697ec2ee02eddf2",
+      "subject": "[CRTX-208419] - ServiceNow version 2 11 fix (#45801)"
+    },
+    {
+      "sha": "86fe95a6260ffa6b4a1132fc948f5a4fc89d5787",
+      "subject": "Modified modeling rule of cisco asa (#45794)"
+    },
+    {
+      "sha": "cb4078fbf8704d0805ee94b596155566b6d88564",
+      "subject": "CRTX-271521: add identity.* to modeling rules (PR 2 of 7) (#45418)"
+    },
+    {
+      "sha": "28ba0095d3af28e96aaf55bb083c6d388c639c30",
+      "subject": "HashiCorpVault - Add New Command (#45687)"
+    },
+    {
+      "sha": "1f7b04258c36759a4bff8908b4fd8c43f28a3b6a",
+      "subject": "fix O365 issue (#45394)"
+    },
+    {
+      "sha": "1efc5f23d4bbcf0ba12b87ba67283942ae51ce73",
+      "subject": "CRTX-271524: add identity.* to modeling rules (PR 7 of 7) (#45447)"
+    },
+    {
+      "sha": "5de2a92405f0232141aaf88491b6ea1dd1e2565c",
+      "subject": "CRTX-271524: add identity.* to modeling rules (PR 2 of 7) (#45441)"
+    },
+    {
+      "sha": "ff1c9772331f63368389f84f0914c8bb6605dab4",
+      "subject": "CRTX-271524: add identity.* to modeling rules (PR 3 of 7) (#45442)"
+    },
+    {
+      "sha": "954dece851f09f2bcbbad8476f73ee3ecc369ffd",
+      "subject": "CRTX-271524: add identity.* to modeling rules (PR 4 of 7) (#45443)"
+    },
+    {
+      "sha": "bdefa51295f1268067670a21aeeca16daf03c0c6",
+      "subject": "CRTX-271524: add identity.* to modeling rules (PR 6 of 7) (#45445)"
+    },
+    {
+      "sha": "b4b0f4bcb3f3cc2e13e0c3db5415a6dbfe0c3f65",
+      "subject": "CRTX-271524: add identity.* to modeling rules (PR 5 of 7) (#45444)"
+    },
+    {
+      "sha": "a1631d46b785f8e0a8a97e16451ac0dd93c32dcf",
+      "subject": "CSF fetch assets improvments (#45272)"
+    },
+    {
+      "sha": "1f6a297d5dec1a3d639227173580104300f1ce90",
+      "subject": "Fix/XSUP-75894/WF with empty api key (#45776)"
+    },
+    {
+      "sha": "31ad129caf34fcbeea02eb1351f8be837c92bf7c",
+      "subject": "CRTX-271521: add identity.* to modeling rules (PR 3 of 7) (#45419)"
+    }
+  ]
+}
