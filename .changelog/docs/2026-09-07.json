@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-07",
+  "source": "docs",
+  "sha": "db2a551c62040ede0c9cf102825d63c437bc2870",
+  "headline": "Two SLA functions added to XQL; Gemini 3.5 Flash extended to the CA and DE regions",
+  "summary_md": "- **Cortex XQL Command Reference** gained two case-SLA functions, `is_sla_breached` and `sla_time_remaining`, taking the book from 184 to 186 pages.\n- The **Agentic AI** page adds CA and DE to the regions running Gemini 3.5 Flash.\n- Data Model Rules drops its notice restricting access to Account and Instance Administrators; the View/Edit RBAC requirement for Data Management remains.\n- The XSIAM configuration landing page is renamed and rewritten from a paragraph into a linked index of configuration areas.\n- The five playbook pages are a copy-edit pass: bold pseudo-headings become real headings, and the truncated \"Playbook development checkli\" title is repaired.",
+  "highlights": [
+    {
+      "title": "XQL adds is_sla_breached() and sla_time_remaining() for querying case SLAs",
+      "detail": "Both read an SLA field from the cases dataset (or a custom_fields SLA), exclude paused time, and work in the filter, sort and comp stages — one returning a boolean breach flag, the other the seconds remaining as a signed integer.",
+      "paths": [
+        "xql/readme/functions/is_sla_breached",
+        "xql/readme/functions/sla_time_remaining"
+      ]
+    },
+    {
+      "title": "Gemini 3.5 Flash now listed for the CA and DE regions",
+      "detail": "The sentence naming the regions without the model selector changes from \"SG, JP, IN, and UK\" to \"SG, JP, IN, UK, CA, and DE\".",
+      "paths": ["xsiam/learn-about-cortex-xsiam/agentic-ai-in-cortex-xsiam"]
+    },
+    {
+      "title": "Data Model Rules no longer states that only Account or Instance Administrators can access it",
+      "detail": "The whole notice was deleted; the page's remaining access statement is the View/Edit RBAC permission for Data Management, unchanged.",
+      "paths": ["xsiam/configure-cortex-xsiam/data-management/data-model-rules"]
+    },
+    {
+      "title": "\"Learn how to configure Cortex XSIAM\" is renamed \"Configure Cortex XSIAM\"",
+      "detail": "The page is rewritten from one paragraph into a three-step sequence plus a linked index grouped as data and connectivity, AI and automation, and operations and governance; the navigation manifest carries the new title.",
+      "paths": ["xsiam/configure-cortex-xsiam/configure-cortex-xsiam"]
+    },
+    {
+      "title": "\"Playbook development checkli\" is now \"Playbook development checklist\"",
+      "detail": "A truncated page title fixed in both the page and the XSIAM navigation tree.",
+      "paths": ["xsiam/configure-cortex-xsiam/automations/playbooks/playbook-development-checklist"]
+    }
+  ],
+  "items": {
+    "xql/readme/functions/is_sla_breached": "New page: returns true/false/NULL for whether an SLA passed its goal, with four examples covering flagging, filtering, counting by severity and custom SLAs.",
+    "xql/readme/functions/sla_time_remaining": "New page: returns seconds until breach, negative once breached, and is usable with percentile, median, avg, min and max.",
+    "xql/readme/functions/functions-list": "Both new SLA functions added to the master function table.",
+    "xsiam/learn-about-cortex-xsiam/agentic-ai-in-cortex-xsiam": "CA and DE join SG, JP, IN and UK as regions running Gemini 3.5 Flash.",
+    "xsiam/configure-cortex-xsiam/data-management/data-model-rules": "Drops the Account/Instance Administrator access notice; also fixes \"quarriable\" to \"queryable\" and \"transitions\" to \"transformations\".",
+    "xsiam/configure-cortex-xsiam/configure-cortex-xsiam": "Renamed to \"Configure Cortex XSIAM\" and rebuilt as a linked index of the configuration areas, with a suggested ordering.",
+    "xsiam/configure-cortex-xsiam/automations/playbooks/playbook-development-checklist": "Page title un-truncated to \"Playbook development checklist\".",
+    "xsiam/configure-cortex-xsiam/automations/playbooks": "The RBAC ordering note loses its \"Prerequisite\" heading and its stray bullet; the required order of Scripts then Playbooks is unchanged.",
+    "xsiam/configure-cortex-xsiam/automations/playbooks/manage-playbooks": "Bold pseudo-headings become H3 headings named for the task; wording only otherwise.",
+    "xsiam/configure-cortex-xsiam/automations/playbooks/playbooks-overview": "Same heading pass, plus a corrected \"out-of-the-box\" hyphenation.",
+    "xsiam/configure-cortex-xsiam/automations/playbooks/access-to-playbooks": "\"least-privileged\" corrected to \"least-privilege\"; the access-roles list is promoted to a heading.",
+    "xsiam/configure-cortex-xsiam/data-management/manage-compute-units": "Reformatting: the three CU query types are bolded and two raw HTML hint blocks are rewritten, one as a plain link. CU rates are unchanged.",
+    "xsiam/configure-cortex-xsiam/marketplace/content-pack-support-types": "The four support-type headings are renamed to spell out \"Marketplace content packs\"; the support terms themselves are unchanged.",
+    "xsiam/configure-cortex-xsiam/marketplace/content-packs": "One heading renamed to \"Pre-installed Cortex XSIAM Marketplace content packs\".",
+    "compatibility/where-can-i-install-the-cortex-xdr-agent/kubernetes-platforms-supported": "Trailing blank lines only — no change to the tested Kubernetes platforms or versions."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
