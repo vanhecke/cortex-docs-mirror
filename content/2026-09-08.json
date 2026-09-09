@@ -1,0 +1,480 @@
+{
+  "date": "2026-09-08",
+  "sha": "feaded886088b355edbedae8dc6ad2f5d729c0cb",
+  "committed_at": "2026-09-08T15:37:52+03:00",
+  "packs": [
+    {
+      "name": "AWS-CloudTrail",
+      "insertions": 5,
+      "deletions": 169
+    },
+    {
+      "name": "AdminByRequest",
+      "insertions": 5,
+      "deletions": 137
+    },
+    {
+      "name": "AppSentinelsAi",
+      "insertions": 5,
+      "deletions": 75
+    },
+    {
+      "name": "AtlassianConfluenceCloud",
+      "insertions": 5,
+      "deletions": 96
+    },
+    {
+      "name": "AzureAppService",
+      "insertions": 5,
+      "deletions": 404
+    },
+    {
+      "name": "AzureSecurityCenter",
+      "insertions": 5,
+      "deletions": 336
+    },
+    {
+      "name": "BechtleDarkWebScan",
+      "insertions": 2537,
+      "deletions": 0
+    },
+    {
+      "name": "Bitbucket",
+      "insertions": 5,
+      "deletions": 55
+    },
+    {
+      "name": "BitwardenPasswordManager",
+      "insertions": 5,
+      "deletions": 54
+    },
+    {
+      "name": "BrocadeSwitch",
+      "insertions": 5,
+      "deletions": 111
+    },
+    {
+      "name": "CiscoASA",
+      "insertions": 5,
+      "deletions": 79
+    },
+    {
+      "name": "CiscoThousandEyes",
+      "insertions": 5,
+      "deletions": 104
+    },
+    {
+      "name": "CiscoUCM",
+      "insertions": 6,
+      "deletions": 63
+    },
+    {
+      "name": "Claroty",
+      "insertions": 5,
+      "deletions": 329
+    },
+    {
+      "name": "CloudflareZeroTrust",
+      "insertions": 5,
+      "deletions": 153
+    },
+    {
+      "name": "CyberArkIdentity",
+      "insertions": 5,
+      "deletions": 413
+    },
+    {
+      "name": "CyberArkPAS",
+      "insertions": 5,
+      "deletions": 378
+    },
+    {
+      "name": "DellEMCUnity",
+      "insertions": 5,
+      "deletions": 89
+    },
+    {
+      "name": "DigitalGuardian",
+      "insertions": 5,
+      "deletions": 75
+    },
+    {
+      "name": "Docusign",
+      "insertions": 5,
+      "deletions": 205
+    },
+    {
+      "name": "Doppel",
+      "insertions": 146,
+      "deletions": 3
+    },
+    {
+      "name": "Dropbox",
+      "insertions": 5,
+      "deletions": 80
+    },
+    {
+      "name": "Exabeam",
+      "insertions": 5,
+      "deletions": 110
+    },
+    {
+      "name": "F5APM",
+      "insertions": 5,
+      "deletions": 183
+    },
+    {
+      "name": "FireEyeHX",
+      "insertions": 464,
+      "deletions": 453
+    },
+    {
+      "name": "Forcepoint",
+      "insertions": 5,
+      "deletions": 137
+    },
+    {
+      "name": "ForeScoutCounterACT",
+      "insertions": 5,
+      "deletions": 94
+    },
+    {
+      "name": "GCP",
+      "insertions": 2369,
+      "deletions": 159
+    },
+    {
+      "name": "GenetecSecurityCenter",
+      "insertions": 5,
+      "deletions": 139
+    },
+    {
+      "name": "GitHub",
+      "insertions": 5,
+      "deletions": 59
+    },
+    {
+      "name": "GoogleApigee",
+      "insertions": 5,
+      "deletions": 53
+    },
+    {
+      "name": "GoogleChrome",
+      "insertions": 5,
+      "deletions": 69
+    },
+    {
+      "name": "GoogleCloudLogging",
+      "insertions": 5,
+      "deletions": 362
+    },
+    {
+      "name": "HPEArubaClearPass",
+      "insertions": 5,
+      "deletions": 93
+    },
+    {
+      "name": "HPESwitch",
+      "insertions": 5,
+      "deletions": 478
+    },
+    {
+      "name": "IBMSecurityVerify",
+      "insertions": 5,
+      "deletions": 224
+    },
+    {
+      "name": "IBMStorageScale",
+      "insertions": 5,
+      "deletions": 147
+    },
+    {
+      "name": "IBM_AIX",
+      "insertions": 5,
+      "deletions": 102
+    },
+    {
+      "name": "Imperva_WAF",
+      "insertions": 5,
+      "deletions": 101
+    },
+    {
+      "name": "InfobloxBloxOne",
+      "insertions": 5,
+      "deletions": 135
+    },
+    {
+      "name": "JiraDataCenter",
+      "insertions": 6,
+      "deletions": 51
+    },
+    {
+      "name": "KnowBe4_KMSAT",
+      "insertions": 5,
+      "deletions": 62
+    },
+    {
+      "name": "LenelS2NetBox",
+      "insertions": 5,
+      "deletions": 99
+    },
+    {
+      "name": "LookoutMobileEndpointSecurity",
+      "insertions": 5,
+      "deletions": 128
+    },
+    {
+      "name": "ManageEngine",
+      "insertions": 102,
+      "deletions": 91
+    },
+    {
+      "name": "ManageEngine-ADManager",
+      "insertions": 5,
+      "deletions": 83
+    },
+    {
+      "name": "MenloSecurity",
+      "insertions": 5,
+      "deletions": 261
+    },
+    {
+      "name": "MicrosoftADFS",
+      "insertions": 5,
+      "deletions": 205
+    },
+    {
+      "name": "MicrosoftDNS",
+      "insertions": 5,
+      "deletions": 167
+    },
+    {
+      "name": "MicrosoftDefenderAdvancedThreatProtection",
+      "insertions": 5,
+      "deletions": 107
+    },
+    {
+      "name": "MicrosoftDefenderforIdentity",
+      "insertions": 5,
+      "deletions": 75
+    },
+    {
+      "name": "MicrosoftECM",
+      "insertions": 5,
+      "deletions": 70
+    },
+    {
+      "name": "MicrosoftIISWebServer",
+      "insertions": 5,
+      "deletions": 116
+    },
+    {
+      "name": "MicrosoftNPS",
+      "insertions": 5,
+      "deletions": 39
+    },
+    {
+      "name": "MicrosoftWindowsSysmon",
+      "insertions": 5,
+      "deletions": 230
+    },
+    {
+      "name": "Mimecast",
+      "insertions": 6,
+      "deletions": 154
+    },
+    {
+      "name": "MongoDBAtlas",
+      "insertions": 5,
+      "deletions": 190
+    },
+    {
+      "name": "MySQLEnterprise",
+      "insertions": 5,
+      "deletions": 37
+    },
+    {
+      "name": "NGINXWebServer",
+      "insertions": 5,
+      "deletions": 71
+    },
+    {
+      "name": "NetBox",
+      "insertions": 5,
+      "deletions": 88
+    },
+    {
+      "name": "Netskope",
+      "insertions": 5,
+      "deletions": 625
+    },
+    {
+      "name": "OktaASA",
+      "insertions": 5,
+      "deletions": 177
+    },
+    {
+      "name": "OneLogin",
+      "insertions": 5,
+      "deletions": 108
+    },
+    {
+      "name": "OnePassword",
+      "insertions": 5,
+      "deletions": 136
+    },
+    {
+      "name": "OracleCloudInfrastructure",
+      "insertions": 5,
+      "deletions": 70
+    },
+    {
+      "name": "Orca",
+      "insertions": 5,
+      "deletions": 336
+    },
+    {
+      "name": "Portnox",
+      "insertions": 5,
+      "deletions": 141
+    },
+    {
+      "name": "PrismaCloudCompute",
+      "insertions": 6,
+      "deletions": 199
+    },
+    {
+      "name": "PrismaSaasSecurity",
+      "insertions": 5,
+      "deletions": 97
+    },
+    {
+      "name": "ProofpointIsolation",
+      "insertions": 5,
+      "deletions": 86
+    },
+    {
+      "name": "ProofpointObserveIT",
+      "insertions": 5,
+      "deletions": 106
+    },
+    {
+      "name": "RSASecureID",
+      "insertions": 5,
+      "deletions": 77
+    },
+    {
+      "name": "RadwareCloudDDoSProtectionServices",
+      "insertions": 193,
+      "deletions": 182
+    },
+    {
+      "name": "SailPointIdentityNow",
+      "insertions": 5,
+      "deletions": 114
+    },
+    {
+      "name": "Salesforce",
+      "insertions": 5,
+      "deletions": 1251
+    },
+    {
+      "name": "SaviyntEIC",
+      "insertions": 5,
+      "deletions": 58
+    },
+    {
+      "name": "SemperisDSP",
+      "insertions": 5,
+      "deletions": 68
+    },
+    {
+      "name": "ServiceNow",
+      "insertions": 253,
+      "deletions": 817
+    },
+    {
+      "name": "Siemens_SiPass",
+      "insertions": 5,
+      "deletions": 36
+    },
+    {
+      "name": "TaniumThreatResponse",
+      "insertions": 6,
+      "deletions": 42
+    },
+    {
+      "name": "TrendMicroInterScanWebSecurity",
+      "insertions": 5,
+      "deletions": 103
+    },
+    {
+      "name": "TrendMicroTippingPoint",
+      "insertions": 5,
+      "deletions": 128
+    },
+    {
+      "name": "TrendMicroVisionOne",
+      "insertions": 5,
+      "deletions": 649
+    },
+    {
+      "name": "VMwareVCenter",
+      "insertions": 8,
+      "deletions": 4
+    },
+    {
+      "name": "Vectra_AI",
+      "insertions": 5,
+      "deletions": 151
+    },
+    {
+      "name": "WatchguardFirebox",
+      "insertions": 5,
+      "deletions": 122
+    },
+    {
+      "name": "WithSecure",
+      "insertions": 5,
+      "deletions": 102
+    },
+    {
+      "name": "Zoom",
+      "insertions": 5,
+      "deletions": 79
+    },
+    {
+      "name": "Zscaler",
+      "insertions": 11,
+      "deletions": 11
+    },
+    {
+      "name": "cisco-ise",
+      "insertions": 5,
+      "deletions": 413
+    },
+    {
+      "name": "qualys",
+      "insertions": 5,
+      "deletions": 228
+    }
+  ],
+  "commits": [
+    {
+      "sha": "380903e039e224c1fe7dd02a1cfbddcc7f9b8897",
+      "subject": "[Doppel] Integration updates: revived-alert reopen, get-alerts filters, client attribution (pack v1.2.0) (#45809)"
+    },
+    {
+      "sha": "1449ebf253c69adfc2082333e3622eb97c7d89ac",
+      "subject": "Revert ModelingRules changes across 88 packs (#45814)"
+    },
+    {
+      "sha": "c9f0f04582c322823c38bda2a18724d9f6188f84",
+      "subject": "Add Pack BechtleDarkWebScan (#45810)"
+    },
+    {
+      "sha": "feaded886088b355edbedae8dc6ad2f5d729c0cb",
+      "subject": "CRTX-215182_GoogleCloudStorage_migration (#45501)"
+    }
+  ]
+}
