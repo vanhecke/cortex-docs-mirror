@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-08",
+  "source": "analytics",
+  "sha": "7752e25579c5289c1aed2baa76b65b893592297b",
+  "headline": "A second still day: no analytics rule changed, and the reference holds at 1,311 detectors",
+  "summary_md": "- **Nothing changed.** The export ran and touched no rule file — nothing added, withdrawn or edited.\n- The reference stands at **1,311 detectors**, unmoved since 6 September.\n- Second consecutive quiet day, following the ATT&CK re-map that relabelled 271 rules.",
+  "highlights": [],
+  "items": {},
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
