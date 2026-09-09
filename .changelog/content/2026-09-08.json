@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-08",
+  "source": "content",
+  "sha": "95b1962e4a64a3024c0ed74f4bcbcf0068883f43",
+  "headline": "ModelingRules reverted across 88 packs, undoing yesterday's identity.* migration; new BechtleDarkWebScan pack",
+  "summary_md": "- The day is one upstream revert and little else: **ModelingRules changes across 88 packs** (#45814), taking back the `identity.*` modeling-rule migration that landed the day before.\n- 82 of the 91 packs that moved carry that revert's shape — 5 lines added against 36 to 1,251 removed, roughly 13,800 deletions between them.\n- **BechtleDarkWebScan** arrives as a new pack, 2,537 lines with nothing removed.\n- **GCP** takes a Google Cloud Storage migration (CRTX-215182), the largest change to an existing pack at +2,369/-159.\n- The day is net negative overall: 6,498 insertions against 15,546 deletions across 91 packs.",
+  "highlights": [
+    {
+      "title": "The identity.* modeling-rule migration is reverted across 88 packs",
+      "detail": "73 of the 82 revert-shaped packs are ones that moved in yesterday's migration, and for 70 of them today's deletion count is exactly seven lines short of yesterday's insertion count — the same rules, taken back out.",
+      "paths": ["Packs/Salesforce", "Packs/TrendMicroVisionOne", "Packs/Netskope", "Packs/CyberArkIdentity", "Packs/cisco-ise"]
+    },
+    {
+      "title": "New pack: BechtleDarkWebScan",
+      "detail": "Added whole at 2,537 insertions and no deletions (#45810), the only new data source on the board today.",
+      "paths": ["Packs/BechtleDarkWebScan"]
+    },
+    {
+      "title": "GCP pack takes a Google Cloud Storage migration",
+      "detail": "CRTX-215182 (#45501) replaces 159 lines with 2,369, making it the largest change to a pack that already existed.",
+      "paths": ["Packs/GCP"]
+    },
+    {
+      "title": "Doppel integration reaches pack v1.2.0",
+      "detail": "#45809 adds reopening of revived alerts, filters on get-alerts, and client attribution, for +146/-3.",
+      "paths": ["Packs/Doppel"]
+    },
+    {
+      "title": "ServiceNow and FireEyeHX churn without a commit naming them",
+      "detail": "ServiceNow loses a net 564 lines (+253/-817) and FireEyeHX is rewritten roughly in place (+464/-453); none of the day's four commit subjects mentions either pack.",
+      "paths": ["Packs/ServiceNow", "Packs/FireEyeHX"]
+    }
+  ],
+  "items": {
+    "Packs/BechtleDarkWebScan": "New pack, added whole at 2,537 insertions and no deletions.",
+    "Packs/GCP": "Google Cloud Storage migration (CRTX-215182) replaces 159 lines with 2,369.",
+    "Packs/ServiceNow": "The day's largest net reduction outside the revert at +253/-817, unattributed by any commit subject.",
+    "Packs/FireEyeHX": "Rewritten roughly in place at +464/-453, unattributed by any commit subject.",
+    "Packs/Doppel": "Integration update to pack v1.2.0: revived-alert reopen, get-alerts filters and client attribution.",
+    "Packs/RadwareCloudDDoSProtectionServices": "Replaced roughly in place at +193/-182.",
+    "Packs/ManageEngine": "Replaced roughly in place at +102/-91.",
+    "Packs/Salesforce": "Loses the most to the ModelingRules revert: 1,251 lines removed against 5 added.",
+    "Packs/TrendMicroVisionOne": "649 lines removed by the ModelingRules revert.",
+    "Packs/Netskope": "625 lines removed by the ModelingRules revert, though the pack did not move yesterday.",
+    "Packs/HPESwitch": "478 lines removed by the ModelingRules revert.",
+    "Packs/CyberArkIdentity": "413 lines removed by the ModelingRules revert.",
+    "Packs/cisco-ise": "413 lines removed by the ModelingRules revert.",
+    "Packs/AzureAppService": "404 lines removed by the ModelingRules revert.",
+    "Packs/Zscaler": "The smallest change of the day at +11/-11."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
