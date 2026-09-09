@@ -10,7 +10,7 @@ Creating Custom Detection Rules give you the flexibility to define and enforce s
 
 ### Before you begin
 
-Ensure you have a custom compliance control defined to associate the Custom Detection Rule to. For more information, see [Use a built-in or custom standard](../../monitor-and-track-compliance-adherence/choose-compliance-standards-from-the-compliance-catalog/use-a-built-in-or-custom-standard).
+Ensure you have a custom compliance control defined to associate the Custom Detection Rule to. For more information, see [Use a built-in or custom standard](../../../monitor-and-track-compliance-adherence/choose-compliance-standards-from-the-compliance-catalog/use-a-built-in-or-custom-standard).
 
 ### How to create a custom detection rule
 
@@ -175,4 +175,4 @@ Under **Posture Management → Policies → Cloud Workload**, add the Custom Det
 
 ### Monitor compliance adherence
 
-Under **Posture Management → Compliance → Catalogs → Standards**, create a custom standard that includes the custom control associated with the Custom Detection Rule, and then create an assessment profile that runs the custom standard. You can then monitor the compliance results in a report. For more information, see [Monitor and track compliance adherence](../../monitor-and-track-compliance-adherence).
+Under **Posture Management → Compliance → Catalogs → Standards**, create a custom standard that includes the custom control associated with the Custom Detection Rule, and then create an assessment profile that runs the custom standard. You can then monitor the compliance results in a report. For more information, see [Monitor and track compliance adherence](../../../monitor-and-track-compliance-adherence).

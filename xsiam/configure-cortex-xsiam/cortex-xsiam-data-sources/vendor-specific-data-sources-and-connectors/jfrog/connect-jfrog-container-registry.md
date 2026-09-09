@@ -6,6 +6,10 @@ description: Connect a JFrog container registry to Cortex XSIAM for image scanni
 
 Cortex XSIAM allows you to scan and secure your container images from vulnerabilities, malware, and secrets after you authenticate and connect your JFrog account. This process ensures robust artifact management and enhanced security.
 
+{% hint style="warning" %}
+**Limitation:** Registry scanning supports container images up to **80 GB** in size. Successful scanning of images larger than 80 GB is not guaranteed.
+{% endhint %}
+
 {% hint style="info" %}
 **License type**: This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM product that has the Cloud Posture Security or the Cloud Runtime Security add-on.
 {% endhint %}

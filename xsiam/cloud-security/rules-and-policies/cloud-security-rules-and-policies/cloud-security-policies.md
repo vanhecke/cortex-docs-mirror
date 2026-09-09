@@ -41,4 +41,4 @@ If instead of using the default cloud security policy you prefer to define your 
 
 Issues are artifacts of the policy and represent actionable items that you need to address. A key distinction between findings and issues is that findings are not actionable, while you can take action on issues.
 
-For more information about issues, see [Issues, findings, and events](../../detect-investigate-and-respond-to-threats/investigation-and-response/case-concepts/issues-findings-and-events) and [Investigate issues](https://app.gitbook.com/s/ocwvgxtzkvBHMLbPsZuG/detect-investigate-and-respond-to-threats/investigation-and-response/investigate-issues).
+For more information about issues, see [Issues, findings, and events](../../../detect-investigate-and-respond-to-threats/investigation-and-response/case-concepts/issues-findings-and-events) and [Investigate issues](https://app.gitbook.com/s/ocwvgxtzkvBHMLbPsZuG/detect-investigate-and-respond-to-threats/investigation-and-response/investigate-issues).

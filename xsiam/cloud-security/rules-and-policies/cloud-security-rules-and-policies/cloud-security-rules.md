@@ -13,13 +13,13 @@ Cloud includes out-of-the-box cloud security rules and allows you to create cust
 | **Rule type**             | **Description**                                                                                                                                                                                                                                                                             |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Out-of-the-box (OOTB)** | <p>The out-of-the-box rules (or “Default” rules) are rule-based and heuristic-based (using AI and machine learning).</p><p>The out-of-the-box cloud security rules are based on security research, CIS benchmarks, customer requests, and Palo Alto Network’s internal threat research.</p> |
-| **Custom**                | You can create custom cloud security rules and use them in rule-based cloud security policies. See LINK.                                                                                                                                                                                    |
+| **Custom**                | You can create custom cloud security rules and use them in rule-based cloud security policies. See, [Create and manage cloud security rules.](create-and-manage-cloud-security-rules)                                                                                                       |
 
 **Findings**
 
 Findings are proactively gathered from your cloud environment to provide security context and are often non-actionable on their own. For example: “Workload X is attached to a role that grants access to databases”.
 
-For more information about findings, see [Issues, findings, and events](../../detect-investigate-and-respond-to-threats/investigation-and-response/case-concepts/issues-findings-and-events) and [Review findings](../../detect-investigate-and-respond-to-threats/investigation-and-response/review-findings).
+For more information about findings, see [Issues, findings, and events](../../../detect-investigate-and-respond-to-threats/investigation-and-response/case-concepts/issues-findings-and-events) and [Review findings](../../../detect-investigate-and-respond-to-threats/investigation-and-response/review-findings).
 
 {% hint style="info" %}
 ### Note

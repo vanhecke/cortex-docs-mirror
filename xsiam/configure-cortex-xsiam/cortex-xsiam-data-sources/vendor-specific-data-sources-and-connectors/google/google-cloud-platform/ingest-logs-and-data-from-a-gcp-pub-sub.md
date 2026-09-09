@@ -6,6 +6,12 @@ description: Collect GCP Pub/Sub data with Cortex XSIAM.
 
 If you use the Pub/Sub messaging service from Global Cloud Platform (GCP), you can send logs and data from your GCP instance to Cortex XSIAM. Data from GCP is then searchable in Cortex XSIAM to provide additional information and context to your investigations using the GCP Cortex Query Language (XQL) dataset, which is dependent on the type of GCP logs collected. For example queries, refer to the in-app XQL Library. You can configure a Google Cloud Platform collector to receive generic, flow, audit, or Google Cloud DNS logs. When configuring generic logs, you can receive logs in a Raw, JSON, CEF, LEEF, Cisco, or Corelight format.
 
+{% hint style="info" %}
+**Note**
+
+As per design, Cortex XSIAM does not support storage notifications for the Pub/Sub integration.
+{% endhint %}
+
 You can also configure Cortex XSIAM to normalize different GCP logs as part of the enhanced cloud protection, which you can query with XQL Search using the applicable dataset. Cortex XSIAM can also generate Cortex XSIAM issues (Analytics, IOC, BIOC, and Correlation Rules), when relevant, from GCP logs. While Correlation Rules isssues are generated on non-normalized and normalized logs, Analytics, IOC, and BIOC issues are only raised on normalized logs.
 
 Enhanced cloud protection provides the following:

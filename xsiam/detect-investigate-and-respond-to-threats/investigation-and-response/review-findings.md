@@ -34,7 +34,7 @@ Some finding types require the Cortex XSIAM Premium license, or any other XSIAM 
 
 Findings themselves are not issues, but findings that match a specific logic can generate issues. You can also set up your own policies and rules to trigger issues when the following types of findings are recorded:
 
-* Compliance, Malware, or Secrets findings, for more information, see [Cloud workload policies and rules](../../cloud-security/cloud-workload-policies-and-rules).
+* Compliance, Malware, or Secrets findings, for more information, see [Cloud workload policies and rules](../../cloud-security/rules-and-policies/cloud-workload-policies-and-rules).
 * Vulnerability findings, for more information, see [Vulnerability policies](../vulnerability-management/vulnerability-policies).
 
 ### Query findings data

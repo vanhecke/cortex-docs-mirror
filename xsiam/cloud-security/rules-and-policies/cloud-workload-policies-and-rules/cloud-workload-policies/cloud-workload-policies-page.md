@@ -13,7 +13,7 @@ The **Cloud Workload Policies** page allows users to manage policies that define
 
 Keep the following caveats in my mind when working with Policies:
 
-* Instance Administrators are able to view all facets of policies without restrictions, even if Scope Based Access Control (SBAC) roles are in effect. Learn more about [SBAC](../../../onboard-cortex-xsiam/post-deployment/manage-user-roles-and-access-management/manage-user-scope).
+* Instance Administrators are able to view all facets of policies without restrictions, even if Scope Based Access Control (SBAC) roles are in effect. Learn more about [SBAC](../../../../onboard-cortex-xsiam/post-deployment/manage-user-roles-and-access-management/manage-user-scope).
 * If you’ve been assigned a custom role with View/Edit permissions limited by SBAC, you may not be able to view certain policies.
 * You can further narrow your search on the Inventory page by using SBAC to limit the scope of the finding, issue, and case counts.
 {% endhint %}

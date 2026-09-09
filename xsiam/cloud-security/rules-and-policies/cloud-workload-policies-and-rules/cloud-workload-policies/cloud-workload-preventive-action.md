@@ -22,7 +22,7 @@ Ensure that your cluster has the Posture Management (KSPM) Connector deployed wi
 
 You can manage these deployments from the Kubernetes Connectivity Management page.
 
-To access the [Kubernetes Connectivity Management](../../../configure-cortex-xsiam/cortex-xsiam-data-sources/administration-and-troubleshooting), navigate to the following URL in your tenant environment: https://\[TENANT-ADDRESS]/cwp/k8s-management.
+To access the [Kubernetes Connectivity Management](../../../../configure-cortex-xsiam/cortex-xsiam-data-sources/administration-and-troubleshooting), navigate to the following URL in your tenant environment: https://\[TENANT-ADDRESS]/cwp/k8s-management.
 
 ### **Important considerations**
 

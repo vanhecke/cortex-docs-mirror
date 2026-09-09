@@ -41,7 +41,7 @@ To create a graph detection rule, navigate to **Posture Management → Rules & P
   * **Remediation** (optional): Define Remediation instructions.
 * **Compliance Controls** (optional): Select a control from the controls catalog.
 
-4. In the **Condition** page, select the relevant options to build your query. The core logic for an attack path rule is built by selecting a primary asset and attaching Finding or Vulnerability conditions to it. For more information about how to build your graph query, see [Create Graph Search query](../../../reference-and-developer-docs/graph-search/create-graph-search-query). Use **Generate Preview** to see the results of your query.
+4. In the **Condition** page, select the relevant options to build your query. The core logic for an attack path rule is built by selecting a primary asset and attaching Finding or Vulnerability conditions to it. For more information about how to build your graph query, see [Create Graph Search query](../../../../reference-and-developer-docs/graph-search/create-graph-search-query). Use **Generate Preview** to see the results of your query.
 5. In the **Summary** page, review the rule and click **Save**.
 
 After the rule is synchronized and enabled, the Graph Engine evaluates it during the next scheduled cycle. An issue is created for each graph path that matches the rule conditions.

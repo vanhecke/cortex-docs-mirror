@@ -22,5 +22,5 @@ Users need **View/Edit** RBAC permissions (under **Policies** → **Compute Poli
 {% hint style="info" %}
 ### Important
 
-Users with SBAC granular scoping (in addition to the RBAC permissions required for Cloud Workload Policies) can only view Cloud Workload Policies, when their access is scoped to any of the available options: **All assets**, **No assets**, or **Select asset groups**. For more information on granular scoping, see [Manage user scope](../onboard-cortex-xsiam/post-deployment/manage-user-roles-and-access-management/manage-user-scope). When no SBAC restriction is applied, the user’s access is determined solely by their RBAC permissions.
+Users with SBAC granular scoping (in addition to the RBAC permissions required for Cloud Workload Policies) can only view Cloud Workload Policies, when their access is scoped to any of the available options: **All assets**, **No assets**, or **Select asset groups**. For more information on granular scoping, see [Manage user scope](../../onboard-cortex-xsiam/post-deployment/manage-user-roles-and-access-management/manage-user-scope). When no SBAC restriction is applied, the user’s access is determined solely by their RBAC permissions.
 {% endhint %}

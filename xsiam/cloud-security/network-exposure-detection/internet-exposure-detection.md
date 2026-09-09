@@ -68,7 +68,7 @@ The external network scanning service uses the following IP ranges. Exclude thes
 
 ### **Internet exposure rules**
 
-Cortex XSIAM includes out-of-the-box internet exposure rules and allows you to define custom internet exposure rules. See [Create a Network Exposure Rule](../cloud-security-rules-and-policies/create-and-manage-cloud-security-rules/create-a-network-exposure-rule).
+Cortex XSIAM includes out-of-the-box internet exposure rules and allows you to define custom internet exposure rules. See [Create a Network Exposure Rule](../rules-and-policies/cloud-security-rules-and-policies/create-and-manage-cloud-security-rules/create-a-network-exposure-rule).
 
 ### **Supported asset types**
 

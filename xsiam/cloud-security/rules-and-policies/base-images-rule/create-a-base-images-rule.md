@@ -13,7 +13,7 @@ Before creating a rule, ensure:
 
 You can create a **Base Images** rule from either **Rules & Policies** or a **Registry Image Asset Card**.
 
-### How to create a base images rule from **Rules & Policies**:
+### Create a base images rule from **Rules & Policies**:
 
 1. Navigate to **Posture Management** → **Rules & Policies** → **Rules** → **Base Images**.
 2. Select **+ Create Rule**.

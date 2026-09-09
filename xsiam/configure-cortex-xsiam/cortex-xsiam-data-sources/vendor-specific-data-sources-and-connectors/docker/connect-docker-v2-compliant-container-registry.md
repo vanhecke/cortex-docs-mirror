@@ -8,6 +8,10 @@ description: >-
 
 A Docker V2-compliant registry is a registry service that complies with the specifications and requirements outlined in the Docker Registry HTTP API V2. This API defines the protocol for interacting with a Docker registry, a repository where Docker images are stored and from which they can be pulled or pushed.
 
+{% hint style="warning" %}
+**Limitation:** Registry scanning supports container images up to **80 GB** in size. Successful scanning of images larger than 80 GB is not guaranteed.
+{% endhint %}
+
 {% hint style="info" %}
 **Note**: To scan public and private repositories on Docker Hub, use the [Docker Hub](connect-docker-hub-registry) registry connector.
 {% endhint %}

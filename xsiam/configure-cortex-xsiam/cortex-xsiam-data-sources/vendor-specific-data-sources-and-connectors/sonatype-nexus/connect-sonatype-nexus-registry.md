@@ -6,6 +6,10 @@ description: Use Sonatype Nexus registry data in Cortex XSIAM for container imag
 
 Configure Cortex XSIAM to scan your Nexus Registry. This allows Cortex to list all container registries or images, and secure them from vulnerabilities, malware, and secrets.
 
+{% hint style="warning" %}
+**Limitation:** Registry scanning supports container images up to **80 GB** in size. Successful scanning of images larger than 80 GB is not guaranteed.
+{% endhint %}
+
 {% hint style="info" %}
 **License type**: This feature is included with a Cortex XSIAM Premium license. It is also included with any other Cortex XSIAM product that has the Cloud Posture Security or the Cloud Runtime Security add-on.
 {% endhint %}
