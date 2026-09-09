@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-08",
+  "source": "docs",
+  "sha": "d934036cd16ea03b84d86412ffb797e5f4fc8690",
+  "headline": "Registry scanning moves into Cloud Security with six new pages; an 80 GB image limit is documented",
+  "summary_md": "- **Container Registry Scanning** left the data sources book section for **Cloud Security**, gaining a landing page and five new pages covering how scanning works, re-evaluation, supported integrations, third-party connectors and APIs.\n- A new **Rules and Policies** hub now sits above the cloud security, cloud workload and base image rule trees — about 45 pages moved down one level and their relative links were repointed.\n- Every registry connector page now carries the same limitation: container images above **80 GB** are not guaranteed to scan.\n- **Asana** gained a full set of onboarding prerequisites, and **GCP Pub/Sub** now states that storage notifications are not supported.\n- 38 Linux kernel support tables added rows for agent content 2420-41253.",
+  "highlights": [
+    {
+      "title": "Container Registry Scanning moved out of the data sources section into Cloud Security",
+      "detail": "The tree moved from configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources to xsiam/cloud-security, so existing bookmarks break; five pages are new and \"Registry Components\" was deleted outright.",
+      "paths": [
+        "xsiam/cloud-security/container-registry-scanning",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/container-registry-scanning"
+      ]
+    },
+    {
+      "title": "A new Rules and Policies hub reparents about 45 cloud security rule pages",
+      "detail": "Cloud security rules and policies, cloud workload policies and rules, and base image rules all moved one level down under xsiam/cloud-security/rules-and-policies, and every relative link into them was rewritten.",
+      "paths": [
+        "xsiam/cloud-security/rules-and-policies",
+        "xsiam/cloud-security/rules-and-policies/cloud-security-rules-and-policies",
+        "xsiam/cloud-security/rules-and-policies/cloud-workload-policies-and-rules"
+      ]
+    },
+    {
+      "title": "Registry scanning is documented as unreliable above 80 GB per image",
+      "detail": "The same warning was added to the Docker Hub, Docker V2, GitLab, Harbor, JFrog and Sonatype Nexus connector pages and to both new configure pages.",
+      "paths": [
+        "xsiam/cloud-security/container-registry-scanning/configure-registry-scanning-for-cloud-accounts",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/harbor/connect-harbor-registry"
+      ]
+    },
+    {
+      "title": "The Asana connector page gained its onboarding prerequisites",
+      "detail": "SaaS Security scans need an Asana service account token created by a Super Admin, and only the Enterprise+ and Legacy Enterprise plans are supported.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/asana/asana"
+      ]
+    },
+    {
+      "title": "GCP Pub/Sub does not support storage notifications",
+      "detail": "A new note states this is by design for the Pub/Sub integration.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/google/google-cloud-platform/ingest-logs-and-data-from-a-gcp-pub-sub"
+      ]
+    },
+    {
+      "title": "Base image rules now name their licence requirement",
+      "detail": "The page adds a hint that the feature requires Cloud Posture Security, Cloud Runtime Security or Cortex XSIAM Premium.",
+      "paths": [
+        "xsiam/cloud-security/rules-and-policies/base-images-rule"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/cloud-security/container-registry-scanning": "New landing page: included with XSIAM Premium, or with the Cloud Posture Security or Cloud Runtime Security add-on.",
+    "xsiam/cloud-security/container-registry-scanning/configure-registry-scanning-for-cloud-accounts": "Documents Initial Scan Configuration (All, Latest Tags, or up to 90 Days Modified) and WildFire upload of unknown files.",
+    "xsiam/cloud-security/container-registry-scanning/supported-container-registry-integrations": "New page listing AWS ECR, Azure ACR, Google GAR and OCI Artifact Registry plus six third-party connectors.",
+    "xsiam/cloud-security/container-registry-scanning/how-container-registry-scanning-works": "New page describing the three phases: discovery, scanning, and evaluation against current threat intelligence.",
+    "xsiam/cloud-security/container-registry-scanning/how-container-registry-scanning-works/scan-re-evaluation-process": "Re-evaluation covers vulnerability and malware findings only; secrets and compliance findings need a full rescan.",
+    "xsiam/cloud-security/container-registry-scanning/manage-registry-scanning-with-apis": "New page: third-party registries onboard via the registry onboarding API, and no public API triggers an on-demand scan.",
+    "xsiam/cloud-security/container-registry-scanning/configure-registry-scanning-for-third-party-integrations": "New page covering agentless scanning of third-party registries, independent of cloud account onboarding.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-posture-and-runtime-security-data-sources/container-registry-scanning/registry-components": "Deleted with no replacement in the new tree, taking its registry, repository, tag and digest definitions with it.",
+    "xsiam/cloud-security/rules-and-policies": "New hub page separating rules (what to check) from policies (how, where and when they apply).",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/asana/asana": "Adds service account onboarding and advises cutting the default 10-year token lifespan to 90 days.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/google/google-cloud-platform/ingest-logs-and-data-from-a-gcp-pub-sub": "Adds a note that storage notifications are not supported for the Pub/Sub integration.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/docker/connect-docker-hub-registry": "Adds the 80 GB limit and repairs a broken reference to the broker VM registry scanner applet page.",
+    "xsiam/detect-investigate-and-respond-to-threats/investigation-and-response/response-actions/pause-endpoint-protection": "Rewrites the intro to spell out that a paused agent blocks, quarantines and terminates nothing while staying connected.",
+    "xsiam/cloud-security/rules-and-policies/cloud-security-rules-and-policies/cloud-security-rules": "Replaces a \"See LINK.\" placeholder with a real link to Create and manage cloud security rules.",
+    "xsiam/cloud-security/rules-and-policies/base-images-rule": "Adds a licence hint requiring Cloud Posture Security, Cloud Runtime Security or Cortex XSIAM Premium."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
