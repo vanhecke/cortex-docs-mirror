@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-30",
+  "source": "content",
+  "sha": "9f5b52bed1501177eb175cb8f6ebfe85573ff410",
+  "headline": "A quiet day — no content packs changed, and the first content export since 8 September",
+  "summary_md": "- Nothing moved: the snapshot records **no packs changed and no commits** for the 30 September window.\n- Upstream head was `8b3bcee` of 29 September 19:22 +03:00, so nothing landed in `demisto/content` during the day itself.\n- This is the first content snapshot on the mirror since 2026-09-08. No snapshot covers 9–29 September, so a pack that moved in those three weeks is not recorded here.\n- No pack was added, updated or withdrawn, so there is nothing here to act on.",
+  "highlights": [],
+  "items": {},
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
