@@ -6,4 +6,6 @@ This information outlines important considerations regarding the integration of 
 
 It is important to note that while other third-party applications may be compatible with Cortex XDR agents, Palo Alto Networks has not conducted compatibility testing on these products. Customers who intend to install such applications alongside Cortex XDR agents are advised to perform thorough internal testing to ensure there are no conflicts or performance issues.
 
+Cortex XDR agent does not require broad preemptive exceptions for common server roles and enterprise workloads (such as Exchange, Hyper-V, Database Engines.) Exceptions should only be used if specific issues arise.
+
 Should you encounter any problems during the integration process with the following third-party security software, please contact your support team for assistance.

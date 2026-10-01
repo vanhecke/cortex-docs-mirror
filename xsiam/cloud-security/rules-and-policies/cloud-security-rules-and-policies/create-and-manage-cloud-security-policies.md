@@ -14,3 +14,4 @@ You can create custom policies with rules that are tailored to meet your organiz
 {% endhint %}
 
 You can view and manage cloud posture security policies from the **Posture Management > Rules & Policies > Policies > Cloud Security** page. Click on a specific policy to see the rules associated with that policy and its scope.
+

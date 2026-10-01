@@ -4,8 +4,6 @@
 
 The following Linux operating systems support the Cortex XDR agent.
 
-
-
 The Cortex XDR agent protects Linux servers, there are two methods for agent protection; a Kernel module and a user-mode (eBPF-based) approach. To help you choose the best deployment for your environment, see the feature differences between these two modes in the latest Cortex XDR agent Admin guide [Broken link](broken-reference "mention").
 
 For the latest Kernel modules support see [here](https://cortex-docs.paloaltonetworks.com/linux-kernel-versions).
@@ -64,14 +62,7 @@ Cortex XDR agent 9.1 was the last agent release supporting Linux kernels below 3
 
 ### Oracle Linux
 
-<table data-search="false"><thead><tr><th></th><th>Cortex XDR agent</th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td>9.3</td><td>9.2</td><td>9.1-CE</td><td>9.1</td><td>9.0</td><td>8.7-CE</td></tr><tr><td>Oracle 10 x86_64</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td><p>✓</p><p>From content release 1940-22526</p></td></tr><tr><td>Oracle 10 aarch64</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td><p>✓</p><p>From content release 1940-22526</p></td></tr><tr><td>Oracle 9 x86_64 — Release 9.4 and later</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Oracle 9 x86_64 — Release 9.3*</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Oracle 9 aarch64</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Oracle 8</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Oracle 8 aarch64</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Oracle 7</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td><p><br>Oracle Linux 6 (6.7 and above)</p><ul><li>RHCK (kernel 2.6.32)</li><li>UEK Release 2 (kernel 2.6.39)</li><li>UEK Release 3 (kernel 3.8.13)</li></ul></td><td>Async mode only</td><td>Async mode only</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr></tbody></table>
-
-\*Oracle Linux 9.3 x86\_64 notes:
-
-| Kernel | Support        | Minimum agent version |
-| ------ | -------------- | --------------------- |
-| RHCK   | User mode only | 8.2                   |
-| UEK    | Supported      | 7.9-CE                |
+<table data-search="false"><thead><tr><th></th><th>Cortex XDR agent</th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td>9.3</td><td>9.2</td><td>9.1-CE</td><td>9.1</td><td>9.0</td><td>8.7-CE</td></tr><tr><td>Oracle 10 x86_64</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td><p>✓</p><p>From content release 1940-22526</p></td></tr><tr><td>Oracle 10 aarch64</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td><p>✓</p><p>From content release 1940-22526</p></td></tr><tr><td>Oracle 9 x86_64</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Oracle 9 aarch64</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Oracle 8 x86_64</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Oracle 8 aarch64</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Oracle 7</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td><p><br>Oracle Linux 6 (6.7 and above)</p><ul><li>RHCK (kernel 2.6.32)</li><li>UEK Release 2 (kernel 2.6.39)</li><li>UEK Release 3 (kernel 3.8.13)</li></ul></td><td>Async mode only</td><td>Async mode only</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr></tbody></table>
 
 ### Red Hat Enterprise Linux
 

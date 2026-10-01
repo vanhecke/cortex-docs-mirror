@@ -256,8 +256,8 @@ For **IAM access key**:
 
 ### Task 3: Configure ingestion into Cortex XSIAM
 
-1. Navigate to Settings → Data Sources & Integrations.
-2. On the Data Sources & Integrations page, click + Add New, search for **`SentinelOne - Deep Visibility`**, then hover over it and click Add.
+1. Navigate to **Settings** → **Data Sources & Integrations**.
+2. Click **+ Add New**, search for **SentinelOne - Deep Visibility**, then hover over it and click **Add**.
 3. Use the toggle to select either Access Key or Assumed Role.
 4. Set these parameters, depending on your choice in the previous step:
    * For the Access Key option:

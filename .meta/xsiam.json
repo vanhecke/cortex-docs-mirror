@@ -2,7 +2,7 @@
   "book": "xsiam",
   "title": "Cortex XSIAM Documentation",
   "section": "cortex-xsiam",
-  "page_count": 2225,
+  "page_count": 2232,
   "tree": [
     {
       "title": "Learn about Cortex XSIAM",
@@ -1061,6 +1061,12 @@
                 {
                   "title": "How to map authentication events for analytics",
                   "path": "configure-cortex-xsiam/data-management/data-model-rules/how-to-map-authentication-story-events",
+                  "type": "document",
+                  "children": []
+                },
+                {
+                  "title": "How to map network events for analytics",
+                  "path": "configure-cortex-xsiam/data-management/data-model-rules/how-to-map-network-events-for-analytics",
                   "type": "document",
                   "children": []
                 },
@@ -3909,12 +3915,12 @@
                         },
                         {
                           "title": "Microsoft 365 (new)",
-                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft-365-new",
+                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft-365",
                           "type": "document",
                           "children": [
                             {
                               "title": "Create a Microsoft Entra ID",
-                              "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft-365-new/create-a-microsoft-entra-id",
+                              "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft-365/create-a-microsoft-entra-id",
                               "type": "document",
                               "children": []
                             }
@@ -3922,12 +3928,12 @@
                         },
                         {
                           "title": "Microsoft365 (legacy)",
-                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft365-legacy",
+                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft365",
                           "type": "document",
                           "children": [
                             {
                               "title": "Migrate to new Microsoft 365 connector",
-                              "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft365-legacy/migrate-to-new-microsoft-365-connector",
+                              "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft365/migrate-to-new-microsoft-365-connector",
                               "type": "document",
                               "children": []
                             }
@@ -4844,7 +4850,14 @@
                       "title": "Salesforce connector",
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/salesforce/ingest-and-run-salesforce-automation-and-remediation",
                       "type": "document",
-                      "children": []
+                      "children": [
+                        {
+                          "title": "Automation and remediation commands",
+                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/salesforce/ingest-and-run-salesforce-automation-and-remediation/automation-and-remediation-commands",
+                          "type": "document",
+                          "children": []
+                        }
+                      ]
                     }
                   ]
                 },
@@ -5570,7 +5583,7 @@
                   "children": [
                     {
                       "title": "VMware Automation and Collection",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/vmware/vmware-automation-and-collection",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/vmware/vmware-automation-and-colection",
                       "type": "document",
                       "children": []
                     },
@@ -5857,6 +5870,12 @@
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/aws-post-deployment-verification",
                       "type": "document",
                       "children": []
+                    },
+                    {
+                      "title": "Amazon Web Services (AWS) provider permissions",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/amazon-web-services-aws-provider-permissions",
+                      "type": "document",
+                      "children": []
                     }
                   ]
                 },
@@ -5919,6 +5938,12 @@
                           "children": []
                         }
                       ]
+                    },
+                    {
+                      "title": "Microsoft Azure provider permissions",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/microsoft-azure-cloud-onboarding/microsoft-azure-provider-permissions",
+                      "type": "document",
+                      "children": []
                     }
                   ]
                 },
@@ -5937,7 +5962,14 @@
                       "title": "Prerequisites for onboarding GCP",
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/google-cloud-platform-cloud-onboarding/prerequisites-for-onboarding-gcp",
                       "type": "document",
-                      "children": []
+                      "children": [
+                        {
+                          "title": "Required APIs",
+                          "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/google-cloud-platform-cloud-onboarding/prerequisites-for-onboarding-gcp/required-apis",
+                          "type": "document",
+                          "children": []
+                        }
+                      ]
                     },
                     {
                       "title": "How to onboard Google Cloud Platform",
@@ -5966,6 +5998,12 @@
                     {
                       "title": "Monitor GCP resources inside service perimeters",
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/google-cloud-platform-cloud-onboarding/monitor-gcp-resources-inside-service-perimeters",
+                      "type": "document",
+                      "children": []
+                    },
+                    {
+                      "title": "Google Cloud Platform (GCP) provider permissions",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/google-cloud-platform-cloud-onboarding/google-cloud-platform-gcp-provider-permissions",
                       "type": "document",
                       "children": []
                     }
@@ -6003,6 +6041,12 @@
                     {
                       "title": "Deploy the Terraform authentication template in OCI",
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/oracle-cloud-infrastructure-cloud-onboarding/deploy-the-terraform-authentication-template-in-oci",
+                      "type": "document",
+                      "children": []
+                    },
+                    {
+                      "title": "Oracle Cloud Infrastructure (OCI) provider permissions",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/oracle-cloud-infrastructure-cloud-onboarding/oracle-cloud-infrastructure-oci-provider-permissions",
                       "type": "document",
                       "children": []
                     }
@@ -6052,6 +6096,12 @@
                     {
                       "title": "Alibaba Cloud post-deployment verification",
                       "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/alibaba-cloud-cloud-onboarding/alibaba-cloud-post-deployment-verification",
+                      "type": "document",
+                      "children": []
+                    },
+                    {
+                      "title": "Alibaba Cloud provider permissions",
+                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/alibaba-cloud-cloud-onboarding/alibaba-cloud-provider-permissions",
                       "type": "document",
                       "children": []
                     }
@@ -6203,38 +6253,7 @@
                   "title": "Cloud service provider permissions",
                   "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions",
                   "type": "document",
-                  "children": [
-                    {
-                      "title": "Amazon Web Services (AWS) provider permissions",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions/amazon-web-services-aws-provider-permissions",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
-                      "title": "Microsoft Azure provider permissions",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions/microsoft-azure-provider-permissions",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
-                      "title": "Google Cloud Platform (GCP) provider permissions",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions/google-cloud-platform-gcp-provider-permissions",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
-                      "title": "Oracle Cloud Infrastructure (OCI) provider permissions",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions/oracle-cloud-infrastructure-oci-provider-permissions",
-                      "type": "document",
-                      "children": []
-                    },
-                    {
-                      "title": "Alibaba Cloud provider permissions",
-                      "path": "configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions/alibaba-cloud-provider-permissions",
-                      "type": "document",
-                      "children": []
-                    }
-                  ]
+                  "children": []
                 }
               ]
             },
@@ -8114,7 +8133,7 @@
                       "children": []
                     },
                     {
-                      "title": "Use issue timer field commands  in the CLI",
+                      "title": "Use issue timer field commands in the CLI",
                       "path": "configure-cortex-xsiam/customize-cases-and-issues/customize-issue-fields-and-layouts/issue-fields/user-issue-timer-field-commands-manually-in-the-cli",
                       "type": "document",
                       "children": []
@@ -8831,23 +8850,23 @@
         },
         {
           "title": "Endpoint DLP",
-          "path": "protect-your-endpoints/endpoint-dlp",
+          "path": "protect-your-endpoints/endpoint-dlp-1",
           "type": "document",
           "children": [
             {
               "title": "Cortex Data Loss Prevention (DLP) module overview",
-              "path": "protect-your-endpoints/endpoint-dlp/cortex-data-loss-prevention-dlp-module-overview",
+              "path": "protect-your-endpoints/endpoint-dlp-1/cortex-data-loss-prevention-dlp-module-overview",
               "type": "document",
               "children": [
                 {
                   "title": "Archive file classification",
-                  "path": "protect-your-endpoints/endpoint-dlp/cortex-data-loss-prevention-dlp-module-overview/archive-file-classification",
+                  "path": "protect-your-endpoints/endpoint-dlp-1/cortex-data-loss-prevention-dlp-module-overview/archive-file-classification",
                   "type": "document",
                   "children": []
                 },
                 {
                   "title": "True-file type detection",
-                  "path": "protect-your-endpoints/endpoint-dlp/cortex-data-loss-prevention-dlp-module-overview/true-file-type-detection",
+                  "path": "protect-your-endpoints/endpoint-dlp-1/cortex-data-loss-prevention-dlp-module-overview/true-file-type-detection",
                   "type": "document",
                   "children": []
                 }
@@ -8855,31 +8874,31 @@
             },
             {
               "title": "Personas workflow for DLP",
-              "path": "protect-your-endpoints/endpoint-dlp/personas-workflow-for-dlp",
+              "path": "protect-your-endpoints/endpoint-dlp-1/personas-workflow-for-dlp",
               "type": "document",
               "children": []
             },
             {
               "title": "Best Practices",
-              "path": "protect-your-endpoints/endpoint-dlp/best-practices",
+              "path": "protect-your-endpoints/endpoint-dlp-1/best-practices",
               "type": "document",
               "children": []
             },
             {
               "title": "Configure DLP end-to-end",
-              "path": "protect-your-endpoints/endpoint-dlp/configure-dlp-end-to-end",
+              "path": "protect-your-endpoints/endpoint-dlp-1/configure-dlp-end-to-end",
               "type": "document",
               "children": []
             },
             {
               "title": "DLP status in all endpoints",
-              "path": "protect-your-endpoints/endpoint-dlp/dlp-status-in-all-endpoints",
+              "path": "protect-your-endpoints/endpoint-dlp-1/dlp-status-in-all-endpoints",
               "type": "document",
               "children": []
             },
             {
               "title": "Cortex DLP threat detection and issues",
-              "path": "protect-your-endpoints/endpoint-dlp/cortex-dlp-threat-detection-and-issues",
+              "path": "protect-your-endpoints/endpoint-dlp-1/cortex-dlp-threat-detection-and-issues",
               "type": "document",
               "children": []
             }
@@ -10304,6 +10323,19 @@
               "path": "detect-investigate-and-respond-to-threats/agentic-assistant-chat/chat-with-the-agentic-assistant-from-slack",
               "type": "document",
               "children": []
+            },
+            {
+              "title": "Streamline troubleshooting and support with the Help Center agent",
+              "path": "detect-investigate-and-respond-to-threats/agentic-assistant-chat/streamline-troubleshooting-and-support-with-the-help-center-agent",
+              "type": "document",
+              "children": [
+                {
+                  "title": "Help Center agent actions",
+                  "path": "detect-investigate-and-respond-to-threats/agentic-assistant-chat/streamline-troubleshooting-and-support-with-the-help-center-agent/help-center-agent-actions",
+                  "type": "document",
+                  "children": []
+                }
+              ]
             },
             {
               "title": "Create and run XQL queries with Agentic Assistant chat",
@@ -11739,12 +11771,6 @@
                   "children": []
                 },
                 {
-                  "title": "Controls catalog",
-                  "path": "cloud-security/monitor-and-track-compliance-adherence/choose-compliance-standards-from-the-compliance-catalog/controls-catalog",
-                  "type": "document",
-                  "children": []
-                },
-                {
                   "title": "Use a built-in or custom standard",
                   "path": "cloud-security/monitor-and-track-compliance-adherence/choose-compliance-standards-from-the-compliance-catalog/use-a-built-in-or-custom-standard",
                   "type": "document",
@@ -11768,14 +11794,7 @@
               "title": "Use an assessment profile to run compliance checks on your assets",
               "path": "cloud-security/monitor-and-track-compliance-adherence/use-an-assessment-profile-to-run-compliance-checks-on-your-assets",
               "type": "document",
-              "children": [
-                {
-                  "title": "Configuring assessments for custom compliance standards based on custom cloud security rules",
-                  "path": "cloud-security/monitor-and-track-compliance-adherence/use-an-assessment-profile-to-run-compliance-checks-on-your-assets/configuring-assessments-for-custom-compliance-standards-based-on-custom-cloud-security-rules",
-                  "type": "document",
-                  "children": []
-                }
-              ]
+              "children": []
             },
             {
               "title": "View and manage compliance assessments and reports",
@@ -11783,13 +11802,13 @@
               "type": "document",
               "children": [
                 {
-                  "title": "Review assessments",
+                  "title": "Review compliance assessments",
                   "path": "cloud-security/monitor-and-track-compliance-adherence/view-and-manage-compliance-assessments-and-reports/assessments",
                   "type": "document",
                   "children": []
                 },
                 {
-                  "title": "Review reports",
+                  "title": "Review compliance reports",
                   "path": "cloud-security/monitor-and-track-compliance-adherence/view-and-manage-compliance-assessments-and-reports/reports",
                   "type": "document",
                   "children": []
@@ -11841,7 +11860,7 @@
               "children": []
             },
             {
-              "title": "How to report a false positive in  Cloud Data Classification",
+              "title": "How to report a false positive in Cloud Data Classification",
               "path": "cloud-security/cortex-cloud-data-classification/how-to-report-a-false-positive-in-cortex-cloud-data-classification",
               "type": "document",
               "children": []
@@ -13122,6 +13141,12 @@
               "children": []
             },
             {
+              "title": "Exit codes and error handling",
+              "path": "reference-and-developer-docs/about-cortex-cli/exit-codes-and-error-handling",
+              "type": "document",
+              "children": []
+            },
+            {
               "title": "Cortex CLI common command line reference guide",
               "path": "reference-and-developer-docs/about-cortex-cli/cortex-cli-common-command-line-reference-guide",
               "type": "document",
@@ -13993,7 +14018,27 @@
               "title": "XDM fields for mapping authentication events",
               "path": "reference-and-developer-docs/reference/xdm-fields-for-mapping-authentication-events",
               "type": "document",
-              "children": []
+              "children": [
+                {
+                  "title": "Authentication mapping: Advanced classification and deep dives",
+                  "path": "reference-and-developer-docs/reference/xdm-fields-for-mapping-authentication-events/authentication-mapping-advanced-classification-and-deep-dives",
+                  "type": "document",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "title": "XDM fields for mapping network events",
+              "path": "reference-and-developer-docs/reference/xdm-fields-for-mapping-network-events",
+              "type": "document",
+              "children": [
+                {
+                  "title": "Advanced network mapping: deep dives",
+                  "path": "reference-and-developer-docs/reference/xdm-fields-for-mapping-network-events/advanced-network-mapping-deep-dives",
+                  "type": "document",
+                  "children": []
+                }
+              ]
             },
             {
               "title": "Cortex Network Scanner OSS",

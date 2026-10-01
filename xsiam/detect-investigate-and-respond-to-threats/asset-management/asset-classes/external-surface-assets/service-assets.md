@@ -8,7 +8,7 @@ A service can be any internet-facing device or software that communicates on a d
 
 Services include classifications which are fingerprint-based identifiers of software, technologies, and behaviors observed on the service. Classifications can be either active or inactive based on the most recent observations of a service. In addition to classifications, services will also include banner, response, and header information from Cortex XSIAM data collection.
 
-**Services field descriptions**
+### **Services field descriptions**
 
 The **Services** table includes the fields.
 

@@ -39,7 +39,7 @@ Only one Cribl data collector instance can be configured in Cortex XSIAM. All Cr
 {% endhint %}
 
 1. Select **Settings** → **Data Sources & Integrations**.
-2. Search for **Cribl**, select the integration, and click **Add Instance**.
+2. Click **+ Add New**, search for **Cribl**, select the integration, and click **Add**.
 3. In the **Name** field, enter a descriptive name, and click **Save & generate token**.
 4. Copy the Authorization Token (by clicking the copy icon) and save it in a secure location immediately. You cannot access this token again once the dialog is closed.
 5. On the **Data Sources & Integrations** page, click the link icon for your Cribl instance to **Copy API URL**, and save it for future use.

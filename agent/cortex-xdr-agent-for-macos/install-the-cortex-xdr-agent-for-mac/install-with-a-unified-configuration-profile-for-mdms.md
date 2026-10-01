@@ -10,7 +10,7 @@ You install the Cortex XDR agent by deploying an installation package on the end
 
 For a seamless installation that does not require end user interaction, Palo Alto Networks provides a unified configuration profile that you can upload to any third-party deployment software of your choice. This unified configuration profile is compatible with all supported macOS versions and all supported Cortex XDR agent versions. If you prefer to manually create the configuration profile in JAMF, refer to [Install the Cortex XDR Agent Using JAMF](install-the-cortex-xdr-agent-using-jamf).
 
-These instructions are supplied by Palo Alto Networks to assist our customers. Support with third party vendor tools (with the exception of JAMF) is out of the scope of Palo Alto Networks.
+These instructions are supplied by Palo Alto Networks to assist our customers. Support with third-party vendor tools (with the exception of JAMF) is out of the scope of Palo Alto Networks.
 
 Unified configuration profile payloads
 

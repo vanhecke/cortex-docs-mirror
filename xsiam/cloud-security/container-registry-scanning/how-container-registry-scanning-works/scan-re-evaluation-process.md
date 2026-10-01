@@ -17,4 +17,3 @@ Scan re-evaluation occurs in the following scenarios:
 Scan re-evaluation applies to **vulnerability and malware findings**. Secrets and compliance findings are determined during the image scan and are updated only when the image is rescanned, such as after a scanner engine update.
 
 Scan re-evaluation reduces resource-intensive rescans while keeping security assessments current and helping you identify and mitigate emerging risks in images stored in your registries.
-

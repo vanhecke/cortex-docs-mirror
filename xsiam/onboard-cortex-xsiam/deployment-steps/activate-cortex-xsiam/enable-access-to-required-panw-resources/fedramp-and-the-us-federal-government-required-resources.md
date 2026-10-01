@@ -12,12 +12,7 @@ Configure firewall access for FedRAMP and US federal government Cortex XSIAM dep
 
 All ports are 443 unless otherwise specified.
 
-| Source                   | Compliance Level                     | IP Addresses                         |
-| ------------------------ | ------------------------------------ | ------------------------------------ |
-| Egress                   | FedRAMP Moderate                     | 34.122.220.113, 35.223.83.172        |
-| FedRAMP High             | 34.136.155.252, 34.133.46.50         | ​                                    |
-| Outbound IPs for Engines | FedRAMP Moderate                     | 34.123.127.174:443, 34.71.135.18:443 |
-| FedRAMP High             | 34.123.153.175:443, 35.223.253.2:443 | ​                                    |
+<table><thead><tr><th>Source</th><th>Compliance Level</th><th>IP Addresses</th></tr></thead><tbody><tr><td rowspan="2">Egress</td><td>FedRAMP Moderate</td><td>34.122.220.113, 35.223.83.172</td></tr><tr><td>FedRAMP High</td><td>​34.136.155.252,<br>34.133.46.50</td></tr><tr><td rowspan="2">Outbound IPs for Engines</td><td>FedRAMP Moderate</td><td>34.123.127.174:443, 34.71.135.18:443</td></tr><tr><td>FedRAMP High</td><td>​34.123.153.175:443,<br>35.223.253.2:443</td></tr></tbody></table>
 
 ### Core Cortex XSIAM communication resources
 

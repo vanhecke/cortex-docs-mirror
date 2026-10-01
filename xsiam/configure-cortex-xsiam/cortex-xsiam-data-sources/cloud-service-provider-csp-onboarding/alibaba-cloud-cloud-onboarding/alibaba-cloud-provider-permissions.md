@@ -6,7 +6,7 @@ description: >-
 
 # Alibaba Cloud provider permissions
 
-When onboarding Alibaba Cloud, Cortex XSIAM requests only the permissions needed for the security capabilities you enable, following the principle of least privilege. Alibaba Cloud onboarding is performed at the account scope using a single Terraform connector template that provisions a RAM role, a custom RAM policy, a role-policy attachment, and trusts an existing OIDC Identity Provider for Workload Identity Federation (WIF).
+When onboarding Alibaba Cloud using the onboarding wizard, Cortex XSIAM requests only the permissions needed for the security capabilities you enable, following the principle of least privilege. Alibaba Cloud onboarding is performed at the account scope using a single Terraform connector template that provisions a RAM role, a custom RAM policy, a role-policy attachment, and trusts an existing OIDC Identity Provider for Workload Identity Federation (WIF).
 
 Permissions fall into the following categories:
 
@@ -29,7 +29,7 @@ Base and Discovery Engine permissions represent the foundational, mandatory role
 
 This custom Alibaba Cloud RAM role contains the read-only permissions needed for Cortex XSIAM to inventory Alibaba Cloud resources and analyze RAM users, roles, groups, and policies. The role is assumed by Cortex XSIAM through Workload Identity Federation (WIF) with the customer’s existing OIDC Identity Provider. The attached policy grants no create, modify, or delete permissions on customer resources.
 
-| Property          | Value                                                                                                                                                                                          |
+|                   |                                                                                                                                                                                                |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Created when      | Account onboarding only.                                                                                                                                                                       |
 | Assigned to       | Cortex XSIAM (federated principal) via the customer-owned OIDC Identity Provider.                                                                                                              |

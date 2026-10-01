@@ -29,7 +29,7 @@ To receive authentication logs and data from PingOne for Enterprise, you must fi
 
           In the example above, the subscription ID is `***-0912348765-4567-98012***`.
 2. Navigate to **Settings → Data Sources & Integrations**.
-3. On the **Data Sources & Integrations** page, click **+ Add New**, search for **PingOne**, then hover over and click **Add**.
+3. Click **+ Add New**, search for **PingOne**, then hover over and click **Add**.
 4. Connect Cortex XSIAM to your PingOne for Enterprise authentication service.
    1. Enter your PingOne **ACCOUNT ID**.
    2. Enter your PingOne **SUBSCRIPTION ID**.

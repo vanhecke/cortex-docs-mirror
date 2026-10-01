@@ -53,7 +53,7 @@ For more information, see the [Okta Documentation](https://developer.okta.com/do
 #### Step 2: Configure the Okta Collector in Cortex XSIAM
 
 1. Select **Settings → Data Sources & Integrations**.
-2. On the **Data Sources & Integrations** page, click **+ Add New**, search for **Okta**, then hover over it and click **Add**.
+2. Click **+ Add New**, search for **Okta**, then hover over it and click **Add**.
 3. Integrate the Okta authentication service with Cortex XSIAM:
    1. Enter the **Okta Domain (Org URL)** and **Token** obtained in Step 1.
    2. **Collect Logs**: Select this option to ingest activity logs.

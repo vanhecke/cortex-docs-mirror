@@ -6,7 +6,7 @@ description: Learn how to set up users and roles in Cortex XSIAM.
 
 Cortex XSIAM uses both Role-Based Access Control (RBAC) and Scope-Based Access Control (SBAC) to manage roles with specific permissions for controlling user access.
 
-RBAC helps manage access to Cortex XSIAM components and Cortex Query Language (XQL) datasets, so that users, based on their roles, are granted minimal access required to accomplish their tasks.
+RBAC helps manage access to Cortex XSIAM components and Cortex Query Language (XQL) datasets, so that users, based on their roles, are granted the minimal access required to accomplish their tasks.
 
 SBAC refines the RBAC permissions by granting access only to the relevant data that the user requires for their designated role. Users with **Access Management** permission can apply scopes to limit the data and content that users can be granted access to in Cortex XSIAM, which are divided into different scoping areas. The scoping areas include Assets, Cases and Issues, Endpoints, and Datasets Rows, which can be applied as relevant to the enforcement area, entity, or dataset. For more information on user scopes, see [Manage user scope](../../post-deployment/manage-user-roles-and-access-management#UUID-071cdbb6-6c6a-6afe-3a67-1fa79991a0a8).
 

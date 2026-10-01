@@ -14,7 +14,7 @@ Requires the Attack Surface Management (ASM) add-on.
 
 The following sections provide information about each External Surface asset type. For information about external IP address ranges, see Network configuration.
 
-**External asset categories**
+### **External asset categories**
 
 There are four categories of external assets:
 

@@ -21,8 +21,8 @@ Complete the following task before you begin configuring Cortex XSIAM to receive
 
 Configure Cortex XSIAM to receive data from ServiceNow CMDB:
 
-1. Navigate to Settings → Data Sources & Integrations.
-2. On the Data Sources & Integrations page, click + Add New, search for ServiceNow CMDB, then hover over it and click Add.
+1. Navigate to **Settings** → **Data Sources & Integrations**.
+2. Click **+ Add New**, search for **ServiceNow CMDB**, then hover over it and click **Add**.
 3. Set the following parameters.
    * Domain: Specify your ServiceNow CMDB domain URL.
    * User Name: Specify the username for your ServiceNow CMDB user designated in Cortex XSIAM.

@@ -11,18 +11,20 @@ To activate a tenant, you need to log in to Cortex Gateway, a centralized portal
 {% hint style="warning" %}
 ### Prerequisite
 
+You must have the following:
+
 * The Cortex XSIAM activation email.
 *   A Customer Support Portal (CSP) account.
 
-    You need to set up your CSP account. For more information, see [How to Create Your CSP User Account](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClNVCA0).
+    Set up your CSP account. For more information, see [How to Create Your CSP User Account](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClNVCA0).
 
     When you create a CSP account, you can set up two-factor authentication (2FA) to log into the CSP by using an Email, Okta Verify, or Google Authenticator (non-FedRAMP accounts). For more information, see [How to Enable a Third Party IdP](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA14u000000sZ8mCAE).
-*   You have one of the following roles assigned:
+*   You have the following roles assigned in the CSP:
 
-    | Role        | Description                                                                                                                                                                                                                                                                                                                                                                                                                               |
-    | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | CSP role    | The Super User role is assigned to your CSP account. The user who creates the CSP account is granted the Super User role.                                                                                                                                                                                                                                                                                                                 |
-    | Cortex role | <p>You must have the Account Admin role.</p><p>If you are the first user to access Cortex Gateway with the CSP Super User role, you are automatically granted Account Admin permissions for the Cortex Gateway. You can also add Account Admin users as required.</p><p>In the Cortex Gateway, you can activate new tenants, access existing tenants, and create and manage role-based access control (RBAC) for all of your tenants.</p> |
+    | Role        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+    | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | Super User  | <p>Your Customer Support Portal account must have the Super User role. The user who creates the account receives this role.<br><br>Use this role to sign in to Cortex Gateway for the first time. You then receive the initial Account Admin permissions required to activate the Cortex XSIAM tenant.<br><br>In Cortex Gateway, you can activate new tenants, access existing tenants, and create and manage role-based access control (RBAC) for all your tenants.</p>                                                                    |
+    | Cortex User | <p>You must be assigned the <strong>Cortex User</strong> role within the Customer Support Portal to ensure that user synchronization completes successfully during and after the activation process. Without this role assigned, activation fails.</p><div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>If adding users through the CSP, assign them the Cortex User role; otherwise, they won't appear in the Cortex Gateway or tenant user lists and will be blocked from using the tenant.</p></div> |
 {% endhint %}
 
 How to activate Cortex XSIAM

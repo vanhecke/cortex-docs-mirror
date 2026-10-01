@@ -4,6 +4,12 @@ description: Configure Federated Search connections for external data in Cortex 
 
 # Federated Search configuration
 
+{% hint style="success" %}
+**License type**
+
+Federated Search is not enabled by default. To enable it in your tenant, contact your Customer Support Team.
+{% endhint %}
+
 Before you run federated searches, you must first create an external dataset to run the query.
 
 To define a new external dataset, go to Settings → Configurations → Data Management → Dataset management → External Datasets and click Add External Dataset. You can also access the wizard through the Query builder page Investigation & Response → Search → Query Builder → Federated Search.

@@ -6,13 +6,13 @@ description: >-
 
 # Amazon Web Services (AWS) provider permissions
 
-When onboarding Amazon Web Services (AWS), Cortex XSIAM generates a CloudFormation authentication template that provisions the IAM roles and policies it needs to monitor your cloud environment. This page enumerates every permission that template requests, grouped by security capability.
+When onboarding Amazon Web Services (AWS) using the onboarding wizard, Cortex XSIAM generates a CloudFormation authentication template that provisions the IAM roles and policies it needs to monitor your cloud environment. This page enumerates every permission that template requests, grouped by security capability.
 
 {% hint style="info" %}
 **Note**: All conditional capabilities documented below require the mandatory Base and Discovery Engine permissions to be deployed alongside them. Base provides the foundational `CortexPlatformRole` and AWS-managed read-only baseline. Discovery Engine extends that baseline with the asset-inventory coverage that every other capability assumes.
 {% endhint %}
 
-The following reference tables are organized by security module, role, and then the list of the CSP permissions being requested as well as their purpose:
+The following reference tables are organized by capability, role, and then the list of the CSP permissions being requested as well as their purpose:
 
 * [Base](#base)
 * [Discovery Engine](#discovery-engine)
@@ -24,13 +24,13 @@ The following reference tables are organized by security module, role, and then 
 * [Kubernetes Security](#kubernetes-security)
 * [Automations](#automations)
 
-### Base
+## Base
 
 Base (and Discovery) permissions represent the foundational, mandatory role assignments required to successfully onboard your AWS environment to Cortex.
 
 Deployed at every onboarding scope. Provides core asset discovery and CSPM scanning.
 
-**Cortex Platform Role: `CortexPlatformRole`**
+### Cortex Platform Role: `CortexPlatformRole`
 
 The primary customer-side IAM Role that Cortex assumes to perform read-only asset discovery and CSPM scanning. The role itself carries no inline statements at the Base level; it is backed entirely by AWS-managed read-only policies. Capability policies (Discovery, ADS, DSPM, Kubernetes, Automation) attach additional permissions to this same role.
 
@@ -53,7 +53,7 @@ The primary customer-side IAM Role that Cortex assumes to perform read-only asse
 | arn:aws:iam::aws:policy/ReadOnlyAccess                 | Grant comprehensive read-only access to AWS services and resources, allowing Cortex to list and view configurations, metadata, and logs across the account. Cortex uses this policy to inventory and assess the security posture of all AWS resources without making any modifications. This read-only access ensures complete visibility for security monitoring while maintaining a zero-impact footprint on customer workloads. (AWS-managed policy) |
 | arn:aws:iam::aws:policy/SecurityAudit                  | Grant access to read security configuration metadata, allowing inspection of IAM configurations, security policies, CloudTrail logs, and other security-relevant settings. Cortex uses this AWS-managed policy to assess security configurations for compliance and posture management. This policy provides security-focused read access without the ability to modify any configurations. (AWS-managed policy)                                        |
 
-**Onboarding Lambda Execution Role: `CortexTemplateCustomLambdaExecutionRole`**
+### Onboarding Lambda Execution Role: `CortexTemplateCustomLambdaExecutionRole`
 
 Used only during stack creation, a short-lived service role by the onboarding registration Lambda.
 
@@ -66,11 +66,11 @@ Used only during stack creation, a short-lived service role by the onboarding re
 | Lifecycle            | Short-lived; used only during stack creation                                                                                                                                                                                                                                                                                                                                                                                           |
 | Assignment scope     | Deployment account only                                                                                                                                                                                                                                                                                                                                                                                                                |
 
-### Discovery Engine
+## Discovery Engine
 
 The Discovery Engine permissions (and Base permissions) form the core of Cortex's visibility and asset inventory capabilities. These permissions provide the foundational access necessary for continuous asset discovery and Cloud Security Posture Management (CSPM) scanning across your cloud estate.
 
-**Discovery Policy: `Cortex-DISCOVERY-Policy`**
+### Discovery Policy: `Cortex-DISCOVERY-Policy`
 
 **Attached to `CortexPlatformRole`**
 
@@ -199,11 +199,11 @@ A customer-managed policy that extends the Base capability's asset discovery cov
 | xray:GetSamplingRules                                          | Retrieve X-Ray sampling rules. Cortex uses this permission to assess application tracing sampling configurations for observability evaluation.                                                                                                                                                                               |
 | xray:ListTagsForResource                                       | List tags for X-Ray resources. Cortex uses this permission to correlate application tracing resources with organizational tagging policies.                                                                                                                                                                                  |
 
-### Log Collection
+## Log Collection
 
 Conditional (opt-in). Routes AWS CloudTrail logs to a Cortex-owned pipeline, read by Cortex via OIDC federation.
 
-**CloudTrail Read Role: `cortex-logs-ingestion-access`**
+### CloudTrail Read Role: `cortex-logs-ingestion-access`
 
 The customer-side IAM Role that Cortex assumes to read CloudTrail log objects.
 
@@ -216,7 +216,7 @@ The attached `CloudTrailReadAccessPolicy` is scoped exclusively to Cortex-create
 | Attached policy  | `CloudTrailReadAccessPolicy`                                                                                                                                                             |
 | Assignment scope | Deployment account only                                                                                                                                                                  |
 
-**CloudTrail Read Policy: `CloudTrailReadAccessPolicy`**
+### CloudTrail Read Policy: `CloudTrailReadAccessPolicy`
 
 **Attached to `cortex-logs-ingestion-access`.**
 
@@ -241,7 +241,7 @@ A customer-managed policy that grants Cortex read access to the CloudTrail logs 
 | sqs:GetQueueAttributes      | Check the pending notification count to support backlog tracking and queue health monitoring. This read-only permission is scoped to the Cortex-created queue only.                                                              | The Cortex-created notification queue only: `arn:aws:sqs:<region>:<account-id>:cortex-ct-logs-queue-<account-id>-<tenant-id>` |
 | sqs:ReceiveMessage          | Read "new log file is ready" notifications from the Cortex-created queue to trigger log ingestion. This permission is scoped to the Cortex-created queue only.                                                                   | The Cortex-created notification queue only: `arn:aws:sqs:<region>:<account-id>:cortex-ct-logs-queue-<account-id>-<tenant-id>` |
 
-**Stack Lifecycle Role: `EmptyBucketLambdaExecutionRole`**
+### Stack Lifecycle Role: `EmptyBucketLambdaExecutionRole`
 
 An in-account IAM role used exclusively by an AWS Lambda custom resource that the Cortex onboarding CloudFormation template provisions to support stack lifecycle operations. Specifically, it empties a Cortex-provisioned S3 bucket of all objects, object versions, and delete markers so that CloudFormation can delete the bucket during stack teardown.
 
@@ -253,7 +253,7 @@ An in-account IAM role used exclusively by an AWS Lambda custom resource that th
 | Lifecycle    | Bound 1:1 to the parent CloudFormation stack. The role is removed when the stack is deleted.                                                                                                                                                                              |
 | Trust        | `sts:AssumeRole` from the AWS Lambda service principal (`lambda.amazonaws.com`) only. No Cortex principal is listed in the trust policy and no `sts:ExternalId` condition is present, because no external party, including Cortex, is ever permitted to assume this role. |
 
-**Bucket Cleanup Policy: `EmptyS3BucketPolicy`**
+### Bucket Cleanup Policy: `EmptyS3BucketPolicy`
 
 **Attached to `EmptyBucketLambdaExecutionRole`**
 
@@ -274,11 +274,11 @@ A customer-managed policy that grants the cleanup Lambda the S3 list/delete perm
 | s3:DeleteObjectVersion | Delete a specific, version-controlled instance of an object from an S3 bucket. Cortex uses this permission to permanently remove older or duplicated versions of temporary scan artifacts, preventing unnecessary storage costs and ensuring the S3 bucket is completely emptied upon stack deletion. | The Cortex-created CloudTrail logs bucket only: `arn:aws:s3:::cortex-ct-logs-<account-id>-<tenant-id>` and `arn:aws:s3:::cortex-ct-logs-<account-id>-<tenant-id>/*` |
 | s3:ListBucket          | List the contents of the CloudTrail logs S3 bucket. Cortex uses this to discover available log files for ingestion, enabling continuous and complete security monitoring of AWS environments.                                                                                                         | The Cortex-created CloudTrail logs bucket only: `arn:aws:s3:::cortex-ct-logs-<account-id>-<tenant-id>` and `arn:aws:s3:::cortex-ct-logs-<account-id>-<tenant-id>/*` |
 
-### Agentless Disk Scanning (ADS)
+## Agentless Disk Scanning (ADS)
 
 A customer-managed policy that ADS attaches to the Base capability's `CortexPlatformRole`. ADS does not create a separate IAM Role.
 
-**ADS Policy: `Cortex-ADS-Policy`**
+### ADS Policy: `Cortex-ADS-Policy`
 
 **Attached to `CortexPlatformRole`**
 
@@ -309,11 +309,11 @@ A customer-managed policy that ADS attaches to the Base capability's `CortexPlat
 | kms:DescribeKey                     | Read KMS key metadata such as algorithm, state, and key usage on Cortex-managed KMS keys in the Cortex ADS scanning account. AWS requires this metadata before any cryptographic operation against those keys can be performed during agentless disk scanning. Restricted to keys in the Cortex ADS KMS account, and only when the call is made via the EC2 service.     | `kms:*:${KmsAccountADS}:key/*` where `StringLike kms:ViaService = ec2.*.amazonaws.com`                                                                                                                                                                                                                                                                                                         |
 | kms:GenerateDataKeyWithoutPlaintext | Obtain an encrypted data key from the Cortex-managed ADS KMS key for envelope encryption of EBS snapshots being re-encrypted into the Cortex scanning account during cross-account agentless disk scanning. The plaintext form of the data key is never returned to Cortex. Restricted to keys in the Cortex ADS KMS account, and only when invoked via the EC2 service. | `kms:*:${KmsAccountADS}:key/*` where `StringLike kms:ViaService = ec2.*.amazonaws.com`                                                                                                                                                                                                                                                                                                         |
 
-### Registry Scan
+## Registry Scan
 
 Conditional (opt-in). Lets Cortex pull customer container images from Amazon ECR for security scanning.
 
-**Cortex Scanner Role: `CortexPlatformScannerRole`**
+### Cortex Scanner Role: `CortexPlatformScannerRole`
 
 A second customer-side IAM Role (distinct from `CortexPlatformRole`) created whenever any of Registry Scanning, DSPM, or Serverless Scanning is enabled.
 
@@ -326,7 +326,7 @@ A second customer-side IAM Role (distinct from `CortexPlatformRole`) created whe
 | Cortex-managed policies | Conditional by capability:Registry Scan: `ECRAccessPolicy`Serverless Scan: `LAMBDAAccessPolicy`DSPM: `Cortex-DSPM-Scanner-Policy` |
 | Assignment scope        | Deployment account; at Account Group / Organization scope. Also every member account under the target organizational unit.        |
 
-**Registry Scanning Policy: `ECRAccessPolicy`**
+### Registry Scanning Policy: `ECRAccessPolicy`
 
 **Attached to `CortexPlatformScannerRole`**
 
@@ -346,11 +346,11 @@ A customer-managed policy that adds ECR pull access to the shared scanner role.
 | ecr:GetDownloadUrlForLayer | Fetches the download URL for the individual layers that make up a container image in Amazon ECR. Cortex uses this as part of the image pull process to efficiently download each layer for vulnerability scanning and security analysis. This is a read-only operation that does not modify any registry content.                          |
 | ecr:GetAuthorizationToken  | Creates a temporary login token for authenticating with Amazon ECR. Cortex requires this token to securely authenticate before pulling container images for vulnerability scanning. The token is short-lived and used solely for read-only image retrieval operations during registry scanning.                                            |
 
-### Serverless Scan
+## Serverless Scan
 
 Conditional (opt-in). Lets Cortex read AWS Lambda function code, configuration, and layer versions for security scanning. Read-only: no invoke, update, or delete.
 
-**Serverless Scanning Policy: `LAMBDAAccessPolicy`**
+### Serverless Scanning Policy: `LAMBDAAccessPolicy`
 
 A customer-managed policy that Serverless Scanning attaches to the shared `CortexPlatformScannerRole`.
 
@@ -368,11 +368,11 @@ A customer-managed policy that Serverless Scanning attaches to the shared `Corte
 | lambda:GetFunctionConfiguration | Retrieve a Lambda function's configuration metadata (runtime, handler, environment variables, layers, execution role, VPC settings, and timeout) without returning the code download URL. Cortex uses these settings to determine how to interpret the function (runtime/handler), which layers must also be fetched, and to flag risky configuration such as plaintext secrets in environment variables. |
 | lambda:GetLayerVersion          | Retrieve a specific version of a Lambda layer, including a presigned URL to download the layer's content. Cortex uses this to download every layer referenced by a scanned function so the layer code is included in the same vulnerability, malware, and secrets analysis applied to the function itself.                                                                                                |
 
-### Data Security Posture Management (DSPM)
+## Data Security Posture Management (DSPM)
 
 Conditional (opt-in). Discovers, classifies, and assesses customer data assets across S3, RDS, DynamoDB, Redshift, and EBS. Unlike CSPM, DSPM reads actual customer data content (object samples and database rows) for sensitive-data classification.
 
-**DSPM Policy: `Cortex-DSPM-Policy`**
+### DSPM Policy: `Cortex-DSPM-Policy`
 
 A customer-managed policy that DSPM attaches to the Base capability's `CortexPlatformRole`. Grants the lifecycle and read permissions DSPM needs to discover sensitive data, orchestrate snapshot exports, and prepare data for the scanner role to actually read.
 
@@ -421,7 +421,7 @@ A customer-managed policy that DSPM attaches to the Base capability's `CortexPla
 | s3:ListBucket                            | List the contents of an S3 bucket. Cortex uses this to enumerate objects in customer S3 buckets and identify sensitive-data scan targets.                                                                       | `s3:::cortex-artifact*`, `s3:::cortex-artifact*/*` (no condition)`s3:::*` (no condition)                 |
 | s3:PutObject                             | Upload objects to an S3 bucket. Cortex uses this to write scan artifacts and intermediate data into the Cortex-managed cortex-artifact\* S3 buckets.                                                            | `s3:::cortex-artifact*`, `s3:::cortex-artifact*/*` (no condition)                                        |
 
-**DSPM Policy: `Cortex-DSPM-Scanner-Policy`**
+### DSPM Policy: `Cortex-DSPM-Scanner-Policy`
 
 A customer-managed policy that DSPM attaches to the shared `CortexPlatformScannerRole`. This is the role that actually reads customer data content for sensitive-data classification (the discovery/orchestration policy above runs on `CortexPlatformRole`).
 
@@ -449,11 +449,11 @@ A customer-managed policy that DSPM attaches to the shared `CortexPlatformScanne
 | s3:GetObjectAttributes              | Retrieve object metadata such as size, checksum, and storage class. Cortex uses this to inspect objects in Cortex artifact buckets prior to retrieval.                                                                                               | `s3:::cortex-artifact*``s3:::cortex-artifact*/*`                                                                                                                                      |
 | s3:ListBucket                       | List the contents of an S3 bucket. Cortex uses this to discover customer objects eligible for sensitive-data classification and to locate exported DSPM artifacts.                                                                                   | Cortex-managed DSPM artifact buckets — `s3:::cortex-artifact*`, `s3:::cortex-artifact*/*`Customer-data classification enumeration — `*` (account-wide)                                |
 
-### Kubernetes Security
+## Kubernetes Security
 
 Opt-in (AWS-only feature). Installs a tightly-scoped EKS access entry on each customer EKS cluster, granting Cortex read-only Kubernetes API access (`AmazonEKSAdminViewPolicy`) for cluster posture assessment. All access entries are tag-scoped to `managed_by=paloaltonetworks`, so Cortex can only manage entries it created itself.
 
-**Kubernetes Security Policy: `Cortex-K8s-Security-Policy`**
+### Kubernetes Security Policy: `Cortex-K8s-Security-Policy`
 
 **Attached to `CortexPlatformRole`**
 
@@ -479,17 +479,23 @@ Every action is double-restricted: The resource ARN is scoped to EKS clusters/ac
 | eks:ListAssociatedAccessPolicies | Read which AWS-managed Kubernetes access policies are currently bound to a Cortex-tagged EKS access entry. Cortex uses this to verify the access configuration.                                                                                                                     | `eks:*:${AWS::AccountId}:access-entry/*` where `aws:ResourceTag/managed_by = paloaltonetworks`                                                                                       |
 | eks:TagResource                  | Tag a Cortex-created EKS access entry with the `managed_by=paloaltonetworks` tag. This tag is what subsequently scopes all read, associate, and delete actions to Cortex-owned entries.                                                                                             | `eks:*:${AWS::AccountId}:access-entry/*` where `aws:RequestTag/managed_by = paloaltonetworks`                                                                                        |
 
-### Automations
+## Automations
 
 Conditional (opt-in). Lets Cortex execute manual and automatic response and orchestration actions on customer AWS resources, via built-in quick actions, playbooks, and custom responses authored by the customer.
 
-{% hint style="info" %}
-**Note**
+### About automation permission scopes for unified Cortex platform cloud content packs
 
-Unified Cortex platform cloud content packs require a specific set of automation permissions to enable full integration with your cloud environment. Before configuring access for these packs, review the automation permission scope guidelines.
+The unified Cortex platform cloud content packs (AWS, Azure, and GCP) require a defined set of automation permissions to enable full integration with your cloud environment. Review the following before configuring access:
+
+* **Forward compatibility**: The permission set declared by each pack covers both currently available commands and commands planned for future releases. This eliminates the need to re-authorize permissions with each pack update.
+* **Granular review**: To see the permissions required for a specific command, refer to the Command Details section in the pack documentation.
+* **Custom scoping**: If your security policy requires permissions more restrictive than the recommended defaults, use a custom deployment template to define your access levels manually.
+
+{% hint style="warning" %}
+Reducing permissions below the recommended level may cause specific commands to fail or limit functionality in future pack updates.
 {% endhint %}
 
-**Automation Policy: `Cortex-Automation-Policy`**
+### Automation Policy: `Cortex-Automation-Policy`
 
 A customer-managed policy that grants the Base capability's `CortexPlatformRole` write and delete actions across multiple AWS service categories (EC2, S3, IAM, KMS, Lambda, RDS, EKS, ECS, SSM, Secrets Manager, and others) so Cortex can execute response and remediation playbooks against any resource the playbook targets. Statements are scoped by action, not by tag or resource ARN. Every statement uses `Resource: "*"`, which is what allows playbooks to act on resources Cortex did not itself create.
 

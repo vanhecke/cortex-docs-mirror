@@ -14,12 +14,13 @@ Cortex provides built-in industry approved regulatory compliance standards, for 
 
 To reuse and modify a built-in standard, clone the built-in industry standard:
 
-1. In the **Standards** catalog, right-click on the custom standard you want to edit (or select <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FY4XEarbH6eoofHx6zLlS%2Freusable-menu.png?alt=media&#x26;token=bae02a0f-56cb-4d38-acb0-9cbc5b21b741" alt="" data-size="line"> next to it) and then select **Save as new**.
-2. Define compliance standard metadata, including:
+1. In the **Standards** catalog, right-click on the built-in standard you want to edit or select <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FY4XEarbH6eoofHx6zLlS%2Freusable-menu.png?alt=media&#x26;token=bae02a0f-56cb-4d38-acb0-9cbc5b21b741" alt="" data-size="line"> from the standard's side pane.&#x20;
+2. Select **Save as new**.
+3. Define compliance standard metadata, including:
    1. **Name**: By default, the original built-in standard name is used with “\_copy“ is appended. You can update it if needed.
    2. **Description**: You can update the description if needed.
-   3. **Select Controls**: You can select or deselect controls as needed.&#x20;
-3. Click **Create**.
+   3. **Select Controls**: You can select or deselect controls as needed.
+4. Click **Create**.
 
 ## Create a custom standard
 
@@ -34,26 +35,8 @@ To organize controls within a custom compliance standard, you establish categori
    3. **Labels** (optional)
 3. Click **Next.**
 4. Under **Select Controls**, you select the controls that you would like to add to the standard.
-5. Click **Create**.&#x20;
+5. Click **Create**.
 
-## Edit a custom standard
+## Manage existing custom standards
 
-You can edit an existing custom standard.
-
-1. In the **Standards** catalog, right-click on the custom standard (or select <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FY4XEarbH6eoofHx6zLlS%2Freusable-menu.png?alt=media&#x26;token=bae02a0f-56cb-4d38-acb0-9cbc5b21b741" alt="" data-size="line"> next to it) and then select **Edit**.
-2. Define compliance standard metadata, including:
-   1. **Name**
-   2. **Description** (optional)
-   3. **Labels** (optional)
-3. Click **Next**.
-4. Under **Select Controls**, you can do one of the following, select the controls that you would like to add to the standard.&#x20;
-5. Click **Save**.&#x20;
-
-## Delete a custom standard
-
-​To delete an existing custom standard and all the categories, subcategories, and controls associated with it, perform the following steps.
-
-
-
-1. In the **Standards** catalog, right-click on the custom standard (or select <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FY4XEarbH6eoofHx6zLlS%2Freusable-menu.png?alt=media&#x26;token=bae02a0f-56cb-4d38-acb0-9cbc5b21b741" alt="" data-size="line"> next to it ) and then select **Delete**.
-2. Click **Delete**.
+Custom compliance standards can be managed from **Posture Management → Compliance → Standards Catalog.** Right click on a standard or select <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FY4XEarbH6eoofHx6zLlS%2Freusable-menu.png?alt=media&#x26;token=bae02a0f-56cb-4d38-acb0-9cbc5b21b741" alt="" data-size="line"> from the standard's side pane to edit or delete it. You can edit all parameters of the standard and update the list of controls assigned to it.

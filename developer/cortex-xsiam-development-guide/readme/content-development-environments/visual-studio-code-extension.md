@@ -28,7 +28,7 @@ Install the Visual Studio Code extension directly from the Visual Studio Code ma
 
 **Configurations**
 
-Cortex XSIAM recommends keeping the `xsoar.autoFindProblems.readProblems` configuration set to `false`, which is the default setting, for improved performance. When this configuration is set to `true`, it automatically runs  `demisto-sdk validate` when saving your file.
+Cortex XSIAM recommends keeping the `xsoar.autoFindProblems.readProblems` configuration set to `false`, which is the default setting, for improved performance. When this configuration is set to `true`, it automatically runs `demisto-sdk validate` when saving your file.
 
 **Commands**
 

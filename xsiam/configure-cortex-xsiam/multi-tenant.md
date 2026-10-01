@@ -10,8 +10,8 @@ description: >-
 [what-is-cortex-xsiam-multi-tenant](multi-tenant/what-is-cortex-xsiam-multi-tenant)
 {% endcontent-ref %}
 
-{% content-ref url="multi-tenant/multi-tenant-central-licensing-management" %}
-[multi-tenant-central-licensing-management](multi-tenant/multi-tenant-central-licensing-management)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="multi-tenant/onboard-cortex-multi-tenant" %}

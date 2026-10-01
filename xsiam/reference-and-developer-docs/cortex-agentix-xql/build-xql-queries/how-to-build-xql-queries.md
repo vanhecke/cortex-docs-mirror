@@ -30,7 +30,7 @@ The Cortex Query Language (XQL) supports a single Cortex Data Model (XDM), which
 2. Out-of-the-box mappings of the datasets as part of the Data Model Rules via the Marketplace. For more information, see [Cortex Marketplace](../../../configure-cortex-xsiam/marketplace).
 3. You can create your own mappings by creating your own Data Model Rules. For more information, see [Create Data Model Rules](../../../configure-cortex-xsiam/data-management/data-model-rules/create-data-model-rules).
 
-For more information on the XDM Schema, specifically the fields, fieldsets, fields designated as ENUMS (CONST), and aliases, see the [Cortex XSIAM Data Model Schema](https://app.gitbook.com/s/HVBaxKOW1b6qcIQ6iMBh/).
+For more information on the XDM Schema, specifically the fields, fieldsets, fields designated as ENUMS (CONST), and aliases, see the [Cortex XSIAM Data Model Schema](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/HVBaxKOW1b6qcIQ6iMBh/).
 
 </details>
 

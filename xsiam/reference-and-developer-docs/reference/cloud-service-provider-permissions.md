@@ -10,10 +10,10 @@ When you set up Cortex XSIAM to collect data from your cloud environments, the o
 
 Review the permissions required for each cloud service provider:
 
-* [Amazon Web Services](../../configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions/amazon-web-services-aws-provider-permissions)
-* [Microsoft Azure](../../configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions/microsoft-azure-provider-permissions)
-* [Google Cloud Platform](../../configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions/google-cloud-platform-gcp-provider-permissions)
-* [Oracle Cloud Infrastructure](../../configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/cloud-service-provider-permissions/oracle-cloud-infrastructure-oci-provider-permissions)
+* [Amazon Web Services](../../configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/amazon-web-services-aws-provider-permissions)
+* [Microsoft Azure](../../configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/microsoft-azure-cloud-onboarding/microsoft-azure-provider-permissions)
+* [Google Cloud Platform](../../configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/google-cloud-platform-cloud-onboarding/google-cloud-platform-gcp-provider-permissions)
+* [Oracle Cloud Infrastructure](../../configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/oracle-cloud-infrastructure-cloud-onboarding/oracle-cloud-infrastructure-oci-provider-permissions)
 
 **About automation permission scopes for unified Cortex platform cloud content packs**
 

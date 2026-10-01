@@ -28,7 +28,7 @@ Use this page when you need a quick overview of the main Cortex XSIAM areas.
 
 ### Protect your environment
 
-<table data-view="cards"><thead><tr><th></th><th data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><p><i class="fa-shield-halved">:shield-halved:</i> Endpoint security</p><p>Prevent, detect, and respond to endpoint threats.</p></td><td><a href="../protect-your-endpoints/endpoint-security">endpoint-security</a></td></tr><tr><td><p><i class="fa-lock">:lock:</i> Endpoint DLP</p><p>Protect sensitive data on managed endpoints.</p></td><td><a href="../protect-your-endpoints/endpoint-dlp">endpoint-dlp</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><p><i class="fa-shield-halved">:shield-halved:</i> Endpoint security</p><p>Prevent, detect, and respond to endpoint threats.</p></td><td><a href="../protect-your-endpoints/endpoint-security">endpoint-security</a></td></tr><tr><td><p><i class="fa-lock">:lock:</i> Endpoint DLP</p><p>Protect sensitive data on managed endpoints.</p></td><td><a href="../protect-your-endpoints/endpoint-dlp-1">endpoint-dlp-1</a></td></tr></tbody></table>
 
 ### Detect, investigate, and respond
 

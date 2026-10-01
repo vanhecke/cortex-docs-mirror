@@ -24,12 +24,13 @@ How to authenticate users through the Customer Support Portal
 
 {% stepper %}
 {% step %}
-### Add the user to your Customer Support Portal.
+### Add the user to your Customer Support Portal
 
 Sign in to the [Customer Support Portal](https://support.paloaltonetworks.com/) and do one of the following:
 
 * **Create a user**
-  1. Select **Members** → **Create New User**.
+  1. Select **Members** → **Create New User**.\
+     You must select the **Cortex User** role, otherwise the user does not appear in the users list when assigning roles and cannot access the tenant.
   2.  Add the member details and click **Submit**.
 
       The user must accept the email invitation within seven days.

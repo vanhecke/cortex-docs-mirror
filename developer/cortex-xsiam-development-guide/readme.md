@@ -16,7 +16,7 @@ If you have questions or need support, contact us on the `#demisto-developers` c
 
 Cortex XSIAM is a powerful platform with a rich set of features and customizations. We recommend following these steps before creating custom content:
 
-1. Read and understand Cortex XSIAM [Concepts](https://app.gitbook.com/s/AEIjuYE3RXcIfmuQnBbm/).
+1. Read and understand Cortex XSIAM [Concepts](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/AEIjuYE3RXcIfmuQnBbm/).
 2. Read the [FAQs](readme/frequently-asked-questions).
 3. Review relevant sections of the Cortex XSIAM product [documentation](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/XO7Budkunf9O78igMwUM/).
 4.  Understand your use case.
@@ -43,12 +43,12 @@ Cortex XSIAM is a powerful platform with a rich set of features and customizatio
       Review the structure for integrations and code conventions, as well as features such as data centralization, intelligent stitching, analytics-based detection, alert and incident management, script, generic commands, and reputation score. Write and test your code.
   *   Playbooks - learn about playbook design, conventions, and the use of generic playbooks.
 
-      For more information on playbook design and development, see [Playbooks](https://app.gitbook.com/s/AEIjuYE3RXcIfmuQnBbm/).
+      For more information on playbook design and development, see [Playbooks](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/AEIjuYE3RXcIfmuQnBbm/).
   * Lists - learn how to download a list from Cortex XSIAM and include it in your content pack.
   * Alerts - learn how to create alert fields, layouts, rules, classifiers, and mappers.
   *   Data modeling, parsing, and correlation - learn how to create parsing, data modeling, and correlation rules.
 
-      Enable mapping of events and logs into a single, unified data model. This data model provides a consolidated schema, and a simpler way to interact with your data, regardless of its source or dataset. To familiarize yourself with the data model schema, see [Cortex XSIAM Data Model Schema](https://app.gitbook.com/s/HVBaxKOW1b6qcIQ6iMBh/).
+      Enable mapping of events and logs into a single, unified data model. This data model provides a consolidated schema, and a simpler way to interact with your data, regardless of its source or dataset. To familiarize yourself with the data model schema, see [Cortex XSIAM Data Model Schema](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/HVBaxKOW1b6qcIQ6iMBh/).
   * **Indicators** - learn how to create indicator fields and layouts. Learn how domains and URLs are extracted, how to create and use relationships, and more.
 * Documentation - learn about documentation best practices, as well as documentation requirements for Marketplace contributions.
 * Contributions - learn the requirements for contributing content to Marketplace.

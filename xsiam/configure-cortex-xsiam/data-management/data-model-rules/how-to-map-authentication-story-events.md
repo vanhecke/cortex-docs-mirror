@@ -12,11 +12,17 @@ To enable Identity Threat Detection and Response (ITDR) analytics, you must have
 
 Cortex XSIAM enables analytics to run on all mapped authentication data, which automatically creates authentication stories for Cortex Data Model (XDM) identity data. To build these stories, you must map authentication events to the XDM schema using specific mandatory fields and principles. For a complete list of these fields, see [XDM fields for mapping authentication events](../../../reference-and-developer-docs/reference/xdm-fields-for-mapping-authentication-events).
 
+{% hint style="info" %}
+**Note**
+
+For technical conventions and implementation logic for complex authentication scenarios, see [Authentication mapping: Advanced classification and deep dives](../../../reference-and-developer-docs/reference/xdm-fields-for-mapping-authentication-events/authentication-mapping-advanced-classification-and-deep-dives).
+{% endhint %}
+
 {% hint style="warning" %}
 ### Prerequisite
 
 * You must have **View/Edit** RBAC permissions for **Data Management** (under **Configurations > Data Management**).
-* Familiarize yourself with the Cortex Data model (XDM) schema for field definitions and naming conventions, see [XSIAM Data Model Schema](https://app.gitbook.com/s/HVBaxKOW1b6qcIQ6iMBh/).
+* Familiarize yourself with the Cortex Data model (XDM) schema for field definitions and naming conventions, see [XSIAM Data Model Schema](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/HVBaxKOW1b6qcIQ6iMBh/).
 {% endhint %}
 
 {% hint style="info" %}
@@ -62,7 +68,7 @@ When mapping your authentication data, follow these guidelines:
 
 <summary><strong>Mandatory XDM fields to map for authentication events</strong></summary>
 
-You must map all 15 of the following fields. If a mandatory field is unmapped or incorrect, the event will be dropped from authentication stories and identity analytics. For more detailed information on these fields, see [XDM fields for mapping authentication events](../../../reference-and-developer-docs/reference/xdm-fields-for-mapping-authentication-events).
+You must map all 12 of the following fields. If a mandatory field is unmapped or incorrect, the event will be dropped from authentication stories and identity analytics. For more detailed information on these fields, see [XDM fields for mapping authentication events](../../../reference-and-developer-docs/reference/xdm-fields-for-mapping-authentication-events).
 
 {% hint style="warning" %}
 **Important**
@@ -70,7 +76,7 @@ You must map all 15 of the following fields. If a mandatory field is unmapped or
 To maximize the variety of issues that are retrieved based on the XDM authentication stories, we recommend that the following additional fields are populated: `xdm.logon.type`, `xdm.source.user_agent`, and `xdm.source.host.device_category`. Should you decide to change the default XDM mappings, ensure that both the mandatory and recommended fields are populated and do not contain any empty values.
 {% endhint %}
 
-<table><thead><tr><th width="171">XDM Target Field</th><th>Data Type</th><th>Purpose and Guidance</th></tr></thead><tbody><tr><td><code>xdm.auth.service</code></td><td>String</td><td><strong>System Role.</strong> Decided PER EVENT TYPE: <code>IDP</code> (validates), <code>SP</code> (initiates), or <code>Universal</code> (local/AAA). Do not use protocol names here.</td></tr><tr><td><code>xdm.event.operation</code></td><td>String</td><td>Describes the action (such as <code>AUTH_LOGIN</code>, <code>AUTH_MFA</code>). Never blind-default if unclear.</td></tr><tr><td><code>xdm.event.original_event_type</code></td><td>String</td><td>The raw vendor event name exactly as logged.</td></tr><tr><td><code>xdm.event.outcome</code></td><td>Enum</td><td>Set only to <code>SUCCESS</code> or <code>FAILED</code>. Do not set on intermediate steps.</td></tr><tr><td><code>xdm.event.tags</code></td><td>Array</td><td>Must include <code>XDM_CONST.EVENT_TAG_AUTHENTICATION</code></td></tr><tr><td><code>xdm.event.type</code></td><td>String</td><td>Must contain <code>authentication</code>.</td></tr><tr><td><code>xdm.network.ip_protocol</code></td><td>Enum</td><td>The transport protocol (e.g., <code>TCP</code>). Fallback to <code>IP_PROTOCOL_IP</code> if unknown.</td></tr><tr><td><code>xdm.source.ipv4</code></td><td>String</td><td>The client IP observed by the authenticator. Never static or empty.</td></tr><tr><td><code>xdm.source.port</code></td><td>Integer</td><td>Map real value; otherwise <code>0</code>.</td></tr><tr><td><code>xdm.source.user.upn</code></td><td>String</td><td><strong>Identity Key.</strong> Must be UPN-shaped (<code>user@domain</code>). Use a shape-guard to append <code>@localhost</code> if the source provides only a bare username.</td></tr><tr><td><code>xdm.source.user.identity_type</code></td><td>Enum</td><td>The nature of the principal (such as <code>USER</code>, <code>MACHINE</code>, <code>BUILTIN</code>).</td></tr><tr><td><code>xdm.source.user.user_type</code></td><td>Enum</td><td>The account class (such as <code>REGULAR</code>, <code>SERVICE_ACCOUNT</code>).</td></tr><tr><td><code>xdm.target.ipv4</code></td><td>String</td><td>The IP of the device being accessed. If absent, use <code>""</code>.</td></tr><tr><td><code>xdm.target.port</code></td><td>Integer</td><td>Map real value; otherwise <code>0</code>.</td></tr><tr><td><code>xdm.target.resource.name</code></td><td>String</td><td>The name or address of the service being accessed. Set this in addition to specific host/app fields. Never pad this; if absent, resolve to null.</td></tr></tbody></table>
+<table><thead><tr><th width="171">XDM Target Field</th><th>Data Type</th><th>Purpose and Guidance</th></tr></thead><tbody><tr><td><code>xdm.auth.service</code></td><td>String</td><td><strong>System Role.</strong> Decided PER EVENT TYPE: <code>IDP</code> (validates), <code>SP</code> (initiates), or <code>Universal</code> (local/AAA). Do not use protocol names here.</td></tr><tr><td><code>xdm.event.operation</code></td><td>String</td><td>Describes the action (such as <code>AUTH_LOGIN</code>, <code>AUTH_MFA</code>). Never blind-default if unclear.</td></tr><tr><td><code>xdm.event.original_event_type</code></td><td>String</td><td>The raw vendor event name exactly as logged.</td></tr><tr><td><code>xdm.event.outcome</code></td><td>Enum</td><td>Set only to <code>SUCCESS</code> or <code>FAILED</code>. Do not set on intermediate steps.</td></tr><tr><td><code>xdm.event.tags</code></td><td>Array</td><td>Must include <code>XDM_CONST.EVENT_TAG_AUTHENTICATION</code></td></tr><tr><td><code>xdm.event.type</code></td><td>String</td><td>Must contain <code>authentication</code>.</td></tr><tr><td><code>xdm.network.ip_protocol</code></td><td>Enum</td><td>The transport protocol (e.g., <code>TCP</code>). Fallback to <code>IP_PROTOCOL_IP</code> if unknown.</td></tr><tr><td><code>xdm.source.ipv4</code></td><td>String</td><td>The client IPv4 observed by the authenticator. Never static or empty.</td></tr><tr><td><code>xdm.source.port</code></td><td>Integer</td><td>Map real value; otherwise <code>0</code>.</td></tr><tr><td><code>xdm.source.user.upn</code></td><td>String</td><td><strong>Identity Key.</strong> Must be UPN-shaped (<code>user@domain</code>). Use a shape-guard to append <code>@localhost</code> if the source provides only a bare username.</td></tr><tr><td><code>xdm.target.ipv4</code></td><td>String</td><td>The IPv4 of the device being accessed. If absent, use <code>""</code>.</td></tr><tr><td><code>xdm.target.port</code></td><td>Integer</td><td>Map real value; otherwise <code>0</code>.</td></tr></tbody></table>
 
 </details>
 
@@ -83,28 +89,21 @@ To maximize the variety of issues that are retrieved based on the XDM authentica
 When an authentication field is missing from your source log, apply these treatments in order:
 
 1. **MAP**: If the source carries the value directly.
-2. **DERIVE**: If the value can be constructed from another field (e.g., synthesizing a UPN).
+2. **DERIVE**: If the value can be constructed from another field (such as, synthesizing a UPN).
 3. **PAD**: Use semantically empty placeholders only if derivation is impossible.
    * **Valid Pads**: `to_integer(0)` for ports, `""` for target IP, `IP_PROTOCOL_IP` for protocol.
    * **Invalid Pads**: Never pad `xdm.target.resource.name` or `xdm.source.ipv4`.
 
-### Principal Classification (Identity vs. User Type)
+### Guideline field crosswalk for Network/AAA devices
 
-To support identity analytics, you must map both fields using specific constants:
-
-* `identity_type`: Classifies the **nature** of the principal (such as `IDENTITY_TYPE_MACHINE` for names ending in `$`, `IDENTITY_TYPE_BUILTIN` for `SYSTEM`).
-* `user_type`: Defines the operational **class** (such as `USER_TYPE_REGULAR` for human logins, `USER_TYPE_SERVICE_ACCOUNT` for `svc_` prefixes).
-
-### Mandatory Field Crosswalk for Network/AAA Devices
-
-| **Vendor Field Hint**   | **XDM Target Field**       | **Implementation Note**                                           |
-| ----------------------- | -------------------------- | ----------------------------------------------------------------- |
-| `user`, `username`      | `xdm.source.user.upn`      | Synthesize UPN: `concat(tmp_user, "@localhost")`                  |
-| `priv_lvl`, `privilege` | `xdm.auth.privilege_level` | Band 15+ to `ADMIN`, 1+ to `USER`, 0 to `GUEST`.                  |
-| `dvc_ip`, `nas-ip`      | `xdm.target.ipv4`          | The IP of the accessed device.                                    |
-| `src_ip`, `rem_addr`    | `xdm.source.ipv4`          | The IP of the authenticating client workstation.                  |
-| `service`               | `xdm.auth.auth_method`     | **Protocol.** (e.g., `RADIUS`). Do not map to `xdm.auth.service`. |
-| `task_id`, `session-id` | `xdm.network.session_id`   | Crucial for correlating session lifecycle events.                 |
+| **Vendor Field Hint**   | **XDM Target Field**       | **Implementation Note**                                              |
+| ----------------------- | -------------------------- | -------------------------------------------------------------------- |
+| `user`, `username`      | `xdm.source.user.upn`      | Synthesize UPN: `concat(tmp_user, "@localhost")`                     |
+| `priv_lvl`, `privilege` | `xdm.auth.privilege_level` | Band 15+ to `ADMIN`, 1+ to `USER`, 0 to `GUEST`.                     |
+| `dvc_ip`, `nas-ip`      | `xdm.target.ipv4`          | The IP of the accessed device.                                       |
+| `src_ip`, `rem_addr`    | `xdm.source.ipv4`          | The IP of the authenticating client workstation.                     |
+| `service`               | `xdm.auth.auth_method`     | **Protocol.** (such as, `RADIUS`). Do not map to `xdm.auth.service`. |
+| `task_id`, `session-id` | `xdm.network.session_id`   | Crucial for correlating session lifecycle events.                    |
 
 </details>
 
@@ -120,17 +119,12 @@ When a device logs a login to **itself** (such as SSH into a router):
 * **Target**: If the login was into that device, the device is **ALSO** the target: `xdm.target.host.hostname` and `xdm.target.ipv4`.
 * **Source**: The remote workstation initiating the connection is the source: `xdm.source.ipv4`, `xdm.source.port`, and `xdm.source.user.*`.
 
-### AAA Gateway topology
+### AAA gateway topology
 
 Network-device AAA logs (TACACS+, RADIUS) involve three parties:
 
 * **Principal**: The human or service account (`xdm.source.user.upn`).
 * **Source**: The user's workstation (`xdm.source.ipv4`).
 * **Target**: The network device being accessed (`xdm.target.ipv4` and `xdm.target.resource.name`).
-* **Observer**: The AAA server validating the credential (`xdm.observer.name`).
-
-### **Logout convention**
-
-A logout record should take `xdm.event.outcome = OUTCOME_SUCCESS` but leave `xdm.event.operation` **unset**. This ensures logout events do not incorrectly inflate login metrics.
 
 </details>

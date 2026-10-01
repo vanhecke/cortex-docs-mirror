@@ -6,7 +6,9 @@ description: Use Federated Search to query external data sources in Cortex XSIAM
 
 Federated Search is a query mechanism designed to provide unified access to distributed data sources without requiring pre-ingestion or centralization. This capability enables you to query data in place, significantly reducing the complexity and operational costs associated with the ingestion process and long-term data retention.
 
-{% hint style="info" %}
+{% hint style="success" %}
+**License type**
+
 Federated Search is not enabled by default. To enable it in your tenant, contact your Customer Support Team.
 {% endhint %}
 
@@ -26,6 +28,7 @@ The main use cases for Federated Search include:
 You can keep non-critical, high-volume data types in their native storage locations while preserving the ability to query this data using Cortex Query Language (XQL). This ensures that visibility is gained into a broader spectrum of data while maintaining the core value proposition of deep analytics on ingested data.
 
 {% hint style="info" %}
+**Note**\
 Federated search queries consume compute units, which are calculated according to timeframe, complexity, and any cross-cloud egress costs that may apply.
 {% endhint %}
 

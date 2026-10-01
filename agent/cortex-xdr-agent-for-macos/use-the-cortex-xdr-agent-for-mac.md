@@ -11,7 +11,7 @@ description: >-
     Use one of the following methods:
 
     * Browse to the Traps folder in Finder.
-    * If you enabled access to the agent console, click the Cortex XDR agent icon in the menu bar, and select **Open Console**.
+    * If you enabled access to the agent console, select the Cortex XDR agent icon in the menu bar, and select **Open Console**.
 2. View status information about the Cortex XDR agent:
    * **Version**—Displays the agent version.
    *   **Protection**—Displays the active policies in bold.
@@ -23,7 +23,7 @@ description: >-
 
     The Cortex XDR agent communicates with the server at a fixed 5-minute heartbeat interval to send status information and retrieve the latest security policy. The agent performs this operation transparently at regular intervals so it is not typically necessary to connect to the server manually. If your **Connection** status is **Not Connected**, you can manually retry your connection. This option is available if you do not want to wait for the automated communication interval to begin.
 
-    To initiate a manual check-in with the server: On the home page of the Cortex XDR agent console, click **Check In Now**. If the agent successfully establishes a connection with the server, the **Connection** status changes to indicated the service to which the agent is connected.
+    To initiate a manual check-in with the server: On the home page of the Cortex XDR agent console, select **Check In Now**. If the agent successfully establishes a connection with the server, the **Connection** status changes to indicated the service to which the agent is connected.
 4.  Collect Cortex XDR agent logs in a file that can be sent to a support representative for analysis.
 
     Select **Generate Support File**. Cortex XDR agent aggregates the logs into a compressed file. Save it, and then send the file to your support representative. For remote endpoints, you can also retrieve logs from the Action Center.

@@ -19,9 +19,10 @@ Configure Cortex XSIAM to scan your Nexus Registry. This allows Cortex to list a
 Follow the wizard to use the Sonatype Nexus registry connector in Cortex XSIAM.
 
 1. Navigate to **Settings → Data Sources & Integrations**.
-2. On the **Add Data Sources or Integrations** page, click **+ Add New**, search for **Sonatype**, then hover over it and click **Add**.
-3. The **Instance Name** is automatically populated. You can change it to a more meaningful name.
-4. Choose the **Scan Mode**, and then follow the steps for that mode to configure the connection.
+2. Click **+ Add New**.
+3. On the **Add Data Sources or Integrations** page, click **+ Add New**, search for **Sonatype**, then hover over it and click **Add**.
+4. The **Instance Name** is automatically populated. You can change it to a more meaningful name.
+5. Choose the **Scan Mode**, and then follow the steps for that mode to configure the connection.
 
 <details>
 

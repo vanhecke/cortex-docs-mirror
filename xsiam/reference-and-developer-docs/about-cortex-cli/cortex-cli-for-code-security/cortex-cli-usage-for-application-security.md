@@ -47,6 +47,10 @@ The `cortexcli` provides different options for how scan results are presented.
 * **Standard output** (stdout): When no specific output format flags (such as `--output json` or `--output sarif)` are provided, the Cortex CLI will produce standard output directly to your terminal or console
 * **JSON output**: To obtain the output of a scan command as a JSON file, specify the flags `--output json --output-file-path ./output.json`. This command will save the detailed scan results in JSON format to output.json in the current directory.
 
+## Exit codes and error handling
+
+For unified cli and Application Security-specific exit codes and error handling, refer to [exit-codes-and-error-handling](../exit-codes-and-error-handling "mention"). <br>
+
 ## Supported flags
 
 The Cortex Cloud Application Security CLI supports both common Cortex CLI and dedicated Cortex Cloud Application Security flags.

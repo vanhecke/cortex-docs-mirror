@@ -46,7 +46,7 @@ Sign in to your Anthropic Claude organization as a **Primary Owner** and generat
 
 1. In Cortex Cloud, navigate to **Settings** → **Data Sources & Integrations**.
 2. Click **+ Add new**.
-3. On the **Add Data Source** page, search for **Claude**, hover over it, and click **Add**.
+3. On the **Add Data Sources or Integrations** page, search for **Claude**, hover over it, and click **Add**.
 
 In the Configuration Wizard, configure the following settings.
 
@@ -99,3 +99,6 @@ After configuration is complete, verify asset discovery and data security findin
    * Credit card numbers
    * Unauthorized data sharing
 
+### Exposure Definitions:
+
+All content is **Restricted** and it can be shared **Organization-Wide.**

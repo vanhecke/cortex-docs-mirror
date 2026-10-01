@@ -29,7 +29,7 @@ To configure registry scanning, do the following:
 
 1.  Under **Additional Security Capabilities**, select **Registry Scanning**, then click **Edit Preferences**.
 
-    ![enable-container-registry-scanning.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FxDAXedF6ehRNFmHSRbm7%2Fcdc750e4ad2ad75e806669a5089bdff50ec4e7c89e0b7cf96449a50a21471c33.png?alt=media\&token=26d33ecb-b544-495c-845c-43389fe6a2a5)
+    ![enable-container-registry-scanning.png](https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-4595ea2b4b8ace58fa85752adc79905c6df04866%2Fcdc750e4ad2ad75e806669a5089bdff50ec4e7c89e0b7cf96449a50a21471c33.png?alt=media)
 2. In **Initial Scan Configuration**, set your scanning process to focus on recently added or modified container images and exclude older ones that do not align with your current scanning objectives. This setting helps avoid unnecessary scans. Choose one of the following options:
    * **All**: Scans all container images, including all versions (tags), in all discovered repositories.
    * **Latest Tags**: Scans only images tagged 'latest' in all discovered repositories.

@@ -4,7 +4,7 @@ description: >-
   timer fields and SLA targets.
 ---
 
-# Use issue timer field commands  in the CLI
+# Use issue timer field commands in the CLI
 
 You can manage the timers for a specific issue by running commands manually in the CLI. By running CLI command you can to manage timers on a more granular level within specific issues when the need arises. For example, for a high severity issue you might need to decrease the response time.
 

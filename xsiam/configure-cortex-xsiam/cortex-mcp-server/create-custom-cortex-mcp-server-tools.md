@@ -8,7 +8,7 @@ description: >-
 
 You can build your own tools using OpenAPI or Python to manage cases, handle issues, and conduct investigations. More detailed information can be found in the README file located in the `src/usecase` directory. Tools are based on Cortex API endpoints.
 
-To view the Cortex XSIAM API documentation, see [Cortex XSIAM APIs](https://app.gitbook.com/s/1ZrobAtcwfCDWAJAWeuj/).
+To view the Cortex XSIAM API documentation, see [Cortex XSIAM APIs](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/1ZrobAtcwfCDWAJAWeuj/).
 
 Any new or updated components provided by Cortex are automatically downloaded into the builtin\_components folder. During each update, the folder is fully replaced and all existing contents are recreated. Do not add custom tools to this directory, as it is managed entirely by Cortex and is overwritten at every update.
 

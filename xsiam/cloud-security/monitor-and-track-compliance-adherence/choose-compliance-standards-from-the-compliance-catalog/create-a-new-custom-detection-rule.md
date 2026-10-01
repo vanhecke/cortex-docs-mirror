@@ -12,7 +12,7 @@ Creating custom detection rules give you the flexibility to define and enforce s
 
 ### Before you begin
 
-Ensure you have a custom compliance control defined to associate the Custom Detection Rule to. For more information, see [Use a built-in or custom control](use-a-built-in-or-custom-control).
+Ensure you have a custom compliance control defined to associate the custom detection rule to. For more information, see [Use a built-in or custom control](use-a-built-in-or-custom-control).
 
 ### Create a custom detection rule
 

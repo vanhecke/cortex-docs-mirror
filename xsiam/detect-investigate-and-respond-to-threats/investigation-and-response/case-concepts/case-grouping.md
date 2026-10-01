@@ -8,6 +8,10 @@ description: >-
 
 Case grouping is a Precision AI™-powered capability that eliminates alert fatigue by automatically consolidating related issues and artifacts into a single unified case. Case grouping links issues that originate from the same attack flow or involve the same entity to reveal the full scope of a case. This approach replaces manual correlation with automated context, allowing you to focus on resolving complete problems rather than triaging isolated events.
 
+{% hint style="warning" %}
+Case grouping is supported for Security and Posture domains only.
+{% endhint %}
+
 ### **Grouping methodologies**
 
 The key grouping methodologies of case grouping in Cortex XSIAM are:
@@ -16,20 +20,22 @@ The key grouping methodologies of case grouping in Cortex XSIAM are:
 * **Exact match detection:** Groups similar detections for the same entities.
 * **Related entities:** Groups detections involving related assets within a close timeframe to highlight possible connections.
 
-### **Case qualification for issues**
+### **Case grouping qualification**
 
-Not all issues create cases. When a new issue is created, it is evaluated to determine if it meets the criteria for case promotion. If the issue qualifies, the system attempts to correlate it with an existing case; if no match is found, a new case is generated. Issues that do not meet these requirements are categorized as Insights.
+When a new issue is triggered, it is evaluated to determine if it meets the criteria for case promotion. If the issue qualifies, the system uses case grouping logic to correlate the issue with an existing case; if no match is found, a new case is generated.&#x20;
 
-The qualification logic varies by domain. For the Security domain, the system promotes issues with Medium severity and above, as well as select Low-severity analytics. Other domains employ more selective promotion based on specific criteria. This logic is dynamic and may be updated to reflect ongoing research and threat relevance.
+{% hint style="info" %}
+The case grouping logic is dynamic and may be updated to reflect ongoing research and threat relevance.
+{% endhint %}
 
-Cortex XSIAM applies the following logic when building cases:
+Issues with the following conditions automatically qualify for case grouping:
 
-* **Automatic promotion criteria:** Issues with the following conditions automatically generate a new case, or join existing cases:
-  * Assigned to the **Security** domain with **Medium** severity or higher
-  * Assigned to the **Posture** domain and with **High** severity.
-  * Generated from the **public API** or created from **correlations**.
-* **Low severity handling:** Most low severity issues do not initiate case creation, unless specific analytic rules deem action necessary. Low severity issues generated from correlation rules are not grouped into cases.
-* **Case grouping thresholds:** To keep cases manageable, Cortex XSIAM enforces specific grouping thresholds. For more information see [Case thresholds](../overview-of-cases/case-thresholds).
+* Assigned to the **Security** domain with **Medium** severity or higher.
+* Assigned to the **Posture** domain with **Medium** severity or higher.
+
+While case grouping is active, Cortex XSIAM can continue to link new issues to a case, however, to keep cases manageable, specific grouping thresholds are enforced. For more information see [Case thresholds](../overview-of-cases/case-thresholds).
+
+In cases with multiple linked issues, you can see the connection between the issues and the case grouping status (active/inactive) in the [Grouping Graph](../analyze-and-resolve-cases/analyze-case-details/grouping-graph).&#x20;
 
 ### **Grouping artifacts**
 
@@ -42,7 +48,3 @@ If you set up custom detections with correlation rules that trigger issues, you 
 ### **Integration with SmartScore**
 
 Case grouping and SmartScore work together to improve triage efficiency. While case grouping provides the full context of an attack, **SmartScore** assigns a numerical value to that context, indicating the urgency and impact of the case. This allows you to prioritize the most critical cases first.
-
-### **Limitations**
-
-Case grouping is natively supported within built-in domains only, for example Security.

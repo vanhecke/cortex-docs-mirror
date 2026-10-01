@@ -131,10 +131,10 @@ ALTER  
 {% hint style="info" %}
 ### Note
 
-* To map the `op` field to the appropriate XDM system field, in this case the `OPERATION_TYPE`, use the [XQL if](https://app.gitbook.com/s/AEIjuYE3RXcIfmuQnBbm/) function. In the example above, set the `xdm.event.operation` field to the enum `XDM_CONST.OPERATION_TYPE_CREATE` if the value of the `op` field in the raw response is `add`.
+* To map the `op` field to the appropriate XDM system field, in this case the `OPERATION_TYPE`, use the [XQL if](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/AEIjuYE3RXcIfmuQnBbm/) function. In the example above, set the `xdm.event.operation` field to the enum `XDM_CONST.OPERATION_TYPE_CREATE` if the value of the `op` field in the raw response is `add`.
 * When you use an `if` function, best practice is to have an additional argument which is used as default. You can see this additional argument at the end of the function, and it has the `field_name = null, null, to_string(field_name)` structure. You can see an example of this when defining the `op`, `result` and `os_family` fields.
-* When you need to access nested fields from within the JSON, use the [`json_extract_scalar`](https://app.gitbook.com/s/AEIjuYE3RXcIfmuQnBbm/) function.
-* See the [XQL Functions Reference](https://app.gitbook.com/s/AEIjuYE3RXcIfmuQnBbm/) for more information about other functions.
+* When you need to access nested fields from within the JSON, use the [`json_extract_scalar`](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/AEIjuYE3RXcIfmuQnBbm/) function.
+* See the [XQL Functions Reference](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/AEIjuYE3RXcIfmuQnBbm/) for more information about other functions.
 {% endhint %}
 
 If the query or the parsing is incorrect, the editor notifies you of the error.

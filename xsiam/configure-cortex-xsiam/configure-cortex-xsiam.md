@@ -23,14 +23,14 @@ Use this sequence to build a secure, maintainable deployment:
 * [Data management](data-management): Configure data tiers, retention, datasets, parsing, and data lifecycle rules.
 * [Cortex XSIAM Data Sources and Connectors](cortex-xsiam-data-sources): Connect telemetry, cloud services, collectors, and third-party integrations.
 * [Engines](engines): Install and manage engines for integrations and automations.
-* [Marketplace](marketplace):  Discover, install, and manage content packs.
+* [Marketplace](marketplace): Discover, install, and manage content packs.
 
 ### AI and automation
 
 * [Configure the Cortex Agentic Assistant](configure-the-cortex-agentic-assistant-1): Configure agents, actions, knowledge sources, integrations, and access.
 * [Cortex MCP server](cortex-mcp-server): Connect supported clients and create custom tools.
 * [Automations](automations): Build playbooks, scripts, rules, quick actions, and autonomous responses.
-* [Remote repository management](remote-repository-management):  Manage content development and synchronization through remote repositories.
+* [Remote repository management](remote-repository-management): Manage content development and synchronization through remote repositories.
 
 ### Operations and governance
 

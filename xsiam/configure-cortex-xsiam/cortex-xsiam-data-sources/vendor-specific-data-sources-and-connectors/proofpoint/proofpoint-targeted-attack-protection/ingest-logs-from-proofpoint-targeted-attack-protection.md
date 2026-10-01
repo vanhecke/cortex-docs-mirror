@@ -14,8 +14,8 @@ Configure the Proofpoint TAP collection in Cortex XSIAM.
 
     TAP service credentials can be generated in the TAP Dashboard, where you will receive a Proofpoint Service Principal for authentication and Proofpoint API Secret for authentication. Record these credentials as you will need to provide them when configuring the Proofpoint Targeted Attack Protection data collector in Cortex XSIAM. For more information on generating TAP service credentials, see [Generate TAP Service Credentials](https://ptr-docs.proofpoint.com/ptr-guides/integrations-files/ptr-tap/).
 2. Configure the Proofpoint TAP collection in Cortex XSIAM.
-   1. Navigate to Settings → Data Sources & Integrations.
-   2. On the Data Sources & Integrations page, click + Add New, search for Proofpoint Targeted Attack Protection, then hover over it and click Add.
+   1. Navigate to **Settings** → **Data Sources & Integrations**.
+   2. Click **+ Add New**, search for Proofpoint Targeted Attack Protection, then hover over it and click **Add**.
    3. Set these parameters:
       * Name: Specify a descriptive name for your log collection configuration.
       * Proofpoint Endpoint: All Proofpoint endpoints are available on the `tap-api-v2.proofpoint.com` host. You can leave the default configuration or specify another host.

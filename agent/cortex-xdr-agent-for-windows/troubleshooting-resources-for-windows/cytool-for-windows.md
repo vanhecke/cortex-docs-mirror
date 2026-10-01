@@ -85,8 +85,7 @@ State            : Running
 Scanned Files    : 3944
 Suspicious Files : 0
 Failed Files     : 1?\C:
-
-Volume Root Path : \?\C:\                                      8                                            20000
+Volume Root Path : ?\C:\                                      8                                            20000
 Window Usage     : 0                                           14                                            20000
 Path             : ...
 </code></pre></td></tr></tbody></table>

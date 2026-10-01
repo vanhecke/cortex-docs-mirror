@@ -13,18 +13,7 @@ Before you begin to onboard GCP to Cortex XSIAM, ensure that you have the necess
 
 ## Required APIs
 
-Ensure you have enabled the following APIs in the GCP project you are onboarding:
-
-* [Cloud Resource Manager API](https://console.cloud.google.com/apis/api/cloudresourcemanager.googleapis.com)
-* [Identity and Access Management (IAM) API](https://console.cloud.google.com/apis/api/iam.googleapis.com)
-* [Cloud Pub/Sub API](https://console.cloud.google.com/apis/api/pubsub.googleapis.com) (if audit logs are enabled)
-
-If you plan on enabling Automation as an additional security capability, enable the following APIs:
-
-* [Kubernetes Engine API](https://console.cloud.google.com/apis/api/container.googleapis.com)
-* [Compute Engine API](https://console.cloud.google.com/apis/api/compute.googleapis.com)
-* [Service Usage API](https://console.cloud.google.com/apis/api/serviceusage.googleapis.com)
-* [Cloud Storage API](https://console.cloud.google.com/apis/api/storage-component.googleapis.com)
+Ensure you have enabled the [required APIs](prerequisites-for-onboarding-gcp/required-apis) in the GCP project you are onboarding.
 
 ### Required admin GCP permissions for Cortex XSIAM onboarding
 

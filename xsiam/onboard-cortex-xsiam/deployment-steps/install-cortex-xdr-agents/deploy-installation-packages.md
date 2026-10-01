@@ -17,6 +17,6 @@ After you create and download an installation package, you can then install it d
 
 **Related information**
 
-* [Cortex XDR Agent Administrator Guide](https://app.gitbook.com/s/Bm5XCCM7A3bAu8TS9kFD/)
-* [Agent iOS Guide](https://app.gitbook.com/s/8AQY2hSDDP8XenSfAtjj/)
-* [Agent Android Guide](https://app.gitbook.com/s/QYFpeEghdkGqvW2PdVmn/)
+* [Cortex XDR Agent Administrator Guide](https://cortex-docs.paloaltonetworks.com/cortex-xdr-agent)
+* [Agent iOS Guide](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/8AQY2hSDDP8XenSfAtjj/)
+* [Agent Android Guide](https://cortex-docs.paloaltonetworks.com/cortex-xdr-agent-android-guide)

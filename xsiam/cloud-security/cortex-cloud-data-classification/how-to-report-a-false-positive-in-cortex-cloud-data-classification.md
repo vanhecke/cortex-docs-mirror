@@ -2,7 +2,7 @@
 description: Report false positives in Cortex XSIAM Data Classification.
 ---
 
-# How to report a false positive in  Cloud Data Classification
+# How to report a false positive in Cloud Data Classification
 
 {% hint style="info" %}
 Requires a Cloud Posture Security, Cloud Runtime Security, or Cortex XSIAM Premium license. If you have the Endpoint DLP add-on, Data Classification is automatically available.

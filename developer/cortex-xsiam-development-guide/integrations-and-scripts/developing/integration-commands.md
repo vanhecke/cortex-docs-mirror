@@ -30,7 +30,7 @@ Verify that commands run quickly and are non-blocking. A command should never ta
 
 Do not use sleep() in your code. If you have commands that need to run for longer periods of time, there are two options:
 
-* Make the commands asynchronous and implement a [generic polling](https://app.gitbook.com/s/AEIjuYE3RXcIfmuQnBbm/) mechanism, as used in the [HelloWorld](https://github.com/demisto/content/blob/master/Packs/HelloWorld/Integrations/HelloWorld/HelloWorld.py) integration. For example, if you need to run a search across your endpoints, instead of a single command that waits until the search is completed, you should implement three separate commands.
+* Make the commands asynchronous and implement a [generic polling](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/AEIjuYE3RXcIfmuQnBbm/) mechanism, as used in the [HelloWorld](https://github.com/demisto/content/blob/master/Packs/HelloWorld/Integrations/HelloWorld/HelloWorld.py) integration. For example, if you need to run a search across your endpoints, instead of a single command that waits until the search is completed, you should implement three separate commands.
   * A command that triggers the search and returns immediately a job ID as output. For example, `!helloworld-start-scan`.
   * A command that checks the status of the job taking the job ID as input. For example, `!helloworld-scan-status`.
   * A command that retrieves the results of a job when it's complete, taking the job ID as input. For example, `!helloworld-scan-results`.

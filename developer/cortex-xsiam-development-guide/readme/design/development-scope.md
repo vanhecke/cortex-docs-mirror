@@ -44,7 +44,7 @@ If you are creating an integration that fetches incidents from a third-party sys
     Analyze correlations of multi-events from multiple sources by using the Cortex Query Language (XQL) based engine for creating scheduled rules called Correlation Rules. Alerts can then be triggered based on these correlation rules with a defined time frame and set schedule, including every X minutes, once a day, once a week, or a custom time.
 *   Alert fields
 
-    [Create alert fields](https://app.gitbook.com/s/AEIjuYE3RXcIfmuQnBbm/) for data specific to custom incident types. All of the alert fields should be associated only to the incident type you have created, and their names should be prefixed accordingly to indicate this association.
+    [Create alert fields](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/AEIjuYE3RXcIfmuQnBbm/) for data specific to custom incident types. All of the alert fields should be associated only to the incident type you have created, and their names should be prefixed accordingly to indicate this association.
 *   Layouts
 
     As you create alert fields, they can be added to new alert layouts, making the most relevant information visible to your users.

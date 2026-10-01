@@ -4,7 +4,7 @@ description: >-
   compliance details.
 ---
 
-# Review assessments
+# Review compliance assessments
 
 The **Assessment** page shows the latest compliance assessment profile results. It provides an up to date high level compliance view.
 
@@ -79,7 +79,7 @@ Right clicking on a row includes the following options:
 * **View Control Side Panel**: Opens the **Control Details** side panel.
 * **View Rule Side Panel**: Opens the **Rule Details** side panel.
 
-## View the compliance assessment of an individual asset
+## Review the compliance assessment of an individual asset
 
 You can review the compliance performance of any asset to gain insight into how a specific asset aligns with assigned security standards and individual controls.
 

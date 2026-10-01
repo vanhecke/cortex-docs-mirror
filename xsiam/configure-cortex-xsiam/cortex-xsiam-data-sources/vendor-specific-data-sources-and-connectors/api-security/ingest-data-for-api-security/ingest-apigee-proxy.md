@@ -12,7 +12,7 @@ The integration uses the Apigee’s JavaScript (JS) policy, implemented within a
 
 In Cortex XSIAM, set up the Apigee data source to integrate with the Apigee Gateway.
 
-1. From Settings → Data Sources & Integrations, click +Add New, search for Apigee, then hover over it and click Add or Add Instance.
+1. From Settings → Data Sources & Integrations, click +Add New, search for Apigee, then hover over it and click Add.
 2. In the Apigee Collector wizard, enter a relevant name and then click Create and Proceed.
 3. Copy the key and paste it somewhere so that you can access it for later. If you forget to record the key and close the window, you must generate a new key and repeat this process.
 4. Click the Download Configuration Script link to download the plugin, which you can then upload from the Apigee Gateway.

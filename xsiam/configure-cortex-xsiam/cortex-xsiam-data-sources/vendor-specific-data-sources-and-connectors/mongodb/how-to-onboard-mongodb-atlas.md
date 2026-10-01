@@ -19,7 +19,7 @@ Integrate Cloud Security with your MongoDB Atlas account to gain comprehensive v
 
 ## Add configuration details
 
-1. Go to **Settings > Data Sources & Integrations** and then on the **Data Sources & Integrations** screen, click **+ Add New**.
+1. Go to **Settings > Data Sources & Integrations** and click **+ Add New**.
 2. On the **Add Data Sources or Integrations** page, click **Show More > Database** and then click on the **MongoDB Atlas (Posture)** card and then click **Add**.\
    Alternatively, you can enter “Mongo” in the **Search Sources** filter field, and then click on the **MongoDB Atlas (Posture)** card > **Add** as mentioned above.
 3. In the **MongoDB Atlas (Posture) Instance** screen, enter the following:

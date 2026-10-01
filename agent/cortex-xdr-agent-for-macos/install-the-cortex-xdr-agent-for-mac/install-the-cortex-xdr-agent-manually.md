@@ -36,10 +36,10 @@ To install the Cortex XDR agent manually on a macOS endpoint:
    2. Add\*\*`<endpoint_tags>`_`tag1,tag2,tag3`_`</endpoint_tags>`\*\* to the file and save.
 7. Install the Cortex XDR agent software.
    1. Execute the `CortexXDR.pkg` file in the unzipped installation folder.
-   2. Click **Continue** to proceed with the installation.
-   3. If prompted to confirm the destination, click **Continue**.
-   4. Click **Install** to begin the installation.
-   5. Enter the **User Name** and **Password** of the administrator with access to install software on the endpoint, and then click **Install Software**.
+   2. Select **Continue** to proceed with the installation.
+   3. If prompted to confirm the destination, select **Continue**.
+   4. Select **Install** to begin the installation.
+   5. Enter the **User Name** and **Password** of the administrator with access to install software on the endpoint, and then select **Install Software**.
    6.  Wait for the Cortex XDR agent installation to complete.
 
        ![CortexMacOs\_Install03.png](https://517755450-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FuBmMrMEHkk0xAv8axZos%2Fuploads%2FXtKzMnc1J5K99lAO5mwm%2F716c0520d7ae88360edc9548cc4bb099ea23022828ef6d30cb41c6d8fd473652.png?alt=media\&token=e7795966-be9c-4a2a-abe7-f47f32581229)
@@ -49,15 +49,15 @@ To install the Cortex XDR agent manually on a macOS endpoint:
    1.  When you are installing the Cortex XDR agent, this warning will be seen twice: first for the Security Extension and then for the Network Extension. However, in both warnings, the operating system displays `System Extension Blocked`.
 
        Select **Open Security Preferences** to enable the extensions.
-   2. Go to System Settings → Privacy & Security, and click **Details**.
-   3.  Select both Cortex XDR System Extensions and click **OK** to allow them. Ignore the message informing that `The system needs to be restarted before it can be used` since this step is not required.
+   2. Go to System Settings → Privacy & Security, and select **Details**.
+   3.  Select both Cortex XDR System Extensions and select **OK** to allow them. Ignore the message informing that `The system needs to be restarted before it can be used` since this step is not required.
 
        ![step-8-c.png](https://517755450-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FuBmMrMEHkk0xAv8axZos%2Fuploads%2F8qyVa9t39b01dkvmmlS6%2Ff9ee6cebecdc8b16d9cb3a0285286158c1a1b7e34c6807457f86e379214f298b.png?alt=media\&token=09afc2e4-b6b7-4cc6-ae49-99861024099f)
    4.  Approve Cortex XDR Web Content Filter.
 
        ![CortexMacOs\_Install07.png](https://517755450-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FuBmMrMEHkk0xAv8axZos%2Fuploads%2FikoGtGxAjZBTo6Rhxihc%2Fe9a82a074afec8066798c5dbcde9cc374fda0ae81e6041aa7e13a1fe810e7c19.png?alt=media\&token=3cccb4b5-1cd9-4cd6-8b9b-660280fc6d6b)
 
-       Click **Allow** to enable the Cortex XDR agent to monitor network events.
+       Select **Allow** to enable the Cortex XDR agent to monitor network events.
 
        <div data-gb-custom-block data-tag="hint" data-style="warning" class="hint hint-warning"><h3>Warning</h3><p>If you dismiss this notification, the Cortex XDR agent does not monitor the network traffic on the endpoint, and cannot report network events back to Cortex XDR. Consequently, BIOC and BIOC to Behavioral Threat Protection (BTP) rules you have for network events will not work, and you will not be able to query about network events in the Query builder. For Cortex XDR agent 7.3 and later, network isolation will not work as well.</p></div>
 9.  Grant full disk access.
@@ -76,13 +76,13 @@ To install the Cortex XDR agent manually on a macOS endpoint:
         ![P\_S\_Full\_Disk\_Access\_screen.png](https://517755450-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FuBmMrMEHkk0xAv8axZos%2Fuploads%2FjwaZNoj9zu345vfSGTjW%2F5e22d3f6df841186497d943c905eae8b5d54cb65b01f084f0072a75723a19d13.png?alt=media\&token=1936c5fc-6988-4acf-8288-802ab5237a38)
 10. Approve Cortex XDR agent notifications.
     1. After you install the Cortex XDR agent on the endpoint, the operating system will prompt a system notification requesting permissions to show Cortex XDR agent notifications.
-    2.  Click **Options**, and then click **Allow**.
+    2.  Select **Options**, and then select **Allow**.
 
         ![CortexMacOs\_Install13.png](https://517755450-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FuBmMrMEHkk0xAv8axZos%2Fuploads%2FJQWjDyjyP9SBBQ4Xe6Oj%2F39bf431068474c439eafe060bedff7620ee2724c61a1c58c1cc75712525c1af9.png?alt=media\&token=91505269-7474-4ffc-bb48-4ba0a9e7a08e)
-    3. If the system notification is no longer visible, you can approve permissions in System Settings → **Notifications**. Select Cortex XDR agent and click **Allow Notifications**.
+    3. If the system notification is no longer visible, you can approve permissions in System Settings → **Notifications**. Select Cortex XDR agent and select **Allow Notifications**.
 11. Verify the Cortex XDR agent connection and protection status.
-    1. To open the Cortex XDR agent console, click the agent icon in the menu bar, and select **Open Console**.
-    2.  Click **Check In Now** to initiate a connection with your Cortex XDR tenant. If successful, the **Connection** field updates to display your Cortex XDR tenant, and the **Last Check In** field updates to display the last check in date and time.
+    1. To open the Cortex XDR agent console, select the agent icon in the menu bar, and select **Open Console**.
+    2.  Select **Check In Now** to initiate a connection with your Cortex XDR tenant. If successful, the **Connection** field updates to display your Cortex XDR tenant, and the **Last Check In** field updates to display the last check in date and time.
 
         ![Cortex\_MacOS\_Installation\_11.jpg](https://517755450-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FuBmMrMEHkk0xAv8axZos%2Fuploads%2FOFI8uADGTHQuG56EfYf3%2F69c072ff392a081215d025a17f4af523362d6d3ec15f448403713d77e93d2ed1.jpg?alt=media\&token=3bbc66eb-b092-46e0-841a-56c4854eb0a9)
 

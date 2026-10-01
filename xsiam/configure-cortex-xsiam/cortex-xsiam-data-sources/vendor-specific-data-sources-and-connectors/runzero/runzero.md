@@ -4,8 +4,6 @@ description: Use runZero data in Cortex XSIAM.
 
 # runZero
 
-
-
 {% hint style="warning" %}
 **Important**
 

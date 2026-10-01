@@ -40,7 +40,7 @@ xdm.<context>.[<compound>].<field>
 {% hint style="info" %}
 ### Note
 
-For more information on these data model fields, see [XSIAM Data Model Schema](https://app.gitbook.com/s/HVBaxKOW1b6qcIQ6iMBh/).
+For more information on these data model fields, see [XSIAM Data Model Schema](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/HVBaxKOW1b6qcIQ6iMBh/).
 {% endhint %}
 
 <details>

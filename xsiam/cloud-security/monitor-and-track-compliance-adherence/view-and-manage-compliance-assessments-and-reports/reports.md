@@ -4,7 +4,7 @@ description: >-
   reports.
 ---
 
-# Review reports
+# Review compliance reports
 
 The **Reports** page accessible from **Posture Management → Compliance → Results → Reports** shows a table listing compliance assessment report files.
 

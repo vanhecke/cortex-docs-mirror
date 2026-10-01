@@ -25,7 +25,7 @@ Find the encrypted token inside the archive.
 {% step %}
 ### Retrieve the TSF file password
 
-The next steps depend on how the TSF was generated.&#x20;
+The next steps depend on how the TSF was generated.
 
 <details>
 
@@ -45,7 +45,7 @@ Follow these steps if the TSF was downloaded from the **Action Center**.
 
 <summary>From the endpoint</summary>
 
-Follow these steps if the TSF was collected locally by running the `cytool log collect` command on the endpoint's command line.&#x20;
+Follow these steps if the TSF was collected locally by running the `cytool log collect` command on the endpoint's command line.
 
 1. Go to **Inventory** → **Endpoints** → **All Endpoints**.
 2. At the top of the page, click the key icon <img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fgit-blob-e6a03305250c113a69f127e31e02e2d623fdac04%2F48eece5124cdca27f9a7a4ee50ae57b15cd6e3a3e056df865cf847c10efd7ae9.png?alt=media" alt="Screenshot_2025-08-04_at_15_40_52.png" data-size="line"> (**Tokens and Passwords**) and select **Retrieve Support File Password**.

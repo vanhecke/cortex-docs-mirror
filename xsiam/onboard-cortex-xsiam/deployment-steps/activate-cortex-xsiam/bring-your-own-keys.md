@@ -111,8 +111,13 @@ Import new keys for encrypting your tenant data at rest:
 
     Generate a key that meets these requirements using your preferred method or use the provided OpenSSL command:
 
-    When your encryption key is ready, select **I have a 32-byte symmetric encryption key ready** and click **Next**.
-2. In the **Wrap & Upload** screen, repeat the following procedure for both **Data lake wrapping key** and **Services wrapping key**.
+```
+openssl rand 32 <FILENAME>
+```
+
+When your encryption key is ready, select **I have a 32-byte symmetric encryption key ready** and click **Next**.
+
+1. In the **Wrap & Upload** screen, repeat the following procedure for both **Data lake wrapping key** and **Services wrapping key**.
    1.  Select your import method and download the wrapping key. You can only select your import method the first time you download your key.
 
        Available import methods are:

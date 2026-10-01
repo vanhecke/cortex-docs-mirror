@@ -14,7 +14,7 @@ Websites data in Cortex XSIAM enables you to accomplish the following:
 * Identify insecure and misconfigured websites, vulnerable technologies, and dependencies
 * Improve security ratings by identifying sites failing security best practices
 
-**The difference between websites and external services**
+### **The difference between websites and external services**
 
 In Cortex XSIAM, external services are public-facing network services; for example, an RDP server or an HTTP server. Websites represent the content and the software stack that was used to generate the website.
 
@@ -24,11 +24,11 @@ An HTTP service represents a single HTTP server (on-prem) or a cohesive group of
 * A cloud HTTP service serves a single website.
 * An on-prem HTTP service serves multiple websites, potentially hundreds.
 
-**The difference between websites and domains**
+### **The difference between websites and domains**
 
 A domain is simply the registration of a domain (for example, your organization might own www.example.com). You can have a domain without a website behind it. You can also have a domain that does not resolve to an IP address (which means it does not have a website behind it). Cortex XSIAM includes websites with a domain name or an IP address.
 
-**Websites field descriptions**
+### **Websites field descriptions**
 
 The Websites page lists your websites in a table format that can be sorted, filtered, and downloaded. Some of the key fields are described in the table below.
 
@@ -50,7 +50,7 @@ The Websites page lists your websites in a table format that can be sorted, filt
 | Website Third Party Script Domains  | Third-party domains that serve the scripts (not the scripts themselves).                                                                                                                                                                                                                                                                                                                                                           |
 | Website ID                          | Unique ID associated with the website.                                                                                                                                                                                                                                                                                                                                                                                             |
 
-**Website details**
+### **Website details**
 
 Click a row in the Websites table to open the details page for that website. The following sections describe the information on the website details page.
 

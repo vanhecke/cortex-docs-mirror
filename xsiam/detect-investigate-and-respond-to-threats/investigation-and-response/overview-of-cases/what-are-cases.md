@@ -18,16 +18,26 @@ To see a list of all cases, go to **Cases & Issues** → **Cases**.
 
 While cases are configured to work OOTB, users with specific requirements can customize and tailor their cases.
 
-### **Case creation**
+### **Case creation and issue grouping**
 
-A case can be created automatically from an issue or manually by a user. When new issues are detected, Cortex XSIAM checks them against existing cases. If there is no matching case, a new case is created. When an issue is linked to a case, all associated assets and artifacts are also linked. After case creation, new issues can match the case until the grouping threshold is met.
+Not all issues are promoted to cases. When a new issue is triggered, it is evaluated to determine if it meets the criteria for case promotion. If the issue qualifies, the system uses case grouping logic to correlate the issue with an existing case; if no match is found, a new case is generated.  For more information, see [Case grouping](../case-concepts/case-grouping).
 
-A case is automatically generated for any issue with Medium severity or higher that falls into one of these categories:
+{% hint style="warning" %}
+Case grouping is supported for Security and Posture domains only.&#x20;
+{% endhint %}
 
-* It is assigned to the Security domain.
-* It is assigned to the Posture domain and has a High severity.
-* It was generated from the public API or created from correlations.
+#### Automatic case creation
+
+A case is automatically generated for any issue that falls into these categories:
+
+* It is assigned to the **Security** or **Posture** domain with **Medium** severity or higher.
+* It was generated from the **public API** and has **Medium** severity or higher.
+* It was created from **correlations** and has **Medium** severity or higher.
 
 While most low-severity issues do not create cases, specific analytic rules can trigger case creation for low-severity issues when action is deemed necessary. Low-severity issues created from correlation rules are not grouped into cases.
 
-For more information about how cases are built, see [Case grouping](../case-concepts/case-grouping).
+#### Manual case creation
+
+You can also manually create cases from the **Cases** page and select issues to link to the case. For more information, see [Create a case.](https://app.gitbook.com/s/mxWuY3s7AUvWfzCV9p1A/cases-and-issues/analyze-and-resolve-cases/additional-case-actions/create-a-case)
+
+At least one issue must be linked to a case. If all issues are unlinked from a case, the case is deleted.

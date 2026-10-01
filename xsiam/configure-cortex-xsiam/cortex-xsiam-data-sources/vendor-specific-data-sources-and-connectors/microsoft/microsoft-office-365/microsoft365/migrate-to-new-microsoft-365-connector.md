@@ -23,12 +23,12 @@ By upgrading to the new connector, you benefit from:
 **Task 1. Remove the existing Microsoft365 Connector**
 
 1. ​Remove your existing Microsoft 365 connector to prepare for the migration.
-   * **Note:** Removing the connector clears the Microsoft 365 assets and objects previously discovered by the existing connector from the Data Security inventory. No data is deleted from your Microsoft 365 environment. The new connector automatically rediscovers and repopulates these assets during ingestion.
+   * **Note:** Removing the connector clears the Microsoft 365 assets and objects previously discovered by the existing connector from the Cortex inventory. No data is deleted from your Microsoft 365 environment. The new connector automatically rediscovers and repopulates these assets during ingestion.
 2. Wait approximately **24 hours** for the cleanup process to complete before proceeding to the next step.
 
 **Task 2. Install the new Microsoft 365 Connector**
 
-Install the new Microsoft 365 connector by following the configuration guide. For more information, see [Microsoft 365](../microsoft-365-new).
+Install the new Microsoft 365 connector by following the configuration guide. For more information, see [Microsoft 365](../microsoft-365).
 
 **Task 3. Monitor Data Ingestion**
 

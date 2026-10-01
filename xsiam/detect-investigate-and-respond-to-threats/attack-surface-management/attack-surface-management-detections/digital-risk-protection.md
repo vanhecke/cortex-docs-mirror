@@ -15,7 +15,7 @@ Organizations face significant challenges in safeguarding their brand and digita
 
     Leaked Credentials pose a risk to organizations by providing unauthorized access to sensitive systems and data, leading to data breaches, financial losses, and reputation damage.
 
-    Cortex XSIAM focuses on externally reported credential leaks, specifically surfacing those that have occurred within the last six months.
+    Cortex XSIAM focuses on externally identified credential leaks, specifically surfacing those that have occurred within the last six months. Our solution sources information from multiple sources including paste sites, public breaches, and reported dark web activity.
 
 ### How to enable Digital Risk Protection
 

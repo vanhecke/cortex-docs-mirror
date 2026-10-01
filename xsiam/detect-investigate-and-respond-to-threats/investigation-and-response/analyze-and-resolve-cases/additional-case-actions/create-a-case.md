@@ -42,3 +42,5 @@ In Cortex XSIAM, you can create a case directly from the **Cases** page.
     Each case creation generates one issue. The name, the severity, and the description of the generated issue mirrors the name, the severity, and the description of the case.
 
     <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>You can't attach files to manually created cases.</p></div>
+
+After case creation you can link and unlink issues from the case, as required. For more information, see [Link or unlink issues from a case](../../investigate-issues/link-or-unlink-issues-from-a-case).

@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn how Effective Permission Calculation works in Cortex XSIAM Cloud
-  Identity Security.
+  An explanation of how Effective Permission Calculation works in Cloud Identity
+  Security.
 ---
 
 # How does Effective Permission Calculation work?
@@ -26,7 +26,7 @@ A permission consists of five main components:
 *   **Granter:** The asset that connects the source and the policy. Traditionally, this can be a group or a cloud service account. In the case of a direct attachment, or the use of inline policy, the granter and the source would be the same asset. In the case of a resource-based policy, the granter and the destination would be the same asset.
 
     In OCI, this is typically a group or dynamic group.
-* **Action:** The specific action that a source can perform on a granter.
+* **Action:** The specific action that a source can perform on a destination.
 
 #### Cloud permission calculations
 
@@ -71,3 +71,19 @@ Resource-based policies are permissions that are configured on the destination r
 *   **OCI:** Permissions are calculated based on policies attached at the tenancy or compartment level. OCI does not use separate resource-based policies. Instead, access to specific resources is defined within the IAM policy using the `in` clause (specifying a tenancy or compartment) and the `WHERE` clause (specifying individual resource IDs or tags).
 
     <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>Unlike GCP (organizations/folders/projects) or Azure (management groups/subscriptions), OCI uses a nested compartment structure.</p></div>
+
+#### **Effective permissions in graph search results**
+
+Net effective permissions are represented in graph search results by the **Has permissions on** connection, which links a source identity to the destination asset it can act on. This connection is the end result of the effective permission calculation described above, so it tells you what an identity can ultimately do, without you having to trace how that access is granted.
+
+One connection can represent a path that passes through several assets. The connections along that path include **Allows access**, which represents a policy as it is written in your cloud environment; for example, a policy that allows a service account to read objects in a storage bucket. To see the assets in the path and the connections that link them, select the plus (**+**) icon on the connection to expand the full permission path.
+
+The **Has permissions on** connection also records the actions that the identity can perform on the destination, in two forms:
+
+* **Access level:** A broad category that groups related actions, which is one of **Admin**, **Config**, **List**, **Read**, or **Write**.
+* **Raw action:** An exact cloud action, such as `s3:PutObject` or `storage.objects.create`.
+
+Because both forms are recorded, you can distinguish high-risk access, such as **Write**, from low-risk access, such as **List**, and you can search by either form in the visual query builder. For example, you can build either of the following queries:
+
+* Find all identities with **Admin** access to an S3 bucket.
+* Find all identities with the exact `s3:PutObject` permission on an S3 bucket.

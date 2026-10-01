@@ -8,11 +8,28 @@ The **Standards Catalog** page displays a list of the available standards:
 
 <figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FBE4ZrFLV12XR33QA4cPS%2FScreenshot%202026-09-03%20at%201.26.02%E2%80%AFPM.png?alt=media&#x26;token=434f018c-0122-4ca2-b7b6-7295a3b5c596" alt=""><figcaption></figcaption></figure>
 
-Click on a specific standard to open the standard overview side panel with detailed information about the standard:
+## View controls associated with a specific standard
 
-<figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FV6CsbFR0dnxRMjxHqPG7%2Fcompliance-standards-sidepane.png?alt=media&#x26;token=b0a19d18-2116-434a-8972-949d07619866" alt="This screenshot from Cortex UI shows standard details shown in a side pane."><figcaption></figcaption></figure>
+From the **Standards Catalog**, click on the Controls link on the tile corresponding to a specific standard to  view the list of all the controls that are part of the standard,
 
-From the side panel, you can view and filter controls associated with the standard, and click on a control to view its details and the rules associated with it.
+All of the columns are sortable and filterable. By default, the table is sorted numerically by the control index number.
+
+You can search for specific controls using the filter. For example, you can search for all custom controls with the filter **`Created by != Palo Alto`**
+
+The following information is provided for each control:
+
+* **Name**: The control name, including the control index number if available. For example, **`2.1.1 Client certificate authentication`**
+* **Description**: A description of the control. For example, **`Kubernetes provides the option to use client certificates for user authentication.`**
+* **Standards**: The standards the control is associated with. For example, **`CIS Google Kubernetes Engine (GKE) Benchmark v1.6.0`**
+* **Category**: The control category, including the category index if available. For example, **`2 Control Plane Configuration`**
+* **Subcategory**: The control sub category if available, including the sub category index if available. For example, **`2.1 Authentication and Authorization`**
+* **Rules**: The number of rules associated with the control.
+* **Creation time**: When the control was created.
+* **Created by**: Who created the control. For built-in controls, it is **`Palo Alto Networks`**.
+
+<figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2Fzr0bFzUkGAtkv0w9AcPo%2Fimage.png?alt=media&#x26;token=743e5792-2a7a-43ab-b220-948d5054adfa" alt=""><figcaption></figcaption></figure>
+
+Clicking a control opens a side panel that displays all the control details in the **Overview** tab, and the list of rules associated with the control in the **Rules** tab.
 
 ## Built-in compliance standards
 

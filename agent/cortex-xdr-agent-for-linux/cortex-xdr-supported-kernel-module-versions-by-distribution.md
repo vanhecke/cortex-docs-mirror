@@ -21,6 +21,6 @@ To load the certificate, follow the instructions detailed in Cortex XDR Agent Ad
 
 Changes to the Kernel module versions are distributed with content updates. For earlier Cortex XDR agent releases, changes to the kernel module versions are distributed with the agent releases.
 
-#### Latest Kernel Module versions supported
+#### Latest supported kernel module versions
 
 See the [latest Kernel Module versions](https://app.gitbook.com/s/y29o8lwSBpbfPbvztsyt/) that are supported.

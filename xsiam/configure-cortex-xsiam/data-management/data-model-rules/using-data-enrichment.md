@@ -15,7 +15,7 @@ Cortex XSIAM automatically enriches your Cortex Data Model (XDM) data with addit
 {% hint style="info" %}
 ### Note
 
-For a complete list of auto-enriched fields, see the [XSIAM Data Model Schema](https://app.gitbook.com/s/HVBaxKOW1b6qcIQ6iMBh/).
+For a complete list of auto-enriched fields, see the [XSIAM Data Model Schema](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/HVBaxKOW1b6qcIQ6iMBh/).
 {% endhint %}
 
 * IP addresses are enriched with geolocation information.

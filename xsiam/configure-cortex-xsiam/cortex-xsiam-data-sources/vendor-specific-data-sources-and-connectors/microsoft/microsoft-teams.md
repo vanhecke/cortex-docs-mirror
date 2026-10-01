@@ -16,7 +16,7 @@ To configure this connector, follow these steps:
 
 #### Global Administrator access to the Azure portal
 
-Sign in to the [Microsoft Azure portal](https://portal.azure.com/) as a Global Administrator. Use the [Create a Microsoft Entra ID ](microsoft-office-365/microsoft-365-new/create-a-microsoft-entra-id)page to obtain the following values:
+Sign in to the [Microsoft Azure portal](https://portal.azure.com/) as a Global Administrator. Use the [Create a Microsoft Entra ID ](microsoft-office-365/microsoft-365/create-a-microsoft-entra-id)page to obtain the following values:
 
 * **Tenant ID:** Directory ID for your Microsoft Teams tenant.
 * **Client ID:** Application ID generated during app registration.
@@ -28,7 +28,7 @@ Sign in to the [Microsoft Azure portal](https://portal.azure.com/) as a Global A
 
 1. In Cortex Cloud, navigate to **Settings** → **Data Sources & Integrations**.
 2. Click **+ Add new**.
-3. On the **Add Data Source** page, search for **Microsoft Teams**, hover over it, The new Microsoft Teams connector has the description: Microsoft Teams integration for data security across channel messages, chats, and shared files | Microsoft Teams integration for security posture management.&#x20;
+3. On the **Add Data Sources or Integrations** page, search for **Microsoft Teams**, hover over it, The new Microsoft Teams connector has the description: Microsoft Teams integration for data security across channel messages, chats, and shared files | Microsoft Teams integration for security posture management.
 4. Click **Add**.
 
 #### Capabilities tab
@@ -60,7 +60,7 @@ If validation fails because of incorrect field values, close the wizard and rest
 
 #### Task 2. (Optional) Post verification
 
-After onboarding is complete, verify asset discovery and data security findings.
+After onboarding is complete, verify asset discovery and other findings.
 
 #### 1. Verify discovered assets
 
@@ -84,3 +84,16 @@ After onboarding is complete, verify asset discovery and data security findings.
 * ACLs for messages sent before a user is added to or removed from a Microsoft Teams group chat are not updated to reflect the membership change.
 * After onboarding a connector, Cortex Cloud may take **24 hours to 7 days** to fully process the data and generate findings. If you attempt to re-onboard the same connector using the same credentials during this transition period, previously generated findings and other data may temporarily reappear.
 {% endhint %}
+
+#### Exposure Definitions
+
+Microsoft Teams Workspace content is classified into three exposure categories:
+
+* **Restricted** Documents shared with one or more users outside the organization.
+* **External**: Documents shared with one or more users outside the organization.
+* **Organization-Wide:** Documents shared with all members of the organization, such as through a “People in your organization” link or tenant-wide permissions.
+
+Microsoft Teams Personal Workspace content is classified into four exposure categories:
+
+* **External**: Documents shared with one or more users outside the organization.
+* **Restricted:** Documents shared with Internal Users.

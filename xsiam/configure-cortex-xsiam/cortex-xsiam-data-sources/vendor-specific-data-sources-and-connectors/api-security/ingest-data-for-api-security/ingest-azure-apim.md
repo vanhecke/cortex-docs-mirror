@@ -18,7 +18,7 @@ Microsoft Azure APIM service must be running before starting to configure the in
 
 In Cortex XSIAM, set up the Azure API Management data source to integrate with the Azure API Gateway.
 
-1. From Settings → Data Sources & Integrations, click + Add New, search for Azure API Management, then hover over it and click Add or Add Instance.
+1. From Settings → Data Sources & Integrations, click + Add New, search for Azure API Management, then hover over it and click Add.
 2. In the APIM Collector wizard, enter a relevant name and then click Create and Proceed.
 3. Copy the key and paste it somewhere so that you can access it for later. If you forget to record the key and close the window, you must generate a new key and repeat this process.
 4. Click Close.

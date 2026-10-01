@@ -18,8 +18,8 @@ You can add Microsoft 365 as a third-party data source in Cortex XSIAM.
 #### **Configuration**
 
 1. Navigate to Settings → Data Sources & Integrations.
-2. On the Data Sources & Integrations page, click + Add New.
-3. On the Add Data Sources or Integrations page, search for Microsoft 365, then hover over it and click Add.
+2. Click **+ Add New**.
+3. On the **Add Data Sources or Integrations** page, search for Microsoft 365, then hover over it and click **Add**.
 4. On the Microsoft 365 integration instance settings page, do the following:
    1. In the Display Name field, enter a name for your Microsoft 365 integration instance.
    2. In the Tenant ID field, enter a tenant ID.

@@ -10,7 +10,7 @@ File Integrity Monitoring (FIM) serves as a security control designed to detect 
 
 Cortex XDR agent integrates FIM capabilities directly into its endpoint detection and response engine, enhancing the fidelity and actionable intelligence derived from file events. This also allows seamless deployment of FIM capabilities over workstations and servers with the XDR agent installed.
 
-File Integrity Monitoring requires a Cortex XDR agent with version 8.9.0 and above. FIM capabilities can be enabled on the following platforms and environments. See [Where can I install the Cortex XDR agent?](https://app.gitbook.com/s/fZ8QSMnkjnXpuOeuRcam/) for full platform options.
+File Integrity Monitoring requires a Cortex XDR agent with version 8.9.0 and above. FIM capabilities can be enabled on the following platforms and environments. See [Where can I install the Cortex XDR agent?](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/fZ8QSMnkjnXpuOeuRcam/) for full platform options.
 
 | Platform   | Available Implementation   |
 | ---------- | -------------------------- |
@@ -77,12 +77,11 @@ A rule group can contain up to 100 rules.
 3.  Fill in the **General Information**.
 
     Assign the profile **Name** and add an optional **Description**.
-4. Select the **Platform**. For Linux, define the monitoring mode, **Host** or **Containers**
-5.  In FIM Rule Group Select **+Manage Group**.
+4.  In FIM Rule Group Select **+Manage Group**.
 
     Select the required FIM Rule Groups.
-6. To save the FIM rule group definitions, click **Create**.
-7. It is allowed to add up to ten rule groups to a profile.
+5. To save the FIM rule group definitions, click **Create**.
+6. It is allowed to add up to ten rule groups to a profile.
 
 </details>
 

@@ -10,7 +10,7 @@ description: Map source data to the Cortex XSIAM data model using default or cus
 Data Model Rules require **View/Edit** RBAC permissions for **Data Management** (under **Configurations** → **Data Management**), which are the same permissions required for Dataset Management, Parsing Rules, and Event Forwarding.
 {% endhint %}
 
-Cortex XSIAM enables you to map your logs into a single, unified data model. This data model provides a consolidated schema and a simpler way to interact with your data, regardless of its source or dataset. To familiarize yourself with the data model schema, see [XSIAM Data Model Schema](https://app.gitbook.com/s/HVBaxKOW1b6qcIQ6iMBh/).
+Cortex XSIAM enables you to map your logs into a single, unified data model. This data model provides a consolidated schema and a simpler way to interact with your data, regardless of its source or dataset. To familiarize yourself with the data model schema, see [XSIAM Data Model Schema](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/HVBaxKOW1b6qcIQ6iMBh/).
 
 You can map your data to the data model using Data Model Rules, either by using the Default Rules that are automatically added when installing Content Packages from the Marketplace, or by creating user-defined rules. You create rules with the Data Model Rules editor, which enables you to do the following:
 

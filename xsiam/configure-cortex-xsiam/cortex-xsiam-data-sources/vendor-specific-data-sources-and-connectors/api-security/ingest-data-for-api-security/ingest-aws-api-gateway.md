@@ -10,7 +10,7 @@ Integrate AWS API Gateway with Cortex XSIAM to begin scanning the APIs for poten
 
 In Cortex XSIAM, set up the AWS API Gateway data source to integrate with the AWS API Gateway.
 
-1. From Settings → Data Sources, click **Add Data Source** and search for AWS API Gateway and then click Connect or Connect Another Instance.
+1. From **Settings** → **Data Sources & Integrations**, click **+** **Add New** and search for AWS API Gateway, then hover over it and click **Add**.
 2. In the AWS API Collector wizard, enter a relevant name and click Create and Proceed.
 3. Copy the key and save it for later.
 

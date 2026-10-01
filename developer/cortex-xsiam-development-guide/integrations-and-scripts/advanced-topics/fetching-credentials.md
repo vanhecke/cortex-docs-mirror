@@ -6,7 +6,7 @@ description: >-
 
 # Fetching credentials
 
-You can integrate with [third-party credential vaults](https://app.gitbook.com/s/AEIjuYE3RXcIfmuQnBbm/) for Cortex XSIAM to use when authenticating with integrations. This topic provides an example of a vault integration.
+You can integrate with [third-party credential vaults](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/AEIjuYE3RXcIfmuQnBbm/) for Cortex XSIAM to use when authenticating with integrations. This topic provides an example of a vault integration.
 
 ### Credential vault integration requirements
 

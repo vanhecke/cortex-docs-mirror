@@ -76,8 +76,8 @@ Ensure that you do the following tasks before you begin configuring data collect
 
 ### **Task 2: Configure the Microsoft Defender for Endpoint Events collector in Cortex XSIAM**
 
-1. Navigate to Settings → Data Sources & Integrations.
-2. On the Data Sources & Integrations page, click + Add New, search for Microsoft Defender for Endpoint Events, then hover over it and click Add.
+1. Navigate to **Settings** → **Data Sources & Integrations**.
+2. Click **+ Add New**, search for Microsoft Defender for Endpoint Events, then hover over it and click **Add**.
 3. Set these parameters:
    * Name: Specify a unique descriptive name for your log collection configuration. You cannot change this name later.
    * Event Hub Connection String: Specify your event hub’s connection string for the designated policy.

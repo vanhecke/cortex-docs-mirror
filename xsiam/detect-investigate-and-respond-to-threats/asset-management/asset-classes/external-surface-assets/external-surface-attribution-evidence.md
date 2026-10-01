@@ -6,15 +6,15 @@ description: Review external surface attribution evidence in Cortex XSIAM.
 
 Cortex XSIAM provides attribution information about each asset in your External Surface inventory, so you know at-a-glance why we believe an asset belongs to your organization.
 
-**Inventory Origin field**
+### **Inventory Origin field**
 
 Explains whether an asset was **Discovered** by Cortex XSIAM or **Provided** by your organization. This field is included on the Certificates, Domains, and External IP Address Ranges pages in your inventory.
 
-**Attribution Reason field**
+### **Attribution Reason field**
 
 Indicates whether an asset was attributed to your organization because it is **Registered to You** or **Has Your Content**. This field is included on the **External IP Address Ranges** page in your inventory.
 
-**Asset Attribution Evidence**
+### **Asset Attribution Evidence**
 
 To review more detailed attribution evidence for an asset, click on an asset in the External Surface inventory to display the asset details and find the **Asset Attribution Evidence** section.
 

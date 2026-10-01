@@ -1,12 +1,12 @@
 ---
 description: >-
-  Duplicate an existing cloud security policy in Cortex XSIAM and tailor it to
-  your needs.
+  Clone an existing cloud security policy in Cortex XSIAM and tailor it to your
+  needs.
 ---
 
 # Use an existing policy to create a new one
 
-You can use an existing custom default cloud security policy to create a new one. To create a new cloud security policy using an existing policy:
+You can use an existing custom or default cloud security policy to create a new one. To create a new cloud security policy using an existing policy:
 
 1. Navigate to **Posture Management** → **Rules & Policies** → **Policies** → **Cloud Security**.
 2. From the **Policies** page, there are two ways to access the option:

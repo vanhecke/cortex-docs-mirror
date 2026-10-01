@@ -202,7 +202,7 @@ Ensure one of the following is configured:
 8.  **Next Steps**.
 
     * After the scan is complete, you can view the scanned images on the **Container Images Inventory** page. For more details, see [Container Images assets](../../../../detect-investigate-and-respond-to-threats/asset-management/asset-classes/compute-assets/container-image-assets).
-    *   If you have selected the **Scan with Broker VM** option, then a **Registry Scanner applet** is created on the selected **Broker VM** or **Cluster**. For details, see [Verify Registry Scanner connection](../../../generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-registry-scanner#verify-registry-scanner-connection).&#x20;
+    *   If you have selected the **Scan with Broker VM** option, then a **Registry Scanner applet** is created on the selected **Broker VM** or **Cluster**. For details, see [Verify Registry Scanner connection](../../../generic-on-premise-data-collectors/broker-vm-data-collector-applets/activate-registry-scanner#verify-registry-scanner-connection).
 
         <figure><img src="https://2786854933-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FAEIjuYE3RXcIfmuQnBbm%2Fuploads%2FWVVeI7SbPxjm09uZY3nb%2Fbroker-vm-registry-applet.png?alt=media&#x26;token=ec3461c1-9b6e-4602-89ef-84516d57be19" alt=""><figcaption></figcaption></figure>
 

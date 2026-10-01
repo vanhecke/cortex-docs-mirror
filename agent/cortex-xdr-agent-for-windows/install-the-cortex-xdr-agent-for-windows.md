@@ -19,11 +19,11 @@ Use the following workflow to install the Cortex XDR agent using the MSI file.
 3.  Run the MSI file on the endpoint.
 
     The installer displays a welcome dialog.
-4. Click **Next**.
+4. Select **Next**.
 5.  **Install** the agent.
 
     The installer displays a User Account Control dialog.
-6. Click **Yes**.
+6. Select **Yes**.
 7.  After you complete the installation, verify the Cortex XDR agent can establish a connection.
 
     <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><h3>Note</h3><p>If the Cortex XDR agent does not connect to Cortex XDR, verify your internet connection and perform a check-in on the endpoint. If the agent still does not connect, verify that the installation package has not been removed from the Cortex XDR management console.</p></div>

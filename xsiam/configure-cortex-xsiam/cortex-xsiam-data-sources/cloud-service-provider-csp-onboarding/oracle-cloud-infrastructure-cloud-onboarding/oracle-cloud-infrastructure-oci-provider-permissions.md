@@ -4,17 +4,19 @@ description: List of Oracle Cloud Infrastructure provider permissions for Cortex
 
 # Oracle Cloud Infrastructure (OCI) provider permissions
 
-The following reference tables are organized by security module and then the list of the CSP permissions being requested.
+When you set up Cortex XSIAM to collect data from your cloud environments, the onboarding wizard will ensure that the correct permissions are granted for Cortex XSIAM. The following tables list the permissions required for each of the options available in the onboarding wizards.
+
+The following reference tables are organized by capability and then the list of the CSP permissions being requested.
 
 * [Discovery engine](#discovery-engine)
 * [ADS](#ads)
 * [Registry scan](#registry-scan)
 
-### Discovery engine
+## Discovery engine
 
 "Discovery Engine" read only access. Grants read-only access to OCI tenancy and resources.
 
-### ADS
+## ADS
 
 | Permission                                                                                                                                                                                 | Module | Scope                                                                        | Purpose                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -26,9 +28,9 @@ The following reference tables are organized by security module and then the lis
 | Admit group CortexOutpostGroup of tenancy CortexOutpost to manage boot-volume-backups in tenancy where target.resource.tag.cortex\_m-o-lcaas\_id.panw\_capability = 'cortex-scan-platform' | ADS    | Only boot-volume-backups tagged with panw\_capability = cortex-scan-platform | Restrict deletion to Cortex scan-related resources only                       |
 | Admit group CortexOutpostGroup of tenancy CortexOutpost to read all-resources in tenancy                                                                                                   | ADS    | In tenancy                                                                   | Read-only access to all resources                                             |
 
-### Registry scan
+## Registry scan
 
-#### Dynamic group permissions
+### Dynamic group permissions
 
 | Permission                                                          | Scope                    | Purpose                                                  |
 | ------------------------------------------------------------------- | ------------------------ | -------------------------------------------------------- |
@@ -37,7 +39,7 @@ The following reference tables are organized by security module and then the lis
 | Allow dynamic-group registry-scan to read secret-bundles in tenancy | Tag-scoped (project\_id) | Retrieve registry credentials from OCI Vault             |
 | Endorse dynamic-group registry-scan to read repos in any-tenancy    | Cross-tenancy            | Allow cross-tenancy image pulls for scans                |
 
-#### Inherited base permissions for registry scanning
+### Inherited base permissions for registry scanning
 
 | Permission                                                                   | Scope                    | Purpose                                             |
 | ---------------------------------------------------------------------------- | ------------------------ | --------------------------------------------------- |

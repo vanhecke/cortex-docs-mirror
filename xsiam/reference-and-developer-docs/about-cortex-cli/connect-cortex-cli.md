@@ -95,9 +95,15 @@ You can choose from three main installation workflows:
 
 After installation, you can upgrade, pin, uninstall, or update Cortex CLI through automated downloads. Refer to [manage the CLI](connect-cortex-cli/manage-the-cli-after-installation) for more information.
 
-## Module-specific requirements
+## Module requirements and supported environments
 
-### AppSec module support
+### Global module support
+
+Application Security, Cloud Workload Protection, and API Security (WAAS) support:
+
+* **Ubuntu 26.04.1:** Kernel `7.0.12`, glibc `2.43`
+
+### AppSec module support and environments
 
 #### Supported Linux environments
 

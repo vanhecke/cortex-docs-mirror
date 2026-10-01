@@ -17,9 +17,9 @@ You can add Snowflake as a third-party data source in Cortex Cloud Data Security
 
 #### **Configuration Step**
 
-1. Navigate to Settings → Data Sources & Integrations.
-2. On the Data Sources & Integrations page, click + Add New.
-3. On the Add Data Sources or Integrations page, search for Snowflake, then hover over it and click Add.
+1. Navigate to **Settings** → **Data Sources & Integrations**.
+2. Click **+ Add New**.
+3. On the **Add Data Sources or Integrations** page, search for Snowflake, then hover over it and click **Add**.
 4.  On the New Data Source Snowflake integration instance settings page, do the following:
 
     1. Enter a display name for your Snowflake integration instance.

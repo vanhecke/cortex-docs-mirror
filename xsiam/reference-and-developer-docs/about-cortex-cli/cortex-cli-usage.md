@@ -34,6 +34,18 @@ Place global flags before the module name. Place module flags after `scan`.
   * [Cortex CLI API Security command line reference guide](cortex-cli-for-api-security/cortex-cli-api-security-command-line-reference-guide)
   * [Cortex CLI Cortex Cloud Application Security command line reference](cortex-cli-for-code-security/cortex-cli-application-security-command-line-reference)
 
+### Exit codes and error handling
+
+The Cortex Unified CLI uses standardized exit codes to communicate scan results and execution states.
+
+**Standard exit codes**
+
+* **`0` (Success):** The scan executed successfully and no blocking security findings were found
+* **`1` (Scan failed):** The scan completed with findings or a general operational failure occurred
+* **`2` (Execution/usage error):** An internal error, version mismatch, or CLI configuration/usage error was encountered
+
+For advanced error handling, suppression flags (`--soft-fail`), and module-specific exit codes, refer to [exit-codes-and-error-handling](exit-codes-and-error-handling "mention").<br>
+
 ### Examples
 
 #### Global flags

@@ -81,7 +81,7 @@ Configure Cortex XSIAM to receive report data from Workday:
 
     a. Navigate to **Settings → Data Sources & Integrations**.
 
-    b. On the **Data Sources & Integrations** page, click **+ Add New**, search for **Workday**, then hover over it and click **Add**.
+    b. Click **+ Add New**, search for **Workday**, then hover over it and click **Add**.
 
     c. Set the following parameters.
 

@@ -12,8 +12,8 @@ This feature is included with a Cortex XSIAM Premium license. It is also include
 
 Follow this wizard to deploy your Kubernetes Connector. The Kubernetes onboarding wizard is designed to facilitate the seamless setup of Kubernetes data into Cortex XSIAM. The guided experience requires minimal user input; simply select the capabilities that fit your needs and download the custom installer file. For full control of the setup, you can use the advanced settings. Based on the onboarding settings, Cortex XSIAM then creates a custom installer file for running in your Kubernetes environment. This file, once executed in your Kubernetes environment, grants Cortex XSIAM the necessary permissions to collect the data. The installer file must be executed in your Kubernetes environment to complete the onboarding process. The connector then appears in Kubernetes Connectors.
 
-1. Navigate to **Settings → Data Sources & Integrations**.
-2. On the **Add Data Sources & Integrations** page, click **Create Integration**, search for **Kubernetes**, then hover over it and click **Add Another Instance**.
+1. Navigate to **Settings → Data Sources & Integrations** and click **+ Add New**.
+2. Search for **Kubernetes**, then hover over it and click **Add**.
 3. In the Kubernetes Connect onboarding wizard, enable the solutions that fit your needs:
    * **Posture Management**: (Enabled by default) A lightweight posture management solution for continuous discovery, policy enforcement, and proactive scanning of vulnerabilities, secrets, malware, compliance, and misconfigurations.
    * **Realtime Protection**: A solution that monitors workloads in real time to detect and block malicious activity, instantly preventing attacks as they happen.

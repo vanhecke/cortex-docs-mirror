@@ -38,7 +38,7 @@ For more information on Azure Event Hub audit logs, see [Overview of Azure platf
 | Microsoft Entra ID Activity logs and Microsoft Entra ID Sign-in logs | <p>Contain the history of sign-in activity and audit trail of changes made in Microsoft Entra ID (formerly Azure AD) for a particular tenant.</p><div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><br><strong>Note</strong><br><br>Even though you can collect Microsoft Entra ID Activity logs and Microsoft Entra ID Sign-in logs using the Azure Event Hub data collector, we recommend using the Microsoft Office 365 data collector, because it is easier to configure. Do not configure both collectors for the same log types. Doing so creates duplicate data in Cortex XSIAM.<br></p></div> |
 | Resource logs, including AKS audit logs                              | <p>Retrieves events related to operations that were performed within an Azure resource.</p><div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong><br><br>These logs are from the data plane.</p></div>                                                                                                                                                                                                                                                                                                                                                                               |
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **Prerequisite**
 
 Ensure that you do the following tasks before you begin configuring data collection from Azure Event Hub.
@@ -49,7 +49,7 @@ Ensure that you do the following tasks before you begin configuring data collect
 * Ensure the format for the logs you want collected from the Azure Event Hub is either JSON or raw.
 {% endhint %}
 
-Configure the Azure Event Hub collection in Cortex XSIAM:
+### Configure the Azure Event Hub collection in Cortex XSIAM
 
 1. In the Microsoft Azure console, open the **Event Hubs** page, and select the Azure Event Hub that you created for collection in Cortex XSIAM.
 2. Record the following parameters from your configured event hub, which you will need when configuring data collection in Cortex XSIAM.
@@ -97,7 +97,7 @@ Configure the Azure Event Hub collection in Cortex XSIAM:
     d. Save your settings.
 4. Configure the Azure Event Hub collection in Cortex XSIAM.
    1. Navigate to **Settings** → **Data Sources & Integrations**.
-   2. On the **Data Sources & Integrations** page, click **+ Add New**, search for **Azure Event Hub**, then hover over it and click **Add**.
+   2. Click **+ Add New**, search for **Azure Event Hub**, then hover over it and click **Add**.
    3. Set these parameters:
       * **Name:** Specify a descriptive name for your log collection configuration.
       * **Event Hub Connection String:** Specify your event hub’s connection string for the designated policy.
@@ -110,4 +110,4 @@ Configure the Azure Event Hub collection in Cortex XSIAM:
 
           <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note</strong></p><p>When you Normalize and enrich audit logs, the Vendor and Product fields are automatically configured, so these fields are removed as available options (default).</p></div>
       * **Normalize and enrich audit logs:** (Optional) For enhanced cloud protection, you can Normalize and enrich audit logs by selecting the checkbox (default). If selected, Cortex XSIAM normalizes and enriches Azure Event Hub audit logs with other Cortex XSIAM authentication stories across all cloud providers using the same format. You can query this normalized data with XQL Search using the `cloud_audit_logs` dataset.
-   4. Click Test to validate access, and then click Enable. When events start to come in, a green check mark appears underneath the Azure Event Hub configuration with the amount of data received.
+   4. Click **Test** to validate access, and then click Enable. When events start to come in, a green check mark appears underneath the Azure Event Hub configuration with the amount of data received.

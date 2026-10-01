@@ -120,8 +120,8 @@ For more information on Microsoft Azure, see the following instructions in the M
 * [Add API permissions with type Application](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).
 * [Create an application secret](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#create-a-new-application-secret).
 
-2. Navigate to Settings → Data Sources & Integrations.
-3. On the Data Sources & Integrations page, click + Add New, search for Office 365, then hover over it and click Add.
+2. Navigate to **Settings** → **Data Sources & Integrations**.
+3. Click **+ Add New**, search for Office 365, then hover over it and click **Add**.
 4.  Integrate the applicable Microsoft Entra ID (Azure AD) service with Cortex XSIAM.
 
     a. Specify the Tenant Domain of your Microsoft Entra ID tenant.

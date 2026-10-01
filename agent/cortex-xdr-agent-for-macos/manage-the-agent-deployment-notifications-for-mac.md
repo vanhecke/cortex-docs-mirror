@@ -12,7 +12,7 @@ Since the 7.1 release, the Cortex XDR agent deploys the Endpoint Security extens
 
 The following tables describe the extension and notification approval workflow the end user is required to perform on a Mac endpoint during agent installation, upgrade, and removal processes.
 
-#### Installing a Cortex XDR Agent
+#### Installing a Cortex XDR agent
 
 The following table describes the extension approval workflow the end user is required to perform on the endpoint during agent installation, when performed manually or using an MDM.
 
@@ -20,7 +20,7 @@ The following table describes the extension approval workflow the end user is re
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Install a Cortex XDR agent | <ul><li><strong>Endpoint Security extension</strong>—Requires user approval. Can be suppressed in your MDM profile.</li><li><strong>Network extension</strong>—Requires user approval. Can be suppressed in your MDM profile.</li><li><strong>Network content filter</strong>—Requires user approval. Can be suppressed in your MDM profile. You can also suppress this operating system prompt by uploading a configuration file provided by Palo Alto Networks.</li></ul> |
 
-#### Upgrading a Cortex XDR Agent
+#### Upgrading a Cortex XDR agent
 
 The following table describes the extension approval workflow the end user is required to perform on the endpoint during agent upgrade, when performed manually or using an MDM.
 
@@ -28,7 +28,7 @@ The following table describes the extension approval workflow the end user is re
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Upgrade a Cortex XDR agent | <ul><li><strong>Endpoint Security extension</strong>—If already allowed during initial agent installation, nothing to allow during upgrade. Otherwise, allow once. Can be suppressed in your MDM profile.</li><li><strong>Network extension</strong>—If already allowed during initial agent installation, nothing to allow during upgrade. Otherwise, allow once. Can be suppressed in your MDM profile.</li><li><strong>Network content filter</strong>— If you are using an MDM to deploy the agents in your networks, you can suppress this operating system prompt by uploading a configuration file provided by Palo Alto Networks. Otherwise, if you are upgrading from a 7.2.1 agent or later and approval was already provided, nothing to allow during upgrade.</li></ul> |
 
-#### Removing a Cortex XDR Agent
+#### Removing a Cortex XDR agent
 
 The following table describes the approval workflow the end user is required to perform on the endpoint during agent removal, when performed manually or using an MDM.
 

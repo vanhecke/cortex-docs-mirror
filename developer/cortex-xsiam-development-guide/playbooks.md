@@ -6,7 +6,7 @@ description: "Create playbooks with the Playbook Editor to automate complex work
 
 Playbooks are a series of tasks, conditions, scripts, conditions, commands, and loops that run in a predefined flow to save time and improve efficiency and results of the investigation and response process.
 
-Playbooks enable you to automate complex workflows in Cortex XSIAM without requiring complicated coding, and they are created and edited directly in the UI via the Playbook Editor. For more information, see [Playbooks](https://app.gitbook.com/s/AEIjuYE3RXcIfmuQnBbm/).
+Playbooks enable you to automate complex workflows in Cortex XSIAM without requiring complicated coding, and they are created and edited directly in the UI via the Playbook Editor. For more information, see [Playbooks](https://app.gitbook.com/o/r4DIGbR5VLvkZy3gAYsu/s/AEIjuYE3RXcIfmuQnBbm/).
 
 After the playbook is complete, it can be downloaded and added to a content pack for submission.
 

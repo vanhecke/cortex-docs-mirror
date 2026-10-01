@@ -25,6 +25,7 @@ The `call` stage returns the dataset produced by the execution of the referenced
 * Recursive calls (a query calling itself) are not supported.
 * Ensure the saved query you are calling exists in the Query Library and that you have permission to view it.
 * If the saved query name changes, you must update the `call` statement in your queries to reflect the new name.
+* Queries that include a `call` stage cannot be saved to the query library.
 
 ## Examples
 

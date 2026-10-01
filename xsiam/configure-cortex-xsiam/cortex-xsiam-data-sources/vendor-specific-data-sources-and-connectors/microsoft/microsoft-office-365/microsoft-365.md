@@ -20,7 +20,7 @@ To configure this connector, follow these steps:
 
 #### 1. Global Administrator access to the Azure portal
 
-Sign in to the [Microsoft Azure portal](https://portal.azure.com/) as a Global Administrator. Use the [Create a Microsoft Entra ID](microsoft-365-new/create-a-microsoft-entra-id) page to obtain the following values:
+Sign in to the [Microsoft Azure portal](https://portal.azure.com/) as a Global Administrator. Use the [Create a Microsoft Entra ID](microsoft-365/create-a-microsoft-entra-id) page to obtain the following values:
 
 * **Tenant ID:** Directory ID for your Microsoft 365 tenant.
 * **Client ID:** Application ID generated during app registration.
@@ -30,7 +30,7 @@ Sign in to the [Microsoft Azure portal](https://portal.azure.com/) as a Global A
 
 Before configuring Microsoft 365, configure the **Office 365** to collect the Microsoft 365 Management Activity logs required for SharePoint Online and OneDrive scanning.
 
-For detailed configuration steps, see [Configure the Microsoft Office 365](ingest-logs-from-microsoft-office-365).&#x20;
+For detailed configuration steps, see [Configure the Microsoft Office 365](ingest-logs-from-microsoft-office-365).
 
 {% hint style="info" %}
 **Note**
@@ -48,7 +48,7 @@ This prerequisite is not required when configuring Microsoft Teams.
 4. In the wizard, select the Microsoft 365 services that you want to configure, such as:
    * **OneDrive for Business**
    * **SharePoint Online**
-   *   **Microsoft Teams.**&#x20;
+   *   **Microsoft Teams.**
 
        For detailed configuration steps for Microsoft Teams connector, see [Microsoft Teams](../microsoft-teams).
 
@@ -126,3 +126,23 @@ After onboarding is complete, verify asset discovery and data security findings.
 * ACLs for messages sent before a user is added to or removed from a Microsoft Teams group chat are not updated to reflect the membership change.
 * After onboarding a connector, Cortex Cloud may take **24 hours to 7 days** to fully process the data and generate findings. If you attempt to re-onboard the same connector using the same credentials during this transition period, previously generated findings and other data may temporarily reappear.
 {% endhint %}
+
+### Troubleshooting
+
+1. **Connector Health Monitoring**
+
+If the connector health status shows a _**Warning**_ or _**Error**_, follow the instructions displayed in the `Connector Health` dialog box in the console. If the issue persists, contact Support for further assistance.
+
+2. **Forward Scan / Real-Time Events**
+   1. Ensure that the `ActivityFeed.Read` permission is configured for the enterprise application and has been granted admin consent.
+   2. Verify that all application permissions specified in the documentation are configured and have been granted admin consent.
+   3. Confirm that the log collector was onboarded with the SharePoint Online option selected.
+   4. Ensure that the Microsoft Entra application’s client secret or certificate has not expired and that the enterprise application remains authorized.
+
+### Exposure Definitions
+
+Microsoft content is classified into four exposure categories:\
+• **Internal**: Documents that are not shared or are shared only with specific members of the organization.\
+• **Organization-Wide**: Documents shared with all members of the organization, such as through a “People in your organization” link or tenant-wide permissions.\
+• **External**: Documents shared with one or more users outside the organization.\
+• **Public**: Documents with an anonymous sharing link enabled, allowing anyone with the link to access them.

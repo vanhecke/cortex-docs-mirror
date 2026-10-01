@@ -11,10 +11,9 @@ Use the Disable and Delete options with extreme caution.
 
 Disable the integration with Cribl
 
-1. To disable the integration, in Cortex XSIAM, search for the Cribl integration on the Data Sources & Integrations page, and clear the Enable checkbox.
-2. In the Are you sure? dialog box, type `disable`, and then click Disable.
+1. In Cortex XSIAM, search for and select the Cribl integration on the Data Sources & Integrations page, right-click the instance and select **Disable**.
 
 Delete the integration with Cribl
 
-1. To delete the Cribl integration, in Cortex XSIAM, search for the integration on the Data Sources & Integrations page, and click the integration's Delete icon.
-2. In the Are you sure? dialog box, type `delete`, and then click Delete.
+1. In Cortex XSIAM, search for and select the integration on the Data Sources & Integrations page, right-click the instance and select Delete.
+2. In the Are you sure? dialog box, click Delete.

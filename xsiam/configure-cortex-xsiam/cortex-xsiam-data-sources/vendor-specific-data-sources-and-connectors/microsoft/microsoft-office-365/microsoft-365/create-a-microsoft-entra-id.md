@@ -4,7 +4,7 @@ description: Learn more about creating a Microsoft Entra ID.
 
 # Create a Microsoft Entra ID
 
-To integrate Microsoft 365 services with Cortex Cloud for Data Security and Posture Management, you must create a **Microsoft Entra ID service principal** (formerly Azure AD). The service principal requires specific Microsoft Graph API permissions based on the capabilities you plan to enable.
+To integrate Microsoft 365 services with Cortex XSIAM, you must create a **Microsoft Entra ID service principal** (formerly Azure AD). The service principal requires specific Microsoft Graph API permissions based on the capabilities you plan to enable.
 
 ### Prerequisites
 
@@ -37,55 +37,37 @@ To add a permission:
 4. Select **Application permissions**.
 5. Search for and select the required permissions listed in the following sections. Click on **Add permissions** once all the required permissions are added to the list.
 
-#### Microsoft 365 Data Security
+<details>
 
-These permissions are required to scan files for sensitive content across SharePoint and OneDrive repositories.
+<summary>Microsoft 365 Data Security</summary>
 
-| Permission                   |
-| ---------------------------- |
-| `SensitivityLabels.Read.All` |
-| `Files.Read.All`             |
-| `User.Read.All`              |
-| `Sites.Read.All`             |
 
-#### Microsoft 365 and Entra ID Identity Posture
 
-These permissions are required for user and group validation and for computing cross-tenant exposure scopes.
+</details>
 
-| Permission                      |
-| ------------------------------- |
-| `User.Read.All`                 |
-| `Group.Read.All`                |
-| `Application.Read.All`          |
-| `RoleManagement.Read.Directory` |
-| `AuditLog.Read.All`             |
+<details>
 
-#### Microsoft 365 Automation and Remediation
+<summary>Microsoft 365 and Entra ID Identity Posture</summary>
 
-These permissions are required for automated remediation actions.
 
-| Permissions                            |
-| -------------------------------------- |
-| `Files.ReadWrite.All`                  |
-| `Sites.ReadWrite.All`                  |
-| `InformationProtectionPolicy.Read.All` |
 
-#### Microsoft Teams Data Security Permissions
+</details>
 
-These permissions are required for scanning sensitive data in Microsoft Teams channels and messages.
+<details>
 
-| Permissions               |
-| ------------------------- |
-| `Chat.Read.All`           |
-| `Chat.ReadWrite.All`      |
-| `ChatMessage.Read.All`    |
-| `Group.Read.All`          |
-| `Team.ReadBasic.All`      |
-| `TeamMember.Read.All`     |
-| `User.Read.All`           |
-| `Channel.ReadBasic.All`   |
-| `ChannelMessage.Read.All` |
-| `ChannelMember.Read.All`  |
+<summary>Microsoft 365 Automation and Remediation</summary>
+
+
+
+</details>
+
+<details>
+
+<summary>Microsoft Teams Data Security Permissions</summary>
+
+
+
+</details>
 
 ### Task 3. Grant Admin Consent
 

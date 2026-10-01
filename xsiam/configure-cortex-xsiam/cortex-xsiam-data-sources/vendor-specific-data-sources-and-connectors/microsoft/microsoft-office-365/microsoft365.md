@@ -7,7 +7,7 @@ description: Use Microsoft365 (legacy) data with Cortex XSIAM.
 {% hint style="warning" %}
 **Important**
 
-We recommend using the new [**Microsoft 365**](microsoft-365-new) connector for the latest capabilities. For more information about how to migrate, see [**Migrate to the new Microsoft 365 connector**](microsoft365-legacy/migrate-to-new-microsoft-365-connector).
+We recommend using the new [**Microsoft 365**](microsoft-365) connector for the latest capabilities. For more information about how to migrate, see [**Migrate to the new Microsoft 365 connector**](microsoft365/migrate-to-new-microsoft-365-connector).
 {% endhint %}
 
 This connector includes the following capabilities and sub-capabilities (if applicable):

@@ -45,7 +45,7 @@ Create a service account and generate a JSON key in the Google Cloud Console. Co
 9. Select **JSON**, and click **Create**.
 10. Copy the **Client Id** and download the generated JSON key file and securely store it on your local machine.
 11. Navigate to **APIs & Services** -> **Enabled APIs & services**.
-12. Click **+ Enable APIs and services**.&#x20;
+12. Click **+ Enable APIs and services**.
 13. Search for **Admin SDK API** and enable it.
 
 #### 3. Configure Domain wide Delegation permissions
@@ -55,14 +55,22 @@ Create a service account and generate a JSON key in the Google Cloud Console. Co
 3. Click on **MANAGE DOMAIN WIDE DELEGATION**.
 4. Click on **Add new**.
 5. Provide the new **Service Account UniqueId** created above, add all the below scopes, and click **AUTHORIZE**:
-   1.  Scopes required by Identity and Data Security:
 
-       [`https://www.googleapis.com/auth/admin.directory.customer.readonly`](https://www.googleapis.com/auth/admin.directory.customer.readonly)[`https://www.googleapis.com/auth/admin.directory.user.readonly`](https://www.googleapis.com/auth/admin.directory.user.readonly)[`https://www.googleapis.com/auth/admin.directory.group.readonly`](https://www.googleapis.com/auth/admin.directory.group.readonly)[`https://www.googleapis.com/auth/admin.directory.group.member.readonly`](https://www.googleapis.com/auth/admin.directory.group.member.readonly)[`https://www.googleapis.com/auth/admin.directory.rolemanagement.readonly`](https://www.googleapis.com/auth/admin.directory.rolemanagement.readonly)
+<details>
 
-       [`https://www.googleapis.com/auth/drive`](https://www.googleapis.com/auth/drive)[`https://www.googleapis.com/auth/admin.directory.user.readonly`](https://www.googleapis.com/auth/admin.directory.user.readonly)
-   2.  Scopes required by Logs Ingestion:
+<summary>Scopes required by Identity and Data Security:</summary>
 
-       [`https://www.googleapis.com/auth/admin.reports.audit.readonly`](https://www.googleapis.com/auth/admin.reports.audit.readonly)[`https://www.googleapis.com/auth/admin.reports.usage.readonly`](https://www.googleapis.com/auth/admin.reports.usage.readonly)
+[`https://www.googleapis.com/auth/admin.directory.customer.readonly`](https://www.googleapis.com/auth/admin.directory.customer.readonly)[`https://www.googleapis.com/auth/admin.directory.user.readonly`](https://www.googleapis.com/auth/admin.directory.user.readonly)[`https://www.googleapis.com/auth/admin.directory.group.readonly`](https://www.googleapis.com/auth/admin.directory.group.readonly)[`https://www.googleapis.com/auth/admin.directory.group.member.readonly`](https://www.googleapis.com/auth/admin.directory.group.member.readonly)[`https://www.googleapis.com/auth/admin.directory.rolemanagement.readonly`](https://www.googleapis.com/auth/admin.directory.rolemanagement.readonly)[`https://www.googleapis.com/auth/drive`](https://www.googleapis.com/auth/drive)
+
+</details>
+
+<details>
+
+<summary>Scopes required by Logs Ingestion:</summary>
+
+[`https://www.googleapis.com/auth/admin.reports.audit.readonly`](https://www.googleapis.com/auth/admin.reports.audit.readonly)[`https://www.googleapis.com/auth/admin.reports.usage.readonly`](https://www.googleapis.com/auth/admin.reports.usage.readonly)
+
+</details>
 
 #### 4. Configure the Google Workspace logs and data Ingestion
 
@@ -120,3 +128,21 @@ After the configuration is complete, verify asset discovery and data security fi
    * **Sensitive Data Exposure:** PII, credit card numbers (PCI), Social Security numbers (SSNs), or proprietary source code detected in Google Docs, Sheets, Slides, or PDF attachments.
    * **External and Public Sharing Risks:** Files shared publicly through links, such as **Anyone with the link**, or files shared with external third-party email domains.
    * **Orphaned or Unowned File Risks:** Files owned by deleted or suspended user accounts.
+
+#### Troubleshooting
+
+1. **Connector Health Monitoring**
+
+If the connector health status shows a _**Warning**_ or _**Error**_, follow the instructions displayed in the `Connector Health` dialog box in the console. If the issue persists, contact Support for further assistance.
+
+2. **Forward Scan / Real-Time Events**
+
+Customer needs to make sure that log collector is onboarded with the same credentials as the connector with Google drive log collection enabled.
+
+#### Exposure Definitions:
+
+Google Workspace content is classified into four exposure categories:\
+• **Internal**: Documents that are not shared or are shared only with specific members of the organization.\
+• **Organization-Wide**: Documents shared with all members of the organization, such as through a “People in your organization” link or tenant-wide permissions.\
+• **External**: Documents shared with one or more users outside the organization.\
+• **Public**: Documents with an anonymous sharing link enabled, allowing anyone with the link to access them.

@@ -6,13 +6,19 @@ description: >-
 
 # Assign a case team and restrict access
 
-In Cortex XSIAM you can assign individual users and entire user groups to specific roles within a case team. For sensitive or high-risk cases, you can also restrict access to a case so that only assigned case team members can see or take action.
+In Cortex XSIAM you can assign individual users and entire user groups to specific roles within a case team. For sensitive or high-risk cases, you can also restrict access to a case to Team Only so that only assigned case team members can see or take action.
 
-For more information about the different team roles, see [Overview of case teams and roles](../../overview-of-cases/overview-of-case-teams-and-roles).
+For more information about the different team roles and case access and visibility, see [Overview of case teams and roles](../../overview-of-cases/overview-of-case-teams-and-roles).
 
-{% hint style="warning" %}
-To change the access settings of a case, you must have the **Restrict Case Access** permission under **Cases & Issues**.
-{% endhint %}
+### Important considerations
+
+Before restricting access or assigning teams, keep the following rules in mind:
+
+* **Permissions required:** To change the access settings of a case, you must have the **Restrict Case Access** permission under **Cases & Issues**.
+* **Team management:** When case access is restricted to **Team Only**, only assigned team members have permission to add new team members to the case.&#x20;
+* **Team access:** When case access is restricted to **Team Only**, assigned team members require the relevant RBAC and SBAC roles to view case data and take actions on the case. For more information see [Overview of case teams and roles](../../overview-of-cases/overview-of-case-teams-and-roles).
+* **Automatic reversion:** If a case has no assigned team members, the scope automatically reverts to **Case Scope**.
+* **Audit trail:** Any changes made to the case assignee or the case team are permanently recorded in the **Case Timeline**.
 
 ### How to assign a case team and restrict access
 
@@ -71,12 +77,3 @@ For more detailed information about using these arguments, see [setCase](https:/
 | `access_mode`            | <p>Set case visibility:</p><ul><li><code>CASE_SCOPE</code>: (default) any user whose scope permits can view the case.</li><li><code>TEAM_ONLY</code>: restricts access to team members only.</li></ul><div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>You cannot set a case to <code>TEAM_ONLY</code> if no case team has been assigned.</p></div> |
 
 </details>
-
-### Important considerations
-
-Before restricting access or assigning teams, keep the following rules in mind:
-
-* **Permissions required:** To change the access settings of a case, you must have the **Restrict Case Access** permission under **Cases & Issues**.
-* **Team management:** When case access is restricted to **Team Only**, only assigned team members have permission to add new team members to the case. For more information see [Overview of case teams and roles](../../overview-of-cases/overview-of-case-teams-and-roles).
-* **Automatic reversion:** If a case has no assigned team members, the scope automatically reverts to **Case Scope**.
-* **Audit trail:** Any changes made to the case assignee or the case team are permanently recorded in the **Case Timeline**.

@@ -12,7 +12,7 @@ You need to integrate a dedicated Kong HTTP log plugin. This plugin enables seam
 
 In Cortex XSIAM, set up the Kong data source to integrate with the Kong API Gateway.
 
-1. From Settings → Data Sources & Integrations, click + Add New, search for Kong, then hover over it and click Add or Add Instance.
+1. From Settings → Data Sources & Integrations, click + Add New, search for Kong, then hover over it and click Add.
 2. In the Kong Collector wizard, enter a relevant name and then click Create and Proceed.
 3. Copy the key and paste it somewhere so that you can access it later. If you forget to record the key and close the window, you must generate a new key and repeat this process.
 4. Click the Download Custom Plugin link to download the plugin, which you can then upload from the Kong API Gateway.

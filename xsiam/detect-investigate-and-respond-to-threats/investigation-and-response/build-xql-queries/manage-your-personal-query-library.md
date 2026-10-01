@@ -49,7 +49,7 @@ The Query Library contains a powerful search mechanism that enables you to searc
 ## Managing your queries
 
 {% hint style="info" %}
-The ability to create, edit, or share queries is governed by access management. If certain options are unavailable, contact your administrator.&#x20;
+The ability to create, edit, or share queries is governed by access management. If certain options are unavailable, contact your administrator.
 {% endhint %}
 
 The visibility of saved queries in the Query Library is determined by access management. You can manage who can view (and run) or edit your queries by sharing them with specific users, user groups, or API keys. You can also view queries created and shared by others in your organization if they have granted you access or marked the query as Public.
