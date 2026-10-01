@@ -1,0 +1,81 @@
+{
+  "date": "2026-09-30",
+  "source": "docs",
+  "sha": "06e7ad68cd393f51d9b44c39614cb6e3cbf8b140",
+  "headline": "SaaS connector pages gain real onboarding steps; cloud permission references move; network mapping documented",
+  "summary_md": "- **Microsoft 365** connector pages drop their `-new` and `-legacy` slug suffixes, which fixes a `broken-reference` link on the Office 365 parent page.\n- **Salesforce** re-labels its integrations as sub-capabilities, folds the per-capability prerequisites into collapsible sections, and adds a commands reference page.\n- New reference pages land for **Cortex CLI exit codes** and for authentication-mapping deep dives.\n- The **FedRAMP egress IP** table was rebuilt after its rows had slipped a column; the addresses themselves are unchanged.\n- Mechanical churn: agent release-archive links gained a GitBook org segment, and Endpoint DLP moved to an `endpoint-dlp-1` slug across nine pages.",
+  "highlights": [
+    {
+      "title": "23 SaaS connector pages replace the configuration-wizard stub with real onboarding steps",
+      "detail": "The placeholder sentence \"To configure this connector, follow the steps outlined in the configuration wizard\" is gone from 23 pages, each now naming the credentials Cortex needs, the permissions to grant on the vendor side, and numbered tasks; 70 connector pages were touched in total.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/databricks/databricks",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/cisco/cisco-duo",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/atlassian/atlassian",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/mulesoft/mulesoft"
+      ]
+    },
+    {
+      "title": "Every cloud provider permissions reference moves into its own onboarding section",
+      "detail": "The Alibaba, AWS, GCP, Azure and OCI permission pages all left the shared cloud-service-provider-permissions folder for their per-cloud onboarding folders, so existing links and bookmarks to all five break.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/microsoft-azure-cloud-onboarding/microsoft-azure-provider-permissions",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/amazon-web-services-cloud-onboarding/amazon-web-services-aws-provider-permissions",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/google-cloud-platform-cloud-onboarding/google-cloud-platform-gcp-provider-permissions",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/oracle-cloud-infrastructure-cloud-onboarding/oracle-cloud-infrastructure-oci-provider-permissions",
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/alibaba-cloud-cloud-onboarding/alibaba-cloud-provider-permissions"
+      ]
+    },
+    {
+      "title": "Mapping network events for analytics is documented for the first time",
+      "detail": "Three new pages arrive together: a 17-field mandatory XDM reference, a deep-dives companion, and a how-to stating that an event missing any mandatory field is dropped from the network story, and that mapping these fields is what activates the built-in third-party firewall detection logic.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/data-management/data-model-rules/how-to-map-network-events-for-analytics",
+        "xsiam/reference-and-developer-docs/reference/xdm-fields-for-mapping-network-events",
+        "xsiam/reference-and-developer-docs/reference/xdm-fields-for-mapping-network-events/advanced-network-mapping-deep-dives"
+      ]
+    },
+    {
+      "title": "New GCP Required APIs page warns a disabled Cloud Asset API silently drops projects from inventory",
+      "detail": "The page splits the APIs into core, connector and service-discovery sets, says which must be enabled on the service account project versus every scanned project, and calls a missing per-project Cloud Asset API the most common cause of projects absent after an apparently successful organization onboarding.",
+      "paths": [
+        "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/google-cloud-platform-cloud-onboarding/prerequisites-for-onboarding-gcp/required-apis"
+      ]
+    },
+    {
+      "title": "The Help Center agent gets its own pages, including a per-action capabilities and limits table",
+      "detail": "The new actions reference lists each diagnostic the agent can run against a tenant with its pagination ceiling, alongside notes that it requires explicit confirmation before sensitive operations and stays within the operator's own permissions.",
+      "paths": [
+        "xsiam/detect-investigate-and-respond-to-threats/agentic-assistant-chat/streamline-troubleshooting-and-support-with-the-help-center-agent",
+        "xsiam/detect-investigate-and-respond-to-threats/agentic-assistant-chat/streamline-troubleshooting-and-support-with-the-help-center-agent/help-center-agent-actions"
+      ]
+    },
+    {
+      "title": "Two compliance pages were deleted and their content folded into their parents",
+      "detail": "The controls catalog page became a \"View controls associated with a specific standard\" section of the standards catalog, and the custom-standards assessment guidance moved up into the assessment profile page; nothing was dropped, but both URLs are gone.",
+      "paths": [
+        "xsiam/cloud-security/monitor-and-track-compliance-adherence/choose-compliance-standards-from-the-compliance-catalog/standards-catalog",
+        "xsiam/cloud-security/monitor-and-track-compliance-adherence/use-an-assessment-profile-to-run-compliance-checks-on-your-assets"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/google-cloud-platform-cloud-onboarding/prerequisites-for-onboarding-gcp/required-apis": "New page listing every GCP API needed for asset discovery, split by whether it belongs on the service account project or on every scanned project.",
+    "xsiam/reference-and-developer-docs/reference/xdm-fields-for-mapping-network-events": "New reference for the XDM fields that network events must map, with data types and the enum constants for each.",
+    "xsiam/configure-cortex-xsiam/data-management/data-model-rules/how-to-map-network-events-for-analytics": "New how-to: classification signals for network logs, mapping principles, and the 17 mandatory fields that build network stories.",
+    "xsiam/reference-and-developer-docs/reference/xdm-fields-for-mapping-authentication-events": "Restructured into per-field bullets with new Implementation guidance, and its internal GitBook schema links replaced with public cortex-docs URLs.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/cloud-service-provider-csp-onboarding/microsoft-azure-cloud-onboarding/microsoft-azure-provider-permissions": "Moved here, and now organizes permissions by capability and role, stating which are requested at tenant, management group and subscription scope.",
+    "xsiam/detect-investigate-and-respond-to-threats/agentic-assistant-chat/streamline-troubleshooting-and-support-with-the-help-center-agent": "New page for the Help Center agent: live tenant diagnostics, Tech Support File collection, and approval-gated content pack updates.",
+    "xsiam/detect-investigate-and-respond-to-threats/agentic-assistant-chat/streamline-troubleshooting-and-support-with-the-help-center-agent/help-center-agent-actions": "New table of the agent's actions with the limits on each, such as one SHA256 per allow/block list check and 200 BIOC rules per page.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/databricks/databricks": "Gains two documented onboarding paths: administrator credentials via Okta or Azure AD, and a Databricks managed service principal with an SQL warehouse.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/cisco/cisco-duo": "Gains full setup steps, naming the supported Duo editions and the six Admin API grants the application needs.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-365": "The Microsoft 365 (new) connector page, renamed off its `-new` suffix; the Office 365 parent's link to it was previously a broken reference.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/salesforce/ingest-and-run-salesforce-automation-and-remediation": "Re-terms integrations as sub-capabilities, splits prerequisites per capability, and advises an external client app over the deprecated Connected Apps.",
+    "xsiam/reference-and-developer-docs/about-cortex-cli/exit-codes-and-error-handling": "New Cortex CLI reference page for exit codes and error handling.",
+    "xsiam/cloud-security/monitor-and-track-compliance-adherence/choose-compliance-standards-from-the-compliance-catalog/standards-catalog": "Absorbs the deleted controls catalog page, documenting each control column and how to filter for custom controls.",
+    "xsiam/cloud-security/monitor-and-track-compliance-adherence/use-an-assessment-profile-to-run-compliance-checks-on-your-assets": "Absorbs its deleted child, adding that custom standards built on custom rules need a matching cloud security policy to assess correctly.",
+    "xsiam/protect-your-endpoints/endpoint-dlp-1": "Endpoint DLP and its eight child pages moved to an `endpoint-dlp-1` slug, with content unchanged."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": true
+}
