@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-30",
+  "source": "analytics",
+  "sha": "8f064481f7fda303f9c7da8fdcacb51766864dc7",
+  "headline": "Export resumes after a three-week gap; no analytics rule changed since 6 September",
+  "summary_md": "- **Nothing changed.** The export ran and touched no file under `analytics/` — nothing added, withdrawn or edited.\n- The reference holds at **1,311 detectors**, byte-identical to its 8 September state; the last movement was the 6 September export, which touched 302 files.\n- No analytics export landed between 9 and 29 September — this run is the first since, and it carries no rule changes with it.",
+  "highlights": [],
+  "items": {},
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
