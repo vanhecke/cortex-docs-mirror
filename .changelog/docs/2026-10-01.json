@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-01",
+  "source": "docs",
+  "sha": "d869cb0e7619ac0e50e93d0be101668ea804e231",
+  "headline": "Conditional Access Policy and AD-SPM now require Cortex agent 9.3 or later",
+  "summary_md": "- **Conditional Access Policy** and **AD-SPM** both gained a minimum agent version — 9.3 or later — with CAP taking effect only after an agent restart.\n- The requirement was added to both copies of the Identity Profile note, under ITDR and under endpoint security.\n- The endpoint-security copy's tenant prerequisites were rewritten from Cortex XSIAM to Cortex XDR versions, so the two copies of that note no longer agree.\n- The **AD-SPM** toggle description lost its sentence about using Weak Password to identify weak passwords and set a scan frequency.\n- A four-page day, all of it Identity Profile: no pages added, renamed or removed.",
+  "highlights": [
+    {
+      "title": "Conditional Access Policy requires Cortex agent 9.3 or later and takes effect after an agent restart",
+      "detail": "The restart condition is new text rather than a restatement, and it was added to the CAP prerequisites and to both Identity Profile notes in one edit.",
+      "paths": [
+        "xsiam/detect-investigate-and-respond-to-threats/identity-threat-module-itdr/conditional-access-policy",
+        "xsiam/detect-investigate-and-respond-to-threats/identity-threat-module-itdr/get-started-with-itdr",
+        "xsiam/protect-your-endpoints/endpoint-security/install-and-manage-endpoints/set-up-endpoint-protection/set-up-endpoint-profiles-and-exception-rules/set-up-identity-profiles"
+      ]
+    },
+    {
+      "title": "Active Directory Security Posture Management requires Cortex agent 9.3 or later",
+      "detail": "Stated in both Identity Profile notes; the AD-SPM page itself was untouched apart from a list reformat.",
+      "paths": [
+        "xsiam/detect-investigate-and-respond-to-threats/identity-threat-module-itdr/get-started-with-itdr",
+        "xsiam/protect-your-endpoints/endpoint-security/install-and-manage-endpoints/set-up-endpoint-protection/set-up-endpoint-profiles-and-exception-rules/set-up-identity-profiles"
+      ]
+    },
+    {
+      "title": "The endpoint-security Identity Profile note now names Cortex XDR versions where it named Cortex XSIAM",
+      "detail": "\"Cortex XSIAM 3.5\" became \"Cortex XDR 3.5\" and \"unavailable for Cortex XSIAM 2.x\" became \"Cortex XDR 2.x\", while the ITDR copy still says XSIAM — the two notes now state different tenant prerequisites.",
+      "paths": [
+        "xsiam/protect-your-endpoints/endpoint-security/install-and-manage-endpoints/set-up-endpoint-protection/set-up-endpoint-profiles-and-exception-rules/set-up-identity-profiles"
+      ]
+    },
+    {
+      "title": "The AD-SPM toggle no longer documents Weak Password scan frequency",
+      "detail": "Both copies dropped the sentence directing you to use Weak Password to identify weak passwords in Active Directory and define the scan frequency.",
+      "paths": [
+        "xsiam/detect-investigate-and-respond-to-threats/identity-threat-module-itdr/get-started-with-itdr",
+        "xsiam/protect-your-endpoints/endpoint-security/install-and-manage-endpoints/set-up-endpoint-protection/set-up-endpoint-profiles-and-exception-rules/set-up-identity-profiles"
+      ]
+    }
+  ],
+  "items": {
+    "xsiam/detect-investigate-and-respond-to-threats/identity-threat-module-itdr/conditional-access-policy": "CAP prerequisites now state agent version 9.3 or later, and that the policy takes effect only after an agent restart.",
+    "xsiam/detect-investigate-and-respond-to-threats/identity-threat-module-itdr/get-started-with-itdr": "Adds minimum agent 9.3 lines for both CAP and AD-SPM, and trims the AD-SPM toggle description to drop Weak Password scan frequency.",
+    "xsiam/protect-your-endpoints/endpoint-security/install-and-manage-endpoints/set-up-endpoint-protection/set-up-endpoint-profiles-and-exception-rules/set-up-identity-profiles": "Gains the same 9.3 requirements and the Windows-endpoints line, but rewrites the tenant prerequisites from Cortex XSIAM to Cortex XDR versions.",
+    "xsiam/detect-investigate-and-respond-to-threats/identity-threat-module-itdr/active-directory-security-posture-management": "Converts the two ways to investigate posture issues from a numbered list to bullets — they are alternatives, not ordered steps."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
