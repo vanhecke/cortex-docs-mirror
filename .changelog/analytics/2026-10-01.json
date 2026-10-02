@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-01",
+  "source": "analytics",
+  "sha": "034c5ccae4dbc2ea36fa5f82a9dfdb7d3afb8fe2",
+  "headline": "Still quiet since the export resumed: no analytics rule changed, 1,311 detectors unmoved",
+  "summary_md": "- **Nothing changed.** The export ran and touched no file under `analytics/` — nothing added, withdrawn or edited.\n- The reference holds at **1,311 detectors**, the count the run marker has carried unchanged since 6 September.\n- Second consecutive quiet day since the export resumed on 30 September, after the three-week gap with no analytics run at all.\n- The last movement in the reference remains the 6 September export, which touched 302 files.",
+  "highlights": [],
+  "items": {},
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
