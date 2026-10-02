@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-01",
+  "source": "content",
+  "sha": "24441ad2e64112fcf468a3179a736cd1c7efb11f",
+  "headline": "A new TypeSafe Jev integration pack, and Censys renamed to \"Censys Platform\"",
+  "summary_md": "- Three packs moved on one commit each: **TypeSafeJev** (new), **SocFrameworkManager** and **Censys**.\n- **TypeSafeJev** is the only new pack — 947 added lines and no deletions, so nothing existing was touched.\n- **Censys** renamed its integration's display name to \"Censys Platform\" at pack version 3.2.2; the name shown in a tenant changes.\n- **SocFrameworkManager** took the day's only fix, to how it installs a pack and confirms the installed version.",
+  "highlights": [
+    {
+      "title": "New pack: TypeSafe Jev integration",
+      "detail": "Added whole in one commit (#46064) with 947 insertions and no deletions — a new integration rather than a change to an existing one.",
+      "paths": ["Packs/TypeSafeJev"]
+    },
+    {
+      "title": "Censys integration display name is now \"Censys Platform\"",
+      "detail": "A rename at pack version 3.2.2 (#46042, #46067); the integration instance label users search for in the tenant changes with it.",
+      "paths": ["Packs/Censys"]
+    },
+    {
+      "title": "SocFrameworkManager now installs the pack ZIP directly and verifies the version",
+      "detail": "The largest edit of the day at 410 insertions and 29 deletions (#46050), changing how an install is performed and then checked.",
+      "paths": ["Packs/SocFrameworkManager"]
+    }
+  ],
+  "items": {
+    "Packs/TypeSafeJev": "New pack adding the TypeSafe Jev integration, 947 lines with nothing removed.",
+    "Packs/SocFrameworkManager": "Installs the pack ZIP directly and verifies the installed version landed.",
+    "Packs/Censys": "Integration display name renamed to \"Censys Platform\" at pack version 3.2.2."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
