@@ -56,5 +56,5 @@ Filter according to the **Weak/Compromised Password** to see the accounts at ris
 Each identity displays the number and severity of the issues triggered by the module.\
 To investigate the issues do one of the following:
 
-1. Click the identity to see its side panel. From this panel, click the number of issues to open up the issues table.
-2. In **Modules** → **Identity Security** → **Issues** → **Posture,** select an issue.
+* Click the identity to see its side panel. From this panel, click the number of issues to open up the issues table.
+* In **Modules** → **Identity Security** → **Issues** → **Posture,** select an issue.

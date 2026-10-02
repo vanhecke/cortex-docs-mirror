@@ -23,6 +23,9 @@ The Identity Profile centralizes identity security policies for Domain Controlle
 
 Identity Profile requires Cortex XSIAM 3.5, Cortex XDR 5.1, or Cortex Cloud Runtime 2.1 or later. It also requires Cortex XDR agent 9.1 or later. It is unavailable for Cortex XSIAM 2.x and Cortex XDR 3.x tenants.
 
+Conditional Access Policy (CAP) requires agent version 9.3 or later, and takes effect after agent restart.\
+Active Directory Security Posture Management (AD-SPM) requires agent version 9.3 or later.
+
 Policies can contain an Identity Profile in mixed-agent environments. Agents earlier than version 9.1 ignore these settings.
 
 Identity Profile is available in Windows endpoints.
@@ -39,9 +42,9 @@ To customize settings for specific agents, create an Identity Profile and assign
    4. Enter a unique **Profile Name**. Use only letters, numbers, or spaces. Names must contain 30 characters or fewer.
    5. Add a **Description** with the profile's purpose or business reason. For example, include a case ID or help desk ticket link.
 2.  Use the toggle to enable or disable **AD-SPM**.\
-    Use **Active Directory Security Posture Management** to monitor Active Directory for risky account configurations, weak or compromised passwords, unused accounts, and excessive privileges. Use Weak Password to identify weak passwords used in Active Directory and define the scan frequency.
+    Use **Active Directory Security Posture Management** to monitor Active Directory for risky account configurations, weak or compromised passwords, unused accounts, and excessive privileges.&#x20;
 
-    When enabled, both **Weak Password** and **AD-SPM** are both enabled.
+    When enabled, both **Weak Password** detection and **AD-SPM** are enabled.
 3.  Use the toggle to enable or disable **Conditional Access**. When enabled, configure these options:
 
     | Item                           | Options                       | More details                                                                                                                                                                                                                           |

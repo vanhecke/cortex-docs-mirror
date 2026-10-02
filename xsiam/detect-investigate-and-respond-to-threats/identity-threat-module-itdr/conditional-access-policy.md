@@ -11,7 +11,7 @@ description: >-
 
 * **View** or **View/Edit** RBAC permissions for **Conditional Access Policy**
 * **ITDR add-on license** : Activate the ITDR add-on license for your Cortex tenant.
-* **Cortex agent on Domain Controllers** : Deploy the Cortex agent on all Domain Controllers where you want to enforce Conditional Access Policy rules.\
+* **Cortex agent on Domain Controllers** : Deploy the Cortex agent on all Domain Controllers where you want to enforce Conditional Access Policy rules. Conditional Access Policy (CAP) requires agent version 9.3 or later, and takes effect after agent restart.\
   **Note:** The CAP agent requires a minimum of 200 MB of RAM and 10 GB of storage.
 * **Cortex Identity Engine (CIE)** : Connect your Active Directory (AD) integration and MFA Provider via CIE.
 * **MFA provider** : Configure Okta or Entra ID as the MFA provider in your environment.
