@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-01",
+  "sha": "1f267f8c9c86a6f1021bda5029299de3448e2b25",
+  "committed_at": "2026-10-01T16:35:22+03:00",
+  "packs": [
+    {
+      "name": "Censys",
+      "insertions": 18,
+      "deletions": 4
+    },
+    {
+      "name": "SocFrameworkManager",
+      "insertions": 410,
+      "deletions": 29
+    },
+    {
+      "name": "TypeSafeJev",
+      "insertions": 947,
+      "deletions": 0
+    }
+  ],
+  "commits": [
+    {
+      "sha": "e256f0d42f4331f2ac896d576fc062a0364c2b30",
+      "subject": "feat: add TypeSafe Jev integration (#46064)"
+    },
+    {
+      "sha": "b9000c27b02e7183d966445cf6eaed85983d32c9",
+      "subject": "Censys: rename integration display name to \"Censys Platform\" (3.2.2) (#46042) (#46067)"
+    },
+    {
+      "sha": "1f267f8c9c86a6f1021bda5029299de3448e2b25",
+      "subject": "fix(SocFrameworkManager): install pack ZIP directly and verify the version landed (#46050)"
+    }
+  ]
+}
