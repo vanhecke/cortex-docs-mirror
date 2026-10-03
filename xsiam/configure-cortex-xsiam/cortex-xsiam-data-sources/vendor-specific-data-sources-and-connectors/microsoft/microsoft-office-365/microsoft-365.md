@@ -16,6 +16,83 @@ This connector includes the following capabilities and sub-capabilities (if appl
 
 To configure this connector, follow these steps:
 
+<details>
+
+<summary><strong>Security Posture</strong></summary>
+
+### How to configure the Microsoft Office 365 connector <a href="#how-to-configure-the-aha-connector" id="how-to-configure-the-aha-connector"></a>
+
+{% hint style="info" %}
+Connecting to Microsoft 365 enables Cortex XSIAM to scan settings at a high level based on Microsoft's Secure Score. For greater visibility into a particular application in the Microsoft 365 product family, onboard the individual product app. To scan more settings for Microsoft Word, Microsoft PowerPoint, and Microsoft Excel, onboard Office 365 - Productivity Apps. Other products in the Microsoft 365 product family have their own tiles on the Applications page and can be onboarded separately.
+{% endhint %}
+
+To onboard your Microsoft 365 instance using a service principal, Cortex XSIAM requires the following information.
+
+* **Tenant ID:** A globally unique identifier (GUID) for your Microsoft Entra tenant.
+* **Client ID**: Cortex XSIAM accesses a Microsoft API through a Microsoft Entra service principal that represents an application that you create. Microsoft Entra generates the client ID to uniquely identify the application and its associated service principal.
+* **Client Secret**: Cortex XSIAM accesses a Microsoft API through a Microsoft Entra service principal that represents an application that you create. Microsoft Entra generates the client secret, which Cortex XSIAM uses to authenticate to the service principal.\
+  Required Permissions: The administrator must be able to grant access to the API scopes required by Cortex XSIAM. These scopes differ depending on whether you want to grant read-only or read and write permissions.
+
+{% hint style="info" %}
+After Cortex XSIAM connects to your Microsoft 365 instance, it performs an initial scan and then runs scans at regular intervals. The service principal must remain available for scans to continue. If you delete the service principal, scans will fail and you will need to onboard Microsoft 365 again.
+{% endhint %}
+
+**Task 1: Create and Register Your Microsoft Entra Application**
+
+1. Log in to the administrator account.
+2. On the Enterprise applications page, select **New application**.
+3. From the left navigation pane, select **Enterprise applications**.
+4. Open a web browser to the [Microsoft Entra admin center](https://entra.microsoft.com/).
+5. On the All applications page, select **Create your own application**.
+6. On the Create your own application flyout dialog, complete the following actions:
+7. Specify a name for the application.
+8. Select Register an application to integrate with Microsoft Entra ID (App you're developing).
+9. Click **Create**.
+10. On the Register an application window, for supported account types, select Accounts in this organizational directory only.
+11. Click Register. Registering the application automatically creates its associated service principal.
+
+**Task 2:  Configure API Permissions for Your Application**
+
+1. From the left navigation pane in the Microsoft Entra admin center, select Enterprise applications.
+2. From the list of applications on the All applications page, open your application.
+3. From the details page for your application, select Permissions.
+4. On the Permissions page, click the Application registration link to go to the API permissions page.
+5. On the API permissions page, click **Add a permission**.
+6. On the Request API permissions flyout dialog, select **Microsoft Graph > Application Permissions**.
+7. Select each of the API scopes that you obtained from the Office 365 onboarding screen in Cortex and click Add permissions.
+8. On the API permissions page, verify that all the scopes were added as application permissions. The scopes you added should all have a type of Application. Only the _User.Read_ permission (added automatically by Microsoft Entra) will have a type of Delegated.
+9.  On the API permissions page, select Grant admin consent for your organization.
+
+
+
+**Task 3: Copy the Application Credentials and Tenant ID**
+
+1. Copy the client ID:
+   1. From the details page for your application, select Overview.
+   2. Copy the client ID from the Application (client) ID field and paste it into a text file. Do not continue to the next step unless you have copied the client ID. You will provide this information to Cortex XSIAM during the connection process.
+2. Create and copy the client secret:
+   1. From the details page for your application, select **Certificates & secrets > Client secrets**.
+   2. Create a New client secret.
+   3. Copy the Value of the new client secret and paste it into a text file. Do not continue to the next step unless you have copied the client secret. You will provide this information to SaaS Security during the onboarding process.
+3. Copy the tenant ID:
+   1. From the left navigation pane in the Microsoft Entra admin center, select Home.
+   2. Copy the tenant ID and paste it into a text file. Do not continue to the next step unless you have copied your tenant ID. You will provide this information to SaaS Security during the onboarding process.
+
+**Task 4: Connect Microsoft 365 to Cortex XSIAM**
+
+1. In Cortex XSIAM, navigate to **Settings** → **Data Sources & Integrations**.
+2. Click **+ Add new**.
+3. In the **Add Data Sources or Integrations** page, search for Microsoft 365.
+4. Under **Recommended**, hover over the new Microsoft 365 integration and click **Add Instance** to launch the configuration wizard.
+5. Under the **Capabilities** tab, Enter a Name for your application.
+6. Select Security Posture under **Default Capabilities**.
+7. Click **Next**.
+8. Under **Connection**, enter the Tenant ID, Client ID, and Client Secret.
+9. Under **Configuration** tab, select a **Sync Interval**. Choose a meaningful **Tag** to distinguish between various applications in different environments.
+10. A confirmation message indicates that Microsoft 365 is successfully connected. Confirm the Summary details and click **Save instance**.
+
+</details>
+
 ### Prerequisite
 
 #### 1. Global Administrator access to the Azure portal
@@ -26,9 +103,9 @@ Sign in to the [Microsoft Azure portal](https://portal.azure.com/) as a Global A
 * **Client ID:** Application ID generated during app registration.
 * **Client Secret:** Client secret generated for the registered application.
 
-#### 2. Configure the Office 365
+#### 2. Configure the Microsoft 365
 
-Before configuring Microsoft 365, configure the **Office 365** to collect the Microsoft 365 Management Activity logs required for SharePoint Online and OneDrive scanning.
+Before configuring Microsoft 365, configure the **Microsoft** **365** to collect the Microsoft 365 Management Activity logs required for SharePoint Online and OneDrive scanning.
 
 For detailed configuration steps, see [Configure the Microsoft Office 365](ingest-logs-from-microsoft-office-365).
 
