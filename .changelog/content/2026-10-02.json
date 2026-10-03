@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-02",
+  "source": "content",
+  "sha": "a3afc86f75c06c40f7002caacb9782d75891804b",
+  "headline": "A quiet day — no content packs changed, and upstream head unmoved since 1 October",
+  "summary_md": "- Nothing moved: the snapshot records **no packs changed and no commits** for the 2 October window.\n- Upstream head stayed at `1f267f8c` of 1 October 16:35 +03:00 — the same commit yesterday's snapshot recorded — so nothing landed in `demisto/content` during the day itself.\n- No pack was added, updated or withdrawn, so there is nothing here to act on.",
+  "highlights": [],
+  "items": {},
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
