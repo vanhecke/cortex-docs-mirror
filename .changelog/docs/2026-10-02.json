@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-02",
+  "source": "docs",
+  "sha": "d566b69840a7d1f20a6aec99a6f882a7964402f4",
+  "headline": "Six SaaS posture connectors gain full onboarding steps: Okta, PagerDuty, Redis Labs, SAP Ariba, Sentry, Microsoft 365",
+  "summary_md": "- Five connector pages replaced the placeholder \"follow the steps outlined in the configuration wizard\" with the credentials, required permissions and numbered onboarding tasks: **Okta**, **PagerDuty**, **Redis Labs**, **SAP Ariba** and **Sentry**.\n- **Microsoft 365** gained a collapsible **Security Posture** section covering Microsoft Entra app registration, the Graph application permissions to consent to, and the four onboarding tasks.\n- Each new page names the account role the connector needs — PagerDuty Account Owner, Redis Labs Owner, a Sentry org member on a Business Plan — so these are prerequisites worth reading before an onboarding call.\n- The additions carry copy-paste artifacts from the SaaS Security docs: five pages share an `aha-connector` heading anchor, Sentry opens \"To access Harness\", and several steps still say \"SaaS Security\" where they mean Cortex XSIAM.\n- Remaining churn is casing only — **MuleSoft** and **Redis Labs** corrected \"SAAS\" to \"SaaS\".",
+  "highlights": [
+    {
+      "title": "Microsoft 365 documents the Entra service principal the Security Posture capability requires",
+      "detail": "Tenant ID, client ID and client secret, with a warning that deleting the service principal fails all future scans and forces a re-onboard; the Entra app registration steps are listed out of order.",
+      "paths": ["xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft-365"]
+    },
+    {
+      "title": "PagerDuty onboarding needs Account Owner credentials plus an IdP MFA secret",
+      "detail": "Username, password, subdomain and service region (US or EU, read off the login URL), and an Okta or Azure AD 2FA secret when logging in through an identity provider.",
+      "paths": ["xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/pagerduty/pagerduty"]
+    },
+    {
+      "title": "Redis Labs requires two API keys, both created by an Owner",
+      "detail": "An API account key that appears only once the REST API is enabled, plus a per-user API user key whose permissions are inherited from the user it is bound to.",
+      "paths": ["xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/redis-labs/redis-labs"]
+    },
+    {
+      "title": "Sentry is supported only on the Business Plan, with a two-scope personal token",
+      "detail": "The personal access token needs `member:read` and `org:read` and no elevated role, but the account must belong to the organization being scanned.",
+      "paths": ["xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/sentry/sentry"]
+    },
+    {
+      "title": "Okta's API token inherits the permissions of the admin who created it",
+      "detail": "Super Administrator for read and write, read-only administrator for read-only, alongside the admin instance URL in `https://<subdomain>-admin.okta.com` form.",
+      "paths": ["xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/okta/okta-connector"]
+    },
+    {
+      "title": "SAP Ariba onboarding is realm-scoped and links out to the SaaS Security MFA docs",
+      "detail": "Username, password and realm, plus the instance FQDN (s1.ariba.com or s3.ariba.com) for direct login or an Azure AD 2FA secret for IdP login.",
+      "paths": ["xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/sap/sap-ariba"]
+    }
+  ],
+  "items": {
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/microsoft/microsoft-office-365/microsoft-365": "Adds a Security Posture onboarding section; the \"Configure the Office 365\" prerequisite heading is renamed to \"Microsoft 365\".",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/okta/okta-connector": "Adds API token and admin instance URL requirements plus two onboarding tasks, in a collapsible Security Posture section.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/pagerduty/pagerduty": "Adds Account Owner credentials, subdomain, region and IdP MFA secrets, plus two onboarding tasks.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/redis-labs/redis-labs": "Adds API account key and API user key requirements and three onboarding tasks; corrects \"SAAS\" to \"SaaS\".",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/sap/sap-ariba": "Adds username, password, realm, FQDN and Azure AD 2FA requirements across five onboarding tasks.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/sentry/sentry": "Adds a Business Plan account-type requirement and a personal token scoped to member:read and org:read.",
+    "xsiam/configure-cortex-xsiam/cortex-xsiam-data-sources/vendor-specific-data-sources-and-connectors/mulesoft/mulesoft": "Casing fix only: \"SAAS application\" becomes \"SaaS application\" in the remediation sub-capability."
+  },
+  "generated_by": "claude-code/claude-opus-5",
+  "truncated": false
+}
